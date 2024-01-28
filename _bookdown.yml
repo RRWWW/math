@@ -1,0 +1,42 @@
+# The book filename (default: "_main.Rmd"), as bookdown.org/<user_name>/<book_filename>/
+book_filename: "math.Rmd"
+
+# Whether to start a new R session before rendering each chapter (default: true)
+new_session: true
+
+# Whether to delete the merged Rmd file after rendering (default: true)
+delete_merged_file: true
+
+# Script to run before and after rendering each chapter
+# before_chapter_script: ["script1.R", "script2.R"]
+# after_chapter_script: "script3.R"
+
+# Link to view the book source code on GitHub
+view: "https://github.com/RRWWW/math/blob/main/%s"
+
+# Link to edit the book source code on GitHub
+edit: "https://github.com/RRWWW/math/edit/main/%s"
+
+# Link to the commits history of the book source code on GitHub
+history: "https://github.com/RRWWW/math/commits/main/%s"
+
+# Files to clean after the book is rendered
+clean: #[packages.bib, bookdown.bbl]
+  - "my-book.bbl"
+  - "R-packages.bib"
+# clean: ["my-book.bbl", "R-packages.bib"]
+
+# The output directory for the book (default: "_book")
+output_dir: "_book"
+
+# you may want to override the order in which files are merged by including the field
+rmd_files: ["index.Rmd", "99999999-reference.Rmd"]
+
+language:
+# Affect R block's label or caption head of figures and tables
+  label:
+    fig: "Fig. "
+    tab: "Tab. "
+  ui:
+    edit: "Edit on GitHub"
+    chapter_name: ["Chapter ", ": "]
