@@ -1,7 +1,7 @@
 ---
 title: "math"
 author: "Joey Yu Hsu"
-date: "2024-01-28"
+date: "2024-01-29"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [reference.bib, packages.bib]
@@ -22,3 +22,7 @@ colorlinks: true
 # index {.unnumbered }
 
 math on bookdown started on 2024/01/28
+
+[math]
+
+[partition]

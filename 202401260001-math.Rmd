@@ -1,0 +1,5 @@
+# math
+
+[partition]
+```{r, child='202401280000-partition.Rmd'}
+```

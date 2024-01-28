@@ -23,7 +23,7 @@
 <meta name="author" content="Joey Yu Hsu" />
 
 
-<meta name="date" content="2024-01-28" />
+<meta name="date" content="2024-01-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -77,6 +77,12 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>index</a></li>
+<li class="part"><span><b>I ordered by discipline</b></span></li>
+<li class="chapter" data-level="1" data-path="math.html"><a href="math.html"><i class="fa fa-check"></i><b>1</b> math</a></li>
+<li class="chapter" data-level="" data-path="partition.html"><a href="partition.html"><i class="fa fa-check"></i>partition</a></li>
+<li class="part"><span><b>II ordered by date</b></span></li>
+<li class="chapter" data-level="" data-path="partition-1.html"><a href="partition-1.html"><i class="fa fa-check"></i>partition</a></li>
+<li class="chapter" data-level="" data-path="section.html"><a href="section.html"><i class="fa fa-check"></i>202401281000</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>references</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -183,6 +189,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

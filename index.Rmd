@@ -22,3 +22,7 @@ colorlinks: true
 # index {.unnumbered }
 
 math on bookdown started on 2024/01/28
+
+[math]
+
+[partition]
