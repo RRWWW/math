@@ -30,7 +30,7 @@ clean: #[packages.bib, bookdown.bbl]
 output_dir: "_book"
 
 # you may want to override the order in which files are merged by including the field
-rmd_files: ["index.Rmd", "99999999-reference.Rmd"]
+# rmd_files: ["index.Rmd", "209912312359-reference.Rmd"]
 
 language:
 # Affect R block's label or caption head of figures and tables
