@@ -65,6 +65,29 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \usepackage{booktabs}
 % \usepackage{fontspec} %這個可能原本文檔就已經有了，放入時候check一下
 % \usepackage{CJKutf8}
@@ -122,8 +145,6 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage[]{natbib}
-\bibliographystyle{plainnat}
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -139,7 +160,7 @@
 
 \title{math}
 \author{Joey Yu Hsu}
-\date{2024-01-28}
+\date{2024-01-29}
 
 \begin{document}
 \maketitle
@@ -155,6 +176,136 @@
 
 math on bookdown started on 2024/01/28
 
-  \bibliography{reference.bib,packages.bib}
+\hypertarget{part-ordered-by-discipline}{%
+\part{ordered by discipline}\label{part-ordered-by-discipline}}
 
+{[}math{]}
+
+\hypertarget{test-cross-link}{%
+\chapter{test cross-link}\label{test-cross-link}}
+
+\ref{nice-label}
+
+\protect\hyperlink{partition}{link to partition}
+
+\protect\hyperlink{partition}{partition} {[}\#partition{]} (\ref{partition}) @ref(\#partition)
+
+\protect\hyperlink{equivalence-class}{equivalence class} {[}\#equivalence class{]} (@ref(equivalence class)) @ref(\#equivalence class)
+
+{[}equivalence-class{]} {[}\#equivalence-class{]} (\ref{equivalence-class}) @ref(\#equivalence-class)
+
+{[}equivalence-class.html{]} {[}equivalence-class.html\#equivalence-class{]} (@ref(equivalence-class.html)) @ref(equivalence-class.html\#equivalence-class)
+
+\protect\hyperlink{equivalence-relation}{equivalence relation} {[}\#equivalence relation{]} (@ref(equivalence relation)) @ref(\#equivalence relation)
+
+{[}equivalence-relation{]} {[}\#equivalence-relation{]} (\ref{equivalence-relation}) @ref(\#equivalence-relation)
+
+{[}equivalence-relation.html{]} {[}equivalence-relation.html\#equivalence-relation{]} (@ref(equivalence-relation.html)) @ref(equivalence-relation.html\#equivalence-relation)
+
+noun\footnote{This is a footnote.}
+
+\url{https://stackoverflow.com/questions/48965247/use-csl-file-for-pdf-output-in-bookdown/49145699\#49145699}
+
+citation 1\textsuperscript{\protect\hyperlink{ref-noauthor_bookdown_2019}{1}} citation 2\textsuperscript{\protect\hyperlink{ref-noauthor_bookdown_2019}{1}}
+
+citation 3\textsuperscript{\protect\hyperlink{ref-ccjou2009}{2}} citation 4\textsuperscript{\protect\hyperlink{ref-ccjou2009}{2}}
+
+\hypertarget{nice-label}{%
+\chapter*{mathematics}\label{nice-label}}
+\addcontentsline{toc}{chapter}{mathematics}
+
+\protect\hyperlink{equivalence-relation}{equivalence relation} \textsuperscript{\ref{equivalence-relation}}
+
+\protect\hyperlink{equivalence-class}{equivalence class} \textsubscript{\ref{equivalence-class}}
+
+\protect\hyperlink{partition}{partition} \ref{partition}
+
+\hypertarget{part-ordered-by-date}{%
+\part{ordered by date}\label{part-ordered-by-date}}
+
+\hypertarget{ordered-by-date}{%
+\chapter{ordered by date}\label{ordered-by-date}}
+
+\hypertarget{partition}{%
+\chapter*{partition}\label{partition}}
+\addcontentsline{toc}{chapter}{partition}
+
+\begin{align*}
+ & \left\{ A_{i}\middle|i\in I\right\} \text{ is a partition of a set }A\\
+\Leftrightarrow & \begin{cases}
+\forall i\in I\left(A_{i}\ne\emptyset\right)\\
+A=\bigcup\limits _{i\in I}A_{i}\\
+\forall i,j\in I\left(i\ne j\Rightarrow A_{i}\cap A_{j}=\emptyset\right)
+\end{cases}
+\end{align*}
+
+\url{https://proofwiki.org/wiki/Definition:Set_Partition}
+
+\hypertarget{section}{%
+\chapter*{202401281000}\label{section}}
+\addcontentsline{toc}{chapter}{202401281000}
+
+\hypertarget{equivalence-class}{%
+\chapter*{equivalence class}\label{equivalence-class}}
+\addcontentsline{toc}{chapter}{equivalence class}
+
+\begin{align*}
+ & C\text{ is an equivalence class of }a\text{ on }A\\
+\Leftrightarrow & \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation over }A\times A=A^{2}
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Leftrightarrow & \left[a\right]=\left[a\right]_{\sim}=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation on }A
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
+\end{align*}
+
+\hypertarget{equivalence-relation}{%
+\chapter*{equivalence relation}\label{equivalence-relation}}
+\addcontentsline{toc}{chapter}{equivalence relation}
+
+\begin{CJK}{UTF8}{bsmi}等價關係 equivalence relation \label{def:equivalence-relation}
+\end{CJK}
+\begin{CJK}{UTF8}{bsmi}
+\begin{align*}
+ & R\text{ is an equivalence relation over }A\times B\\
+\Leftrightarrow & \begin{cases}
+R=\sim=\left\{ \left\langle x,y\right\rangle \middle|x\sim y\right\} \subseteq A\times B & \left(\text{e}\right)\text{equivalence 等價}\\
+\vdots & \vdots
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \left(R\right)\text{relation}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRx\right) & \left(r\right)\text{reflexive}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRy\Rightarrow yRx\right) & \left(s\right)\text{symmetric}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\begin{cases}
+xRy\\
+yRz
+\end{cases}\Rightarrow xRz\right) & \left(t\right)\text{transitive}
+\end{cases}\Leftrightarrow\begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \text{關係}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle x,x\right\rangle \in R\right) & \text{自反}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle y,x\right\rangle \in R\right) & \text{對稱}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\left\langle x,z\right\rangle \in R\right) & \text{遞移}
+\end{cases}
+\end{align*}
+\end{CJK}
+\begin{CJK}{UTF8}{bsmi}
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_bookdown_2019}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{\href{https://community.rstudio.com/t/bookdown-books-on-the-web-downloading-and-converting-to-pdf/30268}{Bookdown books on the web: Downloading and converting to pdf - {R} {Markdown}}. \emph{Posit Community} (2019).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ccjou2009}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{ccjou. \href{https://ccjou.wordpress.com/2009/10/21/\%e4\%ba\%8c\%e6\%ac\%a1\%e5\%9e\%8b\%e8\%88\%87\%e6\%ad\%a3\%e5\%ae\%9a\%e7\%9f\%a9\%e9\%99\%a3/}{二次型與正定矩陣}. (2009).}
+
+\end{CSLReferences}
+\end{CJK}
 \end{document}

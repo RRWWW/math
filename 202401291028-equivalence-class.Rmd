@@ -1,0 +1,18 @@
+# equivalence class {-}
+
+\begin{align*}
+ & C\text{ is an equivalence class of }a\text{ on }A\\
+\Leftrightarrow & \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation over }A\times A=A^{2}
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Leftrightarrow & \left[a\right]=\left[a\right]_{\sim}=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation on }A
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
+\end{align*}

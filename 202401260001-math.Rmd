@@ -1,5 +1,7 @@
-# math
+# mathematics {-#nice-label}
 
-[partition]
-```{r, child='202401280000-partition.Rmd'}
-```
+[equivalence relation] ^\@ref(equivalence-relation)^
+
+[equivalence class] ~\@ref(equivalence-class)~
+
+[partition] \@ref(partition)

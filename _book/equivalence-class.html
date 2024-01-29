@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2: math | math</title>
-  <meta name="description" content="Chapter 2: math | math" />
-  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
+  <title>equivalence class | math</title>
+  <meta name="description" content="equivalence class | math" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2: math | math" />
+  <meta property="og:title" content="equivalence class | math" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="https://github.com/RRWWW/bookdown-workspace/" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2: math | math" />
+  <meta name="twitter:title" content="equivalence class | math" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="partition.html"/>
-<link rel="next" href="partition-1.html"/>
+<link rel="prev" href="section.html"/>
+<link rel="next" href="equivalence-relation.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -59,6 +59,28 @@
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -78,14 +100,16 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>index</a></li>
 <li class="part"><span><b>I ordered by discipline</b></span></li>
-<li class="chapter" data-level="1" data-path="math.html"><a href="math.html"><i class="fa fa-check"></i><b>1</b> math</a></li>
-<li class="chapter" data-level="" data-path="partition.html"><a href="partition.html"><i class="fa fa-check"></i>partition</a></li>
-<li class="chapter" data-level="2" data-path="math-1.html"><a href="math-1.html"><i class="fa fa-check"></i><b>2</b> math</a></li>
-<li class="chapter" data-level="" data-path="partition-1.html"><a href="partition-1.html"><i class="fa fa-check"></i>partition</a></li>
+<li class="chapter" data-level="1" data-path="test-cross-link.html"><a href="test-cross-link.html"><i class="fa fa-check"></i><b>1</b> test cross-link</a></li>
+<li class="chapter" data-level="" data-path="nice-label.html"><a href="nice-label.html"><i class="fa fa-check"></i>mathematics</a></li>
 <li class="part"><span><b>II ordered by date</b></span></li>
-<li class="chapter" data-level="" data-path="partition-2.html"><a href="partition-2.html"><i class="fa fa-check"></i>partition</a></li>
+<li class="chapter" data-level="2" data-path="ordered-by-date.html"><a href="ordered-by-date.html"><i class="fa fa-check"></i><b>2</b> ordered by date</a></li>
+<li class="chapter" data-level="" data-path="partition.html"><a href="partition.html"><i class="fa fa-check"></i>partition</a></li>
 <li class="chapter" data-level="" data-path="section.html"><a href="section.html"><i class="fa fa-check"></i>202401281000</a></li>
+<li class="chapter" data-level="" data-path="equivalence-class.html"><a href="equivalence-class.html"><i class="fa fa-check"></i>equivalence class</a></li>
+<li class="chapter" data-level="" data-path="equivalence-relation.html"><a href="equivalence-relation.html"><i class="fa fa-check"></i>equivalence relation</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>references</a></li>
+<li class="chapter" data-level="" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i>references</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -106,8 +130,25 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="math-1" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2: </span> math<a href="math-1.html#math-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="equivalence-class" class="section level1 unnumbered hasAnchor">
+<h1>equivalence class<a href="equivalence-class.html#equivalence-class" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><span class="math display">\[\begin{align*}
+&amp; C\text{ is an equivalence class of }a\text{ on }A\\
+\Leftrightarrow &amp; \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation over }A\times A=A^{2}
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Leftrightarrow &amp; \left[a\right]=\left[a\right]_{\sim}=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation on }A
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Rightarrow &amp; \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
+\end{align*}\]</span></p>
+
 </div>
 <div id="disqus_thread"></div>
 <script>
@@ -133,8 +174,8 @@
           </div>
         </div>
       </div>
-<a href="partition.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="partition-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="section.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="equivalence-relation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -160,20 +201,20 @@ gitbook.start({
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
-"theme": "white",
+"theme": "night",
 "family": "sans",
 "size": 2
 },
 "edit": {
-"link": "https://github.com/RRWWW/math/edit/main/202401260001-math.Rmd",
+"link": "https://github.com/RRWWW/math/edit/main/202401291028-equivalence-class.Rmd",
 "text": "Edit on GitHub"
 },
 "history": {
-"link": "https://github.com/RRWWW/math/commits/main/202401260001-math.Rmd",
+"link": "https://github.com/RRWWW/math/commits/main/202401291028-equivalence-class.Rmd",
 "text": null
 },
 "view": {
-"link": "https://github.com/RRWWW/math/blob/main/202401260001-math.Rmd",
+"link": "https://github.com/RRWWW/math/blob/main/202401291028-equivalence-class.Rmd",
 "text": null
 },
 "download": [["math.pdf", "PDF"], ["math.docx", "Word DOCX"]],
