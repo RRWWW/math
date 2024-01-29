@@ -1,5 +1,7 @@
+<!--
 `r if (knitr::is_html_output()) '
 # references {-}
 '`
+-->
 
 # references {-}

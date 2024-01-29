@@ -1,0 +1,61 @@
+# Python
+
+https://bookdown.org/yihui/rmarkdown/language-engines.html
+
+```{r}
+names(knitr::knit_engines$get())
+```
+https://rstudio.github.io/reticulate/articles/python_packages.html
+
+```{python}
+x = 'hello, python world!'
+print(x.split(' '))
+```
+
+```{r}
+library(reticulate)
+virtualenv_python()
+```
+
+```{r}
+library(reticulate)
+conda_list()
+```
+
+https://rstudio.github.io/reticulate/reference/install_python.html
+
+```{r}
+library(reticulate)
+# version <- "3.9.12"
+# install_python(version)
+
+# create a new environment 
+# virtualenv_create("r-reticulate", version = version)
+
+use_virtualenv("r-reticulate")
+
+# install MatPlotLib
+# virtualenv_install("r-reticulate", "matplotlib")
+
+# import MatPlotLib (it will be automatically discovered in "r-reticulate")
+matplotlib <- import("matplotlib")
+```
+
+```{r}
+library(reticulate)
+virtualenv_list()
+```
+
+```{r}
+library(reticulate)
+use_virtualenv("r-reticulate")
+matplotlib <- import("matplotlib")
+matplotlib$use("Agg", force = TRUE)
+```
+
+```{python}
+import matplotlib.pyplot as plt
+plt.plot([0, 2, 1, 4])
+plt.show()
+```
+

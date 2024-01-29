@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>202401281000 | math</title>
-  <meta name="description" content="202401281000 | math" />
+  <title>Chapter 5: Python | math</title>
+  <meta name="description" content="Chapter 5: Python | math" />
   <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="202401281000 | math" />
+  <meta property="og:title" content="Chapter 5: Python | math" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="https://github.com/RRWWW/bookdown-workspace/" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="202401281000 | math" />
+  <meta name="twitter:title" content="Chapter 5: Python | math" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="partition-1.html"/>
-<link rel="next" href="equivalence-class-1.html"/>
+<link rel="prev" href="equivalence-relation-1.html"/>
+<link rel="next" href="references.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -198,9 +198,87 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="section" class="section level1 unnumbered hasAnchor">
-<h1>202401281000<a href="section.html#section" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="python" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5: </span> Python<a href="python.html#python" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><a href="https://bookdown.org/yihui/rmarkdown/language-engines.html" class="uri">https://bookdown.org/yihui/rmarkdown/language-engines.html</a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="python.html#cb1-1" tabindex="-1"></a><span class="fu">names</span>(knitr<span class="sc">::</span>knit_engines<span class="sc">$</span><span class="fu">get</span>())</span></code></pre></div>
+<pre><code>##  [1] &quot;awk&quot;         &quot;bash&quot;        &quot;coffee&quot;      &quot;gawk&quot;        &quot;groovy&quot;     
+##  [6] &quot;haskell&quot;     &quot;lein&quot;        &quot;mysql&quot;       &quot;node&quot;        &quot;octave&quot;     
+## [11] &quot;perl&quot;        &quot;php&quot;         &quot;psql&quot;        &quot;Rscript&quot;     &quot;ruby&quot;       
+## [16] &quot;sas&quot;         &quot;scala&quot;       &quot;sed&quot;         &quot;sh&quot;          &quot;stata&quot;      
+## [21] &quot;zsh&quot;         &quot;asis&quot;        &quot;asy&quot;         &quot;block&quot;       &quot;block2&quot;     
+## [26] &quot;bslib&quot;       &quot;c&quot;           &quot;cat&quot;         &quot;cc&quot;          &quot;comment&quot;    
+## [31] &quot;css&quot;         &quot;ditaa&quot;       &quot;dot&quot;         &quot;embed&quot;       &quot;eviews&quot;     
+## [36] &quot;exec&quot;        &quot;fortran&quot;     &quot;fortran95&quot;   &quot;go&quot;          &quot;highlight&quot;  
+## [41] &quot;js&quot;          &quot;julia&quot;       &quot;python&quot;      &quot;R&quot;           &quot;Rcpp&quot;       
+## [46] &quot;sass&quot;        &quot;scss&quot;        &quot;sql&quot;         &quot;stan&quot;        &quot;targets&quot;    
+## [51] &quot;tikz&quot;        &quot;verbatim&quot;    &quot;theorem&quot;     &quot;lemma&quot;       &quot;corollary&quot;  
+## [56] &quot;proposition&quot; &quot;conjecture&quot;  &quot;definition&quot;  &quot;example&quot;     &quot;exercise&quot;   
+## [61] &quot;hypothesis&quot;  &quot;proof&quot;       &quot;remark&quot;      &quot;solution&quot;</code></pre>
+<p><a href="https://rstudio.github.io/reticulate/articles/python_packages.html" class="uri">https://rstudio.github.io/reticulate/articles/python_packages.html</a></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="python.html#cb3-1" tabindex="-1"></a>x <span class="op">=</span> <span class="st">&#39;hello, python world!&#39;</span></span>
+<span id="cb3-2"><a href="python.html#cb3-2" tabindex="-1"></a><span class="bu">print</span>(x.split(<span class="st">&#39; &#39;</span>))</span></code></pre></div>
+<pre><code>## [&#39;hello,&#39;, &#39;python&#39;, &#39;world!&#39;]</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="python.html#cb5-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span></code></pre></div>
+<pre><code>## Warning: package &#39;reticulate&#39; was built under R version 4.3.2</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="python.html#cb7-1" tabindex="-1"></a><span class="fu">virtualenv_python</span>()</span></code></pre></div>
+<pre><code>## [1] &quot;C:/Users/RW/Documents/.virtualenvs/r-reticulate/Scripts/python.exe&quot;</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="python.html#cb9-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb9-2"><a href="python.html#cb9-2" tabindex="-1"></a><span class="fu">conda_list</span>()</span></code></pre></div>
+<pre><code>##                        name
+## 1                      base
+## 2                        mm
+## 3                       mmr
+## 4                     monai
+## 5                   pytorch
+## 6  pytorch_1.12.1_cuda_11.6
+## 7              r-reticulate
+## 8                   sandbox
+## 9           sandbox_py_3.10
+## 10                      v51
+##                                                                 python
+## 1                                  C:\\Users\\RW\\anaconda3/python.exe
+## 2                        C:\\Users\\RW\\anaconda3\\envs\\mm/python.exe
+## 3                       C:\\Users\\RW\\anaconda3\\envs\\mmr/python.exe
+## 4                     C:\\Users\\RW\\anaconda3\\envs\\monai/python.exe
+## 5                   C:\\Users\\RW\\anaconda3\\envs\\pytorch/python.exe
+## 6  C:\\Users\\RW\\anaconda3\\envs\\pytorch_1.12.1_cuda_11.6/python.exe
+## 7              C:\\Users\\RW\\anaconda3\\envs\\r-reticulate/python.exe
+## 8                   C:\\Users\\RW\\anaconda3\\envs\\sandbox/python.exe
+## 9           C:\\Users\\RW\\anaconda3\\envs\\sandbox_py_3.10/python.exe
+## 10                      C:\\Users\\RW\\anaconda3\\envs\\v51/python.exe</code></pre>
+<p><a href="https://rstudio.github.io/reticulate/reference/install_python.html" class="uri">https://rstudio.github.io/reticulate/reference/install_python.html</a></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="python.html#cb11-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb11-2"><a href="python.html#cb11-2" tabindex="-1"></a><span class="co"># version &lt;- &quot;3.9.12&quot;</span></span>
+<span id="cb11-3"><a href="python.html#cb11-3" tabindex="-1"></a><span class="co"># install_python(version)</span></span>
+<span id="cb11-4"><a href="python.html#cb11-4" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="python.html#cb11-5" tabindex="-1"></a><span class="co"># create a new environment </span></span>
+<span id="cb11-6"><a href="python.html#cb11-6" tabindex="-1"></a><span class="co"># virtualenv_create(&quot;r-reticulate&quot;, version = version)</span></span>
+<span id="cb11-7"><a href="python.html#cb11-7" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="python.html#cb11-8" tabindex="-1"></a><span class="fu">use_virtualenv</span>(<span class="st">&quot;r-reticulate&quot;</span>)</span>
+<span id="cb11-9"><a href="python.html#cb11-9" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="python.html#cb11-10" tabindex="-1"></a><span class="co"># install MatPlotLib</span></span>
+<span id="cb11-11"><a href="python.html#cb11-11" tabindex="-1"></a><span class="co"># virtualenv_install(&quot;r-reticulate&quot;, &quot;matplotlib&quot;)</span></span>
+<span id="cb11-12"><a href="python.html#cb11-12" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="python.html#cb11-13" tabindex="-1"></a><span class="co"># import MatPlotLib (it will be automatically discovered in &quot;r-reticulate&quot;)</span></span>
+<span id="cb11-14"><a href="python.html#cb11-14" tabindex="-1"></a>matplotlib <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">&quot;matplotlib&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="python.html#cb12-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb12-2"><a href="python.html#cb12-2" tabindex="-1"></a><span class="fu">virtualenv_list</span>()</span></code></pre></div>
+<pre><code>## [1] &quot;r-reticulate&quot;</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="python.html#cb14-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb14-2"><a href="python.html#cb14-2" tabindex="-1"></a><span class="fu">use_virtualenv</span>(<span class="st">&quot;r-reticulate&quot;</span>)</span>
+<span id="cb14-3"><a href="python.html#cb14-3" tabindex="-1"></a>matplotlib <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">&quot;matplotlib&quot;</span>)</span>
+<span id="cb14-4"><a href="python.html#cb14-4" tabindex="-1"></a>matplotlib<span class="sc">$</span><span class="fu">use</span>(<span class="st">&quot;Agg&quot;</span>, <span class="at">force =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="python.html#cb15-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb15-2"><a href="python.html#cb15-2" tabindex="-1"></a>plt.plot([<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">4</span>])</span>
+<span id="cb15-3"><a href="python.html#cb15-3" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<p><img src="202401292317-Python_files/figure-html/unnamed-chunk-8-1.png" width="614" /></p>
 
+<!--
+
+# references {-}
+
+-->
 </div>
 <div id="disqus_thread"></div>
 <script>
@@ -226,8 +304,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-<a href="partition-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="equivalence-class-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="equivalence-relation-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -258,15 +336,15 @@ gitbook.start({
 "size": 1
 },
 "edit": {
-"link": "https://github.com/RRWWW/math/edit/main/202401281000.Rmd",
+"link": "https://github.com/RRWWW/math/edit/main/202401292317-Python.Rmd",
 "text": "Edit on GitHub"
 },
 "history": {
-"link": "https://github.com/RRWWW/math/commits/main/202401281000.Rmd",
+"link": "https://github.com/RRWWW/math/commits/main/202401292317-Python.Rmd",
 "text": null
 },
 "view": {
-"link": "https://github.com/RRWWW/math/blob/main/202401281000.Rmd",
+"link": "https://github.com/RRWWW/math/blob/main/202401292317-Python.Rmd",
 "text": null
 },
 "download": [["math.pdf", "PDF"], ["math.docx", "Word DOCX"]],

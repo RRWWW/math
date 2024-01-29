@@ -1,7 +1,13 @@
-# mathematics {-#nice-label}
+# math {#nice-label}
 
-[equivalence relation] ^\@ref(equivalence-relation)^
+[equivalence relation] \@ref(equivalence-relation)
 
-[equivalence class] ~\@ref(equivalence-class)~
+[equivalence class] \@ref(equivalence-class)
 
 [partition] \@ref(partition)
+
+```{r, child='202401291233-equivalence-relation.Rmd'}
+```
+
+```{r, child='202401291028-equivalence-class.Rmd'}
+```

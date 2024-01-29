@@ -23,3 +23,5 @@ geometry: [b5paper, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.0cm, rmargin=1.0cm]
 # index {.unnumbered }
 
 math on bookdown started on 2024/01/28
+
+script^superscript^~subscript~

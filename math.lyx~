@@ -78,7 +78,7 @@
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
- & \left\{ A_{i}\right\} _{i\in I}=\left\{ A_{i}\middle|i\in I\right\} \text{ is a partition of a set }A\\
+ & \left\{ A_{i}\middle|i\in I\right\} \text{ is a partition of a set }A\\
 \Leftrightarrow & \begin{cases}
 \forall i\in I\left(A_{i}\ne\emptyset\right)\\
 A=\bigcup\limits _{i\in I}A_{i}\\

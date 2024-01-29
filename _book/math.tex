@@ -38,6 +38,46 @@
 \makeatother
 \usepackage{xcolor}
 \usepackage[b5paper,tmargin=1.5cm,bmargin=1.5cm,lmargin=1.0cm,rmargin=1.0cm]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -160,7 +200,7 @@
 
 \title{math}
 \author{Joey Yu Hsu}
-\date{2024-01-29}
+\date{2024-01-30}
 
 \begin{document}
 \maketitle
@@ -176,10 +216,12 @@
 
 math on bookdown started on 2024/01/28
 
+script\textsuperscript{superscript}\textsubscript{subscript}
+
 \hypertarget{part-ordered-by-discipline}{%
 \part{ordered by discipline}\label{part-ordered-by-discipline}}
 
-{[}math{]}
+\protect\hyperlink{nice-label}{math}
 
 \hypertarget{test-cross-link}{%
 \chapter{test cross-link}\label{test-cross-link}}
@@ -211,60 +253,13 @@ citation 1\textsuperscript{\protect\hyperlink{ref-noauthor_bookdown_2019}{1}} ci
 citation 3\textsuperscript{\protect\hyperlink{ref-ccjou2009}{2}} citation 4\textsuperscript{\protect\hyperlink{ref-ccjou2009}{2}}
 
 \hypertarget{nice-label}{%
-\chapter*{mathematics}\label{nice-label}}
-\addcontentsline{toc}{chapter}{mathematics}
+\chapter{math}\label{nice-label}}
 
-\protect\hyperlink{equivalence-relation}{equivalence relation} \textsuperscript{\ref{equivalence-relation}}
+\protect\hyperlink{equivalence-relation}{equivalence relation} \ref{equivalence-relation}
 
-\protect\hyperlink{equivalence-class}{equivalence class} \textsubscript{\ref{equivalence-class}}
+\protect\hyperlink{equivalence-class}{equivalence class} \ref{equivalence-class}
 
 \protect\hyperlink{partition}{partition} \ref{partition}
-
-\hypertarget{part-ordered-by-date}{%
-\part{ordered by date}\label{part-ordered-by-date}}
-
-\hypertarget{ordered-by-date}{%
-\chapter{ordered by date}\label{ordered-by-date}}
-
-\hypertarget{partition}{%
-\chapter*{partition}\label{partition}}
-\addcontentsline{toc}{chapter}{partition}
-
-\begin{align*}
- & \left\{ A_{i}\middle|i\in I\right\} \text{ is a partition of a set }A\\
-\Leftrightarrow & \begin{cases}
-\forall i\in I\left(A_{i}\ne\emptyset\right)\\
-A=\bigcup\limits _{i\in I}A_{i}\\
-\forall i,j\in I\left(i\ne j\Rightarrow A_{i}\cap A_{j}=\emptyset\right)
-\end{cases}
-\end{align*}
-
-\url{https://proofwiki.org/wiki/Definition:Set_Partition}
-
-\hypertarget{section}{%
-\chapter*{202401281000}\label{section}}
-\addcontentsline{toc}{chapter}{202401281000}
-
-\hypertarget{equivalence-class}{%
-\chapter*{equivalence class}\label{equivalence-class}}
-\addcontentsline{toc}{chapter}{equivalence class}
-
-\begin{align*}
- & C\text{ is an equivalence class of }a\text{ on }A\\
-\Leftrightarrow & \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
-a\in A\\
-x\in A\\
-x\sim a\\
-\sim\text{ is an equivalence relation over }A\times A=A^{2}
-\end{cases}\right\} \subseteq A\ne\emptyset\\
-\Leftrightarrow & \left[a\right]=\left[a\right]_{\sim}=\left\{ x\middle|\begin{cases}
-a\in A\\
-x\in A\\
-x\sim a\\
-\sim\text{ is an equivalence relation on }A
-\end{cases}\right\} \subseteq A\ne\emptyset\\
-\Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
-\end{align*}
 
 \hypertarget{equivalence-relation}{%
 \chapter*{equivalence relation}\label{equivalence-relation}}
@@ -295,6 +290,268 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \end{cases}
 \end{align*}
 \end{CJK}
+
+\hypertarget{equivalence-class}{%
+\chapter*{equivalence class}\label{equivalence-class}}
+\addcontentsline{toc}{chapter}{equivalence class}
+
+\begin{align*}
+ & C\text{ is an equivalence class of }a\text{ on }A\\
+\Leftrightarrow & \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation over }A\times A=A^{2}
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Leftrightarrow & \left[a\right]=\left[a\right]_{\sim}=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation on }A
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
+\end{align*}
+
+\hypertarget{physics}{%
+\chapter{physics}\label{physics}}
+
+\hypertarget{partition}{%
+\chapter*{partition}\label{partition}}
+\addcontentsline{toc}{chapter}{partition}
+
+\begin{align*}
+ & \left\{ A_{i}\right\} _{i\in I}=\left\{ A_{i}\middle|i\in I\right\} \text{ is a partition of a set }A\\
+\Leftrightarrow & \begin{cases}
+\forall i\in I\left(A_{i}\ne\emptyset\right)\\
+A=\bigcup\limits _{i\in I}A_{i}\\
+\forall i,j\in I\left(i\ne j\Rightarrow A_{i}\cap A_{j}=\emptyset\right)
+\end{cases}
+\end{align*}
+
+\url{https://proofwiki.org/wiki/Definition:Set_Partition}
+
+\hypertarget{part-ordered-by-date}{%
+\part{ordered by date}\label{part-ordered-by-date}}
+
+\hypertarget{ordered-by-date}{%
+\chapter{ordered by date}\label{ordered-by-date}}
+
+\hypertarget{partition-1}{%
+\chapter*{partition}\label{partition-1}}
+\addcontentsline{toc}{chapter}{partition}
+
+\begin{align*}
+ & \left\{ A_{i}\right\} _{i\in I}=\left\{ A_{i}\middle|i\in I\right\} \text{ is a partition of a set }A\\
+\Leftrightarrow & \begin{cases}
+\forall i\in I\left(A_{i}\ne\emptyset\right)\\
+A=\bigcup\limits _{i\in I}A_{i}\\
+\forall i,j\in I\left(i\ne j\Rightarrow A_{i}\cap A_{j}=\emptyset\right)
+\end{cases}
+\end{align*}
+
+\url{https://proofwiki.org/wiki/Definition:Set_Partition}
+
+\hypertarget{section}{%
+\chapter*{202401281000}\label{section}}
+\addcontentsline{toc}{chapter}{202401281000}
+
+\hypertarget{equivalence-class-1}{%
+\chapter*{equivalence class}\label{equivalence-class-1}}
+\addcontentsline{toc}{chapter}{equivalence class}
+
+\begin{align*}
+ & C\text{ is an equivalence class of }a\text{ on }A\\
+\Leftrightarrow & \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation over }A\times A=A^{2}
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Leftrightarrow & \left[a\right]=\left[a\right]_{\sim}=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation on }A
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
+\end{align*}
+
+\hypertarget{equivalence-relation-1}{%
+\chapter*{equivalence relation}\label{equivalence-relation-1}}
+\addcontentsline{toc}{chapter}{equivalence relation}
+
+\begin{CJK}{UTF8}{bsmi}等價關係 equivalence relation \label{def:equivalence-relation}
+\end{CJK}
+\begin{CJK}{UTF8}{bsmi}
+\begin{align*}
+ & R\text{ is an equivalence relation over }A\times B\\
+\Leftrightarrow & \begin{cases}
+R=\sim=\left\{ \left\langle x,y\right\rangle \middle|x\sim y\right\} \subseteq A\times B & \left(\text{e}\right)\text{equivalence 等價}\\
+\vdots & \vdots
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \left(R\right)\text{relation}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRx\right) & \left(r\right)\text{reflexive}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRy\Rightarrow yRx\right) & \left(s\right)\text{symmetric}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\begin{cases}
+xRy\\
+yRz
+\end{cases}\Rightarrow xRz\right) & \left(t\right)\text{transitive}
+\end{cases}\Leftrightarrow\begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \text{關係}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle x,x\right\rangle \in R\right) & \text{自反}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle y,x\right\rangle \in R\right) & \text{對稱}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\left\langle x,z\right\rangle \in R\right) & \text{遞移}
+\end{cases}
+\end{align*}
+\end{CJK}
+
+\hypertarget{python}{%
+\chapter{Python}\label{python}}
+
+\url{https://bookdown.org/yihui/rmarkdown/language-engines.html}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{names}\NormalTok{(knitr}\SpecialCharTok{::}\NormalTok{knit\_engines}\SpecialCharTok{$}\FunctionTok{get}\NormalTok{())}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] "awk"         "bash"        "coffee"      "gawk"        "groovy"     
+##  [6] "haskell"     "lein"        "mysql"       "node"        "octave"     
+## [11] "perl"        "php"         "psql"        "Rscript"     "ruby"       
+## [16] "sas"         "scala"       "sed"         "sh"          "stata"      
+## [21] "zsh"         "asis"        "asy"         "block"       "block2"     
+## [26] "bslib"       "c"           "cat"         "cc"          "comment"    
+## [31] "css"         "ditaa"       "dot"         "embed"       "eviews"     
+## [36] "exec"        "fortran"     "fortran95"   "go"          "highlight"  
+## [41] "js"          "julia"       "python"      "R"           "Rcpp"       
+## [46] "sass"        "scss"        "sql"         "stan"        "targets"    
+## [51] "tikz"        "verbatim"    "theorem"     "lemma"       "corollary"  
+## [56] "proposition" "conjecture"  "definition"  "example"     "exercise"   
+## [61] "hypothesis"  "proof"       "remark"      "solution"
+\end{verbatim}
+
+\url{https://rstudio.github.io/reticulate/articles/python_packages.html}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OperatorTok{=} \StringTok{\textquotesingle{}hello, python world!\textquotesingle{}}
+\BuiltInTok{print}\NormalTok{(x.split(}\StringTok{\textquotesingle{} \textquotesingle{}}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## ['hello,', 'python', 'world!']
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(reticulate)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'reticulate' was built under R version 4.3.2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{virtualenv\_python}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "C:/Users/RW/Documents/.virtualenvs/r-reticulate/Scripts/python.exe"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(reticulate)}
+\FunctionTok{conda\_list}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                        name
+## 1                      base
+## 2                        mm
+## 3                       mmr
+## 4                     monai
+## 5                   pytorch
+## 6  pytorch_1.12.1_cuda_11.6
+## 7              r-reticulate
+## 8                   sandbox
+## 9           sandbox_py_3.10
+## 10                      v51
+##                                                                 python
+## 1                                  C:\\Users\\RW\\anaconda3/python.exe
+## 2                        C:\\Users\\RW\\anaconda3\\envs\\mm/python.exe
+## 3                       C:\\Users\\RW\\anaconda3\\envs\\mmr/python.exe
+## 4                     C:\\Users\\RW\\anaconda3\\envs\\monai/python.exe
+## 5                   C:\\Users\\RW\\anaconda3\\envs\\pytorch/python.exe
+## 6  C:\\Users\\RW\\anaconda3\\envs\\pytorch_1.12.1_cuda_11.6/python.exe
+## 7              C:\\Users\\RW\\anaconda3\\envs\\r-reticulate/python.exe
+## 8                   C:\\Users\\RW\\anaconda3\\envs\\sandbox/python.exe
+## 9           C:\\Users\\RW\\anaconda3\\envs\\sandbox_py_3.10/python.exe
+## 10                      C:\\Users\\RW\\anaconda3\\envs\\v51/python.exe
+\end{verbatim}
+
+\url{https://rstudio.github.io/reticulate/reference/install_python.html}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(reticulate)}
+\CommentTok{\# version \textless{}{-} "3.9.12"}
+\CommentTok{\# install\_python(version)}
+
+\CommentTok{\# create a new environment }
+\CommentTok{\# virtualenv\_create("r{-}reticulate", version = version)}
+
+\FunctionTok{use\_virtualenv}\NormalTok{(}\StringTok{"r{-}reticulate"}\NormalTok{)}
+
+\CommentTok{\# install MatPlotLib}
+\CommentTok{\# virtualenv\_install("r{-}reticulate", "matplotlib")}
+
+\CommentTok{\# import MatPlotLib (it will be automatically discovered in "r{-}reticulate")}
+\NormalTok{matplotlib }\OtherTok{\textless{}{-}} \FunctionTok{import}\NormalTok{(}\StringTok{"matplotlib"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(reticulate)}
+\FunctionTok{virtualenv\_list}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "r-reticulate"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(reticulate)}
+\FunctionTok{use\_virtualenv}\NormalTok{(}\StringTok{"r{-}reticulate"}\NormalTok{)}
+\NormalTok{matplotlib }\OtherTok{\textless{}{-}} \FunctionTok{import}\NormalTok{(}\StringTok{"matplotlib"}\NormalTok{)}
+\NormalTok{matplotlib}\SpecialCharTok{$}\FunctionTok{use}\NormalTok{(}\StringTok{"Agg"}\NormalTok{, }\AttributeTok{force =} \ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+\NormalTok{plt.plot([}\DecValTok{0}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{4}\NormalTok{])}
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf}
+
+\hypertarget{references}{%
+\chapter*{references}\label{references}}
+\addcontentsline{toc}{chapter}{references}
 \begin{CJK}{UTF8}{bsmi}
 \hypertarget{refs}{}
 \begin{CSLReferences}{0}{0}

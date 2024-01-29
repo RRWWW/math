@@ -21,6 +21,8 @@ a+b
 $$
 
 
+\begingroup
+\fontfamily{ppl}\fontsize{1}{1}\selectfont
 \begin{align*}
  & R\text{ is an equivalence relation over }A\times B\\
 \Leftrightarrow & \begin{cases}
@@ -42,6 +44,7 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\left\langle x,z\right\rangle \in R\right) & \text{遞移}
 \end{cases}
 \end{align*}
+\endgroup
 
 \begin{CJK}{UTF8}{bsmi}等價關係 equivalence relation \label{def:equivalence-relation}
 \end{CJK}
