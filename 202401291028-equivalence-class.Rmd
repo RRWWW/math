@@ -16,3 +16,5 @@ x\sim a\\
 \end{cases}\right\} \subseteq A\ne\emptyset\\
 \Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
 \end{align*}
+
+where the definition of [equivalence relation] can be found in \@ref(equivalence-relation).

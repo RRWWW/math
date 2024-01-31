@@ -1,5 +1,10 @@
 test-cross-link
+link-and-reference
+footnote
+citation
+bookdown-environment-for-definition-theorem-proof
 nice-label
 physics
+plot
 ordered-by-date
 python

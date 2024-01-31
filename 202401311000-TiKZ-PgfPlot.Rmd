@@ -1,0 +1,41 @@
+# TiKZ/PgfPlot {-}
+
+```{r, echo=FALSE, engine='tikz', out.width='90%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='Brachistochrone Curve'}
+\begin{tikzpicture}[scale=1]
+  \def\a{1.5} % amplitude
+  \def\b{2}   % frequency
+  \draw[->] (-0.2,0) -- (4.2,0) node[right, font=\small] {$x$};
+  \draw[->] (0,-4) -- (0,0.5) node[above] {$y$};
+  \draw[domain=0:4,smooth,variable=\t,blue,thick] 
+    plot ({\a * (\b*\t - sin(deg(\b*\t)))},{-\a * (1 - cos(deg(\b*\t)))});
+  % \node[above] at (2, 0.5) {Brachistochrone Curve};
+  \node[above, font=\footnotesize] at (2, 1) {Brachistochrone Curve};
+  \node[above, font=\footnotesize] at (2, 0) {$\begin{aligned}
+& x=r(t-\sin t) \\
+& y=r(1-\cos t)
+\end{aligned}$};
+\end{tikzpicture}
+```
+
+```{r, echo=FALSE, engine='tikz', out.width='90%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='Brachistochrone Curve'}
+\begin{tikzpicture}[scale=1.5]
+  % Parameters for the cycloid
+  \def\r{1} % Radius of the generating circle
+  \def\a{0} % Start angle
+  \def\b{2*pi} % End angle
+
+  % Drawing the cycloid
+  \draw [domain=\a:\b, smooth, variable=\t, thick, blue] 
+    plot ({\r*(\t - sin(\t r))}, {-\r*(1 - cos(\t r))});
+
+  % Drawing the generating circle (optional)
+  %\draw [red, thick] (0,-\r) circle (\r);
+
+  % Axes
+  \draw [->] (-0.2,0) -- (7,0) node [right] {$x$};
+  \draw [->] (0,0.2) -- (0,-3) node [below] {$y$};
+
+  % Labels
+  \node [below right] at (7,0) {Brachistochrone curve (Cycloid)};
+\end{tikzpicture}
+```

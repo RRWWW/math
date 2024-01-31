@@ -19,10 +19,9 @@ bookdown::pdf_book:
     in_header: preamble.tex
   latex_engine: xelatex
   # latex_engine: pdflatex
-  # citation_package: default
+  citation_package: default
   # citation_package: natbib
   # citation_package: biblatex
-  citation_package: none
   # pandoc_args: ["--csl","csl/chicago-author-date.csl"]
   pandoc_args: ["--csl","csl/nature.csl"]
   keep_tex: yes

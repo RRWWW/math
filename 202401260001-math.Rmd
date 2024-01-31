@@ -11,3 +11,6 @@
 
 ```{r, child='202401291028-equivalence-class.Rmd'}
 ```
+
+```{r, child='202401280000-partition.Rmd'}
+```

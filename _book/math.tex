@@ -172,6 +172,8 @@
 % \pagestyle{empty}
 % \newcommand{\degre}{\ensuremath{^\circ}}
 
+\usepackage[all]{xy}
+
 % LaTeX Error: Too deeply nested
 % https://stackoverflow.com/questions/57945414/too-deeply-nested-at-just-fourth-nesting-level-using-pandoc-with-markdown
 \usepackage{enumitem}
@@ -200,8 +202,25 @@
 
 \title{math}
 \author{Joey Yu Hsu}
-\date{2024-01-30}
+\date{2024-01-31}
 
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{conjecture}{Conjecture}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[chapter]
+\theoremstyle{definition}
+\newtheorem{hypothesis}{Hypothesis}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -226,6 +245,9 @@ script\textsuperscript{superscript}\textsubscript{subscript}
 \hypertarget{test-cross-link}{%
 \chapter{test cross-link}\label{test-cross-link}}
 
+\hypertarget{link-and-reference}{%
+\section{link and reference}\label{link-and-reference}}
+
 \ref{nice-label}
 
 \protect\hyperlink{partition}{link to partition}
@@ -244,13 +266,43 @@ script\textsuperscript{superscript}\textsubscript{subscript}
 
 {[}equivalence-relation.html{]} {[}equivalence-relation.html\#equivalence-relation{]} (@ref(equivalence-relation.html)) @ref(equivalence-relation.html\#equivalence-relation)
 
+\hypertarget{footnote}{%
+\section{footnote}\label{footnote}}
+
 noun\footnote{This is a footnote.}
+
+\hypertarget{citation}{%
+\section{citation}\label{citation}}
 
 \url{https://stackoverflow.com/questions/48965247/use-csl-file-for-pdf-output-in-bookdown/49145699\#49145699}
 
 citation 1\textsuperscript{\protect\hyperlink{ref-noauthor_bookdown_2019}{1}} citation 2\textsuperscript{\protect\hyperlink{ref-noauthor_bookdown_2019}{1}}
 
 citation 3\textsuperscript{\protect\hyperlink{ref-ccjou2009}{2}} citation 4\textsuperscript{\protect\hyperlink{ref-ccjou2009}{2}}
+
+\hypertarget{bookdown-environment-for-definition-theorem-proof}{%
+\section{bookdown environment for definition, theorem, proof}\label{bookdown-environment-for-definition-theorem-proof}}
+
+\url{https://bookdown.org/yihui/rmarkdown/bookdown-markdown.html}
+
+\begin{theorem}[Theorem Name]
+\protect\hypertarget{thm:label}{}\label{thm:label}Here is my theorem.
+\end{theorem}
+
+\begin{proof}[Proof Name]
+Here is my proof.
+\end{proof}
+
+\begin{theorem}[Pythagorean theorem]
+\protect\hypertarget{thm:pyth}{}\label{thm:pyth}For a right triangle, if \(c\) denotes the length of the hypotenuse
+and \(a\) and \(b\) denote the lengths of the other two sides, we have
+
+\[a^2 + b^2 = c^2\]
+\end{theorem}
+
+\begin{definition}[Definition Name]
+\protect\hypertarget{def:unnamed-chunk-2}{}\label{def:unnamed-chunk-2}Here is my definition.
+\end{definition}
 
 \hypertarget{nice-label}{%
 \chapter{math}\label{nice-label}}
@@ -312,6 +364,8 @@ x\sim a\\
 \Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
 \end{align*}
 
+where \protect\hyperlink{equivalence-relation}{equivalence relation} \ref{equivalence-relation}
+
 \hypertarget{physics}{%
 \chapter{physics}\label{physics}}
 
@@ -329,6 +383,45 @@ A=\bigcup\limits _{i\in I}A_{i}\\
 \end{align*}
 
 \url{https://proofwiki.org/wiki/Definition:Set_Partition}
+
+\hypertarget{plot}{%
+\chapter{plot}\label{plot}}
+
+\hypertarget{tikzpgfplot}{%
+\chapter*{TiKZ/PgfPlot}\label{tikzpgfplot}}
+\addcontentsline{toc}{chapter}{TiKZ/PgfPlot}
+
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-3-1} \caption{Brachistochrone Curve}\label{fig:unnamed-chunk-3}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-4-1} \caption{Brachistochrone Curve}\label{fig:unnamed-chunk-4}
+\end{figure}
+
+\hypertarget{xy-pic}{%
+\chapter*{xy-pic}\label{xy-pic}}
+\addcontentsline{toc}{chapter}{xy-pic}
+
+\url{https://bookdown.org/yihui/rmarkdown-cookbook/install-latex-pkgs.html}
+
+\texttt{tinytex::install\_tinytex()}
+
+the following xymatrix from LaTeX package xy for xy-pic is not shown or rendered in HTML:
+
+\texttt{\$\textbackslash{}LaTeX\$} can only be used in HTML, not PDF
+
+\xymatrix{U\ar[ddr]_{\psi}\ar[drr]^{\varphi}\ar[dr]|-{(x,y)}\\
+ & X\times_{Z}Y\ar[d]^{q}\ar[r]_{p} & X\ar[d]_{f}\\
+ & Y\ar[r]^{g} & Z
+}
+
+\[
+\xymatrix{U\ar[ddr]_{\psi}\ar[drr]^{\varphi}\ar[dr]|-{(x,y)}\\
+ & X\times_{Z}Y\ar[d]^{q}\ar[r]_{p} & X\ar[d]_{f}\\
+ & Y\ar[r]^{g} & Z
+}
+\]
 
 \hypertarget{part-ordered-by-date}{%
 \part{ordered by date}\label{part-ordered-by-date}}
@@ -375,6 +468,8 @@ x\sim a\\
 \end{cases}\right\} \subseteq A\ne\emptyset\\
 \Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
 \end{align*}
+
+where \protect\hyperlink{equivalence-relation}{equivalence relation} \ref{equivalence-relation}
 
 \hypertarget{equivalence-relation-1}{%
 \chapter*{equivalence relation}\label{equivalence-relation-1}}
@@ -430,7 +525,8 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 ## [46] "sass"        "scss"        "sql"         "stan"        "targets"    
 ## [51] "tikz"        "verbatim"    "theorem"     "lemma"       "corollary"  
 ## [56] "proposition" "conjecture"  "definition"  "example"     "exercise"   
-## [61] "hypothesis"  "proof"       "remark"      "solution"
+## [61] "hypothesis"  "proof"       "remark"      "solution"    "glue"       
+## [66] "glue_sql"    "gluesql"
 \end{verbatim}
 
 \url{https://rstudio.github.io/reticulate/articles/python_packages.html}
@@ -453,7 +549,7 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \end{Shaded}
 
 \begin{verbatim}
-## Warning: package 'reticulate' was built under R version 4.3.2
+## Warning: package 'reticulate' was built under R version 4.2.3
 \end{verbatim}
 
 \begin{Shaded}
@@ -463,7 +559,7 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \end{Shaded}
 
 \begin{verbatim}
-## [1] "C:/Users/RW/Documents/.virtualenvs/r-reticulate/Scripts/python.exe"
+## [1] "D:/Users/115381/Documents/.virtualenvs/r-reticulate/Scripts/python.exe"
 \end{verbatim}
 
 \begin{Shaded}
@@ -474,28 +570,16 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \end{Shaded}
 
 \begin{verbatim}
-##                        name
-## 1                      base
-## 2                        mm
-## 3                       mmr
-## 4                     monai
-## 5                   pytorch
-## 6  pytorch_1.12.1_cuda_11.6
-## 7              r-reticulate
-## 8                   sandbox
-## 9           sandbox_py_3.10
-## 10                      v51
-##                                                                 python
-## 1                                  C:\\Users\\RW\\anaconda3/python.exe
-## 2                        C:\\Users\\RW\\anaconda3\\envs\\mm/python.exe
-## 3                       C:\\Users\\RW\\anaconda3\\envs\\mmr/python.exe
-## 4                     C:\\Users\\RW\\anaconda3\\envs\\monai/python.exe
-## 5                   C:\\Users\\RW\\anaconda3\\envs\\pytorch/python.exe
-## 6  C:\\Users\\RW\\anaconda3\\envs\\pytorch_1.12.1_cuda_11.6/python.exe
-## 7              C:\\Users\\RW\\anaconda3\\envs\\r-reticulate/python.exe
-## 8                   C:\\Users\\RW\\anaconda3\\envs\\sandbox/python.exe
-## 9           C:\\Users\\RW\\anaconda3\\envs\\sandbox_py_3.10/python.exe
-## 10                      C:\\Users\\RW\\anaconda3\\envs\\v51/python.exe
+##                name                                            python
+## 1              base                          D:\\Anaconda3/python.exe
+## 2          fiftyone          D:\\Anaconda3\\envs\\fiftyone/python.exe
+## 3             keras             D:\\Anaconda3\\envs\\keras/python.exe
+## 4           labelme           D:\\Anaconda3\\envs\\labelme/python.exe
+## 5             manim             D:\\Anaconda3\\envs\\manim/python.exe
+## 6            mmyolo            D:\\Anaconda3\\envs\\mmyolo/python.exe
+## 7 rsconnect-jupyter D:\\Anaconda3\\envs\\rsconnect-jupyter/python.exe
+## 8           sandbox           D:\\Anaconda3\\envs\\sandbox/python.exe
+## 9       sandbox-3.9       D:\\Anaconda3\\envs\\sandbox-3.9/python.exe
 \end{verbatim}
 
 \url{https://rstudio.github.io/reticulate/reference/install_python.html}
@@ -503,13 +587,13 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(reticulate)}
-\CommentTok{\# version \textless{}{-} "3.9.12"}
+\NormalTok{version }\OtherTok{\textless{}{-}} \StringTok{"3.9.12"}
 \CommentTok{\# install\_python(version)}
 
 \CommentTok{\# create a new environment }
 \CommentTok{\# virtualenv\_create("r{-}reticulate", version = version)}
 
-\FunctionTok{use\_virtualenv}\NormalTok{(}\StringTok{"r{-}reticulate"}\NormalTok{)}
+\CommentTok{\# use\_virtualenv("r{-}reticulate")}
 
 \CommentTok{\# install MatPlotLib}
 \CommentTok{\# virtualenv\_install("r{-}reticulate", "matplotlib")}
@@ -532,10 +616,10 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\FunctionTok{library}\NormalTok{(reticulate)}
-\FunctionTok{use\_virtualenv}\NormalTok{(}\StringTok{"r{-}reticulate"}\NormalTok{)}
-\NormalTok{matplotlib }\OtherTok{\textless{}{-}} \FunctionTok{import}\NormalTok{(}\StringTok{"matplotlib"}\NormalTok{)}
-\NormalTok{matplotlib}\SpecialCharTok{$}\FunctionTok{use}\NormalTok{(}\StringTok{"Agg"}\NormalTok{, }\AttributeTok{force =} \ConstantTok{TRUE}\NormalTok{)}
+\CommentTok{\# library(reticulate)}
+\CommentTok{\# use\_virtualenv("r{-}reticulate")}
+\CommentTok{\# matplotlib \textless{}{-} import("matplotlib")}
+\CommentTok{\# matplotlib$use("Agg", force = TRUE)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -548,6 +632,42 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \end{Shaded}
 
 \includegraphics{202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf}
+
+\hypertarget{tikzpgfplot-1}{%
+\chapter*{TiKZ/PgfPlot}\label{tikzpgfplot-1}}
+\addcontentsline{toc}{chapter}{TiKZ/PgfPlot}
+
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{202401311000-TiKZ-PgfPlot_files/figure-latex/unnamed-chunk-1-1} \caption{Brachistochrone Curve}\label{fig:unnamed-chunk-1}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{202401311000-TiKZ-PgfPlot_files/figure-latex/unnamed-chunk-2-1} \caption{Brachistochrone Curve}\label{fig:unnamed-chunk-2}
+\end{figure}
+
+\hypertarget{xy-pic-1}{%
+\chapter*{xy-pic}\label{xy-pic-1}}
+\addcontentsline{toc}{chapter}{xy-pic}
+
+\url{https://bookdown.org/yihui/rmarkdown-cookbook/install-latex-pkgs.html}
+
+\texttt{tinytex::install\_tinytex()}
+
+the following xymatrix from LaTeX package xy for xy-pic is not shown or rendered in HTML:
+
+\texttt{\$\textbackslash{}LaTeX\$} can only be used in HTML, not PDF
+
+\xymatrix{U\ar[ddr]_{\psi}\ar[drr]^{\varphi}\ar[dr]|-{(x,y)}\\
+ & X\times_{Z}Y\ar[d]^{q}\ar[r]_{p} & X\ar[d]_{f}\\
+ & Y\ar[r]^{g} & Z
+}
+
+\[
+\xymatrix{U\ar[ddr]_{\psi}\ar[drr]^{\varphi}\ar[dr]|-{(x,y)}\\
+ & X\times_{Z}Y\ar[d]^{q}\ar[r]_{p} & X\ar[d]_{f}\\
+ & Y\ar[r]^{g} & Z
+}
+\]
 
 \hypertarget{references}{%
 \chapter*{references}\label{references}}
@@ -565,4 +685,5 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 
 \end{CSLReferences}
 \end{CJK}
+
 \end{document}

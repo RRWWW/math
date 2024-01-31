@@ -1,0 +1,7 @@
+# plot
+
+```{r, child='202401311000-TiKZ-PgfPlot.Rmd'}
+```
+
+```{r, child='202401311126-LaTeX-xypic.Rmd'}
+```
