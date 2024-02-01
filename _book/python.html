@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6: Python | math</title>
   <meta name="description" content="Chapter 6: Python | math" />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6: Python | math" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Joey Yu Hsu" />
 
 
-<meta name="date" content="2024-01-31" />
+<meta name="date" content="2024-02-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -167,15 +167,16 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="test-cross-link.html"><a href="test-cross-link.html"><i class="fa fa-check"></i><b>1</b> test cross-link</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="test-cross-link.html"><a href="test-cross-link.html#link-and-reference"><i class="fa fa-check"></i><b>1.1</b> link and reference</a></li>
-<li class="chapter" data-level="1.2" data-path="test-cross-link.html"><a href="test-cross-link.html#footnote"><i class="fa fa-check"></i><b>1.2</b> footnote</a></li>
-<li class="chapter" data-level="1.3" data-path="test-cross-link.html"><a href="test-cross-link.html#citation"><i class="fa fa-check"></i><b>1.3</b> citation</a></li>
-<li class="chapter" data-level="1.4" data-path="test-cross-link.html"><a href="test-cross-link.html#bookdown-environment-for-definition-theorem-proof"><i class="fa fa-check"></i><b>1.4</b> bookdown environment for definition, theorem, proof</a></li>
+<li class="chapter" data-level="1.2" data-path="test-cross-link.html"><a href="test-cross-link.html#number-and-reference-equations"><i class="fa fa-check"></i><b>1.2</b> number and reference equations</a></li>
+<li class="chapter" data-level="1.3" data-path="test-cross-link.html"><a href="test-cross-link.html#footnote"><i class="fa fa-check"></i><b>1.3</b> footnote</a></li>
+<li class="chapter" data-level="1.4" data-path="test-cross-link.html"><a href="test-cross-link.html#citation"><i class="fa fa-check"></i><b>1.4</b> citation</a></li>
+<li class="chapter" data-level="1.5" data-path="test-cross-link.html"><a href="test-cross-link.html#bookdown-environment-for-definition-theorem-proof"><i class="fa fa-check"></i><b>1.5</b> bookdown environment for definition, theorem, proof</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="nice-label.html"><a href="nice-label.html"><i class="fa fa-check"></i><b>2</b> math</a></li>
 <li class="chapter" data-level="" data-path="equivalence-relation.html"><a href="equivalence-relation.html"><i class="fa fa-check"></i>equivalence relation</a></li>
 <li class="chapter" data-level="" data-path="equivalence-class.html"><a href="equivalence-class.html"><i class="fa fa-check"></i>equivalence class</a></li>
-<li class="chapter" data-level="3" data-path="physics.html"><a href="physics.html"><i class="fa fa-check"></i><b>3</b> physics</a></li>
 <li class="chapter" data-level="" data-path="partition.html"><a href="partition.html"><i class="fa fa-check"></i>partition</a></li>
+<li class="chapter" data-level="3" data-path="physics.html"><a href="physics.html"><i class="fa fa-check"></i><b>3</b> physics</a></li>
 <li class="chapter" data-level="4" data-path="plot.html"><a href="plot.html"><i class="fa fa-check"></i><b>4</b> plot</a></li>
 <li class="chapter" data-level="" data-path="tikzpgfplot.html"><a href="tikzpgfplot.html"><i class="fa fa-check"></i>TiKZ/PgfPlot</a></li>
 <li class="chapter" data-level="" data-path="xy-pic.html"><a href="xy-pic.html"><i class="fa fa-check"></i>xy-pic</a></li>
@@ -212,7 +213,7 @@ div.csl-indent {
 <div id="python" class="section level1 hasAnchor" number="6">
 <h1><span class="header-section-number">Chapter 6: </span> Python<a href="python.html#python" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p><a href="https://bookdown.org/yihui/rmarkdown/language-engines.html" class="uri">https://bookdown.org/yihui/rmarkdown/language-engines.html</a></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="python.html#cb2-1" tabindex="-1"></a><span class="fu">names</span>(knitr<span class="sc">::</span>knit_engines<span class="sc">$</span><span class="fu">get</span>())</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="python.html#cb1-1" tabindex="-1"></a><span class="fu">names</span>(knitr<span class="sc">::</span>knit_engines<span class="sc">$</span><span class="fu">get</span>())</span></code></pre></div>
 <pre><code>##  [1] &quot;awk&quot;         &quot;bash&quot;        &quot;coffee&quot;      &quot;gawk&quot;        &quot;groovy&quot;     
 ##  [6] &quot;haskell&quot;     &quot;lein&quot;        &quot;mysql&quot;       &quot;node&quot;        &quot;octave&quot;     
 ## [11] &quot;perl&quot;        &quot;php&quot;         &quot;psql&quot;        &quot;Rscript&quot;     &quot;ruby&quot;       
@@ -225,54 +226,63 @@ div.csl-indent {
 ## [46] &quot;sass&quot;        &quot;scss&quot;        &quot;sql&quot;         &quot;stan&quot;        &quot;targets&quot;    
 ## [51] &quot;tikz&quot;        &quot;verbatim&quot;    &quot;theorem&quot;     &quot;lemma&quot;       &quot;corollary&quot;  
 ## [56] &quot;proposition&quot; &quot;conjecture&quot;  &quot;definition&quot;  &quot;example&quot;     &quot;exercise&quot;   
-## [61] &quot;hypothesis&quot;  &quot;proof&quot;       &quot;remark&quot;      &quot;solution&quot;    &quot;glue&quot;       
-## [66] &quot;glue_sql&quot;    &quot;gluesql&quot;</code></pre>
+## [61] &quot;hypothesis&quot;  &quot;proof&quot;       &quot;remark&quot;      &quot;solution&quot;</code></pre>
 <p><a href="https://rstudio.github.io/reticulate/articles/python_packages.html" class="uri">https://rstudio.github.io/reticulate/articles/python_packages.html</a></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="python.html#cb4-1" tabindex="-1"></a>x <span class="op">=</span> <span class="st">&#39;hello, python world!&#39;</span></span>
-<span id="cb4-2"><a href="python.html#cb4-2" tabindex="-1"></a><span class="bu">print</span>(x.split(<span class="st">&#39; &#39;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="python.html#cb3-1" tabindex="-1"></a>x <span class="op">=</span> <span class="st">&#39;hello, python world!&#39;</span></span>
+<span id="cb3-2"><a href="python.html#cb3-2" tabindex="-1"></a><span class="bu">print</span>(x.split(<span class="st">&#39; &#39;</span>))</span></code></pre></div>
 <pre><code>## [&#39;hello,&#39;, &#39;python&#39;, &#39;world!&#39;]</code></pre>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="python.html#cb6-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span></code></pre></div>
-<pre><code>## Warning: package &#39;reticulate&#39; was built under R version 4.2.3</code></pre>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="python.html#cb8-1" tabindex="-1"></a><span class="fu">virtualenv_python</span>()</span></code></pre></div>
-<pre><code>## [1] &quot;D:/Users/115381/Documents/.virtualenvs/r-reticulate/Scripts/python.exe&quot;</code></pre>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="python.html#cb10-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
-<span id="cb10-2"><a href="python.html#cb10-2" tabindex="-1"></a><span class="fu">conda_list</span>()</span></code></pre></div>
-<pre><code>##                name                                            python
-## 1              base                          D:\\Anaconda3/python.exe
-## 2          fiftyone          D:\\Anaconda3\\envs\\fiftyone/python.exe
-## 3             keras             D:\\Anaconda3\\envs\\keras/python.exe
-## 4           labelme           D:\\Anaconda3\\envs\\labelme/python.exe
-## 5             manim             D:\\Anaconda3\\envs\\manim/python.exe
-## 6            mmyolo            D:\\Anaconda3\\envs\\mmyolo/python.exe
-## 7 rsconnect-jupyter D:\\Anaconda3\\envs\\rsconnect-jupyter/python.exe
-## 8           sandbox           D:\\Anaconda3\\envs\\sandbox/python.exe
-## 9       sandbox-3.9       D:\\Anaconda3\\envs\\sandbox-3.9/python.exe</code></pre>
-<p><a href="https://rstudio.github.io/reticulate/reference/install_python.html" class="uri">https://rstudio.github.io/reticulate/reference/install_python.html</a></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="python.html#cb12-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
-<span id="cb12-2"><a href="python.html#cb12-2" tabindex="-1"></a>version <span class="ot">&lt;-</span> <span class="st">&quot;3.9.12&quot;</span></span>
-<span id="cb12-3"><a href="python.html#cb12-3" tabindex="-1"></a><span class="co"># install_python(version)</span></span>
-<span id="cb12-4"><a href="python.html#cb12-4" tabindex="-1"></a></span>
-<span id="cb12-5"><a href="python.html#cb12-5" tabindex="-1"></a><span class="co"># create a new environment </span></span>
-<span id="cb12-6"><a href="python.html#cb12-6" tabindex="-1"></a><span class="co"># virtualenv_create(&quot;r-reticulate&quot;, version = version)</span></span>
-<span id="cb12-7"><a href="python.html#cb12-7" tabindex="-1"></a></span>
-<span id="cb12-8"><a href="python.html#cb12-8" tabindex="-1"></a><span class="co"># use_virtualenv(&quot;r-reticulate&quot;)</span></span>
-<span id="cb12-9"><a href="python.html#cb12-9" tabindex="-1"></a></span>
-<span id="cb12-10"><a href="python.html#cb12-10" tabindex="-1"></a><span class="co"># install MatPlotLib</span></span>
-<span id="cb12-11"><a href="python.html#cb12-11" tabindex="-1"></a><span class="co"># virtualenv_install(&quot;r-reticulate&quot;, &quot;matplotlib&quot;)</span></span>
-<span id="cb12-12"><a href="python.html#cb12-12" tabindex="-1"></a></span>
-<span id="cb12-13"><a href="python.html#cb12-13" tabindex="-1"></a><span class="co"># import MatPlotLib (it will be automatically discovered in &quot;r-reticulate&quot;)</span></span>
-<span id="cb12-14"><a href="python.html#cb12-14" tabindex="-1"></a>matplotlib <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">&quot;matplotlib&quot;</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="python.html#cb13-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
-<span id="cb13-2"><a href="python.html#cb13-2" tabindex="-1"></a><span class="fu">virtualenv_list</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="python.html#cb5-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb5-2"><a href="python.html#cb5-2" tabindex="-1"></a><span class="fu">virtualenv_python</span>()</span></code></pre></div>
+<pre><code>## [1] &quot;C:/Users/RW/Documents/.virtualenvs/r-reticulate/Scripts/python.exe&quot;</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="python.html#cb7-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb7-2"><a href="python.html#cb7-2" tabindex="-1"></a><span class="fu">conda_list</span>()</span></code></pre></div>
+<pre><code>##                       name
+## 1                     base
+## 2                       mm
+## 3                      mmr
+## 4                    monai
+## 5                  pytorch
+## 6 pytorch_1.12.1_cuda_11.6
+## 7                  sandbox
+## 8          sandbox_py_3.10
+## 9                      v51
+##                                                                python
+## 1                                 C:\\Users\\RW\\anaconda3/python.exe
+## 2                       C:\\Users\\RW\\anaconda3\\envs\\mm/python.exe
+## 3                      C:\\Users\\RW\\anaconda3\\envs\\mmr/python.exe
+## 4                    C:\\Users\\RW\\anaconda3\\envs\\monai/python.exe
+## 5                  C:\\Users\\RW\\anaconda3\\envs\\pytorch/python.exe
+## 6 C:\\Users\\RW\\anaconda3\\envs\\pytorch_1.12.1_cuda_11.6/python.exe
+## 7                  C:\\Users\\RW\\anaconda3\\envs\\sandbox/python.exe
+## 8          C:\\Users\\RW\\anaconda3\\envs\\sandbox_py_3.10/python.exe
+## 9                      C:\\Users\\RW\\anaconda3\\envs\\v51/python.exe</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="python.html#cb9-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb9-2"><a href="python.html#cb9-2" tabindex="-1"></a><span class="fu">virtualenv_list</span>()</span></code></pre></div>
 <pre><code>## [1] &quot;r-reticulate&quot;</code></pre>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="python.html#cb15-1" tabindex="-1"></a><span class="co"># library(reticulate)</span></span>
-<span id="cb15-2"><a href="python.html#cb15-2" tabindex="-1"></a><span class="co"># use_virtualenv(&quot;r-reticulate&quot;)</span></span>
-<span id="cb15-3"><a href="python.html#cb15-3" tabindex="-1"></a><span class="co"># matplotlib &lt;- import(&quot;matplotlib&quot;)</span></span>
-<span id="cb15-4"><a href="python.html#cb15-4" tabindex="-1"></a><span class="co"># matplotlib$use(&quot;Agg&quot;, force = TRUE)</span></span></code></pre></div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="python.html#cb16-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb16-2"><a href="python.html#cb16-2" tabindex="-1"></a>plt.plot([<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">4</span>])</span>
-<span id="cb16-3"><a href="python.html#cb16-3" tabindex="-1"></a>plt.show()</span></code></pre></div>
-<p><img src="202401292317-Python_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><a href="https://rstudio.github.io/reticulate/reference/install_python.html" class="uri">https://rstudio.github.io/reticulate/reference/install_python.html</a></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="python.html#cb11-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb11-2"><a href="python.html#cb11-2" tabindex="-1"></a>version <span class="ot">&lt;-</span> <span class="st">&quot;3.9.12&quot;</span></span>
+<span id="cb11-3"><a href="python.html#cb11-3" tabindex="-1"></a><span class="co"># install_python(version)</span></span>
+<span id="cb11-4"><a href="python.html#cb11-4" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="python.html#cb11-5" tabindex="-1"></a><span class="co"># create a new environment</span></span>
+<span id="cb11-6"><a href="python.html#cb11-6" tabindex="-1"></a><span class="co"># virtualenv_create(&quot;r-reticulate&quot;, version = version)</span></span>
+<span id="cb11-7"><a href="python.html#cb11-7" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="python.html#cb11-8" tabindex="-1"></a><span class="co"># use_virtualenv(&quot;r-reticulate&quot;)</span></span>
+<span id="cb11-9"><a href="python.html#cb11-9" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="python.html#cb11-10" tabindex="-1"></a><span class="co"># install MatPlotLib</span></span>
+<span id="cb11-11"><a href="python.html#cb11-11" tabindex="-1"></a><span class="co"># virtualenv_install(&quot;r-reticulate&quot;, &quot;matplotlib&quot;)</span></span>
+<span id="cb11-12"><a href="python.html#cb11-12" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="python.html#cb11-13" tabindex="-1"></a><span class="co"># import MatPlotLib (it will be automatically discovered in &quot;r-reticulate&quot;)</span></span>
+<span id="cb11-14"><a href="python.html#cb11-14" tabindex="-1"></a>matplotlib <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">&quot;matplotlib&quot;</span>)</span></code></pre></div>
+<p>copy <code>C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tcl8.6</code> and <code>C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tk8.6</code> two folders to the folder <code>C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\Lib</code></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="python.html#cb12-1" tabindex="-1"></a><span class="co"># library(reticulate)</span></span>
+<span id="cb12-2"><a href="python.html#cb12-2" tabindex="-1"></a><span class="co"># use_virtualenv(&quot;r-reticulate&quot;)</span></span>
+<span id="cb12-3"><a href="python.html#cb12-3" tabindex="-1"></a><span class="co"># # matplotlib &lt;- import(&quot;matplotlib&quot;)</span></span>
+<span id="cb12-4"><a href="python.html#cb12-4" tabindex="-1"></a><span class="co"># matplotlib$use(&quot;Agg&quot;, force = TRUE)</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="python.html#cb13-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb13-2"><a href="python.html#cb13-2" tabindex="-1"></a>plt.plot([<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">4</span>])</span>
+<span id="cb13-3"><a href="python.html#cb13-3" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<p><img src="202401292317-Python_files/figure-html/unnamed-chunk-8-1.png" width="614" /></p>
 
 </div>
 <div id="disqus_thread"></div>

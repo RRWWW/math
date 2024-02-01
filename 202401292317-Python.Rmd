@@ -21,6 +21,10 @@ virtualenv_python()
 library(reticulate)
 conda_list()
 ```
+```{r}
+library(reticulate)
+virtualenv_list()
+```
 
 https://rstudio.github.io/reticulate/reference/install_python.html
 
@@ -29,7 +33,7 @@ library(reticulate)
 version <- "3.9.12"
 # install_python(version)
 
-# create a new environment 
+# create a new environment
 # virtualenv_create("r-reticulate", version = version)
 
 # use_virtualenv("r-reticulate")
@@ -41,15 +45,12 @@ version <- "3.9.12"
 matplotlib <- import("matplotlib")
 ```
 
-```{r}
-library(reticulate)
-virtualenv_list()
-```
+copy `C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tcl8.6` and `C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tk8.6` two folders to the folder `C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\Lib`
 
 ```{r}
 # library(reticulate)
 # use_virtualenv("r-reticulate")
-# matplotlib <- import("matplotlib")
+# # matplotlib <- import("matplotlib")
 # matplotlib$use("Agg", force = TRUE)
 ```
 
@@ -58,4 +59,3 @@ import matplotlib.pyplot as plt
 plt.plot([0, 2, 1, 4])
 plt.show()
 ```
-

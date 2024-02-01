@@ -18,3 +18,13 @@ x\sim a\\
 \end{align*}
 
 where the definition of [equivalence relation] can be found in \@ref(equivalence-relation).
+
+[number and reference equations]
+
+\@ref(eq:eqclass)
+
+\@ref(eq:eqclass2)
+
+\@ref(eq:emc)
+
+\@ref(thm:pyth)

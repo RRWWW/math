@@ -1,7 +1,7 @@
 ---
 title: "math"
 author: "Joey Yu Hsu"
-date: "2024-01-31"
+date: "2024-02-02"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [reference.bib, packages.bib]

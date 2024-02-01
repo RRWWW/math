@@ -2,11 +2,20 @@
 
 ## link and reference
 
-\@ref(nice-label)
+\begin{equation}
+  E=mc^2
+  (\#eq:emc)
+\end{equation}
 
-[link to partition][partition]
+`\@ref(nice-label)` \@ref(nice-label)
+
+`[link to partition][partition]` [link to partition][partition]
+
+`[partition]` `\@ref(partition)`
 
 [partition] [#partition] (\@ref(partition)) \@ref(#partition)
+
+`[equivalence class]` `\@ref(equivalence class)`
 
 [equivalence class] [#equivalence class] (\@ref(equivalence class)) \@ref(#equivalence class)
 
@@ -19,6 +28,50 @@
 [equivalence-relation] [#equivalence-relation] (\@ref(equivalence-relation)) \@ref(#equivalence-relation)
 
 [equivalence-relation.html] [equivalence-relation.html#equivalence-relation] (\@ref(equivalence-relation.html)) \@ref(equivalence-relation.html#equivalence-relation)
+
+## number and reference equations
+
+https://bookdown.org/yihui/rmarkdown/bookdown-markdown.html#equations
+
+`\#eq:emc` 
+`\@ref(eq:emc)`
+
+\begin{align*}
+ & C\text{ is an equivalence class of }a\text{ on }A\\
+\Leftrightarrow & \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation over }A\times A=A^{2}
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Leftrightarrow & \left[a\right]=\left[a\right]_{\sim}=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation on }A
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
+(\#eq:eqclass)
+\end{align*}
+
+\begin{align}
+(\#eq:eqclass2)
+ & C\text{ is an equivalence class of }a\text{ on }A\\
+\Leftrightarrow & \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation over }A\times A=A^{2}
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Leftrightarrow & \left[a\right]=\left[a\right]_{\sim}=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation on }A
+\end{cases}\right\} \subseteq A\ne\emptyset \\
+\Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
+\end{align}
+
 
 ## footnote
 
@@ -50,9 +103,19 @@ Here is my proof.
 For a right triangle, if $c$ denotes the length of the hypotenuse
 and $a$ and $b$ denote the lengths of the other two sides, we have
 
-$$a^2 + b^2 = c^2$$
+$$a^2 + \color{cyan}b^2 \overset{\ref{eq:emc}}= \color{red}{c^2} $$
 :::
 
 ::: {.definition #unnamed-chunk-2 name="Definition Name"}
 Here is my definition.
 :::
+
+[number and reference equations]
+
+\@ref(eq:eqclass)
+
+\@ref(eq:eqclass2)
+
+\@ref(eq:emc)
+
+\@ref(thm:pyth)

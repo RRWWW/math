@@ -1,5 +1,16 @@
+eq:emc
+eq:eqclass
+eq:eqclass2
+thm:label
+thm:pyth
+def:unnamed-chunk-2
+fig:unnamed-chunk-4
+fig:unnamed-chunk-5
+fig:unnamed-chunk-1
+fig:unnamed-chunk-2
 test-cross-link
 link-and-reference
+number-and-reference-equations
 footnote
 citation
 bookdown-environment-for-definition-theorem-proof
