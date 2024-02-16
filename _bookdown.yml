@@ -21,9 +21,7 @@ edit: "https://github.com/RRWWW/math/edit/main/%s"
 history: "https://github.com/RRWWW/math/commits/main/%s"
 
 # Files to clean after the book is rendered
-clean: #[packages.bib, bookdown.bbl]
-  - "my-book.bbl"
-  - "R-packages.bib"
+clean: [packages.bib, bookdown.bbl]
 # clean: ["my-book.bbl", "R-packages.bib"]
 
 # The output directory for the book (default: "_book")

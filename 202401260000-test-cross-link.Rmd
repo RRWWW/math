@@ -1,4 +1,7 @@
+# (PART) by discipline {-}
 # test cross-link
+
+script^superscript^~subscript~
 
 ## link and reference
 
@@ -37,6 +40,7 @@ https://bookdown.org/yihui/rmarkdown/bookdown-markdown.html#equations
 `\@ref(eq:emc)`
 
 \begin{align*}
+(\#eq:eqclass)
  & C\text{ is an equivalence class of }a\text{ on }A\\
 \Leftrightarrow & \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
 a\in A\\
@@ -51,27 +55,15 @@ x\sim a\\
 \sim\text{ is an equivalence relation on }A
 \end{cases}\right\} \subseteq A\ne\emptyset\\
 \Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
-(\#eq:eqclass)
 \end{align*}
 
-\begin{align}
-(\#eq:eqclass2)
- & C\text{ is an equivalence class of }a\text{ on }A\\
-\Leftrightarrow & \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
-a\in A\\
-x\in A\\
-x\sim a\\
-\sim\text{ is an equivalence relation over }A\times A=A^{2}
-\end{cases}\right\} \subseteq A\ne\emptyset\\
-\Leftrightarrow & \left[a\right]=\left[a\right]_{\sim}=\left\{ x\middle|\begin{cases}
-a\in A\\
-x\in A\\
-x\sim a\\
-\sim\text{ is an equivalence relation on }A
-\end{cases}\right\} \subseteq A\ne\emptyset \\
-\Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
-\end{align}
+https://bookdown.org/yihui/rmarkdown/bookdown-markdown.html#cross-referencing
 
+This cross reference is the Fig. \@ref(fig:parabola-arc-with-points)
+
+https://stackoverflow.com/questions/51595939/bookdown-cross-reference-figure-in-another-file
+
+I ran into the same issue and came up with this solution if you aim at compiling 2 different pdfs. It relies on LaTeX's xr package for cross references: https://stackoverflow.com/a/52532269/576684
 
 ## footnote
 
@@ -114,8 +106,17 @@ Here is my definition.
 
 \@ref(eq:eqclass)
 
-\@ref(eq:eqclass2)
-
 \@ref(eq:emc)
 
 \@ref(thm:pyth)
+
+```{r parabola-arc-with-points, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='parabola arc with points'}
+\begin{tikzpicture}[scale=1.0]
+  \draw (-1,1) parabola bend (0,0) (2,4);
+  \filldraw
+    (-1,1) circle (.05)
+    ( 0,0) circle (.05)
+    ( 1,1) circle (.05)
+    ( 2,4) circle (.05);
+\end{tikzpicture}
+```

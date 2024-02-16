@@ -1,26 +1,55 @@
 \contentsline {chapter}{index}{5}{chapter*.2}%
-\contentsline {part}{I\hspace {1em}ordered by discipline}{7}{part.1}%
-\contentsline {chapter}{\numberline {1}test cross-link}{11}{chapter.1}%
-\contentsline {section}{\numberline {1.1}link and reference}{11}{section.1.1}%
-\contentsline {section}{\numberline {1.2}number and reference equations}{11}{section.1.2}%
-\contentsline {section}{\numberline {1.3}footnote}{12}{section.1.3}%
-\contentsline {section}{\numberline {1.4}citation}{12}{section.1.4}%
-\contentsline {section}{\numberline {1.5}bookdown environment for definition, theorem, proof}{12}{section.1.5}%
-\contentsline {chapter}{\numberline {2}math}{15}{chapter.2}%
-\contentsline {chapter}{equivalence relation}{17}{chapter*.3}%
-\contentsline {chapter}{equivalence class}{19}{chapter*.4}%
-\contentsline {chapter}{partition}{21}{chapter*.5}%
-\contentsline {chapter}{\numberline {3}physics}{23}{chapter.3}%
-\contentsline {chapter}{\numberline {4}plot}{25}{chapter.4}%
-\contentsline {chapter}{TiKZ/PgfPlot}{27}{chapter*.6}%
-\contentsline {chapter}{xy-pic}{29}{chapter*.7}%
-\contentsline {part}{II\hspace {1em}ordered by date}{31}{part.2}%
-\contentsline {chapter}{\numberline {5}ordered by date}{33}{chapter.5}%
-\contentsline {chapter}{partition}{35}{chapter*.8}%
-\contentsline {chapter}{202401281000}{37}{chapter*.9}%
-\contentsline {chapter}{equivalence class}{39}{chapter*.10}%
-\contentsline {chapter}{equivalence relation}{41}{chapter*.11}%
-\contentsline {chapter}{\numberline {6}Python}{43}{chapter.6}%
-\contentsline {chapter}{TiKZ/PgfPlot}{47}{chapter*.12}%
-\contentsline {chapter}{xy-pic}{49}{chapter*.13}%
-\contentsline {chapter}{references}{51}{chapter*.14}%
+\contentsline {part}{I\hspace {1em}A Minimal Book Example}{7}{part.1}%
+\contentsline {chapter}{\numberline {1}About}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Usage}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Render book}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Preview book}{9}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Hello bookdown}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}A section}{11}{section.2.1}%
+\contentsline {subsection}{An unnumbered section}{11}{section*.3}%
+\contentsline {chapter}{\numberline {3}Cross-references}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Chapters and sub-chapters}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Captioned figures and tables}{13}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Parts}{15}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Footnotes and citations}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Footnotes}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Citations}{17}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Blocks}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Equations}{19}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Theorems and proofs}{19}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Callout blocks}{19}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Sharing your book}{21}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Publishing}{21}{section.7.1}%
+\contentsline {section}{\numberline {7.2}404 pages}{21}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Metadata for sharing}{21}{section.7.3}%
+\contentsline {part}{II\hspace {1em}by discipline}{23}{part.2}%
+\contentsline {chapter}{\numberline {8}test cross-link}{25}{chapter.8}%
+\contentsline {section}{\numberline {8.1}link and reference}{25}{section.8.1}%
+\contentsline {section}{\numberline {8.2}number and reference equations}{25}{section.8.2}%
+\contentsline {section}{\numberline {8.3}footnote}{26}{section.8.3}%
+\contentsline {section}{\numberline {8.4}citation}{26}{section.8.4}%
+\contentsline {section}{\numberline {8.5}bookdown environment for definition, theorem, proof}{26}{section.8.5}%
+\contentsline {chapter}{\numberline {9}test cross-link 2}{29}{chapter.9}%
+\contentsline {chapter}{\numberline {10}math}{31}{chapter.10}%
+\contentsline {chapter}{equivalence relation}{33}{chapter*.4}%
+\contentsline {chapter}{equivalence class}{35}{chapter*.5}%
+\contentsline {chapter}{partition}{37}{chapter*.6}%
+\contentsline {chapter}{\numberline {11}physics}{39}{chapter.11}%
+\contentsline {chapter}{\numberline {12}plot}{41}{chapter.12}%
+\contentsline {chapter}{TiKZ}{43}{chapter*.7}%
+\contentsline {section}{\numberline {12.1}3D}{55}{section.12.1}%
+\contentsline {chapter}{xy-pic}{57}{chapter*.8}%
+\contentsline {part}{III\hspace {1em}by date}{59}{part.3}%
+\contentsline {chapter}{\numberline {13}by date}{61}{chapter.13}%
+\contentsline {chapter}{partition}{63}{chapter*.9}%
+\contentsline {chapter}{202401281000}{65}{chapter*.10}%
+\contentsline {chapter}{equivalence class}{67}{chapter*.11}%
+\contentsline {chapter}{equivalence relation}{69}{chapter*.12}%
+\contentsline {chapter}{\numberline {14}Python}{71}{chapter.14}%
+\contentsline {chapter}{TiKZ}{75}{chapter*.13}%
+\contentsline {section}{\numberline {14.1}3D}{87}{section.14.1}%
+\contentsline {chapter}{xy-pic}{89}{chapter*.14}%
+\contentsline {chapter}{\numberline {15}RMarkdown}{91}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Markdown}{91}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Bookdown}{91}{section.15.2}%
+\contentsline {chapter}{references}{93}{chapter*.15}%
