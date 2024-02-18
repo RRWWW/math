@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.22)  16 FEB 2024 20:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.22)  18 FEB 2024 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1125,7 +1125,7 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 (c:/texlive/2022/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 204.
+Package hyperref Info: Option `colorlinks' set `true' on input line 231.
 
 (c:/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
@@ -1148,8 +1148,8 @@ Package: amsthm 2020/05/29 v2.20.6
 \c@example=\count384
 \c@exercise=\count385
 \c@hypothesis=\count386
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 22
-7.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 25
+4.
 
 (c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1238,106 +1238,103 @@ LaTeX Warning: Label `fig:unnamed-chunk-61' multiply defined.
 
 LaTeX Warning: Label `fig:skills' multiply defined.
 
-
-LaTeX Warning: Label `fig:unnamed-chunk-62' multiply defined.
-
 )
 \openout1 = `math.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Info: Redefining \microtypecontext on input line 227.
-Package microtype Info: Applying patch `item' on input line 227.
-Package microtype Info: Applying patch `toc' on input line 227.
-Package microtype Info: Applying patch `eqnum' on input line 227.
-Package microtype Info: Applying patch `footnote' on input line 227.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Info: Redefining \microtypecontext on input line 254.
+Package microtype Info: Applying patch `item' on input line 254.
+Package microtype Info: Applying patch `toc' on input line 254.
+Package microtype Info: Applying patch `eqnum' on input line 254.
+Package microtype Info: Applying patch `footnote' on input line 254.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 227.
+LaTeX Info: Redefining \showhyphens on input line 254.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1401,7 +1398,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 227.
+Package hyperref Info: Link coloring ON on input line 254.
 (c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1413,43 +1410,43 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count394
 )
-LaTeX Info: Redefining \ref on input line 227.
-LaTeX Info: Redefining \pageref on input line 227.
-LaTeX Info: Redefining \nameref on input line 227.
+LaTeX Info: Redefining \ref on input line 254.
+LaTeX Info: Redefining \pageref on input line 254.
+LaTeX Info: Redefining \nameref on input line 254.
 
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.15).
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-27.
+54.
 (c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-27.
+54.
 
 (c:/texlive/2022/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-227.
+254.
 
 (c:/texlive/2022/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-227.
+254.
 
 (c:/texlive/2022/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 227.
+(Font)              <10> on input line 254.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 227.
+(Font)              <7> on input line 254.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 227.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 227
+(Font)              <5> on input line 254.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 254
 .
 
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1458,7 +1455,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 227
+LaTeX Font Info:    Trying to load font information for U+msb on input line 254
 .
 
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1467,127 +1464,143 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 22
-7.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 25
+4.
 
 (c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.39998pt on input line 227.
+Package xypdf Info: Line width: 0.39998pt on input line 254.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 229.
+(Font)              <12> on input line 256.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 229.
+(Font)              <8> on input line 256.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 229.
+(Font)              <6> on input line 256.
  [1
 
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-] (./math.toc [3])
+] (./math.toc [3] [4])
 \tf@toc=\write6
 \openout6 = `math.toc'.
 
- [4] [5
-
-]
+ [5]
 [6
 
-] [7] [8]
+] [7] [8
+
+] [9] [10]
 Chapter 1.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-52.
+79.
 (c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 275.
- [9
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 302.
+ [11
 
-] [10]
+] [12]
 Chapter 2.
-[11
+[13
 
-] [12
+] [14
 
 ]
 Chapter 3.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-27.
+54.
 (c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-351.
+378.
 
 (c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<02-cross-refs_files/figure-latex/nice-fig-1.pdf, id=196, 469.755pt x 352.31625
+<02-cross-refs_files/figure-latex/nice-fig-1.pdf, id=229, 469.755pt x 352.31625
 pt>
 File: 02-cross-refs_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use 02-cross-refs_files/figure-latex/nice-fig-1.pdf>
 Package pdftex.def Info: 02-cross-refs_files/figure-latex/nice-fig-1.pdf  used 
-on input line 357.
+on input line 384.
 (pdftex.def)             Requested size: 355.08936pt x 266.317pt.
- [13] [14 <./02-cross-refs_files/figure-latex/nice-fig-1.pdf>]
+ [15] [16 <./02-cross-refs_files/figure-latex/nice-fig-1.pdf>]
 Chapter 4.
-[15
+[17
 
-] [16
+] [18
 
 ]
 Chapter 5.
-[17] [18
-
-]
-Chapter 6.
 [19] [20
 
 ]
-Chapter 7.
+Chapter 6.
 [21] [22
 
-] [23] [24]
+]
+Chapter 7.
+[23] [24
+
+] [25] [26]
 Chapter 8.
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
+Overfull \hbox (220.13423pt too wide) in paragraph at lines 543--544
+[][][]$\T1/lmr/m/n/10 (-20) h t t p s : / / l a t e x -[] t u t o r i a l . c o
+ m / c o l or -[] l a t e x / #$[][]:~:text=To%20summarize%2C%20pyellow!50efine
+d%20colors%20in,when%20loading%20the%20xcolor%20package. 
+ []
+
+[27
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 624--625
 []\T1/lmr/m/n/10 (+20) [equivalence-class.html] [equivalence-class.html#equival
 ence-class] (@ref(equivalence-class.html))
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
+Underfull \hbox (badness 10000) in paragraph at lines 630--631
 []\T1/lmr/m/n/10 (+20) [equivalence-relation.html] [equivalence-relation.html#e
 quivalence-relation] (@ref(equivalence-
  []
 
-[25
+[28] [29]
 
-] [26]
-
-LaTeX Warning: Reference `eq:eqclass' on page 27 undefined on input line 606.
+LaTeX Warning: Reference `eq:eqclass' on page 30 undefined on input line 706.
 
 <202401260000-test-cross-link_files/figure-latex/parabola-arc-with-points-1.pdf
-, id=353, 88.60402pt x 117.05632pt>
+, id=406, 88.60402pt x 117.05632pt>
 File: 202401260000-test-cross-link_files/figure-latex/parabola-arc-with-points-
 1.pdf Graphic file (type pdf)
 <use 202401260000-test-cross-link_files/figure-latex/parabola-arc-with-points-1
 .pdf>
 Package pdftex.def Info: 202401260000-test-cross-link_files/figure-latex/parabo
-la-arc-with-points-1.pdf  used on input line 613.
+la-arc-with-points-1.pdf  used on input line 713.
 (pdftex.def)             Requested size: 88.60379pt x 117.05603pt.
-[27 <./202401260000-test-cross-link_files/figure-latex/parabola-arc-with-points
--1.pdf>] [28
-
-]
+[30 <./202401260000-test-cross-link_files/figure-latex/parabola-arc-with-points
+-1.pdf>]
 Chapter 9.
-[29] [30
+
+LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 742.
+
+
+LaTeX Font Warning: Font shape `TS1/lmtt/bx/it' in size <10> not available
+(Font)              Font shape `TS1/lmtt/b/sl' tried instead on input line 742.
+
+
+[31
+
+] [32
 
 ]
 Chapter 10.
-[31] [32
+[33] [34
 
 ] (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
@@ -1599,7 +1612,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 File: UTF8.chr 2021/10/16 4.8.5
 )
 LaTeX Font Info:    Trying to load font information for C70+bsmi on input line 
-632.
+832.
 
 (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fd
 File: c70bsmi.fd 2021/10/16 4.8.5
@@ -1613,398 +1626,389 @@ File: UTF8.enc 2021/10/16 4.8.5
 (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Overfull \hbox (2.8258pt too wide) detected at line 655
+Overfull \hbox (2.8258pt too wide) detected at line 855
 []
  []
 
-[33] [34
+[35] [36
 
 ]
 
-LaTeX Warning: Reference `eq:eqclass' on page 35 undefined on input line 683.
+LaTeX Warning: Reference `eq:eqclass' on page 37 undefined on input line 883.
 
-[35] [36
+[37] [38
 
-] [37] [38
+] [39] [40
 
 ]
 Chapter 11.
-[39] [40
-
-]
+[41] [42]
 Chapter 12.
-[41] [42
+[43
+
+] [44
 
 ]
-<202401260003-plot_files/figure-latex/unnamed-chunk-4-1.pdf, id=454, 305.54951p
+Chapter 13.
+[45] [46
+
+]
+<202401260003-plot_files/figure-latex/unnamed-chunk-4-1.pdf, id=541, 305.54951p
 t x 154.88565pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
 type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-4-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-4-1
-.pdf  used on input line 744.
+.pdf  used on input line 1045.
 (pdftex.def)             Requested size: 305.56741pt x 154.89471pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-5-1.pdf, id=455, 455.46663p
+<202401260003-plot_files/figure-latex/unnamed-chunk-5-1.pdf, id=542, 455.46663p
 t x 149.88898pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (
 type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-5-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-5-1
-.pdf  used on input line 748.
+.pdf  used on input line 1049.
 (pdftex.def)             Requested size: 399.49835pt x 131.47044pt.
- [43 <./202401260003-plot_files/figure-latex/unnamed-chunk-4-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-7-1.pdf, id=497, 57.30508pt
+<202401260003-plot_files/figure-latex/unnamed-chunk-7-1.pdf, id=544, 57.30508pt
  x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (
 type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-7-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-7-1
-.pdf  used on input line 764.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-8-1.pdf, id=498, 57.30508pt
+.pdf  used on input line 1068.
+(pdftex.def)             Requested size: 22.1941pt x 22.1941pt.
+<202401260003-plot_files/figure-latex/unnamed-chunk-8-1.pdf, id=545, 57.30508pt
  x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (
 type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-8-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-8-1
-.pdf  used on input line 767.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-9-1.pdf, id=499, 57.30508pt
+.pdf  used on input line 1071.
+(pdftex.def)             Requested size: 22.1941pt x 22.1941pt.
+<202401260003-plot_files/figure-latex/unnamed-chunk-9-1.pdf, id=546, 57.30508pt
  x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (
 type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-9-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-9-1
-.pdf  used on input line 770.
+.pdf  used on input line 1074.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-10-1.pdf, id=500, 85.75839p
+<202401260003-plot_files/figure-latex/unnamed-chunk-10-1.pdf, id=547, 85.75839p
 t x 85.75839pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-10-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-10-
-1.pdf  used on input line 775.
-(pdftex.def)             Requested size: 85.75818pt x 85.75818pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf, id=501, 57.30508p
+1.pdf  used on input line 1079.
+(pdftex.def)             Requested size: 66.5759pt x 66.5759pt.
+<202401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf, id=548, 57.30508p
 t x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-11-
-1.pdf  used on input line 780.
+1.pdf  used on input line 1084.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf, id=502, 57.30508p
+ [47] [48 <./202401260003-plot_files/figure-latex/unnamed-chunk-4-1.pdf> <./202
+401260003-plot_files/figure-latex/unnamed-chunk-5-1.pdf> <./202401260003-plot_f
+iles/figure-latex/unnamed-chunk-7-1.pdf> <./202401260003-plot_files/figure-late
+x/unnamed-chunk-8-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-
+9-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-10-1.pdf> <./202
+401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf>]
+<202401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf, id=610, 57.30508p
 t x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-13-
-1.pdf  used on input line 791.
+1.pdf  used on input line 1095.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-15-1.pdf, id=503, 57.30508p
+<202401260003-plot_files/figure-latex/unnamed-chunk-15-1.pdf, id=611, 57.30508p
 t x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-15-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-15-
-1.pdf  used on input line 803.
+1.pdf  used on input line 1107.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-16-1.pdf, id=504, 57.30508p
+<202401260003-plot_files/figure-latex/unnamed-chunk-16-1.pdf, id=612, 57.30508p
 t x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-16-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-16-
-1.pdf  used on input line 807.
+1.pdf  used on input line 1111.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-18-1.pdf, id=505, 114.2107p
+<202401260003-plot_files/figure-latex/unnamed-chunk-18-1.pdf, id=613, 114.2107p
 t x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-18-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-18-
-1.pdf  used on input line 819.
+1.pdf  used on input line 1123.
 (pdftex.def)             Requested size: 110.97244pt x 55.68028pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-20-1.pdf, id=506, 57.30508p
+<202401260003-plot_files/figure-latex/unnamed-chunk-20-1.pdf, id=614, 57.30508p
 t x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-20-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-20-
-1.pdf  used on input line 831.
+1.pdf  used on input line 1135.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-
-[44 <./202401260003-plot_files/figure-latex/unnamed-chunk-5-1.pdf> <./202401260
-003-plot_files/figure-latex/unnamed-chunk-7-1.pdf> <./202401260003-plot_files/f
-igure-latex/unnamed-chunk-8-1.pdf>] [45 <./202401260003-plot_files/figure-latex
-/unnamed-chunk-9-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-1
-0-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf> <./202
-401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf> <./202401260003-plot_
-files/figure-latex/unnamed-chunk-15-1.pdf> <./202401260003-plot_files/figure-la
-tex/unnamed-chunk-16-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chu
-nk-18-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-22-1.pdf, id=540, 57.30508p
+<202401260003-plot_files/figure-latex/unnamed-chunk-22-1.pdf, id=615, 57.30508p
 t x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-22-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-22-
-1.pdf  used on input line 843.
+1.pdf  used on input line 1147.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-24-1.pdf, id=541, 85.75839p
+<202401260003-plot_files/figure-latex/unnamed-chunk-24-1.pdf, id=616, 85.75839p
 t x 85.75839pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-24-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-24-
-1.pdf  used on input line 856.
+1.pdf  used on input line 1160.
 (pdftex.def)             Requested size: 85.75818pt x 85.75818pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf, id=542, 114.2107p
+ [49 <./202401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf> <./2024012
+60003-plot_files/figure-latex/unnamed-chunk-15-1.pdf> <./202401260003-plot_file
+s/figure-latex/unnamed-chunk-16-1.pdf>] [50 <./202401260003-plot_files/figure-l
+atex/unnamed-chunk-18-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-ch
+unk-20-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-22-1.pdf> <
+./202401260003-plot_files/figure-latex/unnamed-chunk-24-1.pdf>]
+<202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf, id=640, 114.2107p
 t x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-26-
-1.pdf  used on input line 868.
+1.pdf  used on input line 1172.
 (pdftex.def)             Requested size: 110.97244pt x 55.68028pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-28-1.pdf, id=543, 199.5696p
+<202401260003-plot_files/figure-latex/unnamed-chunk-28-1.pdf, id=641, 199.5696p
 t x 57.30508pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-28-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-28-
-1.pdf  used on input line 881.
+1.pdf  used on input line 1185.
 (pdftex.def)             Requested size: 110.96645pt x 31.86327pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-30-1.pdf, id=544, 85.75839p
+<202401260003-plot_files/figure-latex/unnamed-chunk-30-1.pdf, id=642, 85.75839p
 t x 114.2107pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-30-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-30-
-1.pdf  used on input line 893.
+1.pdf  used on input line 1197.
 (pdftex.def)             Requested size: 85.76341pt x 114.21736pt.
- [46 <./202401260003-plot_files/figure-latex/unnamed-chunk-20-1.pdf> <./2024012
-60003-plot_files/figure-latex/unnamed-chunk-22-1.pdf> <./202401260003-plot_file
-s/figure-latex/unnamed-chunk-24-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-32-1.pdf, id=556, 88.60402p
+<202401260003-plot_files/figure-latex/unnamed-chunk-32-1.pdf, id=643, 88.60402p
 t x 117.05632pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-32-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-32-
-1.pdf  used on input line 910.
+1.pdf  used on input line 1214.
 (pdftex.def)             Requested size: 88.60379pt x 117.05603pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-34-1.pdf, id=557, 299.05428
+<202401260003-plot_files/figure-latex/unnamed-chunk-34-1.pdf, id=644, 299.05428
 pt x 85.75839pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-34-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-34-
-1.pdf  used on input line 923.
+1.pdf  used on input line 1227.
 (pdftex.def)             Requested size: 299.05353pt x 85.75818pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf, id=558, 299.05428
+<202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf, id=645, 299.05428
 pt x 85.75839pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-35-
-1.pdf  used on input line 927.
+1.pdf  used on input line 1231.
 (pdftex.def)             Requested size: 299.05353pt x 85.75818pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf, id=559, 64.41867p
+ [51 <./202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf> <./2024012
+60003-plot_files/figure-latex/unnamed-chunk-28-1.pdf> <./202401260003-plot_file
+s/figure-latex/unnamed-chunk-30-1.pdf>] [52 <./202401260003-plot_files/figure-l
+atex/unnamed-chunk-32-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-ch
+unk-34-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf>]
+<202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf, id=666, 64.41867p
 t x 28.8528pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-37-
-1.pdf  used on input line 943.
+1.pdf  used on input line 1247.
 (pdftex.def)             Requested size: 64.42046pt x 28.85359pt.
-
-Underfull \vbox (badness 10000) detected at line 958
- []
-
-[47 <./202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf> <./20240126
-0003-plot_files/figure-latex/unnamed-chunk-28-1.pdf> <./202401260003-plot_files
-/figure-latex/unnamed-chunk-30-1.pdf>] [48 <./202401260003-plot_files/figure-la
-tex/unnamed-chunk-32-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chu
-nk-34-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf> <.
-/202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-39-1.pdf, id=582, 258.07516
+<202401260003-plot_files/figure-latex/unnamed-chunk-39-1.pdf, id=667, 258.07516
 pt x 171.91628pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-39-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-39-
-1.pdf  used on input line 961.
+1.pdf  used on input line 1265.
 (pdftex.def)             Requested size: 258.08633pt x 171.9237pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-41-1.pdf, id=583, 258.07516
+<202401260003-plot_files/figure-latex/unnamed-chunk-41-1.pdf, id=668, 258.07516
 pt x 2.00047pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-41-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-41-
-1.pdf  used on input line 973.
+1.pdf  used on input line 1277.
 (pdftex.def)             Requested size: 258.09814pt x 2.00063pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-43-1.pdf, id=584, 228.02188
+ [53 <./202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf> <./2024012
+60003-plot_files/figure-latex/unnamed-chunk-39-1.pdf> <./202401260003-plot_file
+s/figure-latex/unnamed-chunk-41-1.pdf>]
+<202401260003-plot_files/figure-latex/unnamed-chunk-43-1.pdf, id=679, 228.02188
 pt x 228.02188pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-43-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-43-
-1.pdf  used on input line 993.
+1.pdf  used on input line 1297.
 (pdftex.def)             Requested size: 228.0248pt x 228.0248pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-45-1.pdf, id=585, 257.30528
+<202401260003-plot_files/figure-latex/unnamed-chunk-45-1.pdf, id=680, 257.30528
 pt x 257.30528pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-45-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-45-
-1.pdf  used on input line 1009.
+1.pdf  used on input line 1313.
 (pdftex.def)             Requested size: 257.32426pt x 257.32426pt.
-
-Underfull \vbox (badness 1629) has occurred while \output is active []
-
- [49 <./202401260003-plot_files/figure-latex/unnamed-chunk-39-1.pdf> <./2024012
-60003-plot_files/figure-latex/unnamed-chunk-41-1.pdf>] [50 <./202401260003-plot
-_files/figure-latex/unnamed-chunk-43-1.pdf> <./202401260003-plot_files/figure-l
-atex/unnamed-chunk-45-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-47-1.pdf, id=603, 285.7586p
+<202401260003-plot_files/figure-latex/unnamed-chunk-47-1.pdf, id=681, 285.7586p
 t x 285.7586pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-47-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-47-
-1.pdf  used on input line 1025.
+1.pdf  used on input line 1329.
 (pdftex.def)             Requested size: 285.76225pt x 285.76225pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf, id=604, 228.02188
+ [54 <./202401260003-plot_files/figure-latex/unnamed-chunk-43-1.pdf>] [55 <./20
+2401260003-plot_files/figure-latex/unnamed-chunk-45-1.pdf> <./202401260003-plot
+_files/figure-latex/unnamed-chunk-47-1.pdf>]
+<202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf, id=698, 228.02188
 pt x 85.75839pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-49-
-1.pdf  used on input line 1041.
+1.pdf  used on input line 1345.
 (pdftex.def)             Requested size: 228.02132pt x 85.75818pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-51-1.pdf, id=605, 272.54422
+<202401260003-plot_files/figure-latex/unnamed-chunk-51-1.pdf, id=699, 272.54422
 pt x 104.44722pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-51-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-51-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-51-
-1.pdf  used on input line 1055.
+1.pdf  used on input line 1359.
 (pdftex.def)             Requested size: 272.5477pt x 104.44853pt.
- [51 <./202401260003-plot_files/figure-latex/unnamed-chunk-47-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-53-1.pdf, id=612, 184.21121
+<202401260003-plot_files/figure-latex/unnamed-chunk-53-1.pdf, id=700, 184.21121
 pt x 184.21121pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-53-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-53-
-1.pdf  used on input line 1069.
+1.pdf  used on input line 1373.
 (pdftex.def)             Requested size: 184.21637pt x 184.21637pt.
- [52 <./202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf> <./2024012
-60003-plot_files/figure-latex/unnamed-chunk-51-1.pdf> <./202401260003-plot_file
-s/figure-latex/unnamed-chunk-53-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-55-1.pdf, id=623, 278.02168
+ [56 <./202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf> <./2024012
+60003-plot_files/figure-latex/unnamed-chunk-51-1.pdf>]
+<202401260003-plot_files/figure-latex/unnamed-chunk-55-1.pdf, id=709, 278.02168
 pt x 45.45782pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-55-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-55-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-55-
-1.pdf  used on input line 1097.
+1.pdf  used on input line 1401.
 (pdftex.def)             Requested size: 278.021pt x 45.45769pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf, id=624, 100.75844
+ [57 <./202401260003-plot_files/figure-latex/unnamed-chunk-53-1.pdf> <./2024012
+60003-plot_files/figure-latex/unnamed-chunk-55-1.pdf>]
+<202401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf, id=722, 100.75844
 pt x 105.75812pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-57-
-1.pdf  used on input line 1125.
+1.pdf  used on input line 1429.
 (pdftex.def)             Requested size: 100.75818pt x 105.75784pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-59-1.pdf, id=625, 196.36362
+<202401260003-plot_files/figure-latex/unnamed-chunk-59-1.pdf, id=723, 196.36362
 pt x 193.47281pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-59-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-59-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-59-
-1.pdf  used on input line 1139.
+1.pdf  used on input line 1443.
 (pdftex.def)             Requested size: 196.3661pt x 193.47528pt.
- [53 <./202401260003-plot_files/figure-latex/unnamed-chunk-55-1.pdf>] [54 <./20
-2401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf> <./202401260003-plot
-_files/figure-latex/unnamed-chunk-59-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf, id=672, 111.75752
+
+Underfull \vbox (badness 3930) has occurred while \output is active []
+
+ [58 <./202401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf> <./2024012
+60003-plot_files/figure-latex/unnamed-chunk-59-1.pdf>]
+<202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf, id=763, 111.75752
 pt x 92.31288pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-61-
-1.pdf  used on input line 1180.
+1.pdf  used on input line 1486.
 (pdftex.def)             Requested size: 111.75723pt x 92.31265pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-62-1.pdf, id=674, 139.04347
+<202401260003-plot_files/figure-latex/unnamed-chunk-62-1.pdf, id=765, 139.04347
 pt x 75.2411pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-62-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-62-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-62-
-1.pdf  used on input line 1186.
+1.pdf  used on input line 1492.
 (pdftex.def)             Requested size: 139.05373pt x 75.24664pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-63-1.pdf, id=675, 123.54657
+<202401260003-plot_files/figure-latex/unnamed-chunk-63-1.pdf, id=766, 123.54657
 pt x 93.14098pt>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-63-1.pdf Graphic file 
 (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-63-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-63-
-1.pdf  used on input line 1190.
+1.pdf  used on input line 1496.
 (pdftex.def)             Requested size: 123.54626pt x 93.14073pt.
- (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-<202401260003-plot_files/figure-latex/skills-1.pdf, id=677, 226.86255pt x 234.8
+ [59 <./202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf> <./2024012
+60003-plot_files/figure-latex/unnamed-chunk-62-1.pdf>]
+<202401260003-plot_files/figure-latex/skills-1.pdf, id=786, 226.86255pt x 234.8
 3736pt>
 File: 202401260003-plot_files/figure-latex/skills-1.pdf Graphic file (type pdf)
 
 <use 202401260003-plot_files/figure-latex/skills-1.pdf>
 Package pdftex.def Info: 202401260003-plot_files/figure-latex/skills-1.pdf  use
-d on input line 1197.
+d on input line 1510.
 (pdftex.def)             Requested size: 226.8689pt x 234.84392pt.
-
-Missing character: There is no ° in font bsmiu73!
-Missing character: There is no ß in font bsmiu7e!
-Missing character: There is no ¡ in font bsmiu8b!
-Missing character: There is no þ in font bsmiu56!
-Missing character: There is no ^^H in font bsmiu68!
-<202401260003-plot_files/figure-latex/unnamed-chunk-64-1.pdf, id=678, 112.25337
+ [60 <./202401260003-plot_files/figure-latex/unnamed-chunk-63-1.pdf> <./2024012
+60003-plot_files/figure-latex/skills-1.pdf>]
+<202401260003-plot_files/figure-latex/unnamed-chunk-66-1.pdf, id=864, 112.25337
 pt x 110.64337pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-64-1.pdf Graphic file 
+File: 202401260003-plot_files/figure-latex/unnamed-chunk-66-1.pdf Graphic file 
 (type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-64-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-64-
-1.pdf  used on input line 1202.
+<use 202401260003-plot_files/figure-latex/unnamed-chunk-66-1.pdf>
+Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-66-
+1.pdf  used on input line 1541.
 (pdftex.def)             Requested size: 112.25479pt x 110.64478pt.
-[55 <./202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf> <./20240126
-0003-plot_files/figure-latex/unnamed-chunk-62-1.pdf>] [56 <./202401260003-plot_
-files/figure-latex/unnamed-chunk-63-1.pdf> <./202401260003-plot_files/figure-la
-tex/skills-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-64-1.pd
-f>] <xymatrix 3x3 320> <xymatrix 3x3 320> [57
+ [61 <./202401260003-plot_files/figure-latex/unnamed-chunk-66-1.pdf>] [62
 
-] [58
+] <xymatrix 3x3 320>
+[63] [64
 
-] [59] [60]
-Chapter 13.
-[61
+]
+Chapter 14.
+[65] [66
 
-] [62
+] [67] [68]
+Chapter 15.
+[69
 
-] [63] [64
+] [70
 
-] [65] [66
+] [71] [72
+
+] [73] [74
 
 ]
 
-LaTeX Warning: Reference `eq:eqclass' on page 67 undefined on input line 1279.
+LaTeX Warning: Reference `eq:eqclass' on page 75 undefined on input line 1676.
 
-[67] [68
+[75] [76
 
 ] (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -2018,404 +2022,416 @@ File: UTF8.enc 2021/10/16 4.8.5
 (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Overfull \hbox (2.8258pt too wide) detected at line 1312
+Overfull \hbox (2.8258pt too wide) detected at line 1711
 []
  []
 
-[69] [70
+[77] [78
 
 ]
-Chapter 14.
-[71]
-Overfull \hbox (71.53241pt too wide) in paragraph at lines 1428--1429
+Chapter 16.
+[79]
+Overfull \hbox (71.53241pt too wide) in paragraph at lines 1797--1798
 []\T1/lmr/m/n/10 (-20) copy \T1/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticul
 ate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tcl8.6
  []
 
 
-Overfull \hbox (62.39655pt too wide) in paragraph at lines 1428--1429
+Overfull \hbox (62.39655pt too wide) in paragraph at lines 1797--1798
 \T1/lmr/m/n/10 (-20) and \T1/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticulate
 \r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tk8.6
  []
 
 
-Overfull \hbox (113.92896pt too wide) in paragraph at lines 1428--1429
+Overfull \hbox (113.92896pt too wide) in paragraph at lines 1797--1798
 \T1/lmr/m/n/10 (-20) two fold-ers to the folder \T1/lmtt/m/n/10 C:\Users\RW\App
 Data\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\Lib 
  []
 
-<202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf, id=870, 469.755p
+<202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf, id=975, 469.755p
 t x 325.215pt>
 File: 202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file
  (type pdf)
 <use 202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf>
 Package pdftex.def Info: 202401292317-Python_files/figure-latex/unnamed-chunk-8
--1.pdf  used on input line 1447.
+-1.pdf  used on input line 1816.
 (pdftex.def)             Requested size: 443.8635pt x 307.2901pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72]
-[73 <./202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf>] [74
+ [80]
+[81 <./202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf>] [82
 
 ]
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-2-1.pdf, id=900, 305.54951p
-t x 154.88565pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf, id=1005, 305.54951
+pt x 154.88565pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (
 type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-2-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-2-1
-.pdf  used on input line 1483.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1
+.pdf  used on input line 1856.
 (pdftex.def)             Requested size: 305.56741pt x 154.89471pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-3-1.pdf, id=901, 455.46663p
-t x 149.88898pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-3-1.pdf, id=1006, 455.46663
+pt x 149.88898pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (
 type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-3-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-3-1
-.pdf  used on input line 1487.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-3-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-3-1
+.pdf  used on input line 1860.
 (pdftex.def)             Requested size: 399.49835pt x 131.47044pt.
-
-[75 <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-2-1.pdf>]
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-5-1.pdf, id=931, 57.30508pt
- x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1.pdf, id=1008, 57.30508p
+t x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (
 type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-5-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-5-1
-.pdf  used on input line 1503.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-6-1.pdf, id=932, 57.30508pt
- x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1
+.pdf  used on input line 1879.
+(pdftex.def)             Requested size: 22.1941pt x 22.1941pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf, id=1009, 57.30508p
+t x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (
 type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-6-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-6-1
-.pdf  used on input line 1506.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-7-1.pdf, id=933, 57.30508pt
- x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1
+.pdf  used on input line 1882.
+(pdftex.def)             Requested size: 22.1941pt x 22.1941pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf, id=1010, 57.30508p
+t x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (
 type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-7-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-7-1
-.pdf  used on input line 1509.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1
+.pdf  used on input line 1885.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-8-1.pdf, id=934, 85.75839pt
- x 85.75839pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (
-type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-8-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-8-1
-.pdf  used on input line 1514.
-(pdftex.def)             Requested size: 85.75818pt x 85.75818pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-9-1.pdf, id=935, 57.30508pt
- x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (
-type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-9-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-9-1
-.pdf  used on input line 1519.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-11-1.pdf, id=936, 57.30508p
-t x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-11-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-11-
-1.pdf  used on input line 1530.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-13-1.pdf, id=937, 57.30508p
-t x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-13-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-13-
-1.pdf  used on input line 1542.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-14-1.pdf, id=938, 57.30508p
-t x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-14-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-14-
-1.pdf  used on input line 1546.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-16-1.pdf, id=939, 114.2107p
-t x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-16-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-16-
-1.pdf  used on input line 1558.
-(pdftex.def)             Requested size: 110.97244pt x 55.68028pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-18-1.pdf, id=940, 57.30508p
-t x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-18-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-18-
-1.pdf  used on input line 1570.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
- [76 <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-3-1.pdf> <./20240131
-1000-TiKZ_files/figure-latex/unnamed-chunk-5-1.pdf> <./202401311000-TiKZ_files/
-figure-latex/unnamed-chunk-6-1.pdf>] [77 <./202401311000-TiKZ_files/figure-late
-x/unnamed-chunk-7-1.pdf> <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-
-8-1.pdf> <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-9-1.pdf> <./2024
-01311000-TiKZ_files/figure-latex/unnamed-chunk-11-1.pdf> <./202401311000-TiKZ_f
-iles/figure-latex/unnamed-chunk-13-1.pdf> <./202401311000-TiKZ_files/figure-lat
-ex/unnamed-chunk-14-1.pdf> <./202401311000-TiKZ_files/figure-latex/unnamed-chun
-k-16-1.pdf>]
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-20-1.pdf, id=972, 57.30508p
-t x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-20-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-20-
-1.pdf  used on input line 1582.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-22-1.pdf, id=973, 85.75839p
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf, id=1011, 85.75839p
 t x 85.75839pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-22-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-22-
-1.pdf  used on input line 1595.
-(pdftex.def)             Requested size: 85.75818pt x 85.75818pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-24-1.pdf, id=974, 114.2107p
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (
+type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1
+.pdf  used on input line 1890.
+(pdftex.def)             Requested size: 66.5759pt x 66.5759pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf, id=1012, 57.30508p
 t x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file 
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (
+type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1
+.pdf  used on input line 1895.
+(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
+
+[83] [84 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf> <./2024
+01311000-TikZ_files/figure-latex/unnamed-chunk-3-1.pdf> <./202401311000-TikZ_fi
+les/figure-latex/unnamed-chunk-5-1.pdf> <./202401311000-TikZ_files/figure-latex
+/unnamed-chunk-6-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-7
+-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf> <./20240
+1311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf, id=1061, 57.30508
+pt x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-24-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-24-
-1.pdf  used on input line 1607.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-11-
+1.pdf  used on input line 1906.
+(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf, id=1062, 57.30508
+pt x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-13-
+1.pdf  used on input line 1918.
+(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf, id=1063, 57.30508
+pt x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-14-
+1.pdf  used on input line 1922.
+(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf, id=1064, 114.2107
+pt x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-
+1.pdf  used on input line 1934.
 (pdftex.def)             Requested size: 110.97244pt x 55.68028pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-26-1.pdf, id=975, 199.5696p
-t x 57.30508pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file 
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf, id=1065, 57.30508
+pt x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-26-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-26-
-1.pdf  used on input line 1620.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-
+1.pdf  used on input line 1946.
+(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf, id=1066, 57.30508
+pt x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-
+1.pdf  used on input line 1958.
+(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf, id=1067, 85.75839
+pt x 85.75839pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-22-
+1.pdf  used on input line 1971.
+(pdftex.def)             Requested size: 85.75818pt x 85.75818pt.
+ [85 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf> <./202401311000-TikZ_file
+s/figure-latex/unnamed-chunk-14-1.pdf>] [86 <./202401311000-TikZ_files/figure-l
+atex/unnamed-chunk-16-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-ch
+unk-18-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf> <
+./202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf, id=1091, 114.2107
+pt x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-
+1.pdf  used on input line 1983.
+(pdftex.def)             Requested size: 110.97244pt x 55.68028pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf, id=1092, 199.5696
+pt x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-
+1.pdf  used on input line 1996.
 (pdftex.def)             Requested size: 110.96645pt x 31.86327pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-28-1.pdf, id=976, 85.75839p
-t x 114.2107pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file 
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf, id=1093, 85.75839
+pt x 114.2107pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-28-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-28-
-1.pdf  used on input line 1632.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-
+1.pdf  used on input line 2008.
 (pdftex.def)             Requested size: 85.76341pt x 114.21736pt.
-[78 <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-18-1.pdf> <./20240131
-1000-TiKZ_files/figure-latex/unnamed-chunk-20-1.pdf> <./202401311000-TiKZ_files
-/figure-latex/unnamed-chunk-22-1.pdf>]
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-30-1.pdf, id=988, 88.60402p
-t x 117.05632pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file 
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf, id=1094, 88.60402
+pt x 117.05632pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-30-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-30-
-1.pdf  used on input line 1649.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-
+1.pdf  used on input line 2025.
 (pdftex.def)             Requested size: 88.60379pt x 117.05603pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-32-1.pdf, id=989, 299.05428
-pt x 85.75839pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-32-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-32-
-1.pdf  used on input line 1662.
-(pdftex.def)             Requested size: 299.05353pt x 85.75818pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-33-1.pdf, id=990, 299.05428
-pt x 85.75839pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-33-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-33-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-33-
-1.pdf  used on input line 1666.
-(pdftex.def)             Requested size: 299.05353pt x 85.75818pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-35-1.pdf, id=991, 64.41867p
-t x 28.8528pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-35-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-35-
-1.pdf  used on input line 1682.
-(pdftex.def)             Requested size: 64.42046pt x 28.85359pt.
-
-Underfull \vbox (badness 10000) detected at line 1697
- []
-
-[79 <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-24-1.pdf> <./20240131
-1000-TiKZ_files/figure-latex/unnamed-chunk-26-1.pdf> <./202401311000-TiKZ_files
-/figure-latex/unnamed-chunk-28-1.pdf>] [80 <./202401311000-TiKZ_files/figure-la
-tex/unnamed-chunk-30-1.pdf> <./202401311000-TiKZ_files/figure-latex/unnamed-chu
-nk-32-1.pdf> <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-33-1.pdf> <.
-/202401311000-TiKZ_files/figure-latex/unnamed-chunk-35-1.pdf>]
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-37-1.pdf, id=1015, 258.0751
-6pt x 171.91628pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-37-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-37-
-1.pdf  used on input line 1700.
-(pdftex.def)             Requested size: 258.08633pt x 171.9237pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-39-1.pdf, id=1016, 258.0751
-6pt x 2.00047pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-39-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-39-
-1.pdf  used on input line 1712.
-(pdftex.def)             Requested size: 258.09814pt x 2.00063pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-41-1.pdf, id=1017, 228.0218
-8pt x 228.02188pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-41-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-41-
-1.pdf  used on input line 1732.
-(pdftex.def)             Requested size: 228.0248pt x 228.0248pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-43-1.pdf, id=1018, 257.3052
-8pt x 257.30528pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-43-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-43-
-1.pdf  used on input line 1748.
-(pdftex.def)             Requested size: 257.32426pt x 257.32426pt.
-
-Underfull \vbox (badness 1629) has occurred while \output is active []
-
- [81 <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-37-1.pdf> <./2024013
-11000-TiKZ_files/figure-latex/unnamed-chunk-39-1.pdf>] [82 <./202401311000-TiKZ
-_files/figure-latex/unnamed-chunk-41-1.pdf> <./202401311000-TiKZ_files/figure-l
-atex/unnamed-chunk-43-1.pdf>]
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-45-1.pdf, id=1035, 285.7586
-pt x 285.7586pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-45-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-45-
-1.pdf  used on input line 1764.
-(pdftex.def)             Requested size: 285.76225pt x 285.76225pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-47-1.pdf, id=1036, 228.0218
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf, id=1095, 299.0542
 8pt x 85.75839pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file 
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-47-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-47-
-1.pdf  used on input line 1780.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-32-
+1.pdf  used on input line 2038.
+(pdftex.def)             Requested size: 299.05353pt x 85.75818pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-33-1.pdf, id=1096, 299.0542
+8pt x 85.75839pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-33-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-33-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-33-
+1.pdf  used on input line 2042.
+(pdftex.def)             Requested size: 299.05353pt x 85.75818pt.
+ [87 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf> <./202401311000-TikZ_file
+s/figure-latex/unnamed-chunk-28-1.pdf>]
+[88 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf> <./20240131
+1000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf> <./202401311000-TikZ_files
+/figure-latex/unnamed-chunk-33-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf, id=1118, 64.41867
+pt x 28.8528pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-35-
+1.pdf  used on input line 2058.
+(pdftex.def)             Requested size: 64.42046pt x 28.85359pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf, id=1119, 258.0751
+6pt x 171.91628pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-37-
+1.pdf  used on input line 2076.
+(pdftex.def)             Requested size: 258.08633pt x 171.9237pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf, id=1120, 258.0751
+6pt x 2.00047pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-39-
+1.pdf  used on input line 2088.
+(pdftex.def)             Requested size: 258.09814pt x 2.00063pt.
+ [89 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf> <./202401311000-TikZ_file
+s/figure-latex/unnamed-chunk-39-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf, id=1131, 228.0218
+8pt x 228.02188pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-41-
+1.pdf  used on input line 2108.
+(pdftex.def)             Requested size: 228.0248pt x 228.0248pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf, id=1132, 257.3052
+8pt x 257.30528pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-43-
+1.pdf  used on input line 2124.
+(pdftex.def)             Requested size: 257.32426pt x 257.32426pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf, id=1133, 285.7586
+pt x 285.7586pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-45-
+1.pdf  used on input line 2140.
+(pdftex.def)             Requested size: 285.76225pt x 285.76225pt.
+
+[90 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf>] [91 <./202
+401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf> <./202401311000-TikZ_
+files/figure-latex/unnamed-chunk-45-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf, id=1149, 228.0218
+8pt x 85.75839pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-47-
+1.pdf  used on input line 2156.
 (pdftex.def)             Requested size: 228.02132pt x 85.75818pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-49-1.pdf, id=1037, 272.5442
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf, id=1150, 272.5442
 2pt x 104.44722pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file 
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-49-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-49-
-1.pdf  used on input line 1794.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-49-
+1.pdf  used on input line 2170.
 (pdftex.def)             Requested size: 272.5477pt x 104.44853pt.
- [83 <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-45-1.pdf>]
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-51-1.pdf, id=1044, 184.2112
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf, id=1151, 184.2112
 1pt x 184.21121pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-51-1.pdf Graphic file 
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-51-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-51-
-1.pdf  used on input line 1808.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-51-
+1.pdf  used on input line 2184.
 (pdftex.def)             Requested size: 184.21637pt x 184.21637pt.
- [84 <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-47-1.pdf> <./2024013
-11000-TiKZ_files/figure-latex/unnamed-chunk-49-1.pdf> <./202401311000-TiKZ_file
-s/figure-latex/unnamed-chunk-51-1.pdf>]
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-53-1.pdf, id=1055, 278.0216
+ [92 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf, id=1160, 278.0216
 8pt x 45.45782pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file 
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-53-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-53-
-1.pdf  used on input line 1836.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-53-
+1.pdf  used on input line 2212.
 (pdftex.def)             Requested size: 278.021pt x 45.45769pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-55-1.pdf, id=1056, 100.7584
+ [93 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf, id=1173, 100.7584
 4pt x 105.75812pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-55-1.pdf Graphic file 
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-55-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-55-
-1.pdf  used on input line 1864.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-55-
+1.pdf  used on input line 2240.
 (pdftex.def)             Requested size: 100.75818pt x 105.75784pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-57-1.pdf, id=1057, 196.3636
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf, id=1174, 196.3636
 2pt x 193.47281pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-57-1.pdf Graphic file 
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-57-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-57-
-1.pdf  used on input line 1878.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-57-
+1.pdf  used on input line 2254.
 (pdftex.def)             Requested size: 196.3661pt x 193.47528pt.
- [85 <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-53-1.pdf>] [86 <./20
-2401311000-TiKZ_files/figure-latex/unnamed-chunk-55-1.pdf> <./202401311000-TiKZ
-_files/figure-latex/unnamed-chunk-57-1.pdf>]
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-59-1.pdf, id=1101, 111.7575
+
+Underfull \vbox (badness 3930) has occurred while \output is active []
+
+ [94 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf, id=1210, 111.7575
 2pt x 92.31288pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-59-1.pdf Graphic file 
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-59-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-59-
-1.pdf  used on input line 1919.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-59-
+1.pdf  used on input line 2297.
 (pdftex.def)             Requested size: 111.75723pt x 92.31265pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-60-1.pdf, id=1103, 139.0434
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf, id=1212, 139.0434
 7pt x 75.2411pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-60-1.pdf Graphic file 
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-60-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-60-
-1.pdf  used on input line 1925.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-60-
+1.pdf  used on input line 2303.
 (pdftex.def)             Requested size: 139.05373pt x 75.24664pt.
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-61-1.pdf, id=1104, 123.5465
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf, id=1213, 123.5465
 7pt x 93.14098pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-61-1.pdf Graphic file 
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-61-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-61-
-1.pdf  used on input line 1929.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-61-
+1.pdf  used on input line 2307.
 (pdftex.def)             Requested size: 123.54626pt x 93.14073pt.
- (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-<202401311000-TiKZ_files/figure-latex/skills-1.pdf, id=1106, 226.86255pt x 234.
+ [95 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf>]
+<202401311000-TikZ_files/figure-latex/skills-1.pdf, id=1231, 226.86255pt x 234.
 83736pt>
-File: 202401311000-TiKZ_files/figure-latex/skills-1.pdf Graphic file (type pdf)
+File: 202401311000-TikZ_files/figure-latex/skills-1.pdf Graphic file (type pdf)
 
-<use 202401311000-TiKZ_files/figure-latex/skills-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/skills-1.pdf  use
-d on input line 1936.
+<use 202401311000-TikZ_files/figure-latex/skills-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/skills-1.pdf  use
+d on input line 2321.
 (pdftex.def)             Requested size: 226.8689pt x 234.84392pt.
-
-Missing character: There is no ° in font bsmiu73!
-Missing character: There is no ß in font bsmiu7e!
-Missing character: There is no ¡ in font bsmiu8b!
-Missing character: There is no þ in font bsmiu56!
-Missing character: There is no ^^H in font bsmiu68!
-<202401311000-TiKZ_files/figure-latex/unnamed-chunk-62-1.pdf, id=1107, 112.2533
+ [96 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/skills-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf, id=1309, 112.2533
 7pt x 110.64337pt>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-62-1.pdf Graphic file 
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-62-1.pdf>
-Package pdftex.def Info: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-62-
-1.pdf  used on input line 1941.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-
+1.pdf  used on input line 2352.
 (pdftex.def)             Requested size: 112.25479pt x 110.64478pt.
-[87 <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-59-1.pdf> <./20240131
-1000-TiKZ_files/figure-latex/unnamed-chunk-60-1.pdf>] [88 <./202401311000-TiKZ_
-files/figure-latex/unnamed-chunk-61-1.pdf> <./202401311000-TiKZ_files/figure-la
-tex/skills-1.pdf> <./202401311000-TiKZ_files/figure-latex/unnamed-chunk-62-1.pd
-f>] <xymatrix 3x3 320> <xymatrix 3x3 320> [89
+ [97 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf>] [98
 
-] [90
+] <xymatrix 3x3 320>
+[99] [100
 
 ]
-Chapter 15.
-[91] [92
+Chapter 17.
+<202402161220-RMarkdown_files/figure-latex/unnamed-chunk-6-1.pdf, id=1339, 361.
+35pt x 289.08pt>
+File: 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-6-1.pdf Graphic f
+ile (type pdf)
+<use 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-6-1.pdf>
+Package pdftex.def Info: 202402161220-RMarkdown_files/figure-latex/unnamed-chun
+k-6-1.pdf  used on input line 2433.
+(pdftex.def)             Requested size: 244.12679pt x 195.30142pt.
+[101]
+<202402161220-RMarkdown_files/figure-latex/unnamed-chunk-7-1.pdf, id=1348, 722.
+7pt x 578.16pt>
+File: 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-7-1.pdf Graphic f
+ile (type pdf)
+<use 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-7-1.pdf>
+Package pdftex.def Info: 202402161220-RMarkdown_files/figure-latex/unnamed-chun
+k-7-1.pdf  used on input line 2460.
+(pdftex.def)             Requested size: 244.12679pt x 195.30142pt.
+ [102 <./202402161220-RMarkdown_files/figure-latex/unnamed-chunk-6-1.pdf> <./20
+2402161220-RMarkdown_files/figure-latex/unnamed-chunk-7-1.pdf>]
+Chapter 18.
+[103
+
+] [104] [105] [106
+
+]
+Chapter 19.
+[107] [108
 
 ] (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -2423,26 +2439,31 @@ File: UTF8.enc 2021/10/16 4.8.5
 (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1985--1988
+Underfull \hbox (badness 10000) in paragraph at lines 2623--2626
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1989--1992
+Underfull \hbox (badness 10000) in paragraph at lines 2627--2630
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1993--1996
+Underfull \hbox (badness 10000) in paragraph at lines 2631--2634
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1997--2000
+Underfull \hbox (badness 10000) in paragraph at lines 2635--2638
 
  []
 
-[93] (./math.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 2639--2642
+
+ []
+
+[109] (./math.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2451,63 +2472,69 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 42351 strings out of 478305
- 939081 string characters out of 5849246
- 1369508 words of memory out of 5000000
- 59220 multiletter control sequences out of 15000+600000
- 573789 words of font info for 210 fonts, out of 8000000 for 9000
+ 42548 strings out of 478305
+ 942960 string characters out of 5849246
+ 1391386 words of memory out of 5000000
+ 59312 multiletter control sequences out of 15000+600000
+ 596849 words of font info for 243 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,20n,91p,3215b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/
-dvips/lm/lm-mathit.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathex
-.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2022
-/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}<c:/texlive/2022/texmf-dist/fonts/type
-1/arphic/bsmiu/bsmiu30.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu
-/bsmiu4e.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu4f.pfb><
-c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu50.pfb><c:/texlive/202
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022
+/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2022/texmf-dist/fonts/
+enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2022/tex
+mf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2022/texmf-dist/fonts/type
+1/arphic/bsmiu/bsmiu4e.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu
+/bsmiu4f.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu50.pfb><
+c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu52.pfb><c:/texlive/202
 2/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu53.pfb><c:/texlive/2022/texmf-dist/f
 onts/type1/arphic/bsmiu/bsmiu57.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arp
-hic/bsmiu/bsmiu5b.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmi
-u5c.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5f.pfb><c:/te
-xlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu62.pfb><c:/texlive/2022/tex
-mf-dist/fonts/type1/arphic/bsmiu/bsmiu6b.pfb><c:/texlive/2022/texmf-dist/fonts/
-type1/arphic/bsmiu/bsmiu76.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/b
+hic/bsmiu/bsmiu59.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmi
+u5b.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5c.pfb><c:/te
+xlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5e.pfb><c:/texlive/2022/tex
+mf-dist/fonts/type1/arphic/bsmiu/bsmiu61.pfb><c:/texlive/2022/texmf-dist/fonts/
+type1/arphic/bsmiu/bsmiu6b.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/b
 smiu/bsmiu77.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu79.p
 fb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu7a.pfb><c:/texlive
 /2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu7b.pfb><c:/texlive/2022/texmf-di
-st/fonts/type1/arphic/bsmiu/bsmiu80.pfb><c:/texlive/2022/texmf-dist/fonts/type1
-/arphic/bsmiu/bsmiu81.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/
-bsmiu82.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu90.pfb><c
-:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu95.pfb><c:/texlive/2022
-/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu96.pfb><c:/texlive/2022/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive
-/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/font
-s/type1/public/lm/lmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/
-lmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/te
-xlive/2022/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2022/texmf-d
-ist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pu
-blic/lm/lmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><
-c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2022/tex
-mf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1
-/public/lm/lmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr7.pfb>
-<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2022/tex
-mf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022/texmf-dist/fonts/type
-1/public/lm/lmro10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10
-.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/texlive/20
-22/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2022/texmf-dist/font
-s/type1/public/lm/lmtt10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/
-lmtti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb><
-c:/texlive/2022/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on math.pdf (93 pages, 831750 bytes).
+st/fonts/type1/arphic/bsmiu/bsmiu81.pfb><c:/texlive/2022/texmf-dist/fonts/type1
+/arphic/bsmiu/bsmiu82.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/
+bsmiu8b.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu90.pfb><c
+:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu91.pfb><c:/texlive/2022
+/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu95.pfb><c:/texlive/2022/texmf-dist/fo
+nts/type1/arphic/bsmiu/bsmiu96.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/
+texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/20
+22/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
+/lm/lmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:
+/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2022/tex
+mf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type
+1/public/lm/lmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12
+.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi5.pfb><c:/texlive/20
+22/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2022/texmf-dist/fonts
+/type1/public/lm/lmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/
+lmmib7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texl
+ive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2022/texmf-dist
+/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
+/lm/lmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/tex
+live/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2022/texmf-dist
+/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
+c/lm/lmro10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c
+:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy5.pfb><c:/texlive/2022/texm
+f-dist/fonts/type1/public/lm/lmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/
+public/lm/lmtk10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtko10.
+pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/20
+22/texmf-dist/fonts/type1/public/lm/lmtti10.pfb><c:/texlive/2022/texmf-dist/fon
+ts/type1/public/xypic/xyatip10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publ
+ic/xypic/xybtip10.pfb>
+Output written on math.pdf (109 pages, 930251 bytes).
 PDF statistics:
- 1677 PDF objects out of 1728 (max. 8388607)
- 1301 compressed objects within 14 object streams
- 293 named destinations out of 1000 (max. 500000)
- 52030 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1953 PDF objects out of 2073 (max. 8388607)
+ 1538 compressed objects within 16 object streams
+ 361 named destinations out of 1000 (max. 500000)
+ 64424 words of extra memory for PDF output out of 74296 (max. 10000000)
 

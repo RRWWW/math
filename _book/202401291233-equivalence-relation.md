@@ -2,24 +2,23 @@
 
 <!-- \begin{CJK}{UTF8}{bsmi} -->
 <!-- \begin{defn} -->
-等價關係 equivalence relation
 
 
-等價關係 equivalence relation
 
 
-等價關係 equivalence relation
-
-等價關係 equivalence relation
 
 
-等價關係 equivalence relation
 
 
-$$
-a+b
-$$
 
+
+
+
+
+
+https://stackoverflow.com/questions/76240244/bookdown-conditional-display-of-text-and-code-blocks-latex-pdf-vs-html
+
+::: {show-in="html"}
 
 \begingroup
 \fontfamily{ppl}\fontsize{1}{1}\selectfont
@@ -45,6 +44,10 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \end{cases}
 \end{align*}
 \endgroup
+
+:::
+
+::: {show-in="pdf"}
 
 \begin{CJK}{UTF8}{bsmi}等價關係 equivalence relation \label{def:equivalence-relation}
 \end{CJK}
@@ -72,3 +75,5 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \end{align*}
 \end{CJK}
 <!-- \end{defn} -->
+
+:::

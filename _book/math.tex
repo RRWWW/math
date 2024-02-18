@@ -165,10 +165,17 @@
 % \let\oldpb\printbibliography
 % \renewcommand{\printbibliography}{\oldpb[heading=bibintoc]}
 
+% TikZ
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.15}
+
+% xcolor colorbox
+% https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX
+\usepackage[dvipsnames]{xcolor}
+% \usepackage[svgnames]{xcolor}
+% \usepackage[x11names]{xcolor}
 
 \usepackage{mathrsfs}
 \usetikzlibrary{arrows}
@@ -187,6 +194,26 @@
 \setlist[itemize,1]{label=\textbullet}
 \setlist[itemize,2]{label=--}
 \setlist[itemize,3]{label=*}
+
+% multicolumn
+% https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html
+\newenvironment{cols}[1][]{}{}
+
+\newenvironment{col}[1]{\begin{minipage}{#1}\ignorespaces}{%
+\end{minipage}
+\ifhmode\unskip\fi
+\aftergroup\useignorespacesandallpars}
+
+\def\useignorespacesandallpars#1\ignorespaces\fi{%
+#1\fi\ignorespacesandallpars}
+
+\makeatletter
+\def\ignorespacesandallpars{%
+  \@ifnextchar\par
+    {\expandafter\ignorespacesandallpars\@gobble}%
+    {}%
+}
+\makeatother
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -205,7 +232,7 @@
 
 \title{math}
 \author{Joey Yu Hsu}
-\date{2024-02-16}
+\date{2024-02-18}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
@@ -494,10 +521,83 @@ Or use:
 \hypertarget{part-by-discipline}{%
 \part{by discipline}\label{part-by-discipline}}
 
-\hypertarget{test-cross-link}{%
-\chapter{test cross-link}\label{test-cross-link}}
+\hypertarget{test}{%
+\chapter{test}\label{test}}
+
+\hypertarget{superscript-and-subscript}{%
+\section{superscript and subscript}\label{superscript-and-subscript}}
 
 script\textsuperscript{superscript}\textsubscript{subscript}
+
+\hypertarget{equation-term-coloring}{%
+\section{equation term coloring}\label{equation-term-coloring}}
+
+\url{https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html}
+
+LaTex color
+
+\url{https://latexcolor.com/}
+
+\url{https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX}
+
+\url{https://latex-tutorial.com/color-latex/\#}:\textasciitilde:text=To\%20summarize\%2C\%20pyellow!50efined\%20colors\%20in,when\%20loading\%20the\%20xcolor\%20package.
+
+LaTex color methods
+
+color frame
+
+\url{https://tex.stackexchange.com/questions/582748/highlight-equation-with-boxes-and-arrows}
+
+color box
+
+\url{https://tex.stackexchange.com/questions/567739/how-to-move-and-size-colorbox}
+
+color box with round corners
+
+\url{https://tex.stackexchange.com/questions/568880/color-box-with-rounded-corners}
+
+highlighting
+
+\url{https://tex.stackexchange.com/questions/318991/highlighting-math}
+
+\url{https://forum.remnote.io/t/highlighting-latex-formulas/149}
+
+LyX
+
+\url{https://tex.stackexchange.com/questions/250069/create-a-color-box}
+\url{https://latexlyx.blogspot.com/2013/12/lyx.html}
+
+\url{https://tex.stackexchange.com/questions/635486/prevent-lyx-from-escaping-math-in-color-box-title}
+
+Bookdown - conditional display of text and code blocks (LaTeX/PDF vs.~HTML)
+\url{https://stackoverflow.com/questions/76240244/bookdown-conditional-display-of-text-and-code-blocks-latex-pdf-vs-html}
+
+\begin{align*}
+\colorbox{yellow!50}{$F$}= & \colorbox{yellow!50}{$ma$}\\
+\end{align*}
+
+\url{https://community.rstudio.com/t/highlighting-text-inline-in-rmarkdown-or-bookdown-pdf/35118/4}
+\definecolor{hightlightColor}{HTML}{FFFF66}
+
+\begin{align*}
+\colorbox{hightlightColor}{$F$}= & \colorbox{yellow!50}{$ma$}\\
+\end{align*}
+
+\begin{align*}
+\colorbox{hightlightColor}{\ensuremath{F}}= & \colorbox{yellow!50}{\ensuremath{F}}\\
+\end{align*}
+
+\begin{equation}
+\colorbox{yellow!50}{$F$}=\colorbox{yellow!50}{$ma$}
+\end{equation}
+
+\[
+\colorbox{hightlightColor}{$F$}=\colorbox{yellow!50}{$ma$}
+\]
+
+\[
+\colorbox{yellow!50}{$Y = \beta_0 + \beta_1 X_1 + \ldots + \beta_n X_n$}
+\]
 
 \hypertarget{link-and-reference}{%
 \section{link and reference}\label{link-and-reference}}
@@ -616,8 +716,106 @@ and \(a\) and \(b\) denote the lengths of the other two sides, we have
 \hypertarget{test-cross-link-2}{%
 \chapter{test cross-link 2}\label{test-cross-link-2}}
 
+\hypertarget{verbatim}{%
+\section{verbatim}\label{verbatim}}
+
+\url{https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}r}
+\NormalTok{1 + 1}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\NormalTok{\#\# [1] 2}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{We can output arbitrary content **verbatim**.}
+
+
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}r}
+\DecValTok{1} \SpecialCharTok{+} \DecValTok{1}
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\InformationTok{\#\# [1] 2}
+\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+
+\NormalTok{The content can contain inline code like}
+\NormalTok{78.5398163, too.}
+\end{Highlighting}
+\end{Shaded}
+
 \hypertarget{nice-label}{%
 \chapter{math}\label{nice-label}}
+
+\begin{itemize}
+\tightlist
+\item
+  formula typesetting
+
+  \begin{itemize}
+  \tightlist
+  \item
+    TeX
+
+    \begin{itemize}
+    \tightlist
+    \item
+      LaTeX
+
+      \begin{itemize}
+      \tightlist
+      \item
+        pdfLaTeX
+      \item
+        XeLaTeX
+      \item
+        editor/tool:
+
+        \begin{itemize}
+        \tightlist
+        \item
+          LyX
+        \item
+          OverLeaf
+        \item
+          MathPix Snip
+        \item
+          Micro\$oft Office Word
+        \end{itemize}
+      \end{itemize}
+    \end{itemize}
+  \item
+    MathML
+  \item
+    MathJax: JavaScript
+  \end{itemize}
+\item
+  symbolic computing
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Maple: by MapleSoft
+  \item
+    Mathematica: by Wolfram
+  \end{itemize}
+\item
+  numeric computing
+
+  \begin{itemize}
+  \tightlist
+  \item
+    MatLab: by MathWorks
+  \end{itemize}
+\end{itemize}
 
 \protect\hyperlink{equivalence-relation}{equivalence relation} \ref{equivalence-relation}
 
@@ -628,6 +826,8 @@ and \(a\) and \(b\) denote the lengths of the other two sides, we have
 \hypertarget{equivalence-relation}{%
 \chapter*{equivalence relation}\label{equivalence-relation}}
 \addcontentsline{toc}{chapter}{equivalence relation}
+
+\url{https://stackoverflow.com/questions/76240244/bookdown-conditional-display-of-text-and-code-blocks-latex-pdf-vs-html}
 
 \begin{CJK}{UTF8}{bsmi}等價關係 equivalence relation \label{def:equivalence-relation}
 \end{CJK}
@@ -701,17 +901,118 @@ A=\bigcup\limits _{i\in I}A_{i}\\
 
 \url{https://proofwiki.org/wiki/Definition:Set_Partition}
 
+\hypertarget{statistics}{%
+\chapter{statistics}\label{statistics}}
+
+\hypertarget{covariance-matrix}{%
+\section{covariance matrix}\label{covariance-matrix}}
+
+\textsuperscript{\protect\hyperlink{ref-ccjou2014}{5}}
+
+\hypertarget{calculation}{%
+\subsection{calculation}\label{calculation}}
+
+\begin{align*}
+\mathrm{C}\left[\boldsymbol{X}\right]=\mathrm{Cov}\left[\boldsymbol{X}\right]=\mathrm{V}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\mathrm{T}}-\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]+\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left[\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\boldsymbol{X}\right]\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}
+\end{align*}
+
+\begin{align*}
+\boldsymbol{X}=\left[X\right]_{1\times1}=X\Rightarrow C\left(X\right)=\mathrm{C}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[XX\right]-\mathrm{E}\left(X\right)\mathrm{E}\left(X\right)\\
+= & \mathrm{E}\left(X^{2}\right)-\left[\mathrm{E}\left(X\right)\right]^{2}=\mathrm{V}\left(X\right)
+\end{align*}
+
+\hypertarget{mathrmvleftboldsymbolxboldsymbolbrightmathrmvleftboldsymbolxright}{%
+\subsection{\texorpdfstring{\(\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[\boldsymbol{X}\right]\)}{\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}+\textbackslash boldsymbol\{b\}\textbackslash right{]}=\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}\textbackslash right{]}}}\label{mathrmvleftboldsymbolxboldsymbolbrightmathrmvleftboldsymbolxright}}
+
+\begin{align*}
+\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]= & \mathrm{E}\left[\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]^{\mathrm{T}}\right]\\
+\overset{\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)=\mathrm{E}\left(\boldsymbol{X}\right)+\boldsymbol{b}}{=} & \mathrm{E}\left[\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]=\mathrm{V}\left[\boldsymbol{X}\right]
+\end{align*}
+
+\hypertarget{mathrmvleftaboldsymbolxrightamathrmvleftboldsymbolxrightamathrmt}{%
+\subsection{\texorpdfstring{\(\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)}{\textbackslash mathrm\{V\}\textbackslash left{[}A\textbackslash boldsymbol\{X\}\textbackslash right{]}=A\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}\textbackslash right{]}A\^{}\{\textbackslash mathrm\{T\}\}}}\label{mathrmvleftaboldsymbolxrightamathrmvleftboldsymbolxrightamathrmt}}
+
+\begin{align*}
+\mathrm{V}\left[A\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+\overset{\mathrm{E}\left(A\boldsymbol{X}\right)=A\mathrm{E}\left(\boldsymbol{X}\right)}{=} & \mathrm{E}\left[\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}A^{\mathrm{T}}\right]\\
+= & A\mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]A^{\mathrm{T}}=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}
+\end{align*}
+
+\hypertarget{mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxrightamathrmt}{%
+\subsection{\texorpdfstring{\(\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)}{\textbackslash mathrm\{V\}\textbackslash left{[}A\textbackslash boldsymbol\{X\}+\textbackslash boldsymbol\{b\}\textbackslash right{]}=A\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}\textbackslash right{]}A\^{}\{\textbackslash mathrm\{T\}\}}}\label{mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxrightamathrmt}}
+
+\[
+\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}
+\]
+
 \hypertarget{physics}{%
 \chapter{physics}\label{physics}}
 
 \hypertarget{plot}{%
 \chapter{plot}\label{plot}}
 
-\hypertarget{tikz}{%
-\chapter*{TiKZ}\label{tikz}}
-\addcontentsline{toc}{chapter}{TiKZ}
+\begin{itemize}
+\tightlist
+\item
+  LaTeX
 
-TiKZ and PGFplots
+  \begin{itemize}
+  \tightlist
+  \item
+    TikZ
+
+    \begin{itemize}
+    \tightlist
+    \item
+      TikZ-3Dplot
+    \item
+      PGFplots
+    \end{itemize}
+  \item
+    xypic = xy-pic
+  \end{itemize}
+\item
+  OverLeaf
+\item
+  MathCha
+\item
+  GeoGebra
+\item
+  Python
+
+  \begin{itemize}
+  \tightlist
+  \item
+    MatPlotLib
+  \item
+    Seaborn
+  \item
+    Plotly
+  \end{itemize}
+\end{itemize}
+
+neural network plot/draw
+\url{https://github.com/ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network}
+
+\hypertarget{tikz}{%
+\chapter*{TikZ}\label{tikz}}
+\addcontentsline{toc}{chapter}{TikZ}
+
+How to speed up bookdown generation?
+
+\url{https://stackoverflow.com/questions/56541371/how-to-speed-up-bookdown-generation}
+
+TikZ and PGFplots
 
 What's the relation between packages PGFplots and TikZ?
 
@@ -726,8 +1027,8 @@ What's the relation between packages PGFplots and TikZ?
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
   \FunctionTok{\textbackslash{}def\textbackslash{}a}\NormalTok{\{1.5\} }\CommentTok{\% amplitude}
   \FunctionTok{\textbackslash{}def\textbackslash{}b}\NormalTok{\{2\}   }\CommentTok{\% frequency}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] ({-}0.2,0) {-}{-} (4.2,0) node[right, font=}\FunctionTok{\textbackslash{}small}\NormalTok{] \{}\SpecialStringTok{$x$}\NormalTok{\};}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] (0,{-}4) {-}{-} (0,0.5) node[above] \{}\SpecialStringTok{$y$}\NormalTok{\};}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] ({-}0.2,0){-}{-}(4.2,0) node[right, font=}\FunctionTok{\textbackslash{}small}\NormalTok{] \{}\SpecialStringTok{$x$}\NormalTok{\};}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] (0,{-}4){-}{-}(0,0.5) node[above] \{}\SpecialStringTok{$y$}\NormalTok{\};}
   \FunctionTok{\textbackslash{}draw}\NormalTok{[domain=0:4,smooth,variable=}\FunctionTok{\textbackslash{}t}\NormalTok{,blue,thick] }
 \NormalTok{    plot (\{}\FunctionTok{\textbackslash{}a}\NormalTok{ * (}\FunctionTok{\textbackslash{}b*\textbackslash{}t}\NormalTok{ {-} sin(deg(}\FunctionTok{\textbackslash{}b*\textbackslash{}t}\NormalTok{)))\},\{{-}}\FunctionTok{\textbackslash{}a}\NormalTok{ * (1 {-} cos(deg(}\FunctionTok{\textbackslash{}b*\textbackslash{}t}\NormalTok{)))\});}
   \CommentTok{\% \textbackslash{}node[above] at (2, 0.5) \{Brachistochrone Curve\};}
@@ -748,6 +1049,9 @@ What's the relation between packages PGFplots and TikZ?
 \includegraphics[width=0.9\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-5-1} \caption{Brachistochrone Curve}\label{fig:unnamed-chunk-5}
 \end{figure}
 
+\hypertarget{d}{%
+\section{2D}\label{d}}
+
 \url{https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320}
 
 1
@@ -761,18 +1065,18 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.5\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-7-1} \end{figure}
+\includegraphics[width=0.05\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-7-1} \end{figure}
 
 \begin{figure}
-\includegraphics[width=0.5\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-8-1} \end{figure}
+\includegraphics[width=0.05\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-8-1} \end{figure}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-9-1} \end{figure}
+\includegraphics[width=0.2\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-9-1} \end{figure}
 
 2
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-10-1} \end{figure}
+\includegraphics[width=0.15\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-10-1} \end{figure}
 
 3
 
@@ -913,8 +1217,8 @@ What's the relation between packages PGFplots and TikZ?
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [step=20pt] (0,0) grid (3,2);}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [help lines ,step=20pt] (4,0) grid (7,2);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[step=20pt] (0,0) grid (3,2);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[help lines ,step=20pt] (4,0) grid (7,2);}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
@@ -930,11 +1234,11 @@ What's the relation between packages PGFplots and TikZ?
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}[scale=0.25]}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [{-}\textgreater{}] (0,0){-}{-}(9,0);}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [\textless{}{-}] (0,1){-}{-}(9,1);}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [\textless{}{-}\textgreater{}] (0,2){-}{-}(9,2);}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [\textgreater{}{-}\textgreater{}\textgreater{}] (0,3){-}{-}(9,3);}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [|\textless{}{-}\textgreater{}|] (0,4){-}{-}(9,4);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] (0,0){-}{-}(9,0);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[\textless{}{-}] (0,1){-}{-}(9,1);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[\textless{}{-}\textgreater{}] (0,2){-}{-}(9,2);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[\textgreater{}{-}\textgreater{}\textgreater{}] (0,3){-}{-}(9,3);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[|\textless{}{-}\textgreater{}|] (0,4){-}{-}(9,4);}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
@@ -946,13 +1250,13 @@ What's the relation between packages PGFplots and TikZ?
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [line width =2pt] (0,6){-}{-}(9,6); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [dotted]          (0,5){-}{-}(9,5); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [densely dotted]  (0,4){-}{-}(9,4); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [loosely dotted]  (0,3){-}{-}(9,3); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [dashed]          (0,2){-}{-}(9,2); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [densely dashed]  (0,1){-}{-}(9,1); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [loosely dashed]  (0,0){-}{-}(9,0);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[line width =2pt] (0,6){-}{-}(9,6); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[dotted]          (0,5){-}{-}(9,5); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[densely dotted]  (0,4){-}{-}(9,4); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[loosely dotted]  (0,3){-}{-}(9,3); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[dashed]          (0,2){-}{-}(9,2); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[densely dashed]  (0,1){-}{-}(9,1); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[loosely dashed]  (0,0){-}{-}(9,0);}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
@@ -1082,13 +1386,13 @@ What's the relation between packages PGFplots and TikZ?
 \NormalTok{  \}}
 \NormalTok{\}}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
-  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (1) at(0,0) \{1\};}
-  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (2) at(4,0) \{2\};}
-  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (3) at(8,0) \{3\};}
+  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (1) at (0,0) \{1\};}
+  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (2) at (4,0) \{2\};}
+  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (3) at (8,0) \{3\};}
   \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] (1){-}{-}(2);}
   \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] (2){-}{-}(3);}
-  \FunctionTok{\textbackslash{}node}\NormalTok{ at(2,1) \{a\};}
-  \FunctionTok{\textbackslash{}node}\NormalTok{ at(6,1) \{b\};}
+  \FunctionTok{\textbackslash{}node}\NormalTok{ at (2,1) \{a\};}
+  \FunctionTok{\textbackslash{}node}\NormalTok{ at (6,1) \{b\};}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
@@ -1147,10 +1451,12 @@ It turns out that you can simply put the \texttt{\textbackslash{}usetikzlibrary\
 
 \url{https://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown}
 
-\hypertarget{d}{%
-\section{3D}\label{d}}
+\hypertarget{d-1}{%
+\section{3D}\label{d-1}}
 
 \url{https://zhuanlan.zhihu.com/p/431732330?utm_psn=1741857547550638080}
+
+\url{https://github.com/RRWWW/Stereometry}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1192,14 +1498,47 @@ It turns out that you can simply put the \texttt{\textbackslash{}usetikzlibrary\
 
 \url{https://github.com/XiangyunHuang/bookdown-broken/blob/master/index.Rmd}
 
-\begin{CJK}{UTF8}{bsmi}
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{202401260003-plot_files/figure-latex/skills-1} \caption{《现代统计图形》的技能栈}\label{fig:skills}
-\end{figure}
-\end{CJK}
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\textbackslash{}smartdiagramset}\NormalTok{\{planet color=gray!40!white, uniform color list=gray!40!white for 10 items\}}
+\FunctionTok{\textbackslash{}smartdiagram}\NormalTok{[bubble diagram]\{Basic skills,}
+\NormalTok{  Edit\textasciitilde{}/}\FunctionTok{\textbackslash{}\textbackslash{}}\NormalTok{ (RStudio), Organize\textasciitilde{}/}\FunctionTok{\textbackslash{}\textbackslash{}}\NormalTok{ (bookdown), Cooperate\textasciitilde{}/}\FunctionTok{\textbackslash{}\textbackslash{}}\NormalTok{ (Git), Typeset\textasciitilde{}/}\FunctionTok{\textbackslash{}\textbackslash{}}\NormalTok{ (LaTeX/Pandoc), Compile\textasciitilde{}/}\FunctionTok{\textbackslash{}\textbackslash{}}\NormalTok{ (GitHub Action)\}}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-64-1} \caption{cube rotate}\label{fig:unnamed-chunk-64}
+\includegraphics[width=0.65\linewidth]{202401260003-plot_files/figure-latex/skills-1} \caption{modern statistics plot skills}\label{fig:skills}
+\end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\textbackslash{}usetikzlibrary}\NormalTok{\{patterns\}}
+\FunctionTok{\textbackslash{}usetikzlibrary}\NormalTok{\{3d,calc\}}
+\FunctionTok{\textbackslash{}tdplotsetmaincoords}\NormalTok{\{45\}\{45\}}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}[tdplot\_main\_coords]}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (A) at ( 1, 1, 1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (B) at ( 1, 1,{-}1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (C) at ( 1,{-}1,{-}1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (D) at ( 1,{-}1, 1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (E) at ({-}1,{-}1, 1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (F) at ({-}1,{-}1,{-}1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (G) at ({-}1, 1,{-}1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (H) at ({-}1, 1, 1);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{ (A) node[right=1pt] \{}\SpecialStringTok{$A$}\NormalTok{\}{-}{-}}
+\NormalTok{        (B) node[right=1pt] \{}\SpecialStringTok{$B$}\NormalTok{\}{-}{-}}
+\NormalTok{        (C) node[right=1pt] \{}\SpecialStringTok{$C$}\NormalTok{\}{-}{-}}
+\NormalTok{        (D) node[right=1pt] \{}\SpecialStringTok{$D$}\NormalTok{\}{-}{-}}
+\NormalTok{        (E) node[left= 1pt] \{}\SpecialStringTok{$E$}\NormalTok{\}{-}{-}}
+\NormalTok{        (F) node[right=1pt] \{}\SpecialStringTok{$F$}\NormalTok{\}{-}{-}}
+\NormalTok{        (G) node[right=1pt] \{}\SpecialStringTok{$G$}\NormalTok{\}{-}{-}}
+\NormalTok{        (H) node[left= 1pt] \{}\SpecialStringTok{$H$}\NormalTok{\}{-}{-}}
+\NormalTok{        (A) node[right=1pt] \{}\SpecialStringTok{$A$}\NormalTok{\};}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401260003-plot_files/figure-latex/unnamed-chunk-66-1} \caption{cube rotate}\label{fig:unnamed-chunk-66}
 \end{figure}
 
 \hypertarget{xy-pic}{%
@@ -1219,12 +1558,70 @@ the following xymatrix from LaTeX package xy for xy-pic is not shown or rendered
  & Y\ar[r]^{g} & Z
 }
 
-\[
-\xymatrix{U\ar[ddr]_{\psi}\ar[drr]^{\varphi}\ar[dr]|-{(x,y)}\\
- & X\times_{Z}Y\ar[d]^{q}\ar[r]_{p} & X\ar[d]_{f}\\
- & Y\ar[r]^{g} & Z
-}
-\]
+\hypertarget{programming-language}{%
+\chapter{programming language}\label{programming-language}}
+
+\begin{itemize}
+\tightlist
+\item
+  Python
+\item
+  JavaScript
+\item
+  SQL
+\item
+  R
+
+  \begin{itemize}
+  \tightlist
+  \item
+    knitr: engine
+
+    \begin{itemize}
+    \tightlist
+    \item
+      TikZ
+    \end{itemize}
+  \item
+    reticulate: Python
+  \end{itemize}
+\item
+  C\#
+
+  \begin{itemize}
+  \tightlist
+  \item
+    web
+
+    \begin{itemize}
+    \tightlist
+    \item
+      MVC
+    \item
+      .NET
+    \end{itemize}
+  \item
+    desktop
+
+    \begin{itemize}
+    \tightlist
+    \item
+      UWP = Universal Windows Platform
+    \item
+      WPF = Windows Presentation Foundation
+    \item
+      WinForms = Windows Forms
+    \end{itemize}
+  \item
+    3D/game
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Unity
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
 
 \hypertarget{part-by-date}{%
 \part{by date}\label{part-by-date}}
@@ -1285,6 +1682,8 @@ where the definition of \protect\hyperlink{equivalence-relation}{equivalence rel
 \hypertarget{equivalence-relation-1}{%
 \chapter*{equivalence relation}\label{equivalence-relation-1}}
 \addcontentsline{toc}{chapter}{equivalence relation}
+
+\url{https://stackoverflow.com/questions/76240244/bookdown-conditional-display-of-text-and-code-blocks-latex-pdf-vs-html}
 
 \begin{CJK}{UTF8}{bsmi}等價關係 equivalence relation \label{def:equivalence-relation}
 \end{CJK}
@@ -1356,22 +1755,9 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(reticulate)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## Warning: package 'reticulate' was built under R version 4.2.3
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
 \FunctionTok{virtualenv\_python}\NormalTok{()}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-## [1] "D:/Users/115381/Documents/.virtualenvs/r-reticulate/Scripts/python.exe"
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1380,29 +1766,12 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-##                name                                            python
-## 1              base                          D:\\Anaconda3/python.exe
-## 2          fiftyone          D:\\Anaconda3\\envs\\fiftyone/python.exe
-## 3             keras             D:\\Anaconda3\\envs\\keras/python.exe
-## 4           labelme           D:\\Anaconda3\\envs\\labelme/python.exe
-## 5             manim             D:\\Anaconda3\\envs\\manim/python.exe
-## 6            mmyolo            D:\\Anaconda3\\envs\\mmyolo/python.exe
-## 7 rsconnect-jupyter D:\\Anaconda3\\envs\\rsconnect-jupyter/python.exe
-## 8           sandbox           D:\\Anaconda3\\envs\\sandbox/python.exe
-## 9       sandbox-3.9       D:\\Anaconda3\\envs\\sandbox-3.9/python.exe
-\end{verbatim}
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \FunctionTok{library}\NormalTok{(reticulate)}
 \FunctionTok{virtualenv\_list}\NormalTok{()}
 \end{Highlighting}
 \end{Shaded}
-
-\begin{verbatim}
-## [1] "r-reticulate"
-\end{verbatim}
 
 \url{https://rstudio.github.io/reticulate/reference/install_python.html}
 
@@ -1447,10 +1816,14 @@ copy \texttt{C:\textbackslash{}Users\textbackslash{}RW\textbackslash{}AppData\te
 \includegraphics{202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf}
 
 \hypertarget{tikz-1}{%
-\chapter*{TiKZ}\label{tikz-1}}
-\addcontentsline{toc}{chapter}{TiKZ}
+\chapter*{TikZ}\label{tikz-1}}
+\addcontentsline{toc}{chapter}{TikZ}
 
-TiKZ and PGFplots
+How to speed up bookdown generation?
+
+\url{https://stackoverflow.com/questions/56541371/how-to-speed-up-bookdown-generation}
+
+TikZ and PGFplots
 
 What's the relation between packages PGFplots and TikZ?
 
@@ -1465,8 +1838,8 @@ What's the relation between packages PGFplots and TikZ?
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
   \FunctionTok{\textbackslash{}def\textbackslash{}a}\NormalTok{\{1.5\} }\CommentTok{\% amplitude}
   \FunctionTok{\textbackslash{}def\textbackslash{}b}\NormalTok{\{2\}   }\CommentTok{\% frequency}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] ({-}0.2,0) {-}{-} (4.2,0) node[right, font=}\FunctionTok{\textbackslash{}small}\NormalTok{] \{}\SpecialStringTok{$x$}\NormalTok{\};}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] (0,{-}4) {-}{-} (0,0.5) node[above] \{}\SpecialStringTok{$y$}\NormalTok{\};}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] ({-}0.2,0){-}{-}(4.2,0) node[right, font=}\FunctionTok{\textbackslash{}small}\NormalTok{] \{}\SpecialStringTok{$x$}\NormalTok{\};}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] (0,{-}4){-}{-}(0,0.5) node[above] \{}\SpecialStringTok{$y$}\NormalTok{\};}
   \FunctionTok{\textbackslash{}draw}\NormalTok{[domain=0:4,smooth,variable=}\FunctionTok{\textbackslash{}t}\NormalTok{,blue,thick] }
 \NormalTok{    plot (\{}\FunctionTok{\textbackslash{}a}\NormalTok{ * (}\FunctionTok{\textbackslash{}b*\textbackslash{}t}\NormalTok{ {-} sin(deg(}\FunctionTok{\textbackslash{}b*\textbackslash{}t}\NormalTok{)))\},\{{-}}\FunctionTok{\textbackslash{}a}\NormalTok{ * (1 {-} cos(deg(}\FunctionTok{\textbackslash{}b*\textbackslash{}t}\NormalTok{)))\});}
   \CommentTok{\% \textbackslash{}node[above] at (2, 0.5) \{Brachistochrone Curve\};}
@@ -1480,12 +1853,15 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-2-1} \caption{Brachistochrone Curve}\label{fig:unnamed-chunk-2}
+\includegraphics[width=0.9\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1} \caption{Brachistochrone Curve}\label{fig:unnamed-chunk-2}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-3-1} \caption{Brachistochrone Curve}\label{fig:unnamed-chunk-3}
+\includegraphics[width=0.9\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-3-1} \caption{Brachistochrone Curve}\label{fig:unnamed-chunk-3}
 \end{figure}
+
+\hypertarget{d-2}{%
+\section{2D}\label{d-2}}
 
 \url{https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320}
 
@@ -1500,23 +1876,23 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.5\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-5-1} \end{figure}
+\includegraphics[width=0.05\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1} \end{figure}
 
 \begin{figure}
-\includegraphics[width=0.5\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-6-1} \end{figure}
+\includegraphics[width=0.05\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1} \end{figure}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-7-1} \end{figure}
+\includegraphics[width=0.2\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1} \end{figure}
 
 2
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-8-1} \end{figure}
+\includegraphics[width=0.15\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1} \end{figure}
 
 3
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-9-1} \end{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1} \end{figure}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1527,7 +1903,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-11-1} \caption{rounded corner pseudo-closed triangle}\label{fig:unnamed-chunk-11}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1} \caption{rounded corner pseudo-closed triangle}\label{fig:unnamed-chunk-11}
 \end{figure}
 
 \begin{Shaded}
@@ -1539,11 +1915,11 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-13-1} \caption{rounded corner triangle}\label{fig:unnamed-chunk-13}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1} \caption{rounded corner triangle}\label{fig:unnamed-chunk-13}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-14-1} \caption{triangle vs. pseudo-closed triangle}\label{fig:unnamed-chunk-14}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1} \caption{triangle vs. pseudo-closed triangle}\label{fig:unnamed-chunk-14}
 \end{figure}
 
 \begin{Shaded}
@@ -1555,7 +1931,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-16-1} \caption{rectangle}\label{fig:unnamed-chunk-16}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1} \caption{rectangle}\label{fig:unnamed-chunk-16}
 \end{figure}
 
 \begin{Shaded}
@@ -1567,7 +1943,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-18-1} \caption{square}\label{fig:unnamed-chunk-18}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1} \caption{square}\label{fig:unnamed-chunk-18}
 \end{figure}
 
 \begin{Shaded}
@@ -1579,7 +1955,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-20-1} \caption{circle}\label{fig:unnamed-chunk-20}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1} \caption{circle}\label{fig:unnamed-chunk-20}
 \end{figure}
 
 \begin{Shaded}
@@ -1592,7 +1968,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-22-1} \caption{circle and square}\label{fig:unnamed-chunk-22}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1} \caption{circle and square}\label{fig:unnamed-chunk-22}
 \end{figure}
 
 \begin{Shaded}
@@ -1604,7 +1980,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-24-1} \caption{ellipse}\label{fig:unnamed-chunk-24}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1} \caption{ellipse}\label{fig:unnamed-chunk-24}
 \end{figure}
 
 \begin{Shaded}
@@ -1617,7 +1993,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-26-1} \caption{circle and ellipse arcs}\label{fig:unnamed-chunk-26}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1} \caption{circle and ellipse arcs}\label{fig:unnamed-chunk-26}
 \end{figure}
 
 \begin{Shaded}
@@ -1629,7 +2005,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-28-1} \caption{parabola arc}\label{fig:unnamed-chunk-28}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1} \caption{parabola arc}\label{fig:unnamed-chunk-28}
 \end{figure}
 
 \begin{Shaded}
@@ -1646,58 +2022,58 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.25\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-30-1} \caption{parabola arc with points}\label{fig:unnamed-chunk-30}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1} \caption{parabola arc with points}\label{fig:unnamed-chunk-30}
 \end{figure}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [step=20pt] (0,0) grid (3,2);}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [help lines ,step=20pt] (4,0) grid (7,2);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[step=20pt] (0,0) grid (3,2);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[help lines ,step=20pt] (4,0) grid (7,2);}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-32-1} \caption{grid and help lines}\label{fig:unnamed-chunk-32}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1} \caption{grid and help lines}\label{fig:unnamed-chunk-32}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-33-1} \caption{grid and help lines}\label{fig:unnamed-chunk-33}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-33-1} \caption{grid and help lines}\label{fig:unnamed-chunk-33}
 \end{figure}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}[scale=0.25]}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [{-}\textgreater{}] (0,0){-}{-}(9,0);}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [\textless{}{-}] (0,1){-}{-}(9,1);}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [\textless{}{-}\textgreater{}] (0,2){-}{-}(9,2);}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [\textgreater{}{-}\textgreater{}\textgreater{}] (0,3){-}{-}(9,3);}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [|\textless{}{-}\textgreater{}|] (0,4){-}{-}(9,4);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] (0,0){-}{-}(9,0);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[\textless{}{-}] (0,1){-}{-}(9,1);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[\textless{}{-}\textgreater{}] (0,2){-}{-}(9,2);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[\textgreater{}{-}\textgreater{}\textgreater{}] (0,3){-}{-}(9,3);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[|\textless{}{-}\textgreater{}|] (0,4){-}{-}(9,4);}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-35-1} \caption{arrows}\label{fig:unnamed-chunk-35}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1} \caption{arrows}\label{fig:unnamed-chunk-35}
 \end{figure}
 
 \begin{Shaded}
 \begin{Highlighting}[]
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [line width =2pt] (0,6){-}{-}(9,6); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [dotted]          (0,5){-}{-}(9,5); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [densely dotted]  (0,4){-}{-}(9,4); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [loosely dotted]  (0,3){-}{-}(9,3); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [dashed]          (0,2){-}{-}(9,2); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [densely dashed]  (0,1){-}{-}(9,1); }
-  \FunctionTok{\textbackslash{}draw}\NormalTok{ [loosely dashed]  (0,0){-}{-}(9,0);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[line width =2pt] (0,6){-}{-}(9,6); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[dotted]          (0,5){-}{-}(9,5); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[densely dotted]  (0,4){-}{-}(9,4); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[loosely dotted]  (0,3){-}{-}(9,3); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[dashed]          (0,2){-}{-}(9,2); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[densely dashed]  (0,1){-}{-}(9,1); }
+  \FunctionTok{\textbackslash{}draw}\NormalTok{[loosely dashed]  (0,0){-}{-}(9,0);}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-37-1} \caption{arrows}\label{fig:unnamed-chunk-37}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1} \caption{arrows}\label{fig:unnamed-chunk-37}
 \end{figure}
 
 \begin{Shaded}
@@ -1709,7 +2085,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-39-1} \caption{head styling}\label{fig:unnamed-chunk-39}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1} \caption{head styling}\label{fig:unnamed-chunk-39}
 \end{figure}
 
 \begin{Shaded}
@@ -1729,7 +2105,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-41-1} \caption{transform: shift}\label{fig:unnamed-chunk-41}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1} \caption{transform: shift}\label{fig:unnamed-chunk-41}
 \end{figure}
 
 \begin{Shaded}
@@ -1745,7 +2121,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-43-1} \caption{transform: shift x, y}\label{fig:unnamed-chunk-43}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1} \caption{transform: shift x, y}\label{fig:unnamed-chunk-43}
 \end{figure}
 
 \begin{Shaded}
@@ -1761,7 +2137,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-45-1} \caption{transform: scale x, y}\label{fig:unnamed-chunk-45}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1} \caption{transform: scale x, y}\label{fig:unnamed-chunk-45}
 \end{figure}
 
 \begin{Shaded}
@@ -1777,7 +2153,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-47-1} \caption{transform: scale}\label{fig:unnamed-chunk-47}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1} \caption{transform: scale}\label{fig:unnamed-chunk-47}
 \end{figure}
 
 \begin{Shaded}
@@ -1791,7 +2167,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-49-1} \caption{transform: rotate}\label{fig:unnamed-chunk-49}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1} \caption{transform: rotate}\label{fig:unnamed-chunk-49}
 \end{figure}
 
 \begin{Shaded}
@@ -1805,7 +2181,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-51-1} \caption{transform: slant}\label{fig:unnamed-chunk-51}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1} \caption{transform: slant}\label{fig:unnamed-chunk-51}
 \end{figure}
 
 \begin{Shaded}
@@ -1821,19 +2197,19 @@ What's the relation between packages PGFplots and TikZ?
 \NormalTok{  \}}
 \NormalTok{\}}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
-  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (1) at(0,0) \{1\};}
-  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (2) at(4,0) \{2\};}
-  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (3) at(8,0) \{3\};}
+  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (1) at (0,0) \{1\};}
+  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (2) at (4,0) \{2\};}
+  \FunctionTok{\textbackslash{}node}\NormalTok{[box] (3) at (8,0) \{3\};}
   \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] (1){-}{-}(2);}
   \FunctionTok{\textbackslash{}draw}\NormalTok{[{-}\textgreater{}] (2){-}{-}(3);}
-  \FunctionTok{\textbackslash{}node}\NormalTok{ at(2,1) \{a\};}
-  \FunctionTok{\textbackslash{}node}\NormalTok{ at(6,1) \{b\};}
+  \FunctionTok{\textbackslash{}node}\NormalTok{ at (2,1) \{a\};}
+  \FunctionTok{\textbackslash{}node}\NormalTok{ at (6,1) \{b\};}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-53-1} \caption{flowchart}\label{fig:unnamed-chunk-53}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1} \caption{flowchart}\label{fig:unnamed-chunk-53}
 \end{figure}
 
 \begin{Shaded}
@@ -1861,7 +2237,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-55-1} \caption{tree}\label{fig:unnamed-chunk-55}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1} \caption{tree}\label{fig:unnamed-chunk-55}
 \end{figure}
 
 \begin{Shaded}
@@ -1875,7 +2251,7 @@ What's the relation between packages PGFplots and TikZ?
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-57-1} \caption{tree}\label{fig:unnamed-chunk-57}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1} \caption{tree}\label{fig:unnamed-chunk-57}
 \end{figure}
 
 \url{https://stackoverflow.com/questions/64897575/tikz-libraries-in-bookdown}
@@ -1886,10 +2262,12 @@ It turns out that you can simply put the \texttt{\textbackslash{}usetikzlibrary\
 
 \url{https://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown}
 
-\hypertarget{d-1}{%
-\section{3D}\label{d-1}}
+\hypertarget{d-3}{%
+\section{3D}\label{d-3}}
 
 \url{https://zhuanlan.zhihu.com/p/431732330?utm_psn=1741857547550638080}
+
+\url{https://github.com/RRWWW/Stereometry}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1916,29 +2294,62 @@ It turns out that you can simply put the \texttt{\textbackslash{}usetikzlibrary\
 \end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-59-1} \caption{cube}\label{fig:unnamed-chunk-59}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1} \caption{cube}\label{fig:unnamed-chunk-59}
 \end{figure}
 
 \url{https://tex.stackexchange.com/questions/388621/optimizing-perspective-tikz-graphic}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-60-1} \caption{cube rotate}\label{fig:unnamed-chunk-60}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1} \caption{cube rotate}\label{fig:unnamed-chunk-60}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-61-1} \caption{cube rotate}\label{fig:unnamed-chunk-61}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1} \caption{cube rotate}\label{fig:unnamed-chunk-61}
 \end{figure}
 
 \url{https://github.com/XiangyunHuang/bookdown-broken/blob/master/index.Rmd}
 
-\begin{CJK}{UTF8}{bsmi}
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{202401311000-TiKZ_files/figure-latex/skills-1} \caption{《现代统计图形》的技能栈}\label{fig:skills}
-\end{figure}
-\end{CJK}
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\textbackslash{}smartdiagramset}\NormalTok{\{planet color=gray!40!white, uniform color list=gray!40!white for 10 items\}}
+\FunctionTok{\textbackslash{}smartdiagram}\NormalTok{[bubble diagram]\{Basic skills,}
+\NormalTok{  Edit\textasciitilde{}/}\FunctionTok{\textbackslash{}\textbackslash{}}\NormalTok{ (RStudio), Organize\textasciitilde{}/}\FunctionTok{\textbackslash{}\textbackslash{}}\NormalTok{ (bookdown), Cooperate\textasciitilde{}/}\FunctionTok{\textbackslash{}\textbackslash{}}\NormalTok{ (Git), Typeset\textasciitilde{}/}\FunctionTok{\textbackslash{}\textbackslash{}}\NormalTok{ (LaTeX/Pandoc), Compile\textasciitilde{}/}\FunctionTok{\textbackslash{}\textbackslash{}}\NormalTok{ (GitHub Action)\}}
+\end{Highlighting}
+\end{Shaded}
 
 \begin{figure}
-\includegraphics[width=0.75\linewidth]{202401311000-TiKZ_files/figure-latex/unnamed-chunk-62-1} \caption{cube rotate}\label{fig:unnamed-chunk-62}
+\includegraphics[width=0.65\linewidth]{202401311000-TikZ_files/figure-latex/skills-1} \caption{modern statistics plot skills}\label{fig:skills}
+\end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\textbackslash{}usetikzlibrary}\NormalTok{\{patterns\}}
+\FunctionTok{\textbackslash{}usetikzlibrary}\NormalTok{\{3d,calc\}}
+\FunctionTok{\textbackslash{}tdplotsetmaincoords}\NormalTok{\{45\}\{45\}}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}[tdplot\_main\_coords]}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (A) at ( 1, 1, 1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (B) at ( 1, 1,{-}1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (C) at ( 1,{-}1,{-}1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (D) at ( 1,{-}1, 1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (E) at ({-}1,{-}1, 1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (F) at ({-}1,{-}1,{-}1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (G) at ({-}1, 1,{-}1);}
+  \FunctionTok{\textbackslash{}coordinate}\NormalTok{ (H) at ({-}1, 1, 1);}
+  \FunctionTok{\textbackslash{}draw}\NormalTok{ (A) node[right=1pt] \{}\SpecialStringTok{$A$}\NormalTok{\}{-}{-}}
+\NormalTok{        (B) node[right=1pt] \{}\SpecialStringTok{$B$}\NormalTok{\}{-}{-}}
+\NormalTok{        (C) node[right=1pt] \{}\SpecialStringTok{$C$}\NormalTok{\}{-}{-}}
+\NormalTok{        (D) node[right=1pt] \{}\SpecialStringTok{$D$}\NormalTok{\}{-}{-}}
+\NormalTok{        (E) node[left= 1pt] \{}\SpecialStringTok{$E$}\NormalTok{\}{-}{-}}
+\NormalTok{        (F) node[right=1pt] \{}\SpecialStringTok{$F$}\NormalTok{\}{-}{-}}
+\NormalTok{        (G) node[right=1pt] \{}\SpecialStringTok{$G$}\NormalTok{\}{-}{-}}
+\NormalTok{        (H) node[left= 1pt] \{}\SpecialStringTok{$H$}\NormalTok{\}{-}{-}}
+\NormalTok{        (A) node[right=1pt] \{}\SpecialStringTok{$A$}\NormalTok{\};}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{tikzpicture}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1} \caption{cube rotate}\label{fig:unnamed-chunk-64}
 \end{figure}
 
 \hypertarget{xy-pic-1}{%
@@ -1958,29 +2369,256 @@ the following xymatrix from LaTeX package xy for xy-pic is not shown or rendered
  & Y\ar[r]^{g} & Z
 }
 
-\[
-\xymatrix{U\ar[ddr]_{\psi}\ar[drr]^{\varphi}\ar[dr]|-{(x,y)}\\
- & X\times_{Z}Y\ar[d]^{q}\ar[r]_{p} & X\ar[d]_{f}\\
- & Y\ar[r]^{g} & Z
-}
-\]
-
 \hypertarget{rmarkdown}{%
 \chapter{RMarkdown}\label{rmarkdown}}
+
+\url{https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html}
 
 \hypertarget{markdown}{%
 \section{Markdown}\label{markdown}}
 
+\url{https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{script\^{}superscript\^{}}
+\end{Highlighting}
+\end{Shaded}
+
+script\textsuperscript{superscript}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textasciitilde{}subscript\textasciitilde{}}
+\end{Highlighting}
+\end{Shaded}
+
+script\textsubscript{subscript}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{***}
+\end{Highlighting}
+\end{Shaded}
+
+horizontal rule (or slide break)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{dim}\NormalTok{(iris) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 150   5
+\end{verbatim}
+
 \hypertarget{bookdown}{%
 \section{Bookdown}\label{bookdown}}
+
+\url{https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html}
+
+\hypertarget{two-columns}{%
+\subsection{Two columns}\label{two-columns}}
+
+Below is a Div containing three child Divs side by side. The Div
+in the middle is empty, just to add more space between the left
+and right Divs.
+
+\begin{cols}
+
+\begin{col}{0.55\textwidth}
+\includegraphics{202402161220-RMarkdown_files/figure-latex/unnamed-chunk-6-1.pdf}
+
+\end{col}
+
+\begin{col}{0.05\textwidth}
+~
+
+
+\end{col}
+
+\begin{col}{0.4\textwidth}
+The figure on the left-hand side shows the \texttt{cars} data.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur.
+
+\end{col}
+
+\end{cols}
+
+\begin{cols}
+
+\begin{col}{0.55\textwidth}
+\includegraphics{202402161220-RMarkdown_files/figure-latex/unnamed-chunk-7-1.pdf}
+
+\end{col}
+
+\begin{col}{0.05\textwidth}
+~
+
+
+\end{col}
+
+\begin{col}{0.4\textwidth}
+The figure on the left-hand side shows the \texttt{cars} data.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur.
+
+\end{col}
+
+\end{cols}
+
+\hypertarget{statistics-1}{%
+\chapter{statistics}\label{statistics-1}}
+
+\hypertarget{covariance-matrix-1}{%
+\section{covariance matrix}\label{covariance-matrix-1}}
+
+\textsuperscript{\protect\hyperlink{ref-ccjou2014}{5}}
+
+\hypertarget{calculation-1}{%
+\subsection{calculation}\label{calculation-1}}
+
+\begin{align*}
+\mathrm{C}\left[\boldsymbol{X}\right]=\mathrm{Cov}\left[\boldsymbol{X}\right]=\mathrm{V}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\mathrm{T}}-\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]+\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left[\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\boldsymbol{X}\right]\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}
+\end{align*}
+
+\begin{align*}
+\boldsymbol{X}=\left[X\right]_{1\times1}=X\Rightarrow C\left(X\right)=\mathrm{C}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[XX\right]-\mathrm{E}\left(X\right)\mathrm{E}\left(X\right)\\
+= & \mathrm{E}\left(X^{2}\right)-\left[\mathrm{E}\left(X\right)\right]^{2}=\mathrm{V}\left(X\right)
+\end{align*}
+
+\hypertarget{mathrmvleftboldsymbolxboldsymbolbrightmathrmvleftboldsymbolxright-1}{%
+\subsection{\texorpdfstring{\(\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[\boldsymbol{X}\right]\)}{\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}+\textbackslash boldsymbol\{b\}\textbackslash right{]}=\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}\textbackslash right{]}}}\label{mathrmvleftboldsymbolxboldsymbolbrightmathrmvleftboldsymbolxright-1}}
+
+\begin{align*}
+\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]= & \mathrm{E}\left[\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]^{\mathrm{T}}\right]\\
+\overset{\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)=\mathrm{E}\left(\boldsymbol{X}\right)+\boldsymbol{b}}{=} & \mathrm{E}\left[\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]=\mathrm{V}\left[\boldsymbol{X}\right]
+\end{align*}
+
+\hypertarget{mathrmvleftaboldsymbolxrightamathrmvleftboldsymbolxrightamathrmt-1}{%
+\subsection{\texorpdfstring{\(\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)}{\textbackslash mathrm\{V\}\textbackslash left{[}A\textbackslash boldsymbol\{X\}\textbackslash right{]}=A\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}\textbackslash right{]}A\^{}\{\textbackslash mathrm\{T\}\}}}\label{mathrmvleftaboldsymbolxrightamathrmvleftboldsymbolxrightamathrmt-1}}
+
+\begin{align*}
+\mathrm{V}\left[A\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+\overset{\mathrm{E}\left(A\boldsymbol{X}\right)=A\mathrm{E}\left(\boldsymbol{X}\right)}{=} & \mathrm{E}\left[\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}A^{\mathrm{T}}\right]\\
+= & A\mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]A^{\mathrm{T}}=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}
+\end{align*}
+
+\hypertarget{mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxrightamathrmt-1}{%
+\subsection{\texorpdfstring{\(\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)}{\textbackslash mathrm\{V\}\textbackslash left{[}A\textbackslash boldsymbol\{X\}+\textbackslash boldsymbol\{b\}\textbackslash right{]}=A\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}\textbackslash right{]}A\^{}\{\textbackslash mathrm\{T\}\}}}\label{mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxrightamathrmt-1}}
+
+\[
+\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}
+\]
+
+\hypertarget{covariance-matrix-2}{%
+\section{covariance matrix}\label{covariance-matrix-2}}
+
+\textsuperscript{\protect\hyperlink{ref-ccjou2014}{5}}
+
+\hypertarget{calculation-2}{%
+\subsection{calculation}\label{calculation-2}}
+
+\begin{align*}
+\mathrm{C}\left[\boldsymbol{X}\right]=\mathrm{Cov}\left[\boldsymbol{X}\right]=\mathrm{V}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\mathrm{T}}-\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]+\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left[\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\boldsymbol{X}\right]\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}
+\end{align*}
+
+\begin{align*}
+\boldsymbol{X}=\left[X\right]_{1\times1}=X\Rightarrow C\left(X\right)=\mathrm{C}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[XX\right]-\mathrm{E}\left(X\right)\mathrm{E}\left(X\right)\\
+= & \mathrm{E}\left(X^{2}\right)-\left[\mathrm{E}\left(X\right)\right]^{2}=\mathrm{V}\left(X\right)
+\end{align*}
+
+\hypertarget{mathrmvleftboldsymbolxboldsymbolbrightmathrmvleftboldsymbolxright-2}{%
+\subsection{\texorpdfstring{\(\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[\boldsymbol{X}\right]\)}{\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}+\textbackslash boldsymbol\{b\}\textbackslash right{]}=\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}\textbackslash right{]}}}\label{mathrmvleftboldsymbolxboldsymbolbrightmathrmvleftboldsymbolxright-2}}
+
+\begin{align*}
+\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]= & \mathrm{E}\left[\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]^{\mathrm{T}}\right]\\
+\overset{\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)=\mathrm{E}\left(\boldsymbol{X}\right)+\boldsymbol{b}}{=} & \mathrm{E}\left[\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]=\mathrm{V}\left[\boldsymbol{X}\right]
+\end{align*}
+
+\hypertarget{mathrmvleftaboldsymbolxrightamathrmvleftboldsymbolxrightamathrmt-2}{%
+\subsection{\texorpdfstring{\(\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)}{\textbackslash mathrm\{V\}\textbackslash left{[}A\textbackslash boldsymbol\{X\}\textbackslash right{]}=A\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}\textbackslash right{]}A\^{}\{\textbackslash mathrm\{T\}\}}}\label{mathrmvleftaboldsymbolxrightamathrmvleftboldsymbolxrightamathrmt-2}}
+
+\begin{align*}
+\mathrm{V}\left[A\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+\overset{\mathrm{E}\left(A\boldsymbol{X}\right)=A\mathrm{E}\left(\boldsymbol{X}\right)}{=} & \mathrm{E}\left[\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}A^{\mathrm{T}}\right]\\
+= & A\mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]A^{\mathrm{T}}=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}
+\end{align*}
+
+\hypertarget{mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxrightamathrmt-2}{%
+\subsection{\texorpdfstring{\(\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)}{\textbackslash mathrm\{V\}\textbackslash left{[}A\textbackslash boldsymbol\{X\}+\textbackslash boldsymbol\{b\}\textbackslash right{]}=A\textbackslash mathrm\{V\}\textbackslash left{[}\textbackslash boldsymbol\{X\}\textbackslash right{]}A\^{}\{\textbackslash mathrm\{T\}\}}}\label{mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxrightamathrmt-2}}
+
+\[
+\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}
+\]
+
+\hypertarget{gosper-algorithm}{%
+\chapter{Gosper algorithm}\label{gosper-algorithm}}
+
+\url{https://stackoverflow.com/questions/42543206/r-markdown-compile-error}
+
+always\_allow\_html: true
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{"webshot"}\NormalTok{)}
+\NormalTok{webshot}\SpecialCharTok{::}\FunctionTok{install\_phantomjs}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+however webshot not work
+
+Error: cannot find bilibili.com
+
+\url{https://cran.r-project.org/web/packages/vembedr/vignettes/embed.html}
+
+\begin{verbatim}
+## Warning: package 'vembedr' was built under R version 4.2.3
+\end{verbatim}
+
+\begin{verbatim}
+## embed_youtube("qeMqtt7NFDM")
+\end{verbatim}
 
 \hypertarget{references}{%
 \chapter*{references}\label{references}}
 \addcontentsline{toc}{chapter}{references}
-
-\hypertarget{refs}{}
-
 \begin{CJK}{UTF8}{bsmi}
+\hypertarget{refs}{}
 \begin{CSLReferences}{0}{0}
 \leavevmode\vadjust pre{\hypertarget{ref-R-bookdown}{}}%
 \CSLLeftMargin{1. }%
@@ -1997,6 +2635,10 @@ the following xymatrix from LaTeX package xy for xy-pic is not shown or rendered
 \leavevmode\vadjust pre{\hypertarget{ref-ccjou2009}{}}%
 \CSLLeftMargin{4. }%
 \CSLRightInline{ccjou. \href{https://ccjou.wordpress.com/2009/10/21/\%e4\%ba\%8c\%e6\%ac\%a1\%e5\%9e\%8b\%e8\%88\%87\%e6\%ad\%a3\%e5\%ae\%9a\%e7\%9f\%a9\%e9\%99\%a3/}{二次型與正定矩陣}. (2009).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ccjou2014}{}}%
+\CSLLeftMargin{5. }%
+\CSLRightInline{ccjou. \href{https://ccjou.wordpress.com/2014/06/05/\%e5\%a4\%9a\%e8\%ae\%8a\%e9\%87\%8f\%e5\%b8\%b8\%e6\%85\%8b\%e5\%88\%86\%e5\%b8\%83/}{多變量常態分布}. (2014).}
 
 \end{CSLReferences}
 \end{CJK}

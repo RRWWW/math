@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.16)  16 FEB 2024 20:35
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.16)  18 FEB 2024 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -828,7 +828,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \c@enumxviii=\count401
 \c@enumxix=\count402
 \c@enumxx=\count403
-Package hyperref Info: Option `colorlinks' set `true' on input line 204.
+Package hyperref Info: Option `colorlinks' set `true' on input line 231.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks54
@@ -929,110 +929,107 @@ LaTeX Warning: Label `fig:unnamed-chunk-61' multiply defined.
 
 LaTeX Warning: Label `fig:skills' multiply defined.
 
-
-LaTeX Warning: Label `fig:unnamed-chunk-62' multiply defined.
-
 )
 \openout1 = `math.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 254.
+LaTeX Font Info:    ... okay on input line 254.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 227.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 254.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 227.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 254.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 227.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 254.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 227.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 254.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 227.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 254.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 227.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 254.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 227.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 254.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -1058,7 +1055,7 @@ Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 227.
+(Font)              scaled to size 10.0pt on input line 254.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -1090,15 +1087,15 @@ Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 227.
+(Font)              scaled to size 10.0pt on input line 254.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 227.
+(Font)              `operators' in the math version `normal' on input line 254.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 227.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 254.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 227.
+(Font)              `operators' in the math version `bold' on input line 254.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 227.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 254.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -1177,13 +1174,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 227.
+(Font)              `symbols' in the math version `normal' on input line 254.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 227.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 254.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 227.
+(Font)              `symbols' in the math version `bold' on input line 254.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 227.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 254.
 
 Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
 
@@ -1244,13 +1241,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 227.
+(Font)              `largesymbols' in the math version `normal' on input line 254.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 227.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 254.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 227.
+(Font)              `largesymbols' in the math version `bold' on input line 254.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 227.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 254.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1285,7 +1282,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 227.
+Package hyperref Info: Link coloring ON on input line 254.
 (./math.out) (./math.out)
 \@outlinefile=\write6
 \openout6 = `math.out'.
@@ -1293,36 +1290,36 @@ Package hyperref Info: Link coloring ON on input line 227.
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.15).
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 229.
+(Font)              scaled to size 12.0pt on input line 256.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 229.
+(Font)              scaled to size 8.0pt on input line 256.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 229.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 229.
+(Font)              scaled to size 6.0pt on input line 256.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 256.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 229.
+(Font)              scaled to size 12.0011pt on input line 256.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 229.
+(Font)              scaled to size 8.00073pt on input line 256.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 229.
+(Font)              scaled to size 6.00055pt on input line 256.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 229.
+(Font)              scaled to size 11.99872pt on input line 256.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 229.
+(Font)              scaled to size 7.99915pt on input line 256.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 229.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 229.
+(Font)              scaled to size 5.99936pt on input line 256.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 256.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 229.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 256.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 229.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 256.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
@@ -1358,7 +1355,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 ] [9] [10]
 Chapter 1.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 275.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 302.
 [11
 
 ] [12]
@@ -1392,39 +1389,68 @@ Chapter 7.
 ] [25] [26]
 Chapter 8.
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
-[]\TU/lmr/m/n/10 [equivalence-class.html] [equivalence-class.html#equivalence-class] (@ref(equivalence-class.html))
+Overfull \hbox (235.50699pt too wide) in paragraph at lines 543--544
+[][][]$[][][][][] [] [] [] [][][][][] [][] [][][][][][][][] [] [][][] [] [][][][][] [][] [][][][][] [] []$[][]\TU/lmr/m/n/10 :~:text=To%20summarize%2C%20pyellow!50efined%20colors%20in,when%20loading%20the%20xcolor%20package. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
-[]\TU/lmr/m/n/10 [equivalence-relation.html] [equivalence-relation.html#equivalence-relation] (@ref(equivalence-
+Underfull \hbox (badness 3219) in paragraph at lines 567--569
+[][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][][][] [][] [] [][] [][][][][] [][] [][][]$[][] [][]$[][][][][] [] [] [] [][][][][][][][] [] [][][][][][][][] [] [][][] []
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 572--574
+[]\TU/lmr/m/n/10 Bookdown - conditional display of text and code blocks (LaTeX/PDF vs. HTML) [][]$[][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--574
+[] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][][] [][] [][][][][][][][][][][] [][] [][][][][][][] [][] [][] [][] [][][][] [][] [][][] [][] [][][][] [][] [][][][][][] [][]
  []
 
 [27
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 574--575
-[][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][] [][] [][][] [][] [][][][] [][] [][][] [][] [][][] [][] [][][][][][] [][] [][] [][] [][][][][][][][] [] [][][][][][][][] []
+Underfull \hbox (badness 10000) in paragraph at lines 624--625
+[]\TU/lmr/m/n/10 [equivalence-class.html] [equivalence-class.html#equivalence-class] (@ref(equivalence-class.html))
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 630--631
+[]\TU/lmr/m/n/10 [equivalence-relation.html] [equivalence-relation.html#equivalence-relation] (@ref(equivalence-
  []
 
 [28]
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
+[][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][] [][] [][][] [][] [][][][] [][] [][][] [][] [][][] [][] [][][][][][] [][] [][] [][] [][][][][][][][] [] [][][][][][][][] []
+ []
 
-LaTeX Warning: Reference `eq:eqclass' on page 29 undefined on input line 606.
+[29]
+
+LaTeX Warning: Reference `eq:eqclass' on page 30 undefined on input line 706.
 
 File: 202401260000-test-cross-link_files/figure-latex/parabola-arc-with-points-1.pdf Graphic file (type pdf)
 <use 202401260000-test-cross-link_files/figure-latex/parabola-arc-with-points-1.pdf>
-[29] [30
-
-]
+[30]
 Chapter 9.
-[31] [32
+
+LaTeX Font Warning: Font shape `TU/lmtt/bx/it' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 742.
+
+[31
+
+] [32
 
 ]
 Chapter 10.
 [33] [34
 
-] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+]
+Underfull \hbox (badness 10000) in paragraph at lines 830--831
+[][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][][] [][] [][][][][][][][][][][] [][] [][][][][][][] [][] [][] [][] [][][][] [][] [][][] [][] [][][][] [][]
+ []
+
+(d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
 ) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -1524,7 +1550,7 @@ Missing character: There is no 移 (U+79FB) in font [lmroman5-regular]:mapping=t
 
 ]
 
-LaTeX Warning: Reference `eq:eqclass' on page 37 undefined on input line 683.
+LaTeX Warning: Reference `eq:eqclass' on page 37 undefined on input line 883.
 
 [37] [38
 
@@ -1532,19 +1558,64 @@ LaTeX Warning: Reference `eq:eqclass' on page 37 undefined on input line 683.
 
 ]
 Chapter 11.
-[41] [42
-
-]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 923.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
+(Font)              scaled to size 7.0pt on input line 923.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
+(Font)              scaled to size 5.0pt on input line 923.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
+(Font)              scaled to size 10.00092pt on input line 923.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
+(Font)              scaled to size 7.00064pt on input line 923.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
+(Font)              scaled to size 5.00046pt on input line 923.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
+(Font)              scaled to size 9.99893pt on input line 923.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
+(Font)              scaled to size 6.99925pt on input line 923.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
+(Font)              scaled to size 4.99947pt on input line 923.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 932.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 932.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
+(Font)              scaled to size 6.0pt on input line 932.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
+(Font)              scaled to size 12.0011pt on input line 932.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
+(Font)              scaled to size 8.00073pt on input line 932.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
+(Font)              scaled to size 6.00055pt on input line 932.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
+(Font)              scaled to size 11.99872pt on input line 932.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
+(Font)              scaled to size 7.99915pt on input line 932.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
+(Font)              scaled to size 5.99936pt on input line 932.
+[41] [42]
 Chapter 12.
-[43] [44
+[43
+
+] [44
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Chapter 13.
+
+Overfull \hbox (9.517pt too wide) in paragraph at lines 1004--1006
+[]\TU/lmr/m/n/10 neural network plot/draw [][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][][][][][][][] [] [][][][][] [][] [][] [][] [][][][][][] [][] [][] [][] [][][][][][][][][] [][] [][][][][][][][][][][][] [][]
+ []
+
+[45] [46
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1019--1020
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][][] [][] [][][] [][] [][][][][][][][] [][] [][][][][][][] [][] [][][][][][][][] [][] [][][][][][][][] [][]
  []
 
 
-Overfull \hbox (40.06696pt too wide) in paragraph at lines 722--723
+Overfull \hbox (40.06696pt too wide) in paragraph at lines 1023--1024
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][][][] [] [] [] [][][][][][][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
@@ -1562,9 +1633,9 @@ File: 202401260003-plot_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-10-1.pdf>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf>
+[47] [48]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf>
-[45] [46]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-15-1.pdf>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file (type pdf)
@@ -1575,100 +1646,98 @@ File: 202401260003-plot_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-20-1.pdf>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-22-1.pdf>
+[49] [50]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-24-1.pdf>
-[47] [48]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-28-1.pdf>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-30-1.pdf>
+[51]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-32-1.pdf>
-[49]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-34-1.pdf>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf>
+[52]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf>
-[50]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-39-1.pdf>
+[53]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-41-1.pdf>
-[51]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-43-1.pdf>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-45-1.pdf>
+[54]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-47-1.pdf>
-[52] [53]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-51-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-51-1.pdf>
+[55] [56]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-53-1.pdf>
-[54]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-55-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-55-1.pdf>
-[55]
+[57]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-59-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-59-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1147
+Underfull \hbox (badness 10000) in paragraph at lines 1450--1451
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [] [][] [][][][][][][][] [][] [][][][][][][][] [][] [][][][] [][] [][][][] [][] [][][][] [][] [][][][][][] [][]
  []
 
-[56]
+[58]
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-62-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-62-1.pdf>
 File: 202401260003-plot_files/figure-latex/unnamed-chunk-63-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/unnamed-chunk-63-1.pdf>
+[59] [60]
 File: 202401260003-plot_files/figure-latex/skills-1.pdf Graphic file (type pdf)
 <use 202401260003-plot_files/figure-latex/skills-1.pdf>
-Missing character: There is no 《 (U+300A) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 现 (U+73B0) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 统 (U+7EDF) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 计 (U+8BA1) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 图 (U+56FE) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 形 (U+5F62) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 》 (U+300B) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 技 (U+6280) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 能 (U+80FD) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 栈 (U+6808) in font [lmroman10-regular]:mapping=tex-text;!
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-64-1.pdf Graphic file (type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-64-1.pdf>
-[57] [58] <xymatrix 3x3 320> <xymatrix 3x3 320> [59
-
-] [60
-
-] [61] [62]
-Chapter 13.
-[63
+File: 202401260003-plot_files/figure-latex/unnamed-chunk-66-1.pdf Graphic file (type pdf)
+<use 202401260003-plot_files/figure-latex/unnamed-chunk-66-1.pdf>
+[61] [62] <xymatrix 3x3 320> [63
 
 ] [64
 
-] [65] [66
+]
+Chapter 14.
+[65] [66
 
-] [67] [68
+] [67] [68]
+Chapter 15.
+[69
+
+] [70
+
+] [71] [72
+
+] [73] [74
 
 ]
 
-LaTeX Warning: Reference `eq:eqclass' on page 69 undefined on input line 1277.
+LaTeX Warning: Reference `eq:eqclass' on page 75 undefined on input line 1676.
 
-[69] [70
+[75] [76
 
-] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1686--1687
+[][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][][] [][] [][][][][][][][][][][] [][] [][][][][][][] [][] [][] [][] [][][][] [][] [][][] [][] [][][][] [][]
+ []
+
+(d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -1762,160 +1831,164 @@ Missing character: There is no 遞 (U+905E) in font [lmroman7-regular]:mapping=t
 Missing character: There is no 移 (U+79FB) in font [lmroman7-regular]:mapping=tex-text;!
 Missing character: There is no 遞 (U+905E) in font [lmroman5-regular]:mapping=tex-text;!
 Missing character: There is no 移 (U+79FB) in font [lmroman5-regular]:mapping=tex-text;!
-[71] [72
+[77] [78
 
 ]
-Chapter 14.
-[73]
-Overfull \hbox (71.857pt too wide) in paragraph at lines 1426--1427
+Chapter 16.
+[79]
+Overfull \hbox (71.857pt too wide) in paragraph at lines 1797--1798
 []\TU/lmr/m/n/10 copy \TU/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tcl8.6
  []
 
 
-Overfull \hbox (62.72699pt too wide) in paragraph at lines 1426--1427
+Overfull \hbox (62.72699pt too wide) in paragraph at lines 1797--1798
 \TU/lmr/m/n/10 and \TU/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tk8.6
  []
 
 
-Overfull \hbox (115.777pt too wide) in paragraph at lines 1426--1427
+Overfull \hbox (115.777pt too wide) in paragraph at lines 1797--1798
 \TU/lmr/m/n/10 two folders to the folder \TU/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\Lib 
  []
 
-[74]
 File: 202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 <use 202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf>
-[75] [76
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[80] [81] [82
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1455--1456
+Underfull \hbox (badness 10000) in paragraph at lines 1830--1831
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][][] [][] [][][] [][] [][][][][][][][] [][] [][][][][][][] [][] [][][][][][][][] [][] [][][][][][][][] [][]
  []
 
 
-Overfull \hbox (40.06696pt too wide) in paragraph at lines 1459--1460
+Overfull \hbox (40.06696pt too wide) in paragraph at lines 1834--1835
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][][][] [] [] [] [][][][][][][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-2-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-3-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-5-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-6-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-7-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-8-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-9-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-11-1.pdf>
-[77] [78]
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-13-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-14-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-16-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-18-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-20-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-22-1.pdf>
-[79] [80]
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-24-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-26-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-28-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-30-1.pdf>
-[81]
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-32-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-33-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-33-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-35-1.pdf>
-[82]
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-37-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-39-1.pdf>
-[83]
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-41-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-43-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-45-1.pdf>
-[84] [85]
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-47-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-49-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-51-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-51-1.pdf>
-[86]
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-53-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-3-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf>
+[83] [84]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf>
+[85] [86]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf>
 [87]
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-55-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-55-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-57-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-57-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-33-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-33-1.pdf>
+[88]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf>
+[89]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf>
+[90]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf>
+[91] [92]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf>
+[93]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1883--1884
+Underfull \hbox (badness 10000) in paragraph at lines 2261--2262
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [] [][] [][][][][][][][] [][] [][][][][][][][] [][] [][][][] [][] [][][][] [][] [][][][] [][] [][][][][][] [][]
  []
 
-[88]
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-59-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-59-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-60-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-60-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-61-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-61-1.pdf>
-File: 202401311000-TiKZ_files/figure-latex/skills-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/skills-1.pdf>
-Missing character: There is no 《 (U+300A) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 现 (U+73B0) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 代 (U+4EE3) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 统 (U+7EDF) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 计 (U+8BA1) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 图 (U+56FE) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 形 (U+5F62) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 》 (U+300B) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 技 (U+6280) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 能 (U+80FD) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 栈 (U+6808) in font [lmroman10-regular]:mapping=tex-text;!
-File: 202401311000-TiKZ_files/figure-latex/unnamed-chunk-62-1.pdf Graphic file (type pdf)
-<use 202401311000-TiKZ_files/figure-latex/unnamed-chunk-62-1.pdf>
-[89] [90] <xymatrix 3x3 320> <xymatrix 3x3 320> [91
+[94]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf>
+[95] [96]
+File: 202401311000-TikZ_files/figure-latex/skills-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/skills-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf>
+[97] [98] <xymatrix 3x3 320> [99
 
-] [92
+] [100
 
 ]
-Chapter 15.
-[93] [94
+Chapter 17.
+File: 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
+<use 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-6-1.pdf>
+[101]
+File: 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
+<use 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-7-1.pdf>
+[102]
+Chapter 18.
+[103
+
+] [104] [105] [106
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1979--1982
+Chapter 19.
+[107] [108
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2623--2626
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1983--1986
+Underfull \hbox (badness 10000) in paragraph at lines 2627--2630
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1987--1990
+Underfull \hbox (badness 10000) in paragraph at lines 2631--2634
 
  []
 
@@ -1928,11 +2001,23 @@ Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=
 Missing character: There is no 矩 (U+77E9) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 陣 (U+9663) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1991--1994
+Underfull \hbox (badness 10000) in paragraph at lines 2635--2638
 
  []
 
-[95] (./math.aux)
+Missing character: There is no 多 (U+591A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 變 (U+8B8A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 量 (U+91CF) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 常 (U+5E38) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 態 (U+614B) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 2639--2642
+
+ []
+
+[109] (./math.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-13>
@@ -1944,15 +2029,15 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `math.out' has not changed.
-(rerunfilecheck)             Checksum: 16CCD782B4EE1F950BFAB3DCEB2F4980;6290.
+(rerunfilecheck)             Checksum: 482A90E766479E01162514F9B98AC964;7744.
  ) 
 Here is how much of TeX's memory you used:
- 44560 strings out of 476797
- 1037160 string characters out of 5801832
- 1940650 words of memory out of 5000000
- 65778 multiletter control sequences out of 15000+600000
- 567022 words of font info for 112 fonts, out of 8000000 for 9000
+ 44671 strings out of 476797
+ 1041120 string characters out of 5801832
+ 1957650 words of memory out of 5000000
+ 65868 multiletter control sequences out of 15000+600000
+ 569951 words of font info for 132 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,20n,121p,902b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,20n,121p,902b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on math.pdf (95 pages).
+Output written on math.pdf (109 pages).

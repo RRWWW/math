@@ -1,7 +1,90 @@
 # (PART) by discipline {-}
-# test cross-link
+# test
+
+## superscript and subscript
 
 script^superscript^~subscript~
+
+## equation term coloring
+
+https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html
+
+LaTex color
+
+https://latexcolor.com/
+
+https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX
+
+https://latex-tutorial.com/color-latex/#:~:text=To%20summarize%2C%20pyellow!50efined%20colors%20in,when%20loading%20the%20xcolor%20package.
+
+LaTex color methods
+
+color frame
+
+https://tex.stackexchange.com/questions/582748/highlight-equation-with-boxes-and-arrows
+
+color box
+
+https://tex.stackexchange.com/questions/567739/how-to-move-and-size-colorbox
+
+color box with round corners
+
+https://tex.stackexchange.com/questions/568880/color-box-with-rounded-corners
+
+highlighting
+
+https://tex.stackexchange.com/questions/318991/highlighting-math
+
+https://forum.remnote.io/t/highlighting-latex-formulas/149
+
+LyX
+
+https://tex.stackexchange.com/questions/250069/create-a-color-box
+https://latexlyx.blogspot.com/2013/12/lyx.html
+
+https://tex.stackexchange.com/questions/635486/prevent-lyx-from-escaping-math-in-color-box-title
+
+Bookdown - conditional display of text and code blocks (LaTeX/PDF vs. HTML)
+https://stackoverflow.com/questions/76240244/bookdown-conditional-display-of-text-and-code-blocks-latex-pdf-vs-html
+
+::: {show-in="pdf"}
+
+\begin{align*}
+\colorbox{yellow!50}{$F$}= & \colorbox{yellow!50}{$ma$}\\
+\end{align*}
+
+https://community.rstudio.com/t/highlighting-text-inline-in-rmarkdown-or-bookdown-pdf/35118/4
+\definecolor{hightlightColor}{HTML}{FFFF66}
+
+\begin{align*}
+\colorbox{hightlightColor}{$F$}= & \colorbox{yellow!50}{$ma$}\\
+\end{align*}
+
+\begin{align*}
+\colorbox{hightlightColor}{\ensuremath{F}}= & \colorbox{yellow!50}{\ensuremath{F}}\\
+\end{align*}
+
+\begin{equation}
+\colorbox{yellow!50}{$F$}=\colorbox{yellow!50}{$ma$}
+\end{equation}
+
+$$
+\colorbox{hightlightColor}{$F$}=\colorbox{yellow!50}{$ma$}
+$$
+
+$$
+\colorbox{yellow!50}{$Y = \beta_0 + \beta_1 X_1 + \ldots + \beta_n X_n$}
+$$
+:::
+
+::: {show-in="html"}
+
+$$
+\require{color}
+\colorbox{#FFD1DC}{$F$}=\colorbox{#FFD1DC}{$ma$}
+$$
+
+:::
 
 ## link and reference
 

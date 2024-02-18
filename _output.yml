@@ -1,7 +1,7 @@
 bookdown::gitbook:
   css: style.css
   # pandoc_args: ["--csl","csl/chicago-author-date.csl"]
-  pandoc_args: ["--csl","csl/nature.csl"]
+  pandoc_args: ["--csl","csl/nature.csl","--lua-filter=conditional-content.lua"]
   config:
     toc:
       before: |
@@ -15,6 +15,7 @@ bookdown::gitbook:
   includes:
     after_body: disqus.html
 bookdown::pdf_book:
+  # pandoc_args: ["--lua-filter=conditional-content.lua"]
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
@@ -23,7 +24,7 @@ bookdown::pdf_book:
   # citation_package: natbib
   # citation_package: biblatex
   # pandoc_args: ["--csl","csl/chicago-author-date.csl"]
-  pandoc_args: ["--csl","csl/nature.csl"]
+  pandoc_args: ["--csl","csl/nature.csl","--lua-filter=conditional-content.lua"]
   keep_tex: yes
 bookdown::word_document2: default
   # toc: yes

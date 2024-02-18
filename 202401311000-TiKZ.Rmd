@@ -1,6 +1,10 @@
-# TiKZ {-}
+# TikZ {-}
 
-TiKZ and PGFplots
+How to speed up bookdown generation?
+
+https://stackoverflow.com/questions/56541371/how-to-speed-up-bookdown-generation
+
+TikZ and PGFplots
 
 What's the relation between packages PGFplots and TikZ?
 
@@ -14,8 +18,8 @@ https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs
 \begin{tikzpicture}
   \def\a{1.5} % amplitude
   \def\b{2}   % frequency
-  \draw[->] (-0.2,0) -- (4.2,0) node[right, font=\small] {$x$};
-  \draw[->] (0,-4) -- (0,0.5) node[above] {$y$};
+  \draw[->] (-0.2,0)--(4.2,0) node[right, font=\small] {$x$};
+  \draw[->] (0,-4)--(0,0.5) node[above] {$y$};
   \draw[domain=0:4,smooth,variable=\t,blue,thick] 
     plot ({\a * (\b*\t - sin(deg(\b*\t)))},{-\a * (1 - cos(deg(\b*\t)))});
   % \node[above] at (2, 0.5) {Brachistochrone Curve};
@@ -27,12 +31,12 @@ https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='90%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='Brachistochrone Curve'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  cache=TRUE,  out.width='90%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='Brachistochrone Curve'}
 \begin{tikzpicture}
   \def\a{1.5} % amplitude
   \def\b{2}   % frequency
-  \draw[->] (-0.2,0) -- (4.2,0) node[right, font=\small] {$x$};
-  \draw[->] (0,-4) -- (0,0.5) node[above] {$y$};
+  \draw[->] (-0.2,0)--(4.2,0) node[right, font=\small] {$x$};
+  \draw[->] (0,-4)--(0,0.5) node[above] {$y$};
   \draw[domain=0:4,smooth,variable=\t,blue,thick] 
     plot ({\a * (\b*\t - sin(deg(\b*\t)))},{-\a * (1 - cos(deg(\b*\t)))});
   % \node[above] at (2, 0.5) {Brachistochrone Curve};
@@ -44,7 +48,7 @@ https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='90%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='Brachistochrone Curve'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='90%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='Brachistochrone Curve'}
 \begin{tikzpicture}[scale=1.5]
   % Parameters for the cycloid
   \def\r{1} % Radius of the generating circle
@@ -52,20 +56,22 @@ https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs
   \def\b{2*pi} % End angle
 
   % Drawing the cycloid
-  \draw [domain=\a:\b, smooth, variable=\t, thick, blue] 
+  \draw[domain=\a:\b, smooth, variable=\t, thick, blue] 
     plot ({\r*(\t - sin(\t r))}, {-\r*(1 - cos(\t r))});
 
   % Drawing the generating circle (optional)
-  %\draw [red, thick] (0,-\r) circle (\r);
+  %\draw[red, thick] (0,-\r) circle (\r);
 
   % Axes
-  \draw [->] (-0.2,0) -- (7,0) node [right] {$x$};
-  \draw [->] (0,0.2) -- (0,-3) node [below] {$y$};
+  \draw[->] (-0.2,0)--(7,0) node[right] {$x$};
+  \draw[->] (0,0.2)--(0,-3) node[below] {$y$};
 
   % Labels
-  \node [below right] at (7,0) {Brachistochrone curve (Cycloid)};
+  \node[below right] at (7,0) {Brachistochrone curve (Cycloid)};
 \end{tikzpicture}
 ```
+
+## 2D
 
 https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 
@@ -76,33 +82,33 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='50%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='5%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
 \begin{tikzpicture}
   \draw (-1,1)--(0,0)--(1,2);
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='50%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='5%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
 \begin{tikzpicture}
   \draw (-1,1)--(0,0)--(1,2);
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='100%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='20%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
 \begin{tikzpicture}
   \draw (-1,1)--(0,0)--(1,2);
 \end{tikzpicture}
 ```
 
 2
-```{r, echo=FALSE, engine='tikz', out.width='90%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='15%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
 \begin{tikzpicture}[scale=1.5]
   \draw (-1,1)--(0,0)--(1,2);
 \end{tikzpicture}
 ```
 
 3
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
 \begin{tikzpicture}
   \draw[rounded corners] (-1,1)--(0,0)--(1,2);
 \end{tikzpicture}
@@ -114,7 +120,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='rounded corner pseudo-closed triangle'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='rounded corner pseudo-closed triangle'}
 \begin{tikzpicture}
   \draw[rounded corners] (-1,1)--(0,0)--(1,2)--(-1,1);
 \end{tikzpicture}
@@ -126,13 +132,13 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='rounded corner triangle'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='rounded corner triangle'}
 \begin{tikzpicture}
   \draw[rounded corners] (-1,1)--(0,0)--(1,2)--cycle;
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='triangle vs. pseudo-closed triangle'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='triangle vs. pseudo-closed triangle'}
 \begin{tikzpicture}
   \draw[rounded corners] (-1,1)--(0,0)--(1,2)--cycle;
   \draw[rounded corners] (-1,1)--(0,0)--(1,2)--(-1,1);
@@ -145,7 +151,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='rectangle'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='rectangle'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (4,2);
 \end{tikzpicture}
@@ -157,7 +163,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='square'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='square'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
 \end{tikzpicture}
@@ -169,7 +175,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='circle'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='circle'}
 \begin{tikzpicture}
   \draw (0,0) circle (1);
 \end{tikzpicture}
@@ -182,7 +188,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='circle and square'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='circle and square'}
 \begin{tikzpicture}
   \draw (0,0) circle (1);
   \draw (0,0) rectangle (2,2);
@@ -195,7 +201,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='ellipse'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='ellipse'}
 \begin{tikzpicture}
   \draw (1,1) ellipse (2 and 1);
 \end{tikzpicture}
@@ -208,7 +214,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='circle and ellipse arcs'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='circle and ellipse arcs'}
 \begin{tikzpicture}
   \draw (1 ,1) arc (0:270:1);
   \draw (6 ,1) arc (0:270:2 and 1);
@@ -221,7 +227,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='parabola arc'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='parabola arc'}
 \begin{tikzpicture}
   \draw (-1,1) parabola bend (0,0) (2,4);
 \end{tikzpicture}
@@ -238,7 +244,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='parabola arc with points'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='parabola arc with points'}
 \begin{tikzpicture}
   \draw (-1,1) parabola bend (0,0) (2,4);
   \filldraw
@@ -251,66 +257,66 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 
 ```{tex}
 \begin{tikzpicture}
-  \draw [step=20pt] (0,0) grid (3,2);
-  \draw [help lines ,step=20pt] (4,0) grid (7,2);
+  \draw[step=20pt] (0,0) grid (3,2);
+  \draw[help lines ,step=20pt] (4,0) grid (7,2);
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='grid and help lines'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='grid and help lines'}
 \begin{tikzpicture}[scale=1.5]
-  \draw [step=20pt] (0,0) grid (3,2);
-  \draw [help lines ,step=20pt] (4,0) grid (7,2);
+  \draw[step=20pt] (0,0) grid (3,2);
+  \draw[help lines ,step=20pt] (4,0) grid (7,2);
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='grid and help lines'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='grid and help lines'}
 \begin{tikzpicture}[scale=1.5]
-  \draw [step=40pt] (0,0) grid (3,2);
-  \draw [help lines ,step=1pt] (4,0) grid (7,2);
+  \draw[step=40pt] (0,0) grid (3,2);
+  \draw[help lines ,step=1pt] (4,0) grid (7,2);
 \end{tikzpicture}
 ```
 
 ```{tex}
 \begin{tikzpicture}[scale=0.25]
-  \draw [->] (0,0)--(9,0);
-  \draw [<-] (0,1)--(9,1);
-  \draw [<->] (0,2)--(9,2);
-  \draw [>->>] (0,3)--(9,3);
-  \draw [|<->|] (0,4)--(9,4);
+  \draw[->] (0,0)--(9,0);
+  \draw[<-] (0,1)--(9,1);
+  \draw[<->] (0,2)--(9,2);
+  \draw[>->>] (0,3)--(9,3);
+  \draw[|<->|] (0,4)--(9,4);
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='arrows'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='arrows'}
 \begin{tikzpicture}[scale=0.25]
-  \draw [->] (0,0)--(9,0);
-  \draw [<-] (0,1)--(9,1);
-  \draw [<->] (0,2)--(9,2);
-  \draw [>->>] (0,3)--(9,3);
-  \draw [|<->|] (0,4)--(9,4);
+  \draw[->] (0,0)--(9,0);
+  \draw[<-] (0,1)--(9,1);
+  \draw[<->] (0,2)--(9,2);
+  \draw[>->>] (0,3)--(9,3);
+  \draw[|<->|] (0,4)--(9,4);
 \end{tikzpicture}
 ```
 
 ```{tex}
 \begin{tikzpicture}
-  \draw [line width =2pt] (0,6)--(9,6); 
-  \draw [dotted]          (0,5)--(9,5); 
-  \draw [densely dotted]  (0,4)--(9,4); 
-  \draw [loosely dotted]  (0,3)--(9,3); 
-  \draw [dashed]          (0,2)--(9,2); 
-  \draw [densely dashed]  (0,1)--(9,1); 
-  \draw [loosely dashed]  (0,0)--(9,0);
+  \draw[line width =2pt] (0,6)--(9,6); 
+  \draw[dotted]          (0,5)--(9,5); 
+  \draw[densely dotted]  (0,4)--(9,4); 
+  \draw[loosely dotted]  (0,3)--(9,3); 
+  \draw[dashed]          (0,2)--(9,2); 
+  \draw[densely dashed]  (0,1)--(9,1); 
+  \draw[loosely dashed]  (0,0)--(9,0);
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='arrows'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='arrows'}
 \begin{tikzpicture}
-  \draw [line width =2pt] (0,6)--(9,6); 
-  \draw [dotted]          (0,5)--(9,5); 
-  \draw [densely dotted]  (0,4)--(9,4); 
-  \draw [loosely dotted]  (0,3)--(9,3); 
-  \draw [dashed]          (0,2)--(9,2); 
-  \draw [densely dashed]  (0,1)--(9,1); 
-  \draw [loosely dashed]  (0,0)--(9,0);
+  \draw[line width =2pt] (0,6)--(9,6); 
+  \draw[dotted]          (0,5)--(9,5); 
+  \draw[densely dotted]  (0,4)--(9,4); 
+  \draw[loosely dotted]  (0,3)--(9,3); 
+  \draw[dashed]          (0,2)--(9,2); 
+  \draw[densely dashed]  (0,1)--(9,1); 
+  \draw[loosely dashed]  (0,0)--(9,0);
 \end{tikzpicture}
 ```
 
@@ -320,7 +326,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='head styling'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='head styling'}
 \begin{tikzpicture}[dline/.style={color= blue, line width=2pt}]
   \draw[dline] (0,0)--(9,0); 
 \end{tikzpicture}
@@ -340,7 +346,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: shift'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: shift'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[shift={( 3, 0)}] (0,0) rectangle (2,2);
@@ -364,7 +370,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: shift x, y'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: shift x, y'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[xshift= 100pt] (0,0) rectangle (2,2);
@@ -384,7 +390,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: scale x, y'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: scale x, y'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[xshift= 100pt, xscale=1.5] (0,0) rectangle (2,2);
@@ -404,7 +410,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: scale'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: scale'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[shift={( 3,0)},scale=1.5] (0,0) rectangle (2,2);
@@ -420,7 +426,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: rotate'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: rotate'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[xshift=125pt,rotate=45] (0,0) rectangle (2,2);
@@ -436,7 +442,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: slant'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: slant'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[xshift=70pt,xslant=1] (0,0) rectangle (2,2);
@@ -456,17 +462,17 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   }
 }
 \begin{tikzpicture}
-  \node[box] (1) at(0,0) {1};
-  \node[box] (2) at(4,0) {2};
-  \node[box] (3) at(8,0) {3};
+  \node[box] (1) at (0,0) {1};
+  \node[box] (2) at (4,0) {2};
+  \node[box] (3) at (8,0) {3};
   \draw[->] (1)--(2);
   \draw[->] (2)--(3);
-  \node at(2,1) {a};
-  \node at(6,1) {b};
+  \node at (2,1) {a};
+  \node at (6,1) {b};
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='flowchart'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='flowchart'}
 \tikzset{
   box/.style={
     draw=blue,
@@ -478,13 +484,13 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   }
 }
 \begin{tikzpicture}
-  \node[box] (1) at(0,0) {1};
-  \node[box] (2) at(4,0) {2};
-  \node[box] (3) at(8,0) {3};
+  \node[box] (1) at (0,0) {1};
+  \node[box] (2) at (4,0) {2};
+  \node[box] (3) at (8,0) {3};
   \draw[->] (1)--(2);
   \draw[->] (2)--(3);
-  \node at(2,1) {a};
-  \node at(6,1) {b};
+  \node at (2,1) {a};
+  \node at (6,1) {b};
 \end{tikzpicture}
 ```
 
@@ -510,7 +516,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='tree'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='tree'}
 \tikzset{
   box/.style={
     draw=blue,
@@ -540,7 +546,7 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='tree'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='tree'}
 \begin{tikzpicture}
   \draw[->] (-0.2,0)--(6,0) node[right] {$x$};
   \draw[->] (0,-0.2)--(0,6) node[above] {$f(x)$};
@@ -561,6 +567,8 @@ https://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r
 ## 3D
 
 https://zhuanlan.zhihu.com/p/431732330?utm_psn=1741857547550638080
+
+https://github.com/RRWWW/Stereometry
 
 ```{tex}
 \begin{tikzpicture}
@@ -584,7 +592,7 @@ https://zhuanlan.zhihu.com/p/431732330?utm_psn=1741857547550638080
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube'}
 \usetikzlibrary{patterns}
 \usetikzlibrary{3d,calc}
 \begin{tikzpicture}
@@ -610,7 +618,7 @@ https://zhuanlan.zhihu.com/p/431732330?utm_psn=1741857547550638080
 
 https://tex.stackexchange.com/questions/388621/optimizing-perspective-tikz-graphic
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate'}
 \usetikzlibrary{patterns}
 \usetikzlibrary{3d,calc}
 \begin{tikzpicture}[y={(.5cm,.7cm)}]
@@ -634,7 +642,7 @@ https://tex.stackexchange.com/questions/388621/optimizing-perspective-tikz-graph
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate'}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate'}
 \usetikzlibrary{patterns}
 \usetikzlibrary{3d,calc}
 %\tdplotsetmaincoords{70}{110}
@@ -663,11 +671,11 @@ https://github.com/XiangyunHuang/bookdown-broken/blob/master/index.Rmd
 
 ```{tex}
 \smartdiagramset{planet color=gray!40!white, uniform color list=gray!40!white for 10 items}
-\smartdiagram[bubble diagram]{基础技能,
-  编辑~/\\ (RStudio), 组织~/\\ (bookdown), 协作~/\\ (Git), 排版~/\\ (LaTeX/Pandoc), 编译~/\\ (GitHub Action)}
+\smartdiagram[bubble diagram]{Basic skills,
+  Edit~/\\ (RStudio), Organize~/\\ (bookdown), Cooperate~/\\ (Git), Typeset~/\\ (LaTeX/Pandoc), Compile~/\\ (GitHub Action)}
 ```
 
-```{r skills, engine="tikz", fig.cap="《现代统计图形》的技能栈", out.width="65%", echo=FALSE, cache=TRUE, engine.opts=list(extra.preamble=c("\\usepackage{ctex}", "\\usepackage{smartdiagram}"))}
+```{r skills, engine="tikz", fig.cap="modern statistics plot skills", out.width="65%", echo=FALSE, cache=TRUE, engine.opts=list(extra.preamble=c("\\usepackage{ctex}", "\\usepackage{smartdiagram}"))}
 \smartdiagramset{planet color=gray!40!white, uniform color list=gray!40!white for 10 items}
 \smartdiagram[bubble diagram]{基础技能,
   编辑~/\\ (RStudio), 组织~/\\ (bookdown), 协作~/\\ (Git), 排版~/\\ (LaTeX/Pandoc), 编译~/\\ (GitHub Action)}
@@ -698,7 +706,7 @@ https://github.com/XiangyunHuang/bookdown-broken/blob/master/index.Rmd
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate', engine.opts=list(extra.preamble=c("\\usepackage{tikz-3dplot}"))}
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate', engine.opts=list(extra.preamble=c("\\usepackage{tikz-3dplot}"))}
 \usetikzlibrary{patterns}
 \usetikzlibrary{3d,calc}
 \tdplotsetmaincoords{45}{45}

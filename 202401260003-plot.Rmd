@@ -1,5 +1,22 @@
 # plot
 
+- LaTeX
+    - TikZ
+        - TikZ-3Dplot
+        - PGFplots
+    - xypic = xy-pic
+- OverLeaf
+- MathCha
+- GeoGebra
+- Python
+    - MatPlotLib
+    - Seaborn
+    - Plotly
+
+neural network plot/draw
+https://github.com/ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network
+
+
 ```{r, child='202401311000-TiKZ.Rmd'}
 ```
 

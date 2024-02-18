@@ -2,33 +2,34 @@
 
 https://bookdown.org/yihui/rmarkdown/language-engines.html
 
-```{r}
+```{r, eval=TRUE, cache=TRUE}
 names(knitr::knit_engines$get())
 ```
 https://rstudio.github.io/reticulate/articles/python_packages.html
 
-```{python}
+```{python, eval=TRUE, cache=TRUE}
 x = 'hello, python world!'
 print(x.split(' '))
 ```
 
-```{r}
+```{r, eval=FALSE, cache=TRUE}
 library(reticulate)
 virtualenv_python()
 ```
 
-```{r}
+```{r, eval=FALSE, cache=TRUE}
 library(reticulate)
 conda_list()
 ```
-```{r}
+
+```{r, eval=FALSE, cache=TRUE}
 library(reticulate)
 virtualenv_list()
 ```
 
 https://rstudio.github.io/reticulate/reference/install_python.html
 
-```{r}
+```{r, eval=FALSE, cache=TRUE}
 library(reticulate)
 version <- "3.9.12"
 # install_python(version)
@@ -47,14 +48,14 @@ matplotlib <- import("matplotlib")
 
 copy `C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tcl8.6` and `C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tk8.6` two folders to the folder `C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\Lib`
 
-```{r}
+```{r, eval=FALSE, cache=TRUE}
 # library(reticulate)
 # use_virtualenv("r-reticulate")
 # # matplotlib <- import("matplotlib")
 # matplotlib$use("Agg", force = TRUE)
 ```
 
-```{python}
+```{python, eval=TRUE, cache=TRUE}
 import matplotlib.pyplot as plt
 plt.plot([0, 2, 1, 4])
 plt.show()
