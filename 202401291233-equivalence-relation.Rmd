@@ -1,43 +1,8 @@
-# equivalence relation {-}
-
-<!-- \begin{CJK}{UTF8}{bsmi} -->
-<!-- \begin{defn} -->
-`r if (knitr::is_html_output())'等價關係 equivalence relation'`
-
-`r if (knitr::is_html_output())'
-等價關係 equivalence relation'`
-
-`r if (knitr::is_html_output())'
-等價關係 equivalence relation
-'`
-
-```{r, eval=knitr::is_html_output(), echo=FALSE, results='asis'}
-cat('等價關係 equivalence relation')
-
-```
-
-```{r, eval=knitr::is_html_output(), echo=FALSE, results='asis'}
-cat('
-等價關係 equivalence relation
-')
-
-```
-
-```{r, eval=knitr::is_html_output(), echo=FALSE, results='asis'}
-cat('
-$$
-a+b
-$$
-')
-
-```
-
-```{r, child = if (knitr::is_html_output()) 'child/202401291233-equivalence-relation-child.Rmd'}
-```
-
-https://stackoverflow.com/questions/76240244/bookdown-conditional-display-of-text-and-code-blocks-latex-pdf-vs-html
+# equivalence relation
 
 ::: {show-in="html"}
+
+等價關係 equivalence relation
 
 \begingroup
 \fontfamily{ppl}\fontsize{1}{1}\selectfont
@@ -93,6 +58,5 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \end{cases}
 \end{align*}
 \end{CJK}
-<!-- \end{defn} -->
 
 :::

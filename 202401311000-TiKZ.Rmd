@@ -1,4 +1,31 @@
-# TikZ {-}
+# TikZ
+
+[two columns] [\@ref(two-columns)]
+
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.4\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.55\textwidth}"}
+```{r, echo=FALSE, engine='tikz', cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+::::::
 
 How to speed up bookdown generation?
 
@@ -75,7 +102,6 @@ https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs
 
 https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 
-1
 ```{tex}
 \begin{tikzpicture}
   \draw (-1,1)--(0,0)--(1,2);
@@ -616,6 +642,56 @@ https://github.com/RRWWW/Stereometry
 \end{tikzpicture}
 ```
 
+```{tex}
+\usetikzlibrary{patterns}
+\usetikzlibrary{3d,calc}
+\tdplotsetmaincoords{45}{45}
+\begin{tikzpicture}[tdplot_main_coords]
+  \coordinate (A) at ( 1, 1, 1);
+  \coordinate (B) at ( 1, 1,-1);
+  \coordinate (C) at ( 1,-1,-1);
+  \coordinate (D) at ( 1,-1, 1);
+  \coordinate (E) at (-1,-1, 1);
+  \coordinate (F) at (-1,-1,-1);
+  \coordinate (G) at (-1, 1,-1);
+  \coordinate (H) at (-1, 1, 1);
+  \draw (A) node[right=1pt] {$A$}--
+        (B) node[right=1pt] {$B$}--
+        (C) node[right=1pt] {$C$}--
+        (D) node[right=1pt] {$D$}--
+        (E) node[left= 1pt] {$E$}--
+        (F) node[right=1pt] {$F$}--
+        (G) node[right=1pt] {$G$}--
+        (H) node[left= 1pt] {$H$}--
+        (A) node[right=1pt] {$A$};
+\end{tikzpicture}
+```
+
+```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate', engine.opts=list(extra.preamble=c("\\usepackage{tikz-3dplot}"))}
+\usetikzlibrary{patterns}
+\usetikzlibrary{3d,calc}
+\tdplotsetmaincoords{45}{45}
+\begin{tikzpicture}[tdplot_main_coords]
+  \coordinate (A) at ( 1, 1, 1);
+  \coordinate (B) at ( 1, 1,-1);
+  \coordinate (C) at ( 1,-1,-1);
+  \coordinate (D) at ( 1,-1, 1);
+  \coordinate (E) at (-1,-1, 1);
+  \coordinate (F) at (-1,-1,-1);
+  \coordinate (G) at (-1, 1,-1);
+  \coordinate (H) at (-1, 1, 1);
+  \draw (A) node[right=1pt] {$A$}--
+        (B) node[right=1pt] {$B$}--
+        (C) node[right=1pt] {$C$}--
+        (D) node[right=1pt] {$D$}--
+        (E) node[left= 1pt] {$E$}--
+        (F) node[right=1pt] {$F$}--
+        (G) node[right=1pt] {$G$}--
+        (H) node[left= 1pt] {$H$}--
+        (A) node[right=1pt] {$A$};
+\end{tikzpicture}
+```
+
 https://tex.stackexchange.com/questions/388621/optimizing-perspective-tikz-graphic
 
 ```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate'}
@@ -681,52 +757,6 @@ https://github.com/XiangyunHuang/bookdown-broken/blob/master/index.Rmd
   编辑~/\\ (RStudio), 组织~/\\ (bookdown), 协作~/\\ (Git), 排版~/\\ (LaTeX/Pandoc), 编译~/\\ (GitHub Action)}
 ```
 
-```{tex}
-\usetikzlibrary{patterns}
-\usetikzlibrary{3d,calc}
-\tdplotsetmaincoords{45}{45}
-\begin{tikzpicture}[tdplot_main_coords]
-  \coordinate (A) at ( 1, 1, 1);
-  \coordinate (B) at ( 1, 1,-1);
-  \coordinate (C) at ( 1,-1,-1);
-  \coordinate (D) at ( 1,-1, 1);
-  \coordinate (E) at (-1,-1, 1);
-  \coordinate (F) at (-1,-1,-1);
-  \coordinate (G) at (-1, 1,-1);
-  \coordinate (H) at (-1, 1, 1);
-  \draw (A) node[right=1pt] {$A$}--
-        (B) node[right=1pt] {$B$}--
-        (C) node[right=1pt] {$C$}--
-        (D) node[right=1pt] {$D$}--
-        (E) node[left= 1pt] {$E$}--
-        (F) node[right=1pt] {$F$}--
-        (G) node[right=1pt] {$G$}--
-        (H) node[left= 1pt] {$H$}--
-        (A) node[right=1pt] {$A$};
-\end{tikzpicture}
-```
+## animation
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate', engine.opts=list(extra.preamble=c("\\usepackage{tikz-3dplot}"))}
-\usetikzlibrary{patterns}
-\usetikzlibrary{3d,calc}
-\tdplotsetmaincoords{45}{45}
-\begin{tikzpicture}[tdplot_main_coords]
-  \coordinate (A) at ( 1, 1, 1);
-  \coordinate (B) at ( 1, 1,-1);
-  \coordinate (C) at ( 1,-1,-1);
-  \coordinate (D) at ( 1,-1, 1);
-  \coordinate (E) at (-1,-1, 1);
-  \coordinate (F) at (-1,-1,-1);
-  \coordinate (G) at (-1, 1,-1);
-  \coordinate (H) at (-1, 1, 1);
-  \draw (A) node[right=1pt] {$A$}--
-        (B) node[right=1pt] {$B$}--
-        (C) node[right=1pt] {$C$}--
-        (D) node[right=1pt] {$D$}--
-        (E) node[left= 1pt] {$E$}--
-        (F) node[right=1pt] {$F$}--
-        (G) node[right=1pt] {$G$}--
-        (H) node[left= 1pt] {$H$}--
-        (A) node[right=1pt] {$A$};
-\end{tikzpicture}
-```
+https://zhuanlan.zhihu.com/p/338402487

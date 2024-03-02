@@ -1,9 +1,11 @@
 # programming language
 
-- Python
+- [Python]^[\@ref(python)]^
 - JavaScript
-- SQL
-- R
+- SQL = structured query language
+- [R]^[\@ref(r)]^
+    - RMarkdown
+        - Bookdown
     - knitr: engine
         - TikZ
     - reticulate: Python

@@ -15,13 +15,24 @@
 
 % \usepackage{bm}
 \usepackage{amsmath,amssymb}
-\usepackage{hyperref}
+% \usepackage[pagebackref=true]{hyperref}
+% \usepackage[backref]{hyperref}
+\usepackage[]{hyperref}
+\usepackage[hyperpageref]{backref}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,      
     urlcolor=cyan
 }
+
+% \usepackage{fdsymbol} % vector over accent, but will use mathptmx
+%% replace the rather ugly mathptmx \sum operator with the equivalent Computer Modern one
+% \let\sum\relax
+% \DeclareSymbolFont{CMlargesymbols}{OMX}{cmex}{m}{n}
+% \DeclareMathSymbol{\sum}{\mathop}{CMlargesymbols}{"50}
+
+\usepackage{cancel} % demo usepackage in PDF and require in HTML
 
 % to wrap the text inside the margins of the PDF document when using code chunks in bookdown
 \usepackage{fvextra}
@@ -35,11 +46,16 @@
 % \let\oldpb\printbibliography
 % \renewcommand{\printbibliography}{\oldpb[heading=bibintoc]}
 
+% SVG
+\usepackage{svg}
+
 % TikZ
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.15}
+% animation
+\usepackage[autoplay]{animate}
 
 % xcolor colorbox
 % https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX

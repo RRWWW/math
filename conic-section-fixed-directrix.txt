@@ -1,0 +1,54 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{rvwvcq}{rgb}{0.08235294117647059,0.396078431372549,0.7529411764705882}
+\definecolor{dtsfsf}{rgb}{0.8274509803921568,0.1843137254901961,0.1843137254901961}
+\definecolor{dbwrru}{rgb}{0.8588235294117647,0.3803921568627451,0.0784313725490196}
+\definecolor{wrwrwr}{rgb}{0.3803921568627451,0.3803921568627451,0.3803921568627451}
+\definecolor{sexdts}{rgb}{0.1803921568627451,0.49019607843137253,0.19607843137254902}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-4.031362864543848,
+xmax=3.592006680654983,
+ymin=-17.3662963976605,
+ymax=4.958358198926908,
+xtick={-4,-3,...,3},
+ytick={-17,-16,...,4},]
+\clip(-4.031362864543848,-17.3662963976605) rectangle (3.592006680654983,4.958358198926908);
+\draw[line width=0.8pt] (-3.330064814389271,3.685632107905637) -- (-0.7326646286315777,3.685632107905637);
+\draw [line width=2pt,color=sexdts,domain=-4.031362864543848:3.592006680654983] plot(\x,{(-1-0*\x)/1});
+\draw[line width=0.8pt] (-3.330064814389271,3.1661520707540975) -- (-0.7326646286315777,3.1661520707540975);
+\draw [rotate around={90:(0,1.5)},line width=2pt,color=dbwrru] (0,1.5) ellipse (1.5cm and 1.2cm);
+\draw [samples=50,rotate around={0:(0,-0.2)},xshift=0cm,yshift=-0.2cm,line width=2pt,color=dtsfsf,domain=-12.8:12.8)] plot (\x,{(\x)^2/2/1.6});
+\draw [line width=2pt] (0.13317992675272555,-17.3662963976605) -- (0.13317992675272555,4.958358198926908);
+\begin{scriptsize}
+\draw [fill=black] (-2.161234730798309,3.685632107905637) circle (1.5pt);
+\draw[color=black] (-1.9534427159376933,4.016800631589743) node {$y_{L} = -1$};
+\draw[color=sexdts] (-3.875518853398386,-1.0481297306377662) node {$L$};
+\draw [fill=black] (-2.550844758661963,3.1661520707540975) circle (1.5pt);
+\draw[color=black] (-2.330065742872559,3.4583595916518384) node {$e = 0.6$};
+\draw [fill=wrwrwr] (0,0.6) circle (2.5pt);
+\draw[color=wrwrwr] (0.09850343081088447,0.8739464068229297) node {$F$};
+\draw [fill=wrwrwr] (0,-0.6) circle (2.5pt);
+\draw[color=wrwrwr] (0.15045143452603835,-0.320857678625611) node {$F'$};
+\draw[color=dbwrru] (-0.719677627702789,0.8999204086805066) node {$E$};
+\draw[color=dtsfsf] (-2.8885067828104627,3.1596585702897033) node {$P$};
+\draw [fill=rvwvcq] (0.13317992675272555,2.990733411733832) circle (2.5pt);
+\draw[color=rvwvcq] (0.2673344428851345,3.263554577720011) node {$A$};
+\draw[color=black] (-0.005392576619423252,4.796020687317052) node {$f$};
+\draw [fill=wrwrwr] (0.13317992675272555,-1) circle (2.5pt);
+\draw[color=wrwrwr] (0.2673344428851345,-0.723454707418054) node {$C$};
+\draw [fill=wrwrwr] (0.13317992675272555,-0.19445722097191837) circle (2.5pt);
+\draw[color=wrwrwr] (0.2673344428851345,0.08173935016683206) node {$B$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

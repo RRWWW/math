@@ -1,6 +1,7 @@
 bookdown::gitbook:
   css: style.css
   # pandoc_args: ["--csl","csl/chicago-author-date.csl"]
+  # "--lua-filter=conditional-content.lua" for conditional HTML or PDF block
   pandoc_args: ["--csl","csl/nature.csl","--lua-filter=conditional-content.lua"]
   config:
     toc:
@@ -14,6 +15,23 @@ bookdown::gitbook:
       size: 1
   includes:
     after_body: disqus.html
+bookdown::bs4_book:
+  pandoc_args: ["--csl","csl/nature.csl","--lua-filter=conditional-content.lua"]
+  includes:
+    after_body: disqus.html
+  # theme:
+  #   primary: "#0d6efd"   
+  #   base_font: 
+  #     google: Sen
+  #   heading_font:
+  #     google:
+  #       family: Bitter
+  #       wght: 200
+  #   code_font:
+  #     google: 
+  #       # arguments to sass::font_google() 
+  #       family: DM Mono
+  #       local: false    
 bookdown::pdf_book:
   # pandoc_args: ["--lua-filter=conditional-content.lua"]
   includes:
@@ -24,6 +42,9 @@ bookdown::pdf_book:
   # citation_package: natbib
   # citation_package: biblatex
   # pandoc_args: ["--csl","csl/chicago-author-date.csl"]
+  # "--lua-filter=conditional-content.lua" for conditional HTML or PDF block
+  # fail to use "--pdf-engine-opt=--shell-escape" for SVG
+  # pandoc_args: ["--csl","csl/nature.csl","--lua-filter=conditional-content.lua","--pdf-engine-opt=--shell-escape"]
   pandoc_args: ["--csl","csl/nature.csl","--lua-filter=conditional-content.lua"]
   keep_tex: yes
 bookdown::word_document2: default

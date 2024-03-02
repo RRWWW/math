@@ -1,7 +1,7 @@
 ---
 title: "math"
 author: "Joey Yu Hsu"
-date: "2024-02-18"
+date: "2024-03-02"
 site: bookdown::bookdown_site
 documentclass: book
 # output:
@@ -12,8 +12,9 @@ bibliography: [reference.bib, packages.bib]
 # biblio-style: apalike
 link-citations: yes
 colorlinks: true
-# header-includes:
-#   - \usepackage[dvipsnames]{xcolor} # \colorbox
+header-includes:
+  # - \usepackage{fdsymbol}
+  # - \usepackage[dvipsnames]{xcolor} # \colorbox
 #   - \usepackage[all]{xy} # xy-pic
   # - \usepackage{tikz-3dplot}
   # - \usepackage{tikz,tikz-3dplot}
@@ -21,7 +22,7 @@ colorlinks: true
 # url: 
 # cover-image: path to the social sharing image like images/cover.jpg
 # description: 
-github-repo: "https://github.com/RRWWW/bookdown-workspace/"
+github-repo: "https://github.com/RRWWW/math/"
 geometry: [b5paper, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.0cm, rmargin=1.0cm]
 # fig_width: 6 
 # fig_height: 4 
@@ -29,6 +30,13 @@ geometry: [b5paper, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.0cm, rmargin=1.0cm]
 #   markdown:
 #     wrap: sentence
 # runtime: shiny
+# output:
+#   xaringan::moon_reader:
+#     lib_dir: libs
+#     nature:
+#       highlightStyle: github
+#       highlightLines: true
+#       countIncrementalSlides: false
 ---
 
 # index {.unnumbered}

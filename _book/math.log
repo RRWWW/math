@@ -1,91 +1,101 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.22)  18 FEB 2024 14:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  2 MAR 2024 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **math.tex
 (./math.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-04-29>
-(c:/texlive/2022/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(c:/texlive/2022/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(c:/texlive/2023/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(c:/texlive/2023/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@chapter=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\c@part=\count188
+\c@chapter=\count189
+\c@section=\count190
+\c@subsection=\count191
+\c@subsubsection=\count192
+\c@paragraph=\count193
+\c@subparagraph=\count194
+\c@figure=\count195
+\c@table=\count196
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 )
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip49
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
-\ex@=\dimen139
+\@emptytoks=\toks17
+\ex@=\dimen141
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen140
+\pmbraise@=\dimen142
 )
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2021/08/26 v2.02 operator names
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count194
+\inf@bad=\count197
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count195
-\leftroot@=\count196
+\uproot@=\count198
+\leftroot@=\count199
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count197
-\DOTSCASE@=\count198
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count266
+\DOTSCASE@=\count267
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box50
-\strutbox@=\box51
-\big@size=\dimen141
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count199
-\c@MaxMatrixCols=\count266
+\macc@depth=\count268
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count269
 \dotsspace@=\muskip16
-\c@parentequation=\count267
-\dspbrk@lvl=\count268
-\tag@help=\toks17
-\row@=\count269
-\column@=\count270
-\maxfields@=\count271
-\andhelp@=\toks18
-\eqnshift@=\dimen142
-\alignsep@=\dimen143
-\tagshift@=\dimen144
-\tagwidth@=\dimen145
-\totwidth@=\dimen146
-\lineht@=\dimen147
-\@envbody=\toks19
-\multlinegap=\skip50
-\multlinetaggap=\skip51
-\mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2938.
-LaTeX Info: Redefining \] on input line 2939.
+\c@parentequation=\count270
+\dspbrk@lvl=\count271
+\tag@help=\toks18
+\row@=\count272
+\column@=\count273
+\maxfields@=\count274
+\andhelp@=\toks19
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks20
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
 )
-(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -93,21 +103,21 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-(c:/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(c:/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks21
-\inpenc@posthook=\toks22
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 )
-(c:/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(c:/texlive/2022/texmf-dist/tex/latex/lm/lmodern.sty
+(c:/texlive/2023/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -142,218 +152,220 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(c:/texlive/2022/texmf-dist/tex/latex/upquote/upquote.sty
+(c:/texlive/2023/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(c:/texlive/2022/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2022/03/14 v3.0d Micro-typographical refinements (RS)
+(c:/texlive/2023/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks23
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
 )
-(c:/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(c:/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count272
+\etb@tempcnta=\count275
 )
-\MT@toks=\toks24
-\MT@tempbox=\box52
-\MT@count=\count273
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1027.
-LaTeX Info: Redefining \leftprotrusion on input line 1028.
-LaTeX Info: Redefining \rightprotrusion on input line 1036.
-LaTeX Info: Redefining \textls on input line 1195.
-\MT@outer@kern=\dimen148
-LaTeX Info: Redefining \textmicrotypecontext on input line 1781.
-\MT@listname@count=\count274
+\MT@toks=\toks25
+\MT@tempbox=\box53
+\MT@count=\count276
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks26
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen150
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count277
 
-(c:/texlive/2022/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2022/03/14 v3.0d Definitions specific to pdftex (RS)
+(c:/texlive/2023/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
 
-LaTeX Info: Redefining \lsstyle on input line 900.
-LaTeX Info: Redefining \lslig on input line 900.
-\MT@outer@space=\skip52
+LaTeX Info: Redefining \lsstyle on input line 902.
+LaTeX Info: Redefining \lslig on input line 902.
+\MT@outer@space=\skip53
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(c:/texlive/2022/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2022/03/14 v3.0d microtype main configuration file (RS)
+(c:/texlive/2023/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/parskip/parskip.sty
+(c:/texlive/2023/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 
-(c:/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+(c:/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 
-(c:/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+(c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+(c:/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )))
-(c:/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Driver file: pdftex.def on input line 274.
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 )
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/dvipsnam.def
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/xcolor/svgnam.def
-File: svgnam.def 2021/10/31 v2.13 Predefined colors according to SVG 1.1 (UK)
+(c:/texlive/2023/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2023/11/15 v3.01 Predefined colors according to SVG 1.1 (UK)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/xcolor/x11nam.def
-File: x11nam.def 2021/10/31 v2.13 Predefined colors according to Unix/X11 (UK)
-))
-(c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/texlive/2023/texmf-dist/tex/latex/xcolor/x11nam.def
+File: x11nam.def 2023/11/15 v3.01 Predefined colors according to Unix/X11 (UK)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(c:/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count275
-\Gm@cntv=\count276
-\c@Gm@tempcnt=\count277
-\Gm@bindingoffset=\dimen149
-\Gm@wd@mp=\dimen150
-\Gm@odd@mp=\dimen151
-\Gm@even@mp=\dimen152
-\Gm@layoutwidth=\dimen153
-\Gm@layoutheight=\dimen154
-\Gm@layouthoffset=\dimen155
-\Gm@layoutvoffset=\dimen156
-\Gm@dimlist=\toks25
+\Gm@cnth=\count278
+\Gm@cntv=\count279
+\c@Gm@tempcnt=\count280
+\Gm@bindingoffset=\dimen151
+\Gm@wd@mp=\dimen152
+\Gm@odd@mp=\dimen153
+\Gm@even@mp=\dimen154
+\Gm@layoutwidth=\dimen155
+\Gm@layoutheight=\dimen156
+\Gm@layouthoffset=\dimen157
+\Gm@layoutvoffset=\dimen158
+\Gm@dimlist=\toks27
 )
-(c:/texlive/2022/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2022/04/12 4.2 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count278
+(c:/texlive/2023/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count281
 \FV@InFile=\read2
-\FV@TabBox=\box53
-\c@FancyVerbLine=\count279
-\FV@StepNumber=\count280
+\FV@TabBox=\box54
+\c@FancyVerbLine=\count282
+\FV@StepNumber=\count283
 \FV@OutFile=\write3
 )
-(c:/texlive/2022/texmf-dist/tex/latex/framed/framed.sty
+(c:/texlive/2023/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip53
-\fb@frw=\dimen157
-\fb@frh=\dimen158
-\FrameRule=\dimen159
-\FrameSep=\dimen160
+\OuterFrameSep=\skip54
+\fb@frw=\dimen159
+\fb@frh=\dimen160
+\FrameRule=\dimen161
+\FrameSep=\dimen162
 )
-(c:/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip54
-\LTright=\skip55
-\LTpre=\skip56
-\LTpost=\skip57
-\LTchunksize=\count281
-\LTcapwidth=\dimen161
-\LT@head=\box54
-\LT@firsthead=\box55
-\LT@foot=\box56
-\LT@lastfoot=\box57
-\LT@gbox=\box58
-\LT@cols=\count282
-\LT@rows=\count283
-\c@LT@tables=\count284
-\c@LT@chunks=\count285
-\LT@p@ftn=\toks26
+(c:/texlive/2023/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count284
+\LTcapwidth=\dimen163
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@gbox=\box59
+\LT@cols=\count285
+\LT@rows=\count286
+\c@LT@tables=\count287
+\c@LT@chunks=\count288
+\LT@p@ftn=\toks28
 )
-(c:/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
+(c:/texlive/2023/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen162
-\lightrulewidth=\dimen163
-\cmidrulewidth=\dimen164
-\belowrulesep=\dimen165
-\belowbottomsep=\dimen166
-\aboverulesep=\dimen167
-\abovetopsep=\dimen168
-\cmidrulesep=\dimen169
-\cmidrulekern=\dimen170
-\defaultaddspace=\dimen171
-\@cmidla=\count286
-\@cmidlb=\count287
-\@aboverulesep=\dimen172
-\@belowrulesep=\dimen173
-\@thisruleclass=\count288
-\@lastruleclass=\count289
-\@thisrulewidth=\dimen174
+\heavyrulewidth=\dimen164
+\lightrulewidth=\dimen165
+\cmidrulewidth=\dimen166
+\belowrulesep=\dimen167
+\belowbottomsep=\dimen168
+\aboverulesep=\dimen169
+\abovetopsep=\dimen170
+\cmidrulesep=\dimen171
+\cmidrulekern=\dimen172
+\defaultaddspace=\dimen173
+\@cmidla=\count289
+\@cmidlb=\count290
+\@aboverulesep=\dimen174
+\@belowrulesep=\dimen175
+\@thisruleclass=\count291
+\@lastruleclass=\count292
+\@thisrulewidth=\dimen176
 )
-(c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
-Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen175
-\ar@mcellbox=\box59
-\extrarowheight=\dimen176
-\NC@list=\toks27
-\extratabsurround=\skip58
-\backup@length=\skip59
-\ar@cellbox=\box60
+(c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen177
+\ar@mcellbox=\box60
+\extrarowheight=\dimen178
+\NC@list=\toks29
+\extratabsurround=\skip59
+\backup@length=\skip60
+\ar@cellbox=\box61
 )
-(c:/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count290
-\calc@Bcount=\count291
-\calc@Adimen=\dimen177
-\calc@Bdimen=\dimen178
-\calc@Askip=\skip60
-\calc@Bskip=\skip61
+(c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count293
+\calc@Bcount=\count294
+\calc@Adimen=\dimen179
+\calc@Bdimen=\dimen180
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count292
-\calc@Cskip=\skip62
+\calc@Ccount=\count295
+\calc@Cskip=\skip63
 )
-(c:/texlive/2022/texmf-dist/tex/latex/footnotehyper/footnotehyper.sty
+(c:/texlive/2023/texmf-dist/tex/latex/footnotehyper/footnotehyper.sty
 Package: footnotehyper 2021/08/13 v1.1e hyperref aware footnote.sty (JFB)
-\FNH@notes=\box61
-\FNH@width=\dimen179
-\FNH@toks=\toks28
+\FNH@notes=\box62
+\FNH@width=\dimen181
+\FNH@toks=\toks30
 )
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen180
-\Gin@req@width=\dimen181
+\Gin@req@height=\dimen182
+\Gin@req@width=\dimen183
 )
-\cslhangindent=\skip63
-\csllabelwidth=\skip64
-\cslentryspacingunit=\skip65
+\cslhangindent=\skip64
+\csllabelwidth=\skip65
+\cslentryspacingunit=\skip66
 
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/CJK.sty
 Package: CJK 2021/10/16 4.8.5
 
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
 Package: MULEenc 2021/10/16 4.8.5
 )
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/CJK.enc
 File: CJK.enc 2021/10/16 4.8.5
 Now handling font encoding C00 ...
 ... no UTF-8 mapping file for font encoding C00
@@ -420,947 +432,997 @@ Now handling font encoding C41 ...
 Now handling font encoding C62 ...
 ... no UTF-8 mapping file for font encoding C62
 )
-\CJK@indent=\box62
+\CJK@indent=\box63
 )
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
 
-(c:/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(c:/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(c:/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(c:/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(c:/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(c:/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(c:/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty
+))
+(c:/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(c:/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty
+(c:/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen182
-\Hy@linkcounter=\count293
-\Hy@pagecounter=\count294
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+(c:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count296
+)
+\@linkdim=\dimen184
+\Hy@linkcounter=\count297
+\Hy@pagecounter=\count298
+
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(c:/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
+(c:/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-\Hy@SavedSpaceFactor=\count295
+\Hy@SavedSpaceFactor=\count299
 
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4018.
-Package hyperref Info: Hyper figures OFF on input line 4137.
-Package hyperref Info: Link nesting OFF on input line 4142.
-Package hyperref Info: Hyper index ON on input line 4145.
-Package hyperref Info: Plain pages OFF on input line 4152.
-Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Option `unicode' set `true' on input line 4062.
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4390.
-\c@Hy@tempcnt=\count296
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count300
 
-(c:/texlive/2022/texmf-dist/tex/latex/url/url.sty
+(c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4749.
-\XeTeXLinkMargin=\dimen183
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen185
 
-(c:/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+(c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(c:/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(c:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count297
-\Field@Width=\dimen184
-\Fld@charsize=\dimen185
-Package hyperref Info: Hyper figures OFF on input line 6027.
-Package hyperref Info: Link nesting OFF on input line 6032.
-Package hyperref Info: Hyper index ON on input line 6035.
-Package hyperref Info: backreferencing OFF on input line 6042.
-Package hyperref Info: Link coloring OFF on input line 6047.
-Package hyperref Info: Link coloring with OCG OFF on input line 6052.
-Package hyperref Info: PDF/A mode OFF on input line 6057.
-LaTeX Info: Redefining \ref on input line 6097.
-LaTeX Info: Redefining \pageref on input line 6101.
+\Fld@menulength=\count301
+\Field@Width=\dimen186
+\Fld@charsize=\dimen187
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count298
-\c@Item=\count299
-\c@Hfootnote=\count300
+\Hy@abspage=\count302
+\c@Item=\count303
+\c@Hfootnote=\count304
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count301
-\c@bookmark@seq@number=\count302
+\Fld@listcount=\count305
+\c@bookmark@seq@number=\count306
 
-(c:/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+(c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(c:/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
+85.
 )
-\Hy@SectionHShift=\skip66
+\Hy@SectionHShift=\skip67
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 154.
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2023-11-26 v1.44 Bibliographical back referencing
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 157.
 
-(c:/texlive/2022/texmf-dist/tex/latex/fvextra/fvextra.sty
-Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+(c:/texlive/2023/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(c:/texlive/2023/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2023/11/28 v1.6.1 fvextra - extensions and patches for fancyvr
+b
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+(c:/texlive/2023/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
+\linenopenalty=\count307
+\output=\toks31
+\linenoprevgraf=\count308
+\linenumbersep=\dimen188
+\linenumberwidth=\dimen189
+\c@linenumber=\count309
+\c@pagewiselinenumber=\count310
+\c@LN@truepage=\count311
+\c@internallinenumber=\count312
+\c@internallinenumbers=\count313
+\quotelinenumbersep=\dimen190
+\bframerule=\dimen191
+\bframesep=\dimen192
+\bframebox=\box64
+\linenoamsmath@ams@eqpen=\count314
+LaTeX Info: Redefining \\ on input line 3180.
 )
-(c:/texlive/2022/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count303
-\output=\toks29
-\linenoprevgraf=\count304
-\linenumbersep=\dimen186
-\linenumberwidth=\dimen187
-\c@linenumber=\count305
-\c@pagewiselinenumber=\count306
-\c@LN@truepage=\count307
-\c@internallinenumber=\count308
-\c@internallinenumbers=\count309
-\quotelinenumbersep=\dimen188
-\bframerule=\dimen189
-\bframesep=\dimen190
-\bframebox=\box63
-LaTeX Info: Redefining \\ on input line 3056.
+\c@FancyVerbWriteLine=\count315
+\c@FancyVerbBufferIndex=\count316
+\c@FancyVerbBufferLength=\count317
+\c@FancyVerbBufferLine=\count318
+\c@FV@oldbufferlength=\count319
+\c@FV@TrueTabGroupLevel=\count320
+\c@FV@TrueTabCounter=\count321
+\FV@TabBox@Group=\box65
+\FV@TmpLength=\skip68
+\c@FV@HighlightLinesStart=\count322
+\c@FV@HighlightLinesStop=\count323
+\FV@LoopCount=\count324
+\FV@NCharsBox=\box66
+\FV@BreakIndent=\dimen193
+\FV@BreakIndentNChars=\count325
+\FV@BreakSymbolSepLeft=\dimen194
+\FV@BreakSymbolSepLeftNChars=\count326
+\FV@BreakSymbolSepRight=\dimen195
+\FV@BreakSymbolSepRightNChars=\count327
+\FV@BreakSymbolIndentLeft=\dimen196
+\FV@BreakSymbolIndentLeftNChars=\count328
+\FV@BreakSymbolIndentRight=\dimen197
+\FV@BreakSymbolIndentRightNChars=\count329
+\c@FancyVerbLineBreakLast=\count330
+\FV@LineBox=\box67
+\FV@LineIndentBox=\box68
+\c@FV@BreakBufferDepth=\count331
+\FV@LineWidth=\dimen198
 )
-\c@FV@TrueTabGroupLevel=\count310
-\c@FV@TrueTabCounter=\count311
-\FV@TabBox@Group=\box64
-\FV@TmpLength=\skip67
-\c@FV@HighlightLinesStart=\count312
-\c@FV@HighlightLinesStop=\count313
-\FV@LoopCount=\count314
-\FV@NCharsBox=\box65
-\FV@BreakIndent=\dimen191
-\FV@BreakIndentNChars=\count315
-\FV@BreakSymbolSepLeft=\dimen192
-\FV@BreakSymbolSepLeftNChars=\count316
-\FV@BreakSymbolSepRight=\dimen193
-\FV@BreakSymbolSepRightNChars=\count317
-\FV@BreakSymbolIndentLeft=\dimen194
-\FV@BreakSymbolIndentLeftNChars=\count318
-\FV@BreakSymbolIndentRight=\dimen195
-\FV@BreakSymbolIndentRightNChars=\count319
-\c@FancyVerbLineBreakLast=\count320
-\FV@LineBox=\box66
-\FV@LineIndentBox=\box67
-\FV@LineWidth=\dimen196
-)
-(c:/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(c:/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(c:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks30
-\pgfutil@tempdima=\dimen197
-\pgfutil@tempdimb=\dimen198
+(c:/texlive/2023/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2020/11/26 v2.02k (include SVG pictures)
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
-) (c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box68
+(c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
+
+(c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
+
+
+(c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 368.
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+(c:/texlive/2023/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+(c:/texlive/2023/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+\c@svg@param@lastpage=\count332
+\svg@box=\box69
+\c@svg@param@currpage=\count333
+)
+(c:/texlive/2023/texmf-dist/tex/latex/transparent/transparent.sty
+Package: transparent 2022-10-27 v1.5 Transparency with color stacks
+
+(c:/texlive/2023/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
+Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color
+ stack (HO)
 ))
-Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(c:/texlive/2022/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks31
-\pgfkeys@temptoks=\toks32
-
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks33
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen199
+\pgfutil@tempdimb=\dimen256
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box70
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
-\pgf@x=\dimen199
-\pgf@y=\dimen256
-\pgf@xa=\dimen257
-\pgf@ya=\dimen258
-\pgf@xb=\dimen259
-\pgf@yb=\dimen260
-\pgf@xc=\dimen261
-\pgf@yc=\dimen262
-\pgf@xd=\dimen263
-\pgf@yd=\dimen264
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.co
+de.tex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen257
+\pgf@y=\dimen258
+\pgf@xa=\dimen259
+\pgf@ya=\dimen260
+\pgf@xb=\dimen261
+\pgf@yb=\dimen262
+\pgf@xc=\dimen263
+\pgf@yc=\dimen264
+\pgf@xd=\dimen265
+\pgf@yd=\dimen266
 \w@pgf@writea=\write4
 \r@pgf@reada=\read3
-\c@pgf@counta=\count321
-\c@pgf@countb=\count322
-\c@pgf@countc=\count323
-\c@pgf@countd=\count324
-\t@pgf@toka=\toks34
-\t@pgf@tokb=\toks35
-\t@pgf@tokc=\toks36
-\pgf@sys@id@count=\count325
- (c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+\c@pgf@counta=\count334
+\c@pgf@countb=\count335
+\c@pgf@countc=\count336
+\c@pgf@countd=\count337
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count338
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count326
-\pgfsyssoftpath@bigbuffer@items=\count327
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count339
+\pgfsyssoftpath@bigbuffer@items=\count340
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen265
-\pgfmath@count=\count328
-\pgfmath@box=\box69
-\pgfmath@toks=\toks37
-\pgfmath@stack@operand=\toks38
-\pgfmath@stack@operation=\toks39
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen267
+\pgfmath@count=\count341
+\pgfmath@box=\box71
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
 x)
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
 .code.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
 ex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
 de.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
 x)
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
-etics.code.tex)))
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count329
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count342
 ))
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen266
-\pgf@picmaxx=\dimen267
-\pgf@picminy=\dimen268
-\pgf@picmaxy=\dimen269
-\pgf@pathminx=\dimen270
-\pgf@pathmaxx=\dimen271
-\pgf@pathminy=\dimen272
-\pgf@pathmaxy=\dimen273
-\pgf@xx=\dimen274
-\pgf@xy=\dimen275
-\pgf@yx=\dimen276
-\pgf@yy=\dimen277
-\pgf@zx=\dimen278
-\pgf@zy=\dimen279
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen268
+\pgf@picmaxx=\dimen269
+\pgf@picminy=\dimen270
+\pgf@picmaxy=\dimen271
+\pgf@pathminx=\dimen272
+\pgf@pathmaxx=\dimen273
+\pgf@pathminy=\dimen274
+\pgf@pathmaxy=\dimen275
+\pgf@xx=\dimen276
+\pgf@xy=\dimen277
+\pgf@yx=\dimen278
+\pgf@yy=\dimen279
+\pgf@zx=\dimen280
+\pgf@zy=\dimen281
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
 e.tex
-File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen280
-\pgf@path@lasty=\dimen281
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen282
+\pgf@path@lasty=\dimen283
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
 x
-File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen282
-\pgf@shorten@start@additional=\dimen283
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen284
+\pgf@shorten@start@additional=\dimen285
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box70
-\pgf@hbox=\box71
-\pgf@layerbox@main=\box72
-\pgf@picture@serial@count=\count330
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box72
+\pgf@hbox=\box73
+\pgf@layerbox@main=\box74
+\pgf@picture@serial@count=\count343
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
 .tex
-File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen284
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen286
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
 ode.tex
-File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen285
-\pgf@pt@y=\dimen286
-\pgf@pt@temp=\dimen287
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen287
+\pgf@pt@y=\dimen288
+\pgf@pt@temp=\dimen289
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
 de.tex
-File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen288
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen290
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen289
-\pgf@sys@shading@range@num=\count331
-\pgf@shadingcount=\count332
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen291
+\pgf@sys@shading@range@num=\count344
+\pgf@shadingcount=\count345
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box73
-))
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box75
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
 .tex
-File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-) (c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (c:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
 x
-File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box74
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box76
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
 y
-Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen290
-\pgf@nodesepend=\dimen291
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen292
+\pgf@nodesepend=\dimen293
 )
-(c:/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
 y
-Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
-)) (c:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(c:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(c:/texlive/2022/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
-
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen292
-\pgffor@skip=\dimen293
-\pgffor@stack=\toks40
-\pgffor@toks=\toks41
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen294
+\pgffor@skip=\dimen295
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
 ))
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
 de.tex
-File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count333
-\pgfplotmarksize=\dimen294
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count346
+\pgfplotmarksize=\dimen296
 )
-\tikz@lastx=\dimen295
-\tikz@lasty=\dimen296
-\tikz@lastxsaved=\dimen297
-\tikz@lastysaved=\dimen298
-\tikz@lastmovetox=\dimen299
-\tikz@lastmovetoy=\dimen300
-\tikzleveldistance=\dimen301
-\tikzsiblingdistance=\dimen302
-\tikz@figbox=\box75
-\tikz@figbox@bg=\box76
-\tikz@tempbox=\box77
-\tikz@tempbox@bg=\box78
-\tikztreelevel=\count334
-\tikznumberofchildren=\count335
-\tikznumberofcurrentchild=\count336
-\tikz@fig@count=\count337
+\tikz@lastx=\dimen297
+\tikz@lasty=\dimen298
+\tikz@lastxsaved=\dimen299
+\tikz@lastysaved=\dimen300
+\tikz@lastmovetox=\dimen301
+\tikz@lastmovetoy=\dimen302
+\tikzleveldistance=\dimen303
+\tikzsiblingdistance=\dimen304
+\tikz@figbox=\box77
+\tikz@figbox@bg=\box78
+\tikz@tempbox=\box79
+\tikz@tempbox@bg=\box80
+\tikztreelevel=\count347
+\tikznumberofchildren=\count348
+\tikznumberofcurrentchild=\count349
+\tikz@fig@count=\count350
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count338
-\pgfmatrixcurrentcolumn=\count339
-\pgf@matrix@numberofcolumns=\count340
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count351
+\pgfmatrixcurrentcolumn=\count352
+\pgf@matrix@numberofcolumns=\count353
 )
-\tikz@expandcount=\count341
+\tikz@expandcount=\count354
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(c:/texlive/2022/texmf-dist/tex/latex/tikz-3dplot/tikz-3dplot.sty
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+(c:/texlive/2023/texmf-dist/tex/latex/tikz-3dplot/tikz-3dplot.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brary3d.code.tex
-File: tikzlibrary3d.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibrary3d.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 braryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen303
-))) (c:/texlive/2022/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen305
+))) (c:/texlive/2023/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks42
-\t@pgfplots@tokb=\toks43
-\t@pgfplots@tokc=\toks44
-\pgfplots@tmpa=\dimen304
-\c@pgfplots@coordindex=\count342
-\c@pgfplots@scanlineindex=\count343
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks44
+\t@pgfplots@tokb=\toks45
+\t@pgfplots@tokc=\toks46
+\pgfplots@tmpa=\dimen306
+\c@pgfplots@coordindex=\count355
+\c@pgfplots@scanlineindex=\count356
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.te
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.te
 x))
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfs
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfs
 upp_loader.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststru
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks47
+\t@pgf@tokb=\toks48
+\t@pgf@tokc=\toks49
+
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfs
+upp_pgfutil-common-lists.tex))
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststru
 cture.code.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststru
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststru
 ctureext.code.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.co
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.co
 de.tex
-\c@pgfplotsarray@tmp=\count344
+\c@pgfplotsarray@tmp=\count357
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.c
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.c
 ode.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.c
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.c
 ode.tex
-\c@pgfplotstable@counta=\count345
-\t@pgfplotstable@a=\toks45
+\c@pgfplotstable@counta=\count358
+\t@pgfplotstable@a=\toks50
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.co
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.co
 de.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.
 tex))
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.te
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.te
 x)
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfsh
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfsh
 ading.code.tex
-\c@pgfplotslibrarysurf@no=\count346
+\c@pgfplotslibrarysurf@no=\count359
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfsha
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfsha
 ding.pgfsys-pdftex.def)))
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.t
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.t
 ex
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex
-))) (c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex
+))) (c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.t
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.t
 ex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarydecorations.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.t
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.t
 ex
-\pgfdecoratedcompleteddistance=\dimen305
-\pgfdecoratedremainingdistance=\dimen306
-\pgfdecoratedinputsegmentcompleteddistance=\dimen307
-\pgfdecoratedinputsegmentremainingdistance=\dimen308
-\pgf@decorate@distancetomove=\dimen309
-\pgf@decorate@repeatstate=\count347
-\pgfdecorationsegmentamplitude=\dimen310
-\pgfdecorationsegmentlength=\dimen311
+\pgfdecoratedcompleteddistance=\dimen307
+\pgfdecoratedremainingdistance=\dimen308
+\pgfdecoratedinputsegmentcompleteddistance=\dimen309
+\pgfdecoratedinputsegmentremainingdistance=\dimen310
+\pgf@decorate@distancetomove=\dimen311
+\pgf@decorate@repeatstate=\count360
+\pgfdecorationsegmentamplitude=\dimen312
+\pgfdecorationsegmentlength=\dimen313
 )
-\tikz@lib@dec@box=\box79
+\tikz@lib@dec@box=\box81
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarydecorations.pathmorphing.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
 orations.pathmorphing.code.tex))
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarydecorations.pathreplacing.code.tex
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
 orations.pathreplacing.code.tex))
-(c:/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.conto
+(c:/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.conto
 urlua.code.tex)
-\pgfplots@numplots=\count348
-\pgfplots@xmin@reg=\dimen312
-\pgfplots@xmax@reg=\dimen313
-\pgfplots@ymin@reg=\dimen314
-\pgfplots@ymax@reg=\dimen315
-\pgfplots@zmin@reg=\dimen316
-\pgfplots@zmax@reg=\dimen317
+\pgfplots@numplots=\count361
+\pgfplots@xmin@reg=\dimen314
+\pgfplots@xmax@reg=\dimen315
+\pgfplots@ymin@reg=\dimen316
+\pgfplots@ymax@reg=\dimen317
+\pgfplots@zmin@reg=\dimen318
+\pgfplots@zmax@reg=\dimen319
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 braryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.
 tex
-File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2023/texmf-dist/tex/latex/animate/animate.sty
+Package: animate 2023/06/18 PDF & SVG animations from files and inline graphics
+
+
+(c:/texlive/2023/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/media9/pdfbase.sty
+Package: pdfbase 2022/08/04 v0.55 driver independent access to low-level PDF fe
+atures
+
+(c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count362
+\l__pdf_internal_box=\box82
+)
+\g_pbs_page_int=\count363
+\g_pbs_oc_int=\count364
+)
+(c:/texlive/2023/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
+
+(c:/texlive/2023/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2023-09-14 v2.35 Module base for zref (HO)
+
+(c:/texlive/2023/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count365
+Package zref Info: New property: abspage on input line 67.
+)
+(c:/texlive/2023/texmf-dist/tex/latex/ocgx2/ocgbase.sty
+Package: ocgbase 2022/08/04 v0.22 support package for ocgx2.sty
+\g_ocgbase_nd_int=\count366
+)
+\@anim@box=\box83
+\@anim@measbox=\box84
+\@anim@tmpdima=\dimen320
+\@anim@tmpdimb=\dimen321
+\@anim@num=\count367
+\@anim@curframe=\count368
+\@anim@curframe@zb=\count369
+\@anim@resizeflags=\count370
+\@anim@skipfram=\count371
+\@anim@mulframecnt=\count372
+\@anim@@tmlnfile=\read4
+\@anim@tmpcnt=\count373
+\c@@anim@ltxcnt=\count374
+\@anim@curlayer=\count375
+\@anim@lineno=\count376
+\@anim@curfield=\count377
+\@anim@@resizeflags=\count378
+)
+(c:/texlive/2023/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xy.sty
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing: catcodes,
-docmode, (c:/texlive/2022/texmf-dist/tex/generic/xypic/xyrecat.tex)
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xyidioms.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xy.sty
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing: catcodes,
+docmode, (c:/texlive/2023/texmf-dist/tex/generic/xypic/xyrecat.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xyidioms.tex)
 
  Xy-pic version 3.8.9 <2013/10/06>
  Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen318
-\Y@c=\dimen319
-\U@c=\dimen320
-\D@c=\dimen321
-\L@c=\dimen322
-\R@c=\dimen323
-\Edge@c=\toks46
-\X@p=\dimen324
-\Y@p=\dimen325
-\U@p=\dimen326
-\D@p=\dimen327
-\L@p=\dimen328
-\R@p=\dimen329
-\Edge@p=\toks47
-\X@origin=\dimen330
-\Y@origin=\dimen331
-\X@xbase=\dimen332
-\Y@xbase=\dimen333
-\X@ybase=\dimen334
-\Y@ybase=\dimen335
-\X@min=\dimen336
-\Y@min=\dimen337
-\X@max=\dimen338
-\Y@max=\dimen339
-\lastobjectbox@=\box80
-\zerodotbox@=\box81
-\almostz@=\dimen340
+\X@c=\dimen322
+\Y@c=\dimen323
+\U@c=\dimen324
+\D@c=\dimen325
+\L@c=\dimen326
+\R@c=\dimen327
+\Edge@c=\toks51
+\X@p=\dimen328
+\Y@p=\dimen329
+\U@p=\dimen330
+\D@p=\dimen331
+\L@p=\dimen332
+\R@p=\dimen333
+\Edge@p=\toks52
+\X@origin=\dimen334
+\Y@origin=\dimen335
+\X@xbase=\dimen336
+\Y@xbase=\dimen337
+\X@ybase=\dimen338
+\Y@ybase=\dimen339
+\X@min=\dimen340
+\Y@min=\dimen341
+\X@max=\dimen342
+\Y@max=\dimen343
+\lastobjectbox@=\box85
+\zerodotbox@=\box86
+\almostz@=\dimen344
  direction,
-\d@X=\dimen341
-\d@Y=\dimen342
-\K@=\count349
-\KK@=\count350
-\Direction=\count351
-\K@dXdY=\dimen343
-\K@dYdX=\dimen344
-\xyread@=\read4
+\d@X=\dimen345
+\d@Y=\dimen346
+\K@=\count379
+\KK@=\count380
+\Direction=\count381
+\K@dXdY=\dimen347
+\K@dYdX=\dimen348
+\xyread@=\read5
 \xywrite@=\write5
-\csp@=\count352
-\quotPTK@=\dimen345
+\csp@=\count382
+\quotPTK@=\dimen349
 
 utility macros; pictures: \xy, positions,
-\swaptoks@@=\toks48
-\connectobjectbox@@=\box82
+\swaptoks@@=\toks53
+\connectobjectbox@@=\box87
  objects,
-\styletoks@=\toks49
+\styletoks@=\toks54
  decorations;
 kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
-(c:/texlive/2022/texmf-dist/tex/generic/iftex/ifpdf.sty
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
 Package: xy 2013/10/06 Xy-pic version 3.8.9
 
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xyall.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xyall.tex
  Xy-pic option: All features v.3.8
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xycurve.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count353
-\crvpts@=\toks50
-\splinebox@=\box83
-\splineval@=\dimen346
-\splinedepth@=\dimen347
-\splinetol@=\dimen348
-\splinelength@=\dimen349
+\crv@cnt@=\count383
+\crvpts@=\toks55
+\splinebox@=\box88
+\splineval@=\dimen350
+\splinedepth@=\dimen351
+\splinetol@=\dimen352
+\splinelength@=\dimen353
  circles,
-\L@=\dimen350
+\L@=\dimen354
  loaded)
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xyframe.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xyframe.tex
  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xycmtip.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xycmtip.tex
  Xy-pic option: Computer Modern tip extension v.3.7
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xytips.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xytips.tex
  Xy-pic option: More Tips extension v.3.11 loaded) loaded)
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xyline.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xyline.tex
  Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen351
+\xylinethick@=\dimen355
  loaded)
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xyrotate.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xyrotate.tex
  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xycolor.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xycolor.tex
  Xy-pic option: Colour extension v.3.11 loaded)
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xymatrix.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xymatrix.tex
  Xy-pic option: Matrix feature v.3.14
-\Row=\count354
-\Col=\count355
-\queue@=\toks51
-\queue@@=\toks52
-\qcount@=\count356
-\qcount@@=\count357
-\matrixsize@=\count358
+\Row=\count384
+\Col=\count385
+\queue@=\toks56
+\queue@@=\toks57
+\qcount@=\count386
+\qcount@@=\count387
+\matrixsize@=\count388
  loaded)
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xyarrow.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xyarrow.tex
  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xygraph.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xygraph.tex
  Xy-pic option: Graph feature v.3.11 loaded) loaded)
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xypdf.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xypdf.tex
  Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded)
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded)
 Xy-pic pdf driver: `curve' extension support
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded)
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded)
 Xy-pic pdf driver: `frame' extension support
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xypdf-fr.tex loaded)
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xypdf-fr.tex loaded)
 Xy-pic pdf driver: `line' extension support
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded)
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded)
 Xy-pic pdf driver: `rotate' extension support
-(c:/texlive/2022/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded) loaded))
-(c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
+(c:/texlive/2023/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded) loaded))
+(c:/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip68
-\enit@outerparindent=\dimen352
-\enit@toks=\toks53
-\enit@inbox=\box84
-\enit@count@id=\count359
-\enitdp@description=\count360
+\labelindent=\skip69
+\enit@outerparindent=\dimen356
+\enit@toks=\toks58
+\enit@inbox=\box89
+\enit@count@id=\count389
+\enitdp@description=\count390
 )
-\c@enumv=\count361
-\c@enumvi=\count362
-\c@enumvii=\count363
-\c@enumviii=\count364
-\c@enumix=\count365
-\c@enumx=\count366
-\c@enumxi=\count367
-\c@enumxii=\count368
-\c@enumxiii=\count369
-\c@enumxiv=\count370
-\c@enumxv=\count371
-\c@enumxvi=\count372
-\c@enumxvii=\count373
-\c@enumxviii=\count374
-\c@enumxix=\count375
-\c@enumxx=\count376
+\c@enumv=\count391
+\c@enumvi=\count392
+\c@enumvii=\count393
+\c@enumviii=\count394
+\c@enumix=\count395
+\c@enumx=\count396
+\c@enumxi=\count397
+\c@enumxii=\count398
+\c@enumxiii=\count399
+\c@enumxiv=\count400
+\c@enumxv=\count401
+\c@enumxvi=\count402
+\c@enumxvii=\count403
+\c@enumxviii=\count404
+\c@enumxix=\count405
+\c@enumxx=\count406
 
-(c:/texlive/2022/texmf-dist/tex/latex/bookmark/bookmark.sty
-Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+(c:/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
-(c:/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
-File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count377
+(c:/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
+)
+\BKM@id=\count407
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/xurl/xurl.sty
+(c:/texlive/2023/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 231.
+Package hyperref Info: Option `colorlinks' set `true' on input line 247.
 
-(c:/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks54
-\thm@bodyfont=\toks55
-\thm@headfont=\toks56
-\thm@notefont=\toks57
-\thm@headpunct=\toks58
-\thm@preskip=\skip69
-\thm@postskip=\skip70
-\thm@headsep=\skip71
-\dth@everypar=\toks59
+\thm@style=\toks59
+\thm@bodyfont=\toks60
+\thm@headfont=\toks61
+\thm@notefont=\toks62
+\thm@headpunct=\toks63
+\thm@preskip=\skip70
+\thm@postskip=\skip71
+\thm@headsep=\skip72
+\dth@everypar=\toks64
 )
-\c@theorem=\count378
-\c@lemma=\count379
-\c@corollary=\count380
-\c@proposition=\count381
-\c@conjecture=\count382
-\c@definition=\count383
-\c@example=\count384
-\c@exercise=\count385
-\c@hypothesis=\count386
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 25
-4.
+\c@theorem=\count408
+\c@lemma=\count409
+\c@corollary=\count410
+\c@proposition=\count411
+\c@conjecture=\count412
+\c@definition=\count413
+\c@example=\count414
+\c@exercise=\count415
+\c@hypothesis=\count416
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 27
+0.
 
-(c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
+(c:/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-(c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count387
-\l__pdf_internal_box=\box85
-)
-(./math.aux
+) (./math.aux
 
 LaTeX Warning: Label `def:equivalence-relation' multiply defined.
 
 
-LaTeX Warning: Label `fig:unnamed-chunk-13' multiply defined.
+LaTeX Warning: Label `fig:unnamed-chunk-4' multiply defined.
 
 
-LaTeX Warning: Label `fig:unnamed-chunk-16' multiply defined.
+LaTeX Warning: Label `fig:unnamed-chunk-4' multiply defined.
 
 
-LaTeX Warning: Label `fig:unnamed-chunk-18' multiply defined.
+LaTeX Warning: Label `fig:unnamed-chunk-5' multiply defined.
 
 
-LaTeX Warning: Label `fig:unnamed-chunk-20' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-22' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-24' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-26' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-28' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-30' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-32' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-35' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-37' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-39' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-41' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-43' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-45' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-47' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-49' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-51' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-53' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-55' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-57' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-59' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-61' multiply defined.
-
-
-LaTeX Warning: Label `fig:skills' multiply defined.
+LaTeX Warning: Label `fig:unnamed-chunk-6' multiply defined.
 
 )
 \openout1 = `math.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 254.
-LaTeX Font Info:    ... okay on input line 254.
-LaTeX Info: Redefining \microtypecontext on input line 254.
-Package microtype Info: Applying patch `item' on input line 254.
-Package microtype Info: Applying patch `toc' on input line 254.
-Package microtype Info: Applying patch `eqnum' on input line 254.
-Package microtype Info: Applying patch `footnote' on input line 254.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 270.
+LaTeX Font Info:    ... okay on input line 270.
+LaTeX Info: Redefining \microtypecontext on input line 270.
+Package microtype Info: Applying patch `item' on input line 270.
+Package microtype Info: Applying patch `toc' on input line 270.
+Package microtype Info: Applying patch `eqnum' on input line 270.
+Package microtype Info: Applying patch `footnote' on input line 270.
+Package microtype Info: Applying patch `verbatim' on input line 270.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 254.
+LaTeX Info: Redefining \showhyphens on input line 270.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+ (c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count388
-\scratchdimen=\dimen353
-\scratchbox=\box86
-\nofMPsegments=\count389
-\nofMParguments=\count390
-\everyMPshowfont=\toks60
-\MPscratchCnt=\count391
-\MPscratchDim=\dimen354
-\MPnumerator=\count392
-\makeMPintoPDFobject=\count393
-\everyMPtoPDFconversion=\toks61
-) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count417
+\scratchdimen=\dimen357
+\scratchbox=\box90
+\nofMPsegments=\count418
+\nofMParguments=\count419
+\everyMPshowfont=\toks65
+\MPscratchCnt=\count420
+\MPscratchDim=\dimen358
+\MPnumerator=\count421
+\makeMPintoPDFobject=\count422
+\everyMPtoPDFconversion=\toks66
+) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -1398,1143 +1460,1125 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 254.
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(c:/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(c:/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count394
-)
-LaTeX Info: Redefining \ref on input line 254.
-LaTeX Info: Redefining \pageref on input line 254.
-LaTeX Info: Redefining \nameref on input line 254.
-
+Package hyperref Info: Link coloring ON on input line 270.
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.15).
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-54.
-(c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmr.fd
+70.
+(c:/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-54.
+70.
 
-(c:/texlive/2022/texmf-dist/tex/latex/lm/omllmm.fd
+(c:/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-254.
+270.
 
-(c:/texlive/2022/texmf-dist/tex/latex/lm/omslmsy.fd
+(c:/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-254.
+270.
 
-(c:/texlive/2022/texmf-dist/tex/latex/lm/omxlmex.fd
+(c:/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 254.
+(Font)              <10> on input line 270.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 254.
+(Font)              <7> on input line 270.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 254.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 254
+(Font)              <5> on input line 270.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 270
 .
 
-(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-msa.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 254
+LaTeX Font Info:    Trying to load font information for U+msb on input line 270
 .
 
-(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-msb.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 25
-4.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 27
+0.
 
-(c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
+(c:/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.39998pt on input line 254.
+Package xypdf Info: Line width: 0.39998pt on input line 270.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 256.
+(Font)              <12> on input line 272.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 256.
+(Font)              <8> on input line 272.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 256.
+(Font)              <6> on input line 272.
  [1
 
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/
+texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}] [2
 
-] (./math.toc [3] [4])
+] (./math.toc [3])
 \tf@toc=\write6
 \openout6 = `math.toc'.
 
- [5]
-[6
+ [4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/202
+3/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [5
 
-] [7] [8
+] [6
 
-] [9] [10]
+] [7] [8]
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-79.
-(c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 302.
- [11
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+93.
+(c:/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [9
 
-] [12]
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [10
+
+]
 Chapter 2.
-[13
-
-] [14
+[11] [12
 
 ]
 Chapter 3.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-54.
-(c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-378.
+[13] [14
 
-(c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-<02-cross-refs_files/figure-latex/nice-fig-1.pdf, id=229, 469.755pt x 352.31625
-pt>
-File: 02-cross-refs_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
-<use 02-cross-refs_files/figure-latex/nice-fig-1.pdf>
-Package pdftex.def Info: 02-cross-refs_files/figure-latex/nice-fig-1.pdf  used 
-on input line 384.
-(pdftex.def)             Requested size: 355.08936pt x 266.317pt.
- [15] [16 <./02-cross-refs_files/figure-latex/nice-fig-1.pdf>]
+]
 Chapter 4.
-[17
-
-] [18
+[15] [16
 
 ]
 Chapter 5.
-[19] [20
+[17] [18
 
-]
+] [19] [20]
 Chapter 6.
-[21] [22
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
+67.
+(c:/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 590.
+ [21
+
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+666.
+
+(c:/texlive/2023/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<202401280000-minimal-book-example_files/figure-latex/nice-fig-1.pdf, id=319, 4
+69.755pt x 352.31625pt>
+File: 202401280000-minimal-book-example_files/figure-latex/nice-fig-1.pdf Graph
+ic file (type pdf)
+<use 202401280000-minimal-book-example_files/figure-latex/nice-fig-1.pdf>
+Package pdftex.def Info: 202401280000-minimal-book-example_files/figure-latex/n
+ice-fig-1.pdf  used on input line 672.
+(pdftex.def)             Requested size: 355.08936pt x 266.317pt.
+ [22] [23 <./202401280000-minimal-book-example_files/figure-latex/nice-fig-1.pd
+f>] [24{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [25] [26
 
 ]
 Chapter 7.
-[23] [24
+[27]
+<202401280001-test_files/figure-latex/unnamed-chunk-4-1.pdf, id=437, 651.96773p
+t x 555.80347pt>
+File: 202401280001-test_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
+type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-4-1.pdf>
+Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-4-1
+.pdf  used on input line 888.
+(pdftex.def)             Requested size: 332.90701pt x 283.80373pt.
 
-] [25] [26]
-Chapter 8.
 
-Overfull \hbox (220.13423pt too wide) in paragraph at lines 543--544
+pdfTeX warning: pdflatex.exe (file ./img/conic-sections.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+<img/conic-sections.pdf, id=439, 1149.29375pt x 758.835pt>
+File: img/conic-sections.pdf Graphic file (type pdf)
+<use img/conic-sections.pdf>
+Package pdftex.def Info: img/conic-sections.pdf  used on input line 896.
+(pdftex.def)             Requested size: 443.85611pt x 293.06133pt.
+File: img/conic-sections.pdf Graphic file (type pdf)
+<use img/conic-sections.pdf>
+Package pdftex.def Info: img/conic-sections.pdf  used on input line 899.
+(pdftex.def)             Requested size: 332.8833pt x 219.7902pt.
+[28 <./202401280001-test_files/figure-latex/unnamed-chunk-4-1.pdf>] [29 <./img/
+conic-sections.pdf>] [30]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1014.
+
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+File: UTF8.bdg 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+LaTeX Font Info:    Trying to load font information for C70+bsmi on input line 
+1044.
+
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fd
+File: c70bsmi.fd 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fdx
+File: c70bsmi.fdx 2021/10/16 4.8.5
+)
+Overfull \hbox (18.13565pt too wide) in paragraph at lines 1059--1059
+[]\T1/lmtt/m/n/10 % replace the rather ugly mathptmx \sum operator with the equ
+ivalent Computer Modern one[] 
+ []
+
+
+Overfull \hbox (18.13565pt too wide) in paragraph at lines 1080--1080
+[]\T1/lmtt/m/n/10 % replace the rather ugly mathptmx \sum operator with the equ
+ivalent Computer Modern one[] 
+ []
+
+[31]
+<202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf, id=603, 361.35pt 
+x 289.08pt>
+File: 202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf>
+Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-11-
+1.pdf  used on input line 1144.
+(pdftex.def)             Requested size: 244.12679pt x 195.30142pt.
+ [32]
+<202401280001-test_files/figure-latex/unnamed-chunk-12-1.pdf, id=613, 722.7pt x
+ 578.16pt>
+File: 202401280001-test_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-12-1.pdf>
+Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-12-
+1.pdf  used on input line 1171.
+(pdftex.def)             Requested size: 244.12679pt x 195.30142pt.
+ (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+Overfull \hbox (2.8258pt too wide) detected at line 1223
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33 <./202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf> <./2024012
+80001-test_files/figure-latex/unnamed-chunk-12-1.pdf>] [34]
+Overfull \hbox (1278.13199pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\b
+oldsymbol{x}_{2}}=\left(\boldsymbol{x}_{1}^{\intercal}A^{\intercal}\right)\bold
+symbol{x}_{2}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{1}^{\interca
+l}A\right)\boldsymbol{x}_{2}=\color{orange}{\boldsymbol{x}_{1}^{\intercal}\left
+(A\boldsymbol{x}_{2}\right)}\\[] 
+ []
+
+
+Overfull \hbox (474.88432pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{1}\right
+)^{\intercal}\boldsymbol{x}_{2}=} & \color{orange}{\boldsymbol{x}_{1}^{\interca
+l}\left(A\boldsymbol{x}_{2}\right)}[] 
+ []
+
+
+Overfull \hbox (44.38557pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{1}\right
+)^{\intercal}\boldsymbol{x}_{2}}[] 
+ []
+
+
+Overfull \hbox (438.13443pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \overset{\left(e_{1}\right)}{=} & \left(\lambda_{1}\boldsymbo
+l{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=\lambda_{1}\boldsymbol{x}_{1}^{\i
+ntercal}\boldsymbol{x}_{2}\\[] 
+ []
+
+
+Overfull \hbox (926.38301pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \left(R\right)=\color{orange}{\boldsymbol{x}_{1}^{\intercal}\
+left(A\boldsymbol{x}_{2}\right)}\overset{\left(e_{2}\right)}{=} & \boldsymbol{x
+}_{1}^{\intercal}\left(\lambda_{2}\boldsymbol{x}_{2}\right)=\lambda_{2}\boldsym
+bol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\[] 
+ []
+
+
+Overfull \hbox (1036.63269pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}=\
+color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} 
+& \color{orange}{\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)
+}=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\[] 
+ []
+
+
+Overfull \hbox (196.63513pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}= 
+& \lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}[] 
+ []
+
+
+Overfull \hbox (1278.13199pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 {\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\b
+oldsymbol{x}_{2}}=\left(\boldsymbol{x}_{1}^{\intercal}A^{\intercal}\right)\bold
+symbol{x}_{2}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{1}^{\interca
+l}A\right)\boldsymbol{x}_{2}={\color{orange}\boldsymbol{x}_{1}^{\intercal}\left
+(A\boldsymbol{x}_{2}\right)}\\[] 
+ []
+
+
+Overfull \hbox (564.13406pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \left(L\right)={\color{orange}\left(A\boldsymbol{x}_{1}\right
+)^{\intercal}\boldsymbol{x}_{2}=} & {\color{orange}\boldsymbol{x}_{1}^{\interca
+l}\left(A\boldsymbol{x}_{2}\right)}=\left(R\right)\\[] 
+ []
+
+
+Overfull \hbox (926.38301pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \left(L\right)={\color{orange}\left(A\boldsymbol{x}_{1}\right
+)^{\intercal}\boldsymbol{x}_{2}}\overset{\left(e_{1}\right)}{=} & \left(\lambda
+_{1}\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=\lambda_{1}\boldsym
+bol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\[] 
+ []
+
+
+Overfull \hbox (926.38301pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \left(R\right)={\color{orange}\boldsymbol{x}_{1}^{\intercal}\
+left(A\boldsymbol{x}_{2}\right)}\overset{\left(e_{2}\right)}{=} & \boldsymbol{x
+}_{1}^{\intercal}\left(\lambda_{2}\boldsymbol{x}_{2}\right)=\lambda_{2}\boldsym
+bol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\[] 
+ []
+
+
+Overfull \hbox (1036.63269pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}={
+\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} 
+& {\color{orange}\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)
+}=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\[] 
+ []
+
+
+Overfull \hbox (196.63513pt too wide) in paragraph at lines 1316--1316
+[]\T1/lmtt/m/n/10 \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}= 
+& \lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}[] 
+ []
+
+
+Overfull \hbox (220.13423pt too wide) in paragraph at lines 1329--1330
 [][][]$\T1/lmr/m/n/10 (-20) h t t p s : / / l a t e x -[] t u t o r i a l . c o
  m / c o l or -[] l a t e x / #$[][]:~:text=To%20summarize%2C%20pyellow!50efine
 d%20colors%20in,when%20loading%20the%20xcolor%20package. 
  []
 
-[27
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 624--625
+[35] [36]
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1413
 []\T1/lmr/m/n/10 (+20) [equivalence-class.html] [equivalence-class.html#equival
 ence-class] (@ref(equivalence-class.html))
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--631
+Underfull \hbox (badness 10000) in paragraph at lines 1418--1419
 []\T1/lmr/m/n/10 (+20) [equivalence-relation.html] [equivalence-relation.html#e
 quivalence-relation] (@ref(equivalence-
  []
 
-[28] [29]
-
-LaTeX Warning: Reference `eq:eqclass' on page 30 undefined on input line 706.
-
-<202401260000-test-cross-link_files/figure-latex/parabola-arc-with-points-1.pdf
-, id=406, 88.60402pt x 117.05632pt>
-File: 202401260000-test-cross-link_files/figure-latex/parabola-arc-with-points-
-1.pdf Graphic file (type pdf)
-<use 202401260000-test-cross-link_files/figure-latex/parabola-arc-with-points-1
-.pdf>
-Package pdftex.def Info: 202401260000-test-cross-link_files/figure-latex/parabo
-la-arc-with-points-1.pdf  used on input line 713.
+[37]
+<202401280001-test_files/figure-latex/parabola-arc-with-points-1.pdf, id=734, 8
+8.60402pt x 117.05632pt>
+File: 202401280001-test_files/figure-latex/parabola-arc-with-points-1.pdf Graph
+ic file (type pdf)
+<use 202401280001-test_files/figure-latex/parabola-arc-with-points-1.pdf>
+Package pdftex.def Info: 202401280001-test_files/figure-latex/parabola-arc-with
+-points-1.pdf  used on input line 1522.
 (pdftex.def)             Requested size: 88.60379pt x 117.05603pt.
-[30 <./202401260000-test-cross-link_files/figure-latex/parabola-arc-with-points
--1.pdf>]
-Chapter 9.
+ [38] [39 <./202401280001-test_files/figure-latex/parabola-arc-with-points-1.pd
+f>] [40
+
+]
+Chapter 8.
 
 LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 742.
+(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 1551.
+
 
 
 LaTeX Font Warning: Font shape `TS1/lmtt/bx/it' in size <10> not available
-(Font)              Font shape `TS1/lmtt/b/sl' tried instead on input line 742.
+(Font)              Font shape `TS1/lmtt/b/sl' tried instead on input line 1551
+.
 
+[41] [42
 
-[31
-
-] [32
+]
+Chapter 9.
+[43] [44
 
 ]
 Chapter 10.
-[33] [34
-
-] (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
-File: UTF8.bdg 2021/10/16 4.8.5
-)
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-LaTeX Font Info:    Trying to load font information for C70+bsmi on input line 
-832.
-
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fd
-File: c70bsmi.fd 2021/10/16 4.8.5
-)
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/c70bsmi.fdx
-File: c70bsmi.fdx 2021/10/16 4.8.5
-)
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-)
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Overfull \hbox (2.8258pt too wide) detected at line 855
-[]
- []
-
-[35] [36
-
-]
-
-LaTeX Warning: Reference `eq:eqclass' on page 37 undefined on input line 883.
-
-[37] [38
-
-] [39] [40
-
-]
-Chapter 11.
-[41] [42]
-Chapter 12.
-[43
-
-] [44
-
-]
-Chapter 13.
 [45] [46
 
 ]
-<202401260003-plot_files/figure-latex/unnamed-chunk-4-1.pdf, id=541, 305.54951p
-t x 154.88565pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
-type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-4-1
-.pdf  used on input line 1045.
-(pdftex.def)             Requested size: 305.56741pt x 154.89471pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-5-1.pdf, id=542, 455.46663p
-t x 149.88898pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (
-type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-5-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-5-1
-.pdf  used on input line 1049.
-(pdftex.def)             Requested size: 399.49835pt x 131.47044pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-7-1.pdf, id=544, 57.30508pt
- x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (
-type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-7-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-7-1
-.pdf  used on input line 1068.
-(pdftex.def)             Requested size: 22.1941pt x 22.1941pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-8-1.pdf, id=545, 57.30508pt
- x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (
-type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-8-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-8-1
-.pdf  used on input line 1071.
-(pdftex.def)             Requested size: 22.1941pt x 22.1941pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-9-1.pdf, id=546, 57.30508pt
- x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (
-type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-9-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-9-1
-.pdf  used on input line 1074.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-10-1.pdf, id=547, 85.75839p
-t x 85.75839pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-10-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-10-
-1.pdf  used on input line 1079.
-(pdftex.def)             Requested size: 66.5759pt x 66.5759pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf, id=548, 57.30508p
-t x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-11-
-1.pdf  used on input line 1084.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
- [47] [48 <./202401260003-plot_files/figure-latex/unnamed-chunk-4-1.pdf> <./202
-401260003-plot_files/figure-latex/unnamed-chunk-5-1.pdf> <./202401260003-plot_f
-iles/figure-latex/unnamed-chunk-7-1.pdf> <./202401260003-plot_files/figure-late
-x/unnamed-chunk-8-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-
-9-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-10-1.pdf> <./202
-401260003-plot_files/figure-latex/unnamed-chunk-11-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf, id=610, 57.30508p
-t x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-13-
-1.pdf  used on input line 1095.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-15-1.pdf, id=611, 57.30508p
-t x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-15-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-15-
-1.pdf  used on input line 1107.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-16-1.pdf, id=612, 57.30508p
-t x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-16-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-16-
-1.pdf  used on input line 1111.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-18-1.pdf, id=613, 114.2107p
-t x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-18-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-18-
-1.pdf  used on input line 1123.
-(pdftex.def)             Requested size: 110.97244pt x 55.68028pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-20-1.pdf, id=614, 57.30508p
-t x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-20-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-20-
-1.pdf  used on input line 1135.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-22-1.pdf, id=615, 57.30508p
-t x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-22-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-22-
-1.pdf  used on input line 1147.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-24-1.pdf, id=616, 85.75839p
-t x 85.75839pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-24-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-24-
-1.pdf  used on input line 1160.
-(pdftex.def)             Requested size: 85.75818pt x 85.75818pt.
- [49 <./202401260003-plot_files/figure-latex/unnamed-chunk-13-1.pdf> <./2024012
-60003-plot_files/figure-latex/unnamed-chunk-15-1.pdf> <./202401260003-plot_file
-s/figure-latex/unnamed-chunk-16-1.pdf>] [50 <./202401260003-plot_files/figure-l
-atex/unnamed-chunk-18-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-ch
-unk-20-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-22-1.pdf> <
-./202401260003-plot_files/figure-latex/unnamed-chunk-24-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf, id=640, 114.2107p
-t x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-26-
-1.pdf  used on input line 1172.
-(pdftex.def)             Requested size: 110.97244pt x 55.68028pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-28-1.pdf, id=641, 199.5696p
-t x 57.30508pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-28-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-28-
-1.pdf  used on input line 1185.
-(pdftex.def)             Requested size: 110.96645pt x 31.86327pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-30-1.pdf, id=642, 85.75839p
-t x 114.2107pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-30-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-30-
-1.pdf  used on input line 1197.
-(pdftex.def)             Requested size: 85.76341pt x 114.21736pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-32-1.pdf, id=643, 88.60402p
-t x 117.05632pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-32-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-32-
-1.pdf  used on input line 1214.
-(pdftex.def)             Requested size: 88.60379pt x 117.05603pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-34-1.pdf, id=644, 299.05428
-pt x 85.75839pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-34-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-34-
-1.pdf  used on input line 1227.
-(pdftex.def)             Requested size: 299.05353pt x 85.75818pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf, id=645, 299.05428
-pt x 85.75839pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-35-
-1.pdf  used on input line 1231.
-(pdftex.def)             Requested size: 299.05353pt x 85.75818pt.
- [51 <./202401260003-plot_files/figure-latex/unnamed-chunk-26-1.pdf> <./2024012
-60003-plot_files/figure-latex/unnamed-chunk-28-1.pdf> <./202401260003-plot_file
-s/figure-latex/unnamed-chunk-30-1.pdf>] [52 <./202401260003-plot_files/figure-l
-atex/unnamed-chunk-32-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-ch
-unk-34-1.pdf> <./202401260003-plot_files/figure-latex/unnamed-chunk-35-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf, id=666, 64.41867p
-t x 28.8528pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-37-
-1.pdf  used on input line 1247.
-(pdftex.def)             Requested size: 64.42046pt x 28.85359pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-39-1.pdf, id=667, 258.07516
-pt x 171.91628pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-39-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-39-
-1.pdf  used on input line 1265.
-(pdftex.def)             Requested size: 258.08633pt x 171.9237pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-41-1.pdf, id=668, 258.07516
-pt x 2.00047pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-41-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-41-
-1.pdf  used on input line 1277.
-(pdftex.def)             Requested size: 258.09814pt x 2.00063pt.
- [53 <./202401260003-plot_files/figure-latex/unnamed-chunk-37-1.pdf> <./2024012
-60003-plot_files/figure-latex/unnamed-chunk-39-1.pdf> <./202401260003-plot_file
-s/figure-latex/unnamed-chunk-41-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-43-1.pdf, id=679, 228.02188
-pt x 228.02188pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-43-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-43-
-1.pdf  used on input line 1297.
-(pdftex.def)             Requested size: 228.0248pt x 228.0248pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-45-1.pdf, id=680, 257.30528
-pt x 257.30528pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-45-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-45-
-1.pdf  used on input line 1313.
-(pdftex.def)             Requested size: 257.32426pt x 257.32426pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-47-1.pdf, id=681, 285.7586p
-t x 285.7586pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-47-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-47-
-1.pdf  used on input line 1329.
-(pdftex.def)             Requested size: 285.76225pt x 285.76225pt.
- [54 <./202401260003-plot_files/figure-latex/unnamed-chunk-43-1.pdf>] [55 <./20
-2401260003-plot_files/figure-latex/unnamed-chunk-45-1.pdf> <./202401260003-plot
-_files/figure-latex/unnamed-chunk-47-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf, id=698, 228.02188
-pt x 85.75839pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-49-
-1.pdf  used on input line 1345.
-(pdftex.def)             Requested size: 228.02132pt x 85.75818pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-51-1.pdf, id=699, 272.54422
-pt x 104.44722pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-51-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-51-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-51-
-1.pdf  used on input line 1359.
-(pdftex.def)             Requested size: 272.5477pt x 104.44853pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-53-1.pdf, id=700, 184.21121
-pt x 184.21121pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-53-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-53-
-1.pdf  used on input line 1373.
-(pdftex.def)             Requested size: 184.21637pt x 184.21637pt.
- [56 <./202401260003-plot_files/figure-latex/unnamed-chunk-49-1.pdf> <./2024012
-60003-plot_files/figure-latex/unnamed-chunk-51-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-55-1.pdf, id=709, 278.02168
-pt x 45.45782pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-55-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-55-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-55-
-1.pdf  used on input line 1401.
-(pdftex.def)             Requested size: 278.021pt x 45.45769pt.
- [57 <./202401260003-plot_files/figure-latex/unnamed-chunk-53-1.pdf> <./2024012
-60003-plot_files/figure-latex/unnamed-chunk-55-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf, id=722, 100.75844
-pt x 105.75812pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-57-
-1.pdf  used on input line 1429.
-(pdftex.def)             Requested size: 100.75818pt x 105.75784pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-59-1.pdf, id=723, 196.36362
-pt x 193.47281pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-59-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-59-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-59-
-1.pdf  used on input line 1443.
-(pdftex.def)             Requested size: 196.3661pt x 193.47528pt.
-
-Underfull \vbox (badness 3930) has occurred while \output is active []
-
- [58 <./202401260003-plot_files/figure-latex/unnamed-chunk-57-1.pdf> <./2024012
-60003-plot_files/figure-latex/unnamed-chunk-59-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf, id=763, 111.75752
-pt x 92.31288pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-61-
-1.pdf  used on input line 1486.
-(pdftex.def)             Requested size: 111.75723pt x 92.31265pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-62-1.pdf, id=765, 139.04347
-pt x 75.2411pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-62-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-62-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-62-
-1.pdf  used on input line 1492.
-(pdftex.def)             Requested size: 139.05373pt x 75.24664pt.
-<202401260003-plot_files/figure-latex/unnamed-chunk-63-1.pdf, id=766, 123.54657
-pt x 93.14098pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-63-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-63-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-63-
-1.pdf  used on input line 1496.
-(pdftex.def)             Requested size: 123.54626pt x 93.14073pt.
- [59 <./202401260003-plot_files/figure-latex/unnamed-chunk-61-1.pdf> <./2024012
-60003-plot_files/figure-latex/unnamed-chunk-62-1.pdf>]
-<202401260003-plot_files/figure-latex/skills-1.pdf, id=786, 226.86255pt x 234.8
-3736pt>
-File: 202401260003-plot_files/figure-latex/skills-1.pdf Graphic file (type pdf)
-
-<use 202401260003-plot_files/figure-latex/skills-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/skills-1.pdf  use
-d on input line 1510.
-(pdftex.def)             Requested size: 226.8689pt x 234.84392pt.
- [60 <./202401260003-plot_files/figure-latex/unnamed-chunk-63-1.pdf> <./2024012
-60003-plot_files/figure-latex/skills-1.pdf>]
-<202401260003-plot_files/figure-latex/unnamed-chunk-66-1.pdf, id=864, 112.25337
-pt x 110.64337pt>
-File: 202401260003-plot_files/figure-latex/unnamed-chunk-66-1.pdf Graphic file 
-(type pdf)
-<use 202401260003-plot_files/figure-latex/unnamed-chunk-66-1.pdf>
-Package pdftex.def Info: 202401260003-plot_files/figure-latex/unnamed-chunk-66-
-1.pdf  used on input line 1541.
-(pdftex.def)             Requested size: 112.25479pt x 110.64478pt.
- [61 <./202401260003-plot_files/figure-latex/unnamed-chunk-66-1.pdf>] [62
-
-] <xymatrix 3x3 320>
-[63] [64
-
-]
-Chapter 14.
-[65] [66
-
-] [67] [68]
-Chapter 15.
-[69
-
-] [70
-
-] [71] [72
-
-] [73] [74
-
-]
-
-LaTeX Warning: Reference `eq:eqclass' on page 75 undefined on input line 1676.
-
-[75] [76
-
-] (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+Chapter 11.
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 )
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 )
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Overfull \hbox (2.8258pt too wide) detected at line 1711
+Overfull \hbox (2.8258pt too wide) detected at line 1626
 []
  []
 
-[77] [78
+[47] [48
 
 ]
-Chapter 16.
-[79]
-Overfull \hbox (71.53241pt too wide) in paragraph at lines 1797--1798
+Chapter 12.
+
+Overfull \vbox (0.3771pt too high) detected at line 1709
+ []
+
+[49]
+Overfull \hbox (71.53241pt too wide) in paragraph at lines 1711--1712
 []\T1/lmr/m/n/10 (-20) copy \T1/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticul
 ate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tcl8.6
  []
 
 
-Overfull \hbox (62.39655pt too wide) in paragraph at lines 1797--1798
+Overfull \hbox (62.39655pt too wide) in paragraph at lines 1711--1712
 \T1/lmr/m/n/10 (-20) and \T1/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticulate
 \r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tk8.6
  []
 
 
-Overfull \hbox (113.92896pt too wide) in paragraph at lines 1797--1798
+Overfull \hbox (113.92896pt too wide) in paragraph at lines 1711--1712
 \T1/lmr/m/n/10 (-20) two fold-ers to the folder \T1/lmtt/m/n/10 C:\Users\RW\App
 Data\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\Lib 
  []
 
-<202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf, id=975, 469.755p
-t x 325.215pt>
+<202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf, id=826, 462.5279
+8pt x 346.89601pt>
 File: 202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file
  (type pdf)
 <use 202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf>
 Package pdftex.def Info: 202401292317-Python_files/figure-latex/unnamed-chunk-8
--1.pdf  used on input line 1816.
-(pdftex.def)             Requested size: 443.8635pt x 307.2901pt.
+-1.pdf  used on input line 1730.
+(pdftex.def)             Requested size: 443.88771pt x 332.9158pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80]
-[81 <./202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf>] [82
+ [50]
+[51 <./202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf>] [52
 
 ]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf, id=1005, 305.54951
-pt x 154.88565pt>
+Chapter 13.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf, id=856, 57.30508pt
+ x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (
 type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1
-.pdf  used on input line 1856.
-(pdftex.def)             Requested size: 305.56741pt x 154.89471pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-3-1.pdf, id=1006, 455.46663
-pt x 149.88898pt>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (
+.pdf  used on input line 1758.
+(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf, id=861, 305.54951p
+t x 154.88565pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
 type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-3-1.pdf>
-Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-3-1
-.pdf  used on input line 1860.
-(pdftex.def)             Requested size: 399.49835pt x 131.47044pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1.pdf, id=1008, 57.30508p
-t x 57.30508pt>
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1
+.pdf  used on input line 1798.
+(pdftex.def)             Requested size: 305.56741pt x 154.89471pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1.pdf, id=862, 455.46663p
+t x 149.88898pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (
 type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1
-.pdf  used on input line 1879.
-(pdftex.def)             Requested size: 22.1941pt x 22.1941pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf, id=1009, 57.30508p
-t x 57.30508pt>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (
-type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf>
-Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1
-.pdf  used on input line 1882.
-(pdftex.def)             Requested size: 22.1941pt x 22.1941pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf, id=1010, 57.30508p
-t x 57.30508pt>
+.pdf  used on input line 1802.
+(pdftex.def)             Requested size: 399.49835pt x 131.47044pt.
+[53 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf>] [54 <./2024
+01311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf> <./202401311000-TikZ_fi
+les/figure-latex/unnamed-chunk-5-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf, id=919, 57.30508pt
+ x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (
 type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1
-.pdf  used on input line 1885.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf, id=1011, 85.75839p
-t x 85.75839pt>
+.pdf  used on input line 1819.
+(pdftex.def)             Requested size: 22.1941pt x 22.1941pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf, id=920, 57.30508pt
+ x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (
 type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1
-.pdf  used on input line 1890.
-(pdftex.def)             Requested size: 66.5759pt x 66.5759pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf, id=1012, 57.30508p
-t x 57.30508pt>
+.pdf  used on input line 1822.
+(pdftex.def)             Requested size: 22.1941pt x 22.1941pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf, id=921, 57.30508pt
+ x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (
 type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1
-.pdf  used on input line 1895.
+.pdf  used on input line 1825.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-
-[83] [84 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf> <./2024
-01311000-TikZ_files/figure-latex/unnamed-chunk-3-1.pdf> <./202401311000-TikZ_fi
-les/figure-latex/unnamed-chunk-5-1.pdf> <./202401311000-TikZ_files/figure-latex
-/unnamed-chunk-6-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-7
--1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf> <./20240
-1311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf, id=1061, 57.30508
-pt x 57.30508pt>
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1.pdf, id=922, 85.75839p
+t x 85.75839pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-10-
+1.pdf  used on input line 1830.
+(pdftex.def)             Requested size: 66.5759pt x 66.5759pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf, id=923, 57.30508p
+t x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-11-
-1.pdf  used on input line 1906.
+1.pdf  used on input line 1835.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf, id=1062, 57.30508
-pt x 57.30508pt>
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf, id=924, 57.30508p
+t x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-13-
-1.pdf  used on input line 1918.
+1.pdf  used on input line 1846.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf, id=1063, 57.30508
-pt x 57.30508pt>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file 
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-15-1.pdf, id=925, 57.30508p
+t x 57.30508pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf>
-Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-14-
-1.pdf  used on input line 1922.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-15-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-15-
+1.pdf  used on input line 1858.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf, id=1064, 114.2107
-pt x 57.30508pt>
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf, id=926, 57.30508p
+t x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-
-1.pdf  used on input line 1934.
-(pdftex.def)             Requested size: 110.97244pt x 55.68028pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf, id=1065, 57.30508
-pt x 57.30508pt>
+1.pdf  used on input line 1862.
+(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf, id=927, 114.2107p
+t x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-
-1.pdf  used on input line 1946.
-(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf, id=1066, 57.30508
-pt x 57.30508pt>
+1.pdf  used on input line 1874.
+(pdftex.def)             Requested size: 110.97244pt x 55.68028pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf, id=928, 57.30508p
+t x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-
-1.pdf  used on input line 1958.
+1.pdf  used on input line 1886.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf, id=1067, 85.75839
-pt x 85.75839pt>
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf, id=929, 57.30508p
+t x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-22-
-1.pdf  used on input line 1971.
-(pdftex.def)             Requested size: 85.75818pt x 85.75818pt.
- [85 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf> <./2024013
-11000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf> <./202401311000-TikZ_file
-s/figure-latex/unnamed-chunk-14-1.pdf>] [86 <./202401311000-TikZ_files/figure-l
-atex/unnamed-chunk-16-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-ch
-unk-18-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf> <
-./202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf, id=1091, 114.2107
-pt x 57.30508pt>
+1.pdf  used on input line 1898.
+(pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf, id=930, 85.75839p
+t x 85.75839pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-
-1.pdf  used on input line 1983.
-(pdftex.def)             Requested size: 110.97244pt x 55.68028pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf, id=1092, 199.5696
-pt x 57.30508pt>
+1.pdf  used on input line 1911.
+(pdftex.def)             Requested size: 85.75818pt x 85.75818pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf, id=931, 114.2107p
+t x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-
-1.pdf  used on input line 1996.
-(pdftex.def)             Requested size: 110.96645pt x 31.86327pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf, id=1093, 85.75839
-pt x 114.2107pt>
+1.pdf  used on input line 1923.
+(pdftex.def)             Requested size: 110.97244pt x 55.68028pt.
+ [55 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf> <./20240131
+1000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf> <./202401311000-TikZ_files/
+figure-latex/unnamed-chunk-9-1.pdf>]
+[56 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1.pdf> <./20240131
+1000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf> <./202401311000-TikZ_files
+/figure-latex/unnamed-chunk-13-1.pdf> <./202401311000-TikZ_files/figure-latex/u
+nnamed-chunk-15-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-16
+-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf> <./2024
+01311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf, id=958, 199.5696p
+t x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-
-1.pdf  used on input line 2008.
-(pdftex.def)             Requested size: 85.76341pt x 114.21736pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf, id=1094, 88.60402
-pt x 117.05632pt>
+1.pdf  used on input line 1936.
+(pdftex.def)             Requested size: 110.96645pt x 31.86327pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf, id=959, 85.75839p
+t x 114.2107pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-
-1.pdf  used on input line 2025.
-(pdftex.def)             Requested size: 88.60379pt x 117.05603pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf, id=1095, 299.0542
-8pt x 85.75839pt>
+1.pdf  used on input line 1948.
+(pdftex.def)             Requested size: 85.76341pt x 114.21736pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf, id=960, 88.60402p
+t x 117.05632pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-32-
-1.pdf  used on input line 2038.
-(pdftex.def)             Requested size: 299.05353pt x 85.75818pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-33-1.pdf, id=1096, 299.0542
-8pt x 85.75839pt>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-33-1.pdf Graphic file 
+1.pdf  used on input line 1965.
+(pdftex.def)             Requested size: 88.60379pt x 117.05603pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1.pdf, id=961, 299.05428
+pt x 85.75839pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file 
 (type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-33-1.pdf>
-Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-33-
-1.pdf  used on input line 2042.
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-34-
+1.pdf  used on input line 1978.
 (pdftex.def)             Requested size: 299.05353pt x 85.75818pt.
- [87 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf> <./2024013
-11000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf> <./202401311000-TikZ_file
-s/figure-latex/unnamed-chunk-28-1.pdf>]
-[88 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf> <./20240131
-1000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf> <./202401311000-TikZ_files
-/figure-latex/unnamed-chunk-33-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf, id=1118, 64.41867
-pt x 28.8528pt>
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf, id=962, 299.05428
+pt x 85.75839pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-35-
-1.pdf  used on input line 2058.
-(pdftex.def)             Requested size: 64.42046pt x 28.85359pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf, id=1119, 258.0751
-6pt x 171.91628pt>
+1.pdf  used on input line 1982.
+(pdftex.def)             Requested size: 299.05353pt x 85.75818pt.
+
+Underfull \vbox (badness 1052) has occurred while \output is active []
+
+ [57 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf> <./202401311000-TikZ_file
+s/figure-latex/unnamed-chunk-26-1.pdf>] [58 <./202401311000-TikZ_files/figure-l
+atex/unnamed-chunk-28-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-ch
+unk-30-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf> <
+./202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1.pdf> <./202401311000-
+TikZ_files/figure-latex/unnamed-chunk-35-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf, id=989, 64.41867p
+t x 28.8528pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-37-
-1.pdf  used on input line 2076.
-(pdftex.def)             Requested size: 258.08633pt x 171.9237pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf, id=1120, 258.0751
-6pt x 2.00047pt>
+1.pdf  used on input line 1998.
+(pdftex.def)             Requested size: 64.42046pt x 28.85359pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf, id=990, 258.07516
+pt x 171.91628pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-39-
-1.pdf  used on input line 2088.
-(pdftex.def)             Requested size: 258.09814pt x 2.00063pt.
- [89 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf> <./2024013
-11000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf> <./202401311000-TikZ_file
-s/figure-latex/unnamed-chunk-39-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf, id=1131, 228.0218
-8pt x 228.02188pt>
+1.pdf  used on input line 2016.
+(pdftex.def)             Requested size: 258.08633pt x 171.9237pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf, id=991, 258.07516
+pt x 2.00047pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-41-
-1.pdf  used on input line 2108.
-(pdftex.def)             Requested size: 228.0248pt x 228.0248pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf, id=1132, 257.3052
-8pt x 257.30528pt>
+1.pdf  used on input line 2028.
+(pdftex.def)             Requested size: 258.09814pt x 2.00063pt.
+ [59 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf> <./202401311000-TikZ_file
+s/figure-latex/unnamed-chunk-41-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf, id=1003, 228.0218
+8pt x 228.02188pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-43-
-1.pdf  used on input line 2124.
-(pdftex.def)             Requested size: 257.32426pt x 257.32426pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf, id=1133, 285.7586
-pt x 285.7586pt>
+1.pdf  used on input line 2048.
+(pdftex.def)             Requested size: 228.0248pt x 228.0248pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf, id=1004, 257.3052
+8pt x 257.30528pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-45-
-1.pdf  used on input line 2140.
-(pdftex.def)             Requested size: 285.76225pt x 285.76225pt.
-
-[90 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf>] [91 <./202
-401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf> <./202401311000-TikZ_
-files/figure-latex/unnamed-chunk-45-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf, id=1149, 228.0218
-8pt x 85.75839pt>
+1.pdf  used on input line 2064.
+(pdftex.def)             Requested size: 257.32426pt x 257.32426pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf, id=1005, 285.7586
+pt x 285.7586pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-47-
-1.pdf  used on input line 2156.
-(pdftex.def)             Requested size: 228.02132pt x 85.75818pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf, id=1150, 272.5442
-2pt x 104.44722pt>
+1.pdf  used on input line 2080.
+(pdftex.def)             Requested size: 285.76225pt x 285.76225pt.
+
+[60 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf>] [61 <./202
+401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf> <./202401311000-TikZ_
+files/figure-latex/unnamed-chunk-47-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf, id=1023, 228.0218
+8pt x 85.75839pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-49-
-1.pdf  used on input line 2170.
-(pdftex.def)             Requested size: 272.5477pt x 104.44853pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf, id=1151, 184.2112
-1pt x 184.21121pt>
+1.pdf  used on input line 2096.
+(pdftex.def)             Requested size: 228.02132pt x 85.75818pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf, id=1024, 272.5442
+2pt x 104.44722pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-51-
-1.pdf  used on input line 2184.
-(pdftex.def)             Requested size: 184.21637pt x 184.21637pt.
- [92 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf> <./2024013
-11000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf, id=1160, 278.0216
-8pt x 45.45782pt>
+1.pdf  used on input line 2110.
+(pdftex.def)             Requested size: 272.5477pt x 104.44853pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf, id=1025, 184.2112
+1pt x 184.21121pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-53-
-1.pdf  used on input line 2212.
-(pdftex.def)             Requested size: 278.021pt x 45.45769pt.
- [93 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf> <./2024013
-11000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf, id=1173, 100.7584
-4pt x 105.75812pt>
+1.pdf  used on input line 2124.
+(pdftex.def)             Requested size: 184.21637pt x 184.21637pt.
+ [62 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf, id=1035, 278.0216
+8pt x 45.45782pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-55-
-1.pdf  used on input line 2240.
-(pdftex.def)             Requested size: 100.75818pt x 105.75784pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf, id=1174, 196.3636
-2pt x 193.47281pt>
+1.pdf  used on input line 2152.
+(pdftex.def)             Requested size: 278.021pt x 45.45769pt.
+ [63 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf, id=1049, 100.7584
+4pt x 105.75812pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-57-
-1.pdf  used on input line 2254.
-(pdftex.def)             Requested size: 196.3661pt x 193.47528pt.
-
-Underfull \vbox (badness 3930) has occurred while \output is active []
-
- [94 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf> <./2024013
-11000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf, id=1210, 111.7575
-2pt x 92.31288pt>
+1.pdf  used on input line 2180.
+(pdftex.def)             Requested size: 100.75818pt x 105.75784pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf, id=1050, 196.3636
+2pt x 193.47281pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-59-
-1.pdf  used on input line 2297.
-(pdftex.def)             Requested size: 111.75723pt x 92.31265pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf, id=1212, 139.0434
-7pt x 75.2411pt>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf>
-Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-60-
-1.pdf  used on input line 2303.
-(pdftex.def)             Requested size: 139.05373pt x 75.24664pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf, id=1213, 123.5465
-7pt x 93.14098pt>
+1.pdf  used on input line 2194.
+(pdftex.def)             Requested size: 196.3661pt x 193.47528pt.
+
+Underfull \vbox (badness 3930) has occurred while \output is active []
+
+ [64 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf, id=1090, 111.7575
+2pt x 92.31288pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf Graphic file 
 (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-61-
-1.pdf  used on input line 2307.
+1.pdf  used on input line 2237.
+(pdftex.def)             Requested size: 111.75723pt x 92.31265pt.
+ [65 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf>]
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-63-1.pdf, id=1102, 112.2533
+7pt x 110.64337pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-63-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-63-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-63-
+1.pdf  used on input line 2268.
+(pdftex.def)             Requested size: 112.25479pt x 110.64478pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf, id=1104, 139.0434
+7pt x 75.2411pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-
+1.pdf  used on input line 2274.
+(pdftex.def)             Requested size: 139.05373pt x 75.24664pt.
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-65-1.pdf, id=1105, 123.5465
+7pt x 93.14098pt>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-65-1.pdf Graphic file 
+(type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-65-1.pdf>
+Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-65-
+1.pdf  used on input line 2278.
 (pdftex.def)             Requested size: 123.54626pt x 93.14073pt.
- [95 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf> <./2024013
-11000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf>]
-<202401311000-TikZ_files/figure-latex/skills-1.pdf, id=1231, 226.86255pt x 234.
+<202401311000-TikZ_files/figure-latex/skills-1.pdf, id=1107, 226.86255pt x 234.
 83736pt>
 File: 202401311000-TikZ_files/figure-latex/skills-1.pdf Graphic file (type pdf)
 
 <use 202401311000-TikZ_files/figure-latex/skills-1.pdf>
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/skills-1.pdf  use
-d on input line 2321.
+d on input line 2292.
 (pdftex.def)             Requested size: 226.8689pt x 234.84392pt.
- [96 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf> <./2024013
-11000-TikZ_files/figure-latex/skills-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf, id=1309, 112.2533
-7pt x 110.64337pt>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf>
-Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-
-1.pdf  used on input line 2352.
-(pdftex.def)             Requested size: 112.25479pt x 110.64478pt.
- [97 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf>] [98
 
-] <xymatrix 3x3 320>
-[99] [100
+Underfull \vbox (badness 3000) has occurred while \output is active []
+
+ [66 <./202401311000-TikZ_files/figure-latex/unnamed-chunk-63-1.pdf> <./2024013
+11000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf> <./202401311000-TikZ_file
+s/figure-latex/unnamed-chunk-65-1.pdf>] [67 <./202401311000-TikZ_files/figure-l
+atex/skills-1.pdf>] [68
+
+]
+Chapter 14.
+<xymatrix 3x3 320> [69] [70
+
+]
+Chapter 15.
+[71] [72]
+Chapter 16.
+[73
+
+] [74
 
 ]
 Chapter 17.
-<202402161220-RMarkdown_files/figure-latex/unnamed-chunk-6-1.pdf, id=1339, 361.
-35pt x 289.08pt>
-File: 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-6-1.pdf Graphic f
-ile (type pdf)
-<use 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-6-1.pdf>
-Package pdftex.def Info: 202402161220-RMarkdown_files/figure-latex/unnamed-chun
-k-6-1.pdf  used on input line 2433.
-(pdftex.def)             Requested size: 244.12679pt x 195.30142pt.
-[101]
-<202402161220-RMarkdown_files/figure-latex/unnamed-chunk-7-1.pdf, id=1348, 722.
-7pt x 578.16pt>
-File: 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-7-1.pdf Graphic f
-ile (type pdf)
-<use 202402161220-RMarkdown_files/figure-latex/unnamed-chunk-7-1.pdf>
-Package pdftex.def Info: 202402161220-RMarkdown_files/figure-latex/unnamed-chun
-k-7-1.pdf  used on input line 2460.
-(pdftex.def)             Requested size: 244.12679pt x 195.30142pt.
- [102 <./202402161220-RMarkdown_files/figure-latex/unnamed-chunk-6-1.pdf> <./20
-2402161220-RMarkdown_files/figure-latex/unnamed-chunk-7-1.pdf>]
-Chapter 18.
-[103
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 2382.
+[75] [76
 
-] [104] [105] [106
+]
+Chapter 18.
+[77] [78
 
 ]
 Chapter 19.
-[107] [108
+[79] [80
 
-] (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+]
+Chapter 20.
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 )
-(c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Underfull \hbox (badness 10000) in paragraph at lines 2623--2626
+<202402252333-conic-section_files/figure-latex/unnamed-chunk-1-1.pdf, id=1312, 
+297.70824pt x 298.24323pt>
+File: 202402252333-conic-section_files/figure-latex/unnamed-chunk-1-1.pdf Graph
+ic file (type pdf)
+<use 202402252333-conic-section_files/figure-latex/unnamed-chunk-1-1.pdf>
+Package pdftex.def Info: 202402252333-conic-section_files/figure-latex/unnamed-
+chunk-1-1.pdf  used on input line 2419.
+(pdftex.def)             Requested size: 297.73021pt x 298.26524pt.
+
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+Underfull \vbox (badness 4353) has occurred while \output is active []
+
+ [81 <./202402252333-conic-section_files/figure-latex/unnamed-chunk-1-1.pdf>] [
+82] [83]
+Overfull \hbox (0.22272pt too wide) in paragraph at lines 2542--2543
+[][]$\T1/lmr/m/n/10 (+11) h t t p s : / / m a t h . s t a c k e x c h a n g e .
+ c o m / q u e s t i o n s / 1 8 3 3 9 7 3 / p r o ve -[] t h at -[] t h e -[] 
+d i r e c t r i x -[] f o c u s -[] a n d -[] f o c u s -[] f o c u s -[]
+ []
+
+File: img/conic-sections.pdf Graphic file (type pdf)
+<use img/conic-sections.pdf>
+Package pdftex.def Info: img/conic-sections.pdf  used on input line 2547.
+(pdftex.def)             Requested size: 332.8833pt x 219.7902pt.
+[84]
+Underfull \vbox (badness 3364) has occurred while \output is active []
+
+ [85]
+[86] [87]
+
+pdfTeX warning: pdflatex.exe (file ./img/conic-sections-ellipse.pdf): PDF inclu
+sion: found PDF version <1.7>, but at most version <1.5> allowed
+<img/conic-sections-ellipse.pdf, id=1388, 1149.29375pt x 758.835pt>
+File: img/conic-sections-ellipse.pdf Graphic file (type pdf)
+<use img/conic-sections-ellipse.pdf>
+Package pdftex.def Info: img/conic-sections-ellipse.pdf  used on input line 276
+8.
+(pdftex.def)             Requested size: 332.8833pt x 219.7902pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./img/conic-sections-parabola.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<img/conic-sections-parabola.pdf, id=1389, 1149.29375pt x 758.835pt>
+File: img/conic-sections-parabola.pdf Graphic file (type pdf)
+<use img/conic-sections-parabola.pdf>
+Package pdftex.def Info: img/conic-sections-parabola.pdf  used on input line 27
+72.
+(pdftex.def)             Requested size: 332.8833pt x 219.7902pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./img/conic-sections-hyperbola.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<img/conic-sections-hyperbola.pdf, id=1390, 1149.29375pt x 758.835pt>
+File: img/conic-sections-hyperbola.pdf Graphic file (type pdf)
+<use img/conic-sections-hyperbola.pdf>
+Package pdftex.def Info: img/conic-sections-hyperbola.pdf  used on input line 2
+776.
+(pdftex.def)             Requested size: 332.8833pt x 219.7902pt.
+
+Overfull \hbox (67.79068pt too wide) detected at line 2896
+[]
+ []
+
+[88] [89 <./img/conic-sections-ellipse.pdf> <./img/conic-sections-parabola.pdf
+
+pdfTeX warning: pdflatex.exe (file ./img/conic-sections-parabola.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+>] [90 <./img/conic-sections-hyperbola.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./img/conic-sections-polar-ellipse.pdf): PDF
+ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<img/conic-sections-polar-ellipse.pdf, id=1438, 1149.29375pt x 1077.02374pt>
+File: img/conic-sections-polar-ellipse.pdf Graphic file (type pdf)
+<use img/conic-sections-polar-ellipse.pdf>
+Package pdftex.def Info: img/conic-sections-polar-ellipse.pdf  used on input li
+ne 2933.
+(pdftex.def)             Requested size: 332.8833pt x 311.9509pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./img/conic-sections-polar-parabola.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<img/conic-sections-polar-parabola.pdf, id=1439, 1149.29375pt x 1077.02374pt>
+File: img/conic-sections-polar-parabola.pdf Graphic file (type pdf)
+<use img/conic-sections-polar-parabola.pdf>
+Package pdftex.def Info: img/conic-sections-polar-parabola.pdf  used on input l
+ine 2937.
+(pdftex.def)             Requested size: 332.8833pt x 311.9509pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./img/conic-sections-polar-hyperbola.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<img/conic-sections-polar-hyperbola.pdf, id=1440, 1149.29375pt x 1077.02374pt>
+File: img/conic-sections-polar-hyperbola.pdf Graphic file (type pdf)
+<use img/conic-sections-polar-hyperbola.pdf>
+Package pdftex.def Info: img/conic-sections-polar-hyperbola.pdf  used on input 
+line 2941.
+(pdftex.def)             Requested size: 332.8833pt x 311.9509pt.
+[91 <./img/conic-sections-polar-ellipse.pdf>] [92 <./img/conic-sections-polar-p
+arabola.pdf>] [93 <./img/conic-sections-polar-hyperbola.pdf>] [94]
+Chapter 21.
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [95
+
+]
+[96]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [97]
+Overfull \hbox (18.13565pt too wide) in paragraph at lines 3122--3122
+[]\T1/lmtt/m/n/10 % replace the rather ugly mathptmx \sum operator with the equ
+ivalent Computer Modern one[] 
+ []
+
+[98]
+Chapter 22.
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+
+LaTeX Font Warning: Font shape `C70/bsmi/m/it' undefined
+(Font)              using `C70/bsmi/m/n' instead on input line 3160.
+
+[99
+
+] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+Underfull \vbox (badness 2478) has occurred while \output is active []
+
+ [100]
+[101] [102
+
+] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+)
+(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+Underfull \hbox (badness 10000) in paragraph at lines 3308--3311
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2627--2630
+Underfull \hbox (badness 10000) in paragraph at lines 3312--3315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2631--2634
+Underfull \hbox (badness 10000) in paragraph at lines 3316--3319
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2635--2638
+Underfull \hbox (badness 10000) in paragraph at lines 3320--3323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2639--2642
+Underfull \hbox (badness 10000) in paragraph at lines 3324--3327
 
  []
 
-[109] (./math.aux)
+[103] (./math.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
 
-LaTeX Warning: There were undefined references.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 42548 strings out of 478305
- 942960 string characters out of 5849246
- 1391386 words of memory out of 5000000
- 59312 multiletter control sequences out of 15000+600000
- 596849 words of font info for 243 fonts, out of 8000000 for 9000
+ 45291 strings out of 474143
+ 989762 string characters out of 5748770
+ 2002190 words of memory out of 5000000
+ 66119 multiletter control sequences out of 15000+600000
+ 707317 words of font info for 297 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,20n,91p,3215b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022
-/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2022/texmf-dist/fonts/
-enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
-}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2022/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2022/texmf-dist/fonts/type
-1/arphic/bsmiu/bsmiu4e.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu
-/bsmiu4f.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu50.pfb><
-c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu52.pfb><c:/texlive/202
-2/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu53.pfb><c:/texlive/2022/texmf-dist/f
-onts/type1/arphic/bsmiu/bsmiu57.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arp
-hic/bsmiu/bsmiu59.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmi
-u5b.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5c.pfb><c:/te
-xlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5e.pfb><c:/texlive/2022/tex
-mf-dist/fonts/type1/arphic/bsmiu/bsmiu61.pfb><c:/texlive/2022/texmf-dist/fonts/
-type1/arphic/bsmiu/bsmiu6b.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/b
-smiu/bsmiu77.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu79.p
-fb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu7a.pfb><c:/texlive
-/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu7b.pfb><c:/texlive/2022/texmf-di
-st/fonts/type1/arphic/bsmiu/bsmiu81.pfb><c:/texlive/2022/texmf-dist/fonts/type1
-/arphic/bsmiu/bsmiu82.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/
-bsmiu8b.pfb><c:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu90.pfb><c
-:/texlive/2022/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu91.pfb><c:/texlive/2022
-/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu95.pfb><c:/texlive/2022/texmf-dist/fo
-nts/type1/arphic/bsmiu/bsmiu96.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/
-texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/20
-22/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
-/lm/lmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:
-/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2022/tex
-mf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type
-1/public/lm/lmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12
-.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi5.pfb><c:/texlive/20
-22/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2022/texmf-dist/fonts
-/type1/public/lm/lmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/
-lmmib7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texl
-ive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2022/texmf-dist
-/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
-/lm/lmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/tex
-live/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2022/texmf-dist
-/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
-c/lm/lmro10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c
-:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy5.pfb><c:/texlive/2022/texm
-f-dist/fonts/type1/public/lm/lmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/
-public/lm/lmtk10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtko10.
-pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/20
-22/texmf-dist/fonts/type1/public/lm/lmtti10.pfb><c:/texlive/2022/texmf-dist/fon
-ts/type1/public/xypic/xyatip10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publ
-ic/xypic/xybtip10.pfb>
-Output written on math.pdf (109 pages, 930251 bytes).
+ 94i,22n,93p,3215b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu30.pfb><c:/texlive/
+2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu4e.pfb><c:/texlive/2023/texmf-dis
+t/fonts/type1/arphic/bsmiu/bsmiu4f.pfb><c:/texlive/2023/texmf-dist/fonts/type1/
+arphic/bsmiu/bsmiu50.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/b
+smiu51.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu52.pfb><c:
+/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu53.pfb><c:/texlive/2023/
+texmf-dist/fonts/type1/arphic/bsmiu/bsmiu54.pfb><c:/texlive/2023/texmf-dist/fon
+ts/type1/arphic/bsmiu/bsmiu57.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphi
+c/bsmiu/bsmiu59.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5
+b.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5c.pfb><c:/texl
+ive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu5d.pfb><c:/texlive/2023/texmf
+-dist/fonts/type1/arphic/bsmiu/bsmiu5e.pfb><c:/texlive/2023/texmf-dist/fonts/ty
+pe1/arphic/bsmiu/bsmiu5f.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsm
+iu/bsmiu61.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu62.pfb
+><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu63.pfb><c:/texlive/2
+023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu65.pfb><c:/texlive/2023/texmf-dist
+/fonts/type1/arphic/bsmiu/bsmiu66.pfb><c:/texlive/2023/texmf-dist/fonts/type1/a
+rphic/bsmiu/bsmiu6b.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bs
+miu6e.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu70.pfb><c:/
+texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu71.pfb><c:/texlive/2023/t
+exmf-dist/fonts/type1/arphic/bsmiu/bsmiu72.pfb><c:/texlive/2023/texmf-dist/font
+s/type1/arphic/bsmiu/bsmiu73.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic
+/bsmiu/bsmiu75.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu76
+.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu77.pfb><c:/texli
+ve/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu78.pfb><c:/texlive/2023/texmf-
+dist/fonts/type1/arphic/bsmiu/bsmiu79.pfb><c:/texlive/2023/texmf-dist/fonts/typ
+e1/arphic/bsmiu/bsmiu7a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmi
+u/bsmiu7b.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu7d.pfb>
+<c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu81.pfb><c:/texlive/20
+23/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu82.pfb><c:/texlive/2023/texmf-dist/
+fonts/type1/arphic/bsmiu/bsmiu89.pfb><c:/texlive/2023/texmf-dist/fonts/type1/ar
+phic/bsmiu/bsmiu8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsm
+iu8b.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu8d.pfb><c:/t
+exlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu90.pfb><c:/texlive/2023/te
+xmf-dist/fonts/type1/arphic/bsmiu/bsmiu91.pfb><c:/texlive/2023/texmf-dist/fonts
+/type1/arphic/bsmiu/bsmiu93.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/
+bsmiu/bsmiu95.pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu96.
+pfb><c:/texlive/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu97.pfb><c:/texliv
+e/2023/texmf-dist/fonts/type1/arphic/bsmiu/bsmiu98.pfb><c:/texlive/2023/texmf-d
+ist/fonts/type1/arphic/bsmiu/bsmiu9e.pfb><c:/texlive/2023/texmf-dist/fonts/type
+1/arphic/bsmiu/bsmiuff.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c
+:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/
+2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/
+texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/tex
+live/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2023/texmf-di
+st/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pub
+lic/lm/lmbxi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb
+><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2023/
+texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/t
+ype1/public/lm/lmmi5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi
+7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmib10.pfb><c:/texlive
+/2023/texmf-dist/fonts/type1/public/lm/lmmib7.pfb><c:/texlive/2023/texmf-dist/f
+onts/type1/public/lm/lmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/l
+m/lmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/tex
+live/2023/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:/texlive/2023/texmf-dist
+/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
+lm/lmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texl
+ive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2023/texmf-dis
+t/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publ
+ic/lm/lmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy5.pfb><c
+:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/texlive/2023/texm
+f-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2023/texmf-dist/fonts/type1
+/public/lm/lmtko10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10
+.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtti10.pfb><c:/texlive/
+2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam5.pfb><c:/texlive/2023/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb><c:/texlive/2023/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fo
+nts/type1/public/xypic/xyatip10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pub
+lic/xypic/xybtip10.pfb>
+Output written on math.pdf (103 pages, 1600007 bytes).
 PDF statistics:
- 1953 PDF objects out of 2073 (max. 8388607)
- 1538 compressed objects within 16 object streams
- 361 named destinations out of 1000 (max. 500000)
- 64424 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 2258 PDF objects out of 2487 (max. 8388607)
+ 1820 compressed objects within 19 object streams
+ 412 named destinations out of 1000 (max. 500000)
+ 70409 words of extra memory for PDF output out of 74296 (max. 10000000)
 

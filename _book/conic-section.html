@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 20: conic section | math</title>
+  <meta name="description" content="Chapter 20: conic section | math" />
+  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 20: conic section | math" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="https://github.com/RRWWW/math/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 20: conic section | math" />
+  
+  
+  
+
+<meta name="author" content="Joey Yu Hsu" />
+
+
+<meta name="date" content="2024-03-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="laplace-transform.html"/>
+<link rel="next" href="distance-from-a-point-to-a-line.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">math</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>index</a></li>
+<li class="part"><span><b>I by descipline</b></span></li>
+<li class="chapter" data-level="1" data-path="nice-label.html"><a href="nice-label.html"><i class="fa fa-check"></i><b>1</b> mathematics</a></li>
+<li class="chapter" data-level="2" data-path="physics.html"><a href="physics.html"><i class="fa fa-check"></i><b>2</b> physics</a></li>
+<li class="chapter" data-level="3" data-path="plot.html"><a href="plot.html"><i class="fa fa-check"></i><b>3</b> plot</a></li>
+<li class="chapter" data-level="4" data-path="programming-language.html"><a href="programming-language.html"><i class="fa fa-check"></i><b>4</b> programming language</a></li>
+<li class="chapter" data-level="5" data-path="machine-learning.html"><a href="machine-learning.html"><i class="fa fa-check"></i><b>5</b> machine learning</a></li>
+<li class="part"><span><b>II by date</b></span></li>
+<li class="chapter" data-level="6" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html"><i class="fa fa-check"></i><b>6</b> A Minimal Book Example</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#about"><i class="fa fa-check"></i><b>6.1</b> About</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#usage"><i class="fa fa-check"></i><b>6.1.1</b> Usage</a></li>
+<li class="chapter" data-level="6.1.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#render-book"><i class="fa fa-check"></i><b>6.1.2</b> Render book</a></li>
+<li class="chapter" data-level="6.1.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#preview-book"><i class="fa fa-check"></i><b>6.1.3</b> Preview book</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#hello-bookdown"><i class="fa fa-check"></i><b>6.2</b> Hello bookdown</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#a-section"><i class="fa fa-check"></i><b>6.2.1</b> A section</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#cross"><i class="fa fa-check"></i><b>6.3</b> Cross-references</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#chapters-and-sub-chapters"><i class="fa fa-check"></i><b>6.3.1</b> Chapters and sub-chapters</a></li>
+<li class="chapter" data-level="6.3.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#captioned-figures-and-tables"><i class="fa fa-check"></i><b>6.3.2</b> Captioned figures and tables</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#parts"><i class="fa fa-check"></i><b>6.4</b> Parts</a></li>
+<li class="chapter" data-level="6.5" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#footnotes-and-citations"><i class="fa fa-check"></i><b>6.5</b> Footnotes and citations</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#footnotes"><i class="fa fa-check"></i><b>6.5.1</b> Footnotes</a></li>
+<li class="chapter" data-level="6.5.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#citations"><i class="fa fa-check"></i><b>6.5.2</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#blocks"><i class="fa fa-check"></i><b>6.6</b> Blocks</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#equations"><i class="fa fa-check"></i><b>6.6.1</b> Equations</a></li>
+<li class="chapter" data-level="6.6.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#theorems-and-proofs"><i class="fa fa-check"></i><b>6.6.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="6.6.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#callout-blocks"><i class="fa fa-check"></i><b>6.6.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#sharing-your-book"><i class="fa fa-check"></i><b>6.7</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="6.7.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#publishing"><i class="fa fa-check"></i><b>6.7.1</b> Publishing</a></li>
+<li class="chapter" data-level="6.7.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#pages"><i class="fa fa-check"></i><b>6.7.2</b> 404 pages</a></li>
+<li class="chapter" data-level="6.7.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#metadata-for-sharing"><i class="fa fa-check"></i><b>6.7.3</b> Metadata for sharing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="test.html"><a href="test.html"><i class="fa fa-check"></i><b>7</b> test</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="test.html"><a href="test.html#rstudio"><i class="fa fa-check"></i><b>7.1</b> RStudio</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="test.html"><a href="test.html#rtools"><i class="fa fa-check"></i><b>7.1.1</b> Rtools</a></li>
+<li class="chapter" data-level="7.1.2" data-path="test.html"><a href="test.html#addins"><i class="fa fa-check"></i><b>7.1.2</b> addins</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="test.html"><a href="test.html#rmarkdown"><i class="fa fa-check"></i><b>7.2</b> RMarkdown</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="test.html"><a href="test.html#url"><i class="fa fa-check"></i><b>7.2.1</b> URL</a></li>
+<li class="chapter" data-level="7.2.2" data-path="test.html"><a href="test.html#superscript-and-subscript"><i class="fa fa-check"></i><b>7.2.2</b> superscript and subscript</a></li>
+<li class="chapter" data-level="7.2.3" data-path="test.html"><a href="test.html#equation"><i class="fa fa-check"></i><b>7.2.3</b> equation</a></li>
+<li class="chapter" data-level="7.2.4" data-path="test.html"><a href="test.html#image"><i class="fa fa-check"></i><b>7.2.4</b> image</a></li>
+<li class="chapter" data-level="7.2.5" data-path="test.html"><a href="test.html#footnote"><i class="fa fa-check"></i><b>7.2.5</b> footnote</a></li>
+<li class="chapter" data-level="7.2.6" data-path="test.html"><a href="test.html#hyperlink"><i class="fa fa-check"></i><b>7.2.6</b> hyperlink</a></li>
+<li class="chapter" data-level="7.2.7" data-path="test.html"><a href="test.html#xaringan"><i class="fa fa-check"></i><b>7.2.7</b> xaringan</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="test.html"><a href="test.html#bookdown"><i class="fa fa-check"></i><b>7.3</b> Bookdown</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="test.html"><a href="test.html#system-locale"><i class="fa fa-check"></i><b>7.3.1</b> system locale</a></li>
+<li class="chapter" data-level="7.3.2" data-path="test.html"><a href="test.html#render_book"><i class="fa fa-check"></i><b>7.3.2</b> <code>render_book()</code></a></li>
+<li class="chapter" data-level="7.3.3" data-path="test.html"><a href="test.html#serve_book"><i class="fa fa-check"></i><b>7.3.3</b> <code>serve_book()</code></a></li>
+<li class="chapter" data-level="7.3.4" data-path="test.html"><a href="test.html#latex-1"><i class="fa fa-check"></i><b>7.3.4</b> LaTeX</a></li>
+<li class="chapter" data-level="7.3.5" data-path="test.html"><a href="test.html#two-columns"><i class="fa fa-check"></i><b>7.3.5</b> Two columns</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="test.html"><a href="test.html#conditional-blockchunk-for-either-html-or-pdf-and-chinese-issue"><i class="fa fa-check"></i><b>7.4</b> conditional block/chunk for either HTML or PDF, and Chinese issue</a></li>
+<li class="chapter" data-level="7.5" data-path="test.html"><a href="test.html#video-embedding"><i class="fa fa-check"></i><b>7.5</b> video embedding</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="test.html"><a href="test.html#timestamp"><i class="fa fa-check"></i><b>7.5.1</b> timestamp</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="test.html"><a href="test.html#equation-term-coloring"><i class="fa fa-check"></i><b>7.6</b> equation term coloring</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="test.html"><a href="test.html#font-color"><i class="fa fa-check"></i><b>7.6.1</b> font color</a></li>
+<li class="chapter" data-level="7.6.2" data-path="test.html"><a href="test.html#background-color"><i class="fa fa-check"></i><b>7.6.2</b> background color</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="test.html"><a href="test.html#link-and-reference"><i class="fa fa-check"></i><b>7.7</b> link and reference</a></li>
+<li class="chapter" data-level="7.8" data-path="test.html"><a href="test.html#number-and-reference-equations"><i class="fa fa-check"></i><b>7.8</b> number and reference equations</a></li>
+<li class="chapter" data-level="7.9" data-path="test.html"><a href="test.html#footnote-1"><i class="fa fa-check"></i><b>7.9</b> footnote</a></li>
+<li class="chapter" data-level="7.10" data-path="test.html"><a href="test.html#citation"><i class="fa fa-check"></i><b>7.10</b> citation</a>
+<ul>
+<li class="chapter" data-level="7.10.1" data-path="test.html"><a href="test.html#backreference"><i class="fa fa-check"></i><b>7.10.1</b> backreference</a></li>
+</ul></li>
+<li class="chapter" data-level="7.11" data-path="test.html"><a href="test.html#bookdown-environment-for-definition-theorem-proof"><i class="fa fa-check"></i><b>7.11</b> bookdown environment for definition, theorem, proof</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="test2.html"><a href="test2.html"><i class="fa fa-check"></i><b>8</b> test2</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="test2.html"><a href="test2.html#verbatim"><i class="fa fa-check"></i><b>8.1</b> verbatim</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="partition.html"><a href="partition.html"><i class="fa fa-check"></i><b>9</b> partition</a></li>
+<li class="chapter" data-level="10" data-path="equivalence-class.html"><a href="equivalence-class.html"><i class="fa fa-check"></i><b>10</b> equivalence class</a></li>
+<li class="chapter" data-level="11" data-path="equivalence-relation.html"><a href="equivalence-relation.html"><i class="fa fa-check"></i><b>11</b> equivalence relation</a></li>
+<li class="chapter" data-level="12" data-path="python.html"><a href="python.html"><i class="fa fa-check"></i><b>12</b> Python</a></li>
+<li class="chapter" data-level="13" data-path="tikz.html"><a href="tikz.html"><i class="fa fa-check"></i><b>13</b> TikZ</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="tikz.html"><a href="tikz.html#d"><i class="fa fa-check"></i><b>13.1</b> 2D</a></li>
+<li class="chapter" data-level="13.2" data-path="tikz.html"><a href="tikz.html#d-1"><i class="fa fa-check"></i><b>13.2</b> 3D</a></li>
+<li class="chapter" data-level="13.3" data-path="tikz.html"><a href="tikz.html#animation"><i class="fa fa-check"></i><b>13.3</b> animation</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="xy-pic.html"><a href="xy-pic.html"><i class="fa fa-check"></i><b>14</b> xy-pic</a></li>
+<li class="chapter" data-level="15" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>15</b> statistics</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="statistics.html"><a href="statistics.html#covariance-matrix"><i class="fa fa-check"></i><b>15.1</b> covariance matrix</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="statistics.html"><a href="statistics.html#calculation"><i class="fa fa-check"></i><b>15.1.1</b> calculation</a></li>
+<li class="chapter" data-level="15.1.2" data-path="statistics.html"><a href="statistics.html#mathrmvleftboldsymbolxboldsymbolbrightmathrmvleftboldsymbolxright"><i class="fa fa-check"></i><b>15.1.2</b> <span class="math inline">\(\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[\boldsymbol{X}\right]\)</span></a></li>
+<li class="chapter" data-level="15.1.3" data-path="statistics.html"><a href="statistics.html#mathrmvleftaboldsymbolxrightamathrmvleftboldsymbolxrightamathrmt"><i class="fa fa-check"></i><b>15.1.3</b> <span class="math inline">\(\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)</span></a></li>
+<li class="chapter" data-level="15.1.4" data-path="statistics.html"><a href="statistics.html#mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxrightamathrmt"><i class="fa fa-check"></i><b>15.1.4</b> <span class="math inline">\(\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="gosper-algorithm.html"><a href="gosper-algorithm.html"><i class="fa fa-check"></i><b>16</b> Gosper algorithm</a></li>
+<li class="chapter" data-level="17" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html"><i class="fa fa-check"></i><b>17</b> Lorentz transformation</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#einstein"><i class="fa fa-check"></i><b>17.1</b> Einstein</a></li>
+<li class="chapter" data-level="17.2" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#bondi-k-calculus"><i class="fa fa-check"></i><b>17.2</b> Bondi <span class="math inline">\(k\)</span>-calculus</a></li>
+<li class="chapter" data-level="17.3" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#wordline-in-minkowski-space"><i class="fa fa-check"></i><b>17.3</b> wordline in Minkowski space</a>
+<ul>
+<li class="chapter" data-level="17.3.1" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#wick-rotation"><i class="fa fa-check"></i><b>17.3.1</b> Wick rotation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="r.html"><a href="r.html"><i class="fa fa-check"></i><b>18</b> R</a></li>
+<li class="chapter" data-level="19" data-path="laplace-transform.html"><a href="laplace-transform.html"><i class="fa fa-check"></i><b>19</b> Laplace transform</a></li>
+<li class="chapter" data-level="20" data-path="conic-section.html"><a href="conic-section.html"><i class="fa fa-check"></i><b>20</b> conic section</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="conic-section.html"><a href="conic-section.html#cartesian-coordinate-focus-directrix-eccentricity"><i class="fa fa-check"></i><b>20.1</b> Cartesian coordinate: focus, directrix, eccentricity</a></li>
+<li class="chapter" data-level="20.2" data-path="conic-section.html"><a href="conic-section.html#two-definition-equivalence-for-ellipse-and-hyperbola"><i class="fa fa-check"></i><b>20.2</b> two-definition equivalence for ellipse and hyperbola</a>
+<ul>
+<li class="chapter" data-level="20.2.1" data-path="conic-section.html"><a href="conic-section.html#first-definition-for-conic-sections-including-ellipses-and-hyperbolas"><i class="fa fa-check"></i><b>20.2.1</b> first definition for conic sections including ellipses and hyperbolas</a></li>
+<li class="chapter" data-level="20.2.2" data-path="conic-section.html"><a href="conic-section.html#second-definition-for-ellipses-and-hyperbolas"><i class="fa fa-check"></i><b>20.2.2</b> second definition for ellipses and hyperbolas</a></li>
+<li class="chapter" data-level="20.2.3" data-path="conic-section.html"><a href="conic-section.html#eccentricity-and-its-equivalent-representation"><i class="fa fa-check"></i><b>20.2.3</b> eccentricity and its equivalent representation</a></li>
+</ul></li>
+<li class="chapter" data-level="20.3" data-path="conic-section.html"><a href="conic-section.html#cartesian-coordinate-standard-form-standard-equation"><i class="fa fa-check"></i><b>20.3</b> Cartesian coordinate: standard form / standard equation</a></li>
+<li class="chapter" data-level="20.4" data-path="conic-section.html"><a href="conic-section.html#parametric-equation"><i class="fa fa-check"></i><b>20.4</b> parametric equation</a></li>
+<li class="chapter" data-level="20.5" data-path="conic-section.html"><a href="conic-section.html#polar-coordinate"><i class="fa fa-check"></i><b>20.5</b> polar coordinate</a></li>
+<li class="chapter" data-level="20.6" data-path="conic-section.html"><a href="conic-section.html#cartesian-coordinate-general-form-quadratic-equation"><i class="fa fa-check"></i><b>20.6</b> Cartesian coordinate: general form / quadratic equation</a></li>
+<li class="chapter" data-level="20.7" data-path="conic-section.html"><a href="conic-section.html#homogeneous-coordinate"><i class="fa fa-check"></i><b>20.7</b> homogeneous coordinate</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html"><i class="fa fa-check"></i><b>21</b> distance from a point to a line</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-shortest-overlineppprime"><i class="fa fa-check"></i><b>21.1</b> by shortest <span class="math inline">\(\overline{PP^{\prime}}\)</span></a></li>
+<li class="chapter" data-level="21.2" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-perpendicular-foot"><i class="fa fa-check"></i><b>21.2</b> by perpendicular foot</a></li>
+<li class="chapter" data-level="21.3" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-normal-vector"><i class="fa fa-check"></i><b>21.3</b> by normal vector</a></li>
+<li class="chapter" data-level="21.4" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-cauchy-inequality"><i class="fa fa-check"></i><b>21.4</b> by Cauchy inequality</a></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="real-symmetric-matrix-diagonalizable.html"><a href="real-symmetric-matrix-diagonalizable.html"><i class="fa fa-check"></i><b>22</b> real symmetric matrix diagonalizable</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>references</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">math</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="conic-section" class="section level1 hasAnchor" number="20">
+<h1><span class="header-section-number">Chapter 20: </span> conic section<a href="conic-section.html#conic-section" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div show-in="html">
+<p>conic section 圓錐曲線 / 圓錐截痕</p>
+</div>
+<div show-in="pdf">
+
+</div>
+<p><a href="https://en.wikipedia.org/wiki/Conic_section" class="uri">https://en.wikipedia.org/wiki/Conic_section</a></p>
+<a href="https://tex.stackexchange.com/questions/222882/drawing-minimal-xy-axis" class="uri">https://tex.stackexchange.com/questions/222882/drawing-minimal-xy-axis</a>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<img src="202402252333-conic-section_files/figure-html/unnamed-chunk-1-1.png" alt="parabola defined by focus, directrix, eccentricity" width="75%" />
+<p class="caption">
+Fig. 20.1: parabola defined by focus, directrix, eccentricity
+</p>
+</div>
+<div id="cartesian-coordinate-focus-directrix-eccentricity" class="section level2 hasAnchor" number="20.1">
+<h2><span class="header-section-number">20.1</span> Cartesian coordinate: focus, directrix, eccentricity<a href="conic-section.html#cartesian-coordinate-focus-directrix-eccentricity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div show-in="html">
+<p>focus, directrix, eccentricity 焦點, 準線, 離心率</p>
+</div>
+<div show-in="pdf">
+
+</div>
+<p><span class="math display">\[
+\begin{cases}
+F=\left(0,y_{{\scriptscriptstyle F}}\right) &amp; F:\text{focus}\\
+L=y-y_{{\scriptscriptstyle L}}=0 &amp; L:\text{directrix}\\
+\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert y-y_{{\scriptscriptstyle L}}\right\Vert } &amp; \begin{cases}
+P=\left(x,y\right)\\
+\epsilon:\text{eccentricity}
+\end{cases}
+\end{cases}
+\]</span></p>
+<div show-in="html">
+<p><span class="math display" id="eq:eccentricity">\[
+\require{color}
+\begin{align}
+0\le\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\overline{PF}}{\overline{PP^{\prime}}}= &amp; \dfrac{\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(x,y\right)-\left(x,y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\left\Vert \left(x,y-y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(0,y-y_{{\scriptscriptstyle L}}\right)\right\Vert } =  \dfrac{\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\sqrt{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}} \tag{20.1}\\
+\epsilon^{2}= &amp; \dfrac{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}=\dfrac{x^{2}+y^{2}-2y_{{\scriptscriptstyle F}}y+y_{{\scriptscriptstyle F}}^{2}}{y^{2}-2y_{{\scriptscriptstyle L}}y+y_{{\scriptscriptstyle L}}^{2}}\\
+0= &amp; x^{2}+\left(1-\epsilon^{2}\right)y^{2}-2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\\
+\overset{\epsilon\ne1}{=} &amp; x^{2}+\left(1-\epsilon^{2}\right)\left[y^{2}-\dfrac{2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}y+\dfrac{y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}}{1-\epsilon^{2}}\right]\\
+= &amp; x^{2}+\left(1-\epsilon^{2}\right)\\
+&amp; \left[y^{2}-\dfrac{2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}y+\left(\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}-\left(\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}}{1-\epsilon^{2}}\right]\\
+= &amp; x^{2}+\left(1-\epsilon^{2}\right)\left[\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}}{\left(1-\epsilon^{2}\right)^{2}}\right]\\
+= &amp; x^{2}+\left(1-\epsilon^{2}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{\colorbox{#FFFF66}{$\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}$}}{1-\epsilon^{2}}
+\end{align}
+\]</span></p>
+</div>
+<div show-in="pdf">
+
+</div>
+<div show-in="html">
+<p><span class="math display">\[
+\require{color}
+\begin{aligned}
+&amp; \colorbox{#FFFF66}{$\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}$}\\
+= &amp; \left(1-\epsilon^{2}\right)y_{{\scriptscriptstyle F}}^{2}-\left(\epsilon^{2}-\epsilon^{4}\right)y_{{\scriptscriptstyle L}}^{2}-y_{{\scriptscriptstyle F}}^{2}+2\epsilon^{2}y_{{\scriptscriptstyle F}}y_{{\scriptscriptstyle L}}-\epsilon^{4}y_{{\scriptscriptstyle L}}^{2}\\
+= &amp; \left(1-\epsilon^{2}\right)y_{{\scriptscriptstyle F}}^{2}-\left(\epsilon^{2}-\epsilon^{4}\right)y_{{\scriptscriptstyle L}}^{2}-y_{{\scriptscriptstyle F}}^{2}+2\epsilon^{2}y_{{\scriptscriptstyle F}}y_{{\scriptscriptstyle L}}-\epsilon^{4}y_{{\scriptscriptstyle L}}^{2}\\
+= &amp; -\epsilon^{2}y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}+2\epsilon^{2}y_{{\scriptscriptstyle F}}y_{{\scriptscriptstyle L}}=-\colorbox{#FFD1DC}{$\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}$}
+\end{aligned}
+\]</span></p>
+</div>
+<div show-in="pdf">
+
+</div>
+<div show-in="html">
+<p><span class="math display">\[
+\begin{aligned}
+\dfrac{\colorbox{#FFD1DC}{$\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}$}}{1-\epsilon^{2}}\overset{\epsilon\ne1}{=} &amp; x^{2}+\left(1-\epsilon^{2}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}\\
+1\overset{\epsilon\ne0,1}{=} &amp; \begin{cases}
+\left(\dfrac{x-0}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{\sqrt{1-\epsilon^{2}}}}\right)^{2}+\left(\dfrac{y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}}\right)^{2} &amp; 1-\epsilon^{2}&gt;0\overset{\epsilon\ge0}{\Rightarrow}0&lt;\epsilon&lt;1\\
+-\left(\dfrac{x-0}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{\sqrt{\epsilon^{2}-1}}}\right)^{2}+\left(\dfrac{y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}}\right)^{2} &amp; 1-\epsilon^{2}&lt;0\overset{\epsilon\ge0}{\Rightarrow}\epsilon&gt;1
+\end{cases}
+\end{aligned}
+\]</span></p>
+</div>
+<div show-in="pdf">
+
+</div>
+<p><span class="math inline">\(\epsilon=0\)</span> or <span class="math inline">\(\lim\limits _{\left|y_{L}\right|\rightarrow\infty}\epsilon=0\)</span></p>
+<p><span class="math display">\[
+r=\overline{PF}=\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert =\left\Vert \left(x,y-y_{{\scriptscriptstyle F}}\right)\right\Vert =\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}
+\]</span></p>
+<p><span class="math display">\[
+\epsilon=\dfrac{r}{d\left(P,L\right)}=\dfrac{\overline{PF}}{\overline{PP^{\prime}}}=\dfrac{\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(x,y\right)-\left(x,y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\left\Vert \left(x,y-y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(0,y-y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\left|y-y_{{\scriptscriptstyle L}}\right|}
+\]</span></p>
+<p><span class="math display">\[
+\lim_{\left|y_{L}\right|\rightarrow\infty}\epsilon=\lim_{\left|y_{L}\right|\rightarrow\infty}\dfrac{r}{d\left(P,L\right)}=\lim_{\left|y_{L}\right|\rightarrow\infty}\dfrac{\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\left|y-y_{{\scriptscriptstyle L}}\right|}=0
+\]</span></p>
+<p><span class="math inline">\(\epsilon=1\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+0= &amp; x^{2}+\left(1-\epsilon^{2}\right)y^{2}-2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\\
+\overset{\epsilon=1}{=} &amp; x^{2}+\left(1-1^{2}\right)y^{2}-2\left(y_{{\scriptscriptstyle F}}-1^{2}y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}^{2}-1^{2}y_{{\scriptscriptstyle L}}^{2}\right)\\
+= &amp; x^{2}-2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}^{2}-y_{{\scriptscriptstyle L}}^{2}\right)\\
+= &amp; x^{2}-2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}\right)\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\\
+x^{2}= &amp; 2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}}{2}\right)
+\end{aligned}
+\]</span></p>
+<p>Let one curve vertex <span class="math inline">\(P=V=\left(0,0\right)\)</span> on the curve, and fix the directrix <span class="math inline">\(L\)</span> or <span class="math inline">\(y_{{\scriptscriptstyle L}}\)</span>,</p>
+<p><span class="math inline">\(\epsilon\ne1\)</span>
+<span class="math display">\[
+\begin{aligned}
+&amp; 1\overset{P\left(x,y\right)=V\left(0,0\right)}{=}0+\left(\dfrac{0-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}}\right)^{2}\\
+\Rightarrow &amp; y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}=\pm\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\\
+\Rightarrow &amp; \begin{cases}
+\left(1-\epsilon\right)y_{{\scriptscriptstyle F}}=\epsilon\left(\epsilon-1\right)y_{{\scriptscriptstyle L}} &amp; +\\
+\left(1+\epsilon\right)y_{{\scriptscriptstyle F}}=\epsilon\left(\epsilon+1\right)y_{{\scriptscriptstyle L}} &amp; -
+\end{cases}\\
+\Rightarrow &amp; y_{{\scriptscriptstyle F}}=\begin{cases}
+-\epsilon y_{{\scriptscriptstyle L}} &amp; +\\
+\epsilon y_{{\scriptscriptstyle L}} &amp; -
+\end{cases}
+\end{aligned}
+\]</span></p>
+<p><span class="math inline">\(\epsilon=1\)</span>
+<span class="math display">\[
+\begin{aligned}
+&amp; x^{2}=2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}}{2}\right)\\
+\overset{P\left(x,y\right)=V\left(0,0\right)}{\Rightarrow} &amp; 0^{2}=2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\left(0-\dfrac{y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}}{2}\right)\\
+\Rightarrow &amp; 0=\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\left(y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}\right)\\
+\Rightarrow &amp; y_{{\scriptscriptstyle F}}=\mp y_{{\scriptscriptstyle L}}
+\end{aligned}
+\]</span></p>
+<p>or by definition of eccentricity <a href="conic-section.html#eq:eccentricity">(20.1)</a></p>
+<p><span class="math display">\[
+\begin{aligned}
+0\le\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\overline{PF}}{\overline{PP^{\prime}}}= &amp; \dfrac{\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(x,y\right)-\left(x,y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\left\Vert \left(x,y-y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(0,y-y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\sqrt{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}}\\
+&amp; \overset{P\left(x,y\right)=V\left(0,0\right)}{=}\dfrac{\sqrt{0^{2}+\left(0-y_{{\scriptscriptstyle F}}\right)^{2}}}{\sqrt{\left(0-y_{{\scriptscriptstyle L}}\right)^{2}}}=\sqrt{\left(\dfrac{y_{{\scriptscriptstyle F}}}{y_{{\scriptscriptstyle L}}}\right)^{2}}\\
+\epsilon^{2}= &amp; \left(\dfrac{y_{{\scriptscriptstyle F}}}{y_{{\scriptscriptstyle L}}}\right)^{2}\Rightarrow y_{{\scriptscriptstyle F}}=\mp\epsilon y_{{\scriptscriptstyle L}}
+\end{aligned}
+\]</span></p>
+<p>actually,</p>
+<p><span class="math display">\[
+y_{{\scriptscriptstyle F}}=-\epsilon y_{{\scriptscriptstyle L}}
+\]</span></p>
+</div>
+<div id="two-definition-equivalence-for-ellipse-and-hyperbola" class="section level2 hasAnchor" number="20.2">
+<h2><span class="header-section-number">20.2</span> two-definition equivalence for ellipse and hyperbola<a href="conic-section.html#two-definition-equivalence-for-ellipse-and-hyperbola" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="https://math.stackexchange.com/questions/1833973/prove-that-the-directrix-focus-and-focus-focus-definitions-are-equivalent" class="uri">https://math.stackexchange.com/questions/1833973/prove-that-the-directrix-focus-and-focus-focus-definitions-are-equivalent</a></p>
+<p><a href="https://www.geogebra.org/calculator/zkppuxwp" class="uri">https://www.geogebra.org/calculator/zkppuxwp</a></p>
+<div show-in="html">
+<iframe src="https://www.geogebra.org/calculator/zkppuxwp?embed" width="600" height="450" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0">
+</iframe>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-3"></span>
+<img src="img/conic-sections.svg" alt="conic sections" width="75%" />
+<p class="caption">
+Fig. 7.1: conic sections
+</p>
+</div>
+<p><span class="math display">\[
+\begin{cases}
+P=\left(x,y\right)\\
+F=\left(x_{{\scriptscriptstyle F}},y_{{\scriptscriptstyle F}}\right)=\left(\alpha,\varphi\right) &amp; F^{\prime}=\left(x_{{\scriptscriptstyle F^{\prime}}},y_{{\scriptscriptstyle F^{\prime}}}\right)=\left(\chi,\psi\right)\\
+L=A^{\prime}x+B^{\prime}y+C^{\prime}=0
+\end{cases}
+\]</span></p>
+<div id="first-definition-for-conic-sections-including-ellipses-and-hyperbolas" class="section level3 hasAnchor" number="20.2.1">
+<h3><span class="header-section-number">20.2.1</span> first definition for conic sections including ellipses and hyperbolas<a href="conic-section.html#first-definition-for-conic-sections-including-ellipses-and-hyperbolas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="distance-from-a-point-to-a-line.html#distance-from-a-point-to-a-line">distance from a point to a line</a><sup>[<a href="distance-from-a-point-to-a-line.html#distance-from-a-point-to-a-line">21</a>]</sup></p>
+<p><span class="math display">\[
+0\le\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\sqrt{\left(x-x_{{\scriptscriptstyle F}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\dfrac{\left|A^{\prime}x+B^{\prime}y+C^{\prime}\right|}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}}=\dfrac{\sqrt{\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}}}{\left|Ax+By+C\right|},\begin{cases}
+A=\dfrac{A^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\\
+B=\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\\
+C=\dfrac{C^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}
+\end{cases}
+\]</span>
+<span class="math display">\[
+A^{2}+B^{2}=\left(\dfrac{A^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\right)^{2}+\left(\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\right)^{2}=1
+\]</span></p>
+<p>or allowing <span class="math inline">\(\epsilon&lt;0\)</span> by squaring the definition</p>
+<p><span class="math display">\[
+\epsilon^{2}=\dfrac{\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}}{\left(Ax+By+C\right)^{2}}=\dfrac{\left(x-x_{{\scriptscriptstyle F}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}{\dfrac{\left(A^{\prime}x+B^{\prime}y+C^{\prime}\right)^{2}}{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}
+\]</span></p>
+<p><span class="math display">\[
+\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}=\left[\epsilon\left(Ax+By+C\right)\right]^{2}
+\]</span></p>
+</div>
+<div id="second-definition-for-ellipses-and-hyperbolas" class="section level3 hasAnchor" number="20.2.2">
+<h3><span class="header-section-number">20.2.2</span> second definition for ellipses and hyperbolas<a href="conic-section.html#second-definition-for-ellipses-and-hyperbolas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="math display">\[
+\begin{aligned}
+2c=\overline{FF^{\prime}}= &amp; \left\Vert \left(x_{{\scriptscriptstyle F}},y_{{\scriptscriptstyle F}}\right)-\left(x_{{\scriptscriptstyle F^{\prime}}},y_{{\scriptscriptstyle F^{\prime}}}\right)\right\Vert =\left\Vert \left(\alpha,\varphi\right)-\left(\chi,\psi\right)\right\Vert \\
+= &amp; \sqrt{\left(\alpha-\chi\right)^{2}+\left(\chi-\psi\right)^{2}}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+D= &amp; \begin{cases}
+\sqrt{\left(x-x_{{\scriptscriptstyle F}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}+\sqrt{\left(x-x_{{\scriptscriptstyle F^{\prime}}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F^{\prime}}}\right)^{2}} &amp; \text{ellipse}\\
+\sqrt{\left(x-x_{{\scriptscriptstyle F}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}-\sqrt{\left(x-x_{{\scriptscriptstyle F^{\prime}}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F^{\prime}}}\right)^{2}} &amp; \text{hyperbola}
+\end{cases}\\
+= &amp; \sqrt{\left(x-x_{{\scriptscriptstyle F}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}\pm\sqrt{\left(x-x_{{\scriptscriptstyle F^{\prime}}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F^{\prime}}}\right)^{2}}\\
+= &amp; \sqrt{\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}}\pm\sqrt{\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}= &amp; \left(D\mp\sqrt{\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}}\right)^{2}\\
+= &amp; D^{2}\mp2D\sqrt{\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}}\\
+&amp; +\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+D^{2}= &amp; \left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\\
+&amp; \pm2\sqrt{\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]}\\
+&amp; \left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}-D^{2}\\
+= &amp; \mp2\sqrt{\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]}\\
+&amp; \left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]^{2}+D^{4}\\
+&amp; -2D^{2}\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\\
+= &amp; 4\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\\
+&amp; \left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]^{2}+\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]^{2}\\
+&amp; +2\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]+D^{4}\\
+&amp; -2D^{2}\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\\
+= &amp; 4\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\\
+0= &amp; \left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]^{2}+\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]^{2}\\
+&amp; -2\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]+D^{4}\\
+&amp; -2D^{2}\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\\
+0= &amp; \left\{ \left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]-\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\right\} ^{2}+D^{4}\\
+&amp; -2D^{2}\left\{ \left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]+\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\right\} \\
+0= &amp; \left\{ \left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]-\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\right\} ^{2}+D^{4}\\
+&amp; -2D^{2}\left\{ \left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]-\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\right\} \\
+&amp; -4D^{2}\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\\
+&amp; \left(2D\right)^{2}\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\\
+= &amp; \left\{ \left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]-\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]-D^{2}\right\} ^{2}\\
+= &amp; \left\{ \left[\left(x-\chi\right)^{2}-\left(x-\alpha\right)^{2}\right]+\left[\left(y-\psi\right)^{2}-\left(y-\varphi\right)^{2}\right]-D^{2}\right\} ^{2}\\
+= &amp; \left\{ \left(2x-\chi-\alpha\right)\left(\alpha-\chi\right)+\left(2y-\psi-\varphi\right)\left(\varphi-\psi\right)-D^{2}\right\} ^{2}\\
+= &amp; \left\{ 2\left(\alpha-\chi\right)x-\left(\alpha^{2}-\chi^{2}\right)+2\left(\varphi-\psi\right)y-\left(\varphi^{2}-\psi^{2}\right)-D^{2}\right\} ^{2}\\
+= &amp; \left\{ 2\left(\alpha-\chi\right)x+2\left(\varphi-\psi\right)y-\left[\left(\alpha^{2}-\chi^{2}\right)+\left(\varphi^{2}-\psi^{2}\right)+D^{2}\right]\right\} ^{2}\\
+D\ne0\\
+&amp; \left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\\
+= &amp; \left[\dfrac{\alpha-\chi}{D}x+\dfrac{\varphi-\psi}{D}y-\left(\dfrac{\alpha^{2}-\chi^{2}}{2D}+\dfrac{\varphi^{2}-\psi^{2}}{2D}+\dfrac{D}{2}\right)\right]^{2}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{cases}
+\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}=\left[\epsilon\left(Ax+By+C\right)\right]^{2}\\
+\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}=\left[\dfrac{\alpha-\chi}{D}x+\dfrac{\varphi-\psi}{D}y-\left(\dfrac{\alpha^{2}-\chi^{2}}{2D}+\dfrac{\varphi^{2}-\psi^{2}}{2D}+\dfrac{D}{2}\right)\right]^{2}
+\end{cases}
+\]</span></p>
+<p><span class="math display">\[
+\left(A,B,C\right)\rightleftarrows\left(\chi,\psi,D\right)
+\]</span></p>
+<p><span class="math display">\[
+\begin{cases}
+\epsilon A=\pm\dfrac{\alpha-\chi}{D} &amp; \chi\pm\epsilon AD=\alpha\\
+\epsilon B=\pm\dfrac{\varphi-\psi}{D} &amp; \psi\pm\epsilon BD=\varphi\\
+\epsilon C=\mp\left(\dfrac{\alpha^{2}-\chi^{2}}{2D}+\dfrac{\varphi^{2}-\psi^{2}}{2D}+\dfrac{D}{2}\right)
+\end{cases}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+2\epsilon C= &amp; \mp\left(\dfrac{\alpha-\chi}{D}\left(\alpha+\chi\right)+\dfrac{\varphi-\psi}{D}\left(\varphi+\psi\right)+D\right)\\
+= &amp; \mp\left(\pm\epsilon A\left(\alpha+\chi\right)\pm\epsilon B\left(\varphi+\psi\right)+D\right)\\
+\mp\epsilon\left(A\alpha+B\varphi+2C\right)= &amp; \pm\epsilon A\chi\pm\epsilon B\psi+D
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{pmatrix}1 &amp; 0 &amp; \pm\epsilon A\\
+0 &amp; 1 &amp; \pm\epsilon B\\
+\pm\epsilon A &amp; \pm\epsilon B &amp; 1
+\end{pmatrix}\begin{pmatrix}\chi\\
+\psi\\
+D
+\end{pmatrix}=\begin{pmatrix}\alpha\\
+\varphi\\
+\mp\epsilon\left(A\alpha+B\varphi+2C\right)
+\end{pmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\begin{pmatrix}1 &amp; 0 &amp; \pm\epsilon A &amp; \alpha\\
+0 &amp; 1 &amp; \pm\epsilon B &amp; \varphi\\
+0 &amp; \pm\epsilon B &amp; 1\mp\epsilon^{2}A^{2} &amp; \mp\epsilon\left(2A\alpha+B\varphi+2C\right)
+\end{pmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\begin{pmatrix}1 &amp; 0 &amp; \pm\epsilon A &amp; \alpha\\
+0 &amp; 1 &amp; \pm\epsilon B &amp; \varphi\\
+0 &amp; 0 &amp; 1\mp\epsilon^{2}A^{2}\mp\epsilon^{2}B^{2} &amp; \mp\epsilon\left(2A\alpha+2B\varphi+2C\right)
+\end{pmatrix}
+\]</span></p>
+<p><span class="math display">\[
+\begin{pmatrix}1 &amp; 0 &amp; \pm\epsilon A &amp; \alpha\\
+0 &amp; 1 &amp; \pm\epsilon B &amp; \varphi\\
+0 &amp; 0 &amp; 1 &amp; \dfrac{\mp2\epsilon\left(A\alpha+B\varphi+C\right)}{1\mp\epsilon^{2}\left(A^{2}+B^{2}\right)}
+\end{pmatrix}
+\]</span></p>
+<p><span class="math display">\[
+A^{2}+B^{2}=\left(\dfrac{A^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\right)^{2}+\left(\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\right)^{2}=1
+\]</span></p>
+<p><span class="math display">\[
+\begin{cases}
+\chi=\alpha\mp\epsilon AD=\alpha\mp\epsilon\dfrac{A^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}D\\
+\psi=\varphi\mp\epsilon BD=\varphi\mp\epsilon\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}D\\
+D=\dfrac{\mp2\epsilon\left(A\alpha+B\varphi+C\right)}{1\mp\epsilon^{2}\left(A^{2}+B^{2}\right)}=\dfrac{\mp2\epsilon}{1\mp\epsilon^{2}}\dfrac{A^{\prime}\alpha+B^{\prime}\varphi+C^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}} &amp; A^{2}+B^{2}=1
+\end{cases}
+\]</span></p>
+<p>actually, only one of two solutions is true</p>
+<p><span class="math display">\[
+\begin{cases}
+\chi=\alpha-\epsilon AD=\alpha-\epsilon\dfrac{A^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}D=\alpha-\dfrac{2\epsilon^{2}}{\epsilon^{2}-1}\dfrac{A^{\prime}{}^{2}\alpha+A^{\prime}B^{\prime}\varphi+A^{\prime}C^{\prime}}{A^{\prime}{}^{2}+B^{\prime}{}^{2}}\\
+\psi=\varphi-\epsilon BD=\varphi-\epsilon\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}D=\varphi-\dfrac{2\epsilon^{2}}{\epsilon^{2}-1}\dfrac{A^{\prime}B^{\prime}\alpha+B^{\prime}{}^{2}\varphi+B^{\prime}C^{\prime}}{A^{\prime}{}^{2}+B^{\prime}{}^{2}}\\
+D=\dfrac{-2\epsilon\left(A\alpha+B\varphi+C\right)}{1-\epsilon^{2}\left(A^{2}+B^{2}\right)}=\dfrac{-2\epsilon}{1-\epsilon^{2}}\dfrac{A^{\prime}\alpha+B^{\prime}\varphi+C^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}=\dfrac{2\epsilon}{\epsilon^{2}-1}\dfrac{A^{\prime}\alpha+B^{\prime}\varphi+C^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}
+\end{cases}
+\]</span></p>
+<p><span class="math display">\[
+\begin{cases}
+\chi=\dfrac{\left(\epsilon^{2}-1\right)\left(A^{\prime}{}^{2}+B^{\prime}{}^{2}\right)\alpha-2\epsilon^{2}\left(A^{\prime}{}^{2}\alpha+A^{\prime}B^{\prime}\varphi+A^{\prime}C^{\prime}\right)}{\left(\epsilon^{2}-1\right)\left(A^{\prime}{}^{2}+B^{\prime}{}^{2}\right)}\\
+\psi=\dfrac{\left(\epsilon^{2}-1\right)\left(A^{\prime}{}^{2}+B^{\prime}{}^{2}\right)\varphi-2\epsilon^{2}\left(A^{\prime}B^{\prime}\alpha+B^{\prime}{}^{2}\varphi+B^{\prime}C^{\prime}\right)}{\left(\epsilon^{2}-1\right)\left(A^{\prime}{}^{2}+B^{\prime}{}^{2}\right)}\\
+\left|\dfrac{D}{d\left(F,L\right)}\right|=\left|\dfrac{2\epsilon}{1-\epsilon^{2}}\right|\Rightarrow\left(\dfrac{D}{d\left(F,L\right)}\right)^{2}=\left(\dfrac{2\epsilon}{1-\epsilon^{2}}\right)^{2}
+\end{cases}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; \left(\epsilon^{2}-1\right)\left(A^{\prime}{}^{2}+B^{\prime}{}^{2}\right)\alpha-2\epsilon^{2}\left(A^{\prime}{}^{2}\alpha+A^{\prime}B^{\prime}\varphi+A^{\prime}C^{\prime}\right)\\
+= &amp; \left(-\left(\epsilon^{2}+1\right)A^{\prime}{}^{2}+\left(\epsilon^{2}-1\right)B^{\prime}{}^{2}\right)\alpha-2\epsilon^{2}\left(A^{\prime}B^{\prime}\varphi+A^{\prime}C^{\prime}\right)\\
+= &amp; \left(-\left(\epsilon^{2}+1\right)A^{\prime}{}^{2}+\left(\epsilon^{2}-1\right)B^{\prime}{}^{2}\right)\alpha-2\epsilon^{2}\left(A^{\prime}B^{\prime}\varphi+A^{\prime}C^{\prime}\right)
+\end{aligned}
+\]</span></p>
+<p>Can the above be more simplified?</p>
+<p><span class="math display">\[
+\begin{aligned}
+\overline{FF^{\prime}}^{2}= &amp; \left(\alpha-\chi\right)^{2}+\left(\varphi-\psi\right)^{2}\\
+= &amp; \left(\alpha-\left(\alpha-\epsilon AD\right)\right)^{2}+\left(\varphi-\left(\varphi-\epsilon BD\right)\right)^{2}\\
+= &amp; \left(\epsilon D\right)^{2}\left(A^{2}+B^{2}\right)\\
+= &amp; \left(\epsilon D\right)^{2}
+\end{aligned}
+\]</span></p>
+</div>
+<div id="eccentricity-and-its-equivalent-representation" class="section level3 hasAnchor" number="20.2.3">
+<h3><span class="header-section-number">20.2.3</span> eccentricity and its equivalent representation<a href="conic-section.html#eccentricity-and-its-equivalent-representation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="math display">\[
+\left(\dfrac{c}{a}\right)^{2}=\left(\dfrac{\overline{PF}}{d\left(P,L\right)}\right)^{2}=\epsilon^{2}=\left(\dfrac{\overline{FF^{\prime}}}{D}\right)^{2}=\left(\dfrac{2c}{D}\right)^{2}\Rightarrow D=2a
+\]</span></p>
+<p><span class="math display">\[
+\left(\dfrac{D}{d\left(F,L\right)}\right)^{2}=\left(\dfrac{2\epsilon}{1-\epsilon^{2}}\right)^{2}
+\]</span></p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
+<img src="img/conic-sections-ellipse.svg" alt="conic sections: ellipse" width="75%" />
+<p class="caption">
+Fig. 7.2: conic sections: ellipse
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-5"></span>
+<img src="img/conic-sections-parabola.svg" alt="conic sections: parabola" width="75%" />
+<p class="caption">
+Fig. 13.1: conic sections: parabola
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-6"></span>
+<img src="img/conic-sections-hyperbola.svg" alt="conic sections: hyperbola" width="75%" />
+<p class="caption">
+Fig. 7.3: conic sections: hyperbola
+</p>
+</div>
+</div>
+</div>
+<div id="cartesian-coordinate-standard-form-standard-equation" class="section level2 hasAnchor" number="20.3">
+<h2><span class="header-section-number">20.3</span> Cartesian coordinate: standard form / standard equation<a href="conic-section.html#cartesian-coordinate-standard-form-standard-equation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span class="math display">\[
+\begin{array}{ccccc}
+\text{circle} &amp; \left(\dfrac{y-k}{a}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} &amp; =1 &amp;  &amp; b=a\\
+\text{ellipse} &amp; \left(\dfrac{y-k}{b}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} &amp; =1 &amp; \text{vertical} &amp; b&gt;a\\
+&amp; \left(\dfrac{y-k}{b}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} &amp; =1 &amp; \text{horizontal} &amp; a&gt;b\\
+\text{parabola} &amp; \left(y-k\right)-4c\left(x-h\right)^{2} &amp; =0 &amp; \text{vertical}\\
+&amp; -4c\left(y-k\right)^{2}+\left(x-h\right) &amp; =0 &amp; \text{horizontal}\\
+\text{hyperbola} &amp; \left(\dfrac{y-k}{b}\right)^{2}-\left(\dfrac{x-h}{a}\right)^{2} &amp; =1 &amp; \text{vertical} &amp; \dfrac{x-h}{a}=0\Rightarrow\dfrac{y-k}{b}=\pm1\\
+&amp; -\left(\dfrac{y-k}{b}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} &amp; =1 &amp; \text{horizontal} &amp; \dfrac{y-k}{b}=0\Rightarrow\dfrac{x-h}{a}=\pm1
+\end{array}
+\]</span></p>
+</div>
+<div id="parametric-equation" class="section level2 hasAnchor" number="20.4">
+<h2><span class="header-section-number">20.4</span> parametric equation<a href="conic-section.html#parametric-equation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span class="math display">\[
+\begin{array}{cccccccc}
+\text{circle} &amp; \left(\dfrac{y-k}{a}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} &amp; =1 &amp; \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= &amp; \begin{pmatrix}a &amp; 0 &amp; h\\
+0 &amp; a &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}\cos t\\
+\sin t\\
+1
+\end{pmatrix} &amp; =\begin{pmatrix}\cos t &amp; 0 &amp; h\\
+0 &amp; \sin t &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}a\\
+a\\
+1
+\end{pmatrix}\\
+\text{ellipse} &amp; \left(\dfrac{y-k}{b}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} &amp; =1 &amp; \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= &amp; \begin{pmatrix}a &amp; 0 &amp; h\\
+0 &amp; b &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}\cos t\\
+\sin t\\
+1
+\end{pmatrix} &amp; =\begin{pmatrix}\cos t &amp; 0 &amp; h\\
+0 &amp; \sin t &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}a\\
+b\\
+1
+\end{pmatrix}\\
+\text{parabola} &amp; \left(y-k\right)-4c\left(x-h\right)^{2} &amp; =0 &amp; \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= &amp; \begin{pmatrix}1 &amp; 0 &amp; h\\
+0 &amp; 4c &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}t\\
+t^{2}\\
+1
+\end{pmatrix} &amp; =\begin{pmatrix}t &amp; 0 &amp; h\\
+0 &amp; t^{2} &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}1\\
+4c\\
+1
+\end{pmatrix}\\
+&amp; -4c\left(y-k\right)^{2}+\left(x-h\right) &amp; =0 &amp; \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= &amp; \begin{pmatrix}4c &amp; 0 &amp; h\\
+0 &amp; 1 &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}t^{2}\\
+t\\
+1
+\end{pmatrix} &amp; =\begin{pmatrix}t^{2} &amp; 0 &amp; h\\
+0 &amp; t &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}4c\\
+1\\
+1
+\end{pmatrix}\\
+\text{hyperbola} &amp; \left(\dfrac{y-k}{b}\right)^{2}-\left(\dfrac{x-h}{a}\right)^{2} &amp; =1 &amp; \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= &amp; \begin{pmatrix}a &amp; 0 &amp; h\\
+0 &amp; b &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}\pm\cosh t\\
+\sinh t\\
+1
+\end{pmatrix} &amp; =\begin{pmatrix}\tan t &amp; 0 &amp; h\\
+0 &amp; \sec t &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}a\\
+b\\
+1
+\end{pmatrix}\\
+&amp; -\left(\dfrac{y-k}{b}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} &amp; =1 &amp; \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= &amp; \begin{pmatrix}a &amp; 0 &amp; h\\
+0 &amp; b &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}\sinh t\\
+\pm\cosh t\\
+1
+\end{pmatrix} &amp; =\begin{pmatrix}\sec t &amp; 0 &amp; h\\
+0 &amp; \tan t &amp; k\\
+0 &amp; 0 &amp; 1
+\end{pmatrix} &amp; \begin{pmatrix}a\\
+b\\
+1
+\end{pmatrix}
+\end{array}
+\]</span></p>
+</div>
+<div id="polar-coordinate" class="section level2 hasAnchor" number="20.5">
+<h2><span class="header-section-number">20.5</span> polar coordinate<a href="conic-section.html#polar-coordinate" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span class="math display">\[
+\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}=\left[\epsilon\left(Ax+By+C\right)\right]^{2}
+\]</span></p>
+<p><span class="math inline">\(\begin{cases}x=r\cos\theta\\y=r\sin\theta\end{cases}\)</span></p>
+<p><span class="math display">\[
+\left(r\cos\theta-\alpha\right)^{2}+\left(r\sin\theta-\varphi\right)^{2}=\left[\epsilon\left(Ar\cos\theta+Br\sin\theta+C\right)\right]^{2}
+\]</span></p>
+<p>If <span class="math inline">\(\begin{cases}F=\left(x_{{\scriptscriptstyle F}},y_{{\scriptscriptstyle F}}\right)=\left(\alpha,\varphi\right)=\left(0,0\right)\\L=Ax+By+C=x+p=0\end{cases}\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\left(r\cos\theta\right)^{2}+\left(r\sin\theta\right)^{2}= &amp; \left[\epsilon\left(r\cos\theta+p\right)\right]^{2}\\
+r^{2}=\\
+r= &amp; \pm\epsilon\left(r\cos\theta+p\right)\\
+= &amp; \pm\left(r\epsilon\cos\theta+\epsilon p\right)\\
+r\left(1\mp\epsilon\cos\theta\right)= &amp; \epsilon p\\
+r= &amp; \dfrac{\epsilon p}{1\mp\epsilon\cos\theta}
+\end{aligned}
+\]</span></p>
+<p><a href="https://www.geogebra.org/calculator/azksjxbq" class="uri">https://www.geogebra.org/calculator/azksjxbq</a></p>
+<div show-in="html">
+<iframe src="https://www.geogebra.org/calculator/azksjxbq?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0">
+</iframe>
+</div>
+<p><span class="math inline">\(r=\dfrac{\epsilon p}{1-\epsilon\cos\theta}\)</span> will not cross <span class="math inline">\(L=x+p=0\)</span> on graphs, so maybe it is a more correct solution</p>
+<span class="math display">\[
+r=\dfrac{\epsilon p}{1-\epsilon\cos\theta}
+\]</span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-7"></span>
+<img src="img/conic-sections-polar-ellipse.svg" alt="polar conic sections: ellipse" width="75%" />
+<p class="caption">
+Fig. 20.2: polar conic sections: ellipse
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-8"></span>
+<img src="img/conic-sections-polar-parabola.svg" alt="polar conic sections: parabola" width="75%" />
+<p class="caption">
+Fig. 20.3: polar conic sections: parabola
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-9"></span>
+<img src="img/conic-sections-polar-hyperbola.svg" alt="polar conic sections: hyperbola" width="75%" />
+<p class="caption">
+Fig. 20.4: polar conic sections: hyperbola
+</p>
+</div>
+<p><a href="https://ccjou.wordpress.com/2013/05/24/%E5%9C%93%E9%8C%90%E6%9B%B2%E7%B7%9A/" class="uri">https://ccjou.wordpress.com/2013/05/24/%E5%9C%93%E9%8C%90%E6%9B%B2%E7%B7%9A/</a></p>
+</div>
+<div id="cartesian-coordinate-general-form-quadratic-equation" class="section level2 hasAnchor" number="20.6">
+<h2><span class="header-section-number">20.6</span> Cartesian coordinate: general form / quadratic equation<a href="conic-section.html#cartesian-coordinate-general-form-quadratic-equation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="https://en.wikipedia.org/wiki/Matrix_representation_of_conic_sections" class="uri">https://en.wikipedia.org/wiki/Matrix_representation_of_conic_sections</a></p>
+</div>
+<div id="homogeneous-coordinate" class="section level2 hasAnchor" number="20.7">
+<h2><span class="header-section-number">20.7</span> homogeneous coordinate<a href="conic-section.html#homogeneous-coordinate" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+
+</div>
+</div>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://redwing1304.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="laplace-transform.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="distance-from-a-point-to-a-line.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "night",
+"family": "sans",
+"size": 1
+},
+"edit": {
+"link": "https://github.com/RRWWW/math/edit/main/202402252333-conic-section.Rmd",
+"text": "Edit on GitHub"
+},
+"history": {
+"link": "https://github.com/RRWWW/math/commits/main/202402252333-conic-section.Rmd",
+"text": null
+},
+"view": {
+"link": "https://github.com/RRWWW/math/blob/main/202402252333-conic-section.Rmd",
+"text": null
+},
+"download": [["math.pdf", "PDF"], ["math.docx", "Word DOCX"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

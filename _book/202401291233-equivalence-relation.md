@@ -1,24 +1,8 @@
-# equivalence relation {-}
-
-<!-- \begin{CJK}{UTF8}{bsmi} -->
-<!-- \begin{defn} -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://stackoverflow.com/questions/76240244/bookdown-conditional-display-of-text-and-code-blocks-latex-pdf-vs-html
+# equivalence relation
 
 ::: {show-in="html"}
+
+等價關係 equivalence relation
 
 \begingroup
 \fontfamily{ppl}\fontsize{1}{1}\selectfont
@@ -74,6 +58,5 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 \end{cases}
 \end{align*}
 \end{CJK}
-<!-- \end{defn} -->
 
 :::

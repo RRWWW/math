@@ -1,4 +1,4 @@
 # statistics
 
-```{r, child='202402170033-covariance-matrix.Rmd'}
+```{r, child='202402170033-covariance-matrix.Rmd', eval=FALSE}
 ```

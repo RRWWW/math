@@ -1,0 +1,32 @@
+# (PART) by descipline {-}
+# mathematics {#nice-label}
+
+- formula typesetting
+    - TeX
+        - LaTeX
+            - pdfLaTeX
+            - XeLaTeX
+            - editor/tool:
+                - LyX
+                - OverLeaf
+                - MathPix Snip
+                - Micro$oft Office Word
+                    - WordTeX https://tomwildenhain.com/wordtex/
+                        - Pandoc dependent
+                    - https://superuser.com/questions/1114697/select-a-different-math-font-in-microsoft-word
+                    - https://www.youtube.com/watch?v=jlX_pThh7z8
+                - Micro$oft Office PowerPoint
+                    - IguanaTeX https://www.jonathanleroux.org/software/iguanatex/
+    - MathML
+    - MathJax: JavaScript
+- symbolic computing
+    - Maple:          by MapleSoft
+    - Mathematica:    by Wolfram
+- numeric computing
+    - MatLab:         by MathWorks
+
+[equivalence relation]^[\@ref(equivalence-relation)]^
+
+[equivalence class]^[\@ref(equivalence-class)]^
+
+[partition]^[\@ref(partition)]^
