@@ -1,6 +1,6 @@
 # TikZ
 
-[two columns] [\@ref(two-columns)]
+[two columns][\@ref(two-columns)]
 
 :::::: {.cols data-latex=""}
 
