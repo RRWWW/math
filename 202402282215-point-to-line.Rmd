@@ -57,7 +57,7 @@ $$
 x= & \dfrac{B^{2}x_{0}-ABy_{0}-AC}{A^{2}+B^{2}}
 \end{aligned}
 $$
-or by completing the square to find $x$
+or by completing the square to find $x$.
 
 $$
 \begin{aligned}
@@ -145,19 +145,31 @@ $$
 \end{cases}
 $$
 
+::: {show-in="html"}
+
+$P$到$L$的距離$d\left(P,L\right)$即為$L$線上一點$P^{\prime}$對應之$\overset{\rightharpoonup}{PP^{\prime}}$在$L$法向量$\overset{\rightharpoonup}{n}$方向上的投影長
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+$P$到$L$的距離$d\left(P,L\right)$即為$L$線上一點$P^{\prime}$對應之$\overset{\rightharpoonup}{PP^{\prime}}$在$L$法向量$\overset{\rightharpoonup}{n}$方向上的投影長
+\end{CJK}
+
+:::
+
 $$
 \begin{aligned}
- & \left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|\\
-= & \left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left\Vert \overset{\rightharpoonup}{n}\right\Vert \left|\cos\theta\right|\\
-\left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left|\cos\theta\right|= & \left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\widehat{\boldsymbol{n}}\right|\\
-= & \dfrac{\left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|}{\left\Vert \overset{\rightharpoonup}{n}\right\Vert }\\
-= & \dfrac{\left|\left(x-x_{0},y-y_{0}\right)\cdot\left(A,B\right)\right|}{\left\Vert \left(A,B\right)\right\Vert }=\dfrac{\left|A\left(x-x_{0}\right)+B\left(y-y_{0}\right)\right|}{\sqrt{A^{2}+B^{2}}}\\
-= & \dfrac{\left|-Ax_{0}-By_{0}+Ax+By\right|}{\sqrt{A^{2}+B^{2}}}\begin{subarray}{c}
+\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}= & \left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left\Vert \overset{\rightharpoonup}{n}\right\Vert \cos\theta\\
+\left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|= & \left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left\Vert \overset{\rightharpoonup}{n}\right\Vert \left|\cos\theta\right|\\
+\left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left|\cos\theta\right|= & \left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\widehat{\boldsymbol{n}}\right|=\dfrac{\left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|}{\left\Vert \overset{\rightharpoonup}{n}\right\Vert }=\dfrac{\left|\left(x-x_{0},y-y_{0}\right)\cdot\left(A,B\right)\right|}{\left\Vert \left(A,B\right)\right\Vert }\\
+= & \dfrac{\left|A\left(x-x_{0}\right)+B\left(y-y_{0}\right)\right|}{\sqrt{A^{2}+B^{2}}}=\dfrac{\left|-Ax_{0}-By_{0}+Ax+By\right|}{\sqrt{A^{2}+B^{2}}}\\
+\begin{subarray}{c}
 Ax+By+C=0\\
 =\\
 Ax+By=-C
-\end{subarray}\dfrac{\left|-Ax_{0}-By_{0}-C\right|}{\sqrt{A^{2}+B^{2}}}\\
-= & \dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
+\end{subarray} & \dfrac{\left|-Ax_{0}-By_{0}-C\right|}{\sqrt{A^{2}+B^{2}}}=\dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
 \end{aligned}
 $$
 

@@ -21,11 +21,27 @@ devtools::install_github("rstudio/shiny")
 devtools::install_github("rstudio/miniUI")
 ```
 
+### Git
+
+commit: filename or extension is too long
+
+https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows
+
+https://stackoverflow.com/questions/55327408/how-to-fix-git-for-windows-error-could-not-lock-config-file-c-file-path-to-g
+
 ## RMarkdown
 
 https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
 
 https://slides.yihui.org/2020-taipei-satrday-rmarkdown.html#1
+
+### Pandoc link
+
+https://pandoc.org/chunkedhtml-demo/8.16-links-1.html
+
+https://stackoverflow.com/questions/39281266/use-internal-links-in-rmarkdown-html-output
+
+https://community.rstudio.com/t/how-to-hyperlink-between-different-rmd-files-in-rmarkdown/62289
 
 ### URL
 
@@ -748,19 +764,21 @@ https://stackoverflow.com/questions/57469501/cross-referencing-bookdownhtml-docu
 
 [partition] [#partition] (\@ref(partition)) \@ref(#partition)
 
-`[equivalence class]` `\@ref(equivalence class)`
+`[equivalence class]` `\@ref(equivalence-class)`
+
+[equivalence class] (\@ref(equivalence-class))
 
 [equivalence class] [#equivalence class] (\@ref(equivalence class)) \@ref(#equivalence class)
 
 [equivalence-class] [#equivalence-class] (\@ref(equivalence-class)) \@ref(#equivalence-class)
 
-[equivalence-class.html] [equivalence-class.html#equivalence-class] (\@ref(equivalence-class.html)) \@ref(equivalence-class.html#equivalence-class)
+X [equivalence-class.html] [equivalence-class.html#equivalence-class] (\@ref(equivalence-class.html)) \@ref(equivalence-class.html#equivalence-class)
 
 [equivalence relation] [#equivalence relation] (\@ref(equivalence relation)) \@ref(#equivalence relation)
 
 [equivalence-relation] [#equivalence-relation] (\@ref(equivalence-relation)) \@ref(#equivalence-relation)
 
-[equivalence-relation.html] [equivalence-relation.html#equivalence-relation] (\@ref(equivalence-relation.html)) \@ref(equivalence-relation.html#equivalence-relation)
+X [equivalence-relation.html] [equivalence-relation.html#equivalence-relation] (\@ref(equivalence-relation.html)) \@ref(equivalence-relation.html#equivalence-relation)
 
 ## number and reference equations
 

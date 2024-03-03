@@ -568,6 +568,8 @@ b\\
 \end{array}
 $$
 
+[tangent half-angle formula]^[\@ref(tangent-half-angle-formula)]^
+
 ## polar coordinate
 
 $$
@@ -616,10 +618,177 @@ show_fig("img/conic-sections-polar-parabola.svg")
 show_fig("img/conic-sections-polar-hyperbola.svg")
 ```
 
-https://ccjou.wordpress.com/2013/05/24/%E5%9C%93%E9%8C%90%E6%9B%B2%E7%B7%9A/
-
 ## Cartesian coordinate: general form / quadratic equation
+
+::: {show-in="html"}
+
+https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
+\end{CJK}
+
+:::
 
 https://en.wikipedia.org/wiki/Matrix_representation_of_conic_sections
 
+$$
+ax^{2}+bxy+cy^{2}+dx+ey+f=0
+$$
+
+$$
+\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}ax+\left(b/2\right)y\\
+\left(b/2\right)x+cy
+\end{pmatrix}=ax^{2}+bxy+cy^{2}
+$$
+
+$$
+\begin{aligned}
+0= & \begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f\\
+= & \boldsymbol{x}^{\intercal}A\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+f,\begin{cases}
+A=\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix} & A\text{ real symmetric}\\
+\boldsymbol{b}=\begin{pmatrix}d\\
+e
+\end{pmatrix}\\
+\boldsymbol{x}=\begin{pmatrix}x\\
+y
+\end{pmatrix}
+\end{cases}
+\end{aligned}
+$$
+
+[real symmetric matrix diagonalizable]^[\@ref(real-symmetric-matrix-diagonalizable)]^
+
 ## homogeneous coordinate
+
+X [homogeneous coordinate](homogeneous-coordinate-1)
+
+[homogeneous coordinate](homogeneous-coordinate-1.html) O: HTML, X: PDF becoming web link
+
+O [homogeneous coordinate](#homogeneous-coordinate-1)^[\@ref(homogeneous-coordinate-1)]^
+
+X [homogeneous coordinate](#homogeneous-coordinate)
+
+X [homogeneous coordinate]^[\@ref(homogeneous-coordinate)]^
+
+::: {show-in="html"}
+
+https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
+\end{CJK}
+
+:::
+
+$$
+\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & ~\\
+b/2 & c\\
+\\
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & 0\\
+b/2 & c & 0\\
+0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}
+$$
+
+$$
+\begin{aligned}
+0= & ax^{2}+bxy+cy^{2}+dx+ey+f\\
+= & \begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f=\boldsymbol{x}^{\intercal}A\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+f\\
+= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}\boldsymbol{x}^{\intercal} & 1\end{pmatrix}M\begin{pmatrix}\boldsymbol{x}\\
+1
+\end{pmatrix},M=\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+0= & ax^{2}+bxy+cy^{2}+dx+ey+f\\
+= & \begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f=\boldsymbol{x}^{\intercal}A\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+f\\
+= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}\boldsymbol{x}^{\intercal} & 1\end{pmatrix}M\begin{pmatrix}\boldsymbol{x}\\
+1
+\end{pmatrix},M=\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}
+\end{aligned}
+$$
+
+https://en.wikipedia.org/wiki/Matrix_representation_of_conic_sections
+
+$$
+\begin{aligned}
+0=Q= & Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F\\
+= & \begin{bmatrix}x & y & 1\end{bmatrix}\begin{bmatrix}A & B/2 & D/2\\
+B/2 & C & E/2\\
+D/2 & E/2 & F
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+1
+\end{bmatrix}=\boldsymbol{x}_{{\scriptscriptstyle \text{h}}}^{\intercal}A_{{\scriptscriptstyle Q}}\boldsymbol{x}_{{\scriptscriptstyle \text{h}}}\\
+= & \begin{bmatrix}x & y\end{bmatrix}\begin{bmatrix}A & B/2\\
+B/2 & C
+\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}+\begin{bmatrix}D & E\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}+F=\boldsymbol{x}^{\intercal}A_{{\scriptscriptstyle Q,33}}\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+F
+\end{aligned}
+$$

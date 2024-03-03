@@ -170,12 +170,12 @@ A\boldsymbol{x}=\lambda\boldsymbol{x} & \ref{real-sym-real-eigen}\begin{cases}
 \boldsymbol{x}\in\mathbb{R}^{n} & \text{real eigenvector}
 \end{cases}\\
 \begin{cases}
-A\boldsymbol{x}_{1}=\lambda_{1}\boldsymbol{x}_{1} & \left(e_{1}\right)\\
-A\boldsymbol{x}_{2}=\lambda_{2}\boldsymbol{x}_{2} & \left(e_{2}\right)
-\end{cases} & \lambda_{1}\ne\lambda_{2}
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(e_{{\scriptscriptstyle 1}}\right)\\
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}} & \left(e_{{\scriptscriptstyle 2}}\right)
+\end{cases} & \lambda_{{\scriptscriptstyle 1}}\ne\lambda_{{\scriptscriptstyle 2}}
 \end{cases}\\
 \Downarrow\\
-\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}=0\Leftrightarrow\boldsymbol{x}_{1}\perp\boldsymbol{x}_{2}
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=0\Leftrightarrow\boldsymbol{x}_{{\scriptscriptstyle 1}}\perp\boldsymbol{x}_{{\scriptscriptstyle 2}}
 \end{array}
 $$
 
@@ -199,12 +199,12 @@ A\boldsymbol{x}=\lambda\boldsymbol{x} & \ref{thm:real-sym-real-eigen}\begin{case
 \boldsymbol{x}\in\mathbb{R}^{n} & \textup{real eigenvector}
 \end{cases}\\
 \begin{cases}
-A\boldsymbol{x}_{1}=\lambda_{1}\boldsymbol{x}_{1} & \left(e_{1}\right)\\
-A\boldsymbol{x}_{2}=\lambda_{2}\boldsymbol{x}_{2} & \left(e_{2}\right)
-\end{cases} & \lambda_{1}\ne\lambda_{2}
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(e_{{\scriptscriptstyle 1}}\right)\\
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}} & \left(e_{{\scriptscriptstyle 2}}\right)
+\end{cases} & \lambda_{{\scriptscriptstyle 1}}\ne\lambda_{{\scriptscriptstyle 2}}
 \end{cases}\\
 \Downarrow\\
-\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}=0\Leftrightarrow\boldsymbol{x}_{1}\perp\boldsymbol{x}_{2}
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=0\Leftrightarrow\boldsymbol{x}_{{\scriptscriptstyle 1}}\perp\boldsymbol{x}_{{\scriptscriptstyle 2}}
 \end{array}
 $$
 
@@ -217,16 +217,16 @@ $\left(1\right)$
 
 $$
 \begin{aligned}
-A\boldsymbol{x}_{2}= & \lambda_{2}\boldsymbol{x}_{2}\\
-\boldsymbol{x}_{1}^{\intercal}A\boldsymbol{x}_{2}\overset{\boldsymbol{x}_{1}^{\intercal}\cdot}{=} & \boldsymbol{x}_{1}^{\intercal}\lambda_{2}\boldsymbol{x}_{2}=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}=\left(1\right)\\
-A\boldsymbol{x}_{1}= & \lambda_{1}\boldsymbol{x}_{1}\\
-\boldsymbol{x}_{1}^{\intercal}A^{\intercal}=\left(A\boldsymbol{x}_{1}\right)^{\intercal}= & \left(\lambda_{1}\boldsymbol{x}_{1}\right)^{\intercal}=\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\\
-\boldsymbol{x}_{1}^{\intercal}A^{\intercal}= & \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\\
-\boldsymbol{x}_{1}^{\intercal}A\boldsymbol{x}_{2}\overset{\text{symmetric}}{=}\boldsymbol{x}_{1}^{\intercal}A^{\intercal}\boldsymbol{x}_{2}\overset{\cdot\boldsymbol{x}_{2}}{=} & \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}=\left(2\right)\\
-\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\overset{\left(1\right)}{=}\boldsymbol{x}_{1}^{\intercal}A\boldsymbol{x}_{2}\overset{\left(2\right)}{=} & \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}= & \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\left(\lambda_{2}-\lambda_{1}\right)\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}= & 0\wedge\lambda_{1}\ne\lambda_{2}\\
-\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}= & 0
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\cdot}{=} & \boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\left(1\right)\\
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}= & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}=\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}= & \left(\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}= & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\text{symmetric}}{=}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}}{=} & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\left(2\right)\\
+\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\left(1\right)}{=}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\left(2\right)}{=} & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\left(\lambda_{{\scriptscriptstyle 2}}-\lambda_{{\scriptscriptstyle 1}}\right)\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & 0\wedge\lambda_{{\scriptscriptstyle 1}}\ne\lambda_{{\scriptscriptstyle 2}}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & 0
 \end{aligned}
 $$
 ```
@@ -238,14 +238,14 @@ $\left(1\right)$ fast concept
 
 $$
 \begin{aligned}
-\color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}}=\left(\boldsymbol{x}_{1}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{2}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{1}^{\intercal}A\right)\boldsymbol{x}_{2}=\color{orange}{\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}\\
-\left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} & \color{orange}{\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}
+\color{orange}{\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}}=\left(\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\right)\boldsymbol{x}_{{\scriptscriptstyle 2}}=\color{orange}{\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}\\
+\left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=} & \color{orange}{\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}
 =\left(R\right)\\
-\left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}}
-\overset{\left(e_{1}\right)}{=} & \left(\lambda_{1}\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\left(R\right)=\color{orange}{\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}\overset{\left(e_{2}\right)}{=} & \boldsymbol{x}_{1}^{\intercal}\left(\lambda_{2}\boldsymbol{x}_{2}\right)=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}=\color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} & \color{orange}{\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}= & \lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}
+\left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}}
+\overset{\left(e_{{\scriptscriptstyle 1}}\right)}{=} & \left(\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\left(R\right)=\color{orange}{\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}\overset{\left(e_{{\scriptscriptstyle 2}}\right)}{=} & \boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\color{orange}{\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=} & \color{orange}{\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}
 \end{aligned}
 $$
 
@@ -255,12 +255,12 @@ $$
 
 $$
 \begin{aligned}
-{\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}}=\left(\boldsymbol{x}_{1}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{2}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{1}^{\intercal}A\right)\boldsymbol{x}_{2}={\color{orange}\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}\\
-\left(L\right)={\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} & {\color{orange}\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}=\left(R\right)\\
-\left(L\right)={\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}}\overset{\left(e_{1}\right)}{=} & \left(\lambda_{1}\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\left(R\right)={\color{orange}\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}\overset{\left(e_{2}\right)}{=} & \boldsymbol{x}_{1}^{\intercal}\left(\lambda_{2}\boldsymbol{x}_{2}\right)=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}={\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} & {\color{orange}\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}= & \lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}
+{\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}}=\left(\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\right)\boldsymbol{x}_{{\scriptscriptstyle 2}}={\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}\\
+\left(L\right)={\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=} & {\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}=\left(R\right)\\
+\left(L\right)={\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}}\overset{\left(e_{{\scriptscriptstyle 1}}\right)}{=} & \left(\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\left(R\right)={\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}\overset{\left(e_{{\scriptscriptstyle 2}}\right)}{=} & \boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}={\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=} & {\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}
 \end{aligned}
 $$
 
@@ -278,11 +278,11 @@ $$
 A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \text{real matrix}\\
 A^{\intercal}=A & \text{symmetric matrix}
 \end{cases} & \text{real symmetric matrix}\\
-A\boldsymbol{x}_{1}=\lambda\boldsymbol{x}_{1} & \left(e\right)\\
-\boldsymbol{x}_{2}^{\intercal}\boldsymbol{x}_{1}=0\Leftrightarrow\boldsymbol{x}_{2}\perp\boldsymbol{x}_{1} & \left(o\right)
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}=\lambda\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(e\right)\\
+\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}=0\Leftrightarrow\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(o\right)
 \end{cases}\\
 \Downarrow\\
-A\boldsymbol{x}_{2}\perp\boldsymbol{x}_{1}\Leftrightarrow\left(A\boldsymbol{x}_{2}\right)^{\intercal}\boldsymbol{x}_{1}=0
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}}\Leftrightarrow\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}=0
 \end{array}
 $$
 
@@ -297,14 +297,25 @@ $$
 A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \textup{real matrix}\\
 A^{\intercal}=A & \textup{symmetric matrix}
 \end{cases} & \textup{real symmetric matrix}\\
-A\boldsymbol{x}_{1}=\lambda\boldsymbol{x}_{1} & \left(e\right)\\
-\boldsymbol{x}_{2}^{\intercal}\boldsymbol{x}_{1}=0\Leftrightarrow\boldsymbol{x}_{2}\perp\boldsymbol{x}_{1} & \left(o\right)
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}=\lambda\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(e\right)\\
+\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}=0\Leftrightarrow\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(o\right)
 \end{cases}\\
 \Downarrow\\
-A\boldsymbol{x}_{2}\perp\boldsymbol{x}_{1}\Leftrightarrow\left(A\boldsymbol{x}_{2}\right)^{\intercal}\boldsymbol{x}_{1}=0
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}}\Leftrightarrow\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}=0
 \end{array}
 $$
 
 :::
 
+```
+
+```{proof}
+$$
+\begin{aligned}
+\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}= & \left(\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{{\scriptscriptstyle 1}}\overset{\text{symmetric}}{=}\left(\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}A\right)\boldsymbol{x}_{{\scriptscriptstyle 1}}\\
+= & \boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)\overset{\left(e\right)}{=}\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\left(\lambda\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)\\
+= & \lambda\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}\overset{\left(o\right)}{=}\lambda\cdot0=0\\
+\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}= & 0\Leftrightarrow A\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}}
+\end{aligned}
+$$
 ```
