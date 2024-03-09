@@ -1,0 +1,4810 @@
+---
+title: "math"
+author: "Joey Yu Hsu"
+date: "2024-03-10"
+site: bookdown::bookdown_site
+documentclass: book
+# output:
+#   html_document:
+#     toc: true
+# always_allow_html: true
+bibliography: [reference.bib, packages.bib]
+# biblio-style: apalike
+link-citations: yes
+colorlinks: true
+header-includes:
+  # - \usepackage{fdsymbol}
+  # - \usepackage[dvipsnames]{xcolor} # \colorbox
+#   - \usepackage[all]{xy} # xy-pic
+  # - \usepackage{tikz-3dplot}
+  # - \usepackage{tikz,tikz-3dplot}
+  # - \usepackage{pgfplots}
+# url: 
+# cover-image: path to the social sharing image like images/cover.jpg
+# description: 
+github-repo: "https://github.com/RRWWW/math/"
+geometry: [b5paper, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.0cm, rmargin=1.0cm]
+# fig_width: 6 
+# fig_height: 4 
+# editor_options:
+#   markdown:
+#     wrap: sentence
+# runtime: shiny
+# output:
+#   xaringan::moon_reader:
+#     lib_dir: libs
+#     nature:
+#       highlightStyle: github
+#       highlightLines: true
+#       countIncrementalSlides: false
+---
+
+# index {.unnumbered}
+
+math on bookdown started on 2024/01/28
+
+<!--chapter:end:index.Rmd-->
+
+# (PART) by descipline {-}
+# mathematics
+
+- formula typesetting
+  - TeX
+    - LaTeX
+      - pdfLaTeX
+      - XeLaTeX
+      - editor/tool:
+        - LyX
+        - OverLeaf
+        - MathPix Snip
+        - Micro$oft Office Word
+          - WordTeX https://tomwildenhain.com/wordtex/
+            - Pandoc dependent
+          - https://superuser.com/questions/1114697/select-a-different-math-font-in-microsoft-word
+          - https://www.youtube.com/watch?v=jlX_pThh7z8
+        - Micro$oft Office PowerPoint
+          - IguanaTeX https://www.jonathanleroux.org/software/iguanatex/
+  - MathML
+  - MathJax: JavaScript
+- symbolic computing
+  - Maple:          by MapleSoft
+  - Mathematica:    by Wolfram
+- numeric computing
+  - MatLab:         by MathWorks
+
+[equivalence relation]^[\@ref(equivalence-relation)]^
+
+[equivalence class]^[\@ref(equivalence-class)]^
+
+[partition]^[\@ref(partition)]^
+
+## discipline
+
+::: {show-in="html"}
+
+## learning map
+
+- pure mathematics
+  - logic
+    - [Shai Ben-David](https://www.youtube.com/playlist?list=PLPW2keNyw-utXOOzLR-Wp1p0eE5LEtv3N)
+  - 林秀豪
+    - [應數: 2019](https://www.youtube.com/playlist?list=PLS0SUwlYe8cyfYWKPb8v55pCqfw0MnL0T)
+      - [1](https://www.youtube.com/playlist?list=PLS0SUwlYe8cy7eNFtSWru7EtJ_yXM94YH)
+      - [2](https://www.youtube.com/playlist?list=PLS0SUwlYe8cxiepObAy7dGDs29AdViZdj)
+    - 普物
+    - 熱物
+  - algebra
+    - linear algebra
+      - [漫士沉思錄: 無痛線代](https://space.bilibili.com/266765166/channel/collectiondetail?sid=1794944)
+      - [周志成](https://www.youtube.com/playlist?list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju)
+        - [線代啟示錄](https://ccjou.wordpress.com/)
+      - [3B1B](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+    - abstract algebra
+  - analysis
+    - real analysis
+      - [陳金次](https://www.youtube.com/playlist?list=PLil-R4o6jmGjoxAWZurHXAY0q9yxwXv5F)
+    - complex analysis
+    - 齊震宇
+      - [微積分1](https://www.youtube.com/playlist?list=PLVJXJebpO4PhAc21JW-cYbzT3sq4s7Qg8)
+      - [微積分2](https://www.youtube.com/playlist?list=PLil-R4o6jmGihq7XzdNzb0d5hHqEJbr6L)
+      - [分析1](https://www.youtube.com/playlist?list=PLil-R4o6jmGhUqtKbZf0LIFKd-xN__g_M)
+      - [分析2](https://www.youtube.com/playlist?list=PLil-R4o6jmGhkuZPmKL_A5Y7N4HOsa1nX)
+      - [複變函數](https://www.youtube.com/playlist?list=PLDeGIcQNsaL7FnyhQhaVO7JU231RCYxnl)
+    - 林琦焜
+      - [Fourier analysis](https://www.youtube.com/playlist?list=PLj6E8qlqmkFuX5N1O3FKoDfoySC6Hku-2)
+      - [vector analysis](https://www.youtube.com/playlist?list=PLj6E8qlqmkFuFrce6JQR-FGxM2rIbXUvr)
+      - [calculus of variation](https://www.youtube.com/playlist?list=PLj6E8qlqmkFviK2-k7f-XjBLx3_37BPoP)
+      - [PDE1](https://www.youtube.com/playlist?list=PLj6E8qlqmkFsD6ppAsmxs-VnWWo9uwWTK)
+      - [PDE2](https://www.youtube.com/playlist?list=PLj6E8qlqmkFvOYhjGCYMnrF4oQ-8eH91H)
+    - tensor analysis
+- applied mathematics
+  - statistics
+    - 洪弘
+      - [mathematical statistics](https://www.youtube.com/playlist?list=PLTpF-A8hKVUOqfNyA6mOD6lo2cc6clZZP)
+      - [biostatistics](https://www.youtube.com/playlist?list=PLTp0eSi9MdkNZB4kyLSzIXIUy9JQOJ5AM)
+    - [陳鄰安](https://www.youtube.com/playlist?list=PLTpF-A8hKVUPXtNAX9lro-leGgEK0OSEW)
+    - [張翔](https://www.youtube.com/@shiangsir/playlists)/廖崇智
+    - [楊欣洲: genetics](https://www.youtube.com/playlist?list=PLTp0eSi9MdkPp0swo8-VVplaG8bateq7q)
+  - computer graphics
+    - Cem Yuksel
+      - [get into your slides with OBS](https://www.youtube.com/playlist?list=PLplnkTzzqsZT2-rLDXArSi8LnhWQu0mqv)
+      - [introduction](https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh)
+      - [interactive](https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN)
+
+:::
+
+<!--chapter:end:202401260001-mathematics.Rmd-->
+
+# physics
+
+## discipline
+
+- relativity
+  - special relativity
+    - [Lorentz transformation]^[\@ref(lorentz-transformation)]^
+  - general relativity
+- analytic mechanics
+  - [Lagrangian mechanics]
+  - Hamiltonian mechanics
+- electromagnetism
+- quantum mechanics
+- field theory
+
+::: {show-in="html"}
+
+## learning map
+
+- 林秀豪
+  - [應數: 2019](https://www.youtube.com/playlist?list=PLS0SUwlYe8cyfYWKPb8v55pCqfw0MnL0T)
+    - [1](https://www.youtube.com/playlist?list=PLS0SUwlYe8cy7eNFtSWru7EtJ_yXM94YH)
+    - [2](https://www.youtube.com/playlist?list=PLS0SUwlYe8cxiepObAy7dGDs29AdViZdj)
+  - 普物
+  - 熱物
+- [泰勒貓愛麗絲](https://space.bilibili.com/11008987/channel/series)
+  - [黑體輻射的故事](https://space.bilibili.com/11008987/channel/collectiondetail?sid=1643054)
+
+:::
+
+<!--chapter:end:202401260002-physics.Rmd-->
+
+# plot
+
+- LaTeX
+  - [TikZ]^[\@ref(tikz)]^
+    - TikZ-3Dplot
+    - PGFplots
+  - xypic = [xy-pic]^[\@ref(xy-pic)]^
+- [OverLeaf](https://www.overleaf.com/)
+- [MathCha](https://www.mathcha.io/)
+- [GeoGebra](https://www.geogebra.org/)
+  - [GeoGebra Classic](https://www.geogebra.org/classic): to export TikZ
+  - [GeoGebra Calculator Suite](https://www.geogebra.org/calculator)
+- Python
+  - MatPlotLib
+  - Seaborn
+  - Plotly
+  - Manim
+
+neural network plot/draw
+https://github.com/ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network
+
+<!--chapter:end:202401260003-plot.Rmd-->
+
+# programming language
+
+- [Python]^[\@ref(python)]^
+- JavaScript
+- SQL = structured query language
+- [R]^[\@ref(r)]^
+  - RMarkdown
+    - Bookdown
+  - knitr: engine
+    - TikZ
+  - reticulate: Python
+  - Jamovi
+- C#
+  - web
+    - MVC
+    - .NET
+  - desktop
+    - UWP = Universal Windows Platform
+    - WPF = Windows Presentation Foundation
+    - WinForms = Windows Forms
+  - 3D/game
+    - Unity
+
+<!--chapter:end:202401260004-programming-language.Rmd-->
+
+# machine learning
+
+<!--chapter:end:202401260005-machine-learning.Rmd-->
+
+# (PART) by date {-}
+# A Minimal Book Example
+
+## About
+
+This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+
+### Usage 
+
+Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
+
+Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
+
+The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
+
+### Render book
+
+You can render the HTML version of this example book without changing anything:
+
+1. Find the **Build** pane in the RStudio IDE, and
+
+1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
+
+Or build the book from the R console:
+
+
+```r
+bookdown::render_book()
+```
+
+To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
+
+### Preview book
+
+As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
+
+
+```r
+bookdown::serve_book()
+```
+
+
+
+
+## Hello bookdown 
+
+All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file.
+
+### A section
+
+All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+
+#### An unnumbered section {-}
+
+Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+
+## Cross-references {#cross}
+
+Cross-references make it easier for your readers to find and link to elements in your book.
+
+### Chapters and sub-chapters
+
+There are two steps to cross-reference any heading:
+
+1. Label the heading: `# Hello world {#nice-label}`. 
+    - Leave the label off if you like the automated heading generated based on your heading title: for example, `# Hello world` = `# Hello world {#hello-world}`.
+    - To label an un-numbered heading, use: `# Hello world {-#nice-label}` or `{# Hello world .unnumbered}`.
+
+1. Next, reference the labeled heading anywhere in the text using `\@ref(nice-label)`; for example, please see Chapter \@ref(cross). 
+    - If you prefer text as the link instead of a numbered reference use: [any text you want can go here](#cross).
+
+### Captioned figures and tables
+
+Figures and tables *with captions* can also be cross-referenced from elsewhere in your book using `\@ref(fig:chunk-label)` and `\@ref(tab:chunk-label)`, respectively.
+
+See Figure \@ref(fig:nice-fig).
+
+
+```r
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{202401280000-minimal-book-example_files/figure-latex/nice-fig-1} 
+
+}
+
+\caption{Here is a nice figure!}(\#fig:nice-fig)
+\end{figure}
+
+Don't miss Table \@ref(tab:nice-tab).
+
+
+```r
+knitr::kable(
+  head(pressure, 10), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+\begin{table}
+
+\caption{(\#tab:nice-tab)Here is a nice table!}
+\centering
+\begin{tabular}[t]{rr}
+\toprule
+temperature & pressure\\
+\midrule
+0 & 0.0002\\
+20 & 0.0012\\
+40 & 0.0060\\
+60 & 0.0300\\
+80 & 0.0900\\
+\addlinespace
+100 & 0.2700\\
+120 & 0.7500\\
+140 & 1.8500\\
+160 & 4.2000\\
+180 & 8.8000\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+## Parts
+
+You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file. 
+
+Add a numbered part: `# (PART) Act one {-}` (followed by `# A chapter`)
+
+Add an unnumbered part: `# (PART\*) Act one {-}` (followed by `# A chapter`)
+
+Add an appendix as a special kind of un-numbered part: `# (APPENDIX) Other stuff {-}` (followed by `# A chapter`). Chapters in an appendix are prepended with letters instead of numbers.
+
+## Footnotes and citations 
+
+### Footnotes
+
+Footnotes are put inside the square brackets after a caret `^[]`. Like this one ^[This is a footnote.]. 
+
+### Citations
+
+Reference items in your bibliography file(s) using `@key`.
+
+For example, we are using the **bookdown** package [@R-bookdown] (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and **knitr** [@xie2015] (this citation was added manually in an external file book.bib). 
+Note that the `.bib` files need to be listed in the index.Rmd with the YAML `bibliography` key.
+
+
+The RStudio Visual Markdown Editor can also make it easier to insert citations: <https://rstudio.github.io/visual-markdown-editing/#/citations>
+
+## Blocks
+
+### Equations
+
+Here is an equation.
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  (\#eq:binom)
+\end{equation} 
+
+You may refer to using `\@ref(eq:binom)`, like see Equation \@ref(eq:binom).
+
+
+### Theorems and proofs
+
+Labeled theorems can be referenced in text using `\@ref(thm:tri)`, for example, check out this smart theorem \@ref(thm:tri).
+
+::: {.theorem #tri}
+For a right triangle, if $c$ denotes the *length* of the hypotenuse
+and $a$ and $b$ denote the lengths of the **other** two sides, we have
+$$a^2 + b^2 = c^2$$
+:::
+
+Read more here <https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html>.
+
+### Callout blocks
+
+
+The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html
+
+
+## Sharing your book
+
+### Publishing
+
+HTML books can be published online, see: https://bookdown.org/yihui/bookdown/publishing.html
+
+### 404 pages
+
+By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a `_404.Rmd` or `_404.md` file to your project root and use code and/or Markdown syntax.
+
+### Metadata for sharing
+
+Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the `index.Rmd` YAML. To setup, set the `url` for your book and the path to your `cover-image` file. Your book's `title` and `description` are also used.
+
+
+
+This `gitbook` uses the same social sharing data across all chapters in your book- all links shared will look the same.
+
+Specify your book's source repository on GitHub using the `edit` key under the configuration options in the `_output.yml` file, which allows users to suggest an edit by linking to a chapter's source file. 
+
+Read more about the features of this output format here:
+
+https://pkgs.rstudio.com/bookdown/reference/gitbook.html
+
+Or use:
+
+
+```r
+?bookdown::gitbook
+```
+
+
+
+<!--chapter:end:202401280000-minimal-book-example.Rmd-->
+
+# test
+
+https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html
+
+## RStudio
+
+### Rtools
+
+Rtools43 for Windows
+https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html
+
+### addins
+
+https://github.com/rstudio/addinexamples
+```
+if (!requireNamespace("devtools", quietly = TRUE))
+  install.packages("devtools")
+  
+devtools::install_github("rstudio/htmltools")
+devtools::install_github("rstudio/shiny")
+devtools::install_github("rstudio/miniUI")
+```
+
+### Git
+
+commit: filename or extension is too long
+
+https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows
+
+https://stackoverflow.com/questions/55327408/how-to-fix-git-for-windows-error-could-not-lock-config-file-c-file-path-to-g
+
+## RMarkdown
+
+https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+
+https://slides.yihui.org/2020-taipei-satrday-rmarkdown.html#1
+
+### Pandoc link
+
+https://pandoc.org/chunkedhtml-demo/8.16-links-1.html
+
+https://stackoverflow.com/questions/39281266/use-internal-links-in-rmarkdown-html-output
+
+https://community.rstudio.com/t/how-to-hyperlink-between-different-rmd-files-in-rmarkdown/62289
+
+### URL
+
+https://stackoverflow.com/questions/29787850/how-do-i-add-a-url-to-r-markdown
+
+```
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself]
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+```
+
+### arrow
+
+https://reimbar.org/dev/arrows/
+
+Up arrow (↑): `&uarr;`
+
+Down arrow (↓): `&darr;`
+
+Left arrow (←): `&larr;`
+
+Right arrow (→): `&rarr;`
+
+Double headed arrow: `&harr;`
+
+### superscript and subscript
+
+script^superscript^~subscript~
+
+
+```rmd
+script^superscript^
+```
+script^superscript^
+
+
+```rmd
+~subscript~
+```
+script~subscript~
+
+#### LaTeX
+
+https://tex.stackexchange.com/questions/580824/subscript-not-distinguished-enough
+
+https://tex.stackexchange.com/questions/262295/make-subscript-size-smaller-always
+
+### equation
+
+https://stackoverflow.com/questions/26049762/erroneous-nesting-of-equation-structures-in-using-beginalign-in-a-multi-l
+
+### image
+
+https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown
+
+#### figure size
+
+https://sebastiansauer.github.io/figure_sizing_knitr/
+
+YAML in index.Rmd
+
+
+```yaml
+--- 
+title: "My Document" 
+output: html_document: 
+fig_width: 6 
+fig_height: 4 
+--- 
+```
+
+first R-chunk in your RMD document
+
+```
+knitr::opts_chunk$set(fig.width=12, fig.height=8) 
+```
+
+width, height and options
+
+` ```{r fig.height = 3, fig.width = 5`
+
+`plot(pressure)`
+
+` ``` `
+
+`{r fig.height = 3, fig.width = 5`
+
+
+```r
+plot(pressure)
+```
+
+![](202401280001-test_files/figure-latex/unnamed-chunk-4-1.pdf)<!-- --> 
+
+`{r fig.height = 3, fig.width = 3, fig.align = "center"`
+
+
+```r
+plot(pressure)
+```
+
+![](202401280001-test_files/figure-latex/unnamed-chunk-5-1.pdf)<!-- --> 
+
+`{r fig.width = 5, fig.asp = .62`
+
+
+```r
+plot(pressure)
+```
+
+
+
+\begin{center}\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-6-1} \end{center}
+
+
+
+```markdown
+<center>
+![](https://bookdown.org/yihui/rmarkdown-cookbook/images/cover.png){width=20%}
+</center>
+```
+
+::: {show-in="html"}
+
+<center>
+![](https://bookdown.org/yihui/rmarkdown-cookbook/images/cover.png){width=20%}
+</center>
+
+:::
+
+##### `knitr`
+
+https://yihui.org/knitr/options/
+
+https://bookdown.org/yihui/rmarkdown/tufte-figures.html
+
+
+```r
+par(mar = c(4, 4, .1, .2)); plot(sunspots)
+```
+
+![](202401280001-test_files/figure-latex/unnamed-chunk-8-1.pdf)<!-- --> 
+
+
+```r
+plot(cars)
+```
+
+![](202401280001-test_files/figure-latex/fig-margin-1.pdf)<!-- --> 
+
+
+```marginfigure
+We know from _the first fundamental theorem of calculus_ that
+for $x$ in $[a, b]$:
+$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
+```
+
+##### `out.width` vs. `fig.width`
+
+https://stackoverflow.com/questions/29657777/how-to-make-fig-width-and-out-width-consistent-with-knitr
+
+when chunk option `cache=FALSE` is set, then `out.width` has no effect because no PDF output is created. Hence one has to specify exact measures in inches for `fig.width` and `fig.height` for each chunk
+
+https://stackoverflow.com/questions/59567235/a-ggmap-too-small-when-rendered-within-a-rmd-file
+
+<!-- using knitr::spin()
+ out.width = "100%", fig.align = "center", echo=FALSE
+-->
+
+
+\begin{center}\includegraphics[width=1\linewidth]{202401280001-test_files/figure-latex/unnamed-chunk-10-1} \end{center}
+
+
+```r
+plot(pressure)
+```
+
+![](202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf)<!-- --> 
+
+problem: `out.width='100%'` causing `LaTeX Error: Not in outer par mode.`
+
+solution: `out.width=if (knitr:::is_html_output()) '100%'`
+
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.4\textwidth}"}
+
+```tex
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.55\textwidth}"}
+![](202401280001-test_files/figure-latex/unnamed-chunk-13-1.pdf)<!-- --> 
+:::
+::::::
+
+`fig.width=10, fig.height=2`
+
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.4\textwidth}"}
+
+```tex
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.55\textwidth}"}
+![](202401280001-test_files/figure-latex/unnamed-chunk-15-1.pdf)<!-- --> 
+:::
+::::::
+
+`out.width=if (knitr:::is_html_output()) '100%'`
+
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.4\textwidth}"}
+
+```tex
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.55\textwidth}"}
+![](202401280001-test_files/figure-latex/unnamed-chunk-17-1.pdf)<!-- --> 
+:::
+::::::
+
+#### dynamic knitr plot width and height
+
+https://stackoverflow.com/questions/15365829/dynamic-height-and-width-for-knitr-plots
+
+
+
+
+
+```r
+plot(pressure)
+```
+
+![](202401280001-test_files/figure-latex/unnamed-chunk-19-1.pdf)<!-- --> 
+
+#### web image in PDF
+
+https://stackoverflow.com/questions/46331896/how-can-i-insert-an-image-from-internet-to-the-pdf-file-produced-by-r-bookdown-i
+
+```
+cover_url = 'https://bookdown.org/yihui/bookdown/images/cover.jpg'
+if (!file.exists(cover_file <- xfun::url_filename(cover_url)))
+  xfun::download_file(cover_url)
+knitr::include_graphics(if (knitr::pandoc_to('html')) cover_url else cover_file)
+```
+
+::: {show-in="html"}
+<iframe src="https://www.geogebra.org/calculator/zkppuxwp?embed" width="600" height="450" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+![conic sections](img/conic-sections.svg)
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{img/conic-sections} \caption{conic sections}(\#fig:unnamed-chunk-20)
+\end{figure}
+:::
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401280001-test_files/figure-latex/unnamed-chunk-21-1} \caption{conic sections}(\#fig:unnamed-chunk-21)
+\end{figure}
+
+#### SVG
+
+https://stackoverflow.com/questions/50165404/how-to-make-a-pdf-using-bookdown-including-svg-images
+
+
+
+![](img/conic-sections.pdf)<!-- --> 
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{img/conic-sections} \caption{conic sections}(\#fig:unnamed-chunk-23)
+\end{figure}
+
+https://stackoverflow.com/questions/34064292/is-it-possible-to-include-svg-image-in-pdf-document-rendered-by-rmarkdown
+
+
+
+```markdown
+***
+```
+
+horizontal rule (or slide break)
+
+***
+
+
+```r
+dim(iris) 
+```
+
+
+```
+## [1] 150   5
+```
+
+### footnote
+
+### hyperlink
+
+PDF pandoc internal link will lose focus
+
+[equivalence relation] [\@ref(equivalence-relation)] [equivalence relation](#equivalence-relation)^[{\@ref(equivalence-relation)} [equivalence relation]] [equivalence relation]^[\@ref(equivalence-relation)]^
+
+[equivalence class] [\@ref(equivalence-class)] [equivalence class](#equivalence-class)^[{\@ref(equivalence-class)} [equivalence class]] [equivalence class]^[\@ref(equivalence-class)]^
+
+[partition] [\@ref(partition)] [partition](#partition)^[{\@ref(partition)} [partition]] [partition]^[\@ref(partition)]^
+
+- LaTeX
+    - [TikZ]^[\@ref(tikz)]^
+        - TikZ-3Dplot
+        - PGFplots
+    - xypic = [xy-pic](#xy-pic)^[{\@ref(xy-pic)} [xy-pic]]
+- OverLeaf
+- MathCha
+- GeoGebra
+- Python
+    - MatPlotLib
+    - Seaborn
+    - Plotly
+
+### xaringan
+
+slide realtime preview with RStudio addin Infinite Moon Reader in RStudio viewer
+
+https://github.com/yihui/xaringan
+
+https://www.youtube.com/watch?v=3n9nASHg9gc
+
+## Bookdown
+
+### system locale
+
+https://bookdown.org/tpemartin/ntpu-programming-for-data-science/appendix-d-.html
+
+```
+Sys.getlocale()
+```
+
+Windows
+```
+Sys.setlocale(category = "LC_ALL", locale = "UTF-8")
+```
+
+MacOS
+```
+Sys.setlocale(category = "LC_ALL", locale = "en_US.UTF-8")
+```
+
+https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html
+
+### `render_book()`
+
+https://bookdown.org/yihui/bookdown/build-the-book.html
+
+```
+render_book(input = ".", output_format = NULL, ..., clean = TRUE,
+  envir = parent.frame(), clean_envir = !interactive(),
+  output_dir = NULL, new_session = NA, preview = FALSE,
+  config_file = "_bookdown.yml")
+```
+
+### `serve_book()`
+
+https://bookdown.org/yihui/bookdown/serve-the-book.html
+
+```
+serve_book(dir = ".", output_dir = "_book", preview = TRUE,
+  in_session = TRUE, quiet = FALSE, ...)
+```
+
+### LaTeX
+
+#### hyperlink, URL, href
+
+https://www.baeldung.com/cs/latex-hyperref-url-hyperlinks
+
+::: {show-in="html"}
+
+https://www.omdte.com/小技巧讓-facebook和-line顯示中文網址，網址不再變亂碼/
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+https://www.omdte.com/小技巧讓-facebook和-line顯示中文網址，網址不再變亂碼/
+\end{CJK}
+
+:::
+
+#### ugly mathptmx $\sum$
+
+PDF LaTeX `\usepackage{fdsymbol}` to have `\overrightharpoon` vector; however, there are too many side effects, including ugly mathptmx $\sum$, ...
+
+```
+
+\usepackage{fdsymbol} % vector over accent, but will use mathptmx
+% replace the rather ugly mathptmx \sum operator with the equivalent Computer Modern one
+\let\sum\relax
+\DeclareSymbolFont{CMlargesymbols}{OMX}{cmex}{m}{n}
+\DeclareMathSymbol{\sum}{\mathop}{CMlargesymbols}{"50}
+
+```
+
+https://tex.stackexchange.com/questions/315102/different-sum-signs
+
+https://tex.stackexchange.com/questions/275038/how-to-replace-mathptmx-sum-with-cm-sum
+
+https://tex.stackexchange.com/questions/391410/calligraphic-symbols-are-too-fancy-with-mathptmx-package
+
+https://blog.csdn.net/kongtaoxing/article/details/131005044
+
+In  `preamble.tex`, add
+
+```
+
+% replace the rather ugly mathptmx \sum operator with the equivalent Computer Modern one
+\let\sum\relax
+\DeclareSymbolFont{CMlargesymbols}{OMX}{cmex}{m}{n}
+\DeclareMathSymbol{\sum}{\mathop}{CMlargesymbols}{"50}
+
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+\DeclareSymbolFont{largesymbols}{OMX}{cmex}{m}{n}
+
+```
+
+#### LaTeX package in HTML document
+
+https://github.com/rstudio/rmarkdown/issues/1829
+
+```
+---
+title: "assignment"
+author: "author"
+output: html_document
+---
+
+$$
+  \require{cancel}
+  \cancel{x}
+$$
+```
+::: {show-in="html"}
+
+$$
+  \require{cancel}
+  \cancel{x}
+$$
+
+:::
+
+::: {show-in="pdf"}
+
+$$
+  \cancel{x}
+$$
+
+:::
+
+https://stackoverflow.com/questions/18189175/how-to-use-textup-with-mathjax
+
+`\textup` is not available in MathJax. You can replace it with `\mathrm`, **but `\mathrm` does not interpret spaces**.
+
+### multi-column layout / two columns {#multi-column}
+
+https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html
+
+#### for both HTML and PDF
+
+[figure size]^[\@ref(figure-size)]^
+
+Below is a Div containing three child Divs side by side. The Div
+in the middle is empty, just to add more space between the left
+and right Divs.
+
+```
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.55\textwidth}"}
+![](202401280001-test_files/figure-latex/unnamed-chunk-27-1.pdf)<!-- --> 
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.4\textwidth}"}
+The figure on the left-hand side shows the `cars` data.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur.
+:::
+::::::
+```
+
+`{r, echo=FALSE, fig.width=5, fig.height=4}`
+
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.55\textwidth}"}
+![](202401280001-test_files/figure-latex/unnamed-chunk-28-1.pdf)<!-- --> 
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.4\textwidth}"}
+The figure on the left-hand side shows the `cars` data.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur.
+:::
+::::::
+
+`{r, echo=FALSE, fig.width=10, fig.height=8, out.width = "100%"}`
+
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.55\textwidth}"}
+
+\includegraphics[width=1\linewidth]{202401280001-test_files/figure-latex/unnamed-chunk-29-1} 
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.4\textwidth}"}
+The figure on the left-hand side shows the `cars` data.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur.
+:::
+::::::
+
+`{r, echo=FALSE, fig.width=10, fig.height=8}`
+
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.55\textwidth}"}
+![](202401280001-test_files/figure-latex/unnamed-chunk-30-1.pdf)<!-- --> 
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.4\textwidth}"}
+The figure on the left-hand side shows the `cars` data.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur.
+:::
+::::::
+
+
+
+#### for only HTML
+
+##### CSS flex
+
+:::: {style="display: flex;"}
+
+::: {}
+Here is the **first** Div.
+
+
+```r
+str(iris)
+```
+
+```
+## 'data.frame':	150 obs. of  5 variables:
+##  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+##  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+##  $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+##  $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
+```
+:::
+
+::: {}
+And this block will be put on the right:
+
+
+```r
+plot(iris[, -5])
+```
+
+![](202401280001-test_files/figure-latex/unnamed-chunk-32-1.pdf)<!-- --> 
+:::
+
+::::
+
+##### CSS grid
+
+https://github.com/yihui/knitr/issues/1743
+
+
+::: {show-in="html"}
+
+https://medium.com/enjoy-life-enjoy-coding/css-所以我說那個版能不能好切一點-grid-基本用法-cd763091cf70
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+https://medium.com/enjoy-life-enjoy-coding/css-所以我說那個版能不能好切一點-grid-基本用法-cd763091cf70
+\end{CJK}
+
+:::
+
+
+:::: {style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px; "}
+
+::: {}
+
+
+```r
+head(iris)
+```
+
+```
+##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa
+```
+
+
+:::
+
+::: {}
+
+
+```r
+plot(iris)
+```
+
+![](202401280001-test_files/figure-latex/unnamed-chunk-34-1.pdf)<!-- --> 
+
+:::
+
+::::
+
+## conditional block/chunk for either HTML or PDF, and Chinese issue
+
+::: {show-in="html"}
+
+:::
+
+::: {show-in="pdf"}
+
+:::
+
+<!-- \begin{CJK}{UTF8}{bsmi} -->
+<!-- \begin{defn} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://stackoverflow.com/questions/76240244/bookdown-conditional-display-of-text-and-code-blocks-latex-pdf-vs-html
+
+::: {show-in="html"}
+
+\begingroup
+\fontfamily{ppl}\fontsize{1}{1}\selectfont
+\begin{align*}
+ & R\text{ is an equivalence relation over }A\times B\\
+\Leftrightarrow & \begin{cases}
+R=\sim=\left\{ \left\langle x,y\right\rangle \middle|x\sim y\right\} \subseteq A\times B & \left(\text{e}\right)\text{equivalence 等價}\\
+\vdots & \vdots
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \left(R\right)\text{relation}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRx\right) & \left(r\right)\text{reflexive}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRy\Rightarrow yRx\right) & \left(s\right)\text{symmetric}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\begin{cases}
+xRy\\
+yRz
+\end{cases}\Rightarrow xRz\right) & \left(t\right)\text{transitive}
+\end{cases}\Leftrightarrow\begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \text{關係}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle x,x\right\rangle \in R\right) & \text{自反}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle y,x\right\rangle \in R\right) & \text{對稱}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\left\langle x,z\right\rangle \in R\right) & \text{遞移}
+\end{cases}
+\end{align*}
+\endgroup
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}等價關係 equivalence relation \label{def:equivalence-relation}
+\end{CJK}
+\begin{CJK}{UTF8}{bsmi}
+\begin{align*}
+ & R\text{ is an equivalence relation over }A\times B\\
+\Leftrightarrow & \begin{cases}
+R=\sim=\left\{ \left\langle x,y\right\rangle \middle|x\sim y\right\} \subseteq A\times B & \left(\text{e}\right)\text{equivalence 等價}\\
+\vdots & \vdots
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \left(R\right)\text{relation}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRx\right) & \left(r\right)\text{reflexive}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRy\Rightarrow yRx\right) & \left(s\right)\text{symmetric}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\begin{cases}
+xRy\\
+yRz
+\end{cases}\Rightarrow xRz\right) & \left(t\right)\text{transitive}
+\end{cases}\Leftrightarrow\begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \text{關係}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle x,x\right\rangle \in R\right) & \text{自反}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle y,x\right\rangle \in R\right) & \text{對稱}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\left\langle x,z\right\rangle \in R\right) & \text{遞移}
+\end{cases}
+\end{align*}
+\end{CJK}
+
+:::
+
+## video embedding
+
+https://stackoverflow.com/questions/42543206/r-markdown-compile-error
+
+always_allow_html: true
+
+
+```r
+install.packages("webshot")
+webshot::install_phantomjs()
+```
+
+however webshot not work
+
+::: {show-in="html"}
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV1ZX4y1o7EB&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width:50%"> </iframe>
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV1ZX4y1o7EB&high_quality=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width:50%; height:600px"> </iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qeMqtt7NFDM" frameborder="0" allowfullscreen></iframe>
+
+![](https://www.youtube.com/watch?v=qeMqtt7NFDM)
+
+![](https://www.youtube.com/watch?v=qeMqtt7NFDM){width='50%'}
+
+https://cran.r-project.org/web/packages/vembedr/vignettes/embed.html
+
+
+:::
+
+Error: cannot find bilibili.com
+<!-- ```{r, echo=FALSE}
+library("vembedr")
+embed_url("https://www.bilibili.com/video/BV1ZX4y1o7EB")
+``` -->
+
+https://cran.r-project.org/web/packages/vembedr/vignettes/embed.html
+
+
+
+
+```
+## embed_youtube("qeMqtt7NFDM")
+```
+
+### timestamp
+
+- YouTube: https://www.youtube.com/embed/{videoID}?start={second}
+- BiliBili: https://player.bilibili.com/player.html?bvid={videoID}&autoplay=0&t={second}
+
+## equation term coloring
+
+### font color
+
+RegEx replacement in RStudio for `{\\color{(\w+)}` in LyX to be replaced with `\\color{$1}{` in HTML document, and remain the same for PDF document
+
+In HTML document, if no `{}` for text range, only the first following term will take effect
+
+`\color{orange}x=y`
+
+$$\color{orange}x=y$$
+`\color{orange}` and `\color{cyan}` are better color for HTML GitBook `White` and `Night` themes and PDF
+
+`\color{cyan}{x=y}`
+
+$$\color{orange}{x=y}$$
+
+`\color{cyan}{x=y}`
+
+$$\color{cyan}{x=y}$$
+
+```markdown
+::: {show-in="html"}
+
+$$
+\dfrac{\colorbox{#FFD1DC}{$\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}$}}{1-\epsilon^{2}}
+$$
+
+:::
+
+::: {show-in="pdf"}
+
+$$
+\dfrac{\colorbox{red!50}{\text{\ensuremath{\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}}}}}{1-\epsilon^{2}}
+$$
+
+:::
+```
+
+### background color
+
+https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html
+
+LaTex color
+
+https://latexcolor.com/
+
+https://www.overleaf.com/learn/latex/Using_colors_in_LaTeX
+
+https://latex-tutorial.com/color-latex/#:~:text=To%20summarize%2C%20pyellow!50efined%20colors%20in,when%20loading%20the%20xcolor%20package.
+
+LaTex color methods
+
+color frame
+
+https://tex.stackexchange.com/questions/582748/highlight-equation-with-boxes-and-arrows
+
+color box
+
+https://tex.stackexchange.com/questions/567739/how-to-move-and-size-colorbox
+
+color box with round corners
+
+https://tex.stackexchange.com/questions/568880/color-box-with-rounded-corners
+
+highlighting
+
+https://tex.stackexchange.com/questions/318991/highlighting-math
+
+https://forum.remnote.io/t/highlighting-latex-formulas/149
+
+LyX
+
+https://tex.stackexchange.com/questions/250069/create-a-color-box
+https://latexlyx.blogspot.com/2013/12/lyx.html
+
+https://tex.stackexchange.com/questions/635486/prevent-lyx-from-escaping-math-in-color-box-title
+
+Bookdown - conditional display of text and code blocks (LaTeX/PDF vs. HTML)
+https://stackoverflow.com/questions/76240244/bookdown-conditional-display-of-text-and-code-blocks-latex-pdf-vs-html
+
+::: {show-in="pdf"}
+
+\begin{align*}
+\colorbox{yellow!50}{$F$}= & \colorbox{yellow!50}{$ma$}\\
+\end{align*}
+
+https://community.rstudio.com/t/highlighting-text-inline-in-rmarkdown-or-bookdown-pdf/35118/4
+\definecolor{hightlightColor}{HTML}{FFFF66}
+
+\begin{align*}
+\colorbox{hightlightColor}{$F$}= & \colorbox{yellow!50}{$ma$}\\
+\end{align*}
+
+\begin{align*}
+\colorbox{hightlightColor}{\ensuremath{F}}= & \colorbox{yellow!50}{\ensuremath{F}}\\
+\end{align*}
+
+\begin{equation}
+\colorbox{yellow!50}{$F$}=\colorbox{yellow!50}{$ma$}
+\end{equation}
+
+$$
+\colorbox{hightlightColor}{$F$}=\colorbox{yellow!50}{$ma$}
+$$
+
+$$
+\colorbox{yellow!50}{$Y = \beta_0 + \beta_1 X_1 + \ldots + \beta_n X_n$}
+$$
+:::
+
+::: {show-in="html"}
+
+$$
+\require{color}
+\colorbox{#FFD1DC}{$F$}=\colorbox{#FFD1DC}{$ma$}
+$$
+
+:::
+
+## link and reference
+
+https://stackoverflow.com/questions/57469501/cross-referencing-bookdownhtml-document2-not-working
+
+\begin{equation}
+  E=mc^2
+  (\#eq:emc)
+\end{equation}
+
+`\@ref(nice-label)` \@ref(nice-label)
+
+`[link to partition][partition]` [link to partition][partition]
+
+`[partition]` `\@ref(partition)`
+
+[partition] [#partition] (\@ref(partition)) \@ref(#partition)
+
+`[equivalence class]` `\@ref(equivalence-class)`
+
+[equivalence class] (\@ref(equivalence-class))
+
+[equivalence class] [#equivalence class] (\@ref(equivalence class)) \@ref(#equivalence class)
+
+[equivalence-class] [#equivalence-class] (\@ref(equivalence-class)) \@ref(#equivalence-class)
+
+X [equivalence-class.html] [equivalence-class.html#equivalence-class] (\@ref(equivalence-class.html)) \@ref(equivalence-class.html#equivalence-class)
+
+[equivalence relation] [#equivalence relation] (\@ref(equivalence relation)) \@ref(#equivalence relation)
+
+[equivalence-relation] [#equivalence-relation] (\@ref(equivalence-relation)) \@ref(#equivalence-relation)
+
+X [equivalence-relation.html] [equivalence-relation.html#equivalence-relation] (\@ref(equivalence-relation.html)) \@ref(equivalence-relation.html#equivalence-relation)
+
+## number and reference equations {#nice-label}
+
+https://stackoverflow.com/questions/71595882/rstudio-error-in-windows-running-pdflatex-exe-on-file-name-tex-exit-code-10
+
+https://bookdown.org/yihui/rmarkdown/bookdown-markdown.html#equations
+
+`\#eq:emc` 
+`\@ref(eq:emc)`
+
+https://stackoverflow.com/questions/55923290/consistent-math-equation-numbering-in-bookdown-across-pdf-docx-html-output
+
+\begin{equation}
+\begin{aligned}
+ & C\text{ is an equivalence class of }a\text{ on }A\\
+\Leftrightarrow & \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation over }A\times A=A^{2}
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Leftrightarrow & \left[a\right]=\left[a\right]_{\sim}=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation on }A
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
+\end{aligned}
+(\#eq:eqclass)
+\end{equation}
+
+https://bookdown.org/yihui/rmarkdown/bookdown-markdown.html#cross-referencing
+
+This cross reference is the Fig. \@ref(fig:parabola-arc-with-points)
+
+https://stackoverflow.com/questions/51595939/bookdown-cross-reference-figure-in-another-file
+
+I ran into the same issue and came up with this solution if you aim at compiling 2 different pdfs. It relies on LaTeX's xr package for cross references: https://stackoverflow.com/a/52532269/576684
+
+## footnote
+
+noun[^202401260000-test-cross-link-1]
+
+[^202401260000-test-cross-link-1]: This is a footnote.
+
+## citation
+
+https://stackoverflow.com/questions/48965247/use-csl-file-for-pdf-output-in-bookdown/49145699#49145699
+
+citation 1[@noauthor_bookdown_2019] citation 2 @noauthor_bookdown_2019
+
+citation 3[@ccjou2009] citation 4 @ccjou2009
+
+### backreference
+
+https://community.rstudio.com/t/how-to-create-a-backreference-to-place-of-citation-in-rmarkdown/84866
+
+https://blog.csdn.net/RobertChenGuangzhi/article/details/50455429
+
+https://latex.org/forum/viewtopic.php?t=3722
+
+## bookdown environment for definition, theorem, proof
+
+https://bookdown.org/yihui/rmarkdown/bookdown-markdown.html
+
+https://github.com/rstudio/rstudio/issues/5264
+
+`@howthebodyworks` Ideally, previews of such equations should also work inside a theorem, although I could survive without that.
+
+https://github.com/rstudio/rstudio/issues/8773
+
+::: {.theorem #label name="Theorem Name"}
+Here is my theorem.
+:::
+
+::: {.proof name="Proof Name"}
+Here is my proof.
+:::
+
+::: {.theorem #pyth name="Pythagorean theorem"}
+For a right triangle, if $c$ denotes the length of the hypotenuse
+and $a$ and $b$ denote the lengths of the other two sides, we have
+
+$$a^2 + \color{cyan}b^2 \overset{\ref{eq:emc}}= \color{red}{c^2} $$
+:::
+
+::: {.definition #unnamed-chunk-45 name="Definition Name"}
+Here is my definition.
+:::
+
+[number and reference equations]
+
+\@ref(eq:eqclass)
+
+\@ref(eq:emc)
+
+\@ref(thm:pyth)
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401280001-test_files/figure-latex/parabola-arc-with-points-1} \caption{parabola arc with points}(\#fig:parabola-arc-with-points)
+\end{figure}
+
+## slide or presentation
+
+### Xaringan and Infinite Moon Reader
+
+https://rpubs.com/RW1304/xarigan-zh
+
+https://slides.yihui.org/xaringan/#1
+
+https://slides.yihui.org/xaringan/zh-CN.html#1
+
+https://github.com/yihui/xaringan/tree/master
+
+https://bookdown.org/yihui/rmarkdown/xaringan.html
+
+### ioslides
+
+https://www.youtube.com/watch?v=gkyjTcpCITM
+
+https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
+
+https://stackoverflow.com/questions/63749683/how-to-set-up-theorem-environment-in-the-rmarkdown-presentation
+
+
+```yaml
+---
+title: "Theorem demo"
+output:
+  ioslides_presentation:
+    css: style.css
+---
+```
+
+
+```css
+
+/* theorem environment _ plain */
+
+.theorem {
+  display: block;
+  font-style: italic;
+  font-size: 24px;
+  font-family: "Times New Roman";
+  color: black;
+}
+.theorem::before {
+  content: "Theorem. ";
+  font-weight: bold;
+  font-style: normal;
+}
+.theorem[text]::before {
+  content: "Theorem (" attr(text) ") ";
+}
+.theorem p {
+  display: inline;
+}
+
+/* theorem environment _ Copenhagen style */
+
+/*
+.theorem {
+  display: block;
+  font-style: italic;
+  font-size: 24px;
+  font-family: "Times New Roman";
+  color: black;
+  border-radius: 10px;
+  background-color: rgb(222,222,231);
+  box-shadow: 5px 10px 8px #888888;
+}
+.theorem::before {
+  content: "Theorem. ";
+  font-weight: bold;
+  font-style: normal;
+  display: inline-block;
+  width: -webkit-fill-available;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 5px 5px 15px;
+  background-color: rgb(38, 38, 134);
+}
+.theorem p {
+  padding: 15px 15px 15px 15px;
+}
+*/
+```
+
+### PowerPoint
+
+https://bookdown.org/yihui/rmarkdown/powerpoint-presentation.html
+
+<!--chapter:end:202401280001-test.Rmd-->
+
+# test2
+
+## verbatim
+
+https://community.rstudio.com/t/continued-issues-with-new-verbatim-in-rstudio/139737
+
+https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html
+
+
+````default
+
+```{r, eval=TRUE}
+1 + 1
+```
+````
+
+
+````markdown
+We can output arbitrary content **verbatim**.
+
+```{r}
+1 + 1
+```
+
+The content can contain inline code like
+`r pi * 5^2`, too.
+
+````
+
+
+<!--chapter:end:202401280002-test2.Rmd-->
+
+# partition
+
+\begin{align*}
+ & \left\{ A_{i}\right\} _{i\in I}=\left\{ A_{i}\middle|i\in I\right\} \text{ is a partition of a set }A\\
+\Leftrightarrow & \begin{cases}
+\forall i\in I\left(A_{i}\ne\emptyset\right)\\
+A=\bigcup\limits _{i\in I}A_{i}\\
+\forall i,j\in I\left(i\ne j\Rightarrow A_{i}\cap A_{j}=\emptyset\right)
+\end{cases}
+\end{align*}
+
+https://proofwiki.org/wiki/Definition:Set_Partition
+
+<!--chapter:end:202401280003-partition.Rmd-->
+
+# equivalence class
+
+\begin{align*}
+ & C\text{ is an equivalence class of }a\text{ on }A\\
+\Leftrightarrow & \left[a\right]_{\sim}=C=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation over }A\times A=A^{2}
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Leftrightarrow & \left[a\right]=\left[a\right]_{\sim}=\left\{ x\middle|\begin{cases}
+a\in A\\
+x\in A\\
+x\sim a\\
+\sim\text{ is an equivalence relation on }A
+\end{cases}\right\} \subseteq A\ne\emptyset\\
+\Rightarrow & \left[a\right]_{\sim}=\left\{ x\middle|x\sim a\right\} \subseteq A\ne\emptyset
+\end{align*}
+
+where the definition of [equivalence relation] can be found in \@ref(equivalence-relation).
+
+<!--chapter:end:202401291028-equivalence-class.Rmd-->
+
+# equivalence relation
+
+::: {show-in="html"}
+
+等價關係 equivalence relation
+
+\begingroup
+\fontfamily{ppl}\fontsize{1}{1}\selectfont
+\begin{align*}
+ & R\text{ is an equivalence relation over }A\times B\\
+\Leftrightarrow & \begin{cases}
+R=\sim=\left\{ \left\langle x,y\right\rangle \middle|x\sim y\right\} \subseteq A\times B & \left(\text{e}\right)\text{equivalence 等價}\\
+\vdots & \vdots
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \left(R\right)\text{relation}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRx\right) & \left(r\right)\text{reflexive}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRy\Rightarrow yRx\right) & \left(s\right)\text{symmetric}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\begin{cases}
+xRy\\
+yRz
+\end{cases}\Rightarrow xRz\right) & \left(t\right)\text{transitive}
+\end{cases}\Leftrightarrow\begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \text{關係}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle x,x\right\rangle \in R\right) & \text{自反}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle y,x\right\rangle \in R\right) & \text{對稱}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\left\langle x,z\right\rangle \in R\right) & \text{遞移}
+\end{cases}
+\end{align*}
+\endgroup
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}等價關係 equivalence relation \label{def:equivalence-relation}
+\end{CJK}
+\begin{CJK}{UTF8}{bsmi}
+\begin{align*}
+ & R\text{ is an equivalence relation over }A\times B\\
+\Leftrightarrow & \begin{cases}
+R=\sim=\left\{ \left\langle x,y\right\rangle \middle|x\sim y\right\} \subseteq A\times B & \left(\text{e}\right)\text{equivalence 等價}\\
+\vdots & \vdots
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \left(R\right)\text{relation}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRx\right) & \left(r\right)\text{reflexive}\\
+\forall\left\langle x,y\right\rangle \in R\left(xRy\Rightarrow yRx\right) & \left(s\right)\text{symmetric}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\begin{cases}
+xRy\\
+yRz
+\end{cases}\Rightarrow xRz\right) & \left(t\right)\text{transitive}
+\end{cases}\Leftrightarrow\begin{cases}
+R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B & \text{關係}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle x,x\right\rangle \in R\right) & \text{自反}\\
+\forall\left\langle x,y\right\rangle \in R\left(\left\langle y,x\right\rangle \in R\right) & \text{對稱}\\
+\forall\left\langle x,y\right\rangle ,\left\langle y,z\right\rangle \in R\left(\left\langle x,z\right\rangle \in R\right) & \text{遞移}
+\end{cases}
+\end{align*}
+\end{CJK}
+
+:::
+
+<!--chapter:end:202401291233-equivalence-relation.Rmd-->
+
+# Python
+
+https://bookdown.org/yihui/rmarkdown/language-engines.html
+
+
+```r
+names(knitr::knit_engines$get())
+```
+
+```
+##  [1] "awk"         "bash"        "coffee"      "gawk"        "groovy"     
+##  [6] "haskell"     "lein"        "mysql"       "node"        "octave"     
+## [11] "perl"        "php"         "psql"        "Rscript"     "ruby"       
+## [16] "sas"         "scala"       "sed"         "sh"          "stata"      
+## [21] "zsh"         "asis"        "asy"         "block"       "block2"     
+## [26] "bslib"       "c"           "cat"         "cc"          "comment"    
+## [31] "css"         "ditaa"       "dot"         "embed"       "eviews"     
+## [36] "exec"        "fortran"     "fortran95"   "go"          "highlight"  
+## [41] "js"          "julia"       "python"      "R"           "Rcpp"       
+## [46] "sass"        "scss"        "sql"         "stan"        "targets"    
+## [51] "tikz"        "verbatim"    "theorem"     "lemma"       "corollary"  
+## [56] "proposition" "conjecture"  "definition"  "example"     "exercise"   
+## [61] "hypothesis"  "proof"       "remark"      "solution"
+```
+https://rstudio.github.io/reticulate/articles/python_packages.html
+
+
+```python
+x = 'hello, python world!'
+print(x.split(' '))
+```
+
+```
+## ['hello,', 'python', 'world!']
+```
+
+
+```r
+library(reticulate)
+virtualenv_python()
+```
+
+
+```r
+library(reticulate)
+# conda_list()
+```
+
+
+```r
+library(reticulate)
+virtualenv_list()
+```
+
+https://rstudio.github.io/reticulate/reference/install_python.html
+
+
+```r
+library(reticulate)
+version <- "3.9.12"
+# install_python(version)
+
+# create a new environment
+# virtualenv_create("r-reticulate", version = version)
+
+# use_virtualenv("r-reticulate")
+
+# install MatPlotLib
+# virtualenv_install("r-reticulate", "matplotlib")
+
+# import MatPlotLib (it will be automatically discovered in "r-reticulate")
+matplotlib <- import("matplotlib")
+```
+
+copy `C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tcl8.6` and `C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tk8.6` two folders to the folder `C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\Lib`
+
+
+```r
+# library(reticulate)
+# use_virtualenv("r-reticulate")
+# # matplotlib <- import("matplotlib")
+# matplotlib$use("Agg", force = TRUE)
+```
+
+
+```python
+import matplotlib.pyplot as plt
+plt.plot([0, 2, 1, 4])
+plt.show()
+```
+
+![](202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf)<!-- --> 
+
+<!--chapter:end:202401292317-Python.Rmd-->
+
+# TikZ
+
+multi-column \@ref(multi-column)
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+
+```tex
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+![](202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf)<!-- --> 
+:::
+::::::
+
+How to speed up bookdown generation?
+
+https://stackoverflow.com/questions/56541371/how-to-speed-up-bookdown-generation
+
+TikZ and PGFplots
+
+What's the relation between packages PGFplots and TikZ?
+
+https://tex.stackexchange.com/questions/285925/whats-the-relation-between-packages-pgfplots-and-tikz
+
+https://www.youtube.com/watch?v=bQugbYq0BVA
+
+https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs8lk&index=18
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+
+```tex
+\begin{tikzpicture}
+  \def\a{1.5} % amplitude
+  \def\b{2}   % frequency
+  \draw[->] (-0.2,0)--(4.2,0) node[right, font=\small] {$x$};
+  \draw[->] (0,-4)--(0,0.5) node[above] {$y$};
+  \draw[domain=0:4,smooth,variable=\t,blue,thick] 
+    plot ({\a * (\b*\t - sin(deg(\b*\t)))},{-\a * (1 - cos(deg(\b*\t)))});
+  % \node[above] at (2, 0.5) {Brachistochrone Curve};
+  \node[above, font=\footnotesize] at (2, 1) {Brachistochrone Curve};
+  \node[above, font=\footnotesize] at (2, 0) {$\begin{aligned}
+& x=r(t-\sin t) \\
+& y=r(1-\cos t)
+\end{aligned}$};
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+![(\#fig:unnamed-chunk-4)Brachistochrone Curve](202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf) 
+:::
+::::::
+
+
+```tex
+\begin{tikzpicture}
+  \def\a{1.5} % amplitude
+  \def\b{2}   % frequency
+  \draw[->] (-0.2,0)--(4.2,0) node[right, font=\small] {$x$};
+  \draw[->] (0,-4)--(0,0.5) node[above] {$y$};
+  \draw[domain=0:4,smooth,variable=\t,blue,thick] 
+    plot ({\a * (\b*\t - sin(deg(\b*\t)))},{-\a * (1 - cos(deg(\b*\t)))});
+  % \node[above] at (2, 0.5) {Brachistochrone Curve};
+  \node[above, font=\footnotesize] at (2, 1) {Brachistochrone Curve};
+  \node[above, font=\footnotesize] at (2, 0) {$\begin{aligned}
+& x=r(t-\sin t) \\
+& y=r(1-\cos t)
+\end{aligned}$};
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1} \caption{Brachistochrone Curve}(\#fig:unnamed-chunk-6)
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1} \caption{Brachistochrone Curve}(\#fig:unnamed-chunk-7)
+\end{figure}
+
+## 2D
+
+https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
+
+
+```tex
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.05\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1} \end{figure}
+
+\begin{figure}
+\includegraphics[width=0.05\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1} \end{figure}
+
+\begin{figure}
+\includegraphics[width=0.2\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1} \end{figure}
+
+2
+\begin{figure}
+\includegraphics[width=0.15\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-12-1} \end{figure}
+
+3
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1} \end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw[rounded corners] (-1,1)--(0,0)--(1,2)--(-1,1);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-15-1} \caption{rounded corner pseudo-closed triangle}(\#fig:unnamed-chunk-15)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw[rounded corners] (-1,1)--(0,0)--(1,2)--cycle;
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-17-1} \caption{rounded corner triangle}(\#fig:unnamed-chunk-17)
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1} \caption{triangle vs. pseudo-closed triangle}(\#fig:unnamed-chunk-18)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (0,0) rectangle (4,2);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1} \caption{rectangle}(\#fig:unnamed-chunk-20)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (0,0) rectangle (2,2);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1} \caption{square}(\#fig:unnamed-chunk-22)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (0,0) circle (1);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1} \caption{circle}(\#fig:unnamed-chunk-24)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (0,0) circle (1);
+  \draw (0,0) rectangle (2,2);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1} \caption{circle and square}(\#fig:unnamed-chunk-26)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (1,1) ellipse (2 and 1);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1} \caption{ellipse}(\#fig:unnamed-chunk-28)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (1 ,1) arc (0:270:1);
+  \draw (6 ,1) arc (0:270:2 and 1);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1} \caption{circle and ellipse arcs}(\#fig:unnamed-chunk-30)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (-1,1) parabola bend (0,0) (2,4);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1} \caption{parabola arc}(\#fig:unnamed-chunk-32)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (-1,1) parabola bend (0,0) (2,4);
+  \filldraw
+    (-1,1) circle (.05)
+    ( 0,0) circle (.05)
+    ( 1,1) circle (.05)
+    ( 2,4) circle (.05);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.25\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1} \caption{parabola arc with points}(\#fig:unnamed-chunk-34)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw[step=20pt] (0,0) grid (3,2);
+  \draw[help lines ,step=20pt] (4,0) grid (7,2);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-36-1} \caption{grid and help lines}(\#fig:unnamed-chunk-36)
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1} \caption{grid and help lines}(\#fig:unnamed-chunk-37)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}[scale=0.25]
+  \draw[->] (0,0)--(9,0);
+  \draw[<-] (0,1)--(9,1);
+  \draw[<->] (0,2)--(9,2);
+  \draw[>->>] (0,3)--(9,3);
+  \draw[|<->|] (0,4)--(9,4);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1} \caption{arrows}(\#fig:unnamed-chunk-39)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw[line width =2pt] (0,6)--(9,6); 
+  \draw[dotted]          (0,5)--(9,5); 
+  \draw[densely dotted]  (0,4)--(9,4); 
+  \draw[loosely dotted]  (0,3)--(9,3); 
+  \draw[dashed]          (0,2)--(9,2); 
+  \draw[densely dashed]  (0,1)--(9,1); 
+  \draw[loosely dashed]  (0,0)--(9,0);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1} \caption{arrows}(\#fig:unnamed-chunk-41)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}[dline/.style={color= blue, line width=2pt}]
+  \draw[dline] (0,0)--(9,0); 
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1} \caption{head styling}(\#fig:unnamed-chunk-43)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (0,0) rectangle (2,2);
+  \draw[shift={( 3, 0)}] (0,0) rectangle (2,2);
+  \draw[shift={( 0, 3)}] (0,0) rectangle (2,2);
+  \draw[shift={( 0,-3)}] (0,0) rectangle (2,2);
+  \draw[shift={(-3, 0)}] (0,0) rectangle (2,2);
+  \draw[shift={( 3, 3)}] (0,0) rectangle (2,2);
+  \draw[shift={(-3, 3)}] (0,0) rectangle (2,2);
+  \draw[shift={( 3,-3)}] (0,0) rectangle (2,2);
+  \draw[shift={(-3,-3)}] (0,0) rectangle (2,2);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1} \caption{transform: shift}(\#fig:unnamed-chunk-45)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (0,0) rectangle (2,2);
+  \draw[xshift= 100pt] (0,0) rectangle (2,2);
+  \draw[xshift=-100pt] (0,0) rectangle (2,2);
+  \draw[yshift= 100pt] (0,0) rectangle (2,2);
+  \draw[yshift=-100pt] (0,0) rectangle (2,2);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1} \caption{transform: shift x, y}(\#fig:unnamed-chunk-47)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (0,0) rectangle (2,2);
+  \draw[xshift= 100pt, xscale=1.5] (0,0) rectangle (2,2);
+  \draw[yshift= 100pt, xscale=0.5] (0,0) rectangle (2,2);
+  \draw[xshift=-100pt, yscale=1.5] (0,0) rectangle (2,2);
+  \draw[yshift=-100pt, yscale=0.5] (0,0) rectangle (2,2);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1} \caption{transform: scale x, y}(\#fig:unnamed-chunk-49)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (0,0) rectangle (2,2);
+  \draw[xshift= 100pt, xscale=1.5] (0,0) rectangle (2,2);
+  \draw[yshift= 100pt, yscale=1.5] (0,0) rectangle (2,2);
+  \draw[xshift=-100pt, xscale=0.5] (0,0) rectangle (2,2);
+  \draw[yshift=-100pt, yscale=0.5] (0,0) rectangle (2,2);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1} \caption{transform: scale}(\#fig:unnamed-chunk-51)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (0,0) rectangle (2,2);
+  \draw[xshift=125pt,rotate=45] (0,0) rectangle (2,2);
+  \draw[xshift=175pt,rotate around={45:(2 ,2)}] (0,0) rectangle (2,2);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1} \caption{transform: rotate}(\#fig:unnamed-chunk-53)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw (0,0) rectangle (2,2);
+  \draw[xshift=70pt,xslant=1] (0,0) rectangle (2,2);
+  \draw[yshift=70pt,yslant=1] (0,0) rectangle (2,2);
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1} \caption{transform: slant}(\#fig:unnamed-chunk-55)
+\end{figure}
+
+
+```tex
+\tikzset{
+  box/.style={
+    draw=blue,
+    rectangle,
+    rounded corners=5pt,
+    minimum width=50pt,
+    minimum height=20pt,
+    inner sep=5pt
+  }
+}
+\begin{tikzpicture}
+  \node[box] (1) at (0,0) {1};
+  \node[box] (2) at (4,0) {2};
+  \node[box] (3) at (8,0) {3};
+  \draw[->] (1)--(2);
+  \draw[->] (2)--(3);
+  \node at (2,1) {a};
+  \node at (6,1) {b};
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1} \caption{flowchart}(\#fig:unnamed-chunk-57)
+\end{figure}
+
+
+```tex
+\tikzset{
+  box/.style={
+    draw=blue,
+    fill=blue!20,
+    rectangle,
+    rounded corners=5pt,
+    minimum height=20pt,
+    inner sep=5pt
+  }
+}
+\begin{tikzpicture}
+  \node[box] {1}
+      child {node[box] {2}}
+      child {node[box] {3}
+          child {node[box] {4}}
+          child {node[box] {5}}
+          child {node[box] {6}}
+      };
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1} \caption{tree}(\#fig:unnamed-chunk-59)
+\end{figure}
+
+
+```tex
+\begin{tikzpicture}
+  \draw[->] (-0.2,0)--(6,0) node[right] {$x$};
+  \draw[->] (0,-0.2)--(0,6) node[above] {$f(x)$};
+  \draw[domain=0:4] plot (\x ,{0.1* exp(\x)}) node[right] {$f(x)=\frac{1}{10}e^x$};
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1} \caption{tree}(\#fig:unnamed-chunk-61)
+\end{figure}
+
+https://stackoverflow.com/questions/64897575/tikz-libraries-in-bookdown
+
+It turns out that you can simply put the `\usetikzlibrary{...}` command directly before the `\begin{tikzpicture}` and everything works fine :)
+
+https://stackoverflow.com/questions/56211210/r-markdown-document-with-html-docx-output-using-latex-package-bbm
+
+https://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown
+
+
+
+## 3D
+
+https://zhuanlan.zhihu.com/p/431732330?utm_psn=1741857547550638080
+
+https://github.com/RRWWW/Stereometry
+
+
+```tex
+\begin{tikzpicture}
+  \coordinate (A) at ( 1, 1, 1);
+  \coordinate (B) at ( 1, 1,-1);
+  \coordinate (C) at ( 1,-1,-1);
+  \coordinate (D) at ( 1,-1, 1);
+  \coordinate (E) at (-1,-1, 1);
+  \coordinate (F) at (-1,-1,-1);
+  \coordinate (G) at (-1, 1,-1);
+  \coordinate (H) at (-1, 1, 1);
+  \draw (A) node[right=1pt] {$A$}--
+        (B) node[right=1pt] {$B$}--
+        (C) node[right=1pt] {$C$}--
+        (D) node[right=1pt] {$D$}--
+        (E) node[left= 1pt] {$E$}--
+        (F) node[right=1pt] {$F$}--
+        (G) node[right=1pt] {$G$}--
+        (H) node[left= 1pt] {$H$}--
+        (A) node[right=1pt] {$A$};
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-63-1} \caption{cube}(\#fig:unnamed-chunk-63)
+\end{figure}
+
+
+```tex
+\usetikzlibrary{patterns}
+\usetikzlibrary{3d,calc}
+\tdplotsetmaincoords{45}{45}
+\begin{tikzpicture}[tdplot_main_coords]
+  \coordinate (A) at ( 1, 1, 1);
+  \coordinate (B) at ( 1, 1,-1);
+  \coordinate (C) at ( 1,-1,-1);
+  \coordinate (D) at ( 1,-1, 1);
+  \coordinate (E) at (-1,-1, 1);
+  \coordinate (F) at (-1,-1,-1);
+  \coordinate (G) at (-1, 1,-1);
+  \coordinate (H) at (-1, 1, 1);
+  \draw (A) node[right=1pt] {$A$}--
+        (B) node[right=1pt] {$B$}--
+        (C) node[right=1pt] {$C$}--
+        (D) node[right=1pt] {$D$}--
+        (E) node[left= 1pt] {$E$}--
+        (F) node[right=1pt] {$F$}--
+        (G) node[right=1pt] {$G$}--
+        (H) node[left= 1pt] {$H$}--
+        (A) node[right=1pt] {$A$};
+\end{tikzpicture}
+```
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-65-1} \caption{cube rotate}(\#fig:unnamed-chunk-65)
+\end{figure}
+
+https://tex.stackexchange.com/questions/388621/optimizing-perspective-tikz-graphic
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-66-1} \caption{cube rotate}(\#fig:unnamed-chunk-66)
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202401311000-TikZ_files/figure-latex/unnamed-chunk-67-1} \caption{cube rotate}(\#fig:unnamed-chunk-67)
+\end{figure}
+
+https://github.com/XiangyunHuang/bookdown-broken/blob/master/index.Rmd
+
+
+```tex
+\smartdiagramset{planet color=gray!40!white, uniform color list=gray!40!white for 10 items}
+\smartdiagram[bubble diagram]{Basic skills,
+  Edit~/\\ (RStudio), Organize~/\\ (bookdown), Cooperate~/\\ (Git), Typeset~/\\ (LaTeX/Pandoc), Compile~/\\ (GitHub Action)}
+```
+
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{202401311000-TikZ_files/figure-latex/skills-1} \caption{modern statistics plot skills}(\#fig:skills)
+\end{figure}
+
+## animation
+
+https://zhuanlan.zhihu.com/p/338402487
+
+<!--chapter:end:202401311000-TikZ.Rmd-->
+
+# xy-pic
+
+<https://bookdown.org/yihui/rmarkdown-cookbook/install-latex-pkgs.html>
+
+`tinytex::install_tinytex()`
+
+the following xymatrix from LaTeX package xy for xy-pic is not shown or rendered in HTML:
+
+`$\LaTeX$` can only be used in HTML, not PDF
+
+::: {show-in="pdf"}
+
+\xymatrix{U\ar[ddr]_{\psi}\ar[drr]^{\varphi}\ar[dr]|-{(x,y)}\\
+ & X\times_{Z}Y\ar[d]^{q}\ar[r]_{p} & X\ar[d]_{f}\\
+ & Y\ar[r]^{g} & Z
+}
+:::
+
+::: {show-in="html"}
+
+<!-- ```{r, engine="tikz", fig.cap="xy-pic", out.width="65%", echo=FALSE, cache=TRUE, engine.opts=list(extra.preamble=c("\\usepackage{xy}"))}
+\xymatrix{U\ar[ddr]_{\psi}\ar[drr]^{\varphi}\ar[dr]|-{(x,y)}\\
+ & X\times_{Z}Y\ar[d]^{q}\ar[r]_{p} & X\ar[d]_{f}\\
+ & Y\ar[r]^{g} & Z
+``` -->
+
+\require{xy}\xymatrix{U\ar[ddr]_{\psi}\ar[drr]^{\varphi}\ar[dr]|-{(x,y)}\\
+ & X\times_{Z}Y\ar[d]^{q}\ar[r]_{p} & X\ar[d]_{f}\\
+ & Y\ar[r]^{g} & Z
+}
+
+$$
+\require{xy}
+\xymatrix{U\ar[ddr]_{\psi}\ar[drr]^{\varphi}\ar[dr]|-{(x,y)}\\
+ & X\times_{Z}Y\ar[d]^{q}\ar[r]_{p} & X\ar[d]_{f}\\
+ & Y\ar[r]^{g} & Z
+}
+$$
+
+:::
+
+<!--chapter:end:202401311126-LaTeX-xypic.Rmd-->
+
+# statistics
+
+
+
+<!--chapter:end:202402170031-statistics.Rmd-->
+
+## covariance matrix 
+
+@ccjou2014
+
+### calculation
+
+\begin{align*}
+\mathrm{C}\left[\boldsymbol{X}\right]=\mathrm{Cov}\left[\boldsymbol{X}\right]=\mathrm{V}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\mathrm{T}}-\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]+\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left[\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\boldsymbol{X}\right]\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}
+\end{align*}
+
+\begin{align*}
+\boldsymbol{X}=\left[X\right]_{1\times1}=X\Rightarrow C\left(X\right)=\mathrm{C}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+= & \mathrm{E}\left[XX\right]-\mathrm{E}\left(X\right)\mathrm{E}\left(X\right)\\
+= & \mathrm{E}\left(X^{2}\right)-\left[\mathrm{E}\left(X\right)\right]^{2}=\mathrm{V}\left(X\right)
+\end{align*}
+
+### $\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[\boldsymbol{X}\right]$
+
+\begin{align*}
+\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]= & \mathrm{E}\left[\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]^{\mathrm{T}}\right]\\
+\overset{\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)=\mathrm{E}\left(\boldsymbol{X}\right)+\boldsymbol{b}}{=} & \mathrm{E}\left[\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]=\mathrm{V}\left[\boldsymbol{X}\right]
+\end{align*}
+
+### $\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}$
+
+\begin{align*}
+\mathrm{V}\left[A\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+\overset{\mathrm{E}\left(A\boldsymbol{X}\right)=A\mathrm{E}\left(\boldsymbol{X}\right)}{=} & \mathrm{E}\left[\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\right]^{\mathrm{T}}\right]\\
+= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}A^{\mathrm{T}}\right]\\
+= & A\mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]A^{\mathrm{T}}=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}
+\end{align*}
+
+### $\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}$
+
+$$
+\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}
+$$
+
+<!--chapter:end:202402170033-covariance-matrix.Rmd-->
+
+# Gosper algorithm
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/0LFg5dvPOoc"></iframe>
+:::
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/qeMqtt7NFDM"></iframe>
+
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1ZX4y1o7EB&autoplay=0"></iframe>
+:::
+
+<!--chapter:end:202402180237-Gosper-algorithm.Rmd-->
+
+# Lorentz transformation
+
+## Einstein
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/FvqutkaPmas"></iframe>
+:::
+
+https://wap.hillpublisher.com/UpFile/202204/20220414165340.pdf
+
+## Bondi $k$-calculus
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Ghql2UNlWYA"></iframe>
+
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/bZnmF-UKvq0?start=1412"></iframe>
+:::
+
+https://en.wikipedia.org/wiki/Bondi_k-calculus
+
+## wordline in Minkowski space
+
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1sV4y1Y7fX&autoplay=0&t=295"></iframe>
+
+### Wick rotation
+
+https://ncatlab.org/nlab/show/Wick+rotation
+
+#### Osterwalder-Schrader reconstruction theorem
+
+https://ncatlab.org/nlab/show/Osterwalder-Schrader+theorem
+
+<!--chapter:end:202402191138-Lorentz-transformation.Rmd-->
+
+# R
+
+## TonyKuoYJ's R little course
+
+::: {show-in="html"}
+郭耀仁 認識 R 的美好
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+郭耀仁 認識 R 的美好
+\end{CJK}
+:::
+
+https://bookdown.org/tonykuoyj/eloquentr/getting-started.html
+
+https://bookdown.org/tonykuoyj/eloquentr/easy-installation.html#about-packages
+
+`install.pacakges()`
+
+`library()`
+
+https://bookdown.org/tonykuoyj/eloquentr/getting-started.html
+
+### quick intro
+
+`Ctrl + Alt + I` to insert a new code chunk in RStudio
+
+`Ctrl + Enter` to run the current line
+
+`Ctrl + Shift + Enter` to run the current chunk
+
+
+```r
+R.version
+```
+
+```
+##                _                                
+## platform       x86_64-w64-mingw32               
+## arch           x86_64                           
+## os             mingw32                          
+## crt            ucrt                             
+## system         x86_64, mingw32                  
+## status                                          
+## major          4                                
+## minor          3.2                              
+## year           2023                             
+## month          10                               
+## day            31                               
+## svn rev        85441                            
+## language       R                                
+## version.string R version 4.3.2 (2023-10-31 ucrt)
+## nickname       Eye Holes
+```
+
+
+
+```r
+a <- 23 # prime
+a
+```
+
+```
+## [1] 23
+```
+
+
+```r
+combine <- c(11, 13) # twin prime
+combine
+```
+
+```
+## [1] 11 13
+```
+
+
+```r
+# ?c
+# help(c)
+```
+
+`Ctrl + L` to clean R console
+
+path with slash `/` in R, differing backslash `\` in M$ Windows
+
+#### function
+
+
+```r
+add <- function(x, y) {
+  return(x + y)
+}
+
+add(11, 13)
+```
+
+```
+## [1] 24
+```
+
+$$
+BMI = \dfrac{BW\left[\text{Kg}\right]}{{BH\left[\text{m}\right]}^2}
+$$
+
+
+```r
+get_bmi <- function (bw, bh) {
+  return (bw/(bh/100)^2)
+}
+
+get_bmi(70, 170)
+```
+
+```
+## [1] 24.22145
+```
+### R style
+
+https://bookdown.org/tonykuoyj/eloquentr/styleguide.html
+
+snake_case rather than camelCase
+
+### data workflow or forward pipe
+
+from _chaining method_ in *object-oriented programming*
+to **functional programming**
+
+#### `%>%` operator
+
+
+```r
+abs(-5:5)
+```
+
+```
+##  [1] 5 4 3 2 1 0 1 2 3 4 5
+```
+
+
+
+```r
+# install.packages("magrittr")
+
+library(magrittr)
+```
+
+```
+## 
+## Attaching package: 'magrittr'
+```
+
+```
+## The following object is masked _by_ '.GlobalEnv':
+## 
+##     add
+```
+
+```r
+-5:5 %>% abs()
+```
+
+```
+##  [1] 5 4 3 2 1 0 1 2 3 4 5
+```
+
+
+```r
+# with readability but too many lines
+sys_date <- Sys.Date()
+sys_date_yr <- format(sys_date, format = "%Y")
+sys_date_num <- as.numeric(sys_date_yr)
+sys_date_num
+```
+
+```
+## [1] 2024
+```
+
+
+```r
+# less line but also less readability
+sys_date_num <- as.numeric(format(Sys.Date(), format = "%Y"))
+sys_date_num
+```
+
+```
+## [1] 2024
+```
+
+```r
+# use %>% operator to demonstrate data workflow or forward pipe
+sys_date_num <- Sys.Date() %>%
+   format(format = "%Y") %>%
+   as.numeric()
+sys_date_num
+```
+
+```
+## [1] 2024
+```
+
+### data processing with `dplyr`
+
+https://bookdown.org/tonykuoyj/eloquentr/dplyr.html
+
+some functions functioning like those in **SQL**
+
+
+```r
+library(dplyr)
+```
+
+```
+## Warning: package 'dplyr' was built under R version 4.2.3
+```
+
+```
+## 
+## Attaching package: 'dplyr'
+```
+
+```
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+```
+
+```
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
+```r
+# install.packages("gapminder")
+
+library(gapminder)
+```
+
+```
+## Warning: package 'gapminder' was built under R version 4.2.3
+```
+
+```r
+head(gapminder)
+```
+
+```
+## # A tibble: 6 x 6
+##   country     continent  year lifeExp      pop gdpPercap
+##   <fct>       <fct>     <int>   <dbl>    <int>     <dbl>
+## 1 Afghanistan Asia       1952    28.8  8425333      779.
+## 2 Afghanistan Asia       1957    30.3  9240934      821.
+## 3 Afghanistan Asia       1962    32.0 10267083      853.
+## 4 Afghanistan Asia       1967    34.0 11537966      836.
+## 5 Afghanistan Asia       1972    36.1 13079460      740.
+## 6 Afghanistan Asia       1977    38.4 14880372      786.
+```
+
+
+```r
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+gapminder %>%
+  filter(year == 2007)
+```
+
+```
+## # A tibble: 142 x 6
+##    country     continent  year lifeExp       pop gdpPercap
+##    <fct>       <fct>     <int>   <dbl>     <int>     <dbl>
+##  1 Afghanistan Asia       2007    43.8  31889923      975.
+##  2 Albania     Europe     2007    76.4   3600523     5937.
+##  3 Algeria     Africa     2007    72.3  33333216     6223.
+##  4 Angola      Africa     2007    42.7  12420476     4797.
+##  5 Argentina   Americas   2007    75.3  40301927    12779.
+##  6 Australia   Oceania    2007    81.2  20434176    34435.
+##  7 Austria     Europe     2007    79.8   8199783    36126.
+##  8 Bahrain     Asia       2007    75.6    708573    29796.
+##  9 Bangladesh  Asia       2007    64.1 150448339     1391.
+## 10 Belgium     Europe     2007    79.4  10392226    33693.
+## # i 132 more rows
+```
+
+
+```r
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+gapminder %>%
+  filter(year == 2007) %>%
+  select(country)
+```
+
+```
+## # A tibble: 142 x 1
+##    country    
+##    <fct>      
+##  1 Afghanistan
+##  2 Albania    
+##  3 Algeria    
+##  4 Angola     
+##  5 Argentina  
+##  6 Australia  
+##  7 Austria    
+##  8 Bahrain    
+##  9 Bangladesh 
+## 10 Belgium    
+## # i 132 more rows
+```
+
+
+```r
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+gapminder %>%
+  mutate(pop_in_thousands = pop / 1000)
+```
+
+```
+## # A tibble: 1,704 x 7
+##    country     continent  year lifeExp      pop gdpPercap pop_in_thousands
+##    <fct>       <fct>     <int>   <dbl>    <int>     <dbl>            <dbl>
+##  1 Afghanistan Asia       1952    28.8  8425333      779.            8425.
+##  2 Afghanistan Asia       1957    30.3  9240934      821.            9241.
+##  3 Afghanistan Asia       1962    32.0 10267083      853.           10267.
+##  4 Afghanistan Asia       1967    34.0 11537966      836.           11538.
+##  5 Afghanistan Asia       1972    36.1 13079460      740.           13079.
+##  6 Afghanistan Asia       1977    38.4 14880372      786.           14880.
+##  7 Afghanistan Asia       1982    39.9 12881816      978.           12882.
+##  8 Afghanistan Asia       1987    40.8 13867957      852.           13868.
+##  9 Afghanistan Asia       1992    41.7 16317921      649.           16318.
+## 10 Afghanistan Asia       1997    41.8 22227415      635.           22227.
+## # i 1,694 more rows
+```
+
+
+```r
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+gapminder %>%
+  arrange(year)
+```
+
+```
+## # A tibble: 1,704 x 6
+##    country     continent  year lifeExp      pop gdpPercap
+##    <fct>       <fct>     <int>   <dbl>    <int>     <dbl>
+##  1 Afghanistan Asia       1952    28.8  8425333      779.
+##  2 Albania     Europe     1952    55.2  1282697     1601.
+##  3 Algeria     Africa     1952    43.1  9279525     2449.
+##  4 Angola      Africa     1952    30.0  4232095     3521.
+##  5 Argentina   Americas   1952    62.5 17876956     5911.
+##  6 Australia   Oceania    1952    69.1  8691212    10040.
+##  7 Austria     Europe     1952    66.8  6927772     6137.
+##  8 Bahrain     Asia       1952    50.9   120447     9867.
+##  9 Bangladesh  Asia       1952    37.5 46886859      684.
+## 10 Belgium     Europe     1952    68    8730405     8343.
+## # i 1,694 more rows
+```
+
+
+```r
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+# total population in the world in 2007
+gapminder %>%
+  filter(year == 2007) %>%
+  summarise(ttl_pop = sum(as.numeric(pop)))
+```
+
+```
+## # A tibble: 1 x 1
+##      ttl_pop
+##        <dbl>
+## 1 6251013179
+```
+
+
+```r
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+# total population group by the continents in 2007
+gapminder %>%
+  filter(year == 2007) %>%
+  group_by(continent) %>%
+  summarise(ttl_pop = sum(as.numeric(pop)))
+```
+
+```
+## # A tibble: 5 x 2
+##   continent    ttl_pop
+##   <fct>          <dbl>
+## 1 Africa     929539692
+## 2 Americas   898871184
+## 3 Asia      3811953827
+## 4 Europe     586098529
+## 5 Oceania     24549947
+```
+
+### visualization statically with `ggplot2`
+
+
+```r
+library(ggplot2)
+```
+
+```
+## Warning: package 'ggplot2' was built under R version 4.2.3
+```
+
+```r
+library(gapminder)
+
+gapminder_2007 <- gapminder %>%
+  filter(year == 2007)
+scatter_plot <- ggplot(gapminder_2007, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point()
+scatter_plot
+```
+
+![](202402211401-R_files/figure-latex/unnamed-chunk-19-1.pdf)<!-- --> 
+
+
+```r
+library(ggplot2)
+library(gapminder)
+
+north_asia <- gapminder %>%
+  filter(country %in% c("China", "Japan", "Taiwan", "Korea, Rep."))
+line_plot <- ggplot(north_asia, aes(x = year, y = gdpPercap, colour = country)) +
+  geom_line()
+line_plot
+```
+
+![](202402211401-R_files/figure-latex/unnamed-chunk-20-1.pdf)<!-- --> 
+
+
+```r
+library(ggplot2)
+library(gapminder)
+
+hist_plot <- ggplot(gapminder_2007, aes(x = gdpPercap)) +
+  geom_histogram()
+hist_plot
+```
+
+```
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+![](202402211401-R_files/figure-latex/unnamed-chunk-21-1.pdf)<!-- --> 
+
+```r
+hist_plot <- ggplot(gapminder_2007, aes(x = gdpPercap)) +
+  geom_histogram(bins = 20)
+hist_plot
+```
+
+![](202402211401-R_files/figure-latex/unnamed-chunk-21-2.pdf)<!-- --> 
+
+
+```r
+library(ggplot2)
+library(gapminder)
+
+box_plot <- ggplot(gapminder_2007, aes(x = continent, y = gdpPercap)) +
+  geom_boxplot()
+box_plot
+```
+
+![](202402211401-R_files/figure-latex/unnamed-chunk-22-1.pdf)<!-- --> 
+
+
+```r
+library(ggplot2)
+library(gapminder)
+
+gdpPercap_2007_na <- gapminder %>%
+  filter(year == 2007 & country %in% c("China", "Japan", "Taiwan", "Korea, Rep."))
+bar_plot <- ggplot(gdpPercap_2007_na, aes(x = country, y = gdpPercap)) +
+  geom_bar(stat = "identity")
+bar_plot
+```
+
+![](202402211401-R_files/figure-latex/unnamed-chunk-23-1.pdf)<!-- --> 
+
+### variable type
+
+https://bookdown.org/tonykuoyj/eloquentr/variable-types.html
+
+
+```r
+class(2L)
+```
+
+```
+## [1] "integer"
+```
+
+```r
+class(2.0L)
+```
+
+```
+## [1] "integer"
+```
+
+```r
+class(2.3L)
+```
+
+```
+## [1] "numeric"
+```
+time: POSIXct POSIXt
+
+```r
+class(Sys.time())
+```
+
+```
+## [1] "POSIXct" "POSIXt"
+```
+
+
+```r
+0 %in% -5:5
+```
+
+```
+## [1] TRUE
+```
+#### date
+
+1970-01-01 = 0L
+
+
+```r
+date_of_origin <- as.Date("1970-01-01")
+as.integer(date_of_origin)
+```
+
+```
+## [1] 0
+```
+check if type of `x` is `Date`
+
+`inherits(x, what = "Date")`
+
+convert `character` to `Date`
+
+`as.Date("01-01-1970", format = "%m-%d-%Y")`
+
+#### time
+
+1970-01-01 00:00:00 GMT = 0L
+
+tz = time zone
+
+
+```r
+time_of_origin <- as.POSIXct("1970-01-01 00:00:00", tz = "GMT")
+as.integer(time_of_origin)
+```
+
+```
+## [1] 0
+```
+check if type of `x` is time
+
+`inherits(x, what = "POSIXct")`
+
+convert `character` to time
+
+`as.POSIXct("1970-01-01 00:00:00", tz = "GMT")`
+
+
+#### quotient `%/%`
+
+
+```r
+7 %/% 3
+```
+
+```
+## [1] 2
+```
+
+### data type
+
+https://bookdown.org/tonykuoyj/eloquentr/vector-factor.html
+
+- 1D
+  - vector
+  - factor
+- 2D
+  - matrix
+  - data frame
+- $n$D
+  - array
+  - list
+  
+#### vector
+
+
+```r
+four_seasons <- c("spring", "summer", "autumn", "winter")
+four_seasons
+```
+
+```
+## [1] "spring" "summer" "autumn" "winter"
+```
+
+```r
+favorite_season <- four_seasons[3]
+favorite_season
+```
+
+```
+## [1] "autumn"
+```
+
+```r
+favorite_seasons <- four_seasons[c(-2, -4)]
+favorite_seasons
+```
+
+```
+## [1] "spring" "autumn"
+```
+
+only one variable type for a vector
+
+
+```r
+lucky_numbers <- c(7L, 24)
+class(lucky_numbers[1])
+```
+
+```
+## [1] "numeric"
+```
+
+
+```r
+lucky_numbers <- c(7L, FALSE)
+lucky_numbers
+```
+
+```
+## [1] 7 0
+```
+
+```r
+class(lucky_numbers[2])
+```
+
+```
+## [1] "integer"
+```
+
+
+```r
+mixed_vars <- c(TRUE, 7L, 24, "spring")
+mixed_vars
+```
+
+```
+## [1] "TRUE"   "7"      "24"     "spring"
+```
+
+```r
+class(mixed_vars[1])
+```
+
+```
+## [1] "character"
+```
+
+```r
+class(mixed_vars[2])
+```
+
+```
+## [1] "character"
+```
+
+```r
+class(mixed_vars[3])
+```
+
+```
+## [1] "character"
+```
+##### logic
+
+
+```r
+four_seasons <- c("spring", "summer", "autumn", "winter")
+my_favorite_seasons <- four_seasons == "spring" | four_seasons == "autumn"
+four_seasons[my_favorite_seasons]
+```
+
+```
+## [1] "spring" "autumn"
+```
+
+##### `rep`
+
+##### `seq`
+
+#### factor
+
+https://bookdown.org/tonykuoyj/eloquentr/vector-factor.html#factor
+
+## R by Apan Liao
+
+::: {show-in="html"}
+
+R 演習室
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+R 演習室
+\end{CJK}
+
+:::
+
+https://www.youtube.com/playlist?list=PL5AC0ADBF65924EAD
+
+### data input
+
+https://www.youtube.com/watch?v=STcIxf_vUWY&list=PL5AC0ADBF65924EAD&index=1
+
+- `scan()`
+- read
+  - `read.table()`
+  - `read.csv()`
+  
+### descriptive statistics
+
+https://www.youtube.com/watch?v=GL3Wv_45LaU&list=PL5AC0ADBF65924EAD&index=2
+
+<!--chapter:end:202402211401-R.Rmd-->
+
+# Laplace transform
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/lg90shB1TrU"></iframe>
+:::
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/WEkuV55B4q4"></iframe>
+:::
+
+<!--chapter:end:202402221300-Laplace-transform.Rmd-->
+
+# conic section
+
+::: {show-in="html"}
+conic section 圓錐曲線 / 圓錐截痕
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+conic section 圓錐曲線 / 圓錐截痕
+\end{CJK}
+:::
+
+https://en.wikipedia.org/wiki/Conic_section
+
+https://tex.stackexchange.com/questions/222882/drawing-minimal-xy-axis
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{202402252333-conic-section_files/figure-latex/unnamed-chunk-1-1} \caption{parabola defined by focus, directrix, eccentricity}(\#fig:unnamed-chunk-1)
+\end{figure}
+
+## Cartesian coordinate: focus, directrix, eccentricity
+
+::: {show-in="html"}
+focus, directrix, eccentricity 焦點, 準線, 離心率
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+focus, directrix, eccentricity 焦點, 準線, 離心率
+\end{CJK}
+:::
+
+$$
+\begin{cases}
+F=\left(0,y_{{\scriptscriptstyle F}}\right) & F:\text{focus}\\
+L=y-y_{{\scriptscriptstyle L}}=0 & L:\text{directrix}\\
+\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert y-y_{{\scriptscriptstyle L}}\right\Vert } & \begin{cases}
+P=\left(x,y\right)\\
+\epsilon:\text{eccentricity}
+\end{cases}
+\end{cases}
+$$
+
+::: {show-in="html"}
+$$
+\require{color}
+\begin{align}
+0\le\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\overline{PF}}{\overline{PP^{\prime}}}= & \dfrac{\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(x,y\right)-\left(x,y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\left\Vert \left(x,y-y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(0,y-y_{{\scriptscriptstyle L}}\right)\right\Vert } =  \dfrac{\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\sqrt{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}} (\#eq:eccentricity)\\
+\epsilon^{2}= & \dfrac{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}=\dfrac{x^{2}+y^{2}-2y_{{\scriptscriptstyle F}}y+y_{{\scriptscriptstyle F}}^{2}}{y^{2}-2y_{{\scriptscriptstyle L}}y+y_{{\scriptscriptstyle L}}^{2}}\\
+0= & x^{2}+\left(1-\epsilon^{2}\right)y^{2}-2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\\
+\overset{\epsilon\ne1}{=} & x^{2}+\left(1-\epsilon^{2}\right)\left[y^{2}-\dfrac{2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}y+\dfrac{y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}}{1-\epsilon^{2}}\right]\\
+= & x^{2}+\left(1-\epsilon^{2}\right)\\
+ & \left[y^{2}-\dfrac{2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}y+\left(\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}-\left(\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}}{1-\epsilon^{2}}\right]\\
+= & x^{2}+\left(1-\epsilon^{2}\right)\left[\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}}{\left(1-\epsilon^{2}\right)^{2}}\right]\\
+= & x^{2}+\left(1-\epsilon^{2}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{\colorbox{#FFFF66}{$\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}$}}{1-\epsilon^{2}}
+\end{align}
+$$
+:::
+
+::: {show-in="pdf"}
+\begin{align}
+0\le\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\overline{PF}}{\overline{PP^{\prime}}}= & \dfrac{\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(x,y\right)-\left(x,y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\left\Vert \left(x,y-y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(0,y-y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\sqrt{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}} (\#eq:eccentricity)\\
+\epsilon^{2}= & \dfrac{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}=\dfrac{x^{2}+y^{2}-2y_{{\scriptscriptstyle F}}y+y_{{\scriptscriptstyle F}}^{2}}{y^{2}-2y_{{\scriptscriptstyle L}}y+y_{{\scriptscriptstyle L}}^{2}}\\
+0= & x^{2}+\left(1-\epsilon^{2}\right)y^{2}-2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\\
+\overset{\epsilon\ne1}{=} & x^{2}+\left(1-\epsilon^{2}\right)\left[y^{2}-\dfrac{2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}y+\dfrac{y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}}{1-\epsilon^{2}}\right]\\
+= & x^{2}+\left(1-\epsilon^{2}\right)\\
+ & \left[y^{2}-\dfrac{2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}y+\left(\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}-\left(\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}}{1-\epsilon^{2}}\right]\\
+= & x^{2}+\left(1-\epsilon^{2}\right)\left[\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}}{\left(1-\epsilon^{2}\right)^{2}}\right]\\
+= & x^{2}+\left(1-\epsilon^{2}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{\colorbox{yellow!50}{\text{\ensuremath{\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)}-\ensuremath{\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}}}}}{1-\epsilon^{2}}
+\end{align}
+:::
+
+::: {show-in="html"}
+$$
+\require{color}
+\begin{aligned}
+ & \colorbox{#FFFF66}{$\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}$}\\
+= & \left(1-\epsilon^{2}\right)y_{{\scriptscriptstyle F}}^{2}-\left(\epsilon^{2}-\epsilon^{4}\right)y_{{\scriptscriptstyle L}}^{2}-y_{{\scriptscriptstyle F}}^{2}+2\epsilon^{2}y_{{\scriptscriptstyle F}}y_{{\scriptscriptstyle L}}-\epsilon^{4}y_{{\scriptscriptstyle L}}^{2}\\
+= & \left(1-\epsilon^{2}\right)y_{{\scriptscriptstyle F}}^{2}-\left(\epsilon^{2}-\epsilon^{4}\right)y_{{\scriptscriptstyle L}}^{2}-y_{{\scriptscriptstyle F}}^{2}+2\epsilon^{2}y_{{\scriptscriptstyle F}}y_{{\scriptscriptstyle L}}-\epsilon^{4}y_{{\scriptscriptstyle L}}^{2}\\
+= & -\epsilon^{2}y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}+2\epsilon^{2}y_{{\scriptscriptstyle F}}y_{{\scriptscriptstyle L}}=-\colorbox{#FFD1DC}{$\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}$}
+\end{aligned}
+$$
+:::
+
+::: {show-in="pdf"}
+$$
+\begin{aligned}
+ & \colorbox{yellow!50}{\text{\ensuremath{\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)}-\ensuremath{\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}}}}\\
+= & \left(1-\epsilon^{2}\right)y_{{\scriptscriptstyle F}}^{2}-\left(\epsilon^{2}-\epsilon^{4}\right)y_{{\scriptscriptstyle L}}^{2}-y_{{\scriptscriptstyle F}}^{2}+2\epsilon^{2}y_{{\scriptscriptstyle F}}y_{{\scriptscriptstyle L}}-\epsilon^{4}y_{{\scriptscriptstyle L}}^{2}\\
+= & -\epsilon^{2}y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}+2\epsilon^{2}y_{{\scriptscriptstyle F}}y_{{\scriptscriptstyle L}}=-\colorbox{red!50}{\text{\ensuremath{\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}}}}
+\end{aligned}
+$$
+:::
+
+::: {show-in="html"}
+
+$$
+\begin{aligned}
+\dfrac{\colorbox{#FFD1DC}{$\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}$}}{1-\epsilon^{2}}\overset{\epsilon\ne1}{=} & x^{2}+\left(1-\epsilon^{2}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}\\
+1\overset{\epsilon\ne0,1}{=} & \begin{cases}
+\left(\dfrac{x-0}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{\sqrt{1-\epsilon^{2}}}}\right)^{2}+\left(\dfrac{y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}}\right)^{2} & 1-\epsilon^{2}>0\overset{\epsilon\ge0}{\Rightarrow}0<\epsilon<1\\
+-\left(\dfrac{x-0}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{\sqrt{\epsilon^{2}-1}}}\right)^{2}+\left(\dfrac{y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}}\right)^{2} & 1-\epsilon^{2}<0\overset{\epsilon\ge0}{\Rightarrow}\epsilon>1
+\end{cases}
+\end{aligned}
+$$
+
+:::
+
+::: {show-in="pdf"}
+$$
+\begin{aligned}
+\dfrac{\colorbox{red!50}{\text{\ensuremath{\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}}}}}{1-\epsilon^{2}}\overset{\epsilon\ne1}{=} & x^{2}+\left(1-\epsilon^{2}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}\\
+1\overset{\epsilon\ne0,1}{=} & \begin{cases}
+\left(\dfrac{x-0}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{\sqrt{1-\epsilon^{2}}}}\right)^{2}+\left(\dfrac{y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}}\right)^{2} & 1-\epsilon^{2}>0\overset{\epsilon\ge0}{\Rightarrow}0<\epsilon<1\\
+-\left(\dfrac{x-0}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{\sqrt{\epsilon^{2}-1}}}\right)^{2}+\left(\dfrac{y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}}\right)^{2} & 1-\epsilon^{2}<0\overset{\epsilon\ge0}{\Rightarrow}\epsilon>1
+\end{cases}
+\end{aligned}
+$$
+:::
+
+$\epsilon=0$ or $\lim\limits _{\left|y_{L}\right|\rightarrow\infty}\epsilon=0$
+
+$$
+r=\overline{PF}=\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert =\left\Vert \left(x,y-y_{{\scriptscriptstyle F}}\right)\right\Vert =\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}
+$$
+
+$$
+\epsilon=\dfrac{r}{d\left(P,L\right)}=\dfrac{\overline{PF}}{\overline{PP^{\prime}}}=\dfrac{\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(x,y\right)-\left(x,y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\left\Vert \left(x,y-y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(0,y-y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\left|y-y_{{\scriptscriptstyle L}}\right|}
+$$
+
+$$
+\lim_{\left|y_{L}\right|\rightarrow\infty}\epsilon=\lim_{\left|y_{L}\right|\rightarrow\infty}\dfrac{r}{d\left(P,L\right)}=\lim_{\left|y_{L}\right|\rightarrow\infty}\dfrac{\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\left|y-y_{{\scriptscriptstyle L}}\right|}=0
+$$
+
+$\epsilon=1$
+
+$$
+\begin{aligned}
+0= & x^{2}+\left(1-\epsilon^{2}\right)y^{2}-2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\\
+\overset{\epsilon=1}{=} & x^{2}+\left(1-1^{2}\right)y^{2}-2\left(y_{{\scriptscriptstyle F}}-1^{2}y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}^{2}-1^{2}y_{{\scriptscriptstyle L}}^{2}\right)\\
+= & x^{2}-2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}^{2}-y_{{\scriptscriptstyle L}}^{2}\right)\\
+= & x^{2}-2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}\right)\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\\
+x^{2}= & 2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}}{2}\right)
+\end{aligned}
+$$
+
+Let one curve vertex $P=V=\left(0,0\right)$ on the curve, and fix the directrix $L$ or $y_{{\scriptscriptstyle L}}$,
+
+$\epsilon\ne1$
+$$
+\begin{aligned}
+ & 1\overset{P\left(x,y\right)=V\left(0,0\right)}{=}0+\left(\dfrac{0-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}}\right)^{2}\\
+\Rightarrow & y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}=\pm\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\\
+\Rightarrow & \begin{cases}
+\left(1-\epsilon\right)y_{{\scriptscriptstyle F}}=\epsilon\left(\epsilon-1\right)y_{{\scriptscriptstyle L}} & +\\
+\left(1+\epsilon\right)y_{{\scriptscriptstyle F}}=\epsilon\left(\epsilon+1\right)y_{{\scriptscriptstyle L}} & -
+\end{cases}\\
+\Rightarrow & y_{{\scriptscriptstyle F}}=\begin{cases}
+-\epsilon y_{{\scriptscriptstyle L}} & +\\
+\epsilon y_{{\scriptscriptstyle L}} & -
+\end{cases}
+\end{aligned}
+$$
+
+$\epsilon=1$
+$$
+\begin{aligned}
+ & x^{2}=2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}}{2}\right)\\
+\overset{P\left(x,y\right)=V\left(0,0\right)}{\Rightarrow} & 0^{2}=2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\left(0-\dfrac{y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}}{2}\right)\\
+\Rightarrow & 0=\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\left(y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}\right)\\
+\Rightarrow & y_{{\scriptscriptstyle F}}=\mp y_{{\scriptscriptstyle L}}
+\end{aligned}
+$$
+
+or by definition of eccentricity \@ref(eq:eccentricity)
+
+$$
+\begin{aligned}
+0\le\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\overline{PF}}{\overline{PP^{\prime}}}= & \dfrac{\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(x,y\right)-\left(x,y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\left\Vert \left(x,y-y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(0,y-y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\sqrt{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}}\\
+ & \overset{P\left(x,y\right)=V\left(0,0\right)}{=}\dfrac{\sqrt{0^{2}+\left(0-y_{{\scriptscriptstyle F}}\right)^{2}}}{\sqrt{\left(0-y_{{\scriptscriptstyle L}}\right)^{2}}}=\sqrt{\left(\dfrac{y_{{\scriptscriptstyle F}}}{y_{{\scriptscriptstyle L}}}\right)^{2}}\\
+\epsilon^{2}= & \left(\dfrac{y_{{\scriptscriptstyle F}}}{y_{{\scriptscriptstyle L}}}\right)^{2}\Rightarrow y_{{\scriptscriptstyle F}}=\mp\epsilon y_{{\scriptscriptstyle L}}
+\end{aligned}
+$$
+
+actually,
+
+$$
+y_{{\scriptscriptstyle F}}=-\epsilon y_{{\scriptscriptstyle L}}
+$$
+
+## two-definition equivalence for ellipse and hyperbola
+
+https://math.stackexchange.com/questions/1833973/prove-that-the-directrix-focus-and-focus-focus-definitions-are-equivalent
+
+https://www.geogebra.org/calculator/zkppuxwp
+
+::: {show-in="html"}
+<iframe src="https://www.geogebra.org/calculator/zkppuxwp?embed" width="600" height="450" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+:::
+
+
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{img/conic-sections} \caption{conic sections}(\#fig:unnamed-chunk-3)
+\end{figure}
+
+$$
+\begin{cases}
+P=\left(x,y\right)\\
+F=\left(x_{{\scriptscriptstyle F}},y_{{\scriptscriptstyle F}}\right)=\left(\alpha,\varphi\right) & F^{\prime}=\left(x_{{\scriptscriptstyle F^{\prime}}},y_{{\scriptscriptstyle F^{\prime}}}\right)=\left(\chi,\psi\right)\\
+L=A^{\prime}x+B^{\prime}y+C^{\prime}=0
+\end{cases}
+$$
+
+### first definition for conic sections including ellipses and hyperbolas
+
+[distance from a point to a line]^[\@ref(distance-from-a-point-to-a-line)]^
+
+$$
+0\le\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\sqrt{\left(x-x_{{\scriptscriptstyle F}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\dfrac{\left|A^{\prime}x+B^{\prime}y+C^{\prime}\right|}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}}=\dfrac{\sqrt{\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}}}{\left|Ax+By+C\right|},\begin{cases}
+A=\dfrac{A^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\\
+B=\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\\
+C=\dfrac{C^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}
+\end{cases}
+$$
+$$
+A^{2}+B^{2}=\left(\dfrac{A^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\right)^{2}+\left(\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\right)^{2}=1
+$$
+
+or allowing $\epsilon<0$ by squaring the definition
+
+$$
+\epsilon^{2}=\dfrac{\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}}{\left(Ax+By+C\right)^{2}}=\dfrac{\left(x-x_{{\scriptscriptstyle F}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}{\dfrac{\left(A^{\prime}x+B^{\prime}y+C^{\prime}\right)^{2}}{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}
+$$
+
+$$
+\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}=\left[\epsilon\left(Ax+By+C\right)\right]^{2}
+$$
+
+### second definition for ellipses and hyperbolas
+
+$$
+\begin{aligned}
+2c=\overline{FF^{\prime}}= & \left\Vert \left(x_{{\scriptscriptstyle F}},y_{{\scriptscriptstyle F}}\right)-\left(x_{{\scriptscriptstyle F^{\prime}}},y_{{\scriptscriptstyle F^{\prime}}}\right)\right\Vert =\left\Vert \left(\alpha,\varphi\right)-\left(\chi,\psi\right)\right\Vert \\
+= & \sqrt{\left(\alpha-\chi\right)^{2}+\left(\chi-\psi\right)^{2}}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+D= & \begin{cases}
+\sqrt{\left(x-x_{{\scriptscriptstyle F}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}+\sqrt{\left(x-x_{{\scriptscriptstyle F^{\prime}}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F^{\prime}}}\right)^{2}} & \text{ellipse}\\
+\sqrt{\left(x-x_{{\scriptscriptstyle F}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}-\sqrt{\left(x-x_{{\scriptscriptstyle F^{\prime}}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F^{\prime}}}\right)^{2}} & \text{hyperbola}
+\end{cases}\\
+= & \sqrt{\left(x-x_{{\scriptscriptstyle F}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}\pm\sqrt{\left(x-x_{{\scriptscriptstyle F^{\prime}}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F^{\prime}}}\right)^{2}}\\
+= & \sqrt{\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}}\pm\sqrt{\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}= & \left(D\mp\sqrt{\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}}\right)^{2}\\
+= & D^{2}\mp2D\sqrt{\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}}\\
+ & +\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+D^{2}= & \left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\\
+ & \pm2\sqrt{\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]}\\
+ & \left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}-D^{2}\\
+= & \mp2\sqrt{\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]}\\
+ & \left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]^{2}+D^{4}\\
+ & -2D^{2}\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\\
+= & 4\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\\
+ & \left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]^{2}+\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]^{2}\\
+ & +2\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]+D^{4}\\
+ & -2D^{2}\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\\
+= & 4\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\\
+0= & \left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]^{2}+\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]^{2}\\
+ & -2\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]+D^{4}\\
+ & -2D^{2}\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}+\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\\
+0= & \left\{ \left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]-\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\right\} ^{2}+D^{4}\\
+ & -2D^{2}\left\{ \left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]+\left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]\right\} \\
+0= & \left\{ \left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]-\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\right\} ^{2}+D^{4}\\
+ & -2D^{2}\left\{ \left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]-\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\right\} \\
+ & -4D^{2}\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\\
+ & \left(2D\right)^{2}\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]\\
+= & \left\{ \left[\left(x-\chi\right)^{2}+\left(y-\psi\right)^{2}\right]-\left[\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\right]-D^{2}\right\} ^{2}\\
+= & \left\{ \left[\left(x-\chi\right)^{2}-\left(x-\alpha\right)^{2}\right]+\left[\left(y-\psi\right)^{2}-\left(y-\varphi\right)^{2}\right]-D^{2}\right\} ^{2}\\
+= & \left\{ \left(2x-\chi-\alpha\right)\left(\alpha-\chi\right)+\left(2y-\psi-\varphi\right)\left(\varphi-\psi\right)-D^{2}\right\} ^{2}\\
+= & \left\{ 2\left(\alpha-\chi\right)x-\left(\alpha^{2}-\chi^{2}\right)+2\left(\varphi-\psi\right)y-\left(\varphi^{2}-\psi^{2}\right)-D^{2}\right\} ^{2}\\
+= & \left\{ 2\left(\alpha-\chi\right)x+2\left(\varphi-\psi\right)y-\left[\left(\alpha^{2}-\chi^{2}\right)+\left(\varphi^{2}-\psi^{2}\right)+D^{2}\right]\right\} ^{2}\\
+D\ne0\\
+ & \left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}\\
+= & \left[\dfrac{\alpha-\chi}{D}x+\dfrac{\varphi-\psi}{D}y-\left(\dfrac{\alpha^{2}-\chi^{2}}{2D}+\dfrac{\varphi^{2}-\psi^{2}}{2D}+\dfrac{D}{2}\right)\right]^{2}
+\end{aligned}
+$$
+
+$$
+\begin{cases}
+\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}=\left[\epsilon\left(Ax+By+C\right)\right]^{2}\\
+\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}=\left[\dfrac{\alpha-\chi}{D}x+\dfrac{\varphi-\psi}{D}y-\left(\dfrac{\alpha^{2}-\chi^{2}}{2D}+\dfrac{\varphi^{2}-\psi^{2}}{2D}+\dfrac{D}{2}\right)\right]^{2}
+\end{cases}
+$$
+
+$$
+\left(A,B,C\right)\rightleftarrows\left(\chi,\psi,D\right)
+$$
+
+$$
+\begin{cases}
+\epsilon A=\pm\dfrac{\alpha-\chi}{D} & \chi\pm\epsilon AD=\alpha\\
+\epsilon B=\pm\dfrac{\varphi-\psi}{D} & \psi\pm\epsilon BD=\varphi\\
+\epsilon C=\mp\left(\dfrac{\alpha^{2}-\chi^{2}}{2D}+\dfrac{\varphi^{2}-\psi^{2}}{2D}+\dfrac{D}{2}\right)
+\end{cases}
+$$
+
+
+$$
+\begin{aligned}
+2\epsilon C= & \mp\left(\dfrac{\alpha-\chi}{D}\left(\alpha+\chi\right)+\dfrac{\varphi-\psi}{D}\left(\varphi+\psi\right)+D\right)\\
+= & \mp\left(\pm\epsilon A\left(\alpha+\chi\right)\pm\epsilon B\left(\varphi+\psi\right)+D\right)\\
+\mp\epsilon\left(A\alpha+B\varphi+2C\right)= & \pm\epsilon A\chi\pm\epsilon B\psi+D
+\end{aligned}
+$$
+
+$$
+\begin{pmatrix}1 & 0 & \pm\epsilon A\\
+0 & 1 & \pm\epsilon B\\
+\pm\epsilon A & \pm\epsilon B & 1
+\end{pmatrix}\begin{pmatrix}\chi\\
+\psi\\
+D
+\end{pmatrix}=\begin{pmatrix}\alpha\\
+\varphi\\
+\mp\epsilon\left(A\alpha+B\varphi+2C\right)
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}1 & 0 & \pm\epsilon A & \alpha\\
+0 & 1 & \pm\epsilon B & \varphi\\
+0 & \pm\epsilon B & 1\mp\epsilon^{2}A^{2} & \mp\epsilon\left(2A\alpha+B\varphi+2C\right)
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}1 & 0 & \pm\epsilon A & \alpha\\
+0 & 1 & \pm\epsilon B & \varphi\\
+0 & 0 & 1\mp\epsilon^{2}A^{2}\mp\epsilon^{2}B^{2} & \mp\epsilon\left(2A\alpha+2B\varphi+2C\right)
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}1 & 0 & \pm\epsilon A & \alpha\\
+0 & 1 & \pm\epsilon B & \varphi\\
+0 & 0 & 1 & \dfrac{\mp2\epsilon\left(A\alpha+B\varphi+C\right)}{1\mp\epsilon^{2}\left(A^{2}+B^{2}\right)}
+\end{pmatrix}
+$$
+
+$$
+A^{2}+B^{2}=\left(\dfrac{A^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\right)^{2}+\left(\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\right)^{2}=1
+$$
+
+$$
+\begin{cases}
+\chi=\alpha\mp\epsilon AD=\alpha\mp\epsilon\dfrac{A^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}D\\
+\psi=\varphi\mp\epsilon BD=\varphi\mp\epsilon\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}D\\
+D=\dfrac{\mp2\epsilon\left(A\alpha+B\varphi+C\right)}{1\mp\epsilon^{2}\left(A^{2}+B^{2}\right)}=\dfrac{\mp2\epsilon}{1\mp\epsilon^{2}}\dfrac{A^{\prime}\alpha+B^{\prime}\varphi+C^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}} & A^{2}+B^{2}=1
+\end{cases}
+$$
+
+actually, only one of two solutions is true
+
+$$
+\begin{cases}
+\chi=\alpha-\epsilon AD=\alpha-\epsilon\dfrac{A^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}D=\alpha-\dfrac{2\epsilon^{2}}{\epsilon^{2}-1}\dfrac{A^{\prime}{}^{2}\alpha+A^{\prime}B^{\prime}\varphi+A^{\prime}C^{\prime}}{A^{\prime}{}^{2}+B^{\prime}{}^{2}}\\
+\psi=\varphi-\epsilon BD=\varphi-\epsilon\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}D=\varphi-\dfrac{2\epsilon^{2}}{\epsilon^{2}-1}\dfrac{A^{\prime}B^{\prime}\alpha+B^{\prime}{}^{2}\varphi+B^{\prime}C^{\prime}}{A^{\prime}{}^{2}+B^{\prime}{}^{2}}\\
+D=\dfrac{-2\epsilon\left(A\alpha+B\varphi+C\right)}{1-\epsilon^{2}\left(A^{2}+B^{2}\right)}=\dfrac{-2\epsilon}{1-\epsilon^{2}}\dfrac{A^{\prime}\alpha+B^{\prime}\varphi+C^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}=\dfrac{2\epsilon}{\epsilon^{2}-1}\dfrac{A^{\prime}\alpha+B^{\prime}\varphi+C^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}
+\end{cases}
+$$
+
+$$
+\begin{cases}
+\chi=\dfrac{\left(\epsilon^{2}-1\right)\left(A^{\prime}{}^{2}+B^{\prime}{}^{2}\right)\alpha-2\epsilon^{2}\left(A^{\prime}{}^{2}\alpha+A^{\prime}B^{\prime}\varphi+A^{\prime}C^{\prime}\right)}{\left(\epsilon^{2}-1\right)\left(A^{\prime}{}^{2}+B^{\prime}{}^{2}\right)}\\
+\psi=\dfrac{\left(\epsilon^{2}-1\right)\left(A^{\prime}{}^{2}+B^{\prime}{}^{2}\right)\varphi-2\epsilon^{2}\left(A^{\prime}B^{\prime}\alpha+B^{\prime}{}^{2}\varphi+B^{\prime}C^{\prime}\right)}{\left(\epsilon^{2}-1\right)\left(A^{\prime}{}^{2}+B^{\prime}{}^{2}\right)}\\
+\left|\dfrac{D}{d\left(F,L\right)}\right|=\left|\dfrac{2\epsilon}{1-\epsilon^{2}}\right|\Rightarrow\left(\dfrac{D}{d\left(F,L\right)}\right)^{2}=\left(\dfrac{2\epsilon}{1-\epsilon^{2}}\right)^{2}
+\end{cases}
+$$
+
+$$
+\begin{aligned}
+ & \left(\epsilon^{2}-1\right)\left(A^{\prime}{}^{2}+B^{\prime}{}^{2}\right)\alpha-2\epsilon^{2}\left(A^{\prime}{}^{2}\alpha+A^{\prime}B^{\prime}\varphi+A^{\prime}C^{\prime}\right)\\
+= & \left(-\left(\epsilon^{2}+1\right)A^{\prime}{}^{2}+\left(\epsilon^{2}-1\right)B^{\prime}{}^{2}\right)\alpha-2\epsilon^{2}\left(A^{\prime}B^{\prime}\varphi+A^{\prime}C^{\prime}\right)\\
+= & \left(-\left(\epsilon^{2}+1\right)A^{\prime}{}^{2}+\left(\epsilon^{2}-1\right)B^{\prime}{}^{2}\right)\alpha-2\epsilon^{2}\left(A^{\prime}B^{\prime}\varphi+A^{\prime}C^{\prime}\right)
+\end{aligned}
+$$
+
+Can the above be more simplified?
+
+$$
+\begin{aligned}
+\overline{FF^{\prime}}^{2}= & \left(\alpha-\chi\right)^{2}+\left(\varphi-\psi\right)^{2}\\
+= & \left(\alpha-\left(\alpha-\epsilon AD\right)\right)^{2}+\left(\varphi-\left(\varphi-\epsilon BD\right)\right)^{2}\\
+= & \left(\epsilon D\right)^{2}\left(A^{2}+B^{2}\right)\\
+= & \left(\epsilon D\right)^{2}
+\end{aligned}
+$$
+
+### eccentricity and its equivalent representation
+
+$$
+\left(\dfrac{c}{a}\right)^{2}=\left(\dfrac{\overline{PF}}{d\left(P,L\right)}\right)^{2}=\epsilon^{2}=\left(\dfrac{\overline{FF^{\prime}}}{D}\right)^{2}=\left(\dfrac{2c}{D}\right)^{2}\Rightarrow D=2a
+$$
+
+$$
+\left(\dfrac{D}{d\left(F,L\right)}\right)^{2}=\left(\dfrac{2\epsilon}{1-\epsilon^{2}}\right)^{2}
+$$
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{img/conic-sections-ellipse} \caption{conic sections: ellipse}(\#fig:unnamed-chunk-4)
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{img/conic-sections-parabola} \caption{conic sections: parabola}(\#fig:unnamed-chunk-5)
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{img/conic-sections-hyperbola} \caption{conic sections: hyperbola}(\#fig:unnamed-chunk-6)
+\end{figure}
+
+## Cartesian coordinate: standard form / standard equation
+
+$$
+\begin{array}{ccccc}
+\text{circle} & \left(\dfrac{y-k}{a}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} & =1 &  & b=a\\
+\text{ellipse} & \left(\dfrac{y-k}{b}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} & =1 & \text{vertical} & b>a\\
+ & \left(\dfrac{y-k}{b}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} & =1 & \text{horizontal} & a>b\\
+\text{parabola} & \left(y-k\right)-4c\left(x-h\right)^{2} & =0 & \text{vertical}\\
+ & -4c\left(y-k\right)^{2}+\left(x-h\right) & =0 & \text{horizontal}\\
+\text{hyperbola} & \left(\dfrac{y-k}{b}\right)^{2}-\left(\dfrac{x-h}{a}\right)^{2} & =1 & \text{vertical} & \dfrac{x-h}{a}=0\Rightarrow\dfrac{y-k}{b}=\pm1\\
+ & -\left(\dfrac{y-k}{b}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} & =1 & \text{horizontal} & \dfrac{y-k}{b}=0\Rightarrow\dfrac{x-h}{a}=\pm1
+\end{array}
+$$
+
+## parametric equation
+
+$$
+\begin{array}{cccccccc}
+\text{circle} & \left(\dfrac{y-k}{a}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} & =1 & \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= & \begin{pmatrix}a & 0 & h\\
+0 & a & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}\cos t\\
+\sin t\\
+1
+\end{pmatrix} & =\begin{pmatrix}\cos t & 0 & h\\
+0 & \sin t & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}a\\
+a\\
+1
+\end{pmatrix}\\
+\text{ellipse} & \left(\dfrac{y-k}{b}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} & =1 & \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= & \begin{pmatrix}a & 0 & h\\
+0 & b & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}\cos t\\
+\sin t\\
+1
+\end{pmatrix} & =\begin{pmatrix}\cos t & 0 & h\\
+0 & \sin t & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}a\\
+b\\
+1
+\end{pmatrix}\\
+\text{parabola} & \left(y-k\right)-4c\left(x-h\right)^{2} & =0 & \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= & \begin{pmatrix}1 & 0 & h\\
+0 & 4c & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}t\\
+t^{2}\\
+1
+\end{pmatrix} & =\begin{pmatrix}t & 0 & h\\
+0 & t^{2} & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}1\\
+4c\\
+1
+\end{pmatrix}\\
+ & -4c\left(y-k\right)^{2}+\left(x-h\right) & =0 & \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= & \begin{pmatrix}4c & 0 & h\\
+0 & 1 & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}t^{2}\\
+t\\
+1
+\end{pmatrix} & =\begin{pmatrix}t^{2} & 0 & h\\
+0 & t & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}4c\\
+1\\
+1
+\end{pmatrix}\\
+\text{hyperbola} & \left(\dfrac{y-k}{b}\right)^{2}-\left(\dfrac{x-h}{a}\right)^{2} & =1 & \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= & \begin{pmatrix}a & 0 & h\\
+0 & b & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}\pm\cosh t\\
+\sinh t\\
+1
+\end{pmatrix} & =\begin{pmatrix}\tan t & 0 & h\\
+0 & \sec t & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}a\\
+b\\
+1
+\end{pmatrix}\\
+ & -\left(\dfrac{y-k}{b}\right)^{2}+\left(\dfrac{x-h}{a}\right)^{2} & =1 & \begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}= & \begin{pmatrix}a & 0 & h\\
+0 & b & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}\sinh t\\
+\pm\cosh t\\
+1
+\end{pmatrix} & =\begin{pmatrix}\sec t & 0 & h\\
+0 & \tan t & k\\
+0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}a\\
+b\\
+1
+\end{pmatrix}
+\end{array}
+$$
+
+[tangent half-angle formula]^[\@ref(tangent-half-angle-formula)]^
+
+## polar coordinate
+
+$$
+\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}=\left[\epsilon\left(Ax+By+C\right)\right]^{2}
+$$
+
+$\begin{cases}x=r\cos\theta\\y=r\sin\theta\end{cases}$
+
+$$
+\left(r\cos\theta-\alpha\right)^{2}+\left(r\sin\theta-\varphi\right)^{2}=\left[\epsilon\left(Ar\cos\theta+Br\sin\theta+C\right)\right]^{2}
+$$
+
+If $\begin{cases}F=\left(x_{{\scriptscriptstyle F}},y_{{\scriptscriptstyle F}}\right)=\left(\alpha,\varphi\right)=\left(0,0\right)\\L=Ax+By+C=x+p=0\end{cases}$
+
+$$
+\begin{aligned}
+\left(r\cos\theta\right)^{2}+\left(r\sin\theta\right)^{2}= & \left[\epsilon\left(r\cos\theta+p\right)\right]^{2}\\
+r^{2}=\\
+r= & \pm\epsilon\left(r\cos\theta+p\right)\\
+= & \pm\left(r\epsilon\cos\theta+\epsilon p\right)\\
+r\left(1\mp\epsilon\cos\theta\right)= & \epsilon p\\
+r= & \dfrac{\epsilon p}{1\mp\epsilon\cos\theta}
+\end{aligned}
+$$
+
+https://www.geogebra.org/calculator/azksjxbq
+
+::: {show-in="html"}
+<iframe src="https://www.geogebra.org/calculator/azksjxbq?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+:::
+
+$r=\dfrac{\epsilon p}{1-\epsilon\cos\theta}$ will not cross $L=x+p=0$ on graphs, so maybe it is a more correct solution
+
+$$
+r=\dfrac{\epsilon p}{1-\epsilon\cos\theta}
+$$
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{img/conic-sections-polar-ellipse} \caption{polar conic sections: ellipse}(\#fig:unnamed-chunk-7)
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{img/conic-sections-polar-parabola} \caption{polar conic sections: parabola}(\#fig:unnamed-chunk-8)
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.75\linewidth]{img/conic-sections-polar-hyperbola} \caption{polar conic sections: hyperbola}(\#fig:unnamed-chunk-9)
+\end{figure}
+
+## Cartesian coordinate: general form / quadratic equation
+
+::: {show-in="html"}
+
+https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
+\end{CJK}
+
+:::
+
+https://en.wikipedia.org/wiki/Matrix_representation_of_conic_sections
+
+$$
+ax^{2}+bxy+cy^{2}+dx+ey+f=0
+$$
+
+$$
+\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}ax+\left(b/2\right)y\\
+\left(b/2\right)x+cy
+\end{pmatrix}=ax^{2}+bxy+cy^{2}
+$$
+
+$$
+\begin{aligned}
+0= & \begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f\\
+= & \boldsymbol{x}^{\intercal}A\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+f,\begin{cases}
+A=\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix} & A\text{ real symmetric}\\
+\boldsymbol{b}=\begin{pmatrix}d\\
+e
+\end{pmatrix}\\
+\boldsymbol{x}=\begin{pmatrix}x\\
+y
+\end{pmatrix}
+\end{cases}
+\end{aligned}
+$$
+
+[real symmetric matrix diagonalizable]^[\@ref(real-symmetric-matrix-diagonalizable)]^
+
+## homogeneous coordinate
+
+X [homogeneous coordinate](homogeneous-coordinate-1)
+
+[homogeneous coordinate](homogeneous-coordinate-1.html) O: HTML, X: PDF becoming web link
+
+O [homogeneous coordinate](#homogeneous-coordinate-1)^[\@ref(homogeneous-coordinate-1)]^
+
+X [homogeneous coordinate](#homogeneous-coordinate)
+
+X [homogeneous coordinate]^[\@ref(homogeneous-coordinate)]^
+
+::: {show-in="html"}
+
+https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
+\end{CJK}
+
+:::
+
+$$
+\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & ~\\
+b/2 & c\\
+\\
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & 0\\
+b/2 & c & 0\\
+0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}
+$$
+
+$$
+\begin{aligned}
+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}\alpha & \beta & \gamma\\
+\delta & \epsilon & \zeta\\
+\eta & \theta & \kappa
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}\alpha x+\beta y+\gamma\\
+\delta x+\epsilon y+\zeta\\
+\eta x+\theta y+\kappa
+\end{pmatrix},\begin{cases}
+\gamma+\eta=d\\
+\zeta+\theta=e
+\end{cases}\\
+= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}0 & 0 & \gamma\\
+0 & 0 & \zeta\\
+\eta & \theta & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}0 & 0 & d/2\\
+0 & 0 & e/2\\
+d/2 & e/2 & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+0= & ax^{2}+bxy+cy^{2}+dx+ey+f\\
+= & \begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f=\boldsymbol{x}^{\intercal}A\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+f\\
+= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}\boldsymbol{x}^{\intercal} & 1\end{pmatrix}M\begin{pmatrix}\boldsymbol{x}\\
+1
+\end{pmatrix},M=\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+0= & ax^{2}+bxy+cy^{2}+dx+ey+f\\
+= & \begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f=\boldsymbol{x}^{\intercal}A\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+f\\
+= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}\boldsymbol{x}^{\intercal} & 1\end{pmatrix}M\begin{pmatrix}\boldsymbol{x}\\
+1
+\end{pmatrix},M=\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}
+\end{aligned}
+$$
+
+https://en.wikipedia.org/wiki/Matrix_representation_of_conic_sections
+
+$$
+\begin{aligned}
+0=Q= & Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F\\
+= & \begin{bmatrix}x & y & 1\end{bmatrix}\begin{bmatrix}A & B/2 & D/2\\
+B/2 & C & E/2\\
+D/2 & E/2 & F
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+1
+\end{bmatrix}=\boldsymbol{x}_{{\scriptscriptstyle \text{h}}}^{\intercal}A_{{\scriptscriptstyle Q}}\boldsymbol{x}_{{\scriptscriptstyle \text{h}}}\\
+= & \begin{bmatrix}x & y\end{bmatrix}\begin{bmatrix}A & B/2\\
+B/2 & C
+\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}+\begin{bmatrix}D & E\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}+F=\boldsymbol{x}^{\intercal}A_{{\scriptscriptstyle Q,33}}\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+F
+\end{aligned}
+$$
+
+<!--chapter:end:202402252333-conic-section.Rmd-->
+
+# distance from a point to a line
+
+::: {show-in="html"}
+點到直線距離
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+點到直線距離
+\end{CJK}
+:::
+
+::: {.theorem #unnamed-chunk-1}
+$$
+\begin{array}{c}
+\begin{cases}
+P=P\left(x_{0},y_{0}\right)\\
+L=L\left(x,y\right)=Ax+By+C=0,A^{2}+B^{2}\ne0
+\end{cases}\\
+\Downarrow\\
+d\left(P,L\right)=\dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
+\end{array}
+$$
+:::
+
+https://en.wikipedia.org/wiki/Distance_from_a_point_to_a_line
+
+https://highscope.ch.ntu.edu.tw/wordpress/?p=47407
+
+https://web.math.sinica.edu.tw/mathmedia/HTMLarticle18.jsp?mID=40312
+
+Proofs:
+
+## by shortest $\overline{PP^{\prime}}$
+
+$$
+\begin{aligned}
+ & P^{\prime}=P^{\prime}\left(x,y\right)\in L=Ax+By+C=0\\
+\Rightarrow & y=\dfrac{-1}{B}\left(Ax+C\right)
+\end{aligned}
+$$
+
+
+$$
+\begin{aligned}
+\overline{PP^{\prime}}^{2}\left(x,y\right)= & \left(x_{0}-x\right)^{2}+\left(y_{0}-y\right)^{2}\\
+= & \left(x_{0}-x\right)^{2}+\left(y_{0}-\dfrac{-1}{B}\left(Ax+C\right)\right)^{2}\\
+= & \left(x-x_{0}\right)^{2}+\left(\dfrac{A}{B}x+\dfrac{C}{B}+y_{0}\right)^{2}=\overline{PP^{\prime}}^{2}\left(x\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+0=\dfrac{\partial}{\partial x}\overline{PP^{\prime}}^{2}\left(x\right)= & 2\left(x-x_{0}\right)+2\left(\dfrac{A}{B}x+\dfrac{C}{B}+y_{0}\right)\dfrac{A}{B}\\
+= & \dfrac{2}{B^{2}}\left(B^{2}\left(x-x_{0}\right)+A^{2}x+AC+ABy_{0}\right)\\
+= & \dfrac{2}{B^{2}}\left[\left(A^{2}+B^{2}\right)x-\left(B^{2}x_{0}-ABy_{0}-AC\right)\right]\\
+x= & \dfrac{B^{2}x_{0}-ABy_{0}-AC}{A^{2}+B^{2}}
+\end{aligned}
+$$
+or by completing the square to find $x$.
+
+$$
+\begin{aligned}
+ & \overline{PP^{\prime}}^{2}\left(x=\dfrac{B^{2}x_{0}-ABy_{0}-AC}{A^{2}+B^{2}}\right)\\
+= & \left(\dfrac{B^{2}x_{0}-ABy_{0}-AC}{A^{2}+B^{2}}-x_{0}\right)^{2}+\left(\dfrac{A}{B}\dfrac{B^{2}x_{0}-ABy_{0}-AC}{A^{2}+B^{2}}+\dfrac{C}{B}+y_{0}\right)^{2}\\
+= & \left(\dfrac{-A^{2}x_{0}-ABy_{0}-AC}{A^{2}+B^{2}}\right)^{2}+\left(\dfrac{A\left(B^{2}x_{0}-ABy_{0}-AC\right)+C\left(A^{2}+B^{2}\right)+B\left(A^{2}+B^{2}\right)y_{0}}{B\left(A^{2}+B^{2}\right)}\right)^{2}\\
+= & \left(\dfrac{-A\left(Ax_{0}+By_{0}+C\right)}{A^{2}+B^{2}}\right)^{2}+\left(\dfrac{AB^{2}x_{0}+B^{3}y_{0}+B^{2}C}{B\left(A^{2}+B^{2}\right)}\right)^{2}\\
+= & \dfrac{A^{2}\left(Ax_{0}+By_{0}+C\right)^{2}}{\left(A^{2}+B^{2}\right)^{2}}+\dfrac{B^{2}\left(Ax_{0}+By_{0}+C\right)^{2}}{\left(A^{2}+B^{2}\right)^{2}}\\
+= & \dfrac{\left(Ax_{0}+By_{0}+C\right)^{2}}{A^{2}+B^{2}}\\
+\overline{PP^{\prime}}= & \overline{PP^{\prime}}\left(x=\dfrac{B^{2}x_{0}-ABy_{0}-AC}{A^{2}+B^{2}}\right)=\dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
+\end{aligned}
+$$
+
+## by perpendicular foot
+
+$$
+y=\dfrac{-A}{B}x-\dfrac{C}{B}=\dfrac{-1}{B}\left(Ax+C\right),\text{ if }B\ne0
+$$
+
+$$
+L_{\perp}:\left(y=\dfrac{B}{A}x+K\right)\perp\left(y=\dfrac{-A}{B}x-\dfrac{C}{B}\right):L
+$$
+
+$$
+L_{\perp}=L_{\perp}\left(x,y\right)=Bx-Ay+K=0
+$$
+$$
+P=P\left(x_{0},y_{0}\right)\in L_{\perp}=B\left(x-x_{0}\right)-A\left(y-y_{0}\right)=0
+$$
+
+$$
+L_{\perp}=Bx-Ay-\left(Bx_{0}-Ay_{0}\right)=0
+$$
+perpendicular foot = foot of the perpendicular $P^{\prime}$
+
+$$
+\begin{aligned}
+P^{\prime}\in\left(L_{\perp}\cap L\right)= & \begin{cases}
+L=Ax+By+C=0\\
+L_{\perp}=Bx-Ay-\left(Bx_{0}-Ay_{0}\right)=0
+\end{cases}\\
+= & \begin{cases}
+Ax+By=-C\\
+Bx-Ay=Bx_{0}-Ay_{0}
+\end{cases}\\
+P^{\prime}=P^{\prime}\left(x,y\right)= & \left(\dfrac{\begin{vmatrix}-C & B\\
+Bx_{0}-Ay_{0} & -A
+\end{vmatrix}}{\begin{vmatrix}A & B\\
+B & -A
+\end{vmatrix}},\dfrac{\begin{vmatrix}A & -C\\
+B & Bx_{0}-Ay_{0}
+\end{vmatrix}}{\begin{vmatrix}A & B\\
+B & -A
+\end{vmatrix}}\right)\\
+= & \left(\dfrac{\begin{vmatrix}C & B\\
+-Bx_{0}+Ay_{0} & -A
+\end{vmatrix}}{\begin{vmatrix}A & -B\\
+B & A
+\end{vmatrix}},\dfrac{\begin{vmatrix}A & C\\
+B & -Bx_{0}+Ay_{0}
+\end{vmatrix}}{\begin{vmatrix}A & -B\\
+B & A
+\end{vmatrix}}\right)\\
+= & \left(\dfrac{B^{2}x_{0}-ABy_{0}-AC}{A^{2}+B^{2}},\dfrac{-ABx_{0}+A^{2}y_{0}-BC}{A^{2}+B^{2}}\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+ & d\left(P,L\right)=\overline{PP^{\prime}}\\
+= & \left\Vert \left(x_{0},y_{0}\right)-\left(\dfrac{B^{2}x_{0}-ABy_{0}-AC}{A^{2}+B^{2}},\dfrac{-ABx_{0}+A^{2}y_{0}-BC}{A^{2}+B^{2}}\right)\right\Vert \\
+= & \sqrt{\left(x_{0}-\dfrac{B^{2}x_{0}-ABy_{0}-AC}{A^{2}+B^{2}}\right)^{2}+\left(y_{0}-\dfrac{-ABx_{0}+A^{2}y_{0}-BC}{A^{2}+B^{2}}\right)^{2}}\\
+= & \sqrt{\left(\dfrac{A^{2}x_{0}+ABy_{0}+AC}{A^{2}+B^{2}}\right)^{2}+\left(\dfrac{ABx_{0}+B^{2}y_{0}+BC}{A^{2}+B^{2}}\right)^{2}}\\
+= & \sqrt{\dfrac{A^{2}\left(Ax_{0}+By_{0}+C\right)^{2}+B^{2}\left(Ax_{0}+By_{0}+C\right)^{2}}{\left(A^{2}+B^{2}\right)^{2}}}=\sqrt{\dfrac{\left(Ax_{0}+By_{0}+C\right)^{2}}{A^{2}+B^{2}}}\\
+= & \dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
+\end{aligned}
+$$
+
+## by normal vector
+
+$$
+\begin{cases}
+\overset{\rightharpoonup}{n}=\left(A,B\right)\perp L=Ax+By+C=0\\
+\overset{\rightharpoonup}{PP^{\prime}}=P^{\prime}-P=\left(x-x_{0},y-y_{0}\right)
+\end{cases}
+$$
+
+::: {show-in="html"}
+
+$P$到$L$的距離$d\left(P,L\right)$即為$L$線上一點$P^{\prime}$對應之$\overset{\rightharpoonup}{PP^{\prime}}$在$L$法向量$\overset{\rightharpoonup}{n}$方向上的投影長
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+$P$到$L$的距離$d\left(P,L\right)$即為$L$線上一點$P^{\prime}$對應之$\overset{\rightharpoonup}{PP^{\prime}}$在$L$法向量$\overset{\rightharpoonup}{n}$方向上的投影長
+\end{CJK}
+
+:::
+
+$$
+\begin{aligned}
+\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}= & \left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left\Vert \overset{\rightharpoonup}{n}\right\Vert \cos\theta\\
+\left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|= & \left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left\Vert \overset{\rightharpoonup}{n}\right\Vert \left|\cos\theta\right|\\
+\left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left|\cos\theta\right|= & \left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\widehat{\boldsymbol{n}}\right|=\dfrac{\left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|}{\left\Vert \overset{\rightharpoonup}{n}\right\Vert }=\dfrac{\left|\left(x-x_{0},y-y_{0}\right)\cdot\left(A,B\right)\right|}{\left\Vert \left(A,B\right)\right\Vert }\\
+= & \dfrac{\left|A\left(x-x_{0}\right)+B\left(y-y_{0}\right)\right|}{\sqrt{A^{2}+B^{2}}}=\dfrac{\left|-Ax_{0}-By_{0}+Ax+By\right|}{\sqrt{A^{2}+B^{2}}}\\
+\begin{subarray}{c}
+Ax+By+C=0\\
+=\\
+Ax+By=-C
+\end{subarray} & \dfrac{\left|-Ax_{0}-By_{0}-C\right|}{\sqrt{A^{2}+B^{2}}}=\dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
+\end{aligned}
+$$
+
+PDF LaTeX `\usepackage{fdsymbol}` to have `\overrightharpoon` vector; however, there are too many side effects, including ugly mathptmx $\sum$, ...
+
+```
+\usepackage{fdsymbol} % vector over accent, but will use mathptmx
+% replace the rather ugly mathptmx \sum operator with the equivalent Computer Modern one
+\let\sum\relax
+\DeclareSymbolFont{CMlargesymbols}{OMX}{cmex}{m}{n}
+\DeclareMathSymbol{\sum}{\mathop}{CMlargesymbols}{"50}
+```
+
+## by Cauchy inequality
+
+$$
+\begin{aligned}
+Ax+By+C= & 0\\
+Ax+By= & -C\\
+\left(Ax+By\right)-\left(Ax_{0}+By_{0}\right)= & -C-\left(Ax_{0}+By_{0}\right)\\
+A\left(x-x_{0}\right)+B\left(y-y_{0}\right)= & -\left(Ax_{0}+By_{0}+C\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\overline{PP^{\prime}}^{2}= & \left(x_{0}-x\right)^{2}+\left(y_{0}-y\right)^{2}\\
+\left[A^{2}+B^{2}\right]\overline{PP^{\prime}}^{2}= & \left[A^{2}+B^{2}\right]\left[\left(x_{0}-x\right)^{2}+\left(y_{0}-y\right)^{2}\right]\\
+\ge & \left[A\left(x-x_{0}\right)+B\left(y-y_{0}\right)\right]^{2}\\
+= & \left[-\left(Ax_{0}+By_{0}+C\right)\right]^{2}=\left(Ax_{0}+By_{0}+C\right)^{2}\\
+\overline{PP^{\prime}}^{2}\ge & \dfrac{\left(Ax_{0}+By_{0}+C\right)^{2}}{A^{2}+B^{2}}\\
+\overline{PP^{\prime}}\ge & \dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
+\end{aligned}
+$$
+
+<!--chapter:end:202402282215-point-to-line.Rmd-->
+
+# real symmetric matrix diagonalizable
+
+::: {show-in="html"}
+
+https://ccjou.wordpress.com/2011/02/09/實對稱矩陣可正交對角化的證明/
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+https://ccjou.wordpress.com/2011/02/09/實對稱矩陣可正交對角化的證明/
+\end{CJK}
+
+:::
+
+https://tex.stackexchange.com/questions/30619/what-is-the-best-symbol-for-vector-matrix-transpose
+
+::: {.theorem #real-sym-real-eigen}
+
+::: {show-in="html"}
+
+實對稱矩陣的特徵值皆是實數，且對應特徵向量是實向量。
+
+$$
+\begin{array}{c}
+\begin{cases}
+\begin{cases}
+A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \text{real matrix}\\
+A^{\intercal}=A & \text{symmetric matrix}
+\end{cases} & \text{real symmetric matrix}\\
+A\boldsymbol{x}=\lambda\boldsymbol{x} & \begin{cases}
+\lambda\in\mathbb{C} & \text{complex eigenvalue}\\
+\boldsymbol{0}\ne\boldsymbol{x}\in\mathbb{C}^{n} & \text{complex eigenvector}
+\end{cases}
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\lambda\in\mathbb{R} & \text{real eigenvalue}\left(1\right)\\
+\boldsymbol{x}\in\mathbb{R}^{n} & \text{real eigenvector}\left(2\right)
+\end{cases}
+\end{array}
+$$
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+實對稱矩陣的特徵值皆是實數，且對應特徵向量是實向量。
+\end{CJK}
+
+$$
+\begin{array}{c}
+\begin{cases}
+\begin{cases}
+A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \textup{real matrix}\\
+A^{\intercal}=A & \textup{symmetric matrix}
+\end{cases} & \textup{real symmetric matrix}\\
+A\boldsymbol{x}=\lambda\boldsymbol{x} & \begin{cases}
+\lambda\in\mathbb{C} & \textup{complex eigenvalue}\\
+\boldsymbol{0}\ne\boldsymbol{x}\in\mathbb{C}^{n} & \textup{complex eigenvector}
+\end{cases}
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\lambda\in\mathbb{R} & \textup{real eigenvalue}\left(1\right)\\
+\boldsymbol{x}\in\mathbb{R}^{n} & \textup{real eigenvector}\left(2\right)
+\end{cases}
+\end{array}
+$$
+
+:::
+
+:::
+
+::: {.proof}
+$\left(1\right)$
+
+$$
+\begin{aligned}
+A\boldsymbol{x}= & \lambda\boldsymbol{x}\\
+\overline{A}\overline{\boldsymbol{x}}=\overline{A\boldsymbol{x}}= & \overline{\lambda\boldsymbol{x}}=\overline{\lambda}\overline{\boldsymbol{x}}\\
+\overline{\boldsymbol{x}}^{\intercal}\overline{A}^{\intercal}=\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}= & \left(\overline{\lambda}\overline{\boldsymbol{x}}\right)^{\intercal}=\overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\\
+\overline{\boldsymbol{x}}^{\intercal}A\overset{\text{symmetric}}{=}\overline{\boldsymbol{x}}^{\intercal}A^{\intercal}\overset{\text{real}}{=}\\
+\overline{\boldsymbol{x}}^{\intercal}A= & \overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\\
+\lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}=\overline{\boldsymbol{x}}^{\intercal}\left(\lambda\boldsymbol{x}\right)\underset{A\boldsymbol{x}=\lambda\boldsymbol{x}}{\overset{\cdot\boldsymbol{x}}{=}}\overline{\boldsymbol{x}}^{\intercal}A\boldsymbol{x}= & \overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}= & \overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\left(\lambda-\overline{\lambda}\right)\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}= & 0\wedge\begin{cases}
+\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}=\sum\limits _{i=1}^{n}\left|x_{i}\right|^{2}\\
+\boldsymbol{x}\ne\boldsymbol{0}
+\end{cases}\Rightarrow\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\ne0\\
+\lambda-\overline{\lambda}= & 0\\
+\lambda= & \overline{\lambda}\Leftrightarrow\lambda\in\mathbb{R}
+\end{aligned}
+$$
+:::
+
+::: {.proof}
+$\left(1\right)$ fast concept
+
+::: {show-in="html"}
+
+$$
+\begin{aligned}
+\color{orange}{\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}}=\left(\overline{\boldsymbol{x}}^{\intercal}\overline{A}^{\intercal}\right)\boldsymbol{x}\overset{\text{symmetric}}{=} & \left(\overline{\boldsymbol{x}}^{\intercal}\overline{A}\right)\boldsymbol{x}=\color{orange}{\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}\\
+\left(L\right)=\color{orange}{\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}=} & \color{orange}{\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}=\left(R\right)\\
+\left(L\right)=\color{orange}{\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}}\overset{A\boldsymbol{x}=\lambda\boldsymbol{x}}{=} & \left(\overline{\lambda}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}=\overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\left(R\right)=\color{orange}{\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}\overset{\text{real}}{=}\overline{\boldsymbol{x}}^{\intercal}\left(A\boldsymbol{x}\right)\overset{A\boldsymbol{x}=\lambda\boldsymbol{x}}{=} & \overline{\boldsymbol{x}}^{\intercal}\left(\lambda\boldsymbol{x}\right)=\lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}=\color{orange}{\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}=} & \color{orange}{\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}=\lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}= & \lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}
+\end{aligned}
+$$
+
+:::
+
+::: {show-in="pdf"}
+
+$$
+\begin{aligned}
+{\color{orange}\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}}=\left(\overline{\boldsymbol{x}}^{\intercal}\overline{A}^{\intercal}\right)\boldsymbol{x}\overset{\text{symmetric}}{=} & \left(\overline{\boldsymbol{x}}^{\intercal}\overline{A}\right)\boldsymbol{x}={\color{orange}\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}\\
+\left(L\right)={\color{orange}\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}=} & {\color{orange}\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}=\left(R\right)\\
+\left(L\right)={\color{orange}\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}}\overset{A\boldsymbol{x}=\lambda\boldsymbol{x}}{=} & \left(\overline{\lambda}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}=\overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\left(R\right)={\color{orange}\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}\overset{\text{real}}{=}\overline{\boldsymbol{x}}^{\intercal}\left(A\boldsymbol{x}\right)\overset{A\boldsymbol{x}=\lambda\boldsymbol{x}}{=} & \overline{\boldsymbol{x}}^{\intercal}\left(\lambda\boldsymbol{x}\right)=\lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}={\color{orange}\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}=} & {\color{orange}\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}=\lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}= & \lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}
+\end{aligned}
+$$
+
+:::
+
+:::
+
+::: {.proof}
+$\left(2\right)$
+
+???
+  
+::: {show-in="html"}
+
+推論特徵空間 $N(A-\lambda I)$ ($A-\lambda I$ 的零空間) 為 $\mathbb{R}^n$ 的子空間，故 $\boldsymbol{x}\in N(A-\lambda I)$  是一個非零實向量。
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+推論特徵空間 $N(A-\lambda I)$ ($A-\lambda I$ 的零空間) 為 $\mathbb{R}^n$ 的子空間，故 $\boldsymbol{x}\in N(A-\lambda I)$  是一個非零實向量。
+\end{CJK}
+
+:::
+
+:::
+
+::: {.theorem #unnamed-chunk-4}
+
+::: {show-in="html"}
+
+實對稱矩陣對應相異特徵值的特徵向量互為正交。
+
+$$
+\begin{array}{c}
+\begin{cases}
+\begin{cases}
+A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \text{real matrix}\\
+A^{\intercal}=A & \text{symmetric matrix}
+\end{cases} & \text{real symmetric matrix}\\
+A\boldsymbol{x}=\lambda\boldsymbol{x} & \ref{real-sym-real-eigen}\begin{cases}
+\lambda\in\mathbb{R} & \text{real eigenvalue}\\
+\boldsymbol{x}\in\mathbb{R}^{n} & \text{real eigenvector}
+\end{cases}\\
+\begin{cases}
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(e_{{\scriptscriptstyle 1}}\right)\\
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}} & \left(e_{{\scriptscriptstyle 2}}\right)
+\end{cases} & \lambda_{{\scriptscriptstyle 1}}\ne\lambda_{{\scriptscriptstyle 2}}
+\end{cases}\\
+\Downarrow\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=0\Leftrightarrow\boldsymbol{x}_{{\scriptscriptstyle 1}}\perp\boldsymbol{x}_{{\scriptscriptstyle 2}}
+\end{array}
+$$
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+實對稱矩陣對應相異特徵值的特徵向量互為正交。
+\end{CJK}
+
+$$
+\begin{array}{c}
+\begin{cases}
+\begin{cases}
+A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \textup{real matrix}\\
+A^{\intercal}=A & \textup{symmetric matrix}
+\end{cases} & \textup{real symmetric matrix}\\
+A\boldsymbol{x}=\lambda\boldsymbol{x} & \ref{thm:real-sym-real-eigen}\begin{cases}
+\lambda\in\mathbb{R} & \textup{real eigenvalue}\\
+\boldsymbol{x}\in\mathbb{R}^{n} & \textup{real eigenvector}
+\end{cases}\\
+\begin{cases}
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(e_{{\scriptscriptstyle 1}}\right)\\
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}} & \left(e_{{\scriptscriptstyle 2}}\right)
+\end{cases} & \lambda_{{\scriptscriptstyle 1}}\ne\lambda_{{\scriptscriptstyle 2}}
+\end{cases}\\
+\Downarrow\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=0\Leftrightarrow\boldsymbol{x}_{{\scriptscriptstyle 1}}\perp\boldsymbol{x}_{{\scriptscriptstyle 2}}
+\end{array}
+$$
+
+:::
+
+:::
+
+::: {.proof}
+$\left(1\right)$
+
+$$
+\begin{aligned}
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\cdot}{=} & \boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\left(1\right)\\
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}= & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}=\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}= & \left(\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}= & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\text{symmetric}}{=}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}}{=} & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\left(2\right)\\
+\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\left(1\right)}{=}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\left(2\right)}{=} & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\left(\lambda_{{\scriptscriptstyle 2}}-\lambda_{{\scriptscriptstyle 1}}\right)\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & 0\wedge\lambda_{{\scriptscriptstyle 1}}\ne\lambda_{{\scriptscriptstyle 2}}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & 0
+\end{aligned}
+$$
+:::
+
+::: {.proof}
+$\left(1\right)$ fast concept
+
+::: {show-in="html"}
+
+$$
+\begin{aligned}
+\color{orange}{\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}}=\left(\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\right)\boldsymbol{x}_{{\scriptscriptstyle 2}}=\color{orange}{\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}\\
+\left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=} & \color{orange}{\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}
+=\left(R\right)\\
+\left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}}
+\overset{\left(e_{{\scriptscriptstyle 1}}\right)}{=} & \left(\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\left(R\right)=\color{orange}{\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}\overset{\left(e_{{\scriptscriptstyle 2}}\right)}{=} & \boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\color{orange}{\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=} & \color{orange}{\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}
+\end{aligned}
+$$
+
+:::
+
+::: {show-in="pdf"}
+
+$$
+\begin{aligned}
+{\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}}=\left(\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\right)\boldsymbol{x}_{{\scriptscriptstyle 2}}={\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}\\
+\left(L\right)={\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=} & {\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}=\left(R\right)\\
+\left(L\right)={\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}}\overset{\left(e_{{\scriptscriptstyle 1}}\right)}{=} & \left(\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\left(R\right)={\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}\overset{\left(e_{{\scriptscriptstyle 2}}\right)}{=} & \boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}={\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=} & {\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}
+\end{aligned}
+$$
+
+:::
+:::
+
+::: {.theorem #unnamed-chunk-7}
+
+::: {show-in="html"}
+
+$$
+\begin{array}{c}
+\begin{cases}
+\begin{cases}
+A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \text{real matrix}\\
+A^{\intercal}=A & \text{symmetric matrix}
+\end{cases} & \text{real symmetric matrix}\\
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}=\lambda\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(e\right)\\
+\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}=0\Leftrightarrow\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(o\right)
+\end{cases}\\
+\Downarrow\\
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}}\Leftrightarrow\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}=0
+\end{array}
+$$
+
+:::
+
+::: {show-in="pdf"}
+
+$$
+\begin{array}{c}
+\begin{cases}
+\begin{cases}
+A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \textup{real matrix}\\
+A^{\intercal}=A & \textup{symmetric matrix}
+\end{cases} & \textup{real symmetric matrix}\\
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}=\lambda\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(e\right)\\
+\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}=0\Leftrightarrow\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(o\right)
+\end{cases}\\
+\Downarrow\\
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}}\Leftrightarrow\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}=0
+\end{array}
+$$
+
+:::
+
+:::
+
+::: {.proof}
+$$
+\begin{aligned}
+\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}= & \left(\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{{\scriptscriptstyle 1}}\overset{\text{symmetric}}{=}\left(\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}A\right)\boldsymbol{x}_{{\scriptscriptstyle 1}}\\
+= & \boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)\overset{\left(e\right)}{=}\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\left(\lambda\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)\\
+= & \lambda\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}\overset{\left(o\right)}{=}\lambda\cdot0=0\\
+\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}= & 0\Leftrightarrow A\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}}
+\end{aligned}
+$$
+:::
+
+<!--chapter:end:202403012223-real-symmetric-matrix-diagonalizable.Rmd-->
+
+# tangent half-angle formula
+
+https://en.wikipedia.org/wiki/Tangent_half-angle_formula
+
+::: {show-in="html"}
+
+https://zh.wikipedia.org/zh-tw/正切半角公式
+
+正切半形公式又稱萬能公式
+
+以切表弦公式，簡稱以切表弦
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+
+https://zh.wikipedia.org/zh-tw/正切半角公式
+
+正切半形公式又稱萬能公式
+
+以切表弦公式，簡稱以切表弦
+
+\end{CJK}
+
+:::
+
+
+<!--chapter:end:202403022014-tangent-half-angle.Rmd-->
+
+# homogeneous coordinate
+
+https://youtu.be/EKN7dTJ4ep8?si=8woajZxbqPfEXhdK&t=2263
+
+https://youtu.be/1z1S2kQKXDs?si=71o339yBtIQYhWtj&t=3082
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/EKN7dTJ4ep8?start=2263"></iframe>
+
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/1z1S2kQKXDs?start=3082"></iframe>
+:::
+
+<!--chapter:end:202403030910-homogeneous-coordinate.Rmd-->
+
+# Archimedean property
+
+## integer Archimedean property
+
+## rational Archimedean property
+
+https://math.stackexchange.com/questions/3699023/proof-the-the-field-of-rational-numbers-has-the-archimedean-property
+
+https://math.stackexchange.com/questions/1919829/proving-the-archimedean-properties-of-rational-numbers
+
+## real Archimedean property
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/6wBVk1fBKXQ?start=2326"></iframe>
+:::
+
+
+<!--chapter:end:202403091400-Archimedean-property.Rmd-->
+
+<!--
+
+-->
+
+# references {-}
+
+<!--chapter:end:209912312359-reference.Rmd-->
+

@@ -220,6 +220,36 @@ A\boldsymbol{x}_{1}= & \lambda_{1}\boldsymbol{x}_{1}\\
 \end_inset
 
 
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\begin{cases}
+\begin{cases}
+A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \text{real matrix}\\
+A^{\intercal}=A & \text{symmetric matrix}
+\end{cases} & \text{real symmetric matrix}\\
+A\boldsymbol{x}_{1}=\lambda\boldsymbol{x}_{1} & \left(e\right)\\
+\boldsymbol{x}_{2}^{\intercal}\boldsymbol{x}_{1}=0\Leftrightarrow\boldsymbol{x}_{2}\perp\boldsymbol{x}_{1} & \left(o\right)
+\end{cases}\\
+\Downarrow\\
+A\boldsymbol{x}_{2}\perp\boldsymbol{x}_{1}\Leftrightarrow\left(A\boldsymbol{x}_{2}\right)^{\intercal}\boldsymbol{x}_{1}=0
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(A\boldsymbol{x}_{2}\right)^{\intercal}\boldsymbol{x}_{1}= & \left(\boldsymbol{x}_{2}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{1}\overset{\text{symmetric}}{=}\left(\boldsymbol{x}_{2}^{\intercal}A\right)\boldsymbol{x}_{1}\\
+= & \boldsymbol{x}_{2}^{\intercal}\left(A\boldsymbol{x}_{1}\right)\overset{\left(e\right)}{=}\boldsymbol{x}_{2}^{\intercal}\left(\lambda\boldsymbol{x}_{1}\right)\\
+= & \lambda\boldsymbol{x}_{2}^{\intercal}\boldsymbol{x}_{1}\overset{\left(o\right)}{=}\lambda\cdot0=0\\
+\left(A\boldsymbol{x}_{2}\right)^{\intercal}\boldsymbol{x}_{1}= & 0\Leftrightarrow A\boldsymbol{x}_{2}\perp\boldsymbol{x}_{1}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -239,6 +269,19 @@ d\left(P,L\right)=\dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
 \end_inset
 
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+y
 \end_layout
 
 \begin_layout Standard
@@ -414,46 +457,15 @@ by normal vector
 
 \begin_inset Formula 
 \begin{align*}
- & \left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|\\
-= & \left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left\Vert \overset{\rightharpoonup}{n}\right\Vert \left|\cos\theta\right|\\
-\left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left|\cos\theta\right|= & \left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\widehat{\boldsymbol{n}}\right|\\
-= & \dfrac{\left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|}{\left\Vert \overset{\rightharpoonup}{n}\right\Vert }\\
-= & \dfrac{\left|\left(x-x_{0},y-y_{0}\right)\cdot\left(A,B\right)\right|}{\left\Vert \left(A,B\right)\right\Vert }=\dfrac{\left|A\left(x-x_{0}\right)+B\left(y-y_{0}\right)\right|}{\sqrt{A^{2}+B^{2}}}\\
-= & \dfrac{\left|-Ax_{0}-By_{0}+Ax+By\right|}{\sqrt{A^{2}+B^{2}}}\begin{subarray}{c}
+\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}= & \left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left\Vert \overset{\rightharpoonup}{n}\right\Vert \cos\theta\\
+\left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|= & \left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left\Vert \overset{\rightharpoonup}{n}\right\Vert \left|\cos\theta\right|\\
+\left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left|\cos\theta\right|= & \left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\widehat{\boldsymbol{n}}\right|=\dfrac{\left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|}{\left\Vert \overset{\rightharpoonup}{n}\right\Vert }=\dfrac{\left|\left(x-x_{0},y-y_{0}\right)\cdot\left(A,B\right)\right|}{\left\Vert \left(A,B\right)\right\Vert }\\
+= & \dfrac{\left|A\left(x-x_{0}\right)+B\left(y-y_{0}\right)\right|}{\sqrt{A^{2}+B^{2}}}=\dfrac{\left|-Ax_{0}-By_{0}+Ax+By\right|}{\sqrt{A^{2}+B^{2}}}\\
+\begin{subarray}{c}
 Ax+By+C=0\\
 =\\
 Ax+By=-C
-\end{subarray}\dfrac{\left|-Ax_{0}-By_{0}-C\right|}{\sqrt{A^{2}+B^{2}}}\\
-= & \dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
-\end{align*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\begin{cases}
-\boldsymbol{n}=\left(A,B\right)\perp L=Ax+By+C=0\\
-\overrightarrow{PP^{\prime}}=P^{\prime}-P=\left(x-x_{0},y-y_{0}\right)
-\end{cases}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
- & \left|\overrightarrow{PP^{\prime}}\cdot\boldsymbol{n}\right|\\
-= & \left\Vert \overrightarrow{PP^{\prime}}\right\Vert \left\Vert \boldsymbol{n}\right\Vert \left|\cos\theta\right|\\
-\left\Vert \overrightarrow{PP^{\prime}}\right\Vert \left|\cos\theta\right|= & \left|\overrightarrow{PP^{\prime}}\cdot\widehat{\boldsymbol{n}}\right|\\
-= & \dfrac{\left|\overrightarrow{PP^{\prime}}\cdot\boldsymbol{n}\right|}{\left\Vert \boldsymbol{n}\right\Vert }\\
-= & \dfrac{\left|\left(x-x_{0},y-y_{0}\right)\cdot\left(A,B\right)\right|}{\left\Vert \left(A,B\right)\right\Vert }=\dfrac{\left|A\left(x-x_{0}\right)+B\left(y-y_{0}\right)\right|}{\sqrt{A^{2}+B^{2}}}\\
-= & \dfrac{\left|-Ax_{0}-By_{0}+Ax+By\right|}{\sqrt{A^{2}+B^{2}}}\begin{subarray}{c}
-Ax+By+C=0\\
-=\\
-Ax+By=-C
-\end{subarray}\dfrac{\left|-Ax_{0}-By_{0}-C\right|}{\sqrt{A^{2}+B^{2}}}\\
-= & \dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
+\end{subarray} & \dfrac{\left|-Ax_{0}-By_{0}-C\right|}{\sqrt{A^{2}+B^{2}}}=\dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
 \end{align*}
 
 \end_inset
@@ -482,6 +494,172 @@ A\left(x-x_{0}\right)+B\left(y-y_{0}\right)= & -\left(Ax_{0}+By_{0}+C\right)
 = & \left[-\left(Ax_{0}+By_{0}+C\right)\right]^{2}=\left(Ax_{0}+By_{0}+C\right)^{2}\\
 \overline{PP^{\prime}}^{2}\ge & \dfrac{\left(Ax_{0}+By_{0}+C\right)^{2}}{A^{2}+B^{2}}\\
 \overline{PP^{\prime}}\ge & \dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+quadratic form
+\begin_inset Formula 
+\[
+ax^{2}+bxy+cy^{2}+dx+ey+f=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}ax+\left(b/2\right)y\\
+\left(b/2\right)x+cy
+\end{pmatrix}=ax^{2}+bxy+cy^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+0= & \begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f\\
+= & \boldsymbol{x}^{\intercal}A\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+f,\begin{cases}
+A=\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix} & A\text{ real symmetric}\\
+\boldsymbol{b}=\begin{pmatrix}d\\
+e
+\end{pmatrix}\\
+\boldsymbol{x}=\begin{pmatrix}x\\
+y
+\end{pmatrix}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+homogeneous coordinate
+\begin_inset Formula 
+\[
+\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & ~\\
+b/2 & c\\
+\\
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & 0\\
+b/2 & c & 0\\
+0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}\alpha & \beta & \gamma\\
+\delta & \epsilon & \zeta\\
+\eta & \theta & \kappa
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}\alpha x+\beta y+\gamma\\
+\delta x+\epsilon y+\zeta\\
+\eta x+\theta y+\kappa
+\end{pmatrix},\begin{cases}
+\gamma+\eta=d\\
+\zeta+\theta=e
+\end{cases}\\
+= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}0 & 0 & \gamma\\
+0 & 0 & \zeta\\
+\eta & \theta & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}0 & 0 & d/2\\
+0 & 0 & e/2\\
+d/2 & e/2 & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+0= & ax^{2}+bxy+cy^{2}+dx+ey+f\\
+= & \begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f=\boldsymbol{x}^{\intercal}A\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+f\\
+= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}\boldsymbol{x}^{\intercal} & 1\end{pmatrix}M\begin{pmatrix}\boldsymbol{x}\\
+1
+\end{pmatrix},M=\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+0=Q= & Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F\\
+= & \begin{bmatrix}x & y & 1\end{bmatrix}\begin{bmatrix}A & B/2 & D/2\\
+B/2 & C & E/2\\
+D/2 & E/2 & F
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+1
+\end{bmatrix}=\boldsymbol{x}_{\text{h}}^{\intercal}A_{Q}\boldsymbol{x}_{\text{h}}\\
+= & \begin{bmatrix}x & y\end{bmatrix}\begin{bmatrix}A & B/2\\
+B/2 & C
+\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}+\begin{bmatrix}D & E\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}+F=\boldsymbol{x}^{\intercal}A_{Q,33}\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+F
 \end{align*}
 
 \end_inset

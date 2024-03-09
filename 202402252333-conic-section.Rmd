@@ -723,6 +723,39 @@ $$
 
 $$
 \begin{aligned}
+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}\alpha & \beta & \gamma\\
+\delta & \epsilon & \zeta\\
+\eta & \theta & \kappa
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}\alpha x+\beta y+\gamma\\
+\delta x+\epsilon y+\zeta\\
+\eta x+\theta y+\kappa
+\end{pmatrix},\begin{cases}
+\gamma+\eta=d\\
+\zeta+\theta=e
+\end{cases}\\
+= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}0 & 0 & \gamma\\
+0 & 0 & \zeta\\
+\eta & \theta & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}0 & 0 & d/2\\
+0 & 0 & e/2\\
+d/2 & e/2 & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
 0= & ax^{2}+bxy+cy^{2}+dx+ey+f\\
 = & \begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
 b/2 & c

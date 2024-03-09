@@ -1,3 +1,406 @@
 # R
 
+## TonyKuoYJ's R little course
+
+::: {show-in="html"}
+郭耀仁 認識 R 的美好
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+郭耀仁 認識 R 的美好
+\end{CJK}
+:::
+
 https://bookdown.org/tonykuoyj/eloquentr/getting-started.html
+
+https://bookdown.org/tonykuoyj/eloquentr/easy-installation.html#about-packages
+
+`install.pacakges()`
+
+`library()`
+
+https://bookdown.org/tonykuoyj/eloquentr/getting-started.html
+
+### quick intro
+
+`Ctrl + Alt + I` to insert a new code chunk in RStudio
+
+`Ctrl + Enter` to run the current line
+
+`Ctrl + Shift + Enter` to run the current chunk
+
+```{r}
+R.version
+```
+
+
+```{r}
+a <- 23 # prime
+a
+```
+
+```{r}
+combine <- c(11, 13) # twin prime
+combine
+```
+
+```{r}
+# ?c
+# help(c)
+```
+
+`Ctrl + L` to clean R console
+
+path with slash `/` in R, differing backslash `\` in M$ Windows
+
+#### function
+
+```{r}
+add <- function(x, y) {
+  return(x + y)
+}
+
+add(11, 13)
+```
+
+$$
+BMI = \dfrac{BW\left[\text{Kg}\right]}{{BH\left[\text{m}\right]}^2}
+$$
+
+```{r}
+get_bmi <- function (bw, bh) {
+  return (bw/(bh/100)^2)
+}
+
+get_bmi(70, 170)
+```
+### R style
+
+https://bookdown.org/tonykuoyj/eloquentr/styleguide.html
+
+snake_case rather than camelCase
+
+### data workflow or forward pipe
+
+from _chaining method_ in *object-oriented programming*
+to **functional programming**
+
+#### `%>%` operator
+
+```{r}
+abs(-5:5)
+```
+
+
+```{r}
+# install.packages("magrittr")
+
+library(magrittr)
+
+-5:5 %>% abs()
+```
+
+```{r}
+# with readability but too many lines
+sys_date <- Sys.Date()
+sys_date_yr <- format(sys_date, format = "%Y")
+sys_date_num <- as.numeric(sys_date_yr)
+sys_date_num
+```
+
+```{r}
+# less line but also less readability
+sys_date_num <- as.numeric(format(Sys.Date(), format = "%Y"))
+sys_date_num
+```
+```{r}
+# use %>% operator to demonstrate data workflow or forward pipe
+sys_date_num <- Sys.Date() %>%
+   format(format = "%Y") %>%
+   as.numeric()
+sys_date_num
+```
+
+### data processing with `dplyr`
+
+https://bookdown.org/tonykuoyj/eloquentr/dplyr.html
+
+some functions functioning like those in **SQL**
+
+```{r, cache=TRUE}
+library(dplyr)
+
+# install.packages("gapminder")
+
+library(gapminder)
+
+head(gapminder)
+```
+
+```{r, cache=TRUE}
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+gapminder %>%
+  filter(year == 2007)
+```
+
+```{r, cache=TRUE}
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+gapminder %>%
+  filter(year == 2007) %>%
+  select(country)
+```
+
+```{r, cache=TRUE}
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+gapminder %>%
+  mutate(pop_in_thousands = pop / 1000)
+```
+
+```{r, cache=TRUE}
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+gapminder %>%
+  arrange(year)
+```
+
+```{r, cache=TRUE}
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+# total population in the world in 2007
+gapminder %>%
+  filter(year == 2007) %>%
+  summarise(ttl_pop = sum(as.numeric(pop)))
+```
+
+```{r, cache=TRUE}
+library(gapminder)
+library(dplyr)
+library(magrittr)
+
+# total population group by the continents in 2007
+gapminder %>%
+  filter(year == 2007) %>%
+  group_by(continent) %>%
+  summarise(ttl_pop = sum(as.numeric(pop)))
+```
+
+### visualization statically with `ggplot2`
+
+```{r, cache=TRUE}
+library(ggplot2)
+library(gapminder)
+
+gapminder_2007 <- gapminder %>%
+  filter(year == 2007)
+scatter_plot <- ggplot(gapminder_2007, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point()
+scatter_plot
+```
+
+```{r, cache=TRUE}
+library(ggplot2)
+library(gapminder)
+
+north_asia <- gapminder %>%
+  filter(country %in% c("China", "Japan", "Taiwan", "Korea, Rep."))
+line_plot <- ggplot(north_asia, aes(x = year, y = gdpPercap, colour = country)) +
+  geom_line()
+line_plot
+```
+
+```{r, cache=TRUE}
+library(ggplot2)
+library(gapminder)
+
+hist_plot <- ggplot(gapminder_2007, aes(x = gdpPercap)) +
+  geom_histogram()
+hist_plot
+
+hist_plot <- ggplot(gapminder_2007, aes(x = gdpPercap)) +
+  geom_histogram(bins = 20)
+hist_plot
+```
+
+```{r, cache=TRUE}
+library(ggplot2)
+library(gapminder)
+
+box_plot <- ggplot(gapminder_2007, aes(x = continent, y = gdpPercap)) +
+  geom_boxplot()
+box_plot
+```
+
+```{r, cache=TRUE}
+library(ggplot2)
+library(gapminder)
+
+gdpPercap_2007_na <- gapminder %>%
+  filter(year == 2007 & country %in% c("China", "Japan", "Taiwan", "Korea, Rep."))
+bar_plot <- ggplot(gdpPercap_2007_na, aes(x = country, y = gdpPercap)) +
+  geom_bar(stat = "identity")
+bar_plot
+```
+
+### variable type
+
+https://bookdown.org/tonykuoyj/eloquentr/variable-types.html
+
+```{r}
+class(2L)
+class(2.0L)
+class(2.3L)
+```
+time: POSIXct POSIXt
+```{r}
+class(Sys.time())
+```
+
+```{r}
+0 %in% -5:5
+```
+#### date
+
+1970-01-01 = 0L
+
+```{r}
+date_of_origin <- as.Date("1970-01-01")
+as.integer(date_of_origin)
+```
+check if type of `x` is `Date`
+
+`inherits(x, what = "Date")`
+
+convert `character` to `Date`
+
+`as.Date("01-01-1970", format = "%m-%d-%Y")`
+
+#### time
+
+1970-01-01 00:00:00 GMT = 0L
+
+tz = time zone
+
+```{r}
+time_of_origin <- as.POSIXct("1970-01-01 00:00:00", tz = "GMT")
+as.integer(time_of_origin)
+```
+check if type of `x` is time
+
+`inherits(x, what = "POSIXct")`
+
+convert `character` to time
+
+`as.POSIXct("1970-01-01 00:00:00", tz = "GMT")`
+
+
+#### quotient `%/%`
+
+```{r}
+7 %/% 3
+```
+
+### data type
+
+https://bookdown.org/tonykuoyj/eloquentr/vector-factor.html
+
+- 1D
+  - vector
+  - factor
+- 2D
+  - matrix
+  - data frame
+- $n$D
+  - array
+  - list
+  
+#### vector
+
+```{r}
+four_seasons <- c("spring", "summer", "autumn", "winter")
+four_seasons
+favorite_season <- four_seasons[3]
+favorite_season
+favorite_seasons <- four_seasons[c(-2, -4)]
+favorite_seasons
+```
+
+only one variable type for a vector
+
+```{r}
+lucky_numbers <- c(7L, 24)
+class(lucky_numbers[1])
+```
+
+```{r}
+lucky_numbers <- c(7L, FALSE)
+lucky_numbers
+class(lucky_numbers[2])
+```
+
+```{r}
+mixed_vars <- c(TRUE, 7L, 24, "spring")
+mixed_vars
+class(mixed_vars[1])
+class(mixed_vars[2])
+class(mixed_vars[3])
+```
+##### logic
+
+```{r}
+four_seasons <- c("spring", "summer", "autumn", "winter")
+my_favorite_seasons <- four_seasons == "spring" | four_seasons == "autumn"
+four_seasons[my_favorite_seasons]
+```
+
+##### `rep`
+
+##### `seq`
+
+#### factor
+
+https://bookdown.org/tonykuoyj/eloquentr/vector-factor.html#factor
+
+## R by Apan Liao
+
+::: {show-in="html"}
+
+R 演習室
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+R 演習室
+\end{CJK}
+
+:::
+
+https://www.youtube.com/playlist?list=PL5AC0ADBF65924EAD
+
+### data input
+
+https://www.youtube.com/watch?v=STcIxf_vUWY&list=PL5AC0ADBF65924EAD&index=1
+
+- `scan()`
+- read
+  - `read.table()`
+  - `read.csv()`
+  
+### descriptive statistics
+
+https://www.youtube.com/watch?v=GL3Wv_45LaU&list=PL5AC0ADBF65924EAD&index=2

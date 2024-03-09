@@ -47,6 +47,40 @@ https://community.rstudio.com/t/how-to-hyperlink-between-different-rmd-files-in-
 
 https://stackoverflow.com/questions/29787850/how-do-i-add-a-url-to-r-markdown
 
+```
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself]
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+```
+
+### arrow
+
+https://reimbar.org/dev/arrows/
+
+Up arrow (↑): `&uarr;`
+
+Down arrow (↓): `&darr;`
+
+Left arrow (←): `&larr;`
+
+Right arrow (→): `&rarr;`
+
+Double headed arrow: `&harr;`
+
 ### superscript and subscript
 
 script^superscript^~subscript~
@@ -75,11 +109,221 @@ https://stackoverflow.com/questions/26049762/erroneous-nesting-of-equation-struc
 
 https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown
 
+#### figure size
+
+https://sebastiansauer.github.io/figure_sizing_knitr/
+
+YAML in index.Rmd
+
+```{yaml}
+--- 
+title: "My Document" 
+output: html_document: 
+fig_width: 6 
+fig_height: 4 
+--- 
+```
+
+first R-chunk in your RMD document
+
+```
+knitr::opts_chunk$set(fig.width=12, fig.height=8) 
+```
+
+width, height and options
+
+` ```{r fig.height = 3, fig.width = 5`
+
+`plot(pressure)`
+
+` ``` `
+
+`{r fig.height = 3, fig.width = 5`
+
+```{r fig.height = 3, fig.width = 5, cache=TRUE}
+plot(pressure)
+```
+
+`{r fig.height = 3, fig.width = 3, fig.align = "center"`
+
+```{r fig.width = 5, fig.asp = .62, cache=TRUE}
+plot(pressure)
+```
+
+`{r fig.width = 5, fig.asp = .62`
+
+```{r fig.height = 3, fig.width = 3, fig.align = "center", cache=TRUE}
+plot(pressure)
+```
+
+
+```{markdown}
+<center>
+![](https://bookdown.org/yihui/rmarkdown-cookbook/images/cover.png){width=20%}
+</center>
+```
+
+::: {show-in="html"}
+
+<center>
+![](https://bookdown.org/yihui/rmarkdown-cookbook/images/cover.png){width=20%}
+</center>
+
+:::
+
+##### `knitr`
+
+https://yihui.org/knitr/options/
+
+https://bookdown.org/yihui/rmarkdown/tufte-figures.html
+
+```{r, fig.width=10, fig.height=2, fig.fullwidth=TRUE, cache=TRUE}
+par(mar = c(4, 4, .1, .2)); plot(sunspots)
+```
+
+```{r fig-margin, fig.margin=TRUE, cache=TRUE}
+plot(cars)
+```
+
+```{marginfigure}
+We know from _the first fundamental theorem of calculus_ that
+for $x$ in $[a, b]$:
+$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
+```
+
+##### `out.width` vs. `fig.width`
+
+https://stackoverflow.com/questions/29657777/how-to-make-fig-width-and-out-width-consistent-with-knitr
+
+when chunk option `cache=FALSE` is set, then `out.width` has no effect because no PDF output is created. Hence one has to specify exact measures in inches for `fig.width` and `fig.height` for each chunk
+
+https://stackoverflow.com/questions/59567235/a-ggmap-too-small-when-rendered-within-a-rmd-file
+
+<!-- using knitr::spin()
+ out.width = "100%", fig.align = "center", echo=FALSE
+-->
+
+```{r, out.width = "100%", fig.align = "center", echo=FALSE, cache=TRUE}
+plot(pressure)
+```
+
+```{r, fig.width=10, fig.height=2, fig.fullwidth=TRUE, cache=TRUE}
+plot(pressure)
+```
+
+problem: `out.width='100%'` causing `LaTeX Error: Not in outer par mode.`
+
+solution: `out.width=if (knitr:::is_html_output()) '100%'`
+
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.4\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.55\textwidth}"}
+```{r, echo=FALSE, engine='tikz', cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+::::::
+
+`fig.width=10, fig.height=2`
+
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.4\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.55\textwidth}"}
+```{r, echo=FALSE, engine='tikz', cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='', fig.width=10, fig.height=2}
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+::::::
+
+`out.width=if (knitr:::is_html_output()) '100%'`
+
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.4\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.55\textwidth}"}
+```{r, echo=FALSE, engine='tikz', cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='', fig.width=10, fig.height=2, out.width=if (knitr:::is_html_output()) '100%'}
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+::::::
+
+#### dynamic knitr plot width and height
+
+https://stackoverflow.com/questions/15365829/dynamic-height-and-width-for-knitr-plots
+
+```{r,echo=FALSE}
+x <- data.frame(x=factor(letters[1:3]),y=rnorm(3))
+len = length(unique(x$x))
+```
+
+
+```{r fig.width=len, fig.height=6, cache=TRUE}
+plot(pressure)
+```
+
+#### web image in PDF
+
+https://stackoverflow.com/questions/46331896/how-can-i-insert-an-image-from-internet-to-the-pdf-file-produced-by-r-bookdown-i
+
+```
+cover_url = 'https://bookdown.org/yihui/bookdown/images/cover.jpg'
+if (!file.exists(cover_file <- xfun::url_filename(cover_url)))
+  xfun::download_file(cover_url)
+knitr::include_graphics(if (knitr::pandoc_to('html')) cover_url else cover_file)
+```
+
 ::: {show-in="html"}
 <iframe src="https://www.geogebra.org/calculator/zkppuxwp?embed" width="600" height="450" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 ![conic sections](img/conic-sections.svg)
-```{r, echo=FALSE, fig.cap="conic sections", out.width = '75%'}
+```{r, echo=FALSE, fig.cap="conic sections", out.width = '75%', cache=TRUE}
 knitr::include_graphics("img/conic-sections.svg")
 ```
 :::
@@ -361,7 +605,13 @@ https://stackoverflow.com/questions/18189175/how-to-use-textup-with-mathjax
 
 `\textup` is not available in MathJax. You can replace it with `\mathrm`, **but `\mathrm` does not interpret spaces**.
 
-### Two columns
+### multi-column layout / two columns {#multi-column}
+
+https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html
+
+#### for both HTML and PDF
+
+[figure size]^[\@ref(figure-size)]^
 
 Below is a Div containing three child Divs side by side. The Div
 in the middle is empty, just to add more space between the left
@@ -371,7 +621,7 @@ and right Divs.
 :::::: {.cols data-latex=""}
 
 ::: {.col data-latex="{0.55\textwidth}"}
-```{r, echo=FALSE, fig.width=5, fig.height=4}
+```{r, echo=FALSE, fig.width=5, fig.height=4, cache=TRUE}
 par(mar = c(4, 4, .2, .1))
 plot(cars, pch = 19)
 ```
@@ -395,11 +645,13 @@ nulla pariatur.
 :::
 ::::::
 ```
+
+`{r, echo=FALSE, fig.width=5, fig.height=4}`
 
 :::::: {.cols data-latex=""}
 
 ::: {.col data-latex="{0.55\textwidth}"}
-```{r, echo=FALSE, fig.width=5, fig.height=4}
+```{r, echo=FALSE, cache=TRUE, fig.width=5, fig.height=4, cache=TRUE}
 par(mar = c(4, 4, .2, .1))
 plot(cars, pch = 19)
 ```
@@ -422,11 +674,13 @@ in reprehenderit in voluptate velit esse cillum dolore eu fugiat
 nulla pariatur.
 :::
 ::::::
+
+`{r, echo=FALSE, fig.width=10, fig.height=8, out.width = "100%"}`
 
 :::::: {.cols data-latex=""}
 
 ::: {.col data-latex="{0.55\textwidth}"}
-```{r, echo=FALSE, fig.width=10, fig.height=8}
+```{r, echo=FALSE, cache=TRUE, fig.width=5, fig.height=4, out.width = "100%"}
 par(mar = c(4, 4, .2, .1))
 plot(cars, pch = 19)
 ```
@@ -449,6 +703,102 @@ in reprehenderit in voluptate velit esse cillum dolore eu fugiat
 nulla pariatur.
 :::
 ::::::
+
+`{r, echo=FALSE, fig.width=10, fig.height=8}`
+
+:::::: {.cols data-latex=""}
+
+::: {.col data-latex="{0.55\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, fig.width=10, fig.height=8}
+par(mar = c(4, 4, .2, .1))
+plot(cars, pch = 19)
+```
+:::
+
+::: {.col data-latex="{0.05\textwidth}"}
+\ 
+<!-- an empty Div (with a white space), serving as
+a column separator -->
+:::
+
+::: {.col data-latex="{0.4\textwidth}"}
+The figure on the left-hand side shows the `cars` data.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur.
+:::
+::::::
+
+
+
+#### for only HTML
+
+##### CSS flex
+
+:::: {style="display: flex;"}
+
+::: {}
+Here is the **first** Div.
+
+```{r}
+str(iris)
+```
+:::
+
+::: {}
+And this block will be put on the right:
+
+```{r, cache=TRUE}
+plot(iris[, -5])
+```
+:::
+
+::::
+
+##### CSS grid
+
+https://github.com/yihui/knitr/issues/1743
+
+
+::: {show-in="html"}
+
+https://medium.com/enjoy-life-enjoy-coding/css-所以我說那個版能不能好切一點-grid-基本用法-cd763091cf70
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+https://medium.com/enjoy-life-enjoy-coding/css-所以我說那個版能不能好切一點-grid-基本用法-cd763091cf70
+\end{CJK}
+
+:::
+
+
+:::: {style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px; "}
+
+::: {}
+
+```{r}
+head(iris)
+```
+
+
+:::
+
+::: {}
+
+```{r, cache=TRUE}
+plot(iris)
+```
+
+:::
+
+::::
 
 ## conditional block/chunk for either HTML or PDF, and Chinese issue
 
@@ -632,20 +982,11 @@ $$\color{orange}{x=y}$$
 `\color{cyan}{x=y}`
 
 $$\color{cyan}{x=y}$$
-```
+```{markdown}
 ::: {show-in="html"}
 
 $$
-\begin{aligned}
-\color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}}=\left(\boldsymbol{x}_{1}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{2}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{1}^{\intercal}A\right)\boldsymbol{x}_{2}=\color{orange}{\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}\\
-\left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} & \color{orange}{\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}
-=\left(R\right)\\
-\left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}}
-\overset{\left(e_{1}\right)}{=} & \left(\lambda_{1}\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\left(R\right)=\color{orange}{\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}\overset{\left(e_{2}\right)}{=} & \boldsymbol{x}_{1}^{\intercal}\left(\lambda_{2}\boldsymbol{x}_{2}\right)=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}=\color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} & \color{orange}{\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}= & \lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}
-\end{aligned}
+\dfrac{\colorbox{#FFD1DC}{$\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}$}}{1-\epsilon^{2}}
 $$
 
 :::
@@ -653,14 +994,7 @@ $$
 ::: {show-in="pdf"}
 
 $$
-\begin{aligned}
-{\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}}=\left(\boldsymbol{x}_{1}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{2}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{1}^{\intercal}A\right)\boldsymbol{x}_{2}={\color{orange}\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}\\
-\left(L\right)={\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} & {\color{orange}\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}=\left(R\right)\\
-\left(L\right)={\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}}\overset{\left(e_{1}\right)}{=} & \left(\lambda_{1}\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\left(R\right)={\color{orange}\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}\overset{\left(e_{2}\right)}{=} & \boldsymbol{x}_{1}^{\intercal}\left(\lambda_{2}\boldsymbol{x}_{2}\right)=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}={\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} & {\color{orange}\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)}=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\
-\lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}= & \lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}
-\end{aligned}
+\dfrac{\colorbox{red!50}{\text{\ensuremath{\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}}}}}{1-\epsilon^{2}}
 $$
 
 :::
@@ -780,7 +1114,7 @@ X [equivalence-class.html] [equivalence-class.html#equivalence-class] (\@ref(equ
 
 X [equivalence-relation.html] [equivalence-relation.html#equivalence-relation] (\@ref(equivalence-relation.html)) \@ref(equivalence-relation.html#equivalence-relation)
 
-## number and reference equations
+## number and reference equations {#nice-label}
 
 https://stackoverflow.com/questions/71595882/rstudio-error-in-windows-running-pdflatex-exe-on-file-name-tex-exit-code-10
 
@@ -888,3 +1222,91 @@ Here is my definition.
     ( 2,4) circle (.05);
 \end{tikzpicture}
 ```
+
+## slide or presentation
+
+### Xaringan and Infinite Moon Reader
+
+https://rpubs.com/RW1304/xarigan-zh
+
+https://slides.yihui.org/xaringan/#1
+
+https://slides.yihui.org/xaringan/zh-CN.html#1
+
+https://github.com/yihui/xaringan/tree/master
+
+https://bookdown.org/yihui/rmarkdown/xaringan.html
+
+### ioslides
+
+https://www.youtube.com/watch?v=gkyjTcpCITM
+
+https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
+
+https://stackoverflow.com/questions/63749683/how-to-set-up-theorem-environment-in-the-rmarkdown-presentation
+
+```{yaml}
+---
+title: "Theorem demo"
+output:
+  ioslides_presentation:
+    css: style.css
+---
+```
+
+```{css}
+
+/* theorem environment _ plain */
+
+.theorem {
+  display: block;
+  font-style: italic;
+  font-size: 24px;
+  font-family: "Times New Roman";
+  color: black;
+}
+.theorem::before {
+  content: "Theorem. ";
+  font-weight: bold;
+  font-style: normal;
+}
+.theorem[text]::before {
+  content: "Theorem (" attr(text) ") ";
+}
+.theorem p {
+  display: inline;
+}
+
+/* theorem environment _ Copenhagen style */
+
+/*
+.theorem {
+  display: block;
+  font-style: italic;
+  font-size: 24px;
+  font-family: "Times New Roman";
+  color: black;
+  border-radius: 10px;
+  background-color: rgb(222,222,231);
+  box-shadow: 5px 10px 8px #888888;
+}
+.theorem::before {
+  content: "Theorem. ";
+  font-weight: bold;
+  font-style: normal;
+  display: inline-block;
+  width: -webkit-fill-available;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 5px 5px 15px;
+  background-color: rgb(38, 38, 134);
+}
+.theorem p {
+  padding: 15px 15px 15px 15px;
+}
+*/
+```
+
+### PowerPoint
+
+https://bookdown.org/yihui/rmarkdown/powerpoint-presentation.html

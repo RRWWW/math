@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.3.2)  2 MAR 2024 15:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.3.9)  10 MAR 2024 00:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1132,18 +1132,6 @@ Package: amsthm 2020/05/29 v2.20.6
 
 LaTeX Warning: Label `def:equivalence-relation' multiply defined.
 
-
-LaTeX Warning: Label `fig:unnamed-chunk-4' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-4' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-5' multiply defined.
-
-
-LaTeX Warning: Label `fig:unnamed-chunk-6' multiply defined.
-
 )
 \openout1 = `math.aux'.
 
@@ -1597,47 +1585,59 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 ] [2
 
-] (./math.toc
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 10.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 10.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 10.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 10.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 10.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 10.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 10.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 10.
-[3])
+] (./math.toc)
 \tf@toc=\write6
 \openout6 = `math.toc'.
 
-[4] [5
+[3] [4
 
-] [6
+] [5] [6
 
 ] [7] [8]
 Chapter 1.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 308.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 308.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 308.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 308.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 308.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 308.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 308.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 308.
 [9
 
 ] [10
 
 ]
 Chapter 2.
+
+LaTeX Warning: Reference `lorentz-transformation' on page 11 undefined on input
+ line 404.
+
 [11] [12
 
 ]
 Chapter 3.
+
+LaTeX Warning: Reference `tikz' on page 13 undefined on input line 438.
+
+
+LaTeX Warning: Reference `xy-pic' on page 13 undefined on input line 448.
+
 [13] [14
 
 ]
 Chapter 4.
+
+LaTeX Warning: Reference `r' on page 15 undefined on input line 495.
+
 [15] [16
 
 ]
@@ -1647,7 +1647,7 @@ Chapter 5.
 ] [19] [20]
 Chapter 6.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 590.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 598.
 [21
 
 ]
@@ -1658,17 +1658,65 @@ ic file (type pdf)
 
 ]
 Chapter 7.
-[27]
+[27] [28]
 File: 202401280001-test_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
 type pdf)
 <use 202401280001-test_files/figure-latex/unnamed-chunk-4-1.pdf>
+[29]
+File: 202401280001-test_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (
+type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-5-1.pdf>
+File: 202401280001-test_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (
+type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-6-1.pdf>
+[30]
+File: 202401280001-test_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (
+type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-8-1.pdf>
+File: 202401280001-test_files/figure-latex/fig-margin-1.pdf Graphic file (type 
+pdf)
+<use 202401280001-test_files/figure-latex/fig-margin-1.pdf>
+File: 202401280001-test_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-10-1.pdf>
+[31]
+File: 202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf>
+File: 202401280001-test_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-13-1.pdf>
+File: 202401280001-test_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-15-1.pdf>
+File: 202401280001-test_files/figure-latex/unnamed-chunk-17-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-17-1.pdf>
+[32]
+File: 202401280001-test_files/figure-latex/unnamed-chunk-19-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-19-1.pdf>
+[33]
+File: 202401280001-test_files/figure-latex/unnamed-chunk-21-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-21-1.pdf>
 File: img/conic-sections.pdf Graphic file (type pdf)
 <use img/conic-sections.pdf>
 File: img/conic-sections.pdf Graphic file (type pdf)
 <use img/conic-sections.pdf>
-[28] [29] [30]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[34] [35]
+
+LaTeX Warning: Reference `tikz' on page 36 undefined on input line 1241.
+
+
+LaTeX Warning: Reference `xy-pic' on page 36 undefined on input line 1251.
+
+[36]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1014.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1309.
 (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
 ) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
@@ -1715,26 +1763,90 @@ ex-text;!
 Missing character: There is no 碼 (U+78BC) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-Overfull \hbox (18.137pt too wide) in paragraph at lines 1059--1059
+Overfull \hbox (18.137pt too wide) in paragraph at lines 1354--1354
 []\TU/lmtt/m/n/10 % replace the rather ugly mathptmx \sum operator with the equ
 ivalent Computer Modern one[] 
  []
 
 
-Overfull \hbox (18.137pt too wide) in paragraph at lines 1080--1080
+Overfull \hbox (18.137pt too wide) in paragraph at lines 1375--1375
 []\TU/lmtt/m/n/10 % replace the rather ugly mathptmx \sum operator with the equ
 ivalent Computer Modern one[] 
  []
 
-[31]
-File: 202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
+[37] [38]
+File: 202401280001-test_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file 
 (type pdf)
-<use 202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf>
-[32]
-File: 202401280001-test_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file 
+<use 202401280001-test_files/figure-latex/unnamed-chunk-28-1.pdf>
+File: 202401280001-test_files/figure-latex/unnamed-chunk-29-1.pdf Graphic file 
 (type pdf)
-<use 202401280001-test_files/figure-latex/unnamed-chunk-12-1.pdf>
-(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+<use 202401280001-test_files/figure-latex/unnamed-chunk-29-1.pdf>
+File: 202401280001-test_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-30-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[39]
+Overfull \hbox (18.137pt too wide) in paragraph at lines 1551--1551
+[]\TU/lmtt/m/n/10 ##  $ Species     : Factor w/ 3 levels "setosa","versicolor",
+..: 1 1 1 1 1 1 1 1 1 1 ...[] 
+ []
+
+File: 202401280001-test_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-32-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[40] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+Missing character: There is no 所 (U+6240) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 以 (U+4EE5) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 我 (U+6211) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 說 (U+8AAA) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 那 (U+90A3) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 個 (U+500B) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 版 (U+7248) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 能 (U+80FD) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 不 (U+4E0D) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 能 (U+80FD) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 好 (U+597D) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 切 (U+5207) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 一 (U+4E00) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 點 (U+9EDE) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 基 (U+57FA) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 本 (U+672C) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 用 (U+7528) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no 法 (U+6CD5) in font [lmroman10-regular]:mapping=t
+ex-text;!
+File: 202401280001-test_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file 
+(type pdf)
+<use 202401280001-test_files/figure-latex/unnamed-chunk-34-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[41] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -1912,145 +2024,53 @@ Missing character: There is no 遞 (U+905E) in font [lmroman5-regular]:mapping=t
 x-text;!
 Missing character: There is no 移 (U+79FB) in font [lmroman5-regular]:mapping=te
 x-text;!
-[33]
-Overfull \hbox (1278.137pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\b
-oldsymbol{x}_{2}}=\left(\boldsymbol{x}_{1}^{\intercal}A^{\intercal}\right)\bold
-symbol{x}_{2}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{1}^{\interca
-l}A\right)\boldsymbol{x}_{2}=\color{orange}{\boldsymbol{x}_{1}^{\intercal}\left
-(A\boldsymbol{x}_{2}\right)}\\[] 
- []
-
-
-Overfull \hbox (474.887pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{1}\right
-)^{\intercal}\boldsymbol{x}_{2}=} & \color{orange}{\boldsymbol{x}_{1}^{\interca
-l}\left(A\boldsymbol{x}_{2}\right)}[] 
- []
-
-
-Overfull \hbox (44.387pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \left(L\right)=\color{orange}{\left(A\boldsymbol{x}_{1}\right
-)^{\intercal}\boldsymbol{x}_{2}}[] 
- []
-
-[34]
-Overfull \hbox (438.137pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \overset{\left(e_{1}\right)}{=} & \left(\lambda_{1}\boldsymbo
-l{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=\lambda_{1}\boldsymbol{x}_{1}^{\i
-ntercal}\boldsymbol{x}_{2}\\[] 
- []
-
-
-Overfull \hbox (926.387pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \left(R\right)=\color{orange}{\boldsymbol{x}_{1}^{\intercal}\
-left(A\boldsymbol{x}_{2}\right)}\overset{\left(e_{2}\right)}{=} & \boldsymbol{x
-}_{1}^{\intercal}\left(\lambda_{2}\boldsymbol{x}_{2}\right)=\lambda_{2}\boldsym
-bol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\[] 
- []
-
-
-Overfull \hbox (1036.637pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}=\
-color{orange}{\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} 
-& \color{orange}{\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)
-}=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\[] 
- []
-
-
-Overfull \hbox (196.637pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}= 
-& \lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}[] 
- []
-
-
-Overfull \hbox (1278.137pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 {\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\b
-oldsymbol{x}_{2}}=\left(\boldsymbol{x}_{1}^{\intercal}A^{\intercal}\right)\bold
-symbol{x}_{2}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{1}^{\interca
-l}A\right)\boldsymbol{x}_{2}={\color{orange}\boldsymbol{x}_{1}^{\intercal}\left
-(A\boldsymbol{x}_{2}\right)}\\[] 
- []
-
-
-Overfull \hbox (564.137pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \left(L\right)={\color{orange}\left(A\boldsymbol{x}_{1}\right
-)^{\intercal}\boldsymbol{x}_{2}=} & {\color{orange}\boldsymbol{x}_{1}^{\interca
-l}\left(A\boldsymbol{x}_{2}\right)}=\left(R\right)\\[] 
- []
-
-
-Overfull \hbox (926.387pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \left(L\right)={\color{orange}\left(A\boldsymbol{x}_{1}\right
-)^{\intercal}\boldsymbol{x}_{2}}\overset{\left(e_{1}\right)}{=} & \left(\lambda
-_{1}\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=\lambda_{1}\boldsym
-bol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\[] 
- []
-
-
-Overfull \hbox (926.387pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \left(R\right)={\color{orange}\boldsymbol{x}_{1}^{\intercal}\
-left(A\boldsymbol{x}_{2}\right)}\overset{\left(e_{2}\right)}{=} & \boldsymbol{x
-}_{1}^{\intercal}\left(\lambda_{2}\boldsymbol{x}_{2}\right)=\lambda_{2}\boldsym
-bol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\[] 
- []
-
-
-Overfull \hbox (1036.637pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}={
-\color{orange}\left(A\boldsymbol{x}_{1}\right)^{\intercal}\boldsymbol{x}_{2}=} 
-& {\color{orange}\boldsymbol{x}_{1}^{\intercal}\left(A\boldsymbol{x}_{2}\right)
-}=\lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}\\[] 
- []
-
-
-Overfull \hbox (196.637pt too wide) in paragraph at lines 1316--1316
-[]\TU/lmtt/m/n/10 \lambda_{1}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}= 
-& \lambda_{2}\boldsymbol{x}_{1}^{\intercal}\boldsymbol{x}_{2}[] 
- []
-
-
-Overfull \hbox (233.55699pt too wide) in paragraph at lines 1329--1330
+[42] [43]
+Overfull \hbox (233.55699pt too wide) in paragraph at lines 1716--1717
 [][][]$[] [] [] [] [] [] [] [] [] [] [] [] [] [][] [] [] [] [] [] [] [] [] [] [
 ] [] [] [] [] [] [] [][] [][] [] [] [] [] [] [] []$[][]\TU/lmr/m/n/10 :~:text=T
 o%20summarize%2C%20pyellow!50efined%20colors%20in,when%20loading%20the%20xcolor
 %20package. 
  []
 
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 1412--1413
-[]\TU/lmr/m/n/10 [equivalence-class.html] [equivalence-class.html#equivalence-c
-lass] (@ref(equivalence-class.html))
+[44]
+Underfull \hbox (badness 1783) in paragraph at lines 1801--1802
+[]\TU/lmr/m/n/10 X [equivalence-class.html] [equivalence-class.html#equivalence
+-class] (@ref(equivalence-class.html))
  []
 
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 1418--1419
-[]\TU/lmr/m/n/10 [equivalence-relation.html] [equivalence-relation.html#equival
-ence-relation] (@ref(equivalence-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1807--1808
+[]\TU/lmr/m/n/10 X [equivalence-relation.html] [equivalence-relation.html#equiv
+alence-relation] (@ref(equivalence-
  []
 
-[37]
+[45] [46]
 File: 202401280001-test_files/figure-latex/parabola-arc-with-points-1.pdf Graph
 ic file (type pdf)
 <use 202401280001-test_files/figure-latex/parabola-arc-with-points-1.pdf>
-[38]
-Chapter 8.
+[47]
 
 LaTeX Font Warning: Font shape `TU/lmtt/bx/it' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 1551.
+(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 1962.
 
 
-[39
 
-] [40
+Overfull \vbox (2.50435pt too high) detected at line 2003
+ []
+
+[48] [49] [50
+
+]
+Chapter 8.
+[51] [52
 
 ]
 Chapter 9.
-[41] [42
+[53] [54
 
 ]
 Chapter 10.
-[43] [44
+[55] [56
 
 ]
 Chapter 11.
@@ -2232,28 +2252,28 @@ Missing character: There is no 遞 (U+905E) in font [lmroman5-regular]:mapping=t
 x-text;!
 Missing character: There is no 移 (U+79FB) in font [lmroman5-regular]:mapping=te
 x-text;!
-[45] [46
+[57] [58
 
 ]
 Chapter 12.
 
-Overfull \vbox (0.51534pt too high) detected at line 1709
+Overfull \vbox (0.51534pt too high) detected at line 2197
  []
 
-[47]
-Overfull \hbox (71.857pt too wide) in paragraph at lines 1711--1712
+[59]
+Overfull \hbox (71.857pt too wide) in paragraph at lines 2199--2200
 []\TU/lmr/m/n/10 copy \TU/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticulate\r-
 reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tcl8.6
  []
 
 
-Overfull \hbox (62.72699pt too wide) in paragraph at lines 1711--1712
+Overfull \hbox (62.72699pt too wide) in paragraph at lines 2199--2200
 \TU/lmr/m/n/10 and \TU/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticulate\r-ret
 iculate\pyenv\pyenv-win\versions\3.9.12\tcl\tk8.6
  []
 
 
-Overfull \hbox (115.777pt too wide) in paragraph at lines 1711--1712
+Overfull \hbox (115.777pt too wide) in paragraph at lines 2199--2200
 \TU/lmr/m/n/10 two folders to the folder \TU/lmtt/m/n/10 C:\Users\RW\AppData\Lo
 cal\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\Lib 
  []
@@ -2264,600 +2284,35 @@ File: 202401292317-Python_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[48] [49] [50
+[60] [61] [62
 
 ]
 Chapter 13.
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (
 type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-2-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
-type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (
-type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-5-1.pdf>
-[51] [52]
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (
-type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (
-type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-8-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (
-type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-9-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-11-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-13-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-15-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-15-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf>
-[53] [54]
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-35-1.pdf>
 
-Underfull \vbox (badness 1019) has occurred while \output is active []
-
-[55] [56]
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-37-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-39-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-41-1.pdf>
-[57]
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-43-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-45-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-47-1.pdf>
-[58] [59]
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-49-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-51-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-53-1.pdf>
-[60]
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-55-1.pdf>
-[61]
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-57-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-59-1.pdf>
-
-Underfull \vbox (badness 3872) has occurred while \output is active []
-
-[62]
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-61-1.pdf>
-[63]
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-63-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-63-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-65-1.pdf Graphic file 
-(type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-65-1.pdf>
-File: 202401311000-TikZ_files/figure-latex/skills-1.pdf Graphic file (type pdf)
-
-<use 202401311000-TikZ_files/figure-latex/skills-1.pdf>
-
-Underfull \vbox (badness 2903) has occurred while \output is active []
-
-[64] [65] [66
-
-]
-Chapter 14.
-<xymatrix 3x3 320> [67] [68
-
-]
-Chapter 15.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 2335.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 2335.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 5.0pt on input line 2335.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 10.00092pt on input line 2335.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 7.00064pt on input line 2335.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 5.00046pt on input line 2335.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 9.99893pt on input line 2335.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 6.99925pt on input line 2335.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 4.99947pt on input line 2335.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 2344.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 2344.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 6.0pt on input line 2344.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 12.0011pt on input line 2344.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 8.00073pt on input line 2344.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 6.00055pt on input line 2344.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 11.99872pt on input line 2344.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 7.99915pt on input line 2344.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 5.99936pt on input line 2344.
-[69] [70]
-Chapter 16.
-[71
-
-] [72
-
-]
-Chapter 17.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 2382.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.4013pt on input line 2382.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 2382.
-[73] [74
-
-]
-Chapter 18.
-[75] [76
-
-]
-Chapter 19.
-[77] [78
-
-]
-Chapter 20.
-(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Missing character: There is no 圓 (U+5713) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 錐 (U+9310) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 曲 (U+66F2) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 線 (U+7DDA) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 圓 (U+5713) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 錐 (U+9310) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 截 (U+622A) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 痕 (U+75D5) in font [lmroman10-regular]:mapping=t
-ex-text;!
-File: 202402252333-conic-section_files/figure-latex/unnamed-chunk-1-1.pdf Graph
-ic file (type pdf)
-<use 202402252333-conic-section_files/figure-latex/unnamed-chunk-1-1.pdf>
-(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Missing character: There is no 焦 (U+7126) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 點 (U+9EDE) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 準 (U+6E96) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 線 (U+7DDA) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 離 (U+96E2) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 心 (U+5FC3) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 率 (U+7387) in font [lmroman10-regular]:mapping=t
-ex-text;!
-
-Underfull \vbox (badness 4316) has occurred while \output is active []
-
-[79] [80] [81]
-File: img/conic-sections.pdf Graphic file (type pdf)
-<use img/conic-sections.pdf>
-[82]
-Underfull \vbox (badness 3118) has occurred while \output is active []
-
-[83] [84] [85]
-File: img/conic-sections-ellipse.pdf Graphic file (type pdf)
-<use img/conic-sections-ellipse.pdf>
-File: img/conic-sections-parabola.pdf Graphic file (type pdf)
-<use img/conic-sections-parabola.pdf>
-File: img/conic-sections-hyperbola.pdf Graphic file (type pdf)
-<use img/conic-sections-hyperbola.pdf>
-[86] [87]
-Overfull \hbox (65.00581pt too wide) detected at line 2896
-[]
- []
-
-[88]
-File: img/conic-sections-polar-ellipse.pdf Graphic file (type pdf)
-<use img/conic-sections-polar-ellipse.pdf>
-File: img/conic-sections-polar-parabola.pdf Graphic file (type pdf)
-<use img/conic-sections-polar-parabola.pdf>
-File: img/conic-sections-polar-hyperbola.pdf Graphic file (type pdf)
-<use img/conic-sections-polar-hyperbola.pdf>
-[89] [90] [91] [92]
-Chapter 21.
-(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Missing character: There is no 點 (U+9EDE) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 到 (U+5230) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 直 (U+76F4) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 線 (U+7DDA) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 距 (U+8DDD) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 離 (U+96E2) in font [lmroman10-regular]:mapping=t
-ex-text;!
-
-Underfull \vbox (badness 1648) has occurred while \output is active []
-
-[93
-
-] [94]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[95]
-Overfull \hbox (18.137pt too wide) in paragraph at lines 3122--3122
-[]\TU/lmtt/m/n/10 % replace the rather ugly mathptmx \sum operator with the equ
-ivalent Computer Modern one[] 
- []
-
-[96]
-Chapter 22.
-(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Missing character: There is no 實 (U+5BE6) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 對 (U+5C0D) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 稱 (U+7A31) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 矩 (U+77E9) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 陣 (U+9663) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 可 (U+53EF) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 正 (U+6B63) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 交 (U+4EA4) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 對 (U+5C0D) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 角 (U+89D2) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 化 (U+5316) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 證 (U+8B49) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 明 (U+660E) in font [lmroman10-regular]:mapping=t
-ex-text;!
-(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Missing character: There is no 實 (U+5BE6) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 對 (U+5C0D) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 稱 (U+7A31) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 矩 (U+77E9) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 陣 (U+9663) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 特 (U+7279) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 徵 (U+5FB5) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 值 (U+503C) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 皆 (U+7686) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 是 (U+662F) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 實 (U+5BE6) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 數 (U+6578) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no ， (U+FF0C) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 且 (U+4E14) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 對 (U+5C0D) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 應 (U+61C9) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 特 (U+7279) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 徵 (U+5FB5) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 向 (U+5411) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 量 (U+91CF) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 是 (U+662F) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 實 (U+5BE6) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 向 (U+5411) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 量 (U+91CF) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 。 (U+3002) in font [lmroman10-italic]:mapping=te
-x-text;!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[97
-
-] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Missing character: There is no 推 (U+63A8) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 論 (U+8AD6) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 推 (U+63A8) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 論 (U+8AD6) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 推 (U+63A8) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 論 (U+8AD6) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 特 (U+7279) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 徵 (U+5FB5) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 空 (U+7A7A) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 間 (U+9593) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 零 (U+96F6) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 空 (U+7A7A) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 間 (U+9593) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 為 (U+70BA) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 子 (U+5B50) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 空 (U+7A7A) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 間 (U+9593) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ， (U+FF0C) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 故 (U+6545) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 是 (U+662F) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 一 (U+4E00) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 個 (U+500B) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 非 (U+975E) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 零 (U+96F6) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 實 (U+5BE6) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 向 (U+5411) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 量 (U+91CF) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 。 (U+3002) in font [lmroman10-regular]:mapping=t
-ex-text;!
-(c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Missing character: There is no 實 (U+5BE6) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 對 (U+5C0D) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 稱 (U+7A31) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 矩 (U+77E9) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 陣 (U+9663) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 對 (U+5C0D) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 應 (U+61C9) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 相 (U+76F8) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 異 (U+7570) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 特 (U+7279) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 徵 (U+5FB5) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 值 (U+503C) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 特 (U+7279) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 徵 (U+5FB5) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 向 (U+5411) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 量 (U+91CF) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 互 (U+4E92) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 為 (U+70BA) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 正 (U+6B63) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 交 (U+4EA4) in font [lmroman10-italic]:mapping=te
-x-text;!
-Missing character: There is no 。 (U+3002) in font [lmroman10-italic]:mapping=te
-x-text;!
-[98] [99] [100
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 3308--3311
-
+Overfull \hbox (78.51302pt too wide) in paragraph at lines 2276--2276
+[]\TU/lmtt/b/n/10 \draw[]\TU/lmtt/m/n/10 [domain=0:4,smooth,variable=[]\TU/lmtt
+/b/n/10 \t[]\TU/lmtt/m/n/10 ,blue,thick] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3312--3315
+! LaTeX Error: Not in outer par mode.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3316--3319
-
- []
-
-Missing character: There is no 二 (U+4E8C) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 次 (U+6B21) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 型 (U+578B) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 與 (U+8207) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 正 (U+6B63) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 矩 (U+77E9) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 陣 (U+9663) in font [lmroman10-regular]:mapping=t
-ex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 3320--3323
-
- []
-
-Missing character: There is no 多 (U+591A) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 變 (U+8B8A) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 量 (U+91CF) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 常 (U+5E38) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 態 (U+614B) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=t
-ex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 3324--3327
-
- []
-
-[101] (./math.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
- ***********
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2298 \centering
+                  
 Here is how much of TeX's memory you used:
- 48888 strings out of 474800
- 1101624 string characters out of 5762342
- 1983842 words of memory out of 5000000
- 70073 multiletter control sequences out of 15000+600000
- 571101 words of font info for 142 fonts, out of 8000000 for 9000
+ 48363 strings out of 474773
+ 1075159 string characters out of 5761290
+ 1955842 words of memory out of 5000000
+ 69642 multiletter control sequences out of 15000+600000
+ 567062 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 94i,22n,121p,1001b,990s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,20n,121p,1001b,990s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on math.pdf (101 pages).
+Output written on math.pdf (62 pages).

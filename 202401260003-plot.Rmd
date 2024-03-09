@@ -1,20 +1,20 @@
 # plot
 
 - LaTeX
-    - [TikZ]^[\@ref(tikz)]^
-        - TikZ-3Dplot
-        - PGFplots
-    - xypic = [xy-pic]^[\@ref(xy-pic)]^
+  - [TikZ]^[\@ref(tikz)]^
+    - TikZ-3Dplot
+    - PGFplots
+  - xypic = [xy-pic]^[\@ref(xy-pic)]^
 - [OverLeaf](https://www.overleaf.com/)
 - [MathCha](https://www.mathcha.io/)
 - [GeoGebra](https://www.geogebra.org/)
-    - [GeoGebra Classic](https://www.geogebra.org/classic): to export TikZ
-    - [GeoGebra Calculator Suite](https://www.geogebra.org/calculator)
+  - [GeoGebra Classic](https://www.geogebra.org/classic): to export TikZ
+  - [GeoGebra Calculator Suite](https://www.geogebra.org/calculator)
 - Python
-    - MatPlotLib
-    - Seaborn
-    - Plotly
-    - Manim
+  - MatPlotLib
+  - Seaborn
+  - Plotly
+  - Manim
 
 neural network plot/draw
 https://github.com/ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network

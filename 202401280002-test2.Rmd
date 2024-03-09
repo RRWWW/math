@@ -2,9 +2,12 @@
 
 ## verbatim
 
+https://community.rstudio.com/t/continued-issues-with-new-verbatim-in-rstudio/139737
+
 https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html
 
 ````{verbatim}
+
 ```{r, eval=TRUE}
 1 + 1
 ```
