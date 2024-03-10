@@ -2,6 +2,10 @@
 
 multi-column \@ref(multi-column)
 
+```{r}
+knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
+```
+
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
@@ -16,7 +20,7 @@ multi-column \@ref(multi-column)
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-```{r, echo=FALSE, engine='tikz', cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='', fig.width=10, fig.height=2, out.width=if (knitr:::is_html_output()) '100%'}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
 \begin{tikzpicture}
   \draw (-1,1)--(0,0)--(1,2);
 \end{tikzpicture}
@@ -38,8 +42,6 @@ https://www.youtube.com/watch?v=bQugbYq0BVA
 
 https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs8lk&index=18
 
-
-
 ```{tex}
 \begin{tikzpicture}
   \def\a{1.5} % amplitude
@@ -57,7 +59,7 @@ https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  cache=TRUE,  out.width='90%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='Brachistochrone Curve'}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png',  out.width='90%', fig.cap='Brachistochrone Curve'}
 \begin{tikzpicture}
   \def\a{1.5} % amplitude
   \def\b{2}   % frequency
@@ -74,7 +76,7 @@ https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='90%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='Brachistochrone Curve'}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png',  out.width='90%', fig.cap='Brachistochrone Curve'}
 \begin{tikzpicture}[scale=1.5]
   % Parameters for the cycloid
   \def\r{1} % Radius of the generating circle
@@ -107,130 +109,253 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='5%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
 \begin{tikzpicture}
   \draw (-1,1)--(0,0)--(1,2);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='5%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.width=10, fig.height=2, out.width=if (knitr:::is_html_output()) '100%'}
 \begin{tikzpicture}
   \draw (-1,1)--(0,0)--(1,2);
 \end{tikzpicture}
 ```
+:::
+::::::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='20%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+`out.width=if (knitr:::is_html_output()) '20%'`
+
+```{tex}
 \begin{tikzpicture}
   \draw (-1,1)--(0,0)--(1,2);
 \end{tikzpicture}
 ```
+:::
 
-2
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='15%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
-\begin{tikzpicture}[scale=1.5]
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.width=10, fig.height=2, out.width=if (knitr:::is_html_output()) '20%'}
+\begin{tikzpicture}
   \draw (-1,1)--(0,0)--(1,2);
 \end{tikzpicture}
 ```
+:::
+::::::
 
-3
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap=''}
-\begin{tikzpicture}
-  \draw[rounded corners] (-1,1)--(0,0)--(1,2);
-\end{tikzpicture}
-```
+***
 
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw[rounded corners] (-1,1)--(0,0)--(1,2)--(-1,1);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='rounded corner pseudo-closed triangle'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='rounded corner pseudo-closed triangle'}
 \begin{tikzpicture}
   \draw[rounded corners] (-1,1)--(0,0)--(1,2)--(-1,1);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw[rounded corners] (-1,1)--(0,0)--(1,2)--cycle;
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='rounded corner triangle'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='rounded corner triangle'}
 \begin{tikzpicture}
   \draw[rounded corners] (-1,1)--(0,0)--(1,2)--cycle;
 \end{tikzpicture}
 ```
+:::
+::::::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='triangle vs. pseudo-closed triangle'}
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
 \begin{tikzpicture}
   \draw[rounded corners] (-1,1)--(0,0)--(1,2)--cycle;
   \draw[rounded corners] (-1,1)--(0,0)--(1,2)--(-1,1);
 \end{tikzpicture}
 ```
+:::
 
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='triangle vs. pseudo-closed triangle'}
+\begin{tikzpicture}
+  \draw[rounded corners] (-1,1)--(0,0)--(1,2)--cycle;
+  \draw[rounded corners] (-1,1)--(0,0)--(1,2)--(-1,1);
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (0,0) rectangle (4,2);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='rectangle'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='rectangle'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (4,2);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='square'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='square'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (0,0) circle (1);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='circle'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='circle'}
 \begin{tikzpicture}
   \draw (0,0) circle (1);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (0,0) circle (1);
   \draw (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='circle and square'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='circle and square'}
 \begin{tikzpicture}
   \draw (0,0) circle (1);
   \draw (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (1,1) ellipse (2 and 1);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='ellipse'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='ellipse'}
 \begin{tikzpicture}
   \draw (1,1) ellipse (2 and 1);
 \end{tikzpicture}
 ```
+:::
+::::::
+
+***
 
 ```{tex}
 \begin{tikzpicture}

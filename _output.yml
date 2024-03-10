@@ -1,4 +1,5 @@
 bookdown::gitbook:
+  fig_caption: yes
   css: style.css
   # pandoc_args: ["--csl","csl/chicago-author-date.csl"]
   # "--lua-filter=conditional-content.lua" for conditional HTML or PDF block
@@ -33,6 +34,7 @@ bookdown::bs4_book:
   #       family: DM Mono
   #       local: false    
 bookdown::pdf_book:
+  extra_dependencies: ["float"] # https://bookdown.org/yihui/rmarkdown-cookbook/figure-placement.html to use fig.pos = "H" for multi-column fig.cap
   toc: true
   toc_depth: 4
   # pandoc_args: ["--lua-filter=conditional-content.lua"]

@@ -420,6 +420,7 @@ show_fig("img/conic-sections.svg")
 
 https://stackoverflow.com/questions/34064292/is-it-possible-to-include-svg-image-in-pdf-document-rendered-by-rmarkdown
 
+### horizontal rule
 
 ```{markdown}
 ***
@@ -733,7 +734,66 @@ nulla pariatur.
 :::
 ::::::
 
+#### multi-column `fig.cap` must use `fig.pos="H"`
 
+https://community.rstudio.com/t/adding-fig-cap-caption-text-to-code-chunk-causes-figure-to-print-at-top-of-page-instead-of-where-it-should-be/30297
+
+https://bookdown.org/yihui/rmarkdown-cookbook/figure-placement.html
+
+to avoid `LaTeX Error: Not in outer par mode` for caption in multi-column LaTeX PDF
+
+in `output.yml` add `extra_dependencies: ["float"]` under `bookdown::pdf_book:`
+
+include first chunk `knitr::opts_chunk$set(fig.pos = "H", out.extra = "")` in .Rmd
+
+add `out.width=if (knitr:::is_html_output()) '50%'` for TikZ chunk
+
+thus complete chunk beginning with `{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.width=10, fig.height=2, out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.width=10, fig.height=2, out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+\begin{tikzpicture}
+  \draw (-1,1)--(0,0)--(1,2);
+\end{tikzpicture}
+```
+:::
+::::::
+
+
+LaTeX package `caption`
+
+https://tex.stackexchange.com/questions/128485/how-to-make-a-caption-via-captionof-and-extra-margins-adhere-to-minipage-marg
+
+What is the different between using `\captionof{table}{ABC}` and `\caption{ABC}`?
+
+https://tex.stackexchange.com/questions/514286/what-is-the-different-between-using-captionoftableabc-and-captionabc
+
+side-by-side table
+
+https://stackoverflow.com/questions/73745714/how-to-print-gt-tbl-tables-side-by-side-with-knitr-kable
+
+R ternary operator
+
+https://stackoverflow.com/questions/8790143/does-the-ternary-operator-exist-in-r
+
+#### caption above figure
+
+https://stackoverflow.com/questions/56979022/caption-above-figure-in-html-rmarkdown
+
+`fig.topcaption=TRUE`
 
 #### for only HTML
 

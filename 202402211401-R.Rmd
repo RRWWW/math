@@ -128,7 +128,7 @@ https://bookdown.org/tonykuoyj/eloquentr/dplyr.html
 
 some functions functioning like those in **SQL**
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 library(dplyr)
 
 # install.packages("gapminder")
@@ -138,7 +138,7 @@ library(gapminder)
 head(gapminder)
 ```
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 library(gapminder)
 library(dplyr)
 library(magrittr)
@@ -147,7 +147,7 @@ gapminder %>%
   filter(year == 2007)
 ```
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 library(gapminder)
 library(dplyr)
 library(magrittr)
@@ -157,7 +157,7 @@ gapminder %>%
   select(country)
 ```
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 library(gapminder)
 library(dplyr)
 library(magrittr)
@@ -166,7 +166,7 @@ gapminder %>%
   mutate(pop_in_thousands = pop / 1000)
 ```
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 library(gapminder)
 library(dplyr)
 library(magrittr)
@@ -175,23 +175,25 @@ gapminder %>%
   arrange(year)
 ```
 
-```{r, cache=TRUE}
+total population in the world in 2007
+
+```{r, cache=FALSE}
 library(gapminder)
 library(dplyr)
 library(magrittr)
 
-# total population in the world in 2007
 gapminder %>%
   filter(year == 2007) %>%
   summarise(ttl_pop = sum(as.numeric(pop)))
 ```
 
-```{r, cache=TRUE}
+total population group by the continents in 2007
+
+```{r, cache=FALSE}
 library(gapminder)
 library(dplyr)
 library(magrittr)
 
-# total population group by the continents in 2007
 gapminder %>%
   filter(year == 2007) %>%
   group_by(continent) %>%
@@ -200,7 +202,7 @@ gapminder %>%
 
 ### visualization statically with `ggplot2`
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 library(ggplot2)
 library(gapminder)
 
@@ -211,7 +213,7 @@ scatter_plot <- ggplot(gapminder_2007, aes(x = gdpPercap, y = lifeExp)) +
 scatter_plot
 ```
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 library(ggplot2)
 library(gapminder)
 
@@ -222,7 +224,7 @@ line_plot <- ggplot(north_asia, aes(x = year, y = gdpPercap, colour = country)) 
 line_plot
 ```
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 library(ggplot2)
 library(gapminder)
 
@@ -235,7 +237,7 @@ hist_plot <- ggplot(gapminder_2007, aes(x = gdpPercap)) +
 hist_plot
 ```
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 library(ggplot2)
 library(gapminder)
 
@@ -244,7 +246,7 @@ box_plot <- ggplot(gapminder_2007, aes(x = continent, y = gdpPercap)) +
 box_plot
 ```
 
-```{r, cache=TRUE}
+```{r, cache=FALSE}
 library(ggplot2)
 library(gapminder)
 
