@@ -78,6 +78,7 @@
     - [陳鄰安](https://www.youtube.com/playlist?list=PLTpF-A8hKVUPXtNAX9lro-leGgEK0OSEW)
     - [張翔](https://www.youtube.com/@shiangsir/playlists)/廖崇智
     - [楊欣洲: genetics](https://www.youtube.com/playlist?list=PLTp0eSi9MdkPp0swo8-VVplaG8bateq7q)
+    - [王超辰: 醫學統計學/LSHTM notes](https://bookdown.org/ccwang/medical_statistics6/)
   - computer graphics
     - Cem Yuksel
       - [get into your slides with OBS](https://www.youtube.com/playlist?list=PLplnkTzzqsZT2-rLDXArSi8LnhWQu0mqv)

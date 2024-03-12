@@ -204,7 +204,7 @@ https://math.stackexchange.com/questions/1833973/prove-that-the-directrix-focus-
 https://www.geogebra.org/calculator/zkppuxwp
 
 ::: {show-in="html"}
-<iframe src="https://www.geogebra.org/calculator/zkppuxwp?embed" width="600" height="450" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<iframe src="https://www.geogebra.org/calculator/qdd2yqhk?embed" width="600" height="450" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 :::
 
 ```{r, echo=FALSE}

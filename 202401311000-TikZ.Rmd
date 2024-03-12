@@ -6,6 +6,28 @@ multi-column \@ref(multi-column)
 knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
 ```
 
+https://bookdown.org/yihui/rmarkdown-cookbook/html-scroll.html
+
+```{css, echo=FALSE}
+pre {
+  max-width: 400px;
+  overflow-x: auto;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/*
+pre {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+pre[class] {
+  max-height: 100px;
+}
+*/
+```
+
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
@@ -357,32 +379,58 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
 
 ***
 
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (1 ,1) arc (0:270:1);
   \draw (6 ,1) arc (0:270:2 and 1);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='circle and ellipse arcs'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='circle and ellipse arcs'}
 \begin{tikzpicture}
   \draw (1 ,1) arc (0:270:1);
   \draw (6 ,1) arc (0:270:2 and 1);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (-1,1) parabola bend (0,0) (2,4);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='parabola arc'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='parabola arc'}
 \begin{tikzpicture}
   \draw (-1,1) parabola bend (0,0) (2,4);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (-1,1) parabola bend (0,0) (2,4);
@@ -393,39 +441,51 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
     ( 2,4) circle (.05);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='25%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='parabola arc with points'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='parabola arc with points'}
 \begin{tikzpicture}
-  \draw (-1,1) parabola bend (0,0) (2,4);
-  \filldraw
-    (-1,1) circle (.05)
-    ( 0,0) circle (.05)
-    ( 1,1) circle (.05)
-    ( 2,4) circle (.05);
+  \draw (1,1) ellipse (2 and 1);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw[step=20pt] (0,0) grid (3,2);
   \draw[help lines ,step=20pt] (4,0) grid (7,2);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='grid and help lines'}
-\begin{tikzpicture}[scale=1.5]
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='grid and help lines'}
+\begin{tikzpicture}
   \draw[step=20pt] (0,0) grid (3,2);
   \draw[help lines ,step=20pt] (4,0) grid (7,2);
 \end{tikzpicture}
 ```
+:::
+::::::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='grid and help lines'}
-\begin{tikzpicture}[scale=1.5]
-  \draw[step=40pt] (0,0) grid (3,2);
-  \draw[help lines ,step=1pt] (4,0) grid (7,2);
-\end{tikzpicture}
-```
+***
 
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}[scale=0.25]
   \draw[->] (0,0)--(9,0);
@@ -435,8 +495,14 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[|<->|] (0,4)--(9,4);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='arrows'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='arrows'}
 \begin{tikzpicture}[scale=0.25]
   \draw[->] (0,0)--(9,0);
   \draw[<-] (0,1)--(9,1);
@@ -445,7 +511,13 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[|<->|] (0,4)--(9,4);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw[line width =2pt] (0,6)--(9,6); 
@@ -457,8 +529,14 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[loosely dashed]  (0,0)--(9,0);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='arrows'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='lines'}
 \begin{tikzpicture}
   \draw[line width =2pt] (0,6)--(9,6); 
   \draw[dotted]          (0,5)--(9,5); 
@@ -469,19 +547,37 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[loosely dashed]  (0,0)--(9,0);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}[dline/.style={color= blue, line width=2pt}]
   \draw[dline] (0,0)--(9,0); 
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='head styling'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='head styling'}
 \begin{tikzpicture}[dline/.style={color= blue, line width=2pt}]
   \draw[dline] (0,0)--(9,0); 
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
@@ -495,8 +591,14 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[shift={(-3,-3)}] (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: shift'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='transform: shift'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[shift={( 3, 0)}] (0,0) rectangle (2,2);
@@ -509,7 +611,13 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[shift={(-3,-3)}] (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
@@ -519,17 +627,29 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[yshift=-100pt] (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: shift x, y'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='transform: shift x, y'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[xshift= 100pt] (0,0) rectangle (2,2);
-  \draw[yshift= 100pt] (0,0) rectangle (2,2);
   \draw[xshift=-100pt] (0,0) rectangle (2,2);
+  \draw[yshift= 100pt] (0,0) rectangle (2,2);
   \draw[yshift=-100pt] (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
@@ -539,8 +659,30 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[yshift=-100pt, yscale=0.5] (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: scale x, y'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='transform: scale x, y'}
+\begin{tikzpicture}
+  \draw (0,0) rectangle (2,2);
+  \draw[xshift= 100pt, xscale=1.5] (0,0) rectangle (2,2);
+  \draw[yshift= 100pt, xscale=0.5] (0,0) rectangle (2,2);
+  \draw[xshift=-100pt, yscale=1.5] (0,0) rectangle (2,2);
+  \draw[yshift=-100pt, yscale=0.5] (0,0) rectangle (2,2);
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[xshift= 100pt, xscale=1.5] (0,0) rectangle (2,2);
@@ -549,8 +691,14 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[yshift=-100pt, yscale=0.5] (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
 
-```{tex}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='transform: scale'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[xshift= 100pt, xscale=1.5] (0,0) rectangle (2,2);
@@ -559,15 +707,13 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[yshift=-100pt, yscale=0.5] (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
+::::::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: scale'}
-\begin{tikzpicture}
-  \draw (0,0) rectangle (2,2);
-  \draw[shift={( 3,0)},scale=1.5] (0,0) rectangle (2,2);
-  \draw[shift={(-2,0)},scale=0.5] (0,0) rectangle (2,2);
-\end{tikzpicture}
-```
+***
 
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
@@ -575,15 +721,27 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[xshift=175pt,rotate around={45:(2 ,2)}] (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: rotate'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='transform: rotate'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[xshift=125pt,rotate=45] (0,0) rectangle (2,2);
   \draw[xshift=175pt,rotate around={45:(2 ,2)}] (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
@@ -591,15 +749,27 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[yshift=70pt,yslant=1] (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='transform: slant'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='transform: slant'}
 \begin{tikzpicture}
   \draw (0,0) rectangle (2,2);
   \draw[xshift=70pt,xslant=1] (0,0) rectangle (2,2);
   \draw[yshift=70pt,yslant=1] (0,0) rectangle (2,2);
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \tikzset{
   box/.style={
@@ -621,8 +791,14 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \node at (6,1) {b};
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='flowchart'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='flowchart'}
 \tikzset{
   box/.style={
     draw=blue,
@@ -643,7 +819,13 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \node at (6,1) {b};
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \tikzset{
   box/.style={
@@ -665,8 +847,14 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
       };
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='tree'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='tree'}
 \tikzset{
   box/.style={
     draw=blue,
@@ -687,7 +875,13 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
       };
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \draw[->] (-0.2,0)--(6,0) node[right] {$x$};
@@ -695,14 +889,22 @@ https://zhuanlan.zhihu.com/p/127155579?utm_psn=1741479950987960320
   \draw[domain=0:4] plot (\x ,{0.1* exp(\x)}) node[right] {$f(x)=\frac{1}{10}e^x$};
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='tree'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='function plot'}
 \begin{tikzpicture}
   \draw[->] (-0.2,0)--(6,0) node[right] {$x$};
   \draw[->] (0,-0.2)--(0,6) node[above] {$f(x)$};
   \draw[domain=0:4] plot (\x ,{0.1* exp(\x)}) node[right] {$f(x)=\frac{1}{10}e^x$};
 \end{tikzpicture}
 ```
+:::
+::::::
 
 https://stackoverflow.com/questions/64897575/tikz-libraries-in-bookdown
 
@@ -720,6 +922,8 @@ https://zhuanlan.zhihu.com/p/431732330?utm_psn=1741857547550638080
 
 https://github.com/RRWWW/Stereometry
 
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \coordinate (A) at ( 1, 1, 1);
@@ -741,10 +945,14 @@ https://github.com/RRWWW/Stereometry
         (A) node[right=1pt] {$A$};
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube'}
-\usetikzlibrary{patterns}
-\usetikzlibrary{3d,calc}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='cube'}
 \begin{tikzpicture}
   \coordinate (A) at ( 1, 1, 1);
   \coordinate (B) at ( 1, 1,-1);
@@ -765,7 +973,13 @@ https://github.com/RRWWW/Stereometry
         (A) node[right=1pt] {$A$};
 \end{tikzpicture}
 ```
+:::
+::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \usetikzlibrary{patterns}
 \usetikzlibrary{3d,calc}
@@ -790,8 +1004,14 @@ https://github.com/RRWWW/Stereometry
         (A) node[right=1pt] {$A$};
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate', engine.opts=list(extra.preamble=c("\\usepackage{tikz-3dplot}"))}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='cube rotate', engine.opts=list(extra.preamble=c("\\usepackage{tikz-3dplot}"))}
 \usetikzlibrary{patterns}
 \usetikzlibrary{3d,calc}
 \tdplotsetmaincoords{45}{45}
@@ -815,34 +1035,14 @@ https://github.com/RRWWW/Stereometry
         (A) node[right=1pt] {$A$};
 \end{tikzpicture}
 ```
+:::
+::::::
 
-https://tex.stackexchange.com/questions/388621/optimizing-perspective-tikz-graphic
+***
 
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate'}
-\usetikzlibrary{patterns}
-\usetikzlibrary{3d,calc}
-\begin{tikzpicture}[y={(.5cm,.7cm)}]
-  \coordinate (A) at ( 1, 1, 1);
-  \coordinate (B) at ( 1, 1,-1);
-  \coordinate (C) at ( 1,-1,-1);
-  \coordinate (D) at ( 1,-1, 1);
-  \coordinate (E) at (-1,-1, 1);
-  \coordinate (F) at (-1,-1,-1);
-  \coordinate (G) at (-1, 1,-1);
-  \coordinate (H) at (-1, 1, 1);
-  \draw (A) node[right=1pt] {$A$}--
-        (B) node[right=1pt] {$B$}--
-        (C) node[right=1pt] {$C$}--
-        (D) node[right=1pt] {$D$}--
-        (E) node[left= 1pt] {$E$}--
-        (F) node[right=1pt] {$F$}--
-        (G) node[right=1pt] {$G$}--
-        (H) node[left= 1pt] {$H$}--
-        (A) node[right=1pt] {$A$};
-\end{tikzpicture}
-```
-
-```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='cube rotate'}
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
 \usetikzlibrary{patterns}
 \usetikzlibrary{3d,calc}
 %\tdplotsetmaincoords{70}{110}
@@ -866,20 +1066,128 @@ https://tex.stackexchange.com/questions/388621/optimizing-perspective-tikz-graph
         (A) node[right=1pt] {$A$};
 \end{tikzpicture}
 ```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='cube rotate around'}
+\usetikzlibrary{patterns}
+\usetikzlibrary{3d,calc}
+%\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[rotate around y=-15, rotate around z=7]
+  \coordinate (A) at ( 1, 1, 1);
+  \coordinate (B) at ( 1, 1,-1);
+  \coordinate (C) at ( 1,-1,-1);
+  \coordinate (D) at ( 1,-1, 1);
+  \coordinate (E) at (-1,-1, 1);
+  \coordinate (F) at (-1,-1,-1);
+  \coordinate (G) at (-1, 1,-1);
+  \coordinate (H) at (-1, 1, 1);
+  \draw (A) node[right=1pt] {$A$}--
+        (B) node[right=1pt] {$B$}--
+        (C) node[right=1pt] {$C$}--
+        (D) node[right=1pt] {$D$}--
+        (E) node[left= 1pt] {$E$}--
+        (F) node[right=1pt] {$F$}--
+        (G) node[right=1pt] {$G$}--
+        (H) node[left= 1pt] {$H$}--
+        (A) node[right=1pt] {$A$};
+\end{tikzpicture}
+```
+:::
+::::::
+
+https://tex.stackexchange.com/questions/388621/optimizing-perspective-tikz-graphic
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\usetikzlibrary{patterns}
+\usetikzlibrary{3d,calc}
+\begin{tikzpicture}[y={(.5cm,.7cm)}]
+  \coordinate (A) at ( 1, 1, 1);
+  \coordinate (B) at ( 1, 1,-1);
+  \coordinate (C) at ( 1,-1,-1);
+  \coordinate (D) at ( 1,-1, 1);
+  \coordinate (E) at (-1,-1, 1);
+  \coordinate (F) at (-1,-1,-1);
+  \coordinate (G) at (-1, 1,-1);
+  \coordinate (H) at (-1, 1, 1);
+  \draw (A) node[right=1pt] {$A$}--
+        (B) node[right=1pt] {$B$}--
+        (C) node[right=1pt] {$C$}--
+        (D) node[right=1pt] {$D$}--
+        (E) node[left= 1pt] {$E$}--
+        (F) node[right=1pt] {$F$}--
+        (G) node[right=1pt] {$G$}--
+        (H) node[left= 1pt] {$H$}--
+        (A) node[right=1pt] {$A$};
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='cube perspective slant'}
+\usetikzlibrary{patterns}
+\usetikzlibrary{3d,calc}
+\begin{tikzpicture}[y={(.5cm,.7cm)}]
+  \coordinate (A) at ( 1, 1, 1);
+  \coordinate (B) at ( 1, 1,-1);
+  \coordinate (C) at ( 1,-1,-1);
+  \coordinate (D) at ( 1,-1, 1);
+  \coordinate (E) at (-1,-1, 1);
+  \coordinate (F) at (-1,-1,-1);
+  \coordinate (G) at (-1, 1,-1);
+  \coordinate (H) at (-1, 1, 1);
+  \draw (A) node[right=1pt] {$A$}--
+        (B) node[right=1pt] {$B$}--
+        (C) node[right=1pt] {$C$}--
+        (D) node[right=1pt] {$D$}--
+        (E) node[left= 1pt] {$E$}--
+        (F) node[right=1pt] {$F$}--
+        (G) node[right=1pt] {$G$}--
+        (H) node[left= 1pt] {$H$}--
+        (A) node[right=1pt] {$A$};
+\end{tikzpicture}
+```
+:::
+::::::
 
 https://github.com/XiangyunHuang/bookdown-broken/blob/master/index.Rmd
 
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
-\smartdiagramset{planet color=gray!40!white, uniform color list=gray!40!white for 10 items}
+\smartdiagramset{planet color=gray!40!white, 
+uniform color list=gray!40!white for 10 items}
 \smartdiagram[bubble diagram]{Basic skills,
-  Edit~/\\ (RStudio), Organize~/\\ (bookdown), Cooperate~/\\ (Git), Typeset~/\\ (LaTeX/Pandoc), Compile~/\\ (GitHub Action)}
+  Edit~/\\ (RStudio), 
+  Organize~/\\ (bookdown), 
+  Cooperate~/\\ (Git), 
+  Typeset~/\\ (LaTeX/Pandoc), 
+  Compile~/\\ (GitHub Action)}
 ```
+:::
 
-```{r skills, engine="tikz", fig.cap="modern statistics plot skills", out.width="65%", echo=FALSE, cache=TRUE, engine.opts=list(extra.preamble=c("\\usepackage{ctex}", "\\usepackage{smartdiagram}"))}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', out.width=if (knitr:::is_html_output()) '100%', fig.cap='modern statistics plot skills', engine.opts=list(extra.preamble=c("\\usepackage{ctex}", "\\usepackage{smartdiagram}"))}
 \smartdiagramset{planet color=gray!40!white, uniform color list=gray!40!white for 10 items}
 \smartdiagram[bubble diagram]{基础技能,
   编辑~/\\ (RStudio), 组织~/\\ (bookdown), 协作~/\\ (Git), 排版~/\\ (LaTeX/Pandoc), 编译~/\\ (GitHub Action)}
 ```
+:::
+::::::
 
 ## animation
 

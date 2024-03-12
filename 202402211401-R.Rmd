@@ -1,6 +1,6 @@
 # R
 
-## TonyKuoYJ's R little course
+## TonyKuoYJ
 
 ::: {show-in="html"}
 郭耀仁 認識 R 的美好
@@ -257,9 +257,35 @@ bar_plot <- ggplot(gdpPercap_2007_na, aes(x = country, y = gdpPercap)) +
 bar_plot
 ```
 
+### loop
+
+https://bookdown.org/tonykuoyj/eloquentr/for.html
+
+```{r}
+month.name
+```
+
+```{r}
+month.name[1]
+```
+
+```{r}
+for (month in month.name) {
+  print(month)
+}
+```
+
 ### variable type
 
 https://bookdown.org/tonykuoyj/eloquentr/variable-types.html
+
+https://www.w3schools.com/r/r_data_types.asp
+
+- numeric
+- integer
+- complex =  complex number
+- character
+- logical = boolean
 
 ```{r}
 class(2L)
@@ -309,7 +335,9 @@ convert `character` to time
 `as.POSIXct("1970-01-01 00:00:00", tz = "GMT")`
 
 
-#### quotient `%/%`
+#### quotient `%/%` operator
+
+https://www.w3schools.com/r/r_operators.asp
 
 ```{r}
 7 %/% 3
@@ -320,14 +348,14 @@ convert `character` to time
 https://bookdown.org/tonykuoyj/eloquentr/vector-factor.html
 
 - 1D
-  - vector
-  - factor
+  - [vector]^[\@ref(vector)]^
+  - [factor]^[\@ref(factor)]^
 - 2D
-  - matrix
-  - data frame
+  - [matrix]^[\@ref(matrix)]^
+  - [data frame]^[\@ref(data-frame)]^
 - $n$D
-  - array
-  - list
+  - [array]^[\@ref(array)]^
+  - [list]^[\@ref(list)]^
   
 #### vector
 
@@ -360,6 +388,7 @@ class(mixed_vars[1])
 class(mixed_vars[2])
 class(mixed_vars[3])
 ```
+
 ##### logic
 
 ```{r}
@@ -368,15 +397,278 @@ my_favorite_seasons <- four_seasons == "spring" | four_seasons == "autumn"
 four_seasons[my_favorite_seasons]
 ```
 
-##### `rep`
+##### `rep` repeat
 
-##### `seq`
+```{r}
+rep(7L, times = 8)
+```
+
+```{r}
+rep("R", times = 10)
+```
+##### `seq` sequence
+
+```{r}
+seq(from = 7, to = 77, by = 7)
+```
+
+```{r}
+11:20
+```
 
 #### factor
 
 https://bookdown.org/tonykuoyj/eloquentr/vector-factor.html#factor
 
-## R by Apan Liao
+```{r}
+four_seasons <- c("spring", "summer", "autumn", "winter")
+four_seasons
+```
+
+```{r}
+four_seasons_factor <- factor(four_seasons)
+four_seasons_factor
+```
+
+```{r}
+four_seasons <- c("spring", "summer", "autumn", "winter")
+four_seasons_factor <- factor(four_seasons, ordered = TRUE, levels = c("summer", "winter", "spring", "autumn"))
+four_seasons_factor
+```
+
+```{r}
+temperatures <- c("warm", "hot", "cold")
+temp_factors <- factor(temperatures, ordered = TRUE, levels = c("cold", "warm", "hot"))
+temp_factors
+```
+if no levels specified, the levels will be specified alphabetically, sometimes not really true
+
+```{r}
+temperatures <- c("warm", "hot", "cold")
+temp_factors <- factor(temperatures, ordered = TRUE)
+temp_factors
+```
+#### matrix
+
+https://bookdown.org/tonykuoyj/eloquentr/matrix-dataframe-more.html
+
+```{r}
+my_mat <- matrix(1:6, nrow = 2)
+my_mat
+```
+```{r}
+class(my_mat)
+```
+
+```{r}
+my_mat2 <- matrix(1:6, nrow = 2, byrow = TRUE)
+my_mat2
+```
+
+```{r}
+my_mat2[2, 3]
+```
+
+```{r}
+my_mat2[2, ]
+```
+
+```{r}
+my_mat2[, 3]
+```
+
+```{r}
+filter <- my_mat2 < 6 & my_mat2 > 1
+my_mat2[filter]
+```
+boolean will become value in a matrix, like vector
+
+```{r}
+my_mat3 <- matrix(c(1, 2, TRUE, FALSE, 3, 4), nrow = 2)
+my_mat3
+```
+
+```{r}
+class(my_mat3[, 2])
+```
+#### data frame
+
+- variable: column
+- observation: row
+- value: cell
+
+::: {show-in="html"}
+<center>
+![](https://ismayc.github.io/moderndiver-book/images/tidy-1.png)
+</center>
+:::
+
+```{r}
+team_name <- c("Chicago Bulls", "Golden State Warriors")
+wins <- c(72, 73)
+losses <- c(10, 9)
+is_champion <- c(TRUE, FALSE)
+season <- c("1995-96", "2015-16")
+
+great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season)
+great_nba_teams
+```
+
+```{r}
+great_nba_teams[1, 1]
+```
+
+```{r}
+great_nba_teams[1, ]
+```
+
+```{r}
+great_nba_teams[, 1]
+```
+`stringsAsFactors = TRUE`
+
+```{r}
+team_name <- c("Chicago Bulls", "Golden State Warriors")
+wins <- c(72, 73)
+losses <- c(10, 9)
+is_champion <- c(TRUE, FALSE)
+season <- c("1995-96", "2015-16")
+ 
+great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season, stringsAsFactors = TRUE)
+great_nba_teams[, 1]
+```
+
+`stringsAsFactors = FALSE`
+
+```{r}
+team_name <- c("Chicago Bulls", "Golden State Warriors")
+wins <- c(72, 73)
+losses <- c(10, 9)
+is_champion <- c(TRUE, FALSE)
+season <- c("1995-96", "2015-16")
+ 
+great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season, stringsAsFactors = FALSE)
+great_nba_teams[, 1]
+```
+##### selecting variable or column
+
+```{r}
+great_nba_teams$team_name
+```
+
+```{r}
+great_nba_teams[, "team_name"]
+```
+##### filtering observation or row
+
+```{r}
+filter <- great_nba_teams$is_champion == TRUE
+great_nba_teams[filter, ]
+```
+
+##### check mixed data type
+
+```{r}
+str(great_nba_teams)
+```
+
+## W3School
+
+https://www.w3schools.com/r/default.asp
+
+### same multiple variable
+
+https://www.w3schools.com/r/r_variables_multiple.asp
+
+```{r}
+# Assign the same value to multiple variables in one line
+var1 <- var2 <- var3 <- "Orange"
+
+# Print variable values
+var1
+var2
+var3
+```
+### legal variable name
+
+https://www.w3schools.com/r/r_variables_name.asp
+
+```{r}
+# Legal variable names:
+myvar <- "John"
+my_var <- "John"
+myVar <- "John"
+MYVAR <- "John"
+myvar2 <- "John"
+.myvar <- "John"
+
+## Illegal variable names:
+# 2myvar <- "John"
+# my-var <- "John"
+# my var <- "John"
+# _my_var <- "John"
+# my_v@ar <- "John"
+# TRUE <- "John"
+```
+### complex number
+
+https://www.w3schools.com/r/r_data_types.asp
+
+https://www.w3schools.com/r/r_numbers.asp
+
+### escape character
+
+https://www.w3schools.com/r/r_strings_esc.asp
+
+### global assignment `<<-`
+
+```{r}
+my_function <- function() {
+txt <<- "fantastic"
+  paste("R is", txt)
+}
+
+my_function()
+
+print(txt)
+```
+
+```{r}
+txt <- "awesome"
+my_function <- function() {
+  txt <<- "fantastic"
+  paste("R is", txt)
+}
+
+my_function()
+
+paste("R is", txt)
+```
+### data type
+
+#### array
+
+https://www.w3schools.com/r/r_arrays.asp
+
+```{r}
+# An array with one dimension with values ranging from 1 to 24
+thisarray <- c(1:24)
+thisarray
+
+# An array with more than one dimension
+multiarray <- array(thisarray, dim = c(4, 3, 2))
+multiarray
+```
+
+```{r}
+multiarray[2, 3, 2]
+```
+
+#### list
+
+https://www.w3schools.com/r/r_lists.asp
+
+## Apan Liao
 
 ::: {show-in="html"}
 
@@ -398,6 +690,10 @@ https://www.youtube.com/playlist?list=PL5AC0ADBF65924EAD
 
 https://www.youtube.com/watch?v=STcIxf_vUWY&list=PL5AC0ADBF65924EAD&index=1
 
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/STcIxf_vUWY"></iframe>
+:::
+
 - `scan()`
 - read
   - `read.table()`
@@ -406,3 +702,8 @@ https://www.youtube.com/watch?v=STcIxf_vUWY&list=PL5AC0ADBF65924EAD&index=1
 ### descriptive statistics
 
 https://www.youtube.com/watch?v=GL3Wv_45LaU&list=PL5AC0ADBF65924EAD&index=2
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/GL3Wv_45LaU"></iframe>
+:::
+

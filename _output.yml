@@ -4,8 +4,10 @@ bookdown::gitbook:
   # pandoc_args: ["--csl","csl/chicago-author-date.csl"]
   # "--lua-filter=conditional-content.lua" for conditional HTML or PDF block
   pandoc_args: ["--csl","csl/nature.csl","--lua-filter=conditional-content.lua"]
+  toc_depth: 5
   config:
     toc:
+      collapse: section
       before: |
         <li><a href="./">math</a></li>
       after: |
@@ -36,7 +38,7 @@ bookdown::bs4_book:
 bookdown::pdf_book:
   extra_dependencies: ["float"] # https://bookdown.org/yihui/rmarkdown-cookbook/figure-placement.html to use fig.pos = "H" for multi-column fig.cap
   toc: true
-  toc_depth: 4
+  toc_depth: 5
   # pandoc_args: ["--lua-filter=conditional-content.lua"]
   includes:
     in_header: preamble.tex

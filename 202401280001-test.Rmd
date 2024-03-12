@@ -4,6 +4,34 @@ https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html
 
 ## RStudio
 
+### writer options
+
+https://rstudio.github.io/visual-markdown-editing/markdown.html#writer-options
+
+#### line wrapping
+
+https://rstudio.github.io/visual-markdown-editing/markdown.html#line-wrapping
+
+#### ensuring the same markdown between source / visual mode
+
+https://stackoverflow.com/questions/71775027/rstudio-switch-markdown-editing-mode-between-source-and-visual-changes-special
+
+**canonical mode**
+
+https://rstudio.github.io/visual-markdown-editing/markdown.html#canonical-mode
+
+```{yaml}
+---
+title: "My Document"
+editor_options:
+  markdown:
+    wrap: 72
+    references: 
+      location: block
+    canonical: true
+---
+```
+
 ### Rtools
 
 Rtools43 for Windows
@@ -12,6 +40,7 @@ https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html
 ### addins
 
 https://github.com/rstudio/addinexamples
+
 ```
 if (!requireNamespace("devtools", quietly = TRUE))
   install.packages("devtools")
@@ -105,6 +134,22 @@ https://tex.stackexchange.com/questions/262295/make-subscript-size-smaller-alway
 
 https://stackoverflow.com/questions/26049762/erroneous-nesting-of-equation-structures-in-using-beginalign-in-a-multi-l
 
+#### proof QED
+
+https://math.meta.stackexchange.com/questions/3582/qed-for-mathjax-here-on-stackexchange
+
+`\tag*{$\Box$}`
+
+$$
+a^2+b^2=c^2 \tag*{$\Box$}
+$$
+
+`\tag*{$\blacksquare$}`
+
+$$
+a^2+b^2=c^2 \tag*{$\blacksquare$}
+$$
+
 ### image
 
 https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown
@@ -163,6 +208,7 @@ plot(pressure)
 </center>
 ```
 
+
 ::: {show-in="html"}
 
 <center>
@@ -170,6 +216,7 @@ plot(pressure)
 </center>
 
 :::
+
 
 ##### `knitr`
 
@@ -320,7 +367,7 @@ knitr::include_graphics(if (knitr::pandoc_to('html')) cover_url else cover_file)
 ```
 
 ::: {show-in="html"}
-<iframe src="https://www.geogebra.org/calculator/zkppuxwp?embed" width="600" height="450" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<iframe src="https://www.geogebra.org/calculator/qdd2yqhk?embed" width="600" height="450" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 ![conic sections](img/conic-sections.svg)
 ```{r, echo=FALSE, fig.cap="conic sections", out.width = '75%', cache=TRUE}
@@ -605,6 +652,22 @@ $$
 https://stackoverflow.com/questions/18189175/how-to-use-textup-with-mathjax
 
 `\textup` is not available in MathJax. You can replace it with `\mathrm`, **but `\mathrm` does not interpret spaces**.
+
+### depth of table of contents `toc_depth`
+
+https://stackoverflow.com/questions/49009212/how-to-change-toc-depth-in-r-bookdown-gitbook
+
+```{yaml}
+bookdown::gitbook:
+    toc_depth: 2
+```
+
+https://stackoverflow.com/questions/68537309/how-can-i-specific-the-initial-level-to-have-my-table-of-contents-be-expanded-to
+
+```{yaml}
+toc:
+  collapse: section
+```
 
 ### multi-column layout / two columns {#multi-column}
 
@@ -1235,7 +1298,7 @@ https://blog.csdn.net/RobertChenGuangzhi/article/details/50455429
 
 https://latex.org/forum/viewtopic.php?t=3722
 
-## bookdown environment for definition, theorem, proof
+## environment for definition, theorem, proof
 
 https://bookdown.org/yihui/rmarkdown/bookdown-markdown.html
 
@@ -1318,6 +1381,7 @@ output:
 
 /* theorem environment _ plain */
 
+/*
 .theorem {
   display: block;
   font-style: italic;
@@ -1336,6 +1400,7 @@ output:
 .theorem p {
   display: inline;
 }
+*/
 
 /* theorem environment _ Copenhagen style */
 
