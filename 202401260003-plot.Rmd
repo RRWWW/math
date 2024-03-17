@@ -2,8 +2,26 @@
 
 - LaTeX
   - [TikZ]^[\@ref(tikz)]^
+    - https://tikz.dev/
     - TikZ-3Dplot
-    - PGFplots
+    - [PGFplots]^[\@ref(pgfplots)]^
+      - https://tikz.dev/pgfplots/
+      - https://pgfplots.sourceforge.net/gallery.html
+      - https://pgfplots.net/
+    - editor / export
+      - https://zhuanlan.zhihu.com/p/660371706
+      - offline
+        - [TikzEdt](http://www.tikzedt.org/): WYSIWYG and live preview
+        - [TikZiT](https://tikzit.github.io/)
+      - online
+        - OverLeaf
+        - MathCha
+        - GeoGebra Classic
+      - Python
+        - TikZplotLib / tikzplotlib^[\@ref(tikzplotlib)]^
+          - [PyPI](https://pypi.org/project/tikzplotlib/)
+          - [GitHub](https://github.com/nschloe/tikzplotlib)
+    - [TikZ library](https://tex.stackexchange.com/questions/42611/list-of-available-tikz-libraries-with-a-short-introduction)
   - xypic = [xy-pic]^[\@ref(xy-pic)]^
 - [OverLeaf](https://www.overleaf.com/)
 - [MathCha](https://www.mathcha.io/)
@@ -11,7 +29,7 @@
   - [GeoGebra Classic](https://www.geogebra.org/classic): to export TikZ
   - [GeoGebra Calculator Suite](https://www.geogebra.org/calculator)
 - Python
-  - MatPlotLib
+  - MatPlotLib / matplotlib
   - Seaborn
   - Plotly
   - Manim

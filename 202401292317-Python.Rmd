@@ -34,15 +34,15 @@ library(reticulate)
 version <- "3.9.12"
 # install_python(version)
 
-# create a new environment
+## create a new environment
 # virtualenv_create("r-reticulate", version = version)
 
 # use_virtualenv("r-reticulate")
 
-# install MatPlotLib
+## install MatPlotLib
 # virtualenv_install("r-reticulate", "matplotlib")
 
-# import MatPlotLib (it will be automatically discovered in "r-reticulate")
+## import MatPlotLib (it will be automatically discovered in "r-reticulate")
 matplotlib <- import("matplotlib")
 ```
 

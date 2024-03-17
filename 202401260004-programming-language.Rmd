@@ -7,7 +7,7 @@
   - RMarkdown
     - Bookdown
   - knitr: engine
-    - TikZ
+    - [TikZ]^[\@ref(tikz)]^
   - reticulate: Python
   - Jamovi
 - C#

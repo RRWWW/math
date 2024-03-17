@@ -5,14 +5,17 @@ conic section 圓錐曲線 / 圓錐截痕
 :::
 
 ::: {show-in="pdf"}
+```{=tex}
 \begin{CJK}{UTF8}{bsmi}
 conic section 圓錐曲線 / 圓錐截痕
 \end{CJK}
+```
 :::
 
-https://en.wikipedia.org/wiki/Conic_section
+<https://en.wikipedia.org/wiki/Conic_section>
 
-https://tex.stackexchange.com/questions/222882/drawing-minimal-xy-axis
+<https://tex.stackexchange.com/questions/222882/drawing-minimal-xy-axis>
+
 ```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='parabola defined by focus, directrix, eccentricity'}
 \begin{tikzpicture}
   \draw[help lines, color=gray!30, dashed] (-4.9,-4.9) grid (4.9,4.9);
@@ -34,9 +37,11 @@ focus, directrix, eccentricity 焦點, 準線, 離心率
 :::
 
 ::: {show-in="pdf"}
+```{=tex}
 \begin{CJK}{UTF8}{bsmi}
 focus, directrix, eccentricity 焦點, 準線, 離心率
 \end{CJK}
+```
 :::
 
 $$
@@ -67,6 +72,7 @@ $$
 :::
 
 ::: {show-in="pdf"}
+```{=tex}
 \begin{align}
 0\le\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\overline{PF}}{\overline{PP^{\prime}}}= & \dfrac{\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(x,y\right)-\left(x,y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\left\Vert \left(x,y-y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(0,y-y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\sqrt{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}} (\#eq:eccentricity)\\
 \epsilon^{2}= & \dfrac{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}=\dfrac{x^{2}+y^{2}-2y_{{\scriptscriptstyle F}}y+y_{{\scriptscriptstyle F}}^{2}}{y^{2}-2y_{{\scriptscriptstyle L}}y+y_{{\scriptscriptstyle L}}^{2}}\\
@@ -77,6 +83,7 @@ $$
 = & x^{2}+\left(1-\epsilon^{2}\right)\left[\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}}{\left(1-\epsilon^{2}\right)^{2}}\right]\\
 = & x^{2}+\left(1-\epsilon^{2}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{\colorbox{yellow!50}{\text{\ensuremath{\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)}-\ensuremath{\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}}}}}{1-\epsilon^{2}}
 \end{align}
+```
 :::
 
 ::: {show-in="html"}
@@ -102,7 +109,6 @@ $$
 :::
 
 ::: {show-in="html"}
-
 $$
 \begin{aligned}
 \dfrac{\colorbox{#FFD1DC}{$\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}$}}{1-\epsilon^{2}}\overset{\epsilon\ne1}{=} & x^{2}+\left(1-\epsilon^{2}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}\\
@@ -112,7 +118,6 @@ $$
 \end{cases}
 \end{aligned}
 $$
-
 :::
 
 ::: {show-in="pdf"}
@@ -155,8 +160,7 @@ $$
 
 Let one curve vertex $P=V=\left(0,0\right)$ on the curve, and fix the directrix $L$ or $y_{{\scriptscriptstyle L}}$,
 
-$\epsilon\ne1$
-$$
+$\epsilon\ne1$ $$
 \begin{aligned}
  & 1\overset{P\left(x,y\right)=V\left(0,0\right)}{=}0+\left(\dfrac{0-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}}{\dfrac{\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}}\right)^{2}\\
 \Rightarrow & y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}=\pm\epsilon\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\\
@@ -171,8 +175,7 @@ $$
 \end{aligned}
 $$
 
-$\epsilon=1$
-$$
+$\epsilon=1$ $$
 \begin{aligned}
  & x^{2}=2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}}{2}\right)\\
 \overset{P\left(x,y\right)=V\left(0,0\right)}{\Rightarrow} & 0^{2}=2\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)\left(0-\dfrac{y_{{\scriptscriptstyle F}}+y_{{\scriptscriptstyle L}}}{2}\right)\\
@@ -199,12 +202,14 @@ $$
 
 ## two-definition equivalence for ellipse and hyperbola
 
-https://math.stackexchange.com/questions/1833973/prove-that-the-directrix-focus-and-focus-focus-definitions-are-equivalent
+<https://math.stackexchange.com/questions/1833973/prove-that-the-directrix-focus-and-focus-focus-definitions-are-equivalent>
 
-https://www.geogebra.org/calculator/zkppuxwp
+<https://www.geogebra.org/calculator/zkppuxwp>
 
 ::: {show-in="html"}
-<iframe src="https://www.geogebra.org/calculator/qdd2yqhk?embed" width="600" height="450" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<iframe src="https://www.geogebra.org/calculator/qdd2yqhk?embed" width="600" height="450" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0">
+
+</iframe>
 :::
 
 ```{r, echo=FALSE}
@@ -234,7 +239,7 @@ $$
 
 ### first definition for conic sections including ellipses and hyperbolas
 
-[distance from a point to a line]^[\@ref(distance-from-a-point-to-a-line)]^
+[distance from a point to a line]^[\^^\@ref(distance-from-a-point-to-a-line)^\^]^
 
 $$
 0\le\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\sqrt{\left(x-x_{{\scriptscriptstyle F}}\right)^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\dfrac{\left|A^{\prime}x+B^{\prime}y+C^{\prime}\right|}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}}=\dfrac{\sqrt{\left(x-\alpha\right)^{2}+\left(y-\varphi\right)^{2}}}{\left|Ax+By+C\right|},\begin{cases}
@@ -243,6 +248,7 @@ B=\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\\
 C=\dfrac{C^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}
 \end{cases}
 $$
+
 $$
 A^{2}+B^{2}=\left(\dfrac{A^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\right)^{2}+\left(\dfrac{B^{\prime}}{\sqrt{A^{\prime}{}^{2}+B^{\prime}{}^{2}}}\right)^{2}=1
 $$
@@ -336,7 +342,6 @@ $$
 \epsilon C=\mp\left(\dfrac{\alpha^{2}-\chi^{2}}{2D}+\dfrac{\varphi^{2}-\psi^{2}}{2D}+\dfrac{D}{2}\right)
 \end{cases}
 $$
-
 
 $$
 \begin{aligned}
@@ -568,7 +573,7 @@ b\\
 \end{array}
 $$
 
-[tangent half-angle formula]^[\@ref(tangent-half-angle-formula)]^
+[tangent half-angle formula]^[\^^\@ref(tangent-half-angle-formula)^\^]^
 
 ## polar coordinate
 
@@ -595,10 +600,12 @@ r= & \dfrac{\epsilon p}{1\mp\epsilon\cos\theta}
 \end{aligned}
 $$
 
-https://www.geogebra.org/calculator/azksjxbq
+<https://www.geogebra.org/calculator/azksjxbq>
 
 ::: {show-in="html"}
-<iframe src="https://www.geogebra.org/calculator/azksjxbq?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<iframe src="https://www.geogebra.org/calculator/azksjxbq?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0">
+
+</iframe>
 :::
 
 $r=\dfrac{\epsilon p}{1-\epsilon\cos\theta}$ will not cross $L=x+p=0$ on graphs, so maybe it is a more correct solution
@@ -606,6 +613,7 @@ $r=\dfrac{\epsilon p}{1-\epsilon\cos\theta}$ will not cross $L=x+p=0$ on graphs,
 $$
 r=\dfrac{\epsilon p}{1-\epsilon\cos\theta}
 $$
+
 ```{r, echo=FALSE, cache=TRUE, fig.cap="polar conic sections: ellipse", out.width = '75%'}
 show_fig("img/conic-sections-polar-ellipse.svg")
 ```
@@ -621,20 +629,18 @@ show_fig("img/conic-sections-polar-hyperbola.svg")
 ## Cartesian coordinate: general form / quadratic equation
 
 ::: {show-in="html"}
-
-https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
-
+<https://ccjou.wordpress.com/2013/05/24/圓錐曲線/>
 :::
 
 ::: {show-in="pdf"}
-
+```{=tex}
 \begin{CJK}{UTF8}{bsmi}
 https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
 \end{CJK}
-
+```
 :::
 
-https://en.wikipedia.org/wiki/Matrix_representation_of_conic_sections
+<https://en.wikipedia.org/wiki/Matrix_representation_of_conic_sections>
 
 $$
 ax^{2}+bxy+cy^{2}+dx+ey+f=0
@@ -673,9 +679,9 @@ y
 \end{aligned}
 $$
 
-[real symmetric matrix diagonalizable]^[\@ref(real-symmetric-matrix-diagonalizable)]^
+[real symmetric matrix diagonalizable]^[\^^\@ref(real-symmetric-matrix-diagonalizable)^\^]^
 
-## homogeneous coordinate
+## homogeneous coordinate {#homogeneous-coordinate}
 
 X [homogeneous coordinate](homogeneous-coordinate-1)
 
@@ -685,20 +691,18 @@ O [homogeneous coordinate](#homogeneous-coordinate-1)^[\@ref(homogeneous-coordin
 
 X [homogeneous coordinate](#homogeneous-coordinate)
 
-X [homogeneous coordinate]^[\@ref(homogeneous-coordinate)]^
+X [homogeneous coordinate](#homogeneous-coordinate)^[\@ref(homogeneous-coordinate)]^
 
 ::: {show-in="html"}
-
-https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
-
+<https://ccjou.wordpress.com/2013/05/24/圓錐曲線/>
 :::
 
 ::: {show-in="pdf"}
-
+```{=tex}
 \begin{CJK}{UTF8}{bsmi}
 https://ccjou.wordpress.com/2013/05/24/圓錐曲線/
 \end{CJK}
-
+```
 :::
 
 $$
@@ -804,7 +808,7 @@ d/2 & e/2 & f
 \end{aligned}
 $$
 
-https://en.wikipedia.org/wiki/Matrix_representation_of_conic_sections
+<https://en.wikipedia.org/wiki/Matrix_representation_of_conic_sections>
 
 $$
 \begin{aligned}

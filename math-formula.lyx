@@ -97,6 +97,386 @@
 \begin_body
 
 \begin_layout Standard
+sample size estimation
+\begin_inset Formula 
+\[
+\begin{cases}
+H_{{\scriptscriptstyle 0}}:Y\sim\mathrm{n}\left(\mu_{{\scriptscriptstyle 0}},\sigma_{{\scriptscriptstyle 0}}\right) & \Leftrightarrow f_{{\scriptscriptstyle Y}}\left(y\right)=\frac{\mathrm{e}^{\frac{-1}{2}\left(\frac{y-\mu_{{\scriptscriptstyle 0}}}{\sigma_{{\scriptscriptstyle 0}}}\right)^{2}}}{\sigma_{{\scriptscriptstyle 0}}\sqrt{2\pi}}\\
+H_{{\scriptscriptstyle 1}}:Y\sim\mathrm{n}\left(\mu_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 1}}\right) & \Leftrightarrow f_{{\scriptscriptstyle Y}}\left(y\right)=\frac{\mathrm{e}^{\frac{-1}{2}\left(\frac{y-\mu_{{\scriptscriptstyle 1}}}{\sigma_{{\scriptscriptstyle 1}}}\right)^{2}}}{\sigma_{{\scriptscriptstyle 1}}\sqrt{2\pi}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{P}\left(\left|\dfrac{Y-\mu_{{\scriptscriptstyle 0}}}{\sigma_{{\scriptscriptstyle 0}}}\right|\le z_{{\scriptscriptstyle \alpha/2}}\middle|H_{{\scriptscriptstyle 0}}\right)=\int_{-z_{{\scriptscriptstyle \alpha/2}}}^{z_{{\scriptscriptstyle \alpha/2}}}\frac{\mathrm{e}^{\frac{-z^{2}}{2}}}{\sqrt{2\pi}}\mathrm{d}z=\int_{-z_{{\scriptscriptstyle \alpha/2}}}^{z_{{\scriptscriptstyle \alpha/2}}}\phi\left(z\right)\mathrm{d}z=\varPhi\left(z_{{\scriptscriptstyle \alpha/2}}\right)-\varPhi\left(z_{{\scriptscriptstyle -\alpha/2}}\right)=1-\alpha
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfmathdeclarefunction{gauss}{2}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+  no markers, domain=0:10, samples=100,
+\end_layout
+
+\begin_layout Plain Layout
+
+  axis lines*=left, xlabel=$x$, ylabel=$y$,
+\end_layout
+
+\begin_layout Plain Layout
+
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+\end_layout
+
+\begin_layout Plain Layout
+
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+\end_layout
+
+\begin_layout Plain Layout
+
+  height=5cm, width=12cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+  xtick={4,6.5}, 
+\end_layout
+
+\begin_layout Plain Layout
+
+  ytick=
+\backslash
+empty,
+\end_layout
+
+\begin_layout Plain Layout
+
+  enlargelimits=false, clip=false, axis on top,
+\end_layout
+
+\begin_layout Plain Layout
+
+  grid = major
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [fill=cyan!20, draw=none, domain=0:5.96] {gauss(6.5,1)} 
+\backslash
+closedcycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [very thick,cyan!50!black] {gauss(4,1)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [very thick,cyan!50!black] {gauss(6.5,1)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw [yshift=-0.6cm, latex-latex](axis cs:4,0) -- node [fill=white] {$1.96
+\backslash
+sigma$} (axis cs:5.96,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+normal distribution TikZ
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://tex.stackexchange.com/questions/43610/plotting-bell-shaped-curve-in-tikz-p
+gf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfmathdeclarefunction{gauss}{2}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+  no markers, domain=-10:10, samples=1000,
+\end_layout
+
+\begin_layout Plain Layout
+
+  axis lines*=center, xlabel=$x$, ylabel=$y$,
+\end_layout
+
+\begin_layout Plain Layout
+
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+\end_layout
+
+\begin_layout Plain Layout
+
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+\end_layout
+
+\begin_layout Plain Layout
+
+  height=5cm, width=12cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+  xtick={0,6.5}, 
+\end_layout
+
+\begin_layout Plain Layout
+
+  ytick=
+\backslash
+empty,
+\end_layout
+
+\begin_layout Plain Layout
+
+  enlargelimits=false, clip=false, axis on top,
+\end_layout
+
+\begin_layout Plain Layout
+
+  grid = major
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [fill=cyan!20, draw=none, domain=-10:0] {gauss(0,1)} 
+\backslash
+closedcycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [very thick, cyan!50!black] {gauss(0,1)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [very thick, cyan!50!black] {gauss(2,1)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw [yshift=-0.6cm, latex-latex](axis cs:4,0) -- node [fill=white] {$1.96
+\backslash
+sigma$} (axis cs:5.96,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+normal distribution TikZ
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 real symmetric matrix diagonalizable
 \end_layout
 

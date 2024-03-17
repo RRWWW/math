@@ -1,6 +1,8 @@
 # (PART) by descipline {-}
 # mathematics
 
+## tool
+
 - formula typesetting
   - TeX
     - LaTeX
@@ -19,6 +21,7 @@
           - IguanaTeX https://www.jonathanleroux.org/software/iguanatex/
   - MathML
   - MathJax: JavaScript
+- [plot]^[\@ref(plot)]^
 - symbolic computing
   - Maple:          by MapleSoft
   - Mathematica:    by Wolfram

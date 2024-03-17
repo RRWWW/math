@@ -651,7 +651,7 @@ $$
 
 https://stackoverflow.com/questions/18189175/how-to-use-textup-with-mathjax
 
-`\textup` is not available in MathJax. You can replace it with `\mathrm`, **but `\mathrm` does not interpret spaces**.
+> `\textup` is not available in MathJax. You can replace it with `\mathrm`, **but `\mathrm` does not interpret spaces**.
 
 ### depth of table of contents `toc_depth`
 
@@ -677,9 +677,7 @@ https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html
 
 [figure size]^[\@ref(figure-size)]^
 
-Below is a Div containing three child Divs side by side. The Div
-in the middle is empty, just to add more space between the left
-and right Divs.
+> Below is a Div containing three child Divs side by side. The Div in the middle is empty, just to add more space between the left and right Divs.
 
 ```
 :::::: {.cols data-latex=""}
@@ -1277,6 +1275,14 @@ https://stackoverflow.com/questions/51595939/bookdown-cross-reference-figure-in-
 I ran into the same issue and came up with this solution if you aim at compiling 2 different pdfs. It relies on LaTeX's xr package for cross references: https://stackoverflow.com/a/52532269/576684
 
 ## footnote
+
+```{markdown}
+noun^[This is a footnote]
+
+noun[^202401260000-test-cross-link-1]
+
+[^202401260000-test-cross-link-1]: This is a footnote.
+```
 
 noun[^202401260000-test-cross-link-1]
 

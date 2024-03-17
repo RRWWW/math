@@ -11,7 +11,13 @@
 \usepackage{pgfplots}
 \usepackage[square,numbers]{natbib}
 \usepackage{xcolor}
-\usepackage{fdsymbol}
+
+%% ; however, there are too many side effects, including ugly mathptmx $\sum$, ...
+%\usepackage{fdsymbol} % vector over accent, but will use mathptmx
+%% replace the rather ugly mathptmx \sum operator with the equivalent Computer Modern one
+%\let\sum\relax
+%\DeclareSymbolFont{CMlargesymbols}{OMX}{cmex}{m}{n}
+%\DeclareMathSymbol{\sum}{\mathop}{CMlargesymbols}{"50}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -91,13 +97,553 @@
 \begin_body
 
 \begin_layout Standard
-distance from a point to a line
+sample size estimation
 \begin_inset Formula 
 \[
 \begin{cases}
+H_{{\scriptscriptstyle 0}}:Y\sim\mathrm{n}\left(\mu_{{\scriptscriptstyle 0}},\sigma_{{\scriptscriptstyle 0}}\right) & \Leftrightarrow f_{{\scriptscriptstyle Y}}\left(y\right)=\frac{\mathrm{e}^{\frac{-1}{2}\left(\frac{y-\mu_{{\scriptscriptstyle 0}}}{\sigma_{{\scriptscriptstyle 0}}}\right)^{2}}}{\sigma_{{\scriptscriptstyle 0}}\sqrt{2\pi}}\\
+H_{{\scriptscriptstyle 1}}:Y\sim\mathrm{n}\left(\mu_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 1}}\right) & \Leftrightarrow f_{{\scriptscriptstyle Y}}\left(y\right)=\frac{\mathrm{e}^{\frac{-1}{2}\left(\frac{y-\mu_{{\scriptscriptstyle 1}}}{\sigma_{{\scriptscriptstyle 1}}}\right)^{2}}}{\sigma_{{\scriptscriptstyle 1}}\sqrt{2\pi}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{P}\left(\left|\dfrac{Y-\mu_{{\scriptscriptstyle 0}}}{\sigma_{{\scriptscriptstyle 0}}}\right|\le z_{{\scriptscriptstyle \alpha/2}}\middle|H_{{\scriptscriptstyle 0}}\right)=\int_{-z_{{\scriptscriptstyle \alpha/2}}}^{z_{{\scriptscriptstyle \alpha/2}}}\frac{\mathrm{e}^{\frac{-z^{2}}{2}}}{\sqrt{2\pi}}\mathrm{d}z=\int_{-z_{{\scriptscriptstyle \alpha/2}}}^{z_{{\scriptscriptstyle \alpha/2}}}\phi\left(z\right)\mathrm{d}z=\varPhi\left(z_{{\scriptscriptstyle \alpha/2}}\right)-\varPhi\left(z_{{\scriptscriptstyle -\alpha/2}}\right)=1-\alpha
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfmathdeclarefunction{gauss}{2}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+  no markers, domain=0:10, samples=100,
+\end_layout
+
+\begin_layout Plain Layout
+
+  axis lines*=left, xlabel=$x$, ylabel=$y$,
+\end_layout
+
+\begin_layout Plain Layout
+
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+\end_layout
+
+\begin_layout Plain Layout
+
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+\end_layout
+
+\begin_layout Plain Layout
+
+  height=5cm, width=12cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+  xtick={4,6.5}, 
+\end_layout
+
+\begin_layout Plain Layout
+
+  ytick=
+\backslash
+empty,
+\end_layout
+
+\begin_layout Plain Layout
+
+  enlargelimits=false, clip=false, axis on top,
+\end_layout
+
+\begin_layout Plain Layout
+
+  grid = major
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [fill=cyan!20, draw=none, domain=0:5.96] {gauss(6.5,1)} 
+\backslash
+closedcycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [very thick,cyan!50!black] {gauss(4,1)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [very thick,cyan!50!black] {gauss(6.5,1)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw [yshift=-0.6cm, latex-latex](axis cs:4,0) -- node [fill=white] {$1.96
+\backslash
+sigma$} (axis cs:5.96,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+normal distribution TikZ
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://tex.stackexchange.com/questions/43610/plotting-bell-shaped-curve-in-tikz-p
+gf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfmathdeclarefunction{gauss}{2}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+  no markers, domain=-10:10, samples=1000,
+\end_layout
+
+\begin_layout Plain Layout
+
+  axis lines*=center, xlabel=$x$, ylabel=$y$,
+\end_layout
+
+\begin_layout Plain Layout
+
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+\end_layout
+
+\begin_layout Plain Layout
+
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+\end_layout
+
+\begin_layout Plain Layout
+
+  height=5cm, width=12cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+  xtick={0,6.5}, 
+\end_layout
+
+\begin_layout Plain Layout
+
+  ytick=
+\backslash
+empty,
+\end_layout
+
+\begin_layout Plain Layout
+
+  enlargelimits=false, clip=false, axis on top,
+\end_layout
+
+\begin_layout Plain Layout
+
+  grid = major
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [fill=cyan!20, draw=none, domain=-10:0] {gauss(0,1)} 
+\backslash
+closedcycle;
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [very thick, cyan!50!black] {gauss(0,1)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot [very thick, cyan!50!black] {gauss(1,1)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+draw [yshift=-0.6cm, latex-latex](axis cs:4,0) -- node [fill=white] {$1.96
+\backslash
+sigma$} (axis cs:5.96,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+normal distribution TikZ
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+real symmetric matrix diagonalizable
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\begin{cases}
+\begin{cases}
+A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \text{real matrix}\\
+A^{\intercal}=A & \text{symmetric matrix}
+\end{cases} & \text{real symmetric matrix}\\
+A\boldsymbol{x}=\lambda\boldsymbol{x} & \begin{cases}
+\lambda\in\mathbb{C} & \text{complex eigenvalue}\\
+\boldsymbol{0}\ne\boldsymbol{x}\in\mathbb{C}^{n} & \text{complex eigenvector}
+\end{cases}
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\lambda\in\mathbb{R} & \text{real eigenvalue}\left(1\right)\\
+\boldsymbol{x}\in\mathbb{R}^{n} & \text{real eigenvector}\left(2\right)
+\end{cases}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "real-sym-real-eigen"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\boldsymbol{x}= & \lambda\boldsymbol{x}\\
+\overline{A}\overline{\boldsymbol{x}}=\overline{A\boldsymbol{x}}= & \overline{\lambda\boldsymbol{x}}=\overline{\lambda}\overline{\boldsymbol{x}}\\
+\overline{\boldsymbol{x}}^{\intercal}\overline{A}^{\intercal}=\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}= & \left(\overline{\lambda}\overline{\boldsymbol{x}}\right)^{\intercal}=\overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\\
+\overline{\boldsymbol{x}}^{\intercal}A\overset{\text{symmetric}}{=}\overline{\boldsymbol{x}}^{\intercal}A^{\intercal}\overset{\text{real}}{=}\\
+\overline{\boldsymbol{x}}^{\intercal}A= & \overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\\
+\lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}=\overline{\boldsymbol{x}}^{\intercal}\left(\lambda\boldsymbol{x}\right)\underset{A\boldsymbol{x}=\lambda\boldsymbol{x}}{\overset{\cdot\boldsymbol{x}}{=}}\overline{\boldsymbol{x}}^{\intercal}A\boldsymbol{x}= & \overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}= & \overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\left(\lambda-\overline{\lambda}\right)\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}= & 0\wedge\begin{cases}
+\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}=\sum\limits _{i=1}^{n}\left|x_{i}\right|^{2}\\
+\boldsymbol{x}\ne\boldsymbol{0}
+\end{cases}\Rightarrow\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\ne0\\
+\lambda-\overline{\lambda}= & 0\\
+\lambda= & \overline{\lambda}\Leftrightarrow\lambda\in\mathbb{R}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+{\color{orange}\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}}=\left(\overline{\boldsymbol{x}}^{\intercal}\overline{A}^{\intercal}\right)\boldsymbol{x}\overset{\text{symmetric}}{=} & \left(\overline{\boldsymbol{x}}^{\intercal}\overline{A}\right)\boldsymbol{x}={\color{orange}\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}\\
+\left(L\right)={\color{orange}\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}=} & {\color{orange}\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}=\left(R\right)\\
+\left(L\right)={\color{orange}\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}}\overset{A\boldsymbol{x}=\lambda\boldsymbol{x}}{=} & \left(\overline{\lambda}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}=\overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\left(R\right)={\color{orange}\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}\overset{\text{real}}{=}\overline{\boldsymbol{x}}^{\intercal}\left(A\boldsymbol{x}\right)\overset{A\boldsymbol{x}=\lambda\boldsymbol{x}}{=} & \overline{\boldsymbol{x}}^{\intercal}\left(\lambda\boldsymbol{x}\right)=\lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}={\color{orange}\left(\overline{A}\overline{\boldsymbol{x}}\right)^{\intercal}\boldsymbol{x}=} & {\color{orange}\overline{\boldsymbol{x}}^{\intercal}\left(\overline{A}\boldsymbol{x}\right)}=\lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}\\
+\overline{\lambda}\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}= & \lambda\overline{\boldsymbol{x}}^{\intercal}\boldsymbol{x}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\begin{cases}
+\begin{cases}
+A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \text{real matrix}\\
+A^{\intercal}=A & \text{symmetric matrix}
+\end{cases} & \text{real symmetric matrix}\\
+A\boldsymbol{x}=\lambda\boldsymbol{x} & \ref{real-sym-real-eigen}\begin{cases}
+\lambda\in\mathbb{R} & \text{real eigenvalue}\\
+\boldsymbol{x}\in\mathbb{R}^{n} & \text{real eigenvector}
+\end{cases}\\
+\begin{cases}
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(e_{{\scriptscriptstyle 1}}\right)\\
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}} & \left(e_{{\scriptscriptstyle 2}}\right)
+\end{cases} & \lambda_{{\scriptscriptstyle 1}}\ne\lambda_{{\scriptscriptstyle 2}}
+\end{cases}\\
+\Downarrow\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=0\Leftrightarrow\boldsymbol{x}_{{\scriptscriptstyle 1}}\perp\boldsymbol{x}_{{\scriptscriptstyle 2}}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\cdot}{=} & \boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\left(1\right)\\
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}= & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}=\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}= & \left(\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}= & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\text{symmetric}}{=}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}}{=} & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\left(2\right)\\
+\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\left(1\right)}{=}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\left(2\right)}{=} & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\left(\lambda_{{\scriptscriptstyle 2}}-\lambda_{{\scriptscriptstyle 1}}\right)\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & 0\wedge\lambda_{{\scriptscriptstyle 1}}\ne\lambda_{{\scriptscriptstyle 2}}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & 0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+{\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}}=\left(\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{{\scriptscriptstyle 2}}\overset{\text{symmetric}}{=} & \left(\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}A\right)\boldsymbol{x}_{{\scriptscriptstyle 2}}={\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}\\
+\left(L\right)={\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=} & {\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}=\left(R\right)\\
+\left(L\right)={\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}}\overset{\left(e_{{\scriptscriptstyle 1}}\right)}{=} & \left(\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\left(R\right)={\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}\overset{\left(e_{{\scriptscriptstyle 2}}\right)}{=} & \boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}={\color{orange}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}=} & {\color{orange}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)}=\lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+\lambda_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \lambda_{{\scriptscriptstyle 2}}\boldsymbol{x}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\begin{cases}
+\begin{cases}
+A\in\mathcal{M}_{n\times n}\left(\mathbb{R}\right) & \text{real matrix}\\
+A^{\intercal}=A & \text{symmetric matrix}
+\end{cases} & \text{real symmetric matrix}\\
+A\boldsymbol{x}_{{\scriptscriptstyle 1}}=\lambda\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(e\right)\\
+\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}=0\Leftrightarrow\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}} & \left(o\right)
+\end{cases}\\
+\Downarrow\\
+A\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}}\Leftrightarrow\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}=0
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}= & \left(\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}A^{\intercal}\right)\boldsymbol{x}_{{\scriptscriptstyle 1}}\overset{\text{symmetric}}{=}\left(\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}A\right)\boldsymbol{x}_{{\scriptscriptstyle 1}}\\
+= & \boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\left(A\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)\overset{\left(e\right)}{=}\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\left(\lambda\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)\\
+= & \lambda\boldsymbol{x}_{{\scriptscriptstyle 2}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}\overset{\left(o\right)}{=}\lambda\cdot0=0\\
+\left(A\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}}= & 0\Leftrightarrow A\boldsymbol{x}_{{\scriptscriptstyle 2}}\perp\boldsymbol{x}_{{\scriptscriptstyle 1}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+distance from a point to a line
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\begin{cases}
 P=P\left(x_{0},y_{0}\right)\\
 L=L\left(x,y\right)=Ax+By+C=0,A^{2}+B^{2}\ne0
-\end{cases}
+\end{cases}\\
+\Downarrow\\
+d\left(P,L\right)=\dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
+\end{array}
 \]
 
 \end_inset
@@ -268,8 +814,8 @@ by normal vector
 \begin_inset Formula 
 \[
 \begin{cases}
-\overrightharpoon{n}=\left(A,B\right)\perp L=Ax+By+C=0\\
-\overrightharpoon{PP^{\prime}}=P^{\prime}-P=\left(x-x_{0},y-y_{0}\right)
+\overset{\rightharpoonup}{n}=\left(A,B\right)\perp L=Ax+By+C=0\\
+\overset{\rightharpoonup}{PP^{\prime}}=P^{\prime}-P=\left(x-x_{0},y-y_{0}\right)
 \end{cases}
 \]
 
@@ -278,17 +824,15 @@ by normal vector
 
 \begin_inset Formula 
 \begin{align*}
- & \left|\overrightharpoon{PP^{\prime}}\cdot\overrightharpoon{n}\right|\\
-= & \left\Vert \overrightharpoon{PP^{\prime}}\right\Vert \left\Vert \overrightharpoon{n}\right\Vert \left|\cos\theta\right|\\
-\left\Vert \overrightharpoon{PP^{\prime}}\right\Vert \left|\cos\theta\right|= & \left|\overrightharpoon{PP^{\prime}}\cdot\widehat{n}\right|\\
-= & \dfrac{\left|\overrightharpoon{PP^{\prime}}\cdot\overrightharpoon{n}\right|}{\left\Vert \overrightharpoon{n}\right\Vert }\\
-= & \dfrac{\left|\left(x-x_{0},y-y_{0}\right)\cdot\left(A,B\right)\right|}{\left\Vert \left(A,B\right)\right\Vert }=\dfrac{\left|A\left(x-x_{0}\right)+B\left(y-y_{0}\right)\right|}{\sqrt{A^{2}+B^{2}}}\\
-= & \dfrac{\left|-Ax_{0}-By_{0}+Ax+By\right|}{\sqrt{A^{2}+B^{2}}}\begin{subarray}{c}
+\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}= & \left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left\Vert \overset{\rightharpoonup}{n}\right\Vert \cos\theta\\
+\left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|= & \left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left\Vert \overset{\rightharpoonup}{n}\right\Vert \left|\cos\theta\right|\\
+\left\Vert \overset{\rightharpoonup}{PP^{\prime}}\right\Vert \left|\cos\theta\right|= & \left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\widehat{\boldsymbol{n}}\right|=\dfrac{\left|\overset{\rightharpoonup}{PP^{\prime}}\cdot\overset{\rightharpoonup}{n}\right|}{\left\Vert \overset{\rightharpoonup}{n}\right\Vert }=\dfrac{\left|\left(x-x_{0},y-y_{0}\right)\cdot\left(A,B\right)\right|}{\left\Vert \left(A,B\right)\right\Vert }\\
+= & \dfrac{\left|A\left(x-x_{0}\right)+B\left(y-y_{0}\right)\right|}{\sqrt{A^{2}+B^{2}}}=\dfrac{\left|-Ax_{0}-By_{0}+Ax+By\right|}{\sqrt{A^{2}+B^{2}}}\\
+\begin{subarray}{c}
 Ax+By+C=0\\
 =\\
 Ax+By=-C
-\end{subarray}\dfrac{\left|-Ax_{0}-By_{0}-C\right|}{\sqrt{A^{2}+B^{2}}}\\
-= & \dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
+\end{subarray} & \dfrac{\left|-Ax_{0}-By_{0}-C\right|}{\sqrt{A^{2}+B^{2}}}=\dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
 \end{align*}
 
 \end_inset
@@ -317,6 +861,172 @@ A\left(x-x_{0}\right)+B\left(y-y_{0}\right)= & -\left(Ax_{0}+By_{0}+C\right)
 = & \left[-\left(Ax_{0}+By_{0}+C\right)\right]^{2}=\left(Ax_{0}+By_{0}+C\right)^{2}\\
 \overline{PP^{\prime}}^{2}\ge & \dfrac{\left(Ax_{0}+By_{0}+C\right)^{2}}{A^{2}+B^{2}}\\
 \overline{PP^{\prime}}\ge & \dfrac{\left|Ax_{0}+By_{0}+C\right|}{\sqrt{A^{2}+B^{2}}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+quadratic form
+\begin_inset Formula 
+\[
+ax^{2}+bxy+cy^{2}+dx+ey+f=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}ax+\left(b/2\right)y\\
+\left(b/2\right)x+cy
+\end{pmatrix}=ax^{2}+bxy+cy^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+0= & \begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f\\
+= & \boldsymbol{x}^{\intercal}A\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+f,\begin{cases}
+A=\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix} & A\text{ real symmetric}\\
+\boldsymbol{b}=\begin{pmatrix}d\\
+e
+\end{pmatrix}\\
+\boldsymbol{x}=\begin{pmatrix}x\\
+y
+\end{pmatrix}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+homogeneous coordinate
+\begin_inset Formula 
+\[
+\begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & ~\\
+b/2 & c\\
+\\
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & 0\\
+b/2 & c & 0\\
+0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}\alpha & \beta & \gamma\\
+\delta & \epsilon & \zeta\\
+\eta & \theta & \kappa
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}\alpha x+\beta y+\gamma\\
+\delta x+\epsilon y+\zeta\\
+\eta x+\theta y+\kappa
+\end{pmatrix},\begin{cases}
+\gamma+\eta=d\\
+\zeta+\theta=e
+\end{cases}\\
+= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}0 & 0 & \gamma\\
+0 & 0 & \zeta\\
+\eta & \theta & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}0 & 0 & d/2\\
+0 & 0 & e/2\\
+d/2 & e/2 & 0
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+0= & ax^{2}+bxy+cy^{2}+dx+ey+f\\
+= & \begin{pmatrix}x & y\end{pmatrix}\begin{pmatrix}a & b/2\\
+b/2 & c
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+\begin{pmatrix}d & e\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}+f=\boldsymbol{x}^{\intercal}A\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+f\\
+= & \begin{pmatrix}x & y & 1\end{pmatrix}\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}\begin{pmatrix}x\\
+y\\
+1
+\end{pmatrix}=\begin{pmatrix}\boldsymbol{x}^{\intercal} & 1\end{pmatrix}M\begin{pmatrix}\boldsymbol{x}\\
+1
+\end{pmatrix},M=\begin{pmatrix}a & b/2 & d/2\\
+b/2 & c & e/2\\
+d/2 & e/2 & f
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+0=Q= & Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F\\
+= & \begin{bmatrix}x & y & 1\end{bmatrix}\begin{bmatrix}A & B/2 & D/2\\
+B/2 & C & E/2\\
+D/2 & E/2 & F
+\end{bmatrix}\begin{bmatrix}x\\
+y\\
+1
+\end{bmatrix}=\boldsymbol{x}_{{\scriptscriptstyle \text{h}}}^{\intercal}A_{{\scriptscriptstyle Q}}\boldsymbol{x}_{{\scriptscriptstyle \text{h}}}\\
+= & \begin{bmatrix}x & y\end{bmatrix}\begin{bmatrix}A & B/2\\
+B/2 & C
+\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}+\begin{bmatrix}D & E\end{bmatrix}\begin{bmatrix}x\\
+y
+\end{bmatrix}+F=\boldsymbol{x}^{\intercal}A_{{\scriptscriptstyle Q,33}}\boldsymbol{x}+\boldsymbol{b}^{\intercal}\boldsymbol{x}+F
 \end{align*}
 
 \end_inset
@@ -1184,7 +1894,7 @@ r=\dfrac{\epsilon p}{1-\epsilon\cos\theta}
 
 \begin_inset Formula 
 \[
-\epsilon=\dfrac{r}{r\cos\theta+p}
+\epsilon=\pm\dfrac{r}{r\cos\theta+p}
 \]
 
 \end_inset

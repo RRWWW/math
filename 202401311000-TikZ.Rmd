@@ -64,6 +64,8 @@ https://www.youtube.com/watch?v=bQugbYq0BVA
 
 https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs8lk&index=18
 
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
   \def\a{1.5} % amplitude
@@ -80,8 +82,14 @@ https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs
 \end{aligned}$};
 \end{tikzpicture}
 ```
+:::
 
-```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png',  out.width='90%', fig.cap='Brachistochrone Curve'}
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png',  out.width=if (knitr:::is_html_output()) '100%', fig.cap='Brachistochrone Curve'}
 \begin{tikzpicture}
   \def\a{1.5} % amplitude
   \def\b{2}   % frequency
@@ -97,6 +105,8 @@ https://www.youtube.com/watch?v=ft4Kg9emK1k&list=PLg5nrpKdkk2DWcg3scb75AknF7DJXs
 \end{aligned}$};
 \end{tikzpicture}
 ```
+:::
+::::::
 
 ```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png',  out.width='90%', fig.cap='Brachistochrone Curve'}
 \begin{tikzpicture}[scale=1.5]
@@ -1188,6 +1198,1012 @@ uniform color list=gray!40!white for 10 items}
 ```
 :::
 ::::::
+
+## plots of functions
+
+https://tikz.dev/tikz-plots
+
+> A warning before we get started: If you are looking for an easy way to create a normal plot of a function with scientific axes, ignore this section and instead look at the `pgfplots` package or at the `datavisualization` command from Part VI.
+
+https://tikz.dev/tikz-plots#sec-22.5
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}[domain=0:4]
+  \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
+
+  \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
+  \draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
+
+  \draw[color=red]    plot (\x,\x)             node[right] {$f(x) =x$};
+  % \x r means to convert '\x' from degrees to _r_adians:
+  \draw[color=blue]   plot (\x,{sin(\x r)})    node[right] {$f(x) = \sin x$};
+  \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='plots of functions'}
+\begin{tikzpicture}[domain=0:4]
+  \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
+
+  \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
+  \draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
+
+  \draw[color=red]    plot (\x,\x)             node[right] {$f(x) =x$};
+  % \x r means to convert '\x' from degrees to _r_adians:
+  \draw[color=blue]   plot (\x,{sin(\x r)})    node[right] {$f(x) = \sin x$};
+  \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\tikz \draw[scale=0.5,domain=-3.141:3.141,smooth,variable=\t]
+  plot ({\t*sin(\t r)},{\t*cos(\t r)});
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '25%', fig.cap='2D parametric function'}
+\tikz 
+\draw[scale=0.5,
+      domain=-3.141:3.141,
+      smooth,variable=\t
+      ]
+  plot ({\t*sin(\t r)},{\t*cos(\t r)});
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\tikz \draw[domain=0:360,
+            smooth,
+            variable=\t]
+  plot ({sin(\t)},\t/360,{cos(\t)});
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '50%', fig.cap='3D parametric function'}
+\tikz \draw[domain=0:360,smooth,variable=\t]
+  plot ({sin(\t)},\t/360,{cos(\t)});
+```
+:::
+::::::
+
+## PGFplots
+
+https://tikz.dev/pgfplots/
+
+https://tikz.dev/pgfplots/tutorial1
+
+> Not so common is `\pgfplotsset{compat=1.5}` .
+> A statement like this should always be used in order to (a) benefit from a more or less recent feature set and (b) avoid changes to your picture if you recompile it with a later version of pgfplots.
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\pgfplotsset{width=7cm,compat=1.18}
+\begin{tikzpicture}
+\begin{axis}[
+]
+    % density of Normal distribution:
+    \addplot [
+        red,
+        domain=-3e-3:3e-3,
+        samples=201,
+    ]
+        {exp(-x^2 / (2e-3^2)) / (1e-3 * sqrt(2*pi))};
+\end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='PGFplots: normal distribution', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\pgfplotsset{width=7cm,compat=1.18}
+\begin{tikzpicture}
+\begin{axis}[
+]
+    % density of Normal distribution:
+    \addplot [
+        red,
+        domain=-3e-3:3e-3,
+        samples=201,
+    ]
+        {exp(-x^2 / (2e-3^2)) / (1e-3 * sqrt(2*pi))};
+\end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+### the axis environments
+
+https://tikz.dev/pgfplots/reference-axis
+
+`\pgfplotsset{every linear axis/.append style={...}}`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+	\begin{axis}[
+		no markers,
+		axis x line = center,
+		axis y line = center,
+		xlabel = {$ x $}, xlabel style = {right},
+		ylabel = {$ y $}, ylabel style = {above},
+		xmin = -8, xmax = 8,
+		ymin = 0, ymax = 0.45,
+		hide obscured x ticks=false, % for origin x tick label i.e. xtick = {0}
+		xtick={-4, 0,  4},
+		xticklabels={$ \mu_{\scriptscriptstyle{1}} $, 
+					$ \mu_{\scriptscriptstyle{0}} $, 
+					$ \mu_{\scriptscriptstyle{1}} $},
+		%extra x ticks={0},
+		ytick = \empty,
+		x = 1cm, y = 5cm, % x y scaling
+		%grid = major,
+		domain = -10:10,
+		samples = 1000		
+	]
+  \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '90%', fig.cap='begin{axis}', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+	\begin{axis}[
+		no markers,
+		axis x line = center,
+		axis y line = center,
+		xlabel = {$ x $}, xlabel style = {right},
+		ylabel = {$ y $}, ylabel style = {above},
+		xmin = -8, xmax = 8,
+		ymin = 0, ymax = 0.45,
+		hide obscured x ticks=false, % for origin x tick label i.e. xtick = {0}
+		xtick={-4, 0,  4},
+		xticklabels={$ \mu_{\scriptscriptstyle{1}} $, 
+					$ \mu_{\scriptscriptstyle{0}} $, 
+					$ \mu_{\scriptscriptstyle{1}} $},
+		%extra x ticks={0},
+		ytick = \empty,
+		x = 1cm, y = 5cm, % x y scaling
+		%grid = major,
+		domain = -10:10,
+		samples = 1000		
+	]
+  \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+https://tex.stackexchange.com/questions/134959/axis-lines-middle-and-axis-lines-center
+
+> No, there is no difference.
+
+### axis descriptions
+
+https://tikz.dev/pgfplots/reference-axisdescription
+
+#### placement of axis descriptions
+
+##### coordinate system `axis description cs`
+
+https://tikz.dev/pgfplots/reference-axisdescription#pgfp.axis_description_cs
+
+`\addplot {x};` can change to `\addplot {x^2};` still with auto blue dots
+
+`small dot style,pin=angle:LaTeX label   at PGFplots axis coordinate system  ;`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \tikzset{
+        every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
+        small dot/.style={fill=black,circle,scale=0.3},
+    }
+    \begin{axis}[
+        clip=false,
+        title=How \texttt{axis description cs} works,
+    ]
+        \addplot {x};
+        %small dot style,pin=angle:LaTeX label   at PGFplots axis coordinate system  ;
+        \node [small dot,pin=120:{$(0,0)$}]      at (axis description cs:0,0)      {};
+        \node [small dot,pin=-30:{$(1,1)$}]      at (axis description cs:1,1)      {};
+        \node [small dot,pin=-90:{$(1.03,0.5)$}] at (axis description cs:1.03,0.5) {};
+        \node [small dot,pin=125:{$(0.5,0.5)$}]  at (axis description cs:0.5,0.5)  {};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='PGFplots: $x$', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \tikzset{
+        every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
+        small dot/.style={fill=black,circle,scale=0.3},
+    }
+    \begin{axis}[
+        clip=false,
+        title=How \texttt{axis description cs} works,
+    ]
+        \addplot {x};
+ 
+        \node [small dot,pin=120:{$(0,0)$}]      at (axis description cs:0,0)      {};
+        \node [small dot,pin=-30:{$(1,1)$}]      at (axis description cs:1,1)      {};
+        \node [small dot,pin=-90:{$(1.03,0.5)$}] at (axis description cs:1.03,0.5) {};
+        \node [small dot,pin=125:{$(0.5,0.5)$}]  at (axis description cs:0.5,0.5)  {};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \tikzset{
+        every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
+        small dot/.style={fill=black,circle,scale=0.3},
+    }
+    \begin{axis}[
+        clip=false,
+        title=How \texttt{axis description cs} works,
+    ]
+        \addplot {x^2};
+        %small dot style,pin=angle:LaTeX label   at PGFplots axis coordinate system  ;
+        \node [small dot,pin=120:{$(0,0)$}]      at (axis description cs:0,0)      {};
+        \node [small dot,pin=-30:{$(1,1)$}]      at (axis description cs:1,1)      {};
+        \node [small dot,pin=-90:{$(1.03,0.5)$}] at (axis description cs:1.03,0.5) {};
+        \node [small dot,pin=125:{$(0.5,0.5)$}]  at (axis description cs:0.5,0.5)  {};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='PGFplots: $x^2$', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \tikzset{
+        every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
+        small dot/.style={fill=black,circle,scale=0.3},
+    }
+    \begin{axis}[
+        clip=false,
+        title=How \texttt{axis description cs} works,
+    ]
+        \addplot {x^2};
+ 
+        \node [small dot,pin=120:{$(0,0)$}]      at (axis description cs:0,0)      {};
+        \node [small dot,pin=-30:{$(1,1)$}]      at (axis description cs:1,1)      {};
+        \node [small dot,pin=-90:{$(1.03,0.5)$}] at (axis description cs:1.03,0.5) {};
+        \node [small dot,pin=125:{$(0.5,0.5)$}]  at (axis description cs:0.5,0.5)  {};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+##### legend
+
+https://tikz.dev/pgfplots/reference-axisdescription#sec-4.9.4
+
+##### tick option
+
+https://tikz.dev/pgfplots/reference-tickoptions
+
+### `declare function`
+
+https://tikz.dev/pgfplots/utility-commands#pgf/declare_function
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+\begin{axis}[
+    declare function={
+        C=4;
+        square(\t)=(\t)^2 + C;
+        },
+    ]
+    \addplot+ [samples=2] {C*x};
+    \addplot {square(x)};
+\end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '65%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+\begin{axis}[
+    declare function={
+        C=4;
+        square(\t)=(\t)^2 + C;
+        },
+    ]
+    \addplot+ [samples=2] {C*x};
+    \addplot {square(x)};
+\end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+#### `pgfmathparse`
+
+https://tikz.dev/math-parsing
+
+https://tikz.dev/math-parsing#sec-94.1
+
+> This macro parses <expression> and returns the result without units in the macro \pgfmathresult.
+> Example: `\pgfmathparse{2pt+3.5pt}` will set `\pgfmathresult` to the text `5.5`.
+
+`\pgfmathsqrt{x}` = `\pgfmathparse{sqrt(x)}`
+
+`\pgfmathln{x}` = `\pgfmathparse{ln(x)}`
+
+...
+
+#### `pgfmathdeclarefunction`
+
+like `pgfplotsinvokeforeach`
+
+> replaces any occurrence of `#1` inside of (math image)command(math image) once for every element in (math image)list(math image). Thus, it actually assumes that (math image)command(math image) is like a `\newcommand` body.
+
+```
+% pgfmathdeclarefunction{name}{num_var}{%
+%% #1 = \mu, #2 = \sigma
+\pgfmathdeclarefunction{gauss}{2}{%
+	\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+```
+
+```{tex}
+% pgfmathdeclarefunction{name}{num_var}{%
+%% #1 = \mu, #2 = \sigma
+\pgfmathdeclarefunction{gauss}{2}{%
+	\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+\begin{tikzpicture}
+	\begin{axis}[
+		no markers,
+		axis x line = center,
+		axis y line = center,
+		xlabel = {$ x $}, xlabel style = {right},
+		ylabel = {$ y $}, ylabel style = {above},
+		xmin = -8, xmax = 8,
+		ymin = 0, ymax = 0.45,
+		hide obscured x ticks=false, % for origin x tick label i.e. xtick = {0}
+		xtick={-4, 0,  4},
+		xticklabels={$ \mu_{\scriptscriptstyle{1}} $, 
+					$ \mu_{\scriptscriptstyle{0}} $, 
+					$ \mu_{\scriptscriptstyle{1}} $},
+		%extra x ticks={0},
+		ytick = \empty,
+		x = 1cm, y = 5cm, % x y scaling
+		%grid = major,
+		domain = -10:10,
+		samples = 1000		
+	]
+		\addplot [fill=cyan!20, draw=none, domain=-10:-2] {gauss(-4, 1)} \closedcycle;
+		\addplot [fill=cyan!20, draw=none, domain=   2:10] {gauss( 4, 1)} \closedcycle;
+		\addplot [very thick, cyan!50!black] {gauss(-4, 1)};
+		\addplot [very thick, cyan!50!black] {gauss( 0, 1)};
+		\addplot [very thick, cyan!50!black] {gauss( 4, 1)};
+		%\node [anchor=north] at (axis cs: 0, -0.01) {$ \mu $};
+		%\node at (axis cs: -4, -0.02) {$ \mu $};
+		\draw [dashed, thin] (axis cs: -4, 0) -- (axis cs: -4, 1);
+		\draw [dashed, thin] (axis cs:  4, 0) -- (axis cs: 4, 1);
+	\end{axis}
+\end{tikzpicture}
+```
+
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '90%', fig.cap='PGFmathDeclareFunction', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+% pgfmathdeclarefunction{name}{num_var}{%
+%% #1 = \mu, #2 = \sigma
+\pgfmathdeclarefunction{gauss}{2}{%
+	\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+\begin{tikzpicture}
+	\begin{axis}[
+		no markers,
+		axis x line = center,
+		axis y line = center,
+		xlabel = {$ x $}, xlabel style = {right},
+		ylabel = {$ y $}, ylabel style = {above},
+		xmin = -8, xmax = 8,
+		ymin = 0, ymax = 0.45,
+		hide obscured x ticks=false, % for origin x tick label i.e. xtick = {0}
+		xtick={-4, 0,  4},
+		xticklabels={$ \mu_{\scriptscriptstyle{1}} $, 
+					$ \mu_{\scriptscriptstyle{0}} $, 
+					$ \mu_{\scriptscriptstyle{1}} $},
+		%extra x ticks={0},
+		ytick = \empty,
+		x = 1cm, y = 5cm, % x y scaling
+		%grid = major,
+		domain = -10:10,
+		samples = 1000		
+	]
+		\addplot [fill=cyan!20, draw=none, domain=-10:-2] {gauss(-4, 1)} \closedcycle;
+		\addplot [fill=cyan!20, draw=none, domain=   2:10] {gauss( 4, 1)} \closedcycle;
+		\addplot [very thick, cyan!50!black] {gauss(-4, 1)};
+		\addplot [very thick, cyan!50!black] {gauss( 0, 1)};
+		\addplot [very thick, cyan!50!black] {gauss( 4, 1)};
+		%\node [anchor=north] at (axis cs: 0, -0.01) {$ \mu $};
+		%\node at (axis cs: -4, -0.02) {$ \mu $};
+		\draw [dashed, thin] (axis cs: -4, 0) -- (axis cs: -4, 1);
+		\draw [dashed, thin] (axis cs:  4, 0) -- (axis cs: 4, 1);
+	\end{axis}
+\end{tikzpicture}
+```
+
+https://tex.stackexchange.com/questions/43610/plotting-bell-shaped-curve-in-tikz-pgf
+
+```{tex}
+% pgfmathdeclarefunction{name}{num_var}{%
+%% #1 = \mu, #2 = \sigma
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+\begin{tikzpicture}
+\begin{axis}[
+  no markers, domain=0:10, samples=100,
+  axis lines*=left, xlabel=$x$, ylabel=$y$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick={4,6.5}, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+  \addplot [fill=cyan!20, draw=none, domain=0:5.96] {gauss(6.5,1)} \closedcycle;
+  \addplot [very thick,cyan!50!black] {gauss(4,1)};
+  \addplot [very thick,cyan!50!black] {gauss(6.5,1)};
+  \draw [yshift=-0.6cm, latex-latex](axis cs:4,0) -- node [fill=white] {$1.96\sigma$} (axis cs:5.96,0);
+\end{axis}
+
+\end{tikzpicture}
+```
+
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '90%', fig.cap='PGFmathDeclareFunction', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+% pgfmathdeclarefunction{name}{num_var}{%
+%% #1 = \mu, #2 = \sigma
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+\begin{tikzpicture}
+\begin{axis}[
+  no markers, domain=0:10, samples=100,
+  axis lines*=left, xlabel=$x$, ylabel=$y$,
+  every axis y label/.style={at=(current axis.above origin),anchor=south},
+  every axis x label/.style={at=(current axis.right of origin),anchor=west},
+  height=5cm, width=12cm,
+  xtick={4,6.5}, ytick=\empty,
+  enlargelimits=false, clip=false, axis on top,
+  grid = major
+  ]
+  \addplot [fill=cyan!20, draw=none, domain=0:5.96] {gauss(6.5,1)} \closedcycle;
+  \addplot [very thick,cyan!50!black] {gauss(4,1)};
+  \addplot [very thick,cyan!50!black] {gauss(6.5,1)};
+  \draw [yshift=-0.6cm, latex-latex](axis cs:4,0) -- node [fill=white] {$1.96\sigma$} (axis cs:5.96,0);
+\end{axis}
+
+\end{tikzpicture}
+```
+
+### `|-` and `-|` in TikZ
+
+https://tex.stackexchange.com/questions/401425/tikz-what-exactly-does-the-the-notation-for-arrows-do
+
+> `(a -| b)` where `a` and `b` are named nodes or coordinates. This means the coordinate that is at the y-coordinate of `a`, and x-coordinate of `b`. Similarly, `(a |- b)` has the x-coordinate of `a` and y-coordinate of `b`.
+
+### `pgfplotsinvokeforeach`
+
+https://tikz.dev/pgfplots/pgfplotstable-miscellaneous#\pgfplotsinvokeforeach
+
+like `\foreach` in TikZ
+
+> A variant of `\pgfplotsforeachungrouped` (and such also of `\foreach`) which replaces any occurrence of `#1` inside of (math image)command(math image) once for every element in (math image)list(math image). Thus, it actually assumes that (math image)command(math image) is like a `\newcommand` body.
+
+### interpolation dashed lines
+
+https://tex.stackexchange.com/questions/193259/what-is-the-easiest-way-to-accomplish-textual-tick-labels-in-tikz
+
+`interpa = (10,10), interpb = (30,30), interp = interpolation`
+
+`({axis cs:0,0}|-interp#1) = (x of (0,0), y of (interpa)) = (0, 10), ...`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines=left,
+    xmin = 0, xmax = 40,
+    ymin = 0, ymax = 40,
+    xtick={10,30},
+    xticklabels={$V_i=10$,$V_f=30$},
+    ytick={10,30},
+    yticklabels={$P_i=10$,$P_f=30$},
+    xlabel={Volume},
+    ylabel={Pressure}
+  ]
+  \addplot[very thick,-latex ] coordinates{(10,10) (30,30)}
+    % interpa = (10,10), interpb = (30,30), interp = interpolation
+    coordinate[at start](interpa)coordinate[at end](interpb);
+  \pgfplotsinvokeforeach {a,b} {
+    \draw[ultra thin, dashed]
+      % ({axis cs:0,0}|-interp#1) = (x of (0,0), y of (interpa)) = (0, 10), ...
+      ({axis cs:0,0}|-interp#1)--(interp#1)--(interp#1|-{axis cs:0,0});
+    }
+\end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines=left,
+    xmin = 0, xmax = 40,
+    ymin = 0, ymax = 40,
+    xtick={10,30},
+    xticklabels={$V_i=10$,$V_f=30$},
+    ytick={10,30},
+    yticklabels={$P_i=10$,$P_f=30$},
+    xlabel={Volume},
+    ylabel={Pressure}
+  ]
+  \addplot[very thick,-latex ] coordinates{(10,10) (30,30)}
+    % interpa = (10,10), interpb = (30,30), interp = interpolation
+    coordinate[at start](interpa)coordinate[at end](interpb);
+  \pgfplotsinvokeforeach {a,b} {
+    \draw[ultra thin, dashed]
+      % ({axis cs:0,0}|-interp#1) = (x of (0,0), y of (interpa)) = (0, 10), ...
+      ({axis cs:0,0}|-interp#1)--(interp#1)--(interp#1|-{axis cs:0,0});
+    }
+\end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+## Zewbie
+
+https://zhuanlan.zhihu.com/p/551874337
+
+### `addplot+`
+
+> What does addplot+ do exactly?
+
+https://tex.stackexchange.com/questions/275959/what-does-addplot-do-exactly
+
+https://tikz.dev/pgfplots/reference-addplot#\addplot+
+
+> Every `\addplot` directive receives a pre-defined style (line color, marker style etc) through a pre-defined cycle list that is automatically chosen depending on the index of the current `\addplot` instruction. If you want to add some of your styles manually (like I want red colour instead of blue, say), you can add them through options to `\addplot` like `\addplot[<your options>]`. Now the question is whether you want your own style (your options) to be appended to or replace one of these cycle lists assigned. This is decided by the + sign. If you use `\addplot+ [<your options>]`, your style is appended to and by `\addplot[<your options>]` , your options will replace the assigned cycle list.
+
+### point
+
+`only marks` only points without lines
+
+zero y axis range `ymin=0, ymax=0` and `axis y line=none`, making 1D x axis
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[ 
+        xlabel=$x$,
+        axis y line=none,
+        axis x line=center,
+        tick align=inside,
+        xmin=-1.5, xmax=4.9, ymin=0, ymax=0,
+        xtick distance=1,
+        x=1cm
+        ]
+        \addplot+ coordinates {(e,0)}
+            node [pin=90:{$e$}] {};
+        \addplot+ coordinates {(pi,0)}
+            node [pin=90:{$\pi$}] {};
+        \addplot+ coordinates {(-1,0)};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[ 
+        xlabel=$x$,
+        axis y line=none,
+        axis x line=center,
+        tick align=inside,
+        xmin=-1.5, xmax=4.9, ymin=0, ymax=0,
+        xtick distance=1,
+        x=1cm
+        ]
+        \addplot+ coordinates {(e,0)}
+            node [pin=90:{$e$}] {};
+        \addplot+ coordinates {(pi,0)}
+            node [pin=90:{$\pi$}] {};
+        \addplot+ coordinates {(-1,0)};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel=$x$, ylabel=$y$,
+        axis lines=center,
+        tick align=inside,
+        xmin=-1.5, xmax=4.9, ymin=-3.3, ymax=3.9,
+        xtick distance=1, ytick distance=1,
+        axis equal image
+        ]
+        \addplot+ [only marks] coordinates {
+            (-1,-2) (pi,pi/4) (3,2) (0,0)};
+        \addplot+ coordinates {(2,1)};
+        \addplot+ coordinates {(3,-2)};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel=$x$, ylabel=$y$,
+        axis lines=center,
+        tick align=inside,
+        xmin=-1.5, xmax=4.9, ymin=-3.3, ymax=3.9,
+        xtick distance=1, ytick distance=1,
+        axis equal image
+        ]
+        \addplot+ [only marks] coordinates {
+            (-1,-2) (pi,pi/4) (3,2) (0,0)};
+        \addplot+ coordinates {(2,1)};
+        \addplot+ coordinates {(3,-2)};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[axis equal image]
+        \addplot+ [only marks]
+            table [x=xdata,y=ydata] {data/func.dat};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[axis equal image]
+        \addplot+ [only marks]
+            table [x=xdata,y=ydata] {data/func.dat};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`axis equal image` to fix aspect ratio 1:1
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[title=5 sampling points,
+        xlabel=$x$,ylabel=$y$,
+        axis equal image]
+        \addplot+ [only marks,domain=-2:2,samples=5]
+            {x^2};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[title=5 sampling points,
+        xlabel=$x$,ylabel=$y$,
+        axis equal image]
+        \addplot+ [only marks,domain=-2:2,samples=5]
+            {x^2};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+
+\begin{tikzpicture}
+    \begin{axis}[title=55 sampling points,
+        xlabel=$x$,ylabel=$y$,
+        axis equal image]
+        \addplot+ [only marks,domain=-2:2,samples=55]
+            {x^2};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[title=55 sampling points,
+        xlabel=$x$,ylabel=$y$,
+        axis equal image]
+        \addplot+ [only marks,domain=-2:2,samples=55]
+            {x^2};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+https://zhuanlan.zhihu.com/p/128341873
+
+## Arnav Bandekar: Using pgfplots to make economic graphs in LaTeX
+
+https://towardsdatascience.com/using-pgfplots-to-make-economic-graphs-in-latex-bcdc8e27c0eb
+
+## PGFplots gallery
+
+https://pgfplots.sourceforge.net/gallery.html
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+\begin{axis}[
+	xmin=-3,   xmax=3,
+	ymin=-3,   ymax=3,
+	extra x ticks={-1,1},
+	extra y ticks={-2,2},
+	extra tick style={grid=major},
+]
+	\draw[red] \pgfextra{
+	  \pgfpathellipse{\pgfplotspointaxisxy{0}{0}}
+		{\pgfplotspointaxisdirectionxy{1}{0}}
+		{\pgfplotspointaxisdirectionxy{0}{2}}
+	  % see also the documentation of 
+	  % 'axis direction cs' which
+	  % allows a simpler way to draw this ellipse
+	};
+	\draw[blue] \pgfextra{
+	  \pgfpathellipse{\pgfplotspointaxisxy{0}{0}}
+		{\pgfplotspointaxisdirectionxy{1}{1}}
+		{\pgfplotspointaxisdirectionxy{0}{2}}
+	};
+	\addplot [only marks,mark=*] coordinates { (0,0) };
+\end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+\begin{axis}[
+	xmin=-3,   xmax=3,
+	ymin=-3,   ymax=3,
+	extra x ticks={-1,1},
+	extra y ticks={-2,2},
+	extra tick style={grid=major},
+]
+	\draw[red] \pgfextra{
+	  \pgfpathellipse{\pgfplotspointaxisxy{0}{0}}
+		{\pgfplotspointaxisdirectionxy{1}{0}}
+		{\pgfplotspointaxisdirectionxy{0}{2}}
+	  % see also the documentation of 
+	  % 'axis direction cs' which
+	  % allows a simpler way to draw this ellipse
+	};
+	\draw[blue] \pgfextra{
+	  \pgfpathellipse{\pgfplotspointaxisxy{0}{0}}
+		{\pgfplotspointaxisdirectionxy{1}{1}}
+		{\pgfplotspointaxisdirectionxy{0}{2}}
+	};
+	\addplot [only marks,mark=*] coordinates { (0,0) };
+\end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+## TikZplotLib / tikzplotlib {#tikzplotlib}
+
+[Python]^[\@ref(python)]^
+
+```{r}
+# library(reticulate)
+# virtualenv_list()
+# virtualenv_python()
+# use_virtualenv("r-reticulate")
+
+## install TikZplotLib
+# virtualenv_install("r-reticulate", "tikzplotlib")
+
+## import TikZplotLib (it will be automatically discovered in "r-reticulate")
+# tikzplotlib <- import("tikzplotlib")
+```
+
+```
+Error: ImportError: cannot import name 'common_texification' from 'matplotlib.backends.backend_pgf' (D:\Users\115381\Documents\.virtualenvs\r-reticulate\lib\site-packages\matplotlib\backends\backend_pgf.py)
+```
+
+https://github.com/NixOS/nixpkgs/issues/289305
+
+> The "solution" is to use **matplotlib 3.6**, but I guess in nixpkgs a single version is used at a time. The last working upgrade is from 0911608 I guess (I tried using virtualenv + pip + nix-ld + export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$NIX_LD_LIBRARY_PATH")
+
+https://stackoverflow.com/questions/60882638/install-a-particular-version-of-python-package-in-a-virtualenv-created-with-reti
+
+```{r}
+#reticulate::virtualenv_install(packages = c("matplotlib==3.6.0"))
+```
+
+```{r}
+reticulate::conda_list()
+reticulate::use_condaenv(condaenv = 'sandbox-3.9')
+```
+
+```{python, eval=TRUE, cache=TRUE}
+import matplotlib.pyplot as plt
+
+plt.plot([0, 2, 1, 4])
+plt.show()
+
+import tikzplotlib
+
+# tikzplotlib.save("test.tex")
+tikzplotlib.get_tikz_code()
+```
+
+```{python}
+import matplotlib.pyplot as plt
+
+plt.close()
+```
+
+```{python, eval=TRUE, cache=TRUE}
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.style.use("ggplot")
+
+t = np.arange(0.0, 2.0, 0.1)
+s = np.sin(2 * np.pi * t)
+s2 = np.cos(2 * np.pi * t)
+plt.plot(t, s, "o-", lw=4.1)
+plt.plot(t, s2, "o-", lw=4.1)
+plt.xlabel("time (s)")
+plt.ylabel("Voltage (mV)")
+plt.title("Simple plot $\\frac{\\alpha}{2}$")
+plt.grid(True)
+plt.show()
+
+import tikzplotlib
+
+# tikzplotlib.save("test.tex")
+tikzplotlib.get_tikz_code()
+```
 
 ## animation
 
