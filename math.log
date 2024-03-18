@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.3.4)  17 MAR 2024 09:26
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.3.4)  18 MAR 2024 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -954,6 +954,12 @@ LaTeX Warning: Label `fig:unnamed-chunk-6' multiply defined.
 
 LaTeX Warning: Label `fig:unnamed-chunk-7' multiply defined.
 
+
+LaTeX Warning: Label `fig:unnamed-chunk-1' multiply defined.
+
+
+LaTeX Warning: Label `fig:unnamed-chunk-58' multiply defined.
+
 )
 \openout1 = `math.aux'.
 
@@ -1367,30 +1373,30 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 4.
 [3] [4] [5] [6]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 129.
+(Font)              scaled to size 10.0pt on input line 139.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 129.
+(Font)              scaled to size 7.0pt on input line 139.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 5.0pt on input line 129.
+(Font)              scaled to size 5.0pt on input line 139.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 10.00092pt on input line 129.
+(Font)              scaled to size 10.00092pt on input line 139.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 7.00064pt on input line 129.
+(Font)              scaled to size 7.00064pt on input line 139.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 5.00046pt on input line 129.
+(Font)              scaled to size 5.00046pt on input line 139.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 9.99893pt on input line 129.
+(Font)              scaled to size 9.99893pt on input line 139.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 6.99925pt on input line 129.
+(Font)              scaled to size 6.99925pt on input line 139.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 4.99947pt on input line 129.
-[7] [8])
+(Font)              scaled to size 4.99947pt on input line 139.
+[7] [8] [9])
 \tf@toc=\write6
 \openout6 = `math.toc'.
 
-[9] [10
+[10] [11
 
-] [11] [12
+] [12
 
 ] [13] [14]
 Chapter 1.
@@ -1409,12 +1415,12 @@ Chapter 2.
 
 ]
 Chapter 3.
-
-Overfull \hbox (9.517pt too wide) in paragraph at lines 554--556
+[19]
+Overfull \hbox (9.517pt too wide) in paragraph at lines 556--558
 []\TU/lmr/m/n/10 neural network plot/draw [][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][][][][][][][] [] [][][][][] [][] [][] [][] [][][][][][] [][] [][] [][] [][][][][][][][][] [][] [][][][][][][][][][][][] [][]
  []
 
-[19] [20]
+[20]
 Chapter 4.
 [21
 
@@ -1427,7 +1433,7 @@ Chapter 5.
 ] [25] [26]
 Chapter 6.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 665.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 667.
 [27
 
 ] [28]
@@ -1438,22 +1444,22 @@ File: 202401280000-minimal-book-example_files/figure-latex/nice-fig-1.pdf Graphi
 ]
 Chapter 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--882
+Underfull \hbox (badness 10000) in paragraph at lines 883--884
 [][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][] [][] [][][][][][] [][] [][][][][][][][] [][] [][][][][][][] [][] [][][][] [][] [][][][][][][] [][]
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 925--926
+Underfull \hbox (badness 10000) in paragraph at lines 927--928
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][] [][] [][] [][] [][][] [][] [][][] [][] [][][] [][] [][][][][][][] [][] [][][][][] [][] [][][][][] [][] [][][] [][] [][][][] [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 939--940
+Underfull \hbox (badness 10000) in paragraph at lines 941--942
 [][][]$[][][][][] [] [] [] [][][][][][][][][] [] [][][][][][][] [] [][][] [] [] [] [][][] [][] [][] [][] [][][][][][][][][] [][] [][][][][][][] [][] [][][][][][][][][] [][] [][][] [][] [][][][][] [][] [][] [][] [][][][][][][][][] []
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1007--1008
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1010
 [][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][][][] [][] [][][][][][][] [][] [][] [][] [][][][][][][][] [][] [][][][][][][][][][] [][] [][] [][] [][][][][] [][]
  []
 
@@ -1477,7 +1483,7 @@ File: 202401280001-test_files/figure-latex/fig-margin-1.pdf Graphic file (type p
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1130--1131
+Underfull \hbox (badness 10000) in paragraph at lines 1132--1133
  \TU/lmr/bx/n/10 7.2.6.1.2 \TU/lmtt/b/n/10 out.width \TU/lmr/bx/n/10 vs. \TU/lmtt/b/n/10 fig.width[][] [][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][] [][] [][] [][]
  []
 
@@ -1499,7 +1505,7 @@ File: 202401280001-test_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file (
 File: 202401280001-test_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf)
 <use 202401280001-test_files/figure-latex/unnamed-chunk-20-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1249--1250
+Underfull \hbox (badness 10000) in paragraph at lines 1251--1252
 [][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][] [][] [][][] [][] [] [][] [][][][][][] [][] [][] [][] [][][][][] [][] [][][][] [][] [][][][][][][][] [][] [][] [][] [][][] [][] [][][] [][]
  []
 
@@ -1507,7 +1513,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1249--1250
 File: 202401280001-test_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (type pdf)
 <use 202401280001-test_files/figure-latex/unnamed-chunk-22-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1264--1265
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1267
 [][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][] [][] [][] [][] [][][][] [][] [] [][] [][][] [][] [][][][][] [][] [][][][][][][][] [][] [][][][][][][][][] [][] [][][] [][]
  []
 
@@ -1519,7 +1525,7 @@ File: img/conic-sections.pdf Graphic file (type pdf)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1272--1273
+Underfull \hbox (badness 10000) in paragraph at lines 1274--1275
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][] [][] [][] [][] [][][][][][][][] [][] [][] [][] [][][][][][][] [][] [][][] [][] [][][][][] [][] [][] [][] [][][] [][] [][][][][][][][] [][]
  []
 
@@ -1528,7 +1534,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [43] [44]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1380.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1382.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
 ) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
@@ -1556,22 +1562,22 @@ Missing character: There is no 變 (U+8B8A) in font [lmroman10-regular]:mapping=
 Missing character: There is no 亂 (U+4E82) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 碼 (U+78BC) in font [lmroman10-regular]:mapping=tex-text;!
 
-Overfull \hbox (18.137pt too wide) in paragraph at lines 1421--1421
+Overfull \hbox (18.137pt too wide) in paragraph at lines 1423--1423
 []\TU/lmtt/m/n/10 % replace the rather ugly mathptmx \sum operator with the equivalent Computer Modern one[] 
  []
 
 [45]
-Overfull \hbox (3.91699pt too wide) in paragraph at lines 1427--1428
+Overfull \hbox (3.91699pt too wide) in paragraph at lines 1429--1430
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][][][][][][][][][] [][] [][][][][][][] [][] [][][] [][] [][][] [][] [][][][][] [][] [][][][] [][] [][][][][][][][] [][]
  []
 
 
-Overfull \hbox (18.137pt too wide) in paragraph at lines 1442--1442
+Overfull \hbox (18.137pt too wide) in paragraph at lines 1444--1444
 []\TU/lmtt/m/n/10 % replace the rather ugly mathptmx \sum operator with the equivalent Computer Modern one[] 
  []
 
 [46]
-Underfull \hbox (badness 10000) in paragraph at lines 1482--1483
+Underfull \hbox (badness 10000) in paragraph at lines 1484--1485
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][] [][] [][][] [][] [] [][] [][][][][][][][] [][] [][][] [][] [][][][][][][] [][] [][][][][] [][] [][] [][] [][][][] [][] [][] [][] [][][][][] [][]
  []
 
@@ -1586,34 +1592,34 @@ File: 202401280001-test_files/figure-latex/unnamed-chunk-33-1.pdf Graphic file (
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [48]
-Underfull \hbox (badness 10000) in paragraph at lines 1618--1619
+Underfull \hbox (badness 10000) in paragraph at lines 1620--1621
 [][]$[][][][][] [] [] [] [][][][][][][][][] [] [][][][][][][] [] [][][] [] [] [] [][][][][][] [][] [][][] [][] [][][] [][] [][][][][][][] [][] [][][][] [][] [][] [][] [][][][] [][] [][][][][] [][] [][][][][][] [][] [][][][][][] [][] [][] [][] [][][][][] [][]
  []
 
 
-Overfull \hbox (7.637pt too wide) in paragraph at lines 1630--1631
+Overfull \hbox (7.637pt too wide) in paragraph at lines 1632--1633
 \TU/lmtt/m/n/10 (knitr:::is_latex_output()) []pdf[] else []png[], fig.width=10, fig.height=2, out.width=if
  []
 
 File: 202401280001-test_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file (type pdf)
 <use 202401280001-test_files/figure-latex/unnamed-chunk-35-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1660--1661
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1663
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][] [][] [][] [][] [][][][] [][] [] [][] [][][][][][][] [][] [][][] [][] [][][][][][][][][] [][] [][][] [][] [][][][][] [][]
  []
 
 
-Overfull \hbox (17.50699pt too wide) in paragraph at lines 1664--1665
+Overfull \hbox (17.50699pt too wide) in paragraph at lines 1666--1667
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][] [][] [][] [][] [][][] [][] [][][][][][][][][] [][] [][][][][][][] [][] [][][][][] [][] [][][][][][][][][][][][][][][][][] [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1668--1669
+Underfull \hbox (badness 10000) in paragraph at lines 1670--1671
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][] [][] [][] [][] [][][][][] [][] [][] [][] [][][] [][] [][][][][][] [][] [][][][] [][] [][] [][] [][][][] [][] [][][][] [][] [][][][][] [][]
  []
 
 [49]
-Overfull \hbox (18.137pt too wide) in paragraph at lines 1699--1699
+Overfull \hbox (18.137pt too wide) in paragraph at lines 1701--1701
 []\TU/lmtt/m/n/10 ##  $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...[] 
  []
 
@@ -1646,7 +1652,7 @@ Missing character: There is no 法 (U+6CD5) in font [lmroman10-regular]:mapping=
 File: 202401280001-test_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file (type pdf)
 <use 202401280001-test_files/figure-latex/unnamed-chunk-39-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1745--1746
+Underfull \hbox (badness 10000) in paragraph at lines 1747--1748
 [][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][][] [][] [][][][][][][][][][][] [][] [][][][][][][] [][] [][] [][] [][][][] [][] [][][] [][] [][][][] [][]
  []
 
@@ -1745,62 +1751,62 @@ Missing character: There is no 移 (U+79FB) in font [lmroman7-regular]:mapping=t
 Missing character: There is no 遞 (U+905E) in font [lmroman5-regular]:mapping=tex-text;!
 Missing character: There is no 移 (U+79FB) in font [lmroman5-regular]:mapping=tex-text;!
 [51]
-Underfull \hbox (badness 10000) in paragraph at lines 1807--1808
+Underfull \hbox (badness 10000) in paragraph at lines 1809--1810
 []\TU/lmr/m/n/10 BiliBili: [][]$[][][][][] [] [] [] [][][][][][] [] [][][][][][][][] [] [][][] [] [][][][][][] [] [][][][] [] [][][][] [] [][][][][][][][][][] [] [][][][][][][][][][][] [] [][][] []
  []
 
 [52]
-Overfull \hbox (235.50699pt too wide) in paragraph at lines 1861--1862
+Overfull \hbox (235.50699pt too wide) in paragraph at lines 1863--1864
 [][][]$[][][][][] [] [] [] [][][][][] [][] [][][][][][][][] [] [][][] [] [][][][][] [][] [][][][][] [] []$[][]\TU/lmr/m/n/10 :~:text=To%20summarize%2C%20pyellow!50efined%20colors%20in,when%20loading%20the%20xcolor%20package. 
  []
 
 [53]
-Underfull \hbox (badness 3219) in paragraph at lines 1885--1887
+Underfull \hbox (badness 3219) in paragraph at lines 1887--1889
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][][][] [][] [] [][] [][][][][] [][] [][][]$[][] [][]$[][][][][] [] [] [] [][][][][][][][] [] [][][][][][][][] [] [][][] []
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 1890--1892
+Underfull \hbox (badness 2245) in paragraph at lines 1892--1894
 []\TU/lmr/m/n/10 Bookdown - conditional display of text and code blocks (LaTeX/PDF vs. HTML) [][]$[][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1890--1892
+Underfull \hbox (badness 10000) in paragraph at lines 1892--1894
 [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][][] [][] [][][][][][][][][][][] [][] [][][][][][][] [][] [][] [][] [][][][] [][] [][][] [][] [][][][] [][] [][][][][][] [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1922--1923
+Underfull \hbox (badness 10000) in paragraph at lines 1924--1925
 [][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][] [][] [][][][][][][][][][][] [][] [][][][][][][][][][][][] [][] [][][][][][][][][] [][] [][][] [][]
  []
 
 [54]
-Underfull \hbox (badness 1221) in paragraph at lines 1945--1946
+Underfull \hbox (badness 1221) in paragraph at lines 1947--1948
 []\TU/lmr/m/n/10 X [equivalence-class.html] [equivalence-class.html#equivalence-class] (@ref(equivalence-class.html))
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1951--1952
+Underfull \hbox (badness 10000) in paragraph at lines 1953--1954
 []\TU/lmr/m/n/10 X [equivalence-relation.html] [equivalence-relation.html#equivalence-relation] (@ref(equivalence-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1955--1956
+Underfull \hbox (badness 10000) in paragraph at lines 1957--1958
 [][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][] [][] [][][][][] [][] [][] [][] [][][][][][][] [][] [][][][][][][] [][] [][][][][][][][] [][] [][][] [][] [][] [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1962--1963
+Underfull \hbox (badness 10000) in paragraph at lines 1964--1965
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][][][][] [][] [][][][] [][] [][][][][][][][] [][] [][][][][][][][][] [][] [][] [][] [][][][][][][][] [][]
  []
 
 [55]
-Underfull \hbox (badness 10000) in paragraph at lines 2008--2009
+Underfull \hbox (badness 10000) in paragraph at lines 2010--2011
 [][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][] [][] [][][] [][] [][][][] [][] [][][] [][] [][][] [][] [][][][][][] [][] [][] [][] [][][][][][][][] [] [][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2016--2017
+Underfull \hbox (badness 10000) in paragraph at lines 2018--2019
 [][]$[][][][][] [] [] [] [][][][][][][][][] [] [][][][][][][] [] [][][] [] [] [] [][][] [][] [][] [][] [][][][][][] [][] [] [][] [][][][][][][][][][][][][] [][] [][] [][] [][][][][] [][] [][] [][] [][][][][][][][] [][] [][] [][] [][][][][][][][][] []
  []
 
@@ -1808,16 +1814,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 2016--2017
 File: 202401280001-test_files/figure-latex/parabola-arc-with-points-1.pdf Graphic file (type pdf)
 <use 202401280001-test_files/figure-latex/parabola-arc-with-points-1.pdf>
 
-Overfull \hbox (13.83699pt too wide) in paragraph at lines 2083--2084
+Overfull \hbox (13.83699pt too wide) in paragraph at lines 2085--2086
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][] [][] [][] [][] [][][] [][] [][] [][] [][][][][][][] [][] [][][][][][][][][][][] [][] [][] [][] [][][] [][] [][][][][][][][][] [][]
  []
 
 [57]
-Underfull \vbox (badness 10000) detected at line 2151
+Underfull \vbox (badness 10000) detected at line 2153
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2151
+Underfull \vbox (badness 10000) detected at line 2153
  []
 
 [58] [59] [60
@@ -1826,7 +1832,7 @@ Underfull \vbox (badness 10000) detected at line 2151
 Chapter 8.
 
 LaTeX Font Warning: Font shape `TU/lmtt/bx/it' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 2184.
+(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 2186.
 
 [61] [62
 
@@ -1939,17 +1945,17 @@ Missing character: There is no 移 (U+79FB) in font [lmroman5-regular]:mapping=t
 ]
 Chapter 12.
 [69]
-Overfull \hbox (71.857pt too wide) in paragraph at lines 2340--2341
+Overfull \hbox (71.857pt too wide) in paragraph at lines 2342--2343
 []\TU/lmr/m/n/10 copy \TU/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tcl8.6
  []
 
 
-Overfull \hbox (62.72699pt too wide) in paragraph at lines 2340--2341
+Overfull \hbox (62.72699pt too wide) in paragraph at lines 2342--2343
 \TU/lmr/m/n/10 and \TU/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\tcl\tk8.6
  []
 
 
-Overfull \hbox (115.777pt too wide) in paragraph at lines 2340--2341
+Overfull \hbox (115.777pt too wide) in paragraph at lines 2342--2343
 \TU/lmr/m/n/10 two folders to the folder \TU/lmtt/m/n/10 C:\Users\RW\AppData\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\Lib 
  []
 
@@ -1965,17 +1971,17 @@ Chapter 13.
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2409--2410
+Underfull \hbox (badness 10000) in paragraph at lines 2425--2426
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][][] [][] [][][] [][] [][][][][][][][] [][] [][][][][][][] [][] [][][][][][][][] [][] [][][][][][][][] [][]
  []
 
 
-Overfull \hbox (40.06696pt too wide) in paragraph at lines 2413--2414
+Overfull \hbox (40.06696pt too wide) in paragraph at lines 2429--2430
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][][][] [] [] [] [][][][][][][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (78.51302pt too wide) in paragraph at lines 2426--2426
+Overfull \hbox (78.51302pt too wide) in paragraph at lines 2442--2442
 []\TU/lmtt/b/n/10 \draw[]\TU/lmtt/m/n/10 [domain=0:4,smooth,variable=[]\TU/lmtt/b/n/10 \t[]\TU/lmtt/m/n/10 ,blue,thick] 
  []
 
@@ -1984,13 +1990,13 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (t
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1014) has occurred while \output is active []
 
 [73]
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1.pdf>
 [74]
-Overfull \hbox (5.01302pt too wide) in paragraph at lines 2505--2506
+Overfull \hbox (5.01302pt too wide) in paragraph at lines 2521--2522
 []\TU/lmtt/m/n/10 out.width=if (knitr:::is_html_output())
  []
 
@@ -2016,7 +2022,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file (
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2804--2804
+Underfull \hbox (badness 10000) in paragraph at lines 2820--2820
 [][]
  []
 
@@ -2028,7 +2034,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file (
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-36-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-36-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2903--2903
+Underfull \hbox (badness 10000) in paragraph at lines 2919--2919
 [][]
  []
 
@@ -2038,7 +2044,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-38-1.pdf Graphic file (
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-40-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-40-1.pdf>
 
-Overfull \hbox (10.26302pt too wide) in paragraph at lines 2990--2990
+Overfull \hbox (10.26302pt too wide) in paragraph at lines 3006--3006
 || ||[]\TU/lmtt/b/n/10 \begin[]\TU/lmtt/m/n/10 {tikzpicture}[dline/.style={color= 
  []
 
@@ -2076,7 +2082,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-58-1.pdf Graphic file (
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 3354--3355
+Underfull \hbox (badness 10000) in paragraph at lines 3370--3371
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [] [][] [][][][][][][][] [][] [][][][][][][][] [][] [][][][] [][] [][][][] [][] [][][][] [][] [][][][][][] [][]
  []
 
@@ -2084,7 +2090,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3354--3355
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-62-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-62-1.pdf>
 
-Overfull \hbox (5.01302pt too wide) in paragraph at lines 3420--3420
+Overfull \hbox (5.01302pt too wide) in paragraph at lines 3436--3436
 || ||[]\TU/lmtt/b/n/10 \begin[]\TU/lmtt/m/n/10 {tikzpicture}[tdplot_main_coords]|  
  []
 
@@ -2098,7 +2104,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-68-1.pdf Graphic file (
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-70-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-70-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 3587--3587
+Underfull \hbox (badness 10000) in paragraph at lines 3603--3603
 [][]
  []
 
@@ -2112,7 +2118,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-72-1.pdf Graphic file (
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [85]
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 3649--3649
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 3665--3665
 []\TU/lmtt/b/n/10 \draw[]\TU/lmtt/m/n/10 [scale=0.5,domain=-3.141:3.141,smooth,variable=[]\TU/lmtt/b/n/10 \t[]\TU/lmtt/m/n/10 ]|  
  []
 
@@ -2120,15 +2126,16 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-74-1.pdf Graphic file (
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-74-1.pdf>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-76-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-76-1.pdf>
+[86]
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-78-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-78-1.pdf>
-[86]
-Overfull \hbox (68.01302pt too wide) in paragraph at lines 3777--3777
+
+Overfull \hbox (68.01302pt too wide) in paragraph at lines 3795--3795
 [][]\TU/lmtt/b/n/10 \mu[][]\TU/lmtt/m/n/10 _{[][]\TU/lmtt/b/n/10 \scriptscriptstyle[][]\TU/lmtt/m/n/10 {0}} 
  []
 
 
-Overfull \hbox (68.01302pt too wide) in paragraph at lines 3778--3778
+Overfull \hbox (68.01302pt too wide) in paragraph at lines 3796--3796
 [][]\TU/lmtt/b/n/10 \mu[][]\TU/lmtt/m/n/10 _{[][]\TU/lmtt/b/n/10 \scriptscriptstyle[][]\TU/lmtt/m/n/10 {1}} 
  []
 
@@ -2138,39 +2145,39 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-80-1.pdf Graphic file (
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [87]
-Underfull \hbox (badness 10000) in paragraph at lines 3822--3823
+Underfull \hbox (badness 10000) in paragraph at lines 3840--3841
  \TU/lmr/bx/n/10 13.4.2.1.1 coordinate system \TU/lmtt/b/n/10 axis description cs[][] [][]$[][][][][] [] [] [] [][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][] [][]
  []
 
 
-Overfull \hbox (83.76302pt too wide) in paragraph at lines 3836--3836
+Overfull \hbox (83.76302pt too wide) in paragraph at lines 3854--3854
 \TU/lmtt/m/n/10 pin/.style={fill=yellow!50!white,rectangle,rounded 
  []
 
 
-Overfull \hbox (36.51302pt too wide) in paragraph at lines 3837--3837
+Overfull \hbox (36.51302pt too wide) in paragraph at lines 3855--3855
 \TU/lmtt/m/n/10 dot/.style={fill=black,circle,scale=0.3},|  
  []
 
 
-Overfull \hbox (5.01302pt too wide) in paragraph at lines 3847--3847
+Overfull \hbox (5.01302pt too wide) in paragraph at lines 3865--3865
 \TU/lmtt/m/n/10 dot,pin=-90:{[]$(1.03,0.5)$[]}] 
  []
 
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-82-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-82-1.pdf>
 [88]
-Overfull \hbox (83.76302pt too wide) in paragraph at lines 3881--3881
+Overfull \hbox (83.76302pt too wide) in paragraph at lines 3899--3899
 \TU/lmtt/m/n/10 pin/.style={fill=yellow!50!white,rectangle,rounded 
  []
 
 
-Overfull \hbox (36.51302pt too wide) in paragraph at lines 3882--3882
+Overfull \hbox (36.51302pt too wide) in paragraph at lines 3900--3900
 \TU/lmtt/m/n/10 dot/.style={fill=black,circle,scale=0.3},|  
  []
 
 
-Overfull \hbox (5.01302pt too wide) in paragraph at lines 3892--3892
+Overfull \hbox (5.01302pt too wide) in paragraph at lines 3910--3910
 \TU/lmtt/m/n/10 dot,pin=-90:{[]$(1.03,0.5)$[]}] 
  []
 
@@ -2185,14 +2192,11 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-86-1.pdf Graphic file (
 
 Underfull \vbox (badness 3168) has occurred while \output is active []
 
-[90]
-Missing character: There is no ⟨ (U+27E8) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⟩ (U+27E9) in font [lmroman10-regular]:mapping=tex-text;!
-[91]
+[90] [91]
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-88-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-88-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 4042--4042
+Underfull \hbox (badness 10000) in paragraph at lines 4060--4060
 [][]
  []
 
@@ -2200,17 +2204,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 4042--4042
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-90-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-90-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 4082--4083
+Underfull \hbox (badness 10000) in paragraph at lines 4100--4101
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][] [][] [][][][] [][] [][][][][][][] [][] [][][][] [][] [][][] [][] [][][] [][] [][][][][][][][] [][] [][][] [][]
  []
 
 [93]
-Underfull \hbox (badness 10000) in paragraph at lines 4100--4101
+Underfull \hbox (badness 10000) in paragraph at lines 4118--4119
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][] [][] [][] [][] [][][] [][] [][][][][][][] [][] [][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][] [][]
  []
 
 
-Overfull \hbox (73.26302pt too wide) in paragraph at lines 4130--4130
+Overfull \hbox (73.26302pt too wide) in paragraph at lines 4148--4148
 \TU/lmtt/m/n/10 cs:0,0}|-interp#1)--(interp#1)--(interp#1|-{axis 
  []
 
@@ -2221,127 +2225,318 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-94-1.pdf Graphic file (
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-94-1.pdf>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-96-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-96-1.pdf>
-[95]
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-98-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-98-1.pdf>
+[95]
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-100-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-100-1.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[96]
-Overfull \hbox (78.51302pt too wide) in paragraph at lines 4366--4366
-[]\TU/lmtt/b/n/10 \pgfpathellipse[]\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisxy[]\TU/lmtt/m/n/10 {0}{0}}|  
- []
-
-
-Overfull \hbox (15.51302pt too wide) in paragraph at lines 4367--4367
-\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisdirectionxy[]\TU/lmtt/m/n/10 {1}{0}}|  
- []
-
-
-Overfull \hbox (15.51302pt too wide) in paragraph at lines 4368--4368
-\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisdirectionxy[]\TU/lmtt/m/n/10 {0}{2}}|  
- []
-
-
-Overfull \hbox (78.51302pt too wide) in paragraph at lines 4374--4374
-[]\TU/lmtt/b/n/10 \pgfpathellipse[]\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisxy[]\TU/lmtt/m/n/10 {0}{0}}|  
- []
-
-
-Overfull \hbox (15.51302pt too wide) in paragraph at lines 4375--4375
-\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisdirectionxy[]\TU/lmtt/m/n/10 {1}{1}}|  
- []
-
-
-Overfull \hbox (15.51302pt too wide) in paragraph at lines 4376--4376
-\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisdirectionxy[]\TU/lmtt/m/n/10 {0}{2}}|  
- []
-
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-102-1.pdf Graphic file (type pdf)
 <use 202401311000-TikZ_files/figure-latex/unnamed-chunk-102-1.pdf>
+[96]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-104-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-104-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-106-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-106-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-108-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-108-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [97]
-Overfull \hbox (637.637pt too wide) in paragraph at lines 4424--4424
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-110-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-110-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-112-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-112-1.pdf>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4562--4562
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[98]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-114-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-114-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-116-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-116-1.pdf>
+
+Underfull \vbox (badness 6477) has occurred while \output is active []
+
+[99]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-118-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-118-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-120-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-120-1.pdf>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4728--4728
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[100]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-122-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-122-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-124-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-124-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[101]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-126-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-126-1.pdf>
+
+Overfull \hbox (26.01302pt too wide) in paragraph at lines 4872--4872
+\TU/lmtt/m/n/10 ymin=0,ymax=0,xmin=-2.3*pi,xmax=2.3*pi,|  
+ []
+
+
+Overfull \hbox (62.76302pt too wide) in paragraph at lines 4874--4874
+\TU/lmtt/m/n/10 xticklabels={[]$-2[][]\TU/lmtt/b/n/10 \pi[][]\TU/lmtt/m/n/10 $[],[]$-[][]\TU/lmtt/b/n/10 \pi[][]\TU/lmtt/m/n/10 $[],[]$0$[],[]$[][]\TU/lmtt/b/n/10 \pi[][]\TU/lmtt/m/n/10 $[],[]$2[][]\TU/lmtt/b/n/10 \pi[][]\TU/lmtt/m/n/10 $[]},|  
+ []
+
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-128-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-128-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[102]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-130-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-130-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[103]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-132-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-132-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-134-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-134-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[104]
+Overfull \hbox (10.26302pt too wide) in paragraph at lines 5053--5053
+\TU/lmtt/m/n/10 marks,domain=-2:2,samples=5]|  
+ []
+
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-136-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-136-1.pdf>
+
+Underfull \hbox (badness 10000) in paragraph at lines 5070--5070
+[][]
+ []
+
+
+Overfull \hbox (15.51302pt too wide) in paragraph at lines 5089--5089
+\TU/lmtt/m/n/10 marks,domain=-2:2,samples=55]|  
+ []
+
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-138-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-138-1.pdf>
+
+Underfull \hbox (badness 10000) in paragraph at lines 5106--5106
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[105]
+Overfull \hbox (36.51302pt too wide) in paragraph at lines 5125--5125
+\TU/lmtt/m/n/10 marks,variable=t,domain=0:pi*3/2,|  
+ []
+
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-140-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-140-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-142-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-142-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[106]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-144-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-144-1.pdf>
+
+Underfull \hbox (badness 10000) in paragraph at lines 5226--5226
+[][]
+ []
+
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-146-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-146-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[107]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-148-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-148-1.pdf>
+
+Overfull \hbox (62.76302pt too wide) in paragraph at lines 5322--5322
+\TU/lmtt/m/n/10 xticklabels={[]$-[][]\TU/lmtt/b/n/10 \pi[][]\TU/lmtt/m/n/10 $[],[]$-[][]\TU/lmtt/b/n/10 \pi[][]\TU/lmtt/m/n/10 /2$[],0,[]$[][]\TU/lmtt/b/n/10 \pi[][]\TU/lmtt/m/n/10 /2$[],[]$[][]\TU/lmtt/b/n/10 \pi[][]\TU/lmtt/m/n/10 $[]},|  
+ []
+
+
+Overfull \hbox (41.76302pt too wide) in paragraph at lines 5327--5327
+\TU/lmtt/m/n/10 markers,domain=-pi:pi,samples=100]|  
+ []
+
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-150-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-150-1.pdf>
+
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+[108]
+Overfull \hbox (36.51302pt too wide) in paragraph at lines 5369--5369
+\TU/lmtt/m/n/10 [pin=90:[]$[][]\TU/lmtt/b/n/10 \dfrac[][]\TU/lmtt/m/n/10 {x^2}{4}+y^2{=}1$[]]|  
+ []
+
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-152-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-152-1.pdf>
+
+Underfull \hbox (badness 10000) in paragraph at lines 5386--5386
+[][]
+ []
+
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-154-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-154-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[109]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-156-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-156-1.pdf>
+
+Overfull \hbox (47.01302pt too wide) in paragraph at lines 5487--5487
+\TU/lmtt/m/n/10 ({sin(y)*cos(x)},{sin(y)*sin(x)},{cos(y)});|  
+ []
+
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-158-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-158-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[110]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-160-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-160-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-162-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-162-1.pdf>
+
+Underfull \vbox (badness 2635) has occurred while \output is active []
+
+[111]
+Overfull \hbox (78.51302pt too wide) in paragraph at lines 5614--5614
+[]\TU/lmtt/b/n/10 \pgfpathellipse[]\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisxy[]\TU/lmtt/m/n/10 {0}{0}}|  
+ []
+
+
+Overfull \hbox (15.51302pt too wide) in paragraph at lines 5615--5615
+\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisdirectionxy[]\TU/lmtt/m/n/10 {1}{0}}|  
+ []
+
+
+Overfull \hbox (15.51302pt too wide) in paragraph at lines 5616--5616
+\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisdirectionxy[]\TU/lmtt/m/n/10 {0}{2}}|  
+ []
+
+
+Overfull \hbox (78.51302pt too wide) in paragraph at lines 5622--5622
+[]\TU/lmtt/b/n/10 \pgfpathellipse[]\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisxy[]\TU/lmtt/m/n/10 {0}{0}}|  
+ []
+
+
+Overfull \hbox (15.51302pt too wide) in paragraph at lines 5623--5623
+\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisdirectionxy[]\TU/lmtt/m/n/10 {1}{1}}|  
+ []
+
+
+Overfull \hbox (15.51302pt too wide) in paragraph at lines 5624--5624
+\TU/lmtt/m/n/10 {[]\TU/lmtt/b/n/10 \pgfplotspointaxisdirectionxy[]\TU/lmtt/m/n/10 {0}{2}}|  
+ []
+
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-164-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-164-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[112]
+Overfull \hbox (637.637pt too wide) in paragraph at lines 5672--5672
 []\TU/lmtt/m/n/10 Error: ImportError: cannot import name []common_texification[] from []matplotlib.backends.backend_pgf[] (D:\Users\115381\Documents\.virtualenvs\r-reticulate\lib\site-packages\matplotlib\backends\backend_pgf.py)[] 
  []
 
-[98]
-Overfull \hbox (24.77701pt too wide) in paragraph at lines 4429--4430
+[113]
+Overfull \hbox (24.77701pt too wide) in paragraph at lines 5677--5678
 \TU/lmr/m/n/10 nix-ld + export LD_LIBRARY_PATH=“$[][][][][][][][][][][][][] []$NIX_LD_LIBRARY_PATH”) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4432--4433
+Underfull \hbox (badness 10000) in paragraph at lines 5680--5681
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][] [][] [] [][] [][][][][][][][][][] [][] [][][][][][][] [][] [][] [][] [][][][][][] [][] [][][][][][][] [][] [][] [][] [] [][]
  []
 
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-106-1.pdf Graphic file (type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-106-1.pdf>
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-168-1.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-168-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[99]
-Overfull \hbox (81.137pt too wide) in paragraph at lines 4487--4487
+[114]
+Overfull \hbox (81.137pt too wide) in paragraph at lines 5736--5736
 []\TU/lmtt/m/n/10 ## []% This file was created with tikzplotlib v0.10.1.\n\\begin{tikzpicture}\n\n\\end{tikzpicture}\n[][] 
  []
 
-[100]
-File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-108-3.pdf Graphic file (type pdf)
-<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-108-3.pdf>
+[115]
+File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-170-3.pdf Graphic file (type pdf)
+<use 202401311000-TikZ_files/figure-latex/unnamed-chunk-170-3.pdf>
 
-Overfull \hbox (81.137pt too wide) in paragraph at lines 4530--4530
+Overfull \hbox (81.137pt too wide) in paragraph at lines 5779--5779
 []\TU/lmtt/m/n/10 ## []% This file was created with tikzplotlib v0.10.1.\n\\begin{tikzpicture}\n\n\\end{tikzpicture}\n[][] 
  []
 
-[101] [102
-
-]
+[116]
 Chapter 14.
-<xymatrix 3x3 320> [103] [104
+<xymatrix 3x3 320> [117
+
+] [118
 
 ]
 Chapter 15.
-[105] [106
+[119] [120
 
 ]
 Chapter 16.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 4577.
+(Font)              scaled to size 12.0pt on input line 5826.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 4577.
+(Font)              scaled to size 8.0pt on input line 5826.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 6.0pt on input line 4577.
+(Font)              scaled to size 6.0pt on input line 5826.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 12.0011pt on input line 4577.
+(Font)              scaled to size 12.0011pt on input line 5826.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 8.00073pt on input line 4577.
+(Font)              scaled to size 8.00073pt on input line 5826.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 6.00055pt on input line 4577.
+(Font)              scaled to size 6.00055pt on input line 5826.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 11.99872pt on input line 4577.
+(Font)              scaled to size 11.99872pt on input line 5826.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 7.99915pt on input line 4577.
+(Font)              scaled to size 7.99915pt on input line 5826.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 5.99936pt on input line 4577.
-[107] [108]
+(Font)              scaled to size 5.99936pt on input line 5826.
+[121] [122]
 Chapter 17.
-[109
+[123
 
-] [110
+] [124
 
 ]
 Chapter 18.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 4609.
+(Font)              scaled to size 14.4pt on input line 5858.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.4013pt on input line 4609.
+(Font)              scaled to size 14.4013pt on input line 5858.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 4609.
-[111] [112
+(Font)              scaled to size 14.39845pt on input line 5858.
+[125] [126
 
 ]
 Chapter 19.
@@ -2358,43 +2553,43 @@ Missing character: There is no 識 (U+8B58) in font [lmroman10-regular]:mapping=
 Missing character: There is no 的 (U+7684) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 美 (U+7F8E) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 好 (U+597D) in font [lmroman10-regular]:mapping=tex-text;!
-[113] [114] [115] [116] [117] [118]
+[127] [128] [129] [130] [131] [132]
 File: 202402211401-R_files/figure-latex/unnamed-chunk-19-1.pdf Graphic file (type pdf)
 <use 202402211401-R_files/figure-latex/unnamed-chunk-19-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[119]
+[133]
 File: 202402211401-R_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (type pdf)
 <use 202402211401-R_files/figure-latex/unnamed-chunk-20-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[120]
+[134]
 File: 202402211401-R_files/figure-latex/unnamed-chunk-21-1.pdf Graphic file (type pdf)
 <use 202402211401-R_files/figure-latex/unnamed-chunk-21-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[121]
+[135]
 File: 202402211401-R_files/figure-latex/unnamed-chunk-21-2.pdf Graphic file (type pdf)
 <use 202402211401-R_files/figure-latex/unnamed-chunk-21-2.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[122]
+[136]
 File: 202402211401-R_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (type pdf)
 <use 202402211401-R_files/figure-latex/unnamed-chunk-22-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[123]
+[137]
 File: 202402211401-R_files/figure-latex/unnamed-chunk-23-1.pdf Graphic file (type pdf)
 <use 202402211401-R_files/figure-latex/unnamed-chunk-23-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[124] [125] [126] [127] [128] [129] [130] [131] [132] [133] [134] [135] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[138] [139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -2402,11 +2597,11 @@ File: UTF8.chr 2021/10/16 4.8.5
 Missing character: There is no 演 (U+6F14) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 習 (U+7FD2) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 室 (U+5BA4) in font [lmroman10-regular]:mapping=tex-text;!
-[136] [137] [138
+[150] [151] [152
 
 ]
 Chapter 20.
-[139] [140
+[153] [154
 
 ]
 Chapter 21.
@@ -2440,14 +2635,14 @@ Missing character: There is no 率 (U+7387) in font [lmroman10-regular]:mapping=
 
 Underfull \vbox (badness 4316) has occurred while \output is active []
 
-[141] [142] [143]
-Underfull \hbox (badness 10000) in paragraph at lines 6219--6220
+[155] [156] [157]
+Underfull \hbox (badness 10000) in paragraph at lines 7468--7469
 [][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] [] [][][][][] [][] [][][][] [][] [][][] [][] [][][][][][][][][] [][] [][][][][] [][] [][][] [][] [][][][][] [][] [][][][][] [][]
  []
 
 File: img/conic-sections.pdf Graphic file (type pdf)
 <use img/conic-sections.pdf>
-[144] [145] [146] [147]
+[158] [159] [160] [161]
 File: img/conic-sections-ellipse.pdf Graphic file (type pdf)
 <use img/conic-sections-ellipse.pdf>
 File: img/conic-sections-parabola.pdf Graphic file (type pdf)
@@ -2455,11 +2650,11 @@ File: img/conic-sections-parabola.pdf Graphic file (type pdf)
 File: img/conic-sections-hyperbola.pdf Graphic file (type pdf)
 <use img/conic-sections-hyperbola.pdf>
 
-Overfull \hbox (65.00581pt too wide) detected at line 6569
+Overfull \hbox (65.00581pt too wide) detected at line 7818
 []
  []
 
-[148] [149] [150]
+[162] [163] [164]
 File: img/conic-sections-polar-ellipse.pdf Graphic file (type pdf)
 <use img/conic-sections-polar-ellipse.pdf>
 File: img/conic-sections-polar-parabola.pdf Graphic file (type pdf)
@@ -2475,7 +2670,7 @@ Missing character: There is no 圓 (U+5713) in font [lmroman10-regular]:mapping=
 Missing character: There is no 錐 (U+9310) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 曲 (U+66F2) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 線 (U+7DDA) in font [lmroman10-regular]:mapping=tex-text;!
-[151] [152] [153] [154] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[165] [166] [167] [168] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -2484,7 +2679,7 @@ Missing character: There is no 圓 (U+5713) in font [lmroman10-regular]:mapping=
 Missing character: There is no 錐 (U+9310) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 曲 (U+66F2) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 線 (U+7DDA) in font [lmroman10-regular]:mapping=tex-text;!
-[155] [156
+[169] [170
 
 ]
 Chapter 22.
@@ -2499,7 +2694,7 @@ Missing character: There is no 直 (U+76F4) in font [lmroman10-regular]:mapping=
 Missing character: There is no 線 (U+7DDA) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 距 (U+8DDD) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 離 (U+96E2) in font [lmroman10-regular]:mapping=tex-text;!
-[157] [158] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[171] [172] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -2531,12 +2726,12 @@ Missing character: There is no 長 (U+9577) in font [lmroman10-regular]:mapping=
 
 Underfull \vbox (badness 5460) has occurred while \output is active []
 
-[159]
-Overfull \hbox (18.137pt too wide) in paragraph at lines 6972--6972
+[173]
+Overfull \hbox (18.137pt too wide) in paragraph at lines 8221--8221
 []\TU/lmtt/m/n/10 % replace the rather ugly mathptmx \sum operator with the equivalent Computer Modern one[] 
  []
 
-[160]
+[174]
 Chapter 23.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -2558,7 +2753,7 @@ Missing character: There is no 的 (U+7684) in font [lmroman10-regular]:mapping=
 Missing character: There is no 證 (U+8B49) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 明 (U+660E) in font [lmroman10-regular]:mapping=tex-text;!
 
-Overfull \hbox (2.397pt too wide) in paragraph at lines 7002--7003
+Overfull \hbox (2.397pt too wide) in paragraph at lines 8251--8252
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][] [] [][][][] [][] [][] [][] [][][] [][] [][][][] [][] [][][][][][] [][] [][][] [][] [][][][][][] [][] [][][][][][] [][] [][][][][][][][][]$[][] 
  []
 
@@ -2596,7 +2791,7 @@ Missing character: There is no 。 (U+3002) in font [lmroman10-italic]:mapping=t
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[161
+[175
 
 ] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -2656,7 +2851,7 @@ Missing character: There is no 為 (U+70BA) in font [lmroman10-italic]:mapping=t
 Missing character: There is no 正 (U+6B63) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 交 (U+4EA4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 。 (U+3002) in font [lmroman10-italic]:mapping=tex-text;!
-[162] [163] [164]
+[176] [177] [178]
 Chapter 24.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -2694,40 +2889,229 @@ Missing character: There is no 以 (U+4EE5) in font [lmroman10-regular]:mapping=
 Missing character: There is no 切 (U+5207) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 表 (U+8868) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 弦 (U+5F26) in font [lmroman10-regular]:mapping=tex-text;!
-[165
+[179
 
-] [166
+] [180
 
 ]
 Chapter 25.
-[167] [168
+[181] [182
 
 ]
 Chapter 26.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7207--7208
+Underfull \hbox (badness 10000) in paragraph at lines 8456--8457
 [][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] [] [][][][][] [][] [][][] [][] [][][] [][] [][][][][] [][] [][] [][] [][][][][][][][] [][] [][][][][][][] [][] [][][] [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7209--7210
+Underfull \hbox (badness 10000) in paragraph at lines 8458--8459
 [][][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] [] [][][][][][][] [][] [][][] [][] [][][][][][][][][][][] [][] [][][][][][][][][][] [][] [][] [][]
  []
 
-[169] [170
+[183] [184
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 7221--7221
+Chapter 27.
+(d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+Missing character: There is no 巫 (U+5DEB) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 孟 (U+5B5F) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 叡 (U+53E1) in font [lmroman10-regular]:mapping=tex-text;!
+File: img/matplotlib-figure-anatomy.png Graphic file (type bmp)
+<img/matplotlib-figure-anatomy.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 8503--8503
+[][]
+ []
+
+File: img/matplotlib-subplot-anatomy.png Graphic file (type bmp)
+<img/matplotlib-subplot-anatomy.png>
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-4-1.pdf>
+[185] [186]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-6-3.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-6-3.pdf>
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-8-5.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-8-5.pdf>
+[187]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-9-7.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-9-7.pdf>
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-10-9.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-10-9.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[188] [189]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-13-11.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-13-11.pdf>
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-15-13.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-15-13.pdf>
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-17-15.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-17-15.pdf>
+
+Underfull \vbox (badness 3281) has occurred while \output is active []
+
+[190]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-20-17.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-20-17.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[191]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-22-19.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-22-19.pdf>
+[192] [193]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-29-21.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-29-21.pdf>
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-30-23.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-30-23.pdf>
+[194]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-32-25.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-32-25.pdf>
+
+Overfull \hbox (2511.887pt too wide) in paragraph at lines 9146--9146
+[]\TU/lmtt/m/n/10 ## [[]Solarize_Light2[], []_classic_test_patch[], []_mpl-gallery[], []_mpl-gallery-nogrid[], []bmh[], []classic[], []dark_background[], []fast[], []fivethirtyeight[], []ggplot[], []grayscale[], []seaborn-v0_8[], []seaborn-v0_8-bright[], []seaborn-v0_8-colorblind[], []seaborn-v0_8-dark[], []seaborn-v0_8-dark-palette[], []seaborn-v0_8-darkgrid[], []seaborn-v0_8-deep[], []seaborn-v0_8-muted[], []seaborn-v0_8-notebook[], []seaborn-v0_8-paper[], []seaborn-v0_8-pastel[], []seaborn-v0_8-poster[], []seaborn-v0_8-talk[], []seaborn-v0_8-ticks[], []seaborn-v0_8-white[], []seaborn-v0_8-whitegrid[], []tableau-colorblind10[]][] 
+ []
+
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-35-27.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-35-27.pdf>
+
+Underfull \vbox (badness 1990) has occurred while \output is active []
+
+[195] [196]
+File: img/seaborn-plot-type.png Graphic file (type bmp)
+<img/seaborn-plot-type.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 9257--9257
+[][]
+ []
+
+[197]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-43-1.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-43-1.pdf>
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-45-1.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-45-1.pdf>
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ##      total_bill   tip     sex smoker   day    time  size[] 
+ []
+
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ## 0         16.99  1.01  Female     No   Sun  Dinner     2[] 
+ []
+
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ## 1         10.34  1.66    Male     No   Sun  Dinner     3[] 
+ []
+
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ## 2         21.01  3.50    Male     No   Sun  Dinner     3[] 
+ []
+
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ## 3         23.68  3.31    Male     No   Sun  Dinner     2[] 
+ []
+
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ## 4         24.59  3.61  Female     No   Sun  Dinner     4[] 
+ []
+
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ## ..          ...   ...     ...    ...   ...     ...   ...[] 
+ []
+
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ## 239       29.03  5.92    Male     No   Sat  Dinner     3[] 
+ []
+
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ## 240       27.18  2.00  Female    Yes   Sat  Dinner     2[] 
+ []
+
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ## 241       22.67  2.00    Male    Yes   Sat  Dinner     2[] 
+ []
+
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ## 242       17.82  1.75    Male     No   Sat  Dinner     2[] 
+ []
+
+
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 9406--9406
+[]\TU/lmtt/m/n/10 ## 243       18.78  3.00  Female     No  Thur  Dinner     2[] 
+ []
+
+[198]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-49-1.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-49-1.pdf>
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-51-3.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-51-3.pdf>
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-53-5.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-53-5.pdf>
+[199]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-55-7.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-55-7.pdf>
+File: img/seaborn-plot-type.png Graphic file (type bmp)
+<img/seaborn-plot-type.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 9603--9603
+[][]
+ []
+
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-60-1.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-60-1.pdf>
+
+Underfull \vbox (badness 2126) has occurred while \output is active []
+
+[200] [201]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-62-3.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-62-3.pdf>
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-64-5.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-64-5.pdf>
+[202]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-66-7.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-66-7.pdf>
+
+Overfull \hbox (5.01302pt too wide) in paragraph at lines 9791--9791
+[]\TU/lmtt/m/n/10 ## <class []seaborn.axisgrid.FacetGrid[]>[] 
+ []
+
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-70-1.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-70-1.pdf>
+
+Overfull \hbox (117.25996pt too wide) in paragraph at lines 9807--9833
+ \TU/lmr/bx/n/10 27.1.3.5.1 histogram[][] $[]$$[]$$[]$ 
+ []
+
+[203]
+File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-72-3.pdf Graphic file (type pdf)
+<use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-72-3.pdf>
+[204]
+Underfull \hbox (badness 10000) in paragraph at lines 9875--9875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7225--7225
+Underfull \hbox (badness 10000) in paragraph at lines 9879--9879
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7229--7229
+Underfull \hbox (badness 10000) in paragraph at lines 9883--9883
 
  []
 
@@ -2740,7 +3124,7 @@ Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=
 Missing character: There is no 矩 (U+77E9) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 陣 (U+9663) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 7233--7233
+Underfull \hbox (badness 10000) in paragraph at lines 9887--9887
 
  []
 
@@ -2752,13 +3136,15 @@ Missing character: There is no 態 (U+614B) in font [lmroman10-regular]:mapping=
 Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 7237--7237
+Underfull \hbox (badness 10000) in paragraph at lines 9891--9891
 
  []
 
-[171]
+[205
 
-LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (165 not 171).
+]
+
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (199 not 205).
                Rerun to correct this.
 
 (./math.aux)
@@ -2771,12 +3157,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 47811 strings out of 476771
- 1109862 string characters out of 5800904
+ 48535 strings out of 476771
+ 1150852 string characters out of 5800904
  1978842 words of memory out of 5000000
- 68866 multiletter control sequences out of 15000+600000
+ 69527 multiletter control sequences out of 15000+600000
  571101 words of font info for 142 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,22n,121p,957b,961s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on math.pdf (171 pages).
+Output written on math.pdf (205 pages).

@@ -1,5 +1,9 @@
 # TikZ
 
+- TikZ
+  - [PGFplots]^[\@ref(pgfplots)]^
+  - tikzplotlib^[\@ref(tikzplotlib)]^: [Python]^[\@ref(python)]^ matplotlib^[\@ref(matplotlib)]^ export to [TikZ]^[\@ref(tikz)]^ .tex
+
 multi-column \@ref(multi-column)
 
 ```{r}
@@ -1297,6 +1301,8 @@ https://tikz.dev/tikz-plots#sec-22.5
 
 ## PGFplots
 
+axis similar to matplotlib figure anatomy, see Fig: \@ref(fig:matplotlib-figure-anatomy)
+
 https://tikz.dev/pgfplots/
 
 https://tikz.dev/pgfplots/tutorial1
@@ -1654,7 +1660,7 @@ like `pgfplotsinvokeforeach`
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '90%', fig.cap='PGFmathDeclareFunction', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '90%', fig.cap='PGFmathDeclareFunction: normal distributions hypothesis testing', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
 % pgfmathdeclarefunction{name}{num_var}{%
 %% #1 = \mu, #2 = \sigma
 \pgfmathdeclarefunction{gauss}{2}{%
@@ -1724,7 +1730,7 @@ https://tex.stackexchange.com/questions/43610/plotting-bell-shaped-curve-in-tikz
 \end{tikzpicture}
 ```
 
-```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '90%', fig.cap='PGFmathDeclareFunction', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '90%', fig.cap='PGFmathDeclareFunction: normal distributions', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
 % pgfmathdeclarefunction{name}{num_var}{%
 %% #1 = \mu, #2 = \sigma
 \pgfmathdeclarefunction{gauss}{2}{%
@@ -1806,7 +1812,7 @@ https://tex.stackexchange.com/questions/193259/what-is-the-easiest-way-to-accomp
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='tick texts and interpolation dashed lines', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
 \begin{tikzpicture}
 \begin{axis}[
     axis lines=left,
@@ -1833,11 +1839,725 @@ https://tex.stackexchange.com/questions/193259/what-is-the-easiest-way-to-accomp
 :::
 ::::::
 
-## Zewbie
+### Zewbie
 
 https://zhuanlan.zhihu.com/p/551874337
 
-### `addplot+`
+axis similar to matplotlib figure anatomy, see Fig: \@ref(fig:matplotlib-figure-anatomy)
+
+#### coordinate axis/axes fine-tuing
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: 2D axis/axes', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+##### range
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+##### scaling
+
+`axis equal image` equivalent to `unit vector ratio = {1 1 1}`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+        axis equal image, % unit vector ratio = {1 1 1},
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+        axis equal image, % unit vector ratio = {1 1 1},
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`scale only axis`
+
+`width` x axis length, `height` y axis length
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+        scale only axis,
+        width = 5cm, height = 7cm,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+        scale only axis,
+        width = 5cm, height = 7cm,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`x` x unit vector length, `y` y unit vector length
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+        x = 1cm, y = 1cm,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+        x = 1cm, y = 1cm,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+##### direction vector
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+        x={(.2cm,-.1cm)}, y={(.5cm,.5cm)},
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+        x={(.2cm,-.1cm)}, y={(.5cm,.5cm)},
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`unit vector ratio = {1 1}`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+        unit vector ratio = {1 1},
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+        unit vector ratio = {1 1},
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+##### axis style
+
+`axis lines` to assign all axes, either `axis lines = box`(default), `axis lines = center`(axis lines with arrows, `center`, x: `bottom`, `top`, y: ), or `axis lines = none`(not shown), or even axis lines wihtout arrows `axis lines *= center`
+
+`axis x line`, `axis y line` to assign the respect axis, e.g. `axis x line = center`
+
+`axis lines = center`:
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis lines = center,
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis lines = center,
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+`axis lines *= center`:
+
+x axis line without arrow, y axis box
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis x line* = center, % x axis line without arrow, y axis box
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis x line* = center, % x axis line without arrow, y axis box
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+x axis line with arrow, y axis line without arrow
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis x line = center, % x axis line with arrow
+        axis y line* = center, % y axis line without arrow
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis x line = center, % x axis line with arrow
+        axis y line* = center, % y axis line without arrow
+        xmin = -1, xmax = 11,
+        ymin = -3, ymax = 1,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+##### axis discontinuity
+
+`crunch`, `parallel`, `none`
+
+`crunch`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis x line = bottom,
+        axis y line = center,
+        xmin = -2, xmax = 10,
+        ymin =  0, ymax = 12,
+        axis y discontinuity = crunch,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis x line = bottom,
+        axis y line = center,
+        xmin = -2, xmax = 10,
+        ymin =  0, ymax = 12,
+        axis y discontinuity = crunch,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`parallel`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis x line = bottom,
+        axis y line = center,
+        xmin = -2, xmax = 10,
+        ymin =  0, ymax = 12,
+        axis y discontinuity = parallel,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis x line = bottom,
+        axis y line = center,
+        xmin = -2, xmax = 10,
+        ymin =  0, ymax = 12,
+        axis y discontinuity = parallel,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+##### tick
+
+`tick pos` `ticklabel pos`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        xtick pos = upper,
+        yticklabel pos = upper,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        xtick pos = upper,
+        yticklabel pos = upper,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`tick distance`
+
+`tick align`: `inside`, `center`, `outside`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis lines=center,
+        xmin=-1,xmax=3,
+        ymin=-3,ymax=3,
+        xtick distance=.8,
+        ytick distance=1.1,
+        tick align=inside,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis lines=center,
+        xmin=-1,xmax=3,
+        ymin=-3,ymax=3,
+        xtick distance=.8,
+        ytick distance=1.1,
+        tick align=inside,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`minor tick num`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=none,axis x line=center,
+        ymin=0,ymax=0,xmin=-3,xmax=3,
+        xtick distance=2,tick align=inside,
+        minor tick num=2,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=none,axis x line=center,
+        ymin=0,ymax=0,xmin=-3,xmax=3,
+        xtick distance=2,tick align=inside,
+        minor tick num=2,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`xtick=\empty|data|{<coordinates>}`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=none,axis x line=center,
+        ymin=0,ymax=0,xmin=-3,xmax=3,
+        xtick={-2.5,0,1},minor xtick={1/3,2/3},
+        tick align=inside,
+        ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=none,axis x line=center,
+        ymin=0,ymax=0,xmin=-3,xmax=3,
+        xtick={-2.5,0,1},minor xtick={1/3,2/3},
+        tick align=inside,
+        ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`extra x ticks={<coordinates>}`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=none,axis x line=center,
+        ymin=0,ymax=0,xmin=-2.3,xmax=4.9,
+        xtick distance=2,minor tick num=1,
+        extra x ticks={e,pi},
+        extra x tick labels={$e$,$\pi$},
+        tick align=inside,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=none,axis x line=center,
+        ymin=0,ymax=0,xmin=-2.3,xmax=4.9,
+        xtick distance=2,minor tick num=1,
+        extra x ticks={e,pi},
+        extra x tick labels={$e$,$\pi$},
+        tick align=inside,
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`ticklabels={<labels>}` `extra x tick labels={<labels>}`
+
+`hide obscured x ticks = false` for origin x tick label
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=none,axis x line=center,
+        ymin=0,ymax=0,xmin=-2.3*pi,xmax=2.3*pi,
+        xtick distance=pi,
+        xticklabels={$-2\pi$,$-\pi$,$0$,$\pi$,$2\pi$},
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='PGFplots: axis/axes range', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        axis y line=none,axis x line=center,
+        ymin=0,ymax=0,xmin=-2.3*pi,xmax=2.3*pi,
+        xtick distance=pi,
+        xticklabels={$-2\pi$,$-\pi$,$0$,$\pi$,$2\pi$},
+    ]
+        % empty
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+#### `addplot+`
 
 > What does addplot+ do exactly?
 
@@ -1847,7 +2567,7 @@ https://tikz.dev/pgfplots/reference-addplot#\addplot+
 
 > Every `\addplot` directive receives a pre-defined style (line color, marker style etc) through a pre-defined cycle list that is automatically chosen depending on the index of the current `\addplot` instruction. If you want to add some of your styles manually (like I want red colour instead of blue, say), you can add them through options to `\addplot` like `\addplot[<your options>]`. Now the question is whether you want your own style (your options) to be appended to or replace one of these cycle lists assigned. This is decided by the + sign. If you use `\addplot+ [<your options>]`, your style is appended to and by `\addplot[<your options>]` , your options will replace the assigned cycle list.
 
-### point
+#### point
 
 `only marks` only points without lines
 
@@ -1881,7 +2601,7 @@ zero y axis range `ymin=0, ymax=0` and `axis y line=none`, making 1D x axis
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='PGFplots: 1D points with pins', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
 \begin{tikzpicture}
     \begin{axis}[ 
         xlabel=$x$,
@@ -1931,7 +2651,7 @@ zero y axis range `ymin=0, ymax=0` and `axis y line=none`, making 1D x axis
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='PGFplots: 2D points', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
 \begin{tikzpicture}
     \begin{axis}[
         xlabel=$x$, ylabel=$y$,
@@ -1970,7 +2690,7 @@ zero y axis range `ymin=0, ymax=0` and `axis y line=none`, making 1D x axis
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='PGFplots: data points', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
 \begin{tikzpicture}
     \begin{axis}[axis equal image]
         \addplot+ [only marks]
@@ -2004,7 +2724,7 @@ zero y axis range `ymin=0, ymax=0` and `axis y line=none`, making 1D x axis
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='PGFplots: function sampling 5 points', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
 \begin{tikzpicture}
     \begin{axis}[title=5 sampling points,
         xlabel=$x$,ylabel=$y$,
@@ -2022,7 +2742,6 @@ zero y axis range `ymin=0, ymax=0` and `axis y line=none`, making 1D x axis
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
 ```{tex}
-
 \begin{tikzpicture}
     \begin{axis}[title=55 sampling points,
         xlabel=$x$,ylabel=$y$,
@@ -2039,7 +2758,7 @@ zero y axis range `ymin=0, ymax=0` and `axis y line=none`, making 1D x axis
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='declare function', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='PGFplots: function sampling 55 points', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
 \begin{tikzpicture}
     \begin{axis}[title=55 sampling points,
         xlabel=$x$,ylabel=$y$,
@@ -2052,13 +2771,497 @@ zero y axis range `ymin=0, ymax=0` and `axis y line=none`, making 1D x axis
 :::
 ::::::
 
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        trig format plots=rad,  % angle in radian
+        axis equal image]
+        \addplot+ [only marks,variable=t,domain=0:pi*3/2,
+            samples=20] ({cos(t)},{sin(t)});
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='PGFplots: parametric function sampling', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        trig format plots=rad,  % angle in radian
+        axis equal image]
+        \addplot+ [only marks,variable=t,domain=0:pi*3/2,
+            samples=20] ({cos(t)},{sin(t)});
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel=$x$,ylabel=$y$,zlabel=$z$,
+        axis lines=center,
+        tick align=inside,
+        xmin=-1.5,xmax=3.9,
+        ymin=-1.5,ymax=3.9,
+        zmin=-0.5,zmax=3.9,
+        xtick distance=1,
+        ytick distance=1,
+        ztick distance=1,
+        % width=10cm,
+        % scale only axis,
+        view={120}{30},  % perspective angle
+        axis equal image,]
+        \addplot3+ coordinates{(1,0,0)};
+        \addplot3+ coordinates{(0,1,0)};
+        \addplot3+ coordinates{(0,0,1)};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='PGFplots: 3D points', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel=$x$,ylabel=$y$,zlabel=$z$,
+        axis lines=center,
+        tick align=inside,
+        xmin=-1.5,xmax=3.9,
+        ymin=-1.5,ymax=3.9,
+        zmin=-0.5,zmax=3.9,
+        xtick distance=1,
+        ytick distance=1,
+        ztick distance=1,
+        % width=10cm,
+        % scale only axis,
+        view={120}{30},  % perspective angle
+        axis equal image
+        ]
+        \addplot3+ coordinates{(1,0,0)};
+        \addplot3+ coordinates{(0,1,0)};
+        \addplot3+ coordinates{(0,0,1)};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel=$x$,ylabel=$y$,zlabel=$z$,
+        grid=major
+        ]
+        \addplot3+ [only marks] {x^2+y^2};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='PGFplots: 3D function sampling points', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel=$x$,ylabel=$y$,zlabel=$z$,
+        grid=major
+        ]
+        \addplot3+ [only marks] {x^2+y^2};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+#### line
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[ytick=data]
+        \addplot coordinates {
+            (1,0.15) (2,0.21) (3,0.33) (4,0.4)
+
+            (2.5,.1) (3.5,.1)
+        };
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='lines connecting adjacent points', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[ytick=data]
+        \addplot coordinates {
+            (1,0.15) (2,0.21) (3,0.33) (4,0.4)
+
+            (2.5,.1) (3.5,.1)
+        };
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`smooth` to make smooth curves or lines
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[ytick=data]
+        \addplot+ [smooth] coordinates {
+            (1,0.15) (2,0.21) (3,0.33) (4,0.4)};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='smooth lines connecting adjacent points', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[ytick=data]
+        \addplot+ [smooth] coordinates {
+            (1,0.15) (2,0.21) (3,0.33) (4,0.4)};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`no markers` to make no markers or points on the curves or lines
+
+`\addlegendentry` to add legends
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        trig format plots=rad,
+        xtick distance=pi/2, ytick distance=1,
+        xticklabels={$-\pi$,$-\pi/2$,0,$\pi/2$,$\pi$},
+        width=10cm, scale only axis,
+        axis equal image]
+        \addplot+ [domain=-pi:pi] {sin(x)};
+        \addlegendentry{$\sin(x)$}
+        \addplot+ [no markers,domain=-pi:pi,samples=100]
+            {cos(x)};
+        \addlegendentry{$\cos(x)$}
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='$\\sin(x)$ and $\\cos(x)$', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        trig format plots=rad,
+        xtick distance=pi/2, ytick distance=1,
+        xticklabels={$-\pi$,$-\pi/2$,0,$\pi/2$,$\pi$},
+        width=10cm, scale only axis,
+        axis equal image]
+        \addplot+ [domain=-pi:pi] {sin(x)};
+        \addlegendentry{$\sin(x)$}
+        \addplot+ [no markers,domain=-pi:pi,samples=100]
+            {cos(x)};
+        \addlegendentry{$\cos(x)$}
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        trig format plots=rad,
+        ymax=2.3,
+        axis equal image]
+        \addplot+ [no markers,
+                   variable=t,
+                   domain=0:2*pi,
+                   samples=100] ({2*cos(t)},{sin(t)});
+        \node [pin=90:$\dfrac{x^2}{4}+y^2{=}1$]
+        at ({2*cos(45)},{sin(45)}) {};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='$\\dfrac{x^2}{4}+y^2{=}1$', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        trig format plots=rad,
+        ymax=2.3,
+        axis equal image]
+        \addplot+ [no markers,
+                   variable=t,
+                   domain=0:2*pi,
+                   samples=100] 
+          ({2*cos(t)},{sin(t)});
+        \node [pin=90:$\dfrac{x^2}{4}+y^2{=}1$]
+          at (axis cs: {2*cos(45)},{sin(45)}) {};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[trig format plots=rad]
+        \addplot3+ [variable=t,
+                    domain=0:3*pi,
+                    samples=100,
+                    samples y=0]
+            ({cos(t)},{sin(t)},{t});
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='$({\\cos(t)},{\\sin(t)},{t})$', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[trig format plots=rad]
+        \addplot3+ [variable=t,
+                    domain=0:3*pi,
+                    samples=100,
+                    samples y=0]
+            ({cos(t)},{sin(t)},{t});
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+#### plane
+
+`[mesh]`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}
+        \addplot3+ [no markers, mesh] {x*y};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='$f(x,y)=xy$', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}
+        \addplot3+ [no markers, mesh] {x*y};
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`[surf]` surface
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+        view={120}{30},
+        trig format plots=rad,
+        width=10cm,
+        scale only axis,
+        axis equal image
+        ]
+        \addplot3+ [no markers,
+                    surf,
+                    domain=0:2*pi,
+                    domain y=0:pi]
+            ({sin(y)*cos(x)},{sin(y)*sin(x)},{cos(y)});
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='$x^2+y^2+z^2=1$', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+        view={120}{30},
+        trig format plots=rad,
+        width=10cm,
+        scale only axis,
+        axis equal image
+        ]
+        \addplot3+ [no markers,
+                    surf,
+                    domain=0:2*pi,
+                    domain y=0:pi]
+            ({sin(y)*cos(x)},{sin(y)*sin(x)},{cos(y)});
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+#### polar coordinate
+
+`data cs=polar|polarrad`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\begin{tikzpicture}
+    \begin{axis}[
+      title={$\rho=\cos 2\theta$},
+      axis equal image
+      ]
+        \addplot+ [no markers,
+                   data cs=polar,
+                   domain=0:360,
+                   samples=360
+                   ] (\x,{cos(2*\x)});
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='polar coordinate $\\rho=\\cos 2\\theta$', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+    \begin{axis}[
+      title={$\rho=\cos 2\theta$},
+      axis equal image
+      ]
+        \addplot+ [no markers,
+                   data cs=polar,
+                   domain=0:360,
+                   samples=360
+                   ] (\x,{cos(2*\x)});
+    \end{axis}
+\end{tikzpicture}
+```
+:::
+::::::
+
+***
+
+`\usepgfplotslibrary{polar}` to use `\begin{polaraxis}`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{tex}
+\usepgfplotslibrary{polar}
+\begin{tikzpicture}
+    \begin{polaraxis}
+        \addplot+ coordinates
+            {(0,0) (60,1) (90,{sqrt(3)/2})} -- cycle;
+    \end{polaraxis}
+\end{tikzpicture}
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='polar coordinate axes', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\usepgfplotslibrary{polar}
+\begin{tikzpicture}
+    \begin{polaraxis}
+        \addplot+ coordinates
+            {(0,0) (60,1) (90,{sqrt(3)/2})} -- cycle;
+    \end{polaraxis}
+\end{tikzpicture}
+```
+:::
+::::::
+
 https://zhuanlan.zhihu.com/p/128341873
 
-## Arnav Bandekar: Using pgfplots to make economic graphs in LaTeX
+### Arnav Bandekar: Using pgfplots to make economic graphs in LaTeX
 
 https://towardsdatascience.com/using-pgfplots-to-make-economic-graphs-in-latex-bcdc8e27c0eb
 
-## PGFplots gallery
+### PGFplots gallery
 
 https://pgfplots.sourceforge.net/gallery.html
 

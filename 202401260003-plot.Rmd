@@ -19,6 +19,7 @@
         - GeoGebra Classic
       - Python
         - TikZplotLib / tikzplotlib^[\@ref(tikzplotlib)]^
+          - matplotlib export to TikZ .tex
           - [PyPI](https://pypi.org/project/tikzplotlib/)
           - [GitHub](https://github.com/nschloe/tikzplotlib)
     - [TikZ library](https://tex.stackexchange.com/questions/42611/list-of-available-tikz-libraries-with-a-short-introduction)
@@ -29,8 +30,8 @@
   - [GeoGebra Classic](https://www.geogebra.org/classic): to export TikZ
   - [GeoGebra Calculator Suite](https://www.geogebra.org/calculator)
 - Python
-  - MatPlotLib / matplotlib
-  - Seaborn
+  - MatPlotLib / matplotlib^[\@ref(matplotlib)]^
+  - [Seaborn] / seaborn^[\@ref(seaborn)]^
   - Plotly
   - Manim
 
