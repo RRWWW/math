@@ -60,6 +60,20 @@ https://stackoverflow.com/questions/55327408/how-to-fix-git-for-windows-error-co
 
 ## RMarkdown
 
+::: {show-in="html"}
+
+[R Markdown 指南](https://cosname.github.io/rmarkdown-guide/index.html)
+
+:::
+
+::: {show-in="pdf"}
+
+\begin{CJK}{UTF8}{bsmi}
+R Markdown 指南 https://cosname.github.io/rmarkdown-guide/index.html
+\end{CJK}
+
+:::
+
 https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
 
 https://slides.yihui.org/2020-taipei-satrday-rmarkdown.html#1
@@ -100,13 +114,13 @@ Some text to show that the reference links can follow later.
 
 https://reimbar.org/dev/arrows/
 
-Up arrow (↑): `&uarr;`
+Up arrow: `&uarr;`
 
-Down arrow (↓): `&darr;`
+Down arrow: `&darr;`
 
-Left arrow (←): `&larr;`
+Left arrow: `&larr;`
 
-Right arrow (→): `&rarr;`
+Right arrow: `&rarr;`
 
 Double headed arrow: `&harr;`
 
@@ -153,6 +167,68 @@ $$
 ### image
 
 https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown
+
+#### DiagrammeR / mermaid flowchart
+
+```
+Error: Functions that produce HTML output found in document targeting latex output.
+Please change the output type of this document to HTML.
+If your aiming to have some HTML widgets shown in non-HTML format as a screenshot,
+please install webshot or webshot2 R package for knitr to do the screenshot.
+Alternatively, you can allow HTML output in non-HTML formats
+by adding this option to the YAML front-matter of
+your rmarkdown file:
+
+  always_allow_html: true
+
+Note however that the HTML output will not be visible in non-HTML formats.
+```
+
+https://bookdown.org/yihui/rmarkdown-cookbook/diagrams.html#diagrams
+
+https://stackoverflow.com/questions/40803017/how-to-include-diagrammer-mermaid-flowchart-in-a-rmarkdown-file
+
+```
+{r}
+library(DiagrammeR)
+mermaid("
+graph LR
+    A-->B
+",
+width = 100
+)
+```
+https://github.com/rich-iannone/DiagrammeR/issues/364
+
+https://stackoverflow.com/questions/55994210/how-to-solve-diagrammer-waste-of-space-issue-in-rmarkdown
+
+#### multiple images / figures in the same line
+
+https://cosname.github.io/rmarkdown-guide/rmarkdown-base.html#element-figure
+
+```
+{r, fig.show = "hold", out.width = "50%"}
+plot(cars)
+plot(nhtemp)
+```
+
+```{r, fig.show = "hold", out.width = "50%"}
+plot(cars)
+plot(nhtemp)
+```
+
+cf.
+
+```
+{r}
+plot(cars)
+plot(nhtemp)
+```
+
+```{r}
+plot(cars)
+plot(nhtemp)
+```
 
 #### figure size
 
@@ -367,12 +443,14 @@ knitr::include_graphics(if (knitr::pandoc_to('html')) cover_url else cover_file)
 ```
 
 ::: {show-in="html"}
+
 <iframe src="https://www.geogebra.org/calculator/qdd2yqhk?embed" width="600" height="450" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 ![conic sections](img/conic-sections.svg)
 ```{r, echo=FALSE, fig.cap="conic sections", out.width = '75%', cache=TRUE}
 knitr::include_graphics("img/conic-sections.svg")
 ```
+
 :::
 
 ```{r, echo=FALSE, engine='tikz', cache=TRUE,  out.width='75%', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', fig.cap='conic sections', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}","\\pgfplotsset{compat=1.15}","\\usepackage{mathrsfs}"))}
@@ -509,6 +587,12 @@ PDF pandoc internal link will lose focus
     - MatPlotLib
     - Seaborn
     - Plotly
+
+### code chunk
+
+#### code folding
+
+https://cosname.github.io/rmarkdown-guide/rmarkdown-document.html#html-code-folding
 
 ### xaringan
 

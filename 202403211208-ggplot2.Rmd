@@ -1,0 +1,584 @@
+# ggplot2
+
+https://bookdown.org/xiangyun/msg/system.html#chap:system
+
+Modern Statistical Graphics [section 5.1](https://bookdown.org/xiangyun/msg/system.html#sec:ggplot2)
+
+- https://www.rdocumentation.org/ to search function
+- ggplot2
+  - https://ggplot2.tidyverse.org/index.html to search ggplot2 function
+  - panel = layer
+    - geom = geometric objects / geometry = element
+      - [element](https://bookdown.org/xiangyun/msg/elements.html#cha:elements)
+    - statistic
+    - scale
+    - coordinate system
+    - facet
+
+```{css, echo=FALSE}
+pre {
+  max-width: 400px;
+  overflow-x: auto;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/*
+pre {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+pre[class] {
+  max-height: 100px;
+}
+*/
+```
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+library(ggplot2)
+
+p <- ggplot(aes(x = hp, y = mpg), data = mtcars) +
+  geom_point() # layer of scatterplot
+p + geom_smooth(method = "loess") # add layer of smooth
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+library(ggplot2)
+
+p <- ggplot(aes(x = hp, y = mpg), data = mtcars) +
+  geom_point() # layer of scatterplot
+p + geom_smooth(method = "loess") # add layer of smooth
+```
+:::
+::::::
+
+## geom
+
+https://bookdown.org/xiangyun/msg/system.html#section-13
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+library(ggplot2)
+
+ggplot(aes(x = hp, y = mpg), data = mtcars) +
+  geom_point() +
+  geom_smooth(method = "loess")
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+library(ggplot2)
+
+ggplot(aes(x = hp, y = mpg), data = mtcars) +
+  geom_point() +
+  geom_smooth(method = "loess")
+```
+:::
+::::::
+
+points https://ggplot2.tidyverse.org/reference/geom_point.html?q=geom_point#null
+
+`geom_point`
+
+smoothed conditional means https://ggplot2.tidyverse.org/reference/geom_smooth.html?q=geom_sm#null
+
+> Aids the eye in seeing patterns in the presence of overplotting. `geom_smooth()` and `stat_smooth()` are effectively aliases: they both use the same arguments. Use `stat_smooth()` if you want to display the results with a non-standard geom.
+
+`geom_smooth`
+
+`stat_smooth`
+
+> `method` Smoothing method (function) to use, accepts either NULL or a character vector, e.g. `"lm"`, `"glm"`, `"gam"`, `"loess"` or a function, e.g. `MASS::rlm` or `mgcv::gam`, `stats::lm`, or `stats::loess`. `"auto"` is also accepted for backwards compatibility. It is equivalent to `NULL`.
+
+***
+
+```{r}
+# install.packages("hexbin")
+```
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+library(ggplot2)
+
+ggplot(aes(x = carat, y = price), data = diamonds) +
+  geom_hex() +
+  scale_fill_gradient(low = "blue3", high = "red3")
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+library(ggplot2)
+
+ggplot(aes(x = carat, y = price), data = diamonds) +
+  geom_hex() +
+  scale_fill_gradient(low = "blue3", high = "red3")
+```
+:::
+::::::
+
+gradient color scales https://ggplot2.tidyverse.org/reference/scale_gradient.html?q=scale_fill_gradient#ref-usage
+
+https://ggplot2.tidyverse.org/reference/scale_gradient.html?q=scale_fill_gradient#ref-examples
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+library(ggplot2)
+
+ggplot(aes(x = Petal.Length, y = Petal.Width), data = iris) +
+  geom_point(aes(color = Species, shape = Species))
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+library(ggplot2)
+
+ggplot(aes(x = Petal.Length, y = Petal.Width), data = iris) +
+  geom_point(aes(color = Species, shape = Species))
+```
+:::
+::::::
+
+***
+
+basic plot system
+
+https://bookdown.org/xiangyun/msg/elements.html#sec:points
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+# iris species converted to type integer 1, 2, 3 for further using vectors
+idx <- as.integer(iris[["Species"]])
+plot(iris[, 3:4],
+  pch = c(24, 21, 25)[idx],
+  col = c("black", "red", "blue")[idx], panel.first = grid()
+)
+legend("topleft",
+  legend = levels(iris[["Species"]]),
+  col = c("black", "red", "blue"), pch = c(24, 21, 25), bty = "n"
+)
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+# iris species converted to type integer 1, 2, 3 for further using vectors
+idx <- as.integer(iris[["Species"]])
+plot(iris[, 3:4],
+  pch = c(24, 21, 25)[idx],
+  col = c("black", "red", "blue")[idx], panel.first = grid()
+)
+legend("topleft",
+  legend = levels(iris[["Species"]]),
+  col = c("black", "red", "blue"), pch = c(24, 21, 25), bty = "n"
+)
+```
+:::
+::::::
+
+`plot` https://www.rdocumentation.org/packages/graphics/versions/3.6.2/topics/plot.default
+
+> `pch` a vector of **plotting characters** or symbols: see [`points`](https://www.rdocumentation.org/packages/graphics/versions/3.6.2/topics/points).
+
+> `col` The **colors** for lines and points. Multiple colors can be specified so that each point can be given its own color. If there are fewer colors than points they are recycled in the standard fashion. Lines will all be plotted in the first colour specified.
+
+> `panel.first` an ‘expression’ to be evaluated after the plot axes are set up but before any plotting takes place. This can be useful for drawing **background grids** or **scatterplot smooths**. Note that this works by lazy evaluation: passing this argument from other plot methods may well not work since it may be evaluated too early.
+
+`legend` https://www.rdocumentation.org/packages/graphics/versions/3.6.2/topics/legend
+
+> `bty` the **type of box** to be drawn around the legend. The allowed values are "o" (the default) and "n".
+
+https://stackoverflow.com/questions/10108073/plot-legends-without-border-and-with-white-background
+
+> Use option `bty = "n"` in legend to remove the box around the legend.
+
+> `legend` a character or expression vector of length $\ge 1$ to appear in the legend. Other objects will be coerced by [`as.graphicsAnnot`](https://www.rdocumentation.org/packages/grDevices/versions/3.6.2/topics/as.graphicsAnnot)
+
+### basic plot system decomposition
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+iris
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+iris
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+iris$Species
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+iris$Species
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+iris[["Species"]]
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+iris[["Species"]]
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+as.integer(iris[["Species"]])
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+as.integer(iris[["Species"]])
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+levels(iris[["Species"]])
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+levels(iris[["Species"]])
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+idx <- as.integer(iris[["Species"]])
+idx
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+idx <- as.integer(iris[["Species"]])
+idx
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+idx <- as.integer(iris[["Species"]])
+c(24, 21, 25)[idx]
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+idx <- as.integer(iris[["Species"]])
+c(24, 21, 25)[idx]
+```
+:::
+::::::
+
+## statistic
+
+https://bookdown.org/xiangyun/msg/system.html#section-14
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+library(ggplot2)
+
+ggplot(diamonds, aes(x = price)) +
+  stat_density(aes(ymax = ..density.., ymin = -..density..),
+    geom = "ribbon", position = "identity"
+  )
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE, cache=TRUE, fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap=''}
+library(ggplot2)
+
+ggplot(diamonds, aes(x = price)) +
+  stat_density(aes(ymax = ..density.., ymin = -..density..),
+    geom = "ribbon", position = "identity"
+  )
+```
+:::
+::::::
+
+smoothed density estimates https://ggplot2.tidyverse.org/reference/geom_density.html
+
+> Computes and draws kernel density estimate, which is a smoothed version of the histogram. This is a useful alternative to the histogram for continuous data that comes from an underlying smooth distribution.
+
+`geom_density`
+
+`stat_density`
+
+https://ggplot2.tidyverse.org/reference/geom_density.html#ref-examples
+
+## scale
+
+ggplot2
+
+https://bookdown.org/xiangyun/msg/system.html#section-15
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+library(ggplot2)
+
+data(quake6, package = "MSG")
+ggplot(quake6, aes(x = year, y = month)) +
+  stat_sum(aes(size = ..n..)) + scale_size(range = c(1, 8))
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+library(ggplot2)
+
+data(quake6, package = "MSG")
+ggplot(quake6, aes(x = year, y = month)) +
+  stat_sum(aes(size = ..n..)) + scale_size(range = c(1, 8))
+```
+:::
+::::::
+
+count overlapping points https://ggplot2.tidyverse.org/reference/geom_count.html?q=stat_sum#ref-usage
+
+> This is a variant `geom_point()` that counts the number of observations at each location, then maps the count to point area. It useful when you have discrete data and overplotting.
+
+`geom_count`
+
+`stat_sum`
+
+https://ggplot2.tidyverse.org/reference/geom_count.html?q=stat_sum#ref-examples
+
+scales for area or radius https://ggplot2.tidyverse.org/reference/scale_size.html?q=scale_size#null
+
+`scale_size`
+
+## coordinate system
+
+https://bookdown.org/xiangyun/msg/system.html#section-16
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+library(ggplot2)
+
+p <- ggplot(aes(x = cut, y = log(price)), data = diamonds) +
+  geom_boxplot()
+p
+p + coord_flip()
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+library(ggplot2)
+
+p <- ggplot(aes(x = cut, y = log(price)), data = diamonds) +
+  geom_boxplot()
+p
+p + coord_flip()
+```
+:::
+::::::
+
+***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+library(ggplot2)
+
+ggplot(aes(x = cut, fill = cut), data = diamonds) +
+  coord_polar() +
+  geom_bar(width = 1, show.legend = FALSE)
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+library(ggplot2)
+
+ggplot(aes(x = cut, fill = cut), data = diamonds) +
+  coord_polar() +
+  geom_bar(width = 1, show.legend = FALSE)
+```
+:::
+::::::
+
+## facet
+
+https://bookdown.org/xiangyun/msg/system.html#subsec:facet
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+library(ggplot2)
+
+ggplot(aes(x = carat), data = diamonds) +
+  geom_density() +
+  facet_grid(cut ~ .)
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+library(ggplot2)
+
+ggplot(aes(x = carat), data = diamonds) +
+  geom_density() +
+  facet_grid(cut ~ .)
+```
+:::
+::::::
+
+## jitter
+
+https://bookdown.org/xiangyun/msg/system.html#section-17
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=FALSE, echo=TRUE}
+library(ggplot2)
+
+ggplot(aes(x = Petal.Length, y = Petal.Width), data = iris) +
+  geom_point() +
+  geom_jitter(color = "red")
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{r, eval=TRUE, echo=FALSE}
+library(ggplot2)
+
+ggplot(aes(x = Petal.Length, y = Petal.Width), data = iris) +
+  geom_point() +
+  geom_jitter(color = "red")
+```
+:::
+::::::
+
+## font
+
+https://bookdown.org/xiangyun/msg/system.html#subsec:font

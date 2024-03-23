@@ -22,6 +22,13 @@
           - matplotlib export to TikZ .tex
           - [PyPI](https://pypi.org/project/tikzplotlib/)
           - [GitHub](https://github.com/nschloe/tikzplotlib)
+      - R
+        - TikZDevice / tikzDevice
+          - r chunk `engine='tikz'` knitr `out.width=if (knitr:::is_html_output()) '100%'`
+          - [CRAN](https://cran.r-project.org/web/packages/tikzDevice/index.html)
+            - [reference manual](https://cran.r-project.org/web/packages/tikzDevice/tikzDevice.pdf)
+            - vignette: [TikZDevice - LaTeX Graphics for R](https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf)
+          - [GitHub](https://github.com/daqana/tikzDevice)
     - [TikZ library](https://tex.stackexchange.com/questions/42611/list-of-available-tikz-libraries-with-a-short-introduction)
   - xypic = [xy-pic]^[\@ref(xy-pic)]^
 - [OverLeaf](https://www.overleaf.com/)
@@ -34,6 +41,18 @@
   - [Seaborn] / seaborn^[\@ref(seaborn)]^
   - Plotly
   - Manim
+- R
+  - [Modern Statistical Graphics](https://bookdown.org/xiangyun/msg/)
+  - [ggplot2]^[\@ref(ggplot2)]^
+    - Modern Statistical Graphics [section 5.1](https://bookdown.org/xiangyun/msg/system.html#sec:ggplot2)
+  - GraphViz `.gv`
+  - Mermaid `.mmd`
+    - [about](https://mermaid.js.org/intro/)
+    - JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically
+  - Shiny
+    - R Markdown Guide [section 5.1](https://cosname.github.io/rmarkdown-guide/rmarkdown-interaction.html#rmarkdown-shiny)
+  - tool
+    - Jamovi
 
 neural network plot/draw
 https://github.com/ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network

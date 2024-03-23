@@ -3336,16 +3336,20 @@ https://pgfplots.sourceforge.net/gallery.html
 [Python]^[\@ref(python)]^
 
 ```{r}
-# library(reticulate)
+library(reticulate)
+
 # virtualenv_list()
 # virtualenv_python()
 # use_virtualenv("r-reticulate")
+
+# conda_list()
+use_condaenv(condaenv = 'sandbox-3.9')
 
 ## install TikZplotLib
 # virtualenv_install("r-reticulate", "tikzplotlib")
 
 ## import TikZplotLib (it will be automatically discovered in "r-reticulate")
-# tikzplotlib <- import("tikzplotlib")
+tikzplotlib <- import("tikzplotlib")
 ```
 
 ```

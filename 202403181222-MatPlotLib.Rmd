@@ -433,36 +433,6 @@ a1 = list(range(1, 7)) # [1, 2, 3, 4, 5, 6]
 a2 = [1, 4, 9, 16, 25, 36]
 fig = plt.figure()
 # you can also set after getting the figure
-# fig.set_size_inches((12, 2))
-ax = fig.add_axes([0, 0, 1, 1])
-ax.plot(a1, a2)
-fig.get_dpi()
-```
-
-***
-
-```{python, eval=TRUE, echo=TRUE, cache=TRUE}
-import matplotlib.pyplot as plt
-
-a1 = list(range(1, 7)) # [1, 2, 3, 4, 5, 6]
-a2 = [1, 4, 9, 16, 25, 36]
-fig = plt.figure()
-# you can also set after getting the figure
-fig.set_size_inches((12, 2))
-ax = fig.add_axes([0, 0, 1, 1])
-ax.plot(a1, a2)
-fig.get_dpi()
-```
-
-***
-
-```{python, eval=TRUE, echo=TRUE, cache=TRUE}
-import matplotlib.pyplot as plt
-
-a1 = list(range(1, 7)) # [1, 2, 3, 4, 5, 6]
-a2 = [1, 4, 9, 16, 25, 36]
-fig = plt.figure()
-# you can also set after getting the figure
 fig.set_size_inches((12, 2))
 ax = fig.add_axes([0, 0, 1, 1])
 ax.plot(a1, a2)
@@ -476,7 +446,7 @@ fig.get_dpi()
 import matplotlib.pyplot as plt
 
 # Subplots handles add_axes for you according to the number of rows and columns
-fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(4, 6))
+fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(6, 3))
 # axes is a numpy array, you can use it like using a list.
 print(axes)
 ```
@@ -491,7 +461,7 @@ import matplotlib.pyplot as plt
 a1 = list(range(1, 7)) # [1, 2, 3, 4, 5, 6]
 a2 = [1, 4, 9, 16, 25, 36]
 # Subplots handles add_axes for you according to the number of rows and columns
-fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(4, 6))
+fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(6, 3))
 # axes is a numpy array, you can use it like using a list.
 # print(axes)
 axes[0][0].plot(a1, a2)
@@ -512,7 +482,7 @@ import matplotlib.pyplot as plt
 a1 = list(range(1, 7)) # [1, 2, 3, 4, 5, 6]
 a2 = [1, 4, 9, 16, 25, 36]
 # Subplots handles add_axes for you according to the number of rows and columns
-fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(4, 6))
+fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(6, 3))
 # axes is a numpy array, you can use it like using a list.
 # print(axes)
 axes[0][0].plot(a1, a2)
@@ -533,20 +503,43 @@ axes[1][1].plot(a2, a1)
 >   * https://matplotlib.org/stable/api/markers_api.html
 > * linewidth (lw)
 
-
-```{python, eval=TRUE, echo=FALSE, cache=TRUE}
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=FALSE, echo=TRUE, cache=TRUE}
 import matplotlib.pyplot as plt
 
 a1 = list(range(1, 7)) # [1, 2, 3, 4, 5, 6]
 a2 = [1, 4, 9, 16, 25, 36]
 # Subplots handles add_axes for you according to the number of rows and columns
-fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(18, 4))
+fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(6, 3))
 # axes is a numpy array
 axes[0].plot(a1, a2, color='green', linestyle='-.')
 axes[0].plot(a2, a1, color=(1, 0, 0.5), marker='v', markersize=20)
 axes[1].plot(a1, a2, linestyle='dotted')
 axes[1].plot(a2, a1, linestyle=(0, (3, 10, 1, 10)))
 ```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=TRUE, echo=FALSE, cache=TRUE}
+import matplotlib.pyplot as plt
+
+a1 = list(range(1, 7)) # [1, 2, 3, 4, 5, 6]
+a2 = [1, 4, 9, 16, 25, 36]
+# Subplots handles add_axes for you according to the number of rows and columns
+fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(6, 3))
+# axes is a numpy array
+axes[0].plot(a1, a2, color='green', linestyle='-.')
+axes[0].plot(a2, a1, color=(1, 0, 0.5), marker='v', markersize=20)
+axes[1].plot(a1, a2, linestyle='dotted')
+axes[1].plot(a2, a1, linestyle=(0, (3, 10, 1, 10)))
+```
+:::
+::::::
 
 #### other inputs
 
@@ -701,15 +694,15 @@ and directly using Anaconda `conda` environment for convenience, instead of `vir
 
 https://rstudio.github.io/reticulate/articles/python_packages.html
 ```{r}
-# library(reticulate)
-# conda_list()
-# use_condaenv(condaenv = 'sandbox-3.9')
+library(reticulate)
+conda_list()
+use_condaenv(condaenv = 'sandbox-3.9')
 
 ## install Seaborn
 # conda_install("r-reticulate", "seaborn")
 
 ## import Seaborn (it will be automatically discovered in "r-reticulate")
-# seaborn <- import("seaborn")
+seaborn <- import("seaborn")
 ```
 
 #### basic
@@ -998,6 +991,8 @@ plt.show()
 
 #### axis-level plot and figure-level plot
 
+`sns.relplot`
+
 ```{r , echo=FALSE, cache=TRUE, fig.cap="seaborn plot type", out.width = '100%'}
 knitr::include_graphics("img/seaborn-plot-type.png")
 ```
@@ -1202,7 +1197,11 @@ g.fig
 
 #### distribution plot
 
+`sns.displot`
+
 ##### histogram
+
+***
 
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
@@ -1266,6 +1265,8 @@ sns.displot(kind='hist', bins=20,
 
 ##### ECDF = empirical cumulative distrutive function
 
+***
+
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
 ```{python, eval=FALSE, echo=TRUE, cache=TRUE}
@@ -1294,9 +1295,9 @@ sns.displot(kind='ecdf',
 :::
 ::::::
 
-***
-
 ##### KDE = kernel density estimation
+
+***
 
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
@@ -1354,9 +1355,267 @@ tips = sns.load_dataset("tips")
 sns.displot(kind='hist', bins=20, kde='true',
             data=tips,
             x='total_bill')
+
+import tikzplotlib
+# tikzplotlib.save("test.tex")
+tikzplotlib.get_tikz_code()
 ```
 :::
 ::::::
+
+***
+
+TikZ / `tikzpicture` with PGFplots `axis` by transforming Matplotlib-based Seaborn plot to .tex via Python package `tikzplotlib`
+
+`xlabel={total_bill},` changed to `xlabel={total bill},` wihout _ in text
+
+X `ylabel={Count},` changed to `ylabel={$\text{Count}$},`: not necessoary to be changed, the problem is _ in xlabel name
+
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png',  out.width=if (knitr:::is_html_output()) '100%', fig.cap='tikzplotlib', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={darkgray176},
+xlabel={total bill},
+xmin=0.682999999999999, xmax=53.197,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={Count},
+ymin=0, ymax=38.85,
+ytick style={color=black}
+]
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:3.07,0) rectangle (axis cs:5.457,1);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:5.457,0) rectangle (axis cs:7.844,6);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:7.844,0) rectangle (axis cs:10.231,13);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:10.231,0) rectangle (axis cs:12.618,29);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:12.618,0) rectangle (axis cs:15.005,31);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:15.005,0) rectangle (axis cs:17.392,37);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:17.392,0) rectangle (axis cs:19.779,28);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:19.779,0) rectangle (axis cs:22.166,23);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:22.166,0) rectangle (axis cs:24.553,18);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:24.553,0) rectangle (axis cs:26.94,13);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:26.94,0) rectangle (axis cs:29.327,10);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:29.327,0) rectangle (axis cs:31.714,9);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:31.714,0) rectangle (axis cs:34.101,5);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:34.101,0) rectangle (axis cs:36.488,7);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:36.488,0) rectangle (axis cs:38.875,3);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:38.875,0) rectangle (axis cs:41.262,4);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:41.262,0) rectangle (axis cs:43.649,1);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:43.649,0) rectangle (axis cs:46.036,2);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:46.036,0) rectangle (axis cs:48.423,3);
+\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:48.423,0) rectangle (axis cs:50.81,1);
+\addplot [semithick, steelblue31119180]
+table {%
+3.07 1.81650227371093
+3.30989949748744 2.0434643264896
+3.54979899497487 2.2946853892412
+3.78969849246231 2.57191856721816
+4.02959798994975 2.87687103964454
+4.26949748743719 3.2111703368463
+4.50939698492462 3.57632865116155
+4.74929648241206 3.97370595578497
+4.9891959798995 4.40447280025508
+5.22909547738693 4.86957372234809
+5.46899497487437 5.36969226057983
+5.70889447236181 5.90521856710491
+5.94879396984925 6.47622060619423
+6.18869346733668 7.0824198781706
+6.42859296482412 7.72317253298626
+6.66849246231156 8.39745663256822
+6.90839195979899 9.10386618836671
+7.14829145728643 9.84061244261478
+7.38819095477387 10.605532681721
+7.62809045226131 11.3961066717526
+7.86798994974874 12.2094805936589
+8.10788944723618 13.0424981350657
+8.34778894472362 13.8917381722816
+8.58768844221106 14.7535582575524
+8.82758793969849 15.6241429202311
+9.06748743718593 16.4995556046295
+9.30738693467337 17.3757929103925
+9.5472864321608 18.2488396817903
+9.78718592964824 19.1147234183632
+10.0270854271357 19.9695664579337
+10.2669849246231 20.8096344196708
+10.5068844221106 21.6313794931092
+10.746783919598 22.4314773197019
+10.9866834170854 23.2068564344639
+11.2265829145729 23.9547195110843
+11.4664824120603 24.6725559755833
+11.7063819095477 25.3581459088295
+11.9462814070352 26.0095555316024
+12.1861809045226 26.6251249394887
+12.4260804020101 27.2034491092342
+12.6659798994975 27.7433535131461
+12.9058793969849 28.2438659343764
+13.1457788944724 28.7041862560547
+13.3856783919598 29.1236560873048
+13.6255778894472 29.5017300798214
+13.8654773869347 29.8379506761731
+14.1053768844221 30.1319278179194
+14.3452763819095 30.3833248371542
+14.585175879397 30.591851374701
+14.8250753768844 30.7572637330083
+15.0649748743719 30.8793726073093
+15.3048743718593 30.9580576730616
+15.5447738693467 30.9932880701114
+15.7846733668342 30.9851474422087
+16.0245728643216 30.9338618888512
+16.264472361809 30.8398289841961
+16.5043718592965 30.7036459275097
+16.7442713567839 30.5261349162415
+16.9841708542714 30.3083639732627
+17.2240703517588 30.0516617033457
+17.4639698492462 29.7576247830678
+17.7038693467337 29.4281173801778
+17.9437688442211 29.0652621267963
+18.1836683417085 28.671422708
+18.423567839196 28.2491785464713
+18.6634673366834 27.8012924408185
+18.9033668341709 27.3306723300243
+19.1432663316583 26.8403285949088
+19.3831658291457 26.3333284612471
+19.6230653266332 25.8127491361762
+19.8629648241206 25.2816312933759
+20.102864321608 24.7429344316665
+20.3427638190955 24.1994954781583
+20.5826633165829 23.6539918052482
+20.8225628140704 23.1089095957794
+21.0624623115578 22.5665182374549
+21.3023618090452 22.0288511696841
+21.5422613065327 21.4976933549977
+21.7821608040201 20.9745753121716
+22.0220603015075 20.4607734360394
+22.261959798995 19.9573161441721
+22.5018592964824 19.4649952359086
+22.7417587939699 18.9843817259491
+22.9816582914573 18.5158453233279
+23.2215577889447 18.0595766669415
+23.4614572864322 17.615611400536
+23.7013567839196 17.1838551725645
+23.941256281407 16.7641086787571
+24.1811557788945 16.3560919263279
+24.4210552763819 15.9594669865189
+24.6609547738693 15.5738586137689
+24.9008542713568 15.1988722412078
+25.1407537688442 14.8341090082362
+25.3806532663317 14.4791776303403
+25.6205527638191 14.1337030768421
+25.8604522613065 13.7973321712685
+26.100351758794 13.4697363637648
+26.3402512562814 13.150612038339
+26.5801507537688 12.8396788037574
+26.8200502512563 12.5366762713579
+27.0599497487437 12.2413598437652
+27.2998492462312 11.9534960256898
+27.5397487437186 11.6728577243005
+27.779648241206 11.3992199369156
+28.0195477386935 11.1323561346653
+28.2594472361809 10.8720355503384
+28.4993467336683 10.618021475438
+28.7392462311558 10.3700705740342
+28.9791457286432 10.1279331369088
+29.2190452261307 9.89135413483069
+29.4589447236181 9.66007488858729
+29.6988442211055 9.43383515726144
+29.938743718593 9.21237545429534
+30.1786432160804 8.99543942987608
+30.4185427135678 8.78277620282414
+30.6584422110553 8.57414257872066
+30.8983417085427 8.36930514594295
+31.1382412060302 8.16804229007108
+31.3781407035176 7.97014620304912
+31.618040201005 7.77542498131079
+31.8579396984925 7.58370490367017
+32.0978391959799 7.39483295445693
+32.3377386934673 7.20867961205857
+32.5776381909548 7.02514186210763
+32.8175376884422 6.84414632449375
+33.0574371859297 6.665652312145
+33.2973366834171 6.48965457576794
+33.5372361809045 6.31618544094476
+33.777135678392 6.1453160195762
+34.0170351758794 5.97715618216116
+34.2569346733668 5.81185301380444
+34.4968341708543 5.64958754514477
+34.7367336683417 5.4905696464633
+34.9766331658291 5.33503109293979
+35.2165326633166 5.18321694268858
+35.456432160804 5.03537550629672
+35.6963316582915 4.89174731561885
+35.9362311557789 4.75255360914146
+36.1761306532663 4.61798493100736
+36.4160301507538 4.48819048255513
+36.6559296482412 4.36326886361301
+36.8958291457286 4.24326079384011
+37.1357286432161 4.12814431384217
+37.3756281407035 4.01783283689438
+37.615527638191 3.91217626335446
+37.8554271356784 3.81096519221432
+38.0953266331658 3.71393808027978
+38.3352261306533 3.6207910222994
+38.5751256281407 3.53118966756817
+38.8150251256281 3.44478266114206
+39.0549246231156 3.3612159094193
+39.294824120603 3.28014692600479
+39.5347236180905 3.20125851656009
+39.7746231155779 3.12427110932688
+40.0145226130653 3.04895312649168
+40.2544221105528 2.97512891305667
+40.4943216080402 2.90268388486196
+40.7342211055276 2.83156671514291
+40.9741206030151 2.76178853850247
+41.2140201005025 2.69341930205747
+41.45391959799 2.62658152681276
+41.6938190954774 2.56144185109478
+41.9337185929648 2.49820080763016
+42.1736180904523 2.43708133466766
+42.4135175879397 2.37831653999644
+42.6534170854271 2.32213722758936
+42.8933165829146 2.26875966439028
+43.133216080402 2.21837401507579
+43.3731155778895 2.17113381152285
+43.6130150753769 2.12714675709877
+43.8529145728643 2.08646709892452
+44.0928140703518 2.04908973796103
+44.3327135678392 2.01494618973935
+44.5726130653266 1.9839024589303
+44.8125125628141 1.95575884849134
+45.0524120603015 1.93025168749459
+45.2923115577889 1.90705692886651
+45.5322110552764 1.88579553680867
+45.7721105527638 1.8660405514497
+46.0120100502513 1.84732568370606
+46.2519095477387 1.82915525570067
+46.4918090452261 1.81101526177134
+46.7317085427136 1.79238528356458
+46.971608040201 1.77275095240831
+47.2115075376884 1.75161661627327
+47.4514070351759 1.72851784072741
+47.6913065326633 1.70303335688259
+47.9312060301508 1.67479606749064
+48.1711055276382 1.64350273728161
+48.4110050251256 1.6089220264205
+48.6509045226131 1.57090057632539
+48.8908040201005 1.52936692339272
+49.1307035175879 1.48433309547015
+49.3706030150754 1.43589383418153
+49.6105025125628 1.38422347865573
+49.8504020100503 1.32957063768011
+50.0903015075377 1.27225086266426
+50.3302010050251 1.21263760837119
+50.5701005025126 1.15115182824249
+50.81 1.08825059345319
+};
+\end{axis}
+
+\end{tikzpicture}
+```
 
 ***
 
@@ -1440,4 +1699,218 @@ g.fig
 :::
 ::::::
 
+#### categorical plot
+
+`sns.catplot`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=FALSE, echo=TRUE, cache=TRUE}
+import seaborn as sns
+
+tips = sns.load_dataset("tips")
+sns.catplot(kind='box', 
+            data=tips, 
+            x="day", hue="day",
+            y="total_bill"
+            )
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=TRUE, echo=FALSE, cache=TRUE}
+import seaborn as sns
+
+tips = sns.load_dataset("tips")
+sns.catplot(kind='box', 
+            data=tips, 
+            x="day", hue="day",
+            y="total_bill"
+            )
+```
+:::
+::::::
+
 ***
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=FALSE, echo=TRUE, cache=TRUE}
+import seaborn as sns
+
+tips = sns.load_dataset("tips")
+sns.catplot(kind='violin', 
+            data=tips, 
+            x="day", hue="day",
+            y="total_bill",
+            col='sex'
+            )
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=TRUE, echo=FALSE, cache=TRUE}
+import seaborn as sns
+
+tips = sns.load_dataset("tips")
+sns.catplot(kind='violin', 
+            data=tips, 
+            x="day", hue="day",
+            y="total_bill",
+            col='sex'
+            )
+```
+:::
+::::::
+
+#### joint plot
+
+`sns.jointplot`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=FALSE, echo=TRUE, cache=TRUE}
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+tips = sns.load_dataset("tips")
+sns.jointplot(data=tips,
+              x="total_bill",
+              y="tip",
+              hue='sex'
+              )
+plt.show()
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=TRUE, echo=FALSE, cache=TRUE}
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+tips = sns.load_dataset("tips")
+sns.jointplot(data=tips,
+              x="total_bill",
+              y="tip",
+              hue='sex'
+              )
+plt.show()
+```
+:::
+::::::
+
+#### pair plot
+
+`sns.pairplot`
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=FALSE, echo=TRUE, cache=TRUE}
+import seaborn as sns
+
+penguins = sns.load_dataset("penguins")
+sns.pairplot(data=penguins,
+             hue='species')
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=TRUE, echo=FALSE, cache=TRUE}
+import seaborn as sns
+
+penguins = sns.load_dataset("penguins")
+sns.pairplot(data=penguins,
+             hue='species')
+```
+:::
+::::::
+
+#### palette
+
+> Changing the color with Matplotlib's color
+
+> A list of color: https://matplotlib.org/stable/tutorials/colors/colormaps.html
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=FALSE, echo=TRUE, cache=TRUE}
+import seaborn as sns
+
+penguins = sns.load_dataset("penguins")
+sns.pairplot(data=penguins,
+             hue='species',
+             palette='Pastel1')
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=TRUE, echo=FALSE, cache=TRUE}
+import seaborn as sns
+
+penguins = sns.load_dataset("penguins")
+sns.pairplot(data=penguins,
+             hue='species',
+             palette='Pastel1')
+```
+:::
+::::::
+
+#### volcano plot
+
+#### heatmap
+
+## export
+
+### .svg
+
+https://stackoverflow.com/questions/24525111/how-can-i-get-the-output-of-a-matplotlib-plot-as-an-svg
+
+```{python, eval=FALSE, echo=TRUE, cache=TRUE}
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+penguins = sns.load_dataset("penguins")
+sns.pairplot(data=penguins,
+             hue='species')
+
+plt.savefig("test.svg")
+# plt.savefig("test.svg", dpi=1200)
+```
+
+### .eps
+
+https://stackoverflow.com/questions/16183462/saving-images-in-python-at-a-very-high-quality
+
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+
+```{python, eval=FALSE, echo=TRUE, cache=TRUE}
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+penguins = sns.load_dataset("penguins")
+sns.pairplot(data=penguins,
+             hue='species')
+
+plt.savefig("test.eps")
+# plt.savefig("test.eps", dpi=1200)
+```
