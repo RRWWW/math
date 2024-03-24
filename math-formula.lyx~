@@ -97,6 +97,252 @@
 \begin_body
 
 \begin_layout Standard
+experimental unit and treatment response
+\begin_inset Formula 
+\[
+Y_{{\scriptscriptstyle i}{\scriptscriptstyle j}}=\mu_{{\scriptscriptstyle i}}+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}},\begin{cases}
+i\in\mathbb{N}\cap\left[1,n_{{\scriptscriptstyle i}}\right] & \mathbb{N}\ni n_{{\scriptscriptstyle i}}\text{ treatments}\\
+j\in\mathbb{N}\cap\left[1,n_{{\scriptscriptstyle j}}\right] & \mathbb{N}\ni n_{{\scriptscriptstyle j}}\text{ experimental units per treatment}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+each treatment has 
+\begin_inset Formula $n_{{\scriptscriptstyle j}}$
+\end_inset
+
+ experimental units, so there are totally 
+\begin_inset Formula $n_{{\scriptscriptstyle i}}n_{{\scriptscriptstyle j}}$
+\end_inset
+
+ experimental units
+\begin_inset Formula 
+\begin{align*}
+Y_{{\scriptscriptstyle i}{\scriptscriptstyle j}}= & \mu_{{\scriptscriptstyle i}}+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}\\
+= & \mu_{{\scriptscriptstyle i}}+b_{{\scriptscriptstyle j}}+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}^{*},\begin{cases}
+i\in\mathbb{N}\cap\left[1,n_{{\scriptscriptstyle i}}\right] & \mathbb{N}\ni n_{{\scriptscriptstyle i}}\text{ experimental units per block}\\
+j\in\mathbb{N}\cap\left[1,n_{{\scriptscriptstyle j}}\right] & \mathbb{N}\ni n_{{\scriptscriptstyle j}}\text{ blocks}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}=b_{{\scriptscriptstyle j}}+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}^{*}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Y_{{\scriptscriptstyle i}{\scriptscriptstyle j}}-Y_{{\scriptscriptstyle i^{\prime}}{\scriptscriptstyle j}}= & \left(\mu_{{\scriptscriptstyle i}}+b_{{\scriptscriptstyle j}}+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}^{*}\right)\\
+- & \left(\mu_{{\scriptscriptstyle i^{\prime}}}+b_{{\scriptscriptstyle j}}+\mathcal{E}_{{\scriptscriptstyle i^{\prime}}{\scriptscriptstyle j}}^{*}\right)\\
+= & \left(\mu_{{\scriptscriptstyle i}}-\mu_{{\scriptscriptstyle i^{\prime}}}\right)+\left(\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}^{*}-\mathcal{E}_{{\scriptscriptstyle i^{\prime}}{\scriptscriptstyle j}}^{*}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Latin square design
+\begin_inset Formula 
+\[
+Y_{{\scriptscriptstyle ijk}}=\mu+\alpha_{{\scriptscriptstyle i}}+\beta_{{\scriptscriptstyle j}}+\gamma_{{\scriptscriptstyle k}}+\mathcal{E}_{{\scriptscriptstyle ijk}},\begin{cases}
+i\in\mathbb{N}\cap\left[1,p\right] & \mathbb{N}\ni p\text{ treatments}\\
+j\in\mathbb{N}\cap\left[1,p\right] & \mathbb{N}\ni p\text{ rows}\\
+k\in\mathbb{N}\cap\left[1,p\right] & \mathbb{N}\ni p\text{ columns}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{E}_{{\scriptscriptstyle ijk}}\overset{\text{i.i.d.}}{\sim}\mathrm{n}\left(0,\sigma^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\left\{ A,B,C,D\right\} \right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Y_{{\scriptscriptstyle ijk}}= & \mu+\alpha_{{\scriptscriptstyle i}}+\beta_{{\scriptscriptstyle j}}+\gamma_{{\scriptscriptstyle k}}+\mathcal{E}_{{\scriptscriptstyle ijk}},\begin{cases}
+i\in\mathbb{N}\cap\left[1,p\right] & \mathbb{N}\ni p\text{ treatments}\\
+j\in\mathbb{N}\cap\left[1,p\right] & \mathbb{N}\ni p\text{ rows}\\
+k\in\mathbb{N}\cap\left[1,p\right] & \mathbb{N}\ni p\text{ columns}
+\end{cases}\\
+= & \mu+\rho_{{\scriptscriptstyle i}}+\kappa_{{\scriptscriptstyle j}}+\tau_{{\scriptscriptstyle k}}+\mathcal{E}_{{\scriptscriptstyle ijk}},\begin{cases}
+i\in\mathbb{N}\cap\left[1,p\right] & \mathbb{N}\ni p\text{ rows}\\
+j\in\mathbb{N}\cap\left[1,p\right] & \mathbb{N}\ni p\text{ columns}\\
+k\in\mathbb{N}\cap\left[1,p\right] & \mathbb{N}\ni p\text{ treatments}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+basic experimental design
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+R & X & O\\
+R &  & O
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+R & X & O\\
+R & P & O
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+R & X_{g} & O_{gt}\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+R & X_{g}=X_{1}=X & O_{gt}=O_{11}\\
+R & X_{g}=X_{2}=\emptyset & O_{gt}=O_{21}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+R & X_{g}=X_{1}=X & O_{gt}=O_{11}\\
+R & X_{g}=X_{2}=P & O_{gt}=O_{21}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+R & X & O_{11}\\
+R &  & O_{21}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+R & X & O_{11}\\
+R & P & O_{21}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+R & X_{g} & O_{gt}\\
+R & X & O_{11}\\
+R & P & O_{21}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+R & X & O\\
+R & X_{g} & O_{gt}\\
+R & X & O_{11}\\
+R & P & O_{21}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solomon 4-group design
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+R & O_{gt} & X_{g} & O_{gt}\\
+R & O_{10} & X & O_{11}\\
+R & O_{20} &  & O_{21}\\
+R &  & X & O_{31}\\
+R &  &  & O_{41}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+R & O & X & O\\
+R & O_{gt} & X_{g} & O_{gt}\\
+R & O_{10} & X & O_{11}\\
+R & O_{20} &  & O_{21}\\
+R &  & X & O_{31}\\
+R &  &  & O_{41}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 sample size estimation
 \begin_inset Formula 
 \[
@@ -428,7 +674,7 @@ addplot [very thick, cyan!50!black] {gauss(0,1)};
 
   
 \backslash
-addplot [very thick, cyan!50!black] {gauss(1,1)};
+addplot [very thick, cyan!50!black] {gauss(2,1)};
 \end_layout
 
 \begin_layout Plain Layout

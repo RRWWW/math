@@ -1,6 +1,6 @@
 # TikZ
 
-- TikZ
+- Ti$k$Z
   - [PGFplots]^[\@ref(pgfplots)]^
   - tikzplotlib^[\@ref(tikzplotlib)]^: [Python]^[\@ref(python)]^ matplotlib^[\@ref(matplotlib)]^ export to [TikZ]^[\@ref(tikz)]^ .tex
 
@@ -927,8 +927,6 @@ It turns out that you can simply put the `\usetikzlibrary{...}` command directly
 https://stackoverflow.com/questions/56211210/r-markdown-document-with-html-docx-output-using-latex-package-bbm
 
 https://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown
-
-
 
 ## 3D
 

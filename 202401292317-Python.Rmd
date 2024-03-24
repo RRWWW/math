@@ -1,5 +1,16 @@
 # Python
 
+```{css, echo=FALSE}
+pre {
+  max-width: 400px;
+  overflow-x: auto;
+  max-height: 600px;
+  overflow-y: auto;
+}
+```
+
+## using Python in R / RMarkdown
+
 https://bookdown.org/yihui/rmarkdown/language-engines.html
 
 ```{r, eval=TRUE, cache=TRUE}
@@ -60,3 +71,57 @@ import matplotlib.pyplot as plt
 plt.plot([0, 2, 1, 4])
 plt.show()
 ```
+
+## SoloLearn
+
+https://www.sololearn.com/
+
+https://www.sololearn.com/en/learn/courses/python-intermediate
+
+## list comprehension
+
+https://www.sololearn.com/en/learn/courses/python-intermediate/lesson/1188906590?p=1
+
+:::::: {.cols data-latex=""}
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=FALSE, echo=TRUE}
+cubes = [i**3 for i in range(5)]
+
+print(cubes)
+```
+:::
+
+::: {.col data-latex="{0.10\textwidth}"}
+\ 
+:::
+
+::: {.col data-latex="{0.45\textwidth}"}
+```{python, eval=TRUE, echo=FALSE}
+cubes = [i**3 for i in range(5)]
+
+print(cubes)
+```
+:::
+::::::
+
+## functional programming
+
+- pure function
+- lambda
+- map
+- filter
+- generator
+- decorator
+- recursion
+- *args
+- **kwargs
+
+## object-oriented programming = OOP
+
+- class
+- inheritance
+- magic method
+- operator overloading
+- data hiding
+- static method
+- property

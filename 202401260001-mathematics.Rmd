@@ -80,8 +80,13 @@
       - [biostatistics](https://www.youtube.com/playlist?list=PLTp0eSi9MdkNZB4kyLSzIXIUy9JQOJ5AM)
     - [陳鄰安](https://www.youtube.com/playlist?list=PLTpF-A8hKVUPXtNAX9lro-leGgEK0OSEW)
     - [張翔](https://www.youtube.com/@shiangsir/playlists)/廖崇智
+    - [Brandon Foltz](https://www.youtube.com/@BrandonFoltz/playlists)
+      - [nonparametric methods](https://www.youtube.com/playlist?list=PLIeGtxpvyG-IV0Yf8AyeMgmNkpFBxBJlh)
     - [楊欣洲: genetics](https://www.youtube.com/playlist?list=PLTp0eSi9MdkPp0swo8-VVplaG8bateq7q)
     - [王超辰: 醫學統計學/LSHTM notes](https://bookdown.org/ccwang/medical_statistics6/)
+    - [Brady Neal: causal inference](https://www.bradyneal.com/causal-inference-course)
+      - [full lecture](https://www.youtube.com/playlist?list=PLoazKTcS0RzZ1SUgeOgc6SWt51gfT80N0)
+      - [short lecture](https://www.youtube.com/playlist?list=PLoazKTcS0Rzb6bb9L508cyJ1z-U9iWkA0)
   - computer graphics
     - Cem Yuksel
       - [get into your slides with OBS](https://www.youtube.com/playlist?list=PLplnkTzzqsZT2-rLDXArSi8LnhWQu0mqv)

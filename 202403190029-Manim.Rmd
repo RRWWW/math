@@ -68,7 +68,7 @@ manim -pql scene.py CreateCircle
 ::: {show-in="html"}
 
 <div class="col">
-  <video width=350 height=200 autoplay loop <!-- controls  --> >
+  <video width=350 height=200 autoplay loop> <!-- controls  -->
       <source src="manim/CreateCircle.mp4" type="video/mp4">
   </video>
 </div>

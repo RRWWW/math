@@ -2,9 +2,9 @@
 
 ## verbatim
 
-https://community.rstudio.com/t/continued-issues-with-new-verbatim-in-rstudio/139737
+<https://community.rstudio.com/t/continued-issues-with-new-verbatim-in-rstudio/139737>
 
-https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html
+<https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html>
 
 ````{verbatim}
 
@@ -13,7 +13,7 @@ https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html
 ```
 ````
 
-```` {verbatim, lang = "markdown"}
+````{verbatim, lang = "markdown"}
 We can output arbitrary content **verbatim**.
 
 ```{r}
@@ -24,4 +24,3 @@ The content can contain inline code like
 `r pi * 5^2`, too.
 
 ````
-
