@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 30: MatPlotLib / matplotlib | math</title>
+  <meta name="description" content="Chapter 30: MatPlotLib / matplotlib | math" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 30: MatPlotLib / matplotlib | math" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="https://github.com/RRWWW/math/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 30: MatPlotLib / matplotlib | math" />
+  
+  
+  
+
+<meta name="author" content="Joey Yu Hsu" />
+
+
+<meta name="date" content="2024-03-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="archimedean-property.html"/>
+<link rel="next" href="survial-analysis.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">math</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>index</a></li>
+<li class="part"><span><b>I by descipline</b></span></li>
+<li class="chapter" data-level="3" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>3</b> mathematics</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="mathematics.html"><a href="mathematics.html#tool"><i class="fa fa-check"></i><b>3.1</b> tool</a></li>
+<li class="chapter" data-level="3.2" data-path="mathematics.html"><a href="mathematics.html#discipline"><i class="fa fa-check"></i><b>3.2</b> discipline</a></li>
+<li class="chapter" data-level="3.3" data-path="mathematics.html"><a href="mathematics.html#learning-map"><i class="fa fa-check"></i><b>3.3</b> learning map</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="physics.html"><a href="physics.html"><i class="fa fa-check"></i><b>4</b> physics</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="physics.html"><a href="physics.html#discipline-1"><i class="fa fa-check"></i><b>4.1</b> discipline</a></li>
+<li class="chapter" data-level="4.2" data-path="physics.html"><a href="physics.html#learning-map-1"><i class="fa fa-check"></i><b>4.2</b> learning map</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="plot.html"><a href="plot.html"><i class="fa fa-check"></i><b>5</b> plot</a></li>
+<li class="chapter" data-level="6" data-path="programming-language.html"><a href="programming-language.html"><i class="fa fa-check"></i><b>6</b> programming language</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="programming-language.html"><a href="programming-language.html#discipline-2"><i class="fa fa-check"></i><b>6.1</b> discipline</a></li>
+<li class="chapter" data-level="6.2" data-path="programming-language.html"><a href="programming-language.html#learning-map-2"><i class="fa fa-check"></i><b>6.2</b> learning map</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="machine-learning.html"><a href="machine-learning.html"><i class="fa fa-check"></i><b>7</b> machine learning</a></li>
+<li class="part"><span><b>II by date</b></span></li>
+<li class="chapter" data-level="9" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html"><i class="fa fa-check"></i><b>9</b> A Minimal Book Example</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#about"><i class="fa fa-check"></i><b>9.1</b> About</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#usage"><i class="fa fa-check"></i><b>9.1.1</b> Usage</a></li>
+<li class="chapter" data-level="9.1.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#render-book"><i class="fa fa-check"></i><b>9.1.2</b> Render book</a></li>
+<li class="chapter" data-level="9.1.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#preview-book"><i class="fa fa-check"></i><b>9.1.3</b> Preview book</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#hello-bookdown"><i class="fa fa-check"></i><b>9.2</b> Hello bookdown</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#a-section"><i class="fa fa-check"></i><b>9.2.1</b> A section</a>
+<ul>
+<li class="chapter" data-level="" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#an-unnumbered-section"><i class="fa fa-check"></i>An unnumbered section</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#cross"><i class="fa fa-check"></i><b>9.3</b> Cross-references</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#chapters-and-sub-chapters"><i class="fa fa-check"></i><b>9.3.1</b> Chapters and sub-chapters</a></li>
+<li class="chapter" data-level="9.3.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#captioned-figures-and-tables"><i class="fa fa-check"></i><b>9.3.2</b> Captioned figures and tables</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#parts"><i class="fa fa-check"></i><b>9.4</b> Parts</a></li>
+<li class="chapter" data-level="9.5" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#footnotes-and-citations"><i class="fa fa-check"></i><b>9.5</b> Footnotes and citations</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#footnotes"><i class="fa fa-check"></i><b>9.5.1</b> Footnotes</a></li>
+<li class="chapter" data-level="9.5.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#citations"><i class="fa fa-check"></i><b>9.5.2</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#blocks"><i class="fa fa-check"></i><b>9.6</b> Blocks</a>
+<ul>
+<li class="chapter" data-level="9.6.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#equations"><i class="fa fa-check"></i><b>9.6.1</b> Equations</a></li>
+<li class="chapter" data-level="9.6.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#theorems-and-proofs"><i class="fa fa-check"></i><b>9.6.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="9.6.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#callout-blocks"><i class="fa fa-check"></i><b>9.6.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#sharing-your-book"><i class="fa fa-check"></i><b>9.7</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="9.7.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#publishing"><i class="fa fa-check"></i><b>9.7.1</b> Publishing</a></li>
+<li class="chapter" data-level="9.7.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#pages"><i class="fa fa-check"></i><b>9.7.2</b> 404 pages</a></li>
+<li class="chapter" data-level="9.7.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#metadata-for-sharing"><i class="fa fa-check"></i><b>9.7.3</b> Metadata for sharing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="test.html"><a href="test.html"><i class="fa fa-check"></i><b>10</b> test</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="test.html"><a href="test.html#rstudio"><i class="fa fa-check"></i><b>10.1</b> RStudio</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="test.html"><a href="test.html#writer-options"><i class="fa fa-check"></i><b>10.1.1</b> writer options</a>
+<ul>
+<li class="chapter" data-level="10.1.1.1" data-path="test.html"><a href="test.html#line-wrapping"><i class="fa fa-check"></i><b>10.1.1.1</b> line wrapping</a></li>
+<li class="chapter" data-level="10.1.1.2" data-path="test.html"><a href="test.html#ensuring-the-same-markdown-between-source-visual-mode"><i class="fa fa-check"></i><b>10.1.1.2</b> ensuring the same markdown between source / visual mode</a></li>
+</ul></li>
+<li class="chapter" data-level="10.1.2" data-path="test.html"><a href="test.html#rtools"><i class="fa fa-check"></i><b>10.1.2</b> Rtools</a></li>
+<li class="chapter" data-level="10.1.3" data-path="test.html"><a href="test.html#addins"><i class="fa fa-check"></i><b>10.1.3</b> addins</a></li>
+<li class="chapter" data-level="10.1.4" data-path="test.html"><a href="test.html#git"><i class="fa fa-check"></i><b>10.1.4</b> Git</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="test.html"><a href="test.html#rmarkdown"><i class="fa fa-check"></i><b>10.2</b> RMarkdown</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="test.html"><a href="test.html#pandoc-link"><i class="fa fa-check"></i><b>10.2.1</b> Pandoc link</a></li>
+<li class="chapter" data-level="10.2.2" data-path="test.html"><a href="test.html#url"><i class="fa fa-check"></i><b>10.2.2</b> URL</a></li>
+<li class="chapter" data-level="10.2.3" data-path="test.html"><a href="test.html#arrow"><i class="fa fa-check"></i><b>10.2.3</b> arrow</a></li>
+<li class="chapter" data-level="10.2.4" data-path="test.html"><a href="test.html#superscript-and-subscript"><i class="fa fa-check"></i><b>10.2.4</b> superscript and subscript</a>
+<ul>
+<li class="chapter" data-level="10.2.4.1" data-path="test.html"><a href="test.html#latex"><i class="fa fa-check"></i><b>10.2.4.1</b> LaTeX</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2.5" data-path="test.html"><a href="test.html#equation"><i class="fa fa-check"></i><b>10.2.5</b> equation</a>
+<ul>
+<li class="chapter" data-level="10.2.5.1" data-path="test.html"><a href="test.html#proof-qed"><i class="fa fa-check"></i><b>10.2.5.1</b> proof QED</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2.6" data-path="test.html"><a href="test.html#image"><i class="fa fa-check"></i><b>10.2.6</b> image</a>
+<ul>
+<li class="chapter" data-level="10.2.6.1" data-path="test.html"><a href="test.html#diagrammer-mermaid-flowchart"><i class="fa fa-check"></i><b>10.2.6.1</b> DiagrammeR / mermaid flowchart</a></li>
+<li class="chapter" data-level="10.2.6.2" data-path="test.html"><a href="test.html#multiple-images-figures-in-the-same-line"><i class="fa fa-check"></i><b>10.2.6.2</b> multiple images / figures in the same line</a></li>
+<li class="chapter" data-level="10.2.6.3" data-path="test.html"><a href="test.html#figure-size"><i class="fa fa-check"></i><b>10.2.6.3</b> figure size</a>
+<ul>
+<li class="chapter" data-level="10.2.6.3.1" data-path="test.html"><a href="test.html#knitr"><i class="fa fa-check"></i><b>10.2.6.3.1</b> <code>knitr</code></a></li>
+<li class="chapter" data-level="10.2.6.3.2" data-path="test.html"><a href="test.html#out.width-vs.-fig.width"><i class="fa fa-check"></i><b>10.2.6.3.2</b> <code>out.width</code> vs. <code>fig.width</code></a></li>
+</ul></li>
+<li class="chapter" data-level="10.2.6.4" data-path="test.html"><a href="test.html#dynamic-knitr-plot-width-and-height"><i class="fa fa-check"></i><b>10.2.6.4</b> dynamic knitr plot width and height</a></li>
+<li class="chapter" data-level="10.2.6.5" data-path="test.html"><a href="test.html#web-image-in-pdf"><i class="fa fa-check"></i><b>10.2.6.5</b> web image in PDF</a></li>
+<li class="chapter" data-level="10.2.6.6" data-path="test.html"><a href="test.html#svg"><i class="fa fa-check"></i><b>10.2.6.6</b> SVG</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2.7" data-path="test.html"><a href="test.html#horizontal-rule"><i class="fa fa-check"></i><b>10.2.7</b> horizontal rule</a></li>
+<li class="chapter" data-level="10.2.8" data-path="test.html"><a href="test.html#footnote"><i class="fa fa-check"></i><b>10.2.8</b> footnote</a></li>
+<li class="chapter" data-level="10.2.9" data-path="test.html"><a href="test.html#hyperlink"><i class="fa fa-check"></i><b>10.2.9</b> hyperlink</a></li>
+<li class="chapter" data-level="10.2.10" data-path="test.html"><a href="test.html#code-chunk"><i class="fa fa-check"></i><b>10.2.10</b> code chunk</a>
+<ul>
+<li class="chapter" data-level="10.2.10.1" data-path="test.html"><a href="test.html#code-folding"><i class="fa fa-check"></i><b>10.2.10.1</b> code folding</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2.11" data-path="test.html"><a href="test.html#xaringan"><i class="fa fa-check"></i><b>10.2.11</b> xaringan</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="test.html"><a href="test.html#bookdown"><i class="fa fa-check"></i><b>10.3</b> Bookdown</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="test.html"><a href="test.html#system-locale"><i class="fa fa-check"></i><b>10.3.1</b> system locale</a></li>
+<li class="chapter" data-level="10.3.2" data-path="test.html"><a href="test.html#render_book"><i class="fa fa-check"></i><b>10.3.2</b> <code>render_book()</code></a></li>
+<li class="chapter" data-level="10.3.3" data-path="test.html"><a href="test.html#serve_book"><i class="fa fa-check"></i><b>10.3.3</b> <code>serve_book()</code></a></li>
+<li class="chapter" data-level="10.3.4" data-path="test.html"><a href="test.html#latex-1"><i class="fa fa-check"></i><b>10.3.4</b> LaTeX</a>
+<ul>
+<li class="chapter" data-level="10.3.4.1" data-path="test.html"><a href="test.html#hyperlink-url-href"><i class="fa fa-check"></i><b>10.3.4.1</b> hyperlink, URL, href</a></li>
+<li class="chapter" data-level="10.3.4.2" data-path="test.html"><a href="test.html#ugly-mathptmx-sum"><i class="fa fa-check"></i><b>10.3.4.2</b> ugly mathptmx <span class="math inline">\(\sum\)</span></a></li>
+<li class="chapter" data-level="10.3.4.3" data-path="test.html"><a href="test.html#latex-package-in-html-document"><i class="fa fa-check"></i><b>10.3.4.3</b> LaTeX package in HTML document</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3.5" data-path="test.html"><a href="test.html#depth-of-table-of-contents-toc_depth"><i class="fa fa-check"></i><b>10.3.5</b> depth of table of contents <code>toc_depth</code></a></li>
+<li class="chapter" data-level="10.3.6" data-path="test.html"><a href="test.html#multi-column"><i class="fa fa-check"></i><b>10.3.6</b> multi-column layout / two columns</a>
+<ul>
+<li class="chapter" data-level="10.3.6.1" data-path="test.html"><a href="test.html#for-both-html-and-pdf"><i class="fa fa-check"></i><b>10.3.6.1</b> for both HTML and PDF</a></li>
+<li class="chapter" data-level="10.3.6.2" data-path="test.html"><a href="test.html#multi-column-fig.cap-must-use-fig.posh"><i class="fa fa-check"></i><b>10.3.6.2</b> multi-column <code>fig.cap</code> must use <code>fig.pos="H"</code></a></li>
+<li class="chapter" data-level="10.3.6.3" data-path="test.html"><a href="test.html#caption-above-figure"><i class="fa fa-check"></i><b>10.3.6.3</b> caption above figure</a></li>
+<li class="chapter" data-level="10.3.6.4" data-path="test.html"><a href="test.html#for-only-html"><i class="fa fa-check"></i><b>10.3.6.4</b> for only HTML</a>
+<ul>
+<li class="chapter" data-level="10.3.6.4.1" data-path="test.html"><a href="test.html#css-flex"><i class="fa fa-check"></i><b>10.3.6.4.1</b> CSS flex</a></li>
+<li class="chapter" data-level="10.3.6.4.2" data-path="test.html"><a href="test.html#css-grid"><i class="fa fa-check"></i><b>10.3.6.4.2</b> CSS grid</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="test.html"><a href="test.html#conditional-blockchunk-for-either-html-or-pdf-and-chinese-issue"><i class="fa fa-check"></i><b>10.4</b> conditional block/chunk for either HTML or PDF, and Chinese issue</a></li>
+<li class="chapter" data-level="10.5" data-path="test.html"><a href="test.html#video-embedding"><i class="fa fa-check"></i><b>10.5</b> video embedding</a>
+<ul>
+<li class="chapter" data-level="10.5.1" data-path="test.html"><a href="test.html#timestamp"><i class="fa fa-check"></i><b>10.5.1</b> timestamp</a></li>
+</ul></li>
+<li class="chapter" data-level="10.6" data-path="test.html"><a href="test.html#equation-term-coloring"><i class="fa fa-check"></i><b>10.6</b> equation term coloring</a>
+<ul>
+<li class="chapter" data-level="10.6.1" data-path="test.html"><a href="test.html#font-color"><i class="fa fa-check"></i><b>10.6.1</b> font color</a></li>
+<li class="chapter" data-level="10.6.2" data-path="test.html"><a href="test.html#background-color"><i class="fa fa-check"></i><b>10.6.2</b> background color</a></li>
+</ul></li>
+<li class="chapter" data-level="10.7" data-path="test.html"><a href="test.html#link-and-reference"><i class="fa fa-check"></i><b>10.7</b> link and reference</a></li>
+<li class="chapter" data-level="10.8" data-path="test.html"><a href="test.html#nice-label"><i class="fa fa-check"></i><b>10.8</b> number and reference equations</a></li>
+<li class="chapter" data-level="10.9" data-path="test.html"><a href="test.html#footnote-1"><i class="fa fa-check"></i><b>10.9</b> footnote</a></li>
+<li class="chapter" data-level="10.10" data-path="test.html"><a href="test.html#citation"><i class="fa fa-check"></i><b>10.10</b> citation</a>
+<ul>
+<li class="chapter" data-level="10.10.1" data-path="test.html"><a href="test.html#citation-in-fig.cap"><i class="fa fa-check"></i><b>10.10.1</b> citation in <code>fig.cap</code></a></li>
+<li class="chapter" data-level="10.10.2" data-path="test.html"><a href="test.html#backreference"><i class="fa fa-check"></i><b>10.10.2</b> backreference</a></li>
+</ul></li>
+<li class="chapter" data-level="10.11" data-path="test.html"><a href="test.html#environment-for-definition-theorem-proof"><i class="fa fa-check"></i><b>10.11</b> environment for definition, theorem, proof</a></li>
+<li class="chapter" data-level="10.12" data-path="test.html"><a href="test.html#slide-or-presentation"><i class="fa fa-check"></i><b>10.12</b> slide or presentation</a>
+<ul>
+<li class="chapter" data-level="10.12.1" data-path="test.html"><a href="test.html#xaringan-and-infinite-moon-reader"><i class="fa fa-check"></i><b>10.12.1</b> Xaringan and Infinite Moon Reader</a></li>
+<li class="chapter" data-level="10.12.2" data-path="test.html"><a href="test.html#ioslides"><i class="fa fa-check"></i><b>10.12.2</b> ioslides</a></li>
+<li class="chapter" data-level="10.12.3" data-path="test.html"><a href="test.html#powerpoint"><i class="fa fa-check"></i><b>10.12.3</b> PowerPoint</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="test2.html"><a href="test2.html"><i class="fa fa-check"></i><b>11</b> test2</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="test2.html"><a href="test2.html#verbatim"><i class="fa fa-check"></i><b>11.1</b> verbatim</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="partition.html"><a href="partition.html"><i class="fa fa-check"></i><b>12</b> partition</a></li>
+<li class="chapter" data-level="13" data-path="equivalence-class.html"><a href="equivalence-class.html"><i class="fa fa-check"></i><b>13</b> equivalence class</a></li>
+<li class="chapter" data-level="14" data-path="equivalence-relation.html"><a href="equivalence-relation.html"><i class="fa fa-check"></i><b>14</b> equivalence relation</a></li>
+<li class="chapter" data-level="15" data-path="python.html"><a href="python.html"><i class="fa fa-check"></i><b>15</b> Python</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="python.html"><a href="python.html#using-python-in-r-rmarkdown"><i class="fa fa-check"></i><b>15.1</b> using Python in R / RMarkdown</a></li>
+<li class="chapter" data-level="15.2" data-path="python.html"><a href="python.html#sololearn"><i class="fa fa-check"></i><b>15.2</b> SoloLearn</a></li>
+<li class="chapter" data-level="15.3" data-path="python.html"><a href="python.html#list-comprehension"><i class="fa fa-check"></i><b>15.3</b> list comprehension</a></li>
+<li class="chapter" data-level="15.4" data-path="python.html"><a href="python.html#functional-programming"><i class="fa fa-check"></i><b>15.4</b> functional programming</a></li>
+<li class="chapter" data-level="15.5" data-path="python.html"><a href="python.html#object-oriented-programming-oop"><i class="fa fa-check"></i><b>15.5</b> object-oriented programming = OOP</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="tikz.html"><a href="tikz.html"><i class="fa fa-check"></i><b>16</b> TikZ</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="tikz.html"><a href="tikz.html#d"><i class="fa fa-check"></i><b>16.1</b> 2D</a></li>
+<li class="chapter" data-level="16.2" data-path="tikz.html"><a href="tikz.html#d-1"><i class="fa fa-check"></i><b>16.2</b> 3D</a></li>
+<li class="chapter" data-level="16.3" data-path="tikz.html"><a href="tikz.html#plots-of-functions"><i class="fa fa-check"></i><b>16.3</b> plots of functions</a></li>
+<li class="chapter" data-level="16.4" data-path="tikz.html"><a href="tikz.html#pgfplots"><i class="fa fa-check"></i><b>16.4</b> PGFplots</a>
+<ul>
+<li class="chapter" data-level="16.4.1" data-path="tikz.html"><a href="tikz.html#the-axis-environments"><i class="fa fa-check"></i><b>16.4.1</b> the axis environments</a></li>
+<li class="chapter" data-level="16.4.2" data-path="tikz.html"><a href="tikz.html#axis-descriptions"><i class="fa fa-check"></i><b>16.4.2</b> axis descriptions</a>
+<ul>
+<li class="chapter" data-level="16.4.2.1" data-path="tikz.html"><a href="tikz.html#placement-of-axis-descriptions"><i class="fa fa-check"></i><b>16.4.2.1</b> placement of axis descriptions</a>
+<ul>
+<li class="chapter" data-level="16.4.2.1.1" data-path="tikz.html"><a href="tikz.html#coordinate-system-axis-description-cs"><i class="fa fa-check"></i><b>16.4.2.1.1</b> coordinate system <code>axis description cs</code></a></li>
+<li class="chapter" data-level="16.4.2.1.2" data-path="tikz.html"><a href="tikz.html#legend"><i class="fa fa-check"></i><b>16.4.2.1.2</b> legend</a></li>
+<li class="chapter" data-level="16.4.2.1.3" data-path="tikz.html"><a href="tikz.html#tick-option"><i class="fa fa-check"></i><b>16.4.2.1.3</b> tick option</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16.4.3" data-path="tikz.html"><a href="tikz.html#declare-function"><i class="fa fa-check"></i><b>16.4.3</b> <code>declare function</code></a>
+<ul>
+<li class="chapter" data-level="16.4.3.1" data-path="tikz.html"><a href="tikz.html#pgfmathparse"><i class="fa fa-check"></i><b>16.4.3.1</b> <code>pgfmathparse</code></a></li>
+<li class="chapter" data-level="16.4.3.2" data-path="tikz.html"><a href="tikz.html#pgfmathdeclarefunction"><i class="fa fa-check"></i><b>16.4.3.2</b> <code>pgfmathdeclarefunction</code></a></li>
+</ul></li>
+<li class="chapter" data-level="16.4.4" data-path="tikz.html"><a href="tikz.html#and---in-tikz"><i class="fa fa-check"></i><b>16.4.4</b> <code>|-</code> and <code>-|</code> in TikZ</a></li>
+<li class="chapter" data-level="16.4.5" data-path="tikz.html"><a href="tikz.html#pgfplotsinvokeforeach"><i class="fa fa-check"></i><b>16.4.5</b> <code>pgfplotsinvokeforeach</code></a></li>
+<li class="chapter" data-level="16.4.6" data-path="tikz.html"><a href="tikz.html#interpolation-dashed-lines"><i class="fa fa-check"></i><b>16.4.6</b> interpolation dashed lines</a></li>
+<li class="chapter" data-level="16.4.7" data-path="tikz.html"><a href="tikz.html#zewbie"><i class="fa fa-check"></i><b>16.4.7</b> Zewbie</a>
+<ul>
+<li class="chapter" data-level="16.4.7.1" data-path="tikz.html"><a href="tikz.html#coordinate-axisaxes-fine-tuing"><i class="fa fa-check"></i><b>16.4.7.1</b> coordinate axis/axes fine-tuing</a>
+<ul>
+<li class="chapter" data-level="16.4.7.1.1" data-path="tikz.html"><a href="tikz.html#range"><i class="fa fa-check"></i><b>16.4.7.1.1</b> range</a></li>
+<li class="chapter" data-level="16.4.7.1.2" data-path="tikz.html"><a href="tikz.html#scaling"><i class="fa fa-check"></i><b>16.4.7.1.2</b> scaling</a></li>
+<li class="chapter" data-level="16.4.7.1.3" data-path="tikz.html"><a href="tikz.html#direction-vector"><i class="fa fa-check"></i><b>16.4.7.1.3</b> direction vector</a></li>
+<li class="chapter" data-level="16.4.7.1.4" data-path="tikz.html"><a href="tikz.html#axis-style"><i class="fa fa-check"></i><b>16.4.7.1.4</b> axis style</a></li>
+<li class="chapter" data-level="16.4.7.1.5" data-path="tikz.html"><a href="tikz.html#axis-discontinuity"><i class="fa fa-check"></i><b>16.4.7.1.5</b> axis discontinuity</a></li>
+<li class="chapter" data-level="16.4.7.1.6" data-path="tikz.html"><a href="tikz.html#tick"><i class="fa fa-check"></i><b>16.4.7.1.6</b> tick</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4.7.2" data-path="tikz.html"><a href="tikz.html#addplot"><i class="fa fa-check"></i><b>16.4.7.2</b> <code>addplot+</code></a></li>
+<li class="chapter" data-level="16.4.7.3" data-path="tikz.html"><a href="tikz.html#point"><i class="fa fa-check"></i><b>16.4.7.3</b> point</a></li>
+<li class="chapter" data-level="16.4.7.4" data-path="tikz.html"><a href="tikz.html#line"><i class="fa fa-check"></i><b>16.4.7.4</b> line</a></li>
+<li class="chapter" data-level="16.4.7.5" data-path="tikz.html"><a href="tikz.html#plane"><i class="fa fa-check"></i><b>16.4.7.5</b> plane</a></li>
+<li class="chapter" data-level="16.4.7.6" data-path="tikz.html"><a href="tikz.html#polar-coordinate"><i class="fa fa-check"></i><b>16.4.7.6</b> polar coordinate</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4.8" data-path="tikz.html"><a href="tikz.html#arnav-bandekar-using-pgfplots-to-make-economic-graphs-in-latex"><i class="fa fa-check"></i><b>16.4.8</b> Arnav Bandekar: Using pgfplots to make economic graphs in LaTeX</a></li>
+<li class="chapter" data-level="16.4.9" data-path="tikz.html"><a href="tikz.html#pgfplots-gallery"><i class="fa fa-check"></i><b>16.4.9</b> PGFplots gallery</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="tikz.html"><a href="tikz.html#tikzplotlib"><i class="fa fa-check"></i><b>16.5</b> TikZplotLib / tikzplotlib</a></li>
+<li class="chapter" data-level="16.6" data-path="tikz.html"><a href="tikz.html#animation"><i class="fa fa-check"></i><b>16.6</b> animation</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="xy-pic.html"><a href="xy-pic.html"><i class="fa fa-check"></i><b>17</b> xy-pic</a></li>
+<li class="chapter" data-level="18" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>18</b> statistics</a></li>
+<li class="chapter" data-level="19" data-path="covariance-matrix.html"><a href="covariance-matrix.html"><i class="fa fa-check"></i><b>19</b> covariance matrix</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="covariance-matrix.html"><a href="covariance-matrix.html#covariance-matrix-1"><i class="fa fa-check"></i><b>19.1</b> covariance matrix</a>
+<ul>
+<li class="chapter" data-level="19.1.1" data-path="covariance-matrix.html"><a href="covariance-matrix.html#calculation"><i class="fa fa-check"></i><b>19.1.1</b> calculation</a></li>
+<li class="chapter" data-level="19.1.2" data-path="covariance-matrix.html"><a href="covariance-matrix.html#mathrmvleftboldsymbolxboldsymbolbrightmathrmvleftboldsymbolxright"><i class="fa fa-check"></i><b>19.1.2</b> <span class="math inline">\(\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[\boldsymbol{X}\right]\)</span></a></li>
+<li class="chapter" data-level="19.1.3" data-path="covariance-matrix.html"><a href="covariance-matrix.html#mathrmvleftaboldsymbolxrightamathrmvleftboldsymbolxrightamathrmt"><i class="fa fa-check"></i><b>19.1.3</b> <span class="math inline">\(\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)</span></a></li>
+<li class="chapter" data-level="19.1.4" data-path="covariance-matrix.html"><a href="covariance-matrix.html#mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxrightamathrmt"><i class="fa fa-check"></i><b>19.1.4</b> <span class="math inline">\(\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="gosper-algorithm.html"><a href="gosper-algorithm.html"><i class="fa fa-check"></i><b>20</b> Gosper algorithm</a></li>
+<li class="chapter" data-level="21" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html"><i class="fa fa-check"></i><b>21</b> Lorentz transformation</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#einstein"><i class="fa fa-check"></i><b>21.1</b> Einstein</a></li>
+<li class="chapter" data-level="21.2" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#bondi-k-calculus"><i class="fa fa-check"></i><b>21.2</b> Bondi <span class="math inline">\(k\)</span>-calculus</a></li>
+<li class="chapter" data-level="21.3" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#wordline-in-minkowski-space"><i class="fa fa-check"></i><b>21.3</b> wordline in Minkowski space</a>
+<ul>
+<li class="chapter" data-level="21.3.1" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#wick-rotation"><i class="fa fa-check"></i><b>21.3.1</b> Wick rotation</a>
+<ul>
+<li class="chapter" data-level="21.3.1.1" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#osterwalder-schrader-reconstruction-theorem"><i class="fa fa-check"></i><b>21.3.1.1</b> Osterwalder-Schrader reconstruction theorem</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="r.html"><a href="r.html"><i class="fa fa-check"></i><b>22</b> R</a>
+<ul>
+<li class="chapter" data-level="22.1" data-path="r.html"><a href="r.html#tonykuoyj"><i class="fa fa-check"></i><b>22.1</b> TonyKuoYJ</a>
+<ul>
+<li class="chapter" data-level="22.1.1" data-path="r.html"><a href="r.html#quick-intro"><i class="fa fa-check"></i><b>22.1.1</b> quick intro</a>
+<ul>
+<li class="chapter" data-level="22.1.1.1" data-path="r.html"><a href="r.html#function"><i class="fa fa-check"></i><b>22.1.1.1</b> function</a></li>
+</ul></li>
+<li class="chapter" data-level="22.1.2" data-path="r.html"><a href="r.html#r-style"><i class="fa fa-check"></i><b>22.1.2</b> R style</a></li>
+<li class="chapter" data-level="22.1.3" data-path="r.html"><a href="r.html#data-workflow-or-forward-pipe"><i class="fa fa-check"></i><b>22.1.3</b> data workflow or forward pipe</a>
+<ul>
+<li class="chapter" data-level="22.1.3.1" data-path="r.html"><a href="r.html#operator"><i class="fa fa-check"></i><b>22.1.3.1</b> <code>%&gt;%</code> operator</a></li>
+</ul></li>
+<li class="chapter" data-level="22.1.4" data-path="r.html"><a href="r.html#data-processing-with-dplyr"><i class="fa fa-check"></i><b>22.1.4</b> data processing with <code>dplyr</code></a></li>
+<li class="chapter" data-level="22.1.5" data-path="r.html"><a href="r.html#visualization-statically-with-ggplot2"><i class="fa fa-check"></i><b>22.1.5</b> visualization statically with <code>ggplot2</code></a></li>
+<li class="chapter" data-level="22.1.6" data-path="r.html"><a href="r.html#loop"><i class="fa fa-check"></i><b>22.1.6</b> loop</a></li>
+<li class="chapter" data-level="22.1.7" data-path="r.html"><a href="r.html#variable-type"><i class="fa fa-check"></i><b>22.1.7</b> variable type</a>
+<ul>
+<li class="chapter" data-level="22.1.7.1" data-path="r.html"><a href="r.html#date"><i class="fa fa-check"></i><b>22.1.7.1</b> date</a></li>
+<li class="chapter" data-level="22.1.7.2" data-path="r.html"><a href="r.html#time"><i class="fa fa-check"></i><b>22.1.7.2</b> time</a></li>
+<li class="chapter" data-level="22.1.7.3" data-path="r.html"><a href="r.html#quotient-operator"><i class="fa fa-check"></i><b>22.1.7.3</b> quotient <code>%/%</code> operator</a></li>
+</ul></li>
+<li class="chapter" data-level="22.1.8" data-path="r.html"><a href="r.html#data-type"><i class="fa fa-check"></i><b>22.1.8</b> data type</a>
+<ul>
+<li class="chapter" data-level="22.1.8.1" data-path="r.html"><a href="r.html#vector"><i class="fa fa-check"></i><b>22.1.8.1</b> vector</a>
+<ul>
+<li class="chapter" data-level="22.1.8.1.1" data-path="r.html"><a href="r.html#logic"><i class="fa fa-check"></i><b>22.1.8.1.1</b> logic</a></li>
+<li class="chapter" data-level="22.1.8.1.2" data-path="r.html"><a href="r.html#rep-repeat"><i class="fa fa-check"></i><b>22.1.8.1.2</b> <code>rep</code> repeat</a></li>
+<li class="chapter" data-level="22.1.8.1.3" data-path="r.html"><a href="r.html#seq-sequence"><i class="fa fa-check"></i><b>22.1.8.1.3</b> <code>seq</code> sequence</a></li>
+</ul></li>
+<li class="chapter" data-level="22.1.8.2" data-path="r.html"><a href="r.html#factor"><i class="fa fa-check"></i><b>22.1.8.2</b> factor</a></li>
+<li class="chapter" data-level="22.1.8.3" data-path="r.html"><a href="r.html#matrix"><i class="fa fa-check"></i><b>22.1.8.3</b> matrix</a></li>
+<li class="chapter" data-level="22.1.8.4" data-path="r.html"><a href="r.html#data-frame"><i class="fa fa-check"></i><b>22.1.8.4</b> data frame</a>
+<ul>
+<li class="chapter" data-level="22.1.8.4.1" data-path="r.html"><a href="r.html#selecting-variable-or-column"><i class="fa fa-check"></i><b>22.1.8.4.1</b> selecting variable or column</a></li>
+<li class="chapter" data-level="22.1.8.4.2" data-path="r.html"><a href="r.html#filtering-observation-or-row"><i class="fa fa-check"></i><b>22.1.8.4.2</b> filtering observation or row</a></li>
+<li class="chapter" data-level="22.1.8.4.3" data-path="r.html"><a href="r.html#check-mixed-data-type"><i class="fa fa-check"></i><b>22.1.8.4.3</b> check mixed data type</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="22.2" data-path="r.html"><a href="r.html#w3school"><i class="fa fa-check"></i><b>22.2</b> W3School</a>
+<ul>
+<li class="chapter" data-level="22.2.1" data-path="r.html"><a href="r.html#same-multiple-variable"><i class="fa fa-check"></i><b>22.2.1</b> same multiple variable</a></li>
+<li class="chapter" data-level="22.2.2" data-path="r.html"><a href="r.html#legal-variable-name"><i class="fa fa-check"></i><b>22.2.2</b> legal variable name</a></li>
+<li class="chapter" data-level="22.2.3" data-path="r.html"><a href="r.html#complex-number"><i class="fa fa-check"></i><b>22.2.3</b> complex number</a></li>
+<li class="chapter" data-level="22.2.4" data-path="r.html"><a href="r.html#escape-character"><i class="fa fa-check"></i><b>22.2.4</b> escape character</a></li>
+<li class="chapter" data-level="22.2.5" data-path="r.html"><a href="r.html#global-assignment--"><i class="fa fa-check"></i><b>22.2.5</b> global assignment <code>&lt;&lt;-</code></a></li>
+<li class="chapter" data-level="22.2.6" data-path="r.html"><a href="r.html#data-type-1"><i class="fa fa-check"></i><b>22.2.6</b> data type</a>
+<ul>
+<li class="chapter" data-level="22.2.6.1" data-path="r.html"><a href="r.html#array"><i class="fa fa-check"></i><b>22.2.6.1</b> array</a></li>
+<li class="chapter" data-level="22.2.6.2" data-path="r.html"><a href="r.html#list"><i class="fa fa-check"></i><b>22.2.6.2</b> list</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="22.3" data-path="r.html"><a href="r.html#apan-liao"><i class="fa fa-check"></i><b>22.3</b> Apan Liao</a>
+<ul>
+<li class="chapter" data-level="22.3.1" data-path="r.html"><a href="r.html#data-input"><i class="fa fa-check"></i><b>22.3.1</b> data input</a></li>
+<li class="chapter" data-level="22.3.2" data-path="r.html"><a href="r.html#descriptive-statistics"><i class="fa fa-check"></i><b>22.3.2</b> descriptive statistics</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="laplace-transform.html"><a href="laplace-transform.html"><i class="fa fa-check"></i><b>23</b> Laplace transform</a></li>
+<li class="chapter" data-level="24" data-path="conic-section.html"><a href="conic-section.html"><i class="fa fa-check"></i><b>24</b> conic section</a>
+<ul>
+<li class="chapter" data-level="24.1" data-path="conic-section.html"><a href="conic-section.html#cartesian-coordinate-focus-directrix-eccentricity"><i class="fa fa-check"></i><b>24.1</b> Cartesian coordinate: focus, directrix, eccentricity</a></li>
+<li class="chapter" data-level="24.2" data-path="conic-section.html"><a href="conic-section.html#two-definition-equivalence-for-ellipse-and-hyperbola"><i class="fa fa-check"></i><b>24.2</b> two-definition equivalence for ellipse and hyperbola</a>
+<ul>
+<li class="chapter" data-level="24.2.1" data-path="conic-section.html"><a href="conic-section.html#first-definition-for-conic-sections-including-ellipses-and-hyperbolas"><i class="fa fa-check"></i><b>24.2.1</b> first definition for conic sections including ellipses and hyperbolas</a></li>
+<li class="chapter" data-level="24.2.2" data-path="conic-section.html"><a href="conic-section.html#second-definition-for-ellipses-and-hyperbolas"><i class="fa fa-check"></i><b>24.2.2</b> second definition for ellipses and hyperbolas</a></li>
+<li class="chapter" data-level="24.2.3" data-path="conic-section.html"><a href="conic-section.html#eccentricity-and-its-equivalent-representation"><i class="fa fa-check"></i><b>24.2.3</b> eccentricity and its equivalent representation</a></li>
+</ul></li>
+<li class="chapter" data-level="24.3" data-path="conic-section.html"><a href="conic-section.html#cartesian-coordinate-standard-form-standard-equation"><i class="fa fa-check"></i><b>24.3</b> Cartesian coordinate: standard form / standard equation</a></li>
+<li class="chapter" data-level="24.4" data-path="conic-section.html"><a href="conic-section.html#parametric-equation"><i class="fa fa-check"></i><b>24.4</b> parametric equation</a></li>
+<li class="chapter" data-level="24.5" data-path="conic-section.html"><a href="conic-section.html#polar-coordinate-1"><i class="fa fa-check"></i><b>24.5</b> polar coordinate</a></li>
+<li class="chapter" data-level="24.6" data-path="conic-section.html"><a href="conic-section.html#cartesian-coordinate-general-form-quadratic-equation"><i class="fa fa-check"></i><b>24.6</b> Cartesian coordinate: general form / quadratic equation</a></li>
+<li class="chapter" data-level="24.7" data-path="conic-section.html"><a href="conic-section.html#homogeneous-coordinate"><i class="fa fa-check"></i><b>24.7</b> homogeneous coordinate</a></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html"><i class="fa fa-check"></i><b>25</b> distance from a point to a line</a>
+<ul>
+<li class="chapter" data-level="25.1" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-shortest-overlineppprime"><i class="fa fa-check"></i><b>25.1</b> by shortest <span class="math inline">\(\overline{PP^{\prime}}\)</span></a></li>
+<li class="chapter" data-level="25.2" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-perpendicular-foot"><i class="fa fa-check"></i><b>25.2</b> by perpendicular foot</a></li>
+<li class="chapter" data-level="25.3" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-normal-vector"><i class="fa fa-check"></i><b>25.3</b> by normal vector</a></li>
+<li class="chapter" data-level="25.4" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-cauchy-inequality"><i class="fa fa-check"></i><b>25.4</b> by Cauchy inequality</a></li>
+</ul></li>
+<li class="chapter" data-level="26" data-path="real-symmetric-matrix-diagonalizable.html"><a href="real-symmetric-matrix-diagonalizable.html"><i class="fa fa-check"></i><b>26</b> real symmetric matrix diagonalizable</a></li>
+<li class="chapter" data-level="27" data-path="tangent-half-angle-formula.html"><a href="tangent-half-angle-formula.html"><i class="fa fa-check"></i><b>27</b> tangent half-angle formula</a></li>
+<li class="chapter" data-level="28" data-path="homogeneous-coordinate-1.html"><a href="homogeneous-coordinate-1.html"><i class="fa fa-check"></i><b>28</b> homogeneous coordinate</a></li>
+<li class="chapter" data-level="29" data-path="archimedean-property.html"><a href="archimedean-property.html"><i class="fa fa-check"></i><b>29</b> Archimedean property</a>
+<ul>
+<li class="chapter" data-level="29.1" data-path="archimedean-property.html"><a href="archimedean-property.html#integer-archimedean-property"><i class="fa fa-check"></i><b>29.1</b> integer Archimedean property</a></li>
+<li class="chapter" data-level="29.2" data-path="archimedean-property.html"><a href="archimedean-property.html#rational-archimedean-property"><i class="fa fa-check"></i><b>29.2</b> rational Archimedean property</a></li>
+<li class="chapter" data-level="29.3" data-path="archimedean-property.html"><a href="archimedean-property.html#real-archimedean-property"><i class="fa fa-check"></i><b>29.3</b> real Archimedean property</a></li>
+</ul></li>
+<li class="chapter" data-level="30" data-path="matplotlib.html"><a href="matplotlib.html"><i class="fa fa-check"></i><b>30</b> MatPlotLib / matplotlib</a>
+<ul>
+<li class="chapter" data-level="30.1" data-path="matplotlib.html"><a href="matplotlib.html#timothy-h.-wu"><i class="fa fa-check"></i><b>30.1</b> Timothy H. Wu</a>
+<ul>
+<li class="chapter" data-level="30.1.1" data-path="matplotlib.html"><a href="matplotlib.html#functionalapi"><i class="fa fa-check"></i><b>30.1.1</b> funcitonal API</a></li>
+<li class="chapter" data-level="30.1.2" data-path="matplotlib.html"><a href="matplotlib.html#ooapi"><i class="fa fa-check"></i><b>30.1.2</b> object-oriented API</a>
+<ul>
+<li class="chapter" data-level="30.1.2.1" data-path="matplotlib.html"><a href="matplotlib.html#configure-the-figure-size-and-dpi"><i class="fa fa-check"></i><b>30.1.2.1</b> Configure the figure size and DPI</a></li>
+<li class="chapter" data-level="30.1.2.2" data-path="matplotlib.html"><a href="matplotlib.html#subplot"><i class="fa fa-check"></i><b>30.1.2.2</b> subplot</a></li>
+<li class="chapter" data-level="30.1.2.3" data-path="matplotlib.html"><a href="matplotlib.html#color-and-linestyle"><i class="fa fa-check"></i><b>30.1.2.3</b> color and linestyle</a></li>
+<li class="chapter" data-level="30.1.2.4" data-path="matplotlib.html"><a href="matplotlib.html#other-inputs"><i class="fa fa-check"></i><b>30.1.2.4</b> other inputs</a></li>
+<li class="chapter" data-level="30.1.2.5" data-path="matplotlib.html"><a href="matplotlib.html#legend-1"><i class="fa fa-check"></i><b>30.1.2.5</b> legend</a></li>
+<li class="chapter" data-level="30.1.2.6" data-path="matplotlib.html"><a href="matplotlib.html#customize-style"><i class="fa fa-check"></i><b>30.1.2.6</b> customize style</a></li>
+<li class="chapter" data-level="30.1.2.7" data-path="matplotlib.html"><a href="matplotlib.html#save-to-file"><i class="fa fa-check"></i><b>30.1.2.7</b> save to file</a></li>
+</ul></li>
+<li class="chapter" data-level="30.1.3" data-path="matplotlib.html"><a href="matplotlib.html#seaborn"><i class="fa fa-check"></i><b>30.1.3</b> Seaborn</a>
+<ul>
+<li class="chapter" data-level="30.1.3.1" data-path="matplotlib.html"><a href="matplotlib.html#basic"><i class="fa fa-check"></i><b>30.1.3.1</b> basic</a></li>
+<li class="chapter" data-level="30.1.3.2" data-path="matplotlib.html"><a href="matplotlib.html#data-frame-1"><i class="fa fa-check"></i><b>30.1.3.2</b> data frame</a></li>
+<li class="chapter" data-level="30.1.3.3" data-path="matplotlib.html"><a href="matplotlib.html#axis-level-plot-and-figure-level-plot"><i class="fa fa-check"></i><b>30.1.3.3</b> axis-level plot and figure-level plot</a></li>
+<li class="chapter" data-level="30.1.3.4" data-path="matplotlib.html"><a href="matplotlib.html#accessing-fgure-and-axes-objects"><i class="fa fa-check"></i><b>30.1.3.4</b> accessing fgure and axes objects</a></li>
+<li class="chapter" data-level="30.1.3.5" data-path="matplotlib.html"><a href="matplotlib.html#distribution-plot"><i class="fa fa-check"></i><b>30.1.3.5</b> distribution plot</a>
+<ul>
+<li class="chapter" data-level="30.1.3.5.1" data-path="matplotlib.html"><a href="matplotlib.html#histogram"><i class="fa fa-check"></i><b>30.1.3.5.1</b> histogram</a></li>
+<li class="chapter" data-level="30.1.3.5.2" data-path="matplotlib.html"><a href="matplotlib.html#ecdf-empirical-cumulative-distrutive-function"><i class="fa fa-check"></i><b>30.1.3.5.2</b> ECDF = empirical cumulative distrutive function</a></li>
+<li class="chapter" data-level="30.1.3.5.3" data-path="matplotlib.html"><a href="matplotlib.html#kde-kernel-density-estimation"><i class="fa fa-check"></i><b>30.1.3.5.3</b> KDE = kernel density estimation</a></li>
+</ul></li>
+<li class="chapter" data-level="30.1.3.6" data-path="matplotlib.html"><a href="matplotlib.html#categorical-plot"><i class="fa fa-check"></i><b>30.1.3.6</b> categorical plot</a></li>
+<li class="chapter" data-level="30.1.3.7" data-path="matplotlib.html"><a href="matplotlib.html#joint-plot"><i class="fa fa-check"></i><b>30.1.3.7</b> joint plot</a></li>
+<li class="chapter" data-level="30.1.3.8" data-path="matplotlib.html"><a href="matplotlib.html#pair-plot"><i class="fa fa-check"></i><b>30.1.3.8</b> pair plot</a></li>
+<li class="chapter" data-level="30.1.3.9" data-path="matplotlib.html"><a href="matplotlib.html#palette"><i class="fa fa-check"></i><b>30.1.3.9</b> palette</a></li>
+<li class="chapter" data-level="30.1.3.10" data-path="matplotlib.html"><a href="matplotlib.html#volcano-plot"><i class="fa fa-check"></i><b>30.1.3.10</b> volcano plot</a></li>
+<li class="chapter" data-level="30.1.3.11" data-path="matplotlib.html"><a href="matplotlib.html#heatmap"><i class="fa fa-check"></i><b>30.1.3.11</b> heatmap</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="30.2" data-path="matplotlib.html"><a href="matplotlib.html#export"><i class="fa fa-check"></i><b>30.2</b> export</a>
+<ul>
+<li class="chapter" data-level="30.2.1" data-path="matplotlib.html"><a href="matplotlib.html#svg-1"><i class="fa fa-check"></i><b>30.2.1</b> .svg</a></li>
+<li class="chapter" data-level="30.2.2" data-path="matplotlib.html"><a href="matplotlib.html#eps"><i class="fa fa-check"></i><b>30.2.2</b> .eps</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="31" data-path="survial-analysis.html"><a href="survial-analysis.html"><i class="fa fa-check"></i><b>31</b> survial analysis</a>
+<ul>
+<li class="chapter" data-level="31.1" data-path="survial-analysis.html"><a href="survial-analysis.html#python-package-tableone"><i class="fa fa-check"></i><b>31.1</b> Python package <code>tableone</code></a></li>
+<li class="chapter" data-level="31.2" data-path="survial-analysis.html"><a href="survial-analysis.html#python-package-lifelines"><i class="fa fa-check"></i><b>31.2</b> Python package <code>lifelines</code></a></li>
+</ul></li>
+<li class="chapter" data-level="32" data-path="manim.html"><a href="manim.html"><i class="fa fa-check"></i><b>32</b> Manim</a>
+<ul>
+<li class="chapter" data-level="32.1" data-path="manim.html"><a href="manim.html#vscode-extension-manim-sideview"><i class="fa fa-check"></i><b>32.1</b> VSCode extension: Manim Sideview</a></li>
+<li class="chapter" data-level="32.2" data-path="manim.html"><a href="manim.html#installation"><i class="fa fa-check"></i><b>32.2</b> installation</a>
+<ul>
+<li class="chapter" data-level="32.2.1" data-path="manim.html"><a href="manim.html#conda"><i class="fa fa-check"></i><b>32.2.1</b> Conda</a></li>
+</ul></li>
+<li class="chapter" data-level="32.3" data-path="manim.html"><a href="manim.html#quickstart"><i class="fa fa-check"></i><b>32.3</b> quickstart</a></li>
+</ul></li>
+<li class="chapter" data-level="33" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>33</b> ggplot2</a>
+<ul>
+<li class="chapter" data-level="33.1" data-path="ggplot2.html"><a href="ggplot2.html#geom"><i class="fa fa-check"></i><b>33.1</b> geom</a>
+<ul>
+<li class="chapter" data-level="33.1.1" data-path="ggplot2.html"><a href="ggplot2.html#basic-plot-system-decomposition"><i class="fa fa-check"></i><b>33.1.1</b> basic plot system decomposition</a></li>
+</ul></li>
+<li class="chapter" data-level="33.2" data-path="ggplot2.html"><a href="ggplot2.html#statistic"><i class="fa fa-check"></i><b>33.2</b> statistic</a></li>
+<li class="chapter" data-level="33.3" data-path="ggplot2.html"><a href="ggplot2.html#scale"><i class="fa fa-check"></i><b>33.3</b> scale</a></li>
+<li class="chapter" data-level="33.4" data-path="ggplot2.html"><a href="ggplot2.html#coordinate-system"><i class="fa fa-check"></i><b>33.4</b> coordinate system</a></li>
+<li class="chapter" data-level="33.5" data-path="ggplot2.html"><a href="ggplot2.html#facet"><i class="fa fa-check"></i><b>33.5</b> facet</a></li>
+<li class="chapter" data-level="33.6" data-path="ggplot2.html"><a href="ggplot2.html#jitter"><i class="fa fa-check"></i><b>33.6</b> jitter</a></li>
+<li class="chapter" data-level="33.7" data-path="ggplot2.html"><a href="ggplot2.html#font"><i class="fa fa-check"></i><b>33.7</b> font</a></li>
+</ul></li>
+<li class="chapter" data-level="34" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html"><i class="fa fa-check"></i><b>34</b> notational system for design</a>
+<ul>
+<li class="chapter" data-level="34.1" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#graphic-notation"><i class="fa fa-check"></i><b>34.1</b> graphic notation</a></li>
+<li class="chapter" data-level="34.2" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#pre-experimental-design"><i class="fa fa-check"></i><b>34.2</b> pre-experimental design</a>
+<ul>
+<li class="chapter" data-level="34.2.1" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#one-shot-case-study"><i class="fa fa-check"></i><b>34.2.1</b> one-shot case study</a></li>
+<li class="chapter" data-level="34.2.2" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#one-group-pretest-posttest-design"><i class="fa fa-check"></i><b>34.2.2</b> one-group pretest-posttest design</a></li>
+<li class="chapter" data-level="34.2.3" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#static-group-comparison"><i class="fa fa-check"></i><b>34.2.3</b> static-group comparison</a></li>
+</ul></li>
+<li class="chapter" data-level="34.3" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#true-experimental-design"><i class="fa fa-check"></i><b>34.3</b> true experimental design</a>
+<ul>
+<li class="chapter" data-level="34.3.1" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#posttest-only-control-group-design"><i class="fa fa-check"></i><b>34.3.1</b> posttest-only control group design</a></li>
+<li class="chapter" data-level="34.3.2" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#pretest-posttest-control-group-design"><i class="fa fa-check"></i><b>34.3.2</b> pretest-posttest control group design</a></li>
+<li class="chapter" data-level="34.3.3" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#solomon-four-group-design"><i class="fa fa-check"></i><b>34.3.3</b> Solomon four-group design</a></li>
+</ul></li>
+<li class="chapter" data-level="34.4" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#quasi-experimental-design"><i class="fa fa-check"></i><b>34.4</b> quasi-experimental design</a></li>
+<li class="chapter" data-level="34.5" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#correlational-and-ex-post-facto-designs"><i class="fa fa-check"></i><b>34.5</b> correlational and ex post facto designs</a></li>
+<li class="chapter" data-level="34.6" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#graphic-notation-advanced"><i class="fa fa-check"></i><b>34.6</b> graphic notation, advanced</a></li>
+</ul></li>
+<li class="chapter" data-level="35" data-path="design-of-experiment.html"><a href="design-of-experiment.html"><i class="fa fa-check"></i><b>35</b> design of experiment</a>
+<ul>
+<li class="chapter" data-level="35.1" data-path="design-of-experiment.html"><a href="design-of-experiment.html#notational-system-for-designrefnotational-system-for-design"><i class="fa fa-check"></i><b>35.1</b> notational system for design<sup>[@ref(notational-system-for-design)]</sup></a></li>
+<li class="chapter" data-level="35.2" data-path="design-of-experiment.html"><a href="design-of-experiment.html#terminology"><i class="fa fa-check"></i><b>35.2</b> terminology</a>
+<ul>
+<li class="chapter" data-level="35.2.1" data-path="design-of-experiment.html"><a href="design-of-experiment.html#replication-vs.-subsample"><i class="fa fa-check"></i><b>35.2.1</b> replication vs. subsample</a></li>
+<li class="chapter" data-level="35.2.2" data-path="design-of-experiment.html"><a href="design-of-experiment.html#replication-vs.-repeated-measurements"><i class="fa fa-check"></i><b>35.2.2</b> replication vs. repeated measurements</a></li>
+<li class="chapter" data-level="35.2.3" data-path="design-of-experiment.html"><a href="design-of-experiment.html#replication-replicate"><i class="fa fa-check"></i><b>35.2.3</b> replication, replicate</a>
+<ul>
+<li class="chapter" data-level="35.2.3.1" data-path="design-of-experiment.html"><a href="design-of-experiment.html#technical-replicate-biological-replicate"><i class="fa fa-check"></i><b>35.2.3.1</b> technical replicate, biological replicate</a></li>
+</ul></li>
+<li class="chapter" data-level="35.2.4" data-path="design-of-experiment.html"><a href="design-of-experiment.html#latin-square-design"><i class="fa fa-check"></i><b>35.2.4</b> Latin square design</a></li>
+<li class="chapter" data-level="35.2.5" data-path="design-of-experiment.html"><a href="design-of-experiment.html#model-assumption-and-experimental-unit-measurementobservational-unit"><i class="fa fa-check"></i><b>35.2.5</b> model assumption and experimental unit, measurement/observational unit</a></li>
+</ul></li>
+<li class="chapter" data-level="35.3" data-path="design-of-experiment.html"><a href="design-of-experiment.html#experiment-structure"><i class="fa fa-check"></i><b>35.3</b> experiment structure</a>
+<ul>
+<li class="chapter" data-level="35.3.1" data-path="design-of-experiment.html"><a href="design-of-experiment.html#treatment-structure"><i class="fa fa-check"></i><b>35.3.1</b> treatment structure</a></li>
+<li class="chapter" data-level="35.3.2" data-path="design-of-experiment.html"><a href="design-of-experiment.html#design-structure"><i class="fa fa-check"></i><b>35.3.2</b> design structure</a></li>
+<li class="chapter" data-level="35.3.3" data-path="design-of-experiment.html"><a href="design-of-experiment.html#size-of-experimental-unit"><i class="fa fa-check"></i><b>35.3.3</b> size of experimental unit</a></li>
+</ul></li>
+<li class="chapter" data-level="35.4" data-path="design-of-experiment.html"><a href="design-of-experiment.html#approach-to-experimentation"><i class="fa fa-check"></i><b>35.4</b> approach to experimentation</a></li>
+<li class="chapter" data-level="35.5" data-path="design-of-experiment.html"><a href="design-of-experiment.html#sample-size-estimation"><i class="fa fa-check"></i><b>35.5</b> sample size estimation</a></li>
+<li class="chapter" data-level="35.6" data-path="design-of-experiment.html"><a href="design-of-experiment.html#statistical-analysis-plan"><i class="fa fa-check"></i><b>35.6</b> statistical analysis plan</a></li>
+<li class="chapter" data-level="35.7" data-path="design-of-experiment.html"><a href="design-of-experiment.html#protocol"><i class="fa fa-check"></i><b>35.7</b> protocol</a></li>
+<li class="chapter" data-level="35.8" data-path="design-of-experiment.html"><a href="design-of-experiment.html#doe-course-with-six-sigma-and-mintab"><i class="fa fa-check"></i><b>35.8</b> DoE course with six sigma and Mintab</a>
+<ul>
+<li class="chapter" data-level="35.8.1" data-path="design-of-experiment.html"><a href="design-of-experiment.html#evolution"><i class="fa fa-check"></i><b>35.8.1</b> evolution</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="36" data-path="quine.html"><a href="quine.html"><i class="fa fa-check"></i><b>36</b> quine</a>
+<ul>
+<li class="chapter" data-level="36.1" data-path="quine.html"><a href="quine.html#r-1"><i class="fa fa-check"></i><b>36.1</b> <code>%r</code></a></li>
+</ul></li>
+<li class="chapter" data-level="37" data-path="quaternion.html"><a href="quaternion.html"><i class="fa fa-check"></i><b>37</b> quaternion</a>
+<ul>
+<li class="chapter" data-level="37.1" data-path="quaternion.html"><a href="quaternion.html#taylorcatalice"><i class="fa fa-check"></i><b>37.1</b> TaylorCatAlice</a>
+<ul>
+<li class="chapter" data-level="37.1.1" data-path="quaternion.html"><a href="quaternion.html#complex-dionion-bionion"><i class="fa fa-check"></i><b>37.1.1</b> complex / dionion / bionion</a></li>
+<li class="chapter" data-level="37.1.2" data-path="quaternion.html"><a href="quaternion.html#trionion-triernion-triplex-ternion"><i class="fa fa-check"></i><b>37.1.2</b> trionion / triernion / triplex / ternion</a></li>
+<li class="chapter" data-level="37.1.3" data-path="quaternion.html"><a href="quaternion.html#quaternion-1"><i class="fa fa-check"></i><b>37.1.3</b> quaternion</a>
+<ul>
+<li class="chapter" data-level="37.1.3.1" data-path="quaternion.html"><a href="quaternion.html#true-origin-of-dot-product-cross-product-inner-product-outer-product"><i class="fa fa-check"></i><b>37.1.3.1</b> true origin of ( dot product &amp; cross product ) / ( inner product &amp; outer product )</a></li>
+<li class="chapter" data-level="37.1.3.2" data-path="quaternion.html"><a href="quaternion.html#commutativity-vs.-anticommutativity"><i class="fa fa-check"></i><b>37.1.3.2</b> commutativity vs. anticommutativity</a>
+<ul>
+<li class="chapter" data-level="37.1.3.2.1" data-path="quaternion.html"><a href="quaternion.html#commutativity"><i class="fa fa-check"></i><b>37.1.3.2.1</b> commutativity</a></li>
+<li class="chapter" data-level="37.1.3.2.2" data-path="quaternion.html"><a href="quaternion.html#anticommutativity"><i class="fa fa-check"></i><b>37.1.3.2.2</b> anticommutativity</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.3.3" data-path="quaternion.html"><a href="quaternion.html#bracket"><i class="fa fa-check"></i><b>37.1.3.3</b> bracket</a>
+<ul>
+<li class="chapter" data-level="37.1.3.3.1" data-path="quaternion.html"><a href="quaternion.html#self-invented-bracket"><i class="fa fa-check"></i><b>37.1.3.3.1</b> self-invented bracket</a></li>
+<li class="chapter" data-level="37.1.3.3.2" data-path="quaternion.html"><a href="quaternion.html#poisson-bracket"><i class="fa fa-check"></i><b>37.1.3.3.2</b> Poisson bracket</a></li>
+<li class="chapter" data-level="37.1.3.3.3" data-path="quaternion.html"><a href="quaternion.html#lagrange-bracket"><i class="fa fa-check"></i><b>37.1.3.3.3</b> Lagrange bracket</a></li>
+<li class="chapter" data-level="37.1.3.3.4" data-path="quaternion.html"><a href="quaternion.html#lie-bracket"><i class="fa fa-check"></i><b>37.1.3.3.4</b> Lie bracket</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.3.4" data-path="quaternion.html"><a href="quaternion.html#triple-product"><i class="fa fa-check"></i><b>37.1.3.4</b> triple product</a></li>
+<li class="chapter" data-level="37.1.3.5" data-path="quaternion.html"><a href="quaternion.html#differential-operator"><i class="fa fa-check"></i><b>37.1.3.5</b> differential operator</a>
+<ul>
+<li class="chapter" data-level="37.1.3.5.1" data-path="quaternion.html"><a href="quaternion.html#differential-operator-1"><i class="fa fa-check"></i><b>37.1.3.5.1</b> 4-differential operator</a></li>
+<li class="chapter" data-level="37.1.3.5.2" data-path="quaternion.html"><a href="quaternion.html#nabla"><i class="fa fa-check"></i><b>37.1.3.5.2</b> nabla</a></li>
+<li class="chapter" data-level="37.1.3.5.3" data-path="quaternion.html"><a href="quaternion.html#laplace-operator"><i class="fa fa-check"></i><b>37.1.3.5.3</b> Laplace operator</a></li>
+<li class="chapter" data-level="37.1.3.5.4" data-path="quaternion.html"><a href="quaternion.html#dalembert-operator"><i class="fa fa-check"></i><b>37.1.3.5.4</b> d’Alembert operator</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.3.6" data-path="quaternion.html"><a href="quaternion.html#electromagnetism"><i class="fa fa-check"></i><b>37.1.3.6</b> electromagnetism</a>
+<ul>
+<li class="chapter" data-level="37.1.3.6.1" data-path="quaternion.html"><a href="quaternion.html#potential"><i class="fa fa-check"></i><b>37.1.3.6.1</b> 4-potential</a></li>
+<li class="chapter" data-level="37.1.3.6.2" data-path="quaternion.html"><a href="quaternion.html#maxwell-compromise-for-both-quaternion-and-3-vector"><i class="fa fa-check"></i><b>37.1.3.6.2</b> Maxwell compromise for both quaternion and 3-vector</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.3.7" data-path="quaternion.html"><a href="quaternion.html#joule-heat-vs.-thomson-heat-kelvin-heat"><i class="fa fa-check"></i><b>37.1.3.7</b> Joule heat vs. Thomson heat (Kelvin heat?)</a>
+<ul>
+<li class="chapter" data-level="37.1.3.7.1" data-path="quaternion.html"><a href="quaternion.html#thermoelectric-effect"><i class="fa fa-check"></i><b>37.1.3.7.1</b> thermoelectric effect</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.3.8" data-path="quaternion.html"><a href="quaternion.html#source-term"><i class="fa fa-check"></i><b>37.1.3.8</b> source term</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.4" data-path="quaternion.html"><a href="quaternion.html#quaternion-group"><i class="fa fa-check"></i><b>37.1.4</b> quaternion group</a></li>
+<li class="chapter" data-level="37.1.5" data-path="quaternion.html"><a href="quaternion.html#octonion"><i class="fa fa-check"></i><b>37.1.5</b> octonion</a></li>
+</ul></li>
+<li class="chapter" data-level="37.2" data-path="quaternion.html"><a href="quaternion.html#blue1brown"><i class="fa fa-check"></i><b>37.2</b> 3Blue1Brown</a>
+<ul>
+<li class="chapter" data-level="37.2.1" data-path="quaternion.html"><a href="quaternion.html#ben-eater"><i class="fa fa-check"></i><b>37.2.1</b> Ben Eater</a></li>
+<li class="chapter" data-level="37.2.2" data-path="quaternion.html"><a href="quaternion.html#b1b"><i class="fa fa-check"></i><b>37.2.2</b> 3B1B</a></li>
+<li class="chapter" data-level="37.2.3" data-path="quaternion.html"><a href="quaternion.html#sutrabla"><i class="fa fa-check"></i><b>37.2.3</b> Sutrabla</a></li>
+</ul></li>
+<li class="chapter" data-level="37.3" data-path="quaternion.html"><a href="quaternion.html#ccjou-la-revelation"><i class="fa fa-check"></i><b>37.3</b> CCJou: LA Revelation</a></li>
+</ul></li>
+<li class="chapter" data-level="38" data-path="dicom.html"><a href="dicom.html"><i class="fa fa-check"></i><b>38</b> DICOM</a>
+<ul>
+<li class="chapter" data-level="38.1" data-path="dicom.html"><a href="dicom.html#innolitics-dicom-standard-browser"><i class="fa fa-check"></i><b>38.1</b> Innolitics: DICOM Standard Browser</a></li>
+<li class="chapter" data-level="38.2" data-path="dicom.html"><a href="dicom.html#david-clunie-medical-image-format-site"><i class="fa fa-check"></i><b>38.2</b> David Clunie: Medical Image Format Site</a></li>
+</ul></li>
+<li class="chapter" data-level="39" data-path="tendon-pathophysiology.html"><a href="tendon-pathophysiology.html"><i class="fa fa-check"></i><b>39</b> tendon pathophysiology</a>
+<ul>
+<li class="chapter" data-level="39.1" data-path="tendon-pathophysiology.html"><a href="tendon-pathophysiology.html#histology"><i class="fa fa-check"></i><b>39.1</b> histology</a></li>
+</ul></li>
+<li class="chapter" data-level="40" data-path="group-theory.html"><a href="group-theory.html"><i class="fa fa-check"></i><b>40</b> group theory</a>
+<ul>
+<li class="chapter" data-level="40.1" data-path="group-theory.html"><a href="group-theory.html#complex-group-representation"><i class="fa fa-check"></i><b>40.1</b> complex group representation</a>
+<ul>
+<li class="chapter" data-level="40.1.1" data-path="group-theory.html"><a href="group-theory.html#euler-formula-proved-by-complex-group-representation"><i class="fa fa-check"></i><b>40.1.1</b> Euler formula proved by complex group representation</a></li>
+</ul></li>
+<li class="chapter" data-level="40.2" data-path="group-theory.html"><a href="group-theory.html#quaternion-group-representation"><i class="fa fa-check"></i><b>40.2</b> quaternion group representation</a>
+<ul>
+<li class="chapter" data-level="40.2.1" data-path="group-theory.html"><a href="group-theory.html#mathbbhrightarrowmathcalm_2times2leftmathbbcright"><i class="fa fa-check"></i><b>40.2.1</b> <span class="math inline">\(\mathbb{H}\rightarrow\mathcal{M}_{2\times2}\left(\mathbb{C}\right)\)</span></a></li>
+<li class="chapter" data-level="40.2.2" data-path="group-theory.html"><a href="group-theory.html#mathbbhrightarrowmathcalm_4times4leftmathbbrright"><i class="fa fa-check"></i><b>40.2.2</b> <span class="math inline">\(\mathbb{H}\rightarrow\mathcal{M}_{4\times4}\left(\mathbb{R}\right)\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>references</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">math</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="matplotlib" class="section level1 hasAnchor" number="30">
+<h1><span class="header-section-number">Chapter 30: </span> MatPlotLib / matplotlib<a href="matplotlib.html#matplotlib" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ul>
+<li>tikzplotlib<sup>[<a href="tikz.html#tikzplotlib">16.5</a>]</sup>: <a href="python.html#python">Python</a><sup>[<a href="python.html#python">15</a>]</sup> matplotlib<sup>[<a href="matplotlib.html#matplotlib">30</a>]</sup> export to <a href="tikz.html#tikz">TikZ</a><sup>[<a href="tikz.html#tikz">16</a>]</sup> .tex</li>
+</ul>
+<div id="timothy-h.-wu" class="section level2 hasAnchor" number="30.1">
+<h2><span class="header-section-number">30.1</span> Timothy H. Wu<a href="matplotlib.html#timothy-h.-wu" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div show-in="html">
+<p>巫孟叡</p>
+</div>
+<div show-in="pdf">
+
+</div>
+<ul>
+<li>API = application programming interface
+<ul>
+<li>functional<sup>[<a href="matplotlib.html#functionalapi">30.1.1</a>]</sup></li>
+<li>object-oriented<sup>[<a href="matplotlib.html#ooapi">30.1.2</a>]</sup>
+<ul>
+<li>figure</li>
+<li>axes</li>
+<li>subplot</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><a href="https://matplotlib.org/stable/tutorials/introductory/quick_start.html" class="uri">https://matplotlib.org/stable/tutorials/introductory/quick_start.html</a></p>
+<div class="figure"><span style="display:block;" id="fig:matplotlib-figure-anatomy"></span>
+<img src="img/matplotlib-figure-anatomy.png" alt="matplotlib figure anatomy" width="100%" />
+<p class="caption">
+Fig. 30.1: matplotlib figure anatomy
+</p>
+</div>
+<p><a href="https://pbpython.com/effective-matplotlib.html" class="uri">https://pbpython.com/effective-matplotlib.html</a></p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<img src="img/matplotlib-subplot-anatomy.png" alt="matplotlib subplot anatomy" width="100%" />
+<p class="caption">
+Fig. 24.1: matplotlib subplot anatomy
+</p>
+</div>
+<p><a href="https://tex.stackexchange.com/questions/84847/can-i-use-webp-images-in-latex" class="uri">https://tex.stackexchange.com/questions/84847/can-i-use-webp-images-in-latex</a></p>
+<blockquote>
+<p>You probably need to convert the image to png.</p>
+</blockquote>
+<style type="text/css">
+pre {
+  max-width: 400px;
+  overflow-x: auto;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/*
+pre[class] {
+  max-height: 100px;
+}
+*/
+</style>
+<div id="functionalapi" class="section level3 hasAnchor" number="30.1.1">
+<h3><span class="header-section-number">30.1.1</span> funcitonal API<a href="matplotlib.html#functionalapi" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb349"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb349-1"><a href="matplotlib.html#cb349-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb349-2"><a href="matplotlib.html#cb349-2" tabindex="-1"></a></span>
+<span id="cb349-3"><a href="matplotlib.html#cb349-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb349-4"><a href="matplotlib.html#cb349-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb349-5"><a href="matplotlib.html#cb349-5" tabindex="-1"></a>plt.title(<span class="st">&#39;Sales figure&#39;</span>)</span>
+<span id="cb349-6"><a href="matplotlib.html#cb349-6" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Month&#39;</span>)</span>
+<span id="cb349-7"><a href="matplotlib.html#cb349-7" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Unit&#39;</span>)</span>
+<span id="cb349-8"><a href="matplotlib.html#cb349-8" tabindex="-1"></a>plt.plot(a1, a2) <span class="co"># this doesn&#39;t actually show the plot.</span></span>
+<span id="cb349-9"><a href="matplotlib.html#cb349-9" tabindex="-1"></a><span class="co"># plt.show() This is automatically called for Jupyter notebook.</span></span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-4-1.png" width="614" /></p>
+</div>
+</div>
+<hr />
+<blockquote>
+<p>To plot a scatterplot, call <code>scatter()</code> instead of <code>plot()</code>.</p>
+</blockquote>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb350"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb350-1"><a href="matplotlib.html#cb350-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb350-2"><a href="matplotlib.html#cb350-2" tabindex="-1"></a></span>
+<span id="cb350-3"><a href="matplotlib.html#cb350-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb350-4"><a href="matplotlib.html#cb350-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb350-5"><a href="matplotlib.html#cb350-5" tabindex="-1"></a>plt.title(<span class="st">&#39;Sales figure&#39;</span>)</span>
+<span id="cb350-6"><a href="matplotlib.html#cb350-6" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Month&#39;</span>)</span>
+<span id="cb350-7"><a href="matplotlib.html#cb350-7" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Unit&#39;</span>)</span>
+<span id="cb350-8"><a href="matplotlib.html#cb350-8" tabindex="-1"></a>plt.scatter(a1, a2) <span class="co"># instead of plot.plot(), use scatter() to show scatter plot</span></span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-6-3.png" width="672" /></p>
+</div>
+</div>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb351"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb351-1"><a href="matplotlib.html#cb351-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb351-2"><a href="matplotlib.html#cb351-2" tabindex="-1"></a></span>
+<span id="cb351-3"><a href="matplotlib.html#cb351-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb351-4"><a href="matplotlib.html#cb351-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb351-5"><a href="matplotlib.html#cb351-5" tabindex="-1"></a>plt.title(<span class="st">&#39;Sales figure&#39;</span>)</span>
+<span id="cb351-6"><a href="matplotlib.html#cb351-6" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Month&#39;</span>)</span>
+<span id="cb351-7"><a href="matplotlib.html#cb351-7" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Unit&#39;</span>)</span>
+<span id="cb351-8"><a href="matplotlib.html#cb351-8" tabindex="-1"></a>plt.plot(a1, a2)</span>
+<span id="cb351-9"><a href="matplotlib.html#cb351-9" tabindex="-1"></a>plt.plot(a2, a1)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-8-5.png" width="672" /></p>
+</div>
+</div>
+<hr />
+<blockquote>
+<p>The behavior of the functional API is stateful. What’s stateful? An example is when you read a text file. When you <code>open()</code> a text file to read, the library read the next line every time you call <code>readline()</code>. It rememember where you left off, despite the fact that you do not give it the position to read from. This behavior of the library is called <strong>stateful</strong>.
+The way we’ve used Matplotlib is also <strong>stateful</strong>. And everytime, <code>plot.show()</code> is called (and it automatically gets called on cell ends), some state about plots is reset.
+We can see that here:</p>
+</blockquote>
+<div class="sourceCode" id="cb352"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb352-1"><a href="matplotlib.html#cb352-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb352-2"><a href="matplotlib.html#cb352-2" tabindex="-1"></a></span>
+<span id="cb352-3"><a href="matplotlib.html#cb352-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb352-4"><a href="matplotlib.html#cb352-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb352-5"><a href="matplotlib.html#cb352-5" tabindex="-1"></a>plt.title(<span class="st">&#39;Sales figure&#39;</span>)</span>
+<span id="cb352-6"><a href="matplotlib.html#cb352-6" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Month&#39;</span>)</span>
+<span id="cb352-7"><a href="matplotlib.html#cb352-7" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Unit&#39;</span>)</span>
+<span id="cb352-8"><a href="matplotlib.html#cb352-8" tabindex="-1"></a>plt.plot(a1, a2)</span></code></pre></div>
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-9-7.png" width="672" /></p>
+<div class="sourceCode" id="cb353"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb353-1"><a href="matplotlib.html#cb353-1" tabindex="-1"></a>plt.plot(a2, a1)</span>
+<span id="cb353-2"><a href="matplotlib.html#cb353-2" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Unit&#39;</span>)</span></code></pre></div>
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-10-9.png" width="672" /></p>
+<blockquote>
+<p>It makes two graphs instead of one. Also note that <code>ylabel()</code> was called after <code>plot()</code>, and it is still shown before <code>plot.show()</code> but <code>Sales Figure</code> plot title and other labels don’t show up on this graph. Because every time <code>plot.show()</code> is called, things are reset. This is a <code>stateful API</code> we’re using.
+The functional APIs are used when you plot Matplotlib by calling on <code>pyplot</code> module level API (module level functions).</p>
+</blockquote>
+</div>
+<div id="ooapi" class="section level3 hasAnchor" number="30.1.2">
+<h3><span class="header-section-number">30.1.2</span> object-oriented API<a href="matplotlib.html#ooapi" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<blockquote>
+<p>In object-orinted API, we’re getting two type of objects. One is <code>Figure</code>, the other one is <code>Axes</code>. Figure is the <em>canvas</em> of the plot. In English, axes is the plural form of axis. We’re talking about the axis in x axis and y axis. Since one <strong>plot</strong> consists of both axis, in MatPlotlib the object that represents one plot is called <code>Axes</code>. Since it’s an object. We’ll call it “a” axes.</p>
+</blockquote>
+<div class="sourceCode" id="cb354"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb354-1"><a href="matplotlib.html#cb354-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb354-2"><a href="matplotlib.html#cb354-2" tabindex="-1"></a></span>
+<span id="cb354-3"><a href="matplotlib.html#cb354-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb354-4"><a href="matplotlib.html#cb354-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb354-5"><a href="matplotlib.html#cb354-5" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb354-6"><a href="matplotlib.html#cb354-6" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;fig is of type:&quot;</span>, <span class="bu">type</span>(fig))</span></code></pre></div>
+<pre><code>## fig is of type: &lt;class &#39;matplotlib.figure.Figure&#39;&gt;</code></pre>
+<div class="sourceCode" id="cb356"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb356-1"><a href="matplotlib.html#cb356-1" tabindex="-1"></a>ax1 <span class="op">=</span> fig.add_axes([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>]) <span class="co"># [left, bottom, width, height]</span></span>
+<span id="cb356-2"><a href="matplotlib.html#cb356-2" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;ax1 is of type:&quot;</span>, <span class="bu">type</span>(ax1))</span></code></pre></div>
+<pre><code>## ax1 is of type: &lt;class &#39;matplotlib.axes._axes.Axes&#39;&gt;</code></pre>
+<div class="sourceCode" id="cb358"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb358-1"><a href="matplotlib.html#cb358-1" tabindex="-1"></a><span class="co"># ax1.plot(a1, a2)</span></span></code></pre></div>
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-11-11.png" width="672" /></p>
+<blockquote>
+<ol style="list-style-type: decimal">
+<li>Call <code>figure()</code> to get a Figure type</li>
+<li>Call <code>add_axes()</code> to get a ax1 type
+<code>ax1 = fig.add_axes([0, 0, 1, 1]) # [left, bottom, width, height]</code></li>
+</ol>
+<ul>
+<li>The list given to <code>add_axes()</code> is the rectangular region of where to show the plot:
+<ul>
+<li>Bottom left corner at x=0, y=0, width and height of both 1, 1</li>
+</ul></li>
+</ul>
+</blockquote>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb359"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb359-1"><a href="matplotlib.html#cb359-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb359-2"><a href="matplotlib.html#cb359-2" tabindex="-1"></a></span>
+<span id="cb359-3"><a href="matplotlib.html#cb359-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb359-4"><a href="matplotlib.html#cb359-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb359-5"><a href="matplotlib.html#cb359-5" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb359-6"><a href="matplotlib.html#cb359-6" tabindex="-1"></a><span class="co"># print(&quot;fig is of type:&quot;, type(fig))</span></span>
+<span id="cb359-7"><a href="matplotlib.html#cb359-7" tabindex="-1"></a>ax1 <span class="op">=</span> fig.add_axes([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>]) <span class="co"># [left, bottom, width, height]</span></span>
+<span id="cb359-8"><a href="matplotlib.html#cb359-8" tabindex="-1"></a><span class="co"># print(&quot;ax1 is of type:&quot;, type(ax1))</span></span>
+<span id="cb359-9"><a href="matplotlib.html#cb359-9" tabindex="-1"></a>ax1.plot(a1, a2)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-13-13.png" width="672" /></p>
+</div>
+</div>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb360"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb360-1"><a href="matplotlib.html#cb360-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb360-2"><a href="matplotlib.html#cb360-2" tabindex="-1"></a></span>
+<span id="cb360-3"><a href="matplotlib.html#cb360-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb360-4"><a href="matplotlib.html#cb360-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb360-5"><a href="matplotlib.html#cb360-5" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb360-6"><a href="matplotlib.html#cb360-6" tabindex="-1"></a>ax1 <span class="op">=</span> fig.add_axes([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>])</span>
+<span id="cb360-7"><a href="matplotlib.html#cb360-7" tabindex="-1"></a>ax1.plot(a1, a2)</span>
+<span id="cb360-8"><a href="matplotlib.html#cb360-8" tabindex="-1"></a>ax2 <span class="op">=</span> fig.add_axes([<span class="fl">0.1</span>, <span class="fl">0.5</span>, <span class="fl">.4</span>, <span class="fl">.4</span>])</span>
+<span id="cb360-9"><a href="matplotlib.html#cb360-9" tabindex="-1"></a>ax2.plot(a2, a1)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-15-15.png" width="672" /></p>
+</div>
+</div>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb361"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb361-1"><a href="matplotlib.html#cb361-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb361-2"><a href="matplotlib.html#cb361-2" tabindex="-1"></a></span>
+<span id="cb361-3"><a href="matplotlib.html#cb361-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb361-4"><a href="matplotlib.html#cb361-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb361-5"><a href="matplotlib.html#cb361-5" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb361-6"><a href="matplotlib.html#cb361-6" tabindex="-1"></a>ax <span class="op">=</span> fig.add_axes([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>])</span>
+<span id="cb361-7"><a href="matplotlib.html#cb361-7" tabindex="-1"></a>ax.plot(a1, a2)</span>
+<span id="cb361-8"><a href="matplotlib.html#cb361-8" tabindex="-1"></a>ax.set_xlabel(<span class="st">&#39;Time&#39;</span>)</span>
+<span id="cb361-9"><a href="matplotlib.html#cb361-9" tabindex="-1"></a>ax.set_ylabel(<span class="st">&#39;Unit&#39;</span>)</span>
+<span id="cb361-10"><a href="matplotlib.html#cb361-10" tabindex="-1"></a>ax.set_title(<span class="st">&#39;Sales figure&#39;</span>)</span>
+<span id="cb361-11"><a href="matplotlib.html#cb361-11" tabindex="-1"></a><span class="co"># alternatively: </span></span>
+<span id="cb361-12"><a href="matplotlib.html#cb361-12" tabindex="-1"></a><span class="co"># ax.set(xlabel=&#39;Time&#39;, ylabel=&#39;Unit&#39;, title=&#39;Sales figure&#39;)</span></span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-17-17.png" width="672" /></p>
+</div>
+</div>
+<div id="configure-the-figure-size-and-dpi" class="section level4 hasAnchor" number="30.1.2.1">
+<h4><span class="header-section-number">30.1.2.1</span> Configure the figure size and DPI<a href="matplotlib.html#configure-the-figure-size-and-dpi" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Get image size for the figure object. 6 by 4 is the default.</p>
+<p><code>fig.get_size_inches()</code></p>
+<div class="sourceCode" id="cb362"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb362-1"><a href="matplotlib.html#cb362-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb362-2"><a href="matplotlib.html#cb362-2" tabindex="-1"></a></span>
+<span id="cb362-3"><a href="matplotlib.html#cb362-3" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb362-4"><a href="matplotlib.html#cb362-4" tabindex="-1"></a>fig.get_size_inches()</span></code></pre></div>
+<pre><code>## array([7., 5.])</code></pre>
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-18-19.png" width="672" /></p>
+<hr />
+<p><code>fig = plt.figure(figsize=(2, 4))</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb364"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb364-1"><a href="matplotlib.html#cb364-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb364-2"><a href="matplotlib.html#cb364-2" tabindex="-1"></a></span>
+<span id="cb364-3"><a href="matplotlib.html#cb364-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb364-4"><a href="matplotlib.html#cb364-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb364-5"><a href="matplotlib.html#cb364-5" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">2</span>, <span class="dv">4</span>))</span>
+<span id="cb364-6"><a href="matplotlib.html#cb364-6" tabindex="-1"></a><span class="co"># you can also set after getting the figure</span></span>
+<span id="cb364-7"><a href="matplotlib.html#cb364-7" tabindex="-1"></a><span class="co"># fig.set_size_inches((12, 2))</span></span>
+<span id="cb364-8"><a href="matplotlib.html#cb364-8" tabindex="-1"></a>ax <span class="op">=</span> fig.add_axes([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>])</span>
+<span id="cb364-9"><a href="matplotlib.html#cb364-9" tabindex="-1"></a>ax.plot(a1, a2)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-20-21.png" width="192" /></p>
+</div>
+</div>
+<hr />
+<p><code>fig.set_size_inches((4, 2))</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb365"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb365-1"><a href="matplotlib.html#cb365-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb365-2"><a href="matplotlib.html#cb365-2" tabindex="-1"></a></span>
+<span id="cb365-3"><a href="matplotlib.html#cb365-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb365-4"><a href="matplotlib.html#cb365-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb365-5"><a href="matplotlib.html#cb365-5" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb365-6"><a href="matplotlib.html#cb365-6" tabindex="-1"></a><span class="co"># you can also set after getting the figure</span></span>
+<span id="cb365-7"><a href="matplotlib.html#cb365-7" tabindex="-1"></a>fig.set_size_inches((<span class="dv">4</span>, <span class="dv">2</span>))</span>
+<span id="cb365-8"><a href="matplotlib.html#cb365-8" tabindex="-1"></a>ax <span class="op">=</span> fig.add_axes([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>])</span>
+<span id="cb365-9"><a href="matplotlib.html#cb365-9" tabindex="-1"></a>ax.plot(a1, a2)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-22-23.png" width="384" /></p>
+</div>
+</div>
+<hr />
+<p>DPI = dots per inch</p>
+<p>Get image DPI for the figure object. 100 is the default here.</p>
+<p><code>fig.get_dpi()</code></p>
+<div class="sourceCode" id="cb366"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb366-1"><a href="matplotlib.html#cb366-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb366-2"><a href="matplotlib.html#cb366-2" tabindex="-1"></a></span>
+<span id="cb366-3"><a href="matplotlib.html#cb366-3" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb366-4"><a href="matplotlib.html#cb366-4" tabindex="-1"></a>fig.get_dpi()</span></code></pre></div>
+<pre><code>## 100.0</code></pre>
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-23-25.png" width="672" /></p>
+<hr />
+<div class="sourceCode" id="cb368"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb368-1"><a href="matplotlib.html#cb368-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb368-2"><a href="matplotlib.html#cb368-2" tabindex="-1"></a></span>
+<span id="cb368-3"><a href="matplotlib.html#cb368-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb368-4"><a href="matplotlib.html#cb368-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb368-5"><a href="matplotlib.html#cb368-5" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb368-6"><a href="matplotlib.html#cb368-6" tabindex="-1"></a><span class="co"># you can also set after getting the figure</span></span>
+<span id="cb368-7"><a href="matplotlib.html#cb368-7" tabindex="-1"></a>fig.set_size_inches((<span class="dv">12</span>, <span class="dv">2</span>))</span>
+<span id="cb368-8"><a href="matplotlib.html#cb368-8" tabindex="-1"></a>ax <span class="op">=</span> fig.add_axes([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>])</span>
+<span id="cb368-9"><a href="matplotlib.html#cb368-9" tabindex="-1"></a>ax.plot(a1, a2)</span>
+<span id="cb368-10"><a href="matplotlib.html#cb368-10" tabindex="-1"></a>plt.title(<span class="st">&#39;Sales figure&#39;</span>)</span>
+<span id="cb368-11"><a href="matplotlib.html#cb368-11" tabindex="-1"></a>fig.get_dpi()</span></code></pre></div>
+<pre><code>## 100.0</code></pre>
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-24-27.png" width="1152" /></p>
+</div>
+<div id="subplot" class="section level4 hasAnchor" number="30.1.2.2">
+<h4><span class="header-section-number">30.1.2.2</span> subplot<a href="matplotlib.html#subplot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="sourceCode" id="cb370"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb370-1"><a href="matplotlib.html#cb370-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb370-2"><a href="matplotlib.html#cb370-2" tabindex="-1"></a></span>
+<span id="cb370-3"><a href="matplotlib.html#cb370-3" tabindex="-1"></a><span class="co"># Subplots handles add_axes for you according to the number of rows and columns</span></span>
+<span id="cb370-4"><a href="matplotlib.html#cb370-4" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(nrows<span class="op">=</span><span class="dv">2</span>, ncols<span class="op">=</span><span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">3</span>))</span>
+<span id="cb370-5"><a href="matplotlib.html#cb370-5" tabindex="-1"></a><span class="co"># axes is a numpy array, you can use it like using a list.</span></span>
+<span id="cb370-6"><a href="matplotlib.html#cb370-6" tabindex="-1"></a><span class="bu">print</span>(axes)</span></code></pre></div>
+<pre><code>## [[&lt;Axes: &gt; &lt;Axes: &gt;]
+##  [&lt;Axes: &gt; &lt;Axes: &gt;]]</code></pre>
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-25-29.png" width="576" /></p>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb372"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb372-1"><a href="matplotlib.html#cb372-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb372-2"><a href="matplotlib.html#cb372-2" tabindex="-1"></a></span>
+<span id="cb372-3"><a href="matplotlib.html#cb372-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb372-4"><a href="matplotlib.html#cb372-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb372-5"><a href="matplotlib.html#cb372-5" tabindex="-1"></a><span class="co"># Subplots handles add_axes for you according to the number of rows and columns</span></span>
+<span id="cb372-6"><a href="matplotlib.html#cb372-6" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(nrows<span class="op">=</span><span class="dv">2</span>, ncols<span class="op">=</span><span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">3</span>))</span>
+<span id="cb372-7"><a href="matplotlib.html#cb372-7" tabindex="-1"></a><span class="co"># axes is a numpy array, you can use it like using a list.</span></span>
+<span id="cb372-8"><a href="matplotlib.html#cb372-8" tabindex="-1"></a><span class="co"># print(axes)</span></span>
+<span id="cb372-9"><a href="matplotlib.html#cb372-9" tabindex="-1"></a>axes[<span class="dv">0</span>][<span class="dv">0</span>].plot(a1, a2)</span>
+<span id="cb372-10"><a href="matplotlib.html#cb372-10" tabindex="-1"></a>axes[<span class="dv">0</span>][<span class="dv">1</span>].plot(a1, a2)</span>
+<span id="cb372-11"><a href="matplotlib.html#cb372-11" tabindex="-1"></a>axes[<span class="dv">1</span>][<span class="dv">0</span>].plot(a2, a1)</span>
+<span id="cb372-12"><a href="matplotlib.html#cb372-12" tabindex="-1"></a>axes[<span class="dv">1</span>][<span class="dv">1</span>].plot(a2, a1)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-27-31.png" width="576" /></p>
+</div>
+</div>
+</div>
+<div id="color-and-linestyle" class="section level4 hasAnchor" number="30.1.2.3">
+<h4><span class="header-section-number">30.1.2.3</span> color and linestyle<a href="matplotlib.html#color-and-linestyle" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<blockquote>
+<ul>
+<li>Color
+<ul>
+<li><a href="https://matplotlib.org/stable/tutorials/colors/colors.html" class="uri">https://matplotlib.org/stable/tutorials/colors/colors.html</a></li>
+</ul></li>
+<li>line-style (ls)
+<ul>
+<li><a href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html" class="uri">https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html</a></li>
+</ul></li>
+<li>marker
+<ul>
+<li><a href="https://matplotlib.org/stable/api/markers_api.html" class="uri">https://matplotlib.org/stable/api/markers_api.html</a></li>
+</ul></li>
+<li>linewidth (lw)</li>
+</ul>
+</blockquote>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb373"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb373-1"><a href="matplotlib.html#cb373-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb373-2"><a href="matplotlib.html#cb373-2" tabindex="-1"></a></span>
+<span id="cb373-3"><a href="matplotlib.html#cb373-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb373-4"><a href="matplotlib.html#cb373-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb373-5"><a href="matplotlib.html#cb373-5" tabindex="-1"></a><span class="co"># Subplots handles add_axes for you according to the number of rows and columns</span></span>
+<span id="cb373-6"><a href="matplotlib.html#cb373-6" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(nrows<span class="op">=</span><span class="dv">1</span>, ncols<span class="op">=</span><span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">3</span>))</span>
+<span id="cb373-7"><a href="matplotlib.html#cb373-7" tabindex="-1"></a><span class="co"># axes is a numpy array</span></span>
+<span id="cb373-8"><a href="matplotlib.html#cb373-8" tabindex="-1"></a>axes[<span class="dv">0</span>].plot(a1, a2, color<span class="op">=</span><span class="st">&#39;green&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;-.&#39;</span>)</span>
+<span id="cb373-9"><a href="matplotlib.html#cb373-9" tabindex="-1"></a>axes[<span class="dv">0</span>].plot(a2, a1, color<span class="op">=</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="fl">0.5</span>), marker<span class="op">=</span><span class="st">&#39;v&#39;</span>, markersize<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb373-10"><a href="matplotlib.html#cb373-10" tabindex="-1"></a>axes[<span class="dv">1</span>].plot(a1, a2, linestyle<span class="op">=</span><span class="st">&#39;dotted&#39;</span>)</span>
+<span id="cb373-11"><a href="matplotlib.html#cb373-11" tabindex="-1"></a>axes[<span class="dv">1</span>].plot(a2, a1, linestyle<span class="op">=</span>(<span class="dv">0</span>, (<span class="dv">3</span>, <span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">10</span>)))</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-29-33.png" width="576" /></p>
+</div>
+</div>
+</div>
+<div id="other-inputs" class="section level4 hasAnchor" number="30.1.2.4">
+<h4><span class="header-section-number">30.1.2.4</span> other inputs<a href="matplotlib.html#other-inputs" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>NumPy array</li>
+<li>Pandas series</li>
+</ul>
+</div>
+<div id="legend-1" class="section level4 hasAnchor" number="30.1.2.5">
+<h4><span class="header-section-number">30.1.2.5</span> legend<a href="matplotlib.html#legend-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb374"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb374-1"><a href="matplotlib.html#cb374-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb374-2"><a href="matplotlib.html#cb374-2" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb374-3"><a href="matplotlib.html#cb374-3" tabindex="-1"></a></span>
+<span id="cb374-4"><a href="matplotlib.html#cb374-4" tabindex="-1"></a>x <span class="op">=</span> np.linspace(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">30</span>)</span>
+<span id="cb374-5"><a href="matplotlib.html#cb374-5" tabindex="-1"></a>y <span class="op">=</span> x <span class="op">*</span> x</span>
+<span id="cb374-6"><a href="matplotlib.html#cb374-6" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb374-7"><a href="matplotlib.html#cb374-7" tabindex="-1"></a>ax <span class="op">=</span> fig.add_axes([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>])</span>
+<span id="cb374-8"><a href="matplotlib.html#cb374-8" tabindex="-1"></a>line1 <span class="op">=</span> ax.plot(x, y, label<span class="op">=</span><span class="st">&quot;Competitor&quot;</span>)</span>
+<span id="cb374-9"><a href="matplotlib.html#cb374-9" tabindex="-1"></a>line2 <span class="op">=</span> ax.plot(x, y<span class="op">**</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">&quot;Us&quot;</span>)</span>
+<span id="cb374-10"><a href="matplotlib.html#cb374-10" tabindex="-1"></a>ax.legend()</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-31-35.png" width="672" /></p>
+</div>
+</div>
+</div>
+<div id="customize-style" class="section level4 hasAnchor" number="30.1.2.6">
+<h4><span class="header-section-number">30.1.2.6</span> customize style<a href="matplotlib.html#customize-style" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>predefined styles</p>
+<div class="sourceCode" id="cb375"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb375-1"><a href="matplotlib.html#cb375-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb375-2"><a href="matplotlib.html#cb375-2" tabindex="-1"></a></span>
+<span id="cb375-3"><a href="matplotlib.html#cb375-3" tabindex="-1"></a><span class="bu">print</span>(plt.style.available)</span></code></pre></div>
+<pre><code>## [&#39;Solarize_Light2&#39;, &#39;_classic_test_patch&#39;, &#39;_mpl-gallery&#39;, &#39;_mpl-gallery-nogrid&#39;, &#39;bmh&#39;, &#39;classic&#39;, &#39;dark_background&#39;, &#39;fast&#39;, &#39;fivethirtyeight&#39;, &#39;ggplot&#39;, &#39;grayscale&#39;, &#39;seaborn-v0_8&#39;, &#39;seaborn-v0_8-bright&#39;, &#39;seaborn-v0_8-colorblind&#39;, &#39;seaborn-v0_8-dark&#39;, &#39;seaborn-v0_8-dark-palette&#39;, &#39;seaborn-v0_8-darkgrid&#39;, &#39;seaborn-v0_8-deep&#39;, &#39;seaborn-v0_8-muted&#39;, &#39;seaborn-v0_8-notebook&#39;, &#39;seaborn-v0_8-paper&#39;, &#39;seaborn-v0_8-pastel&#39;, &#39;seaborn-v0_8-poster&#39;, &#39;seaborn-v0_8-talk&#39;, &#39;seaborn-v0_8-ticks&#39;, &#39;seaborn-v0_8-white&#39;, &#39;seaborn-v0_8-whitegrid&#39;, &#39;tableau-colorblind10&#39;]</code></pre>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb377"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb377-1"><a href="matplotlib.html#cb377-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb377-2"><a href="matplotlib.html#cb377-2" tabindex="-1"></a></span>
+<span id="cb377-3"><a href="matplotlib.html#cb377-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb377-4"><a href="matplotlib.html#cb377-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb377-5"><a href="matplotlib.html#cb377-5" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb377-6"><a href="matplotlib.html#cb377-6" tabindex="-1"></a>plt.style.use(<span class="st">&#39;ggplot&#39;</span>)</span>
+<span id="cb377-7"><a href="matplotlib.html#cb377-7" tabindex="-1"></a>ax <span class="op">=</span> fig.add_axes([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>])</span>
+<span id="cb377-8"><a href="matplotlib.html#cb377-8" tabindex="-1"></a>ax.plot(a1, a2)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-34-37.png" width="672" /></p>
+</div>
+</div>
+<p>restore default style</p>
+<div class="sourceCode" id="cb378"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb378-1"><a href="matplotlib.html#cb378-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb378-2"><a href="matplotlib.html#cb378-2" tabindex="-1"></a></span>
+<span id="cb378-3"><a href="matplotlib.html#cb378-3" tabindex="-1"></a>plt.style.use(<span class="st">&#39;default&#39;</span>) <span class="co"># But strangely enough figure size gets changed still</span></span></code></pre></div>
+<div class="sourceCode" id="cb379"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb379-1"><a href="matplotlib.html#cb379-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb379-2"><a href="matplotlib.html#cb379-2" tabindex="-1"></a></span>
+<span id="cb379-3"><a href="matplotlib.html#cb379-3" tabindex="-1"></a>plt.rcParams[<span class="st">&quot;figure.figsize&quot;</span>] <span class="op">=</span> (<span class="dv">6</span>, <span class="dv">4</span>)</span>
+<span id="cb379-4"><a href="matplotlib.html#cb379-4" tabindex="-1"></a>plt.rcParams[<span class="st">&quot;figure.dpi&quot;</span>] <span class="op">=</span> <span class="dv">100</span></span></code></pre></div>
+</div>
+<div id="save-to-file" class="section level4 hasAnchor" number="30.1.2.7">
+<h4><span class="header-section-number">30.1.2.7</span> save to file<a href="matplotlib.html#save-to-file" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<blockquote>
+<p><code>savefig</code> saves image to file. We also set the <code>bbox_inches</code> parameter to <code>tight</code> to make sure the image doesn’t get out of the image bound.</p>
+</blockquote>
+<p>save to .png</p>
+<div class="sourceCode" id="cb380"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb380-1"><a href="matplotlib.html#cb380-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb380-2"><a href="matplotlib.html#cb380-2" tabindex="-1"></a></span>
+<span id="cb380-3"><a href="matplotlib.html#cb380-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb380-4"><a href="matplotlib.html#cb380-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb380-5"><a href="matplotlib.html#cb380-5" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb380-6"><a href="matplotlib.html#cb380-6" tabindex="-1"></a>ax <span class="op">=</span> fig.add_axes([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>])</span>
+<span id="cb380-7"><a href="matplotlib.html#cb380-7" tabindex="-1"></a>ax.plot(a1, a2)</span>
+<span id="cb380-8"><a href="matplotlib.html#cb380-8" tabindex="-1"></a>fig.savefig(<span class="st">&#39;out.png&#39;</span>, bbox_inches <span class="op">=</span> <span class="st">&#39;tight&#39;</span>)</span></code></pre></div>
+<p>save to .pdf</p>
+<div class="sourceCode" id="cb381"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb381-1"><a href="matplotlib.html#cb381-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb381-2"><a href="matplotlib.html#cb381-2" tabindex="-1"></a></span>
+<span id="cb381-3"><a href="matplotlib.html#cb381-3" tabindex="-1"></a>a1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)) <span class="co"># [1, 2, 3, 4, 5, 6]</span></span>
+<span id="cb381-4"><a href="matplotlib.html#cb381-4" tabindex="-1"></a>a2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">16</span>, <span class="dv">25</span>, <span class="dv">36</span>]</span>
+<span id="cb381-5"><a href="matplotlib.html#cb381-5" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb381-6"><a href="matplotlib.html#cb381-6" tabindex="-1"></a>ax <span class="op">=</span> fig.add_axes([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>])</span>
+<span id="cb381-7"><a href="matplotlib.html#cb381-7" tabindex="-1"></a>ax.plot(a1, a2)</span>
+<span id="cb381-8"><a href="matplotlib.html#cb381-8" tabindex="-1"></a>fig.savefig(<span class="st">&#39;out.pdf&#39;</span>, bbox_inches <span class="op">=</span> <span class="st">&#39;tight&#39;</span>)</span></code></pre></div>
+</div>
+</div>
+<div id="seaborn" class="section level3 hasAnchor" number="30.1.3">
+<h3><span class="header-section-number">30.1.3</span> Seaborn<a href="matplotlib.html#seaborn" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><a href="https://www.youtube.com/@KimberlyFessel/playlists">Kimberly Fessel</a>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLtPIclEQf-3cYc7tP_mxrvNtp82NWVf8p">visually explained</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtPIclEQf-3cG31dxSMZ8KTcDG7zYng1j">Seaborn</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtPIclEQf-3dJmAj3IsSRwRoLbX-n3J81">MatPlotLib</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtPIclEQf-3c-pUgSttUGV-3Y2D9g_0sW">Pandas</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLtPIclEQf-3fhfoFQU2MJYnQ6CyjQLQEa">iPyWidgets</a></li>
+</ul></li>
+</ul>
+<div class="figure"><span style="display:block;" id="fig:seaborn-plot-type"></span>
+<img src="img/seaborn-plot-type.png" alt="seaborn plot type" width="100%" />
+<p class="caption">
+Fig. 30.2: seaborn plot type
+</p>
+</div>
+<ul>
+<li>Seaborn
+<ul>
+<li>figure-level plot</li>
+<li>axes-level plot</li>
+</ul></li>
+</ul>
+<p>R or RStudio run Python with installing packages or modules by using <code>reticulate</code>, R package</p>
+<p>and directly using Anaconda <code>conda</code> environment for convenience, instead of <code>virtualenv</code></p>
+<p><a href="https://rstudio.github.io/reticulate/articles/python_packages.html" class="uri">https://rstudio.github.io/reticulate/articles/python_packages.html</a></p>
+<div class="sourceCode" id="cb382"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb382-1"><a href="matplotlib.html#cb382-1" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span></code></pre></div>
+<pre><code>## Warning: package &#39;reticulate&#39; was built under R version 4.2.3</code></pre>
+<div class="sourceCode" id="cb384"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb384-1"><a href="matplotlib.html#cb384-1" tabindex="-1"></a><span class="fu">conda_list</span>()</span></code></pre></div>
+<pre><code>##                 name                                            python
+## 1               base                          D:\\Anaconda3/python.exe
+## 2           fiftyone          D:\\Anaconda3\\envs\\fiftyone/python.exe
+## 3              keras             D:\\Anaconda3\\envs\\keras/python.exe
+## 4            labelme           D:\\Anaconda3\\envs\\labelme/python.exe
+## 5              manim             D:\\Anaconda3\\envs\\manim/python.exe
+## 6             mmyolo            D:\\Anaconda3\\envs\\mmyolo/python.exe
+## 7       r-reticulate      D:\\Anaconda3\\envs\\r-reticulate/python.exe
+## 8  rsconnect-jupyter D:\\Anaconda3\\envs\\rsconnect-jupyter/python.exe
+## 9            sandbox           D:\\Anaconda3\\envs\\sandbox/python.exe
+## 10       sandbox-3.9       D:\\Anaconda3\\envs\\sandbox-3.9/python.exe</code></pre>
+<div class="sourceCode" id="cb386"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb386-1"><a href="matplotlib.html#cb386-1" tabindex="-1"></a><span class="fu">use_condaenv</span>(<span class="at">condaenv =</span> <span class="st">&#39;sandbox-3.9&#39;</span>)</span>
+<span id="cb386-2"><a href="matplotlib.html#cb386-2" tabindex="-1"></a></span>
+<span id="cb386-3"><a href="matplotlib.html#cb386-3" tabindex="-1"></a><span class="do">## install Seaborn</span></span>
+<span id="cb386-4"><a href="matplotlib.html#cb386-4" tabindex="-1"></a><span class="co"># conda_install(&quot;r-reticulate&quot;, &quot;seaborn&quot;)</span></span>
+<span id="cb386-5"><a href="matplotlib.html#cb386-5" tabindex="-1"></a></span>
+<span id="cb386-6"><a href="matplotlib.html#cb386-6" tabindex="-1"></a><span class="do">## import Seaborn (it will be automatically discovered in &quot;r-reticulate&quot;)</span></span>
+<span id="cb386-7"><a href="matplotlib.html#cb386-7" tabindex="-1"></a>seaborn <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">&quot;seaborn&quot;</span>)</span></code></pre></div>
+<div id="basic" class="section level4 hasAnchor" number="30.1.3.1">
+<h4><span class="header-section-number">30.1.3.1</span> basic<a href="matplotlib.html#basic" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="sourceCode" id="cb387"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb387-1"><a href="matplotlib.html#cb387-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt  <span class="co"># need it sometimes</span></span>
+<span id="cb387-2"><a href="matplotlib.html#cb387-2" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb387-3"><a href="matplotlib.html#cb387-3" tabindex="-1"></a></span>
+<span id="cb387-4"><a href="matplotlib.html#cb387-4" tabindex="-1"></a>sns.set_theme() <span class="co"># set the default theme</span></span></code></pre></div>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb388"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb388-1"><a href="matplotlib.html#cb388-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb388-2"><a href="matplotlib.html#cb388-2" tabindex="-1"></a></span>
+<span id="cb388-3"><a href="matplotlib.html#cb388-3" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">5</span>, <span class="fl">1.2</span>, <span class="fl">8.7</span>, <span class="fl">6.4</span>]</span>
+<span id="cb388-4"><a href="matplotlib.html#cb388-4" tabindex="-1"></a>y <span class="op">=</span> [<span class="fl">8.2</span>, <span class="fl">4.3</span>, <span class="dv">7</span>, <span class="fl">9.6</span>, <span class="dv">4</span>]</span>
+<span id="cb388-5"><a href="matplotlib.html#cb388-5" tabindex="-1"></a>sns.scatterplot(x<span class="op">=</span>x, y<span class="op">=</span>y)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-42-1.png" width="672" /></p>
+</div>
+</div>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb389"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb389-1"><a href="matplotlib.html#cb389-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb389-2"><a href="matplotlib.html#cb389-2" tabindex="-1"></a></span>
+<span id="cb389-3"><a href="matplotlib.html#cb389-3" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">5</span>, <span class="fl">1.2</span>, <span class="fl">8.7</span>, <span class="fl">6.4</span>]</span>
+<span id="cb389-4"><a href="matplotlib.html#cb389-4" tabindex="-1"></a>y <span class="op">=</span> [<span class="fl">8.2</span>, <span class="fl">4.3</span>, <span class="dv">7</span>, <span class="fl">9.6</span>, <span class="dv">4</span>]</span>
+<span id="cb389-5"><a href="matplotlib.html#cb389-5" tabindex="-1"></a>sns.lineplot(x<span class="op">=</span>x, y<span class="op">=</span>y)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-44-3.png" width="672" /></p>
+</div>
+</div>
+</div>
+<div id="data-frame-1" class="section level4 hasAnchor" number="30.1.3.2">
+<h4><span class="header-section-number">30.1.3.2</span> data frame<a href="matplotlib.html#data-frame-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><code>sns.load_dataset</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb390"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb390-1"><a href="matplotlib.html#cb390-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb390-2"><a href="matplotlib.html#cb390-2" tabindex="-1"></a></span>
+<span id="cb390-3"><a href="matplotlib.html#cb390-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb390-4"><a href="matplotlib.html#cb390-4" tabindex="-1"></a>tips</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<pre><code>##      total_bill   tip     sex smoker   day    time  size
+## 0         16.99  1.01  Female     No   Sun  Dinner     2
+## 1         10.34  1.66    Male     No   Sun  Dinner     3
+## 2         21.01  3.50    Male     No   Sun  Dinner     3
+## 3         23.68  3.31    Male     No   Sun  Dinner     2
+## 4         24.59  3.61  Female     No   Sun  Dinner     4
+## ..          ...   ...     ...    ...   ...     ...   ...
+## 239       29.03  5.92    Male     No   Sat  Dinner     3
+## 240       27.18  2.00  Female    Yes   Sat  Dinner     2
+## 241       22.67  2.00    Male    Yes   Sat  Dinner     2
+## 242       17.82  1.75    Male     No   Sat  Dinner     2
+## 243       18.78  3.00  Female     No  Thur  Dinner     2
+## 
+## [244 rows x 7 columns]</code></pre>
+</div>
+</div>
+<hr />
+<p><code>data</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb392"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb392-1"><a href="matplotlib.html#cb392-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb392-2"><a href="matplotlib.html#cb392-2" tabindex="-1"></a></span>
+<span id="cb392-3"><a href="matplotlib.html#cb392-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb392-4"><a href="matplotlib.html#cb392-4" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>tips, </span>
+<span id="cb392-5"><a href="matplotlib.html#cb392-5" tabindex="-1"></a>                x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>, </span>
+<span id="cb392-6"><a href="matplotlib.html#cb392-6" tabindex="-1"></a>                y<span class="op">=</span><span class="st">&#39;tip&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-48-5.png" width="672" /></p>
+</div>
+</div>
+<hr />
+<p><code>hue</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb393"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb393-1"><a href="matplotlib.html#cb393-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb393-2"><a href="matplotlib.html#cb393-2" tabindex="-1"></a></span>
+<span id="cb393-3"><a href="matplotlib.html#cb393-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb393-4"><a href="matplotlib.html#cb393-4" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>tips, </span>
+<span id="cb393-5"><a href="matplotlib.html#cb393-5" tabindex="-1"></a>                x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>, </span>
+<span id="cb393-6"><a href="matplotlib.html#cb393-6" tabindex="-1"></a>                y<span class="op">=</span><span class="st">&#39;tip&#39;</span>, </span>
+<span id="cb393-7"><a href="matplotlib.html#cb393-7" tabindex="-1"></a>                hue<span class="op">=</span><span class="st">&#39;smoker&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-50-7.png" width="672" /></p>
+</div>
+</div>
+<hr />
+<p><code>style</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb394"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb394-1"><a href="matplotlib.html#cb394-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb394-2"><a href="matplotlib.html#cb394-2" tabindex="-1"></a></span>
+<span id="cb394-3"><a href="matplotlib.html#cb394-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb394-4"><a href="matplotlib.html#cb394-4" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>tips, </span>
+<span id="cb394-5"><a href="matplotlib.html#cb394-5" tabindex="-1"></a>                x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>, </span>
+<span id="cb394-6"><a href="matplotlib.html#cb394-6" tabindex="-1"></a>                y<span class="op">=</span><span class="st">&#39;tip&#39;</span>, </span>
+<span id="cb394-7"><a href="matplotlib.html#cb394-7" tabindex="-1"></a>                hue<span class="op">=</span><span class="st">&#39;smoker&#39;</span>, </span>
+<span id="cb394-8"><a href="matplotlib.html#cb394-8" tabindex="-1"></a>                style<span class="op">=</span><span class="st">&#39;time&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-52-9.png" width="672" /></p>
+</div>
+</div>
+<hr />
+<p><code>size</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb395"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb395-1"><a href="matplotlib.html#cb395-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb395-2"><a href="matplotlib.html#cb395-2" tabindex="-1"></a></span>
+<span id="cb395-3"><a href="matplotlib.html#cb395-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb395-4"><a href="matplotlib.html#cb395-4" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>tips, </span>
+<span id="cb395-5"><a href="matplotlib.html#cb395-5" tabindex="-1"></a>                x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>, </span>
+<span id="cb395-6"><a href="matplotlib.html#cb395-6" tabindex="-1"></a>                y<span class="op">=</span><span class="st">&#39;tip&#39;</span>, </span>
+<span id="cb395-7"><a href="matplotlib.html#cb395-7" tabindex="-1"></a>                hue<span class="op">=</span><span class="st">&#39;smoker&#39;</span>, </span>
+<span id="cb395-8"><a href="matplotlib.html#cb395-8" tabindex="-1"></a>                style<span class="op">=</span><span class="st">&#39;time&#39;</span>, </span>
+<span id="cb395-9"><a href="matplotlib.html#cb395-9" tabindex="-1"></a>                size<span class="op">=</span><span class="st">&#39;size&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-54-11.png" width="672" /></p>
+</div>
+</div>
+<blockquote>
+<ul>
+<li>Legend is covering up the graph, it’s getting out of hand. Let’s tune the range of x</li>
+<li><code>sns.scatterplot()</code> actually returns something that resembles Matplotlib axis. So we use a Matplotlib axis function:</li>
+</ul>
+</blockquote>
+<p><code>ax = sns.scatterplot(...)</code></p>
+<p><a href="https://stackoverflow.com/questions/26597116/seaborn-plots-not-showing-up" class="uri">https://stackoverflow.com/questions/26597116/seaborn-plots-not-showing-up</a></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb396"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb396-1"><a href="matplotlib.html#cb396-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb396-2"><a href="matplotlib.html#cb396-2" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb396-3"><a href="matplotlib.html#cb396-3" tabindex="-1"></a></span>
+<span id="cb396-4"><a href="matplotlib.html#cb396-4" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb396-5"><a href="matplotlib.html#cb396-5" tabindex="-1"></a>ax <span class="op">=</span> sns.scatterplot(data<span class="op">=</span>tips, </span>
+<span id="cb396-6"><a href="matplotlib.html#cb396-6" tabindex="-1"></a>                x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>, </span>
+<span id="cb396-7"><a href="matplotlib.html#cb396-7" tabindex="-1"></a>                y<span class="op">=</span><span class="st">&#39;tip&#39;</span>, </span>
+<span id="cb396-8"><a href="matplotlib.html#cb396-8" tabindex="-1"></a>                hue<span class="op">=</span><span class="st">&#39;smoker&#39;</span>, </span>
+<span id="cb396-9"><a href="matplotlib.html#cb396-9" tabindex="-1"></a>                style<span class="op">=</span><span class="st">&#39;time&#39;</span>, </span>
+<span id="cb396-10"><a href="matplotlib.html#cb396-10" tabindex="-1"></a>                size<span class="op">=</span><span class="st">&#39;size&#39;</span>)</span>
+<span id="cb396-11"><a href="matplotlib.html#cb396-11" tabindex="-1"></a>ax.set_xlim((<span class="dv">0</span>, <span class="dv">70</span>))</span>
+<span id="cb396-12"><a href="matplotlib.html#cb396-12" tabindex="-1"></a><span class="co"># alternatively:</span></span>
+<span id="cb396-13"><a href="matplotlib.html#cb396-13" tabindex="-1"></a><span class="co"># ax.set(xlim=(0, 70))</span></span>
+<span id="cb396-14"><a href="matplotlib.html#cb396-14" tabindex="-1"></a>plt.show()</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<pre><code>## (0.0, 70.0)</code></pre>
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-56-13.png" width="672" /></p>
+</div>
+</div>
+</div>
+<div id="axis-level-plot-and-figure-level-plot" class="section level4 hasAnchor" number="30.1.3.3">
+<h4><span class="header-section-number">30.1.3.3</span> axis-level plot and figure-level plot<a href="matplotlib.html#axis-level-plot-and-figure-level-plot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><code>sns.relplot</code></p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-57"></span>
+<img src="img/seaborn-plot-type.png" alt="seaborn plot type" width="100%" />
+<p class="caption">
+Fig. 30.3: seaborn plot type
+</p>
+</div>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb398"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb398-1"><a href="matplotlib.html#cb398-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb398-2"><a href="matplotlib.html#cb398-2" tabindex="-1"></a></span>
+<span id="cb398-3"><a href="matplotlib.html#cb398-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb398-4"><a href="matplotlib.html#cb398-4" tabindex="-1"></a>sns.relplot(kind<span class="op">=</span><span class="st">&#39;scatter&#39;</span>, </span>
+<span id="cb398-5"><a href="matplotlib.html#cb398-5" tabindex="-1"></a>            data<span class="op">=</span>tips, </span>
+<span id="cb398-6"><a href="matplotlib.html#cb398-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>, </span>
+<span id="cb398-7"><a href="matplotlib.html#cb398-7" tabindex="-1"></a>            y<span class="op">=</span><span class="st">&#39;tip&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-59-1.png" width="244" /><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-59-2.png" width="480" /></p>
+</div>
+</div>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb399"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb399-1"><a href="matplotlib.html#cb399-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb399-2"><a href="matplotlib.html#cb399-2" tabindex="-1"></a></span>
+<span id="cb399-3"><a href="matplotlib.html#cb399-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb399-4"><a href="matplotlib.html#cb399-4" tabindex="-1"></a>sns.relplot(kind<span class="op">=</span><span class="st">&#39;line&#39;</span>, </span>
+<span id="cb399-5"><a href="matplotlib.html#cb399-5" tabindex="-1"></a>            data<span class="op">=</span>tips, </span>
+<span id="cb399-6"><a href="matplotlib.html#cb399-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>, </span>
+<span id="cb399-7"><a href="matplotlib.html#cb399-7" tabindex="-1"></a>            y<span class="op">=</span><span class="st">&#39;tip&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-61-5.png" width="244" /><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-61-6.png" width="480" /></p>
+</div>
+</div>
+<hr />
+<blockquote>
+<p>With figure-level plot, we can draw more than one plot (one <code>axes</code>).</p>
+</blockquote>
+<blockquote>
+<p>Here we specify that different <code>sex</code> be on different column by specifying <code>col=sex</code>.</p>
+</blockquote>
+<p><code>col=sex</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb400"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb400-1"><a href="matplotlib.html#cb400-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb400-2"><a href="matplotlib.html#cb400-2" tabindex="-1"></a></span>
+<span id="cb400-3"><a href="matplotlib.html#cb400-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb400-4"><a href="matplotlib.html#cb400-4" tabindex="-1"></a>sns.relplot(kind<span class="op">=</span><span class="st">&#39;scatter&#39;</span>,</span>
+<span id="cb400-5"><a href="matplotlib.html#cb400-5" tabindex="-1"></a>            data<span class="op">=</span>tips,</span>
+<span id="cb400-6"><a href="matplotlib.html#cb400-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>, </span>
+<span id="cb400-7"><a href="matplotlib.html#cb400-7" tabindex="-1"></a>            y<span class="op">=</span><span class="st">&#39;tip&#39;</span>, </span>
+<span id="cb400-8"><a href="matplotlib.html#cb400-8" tabindex="-1"></a>            hue<span class="op">=</span><span class="st">&#39;smoker&#39;</span>, </span>
+<span id="cb400-9"><a href="matplotlib.html#cb400-9" tabindex="-1"></a>            style<span class="op">=</span><span class="st">&#39;time&#39;</span>, </span>
+<span id="cb400-10"><a href="matplotlib.html#cb400-10" tabindex="-1"></a>            size<span class="op">=</span><span class="st">&#39;size&#39;</span>,</span>
+<span id="cb400-11"><a href="matplotlib.html#cb400-11" tabindex="-1"></a>            col<span class="op">=</span><span class="st">&#39;sex&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-63-9.png" width="546" /><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-63-10.png" width="1056" /></p>
+</div>
+</div>
+<hr />
+<p><code>col=sex</code> <code>row=smoker</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb401"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb401-1"><a href="matplotlib.html#cb401-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb401-2"><a href="matplotlib.html#cb401-2" tabindex="-1"></a></span>
+<span id="cb401-3"><a href="matplotlib.html#cb401-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb401-4"><a href="matplotlib.html#cb401-4" tabindex="-1"></a>sns.relplot(kind<span class="op">=</span><span class="st">&#39;scatter&#39;</span>,</span>
+<span id="cb401-5"><a href="matplotlib.html#cb401-5" tabindex="-1"></a>            data<span class="op">=</span>tips,</span>
+<span id="cb401-6"><a href="matplotlib.html#cb401-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>, </span>
+<span id="cb401-7"><a href="matplotlib.html#cb401-7" tabindex="-1"></a>            y<span class="op">=</span><span class="st">&#39;tip&#39;</span>, </span>
+<span id="cb401-8"><a href="matplotlib.html#cb401-8" tabindex="-1"></a>            style<span class="op">=</span><span class="st">&#39;time&#39;</span>, </span>
+<span id="cb401-9"><a href="matplotlib.html#cb401-9" tabindex="-1"></a>            hue<span class="op">=</span><span class="st">&#39;size&#39;</span>,</span>
+<span id="cb401-10"><a href="matplotlib.html#cb401-10" tabindex="-1"></a>            row<span class="op">=</span><span class="st">&#39;smoker&#39;</span>, </span>
+<span id="cb401-11"><a href="matplotlib.html#cb401-11" tabindex="-1"></a>            col<span class="op">=</span><span class="st">&#39;sex&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-65-13.png" width="544" /><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-65-14.png" width="1052" /></p>
+</div>
+</div>
+</div>
+<div id="accessing-fgure-and-axes-objects" class="section level4 hasAnchor" number="30.1.3.4">
+<h4><span class="header-section-number">30.1.3.4</span> accessing fgure and axes objects<a href="matplotlib.html#accessing-fgure-and-axes-objects" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<blockquote>
+<p>Recall that Seaborn uses Matplotlib to draw the graphics. So underneath the Seaborn libray, you can still access Matplotlib’s figure object and axes objects if necessary. The call to figure-level plot returns an object.</p>
+</blockquote>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb402"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb402-1"><a href="matplotlib.html#cb402-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb402-2"><a href="matplotlib.html#cb402-2" tabindex="-1"></a></span>
+<span id="cb402-3"><a href="matplotlib.html#cb402-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb402-4"><a href="matplotlib.html#cb402-4" tabindex="-1"></a>g <span class="op">=</span> sns.relplot(kind<span class="op">=</span><span class="st">&#39;scatter&#39;</span>,</span>
+<span id="cb402-5"><a href="matplotlib.html#cb402-5" tabindex="-1"></a>                data<span class="op">=</span>tips,</span>
+<span id="cb402-6"><a href="matplotlib.html#cb402-6" tabindex="-1"></a>                x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>, </span>
+<span id="cb402-7"><a href="matplotlib.html#cb402-7" tabindex="-1"></a>                y<span class="op">=</span><span class="st">&#39;tip&#39;</span>, </span>
+<span id="cb402-8"><a href="matplotlib.html#cb402-8" tabindex="-1"></a>                style<span class="op">=</span><span class="st">&#39;time&#39;</span>, </span>
+<span id="cb402-9"><a href="matplotlib.html#cb402-9" tabindex="-1"></a>                hue<span class="op">=</span><span class="st">&#39;size&#39;</span>,</span>
+<span id="cb402-10"><a href="matplotlib.html#cb402-10" tabindex="-1"></a>                row<span class="op">=</span><span class="st">&#39;smoker&#39;</span>, </span>
+<span id="cb402-11"><a href="matplotlib.html#cb402-11" tabindex="-1"></a>                col<span class="op">=</span><span class="st">&#39;sex&#39;</span>)</span>
+<span id="cb402-12"><a href="matplotlib.html#cb402-12" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(g))</span>
+<span id="cb402-13"><a href="matplotlib.html#cb402-13" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(g.fig)) <span class="co"># g.fig gets you the Figure</span></span>
+<span id="cb402-14"><a href="matplotlib.html#cb402-14" tabindex="-1"></a>g.fig</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<pre><code>## &lt;class &#39;seaborn.axisgrid.FacetGrid&#39;&gt;</code></pre>
+<pre><code>## &lt;class &#39;matplotlib.figure.Figure&#39;&gt;</code></pre>
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-67-17.png" width="1052" /></p>
+</div>
+</div>
+</div>
+<div id="distribution-plot" class="section level4 hasAnchor" number="30.1.3.5">
+<h4><span class="header-section-number">30.1.3.5</span> distribution plot<a href="matplotlib.html#distribution-plot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><code>sns.displot</code></p>
+<div id="histogram" class="section level5 hasAnchor" number="30.1.3.5.1">
+<h5><span class="header-section-number">30.1.3.5.1</span> histogram<a href="matplotlib.html#histogram" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb405"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb405-1"><a href="matplotlib.html#cb405-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb405-2"><a href="matplotlib.html#cb405-2" tabindex="-1"></a></span>
+<span id="cb405-3"><a href="matplotlib.html#cb405-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb405-4"><a href="matplotlib.html#cb405-4" tabindex="-1"></a>sns.displot(kind<span class="op">=</span><span class="st">&#39;hist&#39;</span>,</span>
+<span id="cb405-5"><a href="matplotlib.html#cb405-5" tabindex="-1"></a>            data<span class="op">=</span>tips,</span>
+<span id="cb405-6"><a href="matplotlib.html#cb405-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-69-19.png" width="244" /><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-69-20.png" width="480" /></p>
+</div>
+</div>
+<hr />
+<p><code>bins</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb406"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb406-1"><a href="matplotlib.html#cb406-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb406-2"><a href="matplotlib.html#cb406-2" tabindex="-1"></a></span>
+<span id="cb406-3"><a href="matplotlib.html#cb406-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb406-4"><a href="matplotlib.html#cb406-4" tabindex="-1"></a>sns.displot(kind<span class="op">=</span><span class="st">&#39;hist&#39;</span>, bins<span class="op">=</span><span class="dv">20</span>,</span>
+<span id="cb406-5"><a href="matplotlib.html#cb406-5" tabindex="-1"></a>            data<span class="op">=</span>tips,</span>
+<span id="cb406-6"><a href="matplotlib.html#cb406-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-71-23.png" width="244" /><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-71-24.png" width="480" /></p>
+</div>
+</div>
+</div>
+<div id="ecdf-empirical-cumulative-distrutive-function" class="section level5 hasAnchor" number="30.1.3.5.2">
+<h5><span class="header-section-number">30.1.3.5.2</span> ECDF = empirical cumulative distrutive function<a href="matplotlib.html#ecdf-empirical-cumulative-distrutive-function" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb407"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb407-1"><a href="matplotlib.html#cb407-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb407-2"><a href="matplotlib.html#cb407-2" tabindex="-1"></a></span>
+<span id="cb407-3"><a href="matplotlib.html#cb407-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb407-4"><a href="matplotlib.html#cb407-4" tabindex="-1"></a>sns.displot(kind<span class="op">=</span><span class="st">&#39;ecdf&#39;</span>,</span>
+<span id="cb407-5"><a href="matplotlib.html#cb407-5" tabindex="-1"></a>            data<span class="op">=</span>tips,</span>
+<span id="cb407-6"><a href="matplotlib.html#cb407-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-73-27.png" width="244" /><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-73-28.png" width="480" /></p>
+</div>
+</div>
+</div>
+<div id="kde-kernel-density-estimation" class="section level5 hasAnchor" number="30.1.3.5.3">
+<h5><span class="header-section-number">30.1.3.5.3</span> KDE = kernel density estimation<a href="matplotlib.html#kde-kernel-density-estimation" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb408"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb408-1"><a href="matplotlib.html#cb408-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb408-2"><a href="matplotlib.html#cb408-2" tabindex="-1"></a></span>
+<span id="cb408-3"><a href="matplotlib.html#cb408-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb408-4"><a href="matplotlib.html#cb408-4" tabindex="-1"></a>sns.displot(kind<span class="op">=</span><span class="st">&#39;kde&#39;</span>,</span>
+<span id="cb408-5"><a href="matplotlib.html#cb408-5" tabindex="-1"></a>            data<span class="op">=</span>tips,</span>
+<span id="cb408-6"><a href="matplotlib.html#cb408-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-75-31.png" width="245" /><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-75-32.png" width="480" /></p>
+</div>
+</div>
+<hr />
+<p>histogram with KDE</p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb409"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb409-1"><a href="matplotlib.html#cb409-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb409-2"><a href="matplotlib.html#cb409-2" tabindex="-1"></a></span>
+<span id="cb409-3"><a href="matplotlib.html#cb409-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb409-4"><a href="matplotlib.html#cb409-4" tabindex="-1"></a>sns.displot(kind<span class="op">=</span><span class="st">&#39;hist&#39;</span>, bins<span class="op">=</span><span class="dv">20</span>, kde<span class="op">=</span><span class="st">&#39;true&#39;</span>,</span>
+<span id="cb409-5"><a href="matplotlib.html#cb409-5" tabindex="-1"></a>            data<span class="op">=</span>tips,</span>
+<span id="cb409-6"><a href="matplotlib.html#cb409-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-77-1.png" width="244" /></p>
+<pre><code>## &#39;% This file was created with tikzplotlib v0.10.1.\n\\begin{tikzpicture}\n\n\\definecolor{darkgray176}{RGB}{176,176,176}\n\\definecolor{steelblue31119180}{RGB}{31,119,180}\n\n\\begin{axis}[\ntick align=outside,\ntick pos=left,\nx grid style={darkgray176},\nxlabel={total_bill},\nxmin=0.682999999999999, xmax=53.197,\nxtick style={color=black},\ny grid style={darkgray176},\nylabel={Count},\nymin=0, ymax=38.85,\nytick style={color=black}\n]\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:3.07,0) rectangle (axis cs:5.457,1);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:5.457,0) rectangle (axis cs:7.844,6);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:7.844,0) rectangle (axis cs:10.231,13);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:10.231,0) rectangle (axis cs:12.618,29);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:12.618,0) rectangle (axis cs:15.005,31);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:15.005,0) rectangle (axis cs:17.392,37);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:17.392,0) rectangle (axis cs:19.779,28);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:19.779,0) rectangle (axis cs:22.166,23);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:22.166,0) rectangle (axis cs:24.553,18);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:24.553,0) rectangle (axis cs:26.94,13);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:26.94,0) rectangle (axis cs:29.327,10);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:29.327,0) rectangle (axis cs:31.714,9);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:31.714,0) rectangle (axis cs:34.101,5);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:34.101,0) rectangle (axis cs:36.488,7);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:36.488,0) rectangle (axis cs:38.875,3);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:38.875,0) rectangle (axis cs:41.262,4);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:41.262,0) rectangle (axis cs:43.649,1);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:43.649,0) rectangle (axis cs:46.036,2);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:46.036,0) rectangle (axis cs:48.423,3);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:48.423,0) rectangle (axis cs:50.81,1);\n\\addplot [semithick, steelblue31119180]\ntable {%\n3.07 1.81650227371093\n3.30989949748744 2.0434643264896\n3.54979899497487 2.2946853892412\n3.78969849246231 2.57191856721816\n4.02959798994975 2.87687103964454\n4.26949748743719 3.2111703368463\n4.50939698492462 3.57632865116155\n4.74929648241206 3.97370595578497\n4.9891959798995 4.40447280025508\n5.22909547738693 4.86957372234809\n5.46899497487437 5.36969226057983\n5.70889447236181 5.90521856710491\n5.94879396984925 6.47622060619423\n6.18869346733668 7.0824198781706\n6.42859296482412 7.72317253298626\n6.66849246231156 8.39745663256822\n6.90839195979899 9.10386618836671\n7.14829145728643 9.84061244261478\n7.38819095477387 10.605532681721\n7.62809045226131 11.3961066717526\n7.86798994974874 12.2094805936589\n8.10788944723618 13.0424981350657\n8.34778894472362 13.8917381722816\n8.58768844221106 14.7535582575524\n8.82758793969849 15.6241429202311\n9.06748743718593 16.4995556046295\n9.30738693467337 17.3757929103925\n9.5472864321608 18.2488396817903\n9.78718592964824 19.1147234183632\n10.0270854271357 19.9695664579337\n10.2669849246231 20.8096344196708\n10.5068844221106 21.6313794931092\n10.746783919598 22.4314773197019\n10.9866834170854 23.2068564344639\n11.2265829145729 23.9547195110843\n11.4664824120603 24.6725559755833\n11.7063819095477 25.3581459088295\n11.9462814070352 26.0095555316024\n12.1861809045226 26.6251249394887\n12.4260804020101 27.2034491092342\n12.6659798994975 27.7433535131461\n12.9058793969849 28.2438659343764\n13.1457788944724 28.7041862560547\n13.3856783919598 29.1236560873048\n13.6255778894472 29.5017300798214\n13.8654773869347 29.8379506761731\n14.1053768844221 30.1319278179194\n14.3452763819095 30.3833248371542\n14.585175879397 30.591851374701\n14.8250753768844 30.7572637330083\n15.0649748743719 30.8793726073093\n15.3048743718593 30.9580576730616\n15.5447738693467 30.9932880701114\n15.7846733668342 30.9851474422087\n16.0245728643216 30.9338618888512\n16.264472361809 30.8398289841961\n16.5043718592965 30.7036459275097\n16.7442713567839 30.5261349162415\n16.9841708542714 30.3083639732627\n17.2240703517588 30.0516617033457\n17.4639698492462 29.7576247830678\n17.7038693467337 29.4281173801778\n17.9437688442211 29.0652621267963\n18.1836683417085 28.671422708\n18.423567839196 28.2491785464713\n18.6634673366834 27.8012924408185\n18.9033668341709 27.3306723300243\n19.1432663316583 26.8403285949088\n19.3831658291457 26.3333284612471\n19.6230653266332 25.8127491361762\n19.8629648241206 25.2816312933759\n20.102864321608 24.7429344316665\n20.3427638190955 24.1994954781583\n20.5826633165829 23.6539918052482\n20.8225628140704 23.1089095957794\n21.0624623115578 22.5665182374549\n21.3023618090452 22.0288511696841\n21.5422613065327 21.4976933549977\n21.7821608040201 20.9745753121716\n22.0220603015075 20.4607734360394\n22.261959798995 19.9573161441721\n22.5018592964824 19.4649952359086\n22.7417587939699 18.9843817259491\n22.9816582914573 18.5158453233279\n23.2215577889447 18.0595766669415\n23.4614572864322 17.615611400536\n23.7013567839196 17.1838551725645\n23.941256281407 16.7641086787571\n24.1811557788945 16.3560919263279\n24.4210552763819 15.9594669865189\n24.6609547738693 15.5738586137689\n24.9008542713568 15.1988722412078\n25.1407537688442 14.8341090082362\n25.3806532663317 14.4791776303403\n25.6205527638191 14.1337030768421\n25.8604522613065 13.7973321712685\n26.100351758794 13.4697363637648\n26.3402512562814 13.150612038339\n26.5801507537688 12.8396788037574\n26.8200502512563 12.5366762713579\n27.0599497487437 12.2413598437652\n27.2998492462312 11.9534960256898\n27.5397487437186 11.6728577243005\n27.779648241206 11.3992199369156\n28.0195477386935 11.1323561346653\n28.2594472361809 10.8720355503384\n28.4993467336683 10.618021475438\n28.7392462311558 10.3700705740342\n28.9791457286432 10.1279331369088\n29.2190452261307 9.89135413483069\n29.4589447236181 9.66007488858729\n29.6988442211055 9.43383515726144\n29.938743718593 9.21237545429534\n30.1786432160804 8.99543942987608\n30.4185427135678 8.78277620282414\n30.6584422110553 8.57414257872066\n30.8983417085427 8.36930514594295\n31.1382412060302 8.16804229007108\n31.3781407035176 7.97014620304912\n31.618040201005 7.77542498131079\n31.8579396984925 7.58370490367017\n32.0978391959799 7.39483295445693\n32.3377386934673 7.20867961205857\n32.5776381909548 7.02514186210763\n32.8175376884422 6.84414632449375\n33.0574371859297 6.665652312145\n33.2973366834171 6.48965457576794\n33.5372361809045 6.31618544094476\n33.777135678392 6.1453160195762\n34.0170351758794 5.97715618216116\n34.2569346733668 5.81185301380444\n34.4968341708543 5.64958754514477\n34.7367336683417 5.4905696464633\n34.9766331658291 5.33503109293979\n35.2165326633166 5.18321694268858\n35.456432160804 5.03537550629672\n35.6963316582915 4.89174731561885\n35.9362311557789 4.75255360914146\n36.1761306532663 4.61798493100736\n36.4160301507538 4.48819048255513\n36.6559296482412 4.36326886361301\n36.8958291457286 4.24326079384011\n37.1357286432161 4.12814431384217\n37.3756281407035 4.01783283689438\n37.615527638191 3.91217626335446\n37.8554271356784 3.81096519221432\n38.0953266331658 3.71393808027978\n38.3352261306533 3.6207910222994\n38.5751256281407 3.53118966756817\n38.8150251256281 3.44478266114206\n39.0549246231156 3.3612159094193\n39.294824120603 3.28014692600479\n39.5347236180905 3.20125851656009\n39.7746231155779 3.12427110932688\n40.0145226130653 3.04895312649168\n40.2544221105528 2.97512891305667\n40.4943216080402 2.90268388486196\n40.7342211055276 2.83156671514291\n40.9741206030151 2.76178853850247\n41.2140201005025 2.69341930205747\n41.45391959799 2.62658152681276\n41.6938190954774 2.56144185109478\n41.9337185929648 2.49820080763016\n42.1736180904523 2.43708133466766\n42.4135175879397 2.37831653999644\n42.6534170854271 2.32213722758936\n42.8933165829146 2.26875966439028\n43.133216080402 2.21837401507579\n43.3731155778895 2.17113381152285\n43.6130150753769 2.12714675709877\n43.8529145728643 2.08646709892452\n44.0928140703518 2.04908973796103\n44.3327135678392 2.01494618973935\n44.5726130653266 1.9839024589303\n44.8125125628141 1.95575884849134\n45.0524120603015 1.93025168749459\n45.2923115577889 1.90705692886651\n45.5322110552764 1.88579553680867\n45.7721105527638 1.8660405514497\n46.0120100502513 1.84732568370606\n46.2519095477387 1.82915525570067\n46.4918090452261 1.81101526177134\n46.7317085427136 1.79238528356458\n46.971608040201 1.77275095240831\n47.2115075376884 1.75161661627327\n47.4514070351759 1.72851784072741\n47.6913065326633 1.70303335688259\n47.9312060301508 1.67479606749064\n48.1711055276382 1.64350273728161\n48.4110050251256 1.6089220264205\n48.6509045226131 1.57090057632539\n48.8908040201005 1.52936692339272\n49.1307035175879 1.48433309547015\n49.3706030150754 1.43589383418153\n49.6105025125628 1.38422347865573\n49.8504020100503 1.32957063768011\n50.0903015075377 1.27225086266426\n50.3302010050251 1.21263760837119\n50.5701005025126 1.15115182824249\n50.81 1.08825059345319\n};\n\\end{axis}\n\n\\end{tikzpicture}\n&#39;</code></pre>
+</div>
+</div>
+<hr />
+<p>TikZ / <code>tikzpicture</code> with PGFplots <code>axis</code> by transforming Matplotlib-based Seaborn plot to .tex via Python package <code>tikzplotlib</code></p>
+<p><code>xlabel={total_bill},</code> changed to <code>xlabel={total bill},</code> wihout _ in text</p>
+<p>X <code>ylabel={Count},</code> changed to <code>ylabel={$\text{Count}$},</code>: not necessoary to be changed, the problem is _ in xlabel name</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-78"></span>
+<img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-78-1.png" alt="tikzplotlib" width="100%" />
+<p class="caption">
+Fig. 16.32: tikzplotlib
+</p>
+</div>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb411"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb411-1"><a href="matplotlib.html#cb411-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb411-2"><a href="matplotlib.html#cb411-2" tabindex="-1"></a></span>
+<span id="cb411-3"><a href="matplotlib.html#cb411-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb411-4"><a href="matplotlib.html#cb411-4" tabindex="-1"></a>sns.displot(kind<span class="op">=</span><span class="st">&#39;hist&#39;</span>, bins<span class="op">=</span><span class="dv">20</span>, kde<span class="op">=</span><span class="st">&#39;true&#39;</span>,</span>
+<span id="cb411-5"><a href="matplotlib.html#cb411-5" tabindex="-1"></a>            data<span class="op">=</span>tips,</span>
+<span id="cb411-6"><a href="matplotlib.html#cb411-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>,</span>
+<span id="cb411-7"><a href="matplotlib.html#cb411-7" tabindex="-1"></a>            hue<span class="op">=</span><span class="st">&#39;smoker&#39;</span>,</span>
+<span id="cb411-8"><a href="matplotlib.html#cb411-8" tabindex="-1"></a>            col<span class="op">=</span><span class="st">&#39;sex&#39;</span></span>
+<span id="cb411-9"><a href="matplotlib.html#cb411-9" tabindex="-1"></a>            )</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-80-3.png" width="535" /></p>
+</div>
+</div>
+<hr />
+<blockquote>
+<p>Let’s cutomize the label and title.</p>
+</blockquote>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb412"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb412-1"><a href="matplotlib.html#cb412-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb412-2"><a href="matplotlib.html#cb412-2" tabindex="-1"></a></span>
+<span id="cb412-3"><a href="matplotlib.html#cb412-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb412-4"><a href="matplotlib.html#cb412-4" tabindex="-1"></a>g <span class="op">=</span> sns.displot(kind<span class="op">=</span><span class="st">&#39;hist&#39;</span>, bins<span class="op">=</span><span class="dv">20</span>, kde<span class="op">=</span><span class="st">&#39;true&#39;</span>,</span>
+<span id="cb412-5"><a href="matplotlib.html#cb412-5" tabindex="-1"></a>                data<span class="op">=</span>tips,</span>
+<span id="cb412-6"><a href="matplotlib.html#cb412-6" tabindex="-1"></a>                x<span class="op">=</span><span class="st">&#39;total_bill&#39;</span>,</span>
+<span id="cb412-7"><a href="matplotlib.html#cb412-7" tabindex="-1"></a>                hue<span class="op">=</span><span class="st">&#39;smoker&#39;</span>,</span>
+<span id="cb412-8"><a href="matplotlib.html#cb412-8" tabindex="-1"></a>                col<span class="op">=</span><span class="st">&#39;sex&#39;</span></span>
+<span id="cb412-9"><a href="matplotlib.html#cb412-9" tabindex="-1"></a>                )</span>
+<span id="cb412-10"><a href="matplotlib.html#cb412-10" tabindex="-1"></a>g.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">&#39;Total bill&#39;</span>)</span>
+<span id="cb412-11"><a href="matplotlib.html#cb412-11" tabindex="-1"></a>g.axes[<span class="dv">0</span>][<span class="dv">0</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&#39;Male&#39;</span>)</span>
+<span id="cb412-12"><a href="matplotlib.html#cb412-12" tabindex="-1"></a>g.axes[<span class="dv">0</span>][<span class="dv">1</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&#39;Female&#39;</span>)</span>
+<span id="cb412-13"><a href="matplotlib.html#cb412-13" tabindex="-1"></a>g.fig</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<pre><code>## D:\Anaconda3\envs\sandbox-3.9\lib\site-packages\seaborn\axisgrid.py:123: UserWarning: The figure layout has changed to tight
+##   self._figure.tight_layout(*args, **kwargs)</code></pre>
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-82-5.png" width="535" /><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-82-6.png" width="1029" /></p>
+</div>
+</div>
+</div>
+</div>
+<div id="categorical-plot" class="section level4 hasAnchor" number="30.1.3.6">
+<h4><span class="header-section-number">30.1.3.6</span> categorical plot<a href="matplotlib.html#categorical-plot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><code>sns.catplot</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb414"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb414-1"><a href="matplotlib.html#cb414-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb414-2"><a href="matplotlib.html#cb414-2" tabindex="-1"></a></span>
+<span id="cb414-3"><a href="matplotlib.html#cb414-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb414-4"><a href="matplotlib.html#cb414-4" tabindex="-1"></a>sns.catplot(kind<span class="op">=</span><span class="st">&#39;box&#39;</span>, </span>
+<span id="cb414-5"><a href="matplotlib.html#cb414-5" tabindex="-1"></a>            data<span class="op">=</span>tips, </span>
+<span id="cb414-6"><a href="matplotlib.html#cb414-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&quot;day&quot;</span>, hue<span class="op">=</span><span class="st">&quot;day&quot;</span>,</span>
+<span id="cb414-7"><a href="matplotlib.html#cb414-7" tabindex="-1"></a>            y<span class="op">=</span><span class="st">&quot;total_bill&quot;</span></span>
+<span id="cb414-8"><a href="matplotlib.html#cb414-8" tabindex="-1"></a>            )</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-84-9.png" width="244" /></p>
+</div>
+</div>
+<hr />
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb415"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb415-1"><a href="matplotlib.html#cb415-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb415-2"><a href="matplotlib.html#cb415-2" tabindex="-1"></a></span>
+<span id="cb415-3"><a href="matplotlib.html#cb415-3" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb415-4"><a href="matplotlib.html#cb415-4" tabindex="-1"></a>sns.catplot(kind<span class="op">=</span><span class="st">&#39;violin&#39;</span>, </span>
+<span id="cb415-5"><a href="matplotlib.html#cb415-5" tabindex="-1"></a>            data<span class="op">=</span>tips, </span>
+<span id="cb415-6"><a href="matplotlib.html#cb415-6" tabindex="-1"></a>            x<span class="op">=</span><span class="st">&quot;day&quot;</span>, hue<span class="op">=</span><span class="st">&quot;day&quot;</span>,</span>
+<span id="cb415-7"><a href="matplotlib.html#cb415-7" tabindex="-1"></a>            y<span class="op">=</span><span class="st">&quot;total_bill&quot;</span>,</span>
+<span id="cb415-8"><a href="matplotlib.html#cb415-8" tabindex="-1"></a>            col<span class="op">=</span><span class="st">&#39;sex&#39;</span></span>
+<span id="cb415-9"><a href="matplotlib.html#cb415-9" tabindex="-1"></a>            )</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-86-11.png" width="494" /></p>
+</div>
+</div>
+</div>
+<div id="joint-plot" class="section level4 hasAnchor" number="30.1.3.7">
+<h4><span class="header-section-number">30.1.3.7</span> joint plot<a href="matplotlib.html#joint-plot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><code>sns.jointplot</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb416"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb416-1"><a href="matplotlib.html#cb416-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb416-2"><a href="matplotlib.html#cb416-2" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb416-3"><a href="matplotlib.html#cb416-3" tabindex="-1"></a></span>
+<span id="cb416-4"><a href="matplotlib.html#cb416-4" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">&quot;tips&quot;</span>)</span>
+<span id="cb416-5"><a href="matplotlib.html#cb416-5" tabindex="-1"></a>sns.jointplot(data<span class="op">=</span>tips,</span>
+<span id="cb416-6"><a href="matplotlib.html#cb416-6" tabindex="-1"></a>              x<span class="op">=</span><span class="st">&quot;total_bill&quot;</span>,</span>
+<span id="cb416-7"><a href="matplotlib.html#cb416-7" tabindex="-1"></a>              y<span class="op">=</span><span class="st">&quot;tip&quot;</span>,</span>
+<span id="cb416-8"><a href="matplotlib.html#cb416-8" tabindex="-1"></a>              hue<span class="op">=</span><span class="st">&#39;sex&#39;</span></span>
+<span id="cb416-9"><a href="matplotlib.html#cb416-9" tabindex="-1"></a>              )</span>
+<span id="cb416-10"><a href="matplotlib.html#cb416-10" tabindex="-1"></a>plt.show()</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<pre><code>## &lt;seaborn.axisgrid.JointGrid object at 0x0000012E1CA70DF0&gt;</code></pre>
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-88-13.png" width="576" /></p>
+</div>
+</div>
+</div>
+<div id="pair-plot" class="section level4 hasAnchor" number="30.1.3.8">
+<h4><span class="header-section-number">30.1.3.8</span> pair plot<a href="matplotlib.html#pair-plot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><code>sns.pairplot</code></p>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb418"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb418-1"><a href="matplotlib.html#cb418-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb418-2"><a href="matplotlib.html#cb418-2" tabindex="-1"></a></span>
+<span id="cb418-3"><a href="matplotlib.html#cb418-3" tabindex="-1"></a>penguins <span class="op">=</span> sns.load_dataset(<span class="st">&quot;penguins&quot;</span>)</span>
+<span id="cb418-4"><a href="matplotlib.html#cb418-4" tabindex="-1"></a>sns.pairplot(data<span class="op">=</span>penguins,</span>
+<span id="cb418-5"><a href="matplotlib.html#cb418-5" tabindex="-1"></a>             hue<span class="op">=</span><span class="st">&#39;species&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-90-15.png" width="556" /></p>
+</div>
+</div>
+</div>
+<div id="palette" class="section level4 hasAnchor" number="30.1.3.9">
+<h4><span class="header-section-number">30.1.3.9</span> palette<a href="matplotlib.html#palette" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<blockquote>
+<p>Changing the color with Matplotlib’s color</p>
+</blockquote>
+<blockquote>
+<p>A list of color: <a href="https://matplotlib.org/stable/tutorials/colors/colormaps.html" class="uri">https://matplotlib.org/stable/tutorials/colors/colormaps.html</a></p>
+</blockquote>
+<div class="cols">
+<div class="col">
+<div class="sourceCode" id="cb419"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb419-1"><a href="matplotlib.html#cb419-1" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb419-2"><a href="matplotlib.html#cb419-2" tabindex="-1"></a></span>
+<span id="cb419-3"><a href="matplotlib.html#cb419-3" tabindex="-1"></a>penguins <span class="op">=</span> sns.load_dataset(<span class="st">&quot;penguins&quot;</span>)</span>
+<span id="cb419-4"><a href="matplotlib.html#cb419-4" tabindex="-1"></a>sns.pairplot(data<span class="op">=</span>penguins,</span>
+<span id="cb419-5"><a href="matplotlib.html#cb419-5" tabindex="-1"></a>             hue<span class="op">=</span><span class="st">&#39;species&#39;</span>,</span>
+<span id="cb419-6"><a href="matplotlib.html#cb419-6" tabindex="-1"></a>             palette<span class="op">=</span><span class="st">&#39;Pastel1&#39;</span>)</span></code></pre></div>
+</div>
+<div class="col">
+<p> </p>
+</div>
+<div class="col">
+<p><img src="202403181222-MatPlotLib_files/figure-html/unnamed-chunk-92-17.png" width="556" /></p>
+</div>
+</div>
+</div>
+<div id="volcano-plot" class="section level4 hasAnchor" number="30.1.3.10">
+<h4><span class="header-section-number">30.1.3.10</span> volcano plot<a href="matplotlib.html#volcano-plot" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="heatmap" class="section level4 hasAnchor" number="30.1.3.11">
+<h4><span class="header-section-number">30.1.3.11</span> heatmap<a href="matplotlib.html#heatmap" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+</div>
+</div>
+<div id="export" class="section level2 hasAnchor" number="30.2">
+<h2><span class="header-section-number">30.2</span> export<a href="matplotlib.html#export" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="svg-1" class="section level3 hasAnchor" number="30.2.1">
+<h3><span class="header-section-number">30.2.1</span> .svg<a href="matplotlib.html#svg-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://stackoverflow.com/questions/24525111/how-can-i-get-the-output-of-a-matplotlib-plot-as-an-svg" class="uri">https://stackoverflow.com/questions/24525111/how-can-i-get-the-output-of-a-matplotlib-plot-as-an-svg</a></p>
+<div class="sourceCode" id="cb420"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb420-1"><a href="matplotlib.html#cb420-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb420-2"><a href="matplotlib.html#cb420-2" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb420-3"><a href="matplotlib.html#cb420-3" tabindex="-1"></a></span>
+<span id="cb420-4"><a href="matplotlib.html#cb420-4" tabindex="-1"></a>penguins <span class="op">=</span> sns.load_dataset(<span class="st">&quot;penguins&quot;</span>)</span>
+<span id="cb420-5"><a href="matplotlib.html#cb420-5" tabindex="-1"></a>sns.pairplot(data<span class="op">=</span>penguins,</span>
+<span id="cb420-6"><a href="matplotlib.html#cb420-6" tabindex="-1"></a>             hue<span class="op">=</span><span class="st">&#39;species&#39;</span>)</span>
+<span id="cb420-7"><a href="matplotlib.html#cb420-7" tabindex="-1"></a></span>
+<span id="cb420-8"><a href="matplotlib.html#cb420-8" tabindex="-1"></a>plt.savefig(<span class="st">&quot;test.svg&quot;</span>)</span>
+<span id="cb420-9"><a href="matplotlib.html#cb420-9" tabindex="-1"></a><span class="co"># plt.savefig(&quot;test.svg&quot;, dpi=1200)</span></span></code></pre></div>
+</div>
+<div id="eps" class="section level3 hasAnchor" number="30.2.2">
+<h3><span class="header-section-number">30.2.2</span> .eps<a href="matplotlib.html#eps" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://stackoverflow.com/questions/16183462/saving-images-in-python-at-a-very-high-quality" class="uri">https://stackoverflow.com/questions/16183462/saving-images-in-python-at-a-very-high-quality</a></p>
+<p>The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.</p>
+<div class="sourceCode" id="cb421"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb421-1"><a href="matplotlib.html#cb421-1" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb421-2"><a href="matplotlib.html#cb421-2" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb421-3"><a href="matplotlib.html#cb421-3" tabindex="-1"></a></span>
+<span id="cb421-4"><a href="matplotlib.html#cb421-4" tabindex="-1"></a>penguins <span class="op">=</span> sns.load_dataset(<span class="st">&quot;penguins&quot;</span>)</span>
+<span id="cb421-5"><a href="matplotlib.html#cb421-5" tabindex="-1"></a>sns.pairplot(data<span class="op">=</span>penguins,</span>
+<span id="cb421-6"><a href="matplotlib.html#cb421-6" tabindex="-1"></a>             hue<span class="op">=</span><span class="st">&#39;species&#39;</span>)</span>
+<span id="cb421-7"><a href="matplotlib.html#cb421-7" tabindex="-1"></a></span>
+<span id="cb421-8"><a href="matplotlib.html#cb421-8" tabindex="-1"></a>plt.savefig(<span class="st">&quot;test.eps&quot;</span>)</span>
+<span id="cb421-9"><a href="matplotlib.html#cb421-9" tabindex="-1"></a><span class="co"># plt.savefig(&quot;test.eps&quot;, dpi=1200)</span></span></code></pre></div>
+
+</div>
+</div>
+</div>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://redwing1304.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="archimedean-property.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="survial-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 1
+},
+"edit": {
+"link": "https://github.com/RRWWW/math/edit/main/202403181222-MatPlotLib.Rmd",
+"text": "Edit on GitHub"
+},
+"history": {
+"link": "https://github.com/RRWWW/math/commits/main/202403181222-MatPlotLib.Rmd",
+"text": null
+},
+"view": {
+"link": "https://github.com/RRWWW/math/blob/main/202403181222-MatPlotLib.Rmd",
+"text": null
+},
+"download": [["math.pdf", "PDF"], ["math.docx", "Word DOCX"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

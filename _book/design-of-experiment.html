@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 35: design of experiment | math</title>
+  <meta name="description" content="Chapter 35: design of experiment | math" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 35: design of experiment | math" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="https://github.com/RRWWW/math/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 35: design of experiment | math" />
+  
+  
+  
+
+<meta name="author" content="Joey Yu Hsu" />
+
+
+<meta name="date" content="2024-03-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="notational-system-for-design.html"/>
+<link rel="next" href="quine.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">math</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>index</a></li>
+<li class="part"><span><b>I by descipline</b></span></li>
+<li class="chapter" data-level="3" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>3</b> mathematics</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="mathematics.html"><a href="mathematics.html#tool"><i class="fa fa-check"></i><b>3.1</b> tool</a></li>
+<li class="chapter" data-level="3.2" data-path="mathematics.html"><a href="mathematics.html#discipline"><i class="fa fa-check"></i><b>3.2</b> discipline</a></li>
+<li class="chapter" data-level="3.3" data-path="mathematics.html"><a href="mathematics.html#learning-map"><i class="fa fa-check"></i><b>3.3</b> learning map</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="physics.html"><a href="physics.html"><i class="fa fa-check"></i><b>4</b> physics</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="physics.html"><a href="physics.html#discipline-1"><i class="fa fa-check"></i><b>4.1</b> discipline</a></li>
+<li class="chapter" data-level="4.2" data-path="physics.html"><a href="physics.html#learning-map-1"><i class="fa fa-check"></i><b>4.2</b> learning map</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="plot.html"><a href="plot.html"><i class="fa fa-check"></i><b>5</b> plot</a></li>
+<li class="chapter" data-level="6" data-path="programming-language.html"><a href="programming-language.html"><i class="fa fa-check"></i><b>6</b> programming language</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="programming-language.html"><a href="programming-language.html#discipline-2"><i class="fa fa-check"></i><b>6.1</b> discipline</a></li>
+<li class="chapter" data-level="6.2" data-path="programming-language.html"><a href="programming-language.html#learning-map-2"><i class="fa fa-check"></i><b>6.2</b> learning map</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="machine-learning.html"><a href="machine-learning.html"><i class="fa fa-check"></i><b>7</b> machine learning</a></li>
+<li class="part"><span><b>II by date</b></span></li>
+<li class="chapter" data-level="9" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html"><i class="fa fa-check"></i><b>9</b> A Minimal Book Example</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#about"><i class="fa fa-check"></i><b>9.1</b> About</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#usage"><i class="fa fa-check"></i><b>9.1.1</b> Usage</a></li>
+<li class="chapter" data-level="9.1.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#render-book"><i class="fa fa-check"></i><b>9.1.2</b> Render book</a></li>
+<li class="chapter" data-level="9.1.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#preview-book"><i class="fa fa-check"></i><b>9.1.3</b> Preview book</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#hello-bookdown"><i class="fa fa-check"></i><b>9.2</b> Hello bookdown</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#a-section"><i class="fa fa-check"></i><b>9.2.1</b> A section</a>
+<ul>
+<li class="chapter" data-level="" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#an-unnumbered-section"><i class="fa fa-check"></i>An unnumbered section</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#cross"><i class="fa fa-check"></i><b>9.3</b> Cross-references</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#chapters-and-sub-chapters"><i class="fa fa-check"></i><b>9.3.1</b> Chapters and sub-chapters</a></li>
+<li class="chapter" data-level="9.3.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#captioned-figures-and-tables"><i class="fa fa-check"></i><b>9.3.2</b> Captioned figures and tables</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#parts"><i class="fa fa-check"></i><b>9.4</b> Parts</a></li>
+<li class="chapter" data-level="9.5" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#footnotes-and-citations"><i class="fa fa-check"></i><b>9.5</b> Footnotes and citations</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#footnotes"><i class="fa fa-check"></i><b>9.5.1</b> Footnotes</a></li>
+<li class="chapter" data-level="9.5.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#citations"><i class="fa fa-check"></i><b>9.5.2</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#blocks"><i class="fa fa-check"></i><b>9.6</b> Blocks</a>
+<ul>
+<li class="chapter" data-level="9.6.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#equations"><i class="fa fa-check"></i><b>9.6.1</b> Equations</a></li>
+<li class="chapter" data-level="9.6.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#theorems-and-proofs"><i class="fa fa-check"></i><b>9.6.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="9.6.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#callout-blocks"><i class="fa fa-check"></i><b>9.6.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#sharing-your-book"><i class="fa fa-check"></i><b>9.7</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="9.7.1" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#publishing"><i class="fa fa-check"></i><b>9.7.1</b> Publishing</a></li>
+<li class="chapter" data-level="9.7.2" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#pages"><i class="fa fa-check"></i><b>9.7.2</b> 404 pages</a></li>
+<li class="chapter" data-level="9.7.3" data-path="a-minimal-book-example.html"><a href="a-minimal-book-example.html#metadata-for-sharing"><i class="fa fa-check"></i><b>9.7.3</b> Metadata for sharing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="test.html"><a href="test.html"><i class="fa fa-check"></i><b>10</b> test</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="test.html"><a href="test.html#rstudio"><i class="fa fa-check"></i><b>10.1</b> RStudio</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="test.html"><a href="test.html#writer-options"><i class="fa fa-check"></i><b>10.1.1</b> writer options</a>
+<ul>
+<li class="chapter" data-level="10.1.1.1" data-path="test.html"><a href="test.html#line-wrapping"><i class="fa fa-check"></i><b>10.1.1.1</b> line wrapping</a></li>
+<li class="chapter" data-level="10.1.1.2" data-path="test.html"><a href="test.html#ensuring-the-same-markdown-between-source-visual-mode"><i class="fa fa-check"></i><b>10.1.1.2</b> ensuring the same markdown between source / visual mode</a></li>
+</ul></li>
+<li class="chapter" data-level="10.1.2" data-path="test.html"><a href="test.html#rtools"><i class="fa fa-check"></i><b>10.1.2</b> Rtools</a></li>
+<li class="chapter" data-level="10.1.3" data-path="test.html"><a href="test.html#addins"><i class="fa fa-check"></i><b>10.1.3</b> addins</a></li>
+<li class="chapter" data-level="10.1.4" data-path="test.html"><a href="test.html#git"><i class="fa fa-check"></i><b>10.1.4</b> Git</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="test.html"><a href="test.html#rmarkdown"><i class="fa fa-check"></i><b>10.2</b> RMarkdown</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="test.html"><a href="test.html#pandoc-link"><i class="fa fa-check"></i><b>10.2.1</b> Pandoc link</a></li>
+<li class="chapter" data-level="10.2.2" data-path="test.html"><a href="test.html#url"><i class="fa fa-check"></i><b>10.2.2</b> URL</a></li>
+<li class="chapter" data-level="10.2.3" data-path="test.html"><a href="test.html#arrow"><i class="fa fa-check"></i><b>10.2.3</b> arrow</a></li>
+<li class="chapter" data-level="10.2.4" data-path="test.html"><a href="test.html#superscript-and-subscript"><i class="fa fa-check"></i><b>10.2.4</b> superscript and subscript</a>
+<ul>
+<li class="chapter" data-level="10.2.4.1" data-path="test.html"><a href="test.html#latex"><i class="fa fa-check"></i><b>10.2.4.1</b> LaTeX</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2.5" data-path="test.html"><a href="test.html#equation"><i class="fa fa-check"></i><b>10.2.5</b> equation</a>
+<ul>
+<li class="chapter" data-level="10.2.5.1" data-path="test.html"><a href="test.html#proof-qed"><i class="fa fa-check"></i><b>10.2.5.1</b> proof QED</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2.6" data-path="test.html"><a href="test.html#image"><i class="fa fa-check"></i><b>10.2.6</b> image</a>
+<ul>
+<li class="chapter" data-level="10.2.6.1" data-path="test.html"><a href="test.html#diagrammer-mermaid-flowchart"><i class="fa fa-check"></i><b>10.2.6.1</b> DiagrammeR / mermaid flowchart</a></li>
+<li class="chapter" data-level="10.2.6.2" data-path="test.html"><a href="test.html#multiple-images-figures-in-the-same-line"><i class="fa fa-check"></i><b>10.2.6.2</b> multiple images / figures in the same line</a></li>
+<li class="chapter" data-level="10.2.6.3" data-path="test.html"><a href="test.html#figure-size"><i class="fa fa-check"></i><b>10.2.6.3</b> figure size</a>
+<ul>
+<li class="chapter" data-level="10.2.6.3.1" data-path="test.html"><a href="test.html#knitr"><i class="fa fa-check"></i><b>10.2.6.3.1</b> <code>knitr</code></a></li>
+<li class="chapter" data-level="10.2.6.3.2" data-path="test.html"><a href="test.html#out.width-vs.-fig.width"><i class="fa fa-check"></i><b>10.2.6.3.2</b> <code>out.width</code> vs. <code>fig.width</code></a></li>
+</ul></li>
+<li class="chapter" data-level="10.2.6.4" data-path="test.html"><a href="test.html#dynamic-knitr-plot-width-and-height"><i class="fa fa-check"></i><b>10.2.6.4</b> dynamic knitr plot width and height</a></li>
+<li class="chapter" data-level="10.2.6.5" data-path="test.html"><a href="test.html#web-image-in-pdf"><i class="fa fa-check"></i><b>10.2.6.5</b> web image in PDF</a></li>
+<li class="chapter" data-level="10.2.6.6" data-path="test.html"><a href="test.html#svg"><i class="fa fa-check"></i><b>10.2.6.6</b> SVG</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2.7" data-path="test.html"><a href="test.html#horizontal-rule"><i class="fa fa-check"></i><b>10.2.7</b> horizontal rule</a></li>
+<li class="chapter" data-level="10.2.8" data-path="test.html"><a href="test.html#footnote"><i class="fa fa-check"></i><b>10.2.8</b> footnote</a></li>
+<li class="chapter" data-level="10.2.9" data-path="test.html"><a href="test.html#hyperlink"><i class="fa fa-check"></i><b>10.2.9</b> hyperlink</a></li>
+<li class="chapter" data-level="10.2.10" data-path="test.html"><a href="test.html#code-chunk"><i class="fa fa-check"></i><b>10.2.10</b> code chunk</a>
+<ul>
+<li class="chapter" data-level="10.2.10.1" data-path="test.html"><a href="test.html#code-folding"><i class="fa fa-check"></i><b>10.2.10.1</b> code folding</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2.11" data-path="test.html"><a href="test.html#xaringan"><i class="fa fa-check"></i><b>10.2.11</b> xaringan</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="test.html"><a href="test.html#bookdown"><i class="fa fa-check"></i><b>10.3</b> Bookdown</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="test.html"><a href="test.html#system-locale"><i class="fa fa-check"></i><b>10.3.1</b> system locale</a></li>
+<li class="chapter" data-level="10.3.2" data-path="test.html"><a href="test.html#render_book"><i class="fa fa-check"></i><b>10.3.2</b> <code>render_book()</code></a></li>
+<li class="chapter" data-level="10.3.3" data-path="test.html"><a href="test.html#serve_book"><i class="fa fa-check"></i><b>10.3.3</b> <code>serve_book()</code></a></li>
+<li class="chapter" data-level="10.3.4" data-path="test.html"><a href="test.html#latex-1"><i class="fa fa-check"></i><b>10.3.4</b> LaTeX</a>
+<ul>
+<li class="chapter" data-level="10.3.4.1" data-path="test.html"><a href="test.html#hyperlink-url-href"><i class="fa fa-check"></i><b>10.3.4.1</b> hyperlink, URL, href</a></li>
+<li class="chapter" data-level="10.3.4.2" data-path="test.html"><a href="test.html#ugly-mathptmx-sum"><i class="fa fa-check"></i><b>10.3.4.2</b> ugly mathptmx <span class="math inline">\(\sum\)</span></a></li>
+<li class="chapter" data-level="10.3.4.3" data-path="test.html"><a href="test.html#latex-package-in-html-document"><i class="fa fa-check"></i><b>10.3.4.3</b> LaTeX package in HTML document</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3.5" data-path="test.html"><a href="test.html#depth-of-table-of-contents-toc_depth"><i class="fa fa-check"></i><b>10.3.5</b> depth of table of contents <code>toc_depth</code></a></li>
+<li class="chapter" data-level="10.3.6" data-path="test.html"><a href="test.html#multi-column"><i class="fa fa-check"></i><b>10.3.6</b> multi-column layout / two columns</a>
+<ul>
+<li class="chapter" data-level="10.3.6.1" data-path="test.html"><a href="test.html#for-both-html-and-pdf"><i class="fa fa-check"></i><b>10.3.6.1</b> for both HTML and PDF</a></li>
+<li class="chapter" data-level="10.3.6.2" data-path="test.html"><a href="test.html#multi-column-fig.cap-must-use-fig.posh"><i class="fa fa-check"></i><b>10.3.6.2</b> multi-column <code>fig.cap</code> must use <code>fig.pos="H"</code></a></li>
+<li class="chapter" data-level="10.3.6.3" data-path="test.html"><a href="test.html#caption-above-figure"><i class="fa fa-check"></i><b>10.3.6.3</b> caption above figure</a></li>
+<li class="chapter" data-level="10.3.6.4" data-path="test.html"><a href="test.html#for-only-html"><i class="fa fa-check"></i><b>10.3.6.4</b> for only HTML</a>
+<ul>
+<li class="chapter" data-level="10.3.6.4.1" data-path="test.html"><a href="test.html#css-flex"><i class="fa fa-check"></i><b>10.3.6.4.1</b> CSS flex</a></li>
+<li class="chapter" data-level="10.3.6.4.2" data-path="test.html"><a href="test.html#css-grid"><i class="fa fa-check"></i><b>10.3.6.4.2</b> CSS grid</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="test.html"><a href="test.html#conditional-blockchunk-for-either-html-or-pdf-and-chinese-issue"><i class="fa fa-check"></i><b>10.4</b> conditional block/chunk for either HTML or PDF, and Chinese issue</a></li>
+<li class="chapter" data-level="10.5" data-path="test.html"><a href="test.html#video-embedding"><i class="fa fa-check"></i><b>10.5</b> video embedding</a>
+<ul>
+<li class="chapter" data-level="10.5.1" data-path="test.html"><a href="test.html#timestamp"><i class="fa fa-check"></i><b>10.5.1</b> timestamp</a></li>
+</ul></li>
+<li class="chapter" data-level="10.6" data-path="test.html"><a href="test.html#equation-term-coloring"><i class="fa fa-check"></i><b>10.6</b> equation term coloring</a>
+<ul>
+<li class="chapter" data-level="10.6.1" data-path="test.html"><a href="test.html#font-color"><i class="fa fa-check"></i><b>10.6.1</b> font color</a></li>
+<li class="chapter" data-level="10.6.2" data-path="test.html"><a href="test.html#background-color"><i class="fa fa-check"></i><b>10.6.2</b> background color</a></li>
+</ul></li>
+<li class="chapter" data-level="10.7" data-path="test.html"><a href="test.html#link-and-reference"><i class="fa fa-check"></i><b>10.7</b> link and reference</a></li>
+<li class="chapter" data-level="10.8" data-path="test.html"><a href="test.html#nice-label"><i class="fa fa-check"></i><b>10.8</b> number and reference equations</a></li>
+<li class="chapter" data-level="10.9" data-path="test.html"><a href="test.html#footnote-1"><i class="fa fa-check"></i><b>10.9</b> footnote</a></li>
+<li class="chapter" data-level="10.10" data-path="test.html"><a href="test.html#citation"><i class="fa fa-check"></i><b>10.10</b> citation</a>
+<ul>
+<li class="chapter" data-level="10.10.1" data-path="test.html"><a href="test.html#citation-in-fig.cap"><i class="fa fa-check"></i><b>10.10.1</b> citation in <code>fig.cap</code></a></li>
+<li class="chapter" data-level="10.10.2" data-path="test.html"><a href="test.html#backreference"><i class="fa fa-check"></i><b>10.10.2</b> backreference</a></li>
+</ul></li>
+<li class="chapter" data-level="10.11" data-path="test.html"><a href="test.html#environment-for-definition-theorem-proof"><i class="fa fa-check"></i><b>10.11</b> environment for definition, theorem, proof</a></li>
+<li class="chapter" data-level="10.12" data-path="test.html"><a href="test.html#slide-or-presentation"><i class="fa fa-check"></i><b>10.12</b> slide or presentation</a>
+<ul>
+<li class="chapter" data-level="10.12.1" data-path="test.html"><a href="test.html#xaringan-and-infinite-moon-reader"><i class="fa fa-check"></i><b>10.12.1</b> Xaringan and Infinite Moon Reader</a></li>
+<li class="chapter" data-level="10.12.2" data-path="test.html"><a href="test.html#ioslides"><i class="fa fa-check"></i><b>10.12.2</b> ioslides</a></li>
+<li class="chapter" data-level="10.12.3" data-path="test.html"><a href="test.html#powerpoint"><i class="fa fa-check"></i><b>10.12.3</b> PowerPoint</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="test2.html"><a href="test2.html"><i class="fa fa-check"></i><b>11</b> test2</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="test2.html"><a href="test2.html#verbatim"><i class="fa fa-check"></i><b>11.1</b> verbatim</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="partition.html"><a href="partition.html"><i class="fa fa-check"></i><b>12</b> partition</a></li>
+<li class="chapter" data-level="13" data-path="equivalence-class.html"><a href="equivalence-class.html"><i class="fa fa-check"></i><b>13</b> equivalence class</a></li>
+<li class="chapter" data-level="14" data-path="equivalence-relation.html"><a href="equivalence-relation.html"><i class="fa fa-check"></i><b>14</b> equivalence relation</a></li>
+<li class="chapter" data-level="15" data-path="python.html"><a href="python.html"><i class="fa fa-check"></i><b>15</b> Python</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="python.html"><a href="python.html#using-python-in-r-rmarkdown"><i class="fa fa-check"></i><b>15.1</b> using Python in R / RMarkdown</a></li>
+<li class="chapter" data-level="15.2" data-path="python.html"><a href="python.html#sololearn"><i class="fa fa-check"></i><b>15.2</b> SoloLearn</a></li>
+<li class="chapter" data-level="15.3" data-path="python.html"><a href="python.html#list-comprehension"><i class="fa fa-check"></i><b>15.3</b> list comprehension</a></li>
+<li class="chapter" data-level="15.4" data-path="python.html"><a href="python.html#functional-programming"><i class="fa fa-check"></i><b>15.4</b> functional programming</a></li>
+<li class="chapter" data-level="15.5" data-path="python.html"><a href="python.html#object-oriented-programming-oop"><i class="fa fa-check"></i><b>15.5</b> object-oriented programming = OOP</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="tikz.html"><a href="tikz.html"><i class="fa fa-check"></i><b>16</b> TikZ</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="tikz.html"><a href="tikz.html#d"><i class="fa fa-check"></i><b>16.1</b> 2D</a></li>
+<li class="chapter" data-level="16.2" data-path="tikz.html"><a href="tikz.html#d-1"><i class="fa fa-check"></i><b>16.2</b> 3D</a></li>
+<li class="chapter" data-level="16.3" data-path="tikz.html"><a href="tikz.html#plots-of-functions"><i class="fa fa-check"></i><b>16.3</b> plots of functions</a></li>
+<li class="chapter" data-level="16.4" data-path="tikz.html"><a href="tikz.html#pgfplots"><i class="fa fa-check"></i><b>16.4</b> PGFplots</a>
+<ul>
+<li class="chapter" data-level="16.4.1" data-path="tikz.html"><a href="tikz.html#the-axis-environments"><i class="fa fa-check"></i><b>16.4.1</b> the axis environments</a></li>
+<li class="chapter" data-level="16.4.2" data-path="tikz.html"><a href="tikz.html#axis-descriptions"><i class="fa fa-check"></i><b>16.4.2</b> axis descriptions</a>
+<ul>
+<li class="chapter" data-level="16.4.2.1" data-path="tikz.html"><a href="tikz.html#placement-of-axis-descriptions"><i class="fa fa-check"></i><b>16.4.2.1</b> placement of axis descriptions</a>
+<ul>
+<li class="chapter" data-level="16.4.2.1.1" data-path="tikz.html"><a href="tikz.html#coordinate-system-axis-description-cs"><i class="fa fa-check"></i><b>16.4.2.1.1</b> coordinate system <code>axis description cs</code></a></li>
+<li class="chapter" data-level="16.4.2.1.2" data-path="tikz.html"><a href="tikz.html#legend"><i class="fa fa-check"></i><b>16.4.2.1.2</b> legend</a></li>
+<li class="chapter" data-level="16.4.2.1.3" data-path="tikz.html"><a href="tikz.html#tick-option"><i class="fa fa-check"></i><b>16.4.2.1.3</b> tick option</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16.4.3" data-path="tikz.html"><a href="tikz.html#declare-function"><i class="fa fa-check"></i><b>16.4.3</b> <code>declare function</code></a>
+<ul>
+<li class="chapter" data-level="16.4.3.1" data-path="tikz.html"><a href="tikz.html#pgfmathparse"><i class="fa fa-check"></i><b>16.4.3.1</b> <code>pgfmathparse</code></a></li>
+<li class="chapter" data-level="16.4.3.2" data-path="tikz.html"><a href="tikz.html#pgfmathdeclarefunction"><i class="fa fa-check"></i><b>16.4.3.2</b> <code>pgfmathdeclarefunction</code></a></li>
+</ul></li>
+<li class="chapter" data-level="16.4.4" data-path="tikz.html"><a href="tikz.html#and---in-tikz"><i class="fa fa-check"></i><b>16.4.4</b> <code>|-</code> and <code>-|</code> in TikZ</a></li>
+<li class="chapter" data-level="16.4.5" data-path="tikz.html"><a href="tikz.html#pgfplotsinvokeforeach"><i class="fa fa-check"></i><b>16.4.5</b> <code>pgfplotsinvokeforeach</code></a></li>
+<li class="chapter" data-level="16.4.6" data-path="tikz.html"><a href="tikz.html#interpolation-dashed-lines"><i class="fa fa-check"></i><b>16.4.6</b> interpolation dashed lines</a></li>
+<li class="chapter" data-level="16.4.7" data-path="tikz.html"><a href="tikz.html#zewbie"><i class="fa fa-check"></i><b>16.4.7</b> Zewbie</a>
+<ul>
+<li class="chapter" data-level="16.4.7.1" data-path="tikz.html"><a href="tikz.html#coordinate-axisaxes-fine-tuing"><i class="fa fa-check"></i><b>16.4.7.1</b> coordinate axis/axes fine-tuing</a>
+<ul>
+<li class="chapter" data-level="16.4.7.1.1" data-path="tikz.html"><a href="tikz.html#range"><i class="fa fa-check"></i><b>16.4.7.1.1</b> range</a></li>
+<li class="chapter" data-level="16.4.7.1.2" data-path="tikz.html"><a href="tikz.html#scaling"><i class="fa fa-check"></i><b>16.4.7.1.2</b> scaling</a></li>
+<li class="chapter" data-level="16.4.7.1.3" data-path="tikz.html"><a href="tikz.html#direction-vector"><i class="fa fa-check"></i><b>16.4.7.1.3</b> direction vector</a></li>
+<li class="chapter" data-level="16.4.7.1.4" data-path="tikz.html"><a href="tikz.html#axis-style"><i class="fa fa-check"></i><b>16.4.7.1.4</b> axis style</a></li>
+<li class="chapter" data-level="16.4.7.1.5" data-path="tikz.html"><a href="tikz.html#axis-discontinuity"><i class="fa fa-check"></i><b>16.4.7.1.5</b> axis discontinuity</a></li>
+<li class="chapter" data-level="16.4.7.1.6" data-path="tikz.html"><a href="tikz.html#tick"><i class="fa fa-check"></i><b>16.4.7.1.6</b> tick</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4.7.2" data-path="tikz.html"><a href="tikz.html#addplot"><i class="fa fa-check"></i><b>16.4.7.2</b> <code>addplot+</code></a></li>
+<li class="chapter" data-level="16.4.7.3" data-path="tikz.html"><a href="tikz.html#point"><i class="fa fa-check"></i><b>16.4.7.3</b> point</a></li>
+<li class="chapter" data-level="16.4.7.4" data-path="tikz.html"><a href="tikz.html#line"><i class="fa fa-check"></i><b>16.4.7.4</b> line</a></li>
+<li class="chapter" data-level="16.4.7.5" data-path="tikz.html"><a href="tikz.html#plane"><i class="fa fa-check"></i><b>16.4.7.5</b> plane</a></li>
+<li class="chapter" data-level="16.4.7.6" data-path="tikz.html"><a href="tikz.html#polar-coordinate"><i class="fa fa-check"></i><b>16.4.7.6</b> polar coordinate</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4.8" data-path="tikz.html"><a href="tikz.html#arnav-bandekar-using-pgfplots-to-make-economic-graphs-in-latex"><i class="fa fa-check"></i><b>16.4.8</b> Arnav Bandekar: Using pgfplots to make economic graphs in LaTeX</a></li>
+<li class="chapter" data-level="16.4.9" data-path="tikz.html"><a href="tikz.html#pgfplots-gallery"><i class="fa fa-check"></i><b>16.4.9</b> PGFplots gallery</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="tikz.html"><a href="tikz.html#tikzplotlib"><i class="fa fa-check"></i><b>16.5</b> TikZplotLib / tikzplotlib</a></li>
+<li class="chapter" data-level="16.6" data-path="tikz.html"><a href="tikz.html#animation"><i class="fa fa-check"></i><b>16.6</b> animation</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="xy-pic.html"><a href="xy-pic.html"><i class="fa fa-check"></i><b>17</b> xy-pic</a></li>
+<li class="chapter" data-level="18" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>18</b> statistics</a></li>
+<li class="chapter" data-level="19" data-path="covariance-matrix.html"><a href="covariance-matrix.html"><i class="fa fa-check"></i><b>19</b> covariance matrix</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="covariance-matrix.html"><a href="covariance-matrix.html#covariance-matrix-1"><i class="fa fa-check"></i><b>19.1</b> covariance matrix</a>
+<ul>
+<li class="chapter" data-level="19.1.1" data-path="covariance-matrix.html"><a href="covariance-matrix.html#calculation"><i class="fa fa-check"></i><b>19.1.1</b> calculation</a></li>
+<li class="chapter" data-level="19.1.2" data-path="covariance-matrix.html"><a href="covariance-matrix.html#mathrmvleftboldsymbolxboldsymbolbrightmathrmvleftboldsymbolxright"><i class="fa fa-check"></i><b>19.1.2</b> <span class="math inline">\(\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[\boldsymbol{X}\right]\)</span></a></li>
+<li class="chapter" data-level="19.1.3" data-path="covariance-matrix.html"><a href="covariance-matrix.html#mathrmvleftaboldsymbolxrightamathrmvleftboldsymbolxrightamathrmt"><i class="fa fa-check"></i><b>19.1.3</b> <span class="math inline">\(\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)</span></a></li>
+<li class="chapter" data-level="19.1.4" data-path="covariance-matrix.html"><a href="covariance-matrix.html#mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxrightamathrmt"><i class="fa fa-check"></i><b>19.1.4</b> <span class="math inline">\(\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="gosper-algorithm.html"><a href="gosper-algorithm.html"><i class="fa fa-check"></i><b>20</b> Gosper algorithm</a></li>
+<li class="chapter" data-level="21" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html"><i class="fa fa-check"></i><b>21</b> Lorentz transformation</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#einstein"><i class="fa fa-check"></i><b>21.1</b> Einstein</a></li>
+<li class="chapter" data-level="21.2" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#bondi-k-calculus"><i class="fa fa-check"></i><b>21.2</b> Bondi <span class="math inline">\(k\)</span>-calculus</a></li>
+<li class="chapter" data-level="21.3" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#wordline-in-minkowski-space"><i class="fa fa-check"></i><b>21.3</b> wordline in Minkowski space</a>
+<ul>
+<li class="chapter" data-level="21.3.1" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#wick-rotation"><i class="fa fa-check"></i><b>21.3.1</b> Wick rotation</a>
+<ul>
+<li class="chapter" data-level="21.3.1.1" data-path="lorentz-transformation.html"><a href="lorentz-transformation.html#osterwalder-schrader-reconstruction-theorem"><i class="fa fa-check"></i><b>21.3.1.1</b> Osterwalder-Schrader reconstruction theorem</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="r.html"><a href="r.html"><i class="fa fa-check"></i><b>22</b> R</a>
+<ul>
+<li class="chapter" data-level="22.1" data-path="r.html"><a href="r.html#tonykuoyj"><i class="fa fa-check"></i><b>22.1</b> TonyKuoYJ</a>
+<ul>
+<li class="chapter" data-level="22.1.1" data-path="r.html"><a href="r.html#quick-intro"><i class="fa fa-check"></i><b>22.1.1</b> quick intro</a>
+<ul>
+<li class="chapter" data-level="22.1.1.1" data-path="r.html"><a href="r.html#function"><i class="fa fa-check"></i><b>22.1.1.1</b> function</a></li>
+</ul></li>
+<li class="chapter" data-level="22.1.2" data-path="r.html"><a href="r.html#r-style"><i class="fa fa-check"></i><b>22.1.2</b> R style</a></li>
+<li class="chapter" data-level="22.1.3" data-path="r.html"><a href="r.html#data-workflow-or-forward-pipe"><i class="fa fa-check"></i><b>22.1.3</b> data workflow or forward pipe</a>
+<ul>
+<li class="chapter" data-level="22.1.3.1" data-path="r.html"><a href="r.html#operator"><i class="fa fa-check"></i><b>22.1.3.1</b> <code>%&gt;%</code> operator</a></li>
+</ul></li>
+<li class="chapter" data-level="22.1.4" data-path="r.html"><a href="r.html#data-processing-with-dplyr"><i class="fa fa-check"></i><b>22.1.4</b> data processing with <code>dplyr</code></a></li>
+<li class="chapter" data-level="22.1.5" data-path="r.html"><a href="r.html#visualization-statically-with-ggplot2"><i class="fa fa-check"></i><b>22.1.5</b> visualization statically with <code>ggplot2</code></a></li>
+<li class="chapter" data-level="22.1.6" data-path="r.html"><a href="r.html#loop"><i class="fa fa-check"></i><b>22.1.6</b> loop</a></li>
+<li class="chapter" data-level="22.1.7" data-path="r.html"><a href="r.html#variable-type"><i class="fa fa-check"></i><b>22.1.7</b> variable type</a>
+<ul>
+<li class="chapter" data-level="22.1.7.1" data-path="r.html"><a href="r.html#date"><i class="fa fa-check"></i><b>22.1.7.1</b> date</a></li>
+<li class="chapter" data-level="22.1.7.2" data-path="r.html"><a href="r.html#time"><i class="fa fa-check"></i><b>22.1.7.2</b> time</a></li>
+<li class="chapter" data-level="22.1.7.3" data-path="r.html"><a href="r.html#quotient-operator"><i class="fa fa-check"></i><b>22.1.7.3</b> quotient <code>%/%</code> operator</a></li>
+</ul></li>
+<li class="chapter" data-level="22.1.8" data-path="r.html"><a href="r.html#data-type"><i class="fa fa-check"></i><b>22.1.8</b> data type</a>
+<ul>
+<li class="chapter" data-level="22.1.8.1" data-path="r.html"><a href="r.html#vector"><i class="fa fa-check"></i><b>22.1.8.1</b> vector</a>
+<ul>
+<li class="chapter" data-level="22.1.8.1.1" data-path="r.html"><a href="r.html#logic"><i class="fa fa-check"></i><b>22.1.8.1.1</b> logic</a></li>
+<li class="chapter" data-level="22.1.8.1.2" data-path="r.html"><a href="r.html#rep-repeat"><i class="fa fa-check"></i><b>22.1.8.1.2</b> <code>rep</code> repeat</a></li>
+<li class="chapter" data-level="22.1.8.1.3" data-path="r.html"><a href="r.html#seq-sequence"><i class="fa fa-check"></i><b>22.1.8.1.3</b> <code>seq</code> sequence</a></li>
+</ul></li>
+<li class="chapter" data-level="22.1.8.2" data-path="r.html"><a href="r.html#factor"><i class="fa fa-check"></i><b>22.1.8.2</b> factor</a></li>
+<li class="chapter" data-level="22.1.8.3" data-path="r.html"><a href="r.html#matrix"><i class="fa fa-check"></i><b>22.1.8.3</b> matrix</a></li>
+<li class="chapter" data-level="22.1.8.4" data-path="r.html"><a href="r.html#data-frame"><i class="fa fa-check"></i><b>22.1.8.4</b> data frame</a>
+<ul>
+<li class="chapter" data-level="22.1.8.4.1" data-path="r.html"><a href="r.html#selecting-variable-or-column"><i class="fa fa-check"></i><b>22.1.8.4.1</b> selecting variable or column</a></li>
+<li class="chapter" data-level="22.1.8.4.2" data-path="r.html"><a href="r.html#filtering-observation-or-row"><i class="fa fa-check"></i><b>22.1.8.4.2</b> filtering observation or row</a></li>
+<li class="chapter" data-level="22.1.8.4.3" data-path="r.html"><a href="r.html#check-mixed-data-type"><i class="fa fa-check"></i><b>22.1.8.4.3</b> check mixed data type</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="22.2" data-path="r.html"><a href="r.html#w3school"><i class="fa fa-check"></i><b>22.2</b> W3School</a>
+<ul>
+<li class="chapter" data-level="22.2.1" data-path="r.html"><a href="r.html#same-multiple-variable"><i class="fa fa-check"></i><b>22.2.1</b> same multiple variable</a></li>
+<li class="chapter" data-level="22.2.2" data-path="r.html"><a href="r.html#legal-variable-name"><i class="fa fa-check"></i><b>22.2.2</b> legal variable name</a></li>
+<li class="chapter" data-level="22.2.3" data-path="r.html"><a href="r.html#complex-number"><i class="fa fa-check"></i><b>22.2.3</b> complex number</a></li>
+<li class="chapter" data-level="22.2.4" data-path="r.html"><a href="r.html#escape-character"><i class="fa fa-check"></i><b>22.2.4</b> escape character</a></li>
+<li class="chapter" data-level="22.2.5" data-path="r.html"><a href="r.html#global-assignment--"><i class="fa fa-check"></i><b>22.2.5</b> global assignment <code>&lt;&lt;-</code></a></li>
+<li class="chapter" data-level="22.2.6" data-path="r.html"><a href="r.html#data-type-1"><i class="fa fa-check"></i><b>22.2.6</b> data type</a>
+<ul>
+<li class="chapter" data-level="22.2.6.1" data-path="r.html"><a href="r.html#array"><i class="fa fa-check"></i><b>22.2.6.1</b> array</a></li>
+<li class="chapter" data-level="22.2.6.2" data-path="r.html"><a href="r.html#list"><i class="fa fa-check"></i><b>22.2.6.2</b> list</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="22.3" data-path="r.html"><a href="r.html#apan-liao"><i class="fa fa-check"></i><b>22.3</b> Apan Liao</a>
+<ul>
+<li class="chapter" data-level="22.3.1" data-path="r.html"><a href="r.html#data-input"><i class="fa fa-check"></i><b>22.3.1</b> data input</a></li>
+<li class="chapter" data-level="22.3.2" data-path="r.html"><a href="r.html#descriptive-statistics"><i class="fa fa-check"></i><b>22.3.2</b> descriptive statistics</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="laplace-transform.html"><a href="laplace-transform.html"><i class="fa fa-check"></i><b>23</b> Laplace transform</a></li>
+<li class="chapter" data-level="24" data-path="conic-section.html"><a href="conic-section.html"><i class="fa fa-check"></i><b>24</b> conic section</a>
+<ul>
+<li class="chapter" data-level="24.1" data-path="conic-section.html"><a href="conic-section.html#cartesian-coordinate-focus-directrix-eccentricity"><i class="fa fa-check"></i><b>24.1</b> Cartesian coordinate: focus, directrix, eccentricity</a></li>
+<li class="chapter" data-level="24.2" data-path="conic-section.html"><a href="conic-section.html#two-definition-equivalence-for-ellipse-and-hyperbola"><i class="fa fa-check"></i><b>24.2</b> two-definition equivalence for ellipse and hyperbola</a>
+<ul>
+<li class="chapter" data-level="24.2.1" data-path="conic-section.html"><a href="conic-section.html#first-definition-for-conic-sections-including-ellipses-and-hyperbolas"><i class="fa fa-check"></i><b>24.2.1</b> first definition for conic sections including ellipses and hyperbolas</a></li>
+<li class="chapter" data-level="24.2.2" data-path="conic-section.html"><a href="conic-section.html#second-definition-for-ellipses-and-hyperbolas"><i class="fa fa-check"></i><b>24.2.2</b> second definition for ellipses and hyperbolas</a></li>
+<li class="chapter" data-level="24.2.3" data-path="conic-section.html"><a href="conic-section.html#eccentricity-and-its-equivalent-representation"><i class="fa fa-check"></i><b>24.2.3</b> eccentricity and its equivalent representation</a></li>
+</ul></li>
+<li class="chapter" data-level="24.3" data-path="conic-section.html"><a href="conic-section.html#cartesian-coordinate-standard-form-standard-equation"><i class="fa fa-check"></i><b>24.3</b> Cartesian coordinate: standard form / standard equation</a></li>
+<li class="chapter" data-level="24.4" data-path="conic-section.html"><a href="conic-section.html#parametric-equation"><i class="fa fa-check"></i><b>24.4</b> parametric equation</a></li>
+<li class="chapter" data-level="24.5" data-path="conic-section.html"><a href="conic-section.html#polar-coordinate-1"><i class="fa fa-check"></i><b>24.5</b> polar coordinate</a></li>
+<li class="chapter" data-level="24.6" data-path="conic-section.html"><a href="conic-section.html#cartesian-coordinate-general-form-quadratic-equation"><i class="fa fa-check"></i><b>24.6</b> Cartesian coordinate: general form / quadratic equation</a></li>
+<li class="chapter" data-level="24.7" data-path="conic-section.html"><a href="conic-section.html#homogeneous-coordinate"><i class="fa fa-check"></i><b>24.7</b> homogeneous coordinate</a></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html"><i class="fa fa-check"></i><b>25</b> distance from a point to a line</a>
+<ul>
+<li class="chapter" data-level="25.1" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-shortest-overlineppprime"><i class="fa fa-check"></i><b>25.1</b> by shortest <span class="math inline">\(\overline{PP^{\prime}}\)</span></a></li>
+<li class="chapter" data-level="25.2" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-perpendicular-foot"><i class="fa fa-check"></i><b>25.2</b> by perpendicular foot</a></li>
+<li class="chapter" data-level="25.3" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-normal-vector"><i class="fa fa-check"></i><b>25.3</b> by normal vector</a></li>
+<li class="chapter" data-level="25.4" data-path="distance-from-a-point-to-a-line.html"><a href="distance-from-a-point-to-a-line.html#by-cauchy-inequality"><i class="fa fa-check"></i><b>25.4</b> by Cauchy inequality</a></li>
+</ul></li>
+<li class="chapter" data-level="26" data-path="real-symmetric-matrix-diagonalizable.html"><a href="real-symmetric-matrix-diagonalizable.html"><i class="fa fa-check"></i><b>26</b> real symmetric matrix diagonalizable</a></li>
+<li class="chapter" data-level="27" data-path="tangent-half-angle-formula.html"><a href="tangent-half-angle-formula.html"><i class="fa fa-check"></i><b>27</b> tangent half-angle formula</a></li>
+<li class="chapter" data-level="28" data-path="homogeneous-coordinate-1.html"><a href="homogeneous-coordinate-1.html"><i class="fa fa-check"></i><b>28</b> homogeneous coordinate</a></li>
+<li class="chapter" data-level="29" data-path="archimedean-property.html"><a href="archimedean-property.html"><i class="fa fa-check"></i><b>29</b> Archimedean property</a>
+<ul>
+<li class="chapter" data-level="29.1" data-path="archimedean-property.html"><a href="archimedean-property.html#integer-archimedean-property"><i class="fa fa-check"></i><b>29.1</b> integer Archimedean property</a></li>
+<li class="chapter" data-level="29.2" data-path="archimedean-property.html"><a href="archimedean-property.html#rational-archimedean-property"><i class="fa fa-check"></i><b>29.2</b> rational Archimedean property</a></li>
+<li class="chapter" data-level="29.3" data-path="archimedean-property.html"><a href="archimedean-property.html#real-archimedean-property"><i class="fa fa-check"></i><b>29.3</b> real Archimedean property</a></li>
+</ul></li>
+<li class="chapter" data-level="30" data-path="matplotlib.html"><a href="matplotlib.html"><i class="fa fa-check"></i><b>30</b> MatPlotLib / matplotlib</a>
+<ul>
+<li class="chapter" data-level="30.1" data-path="matplotlib.html"><a href="matplotlib.html#timothy-h.-wu"><i class="fa fa-check"></i><b>30.1</b> Timothy H. Wu</a>
+<ul>
+<li class="chapter" data-level="30.1.1" data-path="matplotlib.html"><a href="matplotlib.html#functionalapi"><i class="fa fa-check"></i><b>30.1.1</b> funcitonal API</a></li>
+<li class="chapter" data-level="30.1.2" data-path="matplotlib.html"><a href="matplotlib.html#ooapi"><i class="fa fa-check"></i><b>30.1.2</b> object-oriented API</a>
+<ul>
+<li class="chapter" data-level="30.1.2.1" data-path="matplotlib.html"><a href="matplotlib.html#configure-the-figure-size-and-dpi"><i class="fa fa-check"></i><b>30.1.2.1</b> Configure the figure size and DPI</a></li>
+<li class="chapter" data-level="30.1.2.2" data-path="matplotlib.html"><a href="matplotlib.html#subplot"><i class="fa fa-check"></i><b>30.1.2.2</b> subplot</a></li>
+<li class="chapter" data-level="30.1.2.3" data-path="matplotlib.html"><a href="matplotlib.html#color-and-linestyle"><i class="fa fa-check"></i><b>30.1.2.3</b> color and linestyle</a></li>
+<li class="chapter" data-level="30.1.2.4" data-path="matplotlib.html"><a href="matplotlib.html#other-inputs"><i class="fa fa-check"></i><b>30.1.2.4</b> other inputs</a></li>
+<li class="chapter" data-level="30.1.2.5" data-path="matplotlib.html"><a href="matplotlib.html#legend-1"><i class="fa fa-check"></i><b>30.1.2.5</b> legend</a></li>
+<li class="chapter" data-level="30.1.2.6" data-path="matplotlib.html"><a href="matplotlib.html#customize-style"><i class="fa fa-check"></i><b>30.1.2.6</b> customize style</a></li>
+<li class="chapter" data-level="30.1.2.7" data-path="matplotlib.html"><a href="matplotlib.html#save-to-file"><i class="fa fa-check"></i><b>30.1.2.7</b> save to file</a></li>
+</ul></li>
+<li class="chapter" data-level="30.1.3" data-path="matplotlib.html"><a href="matplotlib.html#seaborn"><i class="fa fa-check"></i><b>30.1.3</b> Seaborn</a>
+<ul>
+<li class="chapter" data-level="30.1.3.1" data-path="matplotlib.html"><a href="matplotlib.html#basic"><i class="fa fa-check"></i><b>30.1.3.1</b> basic</a></li>
+<li class="chapter" data-level="30.1.3.2" data-path="matplotlib.html"><a href="matplotlib.html#data-frame-1"><i class="fa fa-check"></i><b>30.1.3.2</b> data frame</a></li>
+<li class="chapter" data-level="30.1.3.3" data-path="matplotlib.html"><a href="matplotlib.html#axis-level-plot-and-figure-level-plot"><i class="fa fa-check"></i><b>30.1.3.3</b> axis-level plot and figure-level plot</a></li>
+<li class="chapter" data-level="30.1.3.4" data-path="matplotlib.html"><a href="matplotlib.html#accessing-fgure-and-axes-objects"><i class="fa fa-check"></i><b>30.1.3.4</b> accessing fgure and axes objects</a></li>
+<li class="chapter" data-level="30.1.3.5" data-path="matplotlib.html"><a href="matplotlib.html#distribution-plot"><i class="fa fa-check"></i><b>30.1.3.5</b> distribution plot</a>
+<ul>
+<li class="chapter" data-level="30.1.3.5.1" data-path="matplotlib.html"><a href="matplotlib.html#histogram"><i class="fa fa-check"></i><b>30.1.3.5.1</b> histogram</a></li>
+<li class="chapter" data-level="30.1.3.5.2" data-path="matplotlib.html"><a href="matplotlib.html#ecdf-empirical-cumulative-distrutive-function"><i class="fa fa-check"></i><b>30.1.3.5.2</b> ECDF = empirical cumulative distrutive function</a></li>
+<li class="chapter" data-level="30.1.3.5.3" data-path="matplotlib.html"><a href="matplotlib.html#kde-kernel-density-estimation"><i class="fa fa-check"></i><b>30.1.3.5.3</b> KDE = kernel density estimation</a></li>
+</ul></li>
+<li class="chapter" data-level="30.1.3.6" data-path="matplotlib.html"><a href="matplotlib.html#categorical-plot"><i class="fa fa-check"></i><b>30.1.3.6</b> categorical plot</a></li>
+<li class="chapter" data-level="30.1.3.7" data-path="matplotlib.html"><a href="matplotlib.html#joint-plot"><i class="fa fa-check"></i><b>30.1.3.7</b> joint plot</a></li>
+<li class="chapter" data-level="30.1.3.8" data-path="matplotlib.html"><a href="matplotlib.html#pair-plot"><i class="fa fa-check"></i><b>30.1.3.8</b> pair plot</a></li>
+<li class="chapter" data-level="30.1.3.9" data-path="matplotlib.html"><a href="matplotlib.html#palette"><i class="fa fa-check"></i><b>30.1.3.9</b> palette</a></li>
+<li class="chapter" data-level="30.1.3.10" data-path="matplotlib.html"><a href="matplotlib.html#volcano-plot"><i class="fa fa-check"></i><b>30.1.3.10</b> volcano plot</a></li>
+<li class="chapter" data-level="30.1.3.11" data-path="matplotlib.html"><a href="matplotlib.html#heatmap"><i class="fa fa-check"></i><b>30.1.3.11</b> heatmap</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="30.2" data-path="matplotlib.html"><a href="matplotlib.html#export"><i class="fa fa-check"></i><b>30.2</b> export</a>
+<ul>
+<li class="chapter" data-level="30.2.1" data-path="matplotlib.html"><a href="matplotlib.html#svg-1"><i class="fa fa-check"></i><b>30.2.1</b> .svg</a></li>
+<li class="chapter" data-level="30.2.2" data-path="matplotlib.html"><a href="matplotlib.html#eps"><i class="fa fa-check"></i><b>30.2.2</b> .eps</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="31" data-path="survial-analysis.html"><a href="survial-analysis.html"><i class="fa fa-check"></i><b>31</b> survial analysis</a>
+<ul>
+<li class="chapter" data-level="31.1" data-path="survial-analysis.html"><a href="survial-analysis.html#python-package-tableone"><i class="fa fa-check"></i><b>31.1</b> Python package <code>tableone</code></a></li>
+<li class="chapter" data-level="31.2" data-path="survial-analysis.html"><a href="survial-analysis.html#python-package-lifelines"><i class="fa fa-check"></i><b>31.2</b> Python package <code>lifelines</code></a></li>
+</ul></li>
+<li class="chapter" data-level="32" data-path="manim.html"><a href="manim.html"><i class="fa fa-check"></i><b>32</b> Manim</a>
+<ul>
+<li class="chapter" data-level="32.1" data-path="manim.html"><a href="manim.html#vscode-extension-manim-sideview"><i class="fa fa-check"></i><b>32.1</b> VSCode extension: Manim Sideview</a></li>
+<li class="chapter" data-level="32.2" data-path="manim.html"><a href="manim.html#installation"><i class="fa fa-check"></i><b>32.2</b> installation</a>
+<ul>
+<li class="chapter" data-level="32.2.1" data-path="manim.html"><a href="manim.html#conda"><i class="fa fa-check"></i><b>32.2.1</b> Conda</a></li>
+</ul></li>
+<li class="chapter" data-level="32.3" data-path="manim.html"><a href="manim.html#quickstart"><i class="fa fa-check"></i><b>32.3</b> quickstart</a></li>
+</ul></li>
+<li class="chapter" data-level="33" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>33</b> ggplot2</a>
+<ul>
+<li class="chapter" data-level="33.1" data-path="ggplot2.html"><a href="ggplot2.html#geom"><i class="fa fa-check"></i><b>33.1</b> geom</a>
+<ul>
+<li class="chapter" data-level="33.1.1" data-path="ggplot2.html"><a href="ggplot2.html#basic-plot-system-decomposition"><i class="fa fa-check"></i><b>33.1.1</b> basic plot system decomposition</a></li>
+</ul></li>
+<li class="chapter" data-level="33.2" data-path="ggplot2.html"><a href="ggplot2.html#statistic"><i class="fa fa-check"></i><b>33.2</b> statistic</a></li>
+<li class="chapter" data-level="33.3" data-path="ggplot2.html"><a href="ggplot2.html#scale"><i class="fa fa-check"></i><b>33.3</b> scale</a></li>
+<li class="chapter" data-level="33.4" data-path="ggplot2.html"><a href="ggplot2.html#coordinate-system"><i class="fa fa-check"></i><b>33.4</b> coordinate system</a></li>
+<li class="chapter" data-level="33.5" data-path="ggplot2.html"><a href="ggplot2.html#facet"><i class="fa fa-check"></i><b>33.5</b> facet</a></li>
+<li class="chapter" data-level="33.6" data-path="ggplot2.html"><a href="ggplot2.html#jitter"><i class="fa fa-check"></i><b>33.6</b> jitter</a></li>
+<li class="chapter" data-level="33.7" data-path="ggplot2.html"><a href="ggplot2.html#font"><i class="fa fa-check"></i><b>33.7</b> font</a></li>
+</ul></li>
+<li class="chapter" data-level="34" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html"><i class="fa fa-check"></i><b>34</b> notational system for design</a>
+<ul>
+<li class="chapter" data-level="34.1" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#graphic-notation"><i class="fa fa-check"></i><b>34.1</b> graphic notation</a></li>
+<li class="chapter" data-level="34.2" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#pre-experimental-design"><i class="fa fa-check"></i><b>34.2</b> pre-experimental design</a>
+<ul>
+<li class="chapter" data-level="34.2.1" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#one-shot-case-study"><i class="fa fa-check"></i><b>34.2.1</b> one-shot case study</a></li>
+<li class="chapter" data-level="34.2.2" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#one-group-pretest-posttest-design"><i class="fa fa-check"></i><b>34.2.2</b> one-group pretest-posttest design</a></li>
+<li class="chapter" data-level="34.2.3" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#static-group-comparison"><i class="fa fa-check"></i><b>34.2.3</b> static-group comparison</a></li>
+</ul></li>
+<li class="chapter" data-level="34.3" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#true-experimental-design"><i class="fa fa-check"></i><b>34.3</b> true experimental design</a>
+<ul>
+<li class="chapter" data-level="34.3.1" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#posttest-only-control-group-design"><i class="fa fa-check"></i><b>34.3.1</b> posttest-only control group design</a></li>
+<li class="chapter" data-level="34.3.2" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#pretest-posttest-control-group-design"><i class="fa fa-check"></i><b>34.3.2</b> pretest-posttest control group design</a></li>
+<li class="chapter" data-level="34.3.3" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#solomon-four-group-design"><i class="fa fa-check"></i><b>34.3.3</b> Solomon four-group design</a></li>
+</ul></li>
+<li class="chapter" data-level="34.4" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#quasi-experimental-design"><i class="fa fa-check"></i><b>34.4</b> quasi-experimental design</a></li>
+<li class="chapter" data-level="34.5" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#correlational-and-ex-post-facto-designs"><i class="fa fa-check"></i><b>34.5</b> correlational and ex post facto designs</a></li>
+<li class="chapter" data-level="34.6" data-path="notational-system-for-design.html"><a href="notational-system-for-design.html#graphic-notation-advanced"><i class="fa fa-check"></i><b>34.6</b> graphic notation, advanced</a></li>
+</ul></li>
+<li class="chapter" data-level="35" data-path="design-of-experiment.html"><a href="design-of-experiment.html"><i class="fa fa-check"></i><b>35</b> design of experiment</a>
+<ul>
+<li class="chapter" data-level="35.1" data-path="design-of-experiment.html"><a href="design-of-experiment.html#notational-system-for-designrefnotational-system-for-design"><i class="fa fa-check"></i><b>35.1</b> notational system for design<sup>[@ref(notational-system-for-design)]</sup></a></li>
+<li class="chapter" data-level="35.2" data-path="design-of-experiment.html"><a href="design-of-experiment.html#terminology"><i class="fa fa-check"></i><b>35.2</b> terminology</a>
+<ul>
+<li class="chapter" data-level="35.2.1" data-path="design-of-experiment.html"><a href="design-of-experiment.html#replication-vs.-subsample"><i class="fa fa-check"></i><b>35.2.1</b> replication vs. subsample</a></li>
+<li class="chapter" data-level="35.2.2" data-path="design-of-experiment.html"><a href="design-of-experiment.html#replication-vs.-repeated-measurements"><i class="fa fa-check"></i><b>35.2.2</b> replication vs. repeated measurements</a></li>
+<li class="chapter" data-level="35.2.3" data-path="design-of-experiment.html"><a href="design-of-experiment.html#replication-replicate"><i class="fa fa-check"></i><b>35.2.3</b> replication, replicate</a>
+<ul>
+<li class="chapter" data-level="35.2.3.1" data-path="design-of-experiment.html"><a href="design-of-experiment.html#technical-replicate-biological-replicate"><i class="fa fa-check"></i><b>35.2.3.1</b> technical replicate, biological replicate</a></li>
+</ul></li>
+<li class="chapter" data-level="35.2.4" data-path="design-of-experiment.html"><a href="design-of-experiment.html#latin-square-design"><i class="fa fa-check"></i><b>35.2.4</b> Latin square design</a></li>
+<li class="chapter" data-level="35.2.5" data-path="design-of-experiment.html"><a href="design-of-experiment.html#model-assumption-and-experimental-unit-measurementobservational-unit"><i class="fa fa-check"></i><b>35.2.5</b> model assumption and experimental unit, measurement/observational unit</a></li>
+</ul></li>
+<li class="chapter" data-level="35.3" data-path="design-of-experiment.html"><a href="design-of-experiment.html#experiment-structure"><i class="fa fa-check"></i><b>35.3</b> experiment structure</a>
+<ul>
+<li class="chapter" data-level="35.3.1" data-path="design-of-experiment.html"><a href="design-of-experiment.html#treatment-structure"><i class="fa fa-check"></i><b>35.3.1</b> treatment structure</a></li>
+<li class="chapter" data-level="35.3.2" data-path="design-of-experiment.html"><a href="design-of-experiment.html#design-structure"><i class="fa fa-check"></i><b>35.3.2</b> design structure</a></li>
+<li class="chapter" data-level="35.3.3" data-path="design-of-experiment.html"><a href="design-of-experiment.html#size-of-experimental-unit"><i class="fa fa-check"></i><b>35.3.3</b> size of experimental unit</a></li>
+</ul></li>
+<li class="chapter" data-level="35.4" data-path="design-of-experiment.html"><a href="design-of-experiment.html#approach-to-experimentation"><i class="fa fa-check"></i><b>35.4</b> approach to experimentation</a></li>
+<li class="chapter" data-level="35.5" data-path="design-of-experiment.html"><a href="design-of-experiment.html#sample-size-estimation"><i class="fa fa-check"></i><b>35.5</b> sample size estimation</a></li>
+<li class="chapter" data-level="35.6" data-path="design-of-experiment.html"><a href="design-of-experiment.html#statistical-analysis-plan"><i class="fa fa-check"></i><b>35.6</b> statistical analysis plan</a></li>
+<li class="chapter" data-level="35.7" data-path="design-of-experiment.html"><a href="design-of-experiment.html#protocol"><i class="fa fa-check"></i><b>35.7</b> protocol</a></li>
+<li class="chapter" data-level="35.8" data-path="design-of-experiment.html"><a href="design-of-experiment.html#doe-course-with-six-sigma-and-mintab"><i class="fa fa-check"></i><b>35.8</b> DoE course with six sigma and Mintab</a>
+<ul>
+<li class="chapter" data-level="35.8.1" data-path="design-of-experiment.html"><a href="design-of-experiment.html#evolution"><i class="fa fa-check"></i><b>35.8.1</b> evolution</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="36" data-path="quine.html"><a href="quine.html"><i class="fa fa-check"></i><b>36</b> quine</a>
+<ul>
+<li class="chapter" data-level="36.1" data-path="quine.html"><a href="quine.html#r-1"><i class="fa fa-check"></i><b>36.1</b> <code>%r</code></a></li>
+</ul></li>
+<li class="chapter" data-level="37" data-path="quaternion.html"><a href="quaternion.html"><i class="fa fa-check"></i><b>37</b> quaternion</a>
+<ul>
+<li class="chapter" data-level="37.1" data-path="quaternion.html"><a href="quaternion.html#taylorcatalice"><i class="fa fa-check"></i><b>37.1</b> TaylorCatAlice</a>
+<ul>
+<li class="chapter" data-level="37.1.1" data-path="quaternion.html"><a href="quaternion.html#complex-dionion-bionion"><i class="fa fa-check"></i><b>37.1.1</b> complex / dionion / bionion</a></li>
+<li class="chapter" data-level="37.1.2" data-path="quaternion.html"><a href="quaternion.html#trionion-triernion-triplex-ternion"><i class="fa fa-check"></i><b>37.1.2</b> trionion / triernion / triplex / ternion</a></li>
+<li class="chapter" data-level="37.1.3" data-path="quaternion.html"><a href="quaternion.html#quaternion-1"><i class="fa fa-check"></i><b>37.1.3</b> quaternion</a>
+<ul>
+<li class="chapter" data-level="37.1.3.1" data-path="quaternion.html"><a href="quaternion.html#true-origin-of-dot-product-cross-product-inner-product-outer-product"><i class="fa fa-check"></i><b>37.1.3.1</b> true origin of ( dot product &amp; cross product ) / ( inner product &amp; outer product )</a></li>
+<li class="chapter" data-level="37.1.3.2" data-path="quaternion.html"><a href="quaternion.html#commutativity-vs.-anticommutativity"><i class="fa fa-check"></i><b>37.1.3.2</b> commutativity vs. anticommutativity</a>
+<ul>
+<li class="chapter" data-level="37.1.3.2.1" data-path="quaternion.html"><a href="quaternion.html#commutativity"><i class="fa fa-check"></i><b>37.1.3.2.1</b> commutativity</a></li>
+<li class="chapter" data-level="37.1.3.2.2" data-path="quaternion.html"><a href="quaternion.html#anticommutativity"><i class="fa fa-check"></i><b>37.1.3.2.2</b> anticommutativity</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.3.3" data-path="quaternion.html"><a href="quaternion.html#bracket"><i class="fa fa-check"></i><b>37.1.3.3</b> bracket</a>
+<ul>
+<li class="chapter" data-level="37.1.3.3.1" data-path="quaternion.html"><a href="quaternion.html#self-invented-bracket"><i class="fa fa-check"></i><b>37.1.3.3.1</b> self-invented bracket</a></li>
+<li class="chapter" data-level="37.1.3.3.2" data-path="quaternion.html"><a href="quaternion.html#poisson-bracket"><i class="fa fa-check"></i><b>37.1.3.3.2</b> Poisson bracket</a></li>
+<li class="chapter" data-level="37.1.3.3.3" data-path="quaternion.html"><a href="quaternion.html#lagrange-bracket"><i class="fa fa-check"></i><b>37.1.3.3.3</b> Lagrange bracket</a></li>
+<li class="chapter" data-level="37.1.3.3.4" data-path="quaternion.html"><a href="quaternion.html#lie-bracket"><i class="fa fa-check"></i><b>37.1.3.3.4</b> Lie bracket</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.3.4" data-path="quaternion.html"><a href="quaternion.html#triple-product"><i class="fa fa-check"></i><b>37.1.3.4</b> triple product</a></li>
+<li class="chapter" data-level="37.1.3.5" data-path="quaternion.html"><a href="quaternion.html#differential-operator"><i class="fa fa-check"></i><b>37.1.3.5</b> differential operator</a>
+<ul>
+<li class="chapter" data-level="37.1.3.5.1" data-path="quaternion.html"><a href="quaternion.html#differential-operator-1"><i class="fa fa-check"></i><b>37.1.3.5.1</b> 4-differential operator</a></li>
+<li class="chapter" data-level="37.1.3.5.2" data-path="quaternion.html"><a href="quaternion.html#nabla"><i class="fa fa-check"></i><b>37.1.3.5.2</b> nabla</a></li>
+<li class="chapter" data-level="37.1.3.5.3" data-path="quaternion.html"><a href="quaternion.html#laplace-operator"><i class="fa fa-check"></i><b>37.1.3.5.3</b> Laplace operator</a></li>
+<li class="chapter" data-level="37.1.3.5.4" data-path="quaternion.html"><a href="quaternion.html#dalembert-operator"><i class="fa fa-check"></i><b>37.1.3.5.4</b> d’Alembert operator</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.3.6" data-path="quaternion.html"><a href="quaternion.html#electromagnetism"><i class="fa fa-check"></i><b>37.1.3.6</b> electromagnetism</a>
+<ul>
+<li class="chapter" data-level="37.1.3.6.1" data-path="quaternion.html"><a href="quaternion.html#potential"><i class="fa fa-check"></i><b>37.1.3.6.1</b> 4-potential</a></li>
+<li class="chapter" data-level="37.1.3.6.2" data-path="quaternion.html"><a href="quaternion.html#maxwell-compromise-for-both-quaternion-and-3-vector"><i class="fa fa-check"></i><b>37.1.3.6.2</b> Maxwell compromise for both quaternion and 3-vector</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.3.7" data-path="quaternion.html"><a href="quaternion.html#joule-heat-vs.-thomson-heat-kelvin-heat"><i class="fa fa-check"></i><b>37.1.3.7</b> Joule heat vs. Thomson heat (Kelvin heat?)</a>
+<ul>
+<li class="chapter" data-level="37.1.3.7.1" data-path="quaternion.html"><a href="quaternion.html#thermoelectric-effect"><i class="fa fa-check"></i><b>37.1.3.7.1</b> thermoelectric effect</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.3.8" data-path="quaternion.html"><a href="quaternion.html#source-term"><i class="fa fa-check"></i><b>37.1.3.8</b> source term</a></li>
+</ul></li>
+<li class="chapter" data-level="37.1.4" data-path="quaternion.html"><a href="quaternion.html#quaternion-group"><i class="fa fa-check"></i><b>37.1.4</b> quaternion group</a></li>
+<li class="chapter" data-level="37.1.5" data-path="quaternion.html"><a href="quaternion.html#octonion"><i class="fa fa-check"></i><b>37.1.5</b> octonion</a></li>
+</ul></li>
+<li class="chapter" data-level="37.2" data-path="quaternion.html"><a href="quaternion.html#blue1brown"><i class="fa fa-check"></i><b>37.2</b> 3Blue1Brown</a>
+<ul>
+<li class="chapter" data-level="37.2.1" data-path="quaternion.html"><a href="quaternion.html#ben-eater"><i class="fa fa-check"></i><b>37.2.1</b> Ben Eater</a></li>
+<li class="chapter" data-level="37.2.2" data-path="quaternion.html"><a href="quaternion.html#b1b"><i class="fa fa-check"></i><b>37.2.2</b> 3B1B</a></li>
+<li class="chapter" data-level="37.2.3" data-path="quaternion.html"><a href="quaternion.html#sutrabla"><i class="fa fa-check"></i><b>37.2.3</b> Sutrabla</a></li>
+</ul></li>
+<li class="chapter" data-level="37.3" data-path="quaternion.html"><a href="quaternion.html#ccjou-la-revelation"><i class="fa fa-check"></i><b>37.3</b> CCJou: LA Revelation</a></li>
+</ul></li>
+<li class="chapter" data-level="38" data-path="dicom.html"><a href="dicom.html"><i class="fa fa-check"></i><b>38</b> DICOM</a>
+<ul>
+<li class="chapter" data-level="38.1" data-path="dicom.html"><a href="dicom.html#innolitics-dicom-standard-browser"><i class="fa fa-check"></i><b>38.1</b> Innolitics: DICOM Standard Browser</a></li>
+<li class="chapter" data-level="38.2" data-path="dicom.html"><a href="dicom.html#david-clunie-medical-image-format-site"><i class="fa fa-check"></i><b>38.2</b> David Clunie: Medical Image Format Site</a></li>
+</ul></li>
+<li class="chapter" data-level="39" data-path="tendon-pathophysiology.html"><a href="tendon-pathophysiology.html"><i class="fa fa-check"></i><b>39</b> tendon pathophysiology</a>
+<ul>
+<li class="chapter" data-level="39.1" data-path="tendon-pathophysiology.html"><a href="tendon-pathophysiology.html#histology"><i class="fa fa-check"></i><b>39.1</b> histology</a></li>
+</ul></li>
+<li class="chapter" data-level="40" data-path="group-theory.html"><a href="group-theory.html"><i class="fa fa-check"></i><b>40</b> group theory</a>
+<ul>
+<li class="chapter" data-level="40.1" data-path="group-theory.html"><a href="group-theory.html#complex-group-representation"><i class="fa fa-check"></i><b>40.1</b> complex group representation</a>
+<ul>
+<li class="chapter" data-level="40.1.1" data-path="group-theory.html"><a href="group-theory.html#euler-formula-proved-by-complex-group-representation"><i class="fa fa-check"></i><b>40.1.1</b> Euler formula proved by complex group representation</a></li>
+</ul></li>
+<li class="chapter" data-level="40.2" data-path="group-theory.html"><a href="group-theory.html#quaternion-group-representation"><i class="fa fa-check"></i><b>40.2</b> quaternion group representation</a>
+<ul>
+<li class="chapter" data-level="40.2.1" data-path="group-theory.html"><a href="group-theory.html#mathbbhrightarrowmathcalm_2times2leftmathbbcright"><i class="fa fa-check"></i><b>40.2.1</b> <span class="math inline">\(\mathbb{H}\rightarrow\mathcal{M}_{2\times2}\left(\mathbb{C}\right)\)</span></a></li>
+<li class="chapter" data-level="40.2.2" data-path="group-theory.html"><a href="group-theory.html#mathbbhrightarrowmathcalm_4times4leftmathbbrright"><i class="fa fa-check"></i><b>40.2.2</b> <span class="math inline">\(\mathbb{H}\rightarrow\mathcal{M}_{4\times4}\left(\mathbb{R}\right)\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>references</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">math</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="design-of-experiment" class="section level1 hasAnchor" number="35">
+<h1><span class="header-section-number">Chapter 35: </span> design of experiment<a href="design-of-experiment.html#design-of-experiment" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>experimental design = experiment design = design of experiments = DoE</p>
+<p><span class="citation"><sup><a href="#ref-hu2022">7</a></sup></span> p.72</p>
+<p>question-design-analysis loop</p>
+<div id="notational-system-for-designrefnotational-system-for-design" class="section level2 hasAnchor" number="35.1">
+<h2><span class="header-section-number">35.1</span> <a href="notational-system-for-design.html#notational-system-for-design">notational system for design</a><sup>[<a href="notational-system-for-design.html#notational-system-for-design">34</a>]</sup><a href="design-of-experiment.html#notational-system-for-designrefnotational-system-for-design" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="notational-system-for-design.html#graphic-notation-advanced">graphic notation, advanced</a><sup>[<a href="notational-system-for-design.html#graphic-notation-advanced">34.6</a>]</sup></p>
+</div>
+<div id="terminology" class="section level2 hasAnchor" number="35.2">
+<h2><span class="header-section-number">35.2</span> terminology<a href="design-of-experiment.html#terminology" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>population
+<ul>
+<li>sample
+<ul>
+<li>subsample</li>
+</ul></li>
+</ul></li>
+<li>unit
+<ul>
+<li>experimental unit
+<ul>
+<li>response</li>
+<li>block: group of similar experimental unit (<span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.74)</li>
+</ul></li>
+<li>observational unit / measurement unit <a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></li>
+</ul></li>
+<li>replication (<span class="citation"><sup><a href="#ref-hu2022">7</a></sup></span> p.76): an independent observation of the treatment (<span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.74)
+<ul>
+<li>treatment replication: experimental-unit-to-experimental-unit variation</li>
+<li>measurement replication = subsample: measurement-to-measurement variation</li>
+</ul></li>
+<li>replicate
+<ul>
+<li>experimental replicate</li>
+<li>biological replicate</li>
+<li>technical replicate</li>
+</ul></li>
+</ul>
+<hr />
+<p><span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.73</p>
+<p><span class="math inline">\(Y_{\scriptscriptstyle{ij}}\)</span>: the response observed from the <span class="math inline">\(j\)</span><sup>th</sup> experimental unit assigned to the <span class="math inline">\(i\)</span><sup>th</sup> treatment</p>
+<p><span class="math inline">\(\mu_{\scriptscriptstyle{i}}\)</span>: the mean response to the <span class="math inline">\(i\)</span><sup>th</sup> treatment</p>
+<p><span class="math inline">\(\mathcal{E}_{\scriptscriptstyle{ij}}\)</span>: the noise from other possible natural variation or nonrandom and random error</p>
+<p><span class="math display">\[
+Y_{{\scriptscriptstyle i}{\scriptscriptstyle j}}=\mu_{{\scriptscriptstyle i}}+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}},\begin{cases}
+i\in\mathbb{N}\cap\left[1,n_{{\scriptscriptstyle i}}\right] &amp; \mathbb{N}\ni n_{{\scriptscriptstyle i}}\text{ treatments}\\
+j\in\mathbb{N}\cap\left[1,n_{{\scriptscriptstyle j}}\right] &amp; \mathbb{N}\ni n_{{\scriptscriptstyle j}}\text{ experimental units per treatment}
+\end{cases}
+\]</span></p>
+<p>Each treatment has <span class="math inline">\(n_{j}\)</span> experimental units, so there are totally <span class="math inline">\(n_{i}n_{j}\)</span> experimental units.</p>
+<p>If experimental units cannot be homogeneous, we can try to</p>
+<ul>
+<li>stratify them</li>
+<li>group them, and measure group to group variation</li>
+<li>block them</li>
+</ul>
+<p>here <span class="math inline">\(n_{j}\)</span> blocks each with <span class="math inline">\(n_{i}\)</span> experimental units where <strong>each treatment occurs once in each block</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
+Y_{{\scriptscriptstyle i}{\scriptscriptstyle j}}= &amp; \mu_{{\scriptscriptstyle i}}+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}\\
+= &amp; \mu_{{\scriptscriptstyle i}}+b_{{\scriptscriptstyle j}}+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}^{*},\begin{cases}
+i\in\mathbb{N}\cap\left[1,n_{{\scriptscriptstyle i}}\right] &amp; \mathbb{N}\ni n_{{\scriptscriptstyle i}}\text{ experimental units per block}\\
+j\in\mathbb{N}\cap\left[1,n_{{\scriptscriptstyle j}}\right] &amp; \mathbb{N}\ni n_{{\scriptscriptstyle j}}\text{ blocks}
+\end{cases}
+\end{aligned}
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}=b_{{\scriptscriptstyle j}}+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}^{*}
+\]</span></p>
+<blockquote>
+<p>i.e. the variation between groups or blocks of experimental units has been identified and isolated from <span class="math inline">\(\mathcal{E}_{ij}^{*}\)</span>, which represents the variability of experimental units within a block. By isolating the block effect from the experimental units, the within-block variation can be used to compare treatment effects, which involves computing the estimated standard errors of contrasts of the treatments.</p>
+</blockquote>
+<p><span class="math display">\[
+\begin{aligned}
+Y_{{\scriptscriptstyle i}{\scriptscriptstyle j}}-Y_{{\scriptscriptstyle i^{\prime}}{\scriptscriptstyle j}}= &amp; \left(\mu_{{\scriptscriptstyle i}}+b_{{\scriptscriptstyle j}}+\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}^{*}\right)\\
+- &amp; \left(\mu_{{\scriptscriptstyle i^{\prime}}}+b_{{\scriptscriptstyle j}}+\mathcal{E}_{{\scriptscriptstyle i^{\prime}}{\scriptscriptstyle j}}^{*}\right)\\
+= &amp; \left(\mu_{{\scriptscriptstyle i}}-\mu_{{\scriptscriptstyle i^{\prime}}}\right)+\left(\mathcal{E}_{{\scriptscriptstyle i}{\scriptscriptstyle j}}^{*}-\mathcal{E}_{{\scriptscriptstyle i^{\prime}}{\scriptscriptstyle j}}^{*}\right)
+\end{aligned}
+\]</span></p>
+<blockquote>
+<p>which does not depend on the block effect <span class="math inline">\(b_{j}\)</span> or free of block effects. The result of this difference is that the variance of the difference of two treatment responses within a block depends on the within-block variation among the experimental units and not the between-block variation.</p>
+</blockquote>
+<div id="replication-vs.-subsample" class="section level3 hasAnchor" number="35.2.1">
+<h3><span class="header-section-number">35.2.1</span> replication vs. subsample<a href="design-of-experiment.html#replication-vs.-subsample" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<blockquote>
+<p>It is very important to distinguish between a <strong>subsample</strong> and a <strong>replication</strong> since the error variance estimated from between subsamples is in general considerably smaller than the error variance estimated from replications or between experimental units. (<span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.77)</p>
+</blockquote>
+<p><a href="https://www.researchgate.net/post/What-is-Experimental-Unit-Replicate-Total-sample-size-treatment-size" class="uri">https://www.researchgate.net/post/What-is-Experimental-Unit-Replicate-Total-sample-size-treatment-size</a></p>
+</div>
+<div id="replication-vs.-repeated-measurements" class="section level3 hasAnchor" number="35.2.2">
+<h3><span class="header-section-number">35.2.2</span> replication vs. repeated measurements<a href="design-of-experiment.html#replication-vs.-repeated-measurements" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="replication-replicate" class="section level3 hasAnchor" number="35.2.3">
+<h3><span class="header-section-number">35.2.3</span> replication, replicate<a href="design-of-experiment.html#replication-replicate" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="technical-replicate-biological-replicate" class="section level4 hasAnchor" number="35.2.3.1">
+<h4><span class="header-section-number">35.2.3.1</span> technical replicate, biological replicate<a href="design-of-experiment.html#technical-replicate-biological-replicate" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><a href="https://www.youtube.com/watch?v=c_cpl5YsBV8" class="uri">https://www.youtube.com/watch?v=c_cpl5YsBV8</a></p>
+
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<img src="img/buchanan2005-replicates.png" alt="experimental, biological, technical replicates ( 9)" width="65%" />
+<p class="caption">
+Fig. 24.1: experimental, biological, technical replicates ( <span class="citation"><sup><a href="#ref-buchanan2005">9</a></sup></span>)
+</p>
+</div>
+</div>
+</div>
+<div id="latin-square-design" class="section level3 hasAnchor" number="35.2.4">
+<h3><span class="header-section-number">35.2.4</span> Latin square design<a href="design-of-experiment.html#latin-square-design" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>LSD = Latin square design</p>
+<p><span class="citation"><sup><a href="#ref-zhang2021">10</a></sup></span> p.505~507</p>
+<p><a href="https://tex.stackexchange.com/questions/501671/how-to-get-math-mode-curly-braces-in-tikz" class="uri">https://tex.stackexchange.com/questions/501671/how-to-get-math-mode-curly-braces-in-tikz</a></p>
+<p><code>\\usepackage{pgfplots}</code> in <code>engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))</code></p>
+<p><code>\usetikzlibrary{decorations}</code></p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
+<img src="202403232342-experimental-design_files/figure-html/unnamed-chunk-2-1.png" alt="Latin square example" width="40%" />
+<p class="caption">
+Fig. 34.1: Latin square example
+</p>
+</div>
+<p><span class="math display">\[
+Y_{{\scriptscriptstyle ijk}}=\mu+\alpha_{{\scriptscriptstyle i}}+\beta_{{\scriptscriptstyle j}}+\gamma_{{\scriptscriptstyle k}}+\mathcal{E}_{{\scriptscriptstyle ijk}},\begin{cases}
+i\in\mathbb{N}\cap\left[1,p\right] &amp; \mathbb{N}\ni p\text{ treatments}\\
+j\in\mathbb{N}\cap\left[1,p\right] &amp; \mathbb{N}\ni p\text{ rows}\\
+k\in\mathbb{N}\cap\left[1,p\right] &amp; \mathbb{N}\ni p\text{ columns}
+\end{cases}
+\]</span></p>
+<p><span class="math display">\[
+\mathcal{E}_{{\scriptscriptstyle ijk}}\overset{\text{i.i.d.}}{\sim}\mathrm{n}\left(0,\sigma^{2}\right)
+\]</span></p>
+<hr />
+<p><span class="math inline">\(\rho_{{\scriptscriptstyle i}}\)</span>: <span class="math inline">\(i\)</span><sup>th</sup> row</p>
+<p><span class="math inline">\(\kappa_{{\scriptscriptstyle j}}\)</span>: <span class="math inline">\(j\)</span><sup>th</sup> column</p>
+<p><span class="math inline">\(\tau_{{\scriptscriptstyle k}}\)</span>: <span class="math inline">\(k\)</span><sup>th</sup> treatment</p>
+<p><span class="math display">\[
+\begin{aligned}
+Y_{{\scriptscriptstyle ijk}}= &amp; \mu+\alpha_{{\scriptscriptstyle i}}+\beta_{{\scriptscriptstyle j}}+\gamma_{{\scriptscriptstyle k}}+\mathcal{E}_{{\scriptscriptstyle ijk}},\begin{cases}
+i\in\mathbb{N}\cap\left[1,p\right] &amp; \mathbb{N}\ni p\text{ treatments}\\
+j\in\mathbb{N}\cap\left[1,p\right] &amp; \mathbb{N}\ni p\text{ rows}\\
+k\in\mathbb{N}\cap\left[1,p\right] &amp; \mathbb{N}\ni p\text{ columns}
+\end{cases}\\
+= &amp; \mu+\rho_{{\scriptscriptstyle i}}+\kappa_{{\scriptscriptstyle j}}+\tau_{{\scriptscriptstyle k}}+\mathcal{E}_{{\scriptscriptstyle ijk}},\begin{cases}
+i\in\mathbb{N}\cap\left[1,p\right] &amp; \mathbb{N}\ni p\text{ rows}\\
+j\in\mathbb{N}\cap\left[1,p\right] &amp; \mathbb{N}\ni p\text{ columns}\\
+k\in\mathbb{N}\cap\left[1,p\right] &amp; \mathbb{N}\ni p\text{ treatments}
+\end{cases}
+\end{aligned}
+\]</span></p>
+</div>
+<div id="model-assumption-and-experimental-unit-measurementobservational-unit" class="section level3 hasAnchor" number="35.2.5">
+<h3><span class="header-section-number">35.2.5</span> model assumption and experimental unit, measurement/observational unit<a href="design-of-experiment.html#model-assumption-and-experimental-unit-measurementobservational-unit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-3"></span>
+<img src="img/casler2015-fig1.png" alt="model assumption and experimental unit 1 ( 11 fig.1)" width="50%" />
+<p class="caption">
+Fig. 24.2: model assumption and experimental unit 1 ( <span class="citation"><sup><a href="#ref-casler2015">11</a></sup></span> fig.1)
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
+<img src="img/casler2015-fig2.png" alt="model assumption and experimental unit 2 ( 11 fig.2)" width="50%" />
+<p class="caption">
+Fig. 24.3: model assumption and experimental unit 2 ( <span class="citation"><sup><a href="#ref-casler2015">11</a></sup></span> fig.2)
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-5"></span>
+<img src="img/casler2015-fig3.png" alt="model assumption and experimental unit 3 ( 11 fig.3)" width="50%" />
+<p class="caption">
+Fig. 24.4: model assumption and experimental unit 3 ( <span class="citation"><sup><a href="#ref-casler2015">11</a></sup></span> fig.3)
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-6"></span>
+<img src="img/casler2015-fig4.png" alt="model assumption and experimental unit 4 ( 11 fig.4)" width="50%" />
+<p class="caption">
+Fig. 16.1: model assumption and experimental unit 4 ( <span class="citation"><sup><a href="#ref-casler2015">11</a></sup></span> fig.4)
+</p>
+</div>
+<hr />
+<p><span class="math display">\[
+Y_{{\scriptscriptstyle ijk}}=\mu+\tau_{{\scriptscriptstyle i}}+\beta_{{\scriptscriptstyle j}}+\epsilon_{{\scriptscriptstyle ij}}+\varDelta_{{\scriptscriptstyle ijk}}
+\]</span></p>
+</div>
+</div>
+<div id="experiment-structure" class="section level2 hasAnchor" number="35.3">
+<h2><span class="header-section-number">35.3</span> experiment structure<a href="design-of-experiment.html#experiment-structure" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="treatment-structure" class="section level3 hasAnchor" number="35.3.1">
+<h3><span class="header-section-number">35.3.1</span> treatment structure<a href="design-of-experiment.html#treatment-structure" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.77</p>
+<ul>
+<li>1-way treatment structure</li>
+<li>2-way treatment structure</li>
+<li>factorial arrangement treatment structure</li>
+<li><em>fractional</em> factorial arrangement treatment structure</li>
+<li>factorial arrangement with one or more controls</li>
+</ul>
+</div>
+<div id="design-structure" class="section level3 hasAnchor" number="35.3.2">
+<h3><span class="header-section-number">35.3.2</span> design structure<a href="design-of-experiment.html#design-structure" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.77</p>
+<ul>
+<li>CRD = completely randomized design</li>
+<li>RCBD = randomized complete block design
+<ul>
+<li>? why not called CRBD = completely randomized block design</li>
+</ul></li>
+<li>LSD = <a href="design-of-experiment.html#latin-square-design">Latin square design</a><sup>[<a href="design-of-experiment.html#latin-square-design">35.2.4</a>]</sup></li>
+<li>IBD = incomplete block design
+<ul>
+<li>BIBD = balanced IBD</li>
+</ul></li>
+<li>various combinations and generalizations</li>
+</ul>
+</div>
+<div id="size-of-experimental-unit" class="section level3 hasAnchor" number="35.3.3">
+<h3><span class="header-section-number">35.3.3</span> size of experimental unit<a href="design-of-experiment.html#size-of-experimental-unit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>split-plot design
+<ul>
+<li>split-split-plot design</li>
+<li>split-split-split-plot design</li>
+</ul></li>
+<li>repeated measures design
+<ul>
+<li>cross-over design</li>
+<li>change-over design</li>
+</ul></li>
+<li>nested design = hierarchical design</li>
+<li>variations and combinations
+<ul>
+<li>SSEU = several sizes of experimental units</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="approach-to-experimentation" class="section level2 hasAnchor" number="35.4">
+<h2><span class="header-section-number">35.4</span> approach to experimentation<a href="design-of-experiment.html#approach-to-experimentation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span class="citation"><sup><a href="#ref-hu2022">7</a></sup></span> p.75</p>
+<ul>
+<li>approach to experimentation
+<ul>
+<li>best-guess approach</li>
+<li>one-factor-at-a-time approach = OFAT</li>
+<li>factorial approach</li>
+</ul></li>
+</ul>
+</div>
+<div id="sample-size-estimation" class="section level2 hasAnchor" number="35.5">
+<h2><span class="header-section-number">35.5</span> sample size estimation<a href="design-of-experiment.html#sample-size-estimation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="statistical-analysis-plan" class="section level2 hasAnchor" number="35.6">
+<h2><span class="header-section-number">35.6</span> statistical analysis plan<a href="design-of-experiment.html#statistical-analysis-plan" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="protocol" class="section level2 hasAnchor" number="35.7">
+<h2><span class="header-section-number">35.7</span> protocol<a href="design-of-experiment.html#protocol" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span class="citation"><sup><a href="#ref-hu2022">7</a></sup></span> p.95</p>
+<ul>
+<li>study objective</li>
+<li>study endpoint
+<ul>
+<li>primary endpoint</li>
+<li>secondary endpoint(s)</li>
+</ul></li>
+<li>experimental unit(s)</li>
+<li><a href="design-of-experiment.html#treatment-structure">treatment structure</a><sup>[<a href="design-of-experiment.html#treatment-structure">35.3.1</a>]</sup></li>
+<li><a href="design-of-experiment.html#design-structure">design structure</a><sup>[<a href="design-of-experiment.html#design-structure">35.3.2</a>]</sup></li>
+<li>potential confounder(s)</li>
+<li>randomization</li>
+<li>blinding</li>
+<li>chance reduction</li>
+<li><a href="design-of-experiment.html#sample-size-estimation">sample size estimation</a><sup>[<a href="design-of-experiment.html#sample-size-estimation">35.5</a>]</sup></li>
+<li>data collection</li>
+<li>data management system</li>
+<li><a href="design-of-experiment.html#statistical-analysis-plan">statistical analysis plan</a><sup>[<a href="design-of-experiment.html#statistical-analysis-plan">35.6</a>]</sup></li>
+<li>DSMB / DSMC = data and safety monitoring board / committee</li>
+</ul>
+</div>
+<div id="doe-course-with-six-sigma-and-mintab" class="section level2 hasAnchor" number="35.8">
+<h2><span class="header-section-number">35.8</span> DoE course with six sigma and Mintab<a href="design-of-experiment.html#doe-course-with-six-sigma-and-mintab" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="https://zhuanlan.zhihu.com/p/265914617" class="uri">https://zhuanlan.zhihu.com/p/265914617</a></p>
+<p><a href="https://www.zhihu.com/question/416312693/answer/1426399810" class="uri">https://www.zhihu.com/question/416312693/answer/1426399810</a></p>
+<div id="evolution" class="section level3 hasAnchor" number="35.8.1">
+<h3><span class="header-section-number">35.8.1</span> evolution<a href="design-of-experiment.html#evolution" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Fisher</li>
+<li>Rao</li>
+</ul>
+
+</div>
+</div>
+</div>
+<h3>references<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body" entry-spacing="0" line-spacing="2">
+<div id="ref-hu2022" class="csl-entry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Hu, F.-C. <em>Statistical Design and Analysis of Biomedical Research</em>. (International-Harvard (I-H) Statistical Consulting Company, Taipei, Taiwan, 2022).</div>
+</div>
+<div id="ref-milliken2004" class="csl-entry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Milliken, G. A. &amp; Johnson, D. E. <em>Analysis of Messy Data Volume 1: Designed Experiments, Second Edition</em>. (Chapman; Hall/CRC, Boca Raton, Fla., 2004).</div>
+</div>
+<div id="ref-buchanan2005" class="csl-entry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Buchanan, C. D. <em>et al.</em> <a href="https://doi.org/10.1007/s11103-005-7876-2">Sorghum bicolor<span>’</span>s Transcriptome Response to Dehydration, High Salinity and ABA</a>. <em>Plant Molecular Biology</em> <strong>58</strong>, 699–720 (2005).</div>
+</div>
+<div id="ref-zhang2021" class="csl-entry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">張翔. &amp; 廖崇智. <em><a href="https://www.books.com.tw/products/0010888833">提綱挈領學統計</a></em>. (大碩教育, 2021).</div>
+</div>
+<div id="ref-casler2015" class="csl-entry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Casler, M. D., Vermerris, W. &amp; Dixon, R. A. <a href="https://doi.org/10.1007/s12155-015-9580-7">Replication Concepts for Bioenergy Research Experiments</a>. <em>BioEnergy Research</em> <strong>8</strong>, 1–16 (2015).</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="7">
+<li id="fn7"><p><a href="https://passel2.unl.edu/view/lesson/2e09f0055f13/6" class="uri">https://passel2.unl.edu/view/lesson/2e09f0055f13/6</a><a href="design-of-experiment.html#fnref7" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://redwing1304.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="notational-system-for-design.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="quine.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 1
+},
+"edit": {
+"link": "https://github.com/RRWWW/math/edit/main/202403232342-experimental-design.Rmd",
+"text": "Edit on GitHub"
+},
+"history": {
+"link": "https://github.com/RRWWW/math/commits/main/202403232342-experimental-design.Rmd",
+"text": null
+},
+"view": {
+"link": "https://github.com/RRWWW/math/blob/main/202403232342-experimental-design.Rmd",
+"text": null
+},
+"download": [["math.pdf", "PDF"], ["math.docx", "Word DOCX"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

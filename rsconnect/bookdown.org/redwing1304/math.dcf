@@ -1,0 +1,12 @@
+name: math
+title:
+username: redwing1304
+account: redwing1304
+server: bookdown.org
+hostUrl: https://bookdown.org/__api__
+appId: 13685
+bundleId: 94173
+url: https://bookdown.org/redwing1304/math/
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: #Joey Yu Hsu_2022_Knowledge of Everything I Need to Know.lyx|#math-formula.lyx#|tikz5d1c39d85482.log|tikz5df83adb5449.log|tikz978198521a9.log|_bookdown_files|img
