@@ -2,8 +2,6 @@
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1hm4y1v75R&autoplay=0"></iframe>
-
-<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1mM4y1J79a&autoplay=0"></iframe>
 :::
 
 ## complex group representation
@@ -172,6 +170,10 @@ $$
 
 ### Euler formula proved by complex group representation
 
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1mM4y1J79a&autoplay=0"></iframe>
+:::
+
 $$
 \begin{aligned}
 \begin{pmatrix}x^{\prime}\\
@@ -272,6 +274,17 @@ y & x
 \end{pmatrix}=xI+yJ}{\Rightarrow}\mathrm{e}^{\mathrm{i}\theta}=\cos\theta+\mathrm{i}\sin\theta
 \end{aligned}
 $$
+
+$$
+\ \tag*{$\Box$}
+$$
+### Lagrange identity
+
+https://en.wikipedia.org/wiki/Lagrange%27s_identity
+
+generalization of [Brahmagupta–Fibonacci identity](https://en.wikipedia.org/wiki/Lagrange's_identity)
+
+specialization of [Binet–Cauchy identity](https://en.wikipedia.org/wiki/Binet–Cauchy_identity)
 
 ## quaternion group representation
 
@@ -630,3 +643,5 @@ $$
 
 
 ### $\mathbb{H}\rightarrow\mathcal{M}_{4\times4}\left(\mathbb{R}\right)$
+
+https://groupprops.subwiki.org/wiki/Linear_representation_theory_of_quaternion_group#Four-dimensional_irreducible_representation_over_a_non-splitting_field
