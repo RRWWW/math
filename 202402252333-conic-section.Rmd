@@ -573,7 +573,7 @@ b\\
 \end{array}
 $$
 
-[tangent half-angle formula]^[\^^\@ref(tangent-half-angle-formula)^\^]^
+[tangent half-angle formula]^[\@ref(tangent-half-angle-formula)]^
 
 ## polar coordinate
 
@@ -679,7 +679,7 @@ y
 \end{aligned}
 $$
 
-[real symmetric matrix diagonalizable]^[\^^\@ref(real-symmetric-matrix-diagonalizable)^\^]^
+[real symmetric matrix diagonalizable]^[\@ref(real-symmetric-matrix-diagonalizable)]^
 
 ## homogeneous coordinate {#homogeneous-coordinate}
 

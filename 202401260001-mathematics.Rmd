@@ -52,8 +52,8 @@
   - algebra
     - linear algebra
       - [漫士沉思錄: 無痛線代](https://space.bilibili.com/266765166/channel/collectiondetail?sid=1794944)
-      - [周志成](https://www.youtube.com/playlist?list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju)
-        - [線代啟示錄](https://ccjou.wordpress.com/)
+      - [周志成](https://www.youtube.com/playlist?list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju) CCJou
+        - [線代啟示錄](https://ccjou.wordpress.com/) CCJou: LA Revelation
       - [3B1B](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
     - abstract algebra
   - analysis

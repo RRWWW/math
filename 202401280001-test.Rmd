@@ -1380,6 +1380,24 @@ citation 1[@noauthor_bookdown_2019] citation 2 @noauthor_bookdown_2019
 
 citation 3[@ccjou2009] citation 4 @ccjou2009
 
+### citation in `fig.cap`
+
+https://tex.stackexchange.com/questions/591882/citation-within-a-latex-figure-caption-in-rmarkdown
+
+`(ref:rudolph) *nice* cite: [@Lam94].`
+
+`(ref:campbell1963) *nice* cite: [@campbell1963].`
+
+`(ref:campbell1963) ([@campbell1963]`
+
+`(ref:campbell1963) \ [@campbell1963]`
+
+(ref:campbell1963) \ [@campbell1963]
+
+```{r, echo=FALSE, cache=TRUE, fig.cap="pre- and true experimental designs ((ref:campbell1963) p.8)", out.width = '65%'}
+knitr::include_graphics("img/pre-and-true-experimental-designs.png")
+```
+
 ### backreference
 
 https://community.rstudio.com/t/how-to-create-a-backreference-to-place-of-citation-in-rmarkdown/84866

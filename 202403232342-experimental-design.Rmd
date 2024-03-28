@@ -249,6 +249,10 @@ $$
   - one-factor-at-a-time approach = OFAT
   - factorial approach
 
+## sample size estimation
+
+## statistical analysis plan
+
 ## protocol
 
 [@hu2022] p.95
@@ -258,14 +262,25 @@ $$
   - primary endpoint
   - secondary endpoint(s)
 - experimental unit(s)
-- treatment structure
-- design structure
+- [treatment structure]^[\@ref(treatment-structure)]^
+- [design structure]^[\@ref(design-structure)]^
 - potential confounder(s)
 - randomization
 - blinding
 - chance reduction
-- sample size estimation
+- [sample size estimation]^[\@ref(sample-size-estimation)]^
 - data collection
 - data management system
-- statistical analysis plan
+- [statistical analysis plan]^[\@ref(statistical-analysis-plan)]^
 - DSMB / DSMC = data and safety monitoring board / committee
+
+## DoE course with six sigma and Mintab
+
+https://zhuanlan.zhihu.com/p/265914617
+
+https://www.zhihu.com/question/416312693/answer/1426399810
+
+### evolution
+
+- Fisher
+- Rao

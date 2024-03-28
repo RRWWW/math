@@ -1,5 +1,7 @@
 # programming language
 
+## discipline
+
 - [Python]^[\@ref(python)]^
 - JavaScript
 - SQL = structured query language
@@ -20,3 +22,9 @@
     - WinForms = Windows Forms
   - 3D/game
     - Unity
+
+## learning map
+
+- [W3School](https://www.w3schools.com/)
+- [SoloLearn](https://www.sololearn.com/)
+- [Codecademy](https://www.codecademy.com/)

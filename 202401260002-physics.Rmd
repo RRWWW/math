@@ -41,7 +41,7 @@
     - [Hamiltonian mechanics](https://www.youtube.com/playlist?list=PL-IZN8QRUw-zBECgfYLuDQ3qkWsXWAGhM)
   - [field theory](https://www.youtube.com/playlist?list=PL-IZN8QRUw-wEGbrXwziZTV30M_WiVs72)
   - [gravity](https://www.youtube.com/playlist?list=PL-IZN8QRUw-zEQgxVkaUIn567bkGoq_4c)
-- [泰勒貓愛麗絲](https://space.bilibili.com/11008987/channel/series)
+- [泰勒貓愛麗絲](https://space.bilibili.com/11008987/channel/series) TaylorCatAlice
   - [黑體輻射的故事](https://space.bilibili.com/11008987/channel/collectiondetail?sid=1643054)
 
 :::

@@ -21,9 +21,9 @@
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language chinese-traditional
 \language_package default
-\inputencoding auto
+\inputencoding utf8-cjk
 \fontencoding global
 \font_roman "default" "default"
 \font_sans "default" "default"
@@ -82,7 +82,7 @@
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style english
+\quotes_style cjk
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -95,6 +95,1530 @@
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+group theory
+\end_layout
+
+\begin_layout Standard
+complex gropu representation
+\begin_inset Formula 
+\[
+1\leftrightarrow\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=I_{2}=I
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+c_{{\scriptscriptstyle 1}}\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}+c_{{\scriptscriptstyle 2}}\begin{pmatrix}a & b\\
+c & d
+\end{pmatrix}= & x\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}+y\begin{pmatrix}a & b\\
+c & d
+\end{pmatrix},\left\langle a,b,c,d\right\rangle \in\mathbb{R}^{4}\\
+= & xI+yJ,J=\begin{pmatrix}a & b\\
+c & d
+\end{pmatrix}\in\mathcal{M}_{2\times2}\left(\mathbb{R}\right),\left\langle x,y\right\rangle \in\mathbb{R}^{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J^{2}=-I
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+J^{2}= & -I\\
+\begin{pmatrix}a^{2}+bc & ab+bd\\
+ca+cd & cb+d^{2}
+\end{pmatrix}=\begin{pmatrix}a & b\\
+c & d
+\end{pmatrix}\begin{pmatrix}a & b\\
+c & d
+\end{pmatrix}= & -\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=\begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix}\\
+\begin{cases}
+a^{2}+bc=-1 & b=0\Rightarrow a^{2}=-1\Rightarrow\Leftarrow a\in\mathbb{R}\Rightarrow b\ne0\\
+ab+bd=0 & \left(b=0\right)\vee\left(a=-d\right)\overset{b\ne0}{\Rightarrow}a=-d\\
+ca+cd=0\\
+cb+d^{2}=-1 & a^{2}=d^{2}\Rightarrow\left(a=d\right)\vee\left(a=-d\right)
+\end{cases} & \overset{\text{if }a=d}{\Rightarrow}\begin{cases}
+a=d\\
+a=-d
+\end{cases}\\
+ & \Rightarrow a=d=0\Rightarrow bc=-1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J=\begin{pmatrix}a & b\\
+c & d
+\end{pmatrix}=\begin{pmatrix}a & b\\
+\dfrac{-a^{2}-1}{b} & -a
+\end{pmatrix}=J\left(a,b\right),b\ne0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J\left(a,b\right)=\begin{pmatrix}a & b\\
+\dfrac{-a^{2}-1}{b} & -a
+\end{pmatrix},b\ne0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J\left(a=1,b\right)=\begin{pmatrix}1 & b\\
+\dfrac{-2}{b} & -1
+\end{pmatrix}\Rightarrow J^{2}\left(a=1,b\right)=\begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix}=-I
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+xI+yJ\left(a=1,b\right)=\begin{pmatrix}x+y & yb\\
+y\cdot\dfrac{-2}{b} & x-y
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J\left(a=0,b\right)=\begin{pmatrix}0 & b\\
+\dfrac{-1}{b} & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J\left(a=0,b=1\right)=\begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+J\left(a=0,b=-1\right)= & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}=-\begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix}=-J\left(a=0,b=1\right)\\
+\Rightarrow J^{2}\left(a=0,b=-1\right)= & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}=\begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix}=-I
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+J=J\left(a=0,b=-1\right)= & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\\
+\Rightarrow & \begin{cases}
+1\leftrightarrow I=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\\
+\mathrm{i}\leftrightarrow J=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}
+\end{cases}\\
+\Rightarrow x+y\mathrm{i}\leftrightarrow & xI+yJ\\
+= & x\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}+y\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}=\begin{pmatrix}x & -y\\
+y & x
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+y\mathrm{i}\leftrightarrow\begin{pmatrix}x & -y\\
+y & x
+\end{pmatrix}=xI+yJ
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+quaternion group representation
+\begin_inset Formula 
+\begin{align*}
+ & q=a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d,\begin{cases}
+q\in\mathbb{H}\\
+a,b,c,d\in\mathbb{R} & \Leftrightarrow\left\langle a,b,c,d\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & w=t+x\mathrm{i}+y\mathrm{j}+z\mathrm{k}=t+\mathrm{i}x+\mathrm{j}y+\mathrm{k}z,\begin{cases}
+w\in\mathbb{H}\\
+t,x,y,z\in\mathbb{R} & \Leftrightarrow\left\langle t,x,y,z\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & a1+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=t1+x\mathrm{i}+y\mathrm{j}+z\mathrm{k}=x_{{\scriptscriptstyle 0}}1+\boldsymbol{e}_{{\scriptscriptstyle i}}x_{{\scriptscriptstyle i}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=1_{2}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{e}=\begin{pmatrix}a & b\\
+c & d
+\end{pmatrix}=\begin{pmatrix}a & b\\
+\dfrac{-a^{2}-1}{b} & -a
+\end{pmatrix}=\begin{cases}
+\begin{pmatrix}a & b\\
+\dfrac{-a^{2}-1}{b} & -a
+\end{pmatrix}=\begin{pmatrix}0 & b\\
+\dfrac{-1}{b} & 0
+\end{pmatrix}=\begin{pmatrix}0 & \beta\\
+-\beta & 0
+\end{pmatrix}\Rightarrow\boldsymbol{e}_{{\scriptscriptstyle 2}}=J=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}=\mathrm{j} & a=0\\
+\begin{pmatrix}a & b\\
+\dfrac{-a^{2}-1}{b} & -a
+\end{pmatrix}=\begin{pmatrix}\alpha & \beta\\
+\beta & -\alpha
+\end{pmatrix} & a\ne0
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}\alpha^{2}+\beta^{2} & 0\\
+0 & \beta^{2}+\alpha^{2}
+\end{pmatrix}=\begin{pmatrix}\alpha & \beta\\
+\beta & -\alpha
+\end{pmatrix}\begin{pmatrix}\alpha & \beta\\
+\beta & -\alpha
+\end{pmatrix}=\boldsymbol{e}^{2}= & -1=-\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=\begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix}\\
+\Downarrow\\
+\alpha^{2}+\beta^{2}= & -1\Leftrightarrow\beta^{2}+\alpha^{2}=-1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha^{2}+\beta^{2}=-1\Rightarrow\left\langle \alpha,\beta\right\rangle \notin\mathbb{R}^{2}\Rightarrow\Leftarrow\left\langle \alpha,\beta\right\rangle \in\mathbb{R}^{2}\Rightarrow\alpha^{2}+\beta^{2}\ge0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle \alpha,\beta\right\rangle \in\mathbb{C}^{2}-\mathbb{R}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha^{2}+\beta^{2}=-1=\beta^{2}+\alpha^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}\beta & \alpha\\
+\alpha & -\beta
+\end{pmatrix}\begin{pmatrix}\beta & \alpha\\
+\alpha & -\beta
+\end{pmatrix}=\begin{pmatrix}\beta^{2}+\alpha^{2} & 0\\
+0 & \alpha^{2}+\beta^{2}
+\end{pmatrix}=\begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix}=-\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix},\boldsymbol{e}_{{\scriptscriptstyle 1}}=\begin{pmatrix}\alpha & \beta\\
+\beta & -\alpha
+\end{pmatrix},\boldsymbol{e}_{{\scriptscriptstyle 2}}=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix},\mathrm{i}=\begin{pmatrix}\alpha & \beta\\
+\beta & -\alpha
+\end{pmatrix},\mathrm{j}=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{i}\mathrm{j}=\begin{pmatrix}\alpha & \beta\\
+\beta & -\alpha
+\end{pmatrix}\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}=\begin{pmatrix}\beta & -\alpha\\
+-\alpha & -\beta
+\end{pmatrix}=-\begin{pmatrix}-\beta & \alpha\\
+\alpha & \beta
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix},\boldsymbol{e}_{{\scriptscriptstyle 1}}=\begin{pmatrix}\alpha & \beta\\
+\beta & -\alpha
+\end{pmatrix},\boldsymbol{e}_{{\scriptscriptstyle 2}}=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix},\boldsymbol{e}_{{\scriptscriptstyle 3}}=\begin{pmatrix}\beta & -\alpha\\
+-\alpha & -\beta
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix},\mathrm{i}=\begin{pmatrix}\alpha & \beta\\
+\beta & -\alpha
+\end{pmatrix},\mathrm{j}=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix},\mathrm{k}=\begin{pmatrix}\beta & -\alpha\\
+-\alpha & -\beta
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{j}\mathrm{k}=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\begin{pmatrix}\beta & -\alpha\\
+-\alpha & -\beta
+\end{pmatrix}=\begin{pmatrix}\alpha & \beta\\
+\beta & -\alpha
+\end{pmatrix}=\mathrm{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccccc}
+ & \alpha^{2}+\beta^{2}=-1 & \begin{cases}
+\alpha=\sqrt{-1}\\
+\beta=0
+\end{cases} & \begin{cases}
+\alpha=\sqrt{-2}\\
+\beta=1
+\end{cases} & \beta=\alpha^{2},n\in\left\{ 1,2,4,5\right\} \\
+1 & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix} & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix} & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix} & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\\
+-1 & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix} & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix} & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix} & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix}\\
+\mathrm{i} & \begin{pmatrix}\alpha & \beta\\
+\beta & -\alpha
+\end{pmatrix} & \begin{pmatrix}\sqrt{-1} & 0\\
+0 & -\sqrt{-1}
+\end{pmatrix} & \begin{pmatrix}\sqrt{-2} & 1\\
+1 & -\sqrt{-2}
+\end{pmatrix} & \begin{pmatrix}\mathrm{e}^{\pi\frac{n}{3}\sqrt{-1}} & \mathrm{e}^{\pi\frac{2n}{3}\sqrt{-1}}\\
+\mathrm{e}^{\pi\frac{2n}{3}\sqrt{-1}} & -\mathrm{e}^{\pi\frac{n}{3}\sqrt{-1}}
+\end{pmatrix}\\
+-\mathrm{i} & \begin{pmatrix}-\alpha & -\beta\\
+-\beta & \alpha
+\end{pmatrix} & \begin{pmatrix}-\sqrt{-1} & 0\\
+0 & \sqrt{-1}
+\end{pmatrix} & \begin{pmatrix}-\sqrt{-2} & -1\\
+-1 & \sqrt{-2}
+\end{pmatrix} & \begin{pmatrix}-\mathrm{e}^{\pi\frac{n}{3}\sqrt{-1}} & -\mathrm{e}^{\pi\frac{2n}{3}\sqrt{-1}}\\
+-\mathrm{e}^{\pi\frac{2n}{3}\sqrt{-1}} & \mathrm{e}^{\pi\frac{n}{3}\sqrt{-1}}
+\end{pmatrix}\\
+\mathrm{j} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\\
+-\mathrm{j} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix}\\
+\mathrm{k} & \begin{pmatrix}\beta & -\alpha\\
+-\alpha & -\beta
+\end{pmatrix} & \begin{pmatrix}0 & -\sqrt{-1}\\
+-\sqrt{-1} & 0
+\end{pmatrix} & \begin{pmatrix}1 & -\sqrt{-2}\\
+-\sqrt{-2} & -1
+\end{pmatrix} & \begin{pmatrix}\mathrm{e}^{\pi\frac{2n}{3}\sqrt{-1}} & -\mathrm{e}^{\pi\frac{n}{3}\sqrt{-1}}\\
+-\mathrm{e}^{\pi\frac{n}{3}\sqrt{-1}} & -\mathrm{e}^{\pi\frac{2n}{3}\sqrt{-1}}
+\end{pmatrix}\\
+-\mathrm{k} & \begin{pmatrix}-\beta & \alpha\\
+\alpha & \beta
+\end{pmatrix} & \begin{pmatrix}0 & \sqrt{-1}\\
+\sqrt{-1} & 0
+\end{pmatrix} & \begin{pmatrix}-1 & \sqrt{-2}\\
+\sqrt{-2} & 1
+\end{pmatrix} & \begin{pmatrix}-\mathrm{e}^{\pi\frac{2n}{3}\sqrt{-1}} & \mathrm{e}^{\pi\frac{n}{3}\sqrt{-1}}\\
+\mathrm{e}^{\pi\frac{n}{3}\sqrt{-1}} & \mathrm{e}^{\pi\frac{2n}{3}\sqrt{-1}}
+\end{pmatrix}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-1= & \alpha^{2}+\beta^{2}\\
+\overset{\beta=\alpha^{2}}{=} & \alpha^{2}+\alpha^{4}\\
+\alpha^{4}+\alpha^{2}+1= & 0,\alpha^{4}+\alpha^{2}+1=\left(\alpha^{2}+\alpha+1\right)\left(\alpha^{2}-\alpha+1\right)\\
+\left(\alpha^{2}-1\right)\left(\alpha^{4}+\alpha^{2}+1\right)= & 0\\
+\alpha^{6}-1= & 0\\
+\alpha^{6}= & 1=\mathrm{e}^{2\pi k\sqrt{-1}},k\in\mathbb{Z}\\
+\alpha= & \mathrm{e}^{2\pi\frac{n}{6}\sqrt{-1}},n\in\left\{ 0,1,2,3,4,5\right\} -\left\{ 0,3\right\} \\
+= & \mathrm{e}^{\pi\frac{n}{3}\sqrt{-1}},n\in\left\{ 1,2,4,5\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccccc}
+ & \alpha^{2}+\beta^{2}=-1 & \begin{cases}
+\alpha=\sqrt{-1}\\
+\beta=0
+\end{cases} & \begin{cases}
+\alpha=\sqrt{-2}\\
+\beta=1
+\end{cases} & \omega=\mathrm{e}^{\pi\frac{k}{3}\sqrt{-1}},k\in\left\{ 1,2,4,5\right\} \\
+1 & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix} & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix} & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix} & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\\
+-1 & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix} & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix} & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix} & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix}\\
+\mathrm{i} & \begin{pmatrix}\alpha & \beta\\
+\beta & -\alpha
+\end{pmatrix} & \begin{pmatrix}i & 0\\
+0 & -i
+\end{pmatrix} & \begin{pmatrix}\sqrt{2}i & 1\\
+1 & -\sqrt{2}i
+\end{pmatrix} & \begin{pmatrix}\omega & \omega^{2}\\
+\omega^{2} & -\omega
+\end{pmatrix}\\
+-\mathrm{i} & \begin{pmatrix}-\alpha & -\beta\\
+-\beta & \alpha
+\end{pmatrix} & \begin{pmatrix}-i & 0\\
+0 & i
+\end{pmatrix} & \begin{pmatrix}-\sqrt{2}i & -1\\
+-1 & \sqrt{2}i
+\end{pmatrix} & \begin{pmatrix}-\omega & -\omega^{2}\\
+-\omega^{2} & \omega
+\end{pmatrix}\\
+\mathrm{j} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\\
+-\mathrm{j} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix}\\
+\mathrm{k} & \begin{pmatrix}\beta & -\alpha\\
+-\alpha & -\beta
+\end{pmatrix} & \begin{pmatrix}0 & -i\\
+-i & 0
+\end{pmatrix} & \begin{pmatrix}1 & -\sqrt{2}i\\
+-\sqrt{2}i & -1
+\end{pmatrix} & \begin{pmatrix}\omega^{2} & -\omega\\
+-\omega & -\omega^{2}
+\end{pmatrix}\\
+-\mathrm{k} & \begin{pmatrix}-\beta & \alpha\\
+\alpha & \beta
+\end{pmatrix} & \begin{pmatrix}0 & i\\
+i & 0
+\end{pmatrix} & \begin{pmatrix}-1 & \sqrt{2}i\\
+\sqrt{2}i & 1
+\end{pmatrix} & \begin{pmatrix}-\omega^{2} & \omega\\
+\omega & \omega^{2}
+\end{pmatrix}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{H}\rightarrow\mathcal{M}_{2\times2}\left(\mathbb{C}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+triple product
+\end_layout
+
+\begin_layout Standard
+pure imaginary
+\begin_inset Formula 
+\[
+\begin{cases}
+a=0+\boldsymbol{a}=\boldsymbol{a}\\
+b=0+\boldsymbol{b}=\boldsymbol{b}\\
+c=0+\boldsymbol{c}=\boldsymbol{c}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+abc=\boldsymbol{a}\boldsymbol{b}\boldsymbol{c}= & \left(\boldsymbol{a}\boldsymbol{b}\right)\boldsymbol{c}=\left(-\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{a}\times\boldsymbol{b}\right)\boldsymbol{c}\\
+= & \boldsymbol{a}\left(\boldsymbol{b}\boldsymbol{c}\right)=\boldsymbol{a}\left(-\boldsymbol{b}\cdot\boldsymbol{c}+\boldsymbol{b}\times\boldsymbol{c}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{a}\boldsymbol{b}\boldsymbol{c}=\left(\boldsymbol{a}\boldsymbol{b}\right)\boldsymbol{c}= & \left(-\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{a}\times\boldsymbol{b}\right)\boldsymbol{c}\\
+= & -\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)\boldsymbol{c}+\left(\boldsymbol{a}\times\boldsymbol{b}\right)\boldsymbol{c}\\
+= & -\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)\boldsymbol{c}+\left(-\left(\boldsymbol{a}\times\boldsymbol{b}\right)\cdot\boldsymbol{c}+\left(\boldsymbol{a}\times\boldsymbol{b}\right)\times\boldsymbol{c}\right)\\
+= & \left[-\left(\boldsymbol{a}\times\boldsymbol{b}\right)\cdot\boldsymbol{c}\right]+\left[\left(\boldsymbol{a}\times\boldsymbol{b}\right)\times\boldsymbol{c}-\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)\boldsymbol{c}\right]\\
+=\boldsymbol{a}\left(\boldsymbol{b}\boldsymbol{c}\right)= & \boldsymbol{a}\left(-\boldsymbol{b}\cdot\boldsymbol{c}+\boldsymbol{b}\times\boldsymbol{c}\right)\\
+= & -\boldsymbol{a}\left(\boldsymbol{b}\cdot\boldsymbol{c}\right)+\boldsymbol{a}\left(\boldsymbol{b}\times\boldsymbol{c}\right)\\
+= & -\boldsymbol{a}\left(\boldsymbol{b}\cdot\boldsymbol{c}\right)+\left(-\boldsymbol{a}\cdot\left(\boldsymbol{b}\times\boldsymbol{c}\right)+\boldsymbol{a}\times\left(\boldsymbol{b}\times\boldsymbol{c}\right)\right)\\
+= & \left[-\boldsymbol{a}\cdot\left(\boldsymbol{b}\times\boldsymbol{c}\right)\right]+\left[\boldsymbol{a}\times\left(\boldsymbol{b}\times\boldsymbol{c}\right)-\boldsymbol{a}\left(\boldsymbol{b}\cdot\boldsymbol{c}\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+-\left(\boldsymbol{a}\times\boldsymbol{b}\right)\cdot\boldsymbol{c}=-\boldsymbol{a}\cdot\left(\boldsymbol{b}\times\boldsymbol{c}\right)\\
+\left(\boldsymbol{a}\times\boldsymbol{b}\right)\times\boldsymbol{c}-\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)\boldsymbol{c}=\boldsymbol{a}\times\left(\boldsymbol{b}\times\boldsymbol{c}\right)-\boldsymbol{a}\left(\boldsymbol{b}\cdot\boldsymbol{c}\right)
+\end{cases}\\
+\Rightarrow & \begin{cases}
+\left(\boldsymbol{a}\times\boldsymbol{b}\right)\cdot\boldsymbol{c}=\boldsymbol{a}\cdot\left(\boldsymbol{b}\times\boldsymbol{c}\right) & \left(s\right)\\
+\left(\boldsymbol{a}\times\boldsymbol{b}\right)\times\boldsymbol{c}-\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)\boldsymbol{c}=\boldsymbol{a}\times\left(\boldsymbol{b}\times\boldsymbol{c}\right)-\boldsymbol{a}\left(\boldsymbol{b}\cdot\boldsymbol{c}\right) & \left(v\right)
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+permutation
+\begin_inset Formula 
+\[
+\sigma=\begin{pmatrix}x_{{\scriptscriptstyle 1}} & x_{{\scriptscriptstyle 2}} & \cdots\\
+\sigma\left(x_{{\scriptscriptstyle 1}}\right) & \sigma\left(x_{{\scriptscriptstyle 2}}\right) & \cdots
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a & b & c\\
+a & b & c
+\end{pmatrix},\begin{pmatrix}a & b & c\\
+b & c & a
+\end{pmatrix},\begin{pmatrix}a & b & c\\
+c & a & b
+\end{pmatrix},\begin{pmatrix}a & b & c\\
+b & a & c
+\end{pmatrix},\begin{pmatrix}a & b & c\\
+a & c & b
+\end{pmatrix},\begin{pmatrix}a & b & c\\
+c & b & a
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(s\right)\Rightarrow & \begin{cases}
+\left(\boldsymbol{a}\times\boldsymbol{b}\right)\cdot\boldsymbol{c}=\boldsymbol{a}\cdot\left(\boldsymbol{b}\times\boldsymbol{c}\right) & \begin{pmatrix}a & b & c\\
+a & b & c
+\end{pmatrix},s_{{\scriptscriptstyle 1}}\\
+\left(\boldsymbol{b}\times\boldsymbol{c}\right)\cdot\boldsymbol{a}=\boldsymbol{b}\cdot\left(\boldsymbol{c}\times\boldsymbol{a}\right) & \begin{pmatrix}a & b & c\\
+b & c & a
+\end{pmatrix},s_{{\scriptscriptstyle 2}}\\
+\left(\boldsymbol{c}\times\boldsymbol{a}\right)\cdot\boldsymbol{b}=\boldsymbol{c}\cdot\left(\boldsymbol{a}\times\boldsymbol{b}\right) & \begin{pmatrix}a & b & c\\
+c & a & b
+\end{pmatrix},s_{{\scriptscriptstyle 3}}\\
+\left(\boldsymbol{b}\times\boldsymbol{a}\right)\cdot\boldsymbol{c}=\boldsymbol{b}\cdot\left(\boldsymbol{a}\times\boldsymbol{c}\right) & \begin{pmatrix}a & b & c\\
+b & a & c
+\end{pmatrix},s_{{\scriptscriptstyle 4}}\\
+\left(\boldsymbol{a}\times\boldsymbol{c}\right)\cdot\boldsymbol{b}=\boldsymbol{a}\cdot\left(\boldsymbol{c}\times\boldsymbol{b}\right) & \begin{pmatrix}a & b & c\\
+a & c & b
+\end{pmatrix},s_{{\scriptscriptstyle 5}}\\
+\left(\boldsymbol{c}\times\boldsymbol{b}\right)\cdot\boldsymbol{a}=\boldsymbol{c}\cdot\left(\boldsymbol{b}\times\boldsymbol{a}\right) & \begin{pmatrix}a & b & c\\
+c & b & a
+\end{pmatrix},s_{{\scriptscriptstyle 6}}
+\end{cases}\\
+\overset{\cdot\text{ commutative}}{\Rightarrow} & \left(\boldsymbol{a}\times\boldsymbol{b}\right)\cdot\boldsymbol{c}\overset{s_{{\scriptscriptstyle 1}}}{=}\left(\boldsymbol{b}\times\boldsymbol{c}\right)\cdot\boldsymbol{a}\overset{s_{{\scriptscriptstyle 2}}}{=}\left(\boldsymbol{c}\times\boldsymbol{a}\right)\cdot\boldsymbol{b}\overset{s_{{\scriptscriptstyle 3}}}{=}\left(\boldsymbol{a}\times\boldsymbol{b}\right)\cdot\boldsymbol{c}\\
+\overset{\times\text{ anticommutative}}{=} & -\left(\boldsymbol{b}\times\boldsymbol{a}\right)\cdot\boldsymbol{c}\overset{s_{{\scriptscriptstyle 6}}}{=}-\left(\boldsymbol{c}\times\boldsymbol{b}\right)\cdot\boldsymbol{a}\overset{s_{{\scriptscriptstyle 5}}}{=}-\left(\boldsymbol{a}\times\boldsymbol{c}\right)\cdot\boldsymbol{b}\overset{s_{{\scriptscriptstyle 4}}}{=}-\left(\boldsymbol{b}\times\boldsymbol{a}\right)\cdot\boldsymbol{c}\\
+\Leftrightarrow & \boldsymbol{a}\cdot\left(\boldsymbol{b}\times\boldsymbol{c}\right)=\boldsymbol{b}\cdot\left(\boldsymbol{c}\times\boldsymbol{a}\right)=\boldsymbol{c}\cdot\left(\boldsymbol{a}\times\boldsymbol{b}\right)\\
+= & -\boldsymbol{a}\cdot\left(\boldsymbol{c}\times\boldsymbol{b}\right)=-\boldsymbol{b}\cdot\left(\boldsymbol{a}\times\boldsymbol{c}\right)=-\boldsymbol{c}\cdot\left(\boldsymbol{b}\times\boldsymbol{a}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(v\right)\Rightarrow & \begin{cases}
+\left(\boldsymbol{a}\times\boldsymbol{b}\right)\times\boldsymbol{c}-\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)\boldsymbol{c}=\boldsymbol{a}\times\left(\boldsymbol{b}\times\boldsymbol{c}\right)-\boldsymbol{a}\left(\boldsymbol{b}\cdot\boldsymbol{c}\right) & \begin{pmatrix}a & b & c\\
+a & b & c
+\end{pmatrix},v_{{\scriptscriptstyle 1}}\\
+\left(\boldsymbol{b}\times\boldsymbol{c}\right)\times\boldsymbol{a}-\left(\boldsymbol{b}\cdot\boldsymbol{c}\right)\boldsymbol{a}=\boldsymbol{b}\times\left(\boldsymbol{c}\times\boldsymbol{a}\right)-\boldsymbol{b}\left(\boldsymbol{c}\cdot\boldsymbol{a}\right) & \begin{pmatrix}a & b & c\\
+b & c & a
+\end{pmatrix},v_{{\scriptscriptstyle 2}}\\
+\left(\boldsymbol{c}\times\boldsymbol{a}\right)\times\boldsymbol{b}-\left(\boldsymbol{c}\cdot\boldsymbol{a}\right)\boldsymbol{b}=\boldsymbol{c}\times\left(\boldsymbol{a}\times\boldsymbol{b}\right)-\boldsymbol{c}\left(\boldsymbol{a}\cdot\boldsymbol{b}\right) & \begin{pmatrix}a & b & c\\
+c & a & b
+\end{pmatrix},v_{{\scriptscriptstyle 3}}\\
+\left(\boldsymbol{b}\times\boldsymbol{a}\right)\times\boldsymbol{c}-\left(\boldsymbol{b}\cdot\boldsymbol{a}\right)\boldsymbol{c}=\boldsymbol{b}\times\left(\boldsymbol{a}\times\boldsymbol{c}\right)-\boldsymbol{b}\left(\boldsymbol{a}\cdot\boldsymbol{c}\right) & \begin{pmatrix}a & b & c\\
+b & a & c
+\end{pmatrix},v_{{\scriptscriptstyle 4}}\\
+\left(\boldsymbol{a}\times\boldsymbol{c}\right)\times\boldsymbol{b}-\left(\boldsymbol{a}\cdot\boldsymbol{c}\right)\boldsymbol{b}=\boldsymbol{a}\times\left(\boldsymbol{c}\times\boldsymbol{b}\right)-\boldsymbol{a}\left(\boldsymbol{c}\cdot\boldsymbol{b}\right) & \begin{pmatrix}a & b & c\\
+a & c & b
+\end{pmatrix},v_{{\scriptscriptstyle 5}}\\
+\left(\boldsymbol{c}\times\boldsymbol{b}\right)\times\boldsymbol{a}-\left(\boldsymbol{c}\cdot\boldsymbol{b}\right)\boldsymbol{a}=\boldsymbol{c}\times\left(\boldsymbol{b}\times\boldsymbol{a}\right)-\boldsymbol{c}\left(\boldsymbol{b}\cdot\boldsymbol{a}\right) & \begin{pmatrix}a & b & c\\
+c & b & a
+\end{pmatrix},v_{{\scriptscriptstyle 6}}
+\end{cases}\\
+\Rightarrow & \begin{cases}
+-Z-C=X-A & v_{{\scriptscriptstyle 1}}\\
+-X-A=Y-B & v_{{\scriptscriptstyle 2}}\\
+-Y-B=Z-C & v_{{\scriptscriptstyle 3}}\\
+Z-C=-Y-B & v_{{\scriptscriptstyle 4}}\\
+Y-B=-X-A & v_{{\scriptscriptstyle 5}}\\
+X-A=-Z-C & v_{{\scriptscriptstyle 6}}
+\end{cases},\begin{cases}
+\cdot\text{ and scalar-vector product} & \text{commutative}\\
+\times & \text{anticommutative}
+\end{cases},\\
+ & \begin{cases}
+X=\boldsymbol{a}\times\left(\boldsymbol{b}\times\boldsymbol{c}\right)=-\left(\boldsymbol{b}\times\boldsymbol{c}\right)\times\boldsymbol{a}=-\boldsymbol{a}\times\left(\boldsymbol{c}\times\boldsymbol{b}\right)=\left(\boldsymbol{c}\times\boldsymbol{b}\right)\times\boldsymbol{a}\\
+Y=\boldsymbol{b}\times\left(\boldsymbol{c}\times\boldsymbol{a}\right)=-\left(\boldsymbol{c}\times\boldsymbol{a}\right)\times\boldsymbol{b}=-\boldsymbol{b}\times\left(\boldsymbol{a}\times\boldsymbol{c}\right)=\left(\boldsymbol{a}\times\boldsymbol{c}\right)\times\boldsymbol{b}\\
+Z=\boldsymbol{c}\times\left(\boldsymbol{a}\times\boldsymbol{b}\right)=-\left(\boldsymbol{a}\times\boldsymbol{b}\right)\times\boldsymbol{c}=-\boldsymbol{c}\times\left(\boldsymbol{b}\times\boldsymbol{a}\right)=\left(\boldsymbol{b}\times\boldsymbol{a}\right)\times\boldsymbol{c}\\
+A=\boldsymbol{a}\left(\boldsymbol{b}\cdot\boldsymbol{c}\right)=\boldsymbol{a}\left(\boldsymbol{c}\cdot\boldsymbol{b}\right)=\left(\boldsymbol{c}\cdot\boldsymbol{b}\right)\boldsymbol{a}=\left(\boldsymbol{b}\cdot\boldsymbol{c}\right)\boldsymbol{a}\\
+B=\boldsymbol{b}\left(\boldsymbol{c}\cdot\boldsymbol{a}\right)=\boldsymbol{b}\left(\boldsymbol{a}\cdot\boldsymbol{c}\right)=\left(\boldsymbol{a}\cdot\boldsymbol{c}\right)\boldsymbol{b}=\left(\boldsymbol{c}\cdot\boldsymbol{a}\right)\boldsymbol{b}\\
+C=\boldsymbol{c}\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)=\boldsymbol{c}\left(\boldsymbol{b}\cdot\boldsymbol{a}\right)=\left(\boldsymbol{b}\cdot\boldsymbol{a}\right)\boldsymbol{c}=\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)\boldsymbol{c}
+\end{cases}\\
+\Rightarrow & \begin{cases}
+-Z-C=X-A & v_{{\scriptscriptstyle 1}}=v_{{\scriptscriptstyle 6}}\\
+-X-A=Y-B & v_{{\scriptscriptstyle 2}}=v_{{\scriptscriptstyle 5}}\\
+-Y-B=Z-C & v_{{\scriptscriptstyle 3}}=v_{{\scriptscriptstyle 4}}
+\end{cases}\Leftrightarrow\begin{cases}
+Z+X=A-C\\
+X+Y=B-A\\
+Y+Z=C-B
+\end{cases}\Leftrightarrow\begin{cases}
+X+Y=B-A\\
+Y+Z=C-B\\
+Z+X=A-C
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+2\left(X+Y+Z\right)=0 & \Rightarrow X+Y+Z=0\\
+Y+Z=C-B & \Rightarrow X=B-C\Leftrightarrow\boldsymbol{a}\times\left(\boldsymbol{b}\times\boldsymbol{c}\right)=\boldsymbol{b}\left(\boldsymbol{c}\cdot\boldsymbol{a}\right)-\boldsymbol{c}\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)\text{ "back cab"}\\
+Z+X=A-C & \Rightarrow Y=C-A\Leftrightarrow\boldsymbol{b}\times\left(\boldsymbol{c}\times\boldsymbol{a}\right)=\boldsymbol{c}\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)-\boldsymbol{a}\left(\boldsymbol{b}\cdot\boldsymbol{c}\right)\\
+X+Y=B-A & \Rightarrow Z=A-B\Leftrightarrow\boldsymbol{c}\times\left(\boldsymbol{a}\times\boldsymbol{b}\right)=\boldsymbol{a}\left(\boldsymbol{b}\cdot\boldsymbol{c}\right)-\boldsymbol{b}\left(\boldsymbol{c}\cdot\boldsymbol{a}\right)
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+electromagnetism
+\begin_inset Formula 
+\[
+QP=\left(Q_{{\scriptscriptstyle 0}}P_{{\scriptscriptstyle 0}}-\boldsymbol{Q}\cdot\boldsymbol{P}\right)+\left(Q_{{\scriptscriptstyle 0}}\boldsymbol{P}+P_{{\scriptscriptstyle 0}}\boldsymbol{Q}+\boldsymbol{Q}\times\boldsymbol{P}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+ab=\left(a_{{\scriptscriptstyle 0}}b_{{\scriptscriptstyle 0}}-\boldsymbol{a}\cdot\boldsymbol{b}\right)+\left(a_{{\scriptscriptstyle 0}}\boldsymbol{b}+b_{{\scriptscriptstyle 0}}\boldsymbol{a}+\boldsymbol{a}\times\boldsymbol{b}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pure imaginary
+\begin_inset Formula 
+\begin{align*}
+ab= & \left(a_{{\scriptscriptstyle 0}}b_{{\scriptscriptstyle 0}}-\boldsymbol{a}\cdot\boldsymbol{b}\right)+\left(a_{{\scriptscriptstyle 0}}\boldsymbol{b}+b_{{\scriptscriptstyle 0}}\boldsymbol{a}+\boldsymbol{a}\times\boldsymbol{b}\right)\\
+\overset{\begin{cases}
+a_{0}=0\\
+b_{0}=0
+\end{cases}}{=} & \left(00-\boldsymbol{a}\cdot\boldsymbol{b}\right)+\left(0\boldsymbol{b}+0\boldsymbol{a}+\boldsymbol{a}\times\boldsymbol{b}\right)\\
+= & -\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{a}\times\boldsymbol{b}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+ab=\boldsymbol{a}\boldsymbol{b}=-\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{a}\times\boldsymbol{b},\begin{cases}
+a=0+\boldsymbol{a}=\boldsymbol{a}\\
+b=0+\boldsymbol{b}=\boldsymbol{b}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+electromagnetic 4-potential / four-potential
+\begin_inset Formula 
+\[
+A=A_{{\scriptscriptstyle 0}}++\mathrm{i}A_{{\scriptscriptstyle 1}}+\mathrm{j}A_{{\scriptscriptstyle 2}}+\mathrm{k}A_{{\scriptscriptstyle 3}}=A_{0}+\boldsymbol{A}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left[\mathrm{D},A\right]= & \dfrac{\mathrm{D}A-A\mathrm{D}}{2}\\
+2\left[\mathrm{D},A\right]= & \mathrm{D}A-A\mathrm{D}\\
+= & \left(\partial_{{\scriptscriptstyle 0}}+\mathrm{i}\partial_{{\scriptscriptstyle 1}}+\mathrm{j}\partial_{{\scriptscriptstyle 2}}+\mathrm{k}\partial_{{\scriptscriptstyle 3}}\right)\left(A_{{\scriptscriptstyle 0}}++\mathrm{i}A_{{\scriptscriptstyle 1}}+\mathrm{j}A_{{\scriptscriptstyle 2}}+\mathrm{k}A_{{\scriptscriptstyle 3}}\right)\\
+- & \left(A_{{\scriptscriptstyle 0}}++\mathrm{i}A_{{\scriptscriptstyle 1}}+\mathrm{j}A_{{\scriptscriptstyle 2}}+\mathrm{k}A_{{\scriptscriptstyle 3}}\right)\left(\partial_{{\scriptscriptstyle 0}}+\mathrm{i}\partial_{{\scriptscriptstyle 1}}+\mathrm{j}\partial_{{\scriptscriptstyle 2}}+\mathrm{k}\partial_{{\scriptscriptstyle 3}}\right)\\
+\mathrm{D}A= & \left(\mathrm{D}_{{\scriptscriptstyle 0}}A_{{\scriptscriptstyle 0}}-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}\right)+\left(\mathrm{D}_{{\scriptscriptstyle 0}}\boldsymbol{A}+A_{{\scriptscriptstyle 0}}\boldsymbol{\mathrm{D}}+\boldsymbol{\mathrm{D}}\times\boldsymbol{A}\right)\\
+= & \left(\mathrm{D}_{{\scriptscriptstyle 0}}A_{{\scriptscriptstyle 0}}-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}\right)+\left(\mathrm{D}_{{\scriptscriptstyle 0}}\boldsymbol{A}+\boldsymbol{\mathrm{D}}A_{{\scriptscriptstyle 0}}+\boldsymbol{\mathrm{D}}\times\boldsymbol{A}\right)\\
+= & \mathrm{D}_{{\scriptscriptstyle 0}}\left(A_{{\scriptscriptstyle 0}}+\boldsymbol{A}\right)-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}+\boldsymbol{\mathrm{D}}A_{{\scriptscriptstyle 0}}+\boldsymbol{\mathrm{D}}\times\boldsymbol{A}\\
+= & \mathrm{D}_{{\scriptscriptstyle 0}}A-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}+\boldsymbol{\mathrm{D}}A_{{\scriptscriptstyle 0}}+\boldsymbol{\mathrm{D}}\times\boldsymbol{A}\\
+= & \partial_{{\scriptscriptstyle 0}}A-\boldsymbol{\nabla}\cdot\boldsymbol{A}+\boldsymbol{\nabla}A_{{\scriptscriptstyle 0}}+\boldsymbol{\nabla}\times\boldsymbol{A}\\
+A\mathrm{D}= & \left(A_{{\scriptscriptstyle 0}}\mathrm{D}_{{\scriptscriptstyle 0}}-\boldsymbol{A}\cdot\boldsymbol{\mathrm{D}}\right)+\left(A_{{\scriptscriptstyle 0}}\boldsymbol{\mathrm{D}}+\mathrm{D}_{{\scriptscriptstyle 0}}\boldsymbol{A}+\boldsymbol{A}\times\boldsymbol{\mathrm{D}}\right)\\
+= & \left(\mathrm{D}_{{\scriptscriptstyle 0}}A_{{\scriptscriptstyle 0}}-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}\right)+\left(\boldsymbol{\mathrm{D}}A_{{\scriptscriptstyle 0}}+\mathrm{D}_{{\scriptscriptstyle 0}}\boldsymbol{A}-\boldsymbol{\mathrm{D}}\times\boldsymbol{A}\right)\\
+= & \left(\mathrm{D}_{{\scriptscriptstyle 0}}A_{{\scriptscriptstyle 0}}-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}\right)+\left(\mathrm{D}_{{\scriptscriptstyle 0}}\boldsymbol{A}+\boldsymbol{\mathrm{D}}A_{{\scriptscriptstyle 0}}-\boldsymbol{\mathrm{D}}\times\boldsymbol{A}\right)\\
+= & \mathrm{D}_{{\scriptscriptstyle 0}}\left(A_{{\scriptscriptstyle 0}}+\boldsymbol{A}\right)-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}+\boldsymbol{\mathrm{D}}A_{{\scriptscriptstyle 0}}-\boldsymbol{\mathrm{D}}\times\boldsymbol{A}\\
+= & \mathrm{D}_{{\scriptscriptstyle 0}}A-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}+\boldsymbol{\mathrm{D}}A_{{\scriptscriptstyle 0}}-\boldsymbol{\mathrm{D}}\times\boldsymbol{A}\\
+= & \partial_{{\scriptscriptstyle 0}}A-\boldsymbol{\nabla}\cdot\boldsymbol{A}+\boldsymbol{\nabla}A_{{\scriptscriptstyle 0}}-\boldsymbol{\nabla}\times\boldsymbol{A}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathrm{D}A= & \mathrm{D}_{{\scriptscriptstyle 0}}A-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}+\boldsymbol{\mathrm{D}}A_{{\scriptscriptstyle 0}}+\boldsymbol{\mathrm{D}}\times\boldsymbol{A}=\partial_{{\scriptscriptstyle 0}}A-\boldsymbol{\nabla}\cdot\boldsymbol{A}+\boldsymbol{\nabla}A_{{\scriptscriptstyle 0}}+\boldsymbol{\nabla}\times\boldsymbol{A}\\
+A\mathrm{D}= & \mathrm{D}_{{\scriptscriptstyle 0}}A-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}+\boldsymbol{\mathrm{D}}A_{{\scriptscriptstyle 0}}-\boldsymbol{\mathrm{D}}\times\boldsymbol{A}=\partial_{{\scriptscriptstyle 0}}A-\boldsymbol{\nabla}\cdot\boldsymbol{A}+\boldsymbol{\nabla}A_{{\scriptscriptstyle 0}}-\boldsymbol{\nabla}\times\boldsymbol{A}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \mathrm{D}A-A\mathrm{D}=2\boldsymbol{\mathrm{D}}\times\boldsymbol{A}=2\boldsymbol{\nabla}\times\boldsymbol{A}\\
+\left[\mathrm{D},A\right]= & \dfrac{\mathrm{D}A-A\mathrm{D}}{2}=\boldsymbol{\mathrm{D}}\times\boldsymbol{A}=\boldsymbol{\nabla}\times\boldsymbol{A}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \mathrm{D}A+A\mathrm{D}=2\left(\mathrm{D}_{{\scriptscriptstyle 0}}A-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}+\boldsymbol{\mathrm{D}}A_{{\scriptscriptstyle 0}}\right)=2\left(\partial_{{\scriptscriptstyle 0}}A-\boldsymbol{\nabla}\cdot\boldsymbol{A}+\boldsymbol{\nabla}A_{{\scriptscriptstyle 0}}\right)\\
+\left\{ \mathrm{D},A\right\} = & \dfrac{\mathrm{D}A+A\mathrm{D}}{2}=\mathrm{D}_{{\scriptscriptstyle 0}}A-\boldsymbol{\mathrm{D}}\cdot\boldsymbol{A}+\boldsymbol{\mathrm{D}}A_{{\scriptscriptstyle 0}}=\partial_{{\scriptscriptstyle 0}}A-\boldsymbol{\nabla}\cdot\boldsymbol{A}+\boldsymbol{\nabla}A_{{\scriptscriptstyle 0}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left[\mathrm{D},Q\right]= & \boldsymbol{\nabla}\times\boldsymbol{Q}\\
+\left\{ \mathrm{D},Q\right\} = & \partial_{{\scriptscriptstyle 0}}Q-\boldsymbol{\nabla}\cdot\boldsymbol{Q}+\boldsymbol{\nabla}Q_{{\scriptscriptstyle 0}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Maxwell compromise for both quaternion and 3-vector 
+\begin_inset Formula 
+\[
+A=A_{{\scriptscriptstyle 0}}+\mathrm{i}A_{{\scriptscriptstyle 1}}+\mathrm{j}A_{{\scriptscriptstyle 2}}+\mathrm{k}A_{{\scriptscriptstyle 3}}=A_{0}+\boldsymbol{A}=U+\boldsymbol{A}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+E= & -\left\{ \mathrm{D},A\right\} \\
+= & -\left(\partial_{{\scriptscriptstyle 0}}A-\boldsymbol{\nabla}\cdot\boldsymbol{A}+\boldsymbol{\nabla}A_{{\scriptscriptstyle 0}}\right)\\
+= & -\partial_{{\scriptscriptstyle 0}}A+\boldsymbol{\nabla}\cdot\boldsymbol{A}-\boldsymbol{\nabla}A_{{\scriptscriptstyle 0}}\\
+= & -\partial_{{\scriptscriptstyle t}}\left(U+\boldsymbol{A}\right)+\boldsymbol{\nabla}\cdot\boldsymbol{A}-\boldsymbol{\nabla}U\\
+= & -\dfrac{\partial U}{\partial t}+\boldsymbol{\nabla}\cdot\boldsymbol{A}-\boldsymbol{\nabla}U-\dfrac{\partial\boldsymbol{A}}{\partial t}\\
+= & E_{{\scriptscriptstyle 0}}+\boldsymbol{E},\begin{cases}
+E_{{\scriptscriptstyle 0}}=-\dfrac{\partial U}{\partial t}+\boldsymbol{\nabla}\cdot\boldsymbol{A}\\
+\boldsymbol{E}=-\boldsymbol{\nabla}U-\dfrac{\partial\boldsymbol{A}}{\partial t} & \text{electric field 3-vector}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B=\left[\mathrm{D},A\right]=\boldsymbol{\nabla}\times\boldsymbol{A}=\begin{vmatrix}\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\\
+\dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z}\\
+A_{{\scriptscriptstyle 1}} & A_{{\scriptscriptstyle 2}} & A_{{\scriptscriptstyle 3}}
+\end{vmatrix}=\boldsymbol{B}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+qE=qE_{{\scriptscriptstyle 0}}+q\boldsymbol{E}=qE_{{\scriptscriptstyle 0}}+\boldsymbol{F}_{E}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+E=-\left\{ \mathrm{D},A\right\} =E_{{\scriptscriptstyle 0}}+\boldsymbol{E}\\
+B=+\left[\mathrm{D},A\right]=B_{{\scriptscriptstyle 0}}+\boldsymbol{B}=0+\boldsymbol{B}=\boldsymbol{B} & B_{{\scriptscriptstyle 0}}=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left[\mathrm{D},Q\right]= & \boldsymbol{\nabla}\times\boldsymbol{Q}\\
+\left\{ \mathrm{D},Q\right\} = & \partial_{{\scriptscriptstyle 0}}Q-\boldsymbol{\nabla}\cdot\boldsymbol{Q}+\boldsymbol{\nabla}Q_{{\scriptscriptstyle 0}}\\
+= & \partial_{{\scriptscriptstyle 0}}\left(Q_{{\scriptscriptstyle 0}}+\boldsymbol{Q}\right)-\boldsymbol{\nabla}\cdot\boldsymbol{Q}+\boldsymbol{\nabla}Q_{{\scriptscriptstyle 0}}\\
+= & \left(\partial_{{\scriptscriptstyle 0}}Q_{{\scriptscriptstyle 0}}-\boldsymbol{\nabla}\cdot\boldsymbol{Q}\right)+\left(\partial_{{\scriptscriptstyle 0}}\boldsymbol{Q}+\boldsymbol{\nabla}Q_{{\scriptscriptstyle 0}}\right)\\
+= & \left(\dfrac{\partial Q_{{\scriptscriptstyle 0}}}{\partial t}-\boldsymbol{\nabla}\cdot\boldsymbol{Q}\right)+\left(\dfrac{\partial\boldsymbol{Q}}{\partial t}+\boldsymbol{\nabla}E_{{\scriptscriptstyle 0}}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\left[\mathrm{D},E\right]=\boldsymbol{\nabla}\times\boldsymbol{E}=\left(0\right)+\left(\boldsymbol{\nabla}\times\boldsymbol{E}\right)\\
+\left\{ \mathrm{D},E\right\} =\left(\partial_{{\scriptscriptstyle 0}}E_{{\scriptscriptstyle 0}}-\boldsymbol{\nabla}\cdot\boldsymbol{E}\right)+\left(\partial_{{\scriptscriptstyle 0}}\boldsymbol{E}+\boldsymbol{\nabla}E_{{\scriptscriptstyle 0}}\right)=\left(\dfrac{\partial E_{{\scriptscriptstyle 0}}}{\partial t}-\boldsymbol{\nabla}\cdot\boldsymbol{E}\right)+\left(\dfrac{\partial\boldsymbol{E}}{\partial t}+\boldsymbol{\nabla}E_{{\scriptscriptstyle 0}}\right)\\
+\left[\mathrm{D},B\right]=\boldsymbol{\nabla}\times\boldsymbol{B}=\left(0\right)+\left(\boldsymbol{\nabla}\times\boldsymbol{B}\right)\\
+\left\{ \mathrm{D},B\right\} =\left(\partial_{{\scriptscriptstyle 0}}B_{{\scriptscriptstyle 0}}-\boldsymbol{\nabla}\cdot\boldsymbol{B}\right)+\left(\partial_{{\scriptscriptstyle 0}}\boldsymbol{B}+\boldsymbol{\nabla}B_{{\scriptscriptstyle 0}}\right)\overset{B_{{\scriptscriptstyle 0}}=0}{=}-\boldsymbol{\nabla}\cdot\boldsymbol{B}+\partial_{{\scriptscriptstyle 0}}\boldsymbol{B}=\left(-\boldsymbol{\nabla}\cdot\boldsymbol{B}\right)+\left(\dfrac{\partial\boldsymbol{B}}{\partial t}\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\left[\mathrm{D},B\right]=+\left\{ \mathrm{D},E\right\}  & \Leftrightarrow\left(0\right)+\left(\boldsymbol{\nabla}\times\boldsymbol{B}\right)=\left(\dfrac{\partial E_{{\scriptscriptstyle 0}}}{\partial t}-\boldsymbol{\nabla}\cdot\boldsymbol{E}\right)+\left(\dfrac{\partial\boldsymbol{E}}{\partial t}+\boldsymbol{\nabla}E_{{\scriptscriptstyle 0}}\right)\\
+\left[\mathrm{D},E\right]=-\left\{ \mathrm{D},B\right\}  & \Leftrightarrow\left(0\right)+\left(\boldsymbol{\nabla}\times\boldsymbol{E}\right)=\left(-\boldsymbol{\nabla}\cdot\boldsymbol{B}\right)+\left(\dfrac{\partial\boldsymbol{B}}{\partial t}\right)
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+\dfrac{\partial E_{{\scriptscriptstyle 0}}}{\partial t}-\boldsymbol{\nabla}\cdot\boldsymbol{E}=0 & \Leftrightarrow\boldsymbol{\nabla}\cdot\boldsymbol{E}=\dfrac{\partial E_{{\scriptscriptstyle 0}}}{\partial t}\\
+\dfrac{\partial\boldsymbol{E}}{\partial t}+\boldsymbol{\nabla}E_{{\scriptscriptstyle 0}}=\boldsymbol{\nabla}\times\boldsymbol{B} & \Leftrightarrow\boldsymbol{\nabla}\times\boldsymbol{B}=\dfrac{\partial\boldsymbol{E}}{\partial t}+\boldsymbol{\nabla}E_{{\scriptscriptstyle 0}}\text{ 動電生磁}\\
+-\boldsymbol{\nabla}\cdot\boldsymbol{B}=0 & \Leftrightarrow\boldsymbol{\nabla}\cdot\boldsymbol{B}=0\\
+\dfrac{\partial\boldsymbol{B}}{\partial t}=\boldsymbol{\nabla}\times\boldsymbol{E} & \Leftrightarrow\boldsymbol{\nabla}\times\boldsymbol{E}=\dfrac{\partial\boldsymbol{B}}{\partial t}\text{ 動磁生電}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+source term
+\begin_inset Formula 
+\[
+J=J_{{\scriptscriptstyle 0}}+\mathrm{i}J_{{\scriptscriptstyle 1}}+\mathrm{j}J_{{\scriptscriptstyle 2}}+\mathrm{k}J_{{\scriptscriptstyle 3}}=J_{{\scriptscriptstyle 0}}+\boldsymbol{J}=\rho+\boldsymbol{J}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\left[\mathrm{D},B\right]=J+\left\{ \mathrm{D},E\right\}  & \Leftrightarrow\left(0\right)+\left(\boldsymbol{\nabla}\times\boldsymbol{B}\right)=\left(\rho+\dfrac{\partial E_{{\scriptscriptstyle 0}}}{\partial t}-\boldsymbol{\nabla}\cdot\boldsymbol{E}\right)+\left(\boldsymbol{J}+\dfrac{\partial\boldsymbol{E}}{\partial t}+\boldsymbol{\nabla}E_{{\scriptscriptstyle 0}}\right)\\
+\left[\mathrm{D},E\right]=0-\left\{ \mathrm{D},B\right\}  & \Leftrightarrow\left(0\right)+\left(\boldsymbol{\nabla}\times\boldsymbol{E}\right)=\left(-\boldsymbol{\nabla}\cdot\boldsymbol{B}\right)+\left(\dfrac{\partial\boldsymbol{B}}{\partial t}\right)
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+\rho+\dfrac{\partial E_{{\scriptscriptstyle 0}}}{\partial t}-\boldsymbol{\nabla}\cdot\boldsymbol{E}=0 & \Leftrightarrow\boldsymbol{\nabla}\cdot\boldsymbol{E}=\rho+\dfrac{\partial E_{{\scriptscriptstyle 0}}}{\partial t}\\
+\boldsymbol{J}+\dfrac{\partial\boldsymbol{E}}{\partial t}+\boldsymbol{\nabla}E_{{\scriptscriptstyle 0}}=\boldsymbol{\nabla}\times\boldsymbol{B} & \Leftrightarrow\boldsymbol{\nabla}\times\boldsymbol{B}=\boldsymbol{J}+\dfrac{\partial\boldsymbol{E}}{\partial t}+\boldsymbol{\nabla}E_{{\scriptscriptstyle 0}}\text{ 動電生磁}\\
+-\boldsymbol{\nabla}\cdot\boldsymbol{B}=0 & \Leftrightarrow\boldsymbol{\nabla}\cdot\boldsymbol{B}=0\\
+\dfrac{\partial\boldsymbol{B}}{\partial t}=\boldsymbol{\nabla}\times\boldsymbol{E} & \Leftrightarrow\boldsymbol{\nabla}\times\boldsymbol{E}=\dfrac{\partial\boldsymbol{B}}{\partial t}\text{ 動磁生電}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+commutativity vs.
+ anticommutativity
+\end_layout
+
+\begin_layout Standard
+commutativity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+AB=BA\Leftrightarrow AB-BA=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+AB=BA\Rightarrow AB\equiv BA
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+anticommutativity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+AB+BA=0\Leftrightarrow AB=-BA
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+AB=-BA\Rightarrow AB\not\equiv BA
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+self-invented bracket
+\begin_inset Formula 
+\[
+\left[X,Y\right]=\dfrac{XY-YX}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ X,Y\right\} =\dfrac{XY+YX}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+differential operator
+\begin_inset Formula 
+\begin{align*}
+\mathrm{D}= & \dfrac{\partial}{\partial t}+\mathrm{i}\dfrac{\partial}{\partial x}+\mathrm{j}\dfrac{\partial}{\partial y}+\mathrm{k}\dfrac{\partial}{\partial z}=\partial_{{\scriptscriptstyle t}}+\mathrm{i}\partial_{{\scriptscriptstyle x}}+\mathrm{j}\partial_{{\scriptscriptstyle y}}+\mathrm{k}\partial_{z}\\
+= & \dfrac{\partial}{\partial t}+\boldsymbol{i}\dfrac{\partial}{\partial x}+\boldsymbol{j}\dfrac{\partial}{\partial y}+\boldsymbol{k}\dfrac{\partial}{\partial z}=\partial_{{\scriptscriptstyle t}}+\boldsymbol{i}\partial_{{\scriptscriptstyle x}}+\boldsymbol{j}\partial_{{\scriptscriptstyle y}}+\boldsymbol{k}\partial_{z}\\
+= & \dfrac{\partial}{\partial x_{{\scriptscriptstyle 0}}}+\boldsymbol{e}_{{\scriptscriptstyle 1}}\dfrac{\partial}{\partial x_{{\scriptscriptstyle 1}}}+\boldsymbol{e}_{{\scriptscriptstyle 2}}\dfrac{\partial}{\partial x_{{\scriptscriptstyle 2}}}+\boldsymbol{e}_{{\scriptscriptstyle 3}}\dfrac{\partial}{\partial x_{{\scriptscriptstyle 3}}}=\partial_{{\scriptscriptstyle 0}}+\boldsymbol{e}_{{\scriptscriptstyle i}}\partial_{{\scriptscriptstyle i}}=\partial_{{\scriptscriptstyle 0}}+\boldsymbol{\nabla}\\
+= & \partial_{{\scriptscriptstyle 0}}+\mathrm{i}\partial_{{\scriptscriptstyle 1}}+\mathrm{j}\partial_{{\scriptscriptstyle 2}}+\mathrm{k}\partial_{{\scriptscriptstyle 3}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{D}=\partial_{{\scriptscriptstyle 0}}+\mathrm{i}\partial_{{\scriptscriptstyle 1}}+\mathrm{j}\partial_{{\scriptscriptstyle 2}}+\mathrm{k}\partial_{{\scriptscriptstyle 3}}=\partial_{{\scriptscriptstyle 0}}+\boldsymbol{\nabla}=\mathrm{D}_{{\scriptscriptstyle 0}}+\boldsymbol{\mathrm{D}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+nabla = spatial differential operator
+\begin_inset Formula 
+\[
+\boldsymbol{\nabla}=\boldsymbol{e}_{{\scriptscriptstyle i}}\partial_{{\scriptscriptstyle i}}=\sum_{i=1}^{3}\boldsymbol{e}_{{\scriptscriptstyle i}}\partial_{{\scriptscriptstyle i}}=\sum_{i=1}^{3}\boldsymbol{e}_{{\scriptscriptstyle i}}\dfrac{\partial}{\partial x_{{\scriptscriptstyle i}}}=\begin{pmatrix}\dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z}\end{pmatrix}^{\intercal}=\begin{pmatrix}\dfrac{\partial}{\partial x}\\
+\dfrac{\partial}{\partial y}\\
+\dfrac{\partial}{\partial z}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Laplace operator = Laplacian
+\begin_inset Formula 
+\[
+\triangle=\boldsymbol{\nabla}^{2}=\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}=\dfrac{\partial^{2}}{\partial x^{2}}+\dfrac{\partial^{2}}{\partial y^{2}}+\dfrac{\partial^{2}}{\partial z^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+d'Alembert operator
+\begin_inset Formula 
+\[
+\square=\square_{{\scriptscriptstyle c}}=\dfrac{1}{c^{2}}\dfrac{\partial^{2}}{\partial t^{2}}-\dfrac{\partial^{2}}{\partial x^{2}}-\dfrac{\partial^{2}}{\partial y^{2}}-\dfrac{\partial^{2}}{\partial z^{2}}=\dfrac{1}{c^{2}}\dfrac{\partial^{2}}{\partial t^{2}}-\triangle=\dfrac{1}{c^{2}}\dfrac{\partial^{2}}{\partial t^{2}}-\boldsymbol{\nabla}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\square_{{\scriptscriptstyle 1}}=\square_{{\scriptscriptstyle c=1}}=\dfrac{\partial^{2}}{\partial t^{2}}-\dfrac{\partial^{2}}{\partial x^{2}}-\dfrac{\partial^{2}}{\partial y^{2}}-\dfrac{\partial^{2}}{\partial z^{2}}=\dfrac{\partial^{2}}{\partial t^{2}}-\triangle=\dfrac{\partial^{2}}{\partial t^{2}}-\boldsymbol{\nabla}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poisson bracket
+\begin_inset Formula 
+\[
+\left\{ A,B\right\} =
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+complex
+\begin_inset Formula 
+\begin{align*}
+ & c=a+b\mathrm{i}=a+\mathrm{i}b,\begin{cases}
+c\in\mathbb{C}\\
+\mathrm{i}^{2}=-1\\
+a,b\in\mathbb{R} & \Leftrightarrow\left\langle a,b\right\rangle \in\mathbb{R}^{2}
+\end{cases}\\
+= & z=x+y\mathrm{i}=x+\mathrm{i}y,\begin{cases}
+z\in\mathbb{C}\\
+\mathrm{i}^{2}=-1\\
+x,y\in\mathbb{R} & \Leftrightarrow\left\langle x,y\right\rangle \in\mathbb{R}^{2}
+\end{cases}\\
+= & \sqrt{x^{2}+y^{2}}\left(\dfrac{x}{\sqrt{x^{2}+y^{2}}}+\dfrac{y}{\sqrt{x^{2}+y^{2}}}\mathrm{i}\right)=r\left(\cos\theta+\mathrm{i}\sin\theta\right)=r\mathrm{e}^{\mathrm{i}\theta}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+trionion
+\begin_inset Formula 
+\begin{align*}
+ & t=a+b\mathrm{i}+c\mathrm{j}=a+\mathrm{i}b+\mathrm{j}c,\begin{cases}
+t\in\mathbb{T}\\
+\mathrm{i}^{2}=-1\\
+\mathrm{j}^{2}=-1
+\end{cases}\\
+= & w=x+y\mathrm{i}+z\mathrm{j}=x+\mathrm{i}y+\mathrm{j}z,\begin{cases}
+w\in\mathbb{T}\\
+\mathrm{i}^{2}=-1\\
+\mathrm{j}^{2}=-1
+\end{cases}\\
+= & \sqrt{x^{2}+y^{2}+z^{2}}\left(\dfrac{x}{\sqrt{x^{2}+y^{2}+z^{2}}}+\dfrac{y}{\sqrt{x^{2}+y^{2}+z^{2}}}\mathrm{i}+\dfrac{z}{\sqrt{x^{2}+y^{2}+z^{2}}}\mathrm{j}\right)=?
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+A\left(BC\right)=\left(AB\right)C & \left(a\right)\text{associativity}\\
+A\left(B+C\right)=AB+AC & \left(d\right)\text{distributivity}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathbb{T}\ni\mathrm{i}\mathrm{j}= & X+Y\mathrm{i}+Z\mathrm{j}\in\mathbb{T}\\
+-\mathrm{j}=\left(\mathrm{i}^{2}\right)\mathrm{j}\overset{\left(a\right)}{=}\mathrm{i}\left(\mathrm{i}\mathrm{j}\right)= & \mathrm{i}\left(X+Y\mathrm{i}+Z\mathrm{j}\right)\overset{\left(d\right)}{=}-Y+X\mathrm{i}+Z\mathrm{i}\mathrm{j}\\
+\mathrm{i}\mathrm{j}= & \dfrac{Y}{Z}-\dfrac{X}{Z}\mathrm{i}-\dfrac{1}{Z}\mathrm{j}\Rightarrow\begin{cases}
+X=\dfrac{Y}{Z}\\
+Y=-\dfrac{X}{Z}\\
+Z=-\dfrac{1}{Z} & \Rightarrow Z^{2}=-1\Rightarrow Z\notin\mathbb{R}
+\end{cases}\\
+-\mathrm{i}=\mathrm{i}\left(\mathrm{j}^{2}\right)\overset{\left(a\right)}{=}\left(\mathrm{i}\mathrm{j}\right)\mathrm{j}= & \left(X+Y\mathrm{i}+Z\mathrm{j}\right)\mathrm{j}\overset{\left(d\right)}{=}-Z+X\mathrm{j}+Y\mathrm{i}\mathrm{j}\\
+\mathrm{i}\mathrm{j}= & \dfrac{Z}{Y}-\dfrac{1}{Y}\mathrm{i}-\dfrac{X}{Y}\mathrm{j}\Rightarrow\begin{cases}
+X=\dfrac{Z}{Y}\\
+Y=-\dfrac{1}{Y} & \Rightarrow Y^{2}=-1\Rightarrow Y\notin\mathbb{R}\\
+Z=-\dfrac{X}{Y}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+quaternion
+\begin_inset Formula 
+\begin{align*}
+ & q=a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d,\begin{cases}
+q\in\mathbb{H}\\
+a,b,c,d\in\mathbb{R} & \Leftrightarrow\left\langle a,b,c,d\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & w=t+x\mathrm{i}+y\mathrm{j}+z\mathrm{k}=t+\mathrm{i}x+\mathrm{j}y+\mathrm{k}z,\begin{cases}
+w\in\mathbb{H}\\
+t,x,y,z\in\mathbb{R} & \Leftrightarrow\left\langle t,x,y,z\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & ?
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\mathrm{i}\mathrm{j}=\mathrm{k}\\
+\mathrm{k}\in\mathbb{H}
+\end{cases}\Rightarrow\mathrm{i}\mathrm{j}\in\mathbb{H}\text{ for closure property}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{k}^{2}=-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathrm{i}\mathrm{j} & =\mathrm{k}\\
+\mathrm{i}\mathrm{j}\mathrm{k}=\mathrm{i}\left(\mathrm{j}\mathrm{k}\right)\overset{\left(a\right)}{=}\left(\mathrm{i}\mathrm{j}\right)\mathrm{k} & =\mathrm{k}\mathrm{k}=\mathrm{k}^{2}=-1\\
+\mathrm{k}\mathrm{i}\mathrm{j}=\left(\mathrm{k}\mathrm{i}\right)\mathrm{j}\overset{\left(a\right)}{=}\mathrm{k}\left(\mathrm{i}\mathrm{j}\right) & =\mathrm{k}\mathrm{k}=\mathrm{k}^{2}=-1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathrm{i}\mathrm{j} & =\mathrm{k}\\
+-\mathrm{j}=\left(\mathrm{i}^{2}\right)\mathrm{j}\overset{\left(a\right)}{=}\mathrm{i}\left(\mathrm{i}\mathrm{j}\right) & =\mathrm{i}\mathrm{k}\\
+-\mathrm{i}=\mathrm{i}\left(\mathrm{j}^{2}\right)\overset{\left(a\right)}{=}\left(\mathrm{i}\mathrm{j}\right)\mathrm{j} & =\mathrm{k}\mathrm{j}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-\mathrm{j}=\left(\mathrm{i}^{2}\right)\mathrm{j}\overset{\left(a\right)}{=}\mathrm{i}\left(\mathrm{i}\mathrm{j}\right) & =\mathrm{i}\mathrm{k}\\
+1=-\mathrm{j}^{2}=\mathrm{j}\left(-\mathrm{j}\right) & =\mathrm{j}\left(\mathrm{i}\mathrm{k}\right)\overset{\left(a\right)}{=}\left(\mathrm{j}\mathrm{i}\right)\mathrm{k}\\
+\mathrm{k}=\left[1\right]\mathrm{k} & =\left[\left(\mathrm{j}\mathrm{i}\right)\mathrm{k}\right]\mathrm{k}\overset{\left(a\right)}{=}\left(\mathrm{j}\mathrm{i}\right)\left(\mathrm{k}^{2}\right)=\left(\mathrm{j}\mathrm{i}\right)\left(-1\right)\\
+-\mathrm{k} & =\mathrm{j}\mathrm{i}\\
+-\mathrm{i}=\mathrm{i}\left(\mathrm{j}^{2}\right)\overset{\left(a\right)}{=}\left(\mathrm{i}\mathrm{j}\right)\mathrm{j} & =\mathrm{k}\mathrm{j}\\
+1=\left(-\mathrm{i}\right)\mathrm{i} & =\left(\mathrm{k}\mathrm{j}\right)\mathrm{i}\overset{\left(a\right)}{=}\mathrm{k}\left(\mathrm{j}\mathrm{i}\right)=\mathrm{k}\mathrm{j}\mathrm{i}\\
+1 & =\mathrm{k}\mathrm{j}\mathrm{i}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+AB\not\equiv BA
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+AB-BA=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\begin{cases}
+\mathrm{i}\mathrm{j}=\mathrm{k}\\
+\mathrm{j}\mathrm{i}=-\mathrm{k}
+\end{cases}\Leftrightarrow & \mathrm{j}\mathrm{i}=-\mathrm{k}=-\mathrm{i}\mathrm{j}\\
+\Rightarrow & \mathrm{j}\mathrm{i}=-\mathrm{i}\mathrm{j}\\
+\Leftrightarrow & \mathrm{i}\mathrm{j}+\mathrm{j}\mathrm{i}=0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\begin{cases}
+\mathrm{k}\mathrm{i}\mathrm{j}=-1\\
+\mathrm{k}\mathrm{j}\mathrm{i}=1
+\end{cases}\Leftrightarrow & \mathrm{k}\mathrm{i}\mathrm{j}=-1=-\mathrm{k}\mathrm{j}\mathrm{i}\\
+\Rightarrow & \mathrm{k}\mathrm{i}\mathrm{j}=-\mathrm{k}\mathrm{j}\mathrm{i}\\
+\Leftrightarrow & \mathrm{k}\mathrm{i}\mathrm{j}+\mathrm{k}\mathrm{j}\mathrm{i}=0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & q=a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d,\begin{cases}
+q\in\mathbb{H}\\
+\mathrm{i}^{2}=\mathrm{j}^{2}=\mathrm{k}^{2}=-1=\mathrm{i}\mathrm{j}\mathrm{k} & \Rightarrow\mathrm{i}\mathrm{j}=\mathrm{k}\\
+a,b,c,d\in\mathbb{R} & \Leftrightarrow\left\langle a,b,c,d\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & w=t+x\mathrm{i}+y\mathrm{j}+z\mathrm{k}=t+\mathrm{i}x+\mathrm{j}y+\mathrm{k}z,\begin{cases}
+w\in\mathbb{H}\\
+\mathrm{i}^{2}=\mathrm{j}^{2}=\mathrm{k}^{2}=-1=\mathrm{i}\mathrm{j}\mathrm{k} & \Rightarrow\mathrm{i}\mathrm{j}=\mathrm{k}\\
+t,x,y,z\in\mathbb{R} & \Leftrightarrow\left\langle t,x,y,z\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & t+\begin{pmatrix}\mathrm{i} & \mathrm{j} & \mathrm{k}\end{pmatrix}\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\begin{pmatrix}\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\end{pmatrix}\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\begin{pmatrix}\boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}_{{\scriptscriptstyle 3}}\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\boldsymbol{x},\begin{cases}
+\boldsymbol{e}_{{\scriptscriptstyle 1}}=\boldsymbol{i}=\mathrm{i}\\
+\boldsymbol{e}_{{\scriptscriptstyle 2}}=\boldsymbol{j}=\mathrm{j}\\
+\boldsymbol{e}_{{\scriptscriptstyle 3}}=\boldsymbol{k}=\mathrm{k}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{x}_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \left(x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}}\mathrm{i}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}}\mathrm{j}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}\mathrm{k}\right)\left(x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}}\mathrm{i}+x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}}\mathrm{j}+x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}\mathrm{k}\right)\\
+= & x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}}\mathrm{i}^{{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}}\mathrm{i}\mathrm{j}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}\mathrm{i}\mathrm{k}\\
++ & x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}}\mathrm{j}\mathrm{i}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}}\mathrm{j}^{{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}\mathrm{j}\mathrm{k}\\
++ & x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}}\mathrm{k}\mathrm{i}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}}\mathrm{k}\mathrm{j}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}\mathrm{k}^{{\scriptscriptstyle 2}}\\
+= & -\left(x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}\right)\\
++ & \left(x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}-x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}}\right)\mathrm{j}\mathrm{k}+\left(x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}}-x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}\right)\mathrm{k}\mathrm{i}+\left(x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}}-x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}}\right)\mathrm{i}\mathrm{j}\\
+= & -\left(x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}\right)\\
++ & \left(x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}-x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}}\right)\mathrm{i}+\left(x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}}-x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}\right)\mathrm{j}+\left(x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}}-x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}}\right)\mathrm{k}\\
+= & -\left(\boldsymbol{x}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)+\left(\boldsymbol{x}_{{\scriptscriptstyle 1}}\times\boldsymbol{x}_{{\scriptscriptstyle 2}}\right),\begin{cases}
+\boldsymbol{x}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}\\
+\boldsymbol{x}_{{\scriptscriptstyle 1}}\times\boldsymbol{x}_{{\scriptscriptstyle 2}}=\begin{vmatrix}\mathrm{i} & \mathrm{j} & \mathrm{k}\\
+x_{{\scriptscriptstyle 1}{\scriptscriptstyle 1}} & x_{{\scriptscriptstyle 1}{\scriptscriptstyle 2}} & x_{{\scriptscriptstyle 1}{\scriptscriptstyle 3}}\\
+x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}} & x_{{\scriptscriptstyle 2}{\scriptscriptstyle 2}} & x_{{\scriptscriptstyle 2}{\scriptscriptstyle 3}}
+\end{vmatrix}
+\end{cases}\\
+= & -\boldsymbol{x}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}+\boldsymbol{x}_{{\scriptscriptstyle 1}}\times\boldsymbol{x}_{{\scriptscriptstyle 2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q_{{\scriptscriptstyle 1}}q_{{\scriptscriptstyle 2}}= & \left(q_{{\scriptscriptstyle 10}}+q_{{\scriptscriptstyle 11}}\mathrm{i}+q_{{\scriptscriptstyle 12}}\mathrm{j}+q_{{\scriptscriptstyle 13}}\mathrm{k}\right)\left(q_{{\scriptscriptstyle 20}}+q_{{\scriptscriptstyle 21}}\mathrm{i}+q_{{\scriptscriptstyle 22}}\mathrm{j}+q_{{\scriptscriptstyle 23}}\mathrm{k}\right)\\
+= & \left(x_{{\scriptscriptstyle 10}}+\boldsymbol{x}_{{\scriptscriptstyle 1}}\right)\left(x_{{\scriptscriptstyle 20}}+\boldsymbol{x}_{{\scriptscriptstyle 2}}\right),\begin{cases}
+x_{{\scriptscriptstyle i\mu}}=q_{{\scriptscriptstyle i\mu}} & \mu\in\left\{ 0\right\} \cup\left(\mathbb{N}\cap\left[1,3\right]\right)\\
+\boldsymbol{x}_{{\scriptscriptstyle i}}=x_{{\scriptscriptstyle ij}}\boldsymbol{e}_{{\scriptscriptstyle j}} & i,j\in\mathbb{N}\cap\left[1,3\right],\begin{cases}
+\boldsymbol{e}_{{\scriptscriptstyle 1}}=\mathrm{i}\\
+\boldsymbol{e}_{{\scriptscriptstyle 2}}=\mathrm{j}\\
+\boldsymbol{e}_{{\scriptscriptstyle 3}}=\mathrm{k}
+\end{cases}
+\end{cases}\\
+= & x_{{\scriptscriptstyle 10}}x_{{\scriptscriptstyle 20}}+x_{{\scriptscriptstyle 10}}\boldsymbol{x}_{{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 20}}\boldsymbol{x}_{{\scriptscriptstyle 1}}+\boldsymbol{x}_{{\scriptscriptstyle 1}}\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+= & x_{{\scriptscriptstyle 10}}x_{{\scriptscriptstyle 20}}+x_{{\scriptscriptstyle 10}}\boldsymbol{x}_{{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 20}}\boldsymbol{x}_{{\scriptscriptstyle 1}}-\boldsymbol{x}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}+\boldsymbol{x}_{{\scriptscriptstyle 1}}\times\boldsymbol{x}_{{\scriptscriptstyle 2}}\\
+= & \left(x_{{\scriptscriptstyle 10}}x_{{\scriptscriptstyle 20}}-\boldsymbol{x}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)+\left(x_{{\scriptscriptstyle 10}}\boldsymbol{x}_{{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 20}}\boldsymbol{x}_{{\scriptscriptstyle 1}}+\boldsymbol{x}_{{\scriptscriptstyle 1}}\times\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)\\
+x_{{\scriptscriptstyle 10}}x_{{\scriptscriptstyle 20}}-\boldsymbol{x}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}= & \begin{pmatrix}q_{{\scriptscriptstyle 10}} & q_{{\scriptscriptstyle 11}} & q_{{\scriptscriptstyle 12}} & q_{{\scriptscriptstyle 13}}\end{pmatrix}\begin{pmatrix}1\\
+ & -1\\
+ &  & -1\\
+ &  &  & -1
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 20}}\\
+q_{{\scriptscriptstyle 21}}\\
+q_{{\scriptscriptstyle 22}}\\
+q_{{\scriptscriptstyle 23}}
+\end{pmatrix}=q_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \mu}}\eta_{{\scriptscriptstyle \mu\nu}}q_{{\scriptscriptstyle 2}}^{{\scriptscriptstyle \nu}}\\
+= & \begin{pmatrix}q_{{\scriptscriptstyle 10}} & q_{{\scriptscriptstyle 11}} & q_{{\scriptscriptstyle 12}} & q_{{\scriptscriptstyle 13}}\end{pmatrix}\begin{pmatrix}1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 20}}\\
+q_{{\scriptscriptstyle 21}}\\
+q_{{\scriptscriptstyle 22}}\\
+q_{{\scriptscriptstyle 23}}
+\end{pmatrix}=\boldsymbol{q}_{{\scriptscriptstyle 1}}^{\intercal}H\boldsymbol{q}_{{\scriptscriptstyle 2}},H=\left[\eta_{{\scriptscriptstyle \mu\nu}}\right]_{4\times4}=\eta_{{\scriptscriptstyle \mu\nu}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\eta=H=\left[\eta_{{\scriptscriptstyle \mu\nu}}\right]_{4\times4}=\begin{pmatrix}1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1
+\end{pmatrix}=\begin{pmatrix}1\\
+ & -1\\
+ &  & -1\\
+ &  &  & -1
+\end{pmatrix}=\eta_{{\scriptscriptstyle \mu\nu}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{q}_{{\scriptscriptstyle 1}}^{\intercal}=\begin{pmatrix}q_{{\scriptscriptstyle 10}} & q_{{\scriptscriptstyle 11}} & q_{{\scriptscriptstyle 12}} & q_{{\scriptscriptstyle 13}}\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{q}_{{\scriptscriptstyle 2}}=\begin{pmatrix}q_{{\scriptscriptstyle 20}}\\
+q_{{\scriptscriptstyle 21}}\\
+q_{{\scriptscriptstyle 22}}\\
+q_{{\scriptscriptstyle 23}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q_{{\scriptscriptstyle 1}}q_{{\scriptscriptstyle 2}}= & \left(x_{{\scriptscriptstyle 10}}x_{{\scriptscriptstyle 20}}-\boldsymbol{x}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)+\left(x_{{\scriptscriptstyle 10}}\boldsymbol{x}_{{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 20}}\boldsymbol{x}_{{\scriptscriptstyle 1}}+\boldsymbol{x}_{{\scriptscriptstyle 1}}\times\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)\\
+QP= & \left(Q_{{\scriptscriptstyle 0}}P_{{\scriptscriptstyle 0}}-\boldsymbol{Q}\cdot\boldsymbol{P}\right)+\left(Q_{{\scriptscriptstyle 0}}\boldsymbol{P}+P_{{\scriptscriptstyle 0}}\boldsymbol{Q}+\boldsymbol{Q}\times\boldsymbol{P}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+QP=\left(Q_{{\scriptscriptstyle 0}}P_{{\scriptscriptstyle 0}}-\boldsymbol{Q}\cdot\boldsymbol{P}\right)+\left(Q_{{\scriptscriptstyle 0}}\boldsymbol{P}+P_{{\scriptscriptstyle 0}}\boldsymbol{Q}+\boldsymbol{Q}\times\boldsymbol{P}\right)
+\]
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Standard
 experimental unit and treatment response
@@ -199,6 +1723,18 @@ j\in\mathbb{N}\cap\left[1,p\right] & \mathbb{N}\ni p\text{ columns}\\
 k\in\mathbb{N}\cap\left[1,p\right] & \mathbb{N}\ni p\text{ treatments}
 \end{cases}
 \end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+model assumption and experimental unit, measurement/observational unit
+\begin_inset Formula 
+\[
+Y_{{\scriptscriptstyle ijk}}=\mu+\tau_{{\scriptscriptstyle i}}+\beta_{{\scriptscriptstyle j}}+\epsilon_{{\scriptscriptstyle ij}}+\varDelta_{{\scriptscriptstyle ijk}}
+\]
 
 \end_inset
 
