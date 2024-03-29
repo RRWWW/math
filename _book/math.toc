@@ -340,6 +340,20 @@
 \contentsline {chapter}{\numberline {36}tendon pathophysiology}{261}{chapter.36}%
 \contentsline {section}{\numberline {36.1}histology}{261}{section.36.1}%
 \contentsline {chapter}{\numberline {37}group theory}{263}{chapter.37}%
-\contentsline {section}{\numberline {37.1}complex group representation}{263}{section.37.1}%
-\contentsline {section}{\numberline {37.2}quaternion group representation}{264}{section.37.2}%
-\contentsline {chapter}{references}{269}{chapter*.6}%
+\contentsline {section}{\numberline {37.1}matrix group}{263}{section.37.1}%
+\contentsline {section}{\numberline {37.2}group definition and basic theorem}{263}{section.37.2}%
+\contentsline {section}{\numberline {37.3}complex group representation}{264}{section.37.3}%
+\contentsline {subsection}{\numberline {37.3.1}complex basis group}{264}{subsection.37.3.1}%
+\contentsline {subsection}{\numberline {37.3.2}\(\mathbb {C}\rightarrow \mathcal {M}_{2\times 2}\left (\mathbb {R}\right )\)}{264}{subsection.37.3.2}%
+\contentsline {subsection}{\numberline {37.3.3}( determinant of complex group representation ) equivalent to ( squared modulus of complex number )}{266}{subsection.37.3.3}%
+\contentsline {subsubsection}{\numberline {37.3.3.1}Lagrange identity}{266}{subsubsection.37.3.3.1}%
+\contentsline {subsection}{\numberline {37.3.4}Euler formula proved by complex group representation}{267}{subsection.37.3.4}%
+\contentsline {section}{\numberline {37.4}quaternion group representation}{268}{section.37.4}%
+\contentsline {subsection}{\numberline {37.4.1}\(\mathbb {H}\rightarrow \mathcal {M}_{2\times 2}\left (\mathbb {C}\right )\)}{268}{subsection.37.4.1}%
+\contentsline {subsubsection}{\numberline {37.4.1.1}Euler identity}{270}{subsubsection.37.4.1.1}%
+\contentsline {subsection}{\numberline {37.4.2}\(\mathbb {H}\rightarrow \mathcal {M}_{4\times 4}\left (\mathbb {R}\right )\)}{272}{subsection.37.4.2}%
+\contentsline {chapter}{\numberline {38}tensor}{273}{chapter.38}%
+\contentsline {section}{\numberline {38.1}Einstein summation convention}{273}{section.38.1}%
+\contentsline {subsection}{\numberline {38.1.1}dummy index}{273}{subsection.38.1.1}%
+\contentsline {subsection}{\numberline {38.1.2}free index}{273}{subsection.38.1.2}%
+\contentsline {chapter}{references}{275}{chapter*.9}%

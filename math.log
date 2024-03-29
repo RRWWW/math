@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.18)  28 MAR 2024 22:58
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.29)  29 MAR 2024 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -987,6 +987,12 @@ LaTeX Warning: Label `fig:unnamed-chunk-5' multiply defined.
 
 LaTeX Warning: Label `fig:unnamed-chunk-6' multiply defined.
 
+
+LaTeX Warning: Label `fig:unnamed-chunk-3' multiply defined.
+
+
+LaTeX Warning: Label `thm:unnamed-chunk-4' multiply defined.
+
 )
 \openout1 = `math.aux'.
 
@@ -1417,13 +1423,13 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
 (Font)              scaled to size 6.99925pt on input line 151.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
 (Font)              scaled to size 4.99947pt on input line 151.
-[7] [8] [9] [10] [11] [12])
+[7] [8] [9] [10] [11] [12] [13])
 \tf@toc=\write6
 \openout6 = `math.toc'.
 
-[13] [14
+[14] [15
 
-] [15] [16
+] [16
 
 ] [17] [18]
 Chapter 1.
@@ -4539,12 +4545,9 @@ Chapter 33.
 [253] [254]
 Chapter 34.
 
-Underfull \hbox (badness 10000) in paragraph at lines 12406--12407
+Underfull \hbox (badness 10000) in paragraph at lines 12408--12409
 [][][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] [] [][][] [][] [][][] [][] [][][][][] [][] [][] [][] [][][][][][][][][][] [][] [] [][] [][][][][][][][][][][] [][]
  []
-
-
-Underfull \vbox (badness 3302) has occurred while \output is active []
 
 [255
 
@@ -4621,7 +4624,7 @@ Missing character: There is no 式 (U+5F0F) in font [lmroman10-regular]:mapping=
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [262]
-Underfull \hbox (badness 5970) in paragraph at lines 12959--12960
+Underfull \hbox (badness 5970) in paragraph at lines 12961--12962
  \TU/lmr/bx/n/10 34.1.3.5.1 4-differential operator[][] \TU/lmr/m/n/10 4-differential operator / four-differential operator =
  []
 
@@ -4629,7 +4632,7 @@ Underfull \hbox (badness 5970) in paragraph at lines 12959--12960
 Underfull \vbox (badness 1917) has occurred while \output is active []
 
 [263]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 12970.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 12972.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [264] [265] [266] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
@@ -4707,7 +4710,7 @@ Missing character: There is no 磁 (U+78C1) in font [lmroman5-regular]:mapping=t
 Missing character: There is no 生 (U+751F) in font [lmroman5-regular]:mapping=tex-text;!
 Missing character: There is no 電 (U+96FB) in font [lmroman5-regular]:mapping=tex-text;!
 [267]
-Underfull \hbox (badness 10000) in paragraph at lines 13243--13244
+Underfull \hbox (badness 10000) in paragraph at lines 13247--13248
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][] [][] [][][] [][] [][][][][][] [][] [][][][][][][][][][] [][] [][] [][] [][][][][][][] [][] [][][][][][][][][][] [][]
  []
 
@@ -4722,7 +4725,7 @@ Missing character: There is no 數 (U+6578) in font [lmroman10-regular]:mapping=
 [268]
 Chapter 35.
 
-Underfull \hbox (badness 10000) in paragraph at lines 13259--13260
+Underfull \hbox (badness 10000) in paragraph at lines 13263--13264
 [][][]$[][][][][] [] [] [] [][][][][] [] [][][][][][][][][][] [] [][][] [] [][][][][] [] [][][][][][][][][][] [][] [][][] [] [][][][][][][][][][] [][] [][][] [][] [][][][][] [][] [][][][][] [][] [][][][][][][][][][] [][]
  []
 
@@ -4736,31 +4739,75 @@ Chapter 36.
 
 ]
 Chapter 37.
-[273] [274]
-Underfull \hbox (badness 10000) in paragraph at lines 13542--13543
+
+Underfull \hbox (badness 10000) in paragraph at lines 13317--13318
+[][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] [][][][][] [] [][][][][][][][][][][][] [] [][][][][][][][][][][] [] [][][][][][][][][][][][] [] [][] [] [][][] [] [][][][][] []
+ []
+
+[273]
+Underfull \hbox (badness 10000) in paragraph at lines 13367--13368
+[][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][] [][] [][][] [][] [][] [][] [][][] [][] [][][][][][] [][] [][][][][][] [][] [][][][][][][][][][][] [][] [][][][][][] [][]
+ []
+
+File: 202403281312-group-theory_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+<use 202403281312-group-theory_files/figure-latex/unnamed-chunk-3-1.pdf>
+[274] [275] [276]
+Overfull \hbox (13.847pt too wide) detected at line 13615
+[][]
+ []
+
+[277]
+Underfull \hbox (badness 10000) in paragraph at lines 13732--13733
 [][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][][][][][][] [] [][][] [] [][][][] [] [][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][] [] [][] [] [][][][][][][][][][] [] [][][][][] [] [][][] [][]
  []
 
-[275]
-Underfull \hbox (badness 10000) in paragraph at lines 13615--13615
+
+Underfull \hbox (badness 10000) in paragraph at lines 13805--13805
 [][][][][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][][][][][][] [] [][][] [] [][][][] [] [][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][] [] [][] [] [][][][][][][][][][] [] [][][][][] [] [][][][] [][] [][][][][][][][][][][] []
  []
 
-[276]
-Underfull \vbox (badness 2707) has occurred while \output is active []
+[278]
+Underfull \vbox (badness 2111) has occurred while \output is active []
 
-[277] [278]
-Underfull \hbox (badness 10000) in paragraph at lines 13906--13906
+[279]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[280]
+Overfull \hbox (13.48851pt too wide) detected at line 14177
+[][]
+ []
+
+
+Underfull \vbox (badness 6741) has occurred while \output is active []
+
+[281]
+Overfull \hbox (3.86836pt too wide) in paragraph at lines 14199--14207
+[]\TU/lmr/m/n/10 Let $[] [] [] [] [] []
+ []
+
+[282]
+Underfull \hbox (badness 10000) in paragraph at lines 14248--14249
+[][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][][][][][][] [] [][][] [] [][][][] [] [][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][] [] [][] [] [][][][][][][][][][] [] [][][][][] [] [][][][] [][]
+ []
+
+[283] [284
+
+]
+Chapter 38.
+[285] [286
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 14266--14266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13910--13910
+Underfull \hbox (badness 10000) in paragraph at lines 14270--14270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13914--13914
+Underfull \hbox (badness 10000) in paragraph at lines 14274--14274
 
  []
 
@@ -4773,12 +4820,12 @@ Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=
 Missing character: There is no 矩 (U+77E9) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 陣 (U+9663) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 13918--13918
+Underfull \hbox (badness 10000) in paragraph at lines 14278--14278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13922--13922
+Underfull \hbox (badness 10000) in paragraph at lines 14282--14282
 
  []
 
@@ -4790,22 +4837,22 @@ Missing character: There is no 態 (U+614B) in font [lmroman10-regular]:mapping=
 Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 13926--13926
+Underfull \hbox (badness 10000) in paragraph at lines 14286--14286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13930--13930
+Underfull \hbox (badness 10000) in paragraph at lines 14290--14290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13934--13934
+Underfull \hbox (badness 10000) in paragraph at lines 14294--14294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13938--13938
+Underfull \hbox (badness 10000) in paragraph at lines 14298--14298
 
  []
 
@@ -4826,20 +4873,18 @@ Missing character: There is no 碩 (U+78A9) in font [lmroman10-regular]:mapping=
 Missing character: There is no 教 (U+6559) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 育 (U+80B2) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 13942--13942
+Underfull \hbox (badness 10000) in paragraph at lines 14302--14302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13946--13946
+Underfull \hbox (badness 10000) in paragraph at lines 14306--14306
 
  []
 
-[279
+[287]
 
-]
-
-LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (269 not 279).
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (277 not 287).
                Rerun to correct this.
 
 (./math.aux)
@@ -4852,12 +4897,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 49350 strings out of 476759
- 1186208 string characters out of 5800688
+ 49383 strings out of 476759
+ 1187282 string characters out of 5800688
  2045148 words of memory out of 5000000
- 70275 multiletter control sequences out of 15000+600000
+ 70307 multiletter control sequences out of 15000+600000
  579930 words of font info for 146 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,23n,121p,9665b,961s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on math.pdf (279 pages).
+Output written on math.pdf (287 pages).

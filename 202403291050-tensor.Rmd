@@ -1,0 +1,7 @@
+# tensor
+
+## Einstein summation convention
+
+### dummy index
+
+### free index

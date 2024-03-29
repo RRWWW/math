@@ -4,6 +4,8 @@
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1PV411P7w4&autoplay=0"></iframe>
+
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1qa411B792&autoplay=0"></iframe>
 :::
 
 https://en.wikipedia.org/wiki/Blackboard_bold
@@ -25,6 +27,8 @@ x,y\in\mathbb{R} & \Leftrightarrow\left\langle x,y\right\rangle \in\mathbb{R}^{2
 = & \sqrt{x^{2}+y^{2}}\left(\dfrac{x}{\sqrt{x^{2}+y^{2}}}+\dfrac{y}{\sqrt{x^{2}+y^{2}}}\mathrm{i}\right)=r\left(\cos\theta+\mathrm{i}\sin\theta\right)=r\mathrm{e}^{\mathrm{i}\theta}
 \end{aligned}
 $$
+
+Also see [complex group representation]^[\@ref(complex-group-representation)]^.
 
 ### trionion / triernion / triplex / ternion
 
@@ -920,6 +924,8 @@ $$
 https://en.wikipedia.org/wiki/Quaternion_group
 
 [group theory]^[\@ref(group-theory)]^
+
+or please first see [quaternion group representation]^[\@ref(quaternion-group-representation)]^.
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1rj41117VW&autoplay=0"></iframe>

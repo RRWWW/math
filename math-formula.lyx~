@@ -97,11 +97,403 @@
 \begin_body
 
 \begin_layout Standard
+\align center
 group theory
+\begin_inset Formula 
+\[
+\mathcal{M}=\left(\mathcal{M},\cdot\right)\subset\left(\mathcal{M}_{2\times2}\left(\mathbb{C}\right)-\left\{ 0\right\} ,\cdot\right)=\mathcal{M}_{2\times2}\left(\mathbb{C}\right)-\left\{ \begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \forall\left\langle M_{{\scriptscriptstyle 1}},M_{{\scriptscriptstyle 2}}\right\rangle \in\mathcal{M}^{2},\exists M_{{\scriptscriptstyle 1}}M_{{\scriptscriptstyle 2}}\in\mathcal{M}\left[M_{{\scriptscriptstyle 1}}M_{{\scriptscriptstyle 2}}=M_{{\scriptscriptstyle 1}}\cdot M_{{\scriptscriptstyle 2}}\right]\\
+\Leftrightarrow & \cdot:\mathcal{M}\times\mathcal{M}=\mathcal{M}^{2}\rightarrow\mathcal{M}\\
+\Leftrightarrow & \cdot:\mathcal{M}\times\mathcal{M}\rightarrow\mathcal{M}\\
+\Leftrightarrow & \mathcal{M}\times\mathcal{M}\overset{\cdot}{\rightarrow}\mathcal{M}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\forall\left\langle M_{{\scriptscriptstyle 1}},M_{{\scriptscriptstyle 2}},M_{{\scriptscriptstyle 3}}\right\rangle \in\mathcal{M}^{3}\left[M_{{\scriptscriptstyle 1}}\left(M_{{\scriptscriptstyle 2}}M_{{\scriptscriptstyle 3}}\right)=\left(M_{{\scriptscriptstyle 1}}M_{{\scriptscriptstyle 2}}\right)M_{{\scriptscriptstyle 3}}\right] & \text{associativity}\\
+\exists I=I_{2}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\in\mathcal{M},\forall M\in\mathcal{M}\left[IM=M\right] & \text{left unit element}\\
+\forall M\in\mathcal{M},\exists M^{-1}\in\mathcal{M}\left[M^{-1}M=I\right] & \text{left inverse (element)}
+\end{cases}\\
+\Rightarrow & \mathcal{M}=\left(\mathcal{M},\cdot\right)\text{ is a matrix group}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\circ:G\times G=G^{2}\rightarrow G & \text{closed binary operation}\\
+\forall\left\langle g_{{\scriptscriptstyle 1}},g_{{\scriptscriptstyle 2}},g_{{\scriptscriptstyle 3}}\right\rangle \in G^{3}\left[g_{{\scriptscriptstyle 1}}\circ\left(g_{{\scriptscriptstyle 2}}\circ g_{{\scriptscriptstyle 3}}\right)=\left(g_{{\scriptscriptstyle 1}}\circ g_{{\scriptscriptstyle 2}}\right)\circ g_{{\scriptscriptstyle 3}}\right] & \text{associativity}\\
+\exists e=\in G,\forall g\in G\left[e\circ g=g\right] & \text{left unit element}\\
+\forall g\in G,\exists g^{-1}\in G\left[g^{-1}\circ g=e\right] & \text{left inverse (element)}
+\end{cases}\\
+\Leftrightarrow & G=\left(G,\circ\right)\text{ is a group}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+G= & \left\{ 1,\mathrm{i},-1,-\mathrm{i}\right\} \\
+= & \left\{ \mathrm{i}^{0},\mathrm{i}^{1},\mathrm{i}^{2},\mathrm{i}^{3}\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \forall\left\langle g_{{\scriptscriptstyle 1}},g_{{\scriptscriptstyle 2}}\right\rangle \in G^{2},\exists g_{{\scriptscriptstyle 1}}g_{{\scriptscriptstyle 2}}\in G\left[g_{{\scriptscriptstyle 1}}g_{{\scriptscriptstyle 2}}=g_{{\scriptscriptstyle 1}}\cdot g_{{\scriptscriptstyle 2}}\right]\\
+\Leftrightarrow & \cdot:G\times G=G^{2}\rightarrow G
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdot$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-complex gropu representation
+complex group representation
 \begin_inset Formula 
 \[
 1\leftrightarrow\begin{pmatrix}1 & 0\\
@@ -287,6 +679,380 @@ y & x
 \end_inset
 
 
+\begin_inset Formula 
+\[
+\mathbb{C}\rightarrow\mathcal{M}_{2\times2}\left(\mathbb{R}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+( determinant of complex group representation ) equivalent to ( squared
+ modulus of complex number )
+\begin_inset Formula 
+\[
+\det\left(xI+yJ\right)=\det\begin{pmatrix}x & -y\\
+y & x
+\end{pmatrix}=\begin{vmatrix}x & -y\\
+y & x
+\end{vmatrix}=x^{2}+y^{2}=\left|x+y\mathrm{i}\right|^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lagrange identity
+\begin_inset Formula 
+\begin{align*}
+ & \det\left[\left(aI+bJ\right)\left(cI+dJ\right)\right]\\
+= & \det\left[\begin{pmatrix}a & -b\\
+b & a
+\end{pmatrix}\begin{pmatrix}c & -d\\
+d & c
+\end{pmatrix}\right]\\
+= & \det\begin{pmatrix}ac-bd & -ad-bc\\
+ad+bc & ac-bd
+\end{pmatrix}=\left|\left(ac-bd\right)+\left(ad+bc\right)\mathrm{i}\right|^{2}=\left(ac-bd\right)^{2}+\left(ad+bc\right)^{2}\\
+= & \left[\det\begin{pmatrix}a & -b\\
+b & a
+\end{pmatrix}\right]\left[\det\begin{pmatrix}c & -d\\
+d & c
+\end{pmatrix}\right]=\left|a+b\mathrm{i}\right|^{2}\left|c+d\mathrm{i}\right|^{2}=\left(a^{2}+b^{2}\right)\left(c^{2}+d^{2}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|a+b\mathrm{i}\right|^{2}\left|c+d\mathrm{i}\right|^{2}=\left(a^{2}+b^{2}\right)\left(c^{2}+d^{2}\right)=\left(ac-bd\right)^{2}+\left(ad+bc\right)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \det\left[\left(x_{{\scriptscriptstyle 1}}I+y_{{\scriptscriptstyle 1}}J\right)\left(x_{{\scriptscriptstyle 2}}I+y_{{\scriptscriptstyle 2}}J\right)\right]\\
+= & \det\left[\begin{pmatrix}x_{{\scriptscriptstyle 1}} & -y_{{\scriptscriptstyle 1}}\\
+y_{{\scriptscriptstyle 1}} & x_{{\scriptscriptstyle 1}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 2}} & -y_{{\scriptscriptstyle 2}}\\
+y_{{\scriptscriptstyle 2}} & x_{{\scriptscriptstyle 2}}
+\end{pmatrix}\right]\\
+= & \det\begin{pmatrix}x_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}}-y_{{\scriptscriptstyle 1}}y_{{\scriptscriptstyle 2}} & -x_{{\scriptscriptstyle 1}}y_{{\scriptscriptstyle 2}}-y_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 1}}y_{{\scriptscriptstyle 2}}+y_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}} & x_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}}-y_{{\scriptscriptstyle 1}}y_{{\scriptscriptstyle 2}}
+\end{pmatrix}=\left|\left(x_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}}-y_{{\scriptscriptstyle 1}}y_{{\scriptscriptstyle 2}}\right)+\left(x_{{\scriptscriptstyle 1}}y_{{\scriptscriptstyle 2}}+y_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}}\right)\mathrm{i}\right|^{2}=\left(x_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}}-y_{{\scriptscriptstyle 1}}y_{{\scriptscriptstyle 2}}\right)^{2}+\left(x_{{\scriptscriptstyle 1}}y_{{\scriptscriptstyle 2}}+y_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}}\right)^{2}\\
+= & \left[\det\begin{pmatrix}x_{{\scriptscriptstyle 1}} & -y_{{\scriptscriptstyle 1}}\\
+y_{{\scriptscriptstyle 1}} & x_{{\scriptscriptstyle 1}}
+\end{pmatrix}\right]\left[\det\begin{pmatrix}x_{{\scriptscriptstyle 2}} & -y_{{\scriptscriptstyle 2}}\\
+y_{{\scriptscriptstyle 2}} & x_{{\scriptscriptstyle 2}}
+\end{pmatrix}\right]=\left|x_{{\scriptscriptstyle 1}}+y_{{\scriptscriptstyle 1}}\mathrm{i}\right|^{2}\left|x_{{\scriptscriptstyle 2}}+y_{{\scriptscriptstyle 2}}\mathrm{i}\right|^{2}=\left(x_{{\scriptscriptstyle 1}}^{2}+y_{{\scriptscriptstyle 1}}^{2}\right)\left(x_{{\scriptscriptstyle 2}}^{2}+y_{{\scriptscriptstyle 2}}^{2}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|x_{{\scriptscriptstyle 1}}+y_{{\scriptscriptstyle 1}}\mathrm{i}\right|^{2}\left|x_{{\scriptscriptstyle 2}}+y_{{\scriptscriptstyle 2}}\mathrm{i}\right|^{2}=\left(x_{{\scriptscriptstyle 1}}^{2}+y_{{\scriptscriptstyle 1}}^{2}\right)\left(x_{{\scriptscriptstyle 2}}^{2}+y_{{\scriptscriptstyle 2}}^{2}\right)=\left(x_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}}-y_{{\scriptscriptstyle 1}}y_{{\scriptscriptstyle 2}}\right)^{2}+\left(x_{{\scriptscriptstyle 1}}y_{{\scriptscriptstyle 2}}+y_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Euler identity
+\begin_inset Formula 
+\begin{align*}
+ & \det\left(a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\right)\\
+= & \det\left[a\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}+b\begin{pmatrix}i & 0\\
+0 & -i
+\end{pmatrix}+c\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}+d\begin{pmatrix}0 & -i\\
+-i & 0
+\end{pmatrix}\right]\\
+= & \det\begin{pmatrix}a+bi & -c-di\\
+c-di & a-bi
+\end{pmatrix}=\begin{vmatrix}a+bi & -c-di\\
+c-di & a-bi
+\end{vmatrix}\\
+= & \left(a^{2}+b^{2}\right)+\left(c^{2}+d^{2}\right)=a^{2}+b^{2}+c^{2}+d^{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det\left(a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\right)=\det\begin{pmatrix}a+bi & -c-di\\
+c-di & a-bi
+\end{pmatrix}=a^{2}+b^{2}+c^{2}+d^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & \det\left[\left(q_{{\scriptscriptstyle 10}}+q_{{\scriptscriptstyle 11}}\mathrm{i}+q_{{\scriptscriptstyle 12}}\mathrm{j}+q_{{\scriptscriptstyle 13}}\mathrm{k}\right)\left(q_{{\scriptscriptstyle 20}}+q_{{\scriptscriptstyle 21}}\mathrm{i}+q_{{\scriptscriptstyle 22}}\mathrm{j}+q_{{\scriptscriptstyle 23}}\mathrm{k}\right)\right]=\det\left[\left(a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\right)\left(\alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}\right)\right]\\
+= & \det\Biggl\{\left[q_{{\scriptscriptstyle 10}}\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}+q_{{\scriptscriptstyle 11}}\begin{pmatrix}i & 0\\
+0 & -i
+\end{pmatrix}+q_{{\scriptscriptstyle 12}}\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}+q_{{\scriptscriptstyle 13}}\begin{pmatrix}0 & -i\\
+-i & 0
+\end{pmatrix}\right]\\
+ & \left[q_{{\scriptscriptstyle 20}}\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}+q_{{\scriptscriptstyle 21}}\begin{pmatrix}i & 0\\
+0 & -i
+\end{pmatrix}+q_{{\scriptscriptstyle 22}}\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}+q_{{\scriptscriptstyle 23}}\begin{pmatrix}0 & -i\\
+-i & 0
+\end{pmatrix}\right]\Biggr\}\\
+= & \det\Biggl\{\left[a\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}+b\begin{pmatrix}i & 0\\
+0 & -i
+\end{pmatrix}+c\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}+d\begin{pmatrix}0 & -i\\
+-i & 0
+\end{pmatrix}\right]\\
+ & \left[\alpha\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}+\beta\begin{pmatrix}i & 0\\
+0 & -i
+\end{pmatrix}+\gamma\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}+\delta\begin{pmatrix}0 & -i\\
+-i & 0
+\end{pmatrix}\right]\Biggr\}\\
+= & \det\left\{ \begin{pmatrix}a+bi & -c-di\\
+c-di & a-bi
+\end{pmatrix}\begin{pmatrix}\alpha+\beta i & -\gamma-\delta i\\
+\gamma-\delta i & \alpha-\beta i
+\end{pmatrix}\right\} \\
+ & =\det\begin{pmatrix}a+bi & -c-di\\
+c-di & a-bi
+\end{pmatrix}\det\begin{pmatrix}\alpha+\beta i & -\gamma-\delta i\\
+\gamma-\delta i & \alpha-\beta i
+\end{pmatrix}=\left(a^{2}+b^{2}+c^{2}+d^{2}\right)\left(\alpha^{2}+\beta^{2}+\gamma^{2}+\delta^{2}\right)\\
+= & \det\left\{ \begin{pmatrix}\left[a+bi\right]\left[\alpha+\beta i\right]-\left[c+di\right]\left[\gamma-\delta i\right] & \left[a+bi\right]\left[-\gamma-\delta i\right]-\left[c+di\right]\left[\alpha-\beta i\right]\\
+\left[c-di\right]\left[\alpha+\beta i\right]+\left[a-bi\right]\left[\gamma-\delta i\right] & \left[c-di\right]\left[-\gamma-\delta i\right]+\left[a-bi\right]\left[\alpha-\beta i\right]
+\end{pmatrix}\right\} \\
+= & \det\left\{ \begin{pmatrix}\left(a\alpha-b\beta-c\gamma-d\delta\right)+i\left(a\beta+b\alpha+c\delta-d\gamma\right) & -\left(a\gamma-b\delta+c\alpha+d\beta\right)-i\left(a\delta+b\gamma-c\beta+d\alpha\right)\\
+\left(a\gamma-b\delta+c\alpha+d\beta\right)-i\left(a\delta+b\gamma-c\beta+d\alpha\right) & \left(a\alpha-b\beta-c\gamma-d\delta\right)-i\left(a\beta+b\alpha+c\delta-d\gamma\right)
+\end{pmatrix}\right\} \\
+= & \det\left\{ \left(a\alpha-b\beta-c\gamma-d\delta\right)+\left(a\beta+b\alpha+c\delta-d\gamma\right)\mathrm{i}+\left(a\gamma-b\delta+c\alpha+d\beta\right)\mathrm{j}+\left(a\delta+b\gamma-c\beta+d\alpha\right)\mathrm{k}\right\} \\
+= & \left(a\alpha-b\beta-c\gamma-d\delta\right)^{2}+\left(a\beta+b\alpha+c\delta-d\gamma\right)^{2}+\left(a\gamma-b\delta+c\alpha+d\beta\right)^{2}+\left(a\delta+b\gamma-c\beta+d\alpha\right)^{2}\\
+= & \left(q_{{\scriptscriptstyle 10}}q_{{\scriptscriptstyle 20}}-q_{{\scriptscriptstyle 11}}q_{{\scriptscriptstyle 21}}-q_{{\scriptscriptstyle 12}}q_{{\scriptscriptstyle 22}}-q_{{\scriptscriptstyle 13}}q_{{\scriptscriptstyle 23}}\right)^{2}+\left(q_{{\scriptscriptstyle 10}}q_{{\scriptscriptstyle 21}}+q_{{\scriptscriptstyle 11}}q_{{\scriptscriptstyle 20}}+q_{{\scriptscriptstyle 12}}q_{{\scriptscriptstyle 23}}-q_{{\scriptscriptstyle 13}}q_{{\scriptscriptstyle 22}}\right)^{2}\\
++ & \left(q_{{\scriptscriptstyle 10}}q_{{\scriptscriptstyle 22}}-q_{{\scriptscriptstyle 11}}q_{{\scriptscriptstyle 23}}+q_{{\scriptscriptstyle 12}}q_{{\scriptscriptstyle 20}}+q_{{\scriptscriptstyle 13}}q_{{\scriptscriptstyle 21}}\right)^{2}+\left(q_{{\scriptscriptstyle 10}}q_{{\scriptscriptstyle 23}}+q_{{\scriptscriptstyle 11}}q_{{\scriptscriptstyle 22}}-q_{{\scriptscriptstyle 12}}q_{{\scriptscriptstyle 21}}+q_{{\scriptscriptstyle 13}}q_{{\scriptscriptstyle 20}}\right)^{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \left(a^{2}+b^{2}+c^{2}+d^{2}\right)\left(\alpha^{2}+\beta^{2}+\gamma^{2}+\delta^{2}\right)\\
+= & \left(a\alpha-b\beta-c\gamma-d\delta\right)^{2}+\left(a\beta+b\alpha+c\delta-d\gamma\right)^{2}\\
+ & +\left(a\gamma-b\delta+c\alpha+d\beta\right)^{2}+\left(a\delta+b\gamma-c\beta+d\alpha\right)^{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall\left\langle m_{{\scriptscriptstyle 1}},m_{2}\right\rangle \in\left(\mathbb{N}\cup\left\{ 0\right\} \right)^{2},\exists\left\langle k_{{\scriptscriptstyle 1}},k_{2},k_{{\scriptscriptstyle 3}},k_{4}\right\rangle \in\left(\mathbb{N}\cup\left\{ 0\right\} \right)^{4}\left[m_{{\scriptscriptstyle 1}}m_{2}=k_{{\scriptscriptstyle 1}}^{2}+k_{2}^{2}+k_{{\scriptscriptstyle 3}}^{2}+k_{4}^{2}\right]
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $\begin{cases}
+m_{{\scriptscriptstyle 1}}=a^{2}+b^{2}+c^{2}+d^{2} & \left\langle a,b,c,d\right\rangle \in\left(\mathbb{N}\cup\left\{ 0\right\} \right)^{4}\\
+m_{{\scriptscriptstyle 2}}=\alpha^{2}+\beta^{2}+\gamma^{2}+\delta^{2} & \left\langle \alpha,\beta,\gamma,\delta\right\rangle \in\left(\mathbb{N}\cup\left\{ 0\right\} \right)^{4}
+\end{cases}\overset{\text{closure property}}{\Rightarrow}\begin{pmatrix}m_{{\scriptscriptstyle 1}}\\
+m_{2}
+\end{pmatrix}=\begin{pmatrix}a^{2}+b^{2}+c^{2}+d^{2}\\
+\alpha^{2}+\beta^{2}+\gamma^{2}+\delta^{2}
+\end{pmatrix}\in\left(\mathbb{N}\cup\left\{ 0\right\} \right)^{2}$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{align*}
+m_{{\scriptscriptstyle 1}}m_{2} & =\left(a^{2}+b^{2}+c^{2}+d^{2}\right)\left(\alpha^{2}+\beta^{2}+\gamma^{2}+\delta^{2}\right)\\
+ & \overset{\text{Euler identity}}{=}\left(a\alpha-b\beta-c\gamma-d\delta\right)^{2}+\left(a\beta+b\alpha+c\delta-d\gamma\right)^{2}\\
+ & +\left(a\gamma-b\delta+c\alpha+d\beta\right)^{2}+\left(a\delta+b\gamma-c\beta+d\alpha\right)^{2}\\
+ & =\left|a\alpha-b\beta-c\gamma-d\delta\right|^{2}\\
+ & +\left|a\beta+b\alpha+c\delta-d\gamma\right|^{2}\\
+ & +\left|a\gamma-b\delta+c\alpha+d\beta\right|^{2}\\
+ & +\left|a\delta+b\gamma-c\beta+d\alpha\right|^{2}\\
+ & =k_{{\scriptscriptstyle 1}}^{2}+k_{2}^{2}+k_{{\scriptscriptstyle 3}}^{2}+k_{4}^{2},\begin{pmatrix}k_{{\scriptscriptstyle 1}}\\
+k_{2}\\
+k_{{\scriptscriptstyle 3}}\\
+k_{4}
+\end{pmatrix}=\begin{pmatrix}\left|a\alpha-b\beta-c\gamma-d\delta\right|\\
+\left|a\beta+b\alpha+c\delta-d\gamma\right|\\
+\left|a\gamma-b\delta+c\alpha+d\beta\right|\\
+\left|a\delta+b\gamma-c\beta+d\alpha\right|
+\end{pmatrix}\in\left(\mathbb{N}\cup\left\{ 0\right\} \right)^{4}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\because & \begin{cases}
+\left\langle a,b,c,d\right\rangle \in\left(\mathbb{N}\cup\left\{ 0\right\} \right)^{4}\\
+\left\langle \alpha,\beta,\gamma,\delta\right\rangle \in\left(\mathbb{N}\cup\left\{ 0\right\} \right)^{4}
+\end{cases}\\
+\overset{\text{closure property}}{\Rightarrow} & \begin{pmatrix}\left|a\alpha-b\beta-c\gamma-d\delta\right|\\
+\left|a\beta+b\alpha+c\delta-d\gamma\right|\\
+\left|a\gamma-b\delta+c\alpha+d\beta\right|\\
+\left|a\delta+b\gamma-c\beta+d\alpha\right|
+\end{pmatrix}\in\left(\mathbb{N}\cup\left\{ 0\right\} \right)^{4}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Euler formula proved by complex group representation
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}x^{\prime}\\
+y^{\prime}
+\end{pmatrix}= & \begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=R_{{\scriptscriptstyle \theta}}\begin{pmatrix}x\\
+y
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos n\frac{\theta}{n} & -\sin n\frac{\theta}{n}\\
+\sin n\frac{\theta}{n} & \cos n\frac{\theta}{n}
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}\cos\frac{\theta}{n} & -\sin\frac{\theta}{n}\\
+\sin\frac{\theta}{n} & \cos\frac{\theta}{n}
+\end{pmatrix}^{n}\begin{pmatrix}x\\
+y
+\end{pmatrix}=R_{{\scriptscriptstyle \frac{\theta}{n}}}^{n}\begin{pmatrix}x\\
+y
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\rightarrow\infty}R_{{\scriptscriptstyle \frac{\theta}{n}}}=\lim_{n\rightarrow\infty}\begin{pmatrix}\cos\frac{\theta}{n} & -\sin\frac{\theta}{n}\\
+\sin\frac{\theta}{n} & \cos\frac{\theta}{n}
+\end{pmatrix}= & \begin{pmatrix}1 & -\frac{\theta}{n}\\
+\frac{\theta}{n} & 1
+\end{pmatrix}\\
+= & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}+\dfrac{\theta}{n}\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\\
+= & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}+\dfrac{\theta}{n}\begin{pmatrix}\cos\frac{\pi}{2} & -\sin\frac{\pi}{2}\\
+\sin\frac{\pi}{2} & \cos\frac{\pi}{2}
+\end{pmatrix}\\
+= & I+\dfrac{\theta}{n}R_{{\scriptscriptstyle \frac{\pi}{2}}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}x^{\prime}\\
+y^{\prime}
+\end{pmatrix}=\lim_{n\rightarrow\infty}\begin{pmatrix}x^{\prime}\\
+y^{\prime}
+\end{pmatrix}= & \lim_{n\rightarrow\infty}R_{{\scriptscriptstyle \frac{\theta}{n}}}^{n}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\left[\lim_{n\rightarrow\infty}R_{{\scriptscriptstyle \frac{\theta}{n}}}^{n}\right]\left[\lim_{n\rightarrow\infty}\begin{pmatrix}x\\
+y
+\end{pmatrix}\right]=\left[\lim_{n\rightarrow\infty}R_{{\scriptscriptstyle \frac{\theta}{n}}}^{n}\right]\begin{pmatrix}x\\
+y
+\end{pmatrix}\\
+= & \lim_{n\rightarrow\infty}\left[\lim_{n\rightarrow\infty}R_{{\scriptscriptstyle \frac{\theta}{n}}}\right]^{n}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\lim_{n\rightarrow\infty}\left[I+\dfrac{\theta}{n}R_{{\scriptscriptstyle \frac{\pi}{2}}}\right]^{n}\begin{pmatrix}x\\
+y
+\end{pmatrix}\\
+= & \lim_{n\rightarrow\infty}\left[I+\dfrac{\theta}{n}\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\right]^{n}\begin{pmatrix}x\\
+y
+\end{pmatrix}=\lim_{n\rightarrow\infty}\left[I+\dfrac{\theta J}{n}\right]^{n}\begin{pmatrix}x\\
+y
+\end{pmatrix},J=\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\\
+= & \mathrm{e}^{J\theta}\begin{pmatrix}x\\
+y
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\begin{pmatrix}x^{\prime}\\
+y^{\prime}
+\end{pmatrix}=\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}x\\
+y
+\end{pmatrix}\\
+\begin{pmatrix}x^{\prime}\\
+y^{\prime}
+\end{pmatrix}=\mathrm{e}^{J\theta}\begin{pmatrix}x\\
+y
+\end{pmatrix}
+\end{cases}\\
+\Rightarrow & \mathrm{e}^{J\theta}=\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\overset{x+y\mathrm{i}\leftrightarrow\begin{pmatrix}x & -y\\
+y & x
+\end{pmatrix}=xI+yJ}{\Rightarrow}\mathrm{e}^{\mathrm{i}\theta}=\cos\theta+\mathrm{i}\sin\theta
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -318,12 +1084,13 @@ t,x,y,z\in\mathbb{R} & \Leftrightarrow\left\langle t,x,y,z\right\rangle \in\math
 
 
 \begin_inset Formula 
-\[
-\boldsymbol{e}=\begin{pmatrix}a & b\\
+\begin{align*}
+\boldsymbol{e}= & \begin{pmatrix}a & b\\
 c & d
 \end{pmatrix}=\begin{pmatrix}a & b\\
 \dfrac{-a^{2}-1}{b} & -a
-\end{pmatrix}=\begin{cases}
+\end{pmatrix}\\
+= & \begin{cases}
 \begin{pmatrix}a & b\\
 \dfrac{-a^{2}-1}{b} & -a
 \end{pmatrix}=\begin{pmatrix}0 & b\\
@@ -339,7 +1106,7 @@ c & d
 \beta & -\alpha
 \end{pmatrix} & a\ne0
 \end{cases}
-\]
+\end{align*}
 
 \end_inset
 
@@ -442,9 +1209,7 @@ c & d
 1 & 0
 \end{pmatrix}=\begin{pmatrix}\beta & -\alpha\\
 -\alpha & -\beta
-\end{pmatrix}=-\begin{pmatrix}-\beta & \alpha\\
-\alpha & \beta
-\end{pmatrix}
+\end{pmatrix}=\mathrm{k}
 \]
 
 \end_inset
@@ -603,12 +1368,12 @@ c & d
 \[
 \begin{array}{ccccc}
  & \alpha^{2}+\beta^{2}=-1 & \begin{cases}
-\alpha=\sqrt{-1}\\
+\alpha=i\\
 \beta=0
 \end{cases} & \begin{cases}
-\alpha=\sqrt{-2}\\
+\alpha=\sqrt{2}i\\
 \beta=1
-\end{cases} & \omega=\mathrm{e}^{\pi\frac{k}{3}\sqrt{-1}},k\in\left\{ 1,2,4,5\right\} \\
+\end{cases} & \omega=\mathrm{e}^{i\pi\frac{n}{3}},n\in\left\{ 1,2,4,5\right\} \\
 1 & \begin{pmatrix}1 & 0\\
 0 & 1
 \end{pmatrix} & \begin{pmatrix}1 & 0\\

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.22)  28 MAR 2024 21:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.22)  29 MAR 2024 13:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1320,6 +1320,12 @@ LaTeX Warning: Label `fig:unnamed-chunk-5' multiply defined.
 
 LaTeX Warning: Label `fig:unnamed-chunk-6' multiply defined.
 
+
+LaTeX Warning: Label `fig:unnamed-chunk-3' multiply defined.
+
+
+LaTeX Warning: Label `thm:unnamed-chunk-4' multiply defined.
+
 )
 \openout1 = `math.aux'.
 
@@ -1616,7 +1622,7 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 [27
 
 ]
-<202401280000-minimal-book-example_files/figure-latex/nice-fig-1.pdf, id=928, 4
+<202401280000-minimal-book-example_files/figure-latex/nice-fig-1.pdf, id=958, 4
 69.755pt x 352.31625pt>
 File: 202401280000-minimal-book-example_files/figure-latex/nice-fig-1.pdf Graph
 ic file (type pdf)
@@ -1668,7 +1674,7 @@ Overfull \hbox (0.1726pt too wide) in paragraph at lines 1029--1030
  []
 
 [34] [35]
-<202401280001-test_files/figure-latex/unnamed-chunk-4-1.pdf, id=1039, 469.755pt
+<202401280001-test_files/figure-latex/unnamed-chunk-4-1.pdf, id=1069, 469.755pt
  x 325.215pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
 type pdf)
@@ -1676,7 +1682,7 @@ type pdf)
 Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-4-1
 .pdf  used on input line 1171.
 (pdftex.def)             Requested size: 221.93175pt x 153.64505pt.
-<202401280001-test_files/figure-latex/unnamed-chunk-4-2.pdf, id=1040, 469.755pt
+<202401280001-test_files/figure-latex/unnamed-chunk-4-2.pdf, id=1070, 469.755pt
  x 325.215pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-4-2.pdf Graphic file (
 type pdf)
@@ -1693,7 +1699,7 @@ Overfull \hbox (2.2227pt too wide) in paragraph at lines 1171--1172
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-<202401280001-test_files/figure-latex/unnamed-chunk-5-1.pdf, id=1048, 469.755pt
+<202401280001-test_files/figure-latex/unnamed-chunk-5-1.pdf, id=1078, 469.755pt
  x 325.215pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (
 type pdf)
@@ -1701,7 +1707,7 @@ type pdf)
 Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-5-1
 .pdf  used on input line 1187.
 (pdftex.def)             Requested size: 443.8635pt x 307.2901pt.
-<202401280001-test_files/figure-latex/unnamed-chunk-5-2.pdf, id=1049, 469.755pt
+<202401280001-test_files/figure-latex/unnamed-chunk-5-2.pdf, id=1079, 469.755pt
  x 325.215pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-5-2.pdf Graphic file (
 type pdf)
@@ -1715,7 +1721,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [37 <./202401280001-test_files/figure-latex/unnamed-chunk-4-1.pdf> <./20240128
 0001-test_files/figure-latex/unnamed-chunk-4-2.pdf> <./202401280001-test_files/
 figure-latex/unnamed-chunk-5-1.pdf>]
-<202401280001-test_files/figure-latex/unnamed-chunk-7-1.pdf, id=1072, 361.35pt 
+<202401280001-test_files/figure-latex/unnamed-chunk-7-1.pdf, id=1103, 361.35pt 
 x 216.81pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (
 type pdf)
@@ -1724,7 +1730,7 @@ Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-7-1
 .pdf  used on input line 1236.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
  [38 <./202401280001-test_files/figure-latex/unnamed-chunk-5-2.pdf>]
-<202401280001-test_files/figure-latex/unnamed-chunk-8-1.pdf, id=1083, 361.35pt 
+<202401280001-test_files/figure-latex/unnamed-chunk-8-1.pdf, id=1114, 361.35pt 
 x 223.83624pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (
 type pdf)
@@ -1732,7 +1738,7 @@ type pdf)
 Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-8-1
 .pdf  used on input line 1246.
 (pdftex.def)             Requested size: 361.34912pt x 223.8357pt.
-<202401280001-test_files/figure-latex/unnamed-chunk-9-1.pdf, id=1084, 216.81pt 
+<202401280001-test_files/figure-latex/unnamed-chunk-9-1.pdf, id=1115, 216.81pt 
 x 216.81pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (
 type pdf)
@@ -1745,7 +1751,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39 <./202401280001-test_files/figure-latex/unnamed-chunk-7-1.pdf> <./20240128
 0001-test_files/figure-latex/unnamed-chunk-8-1.pdf>]
-<202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf, id=1103, 722.7pt 
+<202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf, id=1133, 722.7pt 
 x 144.54pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
 (type pdf)
@@ -1753,7 +1759,7 @@ File: 202401280001-test_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file
 Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-11-
 1.pdf  used on input line 1278.
 (pdftex.def)             Requested size: 443.86789pt x 88.77356pt.
-<202401280001-test_files/figure-latex/fig-margin-1.pdf, id=1104, 469.755pt x 32
+<202401280001-test_files/figure-latex/fig-margin-1.pdf, id=1134, 469.755pt x 32
 5.215pt>
 File: 202401280001-test_files/figure-latex/fig-margin-1.pdf Graphic file (type 
 pdf)
@@ -1766,7 +1772,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40 <./202401280001-test_files/figure-latex/unnamed-chunk-9-1.pdf> <./20240128
 0001-test_files/figure-latex/unnamed-chunk-11-1.pdf>]
-<202401280001-test_files/figure-latex/unnamed-chunk-13-1.pdf, id=1122, 469.755p
+<202401280001-test_files/figure-latex/unnamed-chunk-13-1.pdf, id=1152, 469.755p
 t x 325.215pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-13-1.pdf Graphic file 
 (type pdf)
@@ -1778,7 +1784,7 @@ Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-13-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41 <./202401280001-test_files/figure-latex/fig-margin-1.pdf>]
-<202401280001-test_files/figure-latex/unnamed-chunk-14-1.pdf, id=1134, 722.7pt 
+<202401280001-test_files/figure-latex/unnamed-chunk-14-1.pdf, id=1164, 722.7pt 
 x 144.54pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file 
 (type pdf)
@@ -1786,7 +1792,7 @@ File: 202401280001-test_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file
 Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-14-
 1.pdf  used on input line 1312.
 (pdftex.def)             Requested size: 443.86789pt x 88.77356pt.
-<202401280001-test_files/figure-latex/unnamed-chunk-16-1.pdf, id=1135, 57.30508
+<202401280001-test_files/figure-latex/unnamed-chunk-16-1.pdf, id=1165, 57.30508
 pt x 57.30508pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file 
 (type pdf)
@@ -1794,7 +1800,7 @@ File: 202401280001-test_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file
 Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-16-
 1.pdf  used on input line 1339.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401280001-test_files/figure-latex/unnamed-chunk-18-1.pdf, id=1136, 57.30508
+<202401280001-test_files/figure-latex/unnamed-chunk-18-1.pdf, id=1166, 57.30508
 pt x 57.30508pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file 
 (type pdf)
@@ -1802,7 +1808,7 @@ File: 202401280001-test_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file
 Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-18-
 1.pdf  used on input line 1368.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401280001-test_files/figure-latex/unnamed-chunk-20-1.pdf, id=1137, 57.30508
+<202401280001-test_files/figure-latex/unnamed-chunk-20-1.pdf, id=1167, 57.30508
 pt x 57.30508pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file 
 (type pdf)
@@ -1814,7 +1820,7 @@ Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-20-
 80001-test_files/figure-latex/unnamed-chunk-14-1.pdf> <./202401280001-test_file
 s/figure-latex/unnamed-chunk-16-1.pdf> <./202401280001-test_files/figure-latex/
 unnamed-chunk-18-1.pdf>]
-<202401280001-test_files/figure-latex/unnamed-chunk-22-1.pdf, id=1156, 216.81pt
+<202401280001-test_files/figure-latex/unnamed-chunk-22-1.pdf, id=1186, 216.81pt
  x 433.62pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file 
 (type pdf)
@@ -1825,7 +1831,7 @@ Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-22-
 
 [43 <./202401280001-test_files/figure-latex/unnamed-chunk-20-1.pdf> <./20240128
 0001-test_files/figure-latex/unnamed-chunk-22-1.pdf>]
-<202401280001-test_files/figure-latex/unnamed-chunk-24-1.pdf, id=1171, 651.9677
+<202401280001-test_files/figure-latex/unnamed-chunk-24-1.pdf, id=1201, 651.9677
 3pt x 555.80347pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file 
 (type pdf)
@@ -1837,7 +1843,7 @@ Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-24-
 
 pdfTeX warning: pdflatex.exe (file ./img/conic-sections.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<img/conic-sections.pdf, id=1173, 1149.29375pt x 758.835pt>
+<img/conic-sections.pdf, id=1203, 1149.29375pt x 758.835pt>
 File: img/conic-sections.pdf Graphic file (type pdf)
 <use img/conic-sections.pdf>
 Package pdftex.def Info: img/conic-sections.pdf  used on input line 1434.
@@ -1887,7 +1893,7 @@ ivalent Computer Modern one[]
  []
 
 [48]
-<202401280001-test_files/figure-latex/unnamed-chunk-33-1.pdf, id=1320, 361.35pt
+<202401280001-test_files/figure-latex/unnamed-chunk-33-1.pdf, id=1351, 361.35pt
  x 289.08pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-33-1.pdf Graphic file 
 (type pdf)
@@ -1895,7 +1901,7 @@ File: 202401280001-test_files/figure-latex/unnamed-chunk-33-1.pdf Graphic file
 Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-33-
 1.pdf  used on input line 1708.
 (pdftex.def)             Requested size: 244.12679pt x 195.30142pt.
-<202401280001-test_files/figure-latex/unnamed-chunk-34-1.pdf, id=1321, 361.35pt
+<202401280001-test_files/figure-latex/unnamed-chunk-34-1.pdf, id=1352, 361.35pt
  x 289.08pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file 
 (type pdf)
@@ -1907,7 +1913,7 @@ Package pdftex.def Info: 202401280001-test_files/figure-latex/unnamed-chunk-34-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [49 <./202401280001-test_files/figure-latex/unnamed-chunk-33-1.pdf>]
-<202401280001-test_files/figure-latex/unnamed-chunk-35-1.pdf, id=1333, 722.7pt 
+<202401280001-test_files/figure-latex/unnamed-chunk-35-1.pdf, id=1364, 722.7pt 
 x 578.16pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-35-1.pdf Graphic file 
 (type pdf)
@@ -1922,7 +1928,7 @@ df\TS1/lmtt/m/n/10 ' \T1/lmtt/m/n/10 else \TS1/lmtt/m/n/10 '\T1/lmtt/m/n/10 png
 \TS1/lmtt/m/n/10 '\T1/lmtt/m/n/10 , fig.width=10, fig.height=2, out.width=if
  []
 
-<202401280001-test_files/figure-latex/unnamed-chunk-37-1.pdf, id=1336, 57.30508
+<202401280001-test_files/figure-latex/unnamed-chunk-37-1.pdf, id=1367, 57.30508
 pt x 57.30508pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-37-1.pdf Graphic file 
 (type pdf)
@@ -1944,7 +1950,7 @@ Overfull \hbox (18.13565pt too wide) in paragraph at lines 1873--1873
 ..: 1 1 1 1 1 1 1 1 1 1 ...[] 
  []
 
-<202401280001-test_files/figure-latex/unnamed-chunk-39-1.pdf, id=1359, 469.755p
+<202401280001-test_files/figure-latex/unnamed-chunk-39-1.pdf, id=1389, 469.755p
 t x 325.215pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-39-1.pdf Graphic file 
 (type pdf)
@@ -1962,7 +1968,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-<202401280001-test_files/figure-latex/unnamed-chunk-41-1.pdf, id=1370, 469.755p
+<202401280001-test_files/figure-latex/unnamed-chunk-41-1.pdf, id=1400, 469.755p
 t x 325.215pt>
 File: 202401280001-test_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file 
 (type pdf)
@@ -2004,7 +2010,7 @@ Underfull \hbox (badness 3536) in paragraph at lines 2125--2126
  []
 
 [56] [57]
-<img/pre-and-true-experimental-designs.png, id=1490, 696.35156pt x 639.13782pt>
+<img/pre-and-true-experimental-designs.png, id=1520, 696.35156pt x 639.13782pt>
 
 File: img/pre-and-true-experimental-designs.png Graphic file (type png)
 <use img/pre-and-true-experimental-designs.png>
@@ -2019,7 +2025,7 @@ has been already used, duplicate ignored
 l.2224 \begin{theorem}[Theorem Name]
                                      <./img/pre-and-true-experimental-designs.p
 ng>]
-<202401280001-test_files/figure-latex/parabola-arc-with-points-1.pdf, id=1514, 
+<202401280001-test_files/figure-latex/parabola-arc-with-points-1.pdf, id=1544, 
 88.60402pt x 117.05632pt>
 File: 202401280001-test_files/figure-latex/parabola-arc-with-points-1.pdf Graph
 ic file (type pdf)
@@ -2106,7 +2112,7 @@ Overfull \hbox (113.92896pt too wide) in paragraph at lines 2534--2535
 Data\Local\r-reticulate\r-reticulate\pyenv\pyenv-win\versions\3.9.12\Lib 
  []
 
-<202401292317-Python_files/figure-latex/unnamed-chunk-9-1.pdf, id=1610, 462.527
+<202401292317-Python_files/figure-latex/unnamed-chunk-9-1.pdf, id=1640, 462.527
 98pt x 346.89601pt>
 File: 202401292317-Python_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file
  (type pdf)
@@ -2120,7 +2126,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [72]
 [73 <./202401292317-Python_files/figure-latex/unnamed-chunk-9-1.pdf>] [74]
 Chapter 13.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf, id=1652, 57.30508p
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf, id=1682, 57.30508p
 t x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
 type pdf)
@@ -2134,7 +2140,7 @@ Overfull \hbox (78.5122pt too wide) in paragraph at lines 2717--2717
 /b/n/10 \t[]\T1/lmtt/m/n/10 ,blue,thick] 
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf, id=1657, 305.54951
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf, id=1687, 305.54951
 pt x 154.88565pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (
 type pdf)
@@ -2142,7 +2148,7 @@ type pdf)
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-6-1
 .pdf  used on input line 2739.
 (pdftex.def)             Requested size: 199.73776pt x 101.24876pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf, id=1658, 455.46663
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf, id=1688, 455.46663
 pt x 149.88898pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (
 type pdf)
@@ -2156,7 +2162,7 @@ Underfull \vbox (badness 8038) has occurred while \output is active []
  [75
 
  <./202401311000-TikZ_files/figure-latex/unnamed-chunk-4-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1.pdf, id=1668, 57.30508
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1.pdf, id=1699, 57.30508
 pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file 
 (type pdf)
@@ -2186,7 +2192,7 @@ Overfull \hbox (5.01242pt too wide) in paragraph at lines 2796--2797
 []\T1/lmtt/m/n/10 out.width=if (knitr:::is_html_output())
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-12-1.pdf, id=1715, 57.30508
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-12-1.pdf, id=1745, 57.30508
 pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file 
 (type pdf)
@@ -2194,7 +2200,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-12-
 1.pdf  used on input line 2814.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf, id=1716, 57.30508
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf, id=1746, 57.30508
 pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file 
 (type pdf)
@@ -2202,7 +2208,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-14-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-14-
 1.pdf  used on input line 2844.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf, id=1717, 57.30508
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf, id=1747, 57.30508
 pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file 
 (type pdf)
@@ -2210,7 +2216,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-16-
 1.pdf  used on input line 2875.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf, id=1718, 57.30508
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf, id=1748, 57.30508
 pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file 
 (type pdf)
@@ -2218,7 +2224,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-18-
 1.pdf  used on input line 2907.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf, id=1719, 114.2107
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf, id=1749, 114.2107
 pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file 
 (type pdf)
@@ -2226,7 +2232,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-20-
 1.pdf  used on input line 2938.
 (pdftex.def)             Requested size: 114.2104pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf, id=1720, 57.30508
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf, id=1750, 57.30508
 pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file 
 (type pdf)
@@ -2264,7 +2270,7 @@ kZ_files/figure-latex/unnamed-chunk-10-1.pdf> <./202401311000-TikZ_files/figure
 chunk-14-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-16-1.pdf>
  <./202401311000-TikZ_files/figure-latex/unnamed-chunk-18-1.pdf> <./20240131100
 0-TikZ_files/figure-latex/unnamed-chunk-20-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf, id=1736, 57.30508
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf, id=1766, 57.30508
 pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file 
 (type pdf)
@@ -2272,7 +2278,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-24-
 1.pdf  used on input line 3000.
 (pdftex.def)             Requested size: 57.30493pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf, id=1737, 85.75839
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf, id=1767, 85.75839
 pt x 85.75839pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file 
 (type pdf)
@@ -2280,7 +2286,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-26-
 1.pdf  used on input line 3032.
 (pdftex.def)             Requested size: 85.75818pt x 85.75818pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf, id=1738, 114.2107
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf, id=1768, 114.2107
 pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file 
 (type pdf)
@@ -2288,7 +2294,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-28-
 1.pdf  used on input line 3063.
 (pdftex.def)             Requested size: 114.2104pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf, id=1739, 199.5696
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf, id=1769, 199.5696
 pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf Graphic file 
 (type pdf)
@@ -2301,7 +2307,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3095--3095
 [][]
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf, id=1740, 85.75839
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf, id=1770, 85.75839
 pt x 114.2107pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-32-1.pdf Graphic file 
 (type pdf)
@@ -2347,7 +2353,7 @@ kZ_files/figure-latex/unnamed-chunk-22-1.pdf> <./202401311000-TikZ_files/figure
 -latex/unnamed-chunk-24-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-
 chunk-26-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-28-1.pdf>
  <./202401311000-TikZ_files/figure-latex/unnamed-chunk-30-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1.pdf, id=1756, 114.2107
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1.pdf, id=1786, 114.2107
 pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file 
 (type pdf)
@@ -2355,7 +2361,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-34-
 1.pdf  used on input line 3162.
 (pdftex.def)             Requested size: 114.2104pt x 57.30493pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-36-1.pdf, id=1757, 199.4692
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-36-1.pdf, id=1787, 199.4692
 1pt x 57.30508pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-36-1.pdf Graphic file 
 (type pdf)
@@ -2368,7 +2374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3194--3194
 [][]
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-38-1.pdf, id=1758, 64.41867
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-38-1.pdf, id=1788, 64.41867
 pt x 28.8528pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-38-1.pdf Graphic file 
 (type pdf)
@@ -2376,7 +2382,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-38-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-38-
 1.pdf  used on input line 3229.
 (pdftex.def)             Requested size: 64.42046pt x 28.85359pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-40-1.pdf, id=1759, 258.0751
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-40-1.pdf, id=1789, 258.0751
 6pt x 171.91628pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-40-1.pdf Graphic file 
 (type pdf)
@@ -2421,7 +2427,7 @@ Overfull \hbox (10.2624pt too wide) in paragraph at lines 3281--3281
 r= 
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-42-1.pdf, id=1774, 258.0751
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-42-1.pdf, id=1804, 258.0751
 6pt x 2.00047pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-42-1.pdf Graphic file 
 (type pdf)
@@ -2429,7 +2435,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-42-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-42-
 1.pdf  used on input line 3297.
 (pdftex.def)             Requested size: 199.74628pt x 1.54831pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-44-1.pdf, id=1775, 228.0218
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-44-1.pdf, id=1805, 228.0218
 8pt x 228.02188pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-44-1.pdf Graphic file 
 (type pdf)
@@ -2437,7 +2443,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-44-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-44-
 1.pdf  used on input line 3336.
 (pdftex.def)             Requested size: 199.74132pt x 199.74132pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-46-1.pdf, id=1776, 257.3052
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-46-1.pdf, id=1806, 257.3052
 8pt x 257.30528pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-46-1.pdf Graphic file 
 (type pdf)
@@ -2470,7 +2476,7 @@ l.3378 \begin{center}
 kZ_files/figure-latex/unnamed-chunk-40-1.pdf> <./202401311000-TikZ_files/figure
 -latex/unnamed-chunk-42-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-
 chunk-44-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-48-1.pdf, id=1788, 285.7586
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-48-1.pdf, id=1818, 285.7586
 pt x 257.30528pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-48-1.pdf Graphic file 
 (type pdf)
@@ -2478,7 +2484,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-48-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-48-
 1.pdf  used on input line 3406.
 (pdftex.def)             Requested size: 199.74187pt x 179.85333pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-50-1.pdf, id=1789, 285.7586
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-50-1.pdf, id=1819, 285.7586
 pt x 285.7586pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-50-1.pdf Graphic file 
 (type pdf)
@@ -2504,7 +2510,7 @@ l.3448 \begin{center}
                      \rule{0.5\linewidth}{0.5pt}\end{center} <./202401311000-Ti
 kZ_files/figure-latex/unnamed-chunk-46-1.pdf> <./202401311000-TikZ_files/figure
 -latex/unnamed-chunk-48-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-52-1.pdf, id=1799, 272.5442
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-52-1.pdf, id=1829, 272.5442
 2pt x 104.44722pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-52-1.pdf Graphic file 
 (type pdf)
@@ -2512,7 +2518,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-52-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-52-
 1.pdf  used on input line 3474.
 (pdftex.def)             Requested size: 199.74577pt x 76.54863pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-54-1.pdf, id=1800, 184.2112
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-54-1.pdf, id=1830, 184.2112
 1pt x 184.21121pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-54-1.pdf Graphic file 
 (type pdf)
@@ -2542,7 +2548,7 @@ l.3514 ...}\rule{0.5\linewidth}{0.5pt}\end{center}
 igure-latex/unnamed-chunk-50-1.pdf> <./202401311000-TikZ_files/figure-latex/unn
 amed-chunk-52-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-54-1
 .pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-56-1.pdf, id=1812, 278.0216
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-56-1.pdf, id=1843, 278.0216
 8pt x 45.45782pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-56-1.pdf Graphic file 
 (type pdf)
@@ -2550,7 +2556,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-56-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-56-
 1.pdf  used on input line 3554.
 (pdftex.def)             Requested size: 199.7385pt x 32.65814pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-58-1.pdf, id=1813, 100.7584
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-58-1.pdf, id=1844, 100.7584
 4pt x 105.75812pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-58-1.pdf Graphic file 
 (type pdf)
@@ -2558,7 +2564,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-58-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-58-
 1.pdf  used on input line 3601.
 (pdftex.def)             Requested size: 100.75818pt x 105.75784pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf, id=1814, 196.3636
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf, id=1845, 196.3636
 2pt x 193.47281pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-60-1.pdf Graphic file 
 (type pdf)
@@ -2584,7 +2590,7 @@ l.3641 ...ons/64897575/tikz-libraries-in-bookdown}
                                                    <./202401311000-TikZ_files/f
 igure-latex/unnamed-chunk-56-1.pdf> <./202401311000-TikZ_files/figure-latex/unn
 amed-chunk-58-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-62-1.pdf, id=1838, 111.7575
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-62-1.pdf, id=1868, 111.7575
 2pt x 92.31288pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-62-1.pdf Graphic file 
 (type pdf)
@@ -2608,7 +2614,7 @@ Overfull \hbox (5.01242pt too wide) in paragraph at lines 3711--3711
 ]|  
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf, id=1865, 112.2533
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf, id=1895, 112.2533
 7pt x 110.64337pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf Graphic file 
 (type pdf)
@@ -2616,7 +2622,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-64-
 1.pdf  used on input line 3743.
 (pdftex.def)             Requested size: 112.25479pt x 110.64478pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-66-1.pdf, id=1866, 123.5465
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-66-1.pdf, id=1896, 123.5465
 7pt x 93.14098pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-66-1.pdf Graphic file 
 (type pdf)
@@ -2642,7 +2648,7 @@ l.3800 ...621/optimizing-perspective-tikz-graphic}
                                                    <./202401311000-TikZ_files/f
 igure-latex/unnamed-chunk-62-1.pdf> <./202401311000-TikZ_files/figure-latex/unn
 amed-chunk-64-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-68-1.pdf, id=1886, 139.0434
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-68-1.pdf, id=1916, 139.0434
 7pt x 75.2411pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-68-1.pdf Graphic file 
 (type pdf)
@@ -2650,7 +2656,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-68-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-68-
 1.pdf  used on input line 3842.
 (pdftex.def)             Requested size: 139.05373pt x 75.24664pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-70-1.pdf, id=1888, 226.8625
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-70-1.pdf, id=1918, 226.8625
 5pt x 234.83736pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-70-1.pdf Graphic file 
 (type pdf)
@@ -2681,7 +2687,7 @@ l.3885 \section
                {plots of functions}\label{plots-of-functions} <./202401311000-T
 ikZ_files/figure-latex/unnamed-chunk-66-1.pdf> <./202401311000-TikZ_files/figur
 e-latex/unnamed-chunk-68-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-72-1.pdf, id=1908, 186.3853
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-72-1.pdf, id=1938, 186.3853
 3pt x 170.71077pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-72-1.pdf Graphic file 
 (type pdf)
@@ -2709,7 +2715,7 @@ Overfull \hbox (110.01212pt too wide) in paragraph at lines 3940--3940
 variable=[]\T1/lmtt/b/n/10 \t[]\T1/lmtt/m/n/10 ]|  
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-74-1.pdf, id=2000, 26.40866
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-74-1.pdf, id=2030, 26.40866
 pt x 89.76837pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-74-1.pdf Graphic file 
 (type pdf)
@@ -2717,7 +2723,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-74-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-74-
 1.pdf  used on input line 3955.
 (pdftex.def)             Requested size: 26.40857pt x 89.76813pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-76-1.pdf, id=2001, 61.49876
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-76-1.pdf, id=2031, 61.49876
 pt x 37.5021pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-76-1.pdf Graphic file 
 (type pdf)
@@ -2725,7 +2731,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-76-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-76-
 1.pdf  used on input line 3987.
 (pdftex.def)             Requested size: 61.50046pt x 37.50314pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-78-1.pdf, id=2005, 176.2384
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-78-1.pdf, id=2035, 176.2384
 3pt x 154.46509pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-78-1.pdf Graphic file 
 (type pdf)
@@ -2745,7 +2751,7 @@ Overfull \hbox (68.01224pt too wide) in paragraph at lines 4071--4071
 tyle[][]\T1/lmtt/m/n/10 {1}} 
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-80-1.pdf, id=2007, 468.1209
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-80-1.pdf, id=2037, 468.1209
 1pt x 92.39217pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-80-1.pdf Graphic file 
 (type pdf)
@@ -2789,7 +2795,7 @@ Overfull \hbox (5.01242pt too wide) in paragraph at lines 4140--4140
 \T1/lmtt/m/n/10 dot,pin=-90:{[]$(1.03,0.5)$[]}] 
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-82-1.pdf, id=2039, 259.8769
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-82-1.pdf, id=2069, 259.8769
 pt x 198.16835pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-82-1.pdf Graphic file 
 (type pdf)
@@ -2822,7 +2828,7 @@ Overfull \hbox (5.01242pt too wide) in paragraph at lines 4185--4185
 \T1/lmtt/m/n/10 dot,pin=-90:{[]$(1.03,0.5)$[]}] 
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-84-1.pdf, id=2058, 259.8769
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-84-1.pdf, id=2088, 259.8769
 pt x 198.17639pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-84-1.pdf Graphic file 
 (type pdf)
@@ -2841,7 +2847,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.13.37}
 l.4209 \paragraph
                  {legend}\label{legend} <./202401311000-TikZ_files/figure-latex
 /unnamed-chunk-82-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-86-1.pdf, id=2093, 225.4663
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-86-1.pdf, id=2124, 225.4663
 4pt x 176.34683pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-86-1.pdf Graphic file 
 (type pdf)
@@ -2867,7 +2873,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.13.39}
 l.4332 \end{Shaded}
                     <./202401311000-TikZ_files/figure-latex/unnamed-chunk-86-1.
 pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-88-1.pdf, id=2140, 468.1269
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-88-1.pdf, id=2170, 468.1269
 pt x 92.39217pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-88-1.pdf Graphic file 
 (type pdf)
@@ -2892,7 +2898,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.13.40}
 l.4367 \end{Shaded}
                     <./202401311000-TikZ_files/figure-latex/unnamed-chunk-88-1.
 pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-90-1.pdf, id=2157, 315.0349
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-90-1.pdf, id=2187, 315.0349
 7pt x 134.02672pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-90-1.pdf Graphic file 
 (type pdf)
@@ -2912,7 +2918,7 @@ Overfull \hbox (73.26222pt too wide) in paragraph at lines 4423--4423
 \T1/lmtt/m/n/10 cs:0,0}|-interp#1)--(interp#1)--(interp#1|-{axis 
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-92-1.pdf, id=2177, 239.1324
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-92-1.pdf, id=2207, 239.1324
 pt x 191.00961pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-92-1.pdf Graphic file 
 (type pdf)
@@ -2920,7 +2926,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-92-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-92-
 1.pdf  used on input line 4440.
 (pdftex.def)             Requested size: 199.74234pt x 159.54637pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-94-1.pdf, id=2180, 214.8436
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-94-1.pdf, id=2210, 214.8436
 6pt x 175.5107pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-94-1.pdf Graphic file 
 (type pdf)
@@ -2939,7 +2945,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.13.42}
 l.4486 \paragraph
                  {range}\label{range} <./202401311000-TikZ_files/figure-latex/u
 nnamed-chunk-92-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-96-1.pdf, id=2201, 214.8436
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-96-1.pdf, id=2231, 214.8436
 6pt x 181.86545pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-96-1.pdf Graphic file 
 (type pdf)
@@ -2947,7 +2953,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-96-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-96-
 1.pdf  used on input line 4517.
 (pdftex.def)             Requested size: 199.75008pt x 169.0887pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-98-1.pdf, id=2202, 214.8436
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-98-1.pdf, id=2232, 214.8436
 6pt x 84.86606pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-98-1.pdf Graphic file 
 (type pdf)
@@ -2973,7 +2979,7 @@ l.4563 \begin{center}
                      \rule{0.5\linewidth}{0.5pt}\end{center} <./202401311000-Ti
 kZ_files/figure-latex/unnamed-chunk-94-1.pdf> <./202401311000-TikZ_files/figure
 -latex/unnamed-chunk-96-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-100-1.pdf, id=2229, 162.105
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-100-1.pdf, id=2259, 162.105
 62pt x 219.0293pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-100-1.pdf Graphic file
  (type pdf)
@@ -2981,7 +2987,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-100-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-100
 -1.pdf  used on input line 4598.
 (pdftex.def)             Requested size: 162.11264pt x 219.03877pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-102-1.pdf, id=2230, 369.410
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-102-1.pdf, id=2260, 369.410
 11pt x 134.51154pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-102-1.pdf Graphic file
  (type pdf)
@@ -3011,7 +3017,7 @@ l.4646 ...}\rule{0.5\linewidth}{0.5pt}\end{center}
 igure-latex/unnamed-chunk-98-1.pdf> <./202401311000-TikZ_files/figure-latex/unn
 amed-chunk-100-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-102
 -1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-104-1.pdf, id=2267, 146.505
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-104-1.pdf, id=2297, 146.505
 34pt x 112.92387pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-104-1.pdf Graphic file
  (type pdf)
@@ -3019,7 +3025,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-104-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-104
 -1.pdf  used on input line 4676.
 (pdftex.def)             Requested size: 146.50497pt x 112.92358pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-106-1.pdf, id=2268, 214.843
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-106-1.pdf, id=2298, 214.843
 66pt x 84.86606pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-106-1.pdf Graphic file
  (type pdf)
@@ -3027,7 +3033,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-106-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-106
 -1.pdf  used on input line 4715.
 (pdftex.def)             Requested size: 199.75008pt x 78.90387pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-108-1.pdf, id=2269, 200.727
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-108-1.pdf, id=2299, 200.727
 92pt x 175.52676pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-108-1.pdf Graphic file
  (type pdf)
@@ -3053,7 +3059,7 @@ l.4765 \texttt{axis\ lines\ *=\ center}
                                        : <./202401311000-TikZ_files/figure-late
 x/unnamed-chunk-104-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chun
 k-106-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-110-1.pdf, id=2295, 214.843
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-110-1.pdf, id=2325, 214.843
 66pt x 175.52676pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-110-1.pdf Graphic file
  (type pdf)
@@ -3061,7 +3067,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-110-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-110
 -1.pdf  used on input line 4797.
 (pdftex.def)             Requested size: 199.75008pt x 163.19533pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-112-1.pdf, id=2296, 198.593
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-112-1.pdf, id=2326, 198.593
 95pt x 175.52676pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-112-1.pdf Graphic file
  (type pdf)
@@ -3092,7 +3098,7 @@ l.4844 \paragraph
                  {axis discontinuity}\label{axis-discontinuity} <./202401311000
 -TikZ_files/figure-latex/unnamed-chunk-108-1.pdf> <./202401311000-TikZ_files/fi
 gure-latex/unnamed-chunk-110-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-114-1.pdf, id=2322, 213.054
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-114-1.pdf, id=2352, 213.054
 98pt x 184.83253pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-114-1.pdf Graphic file
  (type pdf)
@@ -3100,7 +3106,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-114-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-114
 -1.pdf  used on input line 4880.
 (pdftex.def)             Requested size: 199.74179pt x 173.28288pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-116-1.pdf, id=2323, 213.054
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-116-1.pdf, id=2353, 213.054
 98pt x 184.83253pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-116-1.pdf Graphic file
  (type pdf)
@@ -3126,7 +3132,7 @@ l.4928 \paragraph
                  {tick}\label{tick} <./202401311000-TikZ_files/figure-latex/unn
 amed-chunk-112-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chunk-114
 -1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-118-1.pdf, id=2349, 214.843
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-118-1.pdf, id=2380, 214.843
 66pt x 175.5107pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-118-1.pdf Graphic file
  (type pdf)
@@ -3134,7 +3140,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-118-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-118
 -1.pdf  used on input line 4959.
 (pdftex.def)             Requested size: 199.75008pt x 163.18039pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-120-1.pdf, id=2350, 199.055
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-120-1.pdf, id=2381, 199.055
 66pt x 162.3937pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-120-1.pdf Graphic file
  (type pdf)
@@ -3165,7 +3171,7 @@ l.5010 \begin{center}
                      \rule{0.5\linewidth}{0.5pt}\end{center} <./202401311000-Ti
 kZ_files/figure-latex/unnamed-chunk-116-1.pdf> <./202401311000-TikZ_files/figur
 e-latex/unnamed-chunk-118-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-122-1.pdf, id=2377, 195.398
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-122-1.pdf, id=2407, 195.398
 01pt x 161.99922pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-122-1.pdf Graphic file
  (type pdf)
@@ -3173,7 +3179,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-122-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-122
 -1.pdf  used on input line 5043.
 (pdftex.def)             Requested size: 195.40347pt x 162.00375pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-124-1.pdf, id=2378, 195.398
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-124-1.pdf, id=2408, 195.398
 01pt x 161.99922pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-124-1.pdf Graphic file
  (type pdf)
@@ -3199,7 +3205,7 @@ l.5090 \begin{center}
                      \rule{0.5\linewidth}{0.5pt}\end{center} <./202401311000-Ti
 kZ_files/figure-latex/unnamed-chunk-120-1.pdf> <./202401311000-TikZ_files/figur
 e-latex/unnamed-chunk-122-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-126-1.pdf, id=2408, 196.793
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-126-1.pdf, id=2438, 196.793
 21pt x 161.99922pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-126-1.pdf Graphic file
  (type pdf)
@@ -3220,7 +3226,7 @@ n/10 \pi[][]\T1/lmtt/m/n/10 $[],[]$2[][]\T1/lmtt/b/n/10 \pi[][]\T1/lmtt/m/n/10
 $[]},|  
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-128-1.pdf, id=2409, 195.397
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-128-1.pdf, id=2439, 195.397
 pt x 161.99922pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-128-1.pdf Graphic file
  (type pdf)
@@ -3247,7 +3253,7 @@ l.5174 \subsubsection
                      {\texorpdfstring{\texttt{addplot+}}{addplot+}}\label{ad...
  <./202401311000-TikZ_files/figure-latex/unnamed-chunk-124-1.pdf> <./2024013110
 00-TikZ_files/figure-latex/unnamed-chunk-126-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-130-1.pdf, id=2446, 182.499
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-130-1.pdf, id=2476, 182.499
 82pt x 161.99922pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-130-1.pdf Graphic file
  (type pdf)
@@ -3266,7 +3272,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.13.60}
 l.5237 \begin{center}
                      \rule{0.5\linewidth}{0.5pt}\end{center} <./202401311000-Ti
 kZ_files/figure-latex/unnamed-chunk-128-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-132-1.pdf, id=2466, 144.394
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-132-1.pdf, id=2496, 144.394
 45pt x 162.41579pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-132-1.pdf Graphic file
  (type pdf)
@@ -3274,7 +3280,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-132-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-132
 -1.pdf  used on input line 5273.
 (pdftex.def)             Requested size: 144.39629pt x 162.41786pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-134-1.pdf, id=2467, 214.841
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-134-1.pdf, id=2497, 214.841
 64pt x 111.00974pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-134-1.pdf Graphic file
  (type pdf)
@@ -3304,7 +3310,7 @@ Overfull \hbox (10.2624pt too wide) in paragraph at lines 5328--5328
 \T1/lmtt/m/n/10 marks,domain=-2:2,samples=5]|  
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-136-1.pdf, id=2502, 203.656
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-136-1.pdf, id=2532, 203.656
 86pt x 209.92528pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-136-1.pdf Graphic file
  (type pdf)
@@ -3322,7 +3328,7 @@ Overfull \hbox (15.51239pt too wide) in paragraph at lines 5364--5364
 \T1/lmtt/m/n/10 marks,domain=-2:2,samples=55]|  
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-138-1.pdf, id=2503, 203.656
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-138-1.pdf, id=2533, 203.656
 86pt x 209.92528pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-138-1.pdf Graphic file
  (type pdf)
@@ -3357,7 +3363,7 @@ Overfull \hbox (36.51233pt too wide) in paragraph at lines 5400--5400
 \T1/lmtt/m/n/10 marks,variable=t,domain=0:pi*3/2,|  
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-140-1.pdf, id=2533, 189.619
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-140-1.pdf, id=2563, 189.619
 42pt x 176.34082pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-140-1.pdf Graphic file
  (type pdf)
@@ -3365,7 +3371,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-140-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-140
 -1.pdf  used on input line 5417.
 (pdftex.def)             Requested size: 189.62761pt x 176.34845pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-142-1.pdf, id=2534, 329.475
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-142-1.pdf, id=2564, 329.475
 9pt x 127.58968pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-142-1.pdf Graphic file
  (type pdf)
@@ -3391,7 +3397,7 @@ l.5472 \begin{center}
                      \rule{0.5\linewidth}{0.5pt}\end{center} <./202401311000-Ti
 kZ_files/figure-latex/unnamed-chunk-138-1.pdf> <./202401311000-TikZ_files/figur
 e-latex/unnamed-chunk-140-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-144-1.pdf, id=2568, 237.110
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-144-1.pdf, id=2598, 237.110
 86pt x 180.58566pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-144-1.pdf Graphic file
  (type pdf)
@@ -3404,7 +3410,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5501--5501
 [][]
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-146-1.pdf, id=2569, 219.842
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-146-1.pdf, id=2599, 219.842
 33pt x 175.5107pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-146-1.pdf Graphic file
  (type pdf)
@@ -3430,7 +3436,7 @@ l.5545 \begin{center}
                      \rule{0.5\linewidth}{0.5pt}\end{center} <./202401311000-Ti
 kZ_files/figure-latex/unnamed-chunk-142-1.pdf> <./202401311000-TikZ_files/figur
 e-latex/unnamed-chunk-144-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-148-1.pdf, id=2603, 219.842
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-148-1.pdf, id=2633, 219.842
 33pt x 175.5097pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-148-1.pdf Graphic file
  (type pdf)
@@ -3451,7 +3457,7 @@ Overfull \hbox (41.76231pt too wide) in paragraph at lines 5602--5602
 \T1/lmtt/m/n/10 markers,domain=-pi:pi,samples=100]|  
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-150-1.pdf, id=2604, 304.372
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-150-1.pdf, id=2634, 304.372
 12pt x 107.63312pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-150-1.pdf Graphic file
  (type pdf)
@@ -3482,7 +3488,7 @@ Overfull \hbox (36.51233pt too wide) in paragraph at lines 5644--5644
 }{4}+y^^B2{=}1$[]]|  
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-152-1.pdf, id=2632, 214.845
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-152-1.pdf, id=2662, 214.845
 66pt x 161.84566pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-152-1.pdf Graphic file
  (type pdf)
@@ -3495,7 +3501,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5661--5661
 [][]
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-154-1.pdf, id=2633, 224.052
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-154-1.pdf, id=2663, 224.052
 05pt x 178.52396pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-154-1.pdf Graphic file
  (type pdf)
@@ -3521,7 +3527,7 @@ l.5705 \subsubsection
                      {plane}\label{plane} <./202401311000-TikZ_files/figure-lat
 ex/unnamed-chunk-150-1.pdf> <./202401311000-TikZ_files/figure-latex/unnamed-chu
 nk-152-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-156-1.pdf, id=2671, 232.664
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-156-1.pdf, id=2701, 232.664
 23pt x 178.43163pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-156-1.pdf Graphic file
  (type pdf)
@@ -3534,7 +3540,7 @@ Overfull \hbox (47.0123pt too wide) in paragraph at lines 5762--5762
 \T1/lmtt/m/n/10 ({sin(y)*cos(x)},{sin(y)*sin(x)},{cos(y)});|  
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-158-1.pdf, id=2672, 172.510
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-158-1.pdf, id=2702, 172.510
 5pt x 185.68372pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-158-1.pdf Graphic file
  (type pdf)
@@ -3560,7 +3566,7 @@ l.5785 \subsubsection
                      {polar coordinate}\label{polar-coordinate} <./202401311000
 -TikZ_files/figure-latex/unnamed-chunk-154-1.pdf> <./202401311000-TikZ_files/fi
 gure-latex/unnamed-chunk-156-1.pdf>]
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-160-1.pdf, id=2702, 189.621
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-160-1.pdf, id=2732, 189.621
 41pt x 197.89633pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-160-1.pdf Graphic file
  (type pdf)
@@ -3568,7 +3574,7 @@ File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-160-1.pdf Graphic file
 Package pdftex.def Info: 202401311000-TikZ_files/figure-latex/unnamed-chunk-160
 -1.pdf  used on input line 5820.
 (pdftex.def)             Requested size: 189.62383pt x 197.89885pt.
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-162-1.pdf, id=2703, 228.730
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-162-1.pdf, id=2733, 228.730
 55pt x 221.61897pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-162-1.pdf Graphic file
  (type pdf)
@@ -3629,7 +3635,7 @@ Overfull \hbox (15.51239pt too wide) in paragraph at lines 5899--5899
 10 {0}{2}}|  
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-164-1.pdf, id=2740, 220.474
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-164-1.pdf, id=2771, 220.474
 69pt x 176.33679pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-164-1.pdf Graphic file
  (type pdf)
@@ -3680,7 +3686,7 @@ Overfull \hbox (0.14276pt too wide) in paragraph at lines 5967--5968
 r -[] v e r s i o n -[] of -[] p y t h on -[] p a c k a g e -[] in -[] a -[]
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-168-1.pdf, id=2776, 469.755
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-168-1.pdf, id=2806, 469.755
 pt x 325.215pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-168-1.pdf Graphic file
  (type pdf)
@@ -3698,7 +3704,7 @@ with tikzplotlib v0.10.1.\n\\begin{tikzpicture}\n\n\\end{tikzpicture}\n\TS1/lmt
 t/m/n/10 '[] 
  []
 
-<202401311000-TikZ_files/figure-latex/unnamed-chunk-170-3.pdf, id=2784, 469.755
+<202401311000-TikZ_files/figure-latex/unnamed-chunk-170-3.pdf, id=2814, 469.755
 pt x 325.215pt>
 File: 202401311000-TikZ_files/figure-latex/unnamed-chunk-170-3.pdf Graphic file
  (type pdf)
@@ -3746,7 +3752,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 File: UTF8.chr 2021/10/16 4.8.5
 ) [129]
 [130] [131] [132] [133]
-<202402211401-R_files/figure-latex/unnamed-chunk-19-1.pdf, id=2946, 469.755pt x
+<202402211401-R_files/figure-latex/unnamed-chunk-19-1.pdf, id=2976, 469.755pt x
  325.215pt>
 File: 202402211401-R_files/figure-latex/unnamed-chunk-19-1.pdf Graphic file (ty
 pe pdf)
@@ -3758,7 +3764,7 @@ df  used on input line 6616.
 Underfull \vbox (badness 1953) has occurred while \output is active []
 
  [134]
-<202402211401-R_files/figure-latex/unnamed-chunk-20-1.pdf, id=2952, 469.755pt x
+<202402211401-R_files/figure-latex/unnamed-chunk-20-1.pdf, id=2982, 469.755pt x
  325.215pt>
 File: 202402211401-R_files/figure-latex/unnamed-chunk-20-1.pdf Graphic file (ty
 pe pdf)
@@ -3770,7 +3776,7 @@ df  used on input line 6631.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [135 <./202402211401-R_files/figure-latex/unnamed-chunk-19-1.pdf>]
-<202402211401-R_files/figure-latex/unnamed-chunk-21-1.pdf, id=2963, 469.755pt x
+<202402211401-R_files/figure-latex/unnamed-chunk-21-1.pdf, id=2993, 469.755pt x
  325.215pt>
 File: 202402211401-R_files/figure-latex/unnamed-chunk-21-1.pdf Graphic file (ty
 pe pdf)
@@ -3782,7 +3788,7 @@ df  used on input line 6648.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [136 <./202402211401-R_files/figure-latex/unnamed-chunk-20-1.pdf>]
-<202402211401-R_files/figure-latex/unnamed-chunk-21-2.pdf, id=2974, 469.755pt x
+<202402211401-R_files/figure-latex/unnamed-chunk-21-2.pdf, id=3004, 469.755pt x
  325.215pt>
 File: 202402211401-R_files/figure-latex/unnamed-chunk-21-2.pdf Graphic file (ty
 pe pdf)
@@ -3794,7 +3800,7 @@ df  used on input line 6658.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [137 <./202402211401-R_files/figure-latex/unnamed-chunk-21-1.pdf>]
-<202402211401-R_files/figure-latex/unnamed-chunk-22-1.pdf, id=2985, 469.755pt x
+<202402211401-R_files/figure-latex/unnamed-chunk-22-1.pdf, id=3015, 469.755pt x
  325.215pt>
 File: 202402211401-R_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (ty
 pe pdf)
@@ -3806,7 +3812,7 @@ df  used on input line 6671.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [138 <./202402211401-R_files/figure-latex/unnamed-chunk-21-2.pdf>]
-<202402211401-R_files/figure-latex/unnamed-chunk-23-1.pdf, id=2996, 469.755pt x
+<202402211401-R_files/figure-latex/unnamed-chunk-23-1.pdf, id=3026, 469.755pt x
  325.215pt>
 File: 202402211401-R_files/figure-latex/unnamed-chunk-23-1.pdf Graphic file (ty
 pe pdf)
@@ -3841,7 +3847,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-<202402252333-conic-section_files/figure-latex/unnamed-chunk-1-1.pdf, id=3116, 
+<202402252333-conic-section_files/figure-latex/unnamed-chunk-1-1.pdf, id=3146, 
 297.70824pt x 298.24323pt>
 File: 202402252333-conic-section_files/figure-latex/unnamed-chunk-1-1.pdf Graph
 ic file (type pdf)
@@ -3890,7 +3896,7 @@ Underfull \vbox (badness 2635) has occurred while \output is active []
 
 pdfTeX warning: pdflatex.exe (file ./img/conic-sections-ellipse.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/conic-sections-ellipse.pdf, id=3182, 1149.29375pt x 758.835pt>
+<img/conic-sections-ellipse.pdf, id=3212, 1149.29375pt x 758.835pt>
 File: img/conic-sections-ellipse.pdf Graphic file (type pdf)
 <use img/conic-sections-ellipse.pdf>
 Package pdftex.def Info: img/conic-sections-ellipse.pdf  used on input line 797
@@ -3900,7 +3906,7 @@ Package pdftex.def Info: img/conic-sections-ellipse.pdf  used on input line 797
 
 pdfTeX warning: pdflatex.exe (file ./img/conic-sections-parabola.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/conic-sections-parabola.pdf, id=3183, 1149.29375pt x 758.835pt>
+<img/conic-sections-parabola.pdf, id=3213, 1149.29375pt x 758.835pt>
 File: img/conic-sections-parabola.pdf Graphic file (type pdf)
 <use img/conic-sections-parabola.pdf>
 Package pdftex.def Info: img/conic-sections-parabola.pdf  used on input line 79
@@ -3910,7 +3916,7 @@ Package pdftex.def Info: img/conic-sections-parabola.pdf  used on input line 79
 
 pdfTeX warning: pdflatex.exe (file ./img/conic-sections-hyperbola.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/conic-sections-hyperbola.pdf, id=3184, 1149.29375pt x 758.835pt>
+<img/conic-sections-hyperbola.pdf, id=3214, 1149.29375pt x 758.835pt>
 File: img/conic-sections-hyperbola.pdf Graphic file (type pdf)
 <use img/conic-sections-hyperbola.pdf>
 Package pdftex.def Info: img/conic-sections-hyperbola.pdf  used on input line 7
@@ -3948,7 +3954,7 @@ l.8119 \]
 
 pdfTeX warning: pdflatex.exe (file ./img/conic-sections-polar-ellipse.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/conic-sections-polar-ellipse.pdf, id=3229, 1149.29375pt x 1077.02374pt>
+<img/conic-sections-polar-ellipse.pdf, id=3260, 1149.29375pt x 1077.02374pt>
 File: img/conic-sections-polar-ellipse.pdf Graphic file (type pdf)
 <use img/conic-sections-polar-ellipse.pdf>
 Package pdftex.def Info: img/conic-sections-polar-ellipse.pdf  used on input li
@@ -3958,7 +3964,7 @@ ne 8143.
 
 pdfTeX warning: pdflatex.exe (file ./img/conic-sections-polar-parabola.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/conic-sections-polar-parabola.pdf, id=3230, 1149.29375pt x 1077.02374pt>
+<img/conic-sections-polar-parabola.pdf, id=3261, 1149.29375pt x 1077.02374pt>
 File: img/conic-sections-polar-parabola.pdf Graphic file (type pdf)
 <use img/conic-sections-polar-parabola.pdf>
 Package pdftex.def Info: img/conic-sections-polar-parabola.pdf  used on input l
@@ -3968,7 +3974,7 @@ ine 8147.
 
 pdfTeX warning: pdflatex.exe (file ./img/conic-sections-polar-hyperbola.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<img/conic-sections-polar-hyperbola.pdf, id=3231, 1149.29375pt x 1077.02374pt>
+<img/conic-sections-polar-hyperbola.pdf, id=3262, 1149.29375pt x 1077.02374pt>
 File: img/conic-sections-polar-hyperbola.pdf Graphic file (type pdf)
 <use img/conic-sections-polar-hyperbola.pdf>
 Package pdftex.def Info: img/conic-sections-polar-hyperbola.pdf  used on input 
@@ -4097,7 +4103,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-<img/matplotlib-figure-anatomy.png, id=3444, 1505.625pt x 1505.625pt>
+<img/matplotlib-figure-anatomy.png, id=3473, 1505.625pt x 1505.625pt>
 File: img/matplotlib-figure-anatomy.png Graphic file (type png)
 <use img/matplotlib-figure-anatomy.png>
 Package pdftex.def Info: img/matplotlib-figure-anatomy.png  used on input line 
@@ -4108,21 +4114,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 8790--8790
 [][]
  []
 
-<img/matplotlib-subplot-anatomy.png, id=3446, 264.99pt x 139.722pt>
+<img/matplotlib-subplot-anatomy.png, id=3475, 264.99pt x 139.722pt>
 File: img/matplotlib-subplot-anatomy.png Graphic file (type png)
 <use img/matplotlib-subplot-anatomy.png>
 Package pdftex.def Info: img/matplotlib-subplot-anatomy.png  used on input line
  8796.
 (pdftex.def)             Requested size: 264.99338pt x 139.72377pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-4-1.pdf, id=3448, 469
-.755pt x 325.215pt>
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-4-1.pdf, id=3477, 462
+.52798pt x 346.89601pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-4-1.pdf Graphic 
 file (type pdf)
 <use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-4-1.pdf>
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-4-1.pdf  used on input line 8833.
-(pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-6-3.pdf, id=3449, 469
+(pdftex.def)             Requested size: 199.73712pt x 149.80284pt.
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-6-3.pdf, id=3478, 469
 .755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-6-3.pdf Graphic 
 file (type pdf)
@@ -4139,7 +4145,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.27.1})
 l.8876 \begin{center}
                      \rule{0.5\linewidth}{0.5pt}\end{center} <./img/matplotlib-
 figure-anatomy.png>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-8-5.pdf, id=3490, 469
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-8-5.pdf, id=3520, 469
 .755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-8-5.pdf Graphic 
 file (type pdf)
@@ -4156,7 +4162,7 @@ l.8929 \end{Shaded}
                     <./img/matplotlib-subplot-anatomy.png> <./202403181222-MatP
 lotLib_files/figure-latex/unnamed-chunk-6-3.pdf> <./202403181222-MatPlotLib_fil
 es/figure-latex/unnamed-chunk-8-5.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-9-7.pdf, id=3556, 469
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-9-7.pdf, id=3585, 469
 .755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-9-7.pdf Graphic 
 file (type pdf)
@@ -4164,7 +4170,7 @@ file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-9-7.pdf  used on input line 8931.
 (pdftex.def)             Requested size: 443.8635pt x 307.2901pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-10-9.pdf, id=3557, 46
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-10-9.pdf, id=3586, 46
 9.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-10-9.pdf Graphic
  file (type pdf)
@@ -4177,7 +4183,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [186 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-9-7.pdf>] [18
 7 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-10-9.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-13-11.pdf, id=3614, 4
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-13-11.pdf, id=3643, 4
 69.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-13-11.pdf Graphi
 c file (type pdf)
@@ -4185,7 +4191,7 @@ c file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-13-11.pdf  used on input line 9030.
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-15-13.pdf, id=3615, 4
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-15-13.pdf, id=3644, 4
 69.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-15-13.pdf Graphi
 c file (type pdf)
@@ -4193,7 +4199,7 @@ c file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-15-13.pdf  used on input line 9064.
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-17-15.pdf, id=3616, 4
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-17-15.pdf, id=3645, 4
 69.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-17-15.pdf Graphi
 c file (type pdf)
@@ -4204,7 +4210,7 @@ nk-17-15.pdf  used on input line 9101.
  [188 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-13-11.pdf> <.
 /202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-15-13.pdf> <./2024031
 81222-MatPlotLib_files/figure-latex/unnamed-chunk-17-15.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-20-17.pdf, id=3676, 1
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-20-17.pdf, id=3705, 1
 44.54pt x 289.08pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-20-17.pdf Graphi
 c file (type pdf)
@@ -4212,7 +4218,7 @@ c file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-20-17.pdf  used on input line 9156.
 (pdftex.def)             Requested size: 144.54623pt x 289.09251pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-22-19.pdf, id=3677, 2
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-22-19.pdf, id=3706, 2
 89.08pt x 144.54pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-22-19.pdf Graphi
 c file (type pdf)
@@ -4222,7 +4228,7 @@ nk-22-19.pdf  used on input line 9192.
 (pdftex.def)             Requested size: 199.73448pt x 99.86722pt.
  [189 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-20-17.pdf> <.
 /202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-22-19.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-27-1.pdf, id=3707, 43
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-27-1.pdf, id=3736, 43
 3.62pt x 216.81pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-27-1.pdf Graphic
  file (type pdf)
@@ -4234,7 +4240,7 @@ nk-27-1.pdf  used on input line 9290.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [190]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-29-3.pdf, id=3716, 43
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-29-3.pdf, id=3745, 43
 3.62pt x 216.81pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-29-3.pdf Graphic
  file (type pdf)
@@ -4242,7 +4248,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-29-3.pdf Graphic
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-29-3.pdf  used on input line 9358.
 (pdftex.def)             Requested size: 199.73889pt x 99.86945pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-31-5.pdf, id=3717, 46
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-31-5.pdf, id=3746, 46
 9.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-31-5.pdf Graphic
  file (type pdf)
@@ -4287,7 +4293,7 @@ m/n/10 '\T1/lmtt/m/n/10 seaborn-v0_8-pastel\TS1/lmtt/m/n/10 '\T1/lmtt/m/n/10 ,
 /10 tableau-colorblind10\TS1/lmtt/m/n/10 '\T1/lmtt/m/n/10 ][] 
  []
 
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-34-7.pdf, id=3745, 46
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-34-7.pdf, id=3774, 46
 9.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-34-7.pdf Graphic
  file (type pdf)
@@ -4297,7 +4303,7 @@ nk-34-7.pdf  used on input line 9450.
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
 [192 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-31-5.pdf> <./2
 02403181222-MatPlotLib_files/figure-latex/unnamed-chunk-34-7.pdf>]
-<img/seaborn-plot-type.png, id=3791, 806.01125pt x 601.24625pt>
+<img/seaborn-plot-type.png, id=3820, 806.01125pt x 601.24625pt>
 File: img/seaborn-plot-type.png Graphic file (type png)
 <use img/seaborn-plot-type.png>
 Package pdftex.def Info: img/seaborn-plot-type.png  used on input line 9534.
@@ -4314,7 +4320,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.27.3})
                                                   \__shipout_drop_firstpage_...
 l.9585 \end{verbatim}
                       <./img/seaborn-plot-type.png>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-42-1.pdf, id=3806, 46
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-42-1.pdf, id=3835, 46
 9.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-42-1.pdf Graphic
  file (type pdf)
@@ -4322,7 +4328,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-42-1.pdf Graphic
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-42-1.pdf  used on input line 9634.
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-44-3.pdf, id=3807, 46
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-44-3.pdf, id=3836, 46
 9.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-44-3.pdf Graphic
  file (type pdf)
@@ -4407,7 +4413,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [195 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-42-1.pdf> <./
 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-44-3.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-48-5.pdf, id=3842, 46
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-48-5.pdf, id=3871, 46
 9.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-48-5.pdf Graphic
  file (type pdf)
@@ -4415,7 +4421,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-48-5.pdf Graphic
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-48-5.pdf  used on input line 9744.
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-50-7.pdf, id=3843, 46
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-50-7.pdf, id=3872, 46
 9.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-50-7.pdf Graphic
  file (type pdf)
@@ -4423,7 +4429,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-50-7.pdf Graphic
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-50-7.pdf  used on input line 9778.
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-52-9.pdf, id=3844, 46
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-52-9.pdf, id=3873, 46
 9.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-52-9.pdf Graphic
  file (type pdf)
@@ -4436,7 +4442,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [196 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-48-5.pdf> <./
 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-50-7.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-54-11.pdf, id=3901, 4
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-54-11.pdf, id=3930, 4
 69.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-54-11.pdf Graphi
 c file (type pdf)
@@ -4444,7 +4450,7 @@ c file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-54-11.pdf  used on input line 9849.
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-56-13.pdf, id=3903, 4
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-56-13.pdf, id=3932, 4
 69.755pt x 325.215pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-56-13.pdf Graphi
 c file (type pdf)
@@ -4461,7 +4467,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9916--9916
 [][]
  []
 
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-59-1.pdf, id=3904, 35
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-59-1.pdf, id=3933, 35
 3.65187pt x 353.58601pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-59-1.pdf Graphic
  file (type pdf)
@@ -4478,7 +4484,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.27.4})
                                                   \__shipout_drop_firstpage_...
 l.9949 \begin{center}
                      \rule{0.5\linewidth}{0.5pt}\end{center}]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-61-3.pdf, id=4021, 35
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-61-3.pdf, id=4050, 35
 3.65187pt x 353.58601pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-61-3.pdf Graphic
  file (type pdf)
@@ -4486,7 +4492,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-61-3.pdf Graphic
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-61-3.pdf  used on input line 9975.
 (pdftex.def)             Requested size: 199.73813pt x 199.70093pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-63-5.pdf, id=4022, 78
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-63-5.pdf, id=4051, 78
 6.15355pt x 353.25851pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-63-5.pdf Graphic
  file (type pdf)
@@ -4497,7 +4503,7 @@ nk-63-5.pdf  used on input line 10021.
  [199 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-59-1.pdf> <./
 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-61-3.pdf> <./202403181
 222-MatPlotLib_files/figure-latex/unnamed-chunk-63-5.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-65-7.pdf, id=4112, 78
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-65-7.pdf, id=4142, 78
 6.15355pt x 714.65555pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-65-7.pdf Graphic
  file (type pdf)
@@ -4511,7 +4517,7 @@ Overfull \hbox (5.01242pt too wide) in paragraph at lines 10105--10105
 FacetGrid\TS1/lmtt/m/n/10 '\T1/lmtt/m/n/10 >[] 
  []
 
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-67-9.pdf, id=4113, 79
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-67-9.pdf, id=4143, 79
 2.35022pt x 722.7pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-67-9.pdf Graphic
  file (type pdf)
@@ -4519,7 +4525,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-67-9.pdf Graphic
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-67-9.pdf  used on input line 10111.
 (pdftex.def)             Requested size: 199.73134pt x 182.17429pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-69-11.pdf, id=4114, 3
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-69-11.pdf, id=4144, 3
 53.65187pt x 353.41351pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-69-11.pdf Graphi
 c file (type pdf)
@@ -4529,7 +4535,7 @@ nk-69-11.pdf  used on input line 10148.
 (pdftex.def)             Requested size: 199.73813pt x 199.6035pt.
 [200 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-65-7.pdf> <./2
 02403181222-MatPlotLib_files/figure-latex/unnamed-chunk-67-9.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-71-13.pdf, id=4203, 3
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-71-13.pdf, id=4232, 3
 53.65187pt x 353.48438pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-71-13.pdf Graphi
 c file (type pdf)
@@ -4537,7 +4543,7 @@ c file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-71-13.pdf  used on input line 10181.
 (pdftex.def)             Requested size: 199.73813pt x 199.64352pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-73-15.pdf, id=4204, 3
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-73-15.pdf, id=4233, 3
 53.68951pt x 353.32062pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-73-15.pdf Graphi
 c file (type pdf)
@@ -4550,7 +4556,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [201 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-69-11.pdf> <.
 /202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-71-13.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-75-17.pdf, id=4252, 3
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-75-17.pdf, id=4281, 3
 53.65875pt x 353.48438pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-75-17.pdf Graphi
 c file (type pdf)
@@ -4558,7 +4564,7 @@ c file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-75-17.pdf  used on input line 10247.
 (pdftex.def)             Requested size: 199.73662pt x 199.63812pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-1.pdf, id=4253, 35
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-1.pdf, id=4282, 35
 3.7422pt x 353.48438pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-1.pdf Graphic
  file (type pdf)
@@ -4566,7 +4572,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-1.pdf Graphic
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-77-1.pdf  used on input line 10280.
 (pdftex.def)             Requested size: 199.74057pt x 199.59499pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-2.pdf, id=4254, 36
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-2.pdf, id=4283, 36
 1.35pt x 361.35pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-2.pdf Graphic
  file (type pdf)
@@ -4579,7 +4585,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [202 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-73-15.pdf> <.
 /202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-75-17.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-78-1.pdf, id=4310, 23
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-78-1.pdf, id=4339, 23
 6.94623pt x 191.01163pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-78-1.pdf Graphic
  file (type pdf)
@@ -4587,7 +4593,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-78-1.pdf Graphic
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-78-1.pdf  used on input line 10302.
 (pdftex.def)             Requested size: 236.95287pt x 191.01698pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-5.pdf, id=4311, 77
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-5.pdf, id=4340, 77
 2.94833pt x 353.15689pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-5.pdf Graphic
  file (type pdf)
@@ -4595,7 +4601,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-5.pdf Graphic
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-80-5.pdf  used on input line 10334.
 (pdftex.def)             Requested size: 199.73521pt x 91.2582pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-6.pdf, id=4312, 77
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-6.pdf, id=4341, 77
 4.82474pt x 361.35pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-6.pdf Graphic
  file (type pdf)
@@ -4613,7 +4619,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [203 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-1.pdf> <./
 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-2.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-9.pdf, id=4360, 77
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-9.pdf, id=4389, 77
 2.94833pt x 352.87457pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-9.pdf Graphic
  file (type pdf)
@@ -4621,7 +4627,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-9.pdf Graphic
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-82-9.pdf  used on input line 10376.
 (pdftex.def)             Requested size: 199.73521pt x 91.18524pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-10.pdf, id=4361, 7
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-10.pdf, id=4390, 7
 74.82474pt x 361.35pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-10.pdf Graphi
 c file (type pdf)
@@ -4647,7 +4653,7 @@ l.10382 \subsubsection
 2-MatPlotLib_files/figure-latex/unnamed-chunk-78-1.pdf> <./202403181222-MatPlot
 Lib_files/figure-latex/unnamed-chunk-80-5.pdf> <./202403181222-MatPlotLib_files
 /figure-latex/unnamed-chunk-80-6.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-84-13.pdf, id=4443, 3
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-84-13.pdf, id=4472, 3
 53.92287pt x 353.30371pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-84-13.pdf Graphi
 c file (type pdf)
@@ -4655,7 +4661,7 @@ c file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-84-13.pdf  used on input line 10411.
 (pdftex.def)             Requested size: 199.73456pt x 199.38515pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-84-14.pdf, id=4444, 3
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-84-14.pdf, id=4473, 3
 61.35pt x 361.35pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-84-14.pdf Graphi
 c file (type pdf)
@@ -4673,7 +4679,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [205 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-9.pdf> <./
 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-10.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-17.pdf, id=4519, 7
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-17.pdf, id=4549, 7
 15.2729pt x 352.97621pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-17.pdf Graphi
 c file (type pdf)
@@ -4681,7 +4687,7 @@ c file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-86-17.pdf  used on input line 10445.
 (pdftex.def)             Requested size: 199.72934pt x 98.56335pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-18.pdf, id=4520, 7
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-18.pdf, id=4550, 7
 22.7pt x 361.35pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-18.pdf Graphi
 c file (type pdf)
@@ -4706,7 +4712,7 @@ Overfull \hbox (115.2621pt too wide) in paragraph at lines 10485--10485
 ] 
  []
 
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-88-21.pdf, id=4657, 4
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-88-21.pdf, id=4686, 4
 33.62pt x 433.62pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-88-21.pdf Graphi
 c file (type pdf)
@@ -4714,7 +4720,7 @@ c file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-88-21.pdf  used on input line 10487.
 (pdftex.def)             Requested size: 199.73889pt x 199.73889pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-90-23.pdf, id=4658, 8
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-90-23.pdf, id=4687, 8
 03.5189pt x 712.02388pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-90-23.pdf Graphi
 c file (type pdf)
@@ -4722,7 +4728,7 @@ c file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-90-23.pdf  used on input line 10519.
 (pdftex.def)             Requested size: 199.72672pt x 176.98425pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-90-24.pdf, id=4659, 8
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-90-24.pdf, id=4688, 8
 07.25589pt x 722.7pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-90-24.pdf Graphi
 c file (type pdf)
@@ -4739,7 +4745,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10519--10520
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [207 <./202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-88-21.pdf>]
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-27.pdf, id=4695, 8
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-27.pdf, id=4724, 8
 03.5189pt x 712.02388pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-27.pdf Graphi
 c file (type pdf)
@@ -4747,7 +4753,7 @@ c file (type pdf)
 Package pdftex.def Info: 202403181222-MatPlotLib_files/figure-latex/unnamed-chu
 nk-92-27.pdf  used on input line 10558.
 (pdftex.def)             Requested size: 199.72672pt x 176.98425pt.
-<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-28.pdf, id=4696, 8
+<202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-28.pdf, id=4725, 8
 07.25589pt x 722.7pt>
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-28.pdf Graphi
 c file (type pdf)
@@ -4796,7 +4802,7 @@ Overfull \hbox (20.76237pt too wide) in paragraph at lines 10742--10742
 \TS1/lmtt/m/n/10 '[] 
  []
 
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-3-1.pdf, id=4942, 469.75
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-3-1.pdf, id=4972, 469.75
 5pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-3-1.pdf Graphic fil
 e (type pdf)
@@ -4811,7 +4817,7 @@ Overfull \hbox (20.76237pt too wide) in paragraph at lines 10779--10779
 \TS1/lmtt/m/n/10 '[] 
  []
 
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf, id=4944, 469.75
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf, id=4974, 469.75
 5pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf Graphic fil
 e (type pdf)
@@ -4823,7 +4829,7 @@ Package pdftex.def Info: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-
 Underfull \vbox (badness 4634) has occurred while \output is active []
 
  [215 <./202403211208-ggplot2_files/figure-latex/unnamed-chunk-3-1.pdf>]
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf, id=4961, 469.75
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf, id=4990, 469.75
 5pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf Graphic fil
 e (type pdf)
@@ -4831,7 +4837,7 @@ e (type pdf)
 Package pdftex.def Info: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-
 8-1.pdf  used on input line 10835.
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-10-1.pdf, id=4964, 469.7
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-10-1.pdf, id=4993, 469.7
 55pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-10-1.pdf Graphic fi
 le (type pdf)
@@ -4841,7 +4847,7 @@ Package pdftex.def Info: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
  [216 <./202403211208-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf> <./2024
 03211208-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf>]
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-12-1.pdf, id=4987, 469.7
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-12-1.pdf, id=5016, 469.7
 55pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-12-1.pdf Graphic fi
 le (type pdf)
@@ -6183,7 +6189,7 @@ ecycle_warnings()\TS1/lmtt/m/n/10 ` \T1/lmtt/m/n/10 to see where this warning w
 as[] 
  []
 
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-28-1.pdf, id=5031, 469.7
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-28-1.pdf, id=5060, 469.7
 55pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-28-1.pdf Graphic fi
 le (type pdf)
@@ -6222,7 +6228,7 @@ ecycle_warnings()\TS1/lmtt/m/n/10 ` \T1/lmtt/m/n/10 to see where this warning w
 as[] 
  []
 
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-30-1.pdf, id=5040, 469.7
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-30-1.pdf, id=5069, 469.7
 55pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-30-1.pdf Graphic fi
 le (type pdf)
@@ -6232,7 +6238,7 @@ Package pdftex.def Info: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
 [223 <./202403211208-ggplot2_files/figure-latex/unnamed-chunk-28-1.pdf> <./2024
 03211208-ggplot2_files/figure-latex/unnamed-chunk-30-1.pdf>]
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-32-1.pdf, id=5062, 469.7
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-32-1.pdf, id=5092, 469.7
 55pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-32-1.pdf Graphic fi
 le (type pdf)
@@ -6240,7 +6246,7 @@ le (type pdf)
 Package pdftex.def Info: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-
 32-1.pdf  used on input line 11505.
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-32-2.pdf, id=5063, 469.7
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-32-2.pdf, id=5093, 469.7
 55pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-32-2.pdf Graphic fi
 le (type pdf)
@@ -6253,7 +6259,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11505--11506
 [][]
  []
 
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-34-1.pdf, id=5064, 469.7
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-34-1.pdf, id=5094, 469.7
 55pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-34-1.pdf Graphic fi
 le (type pdf)
@@ -6264,7 +6270,7 @@ Package pdftex.def Info: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-
 [224 <./202403211208-ggplot2_files/figure-latex/unnamed-chunk-32-1.pdf> <./2024
 03211208-ggplot2_files/figure-latex/unnamed-chunk-32-2.pdf> <./202403211208-ggp
 lot2_files/figure-latex/unnamed-chunk-34-1.pdf>]
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-36-1.pdf, id=5087, 469.7
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-36-1.pdf, id=5116, 469.7
 55pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-36-1.pdf Graphic fi
 le (type pdf)
@@ -6272,7 +6278,7 @@ le (type pdf)
 Package pdftex.def Info: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-
 36-1.pdf  used on input line 11567.
 (pdftex.def)             Requested size: 199.73283pt x 138.27657pt.
-<202403211208-ggplot2_files/figure-latex/unnamed-chunk-38-1.pdf, id=5089, 469.7
+<202403211208-ggplot2_files/figure-latex/unnamed-chunk-38-1.pdf, id=5118, 469.7
 55pt x 325.215pt>
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-38-1.pdf Graphic fi
 le (type pdf)
@@ -6290,13 +6296,13 @@ File: img/pre-and-true-experimental-designs.png Graphic file (type png)
 Package pdftex.def Info: img/pre-and-true-experimental-designs.png  used on inp
 ut line 11658.
 (pdftex.def)             Requested size: 288.50237pt x 264.79839pt.
-<img/quasi-experimental-designs.png, id=5118, 695.59875pt x 805.50937pt>
+<img/quasi-experimental-designs.png, id=5147, 695.59875pt x 805.50937pt>
 File: img/quasi-experimental-designs.png Graphic file (type png)
 <use img/quasi-experimental-designs.png>
 Package pdftex.def Info: img/quasi-experimental-designs.png  used on input line
  11662.
 (pdftex.def)             Requested size: 288.5089pt x 334.0958pt.
-<img/quasi-experimental-designs-2.png, id=5120, 700.11563pt x 976.39781pt>
+<img/quasi-experimental-designs-2.png, id=5149, 700.11563pt x 976.39781pt>
 File: img/quasi-experimental-designs-2.png Graphic file (type png)
 <use img/quasi-experimental-designs-2.png>
 Package pdftex.def Info: img/quasi-experimental-designs-2.png  used on input li
@@ -6325,7 +6331,7 @@ l.11730 \]
 ]
 Chapter 32.
 [235]
-<img/buchanan2005-replicates.png, id=5201, 853.1875pt x 610.28pt>
+<img/buchanan2005-replicates.png, id=5230, 853.1875pt x 610.28pt>
 File: img/buchanan2005-replicates.png Graphic file (type png)
 <use img/buchanan2005-replicates.png>
 Package pdftex.def Info: img/buchanan2005-replicates.png  used on input line 12
@@ -6333,7 +6339,7 @@ Package pdftex.def Info: img/buchanan2005-replicates.png  used on input line 12
 (pdftex.def)             Requested size: 288.51768pt x 206.375pt.
  [236]
 <202403232342-experimental-design_files/figure-latex/unnamed-chunk-2-1.pdf, id=
-5211, 155.69167pt x 152.68343pt>
+5240, 155.69167pt x 152.68343pt>
 File: 202403232342-experimental-design_files/figure-latex/unnamed-chunk-2-1.pdf
  Graphic file (type pdf)
 <use 202403232342-experimental-design_files/figure-latex/unnamed-chunk-2-1.pdf>
@@ -6360,22 +6366,22 @@ Overfull \hbox (2.84395pt too wide) in paragraph at lines 12124--12124
 ment/observational
  []
 
-<img/casler2015-fig1.png, id=5235, 396.48125pt x 262.9825pt>
+<img/casler2015-fig1.png, id=5264, 396.48125pt x 262.9825pt>
 File: img/casler2015-fig1.png Graphic file (type png)
 <use img/casler2015-fig1.png>
 Package pdftex.def Info: img/casler2015-fig1.png  used on input line 12129.
 (pdftex.def)             Requested size: 221.93723pt x 147.20898pt.
-<img/casler2015-fig2.png, id=5237, 521.95pt x 333.245pt>
+<img/casler2015-fig2.png, id=5266, 521.95pt x 333.245pt>
 File: img/casler2015-fig2.png Graphic file (type png)
 <use img/casler2015-fig2.png>
 Package pdftex.def Info: img/casler2015-fig2.png  used on input line 12133.
 (pdftex.def)             Requested size: 221.93332pt x 141.69589pt.
-<img/casler2015-fig3.png, id=5239, 521.95pt x 350.30875pt>
+<img/casler2015-fig3.png, id=5268, 521.95pt x 350.30875pt>
 File: img/casler2015-fig3.png Graphic file (type png)
 <use img/casler2015-fig3.png>
 Package pdftex.def Info: img/casler2015-fig3.png  used on input line 12137.
 (pdftex.def)             Requested size: 221.93332pt x 148.9514pt.
-<img/casler2015-fig4.png, id=5241, 521.95pt x 353.32pt>
+<img/casler2015-fig4.png, id=5270, 521.95pt x 353.32pt>
 File: img/casler2015-fig4.png Graphic file (type png)
 <use img/casler2015-fig4.png>
 Package pdftex.def Info: img/casler2015-fig4.png  used on input line 12141.
@@ -6411,12 +6417,13 @@ l.12148 \]
 Chapter 33.
 [243] [244]
 Chapter 34.
-[245
 
-] [246]
-Underfull \vbox (badness 1874) has occurred while \output is active []
+Underfull \vbox (badness 5924) has occurred while \output is active []
 
- [247]
+ [245
+
+]
+[246] [247]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [248]
@@ -6456,7 +6463,7 @@ Underfull \vbox (badness 1132) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [252]
-Underfull \hbox (badness 3758) in paragraph at lines 12959--12960
+Underfull \hbox (badness 3758) in paragraph at lines 12961--12962
  \T1/lmr/bx/n/10 34.1.3.5.1 4-differential op-er-a-tor[] \T1/lmr/m/n/10 (+20) 4
 -differential op-er-a-tor / four-differential op-er-a-tor =
  []
@@ -6495,16 +6502,91 @@ Chapter 36.
 
 ]
 Chapter 37.
-[263] [264]
-Overfull \hbox (74.55801pt too wide) detected at line 13476
-[] \OT1/lmr/m/n/10 = [] = [] = []
+[263]
+<202403281312-group-theory_files/figure-latex/unnamed-chunk-3-1.pdf, id=5478, 1
+30.55475pt x 69.06602pt>
+File: 202403281312-group-theory_files/figure-latex/unnamed-chunk-3-1.pdf Graphi
+c file (type pdf)
+<use 202403281312-group-theory_files/figure-latex/unnamed-chunk-3-1.pdf>
+Package pdftex.def Info: 202403281312-group-theory_files/figure-latex/unnamed-c
+hunk-3-1.pdf  used on input line 13385.
+(pdftex.def)             Requested size: 130.5604pt x 69.069pt.
+ [264
+pdfTeX warning (ext4): destination with the same identifier (name{figure.37.1})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.13412 \]
+           <./202403281312-group-theory_files/figure-latex/unnamed-chunk-3-1.pd
+f>] [265]
+! Undefined control sequence.
+\CJK@XXX ...endcsname {`#2}{`#3}\CJK@ignorespaces 
+                                                  \fi 
+l.13571 ...pedia.org/wiki/Binetâ€“Cauchy_identity}
+                                                  {Binet--Cauchy identity}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...en.wikipedia.org/wiki/Binet\CJK@226 
+                                                  {`€}{`“}Cauchy_identity}\e...
+l.13571 ...auchy_identity}{Binet--Cauchy identity}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...en.wikipedia.org/wiki/Binet\CJK@226 
+                                                  {`€}{`“}Cauchy_identity\if...
+l.13571 ...auchy_identity}{Binet--Cauchy identity}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (13.74123pt too wide) detected at line 13615
+[][]
  []
 
-[265]
+[266] [267] [268] [269]
+Overfull \hbox (11.88611pt too wide) detected at line 14177
+[][]
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [266]
-[267] [268
+ [270]
+pdfTeX warning (ext4): destination with the same identifier (name{thm:unnamed-c
+hunk-4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14190 ...tect\hypertarget{thm:unnamed-chunk-4}{}
+                                                  \label{thm:unnamed-chunk-4...
+
+Overfull \hbox (3.20161pt too wide) in paragraph at lines 14199--14207
+[]\T1/lmr/m/n/10 (-20) Let $[] [] [] \OT1/lmr/m/n/10 (-20) = [] \OMS/lmsy/m/n/1
+0 2
+ []
+
+
+Underfull \vbox (badness 2302) has occurred while \output is active []
+
+ [271]
+[272]
+Chapter 38.
+[273
+
+] [274
 
 ] (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -6512,61 +6594,61 @@ File: UTF8.enc 2021/10/16 4.8.5
 (c:/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Underfull \hbox (badness 10000) in paragraph at lines 13780--13780
+Underfull \hbox (badness 10000) in paragraph at lines 14266--14266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13784--13784
+Underfull \hbox (badness 10000) in paragraph at lines 14270--14270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13788--13788
+Underfull \hbox (badness 10000) in paragraph at lines 14274--14274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13792--13792
+Underfull \hbox (badness 10000) in paragraph at lines 14278--14278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13796--13796
+Underfull \hbox (badness 10000) in paragraph at lines 14282--14282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13800--13800
+Underfull \hbox (badness 10000) in paragraph at lines 14286--14286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13804--13804
+Underfull \hbox (badness 10000) in paragraph at lines 14290--14290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13808--13808
+Underfull \hbox (badness 10000) in paragraph at lines 14294--14294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13812--13812
+Underfull \hbox (badness 10000) in paragraph at lines 14298--14298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13816--13816
+Underfull \hbox (badness 10000) in paragraph at lines 14302--14302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13820--13820
+Underfull \hbox (badness 10000) in paragraph at lines 14306--14306
 
  []
 
-[269] (./math.aux)
+[275] (./math.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -6575,11 +6657,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 47569 strings out of 478305
- 1075425 string characters out of 5849246
- 1657015 words of memory out of 5000000
- 63512 multiletter control sequences out of 15000+600000
- 632418 words of font info for 332 fonts, out of 8000000 for 9000
+ 47637 strings out of 478305
+ 1076935 string characters out of 5849246
+ 1659218 words of memory out of 5000000
+ 63548 multiletter control sequences out of 15000+600000
+ 632548 words of font info for 333 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  95i,23n,95p,9665b,903s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022
@@ -6667,19 +6749,20 @@ mr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/
 nts/type1/public/lm/lmro10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/l
 m/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy5.pfb><c:/te
 xlive/2022/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/texlive/2022/texmf-di
-st/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pub
-lic/lm/lmtko10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
-><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtti10.pfb><c:/texlive/2022
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msam5.pfb><c:/texlive/2022/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msam7.pfb><c:/texlive/2022/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/
-type1/public/xypic/xyatip10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
-xypic/xybtip10.pfb>
-Output written on math.pdf (269 pages, 4788981 bytes).
+st/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publ
+ic/lm/lmtk10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtko10.pfb>
+<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2022/t
+exmf-dist/fonts/type1/public/lm/lmtti10.pfb><c:/texlive/2022/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1
+/public/amsfonts/symbols/msam5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publ
+ic/amsfonts/symbols/msam7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/xypic/
+xyatip10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb>
+
+Output written on math.pdf (275 pages, 4819697 bytes).
 PDF statistics:
- 7123 PDF objects out of 7423 (max. 8388607)
- 5108 compressed objects within 52 object streams
- 778 named destinations out of 1000 (max. 500000)
- 73349 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 7274 PDF objects out of 7423 (max. 8388607)
+ 5247 compressed objects within 53 object streams
+ 807 named destinations out of 1000 (max. 500000)
+ 73466 words of extra memory for PDF output out of 74296 (max. 10000000)
 
