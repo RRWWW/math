@@ -211,6 +211,81 @@ x_{{\scriptscriptstyle 3}}
 \end{cases}
 \end{aligned}
 $$
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '40%', fig.cap='quaternion multiplication table'}
+\begin{tikzpicture}
+  \node {
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline 
+    $\cdot$ & $1$ & $\mathrm{i}$ & $\mathrm{j}$ & $\mathrm{k}$\tabularnewline
+    \hline 
+    $1$ & $1$ & $\mathrm{i}$ & $\mathrm{j}$ & $\mathrm{k}$\tabularnewline
+    \hline 
+    $\mathrm{i}$ & $\mathrm{i}$ & $-1$ & $\mathrm{k}$ & $-\mathrm{j}$\tabularnewline
+    \hline 
+    $\mathrm{j}$ & $\mathrm{j}$ & $-\mathrm{\mathrm{k}}$ & $-1$ & $\mathrm{i}$\tabularnewline
+    \hline 
+    $\mathrm{k}$ & $\mathrm{k}$ & $\mathrm{j}$ & $-\mathrm{i}$ & $-1$\tabularnewline
+    \hline 
+    \end{tabular}
+  };
+\end{tikzpicture}
+```
+
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '40%', fig.cap='quaternion basis group table'}
+\begin{tikzpicture}
+  \node {
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+    \hline 
+    $\cdot$ & $1$ & $\mathrm{i}$ & $\mathrm{j}$ & $\mathrm{k}$ & $-1$ & $-\mathrm{i}$ & $-\mathrm{j}$ & $-\mathrm{k}$\tabularnewline
+    \hline 
+    $1$ & $1$ & $\mathrm{i}$ & $\mathrm{j}$ & $\mathrm{k}$ &  &  &  & \tabularnewline
+    \hline 
+    $\mathrm{i}$ & $\mathrm{i}$ & $-1$ & $\mathrm{k}$ & $-\mathrm{j}$ &  &  &  & \tabularnewline
+    \hline 
+    $\mathrm{j}$ & $\mathrm{j}$ & $-\mathrm{\mathrm{k}}$ & $-1$ & $\mathrm{i}$ &  &  &  & \tabularnewline
+    \hline 
+    $\mathrm{k}$ & $\mathrm{k}$ & $\mathrm{j}$ & $-\mathrm{i}$ & $-1$ &  &  &  & \tabularnewline
+    \hline 
+    $-1$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    $-\mathrm{i}$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    $-\mathrm{j}$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    $-\mathrm{k}$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    \end{tabular}
+  };
+\end{tikzpicture}
+```
+
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '40%', fig.cap='quaternion basis group table 2'}
+\begin{tikzpicture}
+  \node {
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+    \hline 
+    $\cdot$ & $1$ & $-1$ & $\mathrm{i}$ & $-\mathrm{i}$ & $\mathrm{j}$ & $-\mathrm{j}$ & $\mathrm{k}$ & $-\mathrm{k}$\tabularnewline
+    \hline 
+    $1$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    $-1$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    $\mathrm{i}$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    $-\mathrm{i}$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    $\mathrm{j}$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    $-\mathrm{j}$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    $\mathrm{k}$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    $-\mathrm{k}$ &  &  &  &  &  &  &  & \tabularnewline
+    \hline 
+    \end{tabular}
+  };
+\end{tikzpicture}
+```
 
 #### true origin of ( dot product & cross product ) / ( inner product & outer product )
 

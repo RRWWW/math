@@ -97,8 +97,1957 @@
 \begin_body
 
 \begin_layout Standard
-\align center
+dual basis considering same dimension first
+\begin_inset Formula 
+\[
+X^{\prime}=AX
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+I^{\prime}= & AX\\
+X_{I^{\prime}}= & A^{-1}I^{\prime}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X=A^{-1}X^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+I= & A^{-1}X^{\prime}\\
+X_{I}^{\prime}= & AI
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dual basis finding example
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{{\scriptscriptstyle 11}} & a_{{\scriptscriptstyle 12}} & a_{{\scriptscriptstyle 13}}\\
+a_{{\scriptscriptstyle 21}} & a_{{\scriptscriptstyle 22}} & a_{{\scriptscriptstyle 23}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle 1}}\\
+b_{{\scriptscriptstyle 2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\right)=T\left(\boldsymbol{v}\right)=\boldsymbol{w}=\begin{pmatrix}b_{{\scriptscriptstyle 1}}\\
+b_{{\scriptscriptstyle 2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}=\boldsymbol{v}\in V=\mathbb{R}^{3}\overset{T}{\rightarrow}\mathbb{R}^{2}=W\ni\boldsymbol{w}=\begin{pmatrix}b_{{\scriptscriptstyle 1}}\\
+b_{{\scriptscriptstyle 2}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+f_{{\scriptscriptstyle 1}}\left(\boldsymbol{v}\right)=\begin{pmatrix}a_{{\scriptscriptstyle 11}} & a_{{\scriptscriptstyle 12}} & a_{{\scriptscriptstyle 13}}\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}=a_{{\scriptscriptstyle 11}}x_{{\scriptscriptstyle 1}}+a_{{\scriptscriptstyle 12}}x_{{\scriptscriptstyle 2}}+a_{{\scriptscriptstyle 13}}x_{{\scriptscriptstyle 3}}=b_{{\scriptscriptstyle 1}}\\
+f_{{\scriptscriptstyle 2}}\left(\boldsymbol{v}\right)=\begin{pmatrix}a_{{\scriptscriptstyle 21}} & a_{{\scriptscriptstyle 22}} & a_{{\scriptscriptstyle 23}}\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}=a_{{\scriptscriptstyle 21}}x_{{\scriptscriptstyle 1}}+a_{{\scriptscriptstyle 22}}x_{{\scriptscriptstyle 2}}+a_{{\scriptscriptstyle 23}}x_{{\scriptscriptstyle 3}}=b_{{\scriptscriptstyle 2}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{{\scriptscriptstyle 11}} & a_{{\scriptscriptstyle 12}} & a_{{\scriptscriptstyle 13}}\\
+a_{{\scriptscriptstyle 21}} & a_{{\scriptscriptstyle 22}} & a_{{\scriptscriptstyle 23}}
+\end{pmatrix}\left(\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\right)=\left(\begin{pmatrix}b_{{\scriptscriptstyle 1}}\\
+b_{{\scriptscriptstyle 2}}
+\end{pmatrix}\begin{pmatrix}b_{{\scriptscriptstyle 1}}\\
+b_{{\scriptscriptstyle 2}}
+\end{pmatrix}\begin{pmatrix}b_{{\scriptscriptstyle 1}}\\
+b_{{\scriptscriptstyle 2}}
+\end{pmatrix}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{{\scriptscriptstyle 11}} & a_{{\scriptscriptstyle 12}} & a_{{\scriptscriptstyle 13}}\\
+a_{{\scriptscriptstyle 21}} & a_{{\scriptscriptstyle 22}} & a_{{\scriptscriptstyle 23}}
+\end{pmatrix}\begin{pmatrix}\boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}_{{\scriptscriptstyle 3}}\end{pmatrix}=\begin{pmatrix}a_{{\scriptscriptstyle 11}} & a_{{\scriptscriptstyle 12}} & a_{{\scriptscriptstyle 13}}\\
+a_{{\scriptscriptstyle 21}} & a_{{\scriptscriptstyle 22}} & a_{{\scriptscriptstyle 23}}
+\end{pmatrix}\left(\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}\begin{pmatrix}0\\
+1\\
+0
+\end{pmatrix}\begin{pmatrix}0\\
+0\\
+1
+\end{pmatrix}\right)=\left(\begin{pmatrix}a_{{\scriptscriptstyle 11}}\\
+a_{{\scriptscriptstyle 21}}
+\end{pmatrix}\begin{pmatrix}a_{{\scriptscriptstyle 12}}\\
+a_{{\scriptscriptstyle 22}}
+\end{pmatrix}\begin{pmatrix}a_{{\scriptscriptstyle 13}}\\
+a_{{\scriptscriptstyle 23}}
+\end{pmatrix}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{e}_{{\scriptscriptstyle 1}},\boldsymbol{e}_{{\scriptscriptstyle 2}},\boldsymbol{e}_{{\scriptscriptstyle 3}}\in V=\mathbb{R}^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}=x_{{\scriptscriptstyle 1}}\boldsymbol{e}_{{\scriptscriptstyle 1}}+x_{{\scriptscriptstyle 2}}\boldsymbol{e}_{{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 3}}\boldsymbol{e}_{{\scriptscriptstyle 3}}=x_{{\scriptscriptstyle 1}}\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}+x_{{\scriptscriptstyle 2}}\begin{pmatrix}0\\
+1\\
+0
+\end{pmatrix}+x_{{\scriptscriptstyle 3}}\begin{pmatrix}0\\
+0\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{{\scriptscriptstyle 11}} & a_{{\scriptscriptstyle 12}} & a_{{\scriptscriptstyle 13}}\\
+a_{{\scriptscriptstyle 21}} & a_{{\scriptscriptstyle 22}} & a_{{\scriptscriptstyle 23}}
+\end{pmatrix}\left(\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\right)=\left(\begin{pmatrix}b_{{\scriptscriptstyle 1}}\\
+b_{{\scriptscriptstyle 2}}
+\end{pmatrix}\begin{pmatrix}b_{{\scriptscriptstyle 1}}\\
+b_{{\scriptscriptstyle 2}}
+\end{pmatrix}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{{\scriptscriptstyle 11}} & a_{{\scriptscriptstyle 12}} & a_{{\scriptscriptstyle 13}}\\
+a_{{\scriptscriptstyle 21}} & a_{{\scriptscriptstyle 22}} & a_{{\scriptscriptstyle 23}}
+\end{pmatrix}\left(\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\right)=\left(\begin{pmatrix}1\\
+0
+\end{pmatrix}\begin{pmatrix}0\\
+1
+\end{pmatrix}\right)=\begin{pmatrix}\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime} & \boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime}\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime},\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime}\in W=\mathbb{R}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}b_{{\scriptscriptstyle 1}}\\
+b_{{\scriptscriptstyle 2}}
+\end{pmatrix}=b_{{\scriptscriptstyle 1}}\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime}+b_{{\scriptscriptstyle 2}}\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime}=b_{{\scriptscriptstyle 1}}\begin{pmatrix}1\\
+0
+\end{pmatrix}+b_{{\scriptscriptstyle 2}}\begin{pmatrix}0\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+a_{{\scriptscriptstyle 11}}x_{{\scriptscriptstyle 1}}+a_{{\scriptscriptstyle 12}}x_{{\scriptscriptstyle 2}}+a_{{\scriptscriptstyle 13}}x_{{\scriptscriptstyle 3}}=1\\
+a_{{\scriptscriptstyle 21}}x_{{\scriptscriptstyle 1}}+a_{{\scriptscriptstyle 22}}x_{{\scriptscriptstyle 2}}+a_{{\scriptscriptstyle 23}}x_{{\scriptscriptstyle 3}}=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+x_{{\scriptscriptstyle 1}}=-\dfrac{a_{{\scriptscriptstyle 12}}}{a_{{\scriptscriptstyle 11}}}\left(a_{{\scriptscriptstyle 22}}-a_{{\scriptscriptstyle 21}}\dfrac{a_{{\scriptscriptstyle 12}}}{a_{{\scriptscriptstyle 11}}}\right)^{-1}\left(\dfrac{-a_{{\scriptscriptstyle 23}}}{a_{{\scriptscriptstyle 13}}}\right)\\
+x_{{\scriptscriptstyle 2}}=\left(a_{{\scriptscriptstyle 22}}-a_{{\scriptscriptstyle 21}}\dfrac{a_{{\scriptscriptstyle 12}}}{a_{{\scriptscriptstyle 11}}}\right)^{-1}\left(\dfrac{-a_{{\scriptscriptstyle 23}}}{a_{{\scriptscriptstyle 13}}}\right)\\
+x_{{\scriptscriptstyle 3}}=\dfrac{1}{a_{{\scriptscriptstyle 13}}}\Rightarrow x_{{\scriptscriptstyle 1}}=-\dfrac{a_{{\scriptscriptstyle 12}}}{a_{{\scriptscriptstyle 11}}}x_{{\scriptscriptstyle 2}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+a_{{\scriptscriptstyle 11}}x_{{\scriptscriptstyle 1}}+a_{{\scriptscriptstyle 12}}x_{{\scriptscriptstyle 2}}+a_{{\scriptscriptstyle 13}}x_{{\scriptscriptstyle 3}}=0\\
+a_{{\scriptscriptstyle 21}}x_{{\scriptscriptstyle 1}}+a_{{\scriptscriptstyle 22}}x_{{\scriptscriptstyle 2}}+a_{{\scriptscriptstyle 23}}x_{{\scriptscriptstyle 3}}=1
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+set of linear transformation is a vector space
+\begin_inset Formula 
+\begin{align*}
+ & T:V\rightarrow W\\
+\Leftrightarrow & \forall\boldsymbol{v}\in V,\exists!\boldsymbol{w}\in W\left[\boldsymbol{w}=T\left(\boldsymbol{v}\right)\right]
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+V,W\text{ are vector spaces}\\
+T:V\rightarrow W\\
+\begin{cases}
+\forall\boldsymbol{u},\boldsymbol{v}\in V\left[T\left(\boldsymbol{u}+\boldsymbol{v}\right)=T\left(\boldsymbol{u}\right)+T\left(\boldsymbol{v}\right)\right] & \left(a\right)\text{additivity}\\
+\forall\boldsymbol{v}\in V,c\in F\left[T\left(c\boldsymbol{v}\right)=cT\left(\boldsymbol{v}\right)\right] & \left(h\right)\text{homogeneity}
+\end{cases} & \left(L\right)
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+V,W\text{ are vector spaces}\\
+T:V\rightarrow W\\
+\forall\boldsymbol{u},\boldsymbol{v}\in V,c\in F\left[T\left(\boldsymbol{u}+c\boldsymbol{v}\right)=T\left(\boldsymbol{u}\right)+cT\left(\boldsymbol{v}\right)\right] & \left(L\right)\text{linearity}
+\end{cases}\\
+\Leftrightarrow & T\text{ is a linear map from }V\text{ to }W\\
+\Leftrightarrow & T\text{ is a linear tranformation}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+V,W\text{ are vector spaces, both over }F\\
+T,U:V\rightarrow W\begin{cases}
+T:V\rightarrow W\\
+U:V\rightarrow W
+\end{cases}\\
+T,U\text{ are both linear tranformations}\\
+\boldsymbol{v}\in V\\
+c\in F
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+define
+\begin_inset Formula 
+\[
+\begin{cases}
+\left(T+U\right)\left(\boldsymbol{v}\right)=T\left(\boldsymbol{v}\right)+U\left(\boldsymbol{v}\right) & \text{linear transformation addition}\\
+\left(cT\right)\left(\boldsymbol{v}\right)=cT\left(\boldsymbol{v}\right) & \text{scalar linear transformation multiplication}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(T+U\right)\left(\boldsymbol{u}+\boldsymbol{v}\right)= & T\left(\boldsymbol{u}+\boldsymbol{v}\right)+U\left(\boldsymbol{u}+\boldsymbol{v}\right)\\
+= & \left[T\left(\boldsymbol{u}\right)+T\left(\boldsymbol{v}\right)\right]+\left[U\left(\boldsymbol{u}\right)+U\left(\boldsymbol{v}\right)\right]\\
+= & \left[T\left(\boldsymbol{u}\right)+U\left(\boldsymbol{u}\right)\right]+\left[T\left(\boldsymbol{v}\right)+U\left(\boldsymbol{v}\right)\right]\\
+= & \left(T+U\right)\left(\boldsymbol{u}\right)+\left(T+U\right)\left(\boldsymbol{v}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(T+U\right)\left(c\boldsymbol{v}\right)= & T\left(c\boldsymbol{v}\right)+U\left(c\boldsymbol{v}\right)\\
+= & cT\left(\boldsymbol{v}\right)+cU\left(\boldsymbol{v}\right)\\
+= & c\left[T\left(\boldsymbol{v}\right)+U\left(\boldsymbol{v}\right)\right]\\
+= & c\left(T+U\right)\left(\boldsymbol{v}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{T}\text{ is the set of all linear tranformations}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+F & \left(f\right)F\text{ is a field}\\
+\mathcal{T}\ne\emptyset & \left(ne\right)\text{nonempty set}\\
++:\mathcal{T}\times\mathcal{T}=\mathcal{T}^{2}\overset{+}{\rightarrow}\mathcal{T}\Leftrightarrow\forall T,U\in\mathcal{T},\exists S\in\mathcal{T}\left[S=T+U\right] & \left(va\right)\text{vector addition}\\
+\cdot:F\times\mathcal{T}\overset{\cdot}{\rightarrow}\mathcal{T}\Leftrightarrow\forall c\in F,\forall T\in\mathcal{T},\exists U\in\mathcal{T}\left[U=cT=c\cdot T\right] & \left(sm\right)\text{scalar multiplication}\\
+\begin{cases}
+\forall S,T,U\in\mathcal{T}\left[S+\left(T+U\right)=\left(S+T\right)+U\right] & \left(a\right)\\
+\forall T,U\in\mathcal{T}\left[T+U=U+T\right] & \left(c\right)\\
+\exists!O\in\mathcal{T},\forall T\in\mathcal{T}\left[O+T=T\right] & \left(e\right)\\
+\forall T\in\mathcal{T},\exists!-T\in\mathcal{T}\left[\left(-T\right)+T=O\right] & \left(i\right)
+\end{cases} & \left(va\right)\text{vector addition axioms}\\
+\begin{cases}
+\forall b,c\in F,T\in\mathcal{T}\left[b\left(cT\right)=\left(bc\right)T\right] & \left(a\right)\\
+\exists!1\in F,\forall T\in\mathcal{T}\left[1T=T\right] & \left(e\right)\\
+\forall c\in F,T,U\in\mathcal{T}\left[c\left(T+U\right)=cT+cU\right] & \left(dv\right)\\
+\forall b,c\in F,T\in\mathcal{T}\left[\left(b+c\right)T=bT+cT\right] & \left(ds\right)
+\end{cases} & \left(sm\right)\text{scalar multiplication axioms}
+\end{cases}\\
+\Leftrightarrow & \mathcal{T}=\mathcal{T}\left(F,+,\cdot\right)=\left(\mathcal{T},F,+,\cdot\right)\text{ is a vector space over the field }F\\
+\Leftrightarrow & \mathcal{T}\text{ is a vector space}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(S+\left(T+U\right)\right)\left(\boldsymbol{v}\right)= & S\left(\boldsymbol{v}\right)+\left(T+U\right)\left(\boldsymbol{v}\right)\\
+= & S\left(\boldsymbol{v}\right)+T\left(\boldsymbol{v}\right)+U\left(\boldsymbol{v}\right)\\
+= & \left(S+T\right)\left(\boldsymbol{v}\right)+U\left(\boldsymbol{v}\right)\\
+= & \left(\left(S+T\right)+U\right)\left(\boldsymbol{v}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(T+U\right)\left(\boldsymbol{v}\right)= & T\left(\boldsymbol{v}\right)+U\left(\boldsymbol{v}\right)\\
+= & U\left(\boldsymbol{v}\right)+T\left(\boldsymbol{v}\right)\\
+= & \left(U+T\right)\left(\boldsymbol{v}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+O\left(\boldsymbol{v}\right)=0\boldsymbol{w}\in W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(O+T\right)\left(\boldsymbol{v}\right)= & O\left(\boldsymbol{v}\right)+T\left(\boldsymbol{v}\right)\\
+= & 0\boldsymbol{w}+T\left(\boldsymbol{v}\right)\\
+= & T\left(\boldsymbol{v}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+O_{1}\left(\boldsymbol{v}\right)-O_{2}\left(\boldsymbol{v}\right)=0\boldsymbol{w}-0\boldsymbol{w}=0\boldsymbol{w}\Rightarrow O_{1}\left(\boldsymbol{v}\right)=O_{2}\left(\boldsymbol{v}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(c\left(T+U\right)\right)\left(\boldsymbol{v}\right)= & c\left(T+U\right)\left(\boldsymbol{v}\right)\\
+= & c\left[T\left(\boldsymbol{v}\right)+U\left(\boldsymbol{v}\right)\right]\\
+= & cT\left(\boldsymbol{v}\right)+cU\left(\boldsymbol{v}\right)\\
+= & \left(cT+cU\right)\left(\boldsymbol{v}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dual space
+\begin_inset Formula 
+\begin{align*}
+a_{{\scriptscriptstyle 11}}x_{{\scriptscriptstyle 1}}+a_{{\scriptscriptstyle 12}}x_{{\scriptscriptstyle 2}}+\cdots+a_{{\scriptscriptstyle 1n}}x_{{\scriptscriptstyle n}}= & b_{{\scriptscriptstyle 1}}\\
+a_{{\scriptscriptstyle 21}}x_{{\scriptscriptstyle 1}}+a_{{\scriptscriptstyle 22}}x_{{\scriptscriptstyle 2}}+\cdots+a_{{\scriptscriptstyle 2n}}x_{{\scriptscriptstyle n}}= & b_{{\scriptscriptstyle 2}}\\
+\vdots\\
+a_{{\scriptscriptstyle m1}}x_{{\scriptscriptstyle 1}}+a_{{\scriptscriptstyle m2}}x_{{\scriptscriptstyle 2}}+\cdots+a_{{\scriptscriptstyle mn}}x_{{\scriptscriptstyle n}}= & b_{{\scriptscriptstyle m}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{{\scriptscriptstyle 11}} & a_{{\scriptscriptstyle 12}} & \cdots & a_{{\scriptscriptstyle 1n}}\\
+a_{{\scriptscriptstyle 21}} & a_{{\scriptscriptstyle 22}} & \cdots & a_{{\scriptscriptstyle 2n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{{\scriptscriptstyle m1}} & a_{{\scriptscriptstyle m2}} & \cdots & a_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle 1}}\\
+b_{{\scriptscriptstyle 2}}\\
+\vdots\\
+b_{{\scriptscriptstyle n}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A\boldsymbol{x}=\boldsymbol{b}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{{\scriptscriptstyle i1}} & a_{{\scriptscriptstyle i2}} & \cdots & a_{{\scriptscriptstyle in}}\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle i}}\end{pmatrix}=b_{{\scriptscriptstyle i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{{\scriptscriptstyle i1}} & \cdots & a_{{\scriptscriptstyle ij}} & \cdots & a_{{\scriptscriptstyle in}}\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle j}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle i}}\end{pmatrix}=b_{{\scriptscriptstyle i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}\cdots & a_{{\scriptscriptstyle ij}} & \cdots\end{pmatrix}\begin{pmatrix}\vdots\\
+x_{{\scriptscriptstyle j}}\\
+\vdots
+\end{pmatrix}=b_{{\scriptscriptstyle i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}=\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}=b_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}=\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}=b_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}=a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}=\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if finite,
+\begin_inset Formula 
+\[
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}=a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots\\
+\vdots
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if finite,
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}\\
+\vdots
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{{\scriptscriptstyle 11}} & a_{{\scriptscriptstyle 12}} & \cdots & a_{{\scriptscriptstyle 1n}}\\
+a_{{\scriptscriptstyle 21}} & a_{{\scriptscriptstyle 22}} & \cdots & a_{{\scriptscriptstyle 2n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{{\scriptscriptstyle m1}} & a_{{\scriptscriptstyle m2}} & \cdots & a_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 11}} & x_{{\scriptscriptstyle 12}} & \cdots & x_{{\scriptscriptstyle 1p}}\\
+x_{{\scriptscriptstyle 21}} & x_{{\scriptscriptstyle 22}} & \cdots & x_{{\scriptscriptstyle 2p}}\\
+\vdots & \vdots & \ddots & \vdots\\
+x_{{\scriptscriptstyle n1}} & x_{{\scriptscriptstyle n2}} & \cdots & x_{{\scriptscriptstyle np}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle 11}} & b_{{\scriptscriptstyle 12}} & \cdots & b_{{\scriptscriptstyle 1p}}\\
+b_{{\scriptscriptstyle 21}} & b_{{\scriptscriptstyle 22}} & \cdots & b_{{\scriptscriptstyle 2p}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m1}} & b_{{\scriptscriptstyle m2}} & \cdots & b_{{\scriptscriptstyle mp}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+AX=B
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{{\scriptscriptstyle i1}} & a_{{\scriptscriptstyle i2}} & \cdots & a_{{\scriptscriptstyle in}}\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1k}}\\
+x_{{\scriptscriptstyle 2k}}\\
+\vdots\\
+x_{{\scriptscriptstyle nk}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle ik}}\end{pmatrix}=b_{{\scriptscriptstyle ik}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}a_{{\scriptscriptstyle i1}} & \cdots & a_{{\scriptscriptstyle ij}} & \cdots & a_{{\scriptscriptstyle in}}\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1k}}\\
+\vdots\\
+x_{{\scriptscriptstyle jk}}\\
+\vdots\\
+x_{{\scriptscriptstyle nk}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle ik}}\end{pmatrix}=b_{{\scriptscriptstyle ik}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}\cdots & a_{{\scriptscriptstyle ij}} & \cdots\end{pmatrix}\begin{pmatrix}\vdots\\
+x_{{\scriptscriptstyle jk}}\\
+\vdots
+\end{pmatrix}=b_{{\scriptscriptstyle ik}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle jk}}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle k}}=\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle k}}=b_{ik}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}a_{{\scriptscriptstyle 11}} & a_{{\scriptscriptstyle 12}} & \cdots & a_{{\scriptscriptstyle 1n}}\\
+a_{{\scriptscriptstyle 21}} & a_{{\scriptscriptstyle 22}} & \cdots & a_{{\scriptscriptstyle 2n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{{\scriptscriptstyle m1}} & a_{{\scriptscriptstyle m2}} & \cdots & a_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 11}} & x_{{\scriptscriptstyle 12}} & \cdots & x_{{\scriptscriptstyle 1p}}\\
+x_{{\scriptscriptstyle 21}} & x_{{\scriptscriptstyle 22}} & \cdots & x_{{\scriptscriptstyle 2p}}\\
+\vdots & \vdots & \ddots & \vdots\\
+x_{{\scriptscriptstyle n1}} & x_{{\scriptscriptstyle n2}} & \cdots & x_{{\scriptscriptstyle np}}
+\end{pmatrix}\\
+=\begin{pmatrix}b_{{\scriptscriptstyle 11}} & b_{{\scriptscriptstyle 12}} & \cdots & b_{{\scriptscriptstyle 1p}}\\
+b_{{\scriptscriptstyle 21}} & b_{{\scriptscriptstyle 22}} & \cdots & b_{{\scriptscriptstyle 2p}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m1}} & b_{{\scriptscriptstyle m2}} & \cdots & b_{{\scriptscriptstyle mp}}
+\end{pmatrix}= & \begin{pmatrix}\boldsymbol{a}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 1}} & \boldsymbol{a}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle p}}\\
+\boldsymbol{a}_{{\scriptscriptstyle 2}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 1}} & \boldsymbol{a}_{{\scriptscriptstyle 2}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle 2}}\cdot\boldsymbol{x}_{{\scriptscriptstyle p}}\\
+\vdots & \vdots & \ddots & \vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle m}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 1}} & \boldsymbol{a}_{{\scriptscriptstyle m}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle m}}\cdot\boldsymbol{x}_{{\scriptscriptstyle p}}
+\end{pmatrix}\\
+= & \begin{pmatrix}\boldsymbol{a}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}} & \boldsymbol{a}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle p}}\\
+\boldsymbol{a}_{{\scriptscriptstyle 2}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}} & \boldsymbol{a}_{{\scriptscriptstyle 2}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle 2}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle p}}\\
+\vdots & \vdots & \ddots & \vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle m}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}} & \boldsymbol{a}_{{\scriptscriptstyle m}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 2}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle m}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle p}}
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}a_{{\scriptscriptstyle 11}} & \cdots & a_{{\scriptscriptstyle 1j}} & \cdots & a_{{\scriptscriptstyle 1n}}\\
+\vdots & \ddots & \vdots & \iddots & \vdots\\
+a_{{\scriptscriptstyle i1}} & \cdots & a_{{\scriptscriptstyle ij}} & \cdots & a_{{\scriptscriptstyle in}}\\
+\vdots & \iddots & \vdots & \ddots & \vdots\\
+a_{{\scriptscriptstyle m1}} & \cdots & a_{{\scriptscriptstyle mj}} & \cdots & a_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 11}} & \cdots & x_{{\scriptscriptstyle 1k}} & \cdots & x_{{\scriptscriptstyle 1p}}\\
+\vdots & \ddots & \vdots & \iddots & \vdots\\
+x_{{\scriptscriptstyle j1}} & \cdots & x_{{\scriptscriptstyle jk}} & \cdots & x_{{\scriptscriptstyle jp}}\\
+\vdots & \iddots & \vdots & \ddots & \vdots\\
+x_{{\scriptscriptstyle n1}} & \cdots & x_{{\scriptscriptstyle nk}} & \cdots & x_{{\scriptscriptstyle np}}
+\end{pmatrix}\\
+=\begin{pmatrix}b_{{\scriptscriptstyle 11}} & \cdots & b_{{\scriptscriptstyle 1k}} & \cdots & b_{{\scriptscriptstyle 1p}}\\
+\vdots & \ddots & \vdots & \iddots & \vdots\\
+b_{{\scriptscriptstyle i1}} & \cdots & b_{{\scriptscriptstyle ik}} & \cdots & b_{{\scriptscriptstyle ip}}\\
+\vdots & \iddots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m1}} & \cdots & b_{{\scriptscriptstyle mk}} & \cdots & b_{{\scriptscriptstyle mp}}
+\end{pmatrix}= & \begin{pmatrix}\boldsymbol{a}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle k}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle p}}\\
+\vdots & \ddots & \vdots & \iddots & \vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle k}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle p}}\\
+\vdots & \iddots & \vdots & \ddots & \vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle m}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle m}}\cdot\boldsymbol{x}_{{\scriptscriptstyle k}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle m}}\cdot\boldsymbol{x}_{{\scriptscriptstyle p}}
+\end{pmatrix}\\
+= & \begin{pmatrix}\boldsymbol{a}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle k}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle 1}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle p}}\\
+\vdots & \ddots & \vdots & \iddots & \vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle k}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle p}}\\
+\vdots & \iddots & \vdots & \ddots & \vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle m}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle m}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle k}} & \cdots & \boldsymbol{a}_{{\scriptscriptstyle m}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle p}}
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}\ddots & \vdots & \iddots\\
+\cdots & a_{{\scriptscriptstyle ij}} & \cdots\\
+\iddots & \vdots & \ddots
+\end{pmatrix}\begin{pmatrix}\ddots & \vdots & \iddots\\
+\cdots & x_{{\scriptscriptstyle jk}} & \cdots\\
+\iddots & \vdots & \ddots
+\end{pmatrix}=\begin{pmatrix}\ddots & \vdots & \iddots\\
+\cdots & b_{{\scriptscriptstyle ik}} & \cdots\\
+\iddots & \vdots & \ddots
+\end{pmatrix}=\begin{pmatrix}\ddots & \vdots & \iddots\\
+\cdots & \boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle k}} & \cdots\\
+\iddots & \vdots & \ddots
+\end{pmatrix}=\begin{pmatrix}\ddots & \vdots & \iddots\\
+\cdots & \boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle k}} & \cdots\\
+\iddots & \vdots & \ddots
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle jk}}=b_{{\scriptscriptstyle ik}}=\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle k}}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle k}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{row}\left(A\right)\mathrm{col}\left(X\right)=b_{\mathrm{row},\mathrm{col}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle k}}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle k}}=a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle jk}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle j}}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle ik}}x_{{\scriptscriptstyle kj}}=\cdots+a_{{\scriptscriptstyle ik}}x_{{\scriptscriptstyle kj}}+\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if finite,
+\begin_inset Formula 
+\[
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle j}}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle ik}}x_{{\scriptscriptstyle kj}}=a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1j}}+\cdots+a_{{\scriptscriptstyle ik}}x_{{\scriptscriptstyle kj}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle nj}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+functional aspect
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}=a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}=\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if finite,
+\begin_inset Formula 
+\[
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}=a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots\\
+\vdots
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if finite,
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}\\
+\vdots
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots\\
+\vdots
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if finite,
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}\\
+\vdots
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(\cdots,x_{{\scriptscriptstyle j}},\cdots\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle j}}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots\\
+\vdots
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if finite,
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle j}},\cdots,x_{{\scriptscriptstyle n}}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle j}}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}\\
+\vdots
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle i}}\left(\cdots,x_{{\scriptscriptstyle j}},\cdots\right)=f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle j}}\right)=f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)=\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle j}}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle ik}}x_{{\scriptscriptstyle kj}}=\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle i}}:\mathbb{C}^{\infty}\rightarrow\mathbb{C}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle i}}:\mathbb{F}^{\infty}\rightarrow\mathbb{F}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle i}}:F^{\infty}\rightarrow F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle i}}:\mathbb{R}^{\infty}\rightarrow\mathbb{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if finite,
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle j}},\cdots,x_{{\scriptscriptstyle n}}\right)=f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle j}}\right)=f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)=\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle j}}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},\cdots,x_{{\scriptscriptstyle n}}\right)= & f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle j}},\cdots,x_{{\scriptscriptstyle n}}\right)=f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle j}}\right)=f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\\
+= & \boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle j}}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle i}}:\mathbb{C}^{n}\rightarrow\mathbb{C}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle i}}:\mathbb{F}^{n}\rightarrow\mathbb{F}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle i}}:F^{n}\rightarrow F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle i}}:\mathbb{R}^{\infty}\rightarrow\mathbb{R}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(\cdots,x_{{\scriptscriptstyle j}},\cdots\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle j}}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots\\
+\vdots
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=\left\{ f_{{\scriptscriptstyle i}}\middle|f_{{\scriptscriptstyle i}}:F^{\infty}\rightarrow F\right\} =\left\{ \begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(\cdots,x_{{\scriptscriptstyle j}},\cdots\right)=f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle j}}\right)=f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)=\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}=a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}},\\
+\vdots
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if finite,
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle j}},\cdots,x_{{\scriptscriptstyle n}}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle j}}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}\\
+\vdots
+\end{array}=\begin{array}{c}
+\vdots\\
+a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}\\
+\vdots
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=\left\{ f_{{\scriptscriptstyle i}}\middle|f_{{\scriptscriptstyle i}}:F^{n}\rightarrow F\right\} =\left\{ \begin{array}{c}
+\vdots\\
+f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},\cdots,x_{{\scriptscriptstyle n}}\right)=f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)=a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}},\\
+\vdots
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+functionals generalized to general vector space
+\begin_inset Formula 
+\[
+f=\left\{ f_{{\scriptscriptstyle i}}\middle|f_{{\scriptscriptstyle i}}:V\rightarrow F\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+linear functionals generalized to general vector space
+\begin_inset Formula 
+\[
+f=\left\{ f_{{\scriptscriptstyle i}}\middle|\begin{cases}
+f_{{\scriptscriptstyle i}}:V\rightarrow F\\
+\forall\left\langle \boldsymbol{x},\boldsymbol{y}\right\rangle \in V^{2}\left[f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}+\boldsymbol{y}\right)=f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)+f_{{\scriptscriptstyle i}}\left(\boldsymbol{y}\right)\right]\\
+\forall\boldsymbol{x}\in V,c\in F\left[f_{{\scriptscriptstyle i}}\left(c\boldsymbol{x}\right)=cf_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\right]
+\end{cases}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=\left\{ f_{{\scriptscriptstyle i}}\middle|\begin{cases}
+f_{{\scriptscriptstyle i}}:V\rightarrow F\\
+\forall\boldsymbol{x},\boldsymbol{y}\in V\left[f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}+\boldsymbol{y}\right)=f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)+f_{{\scriptscriptstyle i}}\left(\boldsymbol{y}\right)\right]\\
+\forall\boldsymbol{x}\in V,c\in F\left[f_{{\scriptscriptstyle i}}\left(c\boldsymbol{x}\right)=cf_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\right]
+\end{cases}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+if 
+\begin_inset Formula $\begin{cases}
+F=\mathbb{C}\\
+V=\mathbb{C}^{n}
+\end{cases}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f=\left\{ f_{{\scriptscriptstyle i}}\middle|\begin{cases}
+f_{{\scriptscriptstyle i}}:\mathbb{C}^{n}\rightarrow\mathbb{C}\\
+\forall\left\langle \boldsymbol{x},\boldsymbol{y}\right\rangle \in\left(\mathbb{C}^{n}\right)^{2}\left[f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}+\boldsymbol{y}\right)=f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)+f_{{\scriptscriptstyle i}}\left(\boldsymbol{y}\right)\right]\\
+\forall\boldsymbol{x}\in\mathbb{C}^{n},c\in\mathbb{C}\left[f_{{\scriptscriptstyle i}}\left(c\boldsymbol{x}\right)=cf_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\right]
+\end{cases}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=\left\{ f_{{\scriptscriptstyle i}}\middle|\begin{cases}
+f_{{\scriptscriptstyle i}}:\mathbb{C}^{n}\rightarrow\mathbb{C}\\
+\forall\boldsymbol{x},\boldsymbol{y}\in\mathbb{C}^{n}\left[f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}+\boldsymbol{y}\right)=f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)+f_{{\scriptscriptstyle i}}\left(\boldsymbol{y}\right)\right]\\
+\forall\boldsymbol{x}\in\mathbb{C}^{n},c\in\mathbb{C}\left[f_{{\scriptscriptstyle i}}\left(c\boldsymbol{x}\right)=cf_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\right]
+\end{cases}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)=a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}+\boldsymbol{y}\right)= & a_{{\scriptscriptstyle i1}}\left(x+y\right)_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}\left(x+y\right)_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}\left(x+y\right)_{{\scriptscriptstyle n}}\\
+= & a_{{\scriptscriptstyle i1}}\left(x_{{\scriptscriptstyle 1}}+y_{{\scriptscriptstyle 1}}\right)+\cdots+a_{{\scriptscriptstyle ij}}\left(x_{{\scriptscriptstyle j}}+y_{{\scriptscriptstyle j}}\right)+\cdots+a_{{\scriptscriptstyle in}}\left(x_{{\scriptscriptstyle n}}+y_{{\scriptscriptstyle n}}\right)\\
+= & \left(a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+a_{{\scriptscriptstyle i1}}y_{{\scriptscriptstyle 1}}\right)+\cdots+\left(a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+a_{{\scriptscriptstyle ij}}y_{{\scriptscriptstyle j}}\right)+\cdots+\left(a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}+a_{{\scriptscriptstyle in}}y_{{\scriptscriptstyle n}}\right)\\
+= & \left(a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}\right)+\left(a_{{\scriptscriptstyle i1}}y_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}y_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}y_{{\scriptscriptstyle n}}\right)\\
+= & f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)+f_{{\scriptscriptstyle i}}\left(\boldsymbol{y}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{{\scriptscriptstyle i}}\left(c\boldsymbol{x}\right)= & a_{{\scriptscriptstyle i1}}\left(cx\right)_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}\left(cx\right)_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}\left(cx\right)_{{\scriptscriptstyle n}}\\
+= & a_{{\scriptscriptstyle i1}}\left(cx_{{\scriptscriptstyle 1}}\right)+\cdots+a_{{\scriptscriptstyle ij}}\left(cx_{{\scriptscriptstyle j}}\right)+\cdots+a_{{\scriptscriptstyle in}}\left(cx_{{\scriptscriptstyle n}}\right)\\
+= & c\left(a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}\right)+\cdots+c\left(a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}\right)+\cdots+c\left(a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}\right)\\
+= & c\left(a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}\right)\\
+= & cf_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+different functional has different 
+\begin_inset Formula $a_{{\scriptscriptstyle ij}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a_{{\scriptscriptstyle ij}}=f_{{\scriptscriptstyle i}}\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right),\boldsymbol{e}_{{\scriptscriptstyle j}}=\left\langle \overset{j-1}{\overbrace{0,\cdots,0}},1,0,\cdots,0\right\rangle =\begin{pmatrix}0 & \cdots & 0 & 1 & 0 & \cdots & 0\end{pmatrix}^{\intercal}=\begin{pmatrix}0\\
+\vdots\\
+0\\
+1\\
+0\\
+\vdots\\
+0
+\end{pmatrix}=\begin{pmatrix}0\\
+\vdots\\
+0\\
+1\\
+0\\
+\vdots\\
+0
+\end{pmatrix}_{n\times1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)= & f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle 1}}\boldsymbol{e}_{{\scriptscriptstyle 1}}+\cdots+x_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}+\cdots+x_{{\scriptscriptstyle n}}\boldsymbol{e}_{{\scriptscriptstyle n}}\right)\\
+= & f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle 1}}\boldsymbol{e}_{{\scriptscriptstyle 1}}\right)+\cdots+f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}\right)+\cdots+f_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle n}}\boldsymbol{e}_{{\scriptscriptstyle n}}\right)\\
+= & x_{{\scriptscriptstyle 1}}f_{{\scriptscriptstyle i}}\left(\boldsymbol{e}_{{\scriptscriptstyle 1}}\right)+\cdots+x_{{\scriptscriptstyle j}}f_{{\scriptscriptstyle i}}\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)+\cdots+x_{{\scriptscriptstyle n}}f_{{\scriptscriptstyle i}}\left(\boldsymbol{e}_{{\scriptscriptstyle n}}\right)\\
+= & x_{{\scriptscriptstyle 1}}a_{{\scriptscriptstyle i1}}+\cdots+x_{{\scriptscriptstyle j}}a_{{\scriptscriptstyle ij}}+\cdots+x_{{\scriptscriptstyle n}}a_{{\scriptscriptstyle in}}\\
+= & a_{{\scriptscriptstyle i1}}x_{{\scriptscriptstyle 1}}+\cdots+a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}+\cdots+a_{{\scriptscriptstyle in}}x_{{\scriptscriptstyle n}}\\
+= & f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dual space
+\begin_inset Formula 
+\begin{align*}
+ & V^{*}=L\left(V,F\right)\\
+= & f=\left\{ f_{{\scriptscriptstyle i}}\middle|\begin{cases}
+f_{{\scriptscriptstyle i}}:V\rightarrow F & \text{functional mapping vector to field scalar}\\
+\begin{cases}
+\forall\boldsymbol{x},\boldsymbol{y}\in V\left[f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}+\boldsymbol{y}\right)=f_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)+f_{{\scriptscriptstyle i}}\left(\boldsymbol{y}\right)\right]\\
+\forall\boldsymbol{x}\in V,c\in F\left[f_{{\scriptscriptstyle i}}\left(c\boldsymbol{x}\right)=cf_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\right]
+\end{cases} & \left(L\right)\text{linearity}
+\end{cases}\right\} \\
+\Leftrightarrow & V^{*}\text{ is a dual space, a set of linear functionals }f_{{\scriptscriptstyle i}}\text{ mapping vectors in the vector space }V\text{ to scalars in the field }F
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+reciprocal space
+\begin_inset Formula 
+\[
+\begin{cases}
+\boldsymbol{e}_{{\scriptscriptstyle 1}}=\boldsymbol{a} & \boldsymbol{a}\times\boldsymbol{b}\ne\boldsymbol{0}\\
+\boldsymbol{e}_{{\scriptscriptstyle 2}}=\boldsymbol{b} & \boldsymbol{b}\times\boldsymbol{c}\ne\boldsymbol{0}\\
+\boldsymbol{e}_{{\scriptscriptstyle 3}}=\boldsymbol{c} & \boldsymbol{c}\times\boldsymbol{a}\ne\boldsymbol{0}
+\end{cases}\Rightarrow\begin{cases}
+\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime}=\dfrac{\boldsymbol{b}\times\boldsymbol{c}}{\Omega}\\
+\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime}=\dfrac{\boldsymbol{c}\times\boldsymbol{a}}{\Omega}\\
+\boldsymbol{e}_{{\scriptscriptstyle 3}}^{\prime}=\dfrac{\boldsymbol{a}\times\boldsymbol{b}}{\Omega}
+\end{cases},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Omega=\boldsymbol{a}\cdot\left(\boldsymbol{b}\times\boldsymbol{c}\right)=\boldsymbol{b}\cdot\left(\boldsymbol{c}\times\boldsymbol{a}\right)=\boldsymbol{c}\cdot\left(\boldsymbol{a}\times\boldsymbol{b}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}\boldsymbol{e}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime} & \boldsymbol{e}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime} & \boldsymbol{e}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}^{\prime}\\
+\boldsymbol{e}_{{\scriptscriptstyle 2}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime} & \boldsymbol{e}_{{\scriptscriptstyle 2}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime} & \boldsymbol{e}_{{\scriptscriptstyle 2}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}^{\prime}\\
+\boldsymbol{e}_{{\scriptscriptstyle 3}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime} & \boldsymbol{e}_{{\scriptscriptstyle 3}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime} & \boldsymbol{e}_{{\scriptscriptstyle 3}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}^{\prime}
+\end{pmatrix}=\left[\delta_{{\scriptscriptstyle ij}}\right]=\begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}=\begin{pmatrix}\boldsymbol{e}^{{\scriptscriptstyle 1}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}^{{\scriptscriptstyle 1}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}^{{\scriptscriptstyle 1}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}\\
+\boldsymbol{e}^{{\scriptscriptstyle 2}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}^{{\scriptscriptstyle 2}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}^{{\scriptscriptstyle 2}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}\\
+\boldsymbol{e}^{{\scriptscriptstyle 3}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}^{{\scriptscriptstyle 3}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}^{{\scriptscriptstyle 3}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{e}_{{\scriptscriptstyle i}}\cdot\boldsymbol{e}_{{\scriptscriptstyle j}}^{\prime}=\delta_{{\scriptscriptstyle ij}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{e}^{{\scriptscriptstyle i}}\cdot\boldsymbol{e}_{{\scriptscriptstyle j}}=\delta_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}=\delta^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \mathrm{span}\left\{ \boldsymbol{e}_{{\scriptscriptstyle 1}},\boldsymbol{e}_{{\scriptscriptstyle 2}},\boldsymbol{e}_{{\scriptscriptstyle 3}}\right\} =\mathrm{span}\left\{ \boldsymbol{a},\boldsymbol{b},\boldsymbol{c}\right\} =V\\
+=\mathbb{R}^{3}= & \mathrm{span}\left\{ \boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime},\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime},\boldsymbol{e}_{{\scriptscriptstyle 3}}^{\prime}\right\} =\mathrm{span}\left\{ \dfrac{\boldsymbol{b}\times\boldsymbol{c}}{\Omega},\dfrac{\boldsymbol{c}\times\boldsymbol{a}}{\Omega},\dfrac{\boldsymbol{a}\times\boldsymbol{b}}{\Omega}\right\} \\
+= & \mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle 1}},\boldsymbol{e}^{{\scriptscriptstyle 2}},\boldsymbol{e}^{{\scriptscriptstyle 3}}\right\} =\mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle *}}\right\} _{{\scriptscriptstyle *\in\left\{ 1,2,3\right\} }}=V^{*}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}=v_{{\scriptscriptstyle a}}\boldsymbol{a}+v_{{\scriptscriptstyle b}}\boldsymbol{b}+v_{{\scriptscriptstyle c}}\boldsymbol{c}=v_{{\scriptscriptstyle 1}}\boldsymbol{e}_{{\scriptscriptstyle 1}}+v_{{\scriptscriptstyle 2}}\boldsymbol{e}_{{\scriptscriptstyle 2}}+v_{{\scriptscriptstyle 3}}\boldsymbol{e}_{{\scriptscriptstyle 3}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{e}^{{\scriptscriptstyle 1}}\cdot\boldsymbol{v}=\boldsymbol{v}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime}=v_{{\scriptscriptstyle 1}}\boldsymbol{e}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime}+v_{{\scriptscriptstyle 2}}\boldsymbol{e}_{{\scriptscriptstyle 2}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime}+v_{{\scriptscriptstyle 3}}\boldsymbol{e}_{{\scriptscriptstyle 3}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime}=v_{{\scriptscriptstyle 1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{e}^{{\scriptscriptstyle 2}}\cdot\boldsymbol{v}=\boldsymbol{v}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime}=v_{{\scriptscriptstyle 1}}\boldsymbol{e}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime}+v_{{\scriptscriptstyle 2}}\boldsymbol{e}_{{\scriptscriptstyle 2}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime}+v_{{\scriptscriptstyle 3}}\boldsymbol{e}_{{\scriptscriptstyle 3}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime}=v_{{\scriptscriptstyle 2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{e}^{{\scriptscriptstyle 3}}\cdot\boldsymbol{v}=\boldsymbol{v}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}^{\prime}=v_{{\scriptscriptstyle 1}}\boldsymbol{e}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}^{\prime}+v_{{\scriptscriptstyle 2}}\boldsymbol{e}_{{\scriptscriptstyle 2}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}^{\prime}+v_{{\scriptscriptstyle 3}}\boldsymbol{e}_{{\scriptscriptstyle 3}}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}^{\prime}=v_{{\scriptscriptstyle 3}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}= & v_{{\scriptscriptstyle 1}}\boldsymbol{e}_{{\scriptscriptstyle 1}}+v_{{\scriptscriptstyle 2}}\boldsymbol{e}_{{\scriptscriptstyle 2}}+v_{{\scriptscriptstyle 3}}\boldsymbol{e}_{{\scriptscriptstyle 3}}\\
+= & \left(\boldsymbol{v}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime}\right)\boldsymbol{e}_{{\scriptscriptstyle 1}}+\left(\boldsymbol{v}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime}\right)\boldsymbol{e}_{{\scriptscriptstyle 2}}+\left(\boldsymbol{v}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}^{\prime}\right)\boldsymbol{e}_{{\scriptscriptstyle 3}}\\
+= & \left(\boldsymbol{e}^{{\scriptscriptstyle 1}}\cdot\boldsymbol{v}\right)\boldsymbol{e}_{{\scriptscriptstyle 1}}+\left(\boldsymbol{e}^{{\scriptscriptstyle 2}}\cdot\boldsymbol{v}\right)\boldsymbol{e}_{{\scriptscriptstyle 2}}+\left(\boldsymbol{e}^{{\scriptscriptstyle 3}}\cdot\boldsymbol{v}\right)\boldsymbol{e}_{{\scriptscriptstyle 3}}\\
+= & \boldsymbol{e}^{{\scriptscriptstyle 1}}\left(\boldsymbol{v}\right)\boldsymbol{e}_{{\scriptscriptstyle 1}}+\boldsymbol{e}^{{\scriptscriptstyle 2}}\left(\boldsymbol{v}\right)\boldsymbol{e}_{{\scriptscriptstyle 2}}+\boldsymbol{e}^{{\scriptscriptstyle 3}}\left(\boldsymbol{v}\right)\boldsymbol{e}_{{\scriptscriptstyle 3}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\boldsymbol{e}^{{\scriptscriptstyle 1}}\left(\boldsymbol{v}\right)=\boldsymbol{e}^{{\scriptscriptstyle 1}}\cdot\boldsymbol{v}=\boldsymbol{v}\cdot\boldsymbol{e}_{{\scriptscriptstyle 1}}^{\prime}=v_{{\scriptscriptstyle 1}}\\
+\boldsymbol{e}^{{\scriptscriptstyle 2}}\left(\boldsymbol{v}\right)=\boldsymbol{e}^{{\scriptscriptstyle 2}}\cdot\boldsymbol{v}=\boldsymbol{v}\cdot\boldsymbol{e}_{{\scriptscriptstyle 2}}^{\prime}=v_{{\scriptscriptstyle 2}}\\
+\boldsymbol{e}^{{\scriptscriptstyle 3}}\left(\boldsymbol{v}\right)=\boldsymbol{e}^{{\scriptscriptstyle 3}}\cdot\boldsymbol{v}=\boldsymbol{v}\cdot\boldsymbol{e}_{{\scriptscriptstyle 3}}^{\prime}=v_{{\scriptscriptstyle 3}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{e}^{{\scriptscriptstyle i}}\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=\boldsymbol{e}^{{\scriptscriptstyle i}}\cdot\boldsymbol{e}_{{\scriptscriptstyle j}}=\delta_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}=\delta^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V= & \mathrm{span}\left\{ \boldsymbol{e}_{{\scriptscriptstyle 1}},\boldsymbol{e}_{{\scriptscriptstyle 2}},\boldsymbol{e}_{{\scriptscriptstyle 3}}\right\} =\left\{ v_{{\scriptscriptstyle 1}}\boldsymbol{e}_{{\scriptscriptstyle 1}}+v_{{\scriptscriptstyle 2}}\boldsymbol{e}_{{\scriptscriptstyle 2}}+v_{{\scriptscriptstyle 3}}\boldsymbol{e}_{{\scriptscriptstyle 3}}\right\} \\
+= & \left\{ \sum_{j=1}^{3}v_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}\right\} =\left\{ v_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}\middle|\begin{cases}
+v_{{\scriptscriptstyle j}}\in F\\
+\boldsymbol{e}_{{\scriptscriptstyle j}}\in F^{3}
+\end{cases}\right\} =\left\{ \boldsymbol{v}\middle|\boldsymbol{v}\in V\right\} \\
+V^{*}= & \mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle 1}},\boldsymbol{e}^{{\scriptscriptstyle 2}},\boldsymbol{e}^{{\scriptscriptstyle 3}}\right\} =\left\{ v^{*{\scriptscriptstyle 1}}\boldsymbol{e}^{{\scriptscriptstyle 1}}+v^{*{\scriptscriptstyle 2}}\boldsymbol{e}^{{\scriptscriptstyle 2}}+v^{*{\scriptscriptstyle 3}}\boldsymbol{e}^{{\scriptscriptstyle 3}}\right\} \\
+= & \left\{ \sum_{i=1}^{3}v^{*{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}\right\} =\left\{ v^{*{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}\middle|\begin{cases}
+v^{*{\scriptscriptstyle i}}\in F\\
+\boldsymbol{e}^{{\scriptscriptstyle i}}\in F^{3}
+\end{cases}\right\} =\left\{ \boldsymbol{v}^{*}\middle|\boldsymbol{v}^{*}\in V^{*}\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}^{*}\left(\boldsymbol{v}\right)= & \left(v^{*{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}\right)\left(\boldsymbol{v}\right),\boldsymbol{v}\in V\\
+= & \left(v^{*{\scriptscriptstyle 1}}\boldsymbol{e}^{{\scriptscriptstyle 1}}+v^{*{\scriptscriptstyle 2}}\boldsymbol{e}^{{\scriptscriptstyle 2}}+v^{*{\scriptscriptstyle 3}}\boldsymbol{e}^{{\scriptscriptstyle 3}}\right)\left(\boldsymbol{v}\right)\\
+= & v^{*{\scriptscriptstyle 1}}\boldsymbol{e}^{{\scriptscriptstyle 1}}\left(\boldsymbol{v}\right)+v^{*{\scriptscriptstyle 2}}\boldsymbol{e}^{{\scriptscriptstyle 2}}\left(\boldsymbol{v}\right)+v^{*{\scriptscriptstyle 3}}\boldsymbol{e}^{{\scriptscriptstyle 3}}\left(\boldsymbol{v}\right)\\
+= & v^{*{\scriptscriptstyle 1}}v_{{\scriptscriptstyle 1}}+v^{*{\scriptscriptstyle 2}}v_{{\scriptscriptstyle 2}}+v^{*{\scriptscriptstyle 3}}v_{{\scriptscriptstyle 3}}\in F
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}^{*}:V\rightarrow F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V\overset{\boldsymbol{v}^{*}}{\rightarrow}F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V^{*}=\left\{ \boldsymbol{v}^{*}\middle|\boldsymbol{v}^{*}\in V^{*}\right\} = & \left\{ \boldsymbol{v}^{*}\middle|\boldsymbol{v}^{*}:V\rightarrow F\right\} \\
+= & \left\{ \boldsymbol{v}^{*}\middle|V\overset{\boldsymbol{v}^{*}}{\rightarrow}F\right\} \\
+= & \left\{ \boldsymbol{\omega}\middle|\boldsymbol{\omega}:V\rightarrow F\right\} \\
+= & \left\{ \omega^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}\middle|\begin{cases}
+\omega^{{\scriptscriptstyle i}}\in F\\
+\boldsymbol{e}^{{\scriptscriptstyle i}}\in F^{3}
+\end{cases}\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{cccccccccc}
+ &  &  & V & =\{ & \boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}_{{\scriptscriptstyle 3}} & \boldsymbol{v} & \cdots\}\\
+ & \boldsymbol{e}^{{\scriptscriptstyle 1}} & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+V^{*}=\{ & \boldsymbol{e}^{{\scriptscriptstyle 2}} & \} & K & \supseteq\{ & 1 & 0 & 0 & v_{{\scriptscriptstyle 1}} & \cdots\}\\
+ & \boldsymbol{e}^{{\scriptscriptstyle 3}} &  & V & =\{ & \boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}_{{\scriptscriptstyle 3}} & \boldsymbol{v} & \cdots\}\\
+ & \boldsymbol{v}^{*} & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+ & \vdots &  & K & \supseteq\{ & v^{*{\scriptscriptstyle 1}} & v^{*{\scriptscriptstyle 2}} & v^{*{\scriptscriptstyle 3}} & v^{*{\scriptscriptstyle i}}v_{{\scriptscriptstyle i}} & \cdots\}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
++:V^{*}\times V^{*}\rightarrow V^{*}\Leftrightarrow\forall\boldsymbol{\omega}_{{\scriptscriptstyle 1}},\boldsymbol{\omega}_{{\scriptscriptstyle 2}}\in V^{*},\exists!\left(\boldsymbol{\omega}_{{\scriptscriptstyle 1}}+\boldsymbol{\omega}_{{\scriptscriptstyle 2}}\right)\in V^{*}\left[\left(\boldsymbol{\omega}_{{\scriptscriptstyle 1}}+\boldsymbol{\omega}_{{\scriptscriptstyle 2}}\right)\left(\boldsymbol{v}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle 1}}\left(\boldsymbol{v}\right)+\boldsymbol{\omega}_{{\scriptscriptstyle 2}}\left(\boldsymbol{v}\right)\right]\\
+\cdot:F\times V^{*}\rightarrow V^{*}\Leftrightarrow\forall k\in F,\forall\boldsymbol{\omega}\in V^{*},\exists!\left(k\boldsymbol{\omega}\right)\in V^{*}\left[\left(k\boldsymbol{\omega}\right)\left(\boldsymbol{v}\right)=k\cdot\boldsymbol{\omega}\left(\boldsymbol{v}\right)\right]\\
+\forall\boldsymbol{\omega}\in V^{*},\exists!\boldsymbol{0}\in V^{*}\left[\left(\boldsymbol{\omega}+\boldsymbol{0}\right)\left(\boldsymbol{v}\right)=\boldsymbol{\omega}\left(\boldsymbol{v}\right)+\boldsymbol{0}\left(\boldsymbol{v}\right)=\boldsymbol{\omega}\left(\boldsymbol{v}\right)\right]
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V^{**}= & \left(V^{*}\right)^{*}\\
+= & \left\{ \boldsymbol{\omega}^{*}\middle|\boldsymbol{\omega}^{*}:V^{*}\rightarrow F\right\} \\
+= & \left\{ \boldsymbol{\omega}^{*}\middle|\boldsymbol{\omega}^{*}\in V^{**}\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{\omega}^{*}\left(\boldsymbol{\omega}\right)= & \left(\omega^{*{\scriptscriptstyle \nu}}\boldsymbol{e}^{{\scriptscriptstyle \nu}*}\right)\left(\boldsymbol{\omega}\right),\boldsymbol{\omega}\in V^{*}\\
+= & \left(\omega^{*{\scriptscriptstyle 1}}\boldsymbol{e}^{{\scriptscriptstyle 1}*}+\omega^{*{\scriptscriptstyle 2}}\boldsymbol{e}^{{\scriptscriptstyle 2}*}+\omega^{*{\scriptscriptstyle 3}}\boldsymbol{e}^{{\scriptscriptstyle 3}*}\right)\left(\boldsymbol{\omega}\right)\\
+= & \omega^{*{\scriptscriptstyle 1}}\boldsymbol{e}^{{\scriptscriptstyle 1}*}\left(\boldsymbol{\omega}\right)+\omega^{*{\scriptscriptstyle 2}}\boldsymbol{e}^{{\scriptscriptstyle 2}*}\left(\boldsymbol{\omega}\right)+\omega^{*{\scriptscriptstyle 3}}\boldsymbol{e}^{{\scriptscriptstyle 3}*}\left(\boldsymbol{\omega}\right)\\
+= & \omega^{*{\scriptscriptstyle 1}}\omega_{{\scriptscriptstyle 1}}+\omega^{*{\scriptscriptstyle 2}}\omega_{{\scriptscriptstyle 2}}+\omega^{*{\scriptscriptstyle 3}}\omega_{{\scriptscriptstyle 3}}\in F
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V^{**}=\left(V^{*}\right)^{*}= & \mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle \mu}}\right\} _{{\scriptscriptstyle \mu\in\left\{ 1,2,3\right\} }}^{*}\\
+= & \mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle 1}},\boldsymbol{e}^{{\scriptscriptstyle 2}},\boldsymbol{e}^{{\scriptscriptstyle 3}}\right\} ^{*}\\
+= & \mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle 1}*},\boldsymbol{e}^{{\scriptscriptstyle 2}*},\boldsymbol{e}^{{\scriptscriptstyle 3}*}\right\} \\
+= & \mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle \nu}*}\right\} _{{\scriptscriptstyle \nu\in\left\{ 1,2,3\right\} }}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\boldsymbol{e}^{{\scriptscriptstyle 1}*}\left(\boldsymbol{\omega}\right)=\boldsymbol{e}^{{\scriptscriptstyle 1}*}\cdot\boldsymbol{\omega}=\boldsymbol{\omega}\cdot\boldsymbol{e}^{{\scriptscriptstyle 1}*}=\boldsymbol{\omega}\left(\boldsymbol{e}^{{\scriptscriptstyle 1}*}\right)\\
+\boldsymbol{e}^{{\scriptscriptstyle 2}*}\left(\boldsymbol{\omega}\right)=\boldsymbol{e}^{{\scriptscriptstyle 2}*}\cdot\boldsymbol{\omega}=\boldsymbol{\omega}\cdot\boldsymbol{e}^{{\scriptscriptstyle 2}*}=\boldsymbol{\omega}\left(\boldsymbol{e}^{{\scriptscriptstyle 2}*}\right)\\
+\boldsymbol{e}^{{\scriptscriptstyle 3}*}\left(\boldsymbol{\omega}\right)=\boldsymbol{e}^{{\scriptscriptstyle 3}*}\cdot\boldsymbol{\omega}=\boldsymbol{\omega}\cdot\boldsymbol{e}^{{\scriptscriptstyle 3}*}=\boldsymbol{\omega}\left(\boldsymbol{e}^{{\scriptscriptstyle 3}*}\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{\omega}^{*}\left(\boldsymbol{\omega}\right)=\boldsymbol{\omega}^{*}\cdot\boldsymbol{\omega}=\boldsymbol{\omega}\cdot\boldsymbol{\omega}^{*}=\boldsymbol{\omega}\left(\boldsymbol{\omega}^{*}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{x}\left(\boldsymbol{f}\right)=\boldsymbol{x}\cdot\boldsymbol{f}=\boldsymbol{f}\cdot\boldsymbol{x}=\boldsymbol{f}\left(\boldsymbol{x}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{e}^{{\scriptscriptstyle \mu}}\left(\boldsymbol{e}_{{\scriptscriptstyle \nu}}\right)=\boldsymbol{e}^{{\scriptscriptstyle \mu}}\cdot\boldsymbol{e}_{{\scriptscriptstyle \nu}}=\delta_{{\scriptscriptstyle \nu}}^{{\scriptscriptstyle \mu}}=\delta^{{\scriptscriptstyle \mu}}{}_{{\scriptscriptstyle \nu}}=\begin{cases}
+1 & \mu=\nu\\
+0 & \mu\ne\nu
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{e}^{{\scriptscriptstyle \nu}*}\left(\boldsymbol{e}^{{\scriptscriptstyle \mu}}\right)\overset{\text{def.}}{=}\boldsymbol{e}_{{\scriptscriptstyle \nu}}\cdot\boldsymbol{e}^{{\scriptscriptstyle \mu}}= & \boldsymbol{e}^{{\scriptscriptstyle \mu}}\cdot\boldsymbol{e}_{{\scriptscriptstyle \nu}}=\boldsymbol{e}^{{\scriptscriptstyle \mu}}\left(\boldsymbol{e}_{{\scriptscriptstyle \nu}}\right)\\
+\Downarrow\\
+V^{**}=\mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle \nu}*}\right\} _{{\scriptscriptstyle \nu\in\left\{ 1,2,3\right\} }}\cong & \mathrm{span}\left\{ \boldsymbol{e}_{{\scriptscriptstyle \nu}}\right\} _{{\scriptscriptstyle \nu\in\left\{ 1,2,3\right\} }}=V\\
+V^{**}\cong & V\\
+\Downarrow & \begin{cases}
+V^{**}\cong V & V,V^{**}\text{ are isomorphism}\\
+ & \text{independent of choice of bases}
+\end{cases}\\
+V,V^{**} & \text{ are naturally isomorphism}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V\cong V^{**}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V\cong V^{**}=\left\{ \boldsymbol{\omega}^{*}\middle|\boldsymbol{\omega}^{*}:V^{*}\rightarrow F\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+linearity
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+f\left(x+y\right)=f\left(x\right)+f\left(y\right) & \left(a\right)\text{additivity}\\
+f\left(\lambda x\right)=\lambda f\left(x\right) & \left(h\right)\text{homogeneity}
+\end{cases}\\
+\Leftrightarrow & f\left(\lambda x+y\right)=\lambda f\left(x\right)+f\left(y\right)\\
+\Leftrightarrow & f\text{ is linear}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall s\in F,\boldsymbol{u},\boldsymbol{v}\in V\left[\boldsymbol{u}+s\boldsymbol{v}\in V\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall s\in F,\forall\boldsymbol{u},\boldsymbol{v}\in V\left[\boldsymbol{u}+s\boldsymbol{v}\in V\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall s\in F,\left\langle \boldsymbol{u},\boldsymbol{v}\right\rangle \in V^{2}\left[\boldsymbol{u}+s\boldsymbol{v}\in V\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\forall\boldsymbol{u},\boldsymbol{v}\in V\left[\boldsymbol{u}+\boldsymbol{v}\in V\right] & \text{vector addition closure}\\
+\forall s\in F,\boldsymbol{v}\in V\left[s\boldsymbol{v}\in V\right] & \text{scalar multiplication closure}
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+\forall\boldsymbol{u},\boldsymbol{v}\in V\left[\boldsymbol{u}+\boldsymbol{v}\in V\right] & \left(a\right)\text{additivity}\\
+\forall s\in F,\boldsymbol{v}\in V\left[s\boldsymbol{v}\in V\right] & \left(h\right)\text{homogeneity}
+\end{cases}\\
+\Leftrightarrow & \forall s\in F,\boldsymbol{u},\boldsymbol{v}\in V\left[\boldsymbol{u}+s\boldsymbol{v}\in V\right]\text{ }\left(l\right)\text{linearity}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+vector space
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+F\text{ is a field} & \left(f\right)\text{field}\\
+V\ne\emptyset & \left(ne\right)\text{nonempty set}\\
++:V\times V=V^{2}\overset{+}{\rightarrow}V\Leftrightarrow\forall\boldsymbol{u},\boldsymbol{v}\in V,\exists!\boldsymbol{w}\in V\left[\boldsymbol{w}=\boldsymbol{u}+\boldsymbol{v}\right] & \left(va\right)\text{vector addition}\\
+\cdot:F\times V\overset{\cdot}{\rightarrow}V\Leftrightarrow\forall s\in F,\forall\boldsymbol{v}\in V,\exists!\boldsymbol{u}\in V\left[\boldsymbol{u}=s\boldsymbol{v}=s\cdot\boldsymbol{v}\right] & \left(sm\right)\text{scalar multiplication}\\
+\begin{cases}
+\exists!\boldsymbol{0}\in V,\forall\boldsymbol{v}\in V\left[\boldsymbol{0}+\boldsymbol{v}=\boldsymbol{v}\right] & \left(e\right)\text{identity}\\
+\forall\boldsymbol{v}\in V,\exists!-\boldsymbol{v}\in V\left[\left(-\boldsymbol{v}\right)+\boldsymbol{v}=\boldsymbol{0}\right] & \left(i\right)\text{inverse}\\
+\forall\boldsymbol{u},\boldsymbol{v},\boldsymbol{w}\in V\left[\boldsymbol{u}+\left(\boldsymbol{v}+\boldsymbol{w}\right)=\left(\boldsymbol{u}+\boldsymbol{v}\right)+\boldsymbol{w}\right] & \left(a\right)\text{associativity}\\
+\forall\boldsymbol{u},\boldsymbol{v}\in V\left[\boldsymbol{u}+\boldsymbol{v}=\boldsymbol{v}+\boldsymbol{u}\right] & \left(c\right)\text{commutativity}
+\end{cases} & \left(va\right)\text{axioms}\\
+\begin{cases}
+\exists!1\in F,\forall\boldsymbol{v}\in V\left[1\boldsymbol{v}=\boldsymbol{v}\right] & \left(e\right)\text{identity}\\
+\forall s,t\in F,\boldsymbol{v}\in V\left[s\left(t\boldsymbol{v}\right)=\left(st\right)\boldsymbol{v}\right] & \left(a\right)\text{associativity}\\
+\forall s,t\in F,\boldsymbol{v}\in V\left[\left(s+t\right)\boldsymbol{v}=s\boldsymbol{v}+t\boldsymbol{v}\right] & \left(ds\right)\text{scalar distributivity}\\
+\forall s\in F,\boldsymbol{u},\boldsymbol{v}\in V\left[s\left(\boldsymbol{u}+\boldsymbol{v}\right)=s\boldsymbol{u}+s\boldsymbol{v}\right] & \left(dv\right)\text{vector distributivity}
+\end{cases} & \left(sm\right)\text{axioms}
+\end{cases}\\
+\Leftrightarrow & V=V\left(F,+,\cdot\right)=\left(V,F,+,\cdot\right)\text{ is a vector space over the field }F\\
+\Leftrightarrow & V\text{ is a vector space}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & V\text{ is a vector space}\\
+\Leftrightarrow & V=V\left(F,+,\cdot\right)=\left(V,F,+,\cdot\right)\text{ is a vector space over the field }F\\
+\Leftrightarrow & \begin{cases}
+F\text{ is a field} & \left(f\right)\text{field}\\
+V\ne\emptyset & \left(ne\right)\text{nonempty set}\\
+V=\left(V,+\right)\text{ is a commutative group}\Leftrightarrow V=\left(V,+\right)\text{ is an abelian group} & \left(va\right)\text{vector addition}\\
+\cdot:F\times V\overset{\cdot}{\rightarrow}V\Leftrightarrow\forall s\in F,\forall\boldsymbol{v}\in V,\exists!\boldsymbol{u}\in V\left[\boldsymbol{u}=s\boldsymbol{v}=s\cdot\boldsymbol{v}\right] & \left(sm\right)\text{scalar multiplication}\\
+\begin{cases}
+\exists!1\in F,\forall\boldsymbol{v}\in V\left[1\boldsymbol{v}=\boldsymbol{v}\right] & \left(e\right)\text{identity}\\
+\forall s,t\in F,\boldsymbol{v}\in V\left[s\left(t\boldsymbol{v}\right)=\left(st\right)\boldsymbol{v}\right] & \left(a\right)\text{associativity}\\
+\forall s,t\in F,\boldsymbol{v}\in V\left[\left(s+t\right)\boldsymbol{v}=s\boldsymbol{v}+t\boldsymbol{v}\right] & \left(ds\right)\text{scalar distributivity}\\
+\forall s\in F,\boldsymbol{u},\boldsymbol{v}\in V\left[s\left(\boldsymbol{u}+\boldsymbol{v}\right)=s\boldsymbol{u}+s\boldsymbol{v}\right] & \left(dv\right)\text{vector distributivity}
+\end{cases} & \left(sm\right)\text{axioms}
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+F\text{ is a field} & \left(f\right)\text{field}\\
+V\ne\emptyset & \left(ne\right)\text{nonempty set}\\
+\begin{cases}
+V=\left(V,+\right)=\left(V,+_{{\scriptscriptstyle V}}\right)\text{ is a group} & \left(g\right)\text{group}\\
+\forall\boldsymbol{u},\boldsymbol{v}\in V\left[\boldsymbol{u}+\boldsymbol{v}=\boldsymbol{v}+\boldsymbol{u}\right] & \left(c\right)\text{commutativity}
+\end{cases} & \left(va\right)\text{vector addition}\\
+\cdot=\cdot_{{\scriptscriptstyle F\times V}}:F\times V\overset{\cdot}{\rightarrow}V\Leftrightarrow\forall s\in F,\forall\boldsymbol{v}\in V,\exists!\boldsymbol{u}\in V\left[\boldsymbol{u}=s\boldsymbol{v}=s\cdot\boldsymbol{v}\right] & \left(sm\right)\text{scalar multiplication}\\
+\begin{cases}
+\exists!1\in F,\forall\boldsymbol{v}\in V\left[1\boldsymbol{v}=\boldsymbol{v}\right] & \left(e\right)\text{identity}\\
+\forall s,t\in F,\boldsymbol{v}\in V\left[s\left(t\boldsymbol{v}\right)=\left(st\right)\boldsymbol{v}\right] & \left(a\right)\text{associativity}\\
+\forall s,t\in F,\boldsymbol{v}\in V\left[\left(s+t\right)\boldsymbol{v}=s\boldsymbol{v}+t\boldsymbol{v}\right] & \left(ds\right)\text{scalar distributivity}\\
+\forall s\in F,\boldsymbol{u},\boldsymbol{v}\in V\left[s\left(\boldsymbol{u}+\boldsymbol{v}\right)=s\boldsymbol{u}+s\boldsymbol{v}\right] & \left(dv\right)\text{vector distributivity}
+\end{cases} & \left(sm\right)\text{axioms}
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+F=F\left(+_{{\scriptscriptstyle F}},\cdot_{{\scriptscriptstyle F}}\right)=\left(F,+_{{\scriptscriptstyle F}},\cdot_{{\scriptscriptstyle F}}\right)=\left(F,+,\cdot\right)\text{ is a field} & \left(f\right)\\
+V\ne\emptyset & \left(ne\right)\\
+\begin{cases}
+\begin{cases}
++:V\times V=V^{2}\overset{+}{\rightarrow}V\Leftrightarrow\forall\boldsymbol{u},\boldsymbol{v}\in V,\exists!\boldsymbol{w}\in V\left[\boldsymbol{w}=\boldsymbol{u}+\boldsymbol{v}\right] & \left(cl\right)\text{closure}\\
+\exists!\boldsymbol{0}\in V,\forall\boldsymbol{v}\in V\left[\boldsymbol{0}+\boldsymbol{v}=\boldsymbol{v}\right] & \left(e\right)\text{identity}\\
+\forall\boldsymbol{v}\in V,\exists!-\boldsymbol{v}\in V\left[\left(-\boldsymbol{v}\right)+\boldsymbol{v}=\boldsymbol{0}\right] & \left(i\right)\text{inverse}\\
+\forall\boldsymbol{u},\boldsymbol{v},\boldsymbol{w}\in V\left[\boldsymbol{u}+\left(\boldsymbol{v}+\boldsymbol{w}\right)=\left(\boldsymbol{u}+\boldsymbol{v}\right)+\boldsymbol{w}\right] & \left(a\right)\text{associativity}
+\end{cases} & \left(g\right)\\
+\forall\boldsymbol{u},\boldsymbol{v}\in V\left[\boldsymbol{u}+\boldsymbol{v}=\boldsymbol{v}+\boldsymbol{u}\right] & \left(c\right)
+\end{cases} & \left(va\right)\\
+\begin{cases}
+\cdot:F\times V\overset{\cdot}{\rightarrow}V\Leftrightarrow\forall s\in F,\forall\boldsymbol{v}\in V,\exists!\boldsymbol{u}\in V\left[\boldsymbol{u}=s\boldsymbol{v}=s\cdot\boldsymbol{v}\right] & \left(cl\right)\text{closure}\\
+\exists!1\in F,\forall\boldsymbol{v}\in V\left[1\boldsymbol{v}=\boldsymbol{v}\right] & \left(e\right)\text{identity}\\
+\forall s,t\in F,\boldsymbol{v}\in V\left[s\left(t\boldsymbol{v}\right)=s\cdot_{{\scriptscriptstyle F\times V}}\left(t\cdot_{{\scriptscriptstyle F\times V}}\boldsymbol{v}\right)=\left(s\cdot_{{\scriptscriptstyle F}}t\right)\cdot_{{\scriptscriptstyle F\times V}}\boldsymbol{v}=\left(st\right)\boldsymbol{v}\right] & \left(a\right)\text{associativity}\\
+\forall s,t\in F,\boldsymbol{v}\in V\left[\left(s+t\right)\boldsymbol{v}=\left(s+_{{\scriptscriptstyle F}}t\right)\boldsymbol{v}=s\boldsymbol{v}+_{{\scriptscriptstyle V}}t\boldsymbol{v}=s\boldsymbol{v}+t\boldsymbol{v}\right] & \left(ds\right)\text{scalar distributivity}\\
+\forall s\in F,\boldsymbol{u},\boldsymbol{v}\in V\left[s\left(\boldsymbol{u}+\boldsymbol{v}\right)=s\boldsymbol{u}+s\boldsymbol{v}\right] & \left(dv\right)\text{vector distributivity}
+\end{cases} & \left(sm\right)
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & V=\left(V,+\right)\text{ is a commutative group}\Leftrightarrow V=\left(V,+\right)\text{ is an abelian group}\\
+\Leftrightarrow & \begin{cases}
+V=\left(V,+\right)=\left(V,+_{{\scriptscriptstyle V}}\right)\text{ is a group} & \left(g\right)\text{group}\\
+\forall\boldsymbol{u},\boldsymbol{v}\in V\left[\boldsymbol{u}+\boldsymbol{v}=\boldsymbol{v}+\boldsymbol{u}\right] & \left(c\right)\text{commutativity}
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+\begin{cases}
++:V\times V=V^{2}\overset{+}{\rightarrow}V\Leftrightarrow\forall\boldsymbol{u},\boldsymbol{v}\in V,\exists!\boldsymbol{w}\in V\left[\boldsymbol{w}=\boldsymbol{u}+\boldsymbol{v}\right] & \left(cl\right)\text{closure}\\
+\exists!\boldsymbol{0}\in V,\forall\boldsymbol{v}\in V\left[\boldsymbol{0}+\boldsymbol{v}=\boldsymbol{v}\right] & \left(e\right)\text{identity}\\
+\forall\boldsymbol{v}\in V,\exists!-\boldsymbol{v}\in V\left[\left(-\boldsymbol{v}\right)+\boldsymbol{v}=\boldsymbol{0}\right] & \left(i\right)\text{inverse}\\
+\forall\boldsymbol{u},\boldsymbol{v},\boldsymbol{w}\in V\left[\boldsymbol{u}+\left(\boldsymbol{v}+\boldsymbol{w}\right)=\left(\boldsymbol{u}+\boldsymbol{v}\right)+\boldsymbol{w}\right] & \left(a\right)\text{associativity}
+\end{cases} & \left(g\right)\\
+\forall\boldsymbol{u},\boldsymbol{v}\in V\left[\boldsymbol{u}+\boldsymbol{v}=\boldsymbol{v}+\boldsymbol{u}\right] & \left(c\right)
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall s,t\in F,\boldsymbol{v}\in V\left[\left(s+t\right)\boldsymbol{v}=s\boldsymbol{v}+t\boldsymbol{v}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall s,t\in F,\boldsymbol{v}\in V\left[\left(s+_{{\scriptscriptstyle F}}t\right)\boldsymbol{v}=s\boldsymbol{v}+t\boldsymbol{v}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall s,t\in F,\boldsymbol{v}\in V\left[\left(s+_{{\scriptscriptstyle F}}t\right)\boldsymbol{v}=s\boldsymbol{v}+_{{\scriptscriptstyle V}}t\boldsymbol{v}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
 group theory
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Formula 
 \[
 \mathcal{M}=\left(\mathcal{M},\cdot\right)\subset\left(\mathcal{M}_{2\times2}\left(\mathbb{C}\right)-\left\{ 0\right\} ,\cdot\right)=\mathcal{M}_{2\times2}\left(\mathbb{C}\right)-\left\{ \begin{pmatrix}0 & 0\\
@@ -114,7 +2063,8 @@ group theory
  & \forall\left\langle M_{{\scriptscriptstyle 1}},M_{{\scriptscriptstyle 2}}\right\rangle \in\mathcal{M}^{2},\exists M_{{\scriptscriptstyle 1}}M_{{\scriptscriptstyle 2}}\in\mathcal{M}\left[M_{{\scriptscriptstyle 1}}M_{{\scriptscriptstyle 2}}=M_{{\scriptscriptstyle 1}}\cdot M_{{\scriptscriptstyle 2}}\right]\\
 \Leftrightarrow & \cdot:\mathcal{M}\times\mathcal{M}=\mathcal{M}^{2}\rightarrow\mathcal{M}\\
 \Leftrightarrow & \cdot:\mathcal{M}\times\mathcal{M}\rightarrow\mathcal{M}\\
-\Leftrightarrow & \mathcal{M}\times\mathcal{M}\overset{\cdot}{\rightarrow}\mathcal{M}
+\Leftrightarrow & \mathcal{M}\times\mathcal{M}\overset{\cdot}{\rightarrow}\mathcal{M}\\
+\Leftrightarrow & \mathcal{M}^{2}\overset{\cdot}{\rightarrow}\mathcal{M}
 \end{align*}
 
 \end_inset
@@ -493,6 +2443,2019 @@ G= & \left\{ 1,\mathrm{i},-1,-\mathrm{i}\right\} \\
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdot$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{\mathrm{k}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdot$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{\mathrm{k}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdot$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\mathrm{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 complex group representation
 \begin_inset Formula 
 \[
@@ -681,7 +4644,7 @@ y & x
 
 \begin_inset Formula 
 \[
-\mathbb{C}\rightarrow\mathcal{M}_{2\times2}\left(\mathbb{R}\right)
+\mathbb{C}\rightarrow\mathcal{M}_{2\times2}\left(\mathbb{R}\right)=\mathcal{M}_{2}\left(\mathbb{R}\right)
 \]
 
 \end_inset
@@ -1454,7 +5417,436 @@ i & 0
 
 \begin_inset Formula 
 \[
-\mathbb{H}\rightarrow\mathcal{M}_{2\times2}\left(\mathbb{C}\right)
+\mathbb{H}\rightarrow\mathcal{M}_{2\times2}\left(\mathbb{C}\right)=\mathcal{M}_{2}\left(\mathbb{C}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{H}\rightarrow\mathcal{M}_{2}\left(\mathbb{C}\right)\overset{\mathbb{C}\rightarrow\mathcal{M}_{2}\left(\mathbb{R}\right)}{\rightarrow}\mathcal{M}_{4\times4}\left(\mathbb{R}\right)=\mathcal{M}_{4}\left(\mathbb{R}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{C}\rightarrow\mathcal{M}_{2}\left(\mathbb{R}\right)\Leftarrow\begin{cases}
+1\rightarrow\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\\
+i\rightarrow\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1\rightarrow\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\rightarrow\begin{pmatrix}\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix} & \begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}\\
+\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix} & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}
+\end{pmatrix}\rightarrow\begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-1\rightarrow\begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix}\rightarrow\begin{pmatrix}\begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix} & \begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}\\
+\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix} & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix}
+\end{pmatrix}\rightarrow\begin{pmatrix}-1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{i}\rightarrow\begin{pmatrix}i & 0\\
+0 & -i
+\end{pmatrix}\rightarrow\begin{pmatrix}\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}\\
+\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix}
+\end{pmatrix}\rightarrow\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\mathrm{i}\rightarrow\begin{pmatrix}-i & 0\\
+0 & i
+\end{pmatrix}\rightarrow\begin{pmatrix}\begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}\\
+\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}
+\end{pmatrix}\rightarrow\begin{pmatrix}0 & 1 & 0 & 0\\
+-1 & 0 & 0 & 0\\
+0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{j}\rightarrow\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\rightarrow\begin{pmatrix}\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix} & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix}\\
+\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix} & \begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}
+\end{pmatrix}\rightarrow\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\mathrm{j}\rightarrow\begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix}\rightarrow\begin{pmatrix}\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix} & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\\
+\begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix} & \begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}
+\end{pmatrix}\rightarrow\begin{pmatrix}0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+-1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{k}\rightarrow\begin{pmatrix}0 & -i\\
+-i & 0
+\end{pmatrix}\rightarrow\begin{pmatrix}\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix}\\
+\begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}
+\end{pmatrix}\rightarrow\begin{pmatrix}0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0\\
+0 & 1 & 0 & 0\\
+-1 & 0 & 0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\mathrm{k}\rightarrow\begin{pmatrix}0 & i\\
+i & 0
+\end{pmatrix}\rightarrow\begin{pmatrix}\begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\\
+\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 0\\
+0 & 0
+\end{pmatrix}
+\end{pmatrix}\rightarrow\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0\\
+0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{i}\mathrm{j}\rightarrow\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0\\
+0 & 1 & 0 & 0\\
+-1 & 0 & 0 & 0
+\end{pmatrix}\leftarrow\mathrm{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{j}\mathrm{i}\rightarrow\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0\\
+0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\leftarrow-\mathrm{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{i}^{2}=\mathrm{i}\mathrm{i}\rightarrow\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}=\begin{pmatrix}-1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1
+\end{pmatrix}\leftarrow-1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccccc}
+ & \begin{cases}
+\alpha=i\\
+\beta=0
+\end{cases} & \begin{cases}
+1\rightarrow\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\\
+i\rightarrow\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}
+\end{cases} & \begin{cases}
+\alpha=\sqrt{2}i\\
+\beta=1
+\end{cases} & \begin{cases}
+1\rightarrow\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\\
+i\rightarrow\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}
+\end{cases}\\
+1 & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix} & \begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix} & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix} & \begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}\\
+-1 & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix} & \begin{pmatrix}-1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1
+\end{pmatrix} & \begin{pmatrix}-1 & 0\\
+0 & -1
+\end{pmatrix} & \begin{pmatrix}-1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1
+\end{pmatrix}\\
+\mathrm{i} & \begin{pmatrix}i & 0\\
+0 & -i
+\end{pmatrix} & \begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix} & \begin{pmatrix}\sqrt{2}i & 1\\
+1 & -\sqrt{2}i
+\end{pmatrix} & \begin{pmatrix}0 & -\sqrt{2} & 1 & 0\\
+\sqrt{2} & 0 & 0 & 1\\
+1 & 0 & 0 & \sqrt{2}\\
+0 & 1 & -\sqrt{2} & 0
+\end{pmatrix}\\
+-\mathrm{i} & \begin{pmatrix}-i & 0\\
+0 & i
+\end{pmatrix} & \begin{pmatrix}0 & 1 & 0 & 0\\
+-1 & 0 & 0 & 0\\
+0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{pmatrix} & \begin{pmatrix}-\sqrt{2}i & -1\\
+-1 & \sqrt{2}i
+\end{pmatrix} & \begin{pmatrix}0 & -1 & -1 & 0\\
+1 & 0 & 0 & -1\\
+-1 & 0 & 0 & 1\\
+0 & -1 & -1 & 0
+\end{pmatrix}\\
+\mathrm{j} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix} & \begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}\\
+-\mathrm{j} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+-1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 1\\
+-1 & 0
+\end{pmatrix} & \begin{pmatrix}0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+-1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0
+\end{pmatrix}\\
+\mathrm{k} & \begin{pmatrix}0 & -i\\
+-i & 0
+\end{pmatrix} & \begin{pmatrix}0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0\\
+0 & 1 & 0 & 0\\
+-1 & 0 & 0 & 0
+\end{pmatrix} & \begin{pmatrix}1 & -\sqrt{2}i\\
+-\sqrt{2}i & -1
+\end{pmatrix} & \begin{pmatrix}1 & 0 & 0 & \sqrt{2}\\
+0 & 1 & -\sqrt{2} & 0\\
+0 & \sqrt{2} & -1 & 0\\
+-\sqrt{2} & 0 & 0 & -1
+\end{pmatrix}\\
+-\mathrm{k} & \begin{pmatrix}0 & i\\
+i & 0
+\end{pmatrix} & \begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0\\
+0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix} & \begin{pmatrix}-1 & \sqrt{2}i\\
+\sqrt{2}i & 1
+\end{pmatrix} & \begin{pmatrix}-1 & 0 & 0 & -\sqrt{2}\\
+0 & -1 & \sqrt{2} & 0\\
+0 & -\sqrt{2} & 1 & 0\\
+\sqrt{2} & 0 & 0 & 1
+\end{pmatrix}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{i}\mathrm{j}\rightarrow\begin{pmatrix}0 & -\sqrt{2} & 1 & 0\\
+\sqrt{2} & 0 & 0 & 1\\
+1 & 0 & 0 & \sqrt{2}\\
+0 & 1 & -\sqrt{2} & 0
+\end{pmatrix}\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}=\begin{pmatrix}1 & 0 & 0 & \sqrt{2}\\
+0 & 1 & -\sqrt{2} & 0\\
+0 & \sqrt{2} & -1 & 0\\
+-\sqrt{2} & 0 & 0 & -1
+\end{pmatrix}\leftarrow\mathrm{k}
 \]
 
 \end_inset
