@@ -97,10 +97,26 @@
 \begin_body
 
 \begin_layout Standard
-dual basis considering same dimension first
+2D rotation
 \begin_inset Formula 
 \[
-X^{\prime}=AX
+\boldsymbol{r}=\left(x,y\right)=\left\langle x,y\right\rangle =\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{r}^{\prime}=\left(x^{\prime},y^{\prime}\right)=\left\langle x^{\prime},y^{\prime}\right\rangle =\begin{pmatrix}x^{\prime}\\
+y^{\prime}
+\end{pmatrix}=\begin{pmatrix}r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)
+\end{pmatrix}
 \]
 
 \end_inset
@@ -108,8 +124,35 @@ X^{\prime}=AX
 
 \begin_inset Formula 
 \begin{align*}
-I^{\prime}= & AX\\
-X_{I^{\prime}}= & A^{-1}I^{\prime}
+\boldsymbol{r}^{\prime}= & \begin{pmatrix}r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)
+\end{pmatrix}=r\begin{pmatrix}\cos\left(\alpha+\theta\right)\\
+\sin\left(\alpha+\theta\right)
+\end{pmatrix}\\
+= & r\begin{pmatrix}\cos\alpha\cos\theta-\sin\alpha\sin\theta\\
+\sin\alpha\cos\theta+\cos\alpha\sin\theta
+\end{pmatrix}=r\begin{pmatrix}\cos\theta\cos\alpha-\sin\theta\sin\alpha\\
+\sin\theta\cos\alpha+\cos\theta\sin\alpha
+\end{pmatrix}\\
+= & r\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}\cos\alpha\\
+\sin\alpha
+\end{pmatrix}=\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix}\\
+= & R\boldsymbol{r},\begin{cases}
+R=\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}=R\left(\theta\right)=R_{{\scriptscriptstyle \theta}}\\
+\boldsymbol{r}=\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix},\boldsymbol{r}^{\prime}=\begin{pmatrix}r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)
+\end{pmatrix}
+\end{cases}
 \end{align*}
 
 \end_inset
@@ -117,7 +160,7 @@ X_{I^{\prime}}= & A^{-1}I^{\prime}
 
 \begin_inset Formula 
 \[
-X=A^{-1}X^{\prime}
+\boldsymbol{r}^{\prime}=O\boldsymbol{r}
 \]
 
 \end_inset
@@ -125,9 +168,461 @@ X=A^{-1}X^{\prime}
 
 \begin_inset Formula 
 \begin{align*}
-I= & A^{-1}X^{\prime}\\
-X_{I}^{\prime}= & AI
+\left|\boldsymbol{r}^{\prime}\right|^{2}= & \left|\boldsymbol{r}\right|^{2}\\
+\boldsymbol{r}^{\prime}\cdot\boldsymbol{r}^{\prime}= & \boldsymbol{r}\cdot\boldsymbol{r}\\
+\boldsymbol{r}^{\prime\intercal}\boldsymbol{r}^{\prime}= & \boldsymbol{r}^{\intercal}\boldsymbol{r}\\
+\left(O\boldsymbol{r}\right)^{\intercal}\left(O\boldsymbol{r}\right)=\\
+\boldsymbol{r}^{\intercal}O^{\intercal}O\boldsymbol{r}=\\
+\boldsymbol{r}^{\intercal}O^{\intercal}O\boldsymbol{r}= & \boldsymbol{r}^{\intercal}\boldsymbol{r}\\
+O^{\intercal}O= & 1=I=I_{{\scriptscriptstyle 2}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+R^{\intercal}R= & \begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}^{\intercal}\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\theta & \sin\theta\\
+-\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos^{2}\theta+\sin^{2}\theta & -\cos\theta\sin\theta+\sin\theta\cos\theta\\
+-\sin\theta\cos\theta+\cos\theta\sin\theta & \sin^{2}\theta+\cos^{2}\theta
+\end{pmatrix}\\
+= & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=1=I\\
+R^{\intercal}R= & 1\Rightarrow R\in\left\{ O\middle|O^{\intercal}O=1\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+P_{{\scriptscriptstyle x}}=\begin{pmatrix}-1 & 0\\
+0 & 1
+\end{pmatrix} & P_{{\scriptscriptstyle x}}^{\intercal}P_{{\scriptscriptstyle x}}=P_{{\scriptscriptstyle x}}^{2}=\begin{pmatrix}-1 & 0\\
+0 & 1
+\end{pmatrix}^{2}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=1\Rightarrow P_{{\scriptscriptstyle x}}\in\left\{ O\middle|O^{\intercal}O=1\right\} \\
+P_{{\scriptscriptstyle y}}=\begin{pmatrix}1 & 0\\
+0 & -1
+\end{pmatrix} & P_{{\scriptscriptstyle y}}^{\intercal}P_{{\scriptscriptstyle y}}=P_{{\scriptscriptstyle y}}^{2}=\begin{pmatrix}1 & 0\\
+0 & -1
+\end{pmatrix}^{2}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=1\Rightarrow P_{{\scriptscriptstyle y}}\in\left\{ O\middle|O^{\intercal}O=1\right\} 
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+O\left(2\right)= & \left\{ 1,R,P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle y}}\right\} \\
+= & \left\{ I_{{\scriptscriptstyle 2}},R_{{\scriptscriptstyle \theta}},P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle y}}\right\} \\
+\subseteq & \left\{ O\middle|O^{\intercal}O=1\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+1= & O^{\intercal}O\\
+1= & \det1=\det I=\det\left(I_{{\scriptscriptstyle 2}}\right)\\
+= & \det\left(O^{\intercal}O\right)=\left(\det O^{\intercal}\right)\left(\det O\right)=\left(\det O\right)\left(\det O\right)\\
+= & \left(\det O\right)^{2}\\
+\det O= & \pm1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\det R=\det R_{{\scriptscriptstyle \theta}}=\begin{vmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{vmatrix}=\cos^{2}\theta-\left(-\sin^{2}\theta\right)=\cos^{2}\theta+\sin^{2}\theta=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+P_{{\scriptscriptstyle x}}=\begin{pmatrix}-1 & 0\\
+0 & 1
+\end{pmatrix} & \det P_{{\scriptscriptstyle x}}=-1\\
+P_{{\scriptscriptstyle y}}=\begin{pmatrix}1 & 0\\
+0 & -1
+\end{pmatrix} & \det P_{{\scriptscriptstyle y}}=-1
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+SO\left(2\right)= & \left\{ 1,R\right\} \\
+= & \left\{ I_{{\scriptscriptstyle 2}},R_{{\scriptscriptstyle \theta}}\right\} \\
+\subseteq & \left\{ O\middle|\begin{cases}
+O^{\intercal}O=1 & O\\
+\det O=1 & S
+\end{cases}\right\} \\
+\subset & \left\{ 1,R,P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle y}}\right\} \\
+\subseteq & \left\{ O\middle|O^{\intercal}O=1\right\} =O\left(2\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+df as vector
+\begin_inset Formula 
+\[
+f=\left\{ f_{{\scriptscriptstyle i}}\right\} =\left\{ f_{{\scriptscriptstyle 1}},f_{{\scriptscriptstyle 2}},\cdots\right\} =\left\{ f,g,\cdots\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}:f\rightarrow F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}\left(af+bg\right)=a\boldsymbol{v}\left(f\right)+b\boldsymbol{v}\left(g\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}\left(fg\right)=f|_{{\scriptscriptstyle P}}\boldsymbol{v}\left(g\right)+\boldsymbol{v}\left(f\right)g|_{{\scriptscriptstyle P}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dfrac{\mathrm{d}}{\mathrm{d}x}\left[f\left(x\right)g\left(x\right)\right]|_{x=x_{{\scriptscriptstyle 0}}}=f\left(x_{{\scriptscriptstyle 0}}\right)\dfrac{\mathrm{d}}{\mathrm{d}x}g\left(x\right)|_{x=x_{{\scriptscriptstyle 0}}}+\dfrac{\mathrm{d}}{\mathrm{d}x}f\left(x\right)|_{x=x_{{\scriptscriptstyle 0}}}g\left(x_{{\scriptscriptstyle 0}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V=\left\{ \boldsymbol{v}\middle|\boldsymbol{v}:f\rightarrow F\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f= & f\left(\boldsymbol{x}\right)\\
+= & f\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle j}},\cdots,x_{{\scriptscriptstyle n}}\right)\\
+= & f\left(x^{{\scriptscriptstyle 1}},\cdots,x^{{\scriptscriptstyle j}},\cdots,x^{{\scriptscriptstyle n}}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{x}=\left\langle x^{{\scriptscriptstyle 1}},\cdots,x^{{\scriptscriptstyle j}},\cdots,x^{{\scriptscriptstyle n}}\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{x}\left(t\right)=\left\langle x^{{\scriptscriptstyle 1}}\left(t\right),\cdots,x^{{\scriptscriptstyle j}}\left(t\right),\cdots,x^{{\scriptscriptstyle n}}\left(t\right)\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\dfrac{\mathrm{d}f}{\mathrm{d}t}= & \dfrac{\mathrm{d}x^{{\scriptscriptstyle 1}}}{\mathrm{d}t}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle 1}}}+\cdots+\dfrac{\mathrm{d}x^{{\scriptscriptstyle j}}}{\mathrm{d}t}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}+\cdots+\dfrac{\mathrm{d}x^{{\scriptscriptstyle n}}}{\mathrm{d}t}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle n}}}\\
+= & \cdots+\dfrac{\mathrm{d}x^{{\scriptscriptstyle j}}}{\mathrm{d}t}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}+\cdots=\dfrac{\mathrm{d}x^{{\scriptscriptstyle j}}}{\mathrm{d}t}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}=\dfrac{\mathrm{d}x^{{\scriptscriptstyle j}}}{\mathrm{d}t}\partial_{{\scriptscriptstyle j}}f
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V= & \left\{ \boldsymbol{v}\middle|\boldsymbol{v}:f\rightarrow F\right\} \\
+= & \mathrm{span}\left\{ \boldsymbol{e}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{e}_{{\scriptscriptstyle j}},\cdots,\boldsymbol{e}_{{\scriptscriptstyle n}}\right\} \\
+= & \mathrm{span}\left\{ \dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}},\cdots,\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}},\cdots,\dfrac{\partial}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\right\} \\
+= & \mathrm{span}\left\{ \boldsymbol{\partial}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{\partial}_{{\scriptscriptstyle j}},\cdots,\boldsymbol{\partial}_{{\scriptscriptstyle n}}\right\} \\
+= & \left\{ \boldsymbol{\partial}_{{\scriptscriptstyle t}}\middle|\boldsymbol{\partial}_{{\scriptscriptstyle t}}=a_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle j}}\boldsymbol{\partial}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle j}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right\} \\
+= & \left\{ \dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}\middle|\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}=a_{{\scriptscriptstyle 1}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle j}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle n}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V^{*}=\left\{ \boldsymbol{\omega}_{{\scriptscriptstyle f}}\middle|\boldsymbol{\omega}_{{\scriptscriptstyle f}}:V\rightarrow F\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\in F
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{\omega}_{{\scriptscriptstyle fg}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\dfrac{\partial fg}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}= & f|_{{\scriptscriptstyle P}}\dfrac{\partial g}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}g|_{{\scriptscriptstyle P}}\\
+= & f|_{{\scriptscriptstyle P}}\boldsymbol{\omega}_{{\scriptscriptstyle g}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)+\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)g|_{{\scriptscriptstyle P}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{\omega}_{{\scriptscriptstyle x}^{{\scriptscriptstyle i}}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle x}^{{\scriptscriptstyle i}}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}=\delta_{{\scriptscriptstyle ij}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V^{*}= & \left\{ \boldsymbol{\omega}_{{\scriptscriptstyle f}}\middle|\boldsymbol{\omega}_{{\scriptscriptstyle f}}:V\rightarrow F\right\} =\left\{ \boldsymbol{\omega}_{{\scriptscriptstyle f}}\middle|\begin{cases}
+\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\in F\\
+\boldsymbol{\omega}_{{\scriptscriptstyle fg}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=f|_{{\scriptscriptstyle P}}\boldsymbol{\omega}_{{\scriptscriptstyle g}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)+\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)g|_{{\scriptscriptstyle P}}\\
+\boldsymbol{\omega}_{{\scriptscriptstyle x}^{{\scriptscriptstyle i}}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle x}^{{\scriptscriptstyle i}}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}=\delta_{{\scriptscriptstyle ij}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}
+\end{cases}\right\} \\
+= & \left\{ \mathrm{d}f\middle|\mathrm{d}f:V\rightarrow F\right\} =\left\{ \mathrm{d}f\middle|\begin{cases}
+\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}f\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\in F\\
+\mathrm{d}fg\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=f|_{{\scriptscriptstyle P}}\left(\mathrm{d}g\right)+\left(\mathrm{d}f\right)g|_{{\scriptscriptstyle P}}\\
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}x^{{\scriptscriptstyle i}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}=\delta_{{\scriptscriptstyle ij}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}
+\end{cases}\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\delta_{{\scriptscriptstyle ij}}=\boldsymbol{e}^{{\scriptscriptstyle i}}\cdot\boldsymbol{e}_{{\scriptscriptstyle j}}\Rightarrow\begin{cases}
+\boldsymbol{e}^{{\scriptscriptstyle i}}=\mathrm{d}x^{{\scriptscriptstyle i}}\\
+\boldsymbol{e}_{{\scriptscriptstyle j}}=\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V^{*}= & \left\{ \mathrm{d}f\middle|\mathrm{d}f:V\rightarrow F\right\} =\left\{ \mathrm{d}f\middle|\begin{cases}
+\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}f\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\in F\\
+\mathrm{d}fg\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=f|_{{\scriptscriptstyle P}}\left(\mathrm{d}g\right)+\left(\mathrm{d}f\right)g|_{{\scriptscriptstyle P}}\\
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}x^{{\scriptscriptstyle i}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}=\delta_{{\scriptscriptstyle ij}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}
+\end{cases}\right\} \\
+= & \mathrm{span}\left\{ \mathrm{d}x^{{\scriptscriptstyle 1}},\cdots,\mathrm{d}x^{{\scriptscriptstyle i}},\cdots,\mathrm{d}x^{{\scriptscriptstyle n}}\right\} =\mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle 1}},\cdots,\boldsymbol{e}^{{\scriptscriptstyle i}},\cdots,\boldsymbol{e}^{{\scriptscriptstyle n}}\right\} \\
+= & \left\{ \mathrm{d}f\middle|\mathrm{d}f=b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}=b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}\right\} \\
+= & \left\{ \mathrm{d}f\middle|\mathrm{d}f=b^{{\scriptscriptstyle 1}}\mathrm{d}x^{{\scriptscriptstyle 1}}+\cdots+b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}+\cdots+b^{{\scriptscriptstyle n}}\mathrm{d}x^{{\scriptscriptstyle n}}\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\mathrm{d}f\left(\boldsymbol{v}\right)= & \mathrm{d}f\left(v_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=v_{{\scriptscriptstyle j}}\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)\\
+= & v_{{\scriptscriptstyle j}}\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\\
+= & v_{{\scriptscriptstyle 1}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}++v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+v_{{\scriptscriptstyle n}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\\
+= & \begin{pmatrix}v_{{\scriptscriptstyle 1}} & \cdots & v_{{\scriptscriptstyle j}} & \cdots & v_{{\scriptscriptstyle n}}\end{pmatrix}\boldsymbol{\nabla}f
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overset{\frown}{PQ}=C\left(t\right)-C\left(0\right)=Q-P
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}=\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathrm{d}f\left(s\boldsymbol{v}\right)= & \mathrm{d}f\left(s\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}\right)=s\dfrac{\partial f}{\partial t}|_{{\scriptscriptstyle P}}\\
+= & s\boldsymbol{v}\left(f\right)=s\cdot\lim_{t\rightarrow0}\dfrac{f\left(C\left(t\right)\right)-f\left(C\left(0\right)\right)}{t}\\
+\approx & s\cdot\dfrac{f\left(Q\right)-f\left(P\right)}{s}=f\left(Q\right)-f\left(P\right)=\Delta f
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}x^{{\scriptscriptstyle i}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}=\delta_{{\scriptscriptstyle ij}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}\\
+\boldsymbol{\partial}_{{\scriptscriptstyle t}}=a_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle j}}\boldsymbol{\partial}_{{\scriptscriptstyle j}}\Leftrightarrow\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}=a_{{\scriptscriptstyle 1}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle j}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle n}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}
+\end{cases}\\
+\Rightarrow & \begin{cases}
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle t}}\right)=\mathrm{d}x^{{\scriptscriptstyle i}}\left(\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}|_{{\scriptscriptstyle P}}\\
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle t}}\right)=\mathrm{d}x^{{\scriptscriptstyle i}}\left(a_{{\scriptscriptstyle j}}\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=a_{{\scriptscriptstyle j}}\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=a_{{\scriptscriptstyle j}}\delta_{{\scriptscriptstyle ij}}=a_{{\scriptscriptstyle i}}
+\end{cases}\Rightarrow a_{{\scriptscriptstyle i}}=\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle t}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}|_{{\scriptscriptstyle P}}\\
+\Rightarrow & a_{{\scriptscriptstyle i}}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}|_{{\scriptscriptstyle P}}\Rightarrow a_{{\scriptscriptstyle j}}=\dfrac{\partial x^{{\scriptscriptstyle j}}}{\partial t}|_{{\scriptscriptstyle P}}=\partial_{{\scriptscriptstyle t}}x^{{\scriptscriptstyle j}}|_{{\scriptscriptstyle P}}\\
+\Rightarrow & \dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}=a_{{\scriptscriptstyle i}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}|_{{\scriptscriptstyle P}}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}|_{{\scriptscriptstyle P}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}|_{{\scriptscriptstyle P}}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}|_{{\scriptscriptstyle P}}\Rightarrow\dfrac{\partial}{\partial t}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}\\
+\Rightarrow & \partial_{{\scriptscriptstyle t}}|_{{\scriptscriptstyle P}}=\dfrac{\partial x^{{\scriptscriptstyle j}}}{\partial t}\partial_{{\scriptscriptstyle j}}|_{{\scriptscriptstyle P}}\Leftrightarrow\partial_{{\scriptscriptstyle t}}|_{{\scriptscriptstyle P}}=\partial_{{\scriptscriptstyle t}}x^{{\scriptscriptstyle j}}\partial_{{\scriptscriptstyle j}}|_{{\scriptscriptstyle P}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dfrac{\partial}{\partial t}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}\overset{t=x^{\prime{\scriptscriptstyle j}}}{\Rightarrow}\dfrac{\partial}{\partial x^{\prime{\scriptscriptstyle j}}}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}=\dfrac{\partial x^{{\scriptscriptstyle 1}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}+\dfrac{\partial x^{{\scriptscriptstyle 2}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 2}}}+\dfrac{\partial x^{{\scriptscriptstyle 3}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 3}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathrm{d}f= & b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}=b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}\\
+\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}=\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)= & b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}\cdot\boldsymbol{e}_{{\scriptscriptstyle j}}=b^{{\scriptscriptstyle i}}\delta_{{\scriptscriptstyle ij}}=b^{{\scriptscriptstyle j}}\\
+b^{{\scriptscriptstyle j}}= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}\\
+b^{{\scriptscriptstyle i}}= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle i}}}=\partial_{{\scriptscriptstyle i}}f\\
+\mathrm{d}f=b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}=b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}\\
+\mathrm{d}f= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}\\
+\mathrm{d}f= & \partial_{{\scriptscriptstyle i}}f\mathrm{d}x^{{\scriptscriptstyle i}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathrm{d}f= & b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}=b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}\\
+\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}=\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)= & b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}\cdot\boldsymbol{e}_{{\scriptscriptstyle j}}=b^{{\scriptscriptstyle i}}\delta_{{\scriptscriptstyle ij}}=b^{{\scriptscriptstyle j}}\\
+b^{{\scriptscriptstyle j}}= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}\\
+b^{{\scriptscriptstyle i}}= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle i}}}\\
+\mathrm{d}f=b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}=b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}\\
+f=x^{\prime{\scriptscriptstyle j}}\Downarrow\\
+\mathrm{d}x^{\prime{\scriptscriptstyle j}}= & \dfrac{\partial x^{\prime{\scriptscriptstyle j}}}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\dfrac{\partial}{\partial x^{\prime{\scriptscriptstyle j}}}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}=\sum\limits _{i}\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}\\
+\mathrm{d}x^{\prime{\scriptscriptstyle j}}=\dfrac{\partial x^{\prime{\scriptscriptstyle j}}}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}=\sum\limits _{i}\dfrac{\partial x^{\prime{\scriptscriptstyle j}}}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+V= & \left\{ \boldsymbol{v}\middle|\boldsymbol{v}:f\rightarrow F\right\} \\
+= & \mathrm{span}\left\{ \boldsymbol{e}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{e}_{{\scriptscriptstyle j}},\cdots,\boldsymbol{e}_{{\scriptscriptstyle n}}\right\} \\
+= & \mathrm{span}\left\{ \dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}},\cdots,\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}},\cdots,\dfrac{\partial}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\right\} =\mathrm{span}\left\{ \boldsymbol{\partial}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{\partial}_{{\scriptscriptstyle j}},\cdots,\boldsymbol{\partial}_{{\scriptscriptstyle n}}\right\} \\
+= & \left\{ \boldsymbol{\partial}_{{\scriptscriptstyle t}}\middle|\boldsymbol{\partial}_{{\scriptscriptstyle t}}=a_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle j}}\boldsymbol{\partial}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle j}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right\} \\
+= & \left\{ \dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}\middle|\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}=a_{{\scriptscriptstyle 1}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle j}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle n}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\right\} \\
+V^{*}= & \left\{ \mathrm{d}f\middle|\mathrm{d}f:V\rightarrow F\right\} \\
+= & \mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle 1}},\cdots,\boldsymbol{e}^{{\scriptscriptstyle i}},\cdots,\boldsymbol{e}^{{\scriptscriptstyle n}}\right\} \\
+= & \mathrm{span}\left\{ \mathrm{d}x^{{\scriptscriptstyle 1}},\cdots,\mathrm{d}x^{{\scriptscriptstyle i}},\cdots,\mathrm{d}x^{{\scriptscriptstyle n}}\right\} \\
+= & \left\{ \mathrm{d}f\middle|\mathrm{d}f=b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}=b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}\right\} \\
+= & \left\{ \mathrm{d}f\middle|\mathrm{d}f=b^{{\scriptscriptstyle 1}}\mathrm{d}x^{{\scriptscriptstyle 1}}+\cdots+b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}+\cdots+b^{{\scriptscriptstyle n}}\mathrm{d}x^{{\scriptscriptstyle n}}\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccccccccccc}
+V & =\mathrm{span}\{ & \boldsymbol{e}_{{\scriptscriptstyle j}}= & \partial_{{\scriptscriptstyle j}} & \}=\{ & \boldsymbol{v}= & \partial_{{\scriptscriptstyle t}}|_{{\scriptscriptstyle P}} & =a_{{\scriptscriptstyle j}}\thinspace\boldsymbol{e}_{{\scriptscriptstyle j}}= & a_{{\scriptscriptstyle j}}\ \partial_{{\scriptscriptstyle j}}|_{{\scriptscriptstyle P}} & :f\rightarrow F & \}\\
+V^{*} & =\mathrm{span}\{ & \boldsymbol{e}^{{\scriptscriptstyle i}}= & \mathrm{d}x^{{\scriptscriptstyle i}} & \}=\{ & \boldsymbol{\omega}= & \mathrm{d}f & =b^{{\scriptscriptstyle i}}\thinspace\boldsymbol{e}^{{\scriptscriptstyle i}}= & b^{{\scriptscriptstyle i}}\ \mathrm{d}x^{{\scriptscriptstyle i}} & :V\rightarrow F & \}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccccccccccc}
+V & =\mathrm{span}\{ & \boldsymbol{e}_{{\scriptscriptstyle j}}= & \partial_{{\scriptscriptstyle j}} & \}=\{ & \boldsymbol{v}= & \partial_{{\scriptscriptstyle t}}|_{{\scriptscriptstyle P}} & =a_{{\scriptscriptstyle j}}\thinspace\boldsymbol{e}_{{\scriptscriptstyle j}}= & \partial_{{\scriptscriptstyle t}}x^{{\scriptscriptstyle j}}\ \partial_{{\scriptscriptstyle j}}|_{{\scriptscriptstyle P}} & :f\rightarrow F & \}\\
+V^{*} & =\mathrm{span}\{ & \boldsymbol{e}^{{\scriptscriptstyle i}}= & \mathrm{d}x^{{\scriptscriptstyle i}} & \}=\{ & \boldsymbol{\omega}= & \mathrm{d}f & =b^{{\scriptscriptstyle i}}\thinspace\boldsymbol{e}^{{\scriptscriptstyle i}}= & \partial_{{\scriptscriptstyle i}}f\ \mathrm{d}x^{{\scriptscriptstyle i}} & :V\rightarrow F & \}
+\end{array}
+\]
 
 \end_inset
 
@@ -5009,6 +5504,18 @@ y
 \end{pmatrix}\\
 = & I+\dfrac{\theta}{n}R_{{\scriptscriptstyle \frac{\pi}{2}}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}R_{{\scriptscriptstyle \frac{\theta}{n}}}=\lim_{n\rightarrow\infty}\begin{pmatrix}\cos\frac{\theta}{n} & -\sin\frac{\theta}{n}\\
+\sin\frac{\theta}{n} & \cos\frac{\theta}{n}
+\end{pmatrix}=\begin{pmatrix}1 & -\frac{\theta}{n}\\
+\frac{\theta}{n} & 1
+\end{pmatrix}=I+\dfrac{\theta}{n}R_{{\scriptscriptstyle \frac{\pi}{2}}}
+\]
 
 \end_inset
 

@@ -1,0 +1,5 @@
+# determinant
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV13e411m7Js&autoplay=0"></iframe>
+:::

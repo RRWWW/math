@@ -133,6 +133,8 @@ x_{{\scriptscriptstyle jk}}\\
 \end{pmatrix}=b_{{\scriptscriptstyle ik}}
 $$
 
+::: {show-in="html"}
+
 $$
 \boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle k}}=\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle k}}=b_{ik}
 $$
@@ -165,6 +167,8 @@ b_{{\scriptscriptstyle m1}} & b_{{\scriptscriptstyle m2}} & \cdots & b_{{\script
 \end{aligned}
 $$
 
+:::
+
 $$
 a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle j}}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}=\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}=b_{i}
 $$
@@ -177,15 +181,10 @@ $$
 
 https://math.meta.stackexchange.com/questions/23273/mathjax-and-iddots-udots-or-reflectbox
 
-```
-\newcommand\iddots{\mathinner{
-  \kern1mu\raise1pt{.}
-  \kern2mu\raise4pt{.}
-  \kern2mu\raise7pt{\Rule{0pt}{7pt}{0pt}.}
-  \kern1mu
-}}
-```
 
+::: {show-in="html"}
+
+```
 \newcommand\iddots{\mathinner{
   \kern1mu\raise1pt{.}
   \kern2mu\raise4pt{.}
@@ -242,6 +241,9 @@ $$
 \iddots & \vdots & \ddots
 \end{pmatrix}
 $$
+```
+
+:::
 
 $$
 b_{{\scriptscriptstyle ik}}=a_{{\scriptscriptstyle ij}}x_{{\scriptscriptstyle jk}}=\boldsymbol{a}_{{\scriptscriptstyle i}}\cdot\boldsymbol{x}_{{\scriptscriptstyle k}}=\boldsymbol{a}_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{x}_{{\scriptscriptstyle k}}
@@ -864,7 +866,7 @@ $$
 \end{aligned}
 $$
 
-$\left(va\right)$\left(c\right)
+$\left(va\right)\left(c\right)$
 
 $$
 \begin{aligned}
@@ -906,6 +908,7 @@ $$
 $$
 \text{The set of all linear tranformations } \mathcal{T} \text{ is a vector space.}
 $$
+
 $$
 \ \tag*{$\Box$}
 $$
