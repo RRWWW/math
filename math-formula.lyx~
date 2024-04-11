@@ -97,7 +97,1326 @@
 \begin_body
 
 \begin_layout Standard
+Rodrigues rotation
+\begin_inset Formula 
+\[
+\boldsymbol{v}\rightarrow\boldsymbol{v}^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}\xrightarrow{\text{rotate about }\boldsymbol{u}}\boldsymbol{v}^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}\xrightarrow{\text{rotate about }\boldsymbol{n}}\boldsymbol{v}^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\boldsymbol{v}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}+\boldsymbol{v}_{{\scriptscriptstyle \perp\boldsymbol{n}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\boldsymbol{v}_{{\scriptscriptstyle \perp}} & \Rightarrow\boldsymbol{v}_{{\scriptscriptstyle \perp}}=\boldsymbol{v}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\boldsymbol{v}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp\boldsymbol{n}}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime} & \Rightarrow\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}=\boldsymbol{v}^{\prime}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}= & \mathrm{proj}_{{\scriptscriptstyle \boldsymbol{n}}}\boldsymbol{v}=\dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }\hat{\boldsymbol{n}}\\
+= & \dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }\dfrac{\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }=\dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert ^{2}}\boldsymbol{n}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}_{{\scriptscriptstyle \parallel\hat{\boldsymbol{n}}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}= & \mathrm{proj}_{\hat{{\scriptscriptstyle \boldsymbol{n}}}}\boldsymbol{v}=\dfrac{\boldsymbol{v}\cdot\hat{\boldsymbol{n}}}{\left\Vert \hat{\boldsymbol{n}}\right\Vert }\hat{\boldsymbol{n}}\overset{\left\Vert \hat{\boldsymbol{n}}\right\Vert =1}{=}\left(\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\right)\hat{\boldsymbol{n}}=\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\hat{\boldsymbol{n}}\\
+= & \dfrac{\boldsymbol{v}\cdot\hat{\boldsymbol{n}}}{\left\Vert \hat{\boldsymbol{n}}\right\Vert }\dfrac{\hat{\boldsymbol{n}}}{\left\Vert \hat{\boldsymbol{n}}\right\Vert }=\dfrac{\boldsymbol{v}\cdot\hat{\boldsymbol{n}}}{\left\Vert \hat{\boldsymbol{n}}\right\Vert ^{2}}\hat{\boldsymbol{n}}\overset{\left\Vert \hat{\boldsymbol{n}}\right\Vert =1}{=}\left(\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\right)\hat{\boldsymbol{n}}=\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\hat{\boldsymbol{n}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{n}=\hat{\boldsymbol{n}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}= & \mathrm{proj}_{{\scriptscriptstyle \boldsymbol{n}}}\boldsymbol{v}=\dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }\hat{\boldsymbol{n}}\overset{\left\Vert \boldsymbol{n}\right\Vert =1}{=}\left(\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\right)\hat{\boldsymbol{n}}=\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\hat{\boldsymbol{n}}\\
+= & \dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }\dfrac{\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }=\dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert ^{2}}\boldsymbol{n}\overset{\left\Vert \boldsymbol{n}\right\Vert =1}{=}\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}=\boldsymbol{v}\cdot\boldsymbol{n}\boldsymbol{n}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}=\boldsymbol{v}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\boldsymbol{v}-\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}=\boldsymbol{v}\xrightarrow{\text{rotate about }\boldsymbol{n}}\boldsymbol{v}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\xrightarrow{\text{rotate about }\boldsymbol{n}}\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\boldsymbol{u}=\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}} & \begin{cases}
+\boldsymbol{u}\perp\boldsymbol{n}\\
+\boldsymbol{u}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{cases}\\
+\left\Vert \boldsymbol{u}\right\Vert =\left\Vert \boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert =\left\Vert \boldsymbol{n}\right\Vert \left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert \sin\dfrac{\pi}{2}=\left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert  & \begin{cases}
+\boldsymbol{n}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+\left\Vert \boldsymbol{n}\right\Vert =1
+\end{cases}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}= & \boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{v}_{{\scriptscriptstyle \perp}}}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{u}}}^{\prime}\\
+= & \left(\cos\theta\right)\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\left(\sin\theta\right)\boldsymbol{u},\theta=\angle\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+= & \cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\boldsymbol{u}\\
+= & \cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right)\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}= & \cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}=\cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right),\theta=\angle\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}^{\prime}= & \boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime},\begin{cases}
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}=\cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right),\theta=\angle\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{cases}\\
+= & \boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right),\theta=\angle\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+= & \boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right),\begin{cases}
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}=\boldsymbol{v}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\boldsymbol{v}-\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}
+\end{cases}\\
+= & \left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\cos\theta\left[\boldsymbol{v}-\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}\right]+\sin\theta\left[\boldsymbol{n}\times\left(\boldsymbol{v}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\right)\right]\\
+= & \left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\cos\theta\boldsymbol{v}-\cos\theta\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\sin\theta\left[\boldsymbol{n}\times\boldsymbol{v}-\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\right]\\
+= & \cos\theta\boldsymbol{v}+\left(1-\cos\theta\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\sin\theta\left[\boldsymbol{n}\times\boldsymbol{v}-\boldsymbol{0}\right]\\
+= & \cos\theta\boldsymbol{v}+\left(1-\cos\theta\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\sin\theta\boldsymbol{n}\times\boldsymbol{v}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}^{\prime}=\cos\theta\boldsymbol{v}+\left(1-\cos\theta\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\sin\theta\boldsymbol{n}\times\boldsymbol{v}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}^{\prime}= & \cos\theta\boldsymbol{v}+\left(1-\cos\theta\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\sin\theta\boldsymbol{n}\times\boldsymbol{v}\\
+= & \cos\theta\boldsymbol{v}+\left[1-\left(1-2\sin^{2}\dfrac{\theta}{2}\right)\right]\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\left[2\sin\dfrac{\theta}{2}\cos\dfrac{\theta}{2}\right]\boldsymbol{n}\times\boldsymbol{v}\\
+= & \cos\theta\boldsymbol{v}+\left[2\sin^{2}\dfrac{\theta}{2}\right]\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\left[2\sin\dfrac{\theta}{2}\cos\dfrac{\theta}{2}\right]\boldsymbol{n}\times\boldsymbol{v}\\
+= & \cos\theta\boldsymbol{v}+2\sin\dfrac{\theta}{2}\left[\left(\sin\dfrac{\theta}{2}\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\left(\cos\dfrac{\theta}{2}\right)\boldsymbol{n}\times\boldsymbol{v}\right]\\
+= & \cos\theta\boldsymbol{v}+2\sin\dfrac{\theta}{2}\left[\left(\cos\dfrac{\theta}{2}\right)\boldsymbol{n}\times\boldsymbol{v}+\left(\sin\dfrac{\theta}{2}\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}\right]\\
+= & \left[2\cos^{2}\dfrac{\theta}{2}-1\right]\boldsymbol{v}+2\sin\dfrac{\theta}{2}\left[\left(\cos\dfrac{\theta}{2}\right)\boldsymbol{n}\times\boldsymbol{v}+\left(\sin\dfrac{\theta}{2}\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}\right]
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\\
+\varrho= & \alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}a\\
+b\\
+c\\
+d
+\end{pmatrix}\begin{pmatrix}\alpha\\
+\beta\\
+\gamma\\
+\delta
+\end{pmatrix}\leftarrow q\varrho= & \left(a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\right)\left(\alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}\right)\\
+= & a\left(\alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}\right)\\
++ & b\mathrm{i}\left(\alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}\right)\\
++ & c\mathrm{j}\left(\alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}\right)\\
++ & d\mathrm{k}\left(\alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}\right)\\
+= & a\alpha+a\beta\mathrm{i}+a\gamma\mathrm{j}+a\delta\mathrm{k}\\
++ & b\alpha\mathrm{i}-b\beta+b\gamma\mathrm{k}-b\delta\mathrm{j}\\
++ & c\alpha\mathrm{j}-c\beta\mathrm{k}-c\gamma+c\delta\mathrm{i}\\
++ & d\alpha\mathrm{k}+d\beta\mathrm{j}-d\gamma\mathrm{i}-d\delta\\
+= & \left(a\alpha-b\beta-c\gamma-d\delta\right)\\
++ & \left(b\alpha+a\beta-d\gamma+c\delta\right)\mathrm{i}\\
++ & \left(c\alpha+d\beta+a\gamma-b\delta\right)\mathrm{j}\\
++ & \left(d\alpha-c\beta+b\gamma+a\delta\right)\mathrm{k}\\
+\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}\begin{pmatrix}\alpha\\
+\beta\\
+\gamma\\
+\delta
+\end{pmatrix}\leftarrow\\
+= & \left(\alpha a-\beta b-\gamma c-\delta d\right)\\
++ & \left(\beta a+\alpha b+\delta c-\gamma d\right)\mathrm{i}\\
++ & \left(\gamma a-\delta b+\alpha c+\beta d\right)\mathrm{j}\\
++ & \left(\delta a+\gamma b-\beta c+\alpha d\right)\mathrm{k}\\
+\begin{pmatrix}\alpha & -\beta & -\gamma & -\delta\\
+\beta & \alpha & \delta & -\gamma\\
+\gamma & -\delta & \alpha & \beta\\
+\delta & \gamma & -\beta & \alpha
+\end{pmatrix}\begin{pmatrix}a\\
+b\\
+c\\
+d
+\end{pmatrix}\leftarrow
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+qv\leftrightarrow\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+v_{{\scriptscriptstyle 1}}\\
+v_{{\scriptscriptstyle 2}}\\
+v_{{\scriptscriptstyle 3}}
+\end{pmatrix}=Q_{{\scriptscriptstyle l}}v
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+L\left(q\right)=Q_{{\scriptscriptstyle l}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}= & \begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}a+\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{pmatrix}b\\
++ & \begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0
+\end{pmatrix}c+\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & -1 & 0\\
+0 & 1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}d\\
+\leftrightarrow & 1a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{i}\mathrm{j}\leftrightarrow\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & -1 & 0\\
+0 & 1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\leftrightarrow\mathrm{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{j}\mathrm{i}\leftrightarrow\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{pmatrix}=-\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & -1 & 0\\
+0 & 1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\leftrightarrow-\mathrm{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{k}\mathrm{i}\leftrightarrow\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & -1 & 0\\
+0 & 1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0
+\end{pmatrix}\leftrightarrow\mathrm{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q_{{\scriptscriptstyle l}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}=\begin{pmatrix}a & -\begin{pmatrix}b & c & d\end{pmatrix}\\
+\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix} & \begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix},\begin{cases}
+a=q_{{\scriptscriptstyle 0}}\\
+\boldsymbol{q}=\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix}\\
+Q_{{\scriptscriptstyle i}}=\begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+qv\leftrightarrow\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+v_{{\scriptscriptstyle 1}}\\
+v_{{\scriptscriptstyle 2}}\\
+v_{{\scriptscriptstyle 3}}
+\end{pmatrix}=Q_{{\scriptscriptstyle l}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}^{\intercal}\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{q}\times\boldsymbol{v}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+vq\leftrightarrow\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+v_{{\scriptscriptstyle 1}}\\
+v_{{\scriptscriptstyle 2}}\\
+v_{{\scriptscriptstyle 3}}
+\end{pmatrix}=Q_{{\scriptscriptstyle r}}v
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+R\left(q\right)=Q_{{\scriptscriptstyle r}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}= & a\begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}+b\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}\\
++ & c\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}+d\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0\\
+0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\\
+\leftrightarrow & a1+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{i}\mathrm{j}\leftrightarrow\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}=-\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0\\
+0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\leftrightarrow-\mathrm{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{j}\mathrm{i}\leftrightarrow\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0\\
+0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\leftrightarrow\mathrm{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{k}\mathrm{i}\leftrightarrow\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0\\
+0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}=-\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}\leftrightarrow-\mathrm{j}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+R\left(q\right)=Q_{{\scriptscriptstyle r}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}\leftrightarrow & \begin{pmatrix}a+bi & -c+di\\
+c+di & a-bi
+\end{pmatrix}\\
+= & \begin{pmatrix}\alpha & -\overline{\beta}\\
+\beta & \overline{\alpha}
+\end{pmatrix},\begin{cases}
+\alpha=a+bi & \overline{\alpha}=a-bi\\
+\beta=c+di & \overline{\beta}=c-di
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q_{{\scriptscriptstyle r}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}=\begin{pmatrix}a & -\begin{pmatrix}b & c & d\end{pmatrix}\\
+\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix} & \begin{pmatrix}a & d & -c\\
+-d & a & b\\
+c & -b & a
+\end{pmatrix}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix},\begin{cases}
+a=q_{{\scriptscriptstyle 0}}\\
+\boldsymbol{q}=\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix}\\
+Q_{{\scriptscriptstyle i}}=\begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+vq\leftrightarrow\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+v_{{\scriptscriptstyle 1}}\\
+v_{{\scriptscriptstyle 2}}\\
+v_{{\scriptscriptstyle 3}}
+\end{pmatrix}=Q_{{\scriptscriptstyle r}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}v_{{\scriptscriptstyle 0}}q_{{\scriptscriptstyle 0}}-\boldsymbol{q}^{\intercal}\boldsymbol{v}\\
+v_{{\scriptscriptstyle 0}}\boldsymbol{q}+Q_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}v_{{\scriptscriptstyle 0}}q_{{\scriptscriptstyle 0}}-\boldsymbol{v}\cdot\boldsymbol{q}\\
+v_{{\scriptscriptstyle 0}}\boldsymbol{q}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{v}\times\boldsymbol{q}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}-\boldsymbol{q}\times\boldsymbol{v}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+qv\leftrightarrow Q_{{\scriptscriptstyle l}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}^{\intercal}\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{q}\times\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{q}\times\boldsymbol{v}
+\end{pmatrix}\\
+vq\leftrightarrow Q_{{\scriptscriptstyle r}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}v_{{\scriptscriptstyle 0}}q_{{\scriptscriptstyle 0}}-\boldsymbol{q}^{\intercal}\boldsymbol{v}\\
+v_{{\scriptscriptstyle 0}}\boldsymbol{q}+Q_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}v_{{\scriptscriptstyle 0}}q_{{\scriptscriptstyle 0}}-\boldsymbol{v}\cdot\boldsymbol{q}\\
+v_{{\scriptscriptstyle 0}}\boldsymbol{q}+\boldsymbol{v}q_{{\scriptscriptstyle 0}}+\boldsymbol{v}\times\boldsymbol{q}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}-\boldsymbol{q}\times\boldsymbol{v}
+\end{pmatrix}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+qv=\begin{pmatrix}q_{{\scriptscriptstyle 0}}\\
+\boldsymbol{q}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}=L\left(q\right)v=Q_{{\scriptscriptstyle l}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}\\
+vq=\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}}\\
+\boldsymbol{q}
+\end{pmatrix}=R\left(q\right)v=Q_{{\scriptscriptstyle r}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\boldsymbol{v}\xrightarrow{\text{rotate about }\boldsymbol{n}}\boldsymbol{v}^{\prime}\\
+\begin{cases}
+\boldsymbol{v}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}+\boldsymbol{v}_{{\scriptscriptstyle \perp\boldsymbol{n}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}= & \Rightarrow\boldsymbol{v}_{{\scriptscriptstyle \perp}}=\boldsymbol{v}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\boldsymbol{v}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp\boldsymbol{n}}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime} & \Rightarrow\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}=\boldsymbol{v}^{\prime}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\end{cases}\\
+\begin{cases}
+\boldsymbol{u}=\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}} & \begin{cases}
+\boldsymbol{u}\perp\boldsymbol{n}\\
+\boldsymbol{u}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{cases}\\
+\left\Vert \boldsymbol{u}\right\Vert =\left\Vert \boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert =\left\Vert \boldsymbol{n}\right\Vert \left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert \sin\dfrac{\pi}{2}=\left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert  & \begin{cases}
+\boldsymbol{n}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+\left\Vert \boldsymbol{n}\right\Vert =1
+\end{cases}
+\end{cases}\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}=\cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right),\theta=\angle\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{cases}\\
+\leftrightarrow & \begin{cases}
+v\xrightarrow{\text{rotate about }n}v^{\prime}\\
+\begin{cases}
+v=\begin{pmatrix}0\\
+\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}
+\end{pmatrix}+\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp\boldsymbol{n}}}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}+\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=v_{{\scriptscriptstyle \parallel}}+v_{{\scriptscriptstyle \perp}} & \Rightarrow v_{{\scriptscriptstyle \perp}}=v-v_{{\scriptscriptstyle \parallel}}\\
+v^{\prime}=\begin{pmatrix}0\\
+\boldsymbol{v}^{\prime}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}^{\prime}
+\end{pmatrix}+\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp\boldsymbol{n}}}^{\prime}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\end{pmatrix}+\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}
+\end{pmatrix}=v_{{\scriptscriptstyle \parallel}}^{\prime}+v_{{\scriptscriptstyle \perp}}^{\prime} & \Rightarrow v_{{\scriptscriptstyle \perp}}^{\prime}=v^{\prime}-v_{{\scriptscriptstyle \parallel}}^{\prime}
+\end{cases}\\
+\begin{cases}
+u=\begin{pmatrix}0\\
+\boldsymbol{u}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=\begin{pmatrix}00-0\\
+\boldsymbol{n}0+0\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=\begin{pmatrix}n_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle \perp}0}-\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+\boldsymbol{n}v_{{\scriptscriptstyle \perp}0}+n_{{\scriptscriptstyle 0}}\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=nv_{{\scriptscriptstyle \perp}} & \begin{cases}
+\boldsymbol{u}\perp\boldsymbol{n}\\
+\boldsymbol{u}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{cases}\\
+\left\Vert \boldsymbol{u}\right\Vert =\left\Vert \boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert =\left\Vert \boldsymbol{n}\right\Vert \left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert \sin\dfrac{\pi}{2}=\left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert  & \begin{cases}
+\boldsymbol{n}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+\left\Vert \boldsymbol{n}\right\Vert =1
+\end{cases}
+\end{cases}\\
+v_{{\scriptscriptstyle \parallel}}^{\prime}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}=v_{{\scriptscriptstyle \parallel}}\\
+v_{{\scriptscriptstyle \perp}}^{\prime}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}
+\end{pmatrix}=\cos\theta\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}+\sin\theta\begin{pmatrix}0\\
+\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=\cos\theta v_{{\scriptscriptstyle \perp}}+\sin\theta nv_{{\scriptscriptstyle \perp}}=\left(\cos\theta+\sin\theta n\right)v_{{\scriptscriptstyle \perp}}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{{\scriptscriptstyle \perp}}^{\prime}=\left(\cos\theta+\sin\theta n\right)v_{{\scriptscriptstyle \perp}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v_{{\scriptscriptstyle \perp}}^{\prime}=pv_{{\scriptscriptstyle \perp}},p=\cos\theta+\sin\theta n=\cos\theta\begin{pmatrix}1\\
+\boldsymbol{0}
+\end{pmatrix}+\sin\theta\begin{pmatrix}0\\
+\boldsymbol{n}
+\end{pmatrix}=\begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p=\begin{pmatrix}p_{{\scriptscriptstyle 0}}\\
+\boldsymbol{p}
+\end{pmatrix}=\begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}=\cos\theta+\sin\theta n,\left\Vert \boldsymbol{n}\right\Vert =1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|p\right|=\left\Vert \begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}\right\Vert =\sqrt{\begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}^{\intercal}\begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}}=\sqrt{\cos^{2}\theta+\sin^{2}\theta\left\Vert \boldsymbol{n}\right\Vert ^{2}}=\sqrt{\cos^{2}\theta+\sin^{2}\theta}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|p\right|=\left\Vert \begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}\right\Vert =1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p^{*}=\overline{p}=\begin{pmatrix}p_{{\scriptscriptstyle 0}}\\
+-\boldsymbol{p}
+\end{pmatrix}=\begin{pmatrix}\cos\theta\\
+-\sin\theta\boldsymbol{n}
+\end{pmatrix}=\cos\theta-\sin\theta n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+p^{*}p=\overline{p}p= & \begin{pmatrix}p_{{\scriptscriptstyle 0}}\\
+-\boldsymbol{p}
+\end{pmatrix}\begin{pmatrix}p_{{\scriptscriptstyle 0}}\\
+\boldsymbol{p}
+\end{pmatrix}=\begin{pmatrix}p_{{\scriptscriptstyle 0}}p_{{\scriptscriptstyle 0}}-\left(-\boldsymbol{p}\right)\cdot\boldsymbol{p}\\
+-\boldsymbol{p}p_{{\scriptscriptstyle 0}}+p_{{\scriptscriptstyle 0}}\boldsymbol{p}+\left(-\boldsymbol{p}\right)\times\boldsymbol{p}
+\end{pmatrix}\\
+= & \begin{pmatrix}p_{{\scriptscriptstyle 0}}p_{{\scriptscriptstyle 0}}+\boldsymbol{p}\cdot\boldsymbol{p}\\
+\boldsymbol{0}+\boldsymbol{0}
+\end{pmatrix}=p_{{\scriptscriptstyle 0}}p_{{\scriptscriptstyle 0}}+\boldsymbol{p}\cdot\boldsymbol{p}=p_{{\scriptscriptstyle 0}}^{2}+\left\Vert \boldsymbol{p}\right\Vert ^{2}=\left|p\right|^{2}=1^{2}=1\\
+= & \begin{pmatrix}p_{{\scriptscriptstyle 0}}p_{{\scriptscriptstyle 0}}-\boldsymbol{p}\cdot\left(-\boldsymbol{p}\right)\\
+\boldsymbol{p}p_{{\scriptscriptstyle 0}}+p_{{\scriptscriptstyle 0}}\left(-\boldsymbol{p}\right)+\boldsymbol{p}\times\left(-\boldsymbol{p}\right)
+\end{pmatrix}=p\overline{p}=pp^{*}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p^{*}p=\overline{p}p=1=p\overline{p}=pp^{*}=\left|p\right|^{2}=p_{{\scriptscriptstyle 0}}^{2}+\left\Vert \boldsymbol{p}\right\Vert ^{2}\Rightarrow p^{*}=\dfrac{1}{p}=p^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+p^{2}=pp= & \begin{pmatrix}p_{{\scriptscriptstyle 0}}p_{{\scriptscriptstyle 0}}-\boldsymbol{p}\cdot\boldsymbol{p}\\
+\boldsymbol{p}p_{{\scriptscriptstyle 0}}+p_{{\scriptscriptstyle 0}}\boldsymbol{p}+\boldsymbol{p}\times\boldsymbol{p}
+\end{pmatrix}=\begin{pmatrix}\cos^{2}\theta-\sin^{2}\theta\left\Vert \boldsymbol{n}\right\Vert ^{2}\\
+2\left(\sin\theta\boldsymbol{n}\right)\cos\theta+\boldsymbol{0}
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos^{2}\theta-\sin^{2}\theta\\
+2\sin\theta\cos\theta\boldsymbol{n}
+\end{pmatrix}=\begin{pmatrix}\cos2\theta\\
+\sin2\theta\boldsymbol{n}
+\end{pmatrix}\\
+\begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}^{2}= & \begin{pmatrix}\cos2\theta\\
+\sin2\theta\boldsymbol{n}
+\end{pmatrix}\\
+q^{2}=\begin{pmatrix}\cos\dfrac{\theta}{2}\\
+\sin\dfrac{\theta}{2}\boldsymbol{n}
+\end{pmatrix}^{2}= & \begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}=p
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $qv_{{\scriptscriptstyle \parallel}}=v_{{\scriptscriptstyle \parallel}}q$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \parallel\boldsymbol{n}}}= & \begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \parallel}}=\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}\\
+= & \begin{pmatrix}\alpha0-\beta\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\beta\boldsymbol{n}0+\alpha\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\beta\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}=\begin{pmatrix}-\beta\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\boldsymbol{0}
+\end{pmatrix}=\begin{pmatrix}-\beta\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}\\
+= & \begin{pmatrix}0\alpha-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\cdot\beta\boldsymbol{n}\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\alpha+0\beta\boldsymbol{n}+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\times\beta\boldsymbol{n}
+\end{pmatrix}=\begin{pmatrix}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\cdot\beta\boldsymbol{n}\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\boldsymbol{0}
+\end{pmatrix}=\begin{pmatrix}-\beta\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}\\
+= & \begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}=v_{{\scriptscriptstyle \parallel}}\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}=v_{{\scriptscriptstyle \parallel\boldsymbol{n}}}\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}\\
+\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \parallel}}= & v_{{\scriptscriptstyle \parallel}}\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $qv_{{\scriptscriptstyle \perp}}=v_{{\scriptscriptstyle \perp}}q^{*}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \perp\boldsymbol{n}}}= & \begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \perp}}=\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}\\
+= & \begin{pmatrix}\alpha0-\beta\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+\beta\boldsymbol{n}0+\alpha\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\beta\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=\begin{pmatrix}0-0\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\beta\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=\begin{pmatrix}0\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}\times\left(-\beta\boldsymbol{n}\right)
+\end{pmatrix}\\
+= & \begin{pmatrix}0\alpha-\boldsymbol{v}_{{\scriptscriptstyle \perp}}\cdot\left(-\beta\boldsymbol{n}\right)\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}\alpha+0\left(-\beta\boldsymbol{n}\right)+\boldsymbol{v}_{{\scriptscriptstyle \perp}}\times\left(-\beta\boldsymbol{n}\right)
+\end{pmatrix}=\begin{pmatrix}0-0\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}\times\left(-\beta\boldsymbol{n}\right)
+\end{pmatrix}=\begin{pmatrix}0\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\beta\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}\\
+= & \begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}\begin{pmatrix}\alpha\\
+-\beta\boldsymbol{n}
+\end{pmatrix}=v_{{\scriptscriptstyle \perp}}\begin{pmatrix}\alpha\\
+-\beta\boldsymbol{n}
+\end{pmatrix}=v_{{\scriptscriptstyle \perp\boldsymbol{n}}}\begin{pmatrix}\alpha\\
+-\beta\boldsymbol{n}
+\end{pmatrix}\\
+\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \perp}}= & v_{{\scriptscriptstyle \perp}}\begin{pmatrix}\alpha\\
+-\beta\boldsymbol{n}
+\end{pmatrix}=v_{{\scriptscriptstyle \perp}}\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}^{*}=v_{{\scriptscriptstyle \perp}}\overline{\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}n\in & \left\{ p\middle|\begin{cases}
+p=\cos\theta+\sin\theta n\\
+n=\begin{pmatrix}0\\
+\boldsymbol{n}
+\end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1
+\end{cases}\right\} \subset\left\{ \begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}\middle|\begin{cases}
+\alpha,\beta\in\mathbb{R}\\
+\left\Vert \boldsymbol{n}\right\Vert =1
+\end{cases}\right\} \\
+\Rightarrow & \begin{cases}
+q^{*}q=\overline{q}q=1=q\overline{q}=qq^{*}=\left|q\right|^{2}=q_{{\scriptscriptstyle 0}}^{2}+\left\Vert \boldsymbol{q}\right\Vert ^{2}\Rightarrow q^{*}=\dfrac{1}{q}=q^{-1} & \left(u\right)\text{unit quaternion}\\
+qv_{{\scriptscriptstyle \parallel}}=v_{{\scriptscriptstyle \parallel}}q & \left(c\right)\text{commutativity}\\
+qv_{{\scriptscriptstyle \perp}}=v_{{\scriptscriptstyle \perp}}q^{*}=v_{{\scriptscriptstyle \perp}}\overline{q}\Leftrightarrow\begin{pmatrix}\cos\dfrac{\theta}{2}\\
+\sin\dfrac{\theta}{2}\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \perp}}=v_{{\scriptscriptstyle \perp}}\begin{pmatrix}\cos\dfrac{\theta}{2}\\
+-\sin\dfrac{\theta}{2}\boldsymbol{n}
+\end{pmatrix} & \left(a\right)\text{anticommutativity}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+v^{\prime}= & v_{{\scriptscriptstyle \parallel}}^{\prime}+v_{{\scriptscriptstyle \perp}}^{\prime},\begin{cases}
+v_{{\scriptscriptstyle \parallel}}^{\prime}=v_{{\scriptscriptstyle \parallel}} & q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}n,\left|n\right|=1\\
+v_{{\scriptscriptstyle \perp}}^{\prime}=pv_{{\scriptscriptstyle \perp}}=q^{2}v_{{\scriptscriptstyle \perp}} & p=q^{2}=\cos\theta+\sin\theta n
+\end{cases}\\
+= & v_{{\scriptscriptstyle \parallel}}+q^{2}v_{{\scriptscriptstyle \perp}}\overset{\left(u\right)}{=}1v_{{\scriptscriptstyle \parallel}}+qqv_{{\scriptscriptstyle \perp}}\\
+\overset{\left(a\right)}{=} & qq^{*}v_{{\scriptscriptstyle \parallel}}+qv_{{\scriptscriptstyle \perp}}q^{*}\overset{\left(c\right)}{=}qv_{{\scriptscriptstyle \parallel}}q^{*}+qv_{{\scriptscriptstyle \perp}}q^{*}\\
+= & q\left(v_{{\scriptscriptstyle \parallel}}+v_{{\scriptscriptstyle \perp}}\right)q^{*}=q\left(v\right)q^{*}=qvq^{*}\overset{\left(u\right)}{=}qvq^{-1}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+v^{\prime}= & qvq^{-1},q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}n,\left|n\right|=1\\
+= & qvq^{*}=q\left(v_{{\scriptscriptstyle \parallel}}+v_{{\scriptscriptstyle \perp}}\right)q^{*}\\
+= & qv_{{\scriptscriptstyle \parallel}}q^{*}+qv_{{\scriptscriptstyle \perp}}q^{*}=qq^{*}v_{{\scriptscriptstyle \parallel}}+qqv_{{\scriptscriptstyle \perp}}=1v_{{\scriptscriptstyle \parallel}}+q^{2}v_{{\scriptscriptstyle \perp}}\\
+= & v_{{\scriptscriptstyle \parallel}}+pv_{{\scriptscriptstyle \perp}},p=q^{2}=\cos\theta+\sin\theta n
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+v^{\prime}=qvq^{*}=q\left(vq^{*}\right)\leftrightarrow & L\left(q\right)R\left(q^{*}\right)v=Q_{{\scriptscriptstyle l}}Q_{{\scriptscriptstyle r}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}\\
+=\left(qv\right)q^{*}\leftrightarrow & R\left(q^{*}\right)L\left(q\right)v=Q_{{\scriptscriptstyle r}}Q_{{\scriptscriptstyle l}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}\\
+\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}= & \begin{pmatrix}q_{{\scriptscriptstyle 0}}^{2}-\boldsymbol{q}^{\intercal}\boldsymbol{q} & -q_{{\scriptscriptstyle 0}}\boldsymbol{q}^{\intercal}-\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}^{\intercal}\\
+\boldsymbol{q}q_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}\boldsymbol{q} & -\boldsymbol{q}\boldsymbol{q}^{\intercal}+Q_{{\scriptscriptstyle i}}Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}=L\left(q\right)R\left(q^{*}\right)\\
+\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}= & \begin{pmatrix}q_{{\scriptscriptstyle 0}}^{2}-\boldsymbol{q}^{\intercal}\boldsymbol{q} & -q_{{\scriptscriptstyle 0}}\boldsymbol{q}^{\intercal}-\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}\\
+\boldsymbol{q}q_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{q} & -\boldsymbol{q}\boldsymbol{q}^{\intercal}+Q_{{\scriptscriptstyle i}}^{\intercal}Q_{{\scriptscriptstyle i}}
+\end{pmatrix}=R\left(q^{*}\right)L\left(q\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}n=\cos\dfrac{\theta}{2}+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\\
+\Rightarrow Q_{{\scriptscriptstyle i}}Q_{{\scriptscriptstyle i}}^{\intercal}= & \begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}\begin{pmatrix}a & d & -c\\
+-d & a & b\\
+c & -b & a
+\end{pmatrix}=\begin{pmatrix}a^{2}+d^{2}+c^{2} & -cb & -db\\
+-cb & d^{2}+a^{2}+b^{2} & -dc\\
+-db & -dc & c^{2}+b^{2}+a^{2}
+\end{pmatrix}\\
+=Q_{{\scriptscriptstyle i}}^{\intercal}Q_{{\scriptscriptstyle i}}= & \begin{pmatrix}a & d & -c\\
+-d & a & b\\
+c & -b & a
+\end{pmatrix}\begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}=\begin{pmatrix}a^{2}+d^{2}+c^{2} & -cb & -db\\
+-cb & d^{2}+a^{2}+b^{2} & -dc\\
+-db & -dc & c^{2}+b^{2}+a^{2}
+\end{pmatrix}\\
+\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}^{\intercal}= & \begin{pmatrix}b & c & d\end{pmatrix}\begin{pmatrix}a & d & -c\\
+-d & a & b\\
+c & -b & a
+\end{pmatrix}=\begin{pmatrix}ba & ca & da\end{pmatrix}\\
+=\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}= & \begin{pmatrix}b & c & d\end{pmatrix}\begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}=\begin{pmatrix}ba & ca & da\end{pmatrix}\\
+Q_{{\scriptscriptstyle i}}\boldsymbol{q}= & \begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix}=\begin{pmatrix}ab\\
+ac\\
+ad
+\end{pmatrix}\\
+=Q_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{q}= & \begin{pmatrix}a & d & -c\\
+-d & a & b\\
+c & -b & a
+\end{pmatrix}\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix}=\begin{pmatrix}ab\\
+ac\\
+ad
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}^{2}-\boldsymbol{q}^{\intercal}\boldsymbol{q} & -q_{{\scriptscriptstyle 0}}\boldsymbol{q}^{\intercal}-\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}^{\intercal}\\
+\boldsymbol{q}q_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}\boldsymbol{q} & -\boldsymbol{q}\boldsymbol{q}^{\intercal}+Q_{{\scriptscriptstyle i}}Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}=L\left(q\right)R\left(q^{*}\right)\\
+= & \begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}^{2}-\boldsymbol{q}^{\intercal}\boldsymbol{q} & -q_{{\scriptscriptstyle 0}}\boldsymbol{q}^{\intercal}-\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}\\
+\boldsymbol{q}q_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{q} & -\boldsymbol{q}\boldsymbol{q}^{\intercal}+Q_{{\scriptscriptstyle i}}^{\intercal}Q_{{\scriptscriptstyle i}}
+\end{pmatrix}=R\left(q^{*}\right)L\left(q\right)\\
+\Downarrow\\
+L\left(q\right)R\left(q^{*}\right)= & R\left(q^{*}\right)L\left(q\right)\\
+\updownarrow\\
+v^{\prime}=qvq^{*}=q\left(vq^{*}\right)= & \left(qv\right)q^{*}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a=\cos\dfrac{\theta}{2}\in\left[-1,1\right]\in\mathbb{R}\Rightarrow\theta=2\arccos a=2\cos^{-1}a\in\left[0,\pi\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin\dfrac{\theta}{2}n=\sin\dfrac{2\arccos a}{2}n=\sin\left(\cos^{-1}a\right)n
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n=\begin{pmatrix}0\\
+\boldsymbol{n}
+\end{pmatrix}=\begin{pmatrix}0\\
+\hat{\boldsymbol{n}}
+\end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1,\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\alpha\\
+\sin\gamma\sin\alpha\\
+\cos\gamma
+\end{pmatrix},\begin{cases}
+\alpha=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{x}}\\
+\gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\\
+= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}n,n=\begin{pmatrix}0\\
+\boldsymbol{n}
+\end{pmatrix}=\begin{pmatrix}0\\
+\hat{\boldsymbol{n}}
+\end{pmatrix}=\begin{pmatrix}0\\
+\sin\gamma\cos\alpha\\
+\sin\gamma\sin\alpha\\
+\cos\gamma
+\end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1,\begin{cases}
+\alpha=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{x}}\\
+\gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
+\end{cases}\\
+= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\boldsymbol{n},\boldsymbol{n}=\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\\
+= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+= & \cos\dfrac{\theta}{2}+\boldsymbol{n}\sin\dfrac{\theta}{2}\\
+q^{-1}=q^{*}= & \cos\dfrac{\theta}{2}-\boldsymbol{n}\sin\dfrac{\theta}{2}\\
+= & \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+\boldsymbol{v}^{\prime}=v^{\prime}= & qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
+v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
+v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}
+\end{cases}\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
+= & q\left(\theta,\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\alpha\right)\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
+= & q\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\boldsymbol{v}q^{-1}\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+= & a+r\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r},r^{2}=b^{2}+c^{2}+d^{2}\\
+\overset{\left|q\right|=1}{=} & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\boldsymbol{n},\begin{cases}
+a=\cos\dfrac{\theta}{2} & \cos\dfrac{\theta}{2}=a\\
+r=\sin\dfrac{\theta}{2} & \sin\dfrac{\theta}{2}=r\\
+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}=\boldsymbol{n} & \boldsymbol{n}=\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left\Vert \boldsymbol{n}\right\Vert ^{2}=\left(\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\right)^{2}= & \dfrac{-b^{2}-c^{2}-d^{2}+bc\left(\mathrm{i}\mathrm{j}+\mathrm{j}\mathrm{i}\right)+cd\left(\mathrm{j}\mathrm{k}+\mathrm{k}\mathrm{j}\right)+db\left(\mathrm{k}\mathrm{i}+\mathrm{i}\mathrm{k}\right)}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}+bc\left(\mathrm{k}-\mathrm{k}\right)+cd\left(\mathrm{i}-\mathrm{i}\right)+db\left(\mathrm{j}-\mathrm{j}\right)}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}+bc0+cd0+db0}{r^{2}}=\dfrac{-b^{2}-c^{2}-d^{2}}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}}{b^{2}+c^{2}+d^{2}}=-1\\
+\boldsymbol{n}=\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}= & \pm\sqrt{-1}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+= & a+r\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r},r^{2}=b^{2}+c^{2}+d^{2}\\
+= & \sqrt{a^{2}+r^{2}}\left(\dfrac{a}{\sqrt{a^{2}+r^{2}}}+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\dfrac{r}{\sqrt{a^{2}+r^{2}}}\right)\\
+= & \rho\left(\cos\phi+\sqrt{-1}\sin\phi\right),\begin{cases}
+\rho=\sqrt{a^{2}+r^{2}}\\
+\tan\phi=\dfrac{r}{a}\Leftrightarrow\phi=\arctan\dfrac{r}{a}=\dfrac{\theta}{2}
+\end{cases}\\
+= & \rho\mathrm{e}^{\phi\sqrt{-1}}\overset{\left|q\right|=1}{=}\left|q\right|\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}=\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\\
+q= & \rho\mathrm{e}^{\phi\sqrt{-1}}\overset{\left|q\right|=1}{=}\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}},\begin{cases}
+q=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+\rho=\sqrt{a^{2}+r^{2}}=\left|q\right|=\sqrt{a^{2}+b^{2}+c^{2}+d^{2}}=1\\
+\tan\dfrac{\theta}{2}=\dfrac{r}{a}\Leftrightarrow\dfrac{\theta}{2}=\arctan\dfrac{r}{a}=\arctan\dfrac{\pm\sqrt{b^{2}+c^{2}+d^{2}}}{a}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}^{\prime}=v^{\prime}= & qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
+v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
+v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}
+\end{cases},\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\alpha\\
+\sin\gamma\sin\alpha\\
+\cos\gamma
+\end{pmatrix},\begin{cases}
+\alpha=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{x}}\\
+\gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
+\end{cases}\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
+= & q\left(\theta,\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\alpha\right)=q\left(\dfrac{\theta}{2},\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\dfrac{\theta}{2},\gamma,\alpha\right)\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
+= & q\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\boldsymbol{v}q^{-1}\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)=q\left(\dfrac{\theta}{2},n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\boldsymbol{v}q^{-1}\left(\dfrac{\theta}{2},n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\\
+= & \mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\boldsymbol{v}\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}^{\prime}=\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\boldsymbol{v}\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q= & \rho\mathrm{e}^{\phi\sqrt{-1}}=\left|q\right|\mathrm{e}^{\boldsymbol{n}\phi},\begin{cases}
+q=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d=a+r\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}=a+r\boldsymbol{n}\\
+\rho=\sqrt{a^{2}+r^{2}}=\left|q\right|=\sqrt{a^{2}+b^{2}+c^{2}+d^{2}}\\
+\tan\phi=\dfrac{r}{a}\Leftrightarrow\phi=\arctan\dfrac{r}{a}=\arctan\dfrac{\pm\sqrt{b^{2}+c^{2}+d^{2}}}{a}
+\end{cases}\\
+= & \mathrm{e}^{\ln\left|q\right|}\mathrm{e}^{\boldsymbol{n}\phi}=\mathrm{e}^{\ln\left|q\right|+\boldsymbol{n}\phi}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 2D rotation
+\end_layout
+
+\begin_layout Standard
+matrix
 \begin_inset Formula 
 \[
 \boldsymbol{r}=\left(x,y\right)=\left\langle x,y\right\rangle =\begin{pmatrix}x\\
@@ -228,10 +1547,37 @@ P_{{\scriptscriptstyle y}}=\begin{pmatrix}1 & 0\\
 
 
 \begin_inset Formula 
+\[
+\begin{pmatrix}0 & 1\\
+1 & 0
+\end{pmatrix}\begin{pmatrix}0 & 1\\
+1 & 0
+\end{pmatrix}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{pmatrix}0 & -1\\
+-1 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1\\
+-1 & 0
+\end{pmatrix}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
 O\left(2\right)= & \left\{ 1,R,P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle y}}\right\} \\
-= & \left\{ I_{{\scriptscriptstyle 2}},R_{{\scriptscriptstyle \theta}},P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle y}}\right\} \\
-\subseteq & \left\{ O\middle|O^{\intercal}O=1\right\} 
+= & \left\{ I_{{\scriptscriptstyle 2}},R_{{\scriptscriptstyle \theta}},P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle y}}\right\} \subseteq\left\{ O\middle|O^{\intercal}O=1\right\} 
 \end{align*}
 
 \end_inset
@@ -241,8 +1587,8 @@ O\left(2\right)= & \left\{ 1,R,P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle
 \begin{align*}
 1= & O^{\intercal}O\\
 1= & \det1=\det I=\det\left(I_{{\scriptscriptstyle 2}}\right)\\
-= & \det\left(O^{\intercal}O\right)=\left(\det O^{\intercal}\right)\left(\det O\right)=\left(\det O\right)\left(\det O\right)\\
-= & \left(\det O\right)^{2}\\
+= & \det\left(O^{\intercal}O\right)=\left(\det O^{\intercal}\right)\left(\det O\right)=\left(\det O\right)\left(\det O\right)=\left(\det O\right)^{2}\\
+1= & \left(\det O\right)^{2}\\
 \det O= & \pm1
 \end{align*}
 
@@ -276,14 +1622,829 @@ P_{{\scriptscriptstyle y}}=\begin{pmatrix}1 & 0\\
 
 \begin_inset Formula 
 \begin{align*}
-SO\left(2\right)= & \left\{ 1,R\right\} \\
-= & \left\{ I_{{\scriptscriptstyle 2}},R_{{\scriptscriptstyle \theta}}\right\} \\
-\subseteq & \left\{ O\middle|\begin{cases}
+SO\left(2\right)= & \left\{ 1,R\right\} =\left\{ I_{{\scriptscriptstyle 2}},R_{{\scriptscriptstyle \theta}}\right\} \subseteq\left\{ O\middle|\begin{cases}
 O^{\intercal}O=1 & O\\
 \det O=1 & S
 \end{cases}\right\} \\
-\subset & \left\{ 1,R,P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle y}}\right\} \\
-\subseteq & \left\{ O\middle|O^{\intercal}O=1\right\} 
+\subset & \left\{ 1,R,P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle y}}\right\} =O\left(2\right)\subseteq\left\{ O\middle|O^{\intercal}O=1\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+complex
+\begin_inset Formula 
+\begin{align*}
+ & c=a+b\mathrm{i}=a+\mathrm{i}b,\begin{cases}
+c\in\mathbb{C}\\
+\mathrm{i}^{2}=-1\\
+a,b\in\mathbb{R} & \Leftrightarrow\left\langle a,b\right\rangle \in\mathbb{R}^{2}
+\end{cases}\\
+= & z=x+y\mathrm{i}=x+\mathrm{i}y,\begin{cases}
+z\in\mathbb{C}\\
+\mathrm{i}^{2}=-1\\
+x,y\in\mathbb{R} & \Leftrightarrow\left\langle x,y\right\rangle \in\mathbb{R}^{2}
+\end{cases}\\
+= & \sqrt{x^{2}+y^{2}}\left(\dfrac{x}{\sqrt{x^{2}+y^{2}}}+\dfrac{y}{\sqrt{x^{2}+y^{2}}}\mathrm{i}\right)=r\left(\cos\theta+\mathrm{i}\sin\theta\right)=r\mathrm{e}^{\mathrm{i}\theta}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z=r\left(\cos\alpha+\mathrm{i}\sin\alpha\right)=r\mathrm{e}^{\mathrm{i}\alpha}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+z^{\prime}=r^{\prime}\left(\cos\left(\alpha+\theta\right)+\mathrm{i}\sin\left(\alpha+\theta\right)\right)=r^{\prime}\mathrm{e}^{\mathrm{i}\left(\alpha+\theta\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+z^{\prime}= & z_{{\scriptscriptstyle \theta}}z\\
+z_{{\scriptscriptstyle \theta}}= & \dfrac{z^{\prime}}{z}=\dfrac{r^{\prime}\mathrm{e}^{\mathrm{i}\left(\alpha+\theta\right)}}{r\mathrm{e}^{\mathrm{i}\alpha}}=\dfrac{r^{\prime}}{r}\mathrm{e}^{\mathrm{i}\theta}=\dfrac{r^{\prime}}{r}\left(\cos\theta+\mathrm{i}\sin\theta\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+z_{{\scriptscriptstyle \theta}}z= & \left[\dfrac{r^{\prime}}{r}\left(\cos\theta+\mathrm{i}\sin\theta\right)\right]\left[r\left(\cos\alpha+\mathrm{i}\sin\alpha\right)\right]\\
+= & r^{\prime}\left[\left(\cos\theta\cos\alpha-\sin\theta\sin\alpha\right)+\mathrm{i}\left(\sin\theta\cos\alpha+\cos\theta\sin\alpha\right)\right]\\
+= & r^{\prime}\left[\cos\left(\alpha+\theta\right)+\mathrm{i}\sin\left(\alpha+\theta\right)\right]=z^{\prime}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{z}_{{\scriptscriptstyle \theta}}=z_{{\scriptscriptstyle \theta}}\left(\dfrac{r^{\prime}}{r}=1\right)=\mathrm{e}^{\mathrm{i}\theta}=\cos\theta+\mathrm{i}\sin\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{z}_{{\scriptscriptstyle \theta}}^{*}=\overline{\hat{z}_{{\scriptscriptstyle \theta}}}=\mathrm{e}^{-\mathrm{i}\theta}=\cos\theta-\mathrm{i}\sin\theta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{z}_{{\scriptscriptstyle \theta}}^{*}\hat{z}_{{\scriptscriptstyle \theta}}=\mathrm{e}^{\mathrm{i}\theta}\mathrm{e}^{-\mathrm{i}\theta}=\mathrm{e}^{\mathrm{i}\theta+\left(-\mathrm{i}\theta\right)}=\mathrm{e}^{\mathrm{i}0}=\mathrm{e}^{0}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+U\left(1\right)=\left\{ 1,\hat{z}_{{\scriptscriptstyle \theta}}\right\} =\left\{ \mathrm{e}^{\mathrm{i}0},\mathrm{e}^{\mathrm{i}\theta}\right\} =\left\{ \cos0+\mathrm{i}\sin0,\cos\theta+\mathrm{i}\sin\theta\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+SO\left(2\right)\cong U\left(1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+y\mathrm{i}\leftrightarrow\begin{pmatrix}x & -y\\
+y & x
+\end{pmatrix}=xI+yJ
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{C}\leftrightarrow\mathcal{M}_{2\times2}\left(\mathbb{R}\right)=\mathcal{M}_{2}\left(\mathbb{R}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+U\left(1\right)= & \left\{ 1,\hat{z}_{{\scriptscriptstyle \theta}}\right\} =\left\{ \mathrm{e}^{\mathrm{i}0},\mathrm{e}^{\mathrm{i}\theta}\right\} \\
+= & \left\{ \cos0+\mathrm{i}\sin0,\cos\theta+\mathrm{i}\sin\theta\right\} \\
+\leftrightarrow & \left\{ \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\cos0+\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\sin0,\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\cos\theta+\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\sin\theta\right\} \\
+= & \left\{ \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}1+\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}0,\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\cos\theta+\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\sin\theta\right\} \\
+= & \left\{ \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix},\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\right\} =\left\{ I_{{\scriptscriptstyle 2}},R_{{\scriptscriptstyle \theta}}\right\} =\left\{ 1,R\right\} =SO\left(2\right)\\
+U\left(1\right)\cong & SO\left(2\right)\Leftrightarrow SO\left(2\right)\cong U\left(1\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+construction with 2D rotation matrix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R=\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}=R\left(\theta\right)=R_{{\scriptscriptstyle \theta}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{r}=\left(x,y,z\right)=\left\langle x,y,z\right\rangle =\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha\\
+z
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{r}^{\prime}=\left(x^{\prime},y^{\prime},z^{\prime}\right)=\left\langle x^{\prime},y^{\prime},z^{\prime}\right\rangle =\begin{pmatrix}x^{\prime}\\
+y^{\prime}\\
+z^{\prime}
+\end{pmatrix}=\begin{pmatrix}r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)\\
+z^{\prime}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{r}^{\prime}= & \begin{pmatrix}r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)\\
+z^{\prime}
+\end{pmatrix}\overset{z^{\prime}=z}{=}\begin{pmatrix}r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)\\
+z
+\end{pmatrix}=\begin{pmatrix}R\left(\theta\right)\\
+ & 1
+\end{pmatrix}\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha\\
+z
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\theta & -\sin\theta & 0\\
+\sin\theta & \cos\theta & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha\\
+z
+\end{pmatrix}=R_{{\scriptscriptstyle z}}\left(\theta\right)\boldsymbol{r},\begin{cases}
+R_{{\scriptscriptstyle z}}\left(\theta\right)=\begin{pmatrix}\cos\theta & -\sin\theta & 0\\
+\sin\theta & \cos\theta & 0\\
+0 & 0 & 1
+\end{pmatrix}\\
+\boldsymbol{r}=\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha\\
+z
+\end{pmatrix}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{r}^{\prime}= & \begin{pmatrix}x^{\prime}\\
+r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)
+\end{pmatrix}\overset{x^{\prime}=x}{=}\begin{pmatrix}x\\
+r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)
+\end{pmatrix}=\begin{pmatrix}1\\
+ & R\left(\theta\right)
+\end{pmatrix}\begin{pmatrix}x\\
+r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix}\\
+= & \begin{pmatrix}1 & 0 & 0\\
+0 & \cos\theta & -\sin\theta\\
+0 & \sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}x\\
+r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix}=R_{{\scriptscriptstyle x}}\left(\theta\right)\boldsymbol{r},\begin{cases}
+R_{{\scriptscriptstyle x}}\left(\theta\right)=\begin{pmatrix}1 & 0 & 0\\
+0 & \cos\theta & -\sin\theta\\
+0 & \sin\theta & \cos\theta
+\end{pmatrix}\\
+\boldsymbol{r}=\begin{pmatrix}x\\
+r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{r}^{\prime}= & \begin{pmatrix}r\sin\left(\alpha+\theta\right)\\
+y^{\prime}\\
+r\cos\left(\alpha+\theta\right)
+\end{pmatrix}\overset{y^{\prime}=y}{=}\begin{pmatrix}r\sin\left(\alpha+\theta\right)\\
+y\\
+r\cos\left(\alpha+\theta\right)
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\theta & 0 & \sin\theta\\
+0 & 1 & 0\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}\begin{pmatrix}r\sin\alpha\\
+y\\
+r\cos\alpha
+\end{pmatrix}=R_{{\scriptscriptstyle y}}\left(\theta\right)\boldsymbol{r},\begin{cases}
+R_{{\scriptscriptstyle y}}\left(\theta\right)=\begin{pmatrix}\cos\theta & 0 & \sin\theta\\
+0 & 1 & 0\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}\\
+\boldsymbol{r}=\begin{pmatrix}r\sin\alpha\\
+y\\
+r\cos\alpha
+\end{pmatrix}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z\rightarrow x\rightarrow z:\alpha\rightarrow\beta\rightarrow\gamma$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & R_{{\scriptscriptstyle z}}\left(\gamma\right)R_{{\scriptscriptstyle x}}\left(\beta\right)R_{{\scriptscriptstyle z}}\left(\alpha\right)\\
+= & \begin{pmatrix}\cos\gamma & -\sin\gamma & 0\\
+\sin\gamma & \cos\gamma & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}1 & 0 & 0\\
+0 & \cos\beta & -\sin\beta\\
+0 & \sin\beta & \cos\beta
+\end{pmatrix}\begin{pmatrix}\cos\alpha & -\sin\alpha & 0\\
+\sin\alpha & \cos\alpha & 0\\
+0 & 0 & 1
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\gamma & -\sin\gamma & 0\\
+\sin\gamma & \cos\gamma & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}\cos\alpha & -\sin\alpha & 0\\
+\cos\beta\sin\alpha & \cos\beta\cos\alpha & -\sin\beta\\
+\sin\beta\sin\alpha & \sin\beta\cos\alpha & \cos\beta
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\gamma\cos\alpha-\sin\gamma\cos\beta\sin\alpha & -\cos\gamma\sin\alpha-\sin\gamma\cos\beta\cos\alpha & \sin\gamma\sin\beta\\
+\sin\gamma\cos\alpha+\cos\gamma\cos\beta\sin\alpha & -\sin\gamma\sin\alpha-\cos\gamma\cos\beta\cos\alpha & -\cos\gamma\sin\beta\\
+\sin\beta\sin\alpha & \sin\beta\cos\alpha & \cos\beta
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\rightarrow y\rightarrow z:\alpha\rightarrow\beta\rightarrow\gamma$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & R_{{\scriptscriptstyle z}}\left(\gamma\right)R_{{\scriptscriptstyle y}}\left(\beta\right)R_{{\scriptscriptstyle x}}\left(\alpha\right)\\
+= & \begin{pmatrix}\cos\gamma & -\sin\gamma & 0\\
+\sin\gamma & \cos\gamma & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}\cos\beta & 0 & \sin\beta\\
+0 & 1 & 0\\
+-\sin\beta & 0 & \cos\beta
+\end{pmatrix}\begin{pmatrix}1 & 0 & 0\\
+0 & \cos\alpha & -\sin\alpha\\
+0 & \sin\alpha & \cos\alpha
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\gamma & -\sin\gamma & 0\\
+\sin\gamma & \cos\gamma & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}\cos\beta & \sin\beta\sin\alpha & \sin\beta\cos\alpha\\
+0 & \cos\alpha & -\sin\alpha\\
+-\sin\beta & \cos\beta\sin\alpha & \cos\beta\cos\alpha
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\gamma\cos\beta & \cos\gamma\sin\beta\sin\alpha-\sin\gamma\cos\alpha & \cos\gamma\sin\beta\cos\alpha+\sin\gamma\sin\alpha\\
+\sin\gamma\cos\beta & \sin\gamma\sin\beta\sin\alpha+\cos\gamma\cos\alpha & \sin\gamma\sin\beta\cos\alpha-\cos\gamma\sin\alpha\\
+-\sin\beta & \cos\beta\sin\alpha & \cos\beta\cos\alpha
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3D rotation about an arbitrary axis
+\begin_inset Formula 
+\[
+\begin{cases}
+\hat{x}=r\sin\theta\cos\phi & \overset{r=1}{=}\sin\theta\cos\phi\\
+\hat{y}=r\sin\theta\sin\phi & \overset{r=1}{=}\sin\theta\sin\phi\\
+\hat{z}=r\cos\theta & \overset{r=1}{=}\cos\theta
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+although I prefer 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ switched back to be compatible with 2D coordinate
+\begin_inset Formula 
+\[
+\begin{cases}
+\hat{x}=r\sin\phi\cos\theta & \overset{r=1}{=}\sin\phi\cos\theta\\
+\hat{y}=r\sin\phi\sin\theta & \overset{r=1}{=}\sin\phi\sin\theta\\
+\hat{z}=r\cos\phi & \overset{r=1}{=}\cos\phi
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or
+\begin_inset Formula 
+\[
+\begin{cases}
+\hat{x}=r\cos\phi\cos\theta & \overset{r=1}{=}\cos\phi\cos\theta\\
+\hat{y}=r\cos\phi\sin\theta & \overset{r=1}{=}\cos\phi\sin\theta\\
+\hat{z}=r\sin\phi & \overset{r=1}{=}\sin\phi
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+spherical coordinate unit vector
+\begin_inset Formula 
+\[
+\hat{\boldsymbol{n}}=\begin{pmatrix}\hat{x}\\
+\hat{y}\\
+\hat{z}
+\end{pmatrix}=\begin{pmatrix}\sin\theta\cos\phi\\
+\sin\theta\sin\phi\\
+\cos\theta
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\hat{\boldsymbol{n}}=\begin{pmatrix}\sin\theta\cos\phi\\
+\sin\theta\sin\phi\\
+\cos\theta
+\end{pmatrix}\\
+\hat{\boldsymbol{u}}=\begin{pmatrix}\cos\theta\cos\phi\\
+\cos\theta\sin\phi\\
+-\sin\theta
+\end{pmatrix}\Leftarrow\cos\theta\sin\theta-\cos\theta\sin\theta=0\Rightarrow & \hat{\boldsymbol{u}}\cdot\hat{\boldsymbol{n}}=0\Leftrightarrow\hat{\boldsymbol{u}}\perp\hat{\boldsymbol{n}}\\
+\hat{\boldsymbol{v}}=\hat{\boldsymbol{n}}\times\hat{\boldsymbol{u}}=\begin{vmatrix}\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\\
+\sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta\\
+\cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta
+\end{vmatrix}=\begin{pmatrix}-\sin\phi\\
+\cos\phi\\
+0
+\end{pmatrix} & \Rightarrow\begin{cases}
+\hat{\boldsymbol{v}}\perp\hat{\boldsymbol{n}}\\
+\hat{\boldsymbol{v}}\perp\hat{\boldsymbol{u}}
+\end{cases}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\left\{ \hat{\boldsymbol{n}},\hat{\boldsymbol{u}},\hat{\boldsymbol{v}}\right\} =\left\{ \hat{\boldsymbol{u}},\hat{\boldsymbol{v}},\hat{\boldsymbol{n}}\right\} \text{ is a basis of the spherical coordinate}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\boldsymbol{V}\right]_{S}=\begin{pmatrix}u\\
+v\\
+n
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{V}= & \begin{pmatrix}\hat{\boldsymbol{u}} & \hat{\boldsymbol{v}} & \hat{\boldsymbol{n}}\end{pmatrix}\begin{pmatrix}u\\
+v\\
+n
+\end{pmatrix}=u\hat{\boldsymbol{u}}+v\hat{\boldsymbol{v}}+n\hat{\boldsymbol{n}}\\
+= & \begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}\begin{pmatrix}u\\
+v\\
+n
+\end{pmatrix}=S\left[\boldsymbol{V}\right]_{S}\\
+\begin{pmatrix}u\\
+v\\
+n
+\end{pmatrix}= & \begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}^{-1}\boldsymbol{V}\\
+\left[\boldsymbol{V}\right]_{S}= & S^{-1}\boldsymbol{V}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S^{-1}= & \begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}^{-1},S\in\left\{ O\middle|O^{\intercal}O=1\right\} \\
+= & \begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}^{\intercal}\\
+= & \begin{pmatrix}\cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta\\
+-\sin\phi & \cos\phi & 0\\
+\sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta
+\end{pmatrix}=\begin{pmatrix}\hat{\boldsymbol{u}}^{\intercal}\\
+\hat{\boldsymbol{v}}^{\intercal}\\
+\hat{\boldsymbol{n}}^{\intercal}
+\end{pmatrix}\\
+S^{-1}S= & \begin{pmatrix}\cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta\\
+-\sin\phi & \cos\phi & 0\\
+\sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta
+\end{pmatrix}\begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}\\
+= & \begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}=1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{\boldsymbol{n}}$
+\end_inset
+
+ as 
+\begin_inset Formula $z$
+\end_inset
+
+ direction
+\begin_inset Formula 
+\begin{align*}
+\left[\boldsymbol{V}\right]_{S}= & S^{-1}\boldsymbol{V}\\
+\left[\boldsymbol{V}^{\prime}\right]_{S}=R_{{\scriptscriptstyle z}}\left(\gamma\right)\left[\boldsymbol{V}\right]_{S}= & R_{{\scriptscriptstyle z}}\left(\gamma\right)S^{-1}\boldsymbol{V}\\
+\boldsymbol{V}^{\prime}=S\left[\boldsymbol{V}^{\prime}\right]_{S}= & SR_{{\scriptscriptstyle z}}\left(\gamma\right)\left[\boldsymbol{V}\right]_{S}=SR_{{\scriptscriptstyle z}}\left(\gamma\right)S^{-1}\boldsymbol{V}\\
+\boldsymbol{V}^{\prime}= & SR_{{\scriptscriptstyle z}}\left(\gamma\right)S^{-1}\boldsymbol{V}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & SR_{{\scriptscriptstyle z}}\left(\gamma\right)S^{-1}\\
+= & \begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}\begin{pmatrix}\cos\gamma & -\sin\gamma & 0\\
+\sin\gamma & \cos\gamma & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}\cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta\\
+-\sin\phi & \cos\phi & 0\\
+\sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta
+\end{pmatrix}\\
+= & \begin{pmatrix}c_{1}c_{2} & -s_{2} & s_{1}c_{2}\\
+c_{1}s_{2} & c_{2} & s_{1}s_{2}\\
+-s_{1} & 0 & c_{1}
+\end{pmatrix}\begin{pmatrix}c_{3} & -s_{3} & 0\\
+s_{3} & c_{3} & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}c_{1}c_{2} & c_{1}s_{2} & -s_{1}\\
+-s_{2} & c_{2} & 0\\
+s_{1}c_{2} & s_{1}s_{2} & c_{1}
+\end{pmatrix},\begin{cases}
+c_{1}=\cos\theta & s_{1}=\sin\theta\\
+c_{2}=\cos\phi & s_{2}=\sin\phi\\
+c_{3}=\cos\gamma & s_{3}=\sin\gamma
+\end{cases}\\
+= & \begin{pmatrix}c_{1}c_{2} & -s_{2} & s_{1}c_{2}\\
+c_{1}s_{2} & c_{2} & s_{1}s_{2}\\
+-s_{1} & 0 & c_{1}
+\end{pmatrix}\begin{pmatrix}c_{3}c_{1}c_{2}+s_{3}s_{2} & c_{3}c_{1}s_{2}-c_{2}s_{3} & -c_{3}s_{1}\\
+c_{1}c_{2}s_{3}-c_{3}s_{2} & c_{3}c_{2}+c_{1}s_{3}s_{2} & -s_{3}s_{1}\\
+c_{2}s_{1} & s_{2}s_{1} & c_{1}
+\end{pmatrix}\\
+= & \begin{pmatrix}c_{1}^{2}c_{2}^{2}c_{3}+c_{3}s_{2}^{2}+c_{2}^{2}s_{1}^{2} & c_{1}s_{2}\left(c_{1}c_{2}c_{3}-s_{2}s_{3}\right)+c_{2}\left(-c_{1}c_{2}s_{3}-c_{3}s_{2}\right)+c_{2}s_{2}s_{1}^{2} & c_{1}c_{2}s_{1}-s_{1}\left(c_{1}c_{2}c_{3}-s_{2}s_{3}\right)\\
+c_{1}c_{2}\left(c_{1}c_{3}s_{2}+c_{2}s_{3}\right)-s_{2}\left(c_{2}c_{3}-c_{1}s_{2}s_{3}\right)+c_{2}s_{2}s_{1}^{2} & c_{1}^{2}c_{3}s_{2}^{2}+s_{2}^{2}s_{1}^{2}+c_{2}^{2}c_{3} & c_{1}s_{2}s_{1}-s_{1}\left(c_{1}c_{3}s_{2}+c_{2}s_{3}\right)\\
+-c_{1}c_{2}c_{3}s_{1}-s_{2}s_{1}s_{3}+c_{1}c_{2}s_{1} & -c_{1}c_{3}s_{2}s_{1}+c_{2}s_{1}s_{3}+c_{1}s_{2}s_{1} & c_{3}s_{1}^{2}+c_{1}^{2}
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{V}^{\prime}= & SR_{{\scriptscriptstyle z}}\left(\gamma\right)S^{-1}\boldsymbol{V}\\
+\begin{pmatrix}1\\
+\boldsymbol{V}^{\prime}
+\end{pmatrix}= & \begin{pmatrix}1\\
+ & S
+\end{pmatrix}\begin{pmatrix}1\\
+ & R_{{\scriptscriptstyle z}}\left(\gamma\right)
+\end{pmatrix}\begin{pmatrix}1\\
+ & S^{-1}
+\end{pmatrix}\begin{pmatrix}1\\
+\boldsymbol{V}
+\end{pmatrix}\\
+= & \begin{pmatrix}1 & 0 & 0 & 0\\
+0 & \cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+0 & \cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+0 & -\sin\theta & 0 & \cos\theta
+\end{pmatrix}\begin{pmatrix}1 & 0 & 0 & 0\\
+0 & \cos\gamma & -\sin\gamma & 0\\
+0 & \sin\gamma & \cos\gamma & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}1 & 0 & 0 & 0\\
+0 & \cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta\\
+0 & -\sin\phi & \cos\phi & 0\\
+0 & \sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta
+\end{pmatrix}\begin{pmatrix}1\\
+\boldsymbol{V}
+\end{pmatrix}\\
+=
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+quaternion
+\begin_inset Formula 
+\begin{align*}
+ & q=a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d,\begin{cases}
+q\in\mathbb{H}\\
+\mathrm{i}^{2}=\mathrm{j}^{2}=\mathrm{k}^{2}=-1=\mathrm{i}\mathrm{j}\mathrm{k} & \Rightarrow\mathrm{i}\mathrm{j}=\mathrm{k}\\
+a,b,c,d\in\mathbb{R} & \Leftrightarrow\left\langle a,b,c,d\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & w=t+x\mathrm{i}+y\mathrm{j}+z\mathrm{k}=t+\mathrm{i}x+\mathrm{j}y+\mathrm{k}z,\begin{cases}
+w\in\mathbb{H}\\
+\mathrm{i}^{2}=\mathrm{j}^{2}=\mathrm{k}^{2}=-1=\mathrm{i}\mathrm{j}\mathrm{k} & \Rightarrow\mathrm{i}\mathrm{j}=\mathrm{k}\\
+t,x,y,z\in\mathbb{R} & \Leftrightarrow\left\langle t,x,y,z\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & t+\begin{pmatrix}\mathrm{i} & \mathrm{j} & \mathrm{k}\end{pmatrix}\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\begin{pmatrix}\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\end{pmatrix}\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\begin{pmatrix}\boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}_{{\scriptscriptstyle 3}}\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\boldsymbol{x},\begin{cases}
+\boldsymbol{e}_{{\scriptscriptstyle 1}}=\boldsymbol{i}=\mathrm{i}\\
+\boldsymbol{e}_{{\scriptscriptstyle 2}}=\boldsymbol{j}=\mathrm{j}\\
+\boldsymbol{e}_{{\scriptscriptstyle 3}}=\boldsymbol{k}=\mathrm{k}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q_{{\scriptscriptstyle 1}}q_{{\scriptscriptstyle 2}}=\left(x_{{\scriptscriptstyle 10}}x_{{\scriptscriptstyle 20}}-\boldsymbol{x}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)+\left(x_{{\scriptscriptstyle 10}}\boldsymbol{x}_{{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 20}}\boldsymbol{x}_{{\scriptscriptstyle 1}}+\boldsymbol{x}_{{\scriptscriptstyle 1}}\times\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+QP=\left(Q_{{\scriptscriptstyle 0}}P_{{\scriptscriptstyle 0}}-\boldsymbol{Q}\cdot\boldsymbol{P}\right)+\left(Q_{{\scriptscriptstyle 0}}\boldsymbol{P}+P_{{\scriptscriptstyle 0}}\boldsymbol{Q}+\boldsymbol{Q}\times\boldsymbol{P}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q=q_{{\scriptscriptstyle 0}}+\boldsymbol{q}=q_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 1}}\mathrm{i}+q_{{\scriptscriptstyle 2}}\mathrm{j}+q_{{\scriptscriptstyle 3}}\mathrm{k}=q_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 1}}\boldsymbol{\mathrm{i}}+q_{{\scriptscriptstyle 2}}\boldsymbol{\mathrm{j}}+q_{{\scriptscriptstyle 3}}\boldsymbol{\mathrm{k}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q^{*}=\overline{q}= & \overline{q_{{\scriptscriptstyle 0}}+\boldsymbol{q}}=q_{{\scriptscriptstyle 0}}-\boldsymbol{q}\\
+= & \overline{q_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 1}}\mathrm{i}+q_{{\scriptscriptstyle 2}}\mathrm{j}+q_{{\scriptscriptstyle 3}}\mathrm{k}}=q_{{\scriptscriptstyle 0}}-q_{{\scriptscriptstyle 1}}\mathrm{i}-q_{{\scriptscriptstyle 2}}\mathrm{j}-q_{{\scriptscriptstyle 3}}\mathrm{k}\\
+= & q_{{\scriptscriptstyle 0}}-q_{{\scriptscriptstyle 1}}\boldsymbol{\mathrm{i}}-q_{{\scriptscriptstyle 2}}\boldsymbol{\mathrm{j}}-q_{{\scriptscriptstyle 3}}\boldsymbol{\mathrm{k}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v=v_{{\scriptscriptstyle 0}}+\boldsymbol{v}=v_{{\scriptscriptstyle 0}}+v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}=v_{{\scriptscriptstyle 0}}+v_{{\scriptscriptstyle 1}}\boldsymbol{\mathrm{i}}+v_{{\scriptscriptstyle 2}}\boldsymbol{\mathrm{j}}+v_{{\scriptscriptstyle 3}}\boldsymbol{\mathrm{k}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}=v_{{\scriptscriptstyle 1}}\boldsymbol{\mathrm{i}}+v_{{\scriptscriptstyle 2}}\boldsymbol{\mathrm{j}}+v_{{\scriptscriptstyle 3}}\boldsymbol{\mathrm{k}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+qv= & \left(q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+v_{{\scriptscriptstyle 0}}\boldsymbol{q}+\boldsymbol{q}\times\boldsymbol{v}\right)\\
+ & \overset{v_{{\scriptscriptstyle 0}}=0}{=}\left(q_{{\scriptscriptstyle 0}}0-\boldsymbol{q}\cdot\boldsymbol{v}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+0\boldsymbol{q}+\boldsymbol{q}\times\boldsymbol{v}\right)\\
+ & =\left(-\boldsymbol{q}\cdot\boldsymbol{v}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{q}\times\boldsymbol{v}\right)\\
+q\boldsymbol{v}= & \left(-\boldsymbol{q}\cdot\boldsymbol{v}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{q}\times\boldsymbol{v}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+v\overline{q}= & \left(v_{{\scriptscriptstyle 0}}q_{{\scriptscriptstyle 0}}-\boldsymbol{v}\cdot\overline{\boldsymbol{q}}\right)+\left(v_{{\scriptscriptstyle 0}}\overline{\boldsymbol{q}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{v}\times\overline{\boldsymbol{q}}\right)\\
+ & \overset{v_{{\scriptscriptstyle 0}}=0}{=}\left(0q_{{\scriptscriptstyle 0}}-\boldsymbol{v}\cdot\overline{\boldsymbol{q}}\right)+\left(0\overline{\boldsymbol{q}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{v}\times\overline{\boldsymbol{q}}\right)\\
+ & =\left(-\boldsymbol{v}\cdot\overline{\boldsymbol{q}}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{v}\times\overline{\boldsymbol{q}}\right)\\
+ & =\left(-\boldsymbol{v}\cdot\left(-\boldsymbol{q}\right)\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{v}\times\left(-\boldsymbol{q}\right)\right)\\
+ & =\left(\boldsymbol{v}\cdot\boldsymbol{q}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}-\boldsymbol{v}\times\boldsymbol{q}\right)\\
+\boldsymbol{v}\overline{q}= & \left(\boldsymbol{v}\cdot\boldsymbol{q}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}-\boldsymbol{v}\times\boldsymbol{q}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+= & a+r\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r},r^{2}=b^{2}+c^{2}+d^{2}\\
+= & a+\theta\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{\theta},\theta^{2}=b^{2}+c^{2}+d^{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left(\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\right)^{2}= & \dfrac{-b^{2}-c^{2}-d^{2}+bc\left(\mathrm{i}\mathrm{j}+\mathrm{j}\mathrm{i}\right)+cd\left(\mathrm{j}\mathrm{k}+\mathrm{k}\mathrm{j}\right)+db\left(\mathrm{k}\mathrm{i}+\mathrm{i}\mathrm{k}\right)}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}+bc\left(\mathrm{k}-\mathrm{k}\right)+cd\left(\mathrm{i}-\mathrm{i}\right)+db\left(\mathrm{j}-\mathrm{j}\right)}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}+bc0+cd0+db0}{r^{2}}=\dfrac{-b^{2}-c^{2}-d^{2}}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}}{b^{2}+c^{2}+d^{2}}=-1\\
+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}= & \pm\sqrt{-1}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathrm{e}^{q}= & \mathrm{e}^{a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}\\
+= & \mathrm{e}^{a+r\sqrt{-1}}=\mathrm{e}^{a}\mathrm{e}^{r\sqrt{-1}}=\mathrm{e}^{a+\theta\sqrt{-1}}=\mathrm{e}^{a}\mathrm{e}^{\theta\sqrt{-1}}\\
+= & \mathrm{e}^{a}\left(\cos r+\sqrt{-1}\sin r\right)=\mathrm{e}^{a}\left(\cos\theta+\sqrt{-1}\sin\theta\right)\\
+= & \mathrm{e}^{a}\left(\cos r+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\sin r\right)=\mathrm{e}^{a}\left[\cos r+\left(\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\right)\dfrac{\sin r}{r}\right]\\
+= & \mathrm{e}^{a}\left(\cos\theta+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{\theta}\sin\theta\right)=\mathrm{e}^{a}\left[\cos\theta+\left(\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\right)\dfrac{\sin\theta}{\theta}\right]
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+= & a+r\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r},r^{2}=b^{2}+c^{2}+d^{2}\\
+= & \sqrt{a^{2}+r^{2}}\left(\dfrac{a}{\sqrt{a^{2}+r^{2}}}+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\dfrac{r}{\sqrt{a^{2}+r^{2}}}\right)\\
+= & \rho\left(\cos\phi+\sqrt{-1}\sin\phi\right),\begin{cases}
+\rho=\sqrt{a^{2}+r^{2}}\\
+\tan\phi=\dfrac{r}{a}\Leftrightarrow\phi=\arctan\dfrac{r}{a}
+\end{cases}\\
+= & \rho\mathrm{e}^{\phi\sqrt{-1}}\\
+q= & \rho\mathrm{e}^{\phi\sqrt{-1}},\begin{cases}
+q=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+\rho=\sqrt{a^{2}+r^{2}}=\sqrt{a^{2}+b^{2}+c^{2}+d^{2}}\\
+\tan\phi=\dfrac{r}{a}\Leftrightarrow\phi=\arctan\dfrac{r}{a}=\arctan\dfrac{\pm\sqrt{b^{2}+c^{2}+d^{2}}}{a}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\rho\mathrm{e}^{-\phi\sqrt{-1}}= & \rho\left[\cos\left(-\phi\right)+\sqrt{-1}\sin\left(-\phi\right)\right]\\
+= & \rho\left[\cos\phi-\sqrt{-1}\sin\phi\right]\\
+= & \sqrt{a^{2}+r^{2}}\left[\dfrac{a}{\sqrt{a^{2}+r^{2}}}-\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\dfrac{r}{\sqrt{a^{2}+r^{2}}}\right]\\
+= & a-\left(\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\right)=a-\mathrm{i}b-\mathrm{j}c-\mathrm{k}d=\overline{q}=q^{*}
 \end{align*}
 
 \end_inset

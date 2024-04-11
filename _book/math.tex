@@ -265,7 +265,7 @@
 
 \title{math}
 \author{Joey Yu Hsu}
-\date{2024-04-06}
+\date{2024-04-11}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
@@ -13243,7 +13243,809 @@ $$
 
 or please first see \hyperref[quaternion-group-representation]{quaternion group representation}\textsuperscript{{[}\ref{quaternion-group-representation}{]}}.
 
+\subsubsection{2D rotation}\label{d-rotation}
+
+\paragraph{matrix}\label{matrix-1}
+
+\[
+\boldsymbol{r}=\left(x,y\right)=\left\langle x,y\right\rangle =\begin{pmatrix}x\\
+y
+\end{pmatrix}=\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix}
+\]
+
+\[
+\boldsymbol{r}^{\prime}=\left(x^{\prime},y^{\prime}\right)=\left\langle x^{\prime},y^{\prime}\right\rangle =\begin{pmatrix}x^{\prime}\\
+y^{\prime}
+\end{pmatrix}=\begin{pmatrix}r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)
+\end{pmatrix}
+\]
+
+\[
+\begin{aligned}
+\boldsymbol{r}^{\prime}= & \begin{pmatrix}r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)
+\end{pmatrix}=r\begin{pmatrix}\cos\left(\alpha+\theta\right)\\
+\sin\left(\alpha+\theta\right)
+\end{pmatrix}\\
+= & r\begin{pmatrix}\cos\alpha\cos\theta-\sin\alpha\sin\theta\\
+\sin\alpha\cos\theta+\cos\alpha\sin\theta
+\end{pmatrix}=r\begin{pmatrix}\cos\theta\cos\alpha-\sin\theta\sin\alpha\\
+\sin\theta\cos\alpha+\cos\theta\sin\alpha
+\end{pmatrix}\\
+= & r\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}\cos\alpha\\
+\sin\alpha
+\end{pmatrix}=\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix}\\
+= & R\boldsymbol{r},\begin{cases}
+R=\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}=R\left(\theta\right)=R_{{\scriptscriptstyle \theta}}\\
+\boldsymbol{r}=\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix},\boldsymbol{r}^{\prime}=\begin{pmatrix}r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)
+\end{pmatrix}
+\end{cases}
+\end{aligned}
+\]
+
+orthonormal matrix
+
+\[
+\boldsymbol{r}^{\prime}=O\boldsymbol{r}
+\]
+
+\[
+\begin{aligned}
+\left|\boldsymbol{r}^{\prime}\right|^{2}= & \left|\boldsymbol{r}\right|^{2}\\
+\boldsymbol{r}^{\prime}\cdot\boldsymbol{r}^{\prime}= & \boldsymbol{r}\cdot\boldsymbol{r}\\
+\boldsymbol{r}^{\prime\intercal}\boldsymbol{r}^{\prime}= & \boldsymbol{r}^{\intercal}\boldsymbol{r}\\
+\left(O\boldsymbol{r}\right)^{\intercal}\left(O\boldsymbol{r}\right)=\\
+\boldsymbol{r}^{\intercal}O^{\intercal}O\boldsymbol{r}=\\
+\boldsymbol{r}^{\intercal}O^{\intercal}O\boldsymbol{r}= & \boldsymbol{r}^{\intercal}\boldsymbol{r}\\
+O^{\intercal}O= & 1=I=I_{{\scriptscriptstyle 2}}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+R^{\intercal}R= & \begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}^{\intercal}\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\theta & \sin\theta\\
+-\sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos^{2}\theta+\sin^{2}\theta & -\cos\theta\sin\theta+\sin\theta\cos\theta\\
+-\sin\theta\cos\theta+\cos\theta\sin\theta & \sin^{2}\theta+\cos^{2}\theta
+\end{pmatrix}\\
+= & \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=1=I\\
+R^{\intercal}R= & 1\Rightarrow R\in\left\{ O\middle|O^{\intercal}O=1\right\} 
+\end{aligned}
+\]
+
+\url{https://en.wikipedia.org/wiki/Transformation_matrix\#Affine_transformations}
+
+reflection matrix
+
+\[
+\begin{cases}
+P_{{\scriptscriptstyle x}}=\begin{pmatrix}-1 & 0\\
+0 & 1
+\end{pmatrix} & P_{{\scriptscriptstyle x}}^{\intercal}P_{{\scriptscriptstyle x}}=P_{{\scriptscriptstyle x}}^{2}=\begin{pmatrix}-1 & 0\\
+0 & 1
+\end{pmatrix}^{2}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=1\Rightarrow P_{{\scriptscriptstyle x}}\in\left\{ O\middle|O^{\intercal}O=1\right\} \\
+P_{{\scriptscriptstyle y}}=\begin{pmatrix}1 & 0\\
+0 & -1
+\end{pmatrix} & P_{{\scriptscriptstyle y}}^{\intercal}P_{{\scriptscriptstyle y}}=P_{{\scriptscriptstyle y}}^{2}=\begin{pmatrix}1 & 0\\
+0 & -1
+\end{pmatrix}^{2}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=1\Rightarrow P_{{\scriptscriptstyle y}}\in\left\{ O\middle|O^{\intercal}O=1\right\} 
+\end{cases}
+\]
+
+translation matrix?
+
+\[
+\begin{pmatrix}0 & 1\\
+1 & 0
+\end{pmatrix}\begin{pmatrix}0 & 1\\
+1 & 0
+\end{pmatrix}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=1
+\]
+
+\[
+\begin{pmatrix}0 & -1\\
+-1 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1\\
+-1 & 0
+\end{pmatrix}=\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}=1
+\]
+
+\(O\left(2\right)\) group
+
+\[
+\begin{aligned}
+O\left(2\right)=&\left\{ 1,R,P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle y}}\right\} \\=&\left\{ I_{{\scriptscriptstyle 2}},R_{{\scriptscriptstyle \theta}},P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle y}}\right\} \subseteq\left\{ O\middle|O^{\intercal}O=1\right\}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+1= & O^{\intercal}O\\
+1= & \det1=\det I=\det\left(I_{{\scriptscriptstyle 2}}\right)\\
+= & \det\left(O^{\intercal}O\right)=\left(\det O^{\intercal}\right)\left(\det O\right)=\left(\det O\right)\left(\det O\right)=\left(\det O\right)^{2}\\
+1= & \left(\det O\right)^{2}\\
+\det O= & \pm1
+\end{aligned}
+\]
+
+\[
+\det R=\det R_{{\scriptscriptstyle \theta}}=\begin{vmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{vmatrix}=\cos^{2}\theta-\left(-\sin^{2}\theta\right)=\cos^{2}\theta+\sin^{2}\theta=1
+\]
+
+\[
+\begin{cases}
+P_{{\scriptscriptstyle x}}=\begin{pmatrix}-1 & 0\\
+0 & 1
+\end{pmatrix} & \det P_{{\scriptscriptstyle x}}=-1\\
+P_{{\scriptscriptstyle y}}=\begin{pmatrix}1 & 0\\
+0 & -1
+\end{pmatrix} & \det P_{{\scriptscriptstyle y}}=-1
+\end{cases}
+\]
+
+special orthonormal group of degree 2
+
+\[
+\begin{aligned}
+SO\left(2\right)= & \left\{ 1,R\right\} =\left\{ I_{{\scriptscriptstyle 2}},R_{{\scriptscriptstyle \theta}}\right\} \subseteq\left\{ O\middle|\begin{cases}
+O^{\intercal}O=1 & O\\
+\det O=1 & S
+\end{cases}\right\} \\
+\subset & \left\{ 1,R,P_{{\scriptscriptstyle x}},P_{{\scriptscriptstyle y}}\right\} =O\left(2\right)\subseteq\left\{ O\middle|O^{\intercal}O=1\right\} 
+\end{aligned}
+\]
+
+\paragraph{complex}\label{complex}
+
+\[
+z=r\left(\cos\alpha+\mathrm{i}\sin\alpha\right)=r\mathrm{e}^{\mathrm{i}\alpha}
+\]
+
+\[
+z^{\prime}=r\left(\cos\left(\alpha+\theta\right)+\mathrm{i}\sin\left(\alpha+\theta\right)\right)=r\mathrm{e}^{\mathrm{i}\left(\alpha+\theta\right)}
+\]
+
+\[
+\begin{aligned}
+z^{\prime}= & z_{{\scriptscriptstyle \theta}}z\\
+z_{{\scriptscriptstyle \theta}}= & \dfrac{z^{\prime}}{z}=\dfrac{r^{\prime}\mathrm{e}^{\mathrm{i}\left(\alpha+\theta\right)}}{r\mathrm{e}^{\mathrm{i}\alpha}}=\dfrac{r^{\prime}}{r}\mathrm{e}^{\mathrm{i}\theta}=\dfrac{r^{\prime}}{r}\left(\cos\theta+\mathrm{i}\sin\theta\right)
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+z_{{\scriptscriptstyle \theta}}z= & \left[\dfrac{r^{\prime}}{r}\left(\cos\theta+\mathrm{i}\sin\theta\right)\right]\left[r\left(\cos\alpha+\mathrm{i}\sin\alpha\right)\right]\\
+= & r^{\prime}\left[\left(\cos\theta\cos\alpha-\sin\theta\sin\alpha\right)+\mathrm{i}\left(\sin\theta\cos\alpha+\cos\theta\sin\alpha\right)\right]\\
+= & r^{\prime}\left[\cos\left(\alpha+\theta\right)+\mathrm{i}\sin\left(\alpha+\theta\right)\right]=z^{\prime}
+\end{aligned}
+\]
+
+\[
+\hat{z}_{{\scriptscriptstyle \theta}}=z_{{\scriptscriptstyle \theta}}\left(\dfrac{r^{\prime}}{r}=1\right)=\mathrm{e}^{\mathrm{i}\theta}=\cos\theta+\mathrm{i}\sin\theta
+\]
+
+\[
+\hat{z}_{{\scriptscriptstyle \theta}}^{*}=\overline{\hat{z}_{{\scriptscriptstyle \theta}}}=\mathrm{e}^{-\mathrm{i}\theta}=\cos\theta-\mathrm{i}\sin\theta
+\]
+
+\[
+\hat{z}_{{\scriptscriptstyle \theta}}^{*}\hat{z}_{{\scriptscriptstyle \theta}}=\mathrm{e}^{\mathrm{i}\theta}\mathrm{e}^{-\mathrm{i}\theta}=\mathrm{e}^{\mathrm{i}\theta+\left(-\mathrm{i}\theta\right)}=\mathrm{e}^{\mathrm{i}0}=\mathrm{e}^{0}=1
+\]
+
+unitary group of degree 1
+
+\[
+U\left(1\right)=\left\{ 1,\hat{z}_{{\scriptscriptstyle \theta}}\right\} =\left\{ \mathrm{e}^{\mathrm{i}0},\mathrm{e}^{\mathrm{i}\theta}\right\} 
+\]
+
+\paragraph{\texorpdfstring{\(SO\left(2\right)\cong U\left(1\right)\)}{SO\textbackslash left(2\textbackslash right)\textbackslash cong U\textbackslash left(1\textbackslash right)}}\label{soleft2rightcong-uleft1right}
+
+\(\mathbb{C}\leftrightarrow\mathcal{M}_{2\times2}\left(\mathbb{R}\right)=\mathcal{M}_{2}\left(\mathbb{R}\right)\) \hyperref[complex-group-representation]{complex group representation}\textsuperscript{{[}\ref{complex-group-representation}{]}}
+
+\[
+x+y\mathrm{i}\leftrightarrow\begin{pmatrix}x & -y\\
+y & x
+\end{pmatrix}=xI+yJ
+\]
+
+\[
+\begin{aligned}
+U\left(1\right)= & \left\{ 1,\hat{z}_{{\scriptscriptstyle \theta}}\right\} =\left\{ \mathrm{e}^{\mathrm{i}0},\mathrm{e}^{\mathrm{i}\theta}\right\} \\
+= & \left\{ \cos0+\mathrm{i}\sin0,\cos\theta+\mathrm{i}\sin\theta\right\} \\
+\leftrightarrow & \left\{ \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\cos0+\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\sin0,\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\cos\theta+\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\sin\theta\right\} \\
+= & \left\{ \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}1+\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}0,\begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix}\cos\theta+\begin{pmatrix}0 & -1\\
+1 & 0
+\end{pmatrix}\sin\theta\right\} \\
+= & \left\{ \begin{pmatrix}1 & 0\\
+0 & 1
+\end{pmatrix},\begin{pmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{pmatrix}\right\} =\left\{ I_{{\scriptscriptstyle 2}},R_{{\scriptscriptstyle \theta}}\right\} =\left\{ 1,R\right\} =SO\left(2\right)\\
+U\left(1\right)\cong & SO\left(2\right)\Leftrightarrow SO\left(2\right)\cong U\left(1\right)
+\end{aligned}
+\]
+
+unitary group of degree 1 and special orthonormal group of degree 2 are isomorphism
+
+\subsubsection{3D rotation}\label{d-rotation-1}
+
+\paragraph{matrix}\label{matrix-2}
+
+\subparagraph{construction with 2D rotation matrix}\label{construction-with-2d-rotation-matrix}
+
+\[
+\begin{aligned}
+\boldsymbol{r}^{\prime}= & \begin{pmatrix}r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)\\
+z^{\prime}
+\end{pmatrix}\overset{z^{\prime}=z}{=}\begin{pmatrix}r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)\\
+z
+\end{pmatrix}=\begin{pmatrix}R\left(\theta\right)\\
+ & 1
+\end{pmatrix}\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha\\
+z
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\theta & -\sin\theta & 0\\
+\sin\theta & \cos\theta & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha\\
+z
+\end{pmatrix}=R_{{\scriptscriptstyle z}}\left(\theta\right)\boldsymbol{r},\begin{cases}
+R_{{\scriptscriptstyle z}}\left(\theta\right)=\begin{pmatrix}\cos\theta & -\sin\theta & 0\\
+\sin\theta & \cos\theta & 0\\
+0 & 0 & 1
+\end{pmatrix}\\
+\boldsymbol{r}=\begin{pmatrix}r\cos\alpha\\
+r\sin\alpha\\
+z
+\end{pmatrix}
+\end{cases}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\boldsymbol{r}^{\prime}= & \begin{pmatrix}x^{\prime}\\
+r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)
+\end{pmatrix}\overset{x^{\prime}=x}{=}\begin{pmatrix}x\\
+r\cos\left(\alpha+\theta\right)\\
+r\sin\left(\alpha+\theta\right)
+\end{pmatrix}=\begin{pmatrix}1\\
+ & R\left(\theta\right)
+\end{pmatrix}\begin{pmatrix}x\\
+r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix}\\
+= & \begin{pmatrix}1 & 0 & 0\\
+0 & \cos\theta & -\sin\theta\\
+0 & \sin\theta & \cos\theta
+\end{pmatrix}\begin{pmatrix}x\\
+r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix}=R_{{\scriptscriptstyle x}}\left(\theta\right)\boldsymbol{r},\begin{cases}
+R_{{\scriptscriptstyle x}}\left(\theta\right)=\begin{pmatrix}1 & 0 & 0\\
+0 & \cos\theta & -\sin\theta\\
+0 & \sin\theta & \cos\theta
+\end{pmatrix}\\
+\boldsymbol{r}=\begin{pmatrix}x\\
+r\cos\alpha\\
+r\sin\alpha
+\end{pmatrix}
+\end{cases}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\boldsymbol{r}^{\prime}= & \begin{pmatrix}r\sin\left(\alpha+\theta\right)\\
+y^{\prime}\\
+r\cos\left(\alpha+\theta\right)
+\end{pmatrix}\overset{y^{\prime}=y}{=}\begin{pmatrix}r\sin\left(\alpha+\theta\right)\\
+y\\
+r\cos\left(\alpha+\theta\right)
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\theta & 0 & \sin\theta\\
+0 & 1 & 0\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}\begin{pmatrix}r\sin\alpha\\
+y\\
+r\cos\alpha
+\end{pmatrix}=R_{{\scriptscriptstyle y}}\left(\theta\right)\boldsymbol{r},\begin{cases}
+R_{{\scriptscriptstyle y}}\left(\theta\right)=\begin{pmatrix}\cos\theta & 0 & \sin\theta\\
+0 & 1 & 0\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}\\
+\boldsymbol{r}=\begin{pmatrix}r\sin\alpha\\
+y\\
+r\cos\alpha
+\end{pmatrix}
+\end{cases}
+\end{aligned}
+\]
+
+\subparagraph{Euler angle}\label{euler-angle}
+
+\(z\rightarrow x\rightarrow z:\alpha\rightarrow\beta\rightarrow\gamma\)
+
+\[
+\begin{aligned}
+ & R_{{\scriptscriptstyle z}}\left(\gamma\right)R_{{\scriptscriptstyle x}}\left(\beta\right)R_{{\scriptscriptstyle z}}\left(\alpha\right)\\
+= & \begin{pmatrix}\cos\gamma & -\sin\gamma & 0\\
+\sin\gamma & \cos\gamma & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}1 & 0 & 0\\
+0 & \cos\beta & -\sin\beta\\
+0 & \sin\beta & \cos\beta
+\end{pmatrix}\begin{pmatrix}\cos\alpha & -\sin\alpha & 0\\
+\sin\alpha & \cos\alpha & 0\\
+0 & 0 & 1
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\gamma & -\sin\gamma & 0\\
+\sin\gamma & \cos\gamma & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}\cos\alpha & -\sin\alpha & 0\\
+\cos\beta\sin\alpha & \cos\beta\cos\alpha & -\sin\beta\\
+\sin\beta\sin\alpha & \sin\beta\cos\alpha & \cos\beta
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\gamma\cos\alpha-\sin\gamma\cos\beta\sin\alpha & -\cos\gamma\sin\alpha-\sin\gamma\cos\beta\cos\alpha & \sin\gamma\sin\beta\\
+\sin\gamma\cos\alpha+\cos\gamma\cos\beta\sin\alpha & -\sin\gamma\sin\alpha-\cos\gamma\cos\beta\cos\alpha & -\cos\gamma\sin\beta\\
+\sin\beta\sin\alpha & \sin\beta\cos\alpha & \cos\beta
+\end{pmatrix}
+\end{aligned}
+\]
+
+\(x\rightarrow y\rightarrow z:\alpha\rightarrow\beta\rightarrow\gamma\)
+
+\[
+\begin{aligned}
+ & R_{{\scriptscriptstyle z}}\left(\gamma\right)R_{{\scriptscriptstyle y}}\left(\beta\right)R_{{\scriptscriptstyle x}}\left(\alpha\right)\\
+= & \begin{pmatrix}\cos\gamma & -\sin\gamma & 0\\
+\sin\gamma & \cos\gamma & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}\cos\beta & 0 & \sin\beta\\
+0 & 1 & 0\\
+-\sin\beta & 0 & \cos\beta
+\end{pmatrix}\begin{pmatrix}1 & 0 & 0\\
+0 & \cos\alpha & -\sin\alpha\\
+0 & \sin\alpha & \cos\alpha
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\gamma & -\sin\gamma & 0\\
+\sin\gamma & \cos\gamma & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}\cos\beta & \sin\beta\sin\alpha & \sin\beta\cos\alpha\\
+0 & \cos\alpha & -\sin\alpha\\
+-\sin\beta & \cos\beta\sin\alpha & \cos\beta\cos\alpha
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos\gamma\cos\beta & \cos\gamma\sin\beta\sin\alpha-\sin\gamma\cos\alpha & \cos\gamma\sin\beta\cos\alpha+\sin\gamma\sin\alpha\\
+\sin\gamma\cos\beta & \sin\gamma\sin\beta\sin\alpha+\cos\gamma\cos\alpha & \sin\gamma\sin\beta\cos\alpha-\cos\gamma\sin\alpha\\
+-\sin\beta & \cos\beta\sin\alpha & \cos\beta\cos\alpha
+\end{pmatrix}
+\end{aligned}
+\]
+
+\subparagraph{3D rotation about an arbitrary axis}\label{d-rotation-about-an-arbitrary-axis}
+
+\url{https://math.stackexchange.com/questions/4550704/rotation-around-an-arbitrary-axis}
+
+spherical coordinate unit vector
+
+\[
+\begin{cases}
+\hat{x}=r\sin\theta\cos\phi & \overset{r=1}{=}\sin\theta\cos\phi\\
+\hat{y}=r\sin\theta\sin\phi & \overset{r=1}{=}\sin\theta\sin\phi\\
+\hat{z}=r\cos\theta & \overset{r=1}{=}\cos\theta
+\end{cases}
+\]
+
+although I prefer \(\theta\) and \(\phi\) switched back to be compatible with 2D coordinate
+
+\[
+\begin{cases}
+\hat{x}=r\sin\phi\cos\theta & \overset{r=1}{=}\sin\phi\cos\theta\\
+\hat{y}=r\sin\phi\sin\theta & \overset{r=1}{=}\sin\phi\sin\theta\\
+\hat{z}=r\cos\phi & \overset{r=1}{=}\cos\phi
+\end{cases}
+\]
+
+or \(\cos\) first in \(x,y\)-plane
+
+\[
+\begin{cases}
+\hat{x}=r\cos\phi\cos\theta & \overset{r=1}{=}\cos\phi\cos\theta\\
+\hat{y}=r\cos\phi\sin\theta & \overset{r=1}{=}\cos\phi\sin\theta\\
+\hat{z}=r\sin\phi & \overset{r=1}{=}\sin\phi
+\end{cases}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+still use the most convention
+
+\[
+\hat{\boldsymbol{n}}=\begin{pmatrix}\hat{x}\\
+\hat{y}\\
+\hat{z}
+\end{pmatrix}=\begin{pmatrix}\sin\theta\cos\phi\\
+\sin\theta\sin\phi\\
+\cos\theta
+\end{pmatrix}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{cases}
+\hat{\boldsymbol{n}}=\begin{pmatrix}\sin\theta\cos\phi\\
+\sin\theta\sin\phi\\
+\cos\theta
+\end{pmatrix}\\
+\hat{\boldsymbol{u}}=\begin{pmatrix}\cos\theta\cos\phi\\
+\cos\theta\sin\phi\\
+-\sin\theta
+\end{pmatrix}\Leftarrow\cos\theta\sin\theta-\cos\theta\sin\theta=0\Rightarrow & \hat{\boldsymbol{u}}\cdot\hat{\boldsymbol{n}}=0\Leftrightarrow\hat{\boldsymbol{u}}\perp\hat{\boldsymbol{n}}\\
+\hat{\boldsymbol{v}}=\hat{\boldsymbol{n}}\times\hat{\boldsymbol{u}}=\begin{vmatrix}\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\\
+\sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta\\
+\cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta
+\end{vmatrix}=\begin{pmatrix}-\sin\phi\\
+\cos\phi\\
+0
+\end{pmatrix} & \Rightarrow\begin{cases}
+\hat{\boldsymbol{v}}\perp\hat{\boldsymbol{n}}\\
+\hat{\boldsymbol{v}}\perp\hat{\boldsymbol{u}}
+\end{cases}
+\end{cases}
+\]
+
+\[
+S=\left\{ \hat{\boldsymbol{n}},\hat{\boldsymbol{u}},\hat{\boldsymbol{v}}\right\} =\left\{ \hat{\boldsymbol{u}},\hat{\boldsymbol{v}},\hat{\boldsymbol{n}}\right\} \text{ is a basis of the spherical coordinate}
+\]
+
+\[
+\left[\boldsymbol{V}\right]_{S}=\begin{pmatrix}u\\
+v\\
+n
+\end{pmatrix}
+\]
+
+\[
+\begin{aligned}
+\boldsymbol{V}= & \begin{pmatrix}\hat{\boldsymbol{u}} & \hat{\boldsymbol{v}} & \hat{\boldsymbol{n}}\end{pmatrix}\begin{pmatrix}u\\
+v\\
+n
+\end{pmatrix}=u\hat{\boldsymbol{u}}+v\hat{\boldsymbol{v}}+n\hat{\boldsymbol{n}}\\
+= & \begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}\begin{pmatrix}u\\
+v\\
+n
+\end{pmatrix}=S\left[\boldsymbol{V}\right]_{S}\\
+\begin{pmatrix}u\\
+v\\
+n
+\end{pmatrix}= & \begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}^{-1}\boldsymbol{V}\\
+\left[\boldsymbol{V}\right]_{S}= & S^{-1}\boldsymbol{V}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+S^{-1}= & \begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}^{-1},S\in\left\{ O\middle|O^{\intercal}O=1\right\} \\
+= & \begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}^{\intercal}\\
+= & \begin{pmatrix}\cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta\\
+-\sin\phi & \cos\phi & 0\\
+\sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta
+\end{pmatrix}=\begin{pmatrix}\hat{\boldsymbol{u}}^{\intercal}\\
+\hat{\boldsymbol{v}}^{\intercal}\\
+\hat{\boldsymbol{n}}^{\intercal}
+\end{pmatrix}\\
+S^{-1}S= & \begin{pmatrix}\cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta\\
+-\sin\phi & \cos\phi & 0\\
+\sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta
+\end{pmatrix}\begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}\\
+= & \begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}=1
+\end{aligned}
+\]
+
+\(\hat{\boldsymbol{n}}\) as \(z\) direction
+
+\[
+\begin{aligned}
+\left[\boldsymbol{V}\right]_{S}= & S^{-1}\boldsymbol{V}\\
+\left[\boldsymbol{V}^{\prime}\right]_{S}=R_{{\scriptscriptstyle z}}\left(\gamma\right)\left[\boldsymbol{V}\right]_{S}= & R_{{\scriptscriptstyle z}}\left(\gamma\right)S^{-1}\boldsymbol{V}\\
+\boldsymbol{V}^{\prime}=S\left[\boldsymbol{V}^{\prime}\right]_{S}= & SR_{{\scriptscriptstyle z}}\left(\gamma\right)\left[\boldsymbol{V}\right]_{S}=SR_{{\scriptscriptstyle z}}\left(\gamma\right)S^{-1}\boldsymbol{V}\\
+\boldsymbol{V}^{\prime}= & SR_{{\scriptscriptstyle z}}\left(\gamma\right)S^{-1}\boldsymbol{V}
+\end{aligned}
+\]
+\url{https://www.symbolab.com/}
+
+\[
+\begin{aligned}
+ & SR_{{\scriptscriptstyle z}}\left(\gamma\right)S^{-1}\\
+= & \begin{pmatrix}\cos\theta\cos\phi & -\sin\phi & \sin\theta\cos\phi\\
+\cos\theta\sin\phi & \cos\phi & \sin\theta\sin\phi\\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}\begin{pmatrix}\cos\gamma & -\sin\gamma & 0\\
+\sin\gamma & \cos\gamma & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}\cos\theta\cos\phi & \cos\theta\sin\phi & -\sin\theta\\
+-\sin\phi & \cos\phi & 0\\
+\sin\theta\cos\phi & \sin\theta\sin\phi & \cos\theta
+\end{pmatrix}\\
+= & \begin{pmatrix}c_{1}c_{2} & -s_{2} & s_{1}c_{2}\\
+c_{1}s_{2} & c_{2} & s_{1}s_{2}\\
+-s_{1} & 0 & c_{1}
+\end{pmatrix}\begin{pmatrix}c_{3} & -s_{3} & 0\\
+s_{3} & c_{3} & 0\\
+0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}c_{1}c_{2} & c_{1}s_{2} & -s_{1}\\
+-s_{2} & c_{2} & 0\\
+s_{1}c_{2} & s_{1}s_{2} & c_{1}
+\end{pmatrix},\begin{cases}
+c_{1}=\cos\theta & s_{1}=\sin\theta\\
+c_{2}=\cos\phi & s_{2}=\sin\phi\\
+c_{3}=\cos\gamma & s_{3}=\sin\gamma
+\end{cases}\\
+= & \begin{pmatrix}c_{1}c_{2} & -s_{2} & s_{1}c_{2}\\
+c_{1}s_{2} & c_{2} & s_{1}s_{2}\\
+-s_{1} & 0 & c_{1}
+\end{pmatrix}\begin{pmatrix}c_{3}c_{1}c_{2}+s_{3}s_{2} & c_{3}c_{1}s_{2}-c_{2}s_{3} & -c_{3}s_{1}\\
+c_{1}c_{2}s_{3}-c_{3}s_{2} & c_{3}c_{2}+c_{1}s_{3}s_{2} & -s_{3}s_{1}\\
+c_{2}s_{1} & s_{2}s_{1} & c_{1}
+\end{pmatrix}\\
+= & \begin{pmatrix}c_{1}^{2}c_{2}^{2}c_{3}+c_{3}s_{2}^{2}+c_{2}^{2}s_{1}^{2} & c_{1}s_{2}\left(c_{1}c_{2}c_{3}-s_{2}s_{3}\right)+c_{2}\left(-c_{1}c_{2}s_{3}-c_{3}s_{2}\right)+c_{2}s_{2}s_{1}^{2} & c_{1}c_{2}s_{1}-s_{1}\left(c_{1}c_{2}c_{3}-s_{2}s_{3}\right)\\
+c_{1}c_{2}\left(c_{1}c_{3}s_{2}+c_{2}s_{3}\right)-s_{2}\left(c_{2}c_{3}-c_{1}s_{2}s_{3}\right)+c_{2}s_{2}s_{1}^{2} & c_{1}^{2}c_{3}s_{2}^{2}+s_{2}^{2}s_{1}^{2}+c_{2}^{2}c_{3} & c_{1}s_{2}s_{1}-s_{1}\left(c_{1}c_{3}s_{2}+c_{2}s_{3}\right)\\
+-c_{1}c_{2}c_{3}s_{1}-s_{2}s_{1}s_{3}+c_{1}c_{2}s_{1} & -c_{1}c_{3}s_{2}s_{1}+c_{2}s_{1}s_{3}+c_{1}s_{2}s_{1} & c_{3}s_{1}^{2}+c_{1}^{2}
+\end{pmatrix}
+\end{aligned}
+\]
+
+\paragraph{quaternion}\label{quaternion-2}
+
+\url{https://math.stackexchange.com/questions/328117/how-does-one-derive-this-rotation-quaternion-formula}
+
+\[
+\begin{aligned}
+ & q=a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d,\begin{cases}
+q\in\mathbb{H}\\
+\mathrm{i}^{2}=\mathrm{j}^{2}=\mathrm{k}^{2}=-1=\mathrm{i}\mathrm{j}\mathrm{k} & \Rightarrow\mathrm{i}\mathrm{j}=\mathrm{k}\\
+a,b,c,d\in\mathbb{R} & \Leftrightarrow\left\langle a,b,c,d\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & w=t+x\mathrm{i}+y\mathrm{j}+z\mathrm{k}=t+\mathrm{i}x+\mathrm{j}y+\mathrm{k}z,\begin{cases}
+w\in\mathbb{H}\\
+\mathrm{i}^{2}=\mathrm{j}^{2}=\mathrm{k}^{2}=-1=\mathrm{i}\mathrm{j}\mathrm{k} & \Rightarrow\mathrm{i}\mathrm{j}=\mathrm{k}\\
+t,x,y,z\in\mathbb{R} & \Leftrightarrow\left\langle t,x,y,z\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & t+\begin{pmatrix}\mathrm{i} & \mathrm{j} & \mathrm{k}\end{pmatrix}\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\begin{pmatrix}\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\end{pmatrix}\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\begin{pmatrix}\boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}_{{\scriptscriptstyle 3}}\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\boldsymbol{x},\begin{cases}
+\boldsymbol{e}_{{\scriptscriptstyle 1}}=\boldsymbol{i}=\mathrm{i}\\
+\boldsymbol{e}_{{\scriptscriptstyle 2}}=\boldsymbol{j}=\mathrm{j}\\
+\boldsymbol{e}_{{\scriptscriptstyle 3}}=\boldsymbol{k}=\mathrm{k}
+\end{cases}
+\end{aligned}
+\]
+
+\[
+q_{{\scriptscriptstyle 1}}q_{{\scriptscriptstyle 2}}=\left(x_{{\scriptscriptstyle 10}}x_{{\scriptscriptstyle 20}}-\boldsymbol{x}_{{\scriptscriptstyle 1}}\cdot\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)+\left(x_{{\scriptscriptstyle 10}}\boldsymbol{x}_{{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 20}}\boldsymbol{x}_{{\scriptscriptstyle 1}}+\boldsymbol{x}_{{\scriptscriptstyle 1}}\times\boldsymbol{x}_{{\scriptscriptstyle 2}}\right)
+\]
+
+\[
+QP=\left(Q_{{\scriptscriptstyle 0}}P_{{\scriptscriptstyle 0}}-\boldsymbol{Q}\cdot\boldsymbol{P}\right)+\left(Q_{{\scriptscriptstyle 0}}\boldsymbol{P}+P_{{\scriptscriptstyle 0}}\boldsymbol{Q}+\boldsymbol{Q}\times\boldsymbol{P}\right)
+\]
+
+\[
+q=q_{{\scriptscriptstyle 0}}+\boldsymbol{q}=q_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 1}}\mathrm{i}+q_{{\scriptscriptstyle 2}}\mathrm{j}+q_{{\scriptscriptstyle 3}}\mathrm{k}=q_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 1}}\boldsymbol{\mathrm{i}}+q_{{\scriptscriptstyle 2}}\boldsymbol{\mathrm{j}}+q_{{\scriptscriptstyle 3}}\boldsymbol{\mathrm{k}}
+\]
+
+\[
+\begin{aligned}
+q^{*}=\overline{q}= & \overline{q_{{\scriptscriptstyle 0}}+\boldsymbol{q}}=q_{{\scriptscriptstyle 0}}-\boldsymbol{q}\\
+= & \overline{q_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 1}}\mathrm{i}+q_{{\scriptscriptstyle 2}}\mathrm{j}+q_{{\scriptscriptstyle 3}}\mathrm{k}}=q_{{\scriptscriptstyle 0}}-q_{{\scriptscriptstyle 1}}\mathrm{i}-q_{{\scriptscriptstyle 2}}\mathrm{j}-q_{{\scriptscriptstyle 3}}\mathrm{k}\\
+= & q_{{\scriptscriptstyle 0}}-q_{{\scriptscriptstyle 1}}\boldsymbol{\mathrm{i}}-q_{{\scriptscriptstyle 2}}\boldsymbol{\mathrm{j}}-q_{{\scriptscriptstyle 3}}\boldsymbol{\mathrm{k}}
+\end{aligned}
+\]
+
+\[
+v=v_{{\scriptscriptstyle 0}}+\boldsymbol{v}=v_{{\scriptscriptstyle 0}}+v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}=v_{{\scriptscriptstyle 0}}+v_{{\scriptscriptstyle 1}}\boldsymbol{\mathrm{i}}+v_{{\scriptscriptstyle 2}}\boldsymbol{\mathrm{j}}+v_{{\scriptscriptstyle 3}}\boldsymbol{\mathrm{k}}
+\]
+
+\[
+\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}=v_{{\scriptscriptstyle 1}}\boldsymbol{\mathrm{i}}+v_{{\scriptscriptstyle 2}}\boldsymbol{\mathrm{j}}+v_{{\scriptscriptstyle 3}}\boldsymbol{\mathrm{k}}
+\]
+
+\[
+\begin{aligned}
+qv= & \left(q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+v_{{\scriptscriptstyle 0}}\boldsymbol{q}+\boldsymbol{q}\times\boldsymbol{v}\right)\\
+ & \overset{v_{{\scriptscriptstyle 0}}=0}{=}\left(q_{{\scriptscriptstyle 0}}0-\boldsymbol{q}\cdot\boldsymbol{v}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+0\boldsymbol{q}+\boldsymbol{q}\times\boldsymbol{v}\right)\\
+ & =\left(-\boldsymbol{q}\cdot\boldsymbol{v}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{q}\times\boldsymbol{v}\right)\\
+q\boldsymbol{v}= & \left(-\boldsymbol{q}\cdot\boldsymbol{v}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{q}\times\boldsymbol{v}\right)
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+v\overline{q}= & \left(v_{{\scriptscriptstyle 0}}q_{{\scriptscriptstyle 0}}-\boldsymbol{v}\cdot\overline{\boldsymbol{q}}\right)+\left(v_{{\scriptscriptstyle 0}}\overline{\boldsymbol{q}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{v}\times\overline{\boldsymbol{q}}\right)\\
+ & \overset{v_{{\scriptscriptstyle 0}}=0}{=}\left(0q_{{\scriptscriptstyle 0}}-\boldsymbol{v}\cdot\overline{\boldsymbol{q}}\right)+\left(0\overline{\boldsymbol{q}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{v}\times\overline{\boldsymbol{q}}\right)\\
+ & =\left(-\boldsymbol{v}\cdot\overline{\boldsymbol{q}}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{v}\times\overline{\boldsymbol{q}}\right)\\
+ & =\left(-\boldsymbol{v}\cdot\left(-\boldsymbol{q}\right)\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{v}\times\left(-\boldsymbol{q}\right)\right)\\
+ & =\left(\boldsymbol{v}\cdot\boldsymbol{q}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}-\boldsymbol{v}\times\boldsymbol{q}\right)\\
+\boldsymbol{v}\overline{q}= & \left(\boldsymbol{v}\cdot\boldsymbol{q}\right)+\left(q_{{\scriptscriptstyle 0}}\boldsymbol{v}-\boldsymbol{v}\times\boldsymbol{q}\right)
+\end{aligned}
+\]
+
+\url{https://math.stackexchange.com/questions/41574/can-eulers-identity-be-extended-to-quaternions}
+
+\[
+\begin{aligned}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+= & a+r\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r},r^{2}=b^{2}+c^{2}+d^{2}\\
+= & a+\theta\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{\theta},\theta^{2}=b^{2}+c^{2}+d^{2}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\left(\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\right)^{2}= & \dfrac{-b^{2}-c^{2}-d^{2}+bc\left(\mathrm{i}\mathrm{j}+\mathrm{j}\mathrm{i}\right)+cd\left(\mathrm{j}\mathrm{k}+\mathrm{k}\mathrm{j}\right)+db\left(\mathrm{k}\mathrm{i}+\mathrm{i}\mathrm{k}\right)}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}+bc\left(\mathrm{k}-\mathrm{k}\right)+cd\left(\mathrm{i}-\mathrm{i}\right)+db\left(\mathrm{j}-\mathrm{j}\right)}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}+bc0+cd0+db0}{r^{2}}=\dfrac{-b^{2}-c^{2}-d^{2}}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}}{b^{2}+c^{2}+d^{2}}=-1\\
+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}= & \pm\sqrt{-1}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\mathrm{e}^{q}= & \mathrm{e}^{a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}\\
+= & \mathrm{e}^{a+r\sqrt{-1}}=\mathrm{e}^{a}\mathrm{e}^{r\sqrt{-1}}=\mathrm{e}^{a+\theta\sqrt{-1}}=\mathrm{e}^{a}\mathrm{e}^{\theta\sqrt{-1}}\\
+= & \mathrm{e}^{a}\left(\cos r+\sqrt{-1}\sin r\right)=\mathrm{e}^{a}\left(\cos\theta+\sqrt{-1}\sin\theta\right)\\
+= & \mathrm{e}^{a}\left(\cos r+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\sin r\right)=\mathrm{e}^{a}\left[\cos r+\left(\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\right)\dfrac{\sin r}{r}\right]\\
+= & \mathrm{e}^{a}\left(\cos\theta+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{\theta}\sin\theta\right)=\mathrm{e}^{a}\left[\cos\theta+\left(\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\right)\dfrac{\sin\theta}{\theta}\right]
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+= & a+r\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r},r^{2}=b^{2}+c^{2}+d^{2}\\
+= & \sqrt{a^{2}+r^{2}}\left(\dfrac{a}{\sqrt{a^{2}+r^{2}}}+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\dfrac{r}{\sqrt{a^{2}+r^{2}}}\right)\\
+= & \rho\left(\cos\phi+\sqrt{-1}\sin\phi\right),\begin{cases}
+\rho=\sqrt{a^{2}+r^{2}}\\
+\tan\phi=\dfrac{r}{a}\Leftrightarrow\phi=\arctan\dfrac{r}{a}
+\end{cases}\\
+= & \rho\mathrm{e}^{\phi\sqrt{-1}}\\
+q= & \rho\mathrm{e}^{\phi\sqrt{-1}},\begin{cases}
+q=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+\rho=\sqrt{a^{2}+r^{2}}=\sqrt{a^{2}+b^{2}+c^{2}+d^{2}}\\
+\tan\phi=\dfrac{r}{a}\Leftrightarrow\phi=\arctan\dfrac{r}{a}=\arctan\dfrac{\pm\sqrt{b^{2}+c^{2}+d^{2}}}{a}
+\end{cases}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\rho\mathrm{e}^{-\phi\sqrt{-1}}= & \rho\left[\cos\left(-\phi\right)+\sqrt{-1}\sin\left(-\phi\right)\right]\\
+= & \rho\left[\cos\phi-\sqrt{-1}\sin\phi\right]\\
+= & \sqrt{a^{2}+r^{2}}\left[\dfrac{a}{\sqrt{a^{2}+r^{2}}}-\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\dfrac{r}{\sqrt{a^{2}+r^{2}}}\right]\\
+= & a-\left(\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\right)=a-\mathrm{i}b-\mathrm{j}c-\mathrm{k}d=\overline{q}=q^{*}
+\end{aligned}
+\]
+
 \subsection{octonion}\label{octonion}
+
+\section{Krasjet}\label{krasjet}
+
+\url{https://github.com/Krasjet/quaternion}
+
+\url{https://krasjet.github.io/quaternion/}
+
+\url{https://krasjet.github.io/quaternion/bonus_gimbal_lock.pdf}
+
+\subsection{Rodrigues rotation}\label{rodrigues-rotation}
+
+\[
+\boldsymbol{v}\rightarrow\boldsymbol{v}^{\prime}
+\]
+
+\[
+\boldsymbol{v}\xrightarrow{\text{rotate about }\boldsymbol{u}}\boldsymbol{v}^{\prime}
+\]
+
+\$\$
+
+\$\$
+
+\$\$
+
+\$\$
+
+\$\$
+
+\$\$
+
+\$\$
+
+\$\$
+
+\$\$
+
+\$\$
+
+\subsection{dual quaternion}\label{dual-quaternion}
 
 \section{3Blue1Brown}\label{blue1brown}
 
@@ -13679,6 +14481,18 @@ y
 = & I+\dfrac{\theta}{n}R_{{\scriptscriptstyle \frac{\pi}{2}}}
 \end{aligned}
 \]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\lim_{n\rightarrow\infty}R_{{\scriptscriptstyle \frac{\theta}{n}}}=\lim_{n\rightarrow\infty}\begin{pmatrix}\cos\frac{\theta}{n} & -\sin\frac{\theta}{n}\\
+\sin\frac{\theta}{n} & \cos\frac{\theta}{n}
+\end{pmatrix}=\begin{pmatrix}1 & -\frac{\theta}{n}\\
+\frac{\theta}{n} & 1
+\end{pmatrix}=I+\dfrac{\theta}{n}R_{{\scriptscriptstyle \frac{\pi}{2}}}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \[
 \begin{aligned}
@@ -15691,6 +16505,18 @@ T:V\rightarrow W\\
   arrow vector
 \item
   number
+
+  \begin{itemize}
+  \tightlist
+  \item
+    integer
+  \item
+    real
+  \item
+    complex
+  \item
+    quaternion
+  \end{itemize}
 \item
   function
 
@@ -15713,6 +16539,38 @@ T:V\rightarrow W\\
   \end{itemize}
 \item
   reciprocal space
+\end{itemize}
+
+applications in different disciplines
+
+\begin{itemize}
+\tightlist
+\item
+  math
+
+  \begin{itemize}
+  \tightlist
+  \item
+    recursive number series
+  \item
+    Fourier series
+  \end{itemize}
+\item
+  physics
+
+  \begin{itemize}
+  \tightlist
+  \item
+    electrical circuit: linear response / \href{https://en.wikipedia.org/wiki/Superposition_theorem}{superposition theorem} in \href{https://en.wikipedia.org/wiki/Linear_circuit}{linear circuit} / linear network
+  \end{itemize}
+\item
+  chemistry
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://en.wikipedia.org/wiki/Chemical_equation\#Balancing_chemical_equations}{balancing chemical equation}
+  \end{itemize}
 \end{itemize}
 
 \subsection{reciprocal space}\label{reciprocal-space}
@@ -16030,9 +16888,258 @@ i.e.~\textbf{vector space is a set of functionals or mappings from its dual spac
 
 \chapter{\texorpdfstring{\(\mathrm{d}f\)}{\textbackslash mathrm\{d\}f}}\label{mathrmdf}
 
+\section{\texorpdfstring{\(\mathrm{d}f\) decomposed with partials as a set of basis in vector space}{\textbackslash mathrm\{d\}f decomposed with partials as a set of basis in vector space}}\label{mathrmdf-decomposed-with-partials-as-a-set-of-basis-in-vector-space}
+
+\[
+f=\left\{ f_{{\scriptscriptstyle i}}\right\} =\left\{ f_{{\scriptscriptstyle 1}},f_{{\scriptscriptstyle 2}},\cdots\right\} =\left\{ f,g,\cdots\right\} 
+\]
+
+\[
+\boldsymbol{v}:f\rightarrow F
+\]
+
+\[
+\boldsymbol{v}\left(af+bg\right)=a\boldsymbol{v}\left(f\right)+b\boldsymbol{v}\left(g\right)
+\]
+
+\[
+\boldsymbol{v}\left(fg\right)=f|_{{\scriptscriptstyle P}}\boldsymbol{v}\left(g\right)+\boldsymbol{v}\left(f\right)g|_{{\scriptscriptstyle P}}
+\]
+
+\[
+\dfrac{\mathrm{d}}{\mathrm{d}x}\left[f\left(x\right)g\left(x\right)\right]|_{x=x_{{\scriptscriptstyle 0}}}=f\left(x_{{\scriptscriptstyle 0}}\right)\dfrac{\mathrm{d}}{\mathrm{d}x}g\left(x\right)|_{x=x_{{\scriptscriptstyle 0}}}+\dfrac{\mathrm{d}}{\mathrm{d}x}f\left(x\right)|_{x=x_{{\scriptscriptstyle 0}}}g\left(x_{{\scriptscriptstyle 0}}\right)
+\]
+
+\[
+V=\left\{ \boldsymbol{v}\middle|\boldsymbol{v}:f\rightarrow F\right\} 
+\]
+
+\[
+\begin{aligned}
+f= & f\left(\boldsymbol{x}\right)\\
+= & f\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle j}},\cdots,x_{{\scriptscriptstyle n}}\right)\\
+= & f\left(x^{{\scriptscriptstyle 1}},\cdots,x^{{\scriptscriptstyle j}},\cdots,x^{{\scriptscriptstyle n}}\right)
+\end{aligned}
+\]
+
+\[
+\boldsymbol{x}=\left\langle x^{{\scriptscriptstyle 1}},\cdots,x^{{\scriptscriptstyle j}},\cdots,x^{{\scriptscriptstyle n}}\right\rangle 
+\]
+
+\[
+\boldsymbol{x}\left(t\right)=\left\langle x^{{\scriptscriptstyle 1}}\left(t\right),\cdots,x^{{\scriptscriptstyle j}}\left(t\right),\cdots,x^{{\scriptscriptstyle n}}\left(t\right)\right\rangle 
+\]
+
+\[
+\begin{aligned}
+\dfrac{\mathrm{d}f}{\mathrm{d}t}= & \dfrac{\mathrm{d}x^{{\scriptscriptstyle 1}}}{\mathrm{d}t}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle 1}}}+\cdots+\dfrac{\mathrm{d}x^{{\scriptscriptstyle j}}}{\mathrm{d}t}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}+\cdots+\dfrac{\mathrm{d}x^{{\scriptscriptstyle n}}}{\mathrm{d}t}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle n}}}\\
+= & \cdots+\dfrac{\mathrm{d}x^{{\scriptscriptstyle j}}}{\mathrm{d}t}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}+\cdots=\dfrac{\mathrm{d}x^{{\scriptscriptstyle j}}}{\mathrm{d}t}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}=\dfrac{\mathrm{d}x^{{\scriptscriptstyle j}}}{\mathrm{d}t}\partial_{{\scriptscriptstyle j}}f
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+V= & \mathrm{span}\left\{ \boldsymbol{e}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{e}_{{\scriptscriptstyle j}},\cdots,\boldsymbol{e}_{{\scriptscriptstyle n}}\right\} \\
+= & \mathrm{span}\left\{ \dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}},\cdots,\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}},\cdots,\dfrac{\partial}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\right\} \\
+= & \mathrm{span}\left\{ \boldsymbol{\partial}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{\partial}_{{\scriptscriptstyle j}},\cdots,\boldsymbol{\partial}_{{\scriptscriptstyle n}}\right\} \\
+= & \left\{ \boldsymbol{\partial}_{{\scriptscriptstyle t}}\middle|\boldsymbol{\partial}_{{\scriptscriptstyle t}}=a_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle j}}\boldsymbol{\partial}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle j}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right\} \\
+= & \left\{ \dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}\middle|\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}=a_{{\scriptscriptstyle 1}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle j}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle n}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\right\} 
+\end{aligned}
+\]
+
+\section{dual space of span of partials}\label{dual-space-of-span-of-partials}
+
+\[
+V^{*}=\left\{ \boldsymbol{\omega}_{{\scriptscriptstyle f}}\middle|\boldsymbol{\omega}_{{\scriptscriptstyle f}}:V\rightarrow F\right\} 
+\]
+
+\[
+\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\in F
+\]
+
+\[
+\begin{aligned}
+\boldsymbol{\omega}_{{\scriptscriptstyle fg}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\dfrac{\partial fg}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}= & f|_{{\scriptscriptstyle P}}\dfrac{\partial g}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}g|_{{\scriptscriptstyle P}}\\
+= & f|_{{\scriptscriptstyle P}}\boldsymbol{\omega}_{{\scriptscriptstyle g}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)+\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)g|_{{\scriptscriptstyle P}}
+\end{aligned}
+\]
+
+\[
+\boldsymbol{\omega}_{{\scriptscriptstyle x}^{{\scriptscriptstyle i}}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle x}^{{\scriptscriptstyle i}}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}=\delta_{{\scriptscriptstyle ij}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}
+\]
+
+\[
+\begin{aligned}
+V^{*}= & \left\{ \boldsymbol{\omega}_{{\scriptscriptstyle f}}\middle|\boldsymbol{\omega}_{{\scriptscriptstyle f}}:V\rightarrow F\right\} =\left\{ \boldsymbol{\omega}_{{\scriptscriptstyle f}}\middle|\begin{cases}
+\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\in F\\
+\boldsymbol{\omega}_{{\scriptscriptstyle fg}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=f|_{{\scriptscriptstyle P}}\boldsymbol{\omega}_{{\scriptscriptstyle g}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)+\boldsymbol{\omega}_{{\scriptscriptstyle f}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)g|_{{\scriptscriptstyle P}}\\
+\boldsymbol{\omega}_{{\scriptscriptstyle x}^{{\scriptscriptstyle i}}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\boldsymbol{\omega}_{{\scriptscriptstyle x}^{{\scriptscriptstyle i}}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}=\delta_{{\scriptscriptstyle ij}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}
+\end{cases}\right\} \\
+= & \left\{ \mathrm{d}f\middle|\mathrm{d}f:V\rightarrow F\right\} =\left\{ \mathrm{d}f\middle|\begin{cases}
+\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}f\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\in F\\
+\mathrm{d}fg\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=f|_{{\scriptscriptstyle P}}\left(\mathrm{d}g\right)+\left(\mathrm{d}f\right)g|_{{\scriptscriptstyle P}}\\
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}x^{{\scriptscriptstyle i}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}=\delta_{{\scriptscriptstyle ij}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}
+\end{cases}\right\} 
+\end{aligned}
+\]
+
+\[
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\delta_{{\scriptscriptstyle ij}}=\boldsymbol{e}^{{\scriptscriptstyle i}}\cdot\boldsymbol{e}_{{\scriptscriptstyle j}}\Rightarrow\begin{cases}
+\boldsymbol{e}^{{\scriptscriptstyle i}}=\mathrm{d}x^{{\scriptscriptstyle i}}\\
+\boldsymbol{e}_{{\scriptscriptstyle j}}=\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}
+\end{cases}
+\]
+
+\[
+\begin{aligned}
+V^{*}= & \left\{ \mathrm{d}f\middle|\mathrm{d}f:V\rightarrow F\right\} =\left\{ \mathrm{d}f\middle|\begin{cases}
+\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}f\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\in F\\
+\mathrm{d}fg\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=f|_{{\scriptscriptstyle P}}\left(\mathrm{d}g\right)+\left(\mathrm{d}f\right)g|_{{\scriptscriptstyle P}}\\
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}x^{{\scriptscriptstyle i}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}=\delta_{{\scriptscriptstyle ij}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}
+\end{cases}\right\} \\
+= & \mathrm{span}\left\{ \mathrm{d}x^{{\scriptscriptstyle 1}},\cdots,\mathrm{d}x^{{\scriptscriptstyle i}},\cdots,\mathrm{d}x^{{\scriptscriptstyle n}}\right\} =\mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle 1}},\cdots,\boldsymbol{e}^{{\scriptscriptstyle j}},\cdots,\boldsymbol{e}^{{\scriptscriptstyle n}}\right\} 
+\end{aligned}
+\]
+
+\section{directional derivative}\label{directional-derivative}
+
+\[
+\begin{aligned}
+\mathrm{d}f\left(\boldsymbol{v}\right)= & \mathrm{d}f\left(v_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=v_{{\scriptscriptstyle j}}\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)\\
+= & v_{{\scriptscriptstyle j}}\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\\
+= & v_{{\scriptscriptstyle 1}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}++v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+v_{{\scriptscriptstyle n}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\\
+= & \begin{pmatrix}v_{{\scriptscriptstyle 1}} & \cdots & v_{{\scriptscriptstyle j}} & \cdots & v_{{\scriptscriptstyle n}}\end{pmatrix}\boldsymbol{\nabla}f
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\overset{\frown}{PQ}=C\left(t\right)-C\left(0\right)=Q-P
+\]
+
+\[
+\boldsymbol{v}=\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}
+\]
+
+\[
+\begin{aligned}
+\mathrm{d}f\left(s\boldsymbol{v}\right)= & \mathrm{d}f\left(s\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}\right)=s\dfrac{\partial f}{\partial t}|_{{\scriptscriptstyle P}}\\
+= & s\boldsymbol{v}\left(f\right)=s\cdot\lim_{t\rightarrow0}\dfrac{f\left(C\left(t\right)\right)-f\left(C\left(0\right)\right)}{t}\\
+\approx & s\cdot\dfrac{f\left(Q\right)-f\left(P\right)}{s}=f\left(Q\right)-f\left(P\right)=\Delta f
+\end{aligned}
+\]
+
+\section{coefficient of linear combination for vector space and dual space}\label{coefficient-of-linear-combination-for-vector-space-and-dual-space}
+
+\[
+\begin{aligned}
+V= & \left\{ \boldsymbol{v}\middle|\boldsymbol{v}:f\rightarrow F\right\} \\
+= & \mathrm{span}\left\{ \boldsymbol{e}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{e}_{{\scriptscriptstyle j}},\cdots,\boldsymbol{e}_{{\scriptscriptstyle n}}\right\} \\
+= & \mathrm{span}\left\{ \dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}},\cdots,\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}},\cdots,\dfrac{\partial}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\right\} =\mathrm{span}\left\{ \boldsymbol{\partial}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{\partial}_{{\scriptscriptstyle j}},\cdots,\boldsymbol{\partial}_{{\scriptscriptstyle n}}\right\} \\
+= & \left\{ \boldsymbol{\partial}_{{\scriptscriptstyle t}}\middle|\boldsymbol{\partial}_{{\scriptscriptstyle t}}=a_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle j}}\boldsymbol{\partial}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle j}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right\} \\
+= & \left\{ \dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}\middle|\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}=a_{{\scriptscriptstyle 1}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle j}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle n}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\right\} \\
+V^{*}= & \left\{ \mathrm{d}f\middle|\mathrm{d}f:V\rightarrow F\right\} \\
+= & \mathrm{span}\left\{ \boldsymbol{e}^{{\scriptscriptstyle 1}},\cdots,\boldsymbol{e}^{{\scriptscriptstyle i}},\cdots,\boldsymbol{e}^{{\scriptscriptstyle n}}\right\} \\
+= & \mathrm{span}\left\{ \mathrm{d}x^{{\scriptscriptstyle 1}},\cdots,\mathrm{d}x^{{\scriptscriptstyle i}},\cdots,\mathrm{d}x^{{\scriptscriptstyle n}}\right\} \\
+= & \left\{ \mathrm{d}f\middle|\mathrm{d}f=b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}=b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}\right\} \\
+= & \left\{ \mathrm{d}f\middle|\mathrm{d}f=b^{{\scriptscriptstyle 1}}\mathrm{d}x^{{\scriptscriptstyle 1}}+\cdots+b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}+\cdots+b^{{\scriptscriptstyle n}}\mathrm{d}x^{{\scriptscriptstyle n}}\right\} 
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+or more simply to be comparison
+
+\[
+\begin{array}{ccccccccccc}
+V & =\mathrm{span}\{ & \boldsymbol{e}_{{\scriptscriptstyle j}}= & \partial_{{\scriptscriptstyle j}} & \}=\{ & \boldsymbol{v}= & \partial_{{\scriptscriptstyle t}}|_{{\scriptscriptstyle P}} & =a_{{\scriptscriptstyle j}}\thinspace\boldsymbol{e}_{{\scriptscriptstyle j}}= & a_{{\scriptscriptstyle j}}\ \partial_{{\scriptscriptstyle j}}|_{{\scriptscriptstyle P}} & :f\rightarrow F & \}\\
+V^{*} & =\mathrm{span}\{ & \boldsymbol{e}^{{\scriptscriptstyle i}}= & \mathrm{d}x^{{\scriptscriptstyle i}} & \}=\{ & \boldsymbol{\omega}= & \mathrm{d}f & =b^{{\scriptscriptstyle i}}\thinspace\boldsymbol{e}^{{\scriptscriptstyle i}}= & b^{{\scriptscriptstyle i}}\ \mathrm{d}x^{{\scriptscriptstyle i}} & :V\rightarrow F & \}
+\end{array}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{aligned}
+ & \begin{cases}
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}x^{{\scriptscriptstyle i}}\left(\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}=\delta_{{\scriptscriptstyle ij}}=\begin{cases}
+1 & i=j\\
+0 & i\ne j
+\end{cases}\\
+\boldsymbol{\partial}_{{\scriptscriptstyle t}}=a_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}=a_{{\scriptscriptstyle j}}\boldsymbol{\partial}_{{\scriptscriptstyle j}}\Leftrightarrow\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}=a_{{\scriptscriptstyle 1}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle j}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+a_{{\scriptscriptstyle n}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}
+\end{cases}\\
+\Rightarrow & \begin{cases}
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle t}}\right)=\mathrm{d}x^{{\scriptscriptstyle i}}\left(\dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}|_{{\scriptscriptstyle P}}\\
+\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle t}}\right)=\mathrm{d}x^{{\scriptscriptstyle i}}\left(a_{{\scriptscriptstyle j}}\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=a_{{\scriptscriptstyle j}}\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=a_{{\scriptscriptstyle j}}\delta_{{\scriptscriptstyle ij}}=a_{{\scriptscriptstyle i}}
+\end{cases}\Rightarrow a_{{\scriptscriptstyle i}}=\mathrm{d}x^{{\scriptscriptstyle i}}\left(\boldsymbol{\partial}_{{\scriptscriptstyle t}}\right)=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}|_{{\scriptscriptstyle P}}\\
+\Rightarrow & a_{{\scriptscriptstyle i}}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}|_{{\scriptscriptstyle P}}\Rightarrow a_{{\scriptscriptstyle j}}=\dfrac{\partial x^{{\scriptscriptstyle j}}}{\partial t}|_{{\scriptscriptstyle P}}=\partial_{{\scriptscriptstyle t}}x^{{\scriptscriptstyle j}}|_{{\scriptscriptstyle P}}\\
+\Rightarrow & \dfrac{\partial}{\partial t}|_{{\scriptscriptstyle P}}=a_{{\scriptscriptstyle i}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}|_{{\scriptscriptstyle P}}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}|_{{\scriptscriptstyle P}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}|_{{\scriptscriptstyle P}}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}|_{{\scriptscriptstyle P}}\Rightarrow\dfrac{\partial}{\partial t}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}\\
+\Rightarrow & \partial_{{\scriptscriptstyle t}}|_{{\scriptscriptstyle P}}=\dfrac{\partial x^{{\scriptscriptstyle j}}}{\partial t}\partial_{{\scriptscriptstyle j}}|_{{\scriptscriptstyle P}}\Leftrightarrow\partial_{{\scriptscriptstyle t}}|_{{\scriptscriptstyle P}}=\partial_{{\scriptscriptstyle t}}x^{{\scriptscriptstyle j}}\partial_{{\scriptscriptstyle j}}|_{{\scriptscriptstyle P}}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\mathrm{d}f= & b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}=b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}\\
+\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}=\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)= & b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}\cdot\boldsymbol{e}_{{\scriptscriptstyle j}}=b^{{\scriptscriptstyle i}}\delta_{{\scriptscriptstyle ij}}=b^{{\scriptscriptstyle j}}\\
+b^{{\scriptscriptstyle j}}= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}\\
+b^{{\scriptscriptstyle i}}= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle i}}}=\partial_{{\scriptscriptstyle i}}f\\
+\mathrm{d}f=b^{{\scriptscriptstyle i}}\boldsymbol{e}^{{\scriptscriptstyle i}}=b^{{\scriptscriptstyle i}}\mathrm{d}x^{{\scriptscriptstyle i}}= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}\\
+\mathrm{d}f= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}\\
+\mathrm{d}f= & \partial_{{\scriptscriptstyle i}}f\mathrm{d}x^{{\scriptscriptstyle i}}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{array}{ccccccccccc}
+V & =\mathrm{span}\{ & \boldsymbol{e}_{{\scriptscriptstyle j}}= & \partial_{{\scriptscriptstyle j}} & \}=\{ & \boldsymbol{v}= & \partial_{{\scriptscriptstyle t}}|_{{\scriptscriptstyle P}} & =a_{{\scriptscriptstyle j}}\thinspace\boldsymbol{e}_{{\scriptscriptstyle j}}= & \partial_{{\scriptscriptstyle t}}x^{{\scriptscriptstyle j}}\ \partial_{{\scriptscriptstyle j}}|_{{\scriptscriptstyle P}} & :f\rightarrow F & \}\\
+V^{*} & =\mathrm{span}\{ & \boldsymbol{e}^{{\scriptscriptstyle i}}= & \mathrm{d}x^{{\scriptscriptstyle i}} & \}=\{ & \boldsymbol{\omega}= & \mathrm{d}f & =b^{{\scriptscriptstyle i}}\thinspace\boldsymbol{e}^{{\scriptscriptstyle i}}= & \partial_{{\scriptscriptstyle i}}f\ \mathrm{d}x^{{\scriptscriptstyle i}} & :V\rightarrow F & \}
+\end{array}
+\]
+
+\section{change of basis / change of coordinate}\label{change-of-basis-change-of-coordinate}
+
+\[
+\dfrac{\partial}{\partial t}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial t}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}\overset{t=x^{\prime{\scriptscriptstyle j}}}{\Rightarrow}\dfrac{\partial}{\partial x^{\prime{\scriptscriptstyle j}}}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}=\dfrac{\partial x^{{\scriptscriptstyle 1}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 1}}}+\dfrac{\partial x^{{\scriptscriptstyle 2}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 2}}}+\dfrac{\partial x^{{\scriptscriptstyle 3}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle 3}}}
+\]
+
+\[
+\begin{aligned}
+\mathrm{d}f= & \dfrac{\partial f}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}\\
+f=x^{\prime{\scriptscriptstyle j}}\Downarrow\\
+\mathrm{d}x^{\prime{\scriptscriptstyle j}}= & \dfrac{\partial x^{\prime{\scriptscriptstyle j}}}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{cases}
+\dfrac{\partial}{\partial x^{\prime{\scriptscriptstyle j}}}=\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}=\sum\limits _{i}\dfrac{\partial x^{{\scriptscriptstyle i}}}{\partial x^{\prime{\scriptscriptstyle j}}}\dfrac{\partial}{\partial x^{{\scriptscriptstyle i}}}\\
+\mathrm{d}x^{\prime{\scriptscriptstyle j}}=\dfrac{\partial x^{\prime{\scriptscriptstyle j}}}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}=\sum\limits_{i}\dfrac{\partial x^{\prime{\scriptscriptstyle j}}}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}
+\end{cases}
+\]
+
+\chapter{determinant}\label{determinant}
+
 \chapter*{references}\label{references}
 \addcontentsline{toc}{chapter}{references}
-\begin{CJK}{UTF8}{bsmi}
+
 \phantomsection\label{refs}
 \begin{CSLReferences}{0}{0}
 \bibitem[\citeproctext]{ref-R-bookdown}
@@ -16080,6 +17187,5 @@ i.e.~\textbf{vector space is a set of functionals or mappings from its dual spac
 \CSLRightInline{Casler, M. D., Vermerris, W. \& Dixon, R. A. \href{https://doi.org/10.1007/s12155-015-9580-7}{Replication Concepts for Bioenergy Research Experiments}. \emph{BioEnergy Research} \textbf{8}, 1--16 (2015).}
 
 \end{CSLReferences}
-\end{CJK}
 
 \end{document}

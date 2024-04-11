@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.31)  6 APR 2024 19:49
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.31)  11 APR 2024 10:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4725,8 +4725,26 @@ Missing character: There is no 動 (U+52D5) in font [lmroman5-regular]:mapping=t
 Missing character: There is no 磁 (U+78C1) in font [lmroman5-regular]:mapping=tex-text;!
 Missing character: There is no 生 (U+751F) in font [lmroman5-regular]:mapping=tex-text;!
 Missing character: There is no 電 (U+96FB) in font [lmroman5-regular]:mapping=tex-text;!
-[270]
-Underfull \hbox (badness 10000) in paragraph at lines 13260--13261
+[270] [271] [272] [273] [274]
+Underfull \hbox (badness 6641) in paragraph at lines 13680--13681
+ \TU/lmr/bx/n/10 34.1.4.2.1.3 3D rotation about an arbitrary axis[] [][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] []
+ []
+
+[275]
+Underfull \vbox (badness 4967) has occurred while \output is active []
+
+[276]
+Overfull \hbox (148.51927pt too wide) detected at line 13868
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13872--13873
+ \TU/lmr/bx/n/10 34.1.4.2.2 quaternion[][] [][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][] [][] [][][][] [][] [][][] [][]
+ []
+
+[277] [278] [279]
+Underfull \hbox (badness 10000) in paragraph at lines 14062--14063
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][] [][] [][][] [][] [][][][][][] [][] [][][][][][][][][][] [][] [][] [][] [][][][][][][] [][] [][][][][][][][][][] [][]
  []
 
@@ -4738,79 +4756,76 @@ File: UTF8.chr 2021/10/16 4.8.5
 Missing character: There is no 四 (U+56DB) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 元 (U+5143) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 數 (U+6578) in font [lmroman10-regular]:mapping=tex-text;!
-[271] [272
+[280] [281] [282
 
 ]
 Chapter 35.
 
-Underfull \hbox (badness 10000) in paragraph at lines 13276--13277
+Underfull \hbox (badness 10000) in paragraph at lines 14078--14079
 [][][]$[][][][][] [] [] [] [][][][][] [] [][][][][][][][][][] [] [][][] [] [][][][][] [] [][][][][][][][][][] [][] [][][] [] [][][][][][][][][][] [][] [][][] [][] [][][][][] [][] [][][][][] [][] [][][][][][][][][][] [][]
  []
 
-[273] [274
+[283] [284
 
 ]
 Chapter 36.
-[275] [276
+[285] [286
 
 ]
 Chapter 37.
 
-Underfull \hbox (badness 10000) in paragraph at lines 13331--13332
+Underfull \hbox (badness 10000) in paragraph at lines 14133--14134
 [][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] [][][][][] [] [][][][][][][][][][][][] [] [][][][][][][][][][][] [] [][][][][][][][][][][][] [] [][] [] [][][] [] [][][][][] []
  []
 
-[277]
-Underfull \hbox (badness 10000) in paragraph at lines 13381--13382
+[287]
+Underfull \hbox (badness 10000) in paragraph at lines 14183--14184
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][] [][] [][][] [][] [][] [][] [][][] [][] [][][][][][] [][] [][][][][][] [][] [][][][][][][][][][][] [][] [][][][][][] [][]
  []
 
 File: 202403281312-group-theory_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use 202403281312-group-theory_files/figure-latex/unnamed-chunk-3-1.pdf>
-[278] [279] [280]
-Overfull \hbox (13.847pt too wide) detected at line 13629
+[288] [289] [290]
+Overfull \hbox (13.847pt too wide) detected at line 14431
 [][]
  []
 
-[281]
-Underfull \hbox (badness 10000) in paragraph at lines 13746--13747
+[291]
+Underfull \hbox (badness 10000) in paragraph at lines 14560--14561
 [][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][][][][][][] [] [][][] [] [][][][] [] [][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][] [] [][] [] [][][][][][][][][][] [] [][][][][] [] [][][] [][]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 13819--13819
+[292]
+Underfull \hbox (badness 10000) in paragraph at lines 14633--14633
 [][][][][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][][][][][][] [] [][][] [] [][][][] [] [][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][] [] [][] [] [][][][][][][][][][] [] [][][][][] [] [][][][] [][] [][][][][][][][][][][] []
  []
 
-[282]
-Underfull \vbox (badness 2111) has occurred while \output is active []
-
-[283]
+[293]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[284]
-Overfull \hbox (13.48851pt too wide) detected at line 14191
+[294]
+Overfull \hbox (13.48851pt too wide) detected at line 15005
 [][]
  []
 
 
 Underfull \vbox (badness 6741) has occurred while \output is active []
 
-[285]
-Overfull \hbox (3.86836pt too wide) in paragraph at lines 14213--14221
+[295]
+Overfull \hbox (3.86836pt too wide) in paragraph at lines 15027--15035
 []\TU/lmr/m/n/10 Let $[] [] [] [] [] []
  []
 
-[286]
-Underfull \hbox (badness 10000) in paragraph at lines 14262--14263
+[296]
+Underfull \hbox (badness 10000) in paragraph at lines 15076--15077
 [][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][][][][][][] [] [][][] [] [][][][] [] [][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][] [] [][] [] [][][][][][][][][][] [] [][][][][] [] [][][][] [][]
  []
 
-[287] [288] [289] [290
+[297] [298] [299] [300
 
 ]
 Chapter 38.
-[291] [292
+[301] [302
 
 ]
 Chapter 39.
@@ -4828,17 +4843,17 @@ Missing character: There is no 對 (U+5C0D) in font [lmroman10-regular]:mapping=
 Missing character: There is no 偶 (U+5076) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 空 (U+7A7A) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 間 (U+9593) in font [lmroman10-regular]:mapping=tex-text;!
-[293] [294] [295]
-Overfull \hbox (29.8346pt too wide) detected at line 15002
+[303] [304] [305]
+Overfull \hbox (29.8346pt too wide) detected at line 15816
 [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
-[296]
-Overfull \hbox (29.8346pt too wide) detected at line 15155
+[306]
+Overfull \hbox (29.8346pt too wide) detected at line 15969
 [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
-[297] [298] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[307] [308] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -4856,15 +4871,15 @@ Missing character: There is no 量 (U+91CF) in font [lmroman10-regular]:mapping=
 Missing character: There is no 空 (U+7A7A) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 間 (U+9593) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 15297--15298
+Underfull \hbox (badness 10000) in paragraph at lines 16111--16112
 [][][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] [] [][][] [][] [][][] [][] [][] [][] [][][] [][] [][][][][][] [][] [][][][] [][] [][] [][] [] [][] [][] [][] [] [][] [][][][][][] [][]
  []
 
-[299]
+[309]
 Underfull \vbox (badness 6016) has occurred while \output is active []
 
-[300] [301]
-Overfull \hbox (51.86703pt too wide) detected at line 15469
+[310] [311]
+Overfull \hbox (51.86703pt too wide) detected at line 16283
 [][]
  []
 
@@ -4877,7 +4892,7 @@ Missing character: There is no 雙 (U+96D9) in font [lmroman10-regular]:mapping=
 Missing character: There is no 重 (U+91CD) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 對 (U+5C0D) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 偶 (U+5076) in font [lmroman10-regular]:mapping=tex-text;!
-[302]
+[312]
 Chapter 40.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -4896,17 +4911,17 @@ File: 202403311536-vector-space_files/figure-latex/vector-construction-1.pdf Gra
 
 Underfull \vbox (badness 5446) has occurred while \output is active []
 
-[303
+[313
 
 ]
-Overfull \hbox (18.17424pt too wide) detected at line 15605
+Overfull \hbox (18.17424pt too wide) detected at line 16419
 [][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[304] [305] [306] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[314] [315] [316] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -4915,42 +4930,46 @@ Missing character: There is no 倒 (U+5012) in font [lmroman10-regular]:mapping=
 Missing character: There is no 易 (U+6613) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 空 (U+7A7A) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 間 (U+9593) in font [lmroman10-regular]:mapping=tex-text;!
-[307] [308] [309] [310] [311] [312
+[317] [318] [319] [320] [321] [322
 
 ]
 Chapter 41.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 16031.
+(Font)              scaled to size 24.88pt on input line 16889.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 16031.
+(Font)              scaled to size 20.74pt on input line 16889.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 16031.
+(Font)              scaled to size 17.28pt on input line 16889.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 24.88228pt on input line 16031.
+(Font)              scaled to size 24.88228pt on input line 16889.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 20.7419pt on input line 16031.
+(Font)              scaled to size 20.7419pt on input line 16889.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 17.28157pt on input line 16031.
+(Font)              scaled to size 17.28157pt on input line 16889.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 24.87733pt on input line 16031.
+(Font)              scaled to size 24.87733pt on input line 16889.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 20.73778pt on input line 16031.
+(Font)              scaled to size 20.73778pt on input line 16889.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 17.27815pt on input line 16031.
-[313] [314
+(Font)              scaled to size 17.27815pt on input line 16889.
+[323] [324] [325] [326] [327] [328
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 16041--16041
+Chapter 42.
+[329] [330
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 17148--17148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16045--16045
+Underfull \hbox (badness 10000) in paragraph at lines 17152--17152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16049--16049
+Underfull \hbox (badness 10000) in paragraph at lines 17156--17156
 
  []
 
@@ -4963,12 +4982,12 @@ Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=
 Missing character: There is no 矩 (U+77E9) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 陣 (U+9663) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 16053--16053
+Underfull \hbox (badness 10000) in paragraph at lines 17160--17160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16057--16057
+Underfull \hbox (badness 10000) in paragraph at lines 17164--17164
 
  []
 
@@ -4980,22 +4999,22 @@ Missing character: There is no 態 (U+614B) in font [lmroman10-regular]:mapping=
 Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 16061--16061
+Underfull \hbox (badness 10000) in paragraph at lines 17168--17168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16065--16065
+Underfull \hbox (badness 10000) in paragraph at lines 17172--17172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16069--16069
+Underfull \hbox (badness 10000) in paragraph at lines 17176--17176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16073--16073
+Underfull \hbox (badness 10000) in paragraph at lines 17180--17180
 
  []
 
@@ -5016,18 +5035,18 @@ Missing character: There is no 碩 (U+78A9) in font [lmroman10-regular]:mapping=
 Missing character: There is no 教 (U+6559) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 育 (U+80B2) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 16077--16077
+Underfull \hbox (badness 10000) in paragraph at lines 17184--17184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16081--16081
+Underfull \hbox (badness 10000) in paragraph at lines 17188--17188
 
  []
 
-[315]
+[331]
 
-LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (303 not 315).
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (319 not 331).
                Rerun to correct this.
 
 (./math.aux)
@@ -5040,12 +5059,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 49517 strings out of 476759
- 1193186 string characters out of 5800688
- 2046148 words of memory out of 5000000
- 70409 multiletter control sequences out of 15000+600000
+ 49552 strings out of 476759
+ 1193773 string characters out of 5800688
+ 2045148 words of memory out of 5000000
+ 70444 multiletter control sequences out of 15000+600000
  583308 words of font info for 167 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,31n,121p,9665b,961s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on math.pdf (315 pages).
+Output written on math.pdf (331 pages).
