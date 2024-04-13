@@ -1273,7 +1273,7 @@ n=\begin{pmatrix}0\\
 \sin\gamma\sin\alpha\\
 \cos\gamma
 \end{pmatrix},\begin{cases}
-\alpha=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{x}}\\
+\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
 \gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
 \end{cases}
 \]
@@ -1293,7 +1293,7 @@ q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\\
 \sin\gamma\sin\alpha\\
 \cos\gamma
 \end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1,\begin{cases}
-\alpha=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{x}}\\
+\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
 \gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
 \end{cases}\\
 = & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\boldsymbol{n},\boldsymbol{n}=\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\\
@@ -1313,6 +1313,116 @@ v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}
  & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
 = & q\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\boldsymbol{v}q^{-1}\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}^{\prime}=v^{\prime}=qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
+v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
+v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}\\
+q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+q^{-1}=\cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q\overset{\left|q\right|=1}{=}a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k},\begin{cases}
+a=\cos\dfrac{\theta}{2}\\
+b=\sin\dfrac{\theta}{2}\sin\gamma\cos\alpha\\
+c=\sin\dfrac{\theta}{2}\sin\gamma\sin\alpha\\
+d=\sin\dfrac{\theta}{2}\cos\gamma
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L\left(q\right)=Q_{{\scriptscriptstyle l}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R\left(q\right)=Q_{{\scriptscriptstyle r}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R\left(q^{*}\right)=\begin{pmatrix}a & b & c & d\\
+-b & a & -d & c\\
+-c & d & a & -b\\
+-d & -c & b & a
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+v^{\prime}=qvq^{*}=\left(qv\right)q^{*}\leftrightarrow & R\left(q^{*}\right)L\left(q\right)v\\
+=q\left(vq^{*}\right)\leftrightarrow & L\left(q\right)R\left(q^{*}\right)v\\
+= & \begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}\begin{pmatrix}a & b & c & d\\
+-b & a & -d & c\\
+-c & d & a & -b\\
+-d & -c & b & a
+\end{pmatrix}v\\
+= & \begin{pmatrix}a^{2}+b^{2}+c^{2}+d^{2} & 0 & 0 & 0\\
+0 & b^{2}+a^{2}-d^{2}-c^{2} & -2ad+2bc & 2ac+2bd\\
+0 & 2ad+2bc & c^{2}-d^{2}+a^{2}-b^{2} & 2cd-2ab\\
+0 & -2ac+2bd & 2cd+2ab & d^{2}-c^{2}-b^{2}+a^{2}
+\end{pmatrix}v\\
+= & \begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1-2\left(d^{2}+c^{2}\right) & 2\left(bc-ad\right) & 2\left(bd+ac\right)\\
+0 & 2\left(bc+ad\right) & 1-2\left(d^{2}+b^{2}\right) & 2\left(cd-ab\right)\\
+0 & 2\left(bd-ac\right) & 2\left(cd+ab\right) & 1-2\left(c^{2}+b^{2}\right)
+\end{pmatrix}v\\
+\begin{pmatrix}0\\
+\boldsymbol{v}^{\prime}
+\end{pmatrix}= & \begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1-2\left(d^{2}+c^{2}\right) & 2\left(bc-ad\right) & 2\left(bd+ac\right)\\
+0 & 2\left(bc+ad\right) & 1-2\left(d^{2}+b^{2}\right) & 2\left(cd-ab\right)\\
+0 & 2\left(bd-ac\right) & 2\left(cd+ab\right) & 1-2\left(c^{2}+b^{2}\right)
+\end{pmatrix}\begin{pmatrix}0\\
+\boldsymbol{v}
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}^{\prime}=\begin{pmatrix}1-2\left(d^{2}+c^{2}\right) & 2\left(bc-ad\right) & 2\left(bd+ac\right)\\
+2\left(bc+ad\right) & 1-2\left(d^{2}+b^{2}\right) & 2\left(cd-ab\right)\\
+2\left(bd-ac\right) & 2\left(cd+ab\right) & 1-2\left(c^{2}+b^{2}\right)
+\end{pmatrix}\boldsymbol{v}
+\]
 
 \end_inset
 
@@ -1372,7 +1482,7 @@ v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}
 \sin\gamma\sin\alpha\\
 \cos\gamma
 \end{pmatrix},\begin{cases}
-\alpha=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{x}}\\
+\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
 \gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
 \end{cases}\\
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
