@@ -97,6 +97,483 @@
 \begin_body
 
 \begin_layout Standard
+determinant
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\begin{cases}
+\det\left(\boldsymbol{u},\boldsymbol{v}\right)=\det\left(\boldsymbol{u}+s\boldsymbol{v},\boldsymbol{v}\right)\\
+\det\left(\boldsymbol{u},\boldsymbol{v}\right)=\det\left(\boldsymbol{u},\boldsymbol{v}+s\boldsymbol{u}\right)
+\end{cases} & \text{translation invariance}\\
+\begin{cases}
+\det\left(s\boldsymbol{u},\boldsymbol{v}\right)=s\det\left(\boldsymbol{u},\boldsymbol{v}\right)\\
+\det\left(\boldsymbol{u},s\boldsymbol{v}\right)=s\det\left(\boldsymbol{u},\boldsymbol{v}\right)
+\end{cases} & \text{scaling}\\
+\begin{cases}
+\det\left(\boldsymbol{u}_{{\scriptscriptstyle 1}}+\boldsymbol{u}_{{\scriptscriptstyle 2}},\boldsymbol{v}\right)=\det\left(\boldsymbol{u}_{{\scriptscriptstyle 1}},\boldsymbol{v}\right)+\det\left(\boldsymbol{u}_{{\scriptscriptstyle 2}},\boldsymbol{v}\right)\\
+\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 1}}+\boldsymbol{v}_{{\scriptscriptstyle 2}}\right)=\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)+\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 2}}\right)
+\end{cases} & \text{decomposition}
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+\begin{cases}
+\det\left(\boldsymbol{u},\boldsymbol{v}\right)=\det\left(\boldsymbol{u}+s\boldsymbol{v},\boldsymbol{v}\right)\\
+\det\left(\boldsymbol{u},\boldsymbol{v}\right)=\det\left(\boldsymbol{u},\boldsymbol{v}+s\boldsymbol{u}\right)
+\end{cases} & \text{translation invariance}\\
+\begin{cases}
+\det\left(\boldsymbol{u}_{{\scriptscriptstyle 1}}+s\boldsymbol{u}_{{\scriptscriptstyle 2}},\boldsymbol{v}\right)=\det\left(\boldsymbol{u}_{{\scriptscriptstyle 1}},\boldsymbol{v}\right)+s\det\left(\boldsymbol{u}_{{\scriptscriptstyle 2}},\boldsymbol{v}\right)\\
+\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 1}}+s\boldsymbol{v}_{{\scriptscriptstyle 2}}\right)=\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)+s\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 2}}\right)
+\end{cases} & \text{linearity}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+univariable distribution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\in E\right) & \forall E\subseteq S\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right) & \forall x\in\mathbb{R}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\in E\right) & \forall E\subseteq S\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x\right]\right)=F_{{\scriptscriptstyle X}}\left(x\right) & \forall x\in\mathbb{R}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x\right]\right)\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(\bigcup\limits _{\epsilon>0}\left(-\infty,x-\epsilon\right]\right)=\lim_{\epsilon\rightarrow0}\mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x-\epsilon\right]\right)\\
+\leftrightarrow & \mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x\right)\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(E\right),E=\left(-\infty,x\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X\sim\mathrm{P}_{{\scriptscriptstyle X}}\leftrightarrow F_{{\scriptscriptstyle X}}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X\sim F_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow\mathrm{P}_{{\scriptscriptstyle X}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\begin{cases}
+\lim\limits _{x\rightarrow-\infty}F\left(x\right)=0 & \lim\limits _{x\rightarrow+\infty}F\left(x\right)=1\end{cases} & \left(01\right)\left[0,1\right]\\
+\forall x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\left[F\left(x_{{\scriptscriptstyle 1}}\right)\le F\left(x_{{\scriptscriptstyle 2}}\right)\right] & \left(nd\right)\text{non-decreasing}\\
+\lim\limits _{x\rightarrow x_{{\scriptscriptstyle 0}}^{+}}F\left(x\right)=F\left(x_{{\scriptscriptstyle 0}}\right) & \left(rc\right)\text{right-continuous}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+X\text{ is a continuous RV} & \lim\limits _{x\rightarrow x_{{\scriptscriptstyle 0}}}F_{{\scriptscriptstyle X}}\left(x\right)=F_{{\scriptscriptstyle X}}\left(x_{{\scriptscriptstyle 0}}\right)\\
+X\text{ is a discrete RV} & F_{{\scriptscriptstyle X}}\text{ is a step function of }x
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x\right]\right)=F_{{\scriptscriptstyle X}}\left(x\right)\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X=x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(x\right)=?
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x\right)=\dfrac{\mathrm{d}}{\mathrm{d}x}F_{{\scriptscriptstyle X}}\left(x\right) & X\text{ continuous RV}\\
+f_{{\scriptscriptstyle X}}\left(x\right)=F_{{\scriptscriptstyle X}}\left(x\right)-F_{{\scriptscriptstyle X}}\left(x^{-}\right) & X\text{ discrete RV}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x\right)=\text{derivative of }F_{{\scriptscriptstyle X}}\left(x\right) & X\text{ continuous}\\
+f_{{\scriptscriptstyle X}}\left(x\right)=\text{difference of }F_{{\scriptscriptstyle X}}\left(x\right) & X\text{ discrete}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x\right)=\dfrac{\mathrm{d}}{\mathrm{d}x}F_{{\scriptscriptstyle X}}\left(x\right) & \Leftrightarrow F_{{\scriptscriptstyle X}}\left(x\right)=\intop\limits _{-\infty}^{x}f_{{\scriptscriptstyle X}}\left(t\right)\mathrm{d}t\\
+f_{{\scriptscriptstyle X}}\left(x\right)=F_{{\scriptscriptstyle X}}\left(x\right)-F_{{\scriptscriptstyle X}}\left(x^{-}\right) & \Leftrightarrow F_{{\scriptscriptstyle X}}\left(x\right)=\sum\limits _{t\le x}f_{{\scriptscriptstyle X}}\left(t\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+X\sim\mathrm{P}_{{\scriptscriptstyle X}}\leftrightarrow F_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow f_{{\scriptscriptstyle X}}\left(x\right) & \text{ e.g. probability theory}\\
+X\sim F_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow\mathrm{P}_{{\scriptscriptstyle X}} & \Rightarrow F_{{\scriptscriptstyle X}}\left(x\right)\overset{M}{=}F_{{\scriptscriptstyle X}}\left(x|\theta\right)\text{ e.g. survial analysis}\\
+X\sim f_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow F_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow\mathrm{P}_{{\scriptscriptstyle X}} & \Rightarrow f_{{\scriptscriptstyle X}}\left(x\right)\overset{M}{=}f_{{\scriptscriptstyle X}}\left(x|\theta\right)\text{ e.g. general statistics}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\forall x\in\mathbb{R}\left[f\left(x\right)\ge0\right]\\
+\begin{cases}
+\intop\limits _{-\infty}^{+\infty}f\left(t\right)\mathrm{d}t=1 & t\text{ continuous}\\
+\sum\limits _{t\in S}f\left(t\right)=1 & t\text{ discrete}
+\end{cases}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall E\subseteq S\left[\mathrm{P}_{{\scriptscriptstyle X}}\left(X\in E\right)=\begin{cases}
+\int_{x\in E}f_{{\scriptscriptstyle X}}\left(x\right)\mathrm{d}x & X\text{ continuous}\\
+\sum\limits _{x\in E}f_{{\scriptscriptstyle X}}\left(x\right) & X\text{ discrete}
+\end{cases}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X=x\right)= & \lim_{\epsilon\rightarrow0}\mathrm{P}_{{\scriptscriptstyle X}}\left(\left[x-\epsilon,x+\epsilon\right]\right)\\
+= & \lim_{\epsilon\rightarrow0}\mathrm{P}_{{\scriptscriptstyle X}}\left(x-\epsilon\le X\le x+\epsilon\right)\\
+= & \lim_{\epsilon\rightarrow0}\left[F_{{\scriptscriptstyle X}}\left(x+\epsilon\right)-F_{{\scriptscriptstyle X}}\left(x-\epsilon\right)\right]\\
+= & \begin{cases}
+F_{{\scriptscriptstyle X}}\left(x\right)-F_{{\scriptscriptstyle X}}\left(x\right)=0 & X\text{ continuous}\\
+F_{{\scriptscriptstyle X}}\left(x\right)-F_{{\scriptscriptstyle X}}\left(x^{-}\right)=f_{{\scriptscriptstyle X}}\left(x\right) & X\text{ discrete}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Y=g\left(X\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+Y\sim F_{{\scriptscriptstyle Y}}\left(y\right)\leftrightarrow f_{{\scriptscriptstyle Y}}\left(y\right) & \Rightarrow F_{{\scriptscriptstyle Y}}\left(y\right)\overset{M}{=}F_{{\scriptscriptstyle Y}}\left(y|\theta\right)\\
+Y\sim f_{{\scriptscriptstyle Y}}\left(y\right)\leftrightarrow F_{{\scriptscriptstyle Y}}\left(y\right)\leftrightarrow\mathrm{P}_{{\scriptscriptstyle Y}} & \Rightarrow f_{{\scriptscriptstyle Y}}\left(y\right)\overset{M}{=}f_{{\scriptscriptstyle Y}}\left(y|\theta\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+continuous monotone transformation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+X\sim F_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow f_{{\scriptscriptstyle X}}\left(x\right)\\
+Y=g\left(X\right)\begin{cases}
+\forall x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\left[g\left(x_{{\scriptscriptstyle 1}}\right)<g\left(x_{{\scriptscriptstyle 2}}\right)\right]\\
+\forall x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\left[g\left(x_{{\scriptscriptstyle 1}}\right)>g\left(x_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\Rightarrow & \exists g^{-1}:Y\rightarrow X
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+F_{{\scriptscriptstyle Y}}\left(y\right)= & \mathrm{P}_{{\scriptscriptstyle Y}}\left(Y\le y\right)\\
+= & \mathrm{P}\left(g\left(X\right)\le y\right)\begin{cases}
+\forall x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\left[g\left(x_{{\scriptscriptstyle 1}}\right)<g\left(x_{{\scriptscriptstyle 2}}\right)\right] & \Leftrightarrow\forall g\left(x_{{\scriptscriptstyle 1}}\right)<g\left(x_{{\scriptscriptstyle 2}}\right)\left[x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\right]\\
+\forall x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\left[g\left(x_{{\scriptscriptstyle 1}}\right)>g\left(x_{{\scriptscriptstyle 2}}\right)\right] & \Leftrightarrow\forall g\left(x_{{\scriptscriptstyle 1}}\right)>g\left(x_{{\scriptscriptstyle 2}}\right)\left[x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\right]
+\end{cases}\\
+= & \begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=x\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\ge g^{-1}\left(y\right)=x\right) & \forall y_{{\scriptscriptstyle 1}}>y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+= & \begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=x\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\ge g^{-1}\left(y\right)=x\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+= & \begin{cases}
+F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+1-F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+F_{{\scriptscriptstyle Y}}\left(y\right)= & \begin{cases}
+F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+1-F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+f_{{\scriptscriptstyle Y}}\left(y\right)=\dfrac{\mathrm{d}}{\mathrm{d}y}F_{{\scriptscriptstyle Y}}\left(y\right)= & \begin{cases}
+\dfrac{\mathrm{d}}{\mathrm{d}y}F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+\dfrac{\mathrm{d}}{\mathrm{d}y}\left[1-F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\right] & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+= & \begin{cases}
+\dfrac{\mathrm{d}F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)}{\mathrm{d}g^{-1}\left(y\right)}\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+\dfrac{-\mathrm{d}F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)}{\mathrm{d}g^{-1}\left(y\right)}\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+= & \begin{cases}
+\dfrac{\mathrm{d}F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)}{\mathrm{d}g^{-1}\left(y\right)}\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+\dfrac{\mathrm{d}F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)}{\mathrm{d}g^{-1}\left(y\right)}\dfrac{-\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+= & \begin{cases}
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \begin{cases}
+\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y}\ge0\\
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\ge0
+\end{cases}\Rightarrow f_{{\scriptscriptstyle Y}}\left(y\right)\ge0\\
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\dfrac{-\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \begin{cases}
+\dfrac{-\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y}\ge0\\
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\ge0
+\end{cases}\Rightarrow f_{{\scriptscriptstyle Y}}\left(y\right)\ge0
+\end{cases}\\
+f_{{\scriptscriptstyle Y}}\left(y\right)= & \begin{cases}
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y}\ge0\\
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\dfrac{-\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \dfrac{-\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y}\ge0
+\end{cases}\\
+f_{{\scriptscriptstyle Y}}\left(y\right)= & f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\left|\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y}\right|
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+g\left(x\right)=x^{2}\\
+Y=g\left(X\right)
+\end{cases}\Rightarrow Y=g\left(X\right)=X^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & Y=g\left(X\right)=X^{2}\\
+\Rightarrow & Y=\begin{cases}
+X^{2}=g\left(X\right) & X\ge0\Leftrightarrow X\in\left[0,+\infty\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\right]\\
+X^{2}=g\left(X\right) & X<0\Leftrightarrow X\in\left(-\infty,0\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}^{2}>X_{{\scriptscriptstyle 2}}^{2}\right]
+\end{cases}\\
+\Rightarrow & X=\begin{cases}
+\sqrt{Y}=g^{-1}\left(Y\right) & X\ge0\Rightarrow\forall X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\left[X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\right]\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\right]\\
+-\sqrt{Y}=g^{-1}\left(Y\right) & X<0\Rightarrow\forall X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\left[X_{{\scriptscriptstyle 1}}>X_{{\scriptscriptstyle 2}}\right]\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}>X_{{\scriptscriptstyle 2}}\right]
+\end{cases}\\
+\Rightarrow & X=\begin{cases}
+\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left[0,\infty\right)\Rightarrow X\ge0\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]\\
+-\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left[0,\infty\right)\Rightarrow X<0\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+F_{{\scriptscriptstyle Y}}\left(y\right)= & \mathrm{P}_{{\scriptscriptstyle Y}}\left(Y\le y\right)=\mathrm{P}\left(X^{2}\le y\right)\\
+= & \mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left(\left\{ X<0\right\} \cup\left\{ X\ge0\right\} \right)\right)\\
+= & \mathrm{P}\left(\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)\cup\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)\right)\\
+= & \mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)\\
+ & -\mathrm{P}\left(\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)\cap\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)\right)\\
+= & \mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)-\mathrm{P}\left(\emptyset\right)\\
+= & \mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)-0\\
+= & \mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)\\
+= & \mathrm{P}\left(\left\{ -X\le\sqrt{y}\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X\le\sqrt{y}\right\} \cap\left\{ X\ge0\right\} \right)\\
+= & \mathrm{P}\left(\left\{ X\ge-\sqrt{y}\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X\le\sqrt{y}\right\} \cap\left\{ X\ge0\right\} \right)\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(\left\{ -\sqrt{y}\le X<0\right\} \right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(\left\{ 0\le X\le\sqrt{y}\right\} \right)\\
+= & \left[F_{{\scriptscriptstyle X}}\left(0\right)-F_{{\scriptscriptstyle X}}\left(-\sqrt{y}\right)\right]+\left[F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)-F_{{\scriptscriptstyle X}}\left(0\right)\right]\\
+= & F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)-F_{{\scriptscriptstyle X}}\left(-\sqrt{y}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+Y=g\left(X\right)=X^{2}\\
+X\in\left[-1,\infty\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & Y=g\left(X\right)=X^{2}\\
+\Rightarrow & Y=\begin{cases}
+X^{2}=g\left(X\right) & X\ge0\Leftrightarrow X\in\left[0,+\infty\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\right]\\
+X^{2}=g\left(X\right) & -1\le X<0\Leftrightarrow X\in\left[-1,0\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}^{2}>X_{{\scriptscriptstyle 2}}^{2}\right]
+\end{cases}\\
+\Rightarrow & X=\begin{cases}
+\sqrt{Y}=g^{-1}\left(Y\right) & X\in\left[0,\infty\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\left[X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\right]\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\right]\\
+-\sqrt{Y}=g^{-1}\left(Y\right) & X\in\left[-1,0\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\left[X_{{\scriptscriptstyle 1}}>X_{{\scriptscriptstyle 2}}\right]\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}>X_{{\scriptscriptstyle 2}}\right]
+\end{cases}\\
+\Rightarrow & X=\begin{cases}
+\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left[0,\infty\right)\Rightarrow X\in\left[0,\infty\right)\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]\\
+-\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left(0,1\right]\Rightarrow X\in\left[-1,0\right)\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+\Rightarrow & X=\begin{cases}
+\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left(1,\infty\right)\Rightarrow X\in\left[0,\infty\right)\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]\\
+\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left[0,1\right]\Rightarrow X\in\left[0,1\right]\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]\\
+-\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left(0,1\right]\Rightarrow X\in\left[-1,0\right)\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+F_{{\scriptscriptstyle Y}}\left(y\right)= & \mathrm{P}_{{\scriptscriptstyle Y}}\left(Y\le y\right)=\mathrm{P}\left(X^{2}\le y\right)\\
+= & \begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=\sqrt{y}\right) & Y\in\left(1,\infty\right)\Rightarrow X\in\left[0,\infty\right)\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=\sqrt{y}\right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\ge g^{-1}\left(y\right)=-\sqrt{y}\right)-0 & Y\in\left(0,1\right]\begin{cases}
+X\in\left(0,1\right]\\
+X\in\left[-1,0\right)
+\end{cases}\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=\sqrt{y}\right) & Y\in\left\{ 0\right\} 
+\end{cases}\\
+= & \begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le\sqrt{y}\right) & Y\in\left(1,\infty\right)\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le\sqrt{y}\right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\ge-\sqrt{y}\right) & Y\in\left(0,1\right]\begin{cases}
+\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right] & X\in\left(0,1\right]\\
+\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right] & X\in\left[-1,0\right)
+\end{cases}\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=\sqrt{y}\right) & Y=0
+\end{cases}\\
+= & \begin{cases}
+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right) & Y\in\left(1,\infty\right)\\
+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)+1-F_{{\scriptscriptstyle X}}\left(-\sqrt{y}\right) & Y\in\left(0,1\right]\\
+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right) & Y=0
+\end{cases}=\begin{cases}
+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right) & y\ge1\\
+1+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)-F_{{\scriptscriptstyle X}}\left(-\sqrt{y}\right) & 0<y\le1\\
+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)=F_{{\scriptscriptstyle X}}\left(\sqrt{0}\right)=F_{{\scriptscriptstyle X}}\left(0\right) & y=0
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+discrete monotone transformation
+\begin_inset Formula 
+\[
+\begin{cases}
+Y=g\left(X\right)=X^{2}\\
+X\text{ discrete}\Rightarrow & Y\text{ discrete}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{{\scriptscriptstyle Y}}\left(y\right)= & \mathrm{P}_{{\scriptscriptstyle Y}}\left(Y=y\right)\\
+= & \mathrm{P}\left(X^{2}=y\right)\\
+= & \mathrm{P}\left(\left\{ X=\sqrt{y}\right\} \cup\left\{ X=-\sqrt{y}\right\} \right)\\
+= & \mathrm{P}\left(\left\{ X=\sqrt{y}\right\} \right)+\mathrm{P}\left(\left\{ X=-\sqrt{y}\right\} \right)-\mathrm{P}\left(\left\{ X=\sqrt{y}\right\} \cap\left\{ X=-\sqrt{y}\right\} \right)\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(X=\sqrt{y}\right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(X=-\sqrt{y}\right)-\mathrm{P}\left(\emptyset\right)\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(X=\sqrt{y}\right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(X=-\sqrt{y}\right)-0\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(X=\sqrt{y}\right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(X=-\sqrt{y}\right)\\
+= & f_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)+f_{{\scriptscriptstyle X}}\left(-\sqrt{y}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{{\scriptscriptstyle Y}}\left(y\right)= & \mathrm{P}_{{\scriptscriptstyle Y}}\left(Y=y\right)\\
+= & \mathrm{P}\left(g\left(X\right)=y\right)=\sum_{t\in\left\{ x\middle|g\left(x\right)=y\right\} }f_{{\scriptscriptstyle X}}\left(t\right)=\sum_{x\in\left\{ x\middle|g\left(x\right)=y\right\} }f_{{\scriptscriptstyle X}}\left(x\right)\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(X=g^{-1}\left(y\right)\right)=\sum_{t\in\left\{ x\middle|x=g^{-1}\left(y\right)\right\} }f_{{\scriptscriptstyle X}}\left(t\right)=\sum_{x\in\left\{ x\middle|x=g^{-1}\left(y\right)\right\} }f_{{\scriptscriptstyle X}}\left(x\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+Y=g\left(X\right)\\
+X\text{ discrete}\Rightarrow & Y\text{ discrete}
+\end{cases}\\
+\Downarrow\\
+f_{{\scriptscriptstyle Y}}\left(y\right)= & \sum_{\left\{ x\middle|g\left(x\right)=y\right\} }f_{{\scriptscriptstyle X}}\left(x\right)=\sum_{\left\{ x\middle|x=g^{-1}\left(y\right)\right\} }f_{{\scriptscriptstyle X}}\left(x\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 statistics
 \end_layout
 
@@ -172,6 +649,250 @@ X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle i}},\cdots,X_{{\scripts
 \begin_inset Formula 
 \[
 X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle i}},\cdots,X_{{\scriptscriptstyle n}}=X_{{\scriptscriptstyle i}}\overset{\text{i.i.d.}}{\sim}F_{{\scriptscriptstyle X}}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\widehat{X}\sim\widehat{F}_{{\scriptscriptstyle X}}\left(x\right)=\widehat{F}_{{\scriptscriptstyle X}}\left(x|\theta\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{X}\sim\hat{F}_{{\scriptscriptstyle X}}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{{\scriptscriptstyle X}}\left(x\right)\overset{M}{=}F_{{\scriptscriptstyle X}}\left(x|\theta\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle X}}\left(x\right)\overset{M}{=}f_{{\scriptscriptstyle X}}\left(x|\theta\right)=\dfrac{\mathrm{e}^{{\scriptscriptstyle \frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}}}{\sqrt{2\pi\sigma^{2}}}=f_{{\scriptscriptstyle X}}\left(x|\mu,\sigma^{2}\right)=f_{{\scriptscriptstyle X}}\left(x|\mu,\sigma\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\widehat{\Theta}\leftarrow T\left(X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle i}},\cdots,X_{{\scriptscriptstyle n}}\right)=T\left(X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle n}}\right)=T\left(\cdots,X_{{\scriptscriptstyle i}},\cdots\right)=T\left(X_{{\scriptscriptstyle i}}\right)=T
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle n}}\right)=T\sim F_{{\scriptscriptstyle T}}\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\mathrm{E}\left(\widehat{\Theta}\right)=\theta\Leftrightarrow\mathrm{E}\left(\widehat{\Theta}\right)-\theta=0 & \text{unbiasedness}\\
+\mathrm{V}\left(\widehat{\Theta}\right)=0 & \text{consistency}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{\boldsymbol{{\scriptscriptstyle X}}}\left(\boldsymbol{x}\right)\overset{M}{=}f_{\boldsymbol{{\scriptscriptstyle X}}}\left(\boldsymbol{x}|\boldsymbol{\theta}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\widehat{\mu}=\begin{cases}
+\overline{X} & \rightarrow\mu\\
+\mathrm{median}\left(X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle n}}\right) & \rightarrow\mu\\
+\vdots
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+H_{{\scriptscriptstyle 0}}:\theta=\theta_{{\scriptscriptstyle 0}}\\
+H_{{\scriptscriptstyle 1}}:\theta\ne\theta_{{\scriptscriptstyle 0}}
+\end{cases}\leftarrow T\in\left\{ 0,1\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+n\rightarrow\infty\begin{cases}
+\text{CLT}=\text{central limit theorem}\\
+\text{LLN}=\text{law of large number}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+sample space
+\begin_inset Formula 
+\[
+S=\left\{ \omega_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i}\in I}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\mathrm{P}\left(S\right)=1\\
+\forall E\subseteq S\left(\mathrm{P}\left(E\right)\ge0\right)\\
+E_{{\scriptscriptstyle 1}},\cdots,E_{{\scriptscriptstyle i}},\cdots\text{ are pairwise disjoint}\Rightarrow\mathrm{P}\left(\bigcup\limits _{i\in I}E_{{\scriptscriptstyle i}}\right)=\sum\limits _{i\in I}E_{{\scriptscriptstyle i}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{P}\left(\emptyset\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{P}\left(E\right)\le1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{P}\left(E^{\mathrm{C}}\right)=\mathrm{P}\left(\overline{E}\right)=1-\mathrm{P}\left(E\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\cap\overline{E}_{{\scriptscriptstyle 1}}\right)=\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)-\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\cap E_{{\scriptscriptstyle 1}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E_{{\scriptscriptstyle 1}}\subseteq E_{{\scriptscriptstyle 2}}\Rightarrow\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\right)\le\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cup E_{{\scriptscriptstyle 2}}\right)=\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\right)+\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)-\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cap E_{{\scriptscriptstyle 2}}\right)\le\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\right)+\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E_{{\scriptscriptstyle 1}}\cap E_{{\scriptscriptstyle 2}}=\emptyset\Leftrightarrow\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cup E_{{\scriptscriptstyle 2}}\right)=\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\right)+\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{P}\left(\bigcup\limits _{i\in I}E_{{\scriptscriptstyle i}}\right)\le\sum\limits _{i\in I}E_{{\scriptscriptstyle i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}}\middle|H_{{\scriptscriptstyle 0}}\right)=\mathrm{P}\left(\text{reject }H_{{\scriptscriptstyle 0}}\middle|H_{{\scriptscriptstyle 0}}\text{ is true}\right)=\alpha=\text{type 1 error}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle 1}},\cdots,H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle m}}=H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle 1}},\cdots,H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}},\cdots,H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle m}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\alpha= & \mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle 1}}}\cup\cdots\cup\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle m}}}\middle|H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle 1}}\cap\cdots\cap H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle m}}\right)=\mathrm{P}\left(\text{reject any }H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}\middle|\text{any }H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\text{ is true}\right)\\
+= & \mathrm{P}\left(\bigcup\limits _{i=1}^{m}\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=1-\mathrm{P}\left(\overbrace{\bigcup\limits _{i=1}^{m}\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\\
+= & 1-\mathrm{P}\left(\bigcap\limits _{i=1}^{m}\underbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=1-\mathrm{P}\left(\text{not to reject any }H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\\
+ & \overset{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\text{ pairwise independent}}{=}1-\prod\limits _{i=1}^{m}\mathrm{P}\left(\underbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=1-\prod\limits _{i=1}^{m}\left(1-\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\right)\\
+ & \overset{\forall i,j\left[\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\alpha_{{\scriptscriptstyle 0}}\right]}{=}1-\prod\limits _{i=1}^{m}\left(1-\alpha_{{\scriptscriptstyle 0}}\right)=1-\left(1-\alpha_{{\scriptscriptstyle 0}}\right)^{m}\\
+\alpha= & 1-\left(1-\alpha_{{\scriptscriptstyle 0}}\right)^{m}\\
+\alpha_{{\scriptscriptstyle 0}}= & 1-\sqrt[m]{1-\alpha}\\
+\Downarrow\\
+\text{set } & \mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\alpha_{{\scriptscriptstyle 0}}=1-\sqrt[m]{1-\alpha}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\alpha= & \mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle 1}}}\cup\cdots\cup\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle m}}}\middle|H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle 1}}\cap\cdots\cap H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle m}}\right)=\mathrm{P}\left(\text{reject any}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}\middle|\text{any }H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\text{ is true}\right)\\
+= & \mathrm{P}\left(\bigcup\limits _{i=1}^{m}\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\overset{\mathrm{P}\left(\bigcup\limits _{i\in I}E_{{\scriptscriptstyle i}}\right)\le\sum\limits _{i\in I}E_{{\scriptscriptstyle i}}}{\underset{\text{Boole inequality}}{\le}}\sum\limits _{i=1}^{m}\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\underset{\Uparrow}{=}\sum\limits _{i=1}^{m}\alpha_{{\scriptscriptstyle 0}}=m\alpha_{{\scriptscriptstyle 0}}\underset{\Downarrow}{=}\alpha\\
+\text{let }\forall i,j & \left[\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\alpha_{{\scriptscriptstyle 0}}\right]\Rightarrow\sum\limits _{i=1}^{m}\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\sum\limits _{i=1}^{m}\alpha_{{\scriptscriptstyle 0}}=m\alpha_{{\scriptscriptstyle 0}}\Rightarrow\alpha_{{\scriptscriptstyle 0}}=\dfrac{\alpha}{m}\\
+\Downarrow\\
+\text{set } & \mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\alpha_{{\scriptscriptstyle 0}}=\dfrac{\alpha}{m}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\dfrac{\alpha}{m}\Rightarrow\mathrm{P}\left(\bigcup\limits _{i=1}^{m}\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\le\alpha
 \]
 
 \end_inset

@@ -265,7 +265,7 @@
 
 \title{math}
 \author{Joey Yu Hsu}
-\date{2024-04-11}
+\date{2024-04-19}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
@@ -1964,11 +1964,7 @@ Error: cannot find bilibili.com
 \url{https://cran.r-project.org/web/packages/vembedr/vignettes/embed.html}
 
 \begin{verbatim}
-## Warning: package 'vembedr' was built under R version 4.2.3
-\end{verbatim}
-
-\begin{verbatim}
-## embed_youtube("qeMqtt7NFDM")
+## embed_youtube("0LFg5dvPOoc")
 \end{verbatim}
 
 \subsection{timestamp}\label{timestamp}
@@ -2473,7 +2469,8 @@ R=\left\{ \left\langle x,y\right\rangle \middle|xRy\right\} \subseteq A\times B 
 ## [46] "sass"        "scss"        "sql"         "stan"        "targets"    
 ## [51] "tikz"        "verbatim"    "theorem"     "lemma"       "corollary"  
 ## [56] "proposition" "conjecture"  "definition"  "example"     "exercise"   
-## [61] "hypothesis"  "proof"       "remark"      "solution"
+## [61] "hypothesis"  "proof"       "remark"      "solution"    "glue"       
+## [66] "glue_sql"    "gluesql"
 \end{verbatim}
 
 \url{https://rstudio.github.io/reticulate/articles/python_packages.html}
@@ -6022,6 +6019,8 @@ The ``solution'' is to use \textbf{matplotlib 3.6}, but I guess in nixpkgs a sin
 ## '% This file was created with tikzplotlib v0.10.1.\n\\begin{tikzpicture}\n\n\\end{tikzpicture}\n'
 \end{verbatim}
 
+\includegraphics{202401311000-TikZ_files/figure-latex/unnamed-chunk-168-2}
+
 \begin{Shaded}
 \begin{Highlighting}[]
 \ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
@@ -6050,7 +6049,7 @@ The ``solution'' is to use \textbf{matplotlib 3.6}, but I guess in nixpkgs a sin
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{202401311000-TikZ_files/figure-latex/unnamed-chunk-170-3}
+\includegraphics{202401311000-TikZ_files/figure-latex/unnamed-chunk-170-5}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -6064,6 +6063,8 @@ The ``solution'' is to use \textbf{matplotlib 3.6}, but I guess in nixpkgs a sin
 \begin{verbatim}
 ## '% This file was created with tikzplotlib v0.10.1.\n\\begin{tikzpicture}\n\n\\end{tikzpicture}\n'
 \end{verbatim}
+
+\includegraphics{202401311000-TikZ_files/figure-latex/unnamed-chunk-170-6}
 
 \section{animation}\label{animation}
 
@@ -6085,6 +6086,794 @@ the following xymatrix from LaTeX package xy for xy-pic is not shown or rendered
 }
 
 \chapter{statistics}\label{statistics}
+
+\section{Hung Hung}\label{hung-hung}
+
+population
+
+\begin{CJK}{UTF8}{bsmi}
+普查 vs. 統計
+\end{CJK}
+
+random variable
+
+\[
+X
+\]
+
+sample has randomness
+
+probability function
+
+\[
+\mathrm{P}_{{\scriptscriptstyle X}}\left(E\right)\in\left[0,1\right]
+\]
+
+event = subset of sample space
+
+\[
+E
+\]
+
+input event with output probability in 0 to 1
+
+\[
+\mathrm{P}_{{\scriptscriptstyle X}}:\left\{ E_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i\in I}}\rightarrow\left[0,1\right]
+\]
+
+target of interest
+
+\begin{itemize}
+\tightlist
+\item
+  probability function
+\end{itemize}
+
+but events are hard to be listed or enumerated
+
+\[
+X:\left\{ \omega_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i}\in I}\rightarrow\mathbb{R}
+\]
+
+CDF = cumulative distribution function
+
+\[
+F_{{\scriptscriptstyle X}}\left(x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x\right]\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right)
+\]
+
+real function is much easier to be operable, there is differentiation or difference operation
+
+target of interest
+
+\begin{itemize}
+\tightlist
+\item
+  CDF = cumulative distribution function
+\item
+  probability function
+\end{itemize}
+
+In population,
+
+\[
+X\sim F_{{\scriptscriptstyle X}}\left(x\right)
+\]
+
+by sampling,
+
+\[
+X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle i}},\cdots,X_{{\scriptscriptstyle n}}=X_{{\scriptscriptstyle i}}\sim F_{{\scriptscriptstyle X}}\left(x\right)
+\]
+
+or
+
+\[
+X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle i}},\cdots,X_{{\scriptscriptstyle n}}=X_{{\scriptscriptstyle i}}\overset{\text{i.i.d.}}{\sim}F_{{\scriptscriptstyle X}}\left(x\right)
+\]
+
+\(\text{i.i.d.}\) = independently identically distributed
+
+and inference back
+
+parametrically
+
+\[
+\widehat{X}\sim\widehat{F}_{{\scriptscriptstyle X}}\left(x\right)=\widehat{F}_{{\scriptscriptstyle X}}\left(x|\theta\right)
+\]
+
+or nonparametrically
+
+\[
+\hat{X}\sim\hat{F}_{{\scriptscriptstyle X}}\left(x\right)
+\]
+
+inference is function of samples, or called random function, to estimate unknown parameters
+
+\[
+\widehat{\Theta}\leftarrow\left(X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle i}},\cdots,X_{{\scriptscriptstyle n}}\right)=T\left(X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle n}}\right)=T\left(\cdots,X_{{\scriptscriptstyle i}},\cdots\right)=T\left(X_{{\scriptscriptstyle i}}\right)
+\]
+
+correspondng CDF for inference or estimation function of sampling random variables
+
+\[
+T\left(X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle n}}\right)=T\sim F_{{\scriptscriptstyle T}}\left(t\right)
+\]
+
+wish to be unbiased and consistent
+
+\[
+\begin{cases}
+\mathrm{E}\left(\widehat{\Theta}\right)=\theta\Leftrightarrow\mathrm{E}\left(\widehat{\Theta}\right)-\theta=0 & \text{unbiasedness}\\
+\mathrm{V}\left(\widehat{\Theta}\right)=0 & \text{consistency}
+\end{cases}
+\]
+
+unbiasedness usually harder than consistency, thus usually first considered consistency.
+
+modeling or parameterizing with unknown parameter \(\theta\)
+
+\[
+F_{{\scriptscriptstyle X}}\left(x\right)\overset{M}{=}F_{{\scriptscriptstyle X}}\left(x|\theta\right)
+\]
+
+parameterization is to reduce unknown parameters from infinite ones to finite ones
+
+e.g.~for normally distributed data
+
+\[
+f_{{\scriptscriptstyle X}}\left(x\right)\overset{M}{=}f_{{\scriptscriptstyle X}}\left(x|\theta\right)=\dfrac{\mathrm{e}^{{\scriptscriptstyle \frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}}}{\sqrt{2\pi\sigma^{2}}}=f_{{\scriptscriptstyle X}}\left(x|\mu,\sigma^{2}\right)=f_{{\scriptscriptstyle X}}\left(x|\mu,\sigma\right)
+\]
+
+the price of parameterization is guess wrong model.
+
+For some non-negative data, instead of normal distribution, consider distributions skewed to the right
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://en.wikipedia.org/wiki/Gamma_distribution}{gamma}
+\item
+  \href{https://en.wikipedia.org/wiki/Exponential_distribution}{exponential}
+\item
+  \href{https://en.wikipedia.org/wiki/Weibull_distribution}{Weibull}
+\item
+  \href{https://en.wikipedia.org/wiki/Log-normal_distribution}{log-normal}
+\end{itemize}
+
+topics
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\mathrm{P}_{{\scriptscriptstyle X}}\) probability theory
+\item
+  \(f_{{\scriptscriptstyle X}}\left(x\right)\overset{M}{=}f_{{\scriptscriptstyle X}}\left(x|\theta\right)\) various univariable distribution
+\item
+  \(f_{\boldsymbol{{\scriptscriptstyle X}}}\left(\boldsymbol{x}\right)\overset{M}{=}f_{\boldsymbol{{\scriptscriptstyle X}}}\left(\boldsymbol{x}|\boldsymbol{\theta}\right)\) multivariable distribution
+\item
+  \(T\left(X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle n}}\right)\) inference
+
+  \begin{itemize}
+  \tightlist
+  \item
+    point estimation
+    \[
+      \widehat{\mu}=\begin{cases}
+      \overline{X} & \rightarrow\mu\\
+      \mathrm{median}\left(X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle n}}\right) & \rightarrow\mu\\
+      \vdots
+      \end{cases}
+    \]
+  \item
+    interval estimation = hypothesis testing
+    \[
+      \begin{cases}
+      H_{{\scriptscriptstyle 0}}:\theta=\theta_{{\scriptscriptstyle 0}}\\
+      H_{{\scriptscriptstyle 1}}:\theta\ne\theta_{{\scriptscriptstyle 0}}
+      \end{cases}\leftarrow T\in\left\{ 0,1\right\} 
+    \]
+  \end{itemize}
+\item
+  how to find \(T\)
+\item
+  behavior of random function \(T\left(X_{{\scriptscriptstyle 1}},\cdots,X_{{\scriptscriptstyle n}}\right)=T\sim F_{{\scriptscriptstyle T}}\left(t\right)\)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    statistical properties of \(T\)
+  \item
+    asymptotic properties
+    \[
+      n\rightarrow\infty\begin{cases}
+      \text{CLT}=\text{central limit theorem}\\
+      \text{LLN}=\text{law of large number}
+      \end{cases}
+    \]
+  \end{itemize}
+\end{enumerate}
+
+\subsection{probability theory}\label{probability-theory}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-2}{}\label{def:unnamed-chunk-2}sample space: The set \(S\) of all possible outcomes of an experiment is called the sample space
+\end{definition}
+
+\[
+S=\left\{ \omega_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i}\in I}
+\]
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-3}{}\label{def:unnamed-chunk-3}event: An event \(E\) is any collection of possible outcomes of an experiment, i.e.~any subset of \(S\)
+\end{definition}
+
+\[
+E \subseteq S
+\]
+set operation
+
+commutativity, associativity, distributivity
+
+De Morgan law
+
+pairwise disjoint = mutually exclusive
+
+partition
+
+probability function axioms = probability function definition
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-4}{}\label{def:unnamed-chunk-4}probability function: Given a sample space \(S\) and its event \(E\), a probability function is a function \(\mathrm{P}\) satisfying
+\end{definition}
+
+\[
+\begin{cases}
+\mathrm{P}\left(S\right)=1\\
+\forall E\subseteq S\left(\mathrm{P}\left(E\right)\ge0\right)\\
+E_{{\scriptscriptstyle 1}},\cdots,E_{{\scriptscriptstyle i}},\cdots\text{ are pairwise disjoint}\Rightarrow\mathrm{P}\left(\bigcup\limits _{i\in I}E_{{\scriptscriptstyle i}}\right)=\sum\limits _{i\in I}E_{{\scriptscriptstyle i}}
+\end{cases}
+\]
+
+tossing a dice
+
+theorems
+
+\[
+\mathrm{P}\left(\emptyset\right)=0
+\]
+
+\[
+\mathrm{P}\left(E\right)\le1
+\]
+
+\[
+\mathrm{P}\left(E^{\mathrm{C}}\right)=\mathrm{P}\left(\overline{E}\right)=1-\mathrm{P}\left(E\right)
+\]
+
+\[
+\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\cap\overline{E}_{{\scriptscriptstyle 1}}\right)=\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)-\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\cap E_{{\scriptscriptstyle 1}}\right)
+\]
+
+\[
+E_{{\scriptscriptstyle 1}}\subseteq E_{{\scriptscriptstyle 2}}\Rightarrow\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\right)\le\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)
+\]
+
+inclusion-exclusion principle
+
+\[
+\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cup E_{{\scriptscriptstyle 2}}\right)=\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\right)+\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)-\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cap E_{{\scriptscriptstyle 2}}\right)
+\]
+
+\[
+\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cup E_{{\scriptscriptstyle 2}}\cup E_{{\scriptscriptstyle 3}}\right)=\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\right)+\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)+\mathrm{P}\left(E_{{\scriptscriptstyle 3}}\right)-\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cap E_{{\scriptscriptstyle 2}}\right)-\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\cap E_{{\scriptscriptstyle 3}}\right)-\mathrm{P}\left(E_{{\scriptscriptstyle 3}}\cap E_{{\scriptscriptstyle 1}}\right)+\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cap E_{{\scriptscriptstyle 2}}\cap E_{{\scriptscriptstyle 3}}\right)
+\]
+
+\[
+\mathrm{P}\left(\bigcup\limits _{i=1}^{n}E_{{\scriptscriptstyle i}}\right)=\sum\limits _{k=1}^{n}\left(\left(-1\right)^{k-1}\sum\limits _{1\le i_{1}<\cdots<i_{k}\le n}\mathrm{P}\left(\bigcap\limits _{i\in\left\{ i_{1},\dots,i_{k}\right\} }E_{{\scriptscriptstyle i}}\right)\right)
+\]
+
+union probability upper-bounded by sum of indivisual probability
+
+\[
+\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cup E_{{\scriptscriptstyle 2}}\right)=\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\right)+\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)-\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cap E_{{\scriptscriptstyle 2}}\right)\le\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\right)+\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)
+\]
+
+\[
+E_{{\scriptscriptstyle 1}}\cap E_{{\scriptscriptstyle 2}}=\emptyset\Leftrightarrow\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cup E_{{\scriptscriptstyle 2}}\right)=\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\right)+\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)
+\]
+
+Boole inequality
+
+\[
+\mathrm{P}\left(\bigcup\limits _{i\in I}E_{{\scriptscriptstyle i}}\right)\le\sum\limits _{i\in I}E_{{\scriptscriptstyle i}}
+\]
+
+\[
+\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}}\middle|H_{{\scriptscriptstyle 0}}\right)=\mathrm{P}\left(\text{reject }H_{{\scriptscriptstyle 0}}\middle|H_{{\scriptscriptstyle 0}}\text{ is true}\right)=\alpha=\text{type 1 error}
+\]
+
+multiple hypothesis testing
+
+How to control the family-wise error rate?
+
+Ideally,
+
+FWER = family-wise error rate
+
+\[
+\begin{aligned}
+\alpha= & \mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle 1}}}\cup\cdots\cup\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle m}}}\middle|H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle 1}}\cap\cdots\cap H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle m}}\right)=\mathrm{P}\left(\text{reject any }H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}\middle|\text{any }H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\text{ is true}\right)\\
+= & \mathrm{P}\left(\bigcup\limits _{i=1}^{m}\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=1-\mathrm{P}\left(\overbrace{\bigcup\limits _{i=1}^{m}\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\\
+= & 1-\mathrm{P}\left(\bigcap\limits _{i=1}^{m}\underbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=1-\mathrm{P}\left(\text{not to reject any }H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\\
+ & \overset{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\text{ pairwise independent}}{=}1-\prod\limits _{i=1}^{m}\mathrm{P}\left(\underbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=1-\prod\limits _{i=1}^{m}\left(1-\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\right)\\
+ & \overset{\forall i,j\left[\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\alpha_{{\scriptscriptstyle 0}}\right]}{=}1-\prod\limits _{i=1}^{m}\left(1-\alpha_{{\scriptscriptstyle 0}}\right)=1-\left(1-\alpha_{{\scriptscriptstyle 0}}\right)^{m}\\
+\alpha= & 1-\left(1-\alpha_{{\scriptscriptstyle 0}}\right)^{m}\\
+\alpha_{{\scriptscriptstyle 0}}= & 1-\sqrt[m]{1-\alpha}\\
+\Downarrow\\
+\text{set } & \mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\alpha_{{\scriptscriptstyle 0}}=1-\sqrt[m]{1-\alpha}
+\end{aligned}
+\]
+
+But condition \(H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\text{ pairwise independent}\) is too strong.
+
+Practically,
+
+\[
+\begin{aligned}
+\alpha= & \mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle 1}}}\cup\cdots\cup\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle m}}}\middle|H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle 1}}\cap\cdots\cap H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle m}}\right)=\mathrm{P}\left(\text{reject any}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}\middle|\text{any }H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\text{ is true}\right)\\
+= & \mathrm{P}\left(\bigcup\limits _{i=1}^{m}\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\overset{\mathrm{P}\left(\bigcup\limits _{i\in I}E_{{\scriptscriptstyle i}}\right)\le\sum\limits _{i\in I}E_{{\scriptscriptstyle i}}}{\underset{\text{Boole inequality}}{\le}}\sum\limits _{i=1}^{m}\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\underset{\Uparrow}{=}\sum\limits _{i=1}^{m}\alpha_{{\scriptscriptstyle 0}}=m\alpha_{{\scriptscriptstyle 0}}\underset{\Downarrow}{=}\alpha\\
+\text{let }\forall i,j & \left[\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\alpha_{{\scriptscriptstyle 0}}\right]\Rightarrow\sum\limits _{i=1}^{m}\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\sum\limits _{i=1}^{m}\alpha_{{\scriptscriptstyle 0}}=m\alpha_{{\scriptscriptstyle 0}}\Rightarrow\alpha_{{\scriptscriptstyle 0}}=\dfrac{\alpha}{m}\\
+\Downarrow\\
+\text{set } & \mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\alpha_{{\scriptscriptstyle 0}}=\dfrac{\alpha}{m}
+\end{aligned}
+\]
+
+Bonferroni correction
+
+\[
+\mathrm{P}\left(\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)=\dfrac{\alpha}{m}\Rightarrow\mathrm{P}\left(\bigcup\limits _{i=1}^{m}\overbrace{H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle i}}}\middle|\bigcap\limits _{j=1}^{m}H_{{\scriptscriptstyle 0}}^{{\scriptscriptstyle j}}\right)\le\alpha
+\]
+conditional probability
+
+\subsection{univariable distribution}\label{univariable-distribution}
+
+\[
+\begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\in E\right) & \forall E\subseteq S\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right) & \forall x\in\mathbb{R}
+\end{cases}
+\]
+
+\[
+\begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\in E\right) & \forall E\subseteq S\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x\right]\right)=F_{{\scriptscriptstyle X}}\left(x\right) & \forall x\in\mathbb{R}
+\end{cases}
+\]
+
+\[
+\begin{aligned}
+ & \mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x\right]\right)\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(\bigcup\limits _{\epsilon>0}\left(-\infty,x-\epsilon\right]\right)=\lim_{\epsilon\rightarrow0}\mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x-\epsilon\right]\right)\\
+\leftrightarrow & \mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x\right)\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(E\right),E=\left(-\infty,x\right)
+\end{aligned}
+\]
+
+CDF = cumulative distribution function
+
+\[
+F_{{\scriptscriptstyle X}}\left(x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x\right]\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right)
+\]
+\[
+X\sim\mathrm{P}_{{\scriptscriptstyle X}}\leftrightarrow F_{{\scriptscriptstyle X}}\left(x\right)
+\]
+
+\[
+X\sim F_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow\mathrm{P}_{{\scriptscriptstyle X}}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-5}{}\label{def:unnamed-chunk-5}CDF = cumulative distribution function: A cumulative distribution function is a function \(F:\mathbb{R} \rightarrow \left[0,1\right]\) satisfying
+\end{definition}
+
+\[
+F_{{\scriptscriptstyle X}}\left(x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x\right]\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right)
+\]
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-6}{}\label{thm:unnamed-chunk-6}CDF = cumulative distribution function: \(F\left(x\right)\) is a cumulative distribution function iff
+\end{theorem}
+
+\[
+\begin{cases}
+\begin{cases}
+\lim\limits _{x\rightarrow-\infty}F\left(x\right)=0 & \lim\limits _{x\rightarrow+\infty}F\left(x\right)=1\end{cases} & \left(01\right)\left[0,1\right]\\
+\forall x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\left[F\left(x_{{\scriptscriptstyle 1}}\right)\le F\left(x_{{\scriptscriptstyle 2}}\right)\right] & \left(nd\right)\text{non-decreasing}\\
+\lim\limits _{x\rightarrow x_{{\scriptscriptstyle 0}}^{+}}F\left(x\right)=F\left(x_{{\scriptscriptstyle 0}}\right) & \left(rc\right)\text{right-continuous}
+\end{cases}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-7}{}\label{def:unnamed-chunk-7}RV = random variable
+\end{definition}
+
+\[
+\begin{cases}
+X\text{ is a continuous RV} & \lim\limits _{x\rightarrow x_{{\scriptscriptstyle 0}}}F_{{\scriptscriptstyle X}}\left(x\right)=F_{{\scriptscriptstyle X}}\left(x_{{\scriptscriptstyle 0}}\right)\\
+X\text{ is a discrete RV} & F_{{\scriptscriptstyle X}}\text{ is a step function of }x
+\end{cases}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(\left(-\infty,x\right]\right)=F_{{\scriptscriptstyle X}}\left(x\right)\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X=x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(x\right)=?
+\end{cases}
+\]
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-8}{}\label{def:unnamed-chunk-8}PDF = probability density function
+PMF = probability mass function
+\end{definition}
+
+\[
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x\right)=\dfrac{\mathrm{d}}{\mathrm{d}x}F_{{\scriptscriptstyle X}}\left(x\right) & X\text{ continuous RV}\\
+f_{{\scriptscriptstyle X}}\left(x\right)=F_{{\scriptscriptstyle X}}\left(x\right)-F_{{\scriptscriptstyle X}}\left(x^{-}\right) & X\text{ discrete RV}
+\end{cases}
+\]
+
+\[
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x\right)=\text{derivative of }F_{{\scriptscriptstyle X}}\left(x\right) & X\text{ continuous}\\
+f_{{\scriptscriptstyle X}}\left(x\right)=\text{difference of }F_{{\scriptscriptstyle X}}\left(x\right) & X\text{ discrete}
+\end{cases}
+\]
+
+\[
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x\right)=\dfrac{\mathrm{d}}{\mathrm{d}x}F_{{\scriptscriptstyle X}}\left(x\right) & \Leftrightarrow F_{{\scriptscriptstyle X}}\left(x\right)=\intop\limits _{-\infty}^{x}f_{{\scriptscriptstyle X}}\left(t\right)\mathrm{d}t\\
+f_{{\scriptscriptstyle X}}\left(x\right)=F_{{\scriptscriptstyle X}}\left(x\right)-F_{{\scriptscriptstyle X}}\left(x^{-}\right) & \Leftrightarrow F_{{\scriptscriptstyle X}}\left(x\right)=\sum\limits _{t\le x}f_{{\scriptscriptstyle X}}\left(t\right)
+\end{cases}
+\]
+
+\[
+\begin{cases}
+X\sim\mathrm{P}_{{\scriptscriptstyle X}}\leftrightarrow F_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow f_{{\scriptscriptstyle X}}\left(x\right) & \text{ e.g. probability theory}\\
+X\sim F_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow\mathrm{P}_{{\scriptscriptstyle X}} & \Rightarrow F_{{\scriptscriptstyle X}}\left(x\right)\overset{M}{=}F_{{\scriptscriptstyle X}}\left(x|\theta\right)\text{ e.g. survial analysis}\\
+X\sim f_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow F_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow\mathrm{P}_{{\scriptscriptstyle X}} & \Rightarrow f_{{\scriptscriptstyle X}}\left(x\right)\overset{M}{=}f_{{\scriptscriptstyle X}}\left(x|\theta\right)\text{ e.g. general statistics}
+\end{cases}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-9}{}\label{thm:unnamed-chunk-9}PDF = probability density function or PMF = probability mass function: \(f\left(x\right)\) is a probability density function or probability mass function iff
+\end{theorem}
+
+\[
+\begin{cases}
+\forall x\in\mathbb{R}\left[f\left(x\right)\ge0\right]\\
+\begin{cases}
+\intop\limits _{-\infty}^{+\infty}f\left(t\right)\mathrm{d}t=1 & t\text{ continuous}\\
+\sum\limits _{t\in S}f\left(t\right)=1 & t\text{ discrete}
+\end{cases}
+\end{cases}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\forall E\subseteq S\left[\mathrm{P}_{{\scriptscriptstyle X}}\left(X\in E\right)=\begin{cases}
+\int_{x\in E}f_{{\scriptscriptstyle X}}\left(x\right)\mathrm{d}x & X\text{ continuous}\\
+\sum\limits _{x\in E}f_{{\scriptscriptstyle X}}\left(x\right) & X\text{ discrete}
+\end{cases}\right]
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{aligned}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X=x\right)= & \lim_{\epsilon\rightarrow0}\mathrm{P}_{{\scriptscriptstyle X}}\left(\left[x-\epsilon,x+\epsilon\right]\right)\\
+= & \lim_{\epsilon\rightarrow0}\mathrm{P}_{{\scriptscriptstyle X}}\left(x-\epsilon\le X\le x+\epsilon\right)\\
+= & \lim_{\epsilon\rightarrow0}\left[F_{{\scriptscriptstyle X}}\left(x+\epsilon\right)-F_{{\scriptscriptstyle X}}\left(x-\epsilon\right)\right]\\
+= & \begin{cases}
+F_{{\scriptscriptstyle X}}\left(x\right)-F_{{\scriptscriptstyle X}}\left(x\right)=0 & X\text{ continuous}\\
+F_{{\scriptscriptstyle X}}\left(x\right)-F_{{\scriptscriptstyle X}}\left(x^{-}\right)=f_{{\scriptscriptstyle X}}\left(x\right) & X\text{ discrete}
+\end{cases}
+\end{aligned}
+\]
+
+\[
+X\sim F_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow\mathrm{P}_{{\scriptscriptstyle X}}
+\]
+
+\[
+Y=g\left(X\right)
+\]
+
+\[
+\begin{cases}
+Y\sim F_{{\scriptscriptstyle Y}}\left(y\right)\leftrightarrow f_{{\scriptscriptstyle Y}}\left(y\right) & \Rightarrow F_{{\scriptscriptstyle Y}}\left(y\right)\overset{M}{=}F_{{\scriptscriptstyle Y}}\left(y|\theta\right)\\
+Y\sim f_{{\scriptscriptstyle Y}}\left(y\right)\leftrightarrow F_{{\scriptscriptstyle Y}}\left(y\right)\leftrightarrow\mathrm{P}_{{\scriptscriptstyle Y}} & \Rightarrow f_{{\scriptscriptstyle Y}}\left(y\right)\overset{M}{=}f_{{\scriptscriptstyle Y}}\left(y|\theta\right)
+\end{cases}
+\]
+
+\subsubsection{continuous monotone transformation}\label{continuous-monotone-transformation}
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-10}{}\label{thm:unnamed-chunk-10}Random variable \(Y\) is monotone transformation of random variable \(X\), i.e.~\(\begin{cases}
+X\sim F_{{\scriptscriptstyle X}}\left(x\right)\leftrightarrow f_{{\scriptscriptstyle X}}\left(x\right)\\
+Y=g\left(X\right)\begin{cases}
+\forall x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\left[g\left(x_{{\scriptscriptstyle 1}}\right)<g\left(x_{{\scriptscriptstyle 2}}\right)\right]\\
+\forall x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\left[g\left(x_{{\scriptscriptstyle 1}}\right)>g\left(x_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\Rightarrow & \exists g^{-1}:Y\rightarrow X
+\end{cases}\), then
+\end{theorem}
+
+\[
+f_{{\scriptscriptstyle Y}}\left(y\right)=f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\left|\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y}\right|
+\]
+
+Proof:
+
+\[
+\begin{aligned}
+F_{{\scriptscriptstyle Y}}\left(y\right)= & \mathrm{P}_{{\scriptscriptstyle Y}}\left(Y\le y\right)\\
+= & \mathrm{P}\left(g\left(X\right)\le y\right)\begin{cases}
+\forall x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\left[g\left(x_{{\scriptscriptstyle 1}}\right)<g\left(x_{{\scriptscriptstyle 2}}\right)\right] & \Leftrightarrow\forall g\left(x_{{\scriptscriptstyle 1}}\right)<g\left(x_{{\scriptscriptstyle 2}}\right)\left[x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\right]\\
+\forall x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\left[g\left(x_{{\scriptscriptstyle 1}}\right)>g\left(x_{{\scriptscriptstyle 2}}\right)\right] & \Leftrightarrow\forall g\left(x_{{\scriptscriptstyle 1}}\right)>g\left(x_{{\scriptscriptstyle 2}}\right)\left[x_{{\scriptscriptstyle 1}}<x_{{\scriptscriptstyle 2}}\right]
+\end{cases}\\
+= & \begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=x\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\ge g^{-1}\left(y\right)=x\right) & \forall y_{{\scriptscriptstyle 1}}>y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+= & \begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=x\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\ge g^{-1}\left(y\right)=x\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+= & \begin{cases}
+F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+1-F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+F_{{\scriptscriptstyle Y}}\left(y\right)= & \begin{cases}
+F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+1-F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+f_{{\scriptscriptstyle Y}}\left(y\right)=\dfrac{\mathrm{d}}{\mathrm{d}y}F_{{\scriptscriptstyle Y}}\left(y\right)= & \begin{cases}
+\dfrac{\mathrm{d}}{\mathrm{d}y}F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right) & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+\dfrac{\mathrm{d}}{\mathrm{d}y}\left[1-F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\right] & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+= & \begin{cases}
+\dfrac{\mathrm{d}F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)}{\mathrm{d}g^{-1}\left(y\right)}\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+\dfrac{-\mathrm{d}F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)}{\mathrm{d}g^{-1}\left(y\right)}\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+= & \begin{cases}
+\dfrac{\mathrm{d}F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)}{\mathrm{d}g^{-1}\left(y\right)}\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]\\
+\dfrac{\mathrm{d}F_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)}{\mathrm{d}g^{-1}\left(y\right)}\dfrac{-\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \forall y_{{\scriptscriptstyle 1}}<y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+= & \begin{cases}
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \begin{cases}
+\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y}\ge0\\
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\ge0
+\end{cases}\Rightarrow f_{{\scriptscriptstyle Y}}\left(y\right)\ge0\\
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\dfrac{-\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \begin{cases}
+\dfrac{-\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y}\ge0\\
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\ge0
+\end{cases}\Rightarrow f_{{\scriptscriptstyle Y}}\left(y\right)\ge0
+\end{cases}\\
+f_{{\scriptscriptstyle Y}}\left(y\right)= & \begin{cases}
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y}\ge0\\
+f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\dfrac{-\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y} & \dfrac{-\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y}\ge0
+\end{cases}\\
+f_{{\scriptscriptstyle Y}}\left(y\right)= & f_{{\scriptscriptstyle X}}\left(g^{-1}\left(y\right)\right)\left|\dfrac{\mathrm{d}g^{-1}\left(y\right)}{\mathrm{d}y}\right|
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+segment \(g\left(X\right)\) into monotone functions
+
+For example, \(\begin{cases}
+g\left(x\right)=x^{2}\\
+Y=g\left(X\right)
+\end{cases}\Rightarrow Y=g\left(X\right)=X^{2}\),
+
+\[
+\begin{aligned}
+ & Y=g\left(X\right)=X^{2}\\
+\Rightarrow & Y=\begin{cases}
+X^{2}=g\left(X\right) & X\ge0\Leftrightarrow X\in\left[0,+\infty\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\right]\\
+X^{2}=g\left(X\right) & X<0\Leftrightarrow X\in\left(-\infty,0\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}^{2}>X_{{\scriptscriptstyle 2}}^{2}\right]
+\end{cases}\\
+\Rightarrow & X=\begin{cases}
+\sqrt{Y}=g^{-1}\left(Y\right) & X\ge0\Rightarrow\forall X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\left[X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\right]\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\right]\\
+-\sqrt{Y}=g^{-1}\left(Y\right) & X<0\Rightarrow\forall X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\left[X_{{\scriptscriptstyle 1}}>X_{{\scriptscriptstyle 2}}\right]\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}>X_{{\scriptscriptstyle 2}}\right]
+\end{cases}\\
+\Rightarrow & X=\begin{cases}
+\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left[0,\infty\right)\Rightarrow X\ge0\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]\\
+-\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left[0,\infty\right)\Rightarrow X<0\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+F_{{\scriptscriptstyle Y}}\left(y\right)= & \mathrm{P}_{{\scriptscriptstyle Y}}\left(Y\le y\right)=\mathrm{P}\left(X^{2}\le y\right)\\
+= & \mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left(\left\{ X<0\right\} \cup\left\{ X\ge0\right\} \right)\right)\\
+= & \mathrm{P}\left(\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)\cup\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)\right)\\
+= & \mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)\\
+ & -\mathrm{P}\left(\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)\cap\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)\right)\\
+= & \mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)-\mathrm{P}\left(\emptyset\right)\\
+= & \mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)-0\\
+= & \mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X^{2}\le y\right\} \cap\left\{ X\ge0\right\} \right)\\
+= & \mathrm{P}\left(\left\{ -X\le\sqrt{y}\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X\le\sqrt{y}\right\} \cap\left\{ X\ge0\right\} \right)\\
+= & \mathrm{P}\left(\left\{ X\ge-\sqrt{y}\right\} \cap\left\{ X<0\right\} \right)+\mathrm{P}\left(\left\{ X\le\sqrt{y}\right\} \cap\left\{ X\ge0\right\} \right)\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(\left\{ -\sqrt{y}\le X<0\right\} \right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(\left\{ 0\le X\le\sqrt{y}\right\} \right)\\
+= & \left[F_{{\scriptscriptstyle X}}\left(0\right)-F_{{\scriptscriptstyle X}}\left(-\sqrt{y}\right)\right]+\left[F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)-F_{{\scriptscriptstyle X}}\left(0\right)\right]\\
+= & F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)-F_{{\scriptscriptstyle X}}\left(-\sqrt{y}\right)
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+Another example, \(\begin{cases}
+Y=g\left(X\right)=X^{2}\\
+X\in\left[-1,\infty\right)
+\end{cases}\),
+
+\[
+\begin{aligned}
+ & Y=g\left(X\right)=X^{2}\\
+\Rightarrow & Y=\begin{cases}
+X^{2}=g\left(X\right) & X\ge0\Leftrightarrow X\in\left[0,+\infty\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\right]\\
+X^{2}=g\left(X\right) & -1\le X<0\Leftrightarrow X\in\left[-1,0\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}^{2}>X_{{\scriptscriptstyle 2}}^{2}\right]
+\end{cases}\\
+\Rightarrow & X=\begin{cases}
+\sqrt{Y}=g^{-1}\left(Y\right) & X\in\left[0,\infty\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\left[X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\right]\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}<X_{{\scriptscriptstyle 2}}\right]\\
+-\sqrt{Y}=g^{-1}\left(Y\right) & X\in\left[-1,0\right)\Rightarrow\forall X_{{\scriptscriptstyle 1}}^{2}<X_{{\scriptscriptstyle 2}}^{2}\left[X_{{\scriptscriptstyle 1}}>X_{{\scriptscriptstyle 2}}\right]\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[X_{{\scriptscriptstyle 1}}>X_{{\scriptscriptstyle 2}}\right]
+\end{cases}\\
+\Rightarrow & X=\begin{cases}
+\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left[0,\infty\right)\Rightarrow X\in\left[0,\infty\right)\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]\\
+-\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left(0,1\right]\Rightarrow X\in\left[-1,0\right)\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}\\
+\Rightarrow & X=\begin{cases}
+\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left(1,\infty\right)\Rightarrow X\in\left[0,\infty\right)\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]\\
+\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left[0,1\right]\Rightarrow X\in\left[0,1\right]\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]\\
+-\sqrt{Y}=g^{-1}\left(Y\right) & Y\in\left(0,1\right]\Rightarrow X\in\left[-1,0\right)\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]
+\end{cases}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+F_{{\scriptscriptstyle Y}}\left(y\right)= & \mathrm{P}_{{\scriptscriptstyle Y}}\left(Y\le y\right)=\mathrm{P}\left(X^{2}\le y\right)\\
+= & \begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=\sqrt{y}\right) & Y\in\left(1,\infty\right)\Rightarrow X\in\left[0,\infty\right)\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=\sqrt{y}\right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\ge g^{-1}\left(y\right)=-\sqrt{y}\right)-0 & Y\in\left(0,1\right]\begin{cases}
+X\in\left(0,1\right]\\
+X\in\left[-1,0\right)
+\end{cases}\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=\sqrt{y}\right) & Y\in\left\{ 0\right\} 
+\end{cases}\\
+= & \begin{cases}
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le\sqrt{y}\right) & Y\in\left(1,\infty\right)\Rightarrow\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right]\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le\sqrt{y}\right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\ge-\sqrt{y}\right) & Y\in\left(0,1\right]\begin{cases}
+\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)<g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right] & X\in\left(0,1\right]\\
+\forall Y_{{\scriptscriptstyle 1}}<Y_{{\scriptscriptstyle 2}}\left[g^{-1}\left(Y_{{\scriptscriptstyle 1}}\right)>g^{-1}\left(Y_{{\scriptscriptstyle 2}}\right)\right] & X\in\left[-1,0\right)
+\end{cases}\\
+\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le g^{-1}\left(y\right)=\sqrt{y}\right) & Y=0
+\end{cases}\\
+= & \begin{cases}
+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right) & Y\in\left(1,\infty\right)\\
+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)+1-F_{{\scriptscriptstyle X}}\left(-\sqrt{y}\right) & Y\in\left(0,1\right]\\
+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right) & Y=0
+\end{cases}=\begin{cases}
+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right) & y\ge1\\
+1+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)-F_{{\scriptscriptstyle X}}\left(-\sqrt{y}\right) & 0<y\le1\\
+F_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)=F_{{\scriptscriptstyle X}}\left(\sqrt{0}\right)=F_{{\scriptscriptstyle X}}\left(0\right) & y=0
+\end{cases}
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\subsubsection{discrete monotone transformation}\label{discrete-monotone-transformation}
+
+\[
+\begin{cases}
+Y=g\left(X\right)=X^{2}\\
+X\text{ discrete}\Rightarrow & Y\text{ discrete}
+\end{cases}
+\]
+
+\[
+\begin{aligned}
+f_{{\scriptscriptstyle Y}}\left(y\right)= & \mathrm{P}_{{\scriptscriptstyle Y}}\left(Y=y\right)\\
+= & \mathrm{P}\left(X^{2}=y\right)\\
+= & \mathrm{P}\left(\left\{ X=\sqrt{y}\right\} \cup\left\{ X=-\sqrt{y}\right\} \right)\\
+= & \mathrm{P}\left(\left\{ X=\sqrt{y}\right\} \right)+\mathrm{P}\left(\left\{ X=-\sqrt{y}\right\} \right)-\mathrm{P}\left(\left\{ X=\sqrt{y}\right\} \cap\left\{ X=-\sqrt{y}\right\} \right)\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(X=\sqrt{y}\right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(X=-\sqrt{y}\right)-\mathrm{P}\left(\emptyset\right)\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(X=\sqrt{y}\right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(X=-\sqrt{y}\right)-0\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(X=\sqrt{y}\right)+\mathrm{P}_{{\scriptscriptstyle X}}\left(X=-\sqrt{y}\right)\\
+= & f_{{\scriptscriptstyle X}}\left(\sqrt{y}\right)+f_{{\scriptscriptstyle X}}\left(-\sqrt{y}\right)
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-11}{}\label{thm:unnamed-chunk-11}discrete monotone transformation
+\end{theorem}
+
+\[
+\begin{aligned}
+ & \begin{cases}
+Y=g\left(X\right)\\
+X\text{ discrete}\Rightarrow & Y\text{ discrete}
+\end{cases}\\
+\Downarrow\\
+f_{{\scriptscriptstyle Y}}\left(y\right)= & \sum_{\left\{ x\middle|g\left(x\right)=y\right\} }f_{{\scriptscriptstyle X}}\left(x\right)=\sum_{\left\{ x\middle|x=g^{-1}\left(y\right)\right\} }f_{{\scriptscriptstyle X}}\left(x\right)
+\end{aligned}
+\]
+
+Proof:
+
+\[
+\begin{aligned}
+f_{{\scriptscriptstyle Y}}\left(y\right)= & \mathrm{P}_{{\scriptscriptstyle Y}}\left(Y=y\right)\\
+= & \mathrm{P}\left(g\left(X\right)=y\right)=\sum_{t\in\left\{ x\middle|g\left(x\right)=y\right\} }f_{{\scriptscriptstyle X}}\left(t\right)=\sum_{x\in\left\{ x\middle|g\left(x\right)=y\right\} }f_{{\scriptscriptstyle X}}\left(x\right)\\
+= & \mathrm{P}_{{\scriptscriptstyle X}}\left(X=g^{-1}\left(y\right)\right)=\sum_{t\in\left\{ x\middle|x=g^{-1}\left(y\right)\right\} }f_{{\scriptscriptstyle X}}\left(t\right)=\sum_{x\in\left\{ x\middle|x=g^{-1}\left(y\right)\right\} }f_{{\scriptscriptstyle X}}\left(x\right)
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-12}{}\label{thm:unnamed-chunk-12}probability integral transformation
+\end{theorem}
+
+\[
+\begin{aligned}
+a
+\end{aligned}
+\]
+
+Proof:
+
+\[
+\begin{aligned}
+a
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\subsection{multivariable distribution}\label{multivariable-distribution}
 
 \chapter{covariance matrix}\label{covariance-matrix}
 
@@ -8969,13 +9758,20 @@ In object-orinted API, we're getting two type of objects. One is \texttt{Figure}
 \begin{Highlighting}[]
 \NormalTok{ax1 }\OperatorTok{=}\NormalTok{ fig.add\_axes([}\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{]) }\CommentTok{\# [left, bottom, width, height]}
 \BuiltInTok{print}\NormalTok{(}\StringTok{"ax1 is of type:"}\NormalTok{, }\BuiltInTok{type}\NormalTok{(ax1))}
-\CommentTok{\# ax1.plot(a1, a2)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
 ## ax1 is of type: <class 'matplotlib.axes._axes.Axes'>
 \end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# ax1.plot(a1, a2)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-11-11.pdf}
 
 \begin{quote}
 \begin{enumerate}
@@ -9027,7 +9823,7 @@ In object-orinted API, we're getting two type of objects. One is \texttt{Figure}
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-13-11.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-13-13.pdf}
 
 \end{col}
 
@@ -9061,7 +9857,7 @@ In object-orinted API, we're getting two type of objects. One is \texttt{Figure}
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-15-13.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-15-15.pdf}
 
 \end{col}
 
@@ -9098,7 +9894,7 @@ In object-orinted API, we're getting two type of objects. One is \texttt{Figure}
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-17-15.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-17-17.pdf}
 
 \end{col}
 
@@ -9122,6 +9918,8 @@ Get image size for the figure object. 6 by 4 is the default.
 \begin{verbatim}
 ## array([6.5, 4.5])
 \end{verbatim}
+
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-18-19.pdf}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -9153,7 +9951,7 @@ Get image size for the figure object. 6 by 4 is the default.
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-20-17.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-20-21.pdf}
 
 \end{col}
 
@@ -9189,7 +9987,7 @@ Get image size for the figure object. 6 by 4 is the default.
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-22-19.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-22-23.pdf}
 
 \end{col}
 
@@ -9216,6 +10014,8 @@ Get image DPI for the figure object. 100 is the default here.
 ## 100.0
 \end{verbatim}
 
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-23-25.pdf}
+
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \begin{Shaded}
@@ -9238,6 +10038,8 @@ Get image DPI for the figure object. 100 is the default here.
 ## 100.0
 \end{verbatim}
 
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-24-27.pdf}
+
 \subsubsection{subplot}\label{subplot}
 
 \begin{Shaded}
@@ -9255,6 +10057,8 @@ Get image DPI for the figure object. 100 is the default here.
 ## [[<Axes: > <Axes: >]
 ##  [<Axes: > <Axes: >]]
 \end{verbatim}
+
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-25-29.pdf}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -9287,7 +10091,7 @@ Get image DPI for the figure object. 100 is the default here.
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-27-1.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-27-31.pdf}
 
 \end{col}
 
@@ -9355,7 +10159,7 @@ Get image DPI for the figure object. 100 is the default here.
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-29-3.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-29-33.pdf}
 
 \end{col}
 
@@ -9400,7 +10204,7 @@ Get image DPI for the figure object. 100 is the default here.
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-31-5.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-31-35.pdf}
 
 \end{col}
 
@@ -9447,7 +10251,7 @@ predefined styles
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-34-7.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-34-37.pdf}
 
 \end{col}
 
@@ -9940,7 +10744,7 @@ and directly using Anaconda \texttt{conda} environment for convenience, instead 
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-59-1.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-59-1.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-59-2.pdf}
 
 \end{col}
 
@@ -9972,7 +10776,7 @@ and directly using Anaconda \texttt{conda} environment for convenience, instead 
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-61-3.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-61-5.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-61-6.pdf}
 
 \end{col}
 
@@ -10018,7 +10822,7 @@ Here we specify that different \texttt{sex} be on different column by specifying
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-63-5.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-63-9.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-63-10.pdf}
 
 \end{col}
 
@@ -10056,7 +10860,7 @@ Here we specify that different \texttt{sex} be on different column by specifying
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-65-7.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-65-13.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-65-14.pdf}
 
 \end{col}
 
@@ -10108,7 +10912,7 @@ Recall that Seaborn uses Matplotlib to draw the graphics. So underneath the Seab
 ## <class 'matplotlib.figure.Figure'>
 \end{verbatim}
 
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-67-9.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-67-17.pdf}
 
 \end{col}
 
@@ -10145,7 +10949,7 @@ Recall that Seaborn uses Matplotlib to draw the graphics. So underneath the Seab
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-69-11.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-69-19.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-69-20.pdf}
 
 \end{col}
 
@@ -10178,7 +10982,7 @@ Recall that Seaborn uses Matplotlib to draw the graphics. So underneath the Seab
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-71-13.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-71-23.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-71-24.pdf}
 
 \end{col}
 
@@ -10211,7 +11015,7 @@ Recall that Seaborn uses Matplotlib to draw the graphics. So underneath the Seab
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-73-15.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-73-27.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-73-28.pdf}
 
 \end{col}
 
@@ -10244,7 +11048,7 @@ Recall that Seaborn uses Matplotlib to draw the graphics. So underneath the Seab
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-75-17.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-75-31.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-75-32.pdf}
 
 \end{col}
 
@@ -10277,13 +11081,13 @@ histogram with KDE
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-1.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-35.pdf}
 
 \begin{verbatim}
 ## '% This file was created with tikzplotlib v0.10.1.\n\\begin{tikzpicture}\n\n\\definecolor{darkgray176}{RGB}{176,176,176}\n\\definecolor{steelblue31119180}{RGB}{31,119,180}\n\n\\begin{axis}[\ntick align=outside,\ntick pos=left,\nx grid style={darkgray176},\nxlabel={total_bill},\nxmin=0.682999999999999, xmax=53.197,\nxtick style={color=black},\ny grid style={darkgray176},\nylabel={Count},\nymin=0, ymax=38.85,\nytick style={color=black}\n]\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:3.07,0) rectangle (axis cs:5.457,1);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:5.457,0) rectangle (axis cs:7.844,6);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:7.844,0) rectangle (axis cs:10.231,13);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:10.231,0) rectangle (axis cs:12.618,29);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:12.618,0) rectangle (axis cs:15.005,31);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:15.005,0) rectangle (axis cs:17.392,37);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:17.392,0) rectangle (axis cs:19.779,28);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:19.779,0) rectangle (axis cs:22.166,23);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:22.166,0) rectangle (axis cs:24.553,18);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:24.553,0) rectangle (axis cs:26.94,13);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:26.94,0) rectangle (axis cs:29.327,10);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:29.327,0) rectangle (axis cs:31.714,9);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:31.714,0) rectangle (axis cs:34.101,5);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:34.101,0) rectangle (axis cs:36.488,7);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:36.488,0) rectangle (axis cs:38.875,3);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:38.875,0) rectangle (axis cs:41.262,4);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:41.262,0) rectangle (axis cs:43.649,1);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:43.649,0) rectangle (axis cs:46.036,2);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:46.036,0) rectangle (axis cs:48.423,3);\n\\draw[draw=black,fill=steelblue31119180,fill opacity=0.5] (axis cs:48.423,0) rectangle (axis cs:50.81,1);\n\\addplot [semithick, steelblue31119180]\ntable {%\n3.07 1.81650227371093\n3.30989949748744 2.0434643264896\n3.54979899497487 2.2946853892412\n3.78969849246231 2.57191856721816\n4.02959798994975 2.87687103964454\n4.26949748743719 3.2111703368463\n4.50939698492462 3.57632865116155\n4.74929648241206 3.97370595578498\n4.9891959798995 4.40447280025508\n5.22909547738693 4.86957372234809\n5.46899497487437 5.36969226057983\n5.70889447236181 5.90521856710491\n5.94879396984925 6.47622060619422\n6.18869346733668 7.08241987817059\n6.42859296482412 7.72317253298626\n6.66849246231156 8.39745663256822\n6.90839195979899 9.10386618836671\n7.14829145728643 9.84061244261478\n7.38819095477387 10.605532681721\n7.62809045226131 11.3961066717526\n7.86798994974874 12.2094805936589\n8.10788944723618 13.0424981350657\n8.34778894472362 13.8917381722816\n8.58768844221106 14.7535582575524\n8.82758793969849 15.6241429202311\n9.06748743718593 16.4995556046295\n9.30738693467337 17.3757929103925\n9.5472864321608 18.2488396817903\n9.78718592964824 19.1147234183632\n10.0270854271357 19.9695664579337\n10.2669849246231 20.8096344196708\n10.5068844221106 21.6313794931092\n10.746783919598 22.4314773197019\n10.9866834170854 23.2068564344639\n11.2265829145729 23.9547195110843\n11.4664824120603 24.6725559755833\n11.7063819095477 25.3581459088295\n11.9462814070352 26.0095555316024\n12.1861809045226 26.6251249394887\n12.4260804020101 27.2034491092342\n12.6659798994975 27.7433535131461\n12.9058793969849 28.2438659343764\n13.1457788944724 28.7041862560547\n13.3856783919598 29.1236560873048\n13.6255778894472 29.5017300798215\n13.8654773869347 29.8379506761731\n14.1053768844221 30.1319278179194\n14.3452763819095 30.3833248371542\n14.585175879397 30.591851374701\n14.8250753768844 30.7572637330083\n15.0649748743719 30.8793726073093\n15.3048743718593 30.9580576730616\n15.5447738693467 30.9932880701113\n15.7846733668342 30.9851474422087\n16.0245728643216 30.9338618888512\n16.264472361809 30.8398289841961\n16.5043718592965 30.7036459275097\n16.7442713567839 30.5261349162415\n16.9841708542714 30.3083639732627\n17.2240703517588 30.0516617033457\n17.4639698492462 29.7576247830678\n17.7038693467337 29.4281173801778\n17.9437688442211 29.0652621267963\n18.1836683417085 28.671422708\n18.423567839196 28.2491785464713\n18.6634673366834 27.8012924408185\n18.9033668341709 27.3306723300243\n19.1432663316583 26.8403285949087\n19.3831658291457 26.3333284612471\n19.6230653266332 25.8127491361762\n19.8629648241206 25.2816312933759\n20.102864321608 24.7429344316665\n20.3427638190955 24.1994954781583\n20.5826633165829 23.6539918052482\n20.8225628140704 23.1089095957794\n21.0624623115578 22.5665182374548\n21.3023618090452 22.0288511696841\n21.5422613065327 21.4976933549977\n21.7821608040201 20.9745753121716\n22.0220603015075 20.4607734360394\n22.261959798995 19.9573161441721\n22.5018592964824 19.4649952359086\n22.7417587939699 18.9843817259491\n22.9816582914573 18.5158453233279\n23.2215577889447 18.0595766669415\n23.4614572864322 17.615611400536\n23.7013567839196 17.1838551725645\n23.941256281407 16.7641086787571\n24.1811557788945 16.3560919263279\n24.4210552763819 15.9594669865189\n24.6609547738693 15.5738586137688\n24.9008542713568 15.1988722412078\n25.1407537688442 14.8341090082362\n25.3806532663317 14.4791776303403\n25.6205527638191 14.1337030768421\n25.8604522613065 13.7973321712685\n26.100351758794 13.4697363637648\n26.3402512562814 13.150612038339\n26.5801507537688 12.8396788037574\n26.8200502512563 12.5366762713579\n27.0599497487437 12.2413598437652\n27.2998492462312 11.9534960256898\n27.5397487437186 11.6728577243006\n27.779648241206 11.3992199369156\n28.0195477386935 11.1323561346653\n28.2594472361809 10.8720355503384\n28.4993467336683 10.618021475438\n28.7392462311558 10.3700705740342\n28.9791457286432 10.1279331369088\n29.2190452261307 9.89135413483068\n29.4589447236181 9.66007488858728\n29.6988442211055 9.43383515726144\n29.938743718593 9.21237545429534\n30.1786432160804 8.99543942987608\n30.4185427135678 8.78277620282414\n30.6584422110553 8.57414257872065\n30.8983417085427 8.36930514594295\n31.1382412060302 8.16804229007108\n31.3781407035176 7.97014620304912\n31.618040201005 7.77542498131078\n31.8579396984925 7.58370490367017\n32.0978391959799 7.39483295445693\n32.3377386934673 7.20867961205857\n32.5776381909548 7.02514186210763\n32.8175376884422 6.84414632449376\n33.0574371859297 6.66565231214501\n33.2973366834171 6.48965457576794\n33.5372361809045 6.31618544094476\n33.777135678392 6.1453160195762\n34.0170351758794 5.97715618216116\n34.2569346733668 5.81185301380445\n34.4968341708543 5.64958754514477\n34.7367336683417 5.4905696464633\n34.9766331658291 5.33503109293979\n35.2165326633166 5.18321694268858\n35.456432160804 5.03537550629672\n35.6963316582915 4.89174731561885\n35.9362311557789 4.75255360914146\n36.1761306532663 4.61798493100736\n36.4160301507538 4.48819048255514\n36.6559296482412 4.36326886361301\n36.8958291457286 4.24326079384011\n37.1357286432161 4.12814431384217\n37.3756281407035 4.01783283689438\n37.615527638191 3.91217626335446\n37.8554271356784 3.81096519221432\n38.0953266331658 3.71393808027978\n38.3352261306533 3.6207910222994\n38.5751256281407 3.53118966756817\n38.8150251256281 3.44478266114206\n39.0549246231156 3.3612159094193\n39.294824120603 3.28014692600479\n39.5347236180905 3.20125851656009\n39.7746231155779 3.12427110932688\n40.0145226130653 3.04895312649168\n40.2544221105528 2.97512891305667\n40.4943216080402 2.90268388486196\n40.7342211055276 2.83156671514291\n40.9741206030151 2.76178853850247\n41.2140201005025 2.69341930205747\n41.45391959799 2.62658152681276\n41.6938190954774 2.56144185109477\n41.9337185929648 2.49820080763016\n42.1736180904523 2.43708133466766\n42.4135175879397 2.37831653999644\n42.6534170854271 2.32213722758936\n42.8933165829146 2.26875966439028\n43.133216080402 2.21837401507579\n43.3731155778895 2.17113381152285\n43.6130150753769 2.12714675709877\n43.8529145728643 2.08646709892452\n44.0928140703518 2.04908973796103\n44.3327135678392 2.01494618973935\n44.5726130653266 1.9839024589303\n44.8125125628141 1.95575884849134\n45.0524120603015 1.93025168749459\n45.2923115577889 1.90705692886651\n45.5322110552764 1.88579553680867\n45.7721105527638 1.8660405514497\n46.0120100502513 1.84732568370606\n46.2519095477387 1.82915525570066\n46.4918090452261 1.81101526177134\n46.7317085427136 1.79238528356458\n46.971608040201 1.77275095240831\n47.2115075376884 1.75161661627327\n47.4514070351759 1.72851784072741\n47.6913065326633 1.70303335688259\n47.9312060301508 1.67479606749064\n48.1711055276382 1.64350273728161\n48.4110050251256 1.6089220264205\n48.6509045226131 1.57090057632539\n48.8908040201005 1.52936692339272\n49.1307035175879 1.48433309547015\n49.3706030150754 1.43589383418153\n49.6105025125628 1.38422347865573\n49.8504020100503 1.32957063768011\n50.0903015075377 1.27225086266426\n50.3302010050251 1.21263760837119\n50.5701005025126 1.15115182824249\n50.81 1.08825059345319\n};\n\\end{axis}\n\n\\end{tikzpicture}\n'
 \end{verbatim}
 
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-2.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-77-36.pdf}
 
 \end{col}
 
@@ -10331,7 +11135,7 @@ X \texttt{ylabel=\{Count\},} changed to \texttt{ylabel=\{\$\textbackslash{}text\
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-5.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-6.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-39.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-40.pdf}
 
 \end{col}
 
@@ -10373,7 +11177,7 @@ Let's cutomize the label and title.
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-9.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-10.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-43.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-44.pdf}
 
 \end{col}
 
@@ -10408,7 +11212,7 @@ Let's cutomize the label and title.
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-84-13.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-84-14.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-84-47.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-84-48.pdf}
 
 \end{col}
 
@@ -10442,7 +11246,7 @@ Let's cutomize the label and title.
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-17.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-18.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-51.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-52.pdf}
 
 \end{col}
 
@@ -10481,10 +11285,10 @@ Let's cutomize the label and title.
 \begin{col}{0.45\textwidth}
 
 \begin{verbatim}
-## <seaborn.axisgrid.JointGrid object at 0x0000024FEA3984F0>
+## <seaborn.axisgrid.JointGrid object at 0x000002909710EE80>
 \end{verbatim}
 
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-88-21.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-88-55.pdf}
 
 \end{col}
 
@@ -10516,7 +11320,7 @@ Let's cutomize the label and title.
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-90-23.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-90-24.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-90-57.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-90-58.pdf}
 
 \end{col}
 
@@ -10555,7 +11359,7 @@ A list of color: \url{https://matplotlib.org/stable/tutorials/colors/colormaps.h
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-27.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-28.pdf}
+\includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-61.pdf} \includegraphics{202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-62.pdf}
 
 \end{col}
 
@@ -12470,6 +13274,40 @@ t,x,y,z\in\mathbb{R} & \Leftrightarrow\left\langle t,x,y,z\right\rangle \in\math
 \end{aligned}
 \]
 
+\[
+\begin{aligned}
+ & q=a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d,\begin{cases}
+q\in\mathbb{H}\\
+\mathrm{i}^{2}=\mathrm{j}^{2}=\mathrm{k}^{2}=-1=\mathrm{i}\mathrm{j}\mathrm{k} & \Rightarrow\mathrm{i}\mathrm{j}=\mathrm{k}\\
+a,b,c,d\in\mathbb{R} & \Leftrightarrow\left\langle a,b,c,d\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & w=t+x\mathrm{i}+y\mathrm{j}+z\mathrm{k}=t+\mathrm{i}x+\mathrm{j}y+\mathrm{k}z,\begin{cases}
+w\in\mathbb{H}\\
+\mathrm{i}^{2}=\mathrm{j}^{2}=\mathrm{k}^{2}=-1=\mathrm{i}\mathrm{j}\mathrm{k} & \Rightarrow\mathrm{i}\mathrm{j}=\mathrm{k}\\
+t,x,y,z\in\mathbb{R} & \Leftrightarrow\left\langle t,x,y,z\right\rangle \in\mathbb{R}^{4}
+\end{cases}\\
+= & t+\begin{pmatrix}\mathrm{i} & \mathrm{j} & \mathrm{k}\end{pmatrix}\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\begin{pmatrix}\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\end{pmatrix}\begin{pmatrix}x\\
+y\\
+z
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\begin{pmatrix}\boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}_{{\scriptscriptstyle 3}}\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}=x_{{\scriptscriptstyle 0}}+\boldsymbol{x},\begin{cases}
+\boldsymbol{e}_{{\scriptscriptstyle 1}}=\boldsymbol{i}=\mathrm{i}\\
+\boldsymbol{e}_{{\scriptscriptstyle 2}}=\boldsymbol{j}=\mathrm{j}\\
+\boldsymbol{e}_{{\scriptscriptstyle 3}}=\boldsymbol{k}=\mathrm{k}
+\end{cases}\\
+= & t+\dfrac{\mathrm{i}x+\mathrm{j}y+\mathrm{k}z}{r}r,\begin{cases}
+r^{2}=x^{2}+y^{2}+z^{2} & \left|q\right|^{2}=t^{2}+r^{2}\\
+\left\Vert \boldsymbol{n}\right\Vert ^{2}=\left(\dfrac{\mathrm{i}x+\mathrm{j}y+\mathrm{k}z}{r}\right)^{2}=-1
+\end{cases}\\
+= & \sqrt{t^{2}+r^{2}}\left(\dfrac{t}{\sqrt{t^{2}+r^{2}}}+\boldsymbol{n}\dfrac{r}{\sqrt{t^{2}+r^{2}}}\right)=\left|q\right|\left(\cos\dfrac{\theta}{2}+\boldsymbol{n}\sin\dfrac{\theta}{2}\right)=\left|q\right|\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}
+\end{aligned}
+\]
+
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 The quaternion set is denoted \(\mathbb{H}\) for Sir R.W. \textbf{Hamilton}, because he suddenly and strikingly realized
@@ -12621,7 +13459,7 @@ x_{{\scriptscriptstyle 2}{\scriptscriptstyle 1}} & x_{{\scriptscriptstyle 2}{\sc
 \end{aligned}
 \]
 
-product of two general quaternions / ordinary quaternions
+product of two general quaternions / ordinary quaternions = Grassmann product
 
 \[
 \begin{aligned}
@@ -12765,7 +13603,7 @@ AB=-BA\Rightarrow AB\not\equiv BA
 
 \subsubsection{triple product}\label{triple-product}
 
-product = double product
+product = double product = Grassmann product
 
 \[
 ab=\left(a_{{\scriptscriptstyle 0}}b_{{\scriptscriptstyle 0}}-\boldsymbol{a}\cdot\boldsymbol{b}\right)+\left(a_{{\scriptscriptstyle 0}}\boldsymbol{b}+b_{{\scriptscriptstyle 0}}\boldsymbol{a}+\boldsymbol{a}\times\boldsymbol{b}\right)
@@ -14025,27 +14863,1247 @@ q=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
 \boldsymbol{v}\xrightarrow{\text{rotate about }\boldsymbol{u}}\boldsymbol{v}^{\prime}
 \]
 
-\$\$
+\[
+\boldsymbol{v}\xrightarrow{\text{rotate about }\boldsymbol{n}}\boldsymbol{v}^{\prime}
+\]
 
-\$\$
+\[
+\begin{cases}
+\boldsymbol{v}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}+\boldsymbol{v}_{{\scriptscriptstyle \perp\boldsymbol{n}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\boldsymbol{v}_{{\scriptscriptstyle \perp}} & \Rightarrow\boldsymbol{v}_{{\scriptscriptstyle \perp}}=\boldsymbol{v}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\boldsymbol{v}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp\boldsymbol{n}}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime} & \Rightarrow\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}=\boldsymbol{v}^{\prime}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\end{cases}
+\]
 
-\$\$
+\[
+\begin{aligned}
+\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}= & \mathrm{proj}_{{\scriptscriptstyle \boldsymbol{n}}}\boldsymbol{v}=\dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }\hat{\boldsymbol{n}}\\
+= & \dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }\dfrac{\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }=\dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert ^{2}}\boldsymbol{n}
+\end{aligned}
+\]
 
-\$\$
+\[
+\begin{aligned}
+\boldsymbol{v}_{{\scriptscriptstyle \parallel\hat{\boldsymbol{n}}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}= & \mathrm{proj}_{\hat{{\scriptscriptstyle \boldsymbol{n}}}}\boldsymbol{v}=\dfrac{\boldsymbol{v}\cdot\hat{\boldsymbol{n}}}{\left\Vert \hat{\boldsymbol{n}}\right\Vert }\hat{\boldsymbol{n}}\overset{\left\Vert \hat{\boldsymbol{n}}\right\Vert =1}{=}\left(\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\right)\hat{\boldsymbol{n}}=\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\hat{\boldsymbol{n}}\\
+= & \dfrac{\boldsymbol{v}\cdot\hat{\boldsymbol{n}}}{\left\Vert \hat{\boldsymbol{n}}\right\Vert }\dfrac{\hat{\boldsymbol{n}}}{\left\Vert \hat{\boldsymbol{n}}\right\Vert }=\dfrac{\boldsymbol{v}\cdot\hat{\boldsymbol{n}}}{\left\Vert \hat{\boldsymbol{n}}\right\Vert ^{2}}\hat{\boldsymbol{n}}\overset{\left\Vert \hat{\boldsymbol{n}}\right\Vert =1}{=}\left(\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\right)\hat{\boldsymbol{n}}=\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\hat{\boldsymbol{n}}
+\end{aligned}
+\]
 
-\$\$
+\[
+\boldsymbol{n}=\hat{\boldsymbol{n}}
+\]
 
-\$\$
+\[
+\begin{aligned}
+\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}= & \mathrm{proj}_{{\scriptscriptstyle \boldsymbol{n}}}\boldsymbol{v}=\dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }\hat{\boldsymbol{n}}\overset{\left\Vert \boldsymbol{n}\right\Vert =1}{=}\left(\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\right)\hat{\boldsymbol{n}}=\boldsymbol{v}\cdot\hat{\boldsymbol{n}}\hat{\boldsymbol{n}}\\
+= & \dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }\dfrac{\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert }=\dfrac{\boldsymbol{v}\cdot\boldsymbol{n}}{\left\Vert \boldsymbol{n}\right\Vert ^{2}}\boldsymbol{n}\overset{\left\Vert \boldsymbol{n}\right\Vert =1}{=}\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}=\boldsymbol{v}\cdot\boldsymbol{n}\boldsymbol{n}
+\end{aligned}
+\]
 
-\$\$
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}
+\]
 
-\$\$
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}=\boldsymbol{v}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\boldsymbol{v}-\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}
+\]
 
-\$\$
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}=\boldsymbol{v}\xrightarrow{\text{rotate about }\boldsymbol{n}}\boldsymbol{v}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}
+\]
 
-\$\$
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\xrightarrow{\text{rotate about }\boldsymbol{n}}\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\]
+
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\]
+
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\]
+
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\]
+
+\[
+\begin{cases}
+\boldsymbol{u}=\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}} & \begin{cases}
+\boldsymbol{u}\perp\boldsymbol{n}\\
+\boldsymbol{u}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{cases}\\
+\left\Vert \boldsymbol{u}\right\Vert =\left\Vert \boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert =\left\Vert \boldsymbol{n}\right\Vert \left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert \sin\dfrac{\pi}{2}=\left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert  & \begin{cases}
+\boldsymbol{n}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+\left\Vert \boldsymbol{n}\right\Vert =1
+\end{cases}
+\end{cases}
+\]
+
+\[
+\begin{aligned}
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}= & \boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{v}_{{\scriptscriptstyle \perp}}}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{u}}}^{\prime}\\
+= & \left(\cos\theta\right)\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\left(\sin\theta\right)\boldsymbol{u},\theta=\angle\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+= & \cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\boldsymbol{u}\\
+= & \cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right)\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}= & \cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right)
+\end{aligned}
+\]
+
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}=\cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right),\theta=\angle\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}=\cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right)
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{aligned}
+\boldsymbol{v}^{\prime}= & \boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime},\begin{cases}
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}=\cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right),\theta=\angle\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{cases}\\
+= & \boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right),\theta=\angle\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+= & \boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right),\begin{cases}
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}=\boldsymbol{v}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}=\boldsymbol{v}-\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}
+\end{cases}\\
+= & \left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\cos\theta\left[\boldsymbol{v}-\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}\right]+\sin\theta\left[\boldsymbol{n}\times\left(\boldsymbol{v}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\right)\right]\\
+= & \left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\cos\theta\boldsymbol{v}-\cos\theta\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\sin\theta\left[\boldsymbol{n}\times\boldsymbol{v}-\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\right]\\
+= & \cos\theta\boldsymbol{v}+\left(1-\cos\theta\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\sin\theta\left[\boldsymbol{n}\times\boldsymbol{v}-\boldsymbol{0}\right]\\
+= & \cos\theta\boldsymbol{v}+\left(1-\cos\theta\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\sin\theta\boldsymbol{n}\times\boldsymbol{v}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\boldsymbol{v}^{\prime}=\cos\theta\boldsymbol{v}+\left(1-\cos\theta\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\sin\theta\boldsymbol{n}\times\boldsymbol{v}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{aligned}
+\boldsymbol{v}^{\prime}= & \cos\theta\boldsymbol{v}+\left(1-\cos\theta\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\sin\theta\boldsymbol{n}\times\boldsymbol{v}\\
+= & \cos\theta\boldsymbol{v}+\left[1-\left(1-2\sin^{2}\dfrac{\theta}{2}\right)\right]\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\left[2\sin\dfrac{\theta}{2}\cos\dfrac{\theta}{2}\right]\boldsymbol{n}\times\boldsymbol{v}\\
+= & \cos\theta\boldsymbol{v}+\left[2\sin^{2}\dfrac{\theta}{2}\right]\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\left[2\sin\dfrac{\theta}{2}\cos\dfrac{\theta}{2}\right]\boldsymbol{n}\times\boldsymbol{v}\\
+= & \cos\theta\boldsymbol{v}+2\sin\dfrac{\theta}{2}\left[\left(\sin\dfrac{\theta}{2}\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}+\left(\cos\dfrac{\theta}{2}\right)\boldsymbol{n}\times\boldsymbol{v}\right]\\
+= & \cos\theta\boldsymbol{v}+2\sin\dfrac{\theta}{2}\left[\left(\cos\dfrac{\theta}{2}\right)\boldsymbol{n}\times\boldsymbol{v}+\left(\sin\dfrac{\theta}{2}\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}\right]\\
+= & \left[2\cos^{2}\dfrac{\theta}{2}-1\right]\boldsymbol{v}+2\sin\dfrac{\theta}{2}\left[\left(\cos\dfrac{\theta}{2}\right)\boldsymbol{n}\times\boldsymbol{v}+\left(\sin\dfrac{\theta}{2}\right)\left(\boldsymbol{v}\cdot\boldsymbol{n}\right)\boldsymbol{n}\right]
+\end{aligned}
+\]
+
+\subsection{quaternion operation}\label{quaternion-operation}
+
+\[
+\begin{aligned}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\\
+\varrho= & \alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\begin{pmatrix}a\\
+b\\
+c\\
+d
+\end{pmatrix}\begin{pmatrix}\alpha\\
+\beta\\
+\gamma\\
+\delta
+\end{pmatrix}\leftarrow q\varrho= & \left(a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\right)\left(\alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}\right)\\
+= & a\left(\alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}\right)\\
++ & b\mathrm{i}\left(\alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}\right)\\
++ & c\mathrm{j}\left(\alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}\right)\\
++ & d\mathrm{k}\left(\alpha+\beta\mathrm{i}+\gamma\mathrm{j}+\delta\mathrm{k}\right)\\
+= & a\alpha+a\beta\mathrm{i}+a\gamma\mathrm{j}+a\delta\mathrm{k}\\
++ & b\alpha\mathrm{i}-b\beta+b\gamma\mathrm{k}-b\delta\mathrm{j}\\
++ & c\alpha\mathrm{j}-c\beta\mathrm{k}-c\gamma+c\delta\mathrm{i}\\
++ & d\alpha\mathrm{k}+d\beta\mathrm{j}-d\gamma\mathrm{i}-d\delta\\
+= & \left(a\alpha-b\beta-c\gamma-d\delta\right)\\
++ & \left(b\alpha+a\beta-d\gamma+c\delta\right)\mathrm{i}\\
++ & \left(c\alpha+d\beta+a\gamma-b\delta\right)\mathrm{j}\\
++ & \left(d\alpha-c\beta+b\gamma+a\delta\right)\mathrm{k}\\
+\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}\begin{pmatrix}\alpha\\
+\beta\\
+\gamma\\
+\delta
+\end{pmatrix}\leftarrow\\
+= & \left(\alpha a-\beta b-\gamma c-\delta d\right)\\
++ & \left(\beta a+\alpha b+\delta c-\gamma d\right)\mathrm{i}\\
++ & \left(\gamma a-\delta b+\alpha c+\beta d\right)\mathrm{j}\\
++ & \left(\delta a+\gamma b-\beta c+\alpha d\right)\mathrm{k}\\
+\begin{pmatrix}\alpha & -\beta & -\gamma & -\delta\\
+\beta & \alpha & \delta & -\gamma\\
+\gamma & -\delta & \alpha & \beta\\
+\delta & \gamma & -\beta & \alpha
+\end{pmatrix}\begin{pmatrix}a\\
+b\\
+c\\
+d
+\end{pmatrix}\leftarrow
+\end{aligned}
+\]
+
+\[
+qv\leftrightarrow\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+v_{{\scriptscriptstyle 1}}\\
+v_{{\scriptscriptstyle 2}}\\
+v_{{\scriptscriptstyle 3}}
+\end{pmatrix}=Q_{{\scriptscriptstyle l}}v
+\]
+
+concept like \hyperref[quaternion-group-representation]{quaternion group representation}\textsuperscript{{[}\ref{quaternion-group-representation}{]}}
+
+\[
+\begin{aligned}
+L\left(q\right)=Q_{{\scriptscriptstyle l}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}= & \begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}a+\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{pmatrix}b\\
++ & \begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0
+\end{pmatrix}c+\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & -1 & 0\\
+0 & 1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}d\\
+\leftrightarrow & 1a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d
+\end{aligned}
+\]
+
+\[
+\mathrm{i}\mathrm{j}\leftrightarrow\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{pmatrix}\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & -1 & 0\\
+0 & 1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\leftrightarrow\mathrm{k}
+\]
+\[
+\mathrm{j}\mathrm{i}\leftrightarrow\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{pmatrix}=-\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & -1 & 0\\
+0 & 1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\leftrightarrow-\mathrm{k}
+\]
+\[
+\mathrm{k}\mathrm{i}\leftrightarrow\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & -1 & 0\\
+0 & 1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0
+\end{pmatrix}\leftrightarrow\mathrm{j}
+\]
+
+\[
+Q_{{\scriptscriptstyle l}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}=\begin{pmatrix}a & -\begin{pmatrix}b & c & d\end{pmatrix}\\
+\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix} & \begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix},\begin{cases}
+a=q_{{\scriptscriptstyle 0}}\\
+\boldsymbol{q}=\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix}\\
+Q_{{\scriptscriptstyle i}}=\begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}
+\end{cases}
+\]
+
+Grassmann product
+
+\[
+qv\leftrightarrow\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+v_{{\scriptscriptstyle 1}}\\
+v_{{\scriptscriptstyle 2}}\\
+v_{{\scriptscriptstyle 3}}
+\end{pmatrix}=Q_{{\scriptscriptstyle l}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}^{\intercal}\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{q}\times\boldsymbol{v}
+\end{pmatrix}
+\]
+
+\[
+vq\leftrightarrow\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+v_{{\scriptscriptstyle 1}}\\
+v_{{\scriptscriptstyle 2}}\\
+v_{{\scriptscriptstyle 3}}
+\end{pmatrix}=Q_{{\scriptscriptstyle r}}v
+\]
+
+\[
+\begin{aligned}
+R\left(q\right)=Q_{{\scriptscriptstyle r}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}= & a\begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}+b\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}\\
++ & c\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}+d\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0\\
+0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\\
+\leftrightarrow & a1+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}
+\end{aligned}
+\]
+
+\[
+\mathrm{i}\mathrm{j}\leftrightarrow\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}=-\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0\\
+0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\leftrightarrow-\mathrm{k}
+\]
+
+\[
+\mathrm{j}\mathrm{i}\leftrightarrow\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}=\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0\\
+0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\leftrightarrow\mathrm{k}
+\]
+
+\[
+\mathrm{k}\mathrm{i}\leftrightarrow\begin{pmatrix}0 & 0 & 0 & -1\\
+0 & 0 & 1 & 0\\
+0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\begin{pmatrix}0 & -1 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1\\
+0 & 0 & -1 & 0
+\end{pmatrix}=-\begin{pmatrix}0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0
+\end{pmatrix}\leftrightarrow-\mathrm{j}
+\]
+
+\[
+\begin{aligned}
+R\left(q\right)=Q_{{\scriptscriptstyle r}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}\leftrightarrow & \begin{pmatrix}a+bi & -c+di\\
+c+di & a-bi
+\end{pmatrix}\\
+= & \begin{pmatrix}\alpha & -\overline{\beta}\\
+\beta & \overline{\alpha}
+\end{pmatrix},\begin{cases}
+\alpha=a+bi & \overline{\alpha}=a-bi\\
+\beta=c+di & \overline{\beta}=c-di
+\end{cases}
+\end{aligned}
+\]
+
+\[
+Q_{{\scriptscriptstyle r}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}=\begin{pmatrix}a & -\begin{pmatrix}b & c & d\end{pmatrix}\\
+\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix} & \begin{pmatrix}a & d & -c\\
+-d & a & b\\
+c & -b & a
+\end{pmatrix}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix},\begin{cases}
+a=q_{{\scriptscriptstyle 0}}\\
+\boldsymbol{q}=\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix}\\
+Q_{{\scriptscriptstyle i}}=\begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}
+\end{cases}
+\]
+
+\[
+vq\leftrightarrow\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+v_{{\scriptscriptstyle 1}}\\
+v_{{\scriptscriptstyle 2}}\\
+v_{{\scriptscriptstyle 3}}
+\end{pmatrix}=Q_{{\scriptscriptstyle r}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}v_{{\scriptscriptstyle 0}}q_{{\scriptscriptstyle 0}}-\boldsymbol{q}^{\intercal}\boldsymbol{v}\\
+v_{{\scriptscriptstyle 0}}\boldsymbol{q}+Q_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}v_{{\scriptscriptstyle 0}}q_{{\scriptscriptstyle 0}}-\boldsymbol{v}\cdot\boldsymbol{q}\\
+v_{{\scriptscriptstyle 0}}\boldsymbol{q}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{v}\times\boldsymbol{q}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}-\boldsymbol{q}\times\boldsymbol{v}
+\end{pmatrix}
+\]
+
+\[
+\begin{cases}
+qv\leftrightarrow Q_{{\scriptscriptstyle l}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}^{\intercal}\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{q}\times\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}+\boldsymbol{q}\times\boldsymbol{v}
+\end{pmatrix}\\
+vq\leftrightarrow Q_{{\scriptscriptstyle r}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}v_{{\scriptscriptstyle 0}}q_{{\scriptscriptstyle 0}}-\boldsymbol{q}^{\intercal}\boldsymbol{v}\\
+v_{{\scriptscriptstyle 0}}\boldsymbol{q}+Q_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}v_{{\scriptscriptstyle 0}}q_{{\scriptscriptstyle 0}}-\boldsymbol{v}\cdot\boldsymbol{q}\\
+v_{{\scriptscriptstyle 0}}\boldsymbol{q}+\boldsymbol{v}q_{{\scriptscriptstyle 0}}+\boldsymbol{v}\times\boldsymbol{q}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle 0}}-\boldsymbol{q}\cdot\boldsymbol{v}\\
+\boldsymbol{q}v_{{\scriptscriptstyle 0}}+q_{{\scriptscriptstyle 0}}\boldsymbol{v}-\boldsymbol{q}\times\boldsymbol{v}
+\end{pmatrix}
+\end{cases}
+\]
+
+\[
+\begin{cases}
+qv=\begin{pmatrix}q_{{\scriptscriptstyle 0}}\\
+\boldsymbol{q}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}=L\left(q\right)v=Q_{{\scriptscriptstyle l}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}\\
+vq=\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}}\\
+\boldsymbol{q}
+\end{pmatrix}=R\left(q\right)v=Q_{{\scriptscriptstyle r}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}
+\end{cases}
+\]
+
+\[
+\begin{aligned}
+ & \begin{cases}
+\boldsymbol{v}\xrightarrow{\text{rotate about }\boldsymbol{n}}\boldsymbol{v}^{\prime}\\
+\begin{cases}
+\boldsymbol{v}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}+\boldsymbol{v}_{{\scriptscriptstyle \perp\boldsymbol{n}}}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}= & \Rightarrow\boldsymbol{v}_{{\scriptscriptstyle \perp}}=\boldsymbol{v}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\boldsymbol{v}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp\boldsymbol{n}}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime} & \Rightarrow\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}=\boldsymbol{v}^{\prime}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\end{cases}\\
+\begin{cases}
+\boldsymbol{u}=\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}} & \begin{cases}
+\boldsymbol{u}\perp\boldsymbol{n}\\
+\boldsymbol{u}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{cases}\\
+\left\Vert \boldsymbol{u}\right\Vert =\left\Vert \boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert =\left\Vert \boldsymbol{n}\right\Vert \left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert \sin\dfrac{\pi}{2}=\left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert  & \begin{cases}
+\boldsymbol{n}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+\left\Vert \boldsymbol{n}\right\Vert =1
+\end{cases}
+\end{cases}\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}=\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}=\cos\theta\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\sin\theta\left(\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right),\theta=\angle\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{cases}\\
+\leftrightarrow & \begin{cases}
+v\xrightarrow{\text{rotate about }n}v^{\prime}\\
+\begin{cases}
+v=\begin{pmatrix}0\\
+\boldsymbol{v}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}
+\end{pmatrix}+\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp\boldsymbol{n}}}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}+\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=v_{{\scriptscriptstyle \parallel}}+v_{{\scriptscriptstyle \perp}} & \Rightarrow v_{{\scriptscriptstyle \perp}}=v-v_{{\scriptscriptstyle \parallel}}\\
+v^{\prime}=\begin{pmatrix}0\\
+\boldsymbol{v}^{\prime}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{v}^{\prime}_{{\scriptscriptstyle \parallel\boldsymbol{n}}}
+\end{pmatrix}+\begin{pmatrix}0\\
+\boldsymbol{v}^{\prime}_{{\scriptscriptstyle \perp\boldsymbol{n}}}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{v}^{\prime}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}+\begin{pmatrix}0\\
+\boldsymbol{v}^{\prime}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=v_{{\scriptscriptstyle \parallel}}^{\prime}+v_{{\scriptscriptstyle \perp}}^{\prime} & \Rightarrow v_{{\scriptscriptstyle \perp}}^{\prime}=v^{\prime}-v_{{\scriptscriptstyle \parallel}}^{\prime}
+\end{cases}\\
+\begin{cases}
+u=\begin{pmatrix}0\\
+\boldsymbol{u}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=\begin{pmatrix}00-0\\
+\boldsymbol{n}0+0\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=\begin{pmatrix}n_{{\scriptscriptstyle 0}}v_{{\scriptscriptstyle \perp}0}-\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+\boldsymbol{n}v_{{\scriptscriptstyle \perp}0}+n_{{\scriptscriptstyle 0}}\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=nv_{{\scriptscriptstyle \perp}} & \begin{cases}
+\boldsymbol{u}\perp\boldsymbol{n}\\
+\boldsymbol{u}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{cases}\\
+\left\Vert \boldsymbol{u}\right\Vert =\left\Vert \boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert =\left\Vert \boldsymbol{n}\right\Vert \left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert \sin\dfrac{\pi}{2}=\left\Vert \boldsymbol{v}_{{\scriptscriptstyle \perp}}\right\Vert  & \begin{cases}
+\boldsymbol{n}\perp\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+\left\Vert \boldsymbol{n}\right\Vert =1
+\end{cases}
+\end{cases}\\
+v_{{\scriptscriptstyle \parallel}}^{\prime}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}^{\prime}
+\end{pmatrix}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}=v_{{\scriptscriptstyle \parallel}}\\
+v_{{\scriptscriptstyle \perp}}^{\prime}=\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}^{\prime}
+\end{pmatrix}=\cos\theta\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}+\sin\theta\begin{pmatrix}0\\
+\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=\cos\theta v_{{\scriptscriptstyle \perp}}+\sin\theta nv_{{\scriptscriptstyle \perp}}=\left(\cos\theta+\sin\theta n\right)v_{{\scriptscriptstyle \perp}}
+\end{cases}
+\end{aligned}
+\]
+
+\[
+v_{{\scriptscriptstyle \perp}}^{\prime}=\left(\cos\theta+\sin\theta n\right)v_{{\scriptscriptstyle \perp}}
+\]
+
+\[
+v_{{\scriptscriptstyle \perp}}^{\prime}=pv_{{\scriptscriptstyle \perp}},p=\cos\theta+\sin\theta n=\cos\theta\begin{pmatrix}1\\
+\boldsymbol{0}
+\end{pmatrix}+\sin\theta\begin{pmatrix}0\\
+\boldsymbol{n}
+\end{pmatrix}=\begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}
+\]
+
+\[
+p=\begin{pmatrix}p_{{\scriptscriptstyle 0}}\\
+\boldsymbol{p}
+\end{pmatrix}=\begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}=\cos\theta+\sin\theta n,\left\Vert \boldsymbol{n}\right\Vert =1
+\]
+
+\[
+\left|p\right|=\left\Vert \begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}\right\Vert =\sqrt{\begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}^{\intercal}\begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}}=\sqrt{\cos^{2}\theta+\sin^{2}\theta\left\Vert \boldsymbol{n}\right\Vert ^{2}}=\sqrt{\cos^{2}\theta+\sin^{2}\theta}=1
+\]
+
+\[
+\left|p\right|=\left\Vert \begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}\right\Vert =1
+\]
+
+\[
+p^{*}=\overline{p}=\begin{pmatrix}p_{{\scriptscriptstyle 0}}\\
+-\boldsymbol{p}
+\end{pmatrix}=\begin{pmatrix}\cos\theta\\
+-\sin\theta\boldsymbol{n}
+\end{pmatrix}=\cos\theta-\sin\theta n
+\]
+
+\[
+\begin{aligned}
+p^{*}p=\overline{p}p= & \begin{pmatrix}p_{{\scriptscriptstyle 0}}\\
+-\boldsymbol{p}
+\end{pmatrix}\begin{pmatrix}p_{{\scriptscriptstyle 0}}\\
+\boldsymbol{p}
+\end{pmatrix}=\begin{pmatrix}p_{{\scriptscriptstyle 0}}p_{{\scriptscriptstyle 0}}-\left(-\boldsymbol{p}\right)\cdot\boldsymbol{p}\\
+-\boldsymbol{p}p_{{\scriptscriptstyle 0}}+p_{{\scriptscriptstyle 0}}\boldsymbol{p}+\left(-\boldsymbol{p}\right)\times\boldsymbol{p}
+\end{pmatrix}\\
+= & \begin{pmatrix}p_{{\scriptscriptstyle 0}}p_{{\scriptscriptstyle 0}}+\boldsymbol{p}\cdot\boldsymbol{p}\\
+\boldsymbol{0}+\boldsymbol{0}
+\end{pmatrix}=p_{{\scriptscriptstyle 0}}p_{{\scriptscriptstyle 0}}+\boldsymbol{p}\cdot\boldsymbol{p}=p_{{\scriptscriptstyle 0}}^{2}+\left\Vert \boldsymbol{p}\right\Vert ^{2}=\left|p\right|^{2}=1^{2}=1\\
+= & \begin{pmatrix}p_{{\scriptscriptstyle 0}}p_{{\scriptscriptstyle 0}}-\boldsymbol{p}\cdot\left(-\boldsymbol{p}\right)\\
+\boldsymbol{p}p_{{\scriptscriptstyle 0}}+p_{{\scriptscriptstyle 0}}\left(-\boldsymbol{p}\right)+\boldsymbol{p}\times\left(-\boldsymbol{p}\right)
+\end{pmatrix}=p\overline{p}=pp^{*}
+\end{aligned}
+\]
+
+\[
+p^{*}p=\overline{p}p=1=p\overline{p}=pp^{*}=\left|p\right|^{2}=p_{{\scriptscriptstyle 0}}^{2}+\left\Vert \boldsymbol{p}\right\Vert ^{2}\Rightarrow p^{*}=\dfrac{1}{p}=p^{-1}
+\]
+
+\[
+\begin{aligned}
+p^{2}=pp= & \begin{pmatrix}p_{{\scriptscriptstyle 0}}p_{{\scriptscriptstyle 0}}-\boldsymbol{p}\cdot\boldsymbol{p}\\
+\boldsymbol{p}p_{{\scriptscriptstyle 0}}+p_{{\scriptscriptstyle 0}}\boldsymbol{p}+\boldsymbol{p}\times\boldsymbol{p}
+\end{pmatrix}=\begin{pmatrix}\cos^{2}\theta-\sin^{2}\theta\left\Vert \boldsymbol{n}\right\Vert ^{2}\\
+2\left(\sin\theta\boldsymbol{n}\right)\cos\theta+\boldsymbol{0}
+\end{pmatrix}\\
+= & \begin{pmatrix}\cos^{2}\theta-\sin^{2}\theta\\
+2\sin\theta\cos\theta\boldsymbol{n}
+\end{pmatrix}=\begin{pmatrix}\cos2\theta\\
+\sin2\theta\boldsymbol{n}
+\end{pmatrix}\\
+\begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}^{2}= & \begin{pmatrix}\cos2\theta\\
+\sin2\theta\boldsymbol{n}
+\end{pmatrix}\\
+q^{2}=\begin{pmatrix}\cos\dfrac{\theta}{2}\\
+\sin\dfrac{\theta}{2}\boldsymbol{n}
+\end{pmatrix}^{2}= & \begin{pmatrix}\cos\theta\\
+\sin\theta\boldsymbol{n}
+\end{pmatrix}=p
+\end{aligned}
+\]
+
+\(qv_{{\scriptscriptstyle \parallel}}=v_{{\scriptscriptstyle \parallel}}q\)
+
+\[
+\begin{aligned}
+\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \parallel\boldsymbol{n}}}= & \begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \parallel}}=\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}\\
+= & \begin{pmatrix}\alpha0-\beta\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\beta\boldsymbol{n}0+\alpha\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\beta\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}=\begin{pmatrix}-\beta\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\boldsymbol{0}
+\end{pmatrix}=\begin{pmatrix}-\beta\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}\\
+= & \begin{pmatrix}0\alpha-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\cdot\beta\boldsymbol{n}\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\alpha+0\beta\boldsymbol{n}+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\times\beta\boldsymbol{n}
+\end{pmatrix}=\begin{pmatrix}-\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\cdot\beta\boldsymbol{n}\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \parallel}}+\boldsymbol{0}
+\end{pmatrix}=\begin{pmatrix}-\beta\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \parallel}}\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}\\
+= & \begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \parallel}}
+\end{pmatrix}\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}=v_{{\scriptscriptstyle \parallel}}\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}=v_{{\scriptscriptstyle \parallel\boldsymbol{n}}}\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}\\
+\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \parallel}}= & v_{{\scriptscriptstyle \parallel}}\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}
+\end{aligned}
+\]
+
+\(qv_{{\scriptscriptstyle \perp}}=v_{{\scriptscriptstyle \perp}}q^{*}\)
+
+\[
+\begin{aligned}
+\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \perp\boldsymbol{n}}}= & \begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \perp}}=\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}\begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}\\
+= & \begin{pmatrix}\alpha0-\beta\boldsymbol{n}\cdot\boldsymbol{v}_{{\scriptscriptstyle \perp}}\\
+\beta\boldsymbol{n}0+\alpha\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\beta\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=\begin{pmatrix}0-0\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\beta\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}=\begin{pmatrix}0\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}\times\left(-\beta\boldsymbol{n}\right)
+\end{pmatrix}\\
+= & \begin{pmatrix}0\alpha-\boldsymbol{v}_{{\scriptscriptstyle \perp}}\cdot\left(-\beta\boldsymbol{n}\right)\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}\alpha+0\left(-\beta\boldsymbol{n}\right)+\boldsymbol{v}_{{\scriptscriptstyle \perp}}\times\left(-\beta\boldsymbol{n}\right)
+\end{pmatrix}=\begin{pmatrix}0-0\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\boldsymbol{v}_{{\scriptscriptstyle \perp}}\times\left(-\beta\boldsymbol{n}\right)
+\end{pmatrix}=\begin{pmatrix}0\\
+\alpha\boldsymbol{v}_{{\scriptscriptstyle \perp}}+\beta\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}\\
+= & \begin{pmatrix}0\\
+\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+\end{pmatrix}\begin{pmatrix}\alpha\\
+-\beta\boldsymbol{n}
+\end{pmatrix}=v_{{\scriptscriptstyle \perp}}\begin{pmatrix}\alpha\\
+-\beta\boldsymbol{n}
+\end{pmatrix}=v_{{\scriptscriptstyle \perp\boldsymbol{n}}}\begin{pmatrix}\alpha\\
+-\beta\boldsymbol{n}
+\end{pmatrix}\\
+\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \perp}}= & v_{{\scriptscriptstyle \perp}}\begin{pmatrix}\alpha\\
+-\beta\boldsymbol{n}
+\end{pmatrix}=v_{{\scriptscriptstyle \perp}}\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}^{*}=v_{{\scriptscriptstyle \perp}}\overline{\begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}n\in & \left\{ p\middle|\begin{cases}
+p=\cos\theta+\sin\theta n\\
+n=\begin{pmatrix}0\\
+\boldsymbol{n}
+\end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1
+\end{cases}\right\} \subset\left\{ \begin{pmatrix}\alpha\\
+\beta\boldsymbol{n}
+\end{pmatrix}\middle|\begin{cases}
+\alpha,\beta\in\mathbb{R}\\
+\left\Vert \boldsymbol{n}\right\Vert =1
+\end{cases}\right\} \\
+\Rightarrow & \begin{cases}
+q^{*}q=\overline{q}q=1=q\overline{q}=qq^{*}=\left|q\right|^{2}=q_{{\scriptscriptstyle 0}}^{2}+\left\Vert \boldsymbol{q}\right\Vert ^{2}\Rightarrow q^{*}=\dfrac{1}{q}=q^{-1} & \left(u\right)\text{unit quaternion}\\
+qv_{{\scriptscriptstyle \parallel}}=v_{{\scriptscriptstyle \parallel}}q & \left(c\right)\text{commutativity}\\
+qv_{{\scriptscriptstyle \perp}}=v_{{\scriptscriptstyle \perp}}q^{*}=v_{{\scriptscriptstyle \perp}}\overline{q}\Leftrightarrow\begin{pmatrix}\cos\dfrac{\theta}{2}\\
+\sin\dfrac{\theta}{2}\boldsymbol{n}
+\end{pmatrix}v_{{\scriptscriptstyle \perp}}=v_{{\scriptscriptstyle \perp}}\begin{pmatrix}\cos\dfrac{\theta}{2}\\
+-\sin\dfrac{\theta}{2}\boldsymbol{n}
+\end{pmatrix} & \left(a\right)\text{anticommutativity}
+\end{cases}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+v^{\prime}= & v_{{\scriptscriptstyle \parallel}}^{\prime}+v_{{\scriptscriptstyle \perp}}^{\prime},\begin{cases}
+v_{{\scriptscriptstyle \parallel}}^{\prime}=v_{{\scriptscriptstyle \parallel}} & q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}n,\left|n\right|=1\\
+v_{{\scriptscriptstyle \perp}}^{\prime}=pv_{{\scriptscriptstyle \perp}}=q^{2}v_{{\scriptscriptstyle \perp}} & p=q^{2}=\cos\theta+\sin\theta n
+\end{cases}\\
+= & v_{{\scriptscriptstyle \parallel}}+q^{2}v_{{\scriptscriptstyle \perp}}\overset{\left(u\right)}{=}1v_{{\scriptscriptstyle \parallel}}+qqv_{{\scriptscriptstyle \perp}}\\
+\overset{\left(a\right)}{=} & qq^{*}v_{{\scriptscriptstyle \parallel}}+qv_{{\scriptscriptstyle \perp}}q^{*}\overset{\left(c\right)}{=}qv_{{\scriptscriptstyle \parallel}}q^{*}+qv_{{\scriptscriptstyle \perp}}q^{*}\\
+= & q\left(v_{{\scriptscriptstyle \parallel}}+v_{{\scriptscriptstyle \perp}}\right)q^{*}=q\left(v\right)q^{*}=qvq^{*}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{aligned}
+v^{\prime}= & qvq^{-1},q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}n,\left|n\right|=1\\
+= & qvq^{*}=q\left(v_{{\scriptscriptstyle \parallel}}+v_{{\scriptscriptstyle \perp}}\right)q^{*}\\
+= & qv_{{\scriptscriptstyle \parallel}}q^{*}+qv_{{\scriptscriptstyle \perp}}q^{*}=qq^{*}v_{{\scriptscriptstyle \parallel}}+qqv_{{\scriptscriptstyle \perp}}=1v_{{\scriptscriptstyle \parallel}}+q^{2}v_{{\scriptscriptstyle \perp}}\\
+= & v_{{\scriptscriptstyle \parallel}}+pv_{{\scriptscriptstyle \perp}},p=q^{2}=\cos\theta+\sin\theta n
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{aligned}
+v^{\prime}=qvq^{*}=q\left(vq^{*}\right)\leftrightarrow & L\left(q\right)R\left(q^{*}\right)v=Q_{{\scriptscriptstyle l}}Q_{{\scriptscriptstyle r}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}\\
+=\left(qv\right)q^{*}\leftrightarrow & R\left(q^{*}\right)L\left(q\right)v=Q_{{\scriptscriptstyle r}}Q_{{\scriptscriptstyle l}}v=\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}v_{{\scriptscriptstyle 0}}\\
+\boldsymbol{v}
+\end{pmatrix}\\
+\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}= & \begin{pmatrix}q_{{\scriptscriptstyle 0}}^{2}-\boldsymbol{q}^{\intercal}\boldsymbol{q} & -q_{{\scriptscriptstyle 0}}\boldsymbol{q}^{\intercal}-\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}^{\intercal}\\
+\boldsymbol{q}q_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}\boldsymbol{q} & -\boldsymbol{q}\boldsymbol{q}^{\intercal}+Q_{{\scriptscriptstyle i}}Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}=L\left(q\right)R\left(q^{*}\right)\\
+\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}= & \begin{pmatrix}q_{{\scriptscriptstyle 0}}^{2}-\boldsymbol{q}^{\intercal}\boldsymbol{q} & -q_{{\scriptscriptstyle 0}}\boldsymbol{q}^{\intercal}-\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}\\
+\boldsymbol{q}q_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{q} & -\boldsymbol{q}\boldsymbol{q}^{\intercal}+Q_{{\scriptscriptstyle i}}^{\intercal}Q_{{\scriptscriptstyle i}}
+\end{pmatrix}=R\left(q^{*}\right)L\left(q\right)
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}n=\cos\dfrac{\theta}{2}+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\\
+\Rightarrow Q_{{\scriptscriptstyle i}}Q_{{\scriptscriptstyle i}}^{\intercal}= & \begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}\begin{pmatrix}a & d & -c\\
+-d & a & b\\
+c & -b & a
+\end{pmatrix}=\begin{pmatrix}a^{2}+d^{2}+c^{2} & -cb & -db\\
+-cb & d^{2}+a^{2}+b^{2} & -dc\\
+-db & -dc & c^{2}+b^{2}+a^{2}
+\end{pmatrix}\\
+=Q_{{\scriptscriptstyle i}}^{\intercal}Q_{{\scriptscriptstyle i}}= & \begin{pmatrix}a & d & -c\\
+-d & a & b\\
+c & -b & a
+\end{pmatrix}\begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}=\begin{pmatrix}a^{2}+d^{2}+c^{2} & -cb & -db\\
+-cb & d^{2}+a^{2}+b^{2} & -dc\\
+-db & -dc & c^{2}+b^{2}+a^{2}
+\end{pmatrix}\\
+\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}^{\intercal}= & \begin{pmatrix}b & c & d\end{pmatrix}\begin{pmatrix}a & d & -c\\
+-d & a & b\\
+c & -b & a
+\end{pmatrix}=\begin{pmatrix}ba & ca & da\end{pmatrix}\\
+=\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}= & \begin{pmatrix}b & c & d\end{pmatrix}\begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}=\begin{pmatrix}ba & ca & da\end{pmatrix}\\
+Q_{{\scriptscriptstyle i}}\boldsymbol{q}= & \begin{pmatrix}a & -d & c\\
+d & a & -b\\
+-c & b & a
+\end{pmatrix}\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix}=\begin{pmatrix}ab\\
+ac\\
+ad
+\end{pmatrix}\\
+=Q_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{q}= & \begin{pmatrix}a & d & -c\\
+-d & a & b\\
+c & -b & a
+\end{pmatrix}\begin{pmatrix}b\\
+c\\
+d
+\end{pmatrix}=\begin{pmatrix}ab\\
+ac\\
+ad
+\end{pmatrix}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+ & \begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}^{2}-\boldsymbol{q}^{\intercal}\boldsymbol{q} & -q_{{\scriptscriptstyle 0}}\boldsymbol{q}^{\intercal}-\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}^{\intercal}\\
+\boldsymbol{q}q_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}\boldsymbol{q} & -\boldsymbol{q}\boldsymbol{q}^{\intercal}+Q_{{\scriptscriptstyle i}}Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}=L\left(q\right)R\left(q^{*}\right)\\
+= & \begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}^{\intercal}
+\end{pmatrix}\begin{pmatrix}q_{{\scriptscriptstyle 0}} & -\boldsymbol{q}^{\intercal}\\
+\boldsymbol{q} & Q_{{\scriptscriptstyle i}}
+\end{pmatrix}=\begin{pmatrix}q_{{\scriptscriptstyle 0}}^{2}-\boldsymbol{q}^{\intercal}\boldsymbol{q} & -q_{{\scriptscriptstyle 0}}\boldsymbol{q}^{\intercal}-\boldsymbol{q}^{\intercal}Q_{{\scriptscriptstyle i}}\\
+\boldsymbol{q}q_{{\scriptscriptstyle 0}}+Q_{{\scriptscriptstyle i}}^{\intercal}\boldsymbol{q} & -\boldsymbol{q}\boldsymbol{q}^{\intercal}+Q_{{\scriptscriptstyle i}}^{\intercal}Q_{{\scriptscriptstyle i}}
+\end{pmatrix}=R\left(q^{*}\right)L\left(q\right)\\
+\Downarrow\\
+L\left(q\right)R\left(q^{*}\right)= & R\left(q^{*}\right)L\left(q\right)\\
+\updownarrow\\
+v^{\prime}=qvq^{*}=q\left(vq^{*}\right)= & \left(qv\right)q^{*}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+a=\cos\dfrac{\theta}{2}\Rightarrow\theta=2\arccos a=2\cos^{-1}a
+\]
+
+\[
+\sin\dfrac{\theta}{2}n=\sin\dfrac{2\arccos a}{2}n=\sin\left(\cos^{-1}a\right)n
+\]
+
+\[
+n=\begin{pmatrix}0\\
+\boldsymbol{n}
+\end{pmatrix}=\begin{pmatrix}0\\
+\hat{\boldsymbol{n}}
+\end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1,\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\alpha\\
+\sin\gamma\sin\alpha\\
+\cos\gamma
+\end{pmatrix},\begin{cases}
+\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
+\gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
+\end{cases}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{aligned}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\\
+= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}n,n=\begin{pmatrix}0\\
+\boldsymbol{n}
+\end{pmatrix}=\begin{pmatrix}0\\
+\hat{\boldsymbol{n}}
+\end{pmatrix}=\begin{pmatrix}0\\
+\sin\gamma\cos\alpha\\
+\sin\gamma\sin\alpha\\
+\cos\gamma
+\end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1,\begin{cases}
+\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
+\gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
+\end{cases}\\
+= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\boldsymbol{n},\boldsymbol{n}=\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\\
+= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+= & \cos\dfrac{\theta}{2}+\boldsymbol{n}\sin\dfrac{\theta}{2}\\
+q^{-1}=q^{*}= & \cos\dfrac{\theta}{2}-\boldsymbol{n}\sin\dfrac{\theta}{2}\\
+= & \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+\boldsymbol{v}^{\prime}=v^{\prime}= & qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
+v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
+v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}
+\end{cases}\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
+= & q\left(\theta,\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\alpha\right)\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
+= & q\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\boldsymbol{v}q^{-1}\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\boldsymbol{v}^{\prime}=v^{\prime}=qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
+v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
+v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}\\
+q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+q^{-1}=\cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]
+\end{cases}
+\]
+
+\subsection{matrix form}\label{matrix-form}
+
+\[
+q\overset{\left|q\right|=1}{=}a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k},\begin{cases}
+a=\cos\dfrac{\theta}{2}\\
+b=\sin\dfrac{\theta}{2}\sin\gamma\cos\alpha\\
+c=\sin\dfrac{\theta}{2}\sin\gamma\sin\alpha\\
+d=\sin\dfrac{\theta}{2}\cos\gamma
+\end{cases}
+\]
+
+\[
+L\left(q\right)=Q_{{\scriptscriptstyle l}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}
+\]
+
+\[
+R\left(q\right)=Q_{{\scriptscriptstyle r}}=\begin{pmatrix}a & -b & -c & -d\\
+b & a & d & -c\\
+c & -d & a & b\\
+d & c & -b & a
+\end{pmatrix}
+\]
+
+\[
+R\left(q^{*}\right)=\begin{pmatrix}a & b & c & d\\
+-b & a & -d & c\\
+-c & d & a & -b\\
+-d & -c & b & a
+\end{pmatrix}
+\]
+
+\[
+\begin{aligned}
+v^{\prime}=qvq^{*}=\left(qv\right)q^{*}\leftrightarrow & R\left(q^{*}\right)L\left(q\right)v\\
+=q\left(vq^{*}\right)\leftrightarrow & L\left(q\right)R\left(q^{*}\right)v\\
+= & \begin{pmatrix}a & -b & -c & -d\\
+b & a & -d & c\\
+c & d & a & -b\\
+d & -c & b & a
+\end{pmatrix}\begin{pmatrix}a & b & c & d\\
+-b & a & -d & c\\
+-c & d & a & -b\\
+-d & -c & b & a
+\end{pmatrix}v\\
+= & \begin{pmatrix}a^{2}+b^{2}+c^{2}+d^{2} & 0 & 0 & 0\\
+0 & b^{2}+a^{2}-d^{2}-c^{2} & -2ad+2bc & 2ac+2bd\\
+0 & 2ad+2bc & c^{2}-d^{2}+a^{2}-b^{2} & 2cd-2ab\\
+0 & -2ac+2bd & 2cd+2ab & d^{2}-c^{2}-b^{2}+a^{2}
+\end{pmatrix}v\\
+= & \begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1-2\left(d^{2}+c^{2}\right) & 2\left(bc-ad\right) & 2\left(bd+ac\right)\\
+0 & 2\left(bc+ad\right) & 1-2\left(d^{2}+b^{2}\right) & 2\left(cd-ab\right)\\
+0 & 2\left(bd-ac\right) & 2\left(cd+ab\right) & 1-2\left(c^{2}+b^{2}\right)
+\end{pmatrix}v\\
+\begin{pmatrix}0\\
+\boldsymbol{v}^{\prime}
+\end{pmatrix}= & \begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1-2\left(d^{2}+c^{2}\right) & 2\left(bc-ad\right) & 2\left(bd+ac\right)\\
+0 & 2\left(bc+ad\right) & 1-2\left(d^{2}+b^{2}\right) & 2\left(cd-ab\right)\\
+0 & 2\left(bd-ac\right) & 2\left(cd+ab\right) & 1-2\left(c^{2}+b^{2}\right)
+\end{pmatrix}\begin{pmatrix}0\\
+\boldsymbol{v}
+\end{pmatrix}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\boldsymbol{v}^{\prime}=\begin{pmatrix}1-2\left(d^{2}+c^{2}\right) & 2\left(bc-ad\right) & 2\left(bd+ac\right)\\
+2\left(bc+ad\right) & 1-2\left(d^{2}+b^{2}\right) & 2\left(cd-ab\right)\\
+2\left(bd-ac\right) & 2\left(cd+ab\right) & 1-2\left(c^{2}+b^{2}\right)
+\end{pmatrix}\boldsymbol{v}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+q\overset{\left|q\right|=1}{=}a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k},\begin{cases}
+a=\cos\dfrac{\theta}{2}\\
+b=\sin\dfrac{\theta}{2}\sin\gamma\cos\alpha\\
+c=\sin\dfrac{\theta}{2}\sin\gamma\sin\alpha\\
+d=\sin\dfrac{\theta}{2}\cos\gamma
+\end{cases}
+\]
+
+\subsection{exponential form}\label{exponential-form}
+
+\[
+\begin{aligned}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+= & a+r\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r},r^{2}=b^{2}+c^{2}+d^{2}\\
+\overset{\left|q\right|=1}{=} & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\boldsymbol{n},\begin{cases}
+a=\cos\dfrac{\theta}{2} & \cos\dfrac{\theta}{2}=a\\
+r=\sin\dfrac{\theta}{2} & \sin\dfrac{\theta}{2}=r\\
+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}=\boldsymbol{n} & \boldsymbol{n}=\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}
+\end{cases}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\left\Vert \boldsymbol{n}\right\Vert ^{2}=\left(\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\right)^{2}= & \dfrac{-b^{2}-c^{2}-d^{2}+bc\left(\mathrm{i}\mathrm{j}+\mathrm{j}\mathrm{i}\right)+cd\left(\mathrm{j}\mathrm{k}+\mathrm{k}\mathrm{j}\right)+db\left(\mathrm{k}\mathrm{i}+\mathrm{i}\mathrm{k}\right)}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}+bc\left(\mathrm{k}-\mathrm{k}\right)+cd\left(\mathrm{i}-\mathrm{i}\right)+db\left(\mathrm{j}-\mathrm{j}\right)}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}+bc0+cd0+db0}{r^{2}}=\dfrac{-b^{2}-c^{2}-d^{2}}{r^{2}}\\
+= & \dfrac{-b^{2}-c^{2}-d^{2}}{b^{2}+c^{2}+d^{2}}=-1\\
+\boldsymbol{n}=\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}= & \pm\sqrt{-1}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+= & a+r\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r},r^{2}=b^{2}+c^{2}+d^{2}\\
+= & \sqrt{a^{2}+r^{2}}\left(\dfrac{a}{\sqrt{a^{2}+r^{2}}}+\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}\dfrac{r}{\sqrt{a^{2}+r^{2}}}\right)\\
+= & \rho\left(\cos\phi+\sqrt{-1}\sin\phi\right),\begin{cases}
+\rho=\sqrt{a^{2}+r^{2}}\\
+\tan\phi=\dfrac{r}{a}\Leftrightarrow\phi=\arctan\dfrac{r}{a}=\dfrac{\theta}{2}
+\end{cases}\\
+= & \rho\mathrm{e}^{\phi\sqrt{-1}}\overset{\left|q\right|=1}{=}\left|q\right|\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}=\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\\
+q= & \rho\mathrm{e}^{\phi\sqrt{-1}}\overset{\left|q\right|=1}{=}\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}},\begin{cases}
+q=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
+\rho=\sqrt{a^{2}+r^{2}}=\left|q\right|=\sqrt{a^{2}+b^{2}+c^{2}+d^{2}}=1\\
+\tan\dfrac{\theta}{2}=\dfrac{r}{a}\Leftrightarrow\dfrac{\theta}{2}=\arctan\dfrac{r}{a}=\arctan\dfrac{\pm\sqrt{b^{2}+c^{2}+d^{2}}}{a}
+\end{cases}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\boldsymbol{v}^{\prime}=v^{\prime}= & qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
+v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
+v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}
+\end{cases},\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\alpha\\
+\sin\gamma\sin\alpha\\
+\cos\gamma
+\end{pmatrix},\begin{cases}
+\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
+\gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
+\end{cases}\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
+= & q\left(\theta,\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\alpha\right)=q\left(\dfrac{\theta}{2},\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\dfrac{\theta}{2},\gamma,\alpha\right)\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
+= & q\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\boldsymbol{v}q^{-1}\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)=q\left(\dfrac{\theta}{2},n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\boldsymbol{v}q^{-1}\left(\dfrac{\theta}{2},n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\\
+= & \mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\boldsymbol{v}\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\boldsymbol{v}^{\prime}=\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\boldsymbol{v}\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+general quaternion exponential form
+
+\[
+\begin{aligned}
+q= & \rho\mathrm{e}^{\phi\sqrt{-1}}=\left|q\right|\mathrm{e}^{\boldsymbol{n}\phi},\begin{cases}
+q=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d=a+r\dfrac{\mathrm{i}b+\mathrm{j}c+\mathrm{k}d}{r}=a+r\boldsymbol{n}\\
+\rho=\sqrt{a^{2}+r^{2}}=\left|q\right|=\sqrt{a^{2}+b^{2}+c^{2}+d^{2}}\\
+\tan\phi=\dfrac{r}{a}\Leftrightarrow\phi=\arctan\dfrac{r}{a}=\arctan\dfrac{\pm\sqrt{b^{2}+c^{2}+d^{2}}}{a}
+\end{cases}\\
+= & \mathrm{e}^{\ln\left|q\right|}\mathrm{e}^{\boldsymbol{n}\phi}=\mathrm{e}^{\ln\left|q\right|+\boldsymbol{n}\phi}
+\end{aligned}
+\]
+
+\subsection{double cover}\label{double-cover}
+
+\subsection{right-hand vs.~left-hand}\label{right-hand-vs.-left-hand}
+
+\subsection{gimbal lock}\label{gimbal-lock}
+
+\url{https://krasjet.github.io/quaternion/bonus_gimbal_lock.pdf}
+
+\subsection{Lie group}\label{lie-group}
+
+\subsubsection{special unitary group}\label{special-unitary-group}
+
+\subsection{geometric algebra and Clifford algebra}\label{geometric-algebra-and-clifford-algebra}
+
+\url{https://en.wikipedia.org/wiki/Geometric_algebra}
+
+\url{https://en.wikipedia.org/wiki/Clifford_algebra}
+
+John Vince\_2009\_Geometric Algebra\_ An Algebraic System for Computer Games and Animation
+
+\url{https://www.amazon.com/Geometric-Algebra-Algebraic-Computer-Animation/dp/1848823789}
 
 \subsection{dual quaternion}\label{dual-quaternion}
+
+\subsection{interpolation}\label{interpolation}
+
+\subsubsection{Lerp}\label{lerp}
+
+\subsubsection{Nlerp}\label{nlerp}
+
+\subsubsection{Slerp}\label{slerp}
 
 \section{3Blue1Brown}\label{blue1brown}
 
@@ -14084,6 +16142,8 @@ https://ccjou.wordpress.com/2014/04/21/四元數/
 \chapter{tendon pathophysiology}\label{tendon-pathophysiology}
 
 Mark E. Schweitzer, MD
+
+\url{https://www.youtube.com/watch?v=uIo58pQgxhY}
 
 \section{histology}\label{histology}
 
@@ -14161,6 +16221,8 @@ Proof:
 \[
 \ \tag*{$\Box$}
 \]
+
+\section{Polya enumeration theorem}\label{polya-enumeration-theorem}
 
 \section{complex group representation}\label{complex-group-representation}
 
@@ -14380,11 +16442,11 @@ y & x
 
 \subsubsection{Lagrange identity}\label{lagrange-identity}
 
-\url{https://en.wikipedia.org/wiki/Lagrange's_identity}
+Lagrange identity
 
-generalization of \href{https://en.wikipedia.org/wiki/Lagrange's_identity}{Brahmagupta--Fibonacci identity}
+generalization of Brahmagupta--Fibonacci identity
 
-specialization of \href{https://en.wikipedia.org/wiki/Binet–Cauchy_identity}{Binet--Cauchy identity}
+specialization of Binet--Cauchy identity
 
 cf.~\hyperref[euler-identity]{Euler identity}\textsuperscript{{[}\ref{euler-identity}{]}}
 
@@ -17137,9 +19199,166 @@ f=x^{\prime{\scriptscriptstyle j}}\Downarrow\\
 
 \chapter{determinant}\label{determinant}
 
+\section{induction of determinant axioms}\label{induction-of-determinant-axioms}
+
+\section{determinant axioms}\label{determinant-axioms}
+
+determinant axioms
+
+\[
+\begin{aligned}
+ & \begin{cases}
+\begin{cases}
+\det\left(\boldsymbol{u},\boldsymbol{v}\right)=\det\left(\boldsymbol{u}+s\boldsymbol{v},\boldsymbol{v}\right)\\
+\det\left(\boldsymbol{u},\boldsymbol{v}\right)=\det\left(\boldsymbol{u},\boldsymbol{v}+s\boldsymbol{u}\right)
+\end{cases} & \text{translation invariance}\\
+\begin{cases}
+\det\left(s\boldsymbol{u},\boldsymbol{v}\right)=s\det\left(\boldsymbol{u},\boldsymbol{v}\right)\\
+\det\left(\boldsymbol{u},s\boldsymbol{v}\right)=s\det\left(\boldsymbol{u},\boldsymbol{v}\right)
+\end{cases} & \text{scaling}\\
+\begin{cases}
+\det\left(\boldsymbol{u}_{{\scriptscriptstyle 1}}+\boldsymbol{u}_{{\scriptscriptstyle 2}},\boldsymbol{v}\right)=\det\left(\boldsymbol{u}_{{\scriptscriptstyle 1}},\boldsymbol{v}\right)+\det\left(\boldsymbol{u}_{{\scriptscriptstyle 2}},\boldsymbol{v}\right)\\
+\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 1}}+\boldsymbol{v}_{{\scriptscriptstyle 2}}\right)=\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)+\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 2}}\right)
+\end{cases} & \text{decomposition}
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+\begin{cases}
+\det\left(\boldsymbol{u},\boldsymbol{v}\right)=\det\left(\boldsymbol{u}+s\boldsymbol{v},\boldsymbol{v}\right)\\
+\det\left(\boldsymbol{u},\boldsymbol{v}\right)=\det\left(\boldsymbol{u},\boldsymbol{v}+s\boldsymbol{u}\right)
+\end{cases} & \text{translation invariance}\\
+\begin{cases}
+\det\left(\boldsymbol{u}_{{\scriptscriptstyle 1}}+s\boldsymbol{u}_{{\scriptscriptstyle 2}},\boldsymbol{v}\right)=\det\left(\boldsymbol{u}_{{\scriptscriptstyle 1}},\boldsymbol{v}\right)+s\det\left(\boldsymbol{u}_{{\scriptscriptstyle 2}},\boldsymbol{v}\right)\\
+\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 1}}+s\boldsymbol{v}_{{\scriptscriptstyle 2}}\right)=\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)+s\det\left(\boldsymbol{u},\boldsymbol{v}_{{\scriptscriptstyle 2}}\right)
+\end{cases} & \text{linearity}
+\end{cases}
+\end{aligned}
+\]
+
+\section{determinant theorems or properties}\label{determinant-theorems-or-properties}
+
+\section{ellipse area}\label{ellipse-area}
+
+\section{Cramer rule geometry perspective}\label{cramer-rule-geometry-perspective}
+
+\chapter{hypergeometric function}\label{hypergeometric-function}
+
+\section{linear space of function}\label{linear-space-of-function}
+
+\section{beta function}\label{beta-function}
+
+\section{gamma function}\label{gamma-function}
+
+\section{recursion}\label{recursion}
+
+\section{mean and variance of discrete probability distributions}\label{mean-and-variance-of-discrete-probability-distributions}
+
+\chapter{Feynman method}\label{feynman-method}
+
+\section{Feynman method of derivative}\label{feynman-method-of-derivative}
+
+\section{Feynman method of integral}\label{feynman-method-of-integral}
+
+\chapter{Hilbert space}\label{hilbert-space}
+
+\section{Taylor expansion or Taylor series}\label{taylor-expansion-or-taylor-series}
+
+\section{Dirac delta function}\label{dirac-delta-function}
+
+\section{Fourier expansion or Fourier series}\label{fourier-expansion-or-fourier-series}
+
+\section{Hilbert space}\label{hilbert-space-1}
+
+\section{Dirac bracket}\label{dirac-bracket}
+
+\section{quantum operator}\label{quantum-operator}
+
+\section{Gram-Schmidt algorithm to find orthonormal basis}\label{gram-schmidt-algorithm-to-find-orthonormal-basis}
+
+\section{Hermite polynomials and Legendre polynomials}\label{hermite-polynomials-and-legendre-polynomials}
+
+\chapter{Lagrange inversion}\label{lagrange-inversion}
+
+Lagrange inversion theorem
+
+\begin{CJK}{UTF8}{bsmi}
+拉格朗日反演
+\end{CJK}
+
+\chapter{quantum color dynamics}\label{quantum-color-dynamics}
+
+\chapter{Lagrangian}\label{lagrangian}
+
+\begin{itemize}
+\tightlist
+\item
+  Elliot Schneider: \href{https://www.youtube.com/@PhysicswithElliot/playlists}{Physics with Elliot}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics}{Lagrangian fundamentals}
+  \item
+    \href{https://www.youtube.com/playlist?list=PL-IZN8QRUw-xRsoJPtXBlJyWlWrjVEF0x}{Lagrangian mechanics}
+  \end{itemize}
+\end{itemize}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492677/posts/2158458875}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492677/posts/2158458876}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492677/posts/2158458877}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492677/posts/2158458878}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492678/posts/2158458879}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492678/posts/2158458880}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492678/posts/2158458881}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492678/posts/2158458882}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492679/posts/2158458883}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492679/posts/2158458884}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492679/posts/2158458885}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492679/posts/2158458886}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492680/posts/2158458887}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492680/posts/2158458888}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492680/posts/2158458889}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492680/posts/2158458890}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492681/posts/2158458891}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492681/posts/2161912436}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492681/posts/2161912460}
+
+\url{https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492681/posts/2161912464}
+
+\chapter{Hamiltonian}\label{hamiltonian}
+
+\begin{itemize}
+\tightlist
+\item
+  Elliot Schneider: \href{https://www.youtube.com/@PhysicswithElliot/playlists}{Physics with Elliot}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://www.youtube.com/playlist?list=PL-IZN8QRUw-zBECgfYLuDQ3qkWsXWAGhM}{Hamiltonian mechanics}
+  \end{itemize}
+\end{itemize}
+
 \chapter*{references}\label{references}
 \addcontentsline{toc}{chapter}{references}
-
+\begin{CJK}{UTF8}{bsmi}
 \phantomsection\label{refs}
 \begin{CSLReferences}{0}{0}
 \bibitem[\citeproctext]{ref-R-bookdown}
@@ -17187,5 +19406,6 @@ f=x^{\prime{\scriptscriptstyle j}}\Downarrow\\
 \CSLRightInline{Casler, M. D., Vermerris, W. \& Dixon, R. A. \href{https://doi.org/10.1007/s12155-015-9580-7}{Replication Concepts for Bioenergy Research Experiments}. \emph{BioEnergy Research} \textbf{8}, 1--16 (2015).}
 
 \end{CSLReferences}
+\end{CJK}
 
 \end{document}
