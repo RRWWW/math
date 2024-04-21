@@ -5,6 +5,8 @@
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1PV411P7w4&autoplay=0"></iframe>
 
+曹則賢 2022 跨年演說
+
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1qa411B792&autoplay=0"></iframe>
 :::
 

@@ -23,7 +23,7 @@
 <meta name="author" content="Joey Yu Hsu" />
 
 
-<meta name="date" content="2024-04-19" />
+<meta name="date" content="2024-04-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -388,11 +388,15 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="15.1" data-path="statistics.html"><a href="statistics.html#hung-hung"><i class="fa fa-check"></i><b>15.1</b> Hung Hung</a>
 <ul>
-<li class="chapter" data-level="15.1.1" data-path="statistics.html"><a href="statistics.html#probability-theory"><i class="fa fa-check"></i><b>15.1.1</b> probability theory</a></li>
+<li class="chapter" data-level="15.1.1" data-path="statistics.html"><a href="statistics.html#probability-theory"><i class="fa fa-check"></i><b>15.1.1</b> probability theory</a>
+<ul>
+<li class="chapter" data-level="15.1.1.1" data-path="statistics.html"><a href="statistics.html#conditional-probability"><i class="fa fa-check"></i><b>15.1.1.1</b> conditional probability</a></li>
+</ul></li>
 <li class="chapter" data-level="15.1.2" data-path="statistics.html"><a href="statistics.html#univariable-distribution"><i class="fa fa-check"></i><b>15.1.2</b> univariable distribution</a>
 <ul>
 <li class="chapter" data-level="15.1.2.1" data-path="statistics.html"><a href="statistics.html#continuous-monotone-transformation"><i class="fa fa-check"></i><b>15.1.2.1</b> continuous monotone transformation</a></li>
 <li class="chapter" data-level="15.1.2.2" data-path="statistics.html"><a href="statistics.html#discrete-monotone-transformation"><i class="fa fa-check"></i><b>15.1.2.2</b> discrete monotone transformation</a></li>
+<li class="chapter" data-level="15.1.2.3" data-path="statistics.html"><a href="statistics.html#expected-value"><i class="fa fa-check"></i><b>15.1.2.3</b> expected value</a></li>
 </ul></li>
 <li class="chapter" data-level="15.1.3" data-path="statistics.html"><a href="statistics.html#multivariable-distribution"><i class="fa fa-check"></i><b>15.1.3</b> multivariable distribution</a></li>
 </ul></li>
@@ -861,7 +865,7 @@ div.csl-indent {
 <div id="design-of-experiment" class="section level1 hasAnchor" number="32">
 <h1><span class="header-section-number">Chapter 32: </span> design of experiment<a href="design-of-experiment.html#design-of-experiment" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>experimental design = experiment design = design of experiments = DoE</p>
-<p><span class="citation"><sup><a href="#ref-hu2022">7</a></sup></span> p.72</p>
+<p><span class="citation"><sup><a href="#ref-hu2022">9</a></sup></span> p.72</p>
 <p>question-design-analysis loop</p>
 <div id="notational-system-for-designrefnotational-system-for-design" class="section level2 hasAnchor" number="32.1">
 <h2><span class="header-section-number">32.1</span> <a href="notational-system-for-design.html#notational-system-for-design">notational system for design</a><sup>[<a href="notational-system-for-design.html#notational-system-for-design">31</a>]</sup><a href="design-of-experiment.html#notational-system-for-designrefnotational-system-for-design" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -882,11 +886,11 @@ div.csl-indent {
 <li>experimental unit
 <ul>
 <li>response</li>
-<li>block: group of similar experimental unit (<span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.74)</li>
+<li>block: group of similar experimental unit (<span class="citation"><sup><a href="#ref-milliken2004">10</a></sup></span> p.74)</li>
 </ul></li>
 <li>observational unit / measurement unit <a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></li>
 </ul></li>
-<li>replication (<span class="citation"><sup><a href="#ref-hu2022">7</a></sup></span> p.76): an independent observation of the treatment (<span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.74)
+<li>replication (<span class="citation"><sup><a href="#ref-hu2022">9</a></sup></span> p.76): an independent observation of the treatment (<span class="citation"><sup><a href="#ref-milliken2004">10</a></sup></span> p.74)
 <ul>
 <li>treatment replication: experimental-unit-to-experimental-unit variation</li>
 <li>measurement replication = subsample: measurement-to-measurement variation</li>
@@ -899,7 +903,7 @@ div.csl-indent {
 </ul></li>
 </ul>
 <hr />
-<p><span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.73</p>
+<p><span class="citation"><sup><a href="#ref-milliken2004">10</a></sup></span> p.73</p>
 <p><span class="math inline">\(Y_{\scriptscriptstyle{ij}}\)</span>: the response observed from the <span class="math inline">\(j\)</span><sup>th</sup> experimental unit assigned to the <span class="math inline">\(i\)</span><sup>th</sup> treatment</p>
 <p><span class="math inline">\(\mu_{\scriptscriptstyle{i}}\)</span>: the mean response to the <span class="math inline">\(i\)</span><sup>th</sup> treatment</p>
 <p><span class="math inline">\(\mathcal{E}_{\scriptscriptstyle{ij}}\)</span>: the noise from other possible natural variation or nonrandom and random error</p>
@@ -946,7 +950,7 @@ Y_{{\scriptscriptstyle i}{\scriptscriptstyle j}}-Y_{{\scriptscriptstyle i^{\prim
 <div id="replication-vs.-subsample" class="section level3 hasAnchor" number="32.2.1">
 <h3><span class="header-section-number">32.2.1</span> replication vs. subsample<a href="design-of-experiment.html#replication-vs.-subsample" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
-<p>It is very important to distinguish between a <strong>subsample</strong> and a <strong>replication</strong> since the error variance estimated from between subsamples is in general considerably smaller than the error variance estimated from replications or between experimental units. (<span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.77)</p>
+<p>It is very important to distinguish between a <strong>subsample</strong> and a <strong>replication</strong> since the error variance estimated from between subsamples is in general considerably smaller than the error variance estimated from replications or between experimental units. (<span class="citation"><sup><a href="#ref-milliken2004">10</a></sup></span> p.77)</p>
 </blockquote>
 <p><a href="https://www.researchgate.net/post/What-is-Experimental-Unit-Replicate-Total-sample-size-treatment-size" class="uri">https://www.researchgate.net/post/What-is-Experimental-Unit-Replicate-Total-sample-size-treatment-size</a></p>
 </div>
@@ -960,9 +964,9 @@ Y_{{\scriptscriptstyle i}{\scriptscriptstyle j}}-Y_{{\scriptscriptstyle i^{\prim
 <p><a href="https://www.youtube.com/watch?v=c_cpl5YsBV8" class="uri">https://www.youtube.com/watch?v=c_cpl5YsBV8</a></p>
 
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
-<img src="img/buchanan2005-replicates.png" alt="experimental, biological, technical replicates ( 9)" width="65%" />
+<img src="img/buchanan2005-replicates.png" alt="experimental, biological, technical replicates ( 11)" width="65%" />
 <p class="caption">
-Fig. 21.1: experimental, biological, technical replicates ( <span class="citation"><sup><a href="#ref-buchanan2005">9</a></sup></span>)
+Fig. 21.1: experimental, biological, technical replicates ( <span class="citation"><sup><a href="#ref-buchanan2005">11</a></sup></span>)
 </p>
 </div>
 </div>
@@ -970,7 +974,7 @@ Fig. 21.1: experimental, biological, technical replicates ( <span class="citati
 <div id="latin-square-design" class="section level3 hasAnchor" number="32.2.4">
 <h3><span class="header-section-number">32.2.4</span> Latin square design<a href="design-of-experiment.html#latin-square-design" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>LSD = Latin square design</p>
-<p><span class="citation"><sup><a href="#ref-zhang2021">10</a></sup></span> p.505~507</p>
+<p><span class="citation"><sup><a href="#ref-zhang2021">6</a></sup></span> p.505~507</p>
 <p><a href="https://tex.stackexchange.com/questions/501671/how-to-get-math-mode-curly-braces-in-tikz" class="uri">https://tex.stackexchange.com/questions/501671/how-to-get-math-mode-curly-braces-in-tikz</a></p>
 <p><code>\\usepackage{pgfplots}</code> in <code>engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))</code></p>
 <p><code>\usetikzlibrary{decorations}</code></p>
@@ -1013,27 +1017,27 @@ k\in\mathbb{N}\cap\left[1,p\right] &amp; \mathbb{N}\ni p\text{ treatments}
 <h3><span class="header-section-number">32.2.5</span> model assumption and experimental unit, measurement/observational unit<a href="design-of-experiment.html#model-assumption-and-experimental-unit-measurementobservational-unit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-3"></span>
-<img src="img/casler2015-fig1.png" alt="model assumption and experimental unit 1 ( 11 fig.1)" width="50%" />
+<img src="img/casler2015-fig1.png" alt="model assumption and experimental unit 1 ( 12 fig.1)" width="50%" />
 <p class="caption">
-Fig. 21.2: model assumption and experimental unit 1 ( <span class="citation"><sup><a href="#ref-casler2015">11</a></sup></span> fig.1)
+Fig. 21.2: model assumption and experimental unit 1 ( <span class="citation"><sup><a href="#ref-casler2015">12</a></sup></span> fig.1)
 </p>
 </div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
-<img src="img/casler2015-fig2.png" alt="model assumption and experimental unit 2 ( 11 fig.2)" width="50%" />
+<img src="img/casler2015-fig2.png" alt="model assumption and experimental unit 2 ( 12 fig.2)" width="50%" />
 <p class="caption">
-Fig. 21.3: model assumption and experimental unit 2 ( <span class="citation"><sup><a href="#ref-casler2015">11</a></sup></span> fig.2)
+Fig. 21.3: model assumption and experimental unit 2 ( <span class="citation"><sup><a href="#ref-casler2015">12</a></sup></span> fig.2)
 </p>
 </div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-5"></span>
-<img src="img/casler2015-fig3.png" alt="model assumption and experimental unit 3 ( 11 fig.3)" width="50%" />
+<img src="img/casler2015-fig3.png" alt="model assumption and experimental unit 3 ( 12 fig.3)" width="50%" />
 <p class="caption">
-Fig. 21.4: model assumption and experimental unit 3 ( <span class="citation"><sup><a href="#ref-casler2015">11</a></sup></span> fig.3)
+Fig. 21.4: model assumption and experimental unit 3 ( <span class="citation"><sup><a href="#ref-casler2015">12</a></sup></span> fig.3)
 </p>
 </div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-6"></span>
-<img src="img/casler2015-fig4.png" alt="model assumption and experimental unit 4 ( 11 fig.4)" width="50%" />
+<img src="img/casler2015-fig4.png" alt="model assumption and experimental unit 4 ( 12 fig.4)" width="50%" />
 <p class="caption">
-Fig. 13.1: model assumption and experimental unit 4 ( <span class="citation"><sup><a href="#ref-casler2015">11</a></sup></span> fig.4)
+Fig. 13.1: model assumption and experimental unit 4 ( <span class="citation"><sup><a href="#ref-casler2015">12</a></sup></span> fig.4)
 </p>
 </div>
 <hr />
@@ -1046,7 +1050,7 @@ Y_{{\scriptscriptstyle ijk}}=\mu+\tau_{{\scriptscriptstyle i}}+\beta_{{\scriptsc
 <h2><span class="header-section-number">32.3</span> experiment structure<a href="design-of-experiment.html#experiment-structure" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="treatment-structure" class="section level3 hasAnchor" number="32.3.1">
 <h3><span class="header-section-number">32.3.1</span> treatment structure<a href="design-of-experiment.html#treatment-structure" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.77</p>
+<p><span class="citation"><sup><a href="#ref-milliken2004">10</a></sup></span> p.77</p>
 <ul>
 <li>1-way treatment structure</li>
 <li>2-way treatment structure</li>
@@ -1057,7 +1061,7 @@ Y_{{\scriptscriptstyle ijk}}=\mu+\tau_{{\scriptscriptstyle i}}+\beta_{{\scriptsc
 </div>
 <div id="design-structure" class="section level3 hasAnchor" number="32.3.2">
 <h3><span class="header-section-number">32.3.2</span> design structure<a href="design-of-experiment.html#design-structure" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><span class="citation"><sup><a href="#ref-milliken2004">8</a></sup></span> p.77</p>
+<p><span class="citation"><sup><a href="#ref-milliken2004">10</a></sup></span> p.77</p>
 <ul>
 <li>CRD = completely randomized design</li>
 <li>RCBD = randomized complete block design
@@ -1095,7 +1099,7 @@ Y_{{\scriptscriptstyle ijk}}=\mu+\tau_{{\scriptscriptstyle i}}+\beta_{{\scriptsc
 </div>
 <div id="approach-to-experimentation" class="section level2 hasAnchor" number="32.4">
 <h2><span class="header-section-number">32.4</span> approach to experimentation<a href="design-of-experiment.html#approach-to-experimentation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><span class="citation"><sup><a href="#ref-hu2022">7</a></sup></span> p.75</p>
+<p><span class="citation"><sup><a href="#ref-hu2022">9</a></sup></span> p.75</p>
 <ul>
 <li>approach to experimentation
 <ul>
@@ -1113,7 +1117,7 @@ Y_{{\scriptscriptstyle ijk}}=\mu+\tau_{{\scriptscriptstyle i}}+\beta_{{\scriptsc
 </div>
 <div id="protocol" class="section level2 hasAnchor" number="32.7">
 <h2><span class="header-section-number">32.7</span> protocol<a href="design-of-experiment.html#protocol" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><span class="citation"><sup><a href="#ref-hu2022">7</a></sup></span> p.95</p>
+<p><span class="citation"><sup><a href="#ref-hu2022">9</a></sup></span> p.95</p>
 <ul>
 <li>study objective</li>
 <li>study endpoint
@@ -1151,20 +1155,20 @@ Y_{{\scriptscriptstyle ijk}}=\mu+\tau_{{\scriptscriptstyle i}}+\beta_{{\scriptsc
 </div>
 <h3>references<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body" line-spacing="2">
+<div id="ref-zhang2021" class="csl-entry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">張翔. &amp; 廖崇智. <em><a href="https://www.books.com.tw/products/0010888833">提綱挈領學統計</a></em>. (大碩教育, 2021).</div>
+</div>
 <div id="ref-hu2022" class="csl-entry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline">Hu, F.-C. <em>Statistical Design and Analysis of Biomedical Research</em>. (International-Harvard (I-H) Statistical Consulting Company, Taipei, Taiwan, 2022).</div>
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Hu, F.-C. <em>Statistical Design and Analysis of Biomedical Research</em>. (International-Harvard (I-H) Statistical Consulting Company, Taipei, Taiwan, 2022).</div>
 </div>
 <div id="ref-milliken2004" class="csl-entry">
-<div class="csl-left-margin">8. </div><div class="csl-right-inline">Milliken, G. A. &amp; Johnson, D. E. <em>Analysis of Messy Data Volume 1: Designed Experiments, Second Edition</em>. (Chapman; Hall/CRC, Boca Raton, Fla., 2004).</div>
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Milliken, G. A. &amp; Johnson, D. E. <em>Analysis of Messy Data Volume 1: Designed Experiments, Second Edition</em>. (Chapman; Hall/CRC, Boca Raton, Fla., 2004).</div>
 </div>
 <div id="ref-buchanan2005" class="csl-entry">
-<div class="csl-left-margin">9. </div><div class="csl-right-inline">Buchanan, C. D. <em>et al.</em> <a href="https://doi.org/10.1007/s11103-005-7876-2">Sorghum bicolor<span>’</span>s Transcriptome Response to Dehydration, High Salinity and ABA</a>. <em>Plant Molecular Biology</em> <strong>58</strong>, 699–720 (2005).</div>
-</div>
-<div id="ref-zhang2021" class="csl-entry">
-<div class="csl-left-margin">10. </div><div class="csl-right-inline">張翔. &amp; 廖崇智. <em><a href="https://www.books.com.tw/products/0010888833">提綱挈領學統計</a></em>. (大碩教育, 2021).</div>
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Buchanan, C. D. <em>et al.</em> <a href="https://doi.org/10.1007/s11103-005-7876-2">Sorghum bicolor<span>’</span>s Transcriptome Response to Dehydration, High Salinity and ABA</a>. <em>Plant Molecular Biology</em> <strong>58</strong>, 699–720 (2005).</div>
 </div>
 <div id="ref-casler2015" class="csl-entry">
-<div class="csl-left-margin">11. </div><div class="csl-right-inline">Casler, M. D., Vermerris, W. &amp; Dixon, R. A. <a href="https://doi.org/10.1007/s12155-015-9580-7">Replication Concepts for Bioenergy Research Experiments</a>. <em>BioEnergy Research</em> <strong>8</strong>, 1–16 (2015).</div>
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Casler, M. D., Vermerris, W. &amp; Dixon, R. A. <a href="https://doi.org/10.1007/s12155-015-9580-7">Replication Concepts for Bioenergy Research Experiments</a>. <em>BioEnergy Research</em> <strong>8</strong>, 1–16 (2015).</div>
 </div>
 </div>
 <div class="footnotes">
@@ -1224,7 +1228,7 @@ gitbook.start({
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
-"theme": "night",
+"theme": "white",
 "family": "sans",
 "size": 1
 },
