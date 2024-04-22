@@ -79,8 +79,8 @@ target of interest
 
 $$
 \begin{array}{ccccccc}
-X & \sim & F_{{\scriptscriptstyle X}}\left(x\right) & \overset{\text{FToC}}{\longleftrightarrow} & f_{{\scriptscriptstyle X}}\left(x\right)\\
- & \text{inversion theorem}\ : & \updownarrow & \exists M_{{\scriptscriptstyle X}}\left(t\right)\in\mathbb{R}\ \wedge & \uparrow\downarrow & \searrow\nwarrow & \looparrowleft\wedge\ \mathrm{supp}\left(f_{{\scriptscriptstyle X}}\right)\text{ is bounded}\\
+X & \sim & F_{{\scriptscriptstyle X}}\left(x\right) & \overset{\text{FToC}}{\longleftrightarrow} & f_{{\scriptscriptstyle X}}\left(x\right) & \leftrightarrow & \mathrm{P}_{{\scriptscriptstyle X}}\\
+ & \text{inversion formula}\ : & \updownarrow & \exists M_{{\scriptscriptstyle X}}\left(t\right)\in\mathbb{R}\ \wedge & \uparrow\downarrow & \searrow\nwarrow & \looparrowleft\wedge\ \mathrm{supp}\left(f_{{\scriptscriptstyle X}}\right)\text{ is bounded}\\
  &  & \varphi_{{\scriptscriptstyle X}}\left(\xi\right) & \leftrightarrows & M_{{\scriptscriptstyle X}}\left(\xi\right) & \rightarrow & \left\{ \mu_{{\scriptscriptstyle n}}\middle|n\in\mathbb{N}\right\} 
 \end{array}
 $$
@@ -1939,8 +1939,8 @@ $$
 
 $$
 \begin{array}{ccccccc}
-X & \sim & F_{{\scriptscriptstyle X}}\left(x\right) & \overset{\text{FToC}}{\longleftrightarrow} & f_{{\scriptscriptstyle X}}\left(x\right)\\
- & \text{inversion theorem}\ : & \updownarrow & \exists M_{{\scriptscriptstyle X}}\left(t\right)\in\mathbb{R}\ \wedge & \uparrow\downarrow & \searrow\nwarrow & \looparrowleft\wedge\ \mathrm{supp}\left(f_{{\scriptscriptstyle X}}\right)\text{ is bounded}\\
+X & \sim & F_{{\scriptscriptstyle X}}\left(x\right) & \overset{\text{FToC}}{\longleftrightarrow} & f_{{\scriptscriptstyle X}}\left(x\right) & \leftrightarrow & \mathrm{P}_{{\scriptscriptstyle X}}\\
+ & \text{inversion formula}\ : & \updownarrow & \exists M_{{\scriptscriptstyle X}}\left(t\right)\in\mathbb{R}\ \wedge & \uparrow\downarrow & \searrow\nwarrow & \looparrowleft\wedge\ \mathrm{supp}\left(f_{{\scriptscriptstyle X}}\right)\text{ is bounded}\\
  &  & \varphi_{{\scriptscriptstyle X}}\left(\xi\right) & \leftrightarrows & M_{{\scriptscriptstyle X}}\left(\xi\right) & \rightarrow & \left\{ \mu_{{\scriptscriptstyle n}}\middle|n\in\mathbb{N}\right\} 
 \end{array}
 $$
@@ -1957,6 +1957,8 @@ $$
 a
 $$
 
+https://www.youtube.com/watch?v=fSbs6im6wqY&t=524s
+
 ```{theorem}
 If 
 ```
@@ -1969,7 +1971,180 @@ CLT
 
 #### common families of distributions
 
+[mean and variance of discrete probability distributions]^[\@ref(mean-and-variance-of-discrete-probability-distributions)]^
 
+##### discrete distribution
+
+###### discrete uniform distribution
+
+$$
+\begin{array}{c}
+X\sim\mathcal{DU}\left(1,N\right)\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|N\right)=\dfrac{1}{N}\\
+x\in X\left(\Omega\right)=\left\{ 1,2,\cdots,N\right\} 
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[X\right]= & \dfrac{N+1}{2}\\
+\mathrm{V}\left[X\right]= & \dfrac{\left(N+1\right)\left(N-1\right)}{12}
+\end{cases}
+\end{array}
+$$
+
+$$
+\begin{aligned}
+\mathrm{E}\left[X\right]= & \sum_{x\in X\left(\Omega\right)}x\thinspace f_{{\scriptscriptstyle X}}\left(x|N\right)=\sum_{x=1}^{N}x\dfrac{1}{N}\\
+= & \dfrac{1}{N}\sum_{x=1}^{N}x=\dfrac{1}{N}\dfrac{N\left(N+1\right)}{2}=\dfrac{N+1}{2}\\
+\mathrm{E}\left[X\right]= & \dfrac{N+1}{2}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\mathrm{V}\left[X\right]= & \sum_{x\in X\left(\Omega\right)}\left(x-\mathrm{E}\left[X\right]\right)^{2}f_{{\scriptscriptstyle X}}\left(x|N\right)=\sum_{x=1}^{N}\left(x-\dfrac{N+1}{2}\right)^{2}\dfrac{1}{N}\\
+= & \dfrac{1}{N}\sum_{x=1}^{N}\left[x^{2}-\left(N+1\right)x+\left(\dfrac{N+1}{2}\right)^{2}\right]\\
+= & \dfrac{1}{N}\left[\sum_{x=1}^{N}x^{2}-\left(N+1\right)\sum_{x=1}^{N}x+N\left(\dfrac{N+1}{2}\right)^{2}\right]\\
+= & \dfrac{1}{N}\left[\dfrac{N\left(N+1\right)\left(2N+1\right)}{6}-\left(N+1\right)\dfrac{N\left(N+1\right)}{2}+N\left(\dfrac{N+1}{2}\right)^{2}\right]\\
+= & \left(N+1\right)\left[\dfrac{2N+1}{6}-\dfrac{N+1}{2}+\dfrac{N+1}{4}\right]=\left(N+1\right)\dfrac{4N+2-\left(3N+3\right)}{12}\\
+= & \dfrac{\left(N+1\right)\left(N-1\right)}{12}\\
+\mathrm{V}\left[X\right]= & \dfrac{\left(N+1\right)\left(N-1\right)}{12}
+\end{aligned}
+$$
+
+***
+
+$$
+X\sim\mathcal{DU}\left(a,b\right)\\\Updownarrow\\\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|N\right)=\dfrac{1}{N}=\dfrac{1}{b-a+1} & N=b-a+1\\
+x\in X\left(\Omega\right)=\left\{ a,a+1,\cdots,b\right\} 
+\end{cases}\\\Updownarrow\\F_{{\scriptscriptstyle X}}\left(x|a,b\right)=\dfrac{\left\lfloor x\right\rfloor -a+1}{b-a+1}
+$$
+
+
+
+###### hypergeometric distribution
+
+$$
+\begin{array}{c}
+X\sim\mathcal{HG}\left(N,M,K\right)\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|N,M,K\right)=\dfrac{\dbinom{N-M}{K-x}\dbinom{M}{x}}{\dbinom{N}{K}}\\
+x\in X\left(\Omega\right)=\left\{ \max\left\{ 0,K-\left(N-M\right)\right\} ,\cdots,\min\left\{ K,M\right\} \right\} 
+\end{cases}\\
+\Downarrow K\ll N,M\\
+x\in X\left(\Omega\right)=\left\{ 0,1,\cdots,K\right\} \\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[X\right]= & \dfrac{KM}{N}\\
+\mathrm{V}\left[X\right]= & \dfrac{KM}{N}\dfrac{\left(N-M\right)\left(N-K\right)}{N\left(N-1\right)}
+\end{cases}
+\end{array}
+$$
+
+###### Bernoulli distribution
+
+$$
+\begin{array}{c}
+X\sim\mathcal{B}\left(p\right),p=\mathrm{P}\left(X=1\right)\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|p\right)=\left(1-p\right)^{1-x}p^{x}\\
+x\in X\left(\Omega\right)=\left\{ 0,1\right\} 
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[X\right]= & p\\
+\mathrm{V}\left[X\right]= & p\left(1-p\right)\\
+M_{{\scriptscriptstyle X}}\left(\xi\right)= & \left(1-p\right)+p\mathrm{e}^{\xi}
+\end{cases}
+\end{array}
+$$
+
+###### binomial distribution
+
+independent and identical Bernoulli trials
+
+$$
+\begin{array}{c}
+X\sim\mathrm{b}\left(n,p\right),p=\mathrm{P}\left(X=1\right)\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|n,p\right)=\dbinom{n}{x}\left(1-p\right)^{n-x}p^{x}\\
+x\in X\left(\Omega\right)=\left\{ 0,1,\cdots,n\right\} 
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[X\right]= & np\\
+\mathrm{V}\left[X\right]= & np\left(1-p\right)\\
+M_{{\scriptscriptstyle X}}\left(\xi\right)= & \left[\left(1-p\right)+p\mathrm{e}^{\xi}\right]^{n}
+\end{cases}
+\end{array}
+$$
+
+$$
+\begin{aligned}
+M_{{\scriptscriptstyle X}}\left(\xi\right)= & \mathrm{E}\left[\mathrm{e}^{\xi X}\right]=\sum_{x\in X\left(\Omega\right)}\mathrm{e}^{\xi x}f_{{\scriptscriptstyle X}}\left(x|n,p\right)\\
+= & \sum_{x=1}^{n}\mathrm{e}^{\xi x}\dbinom{n}{x}\left(1-p\right)^{n-x}p^{x}=\sum_{x=1}^{n}\dbinom{n}{x}\left(1-p\right)^{n-x}\left(p\mathrm{e}^{\xi}\right)^{x}\\
+= & \sum_{x=1}^{n}\dbinom{n}{x}\left[\dfrac{1-p}{\left(1-p\right)+p\mathrm{e}^{\xi}}\right]^{n-x}\left[\dfrac{p\mathrm{e}^{\xi}}{\left(1-p\right)+p\mathrm{e}^{\xi}}\right]^{x}\left[\left(1-p\right)+p\mathrm{e}^{\xi}\right]^{n-x}\left[\left(1-p\right)+p\mathrm{e}^{\xi}\right]^{x}\\
+= & \sum_{x=1}^{n}\dbinom{n}{x}\left[\dfrac{1-p}{\left(1-p\right)+p\mathrm{e}^{\xi}}\right]^{n-x}\left[\dfrac{p\mathrm{e}^{\xi}}{\left(1-p\right)+p\mathrm{e}^{\xi}}\right]^{x}\left[\left(1-p\right)+p\mathrm{e}^{\xi}\right]^{n}\\
+= & \left[\left(1-p\right)+p\mathrm{e}^{\xi}\right]^{n}\sum_{x=1}^{n}\dbinom{n}{x}\left[\dfrac{1-p}{\left(1-p\right)+p\mathrm{e}^{\xi}}\right]^{n-x}\left[\dfrac{p\mathrm{e}^{\xi}}{\left(1-p\right)+p\mathrm{e}^{\xi}}\right]^{x}\\
+= & \left[\left(1-p\right)+p\mathrm{e}^{\xi}\right]^{n}\sum_{x=1}^{n}\dbinom{n}{x}\left[p^{*}\right]^{n-x}\left[1-p^{*}\right]^{x},p^{*}=\dfrac{1-p}{\left(1-p\right)+p\mathrm{e}^{\xi}}\\
+= & \left[\left(1-p\right)+p\mathrm{e}^{\xi}\right]^{n}\sum_{x=1}^{n}f_{{\scriptscriptstyle X}}\left(x|n,p^{*}\right),X\sim\mathrm{b}\left(n,p^{*}\right)\\
+= & \left[\left(1-p\right)+p\mathrm{e}^{\xi}\right]^{n}\cdot1=\left[\left(1-p\right)+p\mathrm{e}^{\xi}\right]^{n}\\
+M_{{\scriptscriptstyle X}}\left(\xi\right)= & \left[\left(1-p\right)+p\mathrm{e}^{\xi}\right]^{n}
+\end{aligned}
+$$
+
+###### Poisson distribution
+
+count = number of events
+
+an unbounded discrete distribution we first see or met
+
+$$
+\begin{array}{c}
+X\sim\mathcal{P}\left(\lambda\right)\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|\lambda\right)=\dfrac{\mathrm{e}^{-\lambda}\lambda^{x}}{x!}\\
+x\in X\left(\Omega\right)=\left\{ 0,1,\cdots\right\} 
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[X\right]= & \lambda\\
+\mathrm{V}\left[X\right]= & \lambda=\mathrm{E}\left[X\right]\\
+M_{{\scriptscriptstyle X}}\left(\xi\right)= & \exp\left[\lambda\left(\mathrm{e}^{\xi}-1\right)\right]=\mathrm{e}^{\lambda\left(\mathrm{e}^{\xi}-1\right)}
+\end{cases}
+\end{array}
+$$
+
+the Poisson postulates
+
+$$
+\begin{array}{c}
+\begin{cases}
+N_{{\scriptscriptstyle t}} & \text{a r.v. denoting the of events in }\left[0,t\right]\\
+N_{{\scriptscriptstyle 0}}=N_{{\scriptscriptstyle t=0}}=0 & \text{reset the count at the initial point}\\
+\forall s<t\left[N_{{\scriptscriptstyle s}}\perp N_{{\scriptscriptstyle t}}-N_{{\scriptscriptstyle s}}\right] & \text{disjoint intervals independent}\\
+N_{{\scriptscriptstyle s}}=N_{{\scriptscriptstyle t+s}}-N_{{\scriptscriptstyle t}} & \text{depends on length instead of initial point}\\
+\lim\limits _{t\rightarrow0}\dfrac{\mathrm{P}\left(N_{{\scriptscriptstyle t}}=1\right)}{t}=\lambda & \Rightarrow\forall t\approx0\left[\mathrm{P}\left(N_{{\scriptscriptstyle t}}=1\right)\approx\lambda t\right]\\
+\lim\limits _{t\rightarrow0}\dfrac{\mathrm{P}\left(N_{{\scriptscriptstyle t}}>1\right)}{t}=0 & \text{no coincidence for small }t
+\end{cases}\\
+\text{solve the differential equations }\Downarrow\text{ with probability axioms}\\
+f_{{\scriptscriptstyle X}}\left(x|\lambda t\right)=\mathrm{P}\left(N_{{\scriptscriptstyle t}}=x\right)=\dfrac{\mathrm{e}^{-\lambda t}\left(\lambda t\right)^{x}}{x!}
+\end{array}
+$$
+
+###### negative binomial distribution
+
+also an unbounded discrete distribution
+
+Count the number of independent and identical Bernoulli trials until a fixed number of success.
+
+##### continuous distribution
 
 ### multivariable distribution
 
@@ -2012,3 +2187,5 @@ CLT
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/H7wBXhvjZfg"></iframe>
 :::
+
+https://en.wikipedia.org/wiki/Inverse_distance_weighting Shepard interpolation
