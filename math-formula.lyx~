@@ -132,6 +132,42 @@ determinant
 \end_layout
 
 \begin_layout Standard
+continuous distribution
+\end_layout
+
+\begin_layout Standard
+uniform distribution = continuous uniform distribution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+X\sim\mathcal{U}\left(a,b\right)\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|a,b\right)=\dfrac{1\left(a\le x\le b\right)}{b-a}\\
+x\in X\left(\Omega\right)=\left[a,b\right]
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[X\right]= & \dfrac{N+1}{2}\\
+\mathrm{V}\left[X\right]= & \dfrac{\left(N+1\right)\left(N-1\right)}{12}\\
+M_{{\scriptscriptstyle X}}\left(\xi\right)=
+\end{cases}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+discrete distribution
+\end_layout
+
+\begin_layout Standard
 discrete uniform distribution
 \begin_inset Formula 
 \[
@@ -331,7 +367,7 @@ N_{{\scriptscriptstyle s}}=N_{{\scriptscriptstyle t+s}}-N_{{\scriptscriptstyle t
 \lim\limits _{t\rightarrow0}\dfrac{\mathrm{P}\left(N_{{\scriptscriptstyle t}}>1\right)}{t}=0 & \text{no coincidence for small }t
 \end{cases}\\
 \text{solve the differential equations }\Downarrow\text{ with probability axioms}\\
-\mathrm{P}\left(N_{{\scriptscriptstyle t}}=x\right)=\dfrac{\mathrm{e}^{-\lambda t}\left(\lambda t\right)^{x}}{x!}
+f_{{\scriptscriptstyle X}}\left(x|\lambda t\right)=\mathrm{P}\left(N_{{\scriptscriptstyle t}}=x\right)=\dfrac{\mathrm{e}^{-\lambda t}\left(\lambda t\right)^{x}}{x!}
 \end{array}
 \]
 
@@ -342,6 +378,107 @@ N_{{\scriptscriptstyle s}}=N_{{\scriptscriptstyle t+s}}-N_{{\scriptscriptstyle t
 
 \begin_layout Standard
 negative binomial distribution
+\begin_inset Formula 
+\[
+\begin{array}{c}
+X\sim\mathcal{NB}\left(r,p\right)\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|r,p\right)=\dbinom{x-1}{r-1}\left(1-p\right)^{x-r}p^{r}\\
+x\in X\left(\Omega\right)=\left\{ r,r+1,\cdots\right\} 
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[X\right]=\\
+\mathrm{V}\left[X\right]=\\
+M_{{\scriptscriptstyle X}}\left(\xi\right)=
+\end{cases}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+Y=X-r,X\sim\mathcal{NB}\left(r,p\right)\Rightarrow X=Y+r\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle Y}}\left(y|r,p\right)=\dbinom{r+y-1}{r-1}\left(1-p\right)^{y}p^{r}\\
+y\in Y\left(\Omega\right)=\left\{ 0,1,\cdots\right\} 
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[Y\right]= & r\dfrac{1-p}{p}=r\left(\dfrac{1}{p}-1\right)\\
+\mathrm{V}\left[Y\right]= & r\dfrac{1-p}{p^{2}}=r\left(\dfrac{1}{p^{2}}-\dfrac{1}{p}\right)\\
+M_{{\scriptscriptstyle Y}}\left(\xi\right)= & \left[\dfrac{p}{1-\left(1-p\right)\mathrm{e}^{\xi}}\right]^{r}
+\end{cases}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Y=X-r\Rightarrow f_{{\scriptscriptstyle Y}}\left(y|r,p\right)= & \mathrm{P}\left(Y=y\right)\\
+= & \mathrm{P}\left(X-r=y\right)\\
+= & \mathrm{P}\left(X=r+y\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+M_{{\scriptscriptstyle Y}}\left(\xi\right)= & \mathrm{E}\left[\mathrm{e}^{\xi Y}\right]=\sum_{y\in Y\left(\Omega\right)}\mathrm{e}^{\xi y}f_{{\scriptscriptstyle Y}}\left(y|r,p\right)\\
+= & \sum_{y=0}^{\infty}\mathrm{e}^{\xi y}\dbinom{r+y-1}{r-1}\left(1-p\right)^{y}p^{r}\\
+= & p^{r}\sum_{y=0}^{\infty}\dbinom{r+y-1}{r-1}\left[\left(1-p\right)\mathrm{e}^{\xi}\right]^{y}\\
+= & p^{r}\sum_{y=0}^{\infty}\dbinom{r+y-1}{r-1}\left[1-p^{*}\right]^{y}\left[p^{*}\right]^{r}\dfrac{1}{\left[p^{*}\right]^{r}},1-p^{*}=\left(1-p\right)\mathrm{e}^{\xi}\\
+= & \left[\dfrac{p}{p^{*}}\right]^{r}\sum_{y=0}^{\infty}f_{{\scriptscriptstyle Y}}\left(y|r,p^{*}\right),Y\sim\mathcal{NB}\left(r,p^{*}\right),p^{*}=1-\left(1-p\right)\mathrm{e}^{\xi}\\
+= & \left[\dfrac{p}{p^{*}}\right]^{r}\cdot1=\left[\dfrac{p}{p^{*}}\right]^{r}=\left[\dfrac{p}{1-\left(1-p\right)\mathrm{e}^{\xi}}\right]^{r}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+geometric distribution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+X\sim\mathcal{NB}\left(r=1,p\right)=\mathcal{G}\left(p\right)\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|r=1,p\right)=\left[\dbinom{x-1}{r-1}\left(1-p\right)^{x-r}p^{r}\right]_{{\scriptscriptstyle r=1}}=\dbinom{x-1}{1-1}\left(1-p\right)^{x-1}p^{1}=\left(1-p\right)^{x-1}p\\
+x\in X\left(\Omega\right)=\left\{ r,r+1,\cdots\right\} _{{\scriptscriptstyle r=1}}=\left\{ 1,2,\cdots\right\} 
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[X\right]=\\
+\mathrm{V}\left[X\right]=\\
+M_{{\scriptscriptstyle X}}\left(\xi\right)=
+\end{cases}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall s>t\left[\mathrm{P}\left(X>s|X>t\right)=\mathrm{P}\left(X>s-t\right)\right]
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

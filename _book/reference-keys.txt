@@ -608,3 +608,14 @@ dft-discrete-fourier-transform
 fft-fast-fourier-transform
 wavelet
 output
+geometric-distribution
+uniform-distribution-continuous-uniform-distribution
+gamma-distribution
+exponential-distribution
+chi-square-distribution
+weibull-distribution
+normal-distribution
+beta-distribution
+cauchy-distribution
+log-normal-distribution
+exponential-family
