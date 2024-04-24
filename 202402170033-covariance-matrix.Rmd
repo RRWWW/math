@@ -2,7 +2,7 @@
 
 ## covariance matrix 
 
-@ccjou2014
+@ccjou2014a
 
 ### calculation
 

@@ -80,7 +80,7 @@ target of interest
 $$
 \begin{array}{ccccccc}
 X & \sim & F_{{\scriptscriptstyle X}}\left(x\right) & \overset{\text{FToC}}{\longleftrightarrow} & f_{{\scriptscriptstyle X}}\left(x\right) & \leftrightarrow & \mathrm{P}_{{\scriptscriptstyle X}}\\
- & \text{inversion formula}\ : & \updownarrow & \exists M_{{\scriptscriptstyle X}}\left(t\right)\in\mathbb{R}\ \wedge & \uparrow\downarrow & \searrow\nwarrow & \looparrowleft\wedge\ \mathrm{supp}\left(f_{{\scriptscriptstyle X}}\right)\text{ is bounded}\\
+ & \text{inversion formula}\ : & \updownarrow & \forall\xi\approx0\left[M_{{\scriptscriptstyle X}}\left(\xi\right)\in\mathbb{R}\right]\ \wedge & \uparrow\downarrow & \searrow\nwarrow & \looparrowleft\wedge\ \mathrm{supp}\left(f_{{\scriptscriptstyle X}}\right)\text{ is bounded}\\
  &  & \varphi_{{\scriptscriptstyle X}}\left(\xi\right) & \leftrightarrows & M_{{\scriptscriptstyle X}}\left(\xi\right) & \rightarrow & \left\{ \mu_{{\scriptscriptstyle n}}\middle|n\in\mathbb{N}\right\} 
 \end{array}
 $$
@@ -920,7 +920,8 @@ $$
  & U=F_{{\scriptscriptstyle X}}\left(X\right)\overset{\ref{thm:probability-integral-transformation}}{\sim}U\left(u\right)\text{ on }\left[0,1\right]\\
 \Rightarrow & X=F_{{\scriptscriptstyle X}}^{-1}\left(U\right)\wedge X\sim F_{{\scriptscriptstyle X}}\left(x\right)\Rightarrow F_{{\scriptscriptstyle X}}^{-1}\left(U\right)=X\sim F_{{\scriptscriptstyle X}}\left(x\right)\Rightarrow F_{{\scriptscriptstyle X}}^{-1}\left(U\right)\sim F_{{\scriptscriptstyle X}}\left(x\right)\\
 \Rightarrow & X=F_{{\scriptscriptstyle X}}^{-1}\left(U\right)\sim F_{{\scriptscriptstyle X}}\left(x\right)\\
-\text{i.e. } & \text{uniform random variables subsituted into the inverse of }F_{{\scriptscriptstyle X}}\text{ we can get random variables following any }F_{{\scriptscriptstyle X}}\left(x\right)
+\text{i.e. } & \text{uniform random variables subsituted into the inverse of }F_{{\scriptscriptstyle X}}\text{,}\\
+ & \text{ we can get random variables follow }F_{{\scriptscriptstyle X}}\left(x\right)
 \end{aligned}
 $$
 
@@ -1884,7 +1885,7 @@ $$
 \begin{array}{ccccccc}
 X & \sim & F_{{\scriptscriptstyle X}}\left(x\right) & \leftrightarrow & f_{{\scriptscriptstyle X}}\left(x\right)\\
  &  &  & \looparrowright & \uparrow\downarrow & \searrow\nwarrow & \looparrowleft\wedge\ \mathrm{supp}\left(f_{{\scriptscriptstyle X}}\right)\text{ is bounded}\\
- &  & \exists M_{{\scriptscriptstyle X}}\left(t\right)\in\mathbb{R} & \wedge & M_{{\scriptscriptstyle X}}\left(\xi\right) & \rightarrow & \left\{ \mu_{{\scriptscriptstyle n}}\middle|n\in\mathbb{N}\right\} 
+ &  & \forall\xi\approx0\left[M_{{\scriptscriptstyle X}}\left(\xi\right)\in\mathbb{R}\right] & \wedge & M_{{\scriptscriptstyle X}}\left(\xi\right) & \rightarrow & \left\{ \mu_{{\scriptscriptstyle n}}\middle|n\in\mathbb{N}\right\} 
 \end{array}
 $$
 
@@ -1932,7 +1933,7 @@ i.e. $\varphi_{{\scriptscriptstyle X}}\left(\xi\right)$ determines $F_{{\scripts
 $$
 \begin{array}{ccccccc}
 X & \sim & F_{{\scriptscriptstyle X}}\left(x\right) & \leftrightarrow & f_{{\scriptscriptstyle X}}\left(x\right)\\
- &  & \updownarrow & \exists M_{{\scriptscriptstyle X}}\left(t\right)\in\mathbb{R}\ \wedge & \uparrow\downarrow & \searrow\nwarrow & \looparrowleft\wedge\ \mathrm{supp}\left(f_{{\scriptscriptstyle X}}\right)\text{ is bounded}\\
+ &  & \updownarrow & \forall\xi\approx0\left[M_{{\scriptscriptstyle X}}\left(\xi\right)\in\mathbb{R}\right]\ \wedge & \uparrow\downarrow & \searrow\nwarrow & \looparrowleft\wedge\ \mathrm{supp}\left(f_{{\scriptscriptstyle X}}\right)\text{ is bounded}\\
  &  & \varphi_{{\scriptscriptstyle X}}\left(\xi\right) & \leftrightarrows & M_{{\scriptscriptstyle X}}\left(\xi\right) & \rightarrow & \left\{ \mu_{{\scriptscriptstyle n}}\middle|n\in\mathbb{N}\right\} 
 \end{array}
 $$
@@ -1940,7 +1941,7 @@ $$
 $$
 \begin{array}{ccccccc}
 X & \sim & F_{{\scriptscriptstyle X}}\left(x\right) & \overset{\text{FToC}}{\longleftrightarrow} & f_{{\scriptscriptstyle X}}\left(x\right) & \leftrightarrow & \mathrm{P}_{{\scriptscriptstyle X}}\\
- & \text{inversion formula}\ : & \updownarrow & \exists M_{{\scriptscriptstyle X}}\left(t\right)\in\mathbb{R}\ \wedge & \uparrow\downarrow & \searrow\nwarrow & \looparrowleft\wedge\ \mathrm{supp}\left(f_{{\scriptscriptstyle X}}\right)\text{ is bounded}\\
+ & \text{inversion formula}\ : & \updownarrow & \forall\xi\approx0\left[M_{{\scriptscriptstyle X}}\left(\xi\right)\in\mathbb{R}\right]\ \wedge & \uparrow\downarrow & \searrow\nwarrow & \looparrowleft\wedge\ \mathrm{supp}\left(f_{{\scriptscriptstyle X}}\right)\text{ is bounded}\\
  &  & \varphi_{{\scriptscriptstyle X}}\left(\xi\right) & \leftrightarrows & M_{{\scriptscriptstyle X}}\left(\xi\right) & \rightarrow & \left\{ \mu_{{\scriptscriptstyle n}}\middle|n\in\mathbb{N}\right\} 
 \end{array}
 $$
@@ -2372,5 +2373,9 @@ box plot
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/H7wBXhvjZfg"></iframe>
 :::
+
+## Chen, Lin-An
+
+https://www.youtube.com/playlist?list=PLTpF-A8hKVUPXtNAX9lro-leGgEK0OSEW
 
 https://en.wikipedia.org/wiki/Inverse_distance_weighting Shepard interpolation
