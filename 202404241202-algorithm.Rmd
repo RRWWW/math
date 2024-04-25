@@ -1,0 +1,15 @@
+# algorithm
+
+## Chen, Vivian
+
+https://www.youtube.com/playlist?list=PLTpF-A8hKVUMcBaEuGyWbBXBn21seO3vA
+
+## The Bubble Sort Curve
+
+https://www.youtube.com/watch?v=Gm8v_MR7TGk
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Gm8v_MR7TGk"></iframe>
+:::
+
+https://linesthatconnect.github.io/blog/a-rigorous-derivation-of-the-bubble-sort-curve/

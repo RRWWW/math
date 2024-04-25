@@ -41,7 +41,7 @@ $$
 To generalize from univariate random variables to multivariate random vectors, a random vector [@ccjou2014]
 
 $$
-\boldsymbol{Z}=\left\langle Z_{1},Z_{2},\cdots,Z_{p}\right\rangle =\begin{bmatrix}Z_{1} & Z_{2} & \cdots & Z_{p}\end{bmatrix}^{\mathrm{T}}=\begin{bmatrix}Z_{1}\\
+\boldsymbol{Z}=\left\langle Z_{1},Z_{2},\cdots,Z_{p}\right\rangle =\begin{bmatrix}Z_{1} & Z_{2} & \cdots & Z_{p}\end{bmatrix}^{\intercal}=\begin{bmatrix}Z_{1}\\
 Z_{2}\\
 \vdots\\
 Z_{p}
@@ -52,7 +52,7 @@ with $p$ random variable components is said to follow the standard multivariate 
 
 \begin{equation}
 (\#eq:smnd)
-f_{\boldsymbol{Z}}(\boldsymbol{z})=\frac{1}{(2\pi)^{p/2}}\exp\left\{ -\frac{\boldsymbol{z}^{\mathrm{T}}\boldsymbol{z}}{2}\right\} =\frac{1}{(2\pi)^{p/2}}\exp\left\{ -\frac{\boldsymbol{z}\cdot\boldsymbol{z}}{2}\right\} 
+f_{\boldsymbol{Z}}(\boldsymbol{z})=\frac{1}{(2\pi)^{p/2}}\exp\left\{ -\frac{\boldsymbol{z}^{\intercal}\boldsymbol{z}}{2}\right\} =\frac{1}{(2\pi)^{p/2}}\exp\left\{ -\frac{\boldsymbol{z}\cdot\boldsymbol{z}}{2}\right\} 
 \end{equation}
 
 \@ref(eq:smnd) can be rewritten as the following
@@ -86,11 +86,11 @@ covariance matrix of a random vector[@ccjou2014a]
 ```
 
 $$ 
-  \mathrm{C}\left[\boldsymbol{X}\right]=\mathrm{Cov}\left[\boldsymbol{X}\right]=\mathrm{V}\left[\boldsymbol{X}\right]=\mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]
+  \mathrm{C}\left[\boldsymbol{X}\right]=\mathrm{Cov}\left[\boldsymbol{X}\right]=\mathrm{V}\left[\boldsymbol{X}\right]=\mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\intercal}\right]
 $$
 
 $$
-\boldsymbol{X}=\left\langle X_{1},X_{2},\cdots,X_{p}\right\rangle =\begin{bmatrix}X_{1} & X_{2} & \cdots & X_{p}\end{bmatrix}^{\mathrm{T}}=\begin{bmatrix}X_{1}\\
+\boldsymbol{X}=\left\langle X_{1},X_{2},\cdots,X_{p}\right\rangle =\begin{bmatrix}X_{1} & X_{2} & \cdots & X_{p}\end{bmatrix}^{\intercal}=\begin{bmatrix}X_{1}\\
 X_{2}\\
 \vdots\\
 X_{p}
@@ -98,7 +98,7 @@ X_{p}
 $$
 
 $$
-\mathrm{E}\left[\boldsymbol{X}\right]=\left\langle \mathrm{E}\left[X_{1}\right],\mathrm{E}\left[X_{2}\right],\cdots,\mathrm{E}\left[X_{p}\right]\right\rangle =\begin{bmatrix}\mathrm{E}\left[X_{1}\right] & \mathrm{E}\left[X_{2}\right] & \cdots & \mathrm{E}\left[X_{p}\right]\end{bmatrix}^{\mathrm{T}}=\begin{bmatrix}\mathrm{E}\left[X_{1}\right]\\
+\mathrm{E}\left[\boldsymbol{X}\right]=\left\langle \mathrm{E}\left[X_{1}\right],\mathrm{E}\left[X_{2}\right],\cdots,\mathrm{E}\left[X_{p}\right]\right\rangle =\begin{bmatrix}\mathrm{E}\left[X_{1}\right] & \mathrm{E}\left[X_{2}\right] & \cdots & \mathrm{E}\left[X_{p}\right]\end{bmatrix}^{\intercal}=\begin{bmatrix}\mathrm{E}\left[X_{1}\right]\\
 \mathrm{E}\left[X_{2}\right]\\
 \vdots\\
 \mathrm{E}\left[X_{p}\right]
@@ -115,7 +115,7 @@ $$
 
 $$
 \begin{aligned}
- & \left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\\
+ & \left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\intercal}\\
 = & \begin{bmatrix}X_{1}-\mathrm{E}\left[X_{1}\right]\\
 X_{2}-\mathrm{E}\left[X_{2}\right]\\
 \vdots\\
@@ -136,7 +136,7 @@ $$
 
 \begin{align}
 (\#eq:covmatrix)
- & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
+ & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\intercal}\right]\\
 = & \mathrm{E}\begin{bmatrix}\left(X_{1}-\mathrm{E}\left[X_{1}\right]\right)^{2} & \cdots & \left(X_{1}-\mathrm{E}\left[X_{1}\right]\right)\left(X_{p}-\mathrm{E}\left[X_{p}\right]\right)\\
 \vdots & \ddots & \vdots\\
 \left(X_{p}-\mathrm{E}\left[X_{p}\right]\right)\left(X_{1}-\mathrm{E}\left[X_{1}\right]\right) & \cdots & \left(X_{p}-\mathrm{E}\left[X_{p}\right]\right)^{2}
@@ -283,11 +283,11 @@ $$
 \boldsymbol{X} = B\boldsymbol{Z} + \boldsymbol{\mu} = T\left(\boldsymbol{Z}\right)
 $$
 
-by [$\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}$](#mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxrightamathrmt)
+by [$\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\intercal}$](#mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxrightamathrmt)
 
 \begin{equation}
 (\#eq:covlt)
-\mathit{\Sigma}=\mathit{\Sigma}_{\boldsymbol{X}}=\mathrm{V}\left[\boldsymbol{X}\right]=\mathrm{V}\left[B\boldsymbol{Z}+\boldsymbol{\mu}\right]=B\mathrm{V}\left[\boldsymbol{Z}\right]B^{\mathrm{T}}=BIB^{\mathrm{T}}=BB^{\mathrm{T}}
+\mathit{\Sigma}=\mathit{\Sigma}_{\boldsymbol{X}}=\mathrm{V}\left[\boldsymbol{X}\right]=\mathrm{V}\left[B\boldsymbol{Z}+\boldsymbol{\mu}\right]=B\mathrm{V}\left[\boldsymbol{Z}\right]B^{\intercal}=BIB^{\intercal}=BB^{\intercal}
 \end{equation}
 
 Consider two infinitesimal volumes of $p$-dimensional parallelepipeds in the different $\mathbb{R}^p$ spaces[@ccjou2012]
@@ -435,14 +435,14 @@ $$
 \int_{V_{\boldsymbol{z}}}f_{\boldsymbol{Z}}\left(\boldsymbol{z}\right)\mathrm{d}V_{\boldsymbol{z}}\overset{\ref{eq:ipmit}}{=} & \int_{V_{\boldsymbol{x}}}f_{\boldsymbol{X}}\left(\boldsymbol{x}\right)\mathrm{d}V_{\boldsymbol{x}}=\int_{V_{\boldsymbol{x}}}\mathrm{d}V_{\boldsymbol{x}}f_{\boldsymbol{X}}\left(\boldsymbol{x}\right)\\
 \overset{\ref{eq:mitj}}{=}\int_{V_{\boldsymbol{z}}}\left|J\right|\mathrm{d}V_{\boldsymbol{z}}f_{\boldsymbol{X}}\left(\boldsymbol{x}\left(\boldsymbol{z}\right)\right)= & \int_{V_{\boldsymbol{z}}}f_{\boldsymbol{X}}\left(\boldsymbol{x}\left(\boldsymbol{z}\right)\right)\left|J\right|\mathrm{d}V_{\boldsymbol{z}}\\
 f_{\boldsymbol{Z}}\left(\boldsymbol{z}\right)\overset{\Downarrow}{=} & f_{\boldsymbol{X}}\left(\boldsymbol{x}\left(\boldsymbol{z}\right)\right)\left|J\right|\\
-f_{\boldsymbol{X}}\left(\boldsymbol{x}\left(\boldsymbol{z}\right)\right)\overset{\Downarrow}{=} & \left|J\right|^{-1}f_{\boldsymbol{Z}}\left(\boldsymbol{z}\right)\overset{\ref{eq:smnd}}{=}\left|J\right|^{-1}\frac{1}{(2\pi)^{p/2}}\exp\left\{ \frac{-\boldsymbol{z}^{\mathrm{T}}\boldsymbol{z}}{2}\right\} \\
+f_{\boldsymbol{X}}\left(\boldsymbol{x}\left(\boldsymbol{z}\right)\right)\overset{\Downarrow}{=} & \left|J\right|^{-1}f_{\boldsymbol{Z}}\left(\boldsymbol{z}\right)\overset{\ref{eq:smnd}}{=}\left|J\right|^{-1}\frac{1}{(2\pi)^{p/2}}\exp\left\{ \frac{-\boldsymbol{z}^{\intercal}\boldsymbol{z}}{2}\right\} \\
 f_{\boldsymbol{X}}\left(\boldsymbol{x}\right)\overset{\Downarrow}{=} & \left|J\right|^{-1}f_{\boldsymbol{Z}}\left(\boldsymbol{z}\left(\boldsymbol{x}\right)\right)\overset{\ref{eq:sltj},\ref{eq:sltx2z}}{=}\left|B\right|^{-1}f_{\boldsymbol{Z}}\left(B^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right)\\
-= & \left|B\right|^{-1}(2\pi)^{-p/2}\exp\left\{ \frac{-1}{2}\left[B^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right]^{\mathrm{T}}\left[B^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right]\right\} \\
-= & \left|B\right|^{-1/2}\left|B\right|^{-1/2}(2\pi)^{-p/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\mathrm{T}}\left(B^{-1}\right)^{\mathrm{T}}B^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} \\
-= & \left|B\right|^{-1/2}\left|B^{\mathrm{T}}\right|^{-1/2}(2\pi)^{-p/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\mathrm{T}}\left(B^{\mathrm{T}}\right)^{-1}B^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} \\
-= & \left|BB^{\mathrm{T}}\right|^{-1/2}(2\pi)^{-p/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\mathrm{T}}\left(BB^{\mathrm{T}}\right)^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} \\
-\overset{\ref{eq:covlt}}{=} & \left|\mathit{\Sigma}\right|^{-1/2}(2\pi)^{-p/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\mathrm{T}}\mathit{\Sigma}^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} \\
-= & \left(\left|\mathit{\Sigma}\right|\left(2\pi\right)^{p}\right)^{-1/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\mathrm{T}}\mathit{\Sigma}^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} 
+= & \left|B\right|^{-1}(2\pi)^{-p/2}\exp\left\{ \frac{-1}{2}\left[B^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right]^{\intercal}\left[B^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right]\right\} \\
+= & \left|B\right|^{-1/2}\left|B\right|^{-1/2}(2\pi)^{-p/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\intercal}\left(B^{-1}\right)^{\intercal}B^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} \\
+= & \left|B\right|^{-1/2}\left|B^{\intercal}\right|^{-1/2}(2\pi)^{-p/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\intercal}\left(B^{\intercal}\right)^{-1}B^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} \\
+= & \left|BB^{\intercal}\right|^{-1/2}(2\pi)^{-p/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\intercal}\left(BB^{\intercal}\right)^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} \\
+\overset{\ref{eq:covlt}}{=} & \left|\mathit{\Sigma}\right|^{-1/2}(2\pi)^{-p/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\intercal}\mathit{\Sigma}^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} \\
+= & \left(\left|\mathit{\Sigma}\right|\left(2\pi\right)^{p}\right)^{-1/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\intercal}\mathit{\Sigma}^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} 
 \end{aligned}
 $$
 
@@ -451,7 +451,7 @@ probability density function (PDF) of multivariate normal distribution (= multiv
 ```
 
 $$ 
-\mathcal{N}\left(\boldsymbol{x}\mid\boldsymbol{\mu},\mathit{\Sigma}\right)=f_{\boldsymbol{X}}\left(\boldsymbol{x}\right)=\left(\left|\mathit{\Sigma}\right|\left(2\pi\right)^{p}\right)^{-1/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\mathrm{T}}\mathit{\Sigma}^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} 
+\mathcal{N}\left(\boldsymbol{x}\mid\boldsymbol{\mu},\mathit{\Sigma}\right)=f_{\boldsymbol{X}}\left(\boldsymbol{x}\right)=\left(\left|\mathit{\Sigma}\right|\left(2\pi\right)^{p}\right)^{-1/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\intercal}\mathit{\Sigma}^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} 
 $$
 
 
@@ -527,15 +527,15 @@ x_{2}
 \end{bmatrix},\mathit{\Sigma}=\begin{bmatrix}\sigma_{1}^{2} & \sigma_{1}\sigma_{2}\rho\\
 \sigma_{2}\sigma_{1}\rho & \sigma_{2}^{2}
 \end{bmatrix}\right)\\
-= & \left(\left|\mathit{\Sigma}\right|\left(2\pi\right)^{p=2}\right)^{-1/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\mathrm{T}}\mathit{\Sigma}^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} \\
+= & \left(\left|\mathit{\Sigma}\right|\left(2\pi\right)^{p=2}\right)^{-1/2}\exp\left\{ \frac{-1}{2}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)^{\intercal}\mathit{\Sigma}^{-1}\left(\boldsymbol{x}-\boldsymbol{\mu}\right)\right\} \\
 = & \left(\sigma_{1}^{2}\sigma_{2}^{2}\left(1-\rho^{2}\right)\left(2\pi\right)^{2}\right)^{-1/2}\exp\left\{ \frac{-1}{2}\begin{bmatrix}x_{1}-\mu_{1}\\
 x_{2}-\mu_{2}
-\end{bmatrix}^{\mathrm{T}}\mathit{\Sigma}^{-1}\begin{bmatrix}x_{1}-\mu_{1}\\
+\end{bmatrix}^{\intercal}\mathit{\Sigma}^{-1}\begin{bmatrix}x_{1}-\mu_{1}\\
 x_{2}-\mu_{2}
 \end{bmatrix}\right\} \\
 = & \dfrac{1}{2\pi\sigma_{1}\sigma_{2}\sqrt{1-\rho^{2}}}\exp\left\{ \frac{-1}{2}\begin{bmatrix}x_{1}-\mu_{1}\\
 x_{2}-\mu_{2}
-\end{bmatrix}^{\mathrm{T}}\frac{1}{\left(1-\rho^{2}\right)}\left[\begin{array}{cc}
+\end{bmatrix}^{\intercal}\frac{1}{\left(1-\rho^{2}\right)}\left[\begin{array}{cc}
 \dfrac{1}{\sigma_{1}^{2}} & \dfrac{-\rho}{\sigma_{1}\sigma_{2}}\\
 \dfrac{-\rho}{\sigma_{2}\sigma_{1}} & \dfrac{1}{\sigma_{2}^{2}}
 \end{array}\right]\begin{bmatrix}x_{1}-\mu_{1}\\
@@ -543,7 +543,7 @@ x_{2}-\mu_{2}
 \end{bmatrix}\right\} \\
 = & \dfrac{1}{2\pi\sigma_{1}\sigma_{2}\sqrt{1-\rho^{2}}}\exp\left\{ \frac{-1}{2\left(1-\rho^{2}\right)}\begin{bmatrix}x_{1}-\mu_{1}\\
 x_{2}-\mu_{2}
-\end{bmatrix}^{\mathrm{T}}\left[\begin{array}{cc}
+\end{bmatrix}^{\intercal}\left[\begin{array}{cc}
 \dfrac{1}{\sigma_{1}^{2}} & \dfrac{-\rho}{\sigma_{1}\sigma_{2}}\\
 \dfrac{-\rho}{\sigma_{2}\sigma_{1}} & \dfrac{1}{\sigma_{2}^{2}}
 \end{array}\right]\begin{bmatrix}x_{1}-\mu_{1}\\

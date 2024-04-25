@@ -10,6 +10,7 @@
 \contentsline {section}{\numberline {4.1}discipline}{25}{section.4.1}%
 \contentsline {section}{\numberline {4.2}learning map}{25}{section.4.2}%
 \contentsline {chapter}{\numberline {5}machine learning}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Shai Ben-David}{27}{section.5.1}%
 \contentsline {part}{II\hspace {1em}by date}{29}{part.2}%
 \contentsline {chapter}{\numberline {6}A Minimal Book Example}{31}{chapter.6}%
 \contentsline {section}{\numberline {6.1}About}{31}{section.6.1}%
@@ -507,4 +508,17 @@
 \contentsline {section}{\numberline {55.5}association analysis}{388}{section.55.5}%
 \contentsline {chapter}{\numberline {56}multivariate normal distribution}{389}{chapter.56}%
 \contentsline {section}{\numberline {56.1}bivariate normal distribution}{397}{section.56.1}%
-\contentsline {chapter}{references}{399}{chapter*.28}%
+\contentsline {chapter}{\numberline {57}logic}{399}{chapter.57}%
+\contentsline {section}{\numberline {57.1}Shai Ben-David}{399}{section.57.1}%
+\contentsline {chapter}{\numberline {58}algorithm}{401}{chapter.58}%
+\contentsline {section}{\numberline {58.1}Chen, Vivian}{401}{section.58.1}%
+\contentsline {section}{\numberline {58.2}The Bubble Sort Curve}{401}{section.58.2}%
+\contentsline {chapter}{\numberline {59}computer graphics}{403}{chapter.59}%
+\contentsline {section}{\numberline {59.1}Cem Yuksel}{403}{section.59.1}%
+\contentsline {chapter}{\numberline {60}autoregression in time series}{405}{chapter.60}%
+\contentsline {section}{\numberline {60.1}AR(1) = \(1^\text {st}\)-order autoregressive model = first-order autoregressive model}{407}{section.60.1}%
+\contentsline {section}{\numberline {60.2}AR(2) = \(2^\text {nd}\)-order autoregressive model = second-order autoregressive model}{409}{section.60.2}%
+\contentsline {section}{\numberline {60.3}AR(\(p\)) = \(p^\text {th}\)-order autoregressive model}{410}{section.60.3}%
+\contentsline {section}{\numberline {60.4}MA(\(q\)) = \(q^\text {th}\)-order moving-average model}{410}{section.60.4}%
+\contentsline {section}{\numberline {60.5}ARMA(\(p\),\(q\)) = \(p^\text {th},q^\text {th}\)-order autoregressive-moving-average model}{410}{section.60.5}%
+\contentsline {chapter}{references}{411}{chapter*.28}%

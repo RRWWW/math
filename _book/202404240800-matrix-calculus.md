@@ -3,7 +3,7 @@
 [@ccjou2013]
 
 $$
-\boldsymbol{x}=\left\langle x_{1},x_{2},\cdots,x_{n}\right\rangle =\begin{bmatrix}x_{1} & x_{2} & \cdots & x_{n}\end{bmatrix}^{\mathrm{T}}=\begin{bmatrix}x_{1}\\
+\boldsymbol{x}=\left\langle x_{1},x_{2},\cdots,x_{n}\right\rangle =\begin{bmatrix}x_{1} & x_{2} & \cdots & x_{n}\end{bmatrix}^{\intercal}=\begin{bmatrix}x_{1}\\
 x_{2}\\
 \vdots\\
 x_{n}
@@ -14,7 +14,7 @@ $$
 f\left(x_{1},x_{2},\cdots,x_{n}\right)=f\left(\left\langle x_{1},x_{2},\cdots,x_{n}\right\rangle \right)=f\left(\boldsymbol{x}\right)
 $$
 $$
-\boldsymbol{y}=\left\langle y_{1},y_{2},\cdots,y_{m}\right\rangle =\begin{bmatrix}y_{1} & y_{2} & \cdots & y_{m}\end{bmatrix}^{\mathrm{T}}=\begin{bmatrix}y_{1}\\
+\boldsymbol{y}=\left\langle y_{1},y_{2},\cdots,y_{m}\right\rangle =\begin{bmatrix}y_{1} & y_{2} & \cdots & y_{m}\end{bmatrix}^{\intercal}=\begin{bmatrix}y_{1}\\
 y_{2}\\
 \vdots\\
 y_{m}
@@ -35,7 +35,7 @@ $$
 ## scalar-by-vector
 
 $$
-\boldsymbol{\nabla}f=\dfrac{\partial}{\partial\boldsymbol{x}}f=\dfrac{\partial f}{\partial\boldsymbol{x}}=\left\langle \dfrac{\partial f}{\partial x_{1}},\dfrac{\partial f}{\partial x_{2}},\cdots,\dfrac{\partial f}{\partial x_{n}}\right\rangle =\begin{bmatrix}\dfrac{\partial f}{\partial x_{1}} & \dfrac{\partial f}{\partial x_{2}} & \cdots & \dfrac{\partial f}{\partial x_{n}}\end{bmatrix}^{\mathrm{T}}=\begin{bmatrix}\dfrac{\partial f}{\partial x_{1}}\\
+\boldsymbol{\nabla}f=\dfrac{\partial}{\partial\boldsymbol{x}}f=\dfrac{\partial f}{\partial\boldsymbol{x}}=\left\langle \dfrac{\partial f}{\partial x_{1}},\dfrac{\partial f}{\partial x_{2}},\cdots,\dfrac{\partial f}{\partial x_{n}}\right\rangle =\begin{bmatrix}\dfrac{\partial f}{\partial x_{1}} & \dfrac{\partial f}{\partial x_{2}} & \cdots & \dfrac{\partial f}{\partial x_{n}}\end{bmatrix}^{\intercal}=\begin{bmatrix}\dfrac{\partial f}{\partial x_{1}}\\
 \dfrac{\partial f}{\partial x_{2}}\\
 \vdots\\
 \dfrac{\partial f}{\partial x_{n}}
@@ -47,7 +47,7 @@ f_i = f_i\left(x_{1},x_{2},\cdots,x_{n}\right)=f_i\left(\boldsymbol{x}\right)
 $$
 
 $$
-\boldsymbol{f}=\left\langle f_{1},f_{2},\cdots,f_{m}\right\rangle =\begin{bmatrix}f_{1} & f_{2} & \cdots & f_{m}\end{bmatrix}^{\mathrm{T}}=\begin{bmatrix}f_{1}\\
+\boldsymbol{f}=\left\langle f_{1},f_{2},\cdots,f_{m}\right\rangle =\begin{bmatrix}f_{1} & f_{2} & \cdots & f_{m}\end{bmatrix}^{\intercal}=\begin{bmatrix}f_{1}\\
 f_{2}\\
 \vdots\\
 f_{m}
