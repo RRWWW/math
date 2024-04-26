@@ -1,7 +1,0 @@
-# computer graphics
-
-## Cem Yuksel
-
-https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh
-
-https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN
