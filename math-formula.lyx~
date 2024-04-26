@@ -97,6 +97,384 @@
 \begin_body
 
 \begin_layout Standard
+Taylor series
+\end_layout
+
+\begin_layout Standard
+Newton-Leibniz formula = N-LF, equivalent to first mean value theorem for
+ derivatives / Lagrange mean value theorem = MVTdL / MVTd1
+\begin_inset Formula 
+\begin{equation}
+\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\label{eq:N-LF}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) & \left(2\right)
+\end{cases}\\
+\begin{cases}
+f^{\prime}:\left[a,b\right]\rightarrow\mathbb{R}\,\left(4\right) & a<b\,\left(3\right)\\
+f^{\prime}\text{ continuous on }\left[a,b\right] & \left(5\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left(f^{\prime}\left(c\right)=\dfrac{\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x}{b-a}\right) & \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\\
+\Rightarrow & \begin{array}{c}
+\exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\} \,\ref{eq:MVTd1fromN-LFandMVTi1}\\
+\Updownarrow\\
+\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\,\ref{eq:N-LFfromMVTd1}
+\end{array}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\Downarrow\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) & \left(2\right)
+\end{cases}\overset{\ref{thm:Rolle}}{\Rightarrow}\exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\}  & \text{MVTd1 }\ref{thm:MVTd1}\\
+\left[a,b\right]=\left[x_{0},x_{n}\right]=\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right] & \ref{eq:-72}
+\end{cases}\nonumber \\
+ & \overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\label{eq:N-LFfromMVTd1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\Uparrow\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\begin{align}
+ & \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) & \left(2\right)
+\end{cases}\overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right) & \text{N-LF }\ref{eq:N-LF}\\
+\begin{cases}
+f^{\prime}:\left[a,b\right]\rightarrow\mathbb{R}\,\left(4\right) & a<b\,\left(3\right)\\
+f^{\prime}\text{ continuous on }\left[a,b\right] & \left(5\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left(f^{\prime}\left(c\right)=\dfrac{\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x}{b-a}\right) & \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\nonumber \\
+\Rightarrow & \exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\} \label{eq:MVTd1fromN-LFandMVTi1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proof: 
+\begin_inset Formula $\left(\Downarrow\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{equation}
+\left[a,b\right]=\left[x_{0},x_{n}\right]=\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right]\label{eq:-72}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) & \left(2\right)
+\end{cases}\overset{\ref{thm:Rolle}}{\Rightarrow}\exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\}  & \text{MVTd1 }\ref{thm:MVTd1}\\
+\left[a,b\right]=\left[x_{0},x_{n}\right]=\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right] & \ref{eq:-72}
+\end{cases}\\
+\Rightarrow & \begin{cases}
+\left(f:\left[x_{0},x_{n}\right]\rightarrow\mathbb{R}\right)=\left(f:\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right]\rightarrow\mathbb{R}\right) & \Leftarrow\left(0\right)\\
+f\text{ continuous on }\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right] & \Leftarrow\left(1\right)\\
+f\text{ differentiable on }\left(x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right) & \Leftarrow\left(2\right)
+\end{cases}\\
+\Rightarrow & \begin{cases}
+f:\left[x_{0},x_{1}\right]\rightarrow\mathbb{R},f:\left[x_{0},x_{2}\right]\rightarrow\mathbb{R},\cdots,f:\left[x_{n-1},x_{n}\right]\rightarrow\mathbb{R} & \Leftarrow\left(0\right)\\
+f\text{ continuous on }\left[x_{0},x_{1}\right],\left[x_{0},x_{2}\right],\cdots,\left[x_{n-1},x_{n}\right] & \Leftarrow\left(1\right)\\
+f\text{ differentiable on }\left(x_{0},x_{1}\right],\left[x_{0},x_{2}\right],\cdots,\left[x_{n-1},x_{n}\right)\Rightarrow f\text{ differentiable on }\left(x_{0},x_{1}\right),\left(x_{0},x_{2}\right),\cdots,\left(x_{n-1},x_{n}\right) & \Leftarrow\left(2\right)
+\end{cases}\\
+ & \overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\begin{cases}
+\exists c_{1}\in\left(x_{0},x_{1}\right)\left\{ f^{\prime}\left(c_{1}\right)\left(x_{1}-x_{0}\right)=f\left(x_{1}\right)-f\left(x_{0}\right)\right\} \\
+\exists c_{2}\in\left(x_{1},x_{2}\right)\left\{ f^{\prime}\left(c_{2}\right)\left(x_{2}-x_{1}\right)=f\left(x_{2}\right)-f\left(x_{1}\right)\right\} \\
+\vdots\\
+\exists c_{k}\in\left(x_{k-1},x_{k}\right)\left\{ f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=f\left(x_{k}\right)-f\left(x_{k-1}\right)\right\}  & \forall k\in\mathbb{N}\cap\left[1,n\right]\\
+\vdots\\
+\exists c_{n}\in\left(x_{n-1},x_{n}\right)\left\{ f^{\prime}\left(c_{n}\right)\left(x_{n}-x_{n-1}\right)=f\left(x_{n}\right)-f\left(x_{n-1}\right)\right\} 
+\end{cases}\\
+\Rightarrow & f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=f\left(x_{k}\right)-f\left(x_{k-1}\right)\\
+\Rightarrow & \sum_{k}f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=\sum_{k}f\left(x_{k}\right)-f\left(x_{k-1}\right)\\
+\Rightarrow & \sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=\sum_{k=1}^{n}f\left(x_{k}\right)-f\left(x_{k-1}\right)=\left[f\left(x_{1}\right)-f\left(x_{0}\right)\right]+\left[f\left(x_{2}\right)-f\left(x_{1}\right)\right]+\cdots+\left[f\left(x_{n}\right)-f\left(x_{n-1}\right)\right]\\
+ & =f\left(x_{n}\right)-f\left(x_{0}\right)=f\left(b\right)-f\left(a\right)\Rightarrow\sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=f\left(b\right)-f\left(a\right)\overset{\Delta x_{k}=x_{k}-x_{k-1}}{\Leftrightarrow}\sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\Delta x_{k}=f\left(b\right)-f\left(a\right)\\
+\Rightarrow & \lim_{n\rightarrow\infty}\lim_{\Delta x_{k}=\frac{x_{n}-x_{0}}{n}}\sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\Delta x_{k}=\lim_{n\rightarrow\infty}\lim_{\Delta x_{k}=\frac{b-a}{n}\rightarrow0}f\left(b\right)-f\left(a\right)=f\left(b\right)-f\left(a\right)\\
+\Rightarrow & \int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=\int_{x_{0}}^{x_{n}}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\\
+\Rightarrow & \int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proof: 
+\begin_inset Formula $\left(\Downarrow\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) & \left(2\right)
+\end{cases}\overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right) & \text{N-LF }\ref{eq:N-LF}\\
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & a<b\,\left(3\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left(f\left(c\right)=\dfrac{\int_{a}^{b}f\left(x\right)\mathrm{d}x}{b-a}\right) & \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\\
+\Rightarrow & \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) & \left(2\right)
+\end{cases}\overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right) & \text{N-LF }\ref{eq:N-LF}\\
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & a<b\,\left(3\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left\{ f\left(c\right)\left(b-a\right)=\int_{a}^{b}f\left(x\right)\mathrm{d}x\right\}  & \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\\
+\Rightarrow & \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) & \left(2\right)
+\end{cases}\overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right) & \text{N-LF }\ref{eq:N-LF}\\
+\begin{cases}
+\text{if }f^{\prime}:\left[a,b\right]\rightarrow\mathbb{R} & \left(4\right)\\
+\text{if }f^{\prime}\text{ continuous on }\left[a,b\right] & \left(5\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x\right\}  & \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\\
+\Rightarrow & \exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\right\} \\
+\Rightarrow & \exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\exists c\in\left(a,b\right)\left[f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=\sum\limits _{k=0}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)^{k}+\int_{a}^{x}f^{\left(n+1\right)}\left(t\right)\frac{\left(t-x\right)^{n}}{n!}\mathrm{d}t
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=\sum_{k=0}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)^{k}+\frac{f^{\left(n+1\right)}\left(\xi\right)}{\left(n+1\right)!}\left(x-a\right)^{n+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(a+h\right)=\sum\limits _{k=0}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}h^{k}+\mathrm{O}\left(h^{n+1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=\sum\limits _{k=0}^{n}\frac{f^{\left(k\right)}\left(x_{{\scriptscriptstyle 0}}\right)}{k!}\left(x-x_{{\scriptscriptstyle 0}}\right)^{k}+\frac{f^{\left(n+1\right)}\left(\xi\right)}{\left(n+1\right)!}\left(x-x_{{\scriptscriptstyle 0}}\right)^{n+1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x_{{\scriptscriptstyle 0}}+\epsilon\right)=\sum\limits _{k=0}^{n}\frac{f^{\left(k\right)}\left(x_{{\scriptscriptstyle 0}}\right)}{k!}\epsilon^{k}+\mathrm{O}\left(\epsilon^{n+1}\right),\epsilon=x-x_{{\scriptscriptstyle 0}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x+\epsilon\right)=\sum\limits _{n=0}^{\infty}\frac{f^{\left(n\right)}\left(x\right)}{n!}\epsilon^{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x+\epsilon\right)= & \sum\limits _{n=0}^{\infty}\frac{f^{\left(n\right)}\left(x\right)}{n!}\epsilon^{n}=\sum\limits _{n=0}^{\infty}\frac{\dfrac{\mathrm{d}^{n}}{\mathrm{d}x^{n}}f\left(x\right)}{n!}\epsilon^{n}=\sum\limits _{n=0}^{\infty}\frac{\left(\dfrac{\mathrm{d}}{\mathrm{d}x}\right)^{n}f\left(x\right)}{n!}\epsilon^{n}\\
+= & \sum\limits _{n=0}^{\infty}\frac{\left(\epsilon\dfrac{\mathrm{d}}{\mathrm{d}x}\right)^{n}f\left(x\right)}{n!}=\left(\sum\limits _{n=0}^{\infty}\frac{\left(\epsilon\dfrac{\mathrm{d}}{\mathrm{d}x}\right)^{n}}{n!}\right)f\left(x\right)=\mathrm{e}^{{\scriptscriptstyle \epsilon\frac{\mathrm{d}}{\mathrm{d}x}}}f\left(x\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x+\epsilon\right)=\mathrm{e}^{{\scriptscriptstyle \epsilon\frac{\mathrm{d}}{\mathrm{d}x}}}f\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{e}^{{\scriptscriptstyle \epsilon\frac{\mathrm{d}}{\mathrm{d}x}}}=\sum\limits _{n=0}^{\infty}\frac{\left(\epsilon\dfrac{\mathrm{d}}{\mathrm{d}x}\right)^{n}}{n!}=1+\epsilon\dfrac{\mathrm{d}}{\mathrm{d}x}+\dfrac{1}{2}\epsilon^{2}\dfrac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}+\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=mx+b$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathrm{e}^{{\scriptscriptstyle \epsilon\frac{\mathrm{d}}{\mathrm{d}x}}}f\left(x\right)= & \left(1+\epsilon\dfrac{\mathrm{d}}{\mathrm{d}x}+\dfrac{1}{2}\epsilon^{2}\dfrac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}+\cdots\right)\left(mx+b\right)\\
+= & 1\left(mx+b\right)+\epsilon\dfrac{\mathrm{d}}{\mathrm{d}x}\left(mx+b\right)+\dfrac{1}{2}\epsilon^{2}\dfrac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}\left(mx+b\right)+\cdots\\
+= & \left(mx+b\right)+\left(\epsilon m\right)+\left(\dfrac{1}{2}\epsilon^{2}0\right)+\left(0+0+\cdots\right)\\
+= & \left(mx+b\right)+\left(\epsilon m\right)+\left(0+0+\cdots\right)\\
+= & \left(mx+b\right)+\left(\epsilon m\right)+0\\
+= & mx+b+m\epsilon=m\left(x+\epsilon\right)+b=f\left(x+\epsilon\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x+\epsilon\right)= & \mathrm{e}^{{\scriptscriptstyle \epsilon\frac{\mathrm{d}}{\mathrm{d}x}}}f\left(x\right)\\
+f\left(x+\epsilon_{{\scriptscriptstyle x}},y+\epsilon_{{\scriptscriptstyle y}},z+\epsilon_{{\scriptscriptstyle z}}\right)= & f\left(x,y+\epsilon_{{\scriptscriptstyle y}},z+\epsilon_{{\scriptscriptstyle z}}\right)\\
++ & \epsilon\dfrac{\partial}{\partial x}f\left(x,y+\epsilon_{{\scriptscriptstyle y}},z+\epsilon_{{\scriptscriptstyle z}}\right)\\
++ & \dfrac{1}{2}\epsilon^{2}\dfrac{\partial^{2}}{\partial x^{2}}f\left(x,y+\epsilon_{{\scriptscriptstyle y}},z+\epsilon_{{\scriptscriptstyle z}}\right)\\
++ & \cdots
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x+\epsilon\right)= & \mathrm{e}^{{\scriptscriptstyle \epsilon\frac{\mathrm{d}}{\mathrm{d}x}}}f\left(x\right)\\
+f\left(x+\epsilon_{{\scriptscriptstyle x}},y+\epsilon_{{\scriptscriptstyle y}},z+\epsilon_{{\scriptscriptstyle z}}\right)=f\left(\boldsymbol{r}+\boldsymbol{\epsilon}\right)= & \mathrm{e}^{{\scriptscriptstyle \boldsymbol{\epsilon}\cdot\boldsymbol{\nabla}}}f\left(\boldsymbol{r}\right),\begin{cases}
+\boldsymbol{r}=\left(x,y,z\right)\\
+\boldsymbol{\epsilon}=\left(\epsilon_{{\scriptscriptstyle x}},\epsilon_{{\scriptscriptstyle y}},\epsilon_{{\scriptscriptstyle z}}\right)\\
+\boldsymbol{\nabla}=\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{\epsilon}\cdot\boldsymbol{\nabla}=\left(\epsilon_{{\scriptscriptstyle x}},\epsilon_{{\scriptscriptstyle y}},\epsilon_{{\scriptscriptstyle z}}\right)\cdot\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)=\epsilon_{{\scriptscriptstyle x}}\dfrac{\partial}{\partial x}+\epsilon_{{\scriptscriptstyle y}}\dfrac{\partial}{\partial y}+\epsilon_{{\scriptscriptstyle z}}\dfrac{\partial}{\partial z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(\boldsymbol{r}+\boldsymbol{\epsilon}\right)=\mathrm{e}^{{\scriptscriptstyle \boldsymbol{\epsilon}\cdot\boldsymbol{\nabla}}}f\left(\boldsymbol{r}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x_{{\scriptscriptstyle 0}}+\epsilon\right)=\sum\limits _{k=0}^{n}\frac{f^{\left(k\right)}\left(x_{{\scriptscriptstyle 0}}\right)}{k!}\epsilon^{k}+\mathrm{O}\left(\epsilon^{n+1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+U\left(x_{{\scriptscriptstyle 0}}+\epsilon\right)=\sum\limits _{k=0}^{n}\frac{U^{\left(k\right)}\left(x_{{\scriptscriptstyle 0}}\right)}{k!}\epsilon^{k}+\mathrm{O}\left(\epsilon^{n+1}\right)=U\left(x_{{\scriptscriptstyle 0}}\right)+U^{\prime}\left(x_{{\scriptscriptstyle 0}}\right)x+\dfrac{1}{2}U^{\prime\prime}\left(x_{{\scriptscriptstyle 0}}\right)x^{2}+\cdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F=\dfrac{-\mathrm{d}U}{\mathrm{d}x}=-U^{\prime}\left(x_{{\scriptscriptstyle 0}}\right)-U^{\prime\prime}\left(x_{{\scriptscriptstyle 0}}\right)x^{2}-\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 determinant
 \begin_inset Formula 
 \begin{align*}
@@ -176,25 +554,13 @@ X\left(\Omega\right)\perp\boldsymbol{\theta}
 
 
 \begin_inset Formula 
-\[
-\mathrm{E}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\left(\dfrac{\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f\left(x|\boldsymbol{\theta}\right)}\right)f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-X\sim f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\Rightarrow\mathrm{E}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\left(\dfrac{\dfrac{\partial f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}\right)f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\mathrm{d}x
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-X\sim f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\Rightarrow\mathrm{E}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\left(\dfrac{\dfrac{\partial f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}\right)f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\dfrac{\partial f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\left(\dfrac{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}\right)\mathrm{d}x
-\]
+\begin{align*}
+\mathrm{E}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x= & \int\left(\dfrac{\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f\left(x|\boldsymbol{\theta}\right)}\right)f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x\\
+X\sim f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\Rightarrow\mathrm{E}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\mathrm{d}x= & \int\left(\dfrac{\dfrac{\partial f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}\right)f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\mathrm{d}x\\
+= & \int\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\mathrm{d}x\\
+X\sim f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\Rightarrow\mathrm{E}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\mathrm{d}x= & \int\left(\dfrac{\dfrac{\partial f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}\right)f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x\\
+= & \int\dfrac{\partial f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\left(\dfrac{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}\right)\mathrm{d}x
+\end{align*}
 
 \end_inset
 

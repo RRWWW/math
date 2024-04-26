@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.24)  26 APR 2024 13:34
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.24)  26 APR 2024 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1006,7 +1006,10 @@ LaTeX Warning: Label `fig:unnamed-chunk-3' multiply defined.
 LaTeX Warning: Label `thm:unnamed-chunk-4' multiply defined.
 
 
-LaTeX Warning: Label `thm:unnamed-chunk-1' multiply defined.
+LaTeX Warning: Label `thm:unnamed-chunk-4' multiply defined.
+
+
+LaTeX Warning: Label `thm:unnamed-chunk-6' multiply defined.
 
 
 LaTeX Warning: Label `def:unnamed-chunk-1' multiply defined.
@@ -2716,18 +2719,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [169]
 File: 202402170031-statistics_files/figure-latex/unnamed-chunk-34-1.pdf Graphic file (type pdf)
 <use 202402170031-statistics_files/figure-latex/unnamed-chunk-34-1.pdf>
-[170] [171]
-Overfull \hbox (37.32964pt too wide) detected at line 8820
-[] [] [][] [] [] [] [] [] [] [][][] [] [][] [] [] [] [][] [] [][] [] [] [][][]
- []
-
-
-Overfull \hbox (114.82507pt too wide) detected at line 8824
-[] [] [][] [] [] [] [] [] [] [][][] [] [][] [] [] [] [] [] [][] [] [] [] [] [][]
- []
-
-[172]
-Overfull \hbox (37.96436pt too wide) detected at line 8876
+[170] [171] [172]
+Overfull \hbox (37.96436pt too wide) detected at line 8874
 [][]
  []
 
@@ -2741,7 +2734,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [176]
-Overfull \hbox (43.51689pt too wide) detected at line 8998
+Overfull \hbox (43.51689pt too wide) detected at line 8996
 [][]
  []
 
@@ -2753,23 +2746,23 @@ Underfull \vbox (badness 4303) has occurred while \output is active []
 ]
 Chapter 16.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 9052.
+(Font)              scaled to size 12.0pt on input line 9050.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 9052.
+(Font)              scaled to size 8.0pt on input line 9050.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/b/n' will be
-(Font)              scaled to size 6.0pt on input line 9052.
+(Font)              scaled to size 6.0pt on input line 9050.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 12.0011pt on input line 9052.
+(Font)              scaled to size 12.0011pt on input line 9050.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 8.00073pt on input line 9052.
+(Font)              scaled to size 8.00073pt on input line 9050.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
-(Font)              scaled to size 6.00055pt on input line 9052.
+(Font)              scaled to size 6.00055pt on input line 9050.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 11.99872pt on input line 9052.
+(Font)              scaled to size 11.99872pt on input line 9050.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 7.99915pt on input line 9052.
+(Font)              scaled to size 7.99915pt on input line 9050.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/b/n' will be
-(Font)              scaled to size 5.99936pt on input line 9052.
+(Font)              scaled to size 5.99936pt on input line 9050.
 [181] [182]
 Chapter 17.
 [183
@@ -2779,11 +2772,11 @@ Chapter 17.
 ]
 Chapter 18.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 9084.
+(Font)              scaled to size 14.4pt on input line 9082.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.4013pt on input line 9084.
+(Font)              scaled to size 14.4013pt on input line 9082.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 9084.
+(Font)              scaled to size 14.39845pt on input line 9082.
 [185] [186
 
 ]
@@ -2884,7 +2877,7 @@ Missing character: There is no 率 (U+7387) in font [lmroman10-regular]:mapping=
 Underfull \vbox (badness 4316) has occurred while \output is active []
 
 [215] [216] [217]
-Underfull \hbox (badness 10000) in paragraph at lines 10694--10695
+Underfull \hbox (badness 10000) in paragraph at lines 10692--10693
 [][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] [] [][][][][] [][] [][][][] [][] [][][] [][] [][][][][][][][][] [][] [][][][][] [][] [][][] [][] [][][][][] [][] [][][][][] [][]
  []
 
@@ -2898,7 +2891,7 @@ File: img/conic-sections-parabola.pdf Graphic file (type pdf)
 File: img/conic-sections-hyperbola.pdf Graphic file (type pdf)
 <use img/conic-sections-hyperbola.pdf>
 
-Overfull \hbox (65.00581pt too wide) detected at line 11044
+Overfull \hbox (65.00581pt too wide) detected at line 11042
 []
  []
 
@@ -2975,7 +2968,7 @@ Missing character: There is no 長 (U+9577) in font [lmroman10-regular]:mapping=
 Underfull \vbox (badness 5460) has occurred while \output is active []
 
 [233]
-Overfull \hbox (18.137pt too wide) in paragraph at lines 11447--11447
+Overfull \hbox (18.137pt too wide) in paragraph at lines 11445--11445
 []\TU/lmtt/m/n/10 % replace the rather ugly mathptmx \sum operator with the equivalent Computer Modern one[] 
  []
 
@@ -3001,7 +2994,7 @@ Missing character: There is no 的 (U+7684) in font [lmroman10-regular]:mapping=
 Missing character: There is no 證 (U+8B49) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 明 (U+660E) in font [lmroman10-regular]:mapping=tex-text;!
 
-Overfull \hbox (2.397pt too wide) in paragraph at lines 11477--11478
+Overfull \hbox (2.397pt too wide) in paragraph at lines 11475--11476
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][] [] [][][][] [][] [][] [][] [][][] [][] [][][][] [][] [][][][][][] [][] [][][] [][] [][][][][][] [][] [][][][][][] [][] [][][][][][][][][]$[][] 
  []
 
@@ -3148,12 +3141,12 @@ Chapter 25.
 ]
 Chapter 26.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11682--11683
+Underfull \hbox (badness 10000) in paragraph at lines 11680--11681
 [][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] [] [][][][][] [][] [][][] [][] [][][] [][] [][][][][] [][] [][] [][] [][][][][][][][] [][] [][][][][][][] [][] [][][] [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11684--11685
+Underfull \hbox (badness 10000) in paragraph at lines 11682--11683
 [][][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] [] [][][][][][][] [][] [][][] [][] [][][][][][][][][][][] [][] [][][][][][][][][][] [][] [][] [][]
  []
 
@@ -3172,7 +3165,7 @@ Missing character: There is no 叡 (U+53E1) in font [lmroman10-regular]:mapping=
 File: img/matplotlib-figure-anatomy.png Graphic file (type bmp)
 <img/matplotlib-figure-anatomy.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 11729--11729
+Underfull \hbox (badness 10000) in paragraph at lines 11727--11727
 [][]
  []
 
@@ -3221,7 +3214,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-29-23.pdf Graphic
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-31-25.pdf Graphic file (type pdf)
 <use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-31-25.pdf>
 [254]
-Overfull \hbox (2511.887pt too wide) in paragraph at lines 12362--12362
+Overfull \hbox (2511.887pt too wide) in paragraph at lines 12360--12360
 []\TU/lmtt/m/n/10 ## [[]Solarize_Light2[], []_classic_test_patch[], []_mpl-gallery[], []_mpl-gallery-nogrid[], []bmh[], []classic[], []dark_background[], []fast[], []fivethirtyeight[], []ggplot[], []grayscale[], []seaborn-v0_8[], []seaborn-v0_8-bright[], []seaborn-v0_8-colorblind[], []seaborn-v0_8-dark[], []seaborn-v0_8-dark-palette[], []seaborn-v0_8-darkgrid[], []seaborn-v0_8-deep[], []seaborn-v0_8-muted[], []seaborn-v0_8-notebook[], []seaborn-v0_8-paper[], []seaborn-v0_8-pastel[], []seaborn-v0_8-poster[], []seaborn-v0_8-talk[], []seaborn-v0_8-ticks[], []seaborn-v0_8-white[], []seaborn-v0_8-whitegrid[], []tableau-colorblind10[]][] 
  []
 
@@ -3231,7 +3224,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-34-27.pdf Graphic
 File: img/seaborn-plot-type.png Graphic file (type bmp)
 <img/seaborn-plot-type.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 12473--12473
+Underfull \hbox (badness 10000) in paragraph at lines 12471--12471
 [][]
  []
 
@@ -3241,62 +3234,62 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-42-1.pdf Graphic 
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-44-3.pdf Graphic file (type pdf)
 <use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-44-3.pdf>
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ##      total_bill   tip     sex smoker   day    time  size[] 
  []
 
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ## 0         16.99  1.01  Female     No   Sun  Dinner     2[] 
  []
 
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ## 1         10.34  1.66    Male     No   Sun  Dinner     3[] 
  []
 
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ## 2         21.01  3.50    Male     No   Sun  Dinner     3[] 
  []
 
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ## 3         23.68  3.31    Male     No   Sun  Dinner     2[] 
  []
 
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ## 4         24.59  3.61  Female     No   Sun  Dinner     4[] 
  []
 
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ## ..          ...   ...     ...    ...   ...     ...   ...[] 
  []
 
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ## 239       29.03  5.92    Male     No   Sat  Dinner     3[] 
  []
 
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ## 240       27.18  2.00  Female    Yes   Sat  Dinner     2[] 
  []
 
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ## 241       22.67  2.00    Male    Yes   Sat  Dinner     2[] 
  []
 
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ## 242       17.82  1.75    Male     No   Sat  Dinner     2[] 
  []
 
 
-Overfull \hbox (110.01302pt too wide) in paragraph at lines 12650--12650
+Overfull \hbox (110.01302pt too wide) in paragraph at lines 12648--12648
 []\TU/lmtt/m/n/10 ## 243       18.78  3.00  Female     No  Thur  Dinner     2[] 
  []
 
@@ -3315,7 +3308,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-56-13.pdf Graphic
 File: img/seaborn-plot-type.png Graphic file (type bmp)
 <img/seaborn-plot-type.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 12855--12855
+Underfull \hbox (badness 10000) in paragraph at lines 12853--12853
 [][]
  []
 
@@ -3333,17 +3326,17 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-65-7.pdf Graphic 
 Underfull \vbox (badness 2426) has occurred while \output is active []
 
 [262]
-Overfull \hbox (467.01302pt too wide) in paragraph at lines 13045--13045
+Overfull \hbox (467.01302pt too wide) in paragraph at lines 13043--13043
 []\TU/lmtt/m/n/10 ## D:\Anaconda3\envs\sandbox-3.9\lib\site-packages\seaborn\axisgrid.py:123: UserWarning: The figure layout has changed to tight[] 
  []
 
 
-Overfull \hbox (47.01302pt too wide) in paragraph at lines 13045--13045
+Overfull \hbox (47.01302pt too wide) in paragraph at lines 13043--13043
 []\TU/lmtt/m/n/10 ##   self._figure.tight_layout(*args, **kwargs)[] 
  []
 
 
-Overfull \hbox (5.01302pt too wide) in paragraph at lines 13049--13049
+Overfull \hbox (5.01302pt too wide) in paragraph at lines 13047--13047
 []\TU/lmtt/m/n/10 ## <class []seaborn.axisgrid.FacetGrid[]>[] 
  []
 
@@ -3373,12 +3366,12 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-78-1.pdf Graphic 
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-21.pdf Graphic file (type pdf)
 <use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-80-21.pdf>
 [266]
-Overfull \hbox (467.01302pt too wide) in paragraph at lines 13323--13323
+Overfull \hbox (467.01302pt too wide) in paragraph at lines 13321--13321
 []\TU/lmtt/m/n/10 ## D:\Anaconda3\envs\sandbox-3.9\lib\site-packages\seaborn\axisgrid.py:123: UserWarning: The figure layout has changed to tight[] 
  []
 
 
-Overfull \hbox (47.01302pt too wide) in paragraph at lines 13323--13323
+Overfull \hbox (47.01302pt too wide) in paragraph at lines 13321--13321
 []\TU/lmtt/m/n/10 ##   self._figure.tight_layout(*args, **kwargs)[] 
  []
 
@@ -3387,7 +3380,7 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-23.pdf Graphic
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-24.pdf Graphic file (type pdf)
 <use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-82-24.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 13325--13326
+Underfull \hbox (badness 10000) in paragraph at lines 13323--13324
 [][]
  []
 
@@ -3400,7 +3393,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-29.pdf Graphic file (type pdf)
 <use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-86-29.pdf>
 
-Overfull \hbox (115.26302pt too wide) in paragraph at lines 13434--13434
+Overfull \hbox (115.26302pt too wide) in paragraph at lines 13432--13432
 []\TU/lmtt/m/n/10 ## <seaborn.axisgrid.JointGrid object at 0x00000208815F13A0>[] 
  []
 
@@ -3412,14 +3405,14 @@ File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-90-33.pdf Graphic
 File: 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-35.pdf Graphic file (type pdf)
 <use 202403181222-MatPlotLib_files/figure-latex/unnamed-chunk-92-35.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 13521--13522
+Underfull \hbox (badness 10000) in paragraph at lines 13519--13520
 [][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][] [][] [][][] [][] [] [][] [][][] [][] [][][] [][] [][][][][][] [][] [][] [][] [] [][] [][][][][][][][][][] [][] [][][][] [][] [][] [][]
  []
 
 [269] [270]
 Chapter 28.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 13559.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 13557.
 [271
 
 ] [272
@@ -3432,14 +3425,14 @@ Underfull \vbox (badness 2103) has occurred while \output is active []
 [273] [274]
 Chapter 30.
 
-Overfull \hbox (20.76302pt too wide) in paragraph at lines 13687--13687
+Overfull \hbox (20.76302pt too wide) in paragraph at lines 13685--13685
 []\TU/lmtt/m/n/10 ## []geom_smooth()[] using formula = []y ~ x[][] 
  []
 
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use 202403211208-ggplot2_files/figure-latex/unnamed-chunk-3-1.pdf>
 
-Overfull \hbox (20.76302pt too wide) in paragraph at lines 13724--13724
+Overfull \hbox (20.76302pt too wide) in paragraph at lines 13722--13722
 []\TU/lmtt/m/n/10 ## []geom_smooth()[] using formula = []y ~ x[][] 
  []
 
@@ -3448,14 +3441,14 @@ File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file
 [275
 
 ]
-Underfull \hbox (badness 1038) in paragraph at lines 13739--13740
+Underfull \hbox (badness 1038) in paragraph at lines 13737--13738
 []\TU/lmr/m/n/10 Aids the eye in seeing patterns in the presence of overplotting. \TU/lmtt/m/n/10 geom_smooth()
  []
 
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 <use 202403211208-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 13786--13787
+Underfull \hbox (badness 10000) in paragraph at lines 13784--13785
 []\TU/lmr/m/n/10 gradient color scales [][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][] [] [][][][][][][][] [] [][][][] [] [] [] [][][][][] [] [][][][] []
  []
 
@@ -3465,762 +3458,762 @@ File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-10-1.pdf Graphic fil
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (type pdf)
 <use 202403211208-ggplot2_files/figure-latex/unnamed-chunk-12-1.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 13878--13879
+Underfull \hbox (badness 10000) in paragraph at lines 13876--13877
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][] [][] [][][][][][][] [][] [][][][][][][] [][] [][][][][][] [][] [][][] [][] [][][][] [][] [][][][][] [][]
  []
 
 [277]
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ##     Sepal.Length Sepal.Width Petal.Length Petal.Width    Species[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 1            5.1         3.5          1.4         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 2            4.9         3.0          1.4         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 3            4.7         3.2          1.3         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 4            4.6         3.1          1.5         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 5            5.0         3.6          1.4         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 6            5.4         3.9          1.7         0.4     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 7            4.6         3.4          1.4         0.3     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 8            5.0         3.4          1.5         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 9            4.4         2.9          1.4         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 10           4.9         3.1          1.5         0.1     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 11           5.4         3.7          1.5         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 12           4.8         3.4          1.6         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 13           4.8         3.0          1.4         0.1     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 14           4.3         3.0          1.1         0.1     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 15           5.8         4.0          1.2         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 16           5.7         4.4          1.5         0.4     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 17           5.4         3.9          1.3         0.4     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 18           5.1         3.5          1.4         0.3     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 19           5.7         3.8          1.7         0.3     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 20           5.1         3.8          1.5         0.3     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 21           5.4         3.4          1.7         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 22           5.1         3.7          1.5         0.4     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 23           4.6         3.6          1.0         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 24           5.1         3.3          1.7         0.5     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 25           4.8         3.4          1.9         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 26           5.0         3.0          1.6         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 27           5.0         3.4          1.6         0.4     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 28           5.2         3.5          1.5         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 29           5.2         3.4          1.4         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 30           4.7         3.2          1.6         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 31           4.8         3.1          1.6         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 32           5.4         3.4          1.5         0.4     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 33           5.2         4.1          1.5         0.1     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 34           5.5         4.2          1.4         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 35           4.9         3.1          1.5         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 36           5.0         3.2          1.2         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 37           5.5         3.5          1.3         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 38           4.9         3.6          1.4         0.1     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 39           4.4         3.0          1.3         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 40           5.1         3.4          1.5         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 41           5.0         3.5          1.3         0.3     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 42           4.5         2.3          1.3         0.3     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 43           4.4         3.2          1.3         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 44           5.0         3.5          1.6         0.6     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 45           5.1         3.8          1.9         0.4     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 46           4.8         3.0          1.4         0.3     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 47           5.1         3.8          1.6         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 48           4.6         3.2          1.4         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 49           5.3         3.7          1.5         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 50           5.0         3.3          1.4         0.2     setosa[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 51           7.0         3.2          4.7         1.4 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 52           6.4         3.2          4.5         1.5 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 53           6.9         3.1          4.9         1.5 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 54           5.5         2.3          4.0         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 55           6.5         2.8          4.6         1.5 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 56           5.7         2.8          4.5         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 57           6.3         3.3          4.7         1.6 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 58           4.9         2.4          3.3         1.0 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 59           6.6         2.9          4.6         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 60           5.2         2.7          3.9         1.4 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 61           5.0         2.0          3.5         1.0 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 62           5.9         3.0          4.2         1.5 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 63           6.0         2.2          4.0         1.0 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 64           6.1         2.9          4.7         1.4 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 65           5.6         2.9          3.6         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 66           6.7         3.1          4.4         1.4 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 67           5.6         3.0          4.5         1.5 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 68           5.8         2.7          4.1         1.0 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 69           6.2         2.2          4.5         1.5 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 70           5.6         2.5          3.9         1.1 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 71           5.9         3.2          4.8         1.8 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 72           6.1         2.8          4.0         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 73           6.3         2.5          4.9         1.5 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 74           6.1         2.8          4.7         1.2 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 75           6.4         2.9          4.3         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 76           6.6         3.0          4.4         1.4 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 77           6.8         2.8          4.8         1.4 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 78           6.7         3.0          5.0         1.7 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 79           6.0         2.9          4.5         1.5 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 80           5.7         2.6          3.5         1.0 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 81           5.5         2.4          3.8         1.1 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 82           5.5         2.4          3.7         1.0 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 83           5.8         2.7          3.9         1.2 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 84           6.0         2.7          5.1         1.6 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 85           5.4         3.0          4.5         1.5 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 86           6.0         3.4          4.5         1.6 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 87           6.7         3.1          4.7         1.5 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 88           6.3         2.3          4.4         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 89           5.6         3.0          4.1         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 90           5.5         2.5          4.0         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 91           5.5         2.6          4.4         1.2 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 92           6.1         3.0          4.6         1.4 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 93           5.8         2.6          4.0         1.2 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 94           5.0         2.3          3.3         1.0 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 95           5.6         2.7          4.2         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 96           5.7         3.0          4.2         1.2 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 97           5.7         2.9          4.2         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 98           6.2         2.9          4.3         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 99           5.1         2.5          3.0         1.1 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 100          5.7         2.8          4.1         1.3 versicolor[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 101          6.3         3.3          6.0         2.5  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 102          5.8         2.7          5.1         1.9  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 103          7.1         3.0          5.9         2.1  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 104          6.3         2.9          5.6         1.8  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 105          6.5         3.0          5.8         2.2  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 106          7.6         3.0          6.6         2.1  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 107          4.9         2.5          4.5         1.7  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 108          7.3         2.9          6.3         1.8  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 109          6.7         2.5          5.8         1.8  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 110          7.2         3.6          6.1         2.5  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 111          6.5         3.2          5.1         2.0  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 112          6.4         2.7          5.3         1.9  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 113          6.8         3.0          5.5         2.1  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 114          5.7         2.5          5.0         2.0  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 115          5.8         2.8          5.1         2.4  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 116          6.4         3.2          5.3         2.3  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 117          6.5         3.0          5.5         1.8  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 118          7.7         3.8          6.7         2.2  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 119          7.7         2.6          6.9         2.3  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 120          6.0         2.2          5.0         1.5  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 121          6.9         3.2          5.7         2.3  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 122          5.6         2.8          4.9         2.0  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 123          7.7         2.8          6.7         2.0  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 124          6.3         2.7          4.9         1.8  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 125          6.7         3.3          5.7         2.1  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 126          7.2         3.2          6.0         1.8  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 127          6.2         2.8          4.8         1.8  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 128          6.1         3.0          4.9         1.8  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 129          6.4         2.8          5.6         2.1  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 130          7.2         3.0          5.8         1.6  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 131          7.4         2.8          6.1         1.9  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 132          7.9         3.8          6.4         2.0  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 133          6.4         2.8          5.6         2.2  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 134          6.3         2.8          5.1         1.5  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 135          6.1         2.6          5.6         1.4  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 136          7.7         3.0          6.1         2.3  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 137          6.3         3.4          5.6         2.4  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 138          6.4         3.1          5.5         1.8  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 139          6.0         3.0          4.8         1.8  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 140          6.9         3.1          5.4         2.1  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 141          6.7         3.1          5.6         2.4  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 142          6.9         3.1          5.1         2.3  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 143          5.8         2.7          5.1         1.9  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 144          6.8         3.2          5.9         2.3  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 145          6.7         3.3          5.7         2.5  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 146          6.7         3.0          5.2         2.3  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 147          6.3         2.5          5.0         1.9  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 148          6.5         3.0          5.2         2.0  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 149          6.2         3.4          5.4         2.3  virginica[] 
  []
 
 
-Overfull \hbox (152.01302pt too wide) in paragraph at lines 14061--14061
+Overfull \hbox (152.01302pt too wide) in paragraph at lines 14059--14059
 []\TU/lmtt/m/n/10 ## 150          5.9         3.0          5.1         1.8  virginica[] 
  []
 
@@ -4234,252 +4227,252 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (1202.4143pt too high) has occurred while \output is active []
 
 [280]
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##   [1] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##   [7] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [13] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [19] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [25] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [31] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [37] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [43] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [49] setosa     setosa     versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [55] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [61] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [67] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [73] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [79] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [85] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [91] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ##  [97] versicolor versicolor versicolor versicolor virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ## [103] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ## [109] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ## [115] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ## [121] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ## [127] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ## [133] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ## [139] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14115--14115
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14113--14113
 []\TU/lmtt/m/n/10 ## [145] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##   [1] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##   [7] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [13] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [19] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [25] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [31] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [37] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (167.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (167.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [43] setosa     setosa     setosa     setosa     setosa     setosa[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [49] setosa     setosa     versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [55] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [61] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [67] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [73] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [79] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [85] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (188.76302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (188.76302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [91] versicolor versicolor versicolor versicolor versicolor versicolor[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ##  [97] versicolor versicolor versicolor versicolor virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ## [103] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ## [109] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ## [115] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ## [121] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ## [127] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ## [133] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ## [139] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
 
-Overfull \hbox (183.51302pt too wide) in paragraph at lines 14169--14169
+Overfull \hbox (183.51302pt too wide) in paragraph at lines 14167--14167
 []\TU/lmtt/m/n/10 ## [145] virginica  virginica  virginica  virginica  virginica  virginica[] 
  []
 
@@ -4487,124 +4480,124 @@ Overfull \hbox (183.51302pt too wide) in paragraph at lines 14169--14169
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [281]
-Overfull \hbox (230.76302pt too wide) in paragraph at lines 14202--14202
+Overfull \hbox (230.76302pt too wide) in paragraph at lines 14200--14200
 []\TU/lmtt/m/n/10 ##   [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1[] 
  []
 
 
-Overfull \hbox (230.76302pt too wide) in paragraph at lines 14202--14202
+Overfull \hbox (230.76302pt too wide) in paragraph at lines 14200--14200
 []\TU/lmtt/m/n/10 ##  [38] 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2[] 
  []
 
 
-Overfull \hbox (230.76302pt too wide) in paragraph at lines 14202--14202
+Overfull \hbox (230.76302pt too wide) in paragraph at lines 14200--14200
 []\TU/lmtt/m/n/10 ##  [75] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3[] 
  []
 
 
-Overfull \hbox (230.76302pt too wide) in paragraph at lines 14202--14202
+Overfull \hbox (230.76302pt too wide) in paragraph at lines 14200--14200
 []\TU/lmtt/m/n/10 ## [112] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3[] 
  []
 
 
-Overfull \hbox (31.26302pt too wide) in paragraph at lines 14231--14231
+Overfull \hbox (31.26302pt too wide) in paragraph at lines 14229--14229
 []\TU/lmtt/m/n/10 ## [1] "setosa"     "versicolor" "virginica"[] 
  []
 
 
-Overfull \hbox (230.76302pt too wide) in paragraph at lines 14265--14265
+Overfull \hbox (230.76302pt too wide) in paragraph at lines 14263--14263
 []\TU/lmtt/m/n/10 ##   [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1[] 
  []
 
 
-Overfull \hbox (230.76302pt too wide) in paragraph at lines 14265--14265
+Overfull \hbox (230.76302pt too wide) in paragraph at lines 14263--14263
 []\TU/lmtt/m/n/10 ##  [38] 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2[] 
  []
 
 
-Overfull \hbox (230.76302pt too wide) in paragraph at lines 14265--14265
+Overfull \hbox (230.76302pt too wide) in paragraph at lines 14263--14263
 []\TU/lmtt/m/n/10 ##  [75] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3[] 
  []
 
 
-Overfull \hbox (230.76302pt too wide) in paragraph at lines 14265--14265
+Overfull \hbox (230.76302pt too wide) in paragraph at lines 14263--14263
 []\TU/lmtt/m/n/10 ## [112] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3[] 
  []
 
 
-Overfull \hbox (236.01302pt too wide) in paragraph at lines 14300--14300
+Overfull \hbox (236.01302pt too wide) in paragraph at lines 14298--14298
 []\TU/lmtt/m/n/10 ##   [1] 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24[] 
  []
 
 
-Overfull \hbox (236.01302pt too wide) in paragraph at lines 14300--14300
+Overfull \hbox (236.01302pt too wide) in paragraph at lines 14298--14298
 []\TU/lmtt/m/n/10 ##  [26] 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24[] 
  []
 
 
-Overfull \hbox (236.01302pt too wide) in paragraph at lines 14300--14300
+Overfull \hbox (236.01302pt too wide) in paragraph at lines 14298--14298
 []\TU/lmtt/m/n/10 ##  [51] 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21[] 
  []
 
 
-Overfull \hbox (236.01302pt too wide) in paragraph at lines 14300--14300
+Overfull \hbox (236.01302pt too wide) in paragraph at lines 14298--14298
 []\TU/lmtt/m/n/10 ##  [76] 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21[] 
  []
 
 
-Overfull \hbox (236.01302pt too wide) in paragraph at lines 14300--14300
+Overfull \hbox (236.01302pt too wide) in paragraph at lines 14298--14298
 []\TU/lmtt/m/n/10 ## [101] 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25[] 
  []
 
 
-Overfull \hbox (236.01302pt too wide) in paragraph at lines 14300--14300
+Overfull \hbox (236.01302pt too wide) in paragraph at lines 14298--14298
 []\TU/lmtt/m/n/10 ## [126] 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25[] 
  []
 
 [282]
-Overfull \hbox (225.51302pt too wide) in paragraph at lines 14340--14340
+Overfull \hbox (225.51302pt too wide) in paragraph at lines 14338--14338
 []\TU/lmtt/m/n/10 ## Warning: The dot-dot notation ([]..density..[]) was deprecated in ggplot2 3.4.0.[] 
  []
 
 
-Overfull \hbox (41.76302pt too wide) in paragraph at lines 14340--14340
+Overfull \hbox (41.76302pt too wide) in paragraph at lines 14338--14338
 []\TU/lmtt/m/n/10 ## i Please use []after_stat(density)[] instead.[] 
  []
 
 
-Overfull \hbox (52.26302pt too wide) in paragraph at lines 14340--14340
+Overfull \hbox (52.26302pt too wide) in paragraph at lines 14338--14338
 []\TU/lmtt/m/n/10 ## This warning is displayed once every 8 hours.[] 
  []
 
 
-Overfull \hbox (199.26302pt too wide) in paragraph at lines 14340--14340
+Overfull \hbox (199.26302pt too wide) in paragraph at lines 14338--14338
 []\TU/lmtt/m/n/10 ## Call []lifecycle::last_lifecycle_warnings()[] to see where this warning was[] 
  []
 
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-28-1.pdf Graphic file (type pdf)
 <use 202403211208-ggplot2_files/figure-latex/unnamed-chunk-28-1.pdf>
 
-Overfull \hbox (120.51302pt too wide) in paragraph at lines 14391--14391
+Overfull \hbox (120.51302pt too wide) in paragraph at lines 14389--14389
 []\TU/lmtt/m/n/10 ## Warning: package []ggplot2[] was built under R version 4.2.3[] 
  []
 
 
-Overfull \hbox (194.01302pt too wide) in paragraph at lines 14399--14399
+Overfull \hbox (194.01302pt too wide) in paragraph at lines 14397--14397
 []\TU/lmtt/m/n/10 ## Warning: The dot-dot notation ([]..n..[]) was deprecated in ggplot2 3.4.0.[] 
  []
 
 
-Overfull \hbox (10.26302pt too wide) in paragraph at lines 14399--14399
+Overfull \hbox (10.26302pt too wide) in paragraph at lines 14397--14397
 []\TU/lmtt/m/n/10 ## i Please use []after_stat(n)[] instead.[] 
  []
 
 
-Overfull \hbox (52.26302pt too wide) in paragraph at lines 14399--14399
+Overfull \hbox (52.26302pt too wide) in paragraph at lines 14397--14397
 []\TU/lmtt/m/n/10 ## This warning is displayed once every 8 hours.[] 
  []
 
 
-Overfull \hbox (199.26302pt too wide) in paragraph at lines 14399--14399
+Overfull \hbox (199.26302pt too wide) in paragraph at lines 14397--14397
 []\TU/lmtt/m/n/10 ## Call []lifecycle::last_lifecycle_warnings()[] to see where this warning was[] 
  []
 
@@ -4614,7 +4607,7 @@ File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-30-1.pdf Graphic fil
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [283]
-Underfull \hbox (badness 1038) in paragraph at lines 14407--14408
+Underfull \hbox (badness 1038) in paragraph at lines 14405--14406
 []\TU/lmr/m/n/10 count overlapping points [][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][] [] [][][][][] [] [][][][] [] [] [] [][][][] [] [][][] []
  []
 
@@ -4623,7 +4616,7 @@ File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-32-1.pdf Graphic fil
 File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-32-2.pdf Graphic file (type pdf)
 <use 202403211208-ggplot2_files/figure-latex/unnamed-chunk-32-2.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 14450--14451
+Underfull \hbox (badness 10000) in paragraph at lines 14448--14449
 [][]
  []
 
@@ -4644,7 +4637,7 @@ File: 202403211208-ggplot2_files/figure-latex/unnamed-chunk-38-1.pdf Graphic fil
 [286]
 Chapter 31.
 
-Overfull \hbox (5.80698pt too wide) in paragraph at lines 14590--14591
+Overfull \hbox (5.80698pt too wide) in paragraph at lines 14588--14589
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][][][][][] [][] [][][][][][] [][] [] [][] [][][][][] [][] [][][][][][] [][] [][][][][][][] [][] [][] [][] [][][][][][][][][]$[][] 
  []
 
@@ -4661,7 +4654,7 @@ File: img/quasi-experimental-designs-2.png Graphic file (type bmp)
 ]
 Chapter 32.
 [295]
-Underfull \hbox (badness 10000) in paragraph at lines 15000--15001
+Underfull \hbox (badness 10000) in paragraph at lines 14998--14999
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][] [] [][][][] [][] [][] [][] [][][][][][][][][][][][] [][] [][][][] [][] [][][][][][][][][] [][] [][][][][] [][] [][][][][][] [][] [][][][] [][]
  []
 
@@ -4671,7 +4664,7 @@ File: img/buchanan2005-replicates.png Graphic file (type bmp)
 File: 202403232342-experimental-design_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 <use 202403232342-experimental-design_files/figure-latex/unnamed-chunk-2-1.pdf>
 [297]
-Overfull \hbox (9.365pt too wide) in paragraph at lines 15069--15069
+Overfull \hbox (9.365pt too wide) in paragraph at lines 15067--15067
 []\TU/lmr/bx/n/12 model assumption and experimental unit, measurement/observational
  []
 
@@ -4690,7 +4683,7 @@ Chapter 33.
 [303] [304]
 Chapter 34.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15353--15354
+Underfull \hbox (badness 10000) in paragraph at lines 15351--15352
 [][][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] [] [][][] [][] [][][] [][] [][][][][] [][] [][] [][] [][][][][][][][][][] [][] [] [][] [][][][][][][][][][][] [][]
  []
 
@@ -4780,7 +4773,7 @@ Missing character: There is no 式 (U+5F0F) in font [lmroman10-regular]:mapping=
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [313]
-Underfull \hbox (badness 5970) in paragraph at lines 15953--15954
+Underfull \hbox (badness 5970) in paragraph at lines 15951--15952
  \TU/lmr/bx/n/10 34.1.3.5.1 4-differential operator[][] \TU/lmr/m/n/10 4-differential operator / four-differential operator =
  []
 
@@ -4788,7 +4781,7 @@ Underfull \hbox (badness 5970) in paragraph at lines 15953--15954
 Underfull \vbox (badness 1917) has occurred while \output is active []
 
 [314]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 15964.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 15962.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [315] [316] [317] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
@@ -4866,7 +4859,7 @@ Missing character: There is no 磁 (U+78C1) in font [lmroman5-regular]:mapping=t
 Missing character: There is no 生 (U+751F) in font [lmroman5-regular]:mapping=tex-text;!
 Missing character: There is no 電 (U+96FB) in font [lmroman5-regular]:mapping=tex-text;!
 [318] [319] [320] [321] [322]
-Underfull \hbox (badness 6641) in paragraph at lines 16659--16660
+Underfull \hbox (badness 6641) in paragraph at lines 16657--16658
  \TU/lmr/bx/n/10 34.1.4.2.1.3 3D rotation about an arbitrary axis[] [][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] []
  []
 
@@ -4874,12 +4867,12 @@ Underfull \hbox (badness 6641) in paragraph at lines 16659--16660
 Underfull \vbox (badness 4967) has occurred while \output is active []
 
 [324]
-Overfull \hbox (148.51927pt too wide) detected at line 16847
+Overfull \hbox (148.51927pt too wide) detected at line 16845
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16851--16852
+Underfull \hbox (badness 10000) in paragraph at lines 16849--16850
  \TU/lmr/bx/n/10 34.1.4.2.2 quaternion[][] [][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][] [][] [][][][] [][] [][][] [][]
  []
 
@@ -4887,27 +4880,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 16851--16852
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [330] [331]
-Overfull \hbox (2.07597pt too wide) detected at line 17314
+Overfull \hbox (2.07597pt too wide) detected at line 17312
 [][] [] [] [] [] [] [] [] []
  []
 
 [332]
-Overfull \hbox (3.07597pt too wide) detected at line 17470
+Overfull \hbox (3.07597pt too wide) detected at line 17468
 [][] [] [] [] [] [] [] [] []
  []
 
 
-Overfull \hbox (97.15784pt too wide) detected at line 17492
+Overfull \hbox (97.15784pt too wide) detected at line 17490
 [][] [] [] [] [] [][][] [] [] [] [] [] [] [] [] []
  []
 
 
-Overfull \hbox (19.5719pt too wide) detected at line 17623
+Overfull \hbox (19.5719pt too wide) detected at line 17621
 [][]
  []
 
 [333] [334]
-Overfull \hbox (21.37022pt too wide) detected at line 17833
+Overfull \hbox (21.37022pt too wide) detected at line 17831
 [][]
  []
 
@@ -4915,7 +4908,7 @@ Overfull \hbox (21.37022pt too wide) detected at line 17833
 Underfull \vbox (badness 2409) has occurred while \output is active []
 
 [336] [337] [338]
-Overfull \hbox (3.64246pt too wide) detected at line 18109
+Overfull \hbox (3.64246pt too wide) detected at line 18107
 [][]
  []
 
@@ -4923,7 +4916,7 @@ Overfull \hbox (3.64246pt too wide) detected at line 18109
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [340] [341]
-Underfull \hbox (badness 10000) in paragraph at lines 18261--18262
+Underfull \hbox (badness 10000) in paragraph at lines 18259--18260
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][] [][] [][][] [][] [][][][][][] [][] [][][][][][][][][][] [][] [][] [][] [][][][][][][] [][] [][][][][][][][][][] [][]
  []
 
@@ -4938,7 +4931,7 @@ Missing character: There is no 數 (U+6578) in font [lmroman10-regular]:mapping=
 [342]
 Chapter 35.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18277--18278
+Underfull \hbox (badness 10000) in paragraph at lines 18275--18276
 [][][]$[][][][][] [] [] [] [][][][][] [] [][][][][][][][][][] [] [][][] [] [][][][][] [] [][][][][][][][][][] [][] [][][] [] [][][][][][][][][][] [][] [][][] [][] [][][][][] [][] [][][][][] [][] [][][][][][][][][][] [][]
  []
 
@@ -4953,29 +4946,29 @@ Chapter 36.
 ]
 Chapter 37.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18334--18335
+Underfull \hbox (badness 10000) in paragraph at lines 18332--18333
 [][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] [][][][][] [] [][][][][][][][][][][][] [] [][][][][][][][][][][] [] [][][][][][][][][][][][] [] [][] [] [][][] [] [][][][][] []
  []
 
 [347]
-Underfull \hbox (badness 10000) in paragraph at lines 18390--18391
+Underfull \hbox (badness 10000) in paragraph at lines 18388--18389
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][] [][] [][][] [][] [][] [][] [][][] [][] [][][][][][] [][] [][][][][][] [][] [][][][][][][][][][][] [][] [][][][][][] [][]
  []
 
 File: 202403281312-group-theory_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use 202403281312-group-theory_files/figure-latex/unnamed-chunk-3-1.pdf>
 [348] [349] [350]
-Overfull \hbox (13.847pt too wide) detected at line 18638
+Overfull \hbox (13.847pt too wide) detected at line 18636
 [][]
  []
 
 [351]
-Underfull \hbox (badness 10000) in paragraph at lines 18767--18768
+Underfull \hbox (badness 10000) in paragraph at lines 18765--18766
 [][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][][][][][][] [] [][][] [] [][][][] [] [][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][] [] [][] [] [][][][][][][][][][] [] [][][][][] [] [][][] [][]
  []
 
 [352]
-Underfull \hbox (badness 10000) in paragraph at lines 18840--18840
+Underfull \hbox (badness 10000) in paragraph at lines 18838--18838
 [][][][][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][][][][][][] [] [][][] [] [][][][] [] [][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][] [] [][] [] [][][][][][][][][][] [] [][][][][] [] [][][][] [][] [][][][][][][][][][][] []
  []
 
@@ -4983,7 +4976,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18840--18840
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [354]
-Overfull \hbox (13.48851pt too wide) detected at line 19212
+Overfull \hbox (13.48851pt too wide) detected at line 19210
 [][]
  []
 
@@ -4991,12 +4984,12 @@ Overfull \hbox (13.48851pt too wide) detected at line 19212
 Underfull \vbox (badness 6741) has occurred while \output is active []
 
 [355]
-Overfull \hbox (3.86836pt too wide) in paragraph at lines 19234--19242
+Overfull \hbox (3.86836pt too wide) in paragraph at lines 19232--19240
 []\TU/lmr/m/n/10 Let $[] [] [] [] [] []
  []
 
 [356]
-Underfull \hbox (badness 10000) in paragraph at lines 19283--19284
+Underfull \hbox (badness 10000) in paragraph at lines 19281--19282
 [][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][][][][][][] [] [][][] [] [][][][] [] [][][][][][] [] [][][][][][][][][][][][][][] [] [][][][][][] [] [][] [] [][][][][][][][][][] [] [][][][][] [] [][][][] [][]
  []
 
@@ -5005,17 +4998,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 19283--19284
 ]
 Chapter 38.
 
-Underfull \hbox (badness 10000) in paragraph at lines 19684--19685
+Underfull \hbox (badness 10000) in paragraph at lines 19682--19683
 [][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][] [][] [] [][] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][] [][] [][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19686--19687
+Underfull \hbox (badness 10000) in paragraph at lines 19684--19685
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][] [][] [] [][] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][] [][] [][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19688--19689
+Underfull \hbox (badness 10000) in paragraph at lines 19686--19687
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][] [][] [] [][] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][] [][] [][][][][][][] [] [][][][][][][][][][] []
  []
 
@@ -5038,12 +5031,12 @@ Missing character: There is no 偶 (U+5076) in font [lmroman10-regular]:mapping=
 Missing character: There is no 空 (U+7A7A) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 間 (U+9593) in font [lmroman10-regular]:mapping=tex-text;!
 [363] [364] [365]
-Overfull \hbox (29.8346pt too wide) detected at line 20043
+Overfull \hbox (29.8346pt too wide) detected at line 20041
 [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
 [366]
-Overfull \hbox (29.8346pt too wide) detected at line 20196
+Overfull \hbox (29.8346pt too wide) detected at line 20194
 [] [] [] [] [] [] [] [] [] [] [] [] []
  []
 
@@ -5065,7 +5058,7 @@ Missing character: There is no 量 (U+91CF) in font [lmroman10-regular]:mapping=
 Missing character: There is no 空 (U+7A7A) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 間 (U+9593) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 20338--20339
+Underfull \hbox (badness 10000) in paragraph at lines 20336--20337
 [][][]$[][][][][] [] [] [] [][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][][][][] [] [][][] [][] [][][] [][] [][] [][] [][][] [][] [][][][][][] [][] [][][][] [][] [][] [][] [] [][] [][] [][] [] [][] [][][][][][] [][]
  []
 
@@ -5073,7 +5066,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20338--20339
 Underfull \vbox (badness 6016) has occurred while \output is active []
 
 [370] [371]
-Overfull \hbox (51.86703pt too wide) detected at line 20510
+Overfull \hbox (51.86703pt too wide) detected at line 20508
 [][]
  []
 
@@ -5108,7 +5101,7 @@ Underfull \vbox (badness 5446) has occurred while \output is active []
 [373
 
 ]
-Overfull \hbox (18.17424pt too wide) detected at line 20646
+Overfull \hbox (18.17424pt too wide) detected at line 20644
 [][]
  []
 
@@ -5129,23 +5122,23 @@ Missing character: There is no 間 (U+9593) in font [lmroman10-regular]:mapping=
 ]
 Chapter 41.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 21116.
+(Font)              scaled to size 24.88pt on input line 21114.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 21116.
+(Font)              scaled to size 20.74pt on input line 21114.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 21116.
+(Font)              scaled to size 17.28pt on input line 21114.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 24.88228pt on input line 21116.
+(Font)              scaled to size 24.88228pt on input line 21114.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 20.7419pt on input line 21116.
+(Font)              scaled to size 20.7419pt on input line 21114.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 17.28157pt on input line 21116.
+(Font)              scaled to size 17.28157pt on input line 21114.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 24.87733pt on input line 21116.
+(Font)              scaled to size 24.87733pt on input line 21114.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 20.73778pt on input line 21116.
+(Font)              scaled to size 20.73778pt on input line 21114.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 17.27815pt on input line 21116.
+(Font)              scaled to size 17.27815pt on input line 21114.
 [383] [384] [385] [386] [387] [388
 
 ]
@@ -5162,29 +5155,61 @@ Chapter 44.
 
 ]
 Chapter 45.
+(d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+Missing character: There is no 牛 (U+725B) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 頓 (U+9813) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 萊 (U+840A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 尼 (U+5C3C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 茨 (U+8328) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 公 (U+516C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 式 (U+5F0F) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 第 (U+7B2C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 一 (U+4E00) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 微 (U+5FAE) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 均 (U+5747) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 值 (U+503C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 拉 (U+62C9) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 格 (U+683C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 朗 (U+6717) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 日 (U+65E5) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 均 (U+5747) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 值 (U+503C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=tex-text;!
 
-LaTeX Warning: Reference `thm:MVTi1' on page 395 undefined on input line 21457.
+LaTeX Warning: Reference `thm:MVTd1' on page 395 undefined on input line 21442.
 
 
-LaTeX Warning: Reference `thm:Rolle' on page 395 undefined on input line 21476.
-
-
-LaTeX Warning: Reference `thm:MVTd1' on page 395 undefined on input line 21476.
-
-
-LaTeX Warning: Reference `thm:MVTd1' on page 395 undefined on input line 21479.
+LaTeX Warning: Reference `thm:MVTi1' on page 395 undefined on input line 21460.
 
 
 LaTeX Warning: Reference `thm:Rolle' on page 395 undefined on input line 21479.
 
 
-LaTeX Warning: Reference `thm:MVTd1' on page 395 undefined on input line 21490.
+LaTeX Warning: Reference `thm:MVTd1' on page 395 undefined on input line 21479.
 
 
-LaTeX Warning: Reference `thm:Rolle' on page 395 undefined on input line 21490.
+LaTeX Warning: Reference `thm:MVTd1' on page 395 undefined on input line 21482.
 
 
-LaTeX Warning: Reference `thm:MVTi1' on page 395 undefined on input line 21494.
+LaTeX Warning: Reference `thm:Rolle' on page 395 undefined on input line 21482.
+
+
+LaTeX Warning: Reference `thm:MVTd1' on page 395 undefined on input line 21495.
+
+
+LaTeX Warning: Reference `thm:Rolle' on page 395 undefined on input line 21495.
+
+
+LaTeX Warning: Reference `thm:MVTi1' on page 395 undefined on input line 21499.
 
 [395] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -5203,19 +5228,19 @@ Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=
 Missing character: There is no 聯 (U+806F) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 集 (U+96C6) in font [lmroman10-regular]:mapping=tex-text;!
 
-LaTeX Warning: Reference `thm:Rolle' on page 396 undefined on input line 21519.
+LaTeX Warning: Reference `thm:Rolle' on page 396 undefined on input line 21522.
 
 
-LaTeX Warning: Reference `thm:MVTd1' on page 396 undefined on input line 21519.
+LaTeX Warning: Reference `thm:MVTd1' on page 396 undefined on input line 21522.
 
 
-LaTeX Warning: Reference `thm:MVTd1' on page 396 undefined on input line 21532.
+LaTeX Warning: Reference `thm:MVTd1' on page 396 undefined on input line 21535.
 
 
-LaTeX Warning: Reference `thm:Rolle' on page 396 undefined on input line 21532.
+LaTeX Warning: Reference `thm:Rolle' on page 396 undefined on input line 21535.
 
 
-Overfull \hbox (73.29738pt too wide) detected at line 21548
+Overfull \hbox (73.29738pt too wide) detected at line 21551
 [][]
  []
 
@@ -5238,9 +5263,116 @@ Missing character: There is no 茨 (U+8328) in font [lmroman10-regular]:mapping=
 Missing character: There is no 公 (U+516C) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 式 (U+5F0F) in font [lmroman10-regular]:mapping=tex-text;!
 
+LaTeX Warning: Reference `thm:MVTd1' on page 397 undefined on input line 21574.
+
+
+LaTeX Warning: Reference `thm:Rolle' on page 397 undefined on input line 21574.
+
+
+LaTeX Warning: Reference `thm:MVTi1' on page 397 undefined on input line 21578.
+
+
+LaTeX Warning: Reference `thm:MVTd1' on page 397 undefined on input line 21585.
+
+
+LaTeX Warning: Reference `thm:Rolle' on page 397 undefined on input line 21585.
+
+
+LaTeX Warning: Reference `thm:MVTi1' on page 397 undefined on input line 21589.
+
+
+LaTeX Warning: Reference `thm:MVTd1' on page 397 undefined on input line 21596.
+
+
+LaTeX Warning: Reference `thm:Rolle' on page 397 undefined on input line 21596.
+
+
+LaTeX Warning: Reference `thm:MVTi1' on page 397 undefined on input line 21600.
+
+[397] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+Missing character: There is no 得 (U+5F97) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 到 (U+5230) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 第 (U+7B2C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 一 (U+4E00) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 微 (U+5FAE) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 均 (U+5747) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 值 (U+503C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 拉 (U+62C9) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 格 (U+683C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 朗 (U+6717) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 日 (U+65E5) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 均 (U+5747) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 值 (U+503C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=tex-text;!
+
+Underfull \vbox (badness 2401) has occurred while \output is active []
+
+[398]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[397] [398]
+[399] [400] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+Missing character: There is no 連 (U+9023) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 續 (U+7E8C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 函 (U+51FD) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 數 (U+6578) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 極 (U+6975) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 值 (U+503C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 最 (U+6700) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 大 (U+5927) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 最 (U+6700) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 小 (U+5C0F) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 值 (U+503C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 最 (U+6700) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 小 (U+5C0F) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 最 (U+6700) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 大 (U+5927) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 值 (U+503C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=tex-text;!
+
+LaTeX Warning: Reference `thm:EVT' on page 401 undefined on input line 21689.
+
+Missing character: There is no 連 (U+9023) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 續 (U+7E8C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 函 (U+51FD) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 數 (U+6578) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 介 (U+4ECB) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 值 (U+503C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 中 (U+4E2D) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 間 (U+9593) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 值 (U+503C) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=tex-text;!
+
+LaTeX Warning: Reference `thm:IVT' on page 401 undefined on input line 21690.
+
+
+LaTeX Warning: Reference `thm:EVT' on page 401 undefined on input line 21697.
+
+
+LaTeX Warning: Reference `thm:IVT' on page 401 undefined on input line 21702.
+
+[401] [402] [403] [404] [405] [406
+
+]
 Chapter 46.
 (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -5253,141 +5385,139 @@ Missing character: There is no 朗 (U+6717) in font [lmroman10-regular]:mapping=
 Missing character: There is no 日 (U+65E5) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 反 (U+53CD) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 演 (U+6F14) in font [lmroman10-regular]:mapping=tex-text;!
-[399
-
-] [400
+[407] [408
 
 ]
 Chapter 47.
-[401] [402
+[409] [410
 
 ]
 Chapter 48.
 
-Underfull \hbox (badness 10000) in paragraph at lines 21598--21599
+Underfull \hbox (badness 10000) in paragraph at lines 21931--21932
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21600--21601
+Underfull \hbox (badness 10000) in paragraph at lines 21933--21934
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21602--21603
+Underfull \hbox (badness 10000) in paragraph at lines 21935--21936
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21604--21605
+Underfull \hbox (badness 10000) in paragraph at lines 21937--21938
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21606--21607
+Underfull \hbox (badness 10000) in paragraph at lines 21939--21940
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21608--21609
+Underfull \hbox (badness 10000) in paragraph at lines 21941--21942
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21610--21611
+Underfull \hbox (badness 10000) in paragraph at lines 21943--21944
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21612--21613
+Underfull \hbox (badness 10000) in paragraph at lines 21945--21946
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21614--21615
+Underfull \hbox (badness 10000) in paragraph at lines 21947--21948
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21616--21617
+Underfull \hbox (badness 10000) in paragraph at lines 21949--21950
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21618--21619
+Underfull \hbox (badness 10000) in paragraph at lines 21951--21952
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21620--21621
+Underfull \hbox (badness 10000) in paragraph at lines 21953--21954
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21622--21623
+Underfull \hbox (badness 10000) in paragraph at lines 21955--21956
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21624--21625
+Underfull \hbox (badness 10000) in paragraph at lines 21957--21958
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
-[403]
-Underfull \hbox (badness 10000) in paragraph at lines 21626--21627
-[][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21628--21629
+[411]
+Underfull \hbox (badness 10000) in paragraph at lines 21959--21960
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21630--21631
+Underfull \hbox (badness 10000) in paragraph at lines 21961--21962
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21632--21633
+Underfull \hbox (badness 10000) in paragraph at lines 21963--21964
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21634--21635
+Underfull \hbox (badness 10000) in paragraph at lines 21965--21966
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21636--21637
+Underfull \hbox (badness 10000) in paragraph at lines 21967--21968
 [][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
  []
 
-[404]
+
+Underfull \hbox (badness 10000) in paragraph at lines 21969--21970
+[][][]$[][][][][] [] [] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][][][][][] [][] [][] [][] [][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][][] []
+ []
+
+[412]
 Chapter 49.
-[405
+[413
 
-] [406
+] [414
 
 ]
 Chapter 50.
-[407] [408
+[415] [416
 
 ]
 Chapter 51.
-[409] [410
+[417] [418
 
 ]
 Chapter 52.
-[411] [412
+[419] [420
 
 ]
 Chapter 53.
-[413] [414
+[421] [422
 
 ]
 Chapter 54.
-[415] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[423] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -5405,35 +5535,27 @@ Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=
 Missing character: There is no 母 (U+6BCD) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 局 (U+5C40) in font [lmroman10-regular]:mapping=tex-text;!
-[416]
+[424]
 Chapter 55.
-[417
+[425
 
-] [418] [419] [420]
+] [426] [427] [428]
 Chapter 56.
-[421
+[429
 
-] [422]
+] [430]
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
-[423]
+[431]
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
-[424] [425] [426]
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
-[427]
+[432] [433] [434]
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
@@ -5441,20 +5563,28 @@ Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
+[435]
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
-[428] [429] [430
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
+[436] [437] [438
 
 ]
 Chapter 57.
-[431] [432
+[439] [440
 
 ]
 Chapter 58.
-[433] [434
+[441] [442
 
 ]
 Chapter 59.
-[435] [436
+[443] [444
 
 ]
 Chapter 60.
@@ -5475,7 +5605,7 @@ Missing character: There is no 張 (U+5F35) in font [lmroman10-regular]:mapping=
 Missing character: There is no 翔 (U+7FD4) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 老 (U+8001) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 師 (U+5E2B) in font [lmroman10-regular]:mapping=tex-text;!
-[437] [438] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[445] [446] (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (d:/Users/115381/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -5486,51 +5616,51 @@ Missing character: There is no 老 (U+8001) in font [lmroman10-regular]:mapping=
 Missing character: There is no 師 (U+5E2B) in font [lmroman10-regular]:mapping=tex-text;!
 
 Overfull \hbox (46.30553pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 60.1.  AR(1) = $[][]$-ORDER AUTOREGRESSIVE MODEL = FIRST-ORDER AUTOREGRESSIVE MODEL \TU/lmr/m/n/10 439
+\TU/lmr/m/sl/10 60.1.  AR(1) = $[][]$-ORDER AUTOREGRESSIVE MODEL = FIRST-ORDER AUTOREGRESSIVE MODEL \TU/lmr/m/n/10 447
  []
 
-[439]
+[447]
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[440]
+[448]
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=tex-text;!
 
 Overfull \hbox (60.97153pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 60.2.  AR(2) = $[][]$-ORDER AUTOREGRESSIVE MODEL = SECOND-ORDER AUTOREGRESSIVE MODEL \TU/lmr/m/n/10 441
+\TU/lmr/m/sl/10 60.2.  AR(2) = $[][]$-ORDER AUTOREGRESSIVE MODEL = SECOND-ORDER AUTOREGRESSIVE MODEL \TU/lmr/m/n/10 449
  []
 
-[441]
-Underfull \hbox (badness 10000) in paragraph at lines 23154--23154
+[449]
+Underfull \hbox (badness 10000) in paragraph at lines 23487--23487
 []\TU/lmr/bx/n/14.4 ARMA($[]$,$[]$) = $[][][] [][]$-order autoregressive-moving-
  []
 
-[442]
+[450]
 Chapter 61.
 
-Underfull \hbox (badness 10000) in paragraph at lines 23164--23165
+Underfull \hbox (badness 10000) in paragraph at lines 23497--23498
 [][]$[][][][][] [] [] [] [][][] [] [][][][][][][][] [] [][][] [] [][][][][] [] [][][][][][][][][][][][] [] [][][][] [] [][] [] [][][][] [] [][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][] []
  []
 
-[443
+[451
 
-] [444
+] [452
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 23178--23178
+Underfull \hbox (badness 10000) in paragraph at lines 23511--23511
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23182--23182
+Underfull \hbox (badness 10000) in paragraph at lines 23515--23515
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23186--23186
+Underfull \hbox (badness 10000) in paragraph at lines 23519--23519
 
  []
 
@@ -5543,12 +5673,12 @@ Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=
 Missing character: There is no 矩 (U+77E9) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 陣 (U+9663) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 23190--23190
+Underfull \hbox (badness 10000) in paragraph at lines 23523--23523
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23194--23194
+Underfull \hbox (badness 10000) in paragraph at lines 23527--23527
 
  []
 
@@ -5569,12 +5699,12 @@ Missing character: There is no 碩 (U+78A9) in font [lmroman10-regular]:mapping=
 Missing character: There is no 教 (U+6559) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 育 (U+80B2) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 23198--23198
+Underfull \hbox (badness 10000) in paragraph at lines 23531--23531
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23202--23202
+Underfull \hbox (badness 10000) in paragraph at lines 23535--23535
 
  []
 
@@ -5588,27 +5718,27 @@ Missing character: There is no 的 (U+7684) in font [lmroman10-regular]:mapping=
 Missing character: There is no 性 (U+6027) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 質 (U+8CEA) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 23206--23206
+Underfull \hbox (badness 10000) in paragraph at lines 23539--23539
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23210--23210
+Underfull \hbox (badness 10000) in paragraph at lines 23543--23543
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23214--23214
+Underfull \hbox (badness 10000) in paragraph at lines 23547--23547
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23218--23218
+Underfull \hbox (badness 10000) in paragraph at lines 23551--23551
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23222--23222
+Underfull \hbox (badness 10000) in paragraph at lines 23555--23555
 
  []
 
@@ -5617,7 +5747,7 @@ Missing character: There is no 陣 (U+9663) in font [lmroman10-regular]:mapping=
 Missing character: There is no 導 (U+5C0E) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 數 (U+6578) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 23226--23226
+Underfull \hbox (badness 10000) in paragraph at lines 23559--23559
 
  []
 
@@ -5629,7 +5759,7 @@ Missing character: There is no 態 (U+614B) in font [lmroman10-regular]:mapping=
 Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 23230--23230
+Underfull \hbox (badness 10000) in paragraph at lines 23563--23563
 
  []
 
@@ -5640,13 +5770,13 @@ Missing character: There is no 行 (U+884C) in font [lmroman10-regular]:mapping=
 Missing character: There is no 列 (U+5217) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 式 (U+5F0F) in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 23234--23234
+Underfull \hbox (badness 10000) in paragraph at lines 23567--23567
 
  []
 
-[445]
+[453]
 
-LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (429 not 445).
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (437 not 453).
                Rerun to correct this.
 
 (./math.aux)
@@ -5662,12 +5792,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 49896 strings out of 476758
- 1201116 string characters out of 5800671
- 2075148 words of memory out of 5000000
- 70741 multiletter control sequences out of 15000+600000
+ 49929 strings out of 476758
+ 1202542 string characters out of 5800671
+ 2076148 words of memory out of 5000000
+ 70762 multiletter control sequences out of 15000+600000
  583348 words of font info for 172 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,31n,121p,9662b,961s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on math.pdf (445 pages).
+Output written on math.pdf (453 pages).
