@@ -31,20 +31,17 @@ https://tex.stackexchange.com/questions/591882/citation-within-a-latex-figure-ca
 
 (ref:campbell1963) \ [@campbell1963]
 
-<div class="figure">
-<img src="img/pre-and-true-experimental-designs.png" alt="pre- and true experimental designs ((ref:campbell1963) p.8)" width="65%" />
-<p class="caption">(\#fig:unnamed-chunk-1)pre- and true experimental designs ((ref:campbell1963) p.8)</p>
-</div>
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{img/pre-and-true-experimental-designs} \caption{pre- and true experimental designs ((ref:campbell1963) p.8)}(\#fig:unnamed-chunk-1)
+\end{figure}
 
-<div class="figure">
-<img src="img/quasi-experimental-designs.png" alt="quasi-experimental designs ((ref:campbell1963) p.40)" width="65%" />
-<p class="caption">(\#fig:unnamed-chunk-2)quasi-experimental designs ((ref:campbell1963) p.40)</p>
-</div>
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{img/quasi-experimental-designs} \caption{quasi-experimental designs ((ref:campbell1963) p.40)}(\#fig:unnamed-chunk-2)
+\end{figure}
 
-<div class="figure">
-<img src="img/quasi-experimental-designs-2.png" alt="quasi-experimental designs continued ((ref:campbell1963) p.56)" width="65%" />
-<p class="caption">(\#fig:unnamed-chunk-3)quasi-experimental designs continued ((ref:campbell1963) p.56)</p>
-</div>
+\begin{figure}
+\includegraphics[width=0.65\linewidth]{img/quasi-experimental-designs-2} \caption{quasi-experimental designs continued ((ref:campbell1963) p.56)}(\#fig:unnamed-chunk-3)
+\end{figure}
 
 ## pre-experimental design
 

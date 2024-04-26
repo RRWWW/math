@@ -43,7 +43,7 @@
 - pure mathematics
   - logic
     - [Shai Ben-David](https://www.youtube.com/playlist?list=PLPW2keNyw-utXOOzLR-Wp1p0eE5LEtv3N)
-  - 林秀豪
+  - 林秀豪 Porcupine Lin / Hedgehog Note
     - [應數: 2019](https://www.youtube.com/playlist?list=PLS0SUwlYe8cyfYWKPb8v55pCqfw0MnL0T)
       - [1](https://www.youtube.com/playlist?list=PLS0SUwlYe8cy7eNFtSWru7EtJ_yXM94YH)
       - [2](https://www.youtube.com/playlist?list=PLS0SUwlYe8cxiepObAy7dGDs29AdViZdj)
@@ -76,7 +76,7 @@
     - tensor analysis
 - applied mathematics
   - statistics
-    - 洪弘
+    - 洪弘 Hung Hung
       - [mathematical statistics](https://www.youtube.com/playlist?list=PLTpF-A8hKVUOqfNyA6mOD6lo2cc6clZZP)
       - [biostatistics](https://www.youtube.com/playlist?list=PLTp0eSi9MdkNZB4kyLSzIXIUy9JQOJ5AM)
     - [陳鄰安](https://www.youtube.com/playlist?list=PLTpF-A8hKVUPXtNAX9lro-leGgEK0OSEW)

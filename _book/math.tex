@@ -265,7 +265,7 @@
 
 \title{math}
 \author{Joey Yu Hsu}
-\date{2024-04-25}
+\date{2024-04-26}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
@@ -6166,14 +6166,14 @@ target of interest
 \begin{itemize}
 \tightlist
 \item
-  \(\mathrm{P}_{{\scriptscriptstyle X}}\left(\cdot\right)\) PF = probability function
+  \(\mathrm{P}_{{\scriptscriptstyle X}}\left(\cdot\right)\) PF = \hyperref[probability-function]{probability function}
 
   \begin{itemize}
   \tightlist
   \item
     \(f_{{\scriptscriptstyle X}}\left(x\right)=\mathrm{P}_{{\scriptscriptstyle X}}\left(X=x\right)\) PMF = probability mass function
   \item
-    \(f_{{\scriptscriptstyle X}}\left(x\right)=\dfrac{\mathrm{d}}{\mathrm{d}x}\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right)\) PDF = probability density function
+    \(f_{{\scriptscriptstyle X}}\left(x\right)=\dfrac{\mathrm{d}}{\mathrm{d}x}\mathrm{P}_{{\scriptscriptstyle X}}\left(X\le x\right)\) PDF = \hyperref[probability-density-function]{probability density function}
   \end{itemize}
 \item
   \(F_{{\scriptscriptstyle X}}\left(x\right)\) CDF = \hyperref[cumulative-distribution-function]{cumulative distribution function}\textsuperscript{{[}\ref{cumulative-distribution-function}{]}}
@@ -6358,6 +6358,8 @@ De Morgan law
 pairwise disjoint = mutually exclusive
 
 partition
+
+\subsubsection{probability function}\label{probability-function}
 
 probability function axioms = probability function definition
 
@@ -6583,7 +6585,7 @@ x\in X\left(\omega\right)
 \end{aligned}
 \]
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+\subsubsection{probability density function}\label{probability-density-function}
 
 \[
 \begin{cases}
@@ -6594,6 +6596,7 @@ x\in X\left(\omega\right)
 
 \begin{definition}
 \protect\hypertarget{def:unnamed-chunk-10}{}\label{def:unnamed-chunk-10}PDF = probability density function
+
 PMF = probability mass function
 \end{definition}
 
@@ -8434,6 +8437,23 @@ M_{{\scriptscriptstyle X}}\left(\xi\right)= & \dfrac{\mathrm{e}^{\xi}-1}{\xi}
 
 \subparagraph{normal distribution}\label{normal-distribution}
 
+\[
+\begin{array}{c}
+X\sim\mathcal{N}\left(\mu,\sigma^{2}\right)\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|\mu,\sigma^{2}\right)=\dfrac{1}{\sigma\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}=\frac{\mathrm{e}^{\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}}{\sigma\sqrt{2\pi}}=\dfrac{\mathrm{e}^{-\left(x-\mu\right)^{2}/\left(2\sigma^{2}\right)}}{\sigma\sqrt{2\pi}}=\dfrac{\mathrm{exp}\left\{ \frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}\right\} }{\sigma\sqrt{2\pi}}\\
+x\in X\left(\Omega\right)=\mathbb{R}
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[X\right]= & \mu\\
+\mathrm{V}\left[X\right]= & \sigma^{2}\\
+M_{{\scriptscriptstyle X}}\left(\xi\right)= & \mathrm{e}^{\left(\mu\xi+\frac{\sigma^{2}}{2}\xi^{2}\right)}=\mathrm{e}^{\mu\xi+\frac{\sigma^{2}}{2}\xi^{2}}
+\end{cases}
+\end{array}
+\]
+
 \subparagraph{beta distribution}\label{beta-distribution}
 
 random success probability
@@ -8464,7 +8484,7 @@ M_{{\scriptscriptstyle X}}\left(\xi\right) & \text{diverges}
 \begin{figure}
 \centering
 \includegraphics{202402170031-statistics_files/figure-latex/unnamed-chunk-32-1.pdf}
-\caption{\label{fig:unnamed-chunk-32}Cauchy distribution vs.~normal distribution}
+\caption{\label{fig:unnamed-chunk-32}not completed: Cauchy distribution vs.~normal distribution}
 \end{figure}
 
 heavy tail
@@ -8482,7 +8502,7 @@ box plot
 \end{definition}
 
 \[
-f\left(x|\theta\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)
+f\left(x|\boldsymbol{\theta}\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)
 \]
 
 with \(\boldsymbol{\theta}=\boldsymbol{\theta}\left(\theta_{{\scriptscriptstyle 1}},\cdots,\theta_{{\scriptscriptstyle k}}\right)=\left(\theta_{{\scriptscriptstyle 1}},\cdots,\theta_{{\scriptscriptstyle k}}\right)\) for some \(h\left(x\right),c\left(\boldsymbol{\theta}\right),w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right),t_{{\scriptscriptstyle j}}\left(x\right)\), where
@@ -8494,7 +8514,7 @@ h\left(x\right)c\left(\boldsymbol{\theta}\right)\ge0\Rightarrow f\left(x|\theta\
 and parameters \(\boldsymbol{\theta}\) and statistic or real number \(x\) can be separated.
 
 \[
-\mathcal{E}^{f}=\left\{ f\middle|f=f\left(x|\theta\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} 
+\mathcal{E}^{f}=\left\{ f\middle|f=f\left(x|\boldsymbol{\theta}\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} 
 \]
 
 \begin{itemize}
@@ -8505,11 +8525,11 @@ and parameters \(\boldsymbol{\theta}\) and statistic or real number \(x\) can be
   \begin{itemize}
   \tightlist
   \item
-    normal distribution
+    \hyperref[normal-distribution]{normal distribution}\textsuperscript{{[}\ref{normal-distribution}{]}}
   \item
-    gamma distribution
+    \hyperref[gamma-distribution]{gamma distribution}\textsuperscript{{[}\ref{gamma-distribution}{]}}
   \item
-    log-normal distribution
+    \hyperref[log-normal-distribution]{log-normal distribution}\textsuperscript{{[}\ref{log-normal-distribution}{]}}
   \end{itemize}
 \item
   non-exponential family
@@ -8517,7 +8537,7 @@ and parameters \(\boldsymbol{\theta}\) and statistic or real number \(x\) can be
   \begin{itemize}
   \tightlist
   \item
-    Cauchy distribution \url{https://www.youtube.com/watch?v=ojZb6nZWdvI&t=1h7m43s}
+    \hyperref[cauchy-distribution]{Cauchy distribution}\textsuperscript{{[}\ref{cauchy-distribution}{]}} \url{https://www.youtube.com/watch?v=ojZb6nZWdvI&t=1h7m43s}
   \end{itemize}
 \end{itemize}
 
@@ -8533,11 +8553,15 @@ or
 f\left(x|p\right)=\dbinom{n}{x}\left(1-p\right)^{n-x}p^{x}=f\left(x|n=n,p\right)
 \]
 
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 not
 
 \[
 f\left(x|n,p\right)=\dbinom{n}{x}\left(1-p\right)^{n-x}p^{x}
 \]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \[
 \begin{aligned}
@@ -8552,7 +8576,7 @@ t_{{\scriptscriptstyle 1}}\left(x\right)= & x\\
 k= & 1
 \end{cases}\\
 \Downarrow\\
-f\left(x|p\right)=\dbinom{n}{x}\left(1-p\right)^{n-x}p^{x}\in & \mathcal{E}^{f}=\left\{ f\middle|f=f\left(x|\theta\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\}
+f\left(x|p\right)=\dbinom{n}{x}\left(1-p\right)^{n-x}p^{x}\in & \mathcal{E}^{f}=\left\{ f\middle|f=f\left(x|\boldsymbol{\theta}\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} 
 \end{aligned}
 \]
 
@@ -8602,7 +8626,395 @@ however,
 thus
 
 \[
-f_{{\scriptscriptstyle X}}\left(x|a,b\right)=\dfrac{1\left(x\in\left[a,b\right]\right)}{b-a}\notin\mathcal{E}^{f}=\left\{ f\middle|f=f\left(x|\theta\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} 
+f_{{\scriptscriptstyle X}}\left(x|a,b\right)=\dfrac{1\left(x\in\left[a,b\right]\right)}{b-a}\notin\mathcal{E}^{f}=\left\{ f\middle|f=f\left(x|\boldsymbol{\theta}\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} 
+\]
+
+\paragraph{normal distribution is in exponential family}\label{normal-distribution-is-in-exponential-family}
+
+\[
+\begin{array}{c}
+X\sim\mathcal{N}\left(\mu,\sigma^{2}\right)\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|\mu,\sigma^{2}\right)=\dfrac{1}{\sigma\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}=\frac{\mathrm{e}^{\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}}{\sigma\sqrt{2\pi}}=\dfrac{\mathrm{e}^{-\left(x-\mu\right)^{2}/\left(2\sigma^{2}\right)}}{\sigma\sqrt{2\pi}}=\dfrac{\mathrm{exp}\left\{ \frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}\right\} }{\sigma\sqrt{2\pi}}\\
+x\in X\left(\Omega\right)=\mathbb{R}
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[X\right]= & \mu\\
+\mathrm{V}\left[X\right]= & \sigma^{2}\\
+M_{{\scriptscriptstyle X}}\left(\xi\right)= & \mathrm{e}^{\left(\mu\xi+\frac{\sigma^{2}}{2}\xi^{2}\right)}=\mathrm{e}^{\mu\xi+\frac{\sigma^{2}}{2}\xi^{2}}
+\end{cases}
+\end{array}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{aligned}
+f_{{\scriptscriptstyle X}}\left(x|\mu,\sigma^{2}\right)=f_{{\scriptscriptstyle X}}\left(x|\mu,\sigma\right)= & \dfrac{1}{\sigma\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}\\
+= & \dfrac{1}{\sigma\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2\sigma^{2}}\left(x^{2}-2x\mu+\mu^{2}\right)}=\dfrac{\mathrm{e}^{\frac{-1}{2}\left(\frac{\mu}{\sigma}\right)^{2}}}{\sigma\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2\sigma^{2}}x^{2}+\frac{\mu}{\sigma^{2}}x}=\dfrac{\mathrm{e}^{\frac{-1}{2}\left(\frac{\mu}{\sigma}\right)^{2}}}{\sigma\sqrt{2\pi}}\mathrm{e}^{\frac{\mu}{\sigma^{2}}x-\frac{1}{2\sigma^{2}}x^{2}}\\
+= & h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}},\begin{cases}
+h\left(x\right)= & 1\\
+c\left(\boldsymbol{\theta}\right)=c\left(\theta_{{\scriptscriptstyle 1}},\theta_{{\scriptscriptstyle 2}}\right)=c\left(\mu,\sigma\right)= & \dfrac{\mathrm{e}^{\frac{-1}{2}\left(\frac{\mu}{\sigma}\right)^{2}}}{\sigma\sqrt{2\pi}}\\
+w_{{\scriptscriptstyle 1}}\left(\theta_{{\scriptscriptstyle 1}},\theta_{{\scriptscriptstyle 2}}\right)=w_{{\scriptscriptstyle 1}}\left(\mu,\sigma\right)= & \frac{\mu}{\sigma^{2}}\\
+w_{{\scriptscriptstyle 2}}\left(\theta_{{\scriptscriptstyle 2}}\right)=w_{{\scriptscriptstyle 2}}\left(\sigma\right)= & \frac{-1}{2\sigma^{2}}\\
+t_{{\scriptscriptstyle 1}}\left(x\right)= & x\\
+t_{{\scriptscriptstyle 2}}\left(x\right)= & x^{2}\\
+k= & 2
+\end{cases}\\
+\Downarrow\\
+f_{{\scriptscriptstyle X}}\left(x|\mu,\sigma\right)=\dfrac{1}{\sigma\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}\in & \mathcal{E}^{f}=\left\{ f\middle|f=f\left(x|\boldsymbol{\theta}\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} 
+\end{aligned}
+\]
+
+\paragraph{normal distribution with unknown equal mean and standard deviation in curved exponential family}\label{normal-distribution-with-unknown-equal-mean-and-standard-deviation-in-curved-exponential-family}
+
+\[
+\begin{array}{c}
+X\sim\mathcal{N}\left(\mu,\sigma^{2}=\mu^{2}\right)=\mathcal{N}\left(\mu,\mu^{2}\right)\\
+\Updownarrow\\
+\begin{cases}
+f_{{\scriptscriptstyle X}}\left(x|\mu,\mu^{2}\right)=f_{{\scriptscriptstyle X}}\left(x|\mu\right)=\left[\dfrac{1}{\sigma\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}\right]_{\sigma=\mu}=\dfrac{1}{\mu\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2}\left(\frac{x-\mu}{\mu}\right)^{2}}\\
+x\in X\left(\Omega\right)=\mathbb{R}
+\end{cases}\\
+\Downarrow\\
+\begin{cases}
+\mathrm{E}\left[X\right]= & \mu\\
+\mathrm{V}\left[X\right]= & \mu^{2}\\
+M_{{\scriptscriptstyle X}}\left(\xi\right)= & \mathrm{e}^{\left(\mu\xi+\frac{\mu^{2}}{2}\xi^{2}\right)}=\mathrm{e}^{\mu\xi+\frac{\mu^{2}}{2}\xi^{2}}
+\end{cases}
+\end{array}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{aligned}
+f_{{\scriptscriptstyle X}}\left(x|\mu,\mu^{2}\right)=f_{{\scriptscriptstyle X}}\left(x|\mu\right)= & \dfrac{1}{\mu\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2}\left(\frac{x-\mu}{\mu}\right)^{2}}\\
+= & \dfrac{1}{\mu\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2\mu^{2}}\left(x^{2}-2x\mu+\mu^{2}\right)}=\dfrac{\mathrm{e}^{\frac{-1}{2}}}{\mu\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2\mu^{2}}x^{2}+\frac{\mu}{\mu^{2}}x}=\dfrac{\mathrm{e}^{\frac{-1}{2}}}{\mu\sqrt{2\pi}}\mathrm{e}^{\frac{1}{\mu}x-\frac{1}{2\mu^{2}}x^{2}}\\
+= & h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}},\begin{cases}
+h\left(x\right)= & 1\\
+c\left(\boldsymbol{\theta}\right)=c\left(\theta_{{\scriptscriptstyle 1}}\right)=c\left(\mu\right)= & \dfrac{\mathrm{e}^{\frac{-1}{2}}}{\mu\sqrt{2\pi}}\\
+w_{{\scriptscriptstyle 1}}\left(\theta_{{\scriptscriptstyle 1}}\right)=w_{{\scriptscriptstyle 1}}\left(\mu\right)= & \frac{1}{\mu}\\
+w_{{\scriptscriptstyle 2}}\left(\theta_{{\scriptscriptstyle 1}}\right)=w_{{\scriptscriptstyle 2}}\left(\mu\right)= & \frac{-1}{2\mu^{2}}\\
+t_{{\scriptscriptstyle 1}}\left(x\right)= & x\\
+t_{{\scriptscriptstyle 2}}\left(x\right)= & x^{2}\\
+k= & 2>1=p
+\end{cases}\\
+\Downarrow & \begin{cases}
+p=\dim\boldsymbol{\theta}\\
+k=\dim\boldsymbol{w}
+\end{cases}\\
+f_{{\scriptscriptstyle X}}\left(x|\mu,\sigma\right)=\dfrac{1}{\sigma\sqrt{2\pi}}\mathrm{e}^{\frac{-1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}\in & \mathcal{C}^{f}=\left\{ f\middle|f=f\left(x|\boldsymbol{\theta}\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k>p}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} \\
+\subset & \mathcal{E}^{f}=\left\{ f\middle|f=f\left(x|\boldsymbol{\theta}\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} 
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+curved exponential family
+
+\[
+\mathcal{C}^{f}=\left\{ f\middle|f=f\left(x|\boldsymbol{\theta}\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k>p}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} 
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+exponential family
+
+\[
+\mathcal{E}^{f}=\left\{ f\middle|f=f\left(x|\boldsymbol{\theta}\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} 
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\url{https://tex.stackexchange.com/questions/145969/filling-specified-area-by-random-dots-in-tikz}
+
+\begin{figure}
+\centering
+\includegraphics{202402170031-statistics_files/figure-latex/unnamed-chunk-34-1.pdf}
+\caption{\label{fig:unnamed-chunk-34}curved exponential family vs.~exponential family}
+\end{figure}
+
+\paragraph{properties of exponential family}\label{properties-of-exponential-family}
+
+\subparagraph{fundamentals of statistical inference}\label{fundamentals-of-statistical-inference}
+
+\begin{lemma}
+\protect\hypertarget{lem:unnamed-chunk-35}{}\label{lem:unnamed-chunk-35}Leibnitz rule
+\end{lemma}
+
+\[
+\begin{aligned}
+\dfrac{\mathrm{d}}{\mathrm{d}\theta}\int_{a\left(\theta\right)}^{b\left(\theta\right)}g\left(x,\theta\right)\mathrm{d}x= & \dfrac{\mathrm{d}\int_{a\left(\theta\right)}^{b\left(\theta\right)}g\left(x,\theta\right)\mathrm{d}x}{\mathrm{d}\theta}\\
+= & g\left(x,b\left(\theta\right)\right)\dfrac{\mathrm{d}b\left(\theta\right)}{\mathrm{d}\theta}-g\left(x,a\left(\theta\right)\right)\dfrac{\mathrm{d}a\left(\theta\right)}{\mathrm{d}\theta}+\int_{a\left(\theta\right)}^{b\left(\theta\right)}\dfrac{\mathrm{d}}{\mathrm{d}\theta}g\left(x,\theta\right)\mathrm{d}x\\
+= & g\left(x,b\left(\theta\right)\right)\dfrac{\mathrm{d}b\left(\theta\right)}{\mathrm{d}\theta}-g\left(x,a\left(\theta\right)\right)\dfrac{\mathrm{d}a\left(\theta\right)}{\mathrm{d}\theta}+\int_{a\left(\theta\right)}^{b\left(\theta\right)}\dfrac{\mathrm{d}g\left(x,\theta\right)}{\mathrm{d}\theta}\mathrm{d}x
+\end{aligned}
+\]
+
+\[
+\dfrac{\mathrm{d}}{\mathrm{d}\theta}\int_{a\left(\theta\right)}^{b\left(\theta\right)}g\left(x,\theta\right)\mathrm{d}x=g\left(x,b\left(\theta\right)\right)\dfrac{\mathrm{d}b\left(\theta\right)}{\mathrm{d}\theta}-g\left(x,a\left(\theta\right)\right)\dfrac{\mathrm{d}a\left(\theta\right)}{\mathrm{d}\theta}+\int_{a\left(\theta\right)}^{b\left(\theta\right)}\dfrac{\mathrm{d}g\left(x,\theta\right)}{\mathrm{d}\theta}\mathrm{d}x
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{aligned}
+\dfrac{\mathrm{d}}{\mathrm{d}\theta}\int_{a\left(\theta\right)=a}^{b\left(\theta\right)=b}g\left(x,\theta\right)\mathrm{d}x= & g\left(x,b\left(\theta\right)\right)\dfrac{\mathrm{d}b\left(\theta\right)}{\mathrm{d}\theta}-g\left(x,a\left(\theta\right)\right)\dfrac{\mathrm{d}a\left(\theta\right)}{\mathrm{d}\theta}+\int_{a\left(\theta\right)}^{b\left(\theta\right)}\dfrac{\mathrm{d}g\left(x,\theta\right)}{\mathrm{d}\theta}\mathrm{d}x\\
+= & g\left(x,b\right)\dfrac{\mathrm{d}b}{\mathrm{d}\theta}-g\left(x,a\right)\dfrac{\mathrm{d}a}{\mathrm{d}\theta}+\int_{a}^{b}\dfrac{\mathrm{d}g\left(x,\theta\right)}{\mathrm{d}\theta}\mathrm{d}x\\
+= & g\left(x,b\right)0-g\left(x,a\right)0+\int_{a}^{b}\dfrac{\mathrm{d}g\left(x,\theta\right)}{\mathrm{d}\theta}\mathrm{d}x=0+0+\int_{a}^{b}\dfrac{\mathrm{d}g\left(x,\theta\right)}{\mathrm{d}\theta}\mathrm{d}x\\
+= & \int_{a}^{b}\dfrac{\mathrm{d}g\left(x,\theta\right)}{\mathrm{d}\theta}\mathrm{d}x\\
+\dfrac{\mathrm{d}}{\mathrm{d}\theta}\int_{X\left(\Omega\right)\perp\theta}g\left(x,\theta\right)\mathrm{d}x= & \dfrac{\mathrm{d}}{\mathrm{d}\theta}\int_{a\left(\theta\right)=a}^{b\left(\theta\right)=b}g\left(x,\theta\right)\mathrm{d}x=\int_{a}^{b}\dfrac{\mathrm{d}g\left(x,\theta\right)}{\mathrm{d}\theta}\mathrm{d}x=\int_{X\left(\Omega\right)\perp\theta}\dfrac{\mathrm{d}g\left(x,\theta\right)}{\mathrm{d}\theta}\mathrm{d}x\\
+\dfrac{\mathrm{d}}{\mathrm{d}\theta}\int_{X\left(\Omega\right)\perp\theta}g\left(x,\theta\right)\mathrm{d}x= & \int_{X\left(\Omega\right)\perp\theta}\dfrac{\mathrm{d}g\left(x,\theta\right)}{\mathrm{d}\theta}\mathrm{d}x
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\dfrac{\mathrm{d}}{\mathrm{d}\theta}\int_{X\left(\Omega\right)\perp\theta}g\left(x,\theta\right)\mathrm{d}x=&\int_{X\left(\Omega\right)\perp\theta}\dfrac{\mathrm{d}g\left(x,\theta\right)}{\mathrm{d}\theta}\mathrm{d}x
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+point estimation
+
+\begin{lemma}
+\protect\hypertarget{lem:unnamed-chunk-36}{}\label{lem:unnamed-chunk-36}parameter-independent expectation:
+
+Assume the domain of \(X\) independent of \(\theta\), then
+\end{lemma}
+
+\[
+\mathrm{E}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=0,\forall i=1,\cdots,p
+\]
+
+Proof:
+
+\[
+\begin{aligned}
+\mathrm{E}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]= & \int\dfrac{\partial\ln f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x\\
+= & \int\left[\dfrac{\partial\ln f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x\\
+= & \int\left[\dfrac{1}{f\left(x|\boldsymbol{\theta}\right)}\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\dfrac{1}{f\left(x|\boldsymbol{\theta}\right)}\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x\\
+= & \int\dfrac{f\left(x|\boldsymbol{\theta}\right)}{f\left(x|\boldsymbol{\theta}\right)}\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\mathrm{d}x=\int1\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\mathrm{d}x=\int\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\mathrm{d}x\\
+\overset{\begin{cases}
+\text{Leibnitz rule}\\
+x\perp\boldsymbol{\theta}
+\end{cases}}{=} & \dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\int f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+Note:
+
+\[
+\mathrm{E}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\left(\dfrac{\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f\left(x|\boldsymbol{\theta}\right)}\right)f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x
+\]
+
+\[
+X\sim f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\Rightarrow\mathrm{E}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\left(\dfrac{\dfrac{\partial f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}\right)f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\mathrm{d}x
+\]
+
+\[
+X\sim f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\Rightarrow\mathrm{E}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\left(\dfrac{\dfrac{\partial f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}\right)f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\dfrac{\partial f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\left(\dfrac{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)}{f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}\right)\mathrm{d}x
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\mathrm{E}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\mathrm{E}_{{\scriptscriptstyle \boldsymbol{\theta}^{*}}}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)\mathrm{d}x
+\]
+
+\[
+\mathrm{E}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\mathrm{E}_{{\scriptscriptstyle \boldsymbol{\theta}}}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\mathrm{d}x
+\]
+
+\[
+\mathrm{E}_{{\scriptscriptstyle \boldsymbol{\theta}}}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\int\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f_{{\scriptscriptstyle X}}\left(x|\boldsymbol{\theta}\right)\mathrm{d}x
+\]
+
+\[
+\mathrm{E}_{{\scriptscriptstyle \boldsymbol{\theta}}}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]\not\equiv0
+\]
+
+\[
+\mathrm{E}_{{\scriptscriptstyle \boldsymbol{\theta}}}\left[\dfrac{\partial\ln f_{{\scriptscriptstyle X}}\left(X|\boldsymbol{\theta}^{*}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]\overset{\boldsymbol{\theta}^{*}=\boldsymbol{\theta}}{=}0
+\]
+
+as the fundamental to estimate parameters.
+
+interval estimation
+
+\begin{lemma}
+\protect\hypertarget{lem:unnamed-chunk-37}{}\label{lem:unnamed-chunk-37}parameter-independent variance:
+
+Assume the domain of \(X\) independent of \(\theta\), then
+\end{lemma}
+
+\[
+\mathrm{E}\left[\dfrac{\partial^{2}\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}\right]=-\mathrm{E}\left[\left(\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right)^{2}\right],\forall i=1,\cdots,p
+\]
+
+Proof:
+
+\[
+\begin{aligned}
+ & \mathrm{E}\left[\dfrac{\partial^{2}\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}\right]=\int\dfrac{\partial^{2}\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\dfrac{\partial\ln f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x\\
+= & \int\left\{ \dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\left(\dfrac{1}{f\left(x|\boldsymbol{\theta}\right)}\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right)\right\} f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\left\{ \dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\left(\dfrac{\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f\left(x|\boldsymbol{\theta}\right)}\right)\right\} f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x\\
+= & \int\dfrac{\dfrac{\partial^{2}f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}f\left(x|\boldsymbol{\theta}\right)-\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{\left[f\left(x|\boldsymbol{\theta}\right)\right]^{2}}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=\int\dfrac{\dfrac{\partial^{2}f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}\left[f\left(x|\boldsymbol{\theta}\right)\right]^{2}-\left[\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]^{2}\left[f\left(x|\boldsymbol{\theta}\right)\right]}{\left[f\left(x|\boldsymbol{\theta}\right)\right]^{2}}\mathrm{d}x\\
+= & \int\dfrac{\partial^{2}f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}\mathrm{d}x-\int\left(\dfrac{\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f\left(x|\boldsymbol{\theta}\right)}\right)^{2}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x\overset{\begin{cases}
+\text{Leibnitz rule}\\
+X\left(\Omega\right)\perp\boldsymbol{\theta}
+\end{cases}}{=}\dfrac{\partial^{2}}{\partial\theta_{{\scriptscriptstyle i}}^{2}}\int f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x-\int\left(\dfrac{\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f\left(x|\boldsymbol{\theta}\right)}\right)^{2}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x\\
+= & \dfrac{\partial^{2}}{\partial\theta_{{\scriptscriptstyle i}}^{2}}1-\int\left(\dfrac{\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f\left(x|\boldsymbol{\theta}\right)}\right)^{2}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=0-\int\left(\dfrac{\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f\left(x|\boldsymbol{\theta}\right)}\right)^{2}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=-\int\left(\dfrac{\dfrac{\partial f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}}{f\left(x|\boldsymbol{\theta}\right)}\right)^{2}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x\\
+= & -\int\left(\dfrac{\partial\ln f\left(x|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right)^{2}f\left(x|\boldsymbol{\theta}\right)\mathrm{d}x=-\mathrm{E}\left[\left(\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right)^{2}\right]
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{cases}
+\mathrm{E}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]= & 0\\
+\mathrm{E}\left[\dfrac{\partial^{2}\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}\right]= & -\mathrm{E}\left[\left(\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right)^{2}\right]
+\end{cases},\forall i=1,\cdots,p
+\]
+
+exponential family expectation and variance
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-38}{}\label{thm:unnamed-chunk-38}exponential family expectation
+\end{theorem}
+
+\[
+\begin{array}{c}
+X\in\mathcal{E}^{f}=\left\{ f\middle|f=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} \\
+\Downarrow\forall i=1,\cdots,p\\
+\mathrm{E}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]=\dfrac{-\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}
+\end{array}
+\]
+
+Proof:
+
+\[
+\begin{aligned}
+f\left(x|\boldsymbol{\theta}\right)= & h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\\
+\ln f\left(x|\boldsymbol{\theta}\right)= & \ln h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}\\
+= & \ln h\left(x\right)+\ln c\left(\boldsymbol{\theta}\right)+\ln\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}\\
+= & \ln h\left(x\right)+\ln c\left(\boldsymbol{\theta}\right)+\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\\
+\ln f\left(x|\boldsymbol{\theta}\right)= & \ln h\left(x\right)+\ln c\left(\boldsymbol{\theta}\right)+\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\\
+\ln f\left(X|\boldsymbol{\theta}\right)= & \ln h\left(X\right)+\ln c\left(\boldsymbol{\theta}\right)+\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(X\right)\\
+\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\ln f\left(X|\boldsymbol{\theta}\right)= & \dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\left[\ln h\left(X\right)+\ln c\left(\boldsymbol{\theta}\right)+\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(X\right)\right]\\
+= & \dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\ln h\left(X\right)+\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\ln c\left(\boldsymbol{\theta}\right)+\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(X\right)\\
+= & 0+\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\ln c\left(\boldsymbol{\theta}\right)+\sum\limits _{j=1}^{k}\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\left\{ w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(X\right)\right\} \\
+= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\left\{ \left(\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)\right)t_{{\scriptscriptstyle j}}\left(X\right)+w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)\left(\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right)\right\} \\
+= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\left\{ \left(\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)\right)t_{{\scriptscriptstyle j}}\left(X\right)+w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)0\right\} \\
+= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\left\{ \left(\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)\right)t_{{\scriptscriptstyle j}}\left(X\right)\right\} \\
+\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\left\{ \dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right\} \\
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\left\{ \dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right\} \\
+0\overset{\text{lemma: }\mathrm{E}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=0}{=}\mathrm{E}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]= & \mathrm{E}\left[\dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\left\{ \dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right\} \right]\\
+= & \mathrm{E}\left[\dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]+\mathrm{E}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]\\
+\overset{\mathrm{E}\left[c\right]=c}{=} & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\mathrm{E}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]\\
+= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\mathrm{E}\left[\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]\\
+= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\mathrm{E}\left[t_{{\scriptscriptstyle j}}\left(X\right)\right]\\
+0= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\mathrm{E}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]\\
+\mathrm{E}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]= & \dfrac{-\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-39}{}\label{thm:unnamed-chunk-39}exponential family variance
+\end{theorem}
+
+\[
+\begin{array}{c}
+X\in\mathcal{E}^{f}=\left\{ f\middle|f=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} \\
+\Downarrow\forall i=1,\cdots,p\\
+\mathrm{V}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]=\dfrac{-\partial^{2}\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}-\mathrm{E}\left[\sum\limits _{j=1}^{k}\dfrac{\partial^{2}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}t_{{\scriptscriptstyle j}}\left(X\right)\right]
+\end{array}
+\]
+
+Proof:
+
+same as the above
+
+\[
+\begin{aligned}
+f\left(x|\boldsymbol{\theta}\right)= & h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\\
+\ln f\left(x|\boldsymbol{\theta}\right)= & \ln h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}\\
+= & \ln h\left(x\right)+\ln c\left(\boldsymbol{\theta}\right)+\ln\mathrm{e}^{{\scriptscriptstyle \sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}\\
+= & \ln h\left(x\right)+\ln c\left(\boldsymbol{\theta}\right)+\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\\
+\ln f\left(x|\boldsymbol{\theta}\right)= & \ln h\left(x\right)+\ln c\left(\boldsymbol{\theta}\right)+\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\\
+\ln f\left(X|\boldsymbol{\theta}\right)= & \ln h\left(X\right)+\ln c\left(\boldsymbol{\theta}\right)+\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(X\right)\\
+\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\ln f\left(X|\boldsymbol{\theta}\right)= & \dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\left[\ln h\left(X\right)+\ln c\left(\boldsymbol{\theta}\right)+\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(X\right)\right]\\
+= & \dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\ln h\left(X\right)+\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\ln c\left(\boldsymbol{\theta}\right)+\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(X\right)\\
+= & 0+\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\ln c\left(\boldsymbol{\theta}\right)+\sum\limits _{j=1}^{k}\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\left\{ w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(X\right)\right\} \\
+= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\left\{ \left(\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)\right)t_{{\scriptscriptstyle j}}\left(X\right)+w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)\left(\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right)\right\} \\
+= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\left\{ \left(\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)\right)t_{{\scriptscriptstyle j}}\left(X\right)+w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)0\right\} \\
+= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\left\{ \left(\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)\right)t_{{\scriptscriptstyle j}}\left(X\right)\right\} \\
+\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\left\{ \dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right\} \\
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}= & \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\\
+\mathrm{V}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]= & \mathrm{V}\left[\dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]\\
+\overset{\mathrm{V}\left[aX+b\right]=a^{2}\mathrm{V}\left[X\right]}{=} & \mathrm{V}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]\\
+\mathrm{V}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]= & \mathrm{V}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\mathrm{V}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]= & \mathrm{V}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=\mathrm{E}\left[\left(\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}-\mathrm{E}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]\right)^{2}\right]\\
+\overset{\text{lemma: }\mathrm{E}\left[\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]=0}{=} & \mathrm{E}\left[\left(\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}-0\right)^{2}\right]=\mathrm{E}\left[\left(\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right)^{2}\right]\\
+\overset{\text{lemma: }\mathrm{E}\left[\dfrac{\partial^{2}\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}\right]=-\mathrm{E}\left[\left(\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right)^{2}\right]}{=} & -\mathrm{E}\left[\dfrac{\partial^{2}\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}\right]=-\mathrm{E}\left[\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right]\\
+\overset{\dfrac{\partial\ln f\left(X|\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}=\dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)}{=} & -\mathrm{E}\left[\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\left\{ \dfrac{\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}+\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right\} \right]\\
+= & -\mathrm{E}\left[\dfrac{\partial^{2}\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}+\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]\\
+= & \dfrac{-\partial^{2}\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}-\mathrm{E}\left[\sum\limits _{j=1}^{k}\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\left\{ \dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right\} \right]\\
+= & \dfrac{-\partial^{2}\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}-\mathrm{E}\left[\sum\limits _{j=1}^{k}\left\{ \left(\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\right)t_{{\scriptscriptstyle j}}\left(X\right)+\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\dfrac{\partial}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right\} \right]\\
+= & \dfrac{-\partial^{2}\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}-\mathrm{E}\left[\sum\limits _{j=1}^{k}\left\{ \dfrac{\partial^{2}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}t_{{\scriptscriptstyle j}}\left(X\right)+\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}0\right\} \right]\\
+= & \dfrac{-\partial^{2}\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}-\mathrm{E}\left[\sum\limits _{j=1}^{k}\dfrac{\partial^{2}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}t_{{\scriptscriptstyle j}}\left(X\right)\right]\\
+\mathrm{V}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]= & \dfrac{-\partial^{2}\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}-\mathrm{E}\left[\sum\limits _{j=1}^{k}\dfrac{\partial^{2}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}t_{{\scriptscriptstyle j}}\left(X\right)\right]
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+exponential family expectation and variance
+
+sense of downgrading by differentiation instead of integration
+
+\[
+\begin{aligned}
+ & X\in\mathcal{E}^{f}=\left\{ f\middle|f=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits _{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} \\
+\Rightarrow & \begin{cases}
+\mathrm{E}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]= & \dfrac{-\partial\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}\\
+\mathrm{V}\left[\sum\limits _{j=1}^{k}\dfrac{\partial w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}}t_{{\scriptscriptstyle j}}\left(X\right)\right]= & \dfrac{-\partial^{2}\ln c\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}-\mathrm{E}\left[\sum\limits _{j=1}^{k}\dfrac{\partial^{2}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)}{\partial\theta_{{\scriptscriptstyle i}}^{2}}t_{{\scriptscriptstyle j}}\left(X\right)\right]
+\end{cases},\forall i=1,\cdots,p
+\end{aligned}
 \]
 
 \subsection{multivariable distribution}\label{multivariable-distribution}
@@ -21022,6 +21434,126 @@ determinant axioms
 \chapter{Hilbert space}\label{hilbert-space}
 
 \section{Taylor expansion or Taylor series}\label{taylor-expansion-or-taylor-series}
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-1}{}\label{thm:unnamed-chunk-1}Newton-Leibniz formula = N-LF, equivalent to first mean value theorem for derivatives / Lagrange mean value theorem = MVTdL / MVTd1
+\end{theorem}
+
+\begin{equation}
+\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\label{eq:N-LF}
+\end{equation}
+
+\[
+\begin{aligned}
+ & \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) & \left(2\right)
+\end{cases}\\
+\begin{cases}
+f^{\prime}:\left[a,b\right]\rightarrow\mathbb{R}\,\left(4\right) & a<b\,\left(3\right)\\
+f^{\prime}\text{ continuous on }\left[a,b\right] & \left(5\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left(f^{\prime}\left(c\right)=\dfrac{\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x}{b-a}\right) & \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\\
+\Rightarrow & \begin{array}{c}
+\exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\} \,\ref{eq:MVTd1fromN-LFandMVTi1}\\
+\Updownarrow\\
+\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\,\ref{eq:N-LFfromMVTd1}
+\end{array}
+\end{aligned}
+\]
+
+\(\left(\Downarrow\right)\):
+
+\[
+\begin{aligned}
+ & \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) & \left(2\right)
+\end{cases}\overset{\ref{thm:Rolle}}{\Rightarrow}\exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\}  & \text{MVTd1 }\ref{thm:MVTd1}\\
+\left[a,b\right]=\left[x_{0},x_{n}\right]=\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right] & \ref{eq:-72}
+\end{cases}\nonumber \\
+ & \overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\label{eq:N-LFfromMVTd1}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+ & \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) & \left(2\right)
+\end{cases}\overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right) & \text{N-LF }\ref{eq:N-LF}\\
+\begin{cases}
+f^{\prime}:\left[a,b\right]\rightarrow\mathbb{R}\,\left(4\right) & a<b\,\left(3\right)\\
+f^{\prime}\text{ continuous on }\left[a,b\right] & \left(5\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left(f^{\prime}\left(c\right)=\dfrac{\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x}{b-a}\right) & \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\nonumber \\
+\Rightarrow & \exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\} \label{eq:MVTd1fromN-LFandMVTi1}
+\end{aligned}
+\]
+
+\(\left(\Uparrow\right)\):
+
+Proof:
+
+\begin{CJK}{UTF8}{bsmi}
+重疊端點分割 $\left[a,b\right]$ 成 $n$ 部分聯集 $\left(n\in\mathbb{N}\right)$
+\end{CJK}
+
+\begin{equation}
+\left[a,b\right]=\left[x_{0},x_{n}\right]=\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right]\label{eq:-72}
+\end{equation}
+
+\[
+\begin{aligned}
+ & \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} & \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] & \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) & \left(2\right)
+\end{cases}\overset{\ref{thm:Rolle}}{\Rightarrow}\exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\}  & \text{MVTd1 }\ref{thm:MVTd1}\\
+\left[a,b\right]=\left[x_{0},x_{n}\right]=\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right] & \ref{eq:-72}
+\end{cases}\\
+\Rightarrow & \begin{cases}
+\left(f:\left[x_{0},x_{n}\right]\rightarrow\mathbb{R}\right)=\left(f:\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right]\rightarrow\mathbb{R}\right) & \Leftarrow\left(0\right)\\
+f\text{ continuous on }\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right] & \Leftarrow\left(1\right)\\
+f\text{ differentiable on }\left(x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right) & \Leftarrow\left(2\right)
+\end{cases}\\
+\Rightarrow & \begin{cases}
+f:\left[x_{0},x_{1}\right]\rightarrow\mathbb{R},f:\left[x_{0},x_{2}\right]\rightarrow\mathbb{R},\cdots,f:\left[x_{n-1},x_{n}\right]\rightarrow\mathbb{R} & \Leftarrow\left(0\right)\\
+f\text{ continuous on }\left[x_{0},x_{1}\right],\left[x_{0},x_{2}\right],\cdots,\left[x_{n-1},x_{n}\right] & \Leftarrow\left(1\right)\\
+f\text{ differentiable on }\left(x_{0},x_{1}\right],\left[x_{0},x_{2}\right],\cdots,\left[x_{n-1},x_{n}\right)\Rightarrow f\text{ differentiable on }\left(x_{0},x_{1}\right),\left(x_{0},x_{2}\right),\cdots,\left(x_{n-1},x_{n}\right) & \Leftarrow\left(2\right)
+\end{cases}\\
+ & \overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\begin{cases}
+\exists c_{1}\in\left(x_{0},x_{1}\right)\left\{ f^{\prime}\left(c_{1}\right)\left(x_{1}-x_{0}\right)=f\left(x_{1}\right)-f\left(x_{0}\right)\right\} \\
+\exists c_{2}\in\left(x_{1},x_{2}\right)\left\{ f^{\prime}\left(c_{2}\right)\left(x_{2}-x_{1}\right)=f\left(x_{2}\right)-f\left(x_{1}\right)\right\} \\
+\vdots\\
+\exists c_{k}\in\left(x_{k-1},x_{k}\right)\left\{ f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=f\left(x_{k}\right)-f\left(x_{k-1}\right)\right\}  & \forall k\in\mathbb{N}\cap\left[1,n\right]\\
+\vdots\\
+\exists c_{n}\in\left(x_{n-1},x_{n}\right)\left\{ f^{\prime}\left(c_{n}\right)\left(x_{n}-x_{n-1}\right)=f\left(x_{n}\right)-f\left(x_{n-1}\right)\right\} 
+\end{cases}\\
+\Rightarrow & f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=f\left(x_{k}\right)-f\left(x_{k-1}\right)\\
+\Rightarrow & \sum_{k}f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=\sum_{k}f\left(x_{k}\right)-f\left(x_{k-1}\right)\\
+\Rightarrow & \sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=\sum_{k=1}^{n}f\left(x_{k}\right)-f\left(x_{k-1}\right)=\left[f\left(x_{1}\right)-f\left(x_{0}\right)\right]+\left[f\left(x_{2}\right)-f\left(x_{1}\right)\right]+\cdots+\left[f\left(x_{n}\right)-f\left(x_{n-1}\right)\right]\\
+ & =f\left(x_{n}\right)-f\left(x_{0}\right)=f\left(b\right)-f\left(a\right)\Rightarrow\sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=f\left(b\right)-f\left(a\right)\overset{\Delta x_{k}=x_{k}-x_{k-1}}{\Leftrightarrow}\sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\Delta x_{k}=f\left(b\right)-f\left(a\right)\\
+\Rightarrow & \lim_{n\rightarrow\infty}\lim_{\Delta x_{k}=\frac{x_{n}-x_{0}}{n}}\sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\Delta x_{k}=\lim_{n\rightarrow\infty}\lim_{\Delta x_{k}=\frac{b-a}{n}\rightarrow0}f\left(b\right)-f\left(a\right)=f\left(b\right)-f\left(a\right)\\
+\Rightarrow & \int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=\int_{x_{0}}^{x_{n}}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\\
+\Rightarrow & \int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)
+\end{aligned}
+\]
+
+\[
+\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)
+\]
+
+\begin{CJK}{UTF8}{bsmi}
+得到 牛頓-萊布尼茨公式 Newton-Leibniz formula = N-LF [eq:N-LF]
+\end{CJK}
 
 \section{Dirac delta function}\label{dirac-delta-function}
 

@@ -123,29 +123,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -163,7 +140,7 @@ div.csl-indent {
 <li><a href="./">math</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>index</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> output:</a></li>
 <li class="part"><span><b>I by descipline</b></span></li>
 <li class="chapter" data-level="3" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>3</b> mathematics</a>
 <ul>
@@ -980,6 +957,288 @@ div.csl-indent {
 <iframe width="500" height="300" frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV15s4y1g7HQ&amp;autoplay=0">
 </iframe>
 </div>
+<div class="lemma">
+<p><span id="lem:unnamed-chunk-1" class="lemma"><strong>Lemma 48.1  </strong></span>Newton-Leibniz formula = N-LF, equivalent to first mean value theorem for derivatives / Lagrange mean value theorem = MVTdL / MVTd1</p>
+</div>
+<div show-in="html">
+<p>牛頓-萊布尼茨公式 Newton-Leibniz formula = N-LF, equivalent to 第一微分均值定理 / 拉格朗日均值定理 first mean value theorem for derivatives / Lagrange mean
+value theorem = MVTdL / MVTd1 <span class="math inline">\(\ref{thm:MVTd1}\)</span> </p>
+</div>
+<div show-in="pdf">
+
+</div>
+<p><span class="math display">\[\begin{equation}
+\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\label{eq:N-LF}
+\end{equation}\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} &amp; \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] &amp; \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) &amp; \left(2\right)
+\end{cases}\\
+\begin{cases}
+f^{\prime}:\left[a,b\right]\rightarrow\mathbb{R}\,\left(4\right) &amp; a&lt;b\,\left(3\right)\\
+f^{\prime}\text{ continuous on }\left[a,b\right] &amp; \left(5\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left(f^{\prime}\left(c\right)=\dfrac{\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x}{b-a}\right) &amp; \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\\
+\Rightarrow &amp; \begin{array}{c}
+\exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\} \,\ref{eq:MVTd1fromN-LFandMVTi1}\\
+\Updownarrow\\
+\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\,\ref{eq:N-LFfromMVTd1}
+\end{array}
+\end{aligned}
+\]</span></p>
+<p><span class="math inline">\(\left(\Downarrow\right)\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} &amp; \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] &amp; \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) &amp; \left(2\right)
+\end{cases}\overset{\ref{thm:Rolle}}{\Rightarrow}\exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\}  &amp; \text{MVTd1 }\ref{thm:MVTd1}\\
+\left[a,b\right]=\left[x_{0},x_{n}\right]=\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right] &amp; \ref{eq:-72}
+\end{cases}\nonumber \\
+&amp; \overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\label{eq:N-LFfromMVTd1}
+\end{aligned}
+\]</span></p>
+<p><span class="math inline">\(\left(\Uparrow\right)\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} &amp; \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] &amp; \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) &amp; \left(2\right)
+\end{cases}\overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right) &amp; \text{N-LF }\ref{eq:N-LF}\\
+\begin{cases}
+f^{\prime}:\left[a,b\right]\rightarrow\mathbb{R}\,\left(4\right) &amp; a&lt;b\,\left(3\right)\\
+f^{\prime}\text{ continuous on }\left[a,b\right] &amp; \left(5\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left(f^{\prime}\left(c\right)=\dfrac{\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x}{b-a}\right) &amp; \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\nonumber \\
+\Rightarrow &amp; \exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\} \label{eq:MVTd1fromN-LFandMVTi1}
+\end{aligned}
+\]</span></p>
+<p>Proof: <span class="math inline">\(\left(\Downarrow\right)\)</span></p>
+<div show-in="html">
+<p>重疊端點分割 <span class="math inline">\(\left[a,b\right]\)</span> 成 <span class="math inline">\(n\)</span> 部分聯集 <span class="math inline">\(\left(n\in\mathbb{N}\right)\)</span></p>
+</div>
+<div show-in="pdf">
+
+</div>
+<p><span class="math display">\[\begin{equation}
+\left[a,b\right]=\left[x_{0},x_{n}\right]=\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right]\label{eq:-72}
+\end{equation}\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} &amp; \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] &amp; \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) &amp; \left(2\right)
+\end{cases}\overset{\ref{thm:Rolle}}{\Rightarrow}\exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\}  &amp; \text{MVTd1 }\ref{thm:MVTd1}\\
+\left[a,b\right]=\left[x_{0},x_{n}\right]=\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right] &amp; \ref{eq:-72}
+\end{cases}\\
+\Rightarrow &amp; \begin{cases}
+\left(f:\left[x_{0},x_{n}\right]\rightarrow\mathbb{R}\right)=\left(f:\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right]\rightarrow\mathbb{R}\right) &amp; \Leftarrow\left(0\right)\\
+f\text{ continuous on }\left[x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right] &amp; \Leftarrow\left(1\right)\\
+f\text{ differentiable on }\left(x_{0},x_{1}\right]\cup\left[x_{0},x_{2}\right]\cup\cdots\cup\left[x_{n-1},x_{n}\right) &amp; \Leftarrow\left(2\right)
+\end{cases}\\
+\Rightarrow &amp; \begin{cases}
+f:\left[x_{0},x_{1}\right]\rightarrow\mathbb{R},f:\left[x_{0},x_{2}\right]\rightarrow\mathbb{R},\cdots,f:\left[x_{n-1},x_{n}\right]\rightarrow\mathbb{R} &amp; \Leftarrow\left(0\right)\\
+f\text{ continuous on }\left[x_{0},x_{1}\right],\left[x_{0},x_{2}\right],\cdots,\left[x_{n-1},x_{n}\right] &amp; \Leftarrow\left(1\right)\\
+f\text{ differentiable on }\left(x_{0},x_{1}\right],\left[x_{0},x_{2}\right],\cdots,\left[x_{n-1},x_{n}\right)\Rightarrow f\text{ differentiable on }\left(x_{0},x_{1}\right),\left(x_{0},x_{2}\right),\cdots,\left(x_{n-1},x_{n}\right) &amp; \Leftarrow\left(2\right)
+\end{cases}\\
+&amp; \overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\begin{cases}
+\exists c_{1}\in\left(x_{0},x_{1}\right)\left\{ f^{\prime}\left(c_{1}\right)\left(x_{1}-x_{0}\right)=f\left(x_{1}\right)-f\left(x_{0}\right)\right\} \\
+\exists c_{2}\in\left(x_{1},x_{2}\right)\left\{ f^{\prime}\left(c_{2}\right)\left(x_{2}-x_{1}\right)=f\left(x_{2}\right)-f\left(x_{1}\right)\right\} \\
+\vdots\\
+\exists c_{k}\in\left(x_{k-1},x_{k}\right)\left\{ f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=f\left(x_{k}\right)-f\left(x_{k-1}\right)\right\}  &amp; \forall k\in\mathbb{N}\cap\left[1,n\right]\\
+\vdots\\
+\exists c_{n}\in\left(x_{n-1},x_{n}\right)\left\{ f^{\prime}\left(c_{n}\right)\left(x_{n}-x_{n-1}\right)=f\left(x_{n}\right)-f\left(x_{n-1}\right)\right\}
+\end{cases}\\
+\Rightarrow &amp; f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=f\left(x_{k}\right)-f\left(x_{k-1}\right)\\
+\Rightarrow &amp; \sum_{k}f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=\sum_{k}f\left(x_{k}\right)-f\left(x_{k-1}\right)\\
+\Rightarrow &amp; \sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=\sum_{k=1}^{n}f\left(x_{k}\right)-f\left(x_{k-1}\right)=\left[f\left(x_{1}\right)-f\left(x_{0}\right)\right]+\left[f\left(x_{2}\right)-f\left(x_{1}\right)\right]+\cdots+\left[f\left(x_{n}\right)-f\left(x_{n-1}\right)\right]\\
+&amp; =f\left(x_{n}\right)-f\left(x_{0}\right)=f\left(b\right)-f\left(a\right)\Rightarrow\sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\left(x_{k}-x_{k-1}\right)=f\left(b\right)-f\left(a\right)\overset{\Delta x_{k}=x_{k}-x_{k-1}}{\Leftrightarrow}\sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\Delta x_{k}=f\left(b\right)-f\left(a\right)\\
+\Rightarrow &amp; \lim_{n\rightarrow\infty}\lim_{\Delta x_{k}=\frac{x_{n}-x_{0}}{n}}\sum_{k=1}^{n}f^{\prime}\left(c_{k}\right)\Delta x_{k}=\lim_{n\rightarrow\infty}\lim_{\Delta x_{k}=\frac{b-a}{n}\rightarrow0}f\left(b\right)-f\left(a\right)=f\left(b\right)-f\left(a\right)\\
+\Rightarrow &amp; \int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=\int_{x_{0}}^{x_{n}}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\\
+\Rightarrow &amp; \int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)
+\]</span></p>
+<div show-in="html">
+<p>得到 牛頓-萊布尼茨公式 Newton-Leibniz formula = N-LF [eq:N-LF]</p>
+</div>
+<div show-in="pdf">
+
+</div>
+<p><span class="math display">\[
+\tag*{$\Box$}
+\]</span></p>
+<p>Proof: <span class="math inline">\(\left(\Uparrow\right)\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} &amp; \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] &amp; \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) &amp; \left(2\right)
+\end{cases}\overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right) &amp; \text{N-LF }\ref{eq:N-LF}\\
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} &amp; a&lt;b\,\left(3\right)\\
+f\text{ continuous on }\left[a,b\right] &amp; \left(1\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left(f\left(c\right)=\dfrac{\int_{a}^{b}f\left(x\right)\mathrm{d}x}{b-a}\right) &amp; \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\\
+\Rightarrow &amp; \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} &amp; \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] &amp; \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) &amp; \left(2\right)
+\end{cases}\overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right) &amp; \text{N-LF }\ref{eq:N-LF}\\
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} &amp; a&lt;b\,\left(3\right)\\
+f\text{ continuous on }\left[a,b\right] &amp; \left(1\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left\{ f\left(c\right)\left(b-a\right)=\int_{a}^{b}f\left(x\right)\mathrm{d}x\right\}  &amp; \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\\
+\Rightarrow &amp; \begin{cases}
+\begin{cases}
+f:\left[a,b\right]\rightarrow\mathbb{R} &amp; \left(0\right)\\
+f\text{ continuous on }\left[a,b\right] &amp; \left(1\right)\\
+f\text{ differentiable on }\left(a,b\right) &amp; \left(2\right)
+\end{cases}\overset{\stackrel{\ref{thm:Rolle}}{\ref{thm:MVTd1}}}{\Rightarrow}\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right) &amp; \text{N-LF }\ref{eq:N-LF}\\
+\begin{cases}
+\text{if }f^{\prime}:\left[a,b\right]\rightarrow\mathbb{R} &amp; \left(4\right)\\
+\text{if }f^{\prime}\text{ continuous on }\left[a,b\right] &amp; \left(5\right)
+\end{cases}\Rightarrow\exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x\right\}  &amp; \text{MVTi1 }\ref{thm:MVTi1}
+\end{cases}\\
+\Rightarrow &amp; \exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=\int_{a}^{b}f^{\prime}\left(x\right)\mathrm{d}x=f\left(b\right)-f\left(a\right)\right\} \\
+\Rightarrow &amp; \exists c\in\left(a,b\right)\left\{ f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right\}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\exists c\in\left(a,b\right)\left[f^{\prime}\left(c\right)\left(b-a\right)=f\left(b\right)-f\left(a\right)\right]
+\]</span></p>
+<div show-in="html">
+<p>得到 第一微分均值定理 / 拉格朗日均值定理 first mean value theorem for derivatives / Lagrange mean value theorem = MVTdL / MVTd1 [thm:MVTd1]</p>
+</div>
+<div show-in="pdf">
+
+</div>
+<p><span class="math display">\[
+\tag*{$\Box$}
+\]</span></p>
+<div class="lemma">
+<p><span id="lem:unnamed-chunk-2" class="lemma"><strong>Lemma 48.2  </strong></span>univariable product rule</p>
+</div>
+<p><span class="math display">\[
+\mathrm{d}\left(uv\right)=\left(\mathrm{d}u\right)v+u\mathrm{d}v=v\mathrm{d}u+u\mathrm{d}v
+\]</span></p>
+<p><span class="math display">\[
+\frac{\mathrm{d}\left(uv\right)}{\mathrm{d}t}=v\frac{\mathrm{d}u}{\mathrm{d}t}+u\frac{\mathrm{d}v}{\mathrm{d}t}
+\]</span></p>
+<div class="lemma">
+<p><span id="lem:unnamed-chunk-3" class="lemma"><strong>Lemma 48.3  </strong></span>integration by parts</p>
+</div>
+<p><span class="math display">\[
+\begin{eqnarray}
+\int\frac{\mathrm{d}\left(uv\right)}{\mathrm{d}t}\thinspace\mathrm{d}t &amp; = &amp; \int v\frac{\mathrm{d}u}{\mathrm{d}t}+u\frac{\mathrm{d}v}{\mathrm{d}t}\mathrm{d}t\nonumber \\
+\int\mathrm{d}\left(uv\right)= &amp;  &amp; =\int v\frac{\mathrm{d}u}{\mathrm{d}t}\mathrm{d}t+\int u\frac{\mathrm{d}v}{\mathrm{d}t}\mathrm{d}t\nonumber \\
+uv= &amp;  &amp; =\int v\mathrm{d}u+\int u\mathrm{d}v\nonumber \\
+\int u\frac{\mathrm{d}v}{\mathrm{d}t}\mathrm{d}t &amp; = &amp; uv-\int v\frac{\mathrm{d}u}{\mathrm{d}t}\mathrm{d}t\textrm{ &quot;switching derivatives&quot;}\label{eq:switchingDerivatives}\\
+\int u\mathrm{d}v &amp; = &amp; uv-\int v\mathrm{d}u\textrm{ &quot;switching differentials&quot;}\label{eq:switchingDifferentials}
+\end{eqnarray}
+\]</span></p>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-4" class="theorem"><strong>Theorem 48.1  </strong></span>univariable Taylor theorem with the remainder in integral form</p>
+</div>
+<p><span class="math display">\[
+f\left(x\right)=\sum\limits _{k=0}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)^{k}+\int_{a}^{x}f^{\left(n+1\right)}\left(t\right)\frac{\left(t-x\right)^{n}}{n!}\mathrm{d}t
+\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+&amp;  &amp; f\left(x\right)-f\left(a\right)\\
+&amp; \overset{\ref{thm:N-LF}}{=} &amp; \int_{a}^{x}f&#39;\left(t\right)\mathrm{d}t=\int_{a}^{x}f&#39;\left(t\right)\frac{\mathrm{d}\left(t-x\right)}{\mathrm{d}t}\mathrm{d}t\overset{\ref{eq:switchingDerivatives}}{=}\left[f&#39;\left(t\right)\left(t-x\right)\right]_{t=a}^{x}-\int_{a}^{x}\left(t-x\right)\frac{\mathrm{d}f&#39;\left(t\right)}{\mathrm{d}t}\mathrm{d}t\\
+&amp; = &amp; \left[-f&#39;\left(a\right)\left(a-x\right)\right]-\int_{a}^{x}f&#39;&#39;\left(t\right)\left(t-x\right)\mathrm{d}t=f&#39;\left(t\right)\left(x-a\right)-\int_{a}^{x}f&#39;&#39;\left(t\right)\frac{\mathrm{d}\frac{\left(t-x\right)^{2}}{2}}{\mathrm{d}t}\mathrm{d}t\\
+&amp; = &amp; f&#39;\left(a\right)\left(x-a\right)-\left(\left[f&#39;&#39;\left(t\right)\frac{\left(t-x\right)^{2}}{2}\right]_{t=a}^{x}-\int_{a}^{x}\frac{\left(t-x\right)^{2}}{2}\frac{\mathrm{d}f&#39;&#39;\left(t\right)}{\mathrm{d}t}\mathrm{d}t\right)\\
+&amp; = &amp; f&#39;\left(a\right)\left(x-a\right)-\left(\left[-f&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{2}}{2}\right]-\int_{a}^{x}f&#39;&#39;&#39;\left(t\right)\frac{\left(t-x\right)^{2}}{2}\mathrm{d}t\right)\\
+&amp; = &amp; f&#39;\left(a\right)\left(x-a\right)+f&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{2}}{2}+\int_{a}^{x}f&#39;&#39;&#39;\left(t\right)\frac{\left(t-x\right)^{2}}{2}\mathrm{d}t\\
+&amp; = &amp; f&#39;\left(a\right)\left(x-a\right)+f&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{2}}{2}+\int_{a}^{x}f&#39;&#39;&#39;\left(t\right)\frac{\mathrm{d}\frac{\left(t-x\right)^{3}}{2\cdot3}}{\mathrm{d}t}\mathrm{d}t\\
+&amp; = &amp; f&#39;\left(a\right)\left(x-a\right)+f&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{2}}{2}+\left(\left[f&#39;&#39;&#39;\left(t\right)\frac{\left(t-x\right)^{3}}{2\cdot3}\right]_{t=a}^{x}-\int_{a}^{x}\frac{\left(t-x\right)^{3}}{2\cdot3}\frac{\mathrm{d}f&#39;&#39;&#39;\left(t\right)}{\mathrm{d}t}\mathrm{d}t\right)\\
+&amp; = &amp; f&#39;\left(a\right)\left(x-a\right)+f&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{2}}{2}+\left(\left[f&#39;&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{3}}{2\cdot3}\right]-\int_{a}^{x}f^{\left(4\right)}\left(t\right)\frac{\left(t-x\right)^{3}}{2\cdot3}\mathrm{d}t\right)\\
+&amp; = &amp; f&#39;\left(a\right)\left(x-a\right)+f&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{2}}{2}+f&#39;&#39;&#39;\left(t\right)\frac{\left(x-a\right)^{3}}{2\cdot3}-\int_{a}^{x}f^{\left(4\right)}\left(t\right)\frac{\left(t-x\right)^{3}}{2\cdot3}\mathrm{d}t\\
+&amp; = &amp; f&#39;\left(a\right)\left(x-a\right)+f&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{2}}{2}+f&#39;&#39;&#39;\left(t\right)\frac{\left(x-a\right)^{3}}{2\cdot3}-\int_{a}^{x}f^{\left(4\right)}\left(t\right)\frac{\mathrm{d}\frac{\left(t-x\right)^{4}}{2\cdot3\cdot4}}{\mathrm{d}t}\mathrm{d}t\\
+&amp; = &amp; f&#39;\left(a\right)\left(x-a\right)+f&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{2}}{2}+f&#39;&#39;&#39;\left(t\right)\frac{\left(x-a\right)^{3}}{2\cdot3}\\
+&amp;  &amp; -\left(\left[f^{\left(4\right)}\left(t\right)\frac{\left(t-x\right)^{4}}{2\cdot3\cdot4}\right]_{t=a}^{x}-\int_{a}^{x}\frac{\left(t-x\right)^{4}}{2\cdot3\cdot4}\frac{\mathrm{d}f^{\left(4\right)}\left(t\right)}{\mathrm{d}t}\mathrm{d}t\right)\\
+&amp; = &amp; f&#39;\left(t\right)\left(x-a\right)+f&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{2}}{2}+f&#39;&#39;&#39;\left(t\right)\frac{\left(x-a\right)^{3}}{2\cdot3}\\
+&amp;  &amp; -\left(\left[-f^{\left(4\right)}\left(a\right)\frac{\left(x-a\right)^{4}}{2\cdot3\cdot4}\right]-\int_{a}^{x}f^{\left(5\right)}\left(t\right)\frac{\left(t-x\right)^{4}}{2\cdot3\cdot4}\mathrm{d}t\right)\\
+&amp; = &amp; f&#39;\left(t\right)\left(x-a\right)+f&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{2}}{2}+f&#39;&#39;&#39;\left(a\right)\frac{\left(x-a\right)^{3}}{2\cdot3}+f^{\left(4\right)}\left(a\right)\frac{\left(x-a\right)^{4}}{2\cdot3\cdot4}\\
+&amp; \vdots &amp; +\int_{a}^{x}f^{\left(5\right)}\left(t\right)\frac{\left(t-x\right)^{4}}{2\cdot3\cdot4}\mathrm{d}t\\
+&amp; = &amp; \sum_{k=1}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)^{k}+\int_{a}^{x}f^{\left(n+1\right)}\left(t\right)\frac{\left(t-x\right)^{n}}{n!}\mathrm{d}t\textrm{ remainder in integral form}
+\end{eqnarray}
+\]</span></p>
+<p><span class="math display">\[
+\tag*{$\Box$}
+\]</span></p>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-5" class="theorem"><strong>Theorem 48.2  </strong></span>univariable Taylor theorem with the remainder in Lagrange form</p>
+</div>
+<p><span class="math display">\[
+f\left(x\right)=\sum_{k=0}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)^{k}+\frac{f^{\left(n+1\right)}\left(\xi\right)}{\left(n+1\right)!}\left(x-a\right)^{n+1}
+\]</span></p>
+<p>Proof:</p>
+<div show-in="html">
+<p>by 連續函數 極值定理 / 最大最小值定理 / 最小最大值定理 continuous function extreme value theorem = CFEVT / extreme value theorem = EVT <span class="math inline">\(\ref{thm:EVT}\)</span> and 連續函數
+介值定理 / 中間值定理 continuous function intermediate value theorem = CFIVT / intermediate value theorem = IVT <span class="math inline">\(\ref{thm:IVT}\)</span></p>
+</div>
+<div show-in="pdf">
+
+</div>
+<p><span class="math display">\[
+\begin{eqnarray}
+\textrm{let }f\left(x\right) &amp; = &amp; \sum_{k=0}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)^{k}+r_{n}\left(x\right)\\
+r_{n}\left(x\right) &amp; = &amp; \int_{a}^{x}f^{\left(n+1\right)}\left(t\right)\frac{\left(t-x\right)^{n}}{n!}\mathrm{d}t\\
+\textrm{let }n &amp; \in &amp; \left\{ 2k-1|k\in\mathbb{N}\right\} \\
+\textrm{let }f\left(t\right) &amp; \overset{\ref{thm:EVT}}{\in} &amp; \left[m,M\right]\subseteq f\left(\left(a,x\right)\right)\textrm{ when }a&lt;x\\
+\int_{a}^{x}m\frac{\left(t-x\right)^{n}}{n!}\mathrm{d}t\le &amp; r_{n}\left(x\right) &amp; \le\int_{a}^{x}M\frac{\left(t-x\right)^{n}}{n!}\mathrm{d}t\\
+m\int_{a}^{x}\frac{\left(t-x\right)^{n}}{n!}\mathrm{d}t= &amp;  &amp; =M\int_{a}^{x}\frac{\left(t-x\right)^{n}}{n!}\mathrm{d}t\\
+m\left[\frac{\left(t-x\right)^{n+1}}{\left(n+1\right)!}\right]_{t=a}^{x}= &amp;  &amp; =M\left[\frac{\left(t-x\right)^{n+1}}{\left(n+1\right)!}\right]_{t=a}^{x}\\
+m\frac{\left(x-a\right)^{n+1}}{\left(n+1\right)!}= &amp;  &amp; =M\frac{\left(x-a\right)^{n+1}}{\left(n+1\right)!}\\
+&amp; \Downarrow &amp; \ref{thm:IVT}\\
+r_{n}\left(x\right) &amp; \overset{\exists\xi\in\left(a,x\right)}{=} &amp; f^{\left(n+1\right)}\left(\xi\right)\frac{\left(x-a\right)^{n+1}}{\left(n+1\right)!}\\
+f\left(x\right) &amp; = &amp; \sum_{k=0}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)^{k}+f^{\left(n+1\right)}\left(\xi\right)\frac{\left(x-a\right)^{n+1}}{\left(n+1\right)!}\\
+&amp; = &amp; \sum_{k=0}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)^{k}+\frac{f^{\left(n+1\right)}\left(\xi\right)}{\left(n+1\right)!}\left(x-a\right)^{n+1}
+\end{eqnarray}
+\]</span></p>
+<p><span class="math display">\[
+\tag*{$\Box$}
+\]</span></p>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-6" class="theorem"><strong>Theorem 48.3  </strong></span>univariable Taylor theorem with the remainder in big O form</p>
+</div>
+<p><span class="math display">\[
+f\left(a+h\right)=\sum_{k=0}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}h^{k}+\mathrm{O}\left(h^{n+1}\right)
+\]</span></p>
+<p>Proof:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\textrm{if }\left|f^{\left(n+1\right)}\left(t\right)\right| &amp; \le &amp; K\thinspace\forall t\in\left(a,x\right)\\
+\left|r_{n}\left(x\right)\right|=\left|\frac{f^{\left(n+1\right)}\left(\xi\right)}{\left(n+1\right)!}\left(x-a\right)^{n+1}\right| &amp; \le &amp; \frac{K}{\left(n+1\right)!}\left|x-a\right|^{n+1}\\
+r_{n}\left(x\right) &amp; \in &amp; \mathrm{O}\left(\left(x-a\right)^{n+1}\right)\\
+\textrm{let }R_{n}\left(h\right) &amp; = &amp; r_{n}\left(a+h\right)\\
+R_{n}\left(h\right) &amp; \in &amp; \mathrm{O}\left(h^{n+1}\right)\\
+f\left(a+h\right) &amp; = &amp; \sum_{k=0}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}h^{k}+\frac{f^{\left(n+1\right)}\left(\xi\right)}{\left(n+1\right)!}h^{n+1}\\
+&amp; = &amp; \sum_{k=0}^{n}\frac{f^{\left(k\right)}\left(a\right)}{k!}h^{k}+\mathrm{O}\left(h^{n+1}\right)
+\end{eqnarray}
+\]</span></p>
+<p><span class="math display">\[
+\tag*{$\Box$}
+\]</span></p>
 <div show-in="html">
 <iframe width="500" height="300" frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1du411a7qB&amp;autoplay=0">
 </iframe>
