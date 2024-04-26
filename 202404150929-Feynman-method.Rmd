@@ -7,3 +7,11 @@
 :::
 
 ## Feynman method of integral
+
+## path integral
+
+https://www.youtube.com/watch?v=Sp5SvdDh2u8
+
+https://en.wikipedia.org/wiki/Path_integral_formulation
+
+https://www.youtube.com/watch?v=7yjv-gLHFqg

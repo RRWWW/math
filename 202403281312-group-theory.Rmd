@@ -75,7 +75,11 @@ $$
 Proof:
 
 $$
-\ \tag*{$\Box$}
+\text{to be proved}
+$$
+
+$$
+\tag*{$\Box$}
 $$
 
 ## Polya enumeration theorem
