@@ -596,6 +596,18 @@ convolution
 \end_inset
 
 
+\begin_inset Formula 
+\begin{align*}
+ & \left\{ \left\{ \delta\left(\boldsymbol{k}\right)\middle|\boldsymbol{k}\in\mathbb{R}^{3}\right\} \middle|\begin{cases}
+\delta:\mathbb{R}^{3}\rightarrow\mathbb{H}\\
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\delta\left(\boldsymbol{k}\right)f\left(\boldsymbol{k},\boldsymbol{r}\right)\mathrm{d}^{3}\boldsymbol{r}=g\left(\boldsymbol{r}\right)
+\end{cases}\right\} \\
+= & \left\{ \left\{ K\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\mathrm{e}^{\mathrm{i}\boldsymbol{k}\cdot\boldsymbol{r}}\left(\cdot\right)\mathrm{d}^{3}\boldsymbol{k}\middle|\boldsymbol{k}\in\mathbb{R}^{3}\right\} ,\cdots\right\} 
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

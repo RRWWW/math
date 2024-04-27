@@ -609,6 +609,125 @@ convolution
 
 
 \begin_inset Formula 
+\[
+\Delta\left(\dfrac{1}{r}\right)=\boldsymbol{\nabla}^{2}\left(\dfrac{1}{r}\right)=\boldsymbol{\nabla}^{2}\dfrac{1}{\left|\boldsymbol{r}\right|}=\boldsymbol{\nabla}^{2}\dfrac{1}{\left|\boldsymbol{r}-\boldsymbol{0}\right|}=\Delta\dfrac{1}{\left|\boldsymbol{r}-\boldsymbol{0}\right|}=\Delta\left(\boldsymbol{r}-\boldsymbol{0}\right)=\Delta\left(\boldsymbol{r}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta\dfrac{1}{r\left(\epsilon\right)}=\Delta_{\epsilon}\left(r\right)=\Delta_{\epsilon}\left(\boldsymbol{r}\right)=\Delta_{\epsilon}\left(\boldsymbol{r}-\boldsymbol{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim\limits _{\epsilon\rightarrow0}\Delta_{\epsilon}\left(\boldsymbol{r}\right)=\lim\limits _{\epsilon\rightarrow0}\Delta\dfrac{1}{r\left(\epsilon\right)}=\Delta\left(\dfrac{1}{r}\right)=\Delta\left(\boldsymbol{r}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{{\scriptscriptstyle 3}}\int_{\mathbb{R}^{3}}f\left(\boldsymbol{r}\right)\Delta\left(\boldsymbol{r}\right)\mathrm{d}\boldsymbol{r}=\lim\limits _{\epsilon\rightarrow0}K_{{\scriptscriptstyle 3}}\int_{\mathbb{R}^{3}}f\left(\boldsymbol{r}\right)\Delta_{\epsilon}\left(\boldsymbol{r}\right)\mathrm{d}\boldsymbol{r}=\lim\limits _{\epsilon\rightarrow0}K_{{\scriptscriptstyle 3}}\int_{\mathbb{R}^{3}}f\left(\boldsymbol{r}\right)\Delta_{\epsilon}\left(\boldsymbol{r}-\boldsymbol{0}\right)\mathrm{d}\boldsymbol{r}=f\left(\boldsymbol{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K_{{\scriptscriptstyle 1}}\int_{\mathbb{R}^{1}}f\left(x\right)\delta\left(x\right)\mathrm{d}x=\lim\limits _{n\rightarrow\infty}K_{{\scriptscriptstyle 1}}\int_{\mathbb{R}^{1}}f\left(x\right)\delta_{{\scriptscriptstyle n}}\left(x\right)\mathrm{d}x=K_{{\scriptscriptstyle 1}}\int_{\mathbb{R}^{1}}f\left(x\right)\delta_{{\scriptscriptstyle n}}\left(x-0\right)\mathrm{d}x=f\left(0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \int_{\mathbb{R}^{3}}f\left(\boldsymbol{r}\right)\Delta_{\epsilon}\left(\boldsymbol{r}\right)\mathrm{d}\boldsymbol{r}=\int_{\mathbb{R}^{3}}f\left(\boldsymbol{r}\right)\dfrac{-3\epsilon^{2}}{\left(\boldsymbol{r}^{2}+\epsilon^{2}\right)^{\frac{5}{2}}}\mathrm{d}\boldsymbol{r},\begin{cases}
+\boldsymbol{r}=r\boldsymbol{n}_{\mathbb{{\scriptscriptstyle S}}}\\
+\boldsymbol{n}_{\mathbb{{\scriptscriptstyle S}}}=\begin{pmatrix}\sin\phi\cos\theta\\
+\sin\phi\sin\theta\\
+\cos\phi
+\end{pmatrix}
+\end{cases}\\
+= & \int_{0}^{\infty}\int_{\mathbb{S}^{2}}f\left(r\boldsymbol{n}_{\mathbb{{\scriptscriptstyle S}}}\right)\dfrac{-3\epsilon^{2}}{\left(r^{2}+\epsilon^{2}\right)^{\frac{5}{2}}}r^{2}\sigma\left(\mathrm{d}\boldsymbol{n}_{{\scriptscriptstyle S}}\right)\mathrm{d}r,\begin{cases}
+\mathbb{S}^{2}=\text{unit sphere centered at the origin}\\
+\sigma\left(\mathrm{d}\boldsymbol{n}_{{\scriptscriptstyle S}}\right)\text{ is the surface measure of }\mathbb{S}^{2}\\
+r^{2}\sigma\left(\mathrm{d}\boldsymbol{n}_{{\scriptscriptstyle S}}\right)=r^{2}\sin\phi\mathrm{d}\phi\mathrm{d}\theta\\
+r=\epsilon s
+\end{cases}\\
+= & \int_{0}^{\infty}\int_{\mathbb{S}^{2}}f\left(\epsilon s\boldsymbol{n}_{\mathbb{{\scriptscriptstyle S}}}\right)\dfrac{-3\epsilon^{2}}{\left(\left(\epsilon s\right)^{2}+\epsilon^{2}\right)^{\frac{5}{2}}}\left(\epsilon s\right)^{2}\sigma\left(\mathrm{d}\boldsymbol{n}_{{\scriptscriptstyle S}}\right)\mathrm{d}\epsilon s\\
+= & \int_{0}^{\infty}\int_{\mathbb{S}^{2}}f\left(\epsilon s\boldsymbol{n}_{\mathbb{{\scriptscriptstyle S}}}\right)\dfrac{-3\epsilon^{5}}{\epsilon^{5}\left(s^{2}+1\right)^{\frac{5}{2}}}s^{2}\sigma\left(\mathrm{d}\boldsymbol{n}_{{\scriptscriptstyle S}}\right)\mathrm{d}s=-\int_{0}^{\infty}\int_{\mathbb{S}^{2}}f\left(\epsilon s\boldsymbol{n}_{\mathbb{{\scriptscriptstyle S}}}\right)\dfrac{3s^{2}}{\left(s^{2}+1\right)^{\frac{5}{2}}}\sigma\left(\mathrm{d}\boldsymbol{n}_{\mathbb{{\scriptscriptstyle S}}}\right)\mathrm{d}s\\
+= & -\int_{0}^{\infty}\int_{0}^{2\pi}\int_{0}^{2\pi}f\left(\epsilon s\boldsymbol{n}_{\mathbb{{\scriptscriptstyle S}}}\right)\dfrac{3s^{2}}{\left(s^{2}+1\right)^{\frac{5}{2}}}\sin\phi\mathrm{d}\phi\mathrm{d}\theta\mathrm{d}s=-\int_{0}^{\infty}4\pi f\left(\epsilon s\boldsymbol{n}_{\mathbb{{\scriptscriptstyle S}}}\right)\dfrac{3s^{2}}{\left(s^{2}+1\right)^{\frac{5}{2}}}\mathrm{d}s
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \lim\limits _{\epsilon\rightarrow0}\int_{\mathbb{R}^{3}}f\left(\boldsymbol{r}\right)\Delta_{\epsilon}\left(\boldsymbol{r}\right)\mathrm{d}\boldsymbol{r}\\
+= & \lim\limits _{\epsilon\rightarrow0}\left[-\int_{0}^{\infty}4\pi f\left(\epsilon s\boldsymbol{n}_{\mathbb{{\scriptscriptstyle S}}}\right)\dfrac{3s^{2}}{\left(s^{2}+1\right)^{\frac{5}{2}}}\mathrm{d}s\right]\\
+= & -4\pi f\left(\boldsymbol{0}\right)\int_{0}^{\infty}\dfrac{3s^{2}}{\left(s^{2}+1\right)^{\frac{5}{2}}}\mathrm{d}s
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \int\dfrac{3s^{2}}{\left(s^{2}+1\right)^{\frac{5}{2}}}\mathrm{d}s,s=\tan u\\
+= & \int\dfrac{3\tan^{2}u}{\left(\tan^{2}u+1\right)^{\frac{5}{2}}}\mathrm{d}\tan u=\int\dfrac{3\tan^{2}u}{\left(\tan^{2}u+1\right)^{\frac{5}{2}}}\sec^{2}u\mathrm{d}u\\
+= & \int\dfrac{3\tan^{2}u}{\left(\sec^{2}u\right)^{\frac{5}{2}}}\sec^{2}u\mathrm{d}u=\int\dfrac{3\tan^{2}u}{\sec^{5}u}\sec^{2}u\mathrm{d}u=\int\dfrac{3\tan^{2}u}{\sec^{3}u}\mathrm{d}u\\
+= & \int\dfrac{3\left(\frac{\sin u}{\cos u}\right)^{2}}{\left(\frac{1}{\cos u}\right)^{3}}\mathrm{d}u=3\int\sin^{2}u\cos u\mathrm{d}u=3\int\sin^{2}u\mathrm{d}\sin u=3\dfrac{\sin^{3}u}{3}+C\\
+= & \sin^{3}u+C=\left(\frac{s}{\sqrt{s^{2}+1}}\right)^{3}+C=\dfrac{s^{3}}{\left(s^{2}+1\right)^{\frac{3}{2}}}+C\overset{s>0}{=}\dfrac{1}{\left(1+s^{-2}\right)^{\frac{3}{2}}}+C
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\dfrac{3s^{2}}{\left(s^{2}+1\right)^{\frac{5}{2}}}\mathrm{d}s=\left[\dfrac{s^{3}}{\left(s^{2}+1\right)^{\frac{3}{2}}}\right]_{0}^{\infty}=\left[\dfrac{1}{\left(1+s^{-2}\right)^{\frac{3}{2}}}\right]_{s=\infty}-\left[\dfrac{s^{3}}{\left(s^{2}+1\right)^{\frac{3}{2}}}\right]_{s=0}=1-0=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \lim\limits _{\epsilon\rightarrow0}\int_{\mathbb{R}^{3}}f\left(\boldsymbol{r}\right)\Delta_{\epsilon}\left(\boldsymbol{r}\right)\mathrm{d}\boldsymbol{r}\\
+= & \lim\limits _{\epsilon\rightarrow0}\left[-\int_{0}^{\infty}4\pi f\left(\epsilon s\boldsymbol{n}_{\mathbb{{\scriptscriptstyle S}}}\right)\dfrac{3s^{2}}{\left(s^{2}+1\right)^{\frac{5}{2}}}\mathrm{d}s\right]\\
+= & -4\pi f\left(0\right)\int_{0}^{\infty}\dfrac{3s^{2}}{\left(s^{2}+1\right)^{\frac{5}{2}}}\mathrm{d}s=-4\pi f\left(0\right)1=-4\pi f\left(\boldsymbol{0}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{\mathbb{R}^{3}}f\left(\boldsymbol{r}\right)\Delta\left(\boldsymbol{r}\right)\mathrm{d}\boldsymbol{r}=\lim\limits _{\epsilon\rightarrow0}\int_{\mathbb{R}^{3}}f\left(\boldsymbol{r}\right)\Delta_{\epsilon}\left(\boldsymbol{r}\right)\mathrm{d}\boldsymbol{r}=-4\pi f\left(\boldsymbol{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta\left(\dfrac{1}{r}\right)=\Delta\left(\boldsymbol{r}\right)=-4\pi\delta\left(\boldsymbol{r}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{align*}
  & \left\{ \left\{ \delta\left(\boldsymbol{k}\right)\middle|\boldsymbol{k}\in\mathbb{R}^{3}\right\} \middle|\begin{cases}
 \delta:\mathbb{R}^{3}\rightarrow\mathbb{H}\\
