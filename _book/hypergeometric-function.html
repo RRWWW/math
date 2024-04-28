@@ -883,8 +883,14 @@ div.csl-indent {
 <li class="chapter" data-level="45.2.4" data-path="hilbert-space.html"><a href="hilbert-space.html#rigorous-definition-of-delta-function"><i class="fa fa-check"></i><b>45.2.4</b> rigorous definition of delta function</a></li>
 </ul></li>
 <li class="chapter" data-level="45.3" data-path="hilbert-space.html"><a href="hilbert-space.html#fourier-expansion-or-fourier-series"><i class="fa fa-check"></i><b>45.3</b> Fourier expansion or Fourier series</a></li>
-<li class="chapter" data-level="45.4" data-path="hilbert-space.html"><a href="hilbert-space.html#hilbert-space-1"><i class="fa fa-check"></i><b>45.4</b> Hilbert space</a></li>
-<li class="chapter" data-level="45.5" data-path="hilbert-space.html"><a href="hilbert-space.html#dirac-bracket"><i class="fa fa-check"></i><b>45.5</b> Dirac bracket</a></li>
+<li class="chapter" data-level="45.4" data-path="hilbert-space.html"><a href="hilbert-space.html#hilbert-space-1"><i class="fa fa-check"></i><b>45.4</b> Hilbert space</a>
+<ul>
+<li class="chapter" data-level="45.4.1" data-path="hilbert-space.html"><a href="hilbert-space.html#inner-product-space"><i class="fa fa-check"></i><b>45.4.1</b> inner product space</a></li>
+</ul></li>
+<li class="chapter" data-level="45.5" data-path="hilbert-space.html"><a href="hilbert-space.html#dirac-bracket"><i class="fa fa-check"></i><b>45.5</b> Dirac bracket</a>
+<ul>
+<li class="chapter" data-level="45.5.1" data-path="hilbert-space.html"><a href="hilbert-space.html#dirac-bracket-symmetry"><i class="fa fa-check"></i><b>45.5.1</b> Dirac bracket symmetry</a></li>
+</ul></li>
 <li class="chapter" data-level="45.6" data-path="hilbert-space.html"><a href="hilbert-space.html#quantum-operator"><i class="fa fa-check"></i><b>45.6</b> quantum operator</a></li>
 <li class="chapter" data-level="45.7" data-path="hilbert-space.html"><a href="hilbert-space.html#gram-schmidt-algorithm-to-find-orthonormal-basis"><i class="fa fa-check"></i><b>45.7</b> Gram-Schmidt algorithm to find orthonormal basis</a></li>
 <li class="chapter" data-level="45.8" data-path="hilbert-space.html"><a href="hilbert-space.html#hermite-polynomials-and-legendre-polynomials"><i class="fa fa-check"></i><b>45.8</b> Hermite polynomials and Legendre polynomials</a></li>
@@ -998,6 +1004,46 @@ div.csl-indent {
 <iframe width="500" height="300" frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1PX4y167RS&amp;autoplay=0">
 </iframe>
 </div>
+<p><span class="math display">\[
+f\left(x\right)=a_{{\scriptscriptstyle 0}}x^{0}+a_{{\scriptscriptstyle 1}}x^{1}+a_{{\scriptscriptstyle 2}}x^{2}+\cdots=\sum\limits _{k=0}^{\infty}a_{{\scriptscriptstyle k}}x^{k}
+\]</span></p>
+<p><span class="math display">\[
+f\left(x\right)=x_{{\scriptscriptstyle 0}}x^{0}+x_{{\scriptscriptstyle 1}}x^{1}+x_{{\scriptscriptstyle 2}}x^{2}+\cdots=\sum\limits _{k=0}^{\infty}x_{{\scriptscriptstyle k}}x^{k}
+\]</span></p>
+<p>Def: <a href="hilbert-space.html#def:distance">45.2</a></p>
+<p><span class="math display">\[
+\left\langle f\middle|g\right\rangle =\int_{a}^{b}\overline{f\left(x\right)}g\left(x\right)\mathrm{d}x\overset{f,g:\mathbb{R}\rightarrow\mathbb{R}}{=}\int_{a}^{b}f\left(x\right)g\left(x\right)\mathrm{d}x
+\]</span></p>
+<p><a href="hilbert-space.html#dirac-bracket">Dirac bracket</a><sup>[<a href="hilbert-space.html#dirac-bracket">45.5</a>]</sup></p>
+<p><span class="math display">\[
+\left\langle x^{2}\middle|x\right\rangle \overset{x^{2},x:\mathbb{R}\rightarrow\mathbb{R}}{=}\int_{a}^{b}x^{2}x\mathrm{d}x=\int_{a}^{b}x^{3}\mathrm{d}x=\left[\dfrac{x^{4}}{4}\right]_{a}^{b}\not\equiv0
+\]</span></p>
+<p><span class="math display">\[
+x^{0}\not\perp x^{1},x^{1}\not\perp x^{2},\cdots
+\]</span></p>
+<p><span class="math display">\[
+\left\langle x_{{\scriptscriptstyle m}}\middle|x^{n}\right\rangle =\int_{a}^{b}x_{{\scriptscriptstyle m}}x^{n}\mathrm{d}x=\delta_{{\scriptscriptstyle mn}}
+\]</span></p>
+<p><span class="math display">\[
+\left\langle 1\middle|x^{n}\right\rangle =\int_{a}^{b}x_{{\scriptscriptstyle 0}}x^{n}\mathrm{d}x=\delta_{{\scriptscriptstyle 0n}}\Rightarrow x_{{\scriptscriptstyle 0}}=\delta\left(x\right)=\delta\left(x-0\right)
+\]</span></p>
+<p><span class="math display">\[
+\left\langle x_{{\scriptscriptstyle m}}\middle|x^{n}\right\rangle =\int_{a}^{b}x_{{\scriptscriptstyle m}}x^{n}\mathrm{d}x=\delta_{{\scriptscriptstyle mn}}\Rightarrow x_{{\scriptscriptstyle m}}=\dfrac{\left(-1\right)^{m}}{m!}\delta^{\left(m\right)}\left(x\right)
+\]</span></p>
+<p><span class="math display">\[
+\left|f\right\rangle =1\left|f\right\rangle =\left(\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|\right)\left|f\right\rangle =\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\left|f\right\rangle = &amp; 1\left|f\right\rangle =\left(\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|\right)\left|f\right\rangle =\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle \\
+= &amp; 1\left|f\right\rangle =\left(\sum\limits _{n}\left|x^{n}\right\rangle \left\langle x^{n}\right|\right)\left|f\right\rangle =\sum\limits _{n}\left|x^{n}\right\rangle \left\langle x^{n}\middle|f\right\rangle =\sum\limits _{n}\left\langle x^{n}\middle|f\right\rangle \left|x^{n}\right\rangle \\
+\left\langle x^{n}\right|\left|f\right\rangle = &amp; \left\langle x^{n}\middle|f\right\rangle =\int_{a}^{b}x_{{\scriptscriptstyle n}}f\left(x\right)\mathrm{d}x=\int_{a}^{b}\dfrac{\left(-1\right)^{n}}{n!}\delta^{\left(n\right)}\left(x\right)f\left(x\right)\mathrm{d}x=\dfrac{f^{\left(n\right)}\left(0\right)}{n!}\\
+\left|f\right\rangle = &amp; \sum\limits _{n}\left\langle x^{n}\middle|f\right\rangle \left|x^{n}\right\rangle =\sum\limits _{n}\dfrac{f^{\left(n\right)}\left(0\right)}{n!}\left|x^{n}\right\rangle \\
+\left|f\right\rangle = &amp; \sum\limits _{n}\dfrac{f^{\left(n\right)}\left(0\right)}{n!}\left|x^{n}\right\rangle \\
+\Downarrow\\
+f\left(x\right)= &amp; \sum\limits _{n}\dfrac{f^{\left(n\right)}\left(0\right)}{n!}x^{n}
+\end{aligned}
+\]</span></p>
 </div>
 <div id="beta-function" class="section level2 hasAnchor" number="43.2">
 <h2><span class="header-section-number">43.2</span> beta function<a href="hypergeometric-function.html#beta-function" class="anchor-section" aria-label="Anchor link to header"></a></h2>

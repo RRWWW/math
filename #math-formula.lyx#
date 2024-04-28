@@ -97,6 +97,304 @@
 \begin_body
 
 \begin_layout Standard
+Dirac bracket
+\begin_inset Formula 
+\[
+\begin{array}{cccccccccc}
+ &  &  & V & =\{ & \boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}_{{\scriptscriptstyle 3}} & \boldsymbol{v} & \cdots\}\\
+ & \boldsymbol{e}^{{\scriptscriptstyle 1}} & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+V^{*}=\{ & \boldsymbol{e}^{{\scriptscriptstyle 2}} & \} & F & \supseteq\{ & 1 & 0 & 0 & v_{{\scriptscriptstyle 1}} & \cdots\}\\
+ & \boldsymbol{e}^{{\scriptscriptstyle 3}} &  & V & =\{ & \boldsymbol{e}_{{\scriptscriptstyle 1}} & \boldsymbol{e}_{{\scriptscriptstyle 2}} & \boldsymbol{e}_{{\scriptscriptstyle 3}} & \boldsymbol{v} & \cdots\}\\
+ & \boldsymbol{v}^{*} & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+ & \vdots &  & F & \supseteq\{ & v^{*{\scriptscriptstyle 1}} & v^{*{\scriptscriptstyle 2}} & v^{*{\scriptscriptstyle 3}} & v^{*{\scriptscriptstyle i}}v_{{\scriptscriptstyle i}} & \cdots\}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\begin{cases}
+d\left(f,g\right)=d\left\langle f\middle|g\right\rangle =\sqrt{\left\langle f-g\middle|f-g\right\rangle }\\
+f,g\in C_{\mathbb{{\scriptscriptstyle C}}}\left(\left[a,b\right]\right) & \text{continuous complex function}\\
+\left(f,g\right)=\left\langle f\middle|g\right\rangle =\int_{a}^{b}\overline{f\left(x\right)}g\left(x\right)\mathrm{d}x=\int_{a}^{b}f^{*}\left(x\right)g\left(x\right)\mathrm{d}x
+\end{cases}\\
+\Downarrow\\
+d\left\langle f\middle|g\right\rangle =\sqrt{\int_{a}^{b}\overline{\left[f-g\right]\left(x\right)}\left[f-g\right]\left(x\right)\mathrm{d}x}=\sqrt{\int_{a}^{b}\left|\left[f-g\right]\left(x\right)\right|^{2}\mathrm{d}x}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+v^{*}\left(f\right)=\eta_{{\scriptscriptstyle f}}\left(\cdot\right)=\left(f,\cdot\right)=\left\langle f\middle|\cdot\right\rangle =\int_{a}^{b}\overline{f\left(x\right)}\left(\cdot\right)\mathrm{d}x=\int_{a}^{b}f^{*}\left(x\right)\left(\cdot\right)\mathrm{d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\eta_{{\scriptscriptstyle f}}\left(g\right)=\left(f,g\right)=\left\langle f\middle|g\right\rangle =\int_{a}^{b}\overline{f\left(x\right)}g\left(x\right)\mathrm{d}x=\int_{a}^{b}f^{*}\left(x\right)g\left(x\right)\mathrm{d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+v^{*}\left(f+g\right)=v^{*}\left(f\right)+v^{*}\left(g\right) & \text{addivity}=\text{superposition}\\
+v^{*}\left(\lambda f\right)=\lambda^{*}v^{*}\left(f\right)=\overline{\lambda}v^{*}\left(f\right) & \text{conjugate homogeneity}=\text{complex conjugate}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+v^{*}\left(f+g\right)=v^{*}\left(f\right)+v^{*}\left(g\right) & \text{addivity}=\text{superposition}\\
+v^{*}\left(\lambda f\right)=\lambda^{*}v^{*}\left(f\right)=\overline{\lambda}v^{*}\left(f\right) & \text{conjugate homogeneity}=\text{complex conjugate}
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+v^{*}\left(f+g\right)=\lambda^{*}v^{*}\left(f\right)+v^{*}\left(g\right)=\overline{\lambda}v^{*}\left(f\right)+v^{*}\left(g\right) & \text{antilinearity}\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{cccccccccc}
+ &  &  & V & =\{ & \hat{f}_{{\scriptscriptstyle 1}} & \hat{f}_{{\scriptscriptstyle 2}} & \hat{f}_{{\scriptscriptstyle 3}} & f & \cdots\}\\
+ & \hat{f}^{{\scriptscriptstyle 1}}=\left(\hat{f}_{{\scriptscriptstyle 1}},\cdot\right) & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+V^{*}=\{ & \hat{f}^{{\scriptscriptstyle 2}}=\left(\hat{f}_{{\scriptscriptstyle 2}},\cdot\right) & \} & F & \supseteq\{ & \left(\hat{f}_{{\scriptscriptstyle 1}},\hat{f}_{{\scriptscriptstyle 1}}\right)=1 & \left(\hat{f}_{{\scriptscriptstyle 1}},\hat{f}_{{\scriptscriptstyle 2}}\right)=0 & \left(\hat{f}_{{\scriptscriptstyle 1}},\hat{f}_{{\scriptscriptstyle 3}}\right)=0 & \left(\hat{f}_{{\scriptscriptstyle 1}},f\right) & \cdots\}\\
+ & \hat{f}^{{\scriptscriptstyle 3}}=\left(\hat{f}_{{\scriptscriptstyle 3}},\cdot\right) &  & V & =\{ & \hat{f}_{{\scriptscriptstyle 1}} & \hat{f}_{{\scriptscriptstyle 2}} & \hat{f}_{{\scriptscriptstyle 3}} & f & \cdots\}\\
+ & f^{*}=\left(f,\cdot\right) & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+ & \vdots &  & F & \supseteq\{ & \left(f,\hat{f}_{{\scriptscriptstyle 1}}\right) & \left(f,\hat{f}_{{\scriptscriptstyle 2}}\right) & \left(f,\hat{f}_{{\scriptscriptstyle 3}}\right) & \left(f,f\right) & \cdots\}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{cccccccccc}
+ &  &  & V & =\{ & \hat{f}_{{\scriptscriptstyle 1}} & \hat{f}_{{\scriptscriptstyle 2}} & \hat{f}_{{\scriptscriptstyle 3}} & f & \cdots\}\\
+ & \hat{f}^{{\scriptscriptstyle 1}}=\left\langle \hat{f}_{{\scriptscriptstyle 1}}\middle|\cdot\right\rangle  & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+V^{*}=\{ & \hat{f}^{{\scriptscriptstyle 2}}=\left\langle \hat{f}_{{\scriptscriptstyle 2}}\middle|\cdot\right\rangle  & \} & F & \supseteq\{ & \left\langle \hat{f}_{{\scriptscriptstyle 1}}\middle|\hat{f}_{{\scriptscriptstyle 1}}\right\rangle =1 & \left\langle \hat{f}_{{\scriptscriptstyle 1}}\middle|\hat{f}_{{\scriptscriptstyle 2}}\right\rangle =0 & \left\langle \hat{f}_{{\scriptscriptstyle 1}}\middle|\hat{f}_{{\scriptscriptstyle 3}}\right\rangle =0 & \left\langle \hat{f}_{{\scriptscriptstyle 1}}\middle|f\right\rangle  & \cdots\}\\
+ & \hat{f}^{{\scriptscriptstyle 3}}=\left\langle \hat{f}_{{\scriptscriptstyle 3}}\middle|\cdot\right\rangle  &  & V & =\{ & \hat{f}_{{\scriptscriptstyle 1}} & \hat{f}_{{\scriptscriptstyle 2}} & \hat{f}_{{\scriptscriptstyle 3}} & f & \cdots\}\\
+ & f^{*}=\left\langle f\middle|\cdot\right\rangle  & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+ & \vdots &  & F & \supseteq\{ & \left\langle f\middle|\hat{f}_{{\scriptscriptstyle 1}}\right\rangle  & \left\langle f\middle|\hat{f}_{{\scriptscriptstyle 2}}\right\rangle  & \left\langle f\middle|\hat{f}_{{\scriptscriptstyle 3}}\right\rangle  & \left\langle f\middle|f\right\rangle  & \cdots\}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+row vector is dual vector of column vector
+\begin_inset Formula 
+\[
+f=\begin{pmatrix}a\\
+b
+\end{pmatrix}\rightarrow v^{*}\left(f\right)=\eta_{{\scriptscriptstyle f}}=\begin{pmatrix}a^{*} & b^{*}\end{pmatrix}=\begin{pmatrix}\overline{a} & \overline{b}\end{pmatrix}=\overline{\begin{pmatrix}a\\
+b
+\end{pmatrix}}^{\intercal}=\overline{\begin{pmatrix}a\\
+b
+\end{pmatrix}^{\intercal}}=\begin{pmatrix}a\\
+b
+\end{pmatrix}^{\dagger}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\eta_{{\scriptscriptstyle f}}\cdot f=\begin{pmatrix}a^{*} & b^{*}\end{pmatrix}\begin{pmatrix}a\\
+b
+\end{pmatrix}=a^{*}a+b^{*}b
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{Hilbert space }V\begin{cases}
+B=\left\{ \hat{f}_{{\scriptscriptstyle i}}\right\} _{i\in I}=\left\{ \cdots,\hat{f}_{{\scriptscriptstyle i}},\cdots\right\} \\
+\begin{cases}
+\sum\limits _{i}c_{{\scriptscriptstyle i}}\hat{f}_{{\scriptscriptstyle i}}=0\Rightarrow c_{{\scriptscriptstyle i}}=0 & \text{bases are linear independent}\\
+f=\sum\limits _{i}c_{{\scriptscriptstyle i}}\hat{f}_{{\scriptscriptstyle i}},c_{{\scriptscriptstyle i}}\in\mathbb{C} & \text{expansion over bases}
+\end{cases}\\
+\begin{cases}
+\left(\hat{f}_{{\scriptscriptstyle i}},\hat{f}_{{\scriptscriptstyle j}}\right)=\left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|\hat{f}_{{\scriptscriptstyle j}}\right\rangle =\delta_{{\scriptscriptstyle ij}}\\
+\text{completeness}:\forall\hat{f}_{{\scriptscriptstyle i}}\in B,\not\exists f\in V-B\left[\left(\hat{f}_{{\scriptscriptstyle i}},f\right)=\left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle =0\right]
+\end{cases}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}}\cdot f\right)\hat{f}_{{\scriptscriptstyle i}}=\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\hat{f}_{{\scriptscriptstyle i}}=\sum\limits _{i}\left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle \hat{f}_{{\scriptscriptstyle i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\hat{f}_{{\scriptscriptstyle i}}=\sum\limits _{i}\hat{f}_{{\scriptscriptstyle i}}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f^{*}=\left(f,\cdot\right)= & \left(\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\hat{f}_{{\scriptscriptstyle i}},\cdot\right)=\left(\sum\limits _{i}\hat{f}_{{\scriptscriptstyle i}}\left(\hat{f}_{{\scriptscriptstyle i}},f\right),\cdot\right)\\
+\overset{\text{addivity}}{=} & \sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)\\
+\overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|=\left\langle f\right|\\
+\Updownarrow\\
+f= & \sum\limits _{i}\hat{f}_{{\scriptscriptstyle i}}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\\
+\overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle =\left|f\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\left|f\right\rangle =\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle =\sum\limits _{i}\left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle \left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \\
+\left\langle f\right|=\sum\limits _{i}\left\langle f\middle|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|\\
+\left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|\hat{f}_{{\scriptscriptstyle j}}\right\rangle =\delta_{{\scriptscriptstyle ij}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{cccccccccc}
+ &  &  & V & =\{ & \left|\hat{f}_{{\scriptscriptstyle 1}}\right\rangle  & \left|\hat{f}_{{\scriptscriptstyle 2}}\right\rangle  & \left|\hat{f}_{{\scriptscriptstyle 3}}\right\rangle  & \left|f\right\rangle  & \cdots\}\\
+ & \left\langle \hat{f}_{{\scriptscriptstyle 1}}\right| & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+V^{*}=\{ & \left\langle \hat{f}_{{\scriptscriptstyle 2}}\right| & \} & F & \supseteq\{ & \left\langle \hat{f}_{{\scriptscriptstyle 1}}\middle|\hat{f}_{{\scriptscriptstyle 1}}\right\rangle =1 & \left\langle \hat{f}_{{\scriptscriptstyle 1}}\middle|\hat{f}_{{\scriptscriptstyle 2}}\right\rangle =0 & \left\langle \hat{f}_{{\scriptscriptstyle 1}}\middle|\hat{f}_{{\scriptscriptstyle 3}}\right\rangle =0 & \left\langle \hat{f}_{{\scriptscriptstyle 1}}\middle|f\right\rangle  & \cdots\}\\
+ & \left\langle \hat{f}_{{\scriptscriptstyle 3}}\right| &  & V & =\{ & \left|\hat{f}_{{\scriptscriptstyle 1}}\right\rangle  & \left|\hat{f}_{{\scriptscriptstyle 2}}\right\rangle  & \left|\hat{f}_{{\scriptscriptstyle 3}}\right\rangle  & \left|f\right\rangle  & \cdots\}\\
+ & \left\langle f\right| & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+ & \vdots &  & F & \supseteq\{ & \left\langle f\middle|\hat{f}_{{\scriptscriptstyle 1}}\right\rangle  & \left\langle f\middle|\hat{f}_{{\scriptscriptstyle 2}}\right\rangle  & \left\langle f\middle|\hat{f}_{{\scriptscriptstyle 3}}\right\rangle  & \left\langle f\middle|f\right\rangle  & \cdots\}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+v^{*}\left(f+g\right)=v^{*}\left(f\right)+v^{*}\left(g\right) & \text{addivity}=\text{superposition}\\
+v^{*}\left(\lambda f\right)=\lambda^{*}v^{*}\left(f\right)=\overline{\lambda}v^{*}\left(f\right) & \text{conjugate homogeneity}=\text{complex conjugate}
+\end{cases}\\
+\Leftrightarrow & \begin{cases}
+v^{*}\left(f+g\right)=\lambda^{*}v^{*}\left(f\right)+v^{*}\left(g\right)=\overline{\lambda}v^{*}\left(f\right)+v^{*}\left(g\right) & \text{antilinearity}\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\left(c\psi,\cdot\right)\rightarrow\left\langle c\psi\right|=c^{*}\left\langle \psi\right| & c\psi\rightarrow\left|c\psi\right\rangle =c\left|\psi\right\rangle \\
+\left\langle \psi\right|\leftrightarrow\left|\psi\right\rangle \\
+\left\langle \psi|\phi\right\rangle =\overline{\left\langle \phi|\psi\right\rangle } & \left\langle \phi|\psi\right\rangle =\overline{\left\langle \psi|\phi\right\rangle }\\
+\left\langle c\psi|\phi\right\rangle =c^{*}\left\langle \psi|\phi\right\rangle  & \left\langle \phi|c\psi\right\rangle =c\left\langle \phi|\psi\right\rangle 
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\right\rangle \left\langle g\right|=?
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\left|f\right\rangle \left\langle g\right|\left|h\right\rangle =\left|f\right\rangle \left\langle g\middle|h\right\rangle =\left\langle g\middle|h\right\rangle \left|f\right\rangle \\
+\Downarrow\\
+\left|h\right\rangle \overset{\left|f\right\rangle \left\langle g\right|}{\rightarrow}\left|f\right\rangle \left\langle g\right|\left|h\right\rangle =\left\langle g\middle|h\right\rangle \left|f\right\rangle 
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\left\langle h\right|\left|f\right\rangle \left\langle g\right|=\left\langle h\middle|f\right\rangle \left\langle g\right|\\
+\Downarrow\\
+\left\langle h\right|\overset{\left|f\right\rangle \left\langle g\right|}{\rightarrow}\left\langle h\right|\left|f\right\rangle \left\langle g\right|=\left\langle h\middle|f\right\rangle \left\langle g\right|
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\right\rangle \left\langle g\right|\text{ is a linear transform or rank-}2\text{ tensor}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left|f\right\rangle = & \sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle \\
+= & \sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|\left|f\right\rangle \\
+= & \left(\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|\right)\left|f\right\rangle =1\left|f\right\rangle =\left|f\right\rangle \\
+1= & \sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|\\
+\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|= & 1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\left|f\right\rangle =1\left|f\right\rangle =\left(\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|\right)\left|f\right\rangle =\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle \\
+\left\langle f\right|=\left\langle f\right|1=\left\langle f\right|\left(\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|\right)=\sum\limits _{i}\left\langle f\middle|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Hilbert space
 \begin_inset Formula 
 \[
@@ -144,20 +442,335 @@ x_{{\scriptscriptstyle m}}-x_{{\scriptscriptstyle n}}
 
 \begin_inset Formula 
 \[
-\text{ is convergence}\begin{cases}
-\left|a_{n}-a\right|<\epsilon\\
-\\
+\begin{array}{c}
+\left\{ x_{{\scriptscriptstyle n}}\right\} _{{\scriptscriptstyle n\in\mathbb{N}}}\text{ is a Cauchy sequence}\\
+\Updownarrow\\
+\forall\epsilon>0,\exists N\in\mathbb{N},\forall m,n\in\mathbb{N}\left(m,n>N\Rightarrow\left|x_{{\scriptscriptstyle m}}-x_{{\scriptscriptstyle n}}\right|<\epsilon\right)
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{convergence}\begin{cases}
+\left|x_{{\scriptscriptstyle n}}-x\right|<\epsilon & \text{convergent sequence}\\
+\left|x_{{\scriptscriptstyle m}}-x_{{\scriptscriptstyle n}}\right|<\epsilon & \text{Cauchy sequence}
 \end{cases}
 \]
 
 \end_inset
 
  
+\begin_inset Formula 
+\[
+\text{convergence}\begin{cases}
+\left|x_{{\scriptscriptstyle n}}-x\right|<\epsilon & \text{convergent sequence}\\
+\Downarrow\text{easy proof} & \Uparrow\text{hard proof, weak condition needs all real number as supporting base}\\
+\left|x_{{\scriptscriptstyle m}}-x_{{\scriptscriptstyle n}}\right|<\epsilon & \text{Cauchy sequence}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{convergence}\begin{cases}
+\left|x_{{\scriptscriptstyle n}}-x\right|<\epsilon & \text{convergent sequence}\\
+\Downarrow & \Uparrow x_{{\scriptscriptstyle n}},x_{{\scriptscriptstyle m}},x\in\mathbb{R}\text{ with real completeness}\\
+\left|x_{{\scriptscriptstyle m}}-x_{{\scriptscriptstyle n}}\right|<\epsilon & \text{Cauchy sequence}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle \cdot\middle|\cdot\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle f\middle|g+h\right\rangle =\left\langle f\middle|g\right\rangle +\left\langle f\middle|h\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle f\middle|\lambda g\right\rangle =\lambda\left\langle f\middle|g\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle f\middle|g\right\rangle =\overline{\left\langle g\middle|f\right\rangle }=\left\langle g\middle|f\right\rangle ^{*}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle f\middle|f\right\rangle \underset{f=0\Leftrightarrow\left\langle f\middle|f\right\rangle =0}{\ge}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle \cdot\middle|\cdot\right\rangle :\begin{cases}
+\left\langle f\middle|g+h\right\rangle =\left\langle f\middle|g\right\rangle +\left\langle f\middle|h\right\rangle \\
+\left\langle f\middle|\lambda g\right\rangle =\lambda\left\langle f\middle|g\right\rangle \\
+\left\langle f\middle|g\right\rangle =\overline{\left\langle g\middle|f\right\rangle }=\left\langle g\middle|f\right\rangle ^{*}\\
+\left\langle f\middle|f\right\rangle \underset{f=0\Leftrightarrow\left\langle f\middle|f\right\rangle =0}{\ge}0
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+d\left(f,g\right)=d\left\langle f\middle|g\right\rangle =\sqrt{\left\langle f-g\middle|f-g\right\rangle }
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\begin{cases}
+d\left(f,g\right)=d\left\langle f\middle|g\right\rangle =\sqrt{\left\langle f-g\middle|f-g\right\rangle }\\
+f,g\in\mathbb{R}\\
+\left\langle f\middle|g\right\rangle =fg=f\cdot g
+\end{cases}\\
+\Downarrow\\
+d\left\langle f\middle|g\right\rangle =\sqrt{\left(f-g\right)^{2}}=\left|f-g\right|
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\begin{cases}
+d\left(f,g\right)=d\left\langle f\middle|g\right\rangle =\sqrt{\left\langle f-g\middle|f-g\right\rangle }\\
+f,g\in F^{n}\\
+\left\langle f\middle|g\right\rangle =\sum\limits _{k=1}^{n}f_{{\scriptscriptstyle k}}g_{{\scriptscriptstyle k}}
+\end{cases}\\
+\Downarrow\\
+d\left\langle f\middle|g\right\rangle =\sqrt{\sum\limits _{k=1}^{n}\left(f_{{\scriptscriptstyle k}}-g_{{\scriptscriptstyle k}}\right)^{2}}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\begin{cases}
+d\left(f,g\right)=d\left\langle f\middle|g\right\rangle =\sqrt{\left\langle f-g\middle|f-g\right\rangle }\\
+f,g\in C_{\mathbb{{\scriptscriptstyle C}}}\left(\left[a,b\right]\right) & \text{continuous complex function}\\
+\left(f,g\right)=\left\langle f\middle|g\right\rangle =\int_{a}^{b}\overline{f\left(x\right)}g\left(x\right)\mathrm{d}x
+\end{cases}\\
+\Downarrow\\
+d\left\langle f\middle|g\right\rangle =\sqrt{\int_{a}^{b}\overline{\left[f-g\right]\left(x\right)}\left[f-g\right]\left(x\right)\mathrm{d}x}=\sqrt{\int_{a}^{b}\left|\left[f-g\right]\left(x\right)\right|^{2}\mathrm{d}x}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\begin{cases}
+d\left(f,g\right)=d\left\langle f\middle|g\right\rangle =\sqrt{\left\langle f-g\middle|f-g\right\rangle }\\
+f,g\in\mathbb{R}\\
+\left\langle f\middle|g\right\rangle =fg=f\cdot g
+\end{cases}\\
+\Downarrow\\
+d\left\langle f\middle|g\right\rangle =\sqrt{\left(f-g\right)^{2}}=\left|f-g\right|
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{convergence}\begin{cases}
+\left|x_{{\scriptscriptstyle n}}-x\right|<\epsilon & \text{convergent sequence}\\
+\left|x_{{\scriptscriptstyle m}}-x_{{\scriptscriptstyle n}}\right|<\epsilon & \text{Cauchy sequence}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{convergence}\begin{cases}
+\left|x_{{\scriptscriptstyle n}}-x\right|<\epsilon & \text{convergent sequence}\\
+\Downarrow & \Uparrow x_{{\scriptscriptstyle n}},x_{{\scriptscriptstyle m}},x\in\mathbb{R}\text{ with real completeness}\\
+\left|x_{{\scriptscriptstyle m}}-x_{{\scriptscriptstyle n}}\right|<\epsilon & \text{Cauchy sequence}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\begin{cases}
+d\left(f,g\right)=d\left\langle f\middle|g\right\rangle =\sqrt{\left\langle f-g\middle|f-g\right\rangle }\\
+f,g\in C_{\mathbb{{\scriptscriptstyle C}}}\left(\left[a,b\right]\right) & \text{continuous complex function}\\
+\left\langle f\middle|g\right\rangle =\int_{a}^{b}\overline{f\left(x\right)}g\left(x\right)\mathrm{d}x
+\end{cases}\\
+\Downarrow\\
+d\left\langle f\middle|g\right\rangle =\sqrt{\int_{a}^{b}\overline{\left[f-g\right]\left(x\right)}\left[f-g\right]\left(x\right)\mathrm{d}x}=\sqrt{\int_{a}^{b}\left|\left[f-g\right]\left(x\right)\right|^{2}\mathrm{d}x}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{function convergence}\begin{cases}
+d\left\langle f_{{\scriptscriptstyle n}}\middle|f\right\rangle <\epsilon & \text{convergent function sequence}\\
+d\left\langle f_{{\scriptscriptstyle m}}\middle|f_{{\scriptscriptstyle n}}\right\rangle <\epsilon & \text{Cauchy function sequence}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{function convergence}\begin{cases}
+d\left\langle f_{{\scriptscriptstyle n}}\middle|f\right\rangle <\epsilon & \text{convergent function sequence}\\
+\Downarrow & \not\Uparrow\text{ not always continuous}\\
+d\left\langle f_{{\scriptscriptstyle m}}\middle|f_{{\scriptscriptstyle n}}\right\rangle <\epsilon & \text{Cauchy function sequence}
+\end{cases}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Taylor vs.
  Fourier
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=a_{{\scriptscriptstyle 0}}x^{0}+a_{{\scriptscriptstyle 1}}x^{1}+a_{{\scriptscriptstyle 2}}x^{2}+\cdots=\sum\limits _{k=0}^{\infty}a_{{\scriptscriptstyle k}}x^{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=x_{{\scriptscriptstyle 0}}x^{0}+x_{{\scriptscriptstyle 1}}x^{1}+x_{{\scriptscriptstyle 2}}x^{2}+\cdots=\sum\limits _{k=0}^{\infty}x_{{\scriptscriptstyle k}}x^{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle f\middle|g\right\rangle =\int_{a}^{b}\overline{f\left(x\right)}g\left(x\right)\mathrm{d}x\overset{f,g:\mathbb{R}\rightarrow\mathbb{R}}{=}\int_{a}^{b}f\left(x\right)g\left(x\right)\mathrm{d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle x^{2}\middle|x\right\rangle \overset{x^{2},x:\mathbb{R}\rightarrow\mathbb{R}}{=}\int_{a}^{b}x^{2}x\mathrm{d}x=\int_{a}^{b}x^{3}\mathrm{d}x=\left[\dfrac{x^{4}}{4}\right]_{a}^{b}\not\equiv0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{0}\not\perp x^{1},x^{1}\not\perp x^{2},\cdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle x_{{\scriptscriptstyle m}}\middle|x^{n}\right\rangle =\int_{a}^{b}x_{{\scriptscriptstyle m}}x^{n}\mathrm{d}x=\delta_{{\scriptscriptstyle mn}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle 1\middle|x^{n}\right\rangle =\int_{a}^{b}x_{{\scriptscriptstyle 0}}x^{n}\mathrm{d}x=\delta_{{\scriptscriptstyle 0n}}\Rightarrow x_{{\scriptscriptstyle 0}}=\delta\left(x\right)=\delta\left(x-0\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\langle x_{{\scriptscriptstyle m}}\middle|x^{n}\right\rangle =\int_{a}^{b}x_{{\scriptscriptstyle m}}x^{n}\mathrm{d}x=\delta_{{\scriptscriptstyle mn}}\Rightarrow x_{{\scriptscriptstyle m}}=\dfrac{\left(-1\right)^{m}}{m!}\delta^{\left(m\right)}\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f\right\rangle =1\left|f\right\rangle =\left(\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|\right)\left|f\right\rangle =\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left|f\right\rangle = & 1\left|f\right\rangle =\left(\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|\right)\left|f\right\rangle =\sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle \\
+= & 1\left|f\right\rangle =\left(\sum\limits _{n}\left|x^{n}\right\rangle \left\langle x^{n}\right|\right)\left|f\right\rangle =\sum\limits _{n}\left|x^{n}\right\rangle \left\langle x^{n}\middle|f\right\rangle =\sum\limits _{n}\left\langle x^{n}\middle|f\right\rangle \left|x^{n}\right\rangle \\
+\left\langle x^{n}\right|\left|f\right\rangle = & \left\langle x^{n}\middle|f\right\rangle =\int_{a}^{b}x_{{\scriptscriptstyle n}}f\left(x\right)\mathrm{d}x=\int_{a}^{b}\dfrac{\left(-1\right)^{n}}{n!}\delta^{\left(n\right)}\left(x\right)f\left(x\right)\mathrm{d}x=\dfrac{f^{\left(n\right)}\left(0\right)}{n!}\\
+\left|f\right\rangle = & \sum\limits _{n}\left\langle x^{n}\middle|f\right\rangle \left|x^{n}\right\rangle =\sum\limits _{n}\dfrac{f^{\left(n\right)}\left(0\right)}{n!}\left|x^{n}\right\rangle \\
+\left|f\right\rangle = & \sum\limits _{n}\dfrac{f^{\left(n\right)}\left(0\right)}{n!}\left|x^{n}\right\rangle \\
+\Downarrow\\
+f\left(x\right)= & \sum\limits _{n}\dfrac{f^{\left(n\right)}\left(0\right)}{n!}x^{n}
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
