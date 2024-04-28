@@ -3081,7 +3081,151 @@ $$
 
 ### double cover
 
-### right-hand vs. left-hand
+https://www.bilibili.com/video/BV1rj41117VW/?t=15m15s
+
+$$
+\begin{array}{cccccccccccccccccc}
+\theta & 0 & \rightarrow & \dfrac{\pi}{2} & \rightarrow & \pi & \rightarrow & \dfrac{3\pi}{2} & \rightarrow & 2\pi & \rightarrow & \dfrac{5\pi}{2} & \rightarrow & 3\pi & \rightarrow & \dfrac{7\pi}{2} & \rightarrow & 4\pi\\
+\dfrac{\theta}{2} & 0 & \rightarrow & \dfrac{\pi}{4} & \rightarrow & \dfrac{\pi}{2} & \rightarrow & \dfrac{3\pi}{4} & \rightarrow & \pi & \rightarrow & \dfrac{5\pi}{4} & \rightarrow & \dfrac{3\pi}{2} & \rightarrow & \dfrac{7\pi}{4} & \rightarrow & 2\pi\\
+\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}} & 1 & \rightarrow & \mathrm{e}^{\boldsymbol{n}\frac{\pi}{4}} & \rightarrow & \boldsymbol{n} & \rightarrow & \mathrm{e}^{\boldsymbol{n}\frac{3\pi}{4}} & \rightarrow & -1 & \rightarrow & \mathrm{e}^{\boldsymbol{n}\frac{5\pi}{4}} & \rightarrow & -\boldsymbol{n} & \rightarrow & \mathrm{e}^{\boldsymbol{n}\frac{7\pi}{4}} & \rightarrow & 1\\
+\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}} & 1 & \rightarrow & \mathrm{e}^{\boldsymbol{n}\frac{-\pi}{4}} & \rightarrow & -\boldsymbol{n} & \rightarrow & \mathrm{e}^{\boldsymbol{n}\frac{-3\pi}{4}} & \rightarrow & -1 & \rightarrow & \mathrm{e}^{\boldsymbol{n}\frac{-5\pi}{4}} & \rightarrow & \boldsymbol{n} & \rightarrow & \mathrm{e}^{\boldsymbol{n}\frac{-7\pi}{4}} & \rightarrow & 1\\
+\boldsymbol{v}^{\prime}=\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\boldsymbol{v}\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}} & \boldsymbol{v} & \rightarrow &  & \rightarrow & -\boldsymbol{n}\boldsymbol{v}\boldsymbol{n} & \rightarrow &  & \rightarrow & \boldsymbol{v} & \rightarrow &  & \rightarrow & -\boldsymbol{n}\boldsymbol{v}\boldsymbol{n} & \rightarrow &  & \rightarrow & \boldsymbol{v}
+\end{array}
+$$
+
+$$
+SU\left(2\right)=\left\{ 1\left(\cdot\right)1,\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\left(\cdot\right)\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}\right\} 
+$$
+
+[3D rotation about an arbitrary axis]^[\@ref(d-rotation-about-an-arbitrary-axis)]^
+
+$$
+\boldsymbol{V}^{\prime}=SR_{{\scriptscriptstyle z}}\left(\gamma\right)S^{-1}\boldsymbol{V}
+$$
+
+$$
+\boldsymbol{v}^{\prime}=SR_{{\scriptscriptstyle z}}\left(\theta\right)S^{-1}\boldsymbol{v}
+$$
+
+$$
+SO\left(3\right)=\left\{ 1,SR_{{\scriptscriptstyle z}}\left(\theta\right)S^{-1}\right\} =\left\{ \begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix},SR_{{\scriptscriptstyle z}}\left(\theta\right)S^{-1}\right\} 
+$$
+
+$$
+SU\left(2\right)\cong2\cdot SO\left(3\right)
+$$
+
+Special unitary group of degree 2 $SU\left(2\right)$ is the boss of special orthonormal group of degree 3 $SO\left(3\right)$, $SU\left(2\right)$ double covers $SO\left(3\right)$.
+
+https://en.wikipedia.org/wiki/Special_unitary_group#The_group_SU(2)
+
+https://en.wikipedia.org/wiki/Unitary_group
+
+"Particle is group representation, spin is square root of 4-vector."?
+
+::: {show-in="html"}
+「粒子是群表示，自旋是四維向量開根號。」？
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+「粒子是群表示，自旋是四維向量開根號。」？
+\end{CJK}
+:::
+
+### right-hand vs. left-hand coordinates
+
+::: {show-in="html"}
+Krasjet_四元數與三維旋轉 p.63~73
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+Krasjet 四元數與三維旋轉 p.63~73
+\end{CJK}
+:::
+
+#### clock
+
+$$
+\boldsymbol{v}^{\prime}=\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\boldsymbol{v}\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}
+$$
+
+$$
+\boldsymbol{v}^{\prime}=\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}\boldsymbol{v}\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}
+$$
+
+right-hand = anticlockwise
+
+$$
+\left[\boldsymbol{v}^{\prime}\right]_{{\scriptscriptstyle R}}=\left[\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\right]_{{\scriptscriptstyle R}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle R}}\left[\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}\right]_{{\scriptscriptstyle R}}
+$$
+
+$$
+\left[\boldsymbol{v}^{\prime}\right]_{{\scriptscriptstyle L}}=\left[\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}\right]_{{\scriptscriptstyle R}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle L}}\left[\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\right]_{{\scriptscriptstyle R}}
+$$
+
+$$
+\left[\boldsymbol{v}^{\prime}\right]_{{\scriptscriptstyle L}}=\left[\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\right]_{{\scriptscriptstyle L}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle L}}\left[\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}\right]_{{\scriptscriptstyle L}}
+$$
+
+#### Rodrigues rotation in right-hand vs. left-hand coordinates
+
+$$
+\boldsymbol{u}=\boldsymbol{n}\times\boldsymbol{v}_{{\scriptscriptstyle \perp}}
+$$
+
+$$
+\left[\boldsymbol{u}\right]_{{\scriptscriptstyle R}}=\left[\boldsymbol{n}\right]_{{\scriptscriptstyle R}}\times_{{\scriptscriptstyle R}}\left[\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right]_{{\scriptscriptstyle R}}=\left[\boldsymbol{n}\right]_{{\scriptscriptstyle L}}\times_{{\scriptscriptstyle L}}\left[\boldsymbol{v}_{{\scriptscriptstyle \perp}}\right]_{{\scriptscriptstyle L}}=\left[\boldsymbol{u}\right]_{{\scriptscriptstyle L}}
+$$
+
+$$
+\begin{pmatrix}0\\
+1\\
+0
+\end{pmatrix}=\begin{pmatrix}0\\
+0\\
+1
+\end{pmatrix}\times_{{\scriptscriptstyle R}}\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}=\begin{pmatrix}0\\
+0\\
+1
+\end{pmatrix}\times_{{\scriptscriptstyle L}}\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}=\begin{pmatrix}0\\
+1\\
+0
+\end{pmatrix}
+$$
+
+$$
+\left[\left[\boldsymbol{u}\right]_{{\scriptscriptstyle L}}\right]_{{\scriptscriptstyle R}}=-\left[\boldsymbol{u}\right]_{{\scriptscriptstyle R}}
+$$
+
+$$
+\left[\begin{pmatrix}0\\
+1\\
+0
+\end{pmatrix}_{{\scriptscriptstyle L}}\right]_{{\scriptscriptstyle R}}=-\begin{pmatrix}0\\
+1\\
+0
+\end{pmatrix}=\begin{pmatrix}0\\
+-1\\
+0
+\end{pmatrix}_{{\scriptscriptstyle R}}
+$$
+
+$$
+\det O=\pm1
+$$
+
+$\det O=-1$ will change handedness of the coordinate.
 
 ### gimbal lock
 
