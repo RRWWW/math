@@ -22008,6 +22008,8 @@ determinant axioms
 \hypertarget{linear-space-of-function}{%
 \section{linear space of function}\label{linear-space-of-function}}
 
+\protect\hyperlink{taylor-vs.-fourier}{Taylor vs.~Fourier}\textsuperscript{{[}@ref(taylor-vs.-fourier){]}}
+
 \[
 f\left(x\right)=a_{{\scriptscriptstyle 0}}x^{0}+a_{{\scriptscriptstyle 1}}x^{1}+a_{{\scriptscriptstyle 2}}x^{2}+\cdots=\sum\limits _{k=0}^{\infty}a_{{\scriptscriptstyle k}}x^{k}
 \]
@@ -22063,6 +22065,144 @@ f\left(x\right)= & \sum\limits _{n}\dfrac{f^{\left(n\right)}\left(0\right)}{n!}x
 \hypertarget{beta-function}{%
 \section{beta function}\label{beta-function}}
 
+\[
+\begin{aligned}
+\dbinom{n}{k}=\mathrm{C}_{k}^{n}= & \dfrac{n!}{\left(n-k\right)!k!}\\
+= & \dfrac{n\left(n-1\right)\cdots\left(n-k+1\right)}{k!},\begin{cases}
+n\in\mathbb{N}\\
+k\in\left(\left\{ 0\right\} \cup\mathbb{N}\right)
+\end{cases}\\
+\dbinom{r}{k}= & \begin{cases}
+\dfrac{r\left(r-1\right)\cdots\left(r-k+1\right)}{k!} & k\ge0,k\in\mathbb{Z}\\
+0 & k<0,k\in\mathbb{Z}
+\end{cases}
+\end{aligned}
+\]
+
+\[
+\sum\limits _{k=0}^{n}\dbinom{r}{k}\left(\cdot\right)
+\]
+
+\[
+\sum\limits _{k=-\infty}^{n}\dbinom{r}{k}\left(\cdot\right)=\left(0+0+\cdots\right)+\sum\limits _{k=0}^{n}\dbinom{r}{k}\left(\cdot\right)
+\]
+
+\[
+\sum\limits _{k=-\infty}^{\infty}\dbinom{r}{k}\left(\cdot\right)
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+n!=\Gamma\left(n+1\right)=\int_{0}^{\infty}x^{\left(n+1\right)-1}\mathrm{e}^{-x}\mathrm{d}x
+\]
+
+\[
+\Gamma\left(z\right)=\int_{0}^{\infty}x^{z-1}\mathrm{e}^{-x}\mathrm{d}x
+\]
+
+\[
+\Gamma\left(z+1\right)=z\Gamma\left(z\right)
+\]
+
+\[
+\Gamma\left(z\right)\Gamma\left(1-z\right)=\dfrac{\pi}{\sin\left(\pi z\right)}
+\]
+
+\[
+\begin{aligned}
+\Gamma\left(z\right)\Gamma\left(1-z\right)= & \dfrac{\pi}{\sin\left(\pi z\right)}\\
+\left[\Gamma\left(z\right)\Gamma\left(1-z\right)\right]_{z=-n}= & \left[\dfrac{\pi}{\sin\left(\pi z\right)}\right]_{z=-n},n\in\mathbb{N}\\
+\Gamma\left(-n\right)n!=\Gamma\left(n+1\right)=\Gamma\left(-n\right)\Gamma\left(1-\left(-n\right)\right)= & \dfrac{\pi}{\sin\left(\pi\left(-n\right)\right)}=\dfrac{\pi}{-\sin\left(n\pi\right)}\\
+\Gamma\left(-n\right)= & \dfrac{-\pi}{n!\sin\left(n\pi\right)}=\dfrac{-\pi}{n!0}\rightarrow-\infty,n\in\mathbb{N}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\dbinom{n}{k}=\mathrm{C}_{k}^{n}= & \dfrac{n!}{\left(n-k\right)!k!}\\
+= & \dfrac{\Gamma\left(n+1\right)}{\Gamma\left(n-k+1\right)\Gamma\left(k+1\right)}
+\end{aligned}
+\]
+
+\[
+\dbinom{n}{k}=\dfrac{\Gamma\left(n+1\right)}{\Gamma\left(n-k+1\right)\Gamma\left(k+1\right)}
+\]
+
+\[
+\dbinom{n}{k}=\dfrac{\Gamma\left(n+1\right)}{\Gamma\left(n-k+1\right)\Gamma\left(k+1\right)}\overset{k\le0}{=}\begin{cases}
+\dfrac{\Gamma\left(n+1\right)}{\Gamma\left(n+1\right)\Gamma\left(1\right)}=\dfrac{\Gamma\left(n+1\right)}{\Gamma\left(n+1\right)1}=1 & k=0\\
+\dfrac{\Gamma\left(n+1\right)}{\Gamma\left(n-k+1\right)\left(-\infty\right)}=0 & k\le-1,k\in\mathbb{Z}
+\end{cases}
+\]
+
+beta function = \(\beta\) function
+
+\begin{definition}
+\protect\hypertarget{def:beta-function}{}\label{def:beta-function}beta function = \(\beta\) function
+\end{definition}
+
+\[
+B\left(p,q\right)=\int_{0}^{1}x^{p-1}\left(1-x\right)^{q-1}\mathrm{d}x=\dfrac{\Gamma\left(p\right)\Gamma\left(q\right)}{\Gamma\left(p+q\right)}
+\]
+
+\[
+\begin{aligned}
+\dbinom{n}{k}= & \dfrac{\Gamma\left(n+1\right)}{\Gamma\left(n-k+1\right)\Gamma\left(k+1\right)}\\
+\left[\dbinom{n}{k}\right]_{{\scriptscriptstyle \begin{cases}
+n=a+b\\
+k=a
+\end{cases}}}= & \left[\dfrac{\Gamma\left(n+1\right)}{\Gamma\left(n-k+1\right)\Gamma\left(k+1\right)}\right]_{{\scriptscriptstyle \begin{cases}
+n=a+b\\
+k=a
+\end{cases}}}\\
+\dbinom{a+b}{a}= & \dfrac{\Gamma\left(a+b+1\right)}{\Gamma\left(a+b-a+1\right)\Gamma\left(a+1\right)}\\
+= & \dfrac{\Gamma\left(a+b+1\right)}{\Gamma\left(b+1\right)\Gamma\left(a+1\right)}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+B\left(p,q\right)= & \dfrac{\Gamma\left(p\right)\Gamma\left(q\right)}{\Gamma\left(p+q\right)}\\
+\left[B\left(p,q\right)\right]_{{\scriptscriptstyle \begin{cases}
+p=a+1\\
+q=b+1
+\end{cases}}}= & \left[\dfrac{\Gamma\left(p\right)\Gamma\left(q\right)}{\Gamma\left(p+q\right)}\right]_{{\scriptscriptstyle \begin{cases}
+p=a+1\\
+q=b+1
+\end{cases}}}\\
+B\left(a+1,b+1\right)= & \dfrac{\Gamma\left(a+1\right)\Gamma\left(b+1\right)}{\Gamma\left(a+1+b+1\right)}\\
+= & \dfrac{\Gamma\left(a+1\right)\Gamma\left(b+1\right)}{\Gamma\left(\left[a+b+1\right]+1\right)}=\dfrac{\Gamma\left(a+1\right)\Gamma\left(b+1\right)}{\left[a+b+1\right]\Gamma\left(a+b+1\right)}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\dbinom{a+b}{a}= & \dfrac{\Gamma\left(a+b+1\right)}{\Gamma\left(b+1\right)\Gamma\left(a+1\right)}=\dfrac{1}{\dfrac{\Gamma\left(b+1\right)\Gamma\left(a+1\right)}{\Gamma\left(a+b+1\right)}}\\
+= & \dfrac{1}{\left[a+b+1\right]\dfrac{\Gamma\left(b+1\right)\Gamma\left(a+1\right)}{\left[a+b+1\right]\Gamma\left(a+b+1\right)}}\\
+= & \dfrac{1}{\left[a+b+1\right]B\left(a+1,b+1\right)}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\url{https://en.wikipedia.org/wiki/Beta_function}
+
+\url{https://en.wikipedia.org/wiki/Beta_function\#Other_identities_and_formulas}
+
+\url{https://en.wikipedia.org/wiki/Beta_function\#Multivariate_beta_function}
+
+\url{https://www.bilibili.com/video/BV1pa4y1P7Da/?t=4m}
+
+\hypertarget{wallis-product-formula}{%
+\subsection{Wallis product formula}\label{wallis-product-formula}}
+
+\url{https://en.wikipedia.org/wiki/Wallis_product}
+
+\url{https://www.bilibili.com/video/BV1pa4y1P7Da/?t=4m10s}
+
+\url{https://www.math.sinica.edu.tw/mathmedia/journals/4739?keywords\%5B\%5D=Paul+Dirac}
+
 \hypertarget{gamma-function}{%
 \section{gamma function}\label{gamma-function}}
 
@@ -22075,11 +22215,142 @@ f\left(x\right)= & \sum\limits _{n}\dfrac{f^{\left(n\right)}\left(0\right)}{n!}x
 \hypertarget{feynman-method}{%
 \chapter{Feynman method}\label{feynman-method}}
 
-\hypertarget{feynman-method-of-derivative}{%
-\section{Feynman method of derivative}\label{feynman-method-of-derivative}}
+\hypertarget{feynman-method-of-differentiation-derivative}{%
+\section{Feynman method of differentiation / derivative}\label{feynman-method-of-differentiation-derivative}}
 
-\hypertarget{feynman-method-of-integral}{%
-\section{Feynman method of integral}\label{feynman-method-of-integral}}
+\hypertarget{principle}{%
+\subsection{principle}\label{principle}}
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-1}{}\label{thm:unnamed-chunk-1}Feynman method of differentiation / derivative
+\end{theorem}
+
+\[
+\begin{array}{c}
+f\left(t\right)=k\left[u\left(t\right)\right]^{a}\left[v\left(t\right)\right]^{b}\left[w\left(t\right)\right]^{c}\cdots\\
+\Downarrow\\
+f^{\prime}\left(t\right)=f\left(t\right)\left[a\dfrac{u^{\prime}\left(t\right)}{u\left(t\right)}+b\dfrac{v^{\prime}\left(t\right)}{v\left(t\right)}+c\dfrac{w^{\prime}\left(t\right)}{w\left(t\right)}+\cdots\right]
+\end{array}
+\]
+
+Proof:
+
+\[
+f\left(t\right)=k\left[u\left(t\right)\right]^{a}\left[v\left(t\right)\right]^{b}\left[w\left(t\right)\right]^{c}\cdots
+\]
+
+\[
+f=ku^{a}v^{b}w^{c}\cdots=k\cdot u^{a}\cdot v^{b}\cdot w^{c}\cdot\cdots
+\]
+
+\[
+\begin{aligned}
+f= & ku^{a}v^{b}w^{c}\cdots=k\cdot u^{a}\cdot v^{b}\cdot w^{c}\cdot\cdots\\
+\ln f= & \ln\left(ku^{a}v^{b}w^{c}\cdots\right)=\ln k+\ln u^{a}+\ln v^{b}+\ln w^{c}+\cdots\\
+= & \ln k+a\ln u+b\ln v+c\ln w+\cdots\\
+\dfrac{\mathrm{d}}{\mathrm{d}t}\ln f= & \dfrac{\mathrm{d}}{\mathrm{d}t}\left(\ln k+a\ln u+b\ln v+c\ln w+\cdots\right)\\
+\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}f}{f}= & 0+\dfrac{\mathrm{d}}{\mathrm{d}t}\left(a\ln u\right)+\dfrac{\mathrm{d}}{\mathrm{d}t}\left(b\ln v\right)+\dfrac{\mathrm{d}}{\mathrm{d}t}\left(c\ln w\right)+\cdots\\
+= & a\dfrac{\mathrm{d}}{\mathrm{d}t}\ln u+b\dfrac{\mathrm{d}}{\mathrm{d}t}\ln v+c\dfrac{\mathrm{d}}{\mathrm{d}t}\ln w+\cdots\\
+= & a\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}u}{u}+b\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}v}{v}+c\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}w}{w}+\cdots\\
+\dfrac{f^{\prime}}{f}= & a\dfrac{u^{\prime}}{u}+b\dfrac{v^{\prime}}{v}+c\dfrac{w^{\prime}}{w}+\cdots\\
+f^{\prime}= & f\left(a\dfrac{u^{\prime}}{u}+b\dfrac{v^{\prime}}{v}+c\dfrac{w^{\prime}}{w}+\cdots\right)\\
+f^{\prime}\left(t\right)= & f\left(t\right)\left[a\dfrac{u^{\prime}\left(t\right)}{u\left(t\right)}+b\dfrac{v^{\prime}\left(t\right)}{v\left(t\right)}+c\dfrac{w^{\prime}\left(t\right)}{w\left(t\right)}+\cdots\right]
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\hypertarget{examples}{%
+\subsection{examples}\label{examples}}
+
+\(f\left(x\right)=x^{x}\)
+
+\[
+\left(x^{x}\right)^{\prime}=x^{x}+x^{x}\ln x
+\]
+
+\[
+\begin{aligned}
+f\left(x\right)= & x^{x}\\
+\ln f\left(x\right)= & x\ln x\\
+\dfrac{\mathrm{d}}{\mathrm{d}x}\ln f\left(x\right)= & \dfrac{\mathrm{d}}{\mathrm{d}x}\left[x\ln x\right]\\
+\dfrac{f^{\prime}\left(x\right)}{f\left(x\right)}= & \left[x\ln x\right]^{\prime}\\
+f^{\prime}\left(x\right)= & f\left(x\right)\left[x\ln x\right]^{\prime}=x^{x}\left[\left(x\right)^{\prime}\ln x+x\left(\ln x\right)^{\prime}\right]\\
+= & x^{x}\left[1\ln x+x\dfrac{1}{x}\right]=x^{x}\left[\ln x+1\right]=x^{x}\left[1+\ln x\right]\\
+= & x^{x}+x^{x}\ln x
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\(\dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}+\dfrac{\sqrt{1+2t}}{t+\sqrt{1+t^{2}}}\)
+
+\[
+\dfrac{\mathrm{d}}{\mathrm{d}t}\left[\dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}+\dfrac{\sqrt{1+2t}}{t+\sqrt{1+t^{2}}}\right]
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\dfrac{\mathrm{d}}{\mathrm{d}t}\left[\dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\right]
+\]
+
+\[
+\begin{aligned}
+ & \dfrac{\mathrm{d}}{\mathrm{d}t}\left[\dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\right]\\
+= & \dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\cdot[\\
+= & \dfrac{6\left[1+2t^{2}\right]\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\cdot[1\cdot\dfrac{1}{1+2t^{2}}\cdot4t,\left[1+2t^{2}\right]\rightarrow\begin{cases}
+\text{exponential}: & 1\\
+\text{linear to denominator}: & \dfrac{1}{1+2t^{2}}\\
+\text{differentiation} & 4t
+\end{cases}\\
+= & \dfrac{6\left(1+2t^{2}\right)\left[\left(t^{3}-t\right)^{2}\right]}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\cdot[\dfrac{4t}{1+2t^{2}}+2\cdot\dfrac{1}{t^{3}-t}\cdot\left(3t^{2}-1\right)\\
+ & ,\left[\left(t^{3}-t\right)^{2}\right]\rightarrow\begin{cases}
+\text{exponential}: & 2\\
+\text{linear to denominator}: & \dfrac{1}{t^{3}-t}\\
+\text{differentiation} & 3t^{2}-1
+\end{cases}\\
+= & \dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\left[\sqrt{t+5t^{2}}\right]\left(4t\right)^{\frac{3}{2}}}\cdot[\dfrac{4t}{1+2t^{2}}+\dfrac{6t^{2}-2}{t^{3}-t}+\dfrac{-1}{2}\cdot\dfrac{1}{t+5t^{2}}\cdot\left(1+10t\right)\\
+ & ,\left[\sqrt{t+5t^{2}}\right]\rightarrow\begin{cases}
+\text{exponential}: & \dfrac{-1}{2}\\
+\text{linear to denominator}: & \dfrac{1}{t+5t^{2}}\\
+\text{differentiation} & 1+10t
+\end{cases}\\
+= & \dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left[\left(4t\right)^{\frac{3}{2}}\right]}\cdot\left[\dfrac{4t}{1+2t^{2}}+\dfrac{6t^{2}-2}{t^{3}-t}-\dfrac{1+10t}{2t+10t^{2}}+\dfrac{-3}{2}\cdot\dfrac{1}{4t}\cdot4\right]\\
+ & ,\left[\left(4t\right)^{\frac{3}{2}}\right]\rightarrow\begin{cases}
+\text{exponential}: & \dfrac{-3}{2}\\
+\text{linear to denominator}: & \dfrac{1}{4t}\\
+\text{differentiation} & 4
+\end{cases}\\
+= & \dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\left[\dfrac{4t}{1+2t^{2}}+\dfrac{6t^{2}-2}{t^{3}-t}-\dfrac{1+10t}{2t+10t^{2}}-\dfrac{3}{2t}\right]
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\dfrac{\mathrm{d}}{\mathrm{d}t}\left[\dfrac{\sqrt{1+2t}}{t+\sqrt{1+t^{2}}}\right]
+\]
+
+\[
+\begin{aligned}
+ & \dfrac{\mathrm{d}}{\mathrm{d}t}\left[\dfrac{\sqrt{1+2t}}{t+\sqrt{1+t^{2}}}\right]\\
+= & \dfrac{\sqrt{1+2t}}{t+\left[\sqrt{1+t^{2}}\right]}\left[\dfrac{1}{2}\dfrac{2}{1+2t}+\left(-1\right)\dfrac{1+\left[\frac{1}{2}\frac{2t}{\sqrt{1+t^{2}}}\right]}{t+\sqrt{1+t^{2}}}\right]
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\hypertarget{feynman-method-of-integration-integral}{%
+\section{Feynman method of integration / integral}\label{feynman-method-of-integration-integral}}
 
 \hypertarget{path-integral}{%
 \section{path integral}\label{path-integral}}
@@ -23579,7 +23850,8 @@ Fig: \ref{fig:vector-construction}
 
 \url{https://www.bilibili.com/video/BV1m24y1A74K/?=3m2s}
 
-Taylor vs.~Fourier
+\hypertarget{taylor-vs.-fourier}{%
+\subsection{Taylor vs.~Fourier}\label{taylor-vs.-fourier}}
 
 \[
 f\left(x\right)=x_{{\scriptscriptstyle 0}}x^{0}+x_{{\scriptscriptstyle 1}}x^{1}+x_{{\scriptscriptstyle 2}}x^{2}+\cdots=\sum\limits _{k=0}^{\infty}x_{{\scriptscriptstyle k}}x^{k},x_{{\scriptscriptstyle k}}=\dfrac{f^{\left(k\right)}\left(0\right)}{k!}
@@ -25921,7 +26193,7 @@ Y_{t}=\mathcal{E}_{t}+\sum_{i=1}^{q}\alpha_{i}\mathcal{E}_{t-i}+\sum_{i=1}^{p}\b
 \hypertarget{references}{%
 \chapter*{references}\label{references}}
 \addcontentsline{toc}{chapter}{references}
-\begin{CJK}{UTF8}{bsmi}
+
 \hypertarget{refs}{}
 \begin{CSLReferences}{0}{0}
 \leavevmode\vadjust pre{\hypertarget{ref-R-bookdown}{}}%
@@ -25985,6 +26257,5 @@ Y_{t}=\mathcal{E}_{t}+\sum_{i=1}^{q}\alpha_{i}\mathcal{E}_{t-i}+\sum_{i=1}^{p}\b
 \CSLRightInline{ccjou. \href{https://ccjou.wordpress.com/2012/11/26/jacobian-\%e7\%9f\%a9\%e9\%99\%a3\%e8\%88\%87\%e8\%a1\%8c\%e5\%88\%97\%e5\%bc\%8f/}{Jacobian 矩陣與行列式}. (2012).}
 
 \end{CSLReferences}
-\end{CJK}
 
 \end{document}

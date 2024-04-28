@@ -1659,7 +1659,7 @@ https://www.bilibili.com/video/BV1PX4y167RS
 
 https://www.bilibili.com/video/BV1m24y1A74K/?=3m2s
 
-Taylor vs. Fourier
+### Taylor vs. Fourier
 
 $$
 f\left(x\right)=x_{{\scriptscriptstyle 0}}x^{0}+x_{{\scriptscriptstyle 1}}x^{1}+x_{{\scriptscriptstyle 2}}x^{2}+\cdots=\sum\limits _{k=0}^{\infty}x_{{\scriptscriptstyle k}}x^{k},x_{{\scriptscriptstyle k}}=\dfrac{f^{\left(k\right)}\left(0\right)}{k!}

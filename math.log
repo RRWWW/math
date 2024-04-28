@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.3.10)  28 APR 2024 19:07
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.3.10)  28 APR 2024 22:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1201,6 +1201,9 @@ LaTeX Warning: Label `fig:unnamed-chunk-3' multiply defined.
 
 
 LaTeX Warning: Label `thm:unnamed-chunk-4' multiply defined.
+
+
+LaTeX Warning: Label `thm:unnamed-chunk-1' multiply defined.
 
 
 LaTeX Warning: Label `thm:unnamed-chunk-6' multiply defined.
@@ -6370,13 +6373,14 @@ Chapter 42.
 
 ]
 Chapter 43.
-[383] [384]
+[383] [384] [385] [386]
 Chapter 44.
-[385
 
-] [386
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+[387
+
+] [388] [389] [390]
 Chapter 45.
 (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -6432,40 +6436,42 @@ ex-text;!
 Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-LaTeX Warning: Reference `thm:MVTd1' on page 387 undefined on input line 22111.
+LaTeX Warning: Reference `thm:MVTd1' on page 391 undefined on input line 22382.
 
 
 
-LaTeX Warning: Reference `thm:MVTi1' on page 387 undefined on input line 22129.
+LaTeX Warning: Reference `thm:MVTi1' on page 391 undefined on input line 22400.
 
 
 
-LaTeX Warning: Reference `thm:Rolle' on page 387 undefined on input line 22148.
+LaTeX Warning: Reference `thm:Rolle' on page 391 undefined on input line 22419.
 
 
 
-LaTeX Warning: Reference `thm:MVTd1' on page 387 undefined on input line 22148.
+LaTeX Warning: Reference `thm:MVTd1' on page 391 undefined on input line 22419.
 
 
 
-LaTeX Warning: Reference `thm:MVTd1' on page 387 undefined on input line 22151.
+LaTeX Warning: Reference `thm:MVTd1' on page 391 undefined on input line 22422.
 
 
 
-LaTeX Warning: Reference `thm:Rolle' on page 387 undefined on input line 22151.
+LaTeX Warning: Reference `thm:Rolle' on page 391 undefined on input line 22422.
 
 
-[387]
+[391
 
-LaTeX Warning: Reference `thm:MVTd1' on page 388 undefined on input line 22164.
+]
 
-
-
-LaTeX Warning: Reference `thm:Rolle' on page 388 undefined on input line 22164.
+LaTeX Warning: Reference `thm:MVTd1' on page 392 undefined on input line 22435.
 
 
 
-LaTeX Warning: Reference `thm:MVTi1' on page 388 undefined on input line 22168.
+LaTeX Warning: Reference `thm:Rolle' on page 392 undefined on input line 22435.
+
+
+
+LaTeX Warning: Reference `thm:MVTi1' on page 392 undefined on input line 22439.
 
 
 (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
@@ -6496,30 +6502,30 @@ ex-text;!
 Missing character: There is no 集 (U+96C6) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-LaTeX Warning: Reference `thm:Rolle' on page 388 undefined on input line 22191.
+LaTeX Warning: Reference `thm:Rolle' on page 392 undefined on input line 22462.
 
 
 
-LaTeX Warning: Reference `thm:MVTd1' on page 388 undefined on input line 22191.
+LaTeX Warning: Reference `thm:MVTd1' on page 392 undefined on input line 22462.
 
 
 
-LaTeX Warning: Reference `thm:MVTd1' on page 388 undefined on input line 22204.
+LaTeX Warning: Reference `thm:MVTd1' on page 392 undefined on input line 22475.
 
 
 
-LaTeX Warning: Reference `thm:Rolle' on page 388 undefined on input line 22204.
+LaTeX Warning: Reference `thm:Rolle' on page 392 undefined on input line 22475.
 
 
 
-Overfull \hbox (64.82404pt too wide) detected at line 22222
+Overfull \hbox (64.82404pt too wide) detected at line 22493
 [][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[388] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[392] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -6545,42 +6551,42 @@ ex-text;!
 Missing character: There is no 式 (U+5F0F) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-LaTeX Warning: Reference `thm:MVTd1' on page 389 undefined on input line 22245.
+LaTeX Warning: Reference `thm:MVTd1' on page 393 undefined on input line 22516.
 
 
 
-LaTeX Warning: Reference `thm:Rolle' on page 389 undefined on input line 22245.
+LaTeX Warning: Reference `thm:Rolle' on page 393 undefined on input line 22516.
 
 
 
-LaTeX Warning: Reference `thm:MVTi1' on page 389 undefined on input line 22249.
+LaTeX Warning: Reference `thm:MVTi1' on page 393 undefined on input line 22520.
 
 
 
-LaTeX Warning: Reference `thm:MVTd1' on page 389 undefined on input line 22256.
+LaTeX Warning: Reference `thm:MVTd1' on page 393 undefined on input line 22527.
 
 
 
-LaTeX Warning: Reference `thm:Rolle' on page 389 undefined on input line 22256.
+LaTeX Warning: Reference `thm:Rolle' on page 393 undefined on input line 22527.
 
 
 
-LaTeX Warning: Reference `thm:MVTi1' on page 389 undefined on input line 22260.
+LaTeX Warning: Reference `thm:MVTi1' on page 393 undefined on input line 22531.
 
 
 
-LaTeX Warning: Reference `thm:MVTd1' on page 389 undefined on input line 22267.
+LaTeX Warning: Reference `thm:MVTd1' on page 393 undefined on input line 22538.
 
 
 
-LaTeX Warning: Reference `thm:Rolle' on page 389 undefined on input line 22267.
+LaTeX Warning: Reference `thm:Rolle' on page 393 undefined on input line 22538.
 
 
 
-LaTeX Warning: Reference `thm:MVTi1' on page 389 undefined on input line 22271.
+LaTeX Warning: Reference `thm:MVTi1' on page 393 undefined on input line 22542.
 
 
-[389] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[393] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -6621,21 +6627,21 @@ Missing character: There is no 定 (U+5B9A) in font [lmroman10-regular]:mapping=
 ex-text;!
 Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=t
 ex-text;!
-[390]
+[394]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[391] [392]
-Overfull \hbox (18.28084pt too wide) detected at line 22393
+[395] [396]
+Overfull \hbox (18.28084pt too wide) detected at line 22664
 [][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[393]
+[397]
 Underfull \vbox (badness 4013) has occurred while \output is active []
 
-[394] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[398] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -6685,7 +6691,7 @@ ex-text;!
 Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-LaTeX Warning: Reference `thm:EVT' on page 395 undefined on input line 22410.
+LaTeX Warning: Reference `thm:EVT' on page 399 undefined on input line 22681.
 
 Missing character: There is no 連 (U+9023) in font [lmroman10-regular]:mapping=t
 ex-text;!
@@ -6714,26 +6720,26 @@ ex-text;!
 Missing character: There is no 理 (U+7406) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-LaTeX Warning: Reference `thm:IVT' on page 395 undefined on input line 22411.
+LaTeX Warning: Reference `thm:IVT' on page 399 undefined on input line 22682.
 
 
-LaTeX Warning: Reference `thm:EVT' on page 395 undefined on input line 22418.
+LaTeX Warning: Reference `thm:EVT' on page 399 undefined on input line 22689.
 
 
-LaTeX Warning: Reference `thm:IVT' on page 395 undefined on input line 22423.
+LaTeX Warning: Reference `thm:IVT' on page 399 undefined on input line 22694.
 
-[395]
+[399]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[396]
+[400]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[397] [398]
-Overfull \hbox (2.12213pt too wide) detected at line 22566
+[401] [402]
+Overfull \hbox (2.12213pt too wide) detected at line 22837
 [][]
  []
 
-[399] [400] [401] [402]
+[403] [404] [405] [406]
 File: 202404151246-Hilbert-space_files/figure-latex/unnamed-chunk-8-1.pdf Graph
 ic file (type pdf)
 <use 202404151246-Hilbert-space_files/figure-latex/unnamed-chunk-8-1.pdf>
@@ -6743,44 +6749,44 @@ ic file (type pdf)
 
 Underfull \vbox (badness 1270) has occurred while \output is active []
 
-[403]
+[407]
 File: 202404151246-Hilbert-space_files/figure-latex/unnamed-chunk-10-1.pdf Grap
 hic file (type pdf)
 <use 202404151246-Hilbert-space_files/figure-latex/unnamed-chunk-10-1.pdf>
 
-Overfull \hbox (28.32191pt too wide) detected at line 22886
+Overfull \hbox (28.32191pt too wide) detected at line 23157
 [] [] [] [] [] [] [] [] [][] []
  []
 
 
-LaTeX Warning: Reference `thm:IVT' on page 404 undefined on input line 22917.
+LaTeX Warning: Reference `thm:IVT' on page 408 undefined on input line 23188.
 
 
 Underfull \vbox (badness 2495) has occurred while \output is active []
 
-[404]
+[408]
 File: 202404151246-Hilbert-space_files/figure-latex/unnamed-chunk-11-1.pdf Grap
 hic file (type pdf)
 <use 202404151246-Hilbert-space_files/figure-latex/unnamed-chunk-11-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[405] [406]
-Overfull \hbox (56.74403pt too wide) detected at line 23064
+[409] [410]
+Overfull \hbox (56.74403pt too wide) detected at line 23335
 [][]
  []
 
-[407]
+[411]
 File: 202404151246-Hilbert-space_files/figure-latex/unnamed-chunk-12-1.pdf Grap
 hic file (type pdf)
 <use 202404151246-Hilbert-space_files/figure-latex/unnamed-chunk-12-1.pdf>
-[408] [409]
+[412] [413]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[410] [411] [412] [413] [414] [415]
+[414] [415] [416] [417] [418] [419]
 Underfull \vbox (badness 2521) has occurred while \output is active []
 
-[416] [417] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[420] [421] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -6835,15 +6841,15 @@ Missing character: There is no 前 (U+524D) in font [lmroman10-regular]:mapping=
 ex-text;!
 Missing character: There is no 行 (U+884C) in font [lmroman10-regular]:mapping=t
 ex-text;!
-[418] [419]
+[422] [423]
 File: 202404151246-Hilbert-space_files/figure-latex/inner-construction-1.pdf Gr
 aphic file (type pdf)
 <use 202404151246-Hilbert-space_files/figure-latex/inner-construction-1.pdf>
-[420] [421]
+[424] [425]
 File: 202404151246-Hilbert-space_files/figure-latex/Hilbert-construction-1.pdf 
 Graphic file (type pdf)
 <use 202404151246-Hilbert-space_files/figure-latex/Hilbert-construction-1.pdf>
-[422] [423] [424] [425] [426]
+[426] [427] [428] [429] [430]
 Chapter 46.
 (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -6862,44 +6868,44 @@ Missing character: There is no 反 (U+53CD) in font [lmroman10-regular]:mapping=
 ex-text;!
 Missing character: There is no 演 (U+6F14) in font [lmroman10-regular]:mapping=t
 ex-text;!
-[427
+[431
 
-] [428
+] [432
 
 ]
 Chapter 47.
-[429] [430
+[433] [434
 
 ]
 Chapter 48.
-[431] [432]
+[435] [436]
 Chapter 49.
-[433
+[437
 
-] [434
+] [438
 
 ]
 Chapter 50.
-[435]
+[439]
 Underfull \vbox (badness 3557) has occurred while \output is active []
 
-[436] [437] [438
+[440] [441] [442
 
 ]
 Chapter 51.
-[439] [440
-
-]
-Chapter 52.
-[441] [442
-
-]
-Chapter 53.
 [443] [444
 
 ]
+Chapter 52.
+[445] [446
+
+]
+Chapter 53.
+[447] [448
+
+]
 Chapter 54.
-[445] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[449] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -6925,39 +6931,15 @@ Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=
 ex-text;!
 Missing character: There is no 局 (U+5C40) in font [lmroman10-regular]:mapping=t
 ex-text;!
-[446]
+[450]
 Chapter 55.
-[447
-
-] [448] [449] [450]
-Chapter 56.
 [451
 
-] [452]
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
-ex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
-ex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
-ex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
-ex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
-ex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
-ex-text;!
-[453]
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
-ex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
-ex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
-ex-text;!
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
-ex-text;!
-[454] [455] [456]
-Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
-ex-text;!
+] [452] [453] [454]
+Chapter 56.
+[455
+
+] [456]
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
 ex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
@@ -6979,6 +6961,7 @@ Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping
 ex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
 ex-text;!
+[458] [459] [460]
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
 ex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
@@ -6987,19 +6970,42 @@ Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping
 ex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
 ex-text;!
-[458] [459] [460
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
+ex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
+ex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
+ex-text;!
+[461]
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
+ex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
+ex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
+ex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
+ex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
+ex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
+ex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
+ex-text;!
+Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
+ex-text;!
+[462] [463] [464
 
 ]
 Chapter 57.
-[461] [462
+[465] [466
 
 ]
 Chapter 58.
-[463] [464
+[467] [468
 
 ]
 Chapter 59.
-[465] [466
+[469] [470
 
 ]
 Chapter 60.
@@ -7032,7 +7038,7 @@ Missing character: There is no 老 (U+8001) in font [lmroman10-regular]:mapping=
 ex-text;!
 Missing character: There is no 師 (U+5E2B) in font [lmroman10-regular]:mapping=t
 ex-text;!
-[467] [468] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+[471] [472] (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -7048,16 +7054,16 @@ ex-text;!
 
 Overfull \hbox (46.30553pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 60.1.  AR(1) = $[][]$-ORDER AUTOREGRESSIVE MODEL = FIRST-ORDER 
-AUTOREGRESSIVE MODEL \TU/lmr/m/n/10 469
+AUTOREGRESSIVE MODEL \TU/lmr/m/n/10 473
  []
 
-[469]
+[473]
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
 ex-text;!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[470]
+[474]
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
 ex-text;!
 Missing character: There is no 𝛴 (U+1D6F4) in font [lmroman10-italic]:mapping=t
@@ -7067,33 +7073,33 @@ ex-text;!
 
 Overfull \hbox (60.97153pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 60.2.  AR(2) = $[][]$-ORDER AUTOREGRESSIVE MODEL = SECOND-ORDER
- AUTOREGRESSIVE MODEL \TU/lmr/m/n/10 471
+ AUTOREGRESSIVE MODEL \TU/lmr/m/n/10 475
  []
 
-[471]
-Underfull \hbox (badness 10000) in paragraph at lines 25902--25902
+[475]
+Underfull \hbox (badness 10000) in paragraph at lines 26174--26174
 []\TU/lmr/bx/n/14.4 ARMA($[]$,$[]$) = $[][][] [][]$-order autoregressive-moving
 -
  []
 
-[472]
+[476]
 Chapter 61.
-[473
+[477
 
-] [474
+] [478
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 25927--25930
+Underfull \hbox (badness 10000) in paragraph at lines 26199--26202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25931--25934
+Underfull \hbox (badness 10000) in paragraph at lines 26203--26206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25935--25938
+Underfull \hbox (badness 10000) in paragraph at lines 26207--26210
 
  []
 
@@ -7114,12 +7120,12 @@ ex-text;!
 Missing character: There is no 陣 (U+9663) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 25939--25942
+Underfull \hbox (badness 10000) in paragraph at lines 26211--26214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25943--25946
+Underfull \hbox (badness 10000) in paragraph at lines 26215--26218
 
  []
 
@@ -7156,12 +7162,12 @@ ex-text;!
 Missing character: There is no 育 (U+80B2) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 25947--25950
+Underfull \hbox (badness 10000) in paragraph at lines 26219--26222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25951--25954
+Underfull \hbox (badness 10000) in paragraph at lines 26223--26226
 
  []
 
@@ -7184,27 +7190,27 @@ ex-text;!
 Missing character: There is no 質 (U+8CEA) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 25955--25958
+Underfull \hbox (badness 10000) in paragraph at lines 26227--26230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25959--25962
+Underfull \hbox (badness 10000) in paragraph at lines 26231--26234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25963--25966
+Underfull \hbox (badness 10000) in paragraph at lines 26235--26238
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25967--25970
+Underfull \hbox (badness 10000) in paragraph at lines 26239--26242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25971--25974
+Underfull \hbox (badness 10000) in paragraph at lines 26243--26246
 
  []
 
@@ -7217,7 +7223,7 @@ ex-text;!
 Missing character: There is no 數 (U+6578) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 25975--25978
+Underfull \hbox (badness 10000) in paragraph at lines 26247--26250
 
  []
 
@@ -7236,7 +7242,7 @@ ex-text;!
 Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 25979--25982
+Underfull \hbox (badness 10000) in paragraph at lines 26251--26254
 
  []
 
@@ -7253,13 +7259,13 @@ ex-text;!
 Missing character: There is no 式 (U+5F0F) in font [lmroman10-regular]:mapping=t
 ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 25983--25986
+Underfull \hbox (badness 10000) in paragraph at lines 26255--26258
 
  []
 
-[475]
+[479]
 
-LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (465 not 475).
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (469 not 479).
                Rerun to correct this.
 
 (./math.aux)
@@ -7275,12 +7281,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 51993 strings out of 474773
- 1238870 string characters out of 5761289
- 2095842 words of memory out of 5000000
- 72870 multiletter control sequences out of 15000+600000
+ 52002 strings out of 474773
+ 1239010 string characters out of 5761289
+ 2098842 words of memory out of 5000000
+ 72879 multiletter control sequences out of 15000+600000
  583348 words of font info for 172 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  94i,31n,121p,9665b,992s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on math.pdf (475 pages).
+Output written on math.pdf (479 pages).

@@ -1,12 +1,141 @@
 # Feynman method
 
-## Feynman method of derivative
+## Feynman method of differentiation / derivative
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1hG411Z7Cb&autoplay=0"></iframe>
 :::
 
-## Feynman method of integral
+### principle
+
+::: {.theorem #unnamed-chunk-1}
+Feynman method of differentiation / derivative
+:::
+
+$$
+\begin{array}{c}
+f\left(t\right)=k\left[u\left(t\right)\right]^{a}\left[v\left(t\right)\right]^{b}\left[w\left(t\right)\right]^{c}\cdots\\
+\Downarrow\\
+f^{\prime}\left(t\right)=f\left(t\right)\left[a\dfrac{u^{\prime}\left(t\right)}{u\left(t\right)}+b\dfrac{v^{\prime}\left(t\right)}{v\left(t\right)}+c\dfrac{w^{\prime}\left(t\right)}{w\left(t\right)}+\cdots\right]
+\end{array}
+$$
+
+Proof:
+
+$$
+f\left(t\right)=k\left[u\left(t\right)\right]^{a}\left[v\left(t\right)\right]^{b}\left[w\left(t\right)\right]^{c}\cdots
+$$
+
+$$
+f=ku^{a}v^{b}w^{c}\cdots=k\cdot u^{a}\cdot v^{b}\cdot w^{c}\cdot\cdots
+$$
+
+$$
+\begin{aligned}
+f= & ku^{a}v^{b}w^{c}\cdots=k\cdot u^{a}\cdot v^{b}\cdot w^{c}\cdot\cdots\\
+\ln f= & \ln\left(ku^{a}v^{b}w^{c}\cdots\right)=\ln k+\ln u^{a}+\ln v^{b}+\ln w^{c}+\cdots\\
+= & \ln k+a\ln u+b\ln v+c\ln w+\cdots\\
+\dfrac{\mathrm{d}}{\mathrm{d}t}\ln f= & \dfrac{\mathrm{d}}{\mathrm{d}t}\left(\ln k+a\ln u+b\ln v+c\ln w+\cdots\right)\\
+\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}f}{f}= & 0+\dfrac{\mathrm{d}}{\mathrm{d}t}\left(a\ln u\right)+\dfrac{\mathrm{d}}{\mathrm{d}t}\left(b\ln v\right)+\dfrac{\mathrm{d}}{\mathrm{d}t}\left(c\ln w\right)+\cdots\\
+= & a\dfrac{\mathrm{d}}{\mathrm{d}t}\ln u+b\dfrac{\mathrm{d}}{\mathrm{d}t}\ln v+c\dfrac{\mathrm{d}}{\mathrm{d}t}\ln w+\cdots\\
+= & a\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}u}{u}+b\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}v}{v}+c\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}w}{w}+\cdots\\
+\dfrac{f^{\prime}}{f}= & a\dfrac{u^{\prime}}{u}+b\dfrac{v^{\prime}}{v}+c\dfrac{w^{\prime}}{w}+\cdots\\
+f^{\prime}= & f\left(a\dfrac{u^{\prime}}{u}+b\dfrac{v^{\prime}}{v}+c\dfrac{w^{\prime}}{w}+\cdots\right)\\
+f^{\prime}\left(t\right)= & f\left(t\right)\left[a\dfrac{u^{\prime}\left(t\right)}{u\left(t\right)}+b\dfrac{v^{\prime}\left(t\right)}{v\left(t\right)}+c\dfrac{w^{\prime}\left(t\right)}{w\left(t\right)}+\cdots\right]
+\end{aligned}
+$$
+
+$$
+\tag*{$\Box$}
+$$
+
+### examples
+
+$f\left(x\right)=x^{x}$
+
+$$
+\left(x^{x}\right)^{\prime}=x^{x}+x^{x}\ln x
+$$
+
+$$
+\begin{aligned}
+f\left(x\right)= & x^{x}\\
+\ln f\left(x\right)= & x\ln x\\
+\dfrac{\mathrm{d}}{\mathrm{d}x}\ln f\left(x\right)= & \dfrac{\mathrm{d}}{\mathrm{d}x}\left[x\ln x\right]\\
+\dfrac{f^{\prime}\left(x\right)}{f\left(x\right)}= & \left[x\ln x\right]^{\prime}\\
+f^{\prime}\left(x\right)= & f\left(x\right)\left[x\ln x\right]^{\prime}=x^{x}\left[\left(x\right)^{\prime}\ln x+x\left(\ln x\right)^{\prime}\right]\\
+= & x^{x}\left[1\ln x+x\dfrac{1}{x}\right]=x^{x}\left[\ln x+1\right]=x^{x}\left[1+\ln x\right]\\
+= & x^{x}+x^{x}\ln x
+\end{aligned}
+$$
+
+$$
+\tag*{$\Box$}
+$$
+
+***
+
+$\dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}+\dfrac{\sqrt{1+2t}}{t+\sqrt{1+t^{2}}}$
+
+$$
+\dfrac{\mathrm{d}}{\mathrm{d}t}\left[\dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}+\dfrac{\sqrt{1+2t}}{t+\sqrt{1+t^{2}}}\right]
+$$
+
+***
+
+$$
+\dfrac{\mathrm{d}}{\mathrm{d}t}\left[\dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\right]
+$$
+
+$$
+\begin{aligned}
+ & \dfrac{\mathrm{d}}{\mathrm{d}t}\left[\dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\right]\\
+= & \dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\cdot[\\
+= & \dfrac{6\left[1+2t^{2}\right]\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\cdot[1\cdot\dfrac{1}{1+2t^{2}}\cdot4t,\left[1+2t^{2}\right]\rightarrow\begin{cases}
+\text{exponential}: & 1\\
+\text{linear to denominator}: & \dfrac{1}{1+2t^{2}}\\
+\text{differentiation} & 4t
+\end{cases}\\
+= & \dfrac{6\left(1+2t^{2}\right)\left[\left(t^{3}-t\right)^{2}\right]}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\cdot[\dfrac{4t}{1+2t^{2}}+2\cdot\dfrac{1}{t^{3}-t}\cdot\left(3t^{2}-1\right)\\
+ & ,\left[\left(t^{3}-t\right)^{2}\right]\rightarrow\begin{cases}
+\text{exponential}: & 2\\
+\text{linear to denominator}: & \dfrac{1}{t^{3}-t}\\
+\text{differentiation} & 3t^{2}-1
+\end{cases}\\
+= & \dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\left[\sqrt{t+5t^{2}}\right]\left(4t\right)^{\frac{3}{2}}}\cdot[\dfrac{4t}{1+2t^{2}}+\dfrac{6t^{2}-2}{t^{3}-t}+\dfrac{-1}{2}\cdot\dfrac{1}{t+5t^{2}}\cdot\left(1+10t\right)\\
+ & ,\left[\sqrt{t+5t^{2}}\right]\rightarrow\begin{cases}
+\text{exponential}: & \dfrac{-1}{2}\\
+\text{linear to denominator}: & \dfrac{1}{t+5t^{2}}\\
+\text{differentiation} & 1+10t
+\end{cases}\\
+= & \dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left[\left(4t\right)^{\frac{3}{2}}\right]}\cdot\left[\dfrac{4t}{1+2t^{2}}+\dfrac{6t^{2}-2}{t^{3}-t}-\dfrac{1+10t}{2t+10t^{2}}+\dfrac{-3}{2}\cdot\dfrac{1}{4t}\cdot4\right]\\
+ & ,\left[\left(4t\right)^{\frac{3}{2}}\right]\rightarrow\begin{cases}
+\text{exponential}: & \dfrac{-3}{2}\\
+\text{linear to denominator}: & \dfrac{1}{4t}\\
+\text{differentiation} & 4
+\end{cases}\\
+= & \dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}\left[\dfrac{4t}{1+2t^{2}}+\dfrac{6t^{2}-2}{t^{3}-t}-\dfrac{1+10t}{2t+10t^{2}}-\dfrac{3}{2t}\right]
+\end{aligned}
+$$
+
+***
+
+$$
+\dfrac{\mathrm{d}}{\mathrm{d}t}\left[\dfrac{\sqrt{1+2t}}{t+\sqrt{1+t^{2}}}\right]
+$$
+
+$$
+\begin{aligned}
+ & \dfrac{\mathrm{d}}{\mathrm{d}t}\left[\dfrac{\sqrt{1+2t}}{t+\sqrt{1+t^{2}}}\right]\\
+= & \dfrac{\sqrt{1+2t}}{t+\left[\sqrt{1+t^{2}}\right]}\left[\dfrac{1}{2}\dfrac{2}{1+2t}+\left(-1\right)\dfrac{1+\left[\frac{1}{2}\frac{2t}{\sqrt{1+t^{2}}}\right]}{t+\sqrt{1+t^{2}}}\right]
+\end{aligned}
+$$
+
+$$
+\tag*{$\Box$}
+$$
+
+## Feynman method of integration / integral
 
 ## path integral
 
