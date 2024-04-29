@@ -6,6 +6,19 @@
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1hG411Z7Cb&autoplay=0"></iframe>
 :::
 
+
+::: {show-in="html"}
+分式微分不是難而是煩
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+分式微分不是難而是煩
+\end{CJK}
+:::
+
+
+
 ### principle
 
 ::: {.theorem #unnamed-chunk-1}
@@ -67,6 +80,61 @@ f^{\prime}\left(x\right)= & f\left(x\right)\left[x\ln x\right]^{\prime}=x^{x}\le
 = & x^{x}\left[1\ln x+x\dfrac{1}{x}\right]=x^{x}\left[\ln x+1\right]=x^{x}\left[1+\ln x\right]\\
 = & x^{x}+x^{x}\ln x
 \end{aligned}
+$$
+
+$$
+\tag*{$\Box$}
+$$
+
+***
+
+$\Delta\left(\dfrac{1}{r}\right)=\boldsymbol{\nabla}^{2}\left(\dfrac{1}{\sqrt{\boldsymbol{r}^{2}}}\right)=\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}\left(\dfrac{1}{\sqrt{\boldsymbol{r}\cdot\boldsymbol{r}}}\right)=\boldsymbol{\nabla}\cdot\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\left(\dfrac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\right)$
+
+$$
+\dfrac{\partial}{\partial x}\dfrac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}
+$$
+
+$$
+\begin{aligned}
+ & \dfrac{\partial}{\partial x}\dfrac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}=\dfrac{\partial}{\partial x}\left[\left(x^{2}+y^{2}+z^{2}\right)^{\frac{-1}{2}}\right]\\
+= & \left(x^{2}+y^{2}+z^{2}\right)^{\frac{-1}{2}}\left[\frac{-1}{2}\dfrac{2x}{x^{2}+y^{2}+z^{2}}\right]\\
+= & \dfrac{-x}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{-3}{2}}}
+\end{aligned}
+$$
+
+$$
+\boldsymbol{\nabla}\left(\dfrac{1}{r}\right)=\boldsymbol{\nabla}\left(\dfrac{1}{\sqrt{\boldsymbol{r}\cdot\boldsymbol{r}}}\right)=\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\left(\dfrac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\right)=\left(\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}},\dfrac{-y}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}},\dfrac{-z}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}\right)
+$$
+
+$$
+\begin{aligned}
+\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}\left(\dfrac{1}{r}\right)= & \boldsymbol{\nabla}\cdot\left(\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}},\dfrac{-y}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}},\dfrac{-z}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}\right)\\
+= & \dfrac{\partial}{\partial x}\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}+\dfrac{\partial}{\partial y}\dfrac{-y}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}+\dfrac{\partial}{\partial z}\dfrac{-z}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}
+\end{aligned}
+$$
+
+$$
+\dfrac{\partial}{\partial x}\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}
+$$
+
+$$
+\begin{aligned}
+ & \dfrac{\partial}{\partial x}\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}\\
+= & \dfrac{-x}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}\left[1\cdot\dfrac{1}{x}+\dfrac{-3}{2}\dfrac{2x}{x^{2}+y^{2}+z^{2}}\right]\\
+= & \dfrac{-1}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}+\dfrac{3x^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}\\
+= & \dfrac{-\left(x^{2}+y^{2}+z^{2}\right)+3x^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}=\dfrac{2x^{2}-y^{2}-z^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}\left(\dfrac{1}{r}\right)= & \dfrac{\partial}{\partial x}\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}+\dfrac{\partial}{\partial y}\dfrac{-y}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}+\dfrac{\partial}{\partial z}\dfrac{-z}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}\\
+= & \dfrac{+2x^{2}-y^{2}-z^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}+\dfrac{-x^{2}+2y^{2}-z^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}+\dfrac{-x^{2}-y^{2}+2z^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}=0
+\end{aligned}
+$$
+
+$$
+\Delta\left(\dfrac{1}{r}\right)=\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}\left(\dfrac{1}{r}\right)=0
 $$
 
 $$

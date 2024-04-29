@@ -182,6 +182,85 @@ f^{\prime}\left(x\right)= & f\left(x\right)\left[x\ln x\right]^{\prime}=x^{x}\le
 
 \begin_inset Formula 
 \[
+\Delta\left(\dfrac{1}{r}\right)=\boldsymbol{\nabla}^{2}\left(\dfrac{1}{\sqrt{\boldsymbol{r}^{2}}}\right)=\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}\left(\dfrac{1}{\sqrt{\boldsymbol{r}\cdot\boldsymbol{r}}}\right)=\boldsymbol{\nabla}\cdot\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\left(\dfrac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dfrac{\partial}{\partial x}\dfrac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \dfrac{\partial}{\partial x}\dfrac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}=\dfrac{\partial}{\partial x}\left[\left(x^{2}+y^{2}+z^{2}\right)^{\frac{-1}{2}}\right]\\
+= & \left(x^{2}+y^{2}+z^{2}\right)^{\frac{-1}{2}}\left[\frac{-1}{2}\dfrac{2x}{x^{2}+y^{2}+z^{2}}\right]\\
+= & \dfrac{-x}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{-3}{2}}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{\nabla}\left(\dfrac{1}{r}\right)=\boldsymbol{\nabla}\left(\dfrac{1}{\sqrt{\boldsymbol{r}\cdot\boldsymbol{r}}}\right)=\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\left(\dfrac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\right)=\left(\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}},\dfrac{-y}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}},\dfrac{-z}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}\left(\dfrac{1}{r}\right)= & \boldsymbol{\nabla}\cdot\left(\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}},\dfrac{-y}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}},\dfrac{-z}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}\right)\\
+= & \dfrac{\partial}{\partial x}\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}+\dfrac{\partial}{\partial y}\dfrac{-y}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}+\dfrac{\partial}{\partial z}\dfrac{-z}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dfrac{\partial}{\partial x}\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \dfrac{\partial}{\partial x}\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}\\
+= & \dfrac{-x}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}\left[1\cdot\dfrac{1}{x}+\dfrac{-3}{2}\dfrac{2x}{x^{2}+y^{2}+z^{2}}\right]\\
+= & \dfrac{-1}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}+\dfrac{3x^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}\\
+= & \dfrac{-\left(x^{2}+y^{2}+z^{2}\right)+3x^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}=\dfrac{2x^{2}-y^{2}-z^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}\left(\dfrac{1}{r}\right)= & \dfrac{\partial}{\partial x}\dfrac{-x}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}+\dfrac{\partial}{\partial y}\dfrac{-y}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}+\dfrac{\partial}{\partial z}\dfrac{-z}{\left(x^{2}+y^{2}+z^{2}+\epsilon^{2}\right)^{\frac{3}{2}}}\\
+= & \dfrac{+2x^{2}-y^{2}-z^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}+\dfrac{-x^{2}+2y^{2}-z^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}+\dfrac{-x^{2}-y^{2}+2z^{2}}{\left(x^{2}+y^{2}+z^{2}\right)^{\frac{5}{2}}}=0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta\left(\dfrac{1}{r}\right)=\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}\left(\dfrac{1}{r}\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
 \dfrac{6\left(1+2t^{2}\right)\left(t^{3}-t\right)^{2}}{\sqrt{t+5t^{2}}\left(4t\right)^{\frac{3}{2}}}+\dfrac{\sqrt{1+2t}}{t+\sqrt{1+t^{2}}}
 \]
 
@@ -593,8 +672,9 @@ f=\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\hat{f}_{{\scri
 \begin_inset Formula 
 \begin{align*}
 f^{*}=\left(f,\cdot\right)= & \left(\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\hat{f}_{{\scriptscriptstyle i}},\cdot\right)=\left(\sum\limits _{i}\hat{f}_{{\scriptscriptstyle i}}\left(\hat{f}_{{\scriptscriptstyle i}},f\right),\cdot\right)\\
-\overset{\text{addivity}}{=} & \sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)\\
-\overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|=\left\langle f\right|\\
+\overset{\text{antilinearity}}{=} & \overline{\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)}\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)=\sum\limits _{i}\overline{\left(\hat{f}_{{\scriptscriptstyle i}},f\right)}\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)\\
+= & \sum\limits _{i}\left(f,\hat{f}_{{\scriptscriptstyle i}}\right)\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)\\
+\overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left\langle f\middle|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|=\left\langle f\right|\\
 \Updownarrow\\
 f= & \sum\limits _{i}\hat{f}_{{\scriptscriptstyle i}}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\\
 \overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle =\left|f\right\rangle 
@@ -1687,6 +1767,14 @@ convolution
 \begin_inset Formula 
 \[
 \delta\left(\boldsymbol{r}-\boldsymbol{r}^{\prime}\right)=\delta\left(x-x^{\prime}\right)\delta\left(y-y^{\prime}\right)\delta\left(z-z^{\prime}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta\left(\dfrac{1}{r}\right)=\boldsymbol{\nabla}^{2}\left(\dfrac{1}{\sqrt{\boldsymbol{r}^{2}}}\right)=\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}\left(\dfrac{1}{\sqrt{\boldsymbol{r}\cdot\boldsymbol{r}}}\right)=\boldsymbol{\nabla}\cdot\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\left(\dfrac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\right)
 \]
 
 \end_inset

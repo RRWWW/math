@@ -97,10 +97,25 @@
 \begin_body
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=\dfrac{a}{b}x+c
+\]
+
+\end_inset
+
 Feynman method of differentiation / derivative
 \begin_inset Formula 
 \[
-f=ku^{a}v^{b}w^{c}\cdots=k\cdot u^{a}\cdot v^{b}\cdot w^{c}
+f\left(t\right)=k\left[u\left(t\right)\right]^{a}\left[v\left(t\right)\right]^{b}\left[w\left(t\right)\right]^{c}\cdots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f=ku^{a}v^{b}w^{c}\cdots=k\cdot u^{a}\cdot v^{b}\cdot w^{c}\cdot\cdots
 \]
 
 \end_inset
@@ -112,7 +127,54 @@ f= & ku^{a}v^{b}w^{c}\cdots=k\cdot u^{a}\cdot v^{b}\cdot w^{c}\cdot\cdots\\
 \ln f= & \ln\left(ku^{a}v^{b}w^{c}\cdots\right)=\ln k+\ln u^{a}+\ln v^{b}+\ln w^{c}+\cdots\\
 = & \ln k+a\ln u+b\ln v+c\ln w+\cdots\\
 \dfrac{\mathrm{d}}{\mathrm{d}t}\ln f= & \dfrac{\mathrm{d}}{\mathrm{d}t}\left(\ln k+a\ln u+b\ln v+c\ln w+\cdots\right)\\
-\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}f}{f}= & 0+\dfrac{\mathrm{d}}{\mathrm{d}t}\left(a\ln u\right)+\left(b\ln v\right)+\left(c\ln w\right)
+\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}f}{f}= & 0+\dfrac{\mathrm{d}}{\mathrm{d}t}\left(a\ln u\right)+\dfrac{\mathrm{d}}{\mathrm{d}t}\left(b\ln v\right)+\dfrac{\mathrm{d}}{\mathrm{d}t}\left(c\ln w\right)+\cdots\\
+= & a\dfrac{\mathrm{d}}{\mathrm{d}t}\ln u+b\dfrac{\mathrm{d}}{\mathrm{d}t}\ln v+c\dfrac{\mathrm{d}}{\mathrm{d}t}\ln w+\cdots\\
+= & a\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}u}{u}+b\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}v}{v}+c\dfrac{\dfrac{\mathrm{d}}{\mathrm{d}t}w}{w}+\cdots\\
+\dfrac{f^{\prime}}{f}= & a\dfrac{u^{\prime}}{u}+b\dfrac{v^{\prime}}{v}+c\dfrac{w^{\prime}}{w}+\cdots\\
+f^{\prime}= & f\left(a\dfrac{u^{\prime}}{u}+b\dfrac{v^{\prime}}{v}+c\dfrac{w^{\prime}}{w}+\cdots\right)\\
+f^{\prime}\left(t\right)= & f\left(t\right)\left[a\dfrac{u^{\prime}\left(t\right)}{u\left(t\right)}+b\dfrac{v^{\prime}\left(t\right)}{v\left(t\right)}+c\dfrac{w^{\prime}\left(t\right)}{w\left(t\right)}+\cdots\right]
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{c}
+f\left(t\right)=k\left[u\left(t\right)\right]^{a}\left[v\left(t\right)\right]^{b}\left[w\left(t\right)\right]^{c}\cdots\\
+\Downarrow\\
+f^{\prime}\left(t\right)=f\left(t\right)\left[a\dfrac{u^{\prime}\left(t\right)}{u\left(t\right)}+b\dfrac{v^{\prime}\left(t\right)}{v\left(t\right)}+c\dfrac{w^{\prime}\left(t\right)}{w\left(t\right)}+\cdots\right]
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=x^{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x^{x}\right)^{\prime}=x^{x}+x^{x}\ln x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right)= & x^{x}\\
+\ln f\left(x\right)= & x\ln x\\
+\dfrac{\mathrm{d}}{\mathrm{d}x}\ln f\left(x\right)= & \dfrac{\mathrm{d}}{\mathrm{d}x}\left[x\ln x\right]\\
+\dfrac{f^{\prime}\left(x\right)}{f\left(x\right)}= & \left[x\ln x\right]^{\prime}\\
+f^{\prime}\left(x\right)= & f\left(x\right)\left[x\ln x\right]^{\prime}=x^{x}\left[\left(x\right)^{\prime}\ln x+x\left(\ln x\right)^{\prime}\right]\\
+= & x^{x}\left[1\ln x+x\dfrac{1}{x}\right]=x^{x}\left[\ln x+1\right]=x^{x}\left[1+\ln x\right]\\
+= & x^{x}+x^{x}\ln x
 \end{align*}
 
 \end_inset
@@ -531,7 +593,8 @@ f=\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\hat{f}_{{\scri
 \begin_inset Formula 
 \begin{align*}
 f^{*}=\left(f,\cdot\right)= & \left(\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\hat{f}_{{\scriptscriptstyle i}},\cdot\right)=\left(\sum\limits _{i}\hat{f}_{{\scriptscriptstyle i}}\left(\hat{f}_{{\scriptscriptstyle i}},f\right),\cdot\right)\\
-\overset{\text{addivity}}{=} & \sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)\\
+\overset{\text{antilinearity}}{=} & \overline{\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)}\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)=\sum\limits _{i}\overline{\left(\hat{f}_{{\scriptscriptstyle i}},f\right)}\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)\\
+= & \sum\limits _{i}\left(f,\hat{f}_{{\scriptscriptstyle i}}\right)\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)\\
 \overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|=\left\langle f\right|\\
 \Updownarrow\\
 f= & \sum\limits _{i}\hat{f}_{{\scriptscriptstyle i}}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\\

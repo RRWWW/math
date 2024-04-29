@@ -48,8 +48,8 @@ https://tex.stackexchange.com/questions/670153/how-to-annotate-calculations
 		%axis y line = center,
 		%xlabel = {$ x $}, xlabel style = {right},
 		%ylabel = {$ y=f\left(x\right) $}, ylabel style = {above},
-		xmin = -1, xmax = 1,
-		ymin = -0.5, ymax = 0.5,
+		xmin = -0.7, xmax = 0.9,
+		ymin = -0.3, ymax = 0.3,
 		%hide obscured x ticks=false, % for origin x tick label i.e. xtick = {0}
 		xtick= \empty,
 		xticklabels= \empty,
@@ -91,7 +91,7 @@ corners}}
 		%xlabel = {$ x $}, xlabel style = {right},
 		%ylabel = {$ y=f\left(x\right) $}, ylabel style = {above},
 		xmin = -1.5, xmax = 1.5,
-		ymin = -0.5, ymax = 0.5,
+		ymin = -0.4, ymax = 0.4,
 		%hide obscured x ticks=false, % for origin x tick label i.e. xtick = {0}
 		xtick= \empty,
 		xticklabels= \empty,

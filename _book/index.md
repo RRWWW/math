@@ -1,7 +1,7 @@
 ---
 title: "math"
 author: "Joey Yu Hsu"
-date: "2024-04-28"
+date: "2024-04-29"
 site: bookdown::bookdown_site
 documentclass: book
 # output:
@@ -23,7 +23,8 @@ header-includes:
 # cover-image: path to the social sharing image like images/cover.jpg
 # description: 
 github-repo: "https://github.com/RRWWW/math/"
-geometry: [b5paper, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.0cm, rmargin=1.0cm]
+# geometry: [b5paper, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.0cm, rmargin=1.0cm]
+geometry: [a4paper, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.0cm, rmargin=1.0cm]
 # fig_width: 6 
 # fig_height: 4 
 # editor_options:
