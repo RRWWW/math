@@ -88,6 +88,8 @@ $$
 
 ***
 
+[3D delta function]^[\@ref(d-delta-function)]^
+
 $\Delta\left(\dfrac{1}{r}\right)=\boldsymbol{\nabla}^{2}\left(\dfrac{1}{\sqrt{\boldsymbol{r}^{2}}}\right)=\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}\left(\dfrac{1}{\sqrt{\boldsymbol{r}\cdot\boldsymbol{r}}}\right)=\boldsymbol{\nabla}\cdot\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\left(\dfrac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\right)$
 
 $$

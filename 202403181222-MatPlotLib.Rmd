@@ -693,6 +693,7 @@ R or RStudio run Python with installing packages or modules by using `reticulate
 and directly using Anaconda `conda` environment for convenience, instead of `virtualenv`
 
 https://rstudio.github.io/reticulate/articles/python_packages.html
+
 ```{r}
 library(reticulate)
 conda_list()

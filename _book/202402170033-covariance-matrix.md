@@ -1,47 +1,148 @@
-# covariance matrix 
+# covariance matrix
 
-## covariance matrix 
+## vector direct product
+
+- scalar = rank-0 tensor
+- vector = rank-1 tensor
+- matrix = rank-2 tensor
+- vector direct product = rank-1 tensor times rank-1 tensor equals rank-2 tensor: increasing rank
+- vector inner product = rank-1 tensor times rank-1 tensor equals rank-0 tensor: decreasing rank
+
+scalar = rank-0 tensor
+
+vector = rank-1 tensor
+
+matrix = rank-2 tensor
+
+### vector direct product: increasing rank
+
+vector direct product = rank-1 tensor times rank-1 tensor equals rank-2 tensor: increasing rank
+
+$$
+\begin{aligned}
+U\otimes V= & UV^{\intercal}=U_{i}V_{j}\\
+=\begin{pmatrix}U_{1}\\
+U_{2}\\
+U_{3}
+\end{pmatrix}\otimes\begin{pmatrix}V_{1}\\
+V_{2}\\
+V_{3}
+\end{pmatrix}= & \begin{pmatrix}U_{1}\\
+U_{2}\\
+U_{3}
+\end{pmatrix}\begin{pmatrix}V_{1} & V_{2} & V_{3}\end{pmatrix}=\begin{pmatrix}U_{1}V_{1} & U_{1}V_{2} & U_{1}V_{3}\\
+U_{\text{2}}V_{1} & U_{2}V_{2} & U_{2}V_{3}\\
+U_{3}V_{1} & U_{3}V_{2} & U_{3}V_{3}
+\end{pmatrix}\\
+= & \begin{pmatrix}U_{1}V^{\intercal}\\
+U_{2}V^{\intercal}\\
+U_{3}V^{\intercal}
+\end{pmatrix}=\begin{pmatrix}UV_{1} & UV_{2} & UV_{3}\end{pmatrix}
+\end{aligned}
+$$
+
+### vector inner product: decreasing rank
+
+vector inner product = rank-1 tensor times rank-1 tensor equals rank-0 tensor: decreasing rank
+
+$$
+\begin{aligned}
+U\cdot V= & V^{\intercal}U=V_{i}U_{i}\\
+=\begin{pmatrix}U_{1}\\
+U_{2}\\
+U_{3}
+\end{pmatrix}\cdot\begin{pmatrix}V_{1}\\
+V_{2}\\
+V_{3}
+\end{pmatrix}= & \begin{pmatrix}V_{1} & V_{2} & V_{3}\end{pmatrix}\begin{pmatrix}U_{1}\\
+U_{2}\\
+U_{3}
+\end{pmatrix}=V_{1}U_{1}+V_{2}U_{2}+V_{3}U_{3}
+\end{aligned}
+$$
+
+### tensor direct product: increasing rank
+
+\begin{eqnarray}
+S\otimes T & = & S_{ik}T_{jl}\\
+\left(i,j\right),\left(k,l\right) & \in & \left\{ \left(1,1\right),\left(1,2\right),\left(2,1\right),\left(2,2\right)\right\} \\
+\begin{pmatrix}S_{11} & S_{12}\\
+S_{21} & S_{22}
+\end{pmatrix}\otimes\begin{pmatrix}T_{11} & T_{12}\\
+T_{21} & T_{22}
+\end{pmatrix} & = & \begin{pmatrix}S_{11}T_{11} & S_{11}T_{12} & S_{12}T_{11} & S_{12}T_{12}\\
+S_{11}T_{21} & S_{11}T_{22} & S_{12}T_{21} & S_{12}T_{22}\\
+S_{21}T_{11} & S_{21}T_{12} & S_{22}T_{11} & S_{22}T_{12}\\
+S_{21}T_{21} & S_{21}T_{22} & S_{22}T_{21} & S_{22}T_{22}
+\end{pmatrix}\\
+\begin{pmatrix}S_{11} & S_{12}\\
+S_{21} & S_{22}
+\end{pmatrix}\begin{pmatrix}T_{11} & T_{12}\\
+T_{21} & T_{22}
+\end{pmatrix} & = & \begin{pmatrix}S_{11}T & S_{12}T\\
+S_{21}T & S_{22}T
+\end{pmatrix}\\
+ & = & \begin{pmatrix}S_{11}\begin{pmatrix}T_{11} & T_{12}\\
+T_{21} & T_{22}
+\end{pmatrix} & S_{12}\begin{pmatrix}T_{11} & T_{12}\\
+T_{21} & T_{22}
+\end{pmatrix}\\
+S_{21}\begin{pmatrix}T_{11} & T_{12}\\
+T_{21} & T_{22}
+\end{pmatrix} & S_{22}\begin{pmatrix}T_{11} & T_{12}\\
+T_{21} & T_{22}
+\end{pmatrix}
+\end{pmatrix}
+\end{eqnarray}
+
+## covariance matrix and its properties
 
 @ccjou2014a
 
-### calculation
+$$
+\begin{aligned}
+\mathrm{C}\left[\boldsymbol{X}\right]=\mathrm{Cov}\left[\boldsymbol{X}\right]=\mathrm{V}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\intercal}\right]\\
+= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}^{\intercal}-\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}\right]\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\intercal}-\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\intercal}-\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\intercal}\right]-\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\intercal}\right]-\mathrm{E}\left[\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}\right]+\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}\right]\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\intercal}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left[\boldsymbol{X}^{\intercal}\right]-\mathrm{E}\left[\boldsymbol{X}\right]\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\intercal}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}\\
+= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\intercal}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}
+\end{aligned}
+$$
 
-\begin{align*}
-\mathrm{C}\left[\boldsymbol{X}\right]=\mathrm{Cov}\left[\boldsymbol{X}\right]=\mathrm{V}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
-= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\right]\\
-= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\mathrm{T}}-\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\\
-= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\boldsymbol{X}\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]+\mathrm{E}\left[\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\right]\\
-= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left[\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left[\boldsymbol{X}\right]\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
-= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}+\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
-= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}
-\end{align*}
-
-\begin{align*}
-\boldsymbol{X}=\left[X\right]_{1\times1}=X\Rightarrow C\left(X\right)=\mathrm{C}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\mathrm{T}}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\mathrm{T}}\\
+$$
+\begin{aligned}
+\boldsymbol{X}=\left[X\right]_{1\times1}=X\Rightarrow C\left(X\right)=\mathrm{C}\left[\boldsymbol{X}\right]= & \mathrm{E}\left[\boldsymbol{X}\boldsymbol{X}^{\intercal}\right]-\mathrm{E}\left(\boldsymbol{X}\right)\mathrm{E}\left(\boldsymbol{X}\right)^{\intercal}\\
 = & \mathrm{E}\left[XX\right]-\mathrm{E}\left(X\right)\mathrm{E}\left(X\right)\\
 = & \mathrm{E}\left(X^{2}\right)-\left[\mathrm{E}\left(X\right)\right]^{2}=\mathrm{V}\left(X\right)
-\end{align*}
+\end{aligned}
+$$
 
 ### $\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[\boldsymbol{X}\right]$
 
-\begin{align*}
-\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]= & \mathrm{E}\left[\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]^{\mathrm{T}}\right]\\
-\overset{\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)=\mathrm{E}\left(\boldsymbol{X}\right)+\boldsymbol{b}}{=} & \mathrm{E}\left[\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]^{\mathrm{T}}\right]\\
-= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]=\mathrm{V}\left[\boldsymbol{X}\right]
-\end{align*}
+$$
+\begin{aligned}
+\mathrm{V}\left[\boldsymbol{X}+\boldsymbol{b}\right]= & \mathrm{E}\left[\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]\left[\left(\boldsymbol{X}+\boldsymbol{b}\right)-\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)\right]^{\intercal}\right]\\
+\overset{\mathrm{E}\left(\boldsymbol{X}+\boldsymbol{b}\right)=\mathrm{E}\left(\boldsymbol{X}\right)+\boldsymbol{b}}{=} & \mathrm{E}\left[\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]\left[\boldsymbol{X}+\boldsymbol{b}-\mathrm{E}\left(\boldsymbol{X}\right)-\boldsymbol{b}\right]^{\intercal}\right]\\
+= & \mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\intercal}\right]=\mathrm{V}\left[\boldsymbol{X}\right]
+\end{aligned}
+$$
 
-### $\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}$
-
-\begin{align*}
-\mathrm{V}\left[A\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
-\overset{\mathrm{E}\left(A\boldsymbol{X}\right)=A\mathrm{E}\left(\boldsymbol{X}\right)}{=} & \mathrm{E}\left[\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]\\
-= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\right]^{\mathrm{T}}\right]\\
-= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}A^{\mathrm{T}}\right]\\
-= & A\mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\mathrm{T}}\right]A^{\mathrm{T}}=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}
-\end{align*}
-
-### $\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}$
+### $\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\intercal}$
 
 $$
-\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\mathrm{T}}
+\begin{aligned}
+\mathrm{V}\left[A\boldsymbol{X}\right]= & \mathrm{E}\left[\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]\left[\left(A\boldsymbol{X}\right)-\mathrm{E}\left(A\boldsymbol{X}\right)\right]^{\intercal}\right]\\
+\overset{\mathrm{E}\left(A\boldsymbol{X}\right)=A\mathrm{E}\left(\boldsymbol{X}\right)}{=} & \mathrm{E}\left[\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\boldsymbol{X}-A\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\intercal}\right]\\
+= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\right]^{\intercal}\right]\\
+= & \mathrm{E}\left[A\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\intercal}A^{\intercal}\right]\\
+= & A\mathrm{E}\left[\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]\left[\boldsymbol{X}-\mathrm{E}\left(\boldsymbol{X}\right)\right]^{\intercal}\right]A^{\intercal}=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\intercal}
+\end{aligned}
+$$
+
+### $\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\intercal}$
+
+$$
+\mathrm{V}\left[A\boldsymbol{X}+\boldsymbol{b}\right]=\mathrm{V}\left[A\boldsymbol{X}\right]=A\mathrm{V}\left[\boldsymbol{X}\right]A^{\intercal}
 $$

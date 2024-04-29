@@ -1072,7 +1072,7 @@ When $b=\mathrm{median}\left[X\right]$, $\mathrm{E}\left[\left(X-b\right)^{2}\ri
 
 ***
 
-```{definition}
+```{definition, indicator-function}
 indicator function
 ```
 
@@ -2950,6 +2950,289 @@ $$
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/y-Oi5voWQKo"></iframe>
 :::
+
+univariable random vector
+
+discrete: PMF equals probability function
+
+$$
+f_{{\scriptscriptstyle X}}\left(x\right)=\mathrm{P}\left(X=x\right)
+$$
+
+continuous: PDF equals probability intensity
+
+$$
+f_{{\scriptscriptstyle X}}\left(x\right)\mathrm{d}x=\mathrm{d}\mathrm{P}\left(X\le x\right)
+$$
+
+Given $\left(X,Y\right)=\left(X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right)=\left\langle X,Y\right\rangle =\left\langle X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right\rangle \sim f_{{\scriptscriptstyle XY}}=f_{{\scriptscriptstyle XY}}\left(x,y\right)=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)$
+
+discrete:
+
+```{definition}
+JPMF = joint probability mass function: the JPMF of $\left(X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right)=\left\langle X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right\rangle$ is
+```
+
+$$
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)
+$$
+
+joint vs. marginal
+
+```{theorem}
+joint probability mass function can inference marginal probability mass function:
+  
+The marginal PMF of $X_{{\scriptscriptstyle 1}}$, $f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\right)$ is given by 
+```
+
+$$
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\sum_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\sum_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)
+$$
+
+Proof:
+
+$$
+\begin{aligned}
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\right)\\
+= & \mathrm{P}\left(\left\{ X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\right\} \cap\left\{ X_{{\scriptscriptstyle 2}}\in\left(-\infty,\infty\right)\right\} \right)\\
+= & \mathrm{P}\left(\bigcup_{x_{{\scriptscriptstyle 2}}\in\left(-\infty,\infty\right)}\left\{ X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\wedge X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right\} \right)\\
+= & \bigcup_{x_{{\scriptscriptstyle 2}}\in\left(-\infty,\infty\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\wedge X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)=\bigcup_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)\\
+= & \bigcup_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)=\sum_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)
+\end{aligned}
+$$
+
+$$
+\tag*{$\Box$}
+$$
+
+continuous:
+
+```{definition}
+JCDF = joint cumulative distribution function: the JCDF of $\left(X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right)=\left\langle X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right\rangle$ is
+```
+
+$$
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\le x_{{\scriptscriptstyle 2}}\right)
+$$
+
+```{definition}
+JPDF = joint probability density function: the JPDF of $\left(X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right)=\left\langle X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right\rangle$ is
+```
+
+$$
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\dfrac{\partial^{2}}{\partial x_{{\scriptscriptstyle 1}}\partial x_{{\scriptscriptstyle 2}}}F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)
+$$
+
+joint vs. marginal
+
+```{theorem}
+joint cumulative distribution function can inference marginal cumulative distribution function:
+  
+The marginal CDF of $X_{{\scriptscriptstyle 1}}$ is
+```
+
+$$
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)
+$$
+
+Proof:
+
+$$
+\begin{aligned}
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}}\right)\\
+= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}}\wedge X_{{\scriptscriptstyle 2}}\le\infty\right)\\
+= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\le\infty\right)\\
+= & F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)
+\end{aligned}
+$$
+
+$$
+\tag*{$\Box$}
+$$
+
+Note:
+
+$F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)$
+
+$$
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)=\int_{-\infty}^{\infty}\int_{-\infty}^{x_{{\scriptscriptstyle 1}}}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(u_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 1}}\mathrm{d}u_{{\scriptscriptstyle 2}}
+$$
+
+***
+
+$$
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\int_{-\infty}^{\infty}\int_{-\infty}^{x_{{\scriptscriptstyle 1}}}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(u_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 1}}\mathrm{d}u_{{\scriptscriptstyle 2}}
+$$
+
+***
+
+$f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)$
+
+According to the fundamental theorem of calculus,
+
+$$
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\dfrac{\mathrm{d}}{\mathrm{d}x_{{\scriptscriptstyle 1}}}F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\dfrac{\mathrm{d}}{\mathrm{d}x_{{\scriptscriptstyle 1}}}F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)=\dfrac{\mathrm{d}}{\mathrm{d}x_{{\scriptscriptstyle 1}}}\int_{-\infty}^{\infty}\int_{-\infty}^{x}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(u_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 1}}\mathrm{d}u_{{\scriptscriptstyle 2}}=\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 2}}
+$$
+
+***
+
+$$
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 2}}
+$$
+
+$$
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)\mathrm{d}x_{{\scriptscriptstyle 2}}
+$$
+
+***
+
+$$
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\begin{cases}
+\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)\mathrm{d}x_{{\scriptscriptstyle 2}} & \text{continuous}\\
+\sum\limits _{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right) & \text{discrete}
+\end{cases}
+$$
+
+```{theorem}
+A function $f(x,y)$ is a joint PDF/PMF or JPDF/JPMF iff
+```
+
+$$
+\begin{cases}
+f\left(x,y\right)\ge0 & \left(ne\right)\text{non-negative}\\
+\begin{cases}
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f\left(x,y\right)\mathrm{d}x\mathrm{d}y=1 & \text{continuous}\\
+\sum\limits _{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}\sum\limits _{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}f\left(x,y\right)=1 & \text{discrete}
+\end{cases} & \left(1\right)\text{total event}
+\end{cases}
+$$
+
+```{definition}
+expected value: The expected value of a random vector $g\left(X,Y\right)$ is
+```
+
+$$
+\mathrm{E}_{{\scriptscriptstyle X,Y}}\left[g\left(X,Y\right)\right]=\mathrm{E}\left[g\left(X,Y\right)\right]=\begin{cases}
+\intop\limits _{-\infty}^{+\infty}\intop\limits _{-\infty}^{+\infty}g\left(x,y\right)f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y & \text{continuous}\\
+\sum\limits _{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}\sum\limits _{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}g\left(x,y\right)f_{{\scriptscriptstyle XY}}\left(x,y\right) & \text{discrete}
+\end{cases}
+$$
+
+Def: \@ref(def:indicator-function)
+
+$$
+\begin{aligned}
+\mathrm{P}\left(\left(X,Y\right)\in E\right)=\mathrm{E}\left[1\left(\left(X,Y\right)\in E\right)\right]= & \begin{cases}
+\int_{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}\int_{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}1\left(\left(X,Y\right)\in E\right)f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y & \text{continuous}\\
+\sum\limits _{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}\sum\limits _{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}1\left(\left(X,Y\right)\in E\right)g\left(x,y\right)f_{{\scriptscriptstyle XY}}\left(x,y\right) & \text{discrete}
+\end{cases}\\
+= & \begin{cases}
+\iint_{\left(X,Y\right)\in E}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y & \text{continuous}\\
+\sum\sum\limits _{\left(X,Y\right)\in E}f_{{\scriptscriptstyle XY}}\left(x,y\right) & \text{discrete}
+\end{cases}
+\end{aligned}
+$$
+
+***
+
+example
+
+$f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\Rightarrow\mathrm{P}\left(X+Y\le1\right)$
+
+Check if
+
+$$
+f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)
+$$
+
+is a JPDF:
+
+$$
+\begin{cases}
+f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\overset{\begin{cases}
+\mathrm{e}^{-y}>0\\
+1\left(0<x<y<\infty\right)=\begin{cases}
+0\\
+1
+\end{cases}
+\end{cases}}{\ge}0 & \left(ne\right)\text{non-negative}\\
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y=? & \left(1\right)\text{total event}
+\end{cases}
+$$
+
+$$
+\begin{aligned}
+ & \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y,x\in\left(0,\infty\right)\\
+= & \int_{-\infty}^{\infty}\int_{0}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y,y>x\in\left(0,\infty\right)\\
+= & \int_{0}^{\infty}\int_{0}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y\overset{\text{Fubini}}{=}\int_{0}^{\infty}\int_{0}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}y\mathrm{d}x,y>x\\
+= & \int_{0}^{\infty}\int_{x}^{\infty}\mathrm{e}^{-y}1\mathrm{d}y\mathrm{d}x=\int_{0}^{\infty}\int_{x}^{\infty}\mathrm{e}^{-y}\mathrm{d}y\mathrm{d}x=\int_{0}^{\infty}\left[-\mathrm{e}^{-y}\right]_{{\scriptscriptstyle y=x}}^{\infty}\mathrm{d}x=\int_{0}^{\infty}\left[-\mathrm{e}^{-\infty}-\left(-\mathrm{e}^{-x}\right)\right]\mathrm{d}x\\
+= & \int_{0}^{\infty}\left[-0-\left(-\mathrm{e}^{-x}\right)\right]\mathrm{d}x=\int_{0}^{\infty}\mathrm{e}^{-x}\mathrm{d}x=\left[-\mathrm{e}^{-x}\right]_{{\scriptscriptstyle x=0}}^{\infty}=\left[-\mathrm{e}^{-\infty}-\left(-\mathrm{e}^{-0}\right)\right]=\left[-0-\left(-1\right)\right]=1
+\end{aligned}
+$$
+
+$$
+\begin{cases}
+f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\ge0 & \left(ne\right)\text{non-negative}\\
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y=1 & \left(1\right)\text{total event}
+\end{cases}
+$$
+
+$\mathrm{P}\left(X+Y\le1\right)$
+
+https://tex.stackexchange.com/questions/75933/how-to-draw-the-region-of-inequality
+
+https://tex.stackexchange.com/questions/352511/how-to-fill-in-inequality-where-all-inequalities-overlap
+
+[interpolation dashed lines]^[\@ref(interpolation-dashed-lines)]^
+
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='$X+Y\\le1$', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}"))}
+\usetikzlibrary{patterns}
+
+\begin{tikzpicture}[
+  declare function={a(\x)=\x;},
+  declare function={b(\x)=1-\x;},
+  E/.style={font=\small,text=black, sloped, pos=0.84}
+]
+	\begin{axis}[
+		axis x line = center,
+		axis y line = center,
+		xlabel = {$ X $}, xlabel style = {right},
+		ylabel = {$ Y $}, ylabel style = {above},
+		xmin = -0.5, xmax = 1.5,
+		ymin = -0.5, ymax = 1.5,
+		hide obscured x ticks=false, % for origin x tick label i.e. xtick = {0}
+		%xtick= \empty,
+		%xticklabels= \empty,
+		%extra x ticks={0},
+		%ytick = \empty,
+		x = 5cm, y = 5cm, % x y scaling
+		%grid = major,
+		domain = -0.5:1.5,
+		samples = 1000		
+	]
+    \addplot [blue, thick] {a(x)} node [E, above, text=blue] {$ x \le y $};
+    \path [pattern=north east lines, pattern color=blue!40] (axis cs: 0,0) -- (axis cs: 0,1) -- (axis cs: 1,1) -- cycle;
+    \addplot [red, thick] {b(x)} node [E, below, text=red] {$ x + y \le 1 $};
+    \path [pattern=north west lines, pattern color=red!40] (axis cs: 0,1) -- (axis cs: 0,0) -- (axis cs: 1,0) -- cycle;
+
+    \draw [ultra thin, dashed] (axis cs: 0.5,0) -- (axis cs: 0.5,0.5) -- (axis cs: 0,0.5);
+	\end{axis}
+\end{tikzpicture}
+```
+
+$$
+\begin{aligned}
+\mathrm{P}\left(X+Y\le1\right)= & \iint_{\left(X,Y\right)\in E}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y,E=\left\{ X+Y\le1\right\} \\
+= & \iint_{E}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y,E=\left\{ X+Y\le1\right\} \\
+= & \int_{0}^{0.5}\int_{x}^{1-x}\mathrm{e}^{-y}\mathrm{d}y\mathrm{d}x=\int_{0}^{0.5}\left[-\mathrm{e}^{-y}\right]_{{\scriptscriptstyle y=x}}^{{\scriptscriptstyle 1-x}}\mathrm{d}x=\int_{0}^{0.5}\left[-\mathrm{e}^{-\left(1-x\right)}-\left(-\mathrm{e}^{-x}\right)\right]\mathrm{d}x\\
+= & \int_{0}^{0.5}\left[\mathrm{e}^{-x}-\mathrm{e}^{x-1}\right]\mathrm{d}x=\left[-\mathrm{e}^{-x}-\mathrm{e}^{x-1}\right]_{{\scriptscriptstyle x=0}}^{{\scriptscriptstyle 0.5}}=\left[-\mathrm{e}^{-0.5}-\mathrm{e}^{0.5-1}\right]-\left[-\mathrm{e}^{-0}-\mathrm{e}^{0-1}\right]\\
+= & 1+\mathrm{e}^{-1}-2\mathrm{e}^{-0.5}\fallingdotseq0.154818\cdots
+\end{aligned}
+$$
+
+$$
+\tag*{$\Box$}
+$$
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/r-bsPw2-sRg"></iframe>

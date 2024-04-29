@@ -1972,6 +1972,10 @@ Error: cannot find bilibili.com
 \url{https://cran.r-project.org/web/packages/vembedr/vignettes/embed.html}
 
 \begin{verbatim}
+## Warning: package 'vembedr' was built under R version 4.2.3
+\end{verbatim}
+
+\begin{verbatim}
 ## embed_youtube("0LFg5dvPOoc")
 \end{verbatim}
 
@@ -7195,7 +7199,7 @@ When \(b=\mathrm{median}\left[X\right]\), \(\mathrm{E}\left[\left(X-b\right)^{2}
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \begin{definition}
-\protect\hypertarget{def:unnamed-chunk-22}{}\label{def:unnamed-chunk-22}indicator function
+\protect\hypertarget{def:indicator-function}{}\label{def:indicator-function}indicator function
 \end{definition}
 
 \[
@@ -7217,7 +7221,7 @@ When \(b=\mathrm{median}\left[X\right]\), \(\mathrm{E}\left[\left(X-b\right)^{2}
 Note:
 
 \begin{theorem}
-\protect\hypertarget{thm:unnamed-chunk-23}{}\label{thm:unnamed-chunk-23}probability as expected value
+\protect\hypertarget{thm:unnamed-chunk-22}{}\label{thm:unnamed-chunk-22}probability as expected value
 \end{theorem}
 
 \[
@@ -7488,7 +7492,7 @@ A=\emptyset\Leftrightarrow1_{A}\left(x\right)=0
 \]
 
 \begin{theorem}
-\protect\hypertarget{thm:unnamed-chunk-24}{}\label{thm:unnamed-chunk-24}subset indicator order
+\protect\hypertarget{thm:unnamed-chunk-23}{}\label{thm:unnamed-chunk-23}subset indicator order
 \end{theorem}
 
 \[
@@ -7583,7 +7587,7 @@ a_{{\scriptscriptstyle 1}}\mathrm{E}_{{\scriptscriptstyle X_{{\scriptscriptstyle
 \subsubsection{moment}\label{moment}
 
 \begin{definition}
-\protect\hypertarget{def:unnamed-chunk-25}{}\label{def:unnamed-chunk-25}\(n^\text{th}\) moment: For each integer \(n\), the \(n^\text{th}\) moment of \(X\) is \(\mathrm{E}\left[X^{n}\right]\).
+\protect\hypertarget{def:unnamed-chunk-24}{}\label{def:unnamed-chunk-24}\(n^\text{th}\) moment: For each integer \(n\), the \(n^\text{th}\) moment of \(X\) is \(\mathrm{E}\left[X^{n}\right]\).
 
 The \(n^\text{th}\) central moment of \(X\) is \(\mu_{{\scriptscriptstyle n}}=\mathrm{E}\left[\left(X-\mathrm{E}\left[X\right]\right)^{n}\right]\).
 \end{definition}
@@ -7867,7 +7871,7 @@ n\in\mathbb{N}\\
 \paragraph{moment generating function}\label{moment-generating-function}
 
 \begin{definition}
-\protect\hypertarget{def:unnamed-chunk-26}{}\label{def:unnamed-chunk-26}MGF = moment generating function: The moment generating function of \(X\) is \(M\left(\xi\right)=M_{{\scriptscriptstyle X}}\left(\xi\right)=\mathrm{E}\left[\mathrm{e}^{\xi X}\right]\), provided that the expression exists for \(t\approx0\).
+\protect\hypertarget{def:unnamed-chunk-25}{}\label{def:unnamed-chunk-25}MGF = moment generating function: The moment generating function of \(X\) is \(M\left(\xi\right)=M_{{\scriptscriptstyle X}}\left(\xi\right)=\mathrm{E}\left[\mathrm{e}^{\xi X}\right]\), provided that the expression exists for \(t\approx0\).
 \end{definition}
 
 \[
@@ -7879,7 +7883,7 @@ M\left(\xi\right)=M_{{\scriptscriptstyle X}}\left(\xi\right)=\mathrm{E}\left[\ma
 \]
 
 \begin{theorem}
-\protect\hypertarget{thm:unnamed-chunk-27}{}\label{thm:unnamed-chunk-27}moment generating function(MGF) generating moment
+\protect\hypertarget{thm:unnamed-chunk-26}{}\label{thm:unnamed-chunk-26}moment generating function(MGF) generating moment
 \end{theorem}
 
 \[
@@ -7928,7 +7932,7 @@ X & \sim & F_{{\scriptscriptstyle X}}\left(x\right) & \leftrightarrow & f_{{\scr
 \]
 
 \begin{theorem}
-\protect\hypertarget{thm:unnamed-chunk-28}{}\label{thm:unnamed-chunk-28}If \(X\) and \(Y\) have bounded support, then \(\forall u\left[F_{{\scriptscriptstyle X}}\left(u\right)=F_{{\scriptscriptstyle Y}}\left(u\right)\right]\) iff \(\forall n\in\mathbb{N}\left(\mathrm{E}\left[X^{n}\right]=\mathrm{E}\left[Y^{n}\right]\right)\).
+\protect\hypertarget{thm:unnamed-chunk-27}{}\label{thm:unnamed-chunk-27}If \(X\) and \(Y\) have bounded support, then \(\forall u\left[F_{{\scriptscriptstyle X}}\left(u\right)=F_{{\scriptscriptstyle Y}}\left(u\right)\right]\) iff \(\forall n\in\mathbb{N}\left(\mathrm{E}\left[X^{n}\right]=\mathrm{E}\left[Y^{n}\right]\right)\).
 \end{theorem}
 
 \[
@@ -7958,7 +7962,7 @@ Proof:
 \]
 
 \begin{theorem}
-\protect\hypertarget{thm:unnamed-chunk-29}{}\label{thm:unnamed-chunk-29}If \(M_{{\scriptscriptstyle X}}\left(t\right)\) and \(M_{{\scriptscriptstyle Y}}\left(t\right)\) exist, then \(\forall u\left[F_{{\scriptscriptstyle X}}\left(u\right)=F_{{\scriptscriptstyle Y}}\left(u\right)\right]\) iff \(\forall t\approx0\left[M_{{\scriptscriptstyle X}}\left(t\right)=M_{{\scriptscriptstyle Y}}\left(t\right)\right]\).
+\protect\hypertarget{thm:unnamed-chunk-28}{}\label{thm:unnamed-chunk-28}If \(M_{{\scriptscriptstyle X}}\left(t\right)\) and \(M_{{\scriptscriptstyle Y}}\left(t\right)\) exist, then \(\forall u\left[F_{{\scriptscriptstyle X}}\left(u\right)=F_{{\scriptscriptstyle Y}}\left(u\right)\right]\) iff \(\forall t\approx0\left[M_{{\scriptscriptstyle X}}\left(t\right)=M_{{\scriptscriptstyle Y}}\left(t\right)\right]\).
 \end{theorem}
 
 \[
@@ -7998,7 +8002,7 @@ X & \sim & F_{{\scriptscriptstyle X}}\left(x\right) & \leftrightarrow & f_{{\scr
 \paragraph{characteristic function}\label{characteristic-function}
 
 \begin{definition}
-\protect\hypertarget{def:unnamed-chunk-30}{}\label{def:unnamed-chunk-30}CF = characteristic function: The characteristic function of \(X\) is \(\varphi\left(\xi\right)=\varphi_{{\scriptscriptstyle X}}\left(\xi\right)=\mathrm{E}\left[\mathrm{e}^{\mathrm{i}\xi X}\right]\), provided that the expression always exists.
+\protect\hypertarget{def:unnamed-chunk-29}{}\label{def:unnamed-chunk-29}CF = characteristic function: The characteristic function of \(X\) is \(\varphi\left(\xi\right)=\varphi_{{\scriptscriptstyle X}}\left(\xi\right)=\mathrm{E}\left[\mathrm{e}^{\mathrm{i}\xi X}\right]\), provided that the expression always exists.
 \end{definition}
 
 \[
@@ -8080,7 +8084,7 @@ MGF theorems
 \url{https://www.youtube.com/watch?v=fSbs6im6wqY&t=524s}
 
 \begin{theorem}
-\protect\hypertarget{thm:unnamed-chunk-31}{}\label{thm:unnamed-chunk-31}If
+\protect\hypertarget{thm:unnamed-chunk-30}{}\label{thm:unnamed-chunk-30}If
 \end{theorem}
 
 \[
@@ -8479,8 +8483,8 @@ M_{{\scriptscriptstyle X}}\left(\xi\right) & \text{diverges}
 
 \begin{figure}
 \centering
-\includegraphics{202402170031-statistics_files/figure-latex/unnamed-chunk-32-1.pdf}
-\caption{\label{fig:unnamed-chunk-32}not completed: Cauchy distribution vs.~normal distribution}
+\includegraphics{202402170031-statistics_files/figure-latex/unnamed-chunk-31-1.pdf}
+\caption{\label{fig:unnamed-chunk-31}not completed: Cauchy distribution vs.~normal distribution}
 \end{figure}
 
 heavy tail
@@ -8494,7 +8498,7 @@ box plot
 \subsubsection{exponential family}\label{exponential-family}
 
 \begin{definition}
-\protect\hypertarget{def:unnamed-chunk-33}{}\label{def:unnamed-chunk-33}exponential family: A family of PDF/PMF is called exponential family if
+\protect\hypertarget{def:unnamed-chunk-32}{}\label{def:unnamed-chunk-32}exponential family: A family of PDF/PMF is called exponential family if
 \end{definition}
 
 \[
@@ -8729,8 +8733,8 @@ exponential family
 
 \begin{figure}
 \centering
-\includegraphics{202402170031-statistics_files/figure-latex/unnamed-chunk-34-1.pdf}
-\caption{\label{fig:unnamed-chunk-34}curved exponential family vs.~exponential family}
+\includegraphics{202402170031-statistics_files/figure-latex/unnamed-chunk-33-1.pdf}
+\caption{\label{fig:unnamed-chunk-33}curved exponential family vs.~exponential family}
 \end{figure}
 
 \paragraph{properties of exponential family}\label{properties-of-exponential-family}
@@ -8738,7 +8742,7 @@ exponential family
 \subparagraph{fundamentals of statistical inference}\label{fundamentals-of-statistical-inference}
 
 \begin{lemma}
-\protect\hypertarget{lem:unnamed-chunk-35}{}\label{lem:unnamed-chunk-35}Leibnitz rule
+\protect\hypertarget{lem:unnamed-chunk-34}{}\label{lem:unnamed-chunk-34}Leibnitz rule
 \end{lemma}
 
 \[
@@ -8777,7 +8781,7 @@ exponential family
 point estimation
 
 \begin{lemma}
-\protect\hypertarget{lem:unnamed-chunk-36}{}\label{lem:unnamed-chunk-36}parameter-independent expectation:
+\protect\hypertarget{lem:unnamed-chunk-35}{}\label{lem:unnamed-chunk-35}parameter-independent expectation:
 
 Assume the domain of \(X\) independent of \(\theta\), then
 \end{lemma}
@@ -8844,7 +8848,7 @@ as the fundamental to estimate parameters.
 interval estimation
 
 \begin{lemma}
-\protect\hypertarget{lem:unnamed-chunk-37}{}\label{lem:unnamed-chunk-37}parameter-independent variance:
+\protect\hypertarget{lem:unnamed-chunk-36}{}\label{lem:unnamed-chunk-36}parameter-independent variance:
 
 Assume the domain of \(X\) independent of \(\theta\), then
 \end{lemma}
@@ -8885,7 +8889,7 @@ X\left(\Omega\right)\perp\boldsymbol{\theta}
 exponential family expectation and variance
 
 \begin{theorem}
-\protect\hypertarget{thm:unnamed-chunk-38}{}\label{thm:unnamed-chunk-38}exponential family expectation
+\protect\hypertarget{thm:unnamed-chunk-37}{}\label{thm:unnamed-chunk-37}exponential family expectation
 \end{theorem}
 
 \[
@@ -8934,7 +8938,7 @@ f\left(x|\boldsymbol{\theta}\right)= & h\left(x\right)c\left(\boldsymbol{\theta}
 \]
 
 \begin{theorem}
-\protect\hypertarget{thm:unnamed-chunk-39}{}\label{thm:unnamed-chunk-39}exponential family variance
+\protect\hypertarget{thm:unnamed-chunk-38}{}\label{thm:unnamed-chunk-38}exponential family variance
 \end{theorem}
 
 \[
@@ -9012,6 +9016,260 @@ sense of downgrading by differentiation instead of integration
 \]
 
 \subsection{multivariable distribution}\label{multivariable-distribution}
+
+univariable random vector
+
+discrete: PMF equals probability function
+
+\[
+f_{{\scriptscriptstyle X}}\left(x\right)=\mathrm{P}\left(X=x\right)
+\]
+
+continuous: PDF equals probability intensity
+
+\[
+f_{{\scriptscriptstyle X}}\left(x\right)\mathrm{d}x=\mathrm{d}\mathrm{P}\left(X\le x\right)
+\]
+
+Given \(\left(X,Y\right)=\left(X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right)=\left\langle X,Y\right\rangle =\left\langle X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right\rangle \sim f_{{\scriptscriptstyle XY}}=f_{{\scriptscriptstyle XY}}\left(x,y\right)=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)\)
+
+discrete:
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-39}{}\label{def:unnamed-chunk-39}JPMF = joint probability mass function: the JPMF of \(\left(X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right)=\left\langle X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right\rangle\) is
+\end{definition}
+
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)
+\]
+
+joint vs.~marginal
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-40}{}\label{thm:unnamed-chunk-40}joint probability mass function can inference marginal probability mass function:
+
+The marginal PMF of \(X_{{\scriptscriptstyle 1}}\), \(f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\right)\) is given by
+\end{theorem}
+
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\sum_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\sum_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)
+\]
+
+Proof:
+
+\[
+\begin{aligned}
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\right)\\
+= & \mathrm{P}\left(\left\{ X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\right\} \cap\left\{ X_{{\scriptscriptstyle 2}}\in\left(-\infty,\infty\right)\right\} \right)\\
+= & \mathrm{P}\left(\bigcup_{x_{{\scriptscriptstyle 2}}\in\left(-\infty,\infty\right)}\left\{ X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\wedge X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right\} \right)\\
+= & \bigcup_{x_{{\scriptscriptstyle 2}}\in\left(-\infty,\infty\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\wedge X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)=\bigcup_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)\\
+= & \bigcup_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)=\sum_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+continuous:
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-41}{}\label{def:unnamed-chunk-41}JCDF = joint cumulative distribution function: the JCDF of \(\left(X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right)=\left\langle X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right\rangle\) is
+\end{definition}
+
+\[
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\le x_{{\scriptscriptstyle 2}}\right)
+\]
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-42}{}\label{def:unnamed-chunk-42}JPDF = joint probability density function: the JPDF of \(\left(X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right)=\left\langle X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right\rangle\) is
+\end{definition}
+
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\dfrac{\partial^{2}}{\partial x_{{\scriptscriptstyle 1}}\partial x_{{\scriptscriptstyle 2}}}F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)
+\]
+
+joint vs.~marginal
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-43}{}\label{thm:unnamed-chunk-43}joint cumulative distribution function can inference marginal cumulative distribution function:
+
+The marginal CDF of \(X_{{\scriptscriptstyle 1}}\) is
+\end{theorem}
+
+\[
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)
+\]
+
+Proof:
+
+\[
+\begin{aligned}
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}}\right)\\
+= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}}\wedge X_{{\scriptscriptstyle 2}}\le\infty\right)\\
+= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\le\infty\right)\\
+= & F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+Note:
+
+\(F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)\)
+
+\[
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)=\int_{-\infty}^{\infty}\int_{-\infty}^{x_{{\scriptscriptstyle 1}}}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(u_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 1}}\mathrm{d}u_{{\scriptscriptstyle 2}}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\int_{-\infty}^{\infty}\int_{-\infty}^{x_{{\scriptscriptstyle 1}}}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(u_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 1}}\mathrm{d}u_{{\scriptscriptstyle 2}}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\(f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)\)
+
+According to the fundamental theorem of calculus,
+
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\dfrac{\mathrm{d}}{\mathrm{d}x_{{\scriptscriptstyle 1}}}F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\dfrac{\mathrm{d}}{\mathrm{d}x_{{\scriptscriptstyle 1}}}F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)=\dfrac{\mathrm{d}}{\mathrm{d}x_{{\scriptscriptstyle 1}}}\int_{-\infty}^{\infty}\int_{-\infty}^{x}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(u_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 1}}\mathrm{d}u_{{\scriptscriptstyle 2}}=\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 2}}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 2}}
+\]
+
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)\mathrm{d}x_{{\scriptscriptstyle 2}}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\begin{cases}
+\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)\mathrm{d}x_{{\scriptscriptstyle 2}} & \text{continuous}\\
+\sum\limits _{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right) & \text{discrete}
+\end{cases}
+\]
+
+\begin{theorem}
+\protect\hypertarget{thm:unnamed-chunk-44}{}\label{thm:unnamed-chunk-44}A function \(f(x,y)\) is a joint PDF/PMF or JPDF/JPMF iff
+\end{theorem}
+
+\[
+\begin{cases}
+f\left(x,y\right)\ge0 & \left(ne\right)\text{non-negative}\\
+\begin{cases}
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f\left(x,y\right)\mathrm{d}x\mathrm{d}y=1 & \text{continuous}\\
+\sum\limits _{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}\sum\limits _{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}f\left(x,y\right)=1 & \text{discrete}
+\end{cases} & \left(1\right)\text{total event}
+\end{cases}
+\]
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-45}{}\label{def:unnamed-chunk-45}expected value: The expected value of a random vector \(g\left(X,Y\right)\) is
+\end{definition}
+
+\[
+\mathrm{E}_{{\scriptscriptstyle X,Y}}\left[g\left(X,Y\right)\right]=\mathrm{E}\left[g\left(X,Y\right)\right]=\begin{cases}
+\intop\limits _{-\infty}^{+\infty}\intop\limits _{-\infty}^{+\infty}g\left(x,y\right)f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y & \text{continuous}\\
+\sum\limits _{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}\sum\limits _{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}g\left(x,y\right)f_{{\scriptscriptstyle XY}}\left(x,y\right) & \text{discrete}
+\end{cases}
+\]
+
+Def: \ref{def:indicator-function}
+
+\[
+\begin{aligned}
+\mathrm{P}\left(\left(X,Y\right)\in E\right)=\mathrm{E}\left[1\left(\left(X,Y\right)\in E\right)\right]= & \begin{cases}
+\int_{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}\int_{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}1\left(\left(X,Y\right)\in E\right)f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y & \text{continuous}\\
+\sum\limits _{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}\sum\limits _{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}1\left(\left(X,Y\right)\in E\right)g\left(x,y\right)f_{{\scriptscriptstyle XY}}\left(x,y\right) & \text{discrete}
+\end{cases}\\
+= & \begin{cases}
+\iint_{\left(X,Y\right)\in E}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y & \text{continuous}\\
+\sum\sum\limits _{\left(X,Y\right)\in E}f_{{\scriptscriptstyle XY}}\left(x,y\right) & \text{discrete}
+\end{cases}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+example
+
+\(f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\Rightarrow\mathrm{P}\left(X+Y\le1\right)\)
+
+Check if
+
+\[
+f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)
+\]
+
+is a JPDF:
+
+\[
+\begin{cases}
+f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\overset{\begin{cases}
+\mathrm{e}^{-y}>0\\
+1\left(0<x<y<\infty\right)=\begin{cases}
+0\\
+1
+\end{cases}
+\end{cases}}{\ge}0 & \left(ne\right)\text{non-negative}\\
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y=? & \left(1\right)\text{total event}
+\end{cases}
+\]
+
+\[
+\begin{aligned}
+ & \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y,x\in\left(0,\infty\right)\\
+= & \int_{-\infty}^{\infty}\int_{0}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y,y>x\in\left(0,\infty\right)\\
+= & \int_{0}^{\infty}\int_{0}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y\overset{\text{Fubini}}{=}\int_{0}^{\infty}\int_{0}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}y\mathrm{d}x,y>x\\
+= & \int_{0}^{\infty}\int_{x}^{\infty}\mathrm{e}^{-y}1\mathrm{d}y\mathrm{d}x=\int_{0}^{\infty}\int_{x}^{\infty}\mathrm{e}^{-y}\mathrm{d}y\mathrm{d}x=\int_{0}^{\infty}\left[-\mathrm{e}^{-y}\right]_{{\scriptscriptstyle y=x}}^{\infty}\mathrm{d}x=\int_{0}^{\infty}\left[-\mathrm{e}^{-\infty}-\left(-\mathrm{e}^{-x}\right)\right]\mathrm{d}x\\
+= & \int_{0}^{\infty}\left[-0-\left(-\mathrm{e}^{-x}\right)\right]\mathrm{d}x=\int_{0}^{\infty}\mathrm{e}^{-x}\mathrm{d}x=\left[-\mathrm{e}^{-x}\right]_{{\scriptscriptstyle x=0}}^{\infty}=\left[-\mathrm{e}^{-\infty}-\left(-\mathrm{e}^{-0}\right)\right]=\left[-0-\left(-1\right)\right]=1
+\end{aligned}
+\]
+
+\[
+\begin{cases}
+f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\ge0 & \left(ne\right)\text{non-negative}\\
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y=1 & \left(1\right)\text{total event}
+\end{cases}
+\]
+
+\(\mathrm{P}\left(X+Y\le1\right)\)
+
+\url{https://tex.stackexchange.com/questions/75933/how-to-draw-the-region-of-inequality}
+
+\url{https://tex.stackexchange.com/questions/352511/how-to-fill-in-inequality-where-all-inequalities-overlap}
+
+\hyperref[interpolation-dashed-lines]{interpolation dashed lines}\textsuperscript{{[}\ref{interpolation-dashed-lines}{]}}
+
+\begin{figure}
+\centering
+\includegraphics{202402170031-statistics_files/figure-latex/unnamed-chunk-46-1.pdf}
+\caption{\label{fig:unnamed-chunk-46}\(X+Y\le1\)}
+\end{figure}
+
+\[
+\begin{aligned}
+\mathrm{P}\left(X+Y\le1\right)= & \iint_{\left(X,Y\right)\in E}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y,E=\left\{ X+Y\le1\right\} \\
+= & \iint_{E}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y,E=\left\{ X+Y\le1\right\} \\
+= & \int_{0}^{0.5}\int_{x}^{1-x}\mathrm{e}^{-y}\mathrm{d}y\mathrm{d}x=\int_{0}^{0.5}\left[-\mathrm{e}^{-y}\right]_{{\scriptscriptstyle y=x}}^{{\scriptscriptstyle 1-x}}\mathrm{d}x=\int_{0}^{0.5}\left[-\mathrm{e}^{-\left(1-x\right)}-\left(-\mathrm{e}^{-x}\right)\right]\mathrm{d}x\\
+= & \int_{0}^{0.5}\left[\mathrm{e}^{-x}-\mathrm{e}^{x-1}\right]\mathrm{d}x=\left[-\mathrm{e}^{-x}-\mathrm{e}^{x-1}\right]_{{\scriptscriptstyle x=0}}^{{\scriptscriptstyle 0.5}}=\left[-\mathrm{e}^{-0.5}-\mathrm{e}^{0.5-1}\right]-\left[-\mathrm{e}^{-0}-\mathrm{e}^{0-1}\right]\\
+= & 1+\mathrm{e}^{-1}-2\mathrm{e}^{-0.5}\fallingdotseq0.154818\cdots
+\end{aligned}
+\]
+
+\[
+\tag*{$\Box$}
+\]
 
 \section{Chen, Lin-An}\label{chen-lin-an}
 
@@ -14379,6 +14637,19 @@ ggplot2
 \end{col}
 
 \begin{col}{0.45\textwidth}
+
+\begin{verbatim}
+## Warning: package 'ggplot2' was built under R version 4.2.3
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: The dot-dot notation (`..n..`) was deprecated in ggplot2 3.4.0.
+## i Please use `after_stat(n)` instead.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
+## generated.
+\end{verbatim}
+
 \includegraphics{202403211208-ggplot2_files/figure-latex/unnamed-chunk-30-1.pdf}
 
 \end{col}
@@ -21798,6 +22069,8 @@ f^{\prime}\left(x\right)= & f\left(x\right)\left[x\ln x\right]^{\prime}=x^{x}\le
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
+\hyperref[d-delta-function]{3D delta function}\textsuperscript{{[}\ref{d-delta-function}{]}}
+
 \(\Delta\left(\dfrac{1}{r}\right)=\boldsymbol{\nabla}^{2}\left(\dfrac{1}{\sqrt{\boldsymbol{r}^{2}}}\right)=\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}\left(\dfrac{1}{\sqrt{\boldsymbol{r}\cdot\boldsymbol{r}}}\right)=\boldsymbol{\nabla}\cdot\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\left(\dfrac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\right)\)
 
 \[
@@ -23835,7 +24108,7 @@ f=\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\hat{f}_{{\scri
 f^{*}=\left(f,\cdot\right)= & \left(\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\hat{f}_{{\scriptscriptstyle i}},\cdot\right)=\left(\sum\limits _{i}\hat{f}_{{\scriptscriptstyle i}}\left(\hat{f}_{{\scriptscriptstyle i}},f\right),\cdot\right)\\
 \overset{\text{antilinearity}}{=} & \overline{\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)}\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)=\sum\limits _{i}\overline{\left(\hat{f}_{{\scriptscriptstyle i}},f\right)}\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)\\
 = & \sum\limits _{i}\left(f,\hat{f}_{{\scriptscriptstyle i}}\right)\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)\\
-\overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left\langle f\middle|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|=\left\langle f\right|\\
+\overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|=\left\langle f\right|\\
 \Updownarrow\\
 f= & \sum\limits _{i}\hat{f}_{{\scriptscriptstyle i}}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\\
 \overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle =\left|f\right\rangle 
@@ -25717,6 +25990,14 @@ Y_{t}=\mathcal{E}_{t}+\sum_{i=1}^{q}\alpha_{i}\mathcal{E}_{t-i}+\sum_{i=1}^{p}\b
 \includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-5-1} \caption{test}\label{fig:unnamed-chunk-5}
 \end{figure}
 
+\chapter{Shannon sampling}\label{shannon-sampling}
+
+\url{https://www.youtube.com/watch?v=ePGDQpJAvjE}
+
+\chapter{brachistochrone}\label{brachistochrone}
+
+\url{https://www.youtube.com/watch?v=2c_bdVC9KS8}
+
 \chapter*{references}\label{references}
 \addcontentsline{toc}{chapter}{references}
 \begin{CJK}{UTF8}{bsmi}
@@ -25784,5 +26065,4 @@ Y_{t}=\mathcal{E}_{t}+\sum_{i=1}^{q}\alpha_{i}\mathcal{E}_{t-i}+\sum_{i=1}^{p}\b
 
 \end{CSLReferences}
 \end{CJK}
-
 \end{document}

@@ -97,13 +97,1454 @@
 \begin_body
 
 \begin_layout Standard
+scalar = rank-0 tensor
+\end_layout
+
+\begin_layout Standard
+vector = rank-1 tensor
+\end_layout
+
+\begin_layout Standard
+matrix = rank-2 tensor
+\end_layout
+
+\begin_layout Standard
+vector direct product = rank-1 tensor times rank-1 tensor equals rank-2
+ tensor: increasing rank
+\begin_inset Formula 
+\begin{align*}
+U\otimes V= & UV^{\intercal}=U_{i}V_{j}\\
+=\begin{pmatrix}U_{1}\\
+U_{2}\\
+U_{3}
+\end{pmatrix}\otimes\begin{pmatrix}V_{1}\\
+V_{2}\\
+V_{3}
+\end{pmatrix}= & \begin{pmatrix}U_{1}\\
+U_{2}\\
+U_{3}
+\end{pmatrix}\begin{pmatrix}V_{1} & V_{2} & V_{3}\end{pmatrix}=\begin{pmatrix}U_{1}V_{1} & U_{1}V_{2} & U_{1}V_{3}\\
+U_{\text{2}}V_{1} & U_{2}V_{2} & U_{2}V_{3}\\
+U_{3}V_{1} & U_{3}V_{2} & U_{3}V_{3}
+\end{pmatrix}\\
+= & \begin{pmatrix}U_{1}V^{\intercal}\\
+U_{2}V^{\intercal}\\
+U_{3}V^{\intercal}
+\end{pmatrix}=\begin{pmatrix}UV_{1} & UV_{2} & UV_{3}\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+vector inner product = rank-1 tensor times rank-1 tensor equals rank-0 tensor:
+ decreasing rank
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+U\cdot V= & V^{\intercal}U=V_{i}U_{i}\\
+=\begin{pmatrix}U_{1}\\
+U_{2}\\
+U_{3}
+\end{pmatrix}\cdot\begin{pmatrix}V_{1}\\
+V_{2}\\
+V_{3}
+\end{pmatrix}= & \begin{pmatrix}V_{1} & V_{2} & V_{3}\end{pmatrix}\begin{pmatrix}U_{1}\\
+U_{2}\\
+U_{3}
+\end{pmatrix}=V_{1}U_{1}+V_{2}U_{2}+V_{3}U_{3}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+deep learning
+\end_layout
+
+\begin_layout Standard
+Esc = Einstein summation convention
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+W\boldsymbol{x}= & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\begin{pmatrix}\sum\limits _{\nu=0}^{n}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+\sum\limits _{\nu=0}^{n}w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+\sum\limits _{\nu=0}^{n}w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}\overset{\text{Esc}}{=}\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}\\
+\boldsymbol{y}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=y_{{\scriptscriptstyle \mu}}= & w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=W\boldsymbol{x}\\
+\boldsymbol{y}^{\intercal}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}=y_{{\scriptscriptstyle \mu}}^{\intercal}= & \left(w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}\right)^{\intercal}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}=\left[\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}\right]^{\intercal}=\left[W\boldsymbol{x}\right]^{\intercal}\\
+= & x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal}\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}=\boldsymbol{x}^{\intercal}W^{\intercal}\\
+\boldsymbol{x}^{\intercal}W^{\intercal}=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}=y_{{\scriptscriptstyle \mu}}^{\intercal}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}=\boldsymbol{y}^{\intercal}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+***
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+W\boldsymbol{x}= & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\begin{pmatrix}\sum\limits _{\nu=0}^{n}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+\sum\limits _{\nu=0}^{n}w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+\sum\limits _{\nu=0}^{n}w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}\overset{\text{Esc}}{=}\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+=W\boldsymbol{x}= & \begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+\sum\limits _{j=1}^{n}w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+\sum\limits _{j=1}^{n}w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+\sum\limits _{j=1}^{n}w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}\overset{\text{Esc}}{=}\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}=b_{{\scriptscriptstyle \mu}}+w_{{\scriptscriptstyle \mu j}}x_{{\scriptscriptstyle j}}\\
+\boldsymbol{y}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=y_{{\scriptscriptstyle \mu}}= & w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=W\boldsymbol{x},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+=\boldsymbol{y}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=y_{{\scriptscriptstyle \mu}}= & w_{{\scriptscriptstyle \mu j}}x_{{\scriptscriptstyle j}}+b_{{\scriptscriptstyle \mu}}=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=W\boldsymbol{x},\begin{cases}
+1=x_{{\scriptscriptstyle 0}}\\
+b_{{\scriptscriptstyle \mu}}=w_{{\scriptscriptstyle \mu0}}
+\end{cases}\\
+\boldsymbol{y}^{\intercal}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}=y_{{\scriptscriptstyle \mu}}^{\intercal}= & \left(w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}\right)^{\intercal}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}=\left[\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}\right]^{\intercal}=\left[W\boldsymbol{x}\right]^{\intercal}\\
+= & x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal}\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}=\boldsymbol{x}^{\intercal}W^{\intercal},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+= & b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle \mu j}}^{\intercal}=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal}\begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}=\boldsymbol{x}^{\intercal}W^{\intercal}\\
+\boldsymbol{x}^{\intercal}W^{\intercal}=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}=y_{{\scriptscriptstyle \mu}}^{\intercal}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}=\boldsymbol{y}^{\intercal}\\
+\boldsymbol{x}^{\intercal}W^{\intercal}=\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}^{\intercal}=b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle \mu j}}^{\intercal}=y_{{\scriptscriptstyle \mu}}^{\intercal}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}=\boldsymbol{y}^{\intercal}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+***
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+W\boldsymbol{x}= & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\begin{pmatrix}\sum\limits _{\nu=0}^{n}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+\sum\limits _{\nu=0}^{n}w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+\sum\limits _{\nu=0}^{n}w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}\overset{\text{Esc}}{=}\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+=W\boldsymbol{x}= & \begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+\sum\limits _{j=1}^{n}w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+\sum\limits _{j=1}^{n}w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+\sum\limits _{j=1}^{n}w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}\overset{\text{Esc}}{=}\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}=b_{{\scriptscriptstyle \mu}}+w_{{\scriptscriptstyle \mu j}}x_{{\scriptscriptstyle j}}\\
+\boldsymbol{y}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=y_{{\scriptscriptstyle \mu}}= & w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=W\boldsymbol{x},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+=\boldsymbol{y}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=y_{{\scriptscriptstyle \mu}}= & w_{{\scriptscriptstyle \mu j}}x_{{\scriptscriptstyle j}}+b_{{\scriptscriptstyle \mu}}=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=W\boldsymbol{x},\begin{cases}
+1=x_{{\scriptscriptstyle 0}}\\
+b_{{\scriptscriptstyle \mu}}=w_{{\scriptscriptstyle \mu0}}
+\end{cases}\\
+\boldsymbol{y}^{\intercal}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}=y_{{\scriptscriptstyle \mu}}^{\intercal}= & \left(w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}\right)^{\intercal}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}=\left[\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}\right]^{\intercal}=\left[W\boldsymbol{x}\right]^{\intercal}\\
+= & x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \nu\mu}}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal}\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}=\boldsymbol{x}^{\intercal}W^{\intercal}\\
+= & b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle \mu j}}^{\intercal}=b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle j\mu}}=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal}\begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}\\
+\boldsymbol{x}^{\intercal}W^{\intercal}=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \nu\mu}}=y_{{\scriptscriptstyle \mu}}^{\intercal}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}=\boldsymbol{y}^{\intercal}\\
+\boldsymbol{x}^{\intercal}W^{\intercal}=\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}^{\intercal}=b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle j\mu}}=y_{{\scriptscriptstyle \mu}}^{\intercal}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+***
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{y}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=y_{{\scriptscriptstyle \mu}}= & w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=W\boldsymbol{x},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+=\boldsymbol{y}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=y_{{\scriptscriptstyle \mu}}= & w_{{\scriptscriptstyle \mu j}}x_{{\scriptscriptstyle j}}+b_{{\scriptscriptstyle \mu}}=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}=\begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=W\boldsymbol{x},\begin{cases}
+1=x_{{\scriptscriptstyle 0}}\\
+b_{{\scriptscriptstyle \mu}}=w_{{\scriptscriptstyle \mu0}}
+\end{cases}\\
+\boldsymbol{x}^{\intercal}W^{\intercal}=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \nu\mu}}=y_{{\scriptscriptstyle \mu}}^{\intercal}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}=\boldsymbol{y}^{\intercal}\\
+=\boldsymbol{x}^{\intercal}W^{\intercal}=\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}^{\intercal}=b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle j\mu}}=y_{{\scriptscriptstyle \mu}}^{\intercal}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}=\boldsymbol{y}^{\intercal}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+***
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma\left(\boldsymbol{y}\right)=\sigma\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=\sigma\left(y_{{\scriptscriptstyle \mu}}\right)= & \sigma\left(w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}\right)=\sigma\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=\sigma\left(\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}\right)=\sigma\left(W\boldsymbol{x}\right),\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+=\sigma\left(\boldsymbol{y}\right)=\sigma\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=\sigma\left(y_{{\scriptscriptstyle \mu}}\right)= & \sigma\left(w_{{\scriptscriptstyle \mu j}}x_{{\scriptscriptstyle j}}+b_{{\scriptscriptstyle \mu}}\right)=\sigma\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}=\sigma\left(\begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}\right)=\sigma\left(W\boldsymbol{x}\right),\begin{cases}
+1=x_{{\scriptscriptstyle 0}}\\
+b_{{\scriptscriptstyle \mu}}=w_{{\scriptscriptstyle \mu0}}
+\end{cases}\\
+\left(\boldsymbol{x}^{\intercal}W^{\intercal}\right)\varsigma=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}\varsigma=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}\varsigma=\left(x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}\right)\varsigma=\left(x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \nu\mu}}\right)\varsigma=\left(y_{{\scriptscriptstyle \mu}}^{\intercal}\right)\varsigma=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\varsigma=\left(\boldsymbol{y}^{\intercal}\right)\varsigma\\
+=\left(\boldsymbol{x}^{\intercal}W^{\intercal}\right)\varsigma=\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}\varsigma=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}^{\intercal}\varsigma=\left(b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle j\mu}}\right)\varsigma=\left(y_{{\scriptscriptstyle \mu}}^{\intercal}\right)\varsigma=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\varsigma=\left(\boldsymbol{y}^{\intercal}\right)\varsigma
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sigma\left(\boldsymbol{y}\right)=\sigma\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=\sigma\left(y_{{\scriptscriptstyle \mu}}\right)= & \sigma\left(w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}\right)=\sigma\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=\sigma\left(\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}\right)=\sigma\left(W\boldsymbol{x}\right),\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+=\sigma\boldsymbol{y}=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=\sigma_{{\scriptscriptstyle \mu}}y_{{\scriptscriptstyle \mu}}= & \sigma_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=\sigma\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\sigma W\boldsymbol{x},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+=\sigma\left(\boldsymbol{y}\right)=\sigma\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=\sigma\left(y_{{\scriptscriptstyle \mu}}\right)= & \sigma\left(w_{{\scriptscriptstyle \mu j}}x_{{\scriptscriptstyle j}}+b_{{\scriptscriptstyle \mu}}\right)=\sigma\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}=\sigma\left(\begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}\right)=\sigma\left(W\boldsymbol{x}\right),\begin{cases}
+1=x_{{\scriptscriptstyle 0}}\\
+b_{{\scriptscriptstyle \mu}}=w_{{\scriptscriptstyle \mu0}}
+\end{cases}\\
+=\sigma\boldsymbol{y}=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=\sigma_{{\scriptscriptstyle \mu}}y_{{\scriptscriptstyle \mu}}= & \sigma_{{\scriptscriptstyle \mu}}\left(w_{{\scriptscriptstyle \mu j}}x_{{\scriptscriptstyle j}}+b_{{\scriptscriptstyle \mu}}\right)=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}=\sigma\begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\sigma W\boldsymbol{x},\begin{cases}
+1=x_{{\scriptscriptstyle 0}}\\
+b_{{\scriptscriptstyle \mu}}=w_{{\scriptscriptstyle \mu0}}
+\end{cases}\\
+\left(\boldsymbol{x}^{\intercal}W^{\intercal}\right)\varsigma=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}\varsigma=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}\varsigma=\left(x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}\right)\varsigma=\left(x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \nu\mu}}\right)\varsigma=\left(y_{{\scriptscriptstyle \mu}}^{\intercal}\right)\varsigma=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\varsigma=\left(\boldsymbol{y}^{\intercal}\right)\varsigma\\
+=\boldsymbol{x}^{\intercal}W^{\intercal}\varsigma=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}\varsigma=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}\varsigma=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \nu\mu}}\varsigma_{{\scriptscriptstyle \mu}}=y_{{\scriptscriptstyle \mu}}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=\boldsymbol{y}^{\intercal}\varsigma\\
+=\left(\boldsymbol{x}^{\intercal}W^{\intercal}\right)\varsigma=\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}\varsigma=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}^{\intercal}\varsigma=\left(b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle j\mu}}\right)\varsigma=\left(y_{{\scriptscriptstyle \mu}}^{\intercal}\right)\varsigma=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\varsigma=\left(\boldsymbol{y}^{\intercal}\right)\varsigma\\
+=\boldsymbol{x}^{\intercal}W^{\intercal}\varsigma=\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}\varsigma=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}^{\intercal}\varsigma=\left(b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle j\mu}}\right)\varsigma_{{\scriptscriptstyle \mu}}=y_{{\scriptscriptstyle \mu}}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=\boldsymbol{y}^{\intercal}\varsigma
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+***
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma\boldsymbol{y}=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=\sigma_{{\scriptscriptstyle \mu}}y_{{\scriptscriptstyle \mu}}= & \sigma_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=\sigma\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\sigma W\boldsymbol{x},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+=\sigma\boldsymbol{y}=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=\sigma_{{\scriptscriptstyle \mu}}y_{{\scriptscriptstyle \mu}}= & \sigma_{{\scriptscriptstyle \mu}}\left(w_{{\scriptscriptstyle \mu j}}x_{{\scriptscriptstyle j}}+b_{{\scriptscriptstyle \mu}}\right)=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}=\sigma\begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\sigma W\boldsymbol{x},\begin{cases}
+1=x_{{\scriptscriptstyle 0}}\\
+b_{{\scriptscriptstyle \mu}}=w_{{\scriptscriptstyle \mu0}}
+\end{cases}\\
+\boldsymbol{x}^{\intercal}W^{\intercal}\varsigma=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}\varsigma=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}\varsigma=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \nu\mu}}\varsigma_{{\scriptscriptstyle \mu}}=y_{{\scriptscriptstyle \mu}}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=\boldsymbol{y}^{\intercal}\varsigma\\
+=\boldsymbol{x}^{\intercal}W^{\intercal}\varsigma=\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}\varsigma=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}^{\intercal}\varsigma=\left(b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle j\mu}}\right)\varsigma_{{\scriptscriptstyle \mu}}=y_{{\scriptscriptstyle \mu}}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=\boldsymbol{y}^{\intercal}\varsigma
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+***
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{z}=\sigma\boldsymbol{y}=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=\sigma_{{\scriptscriptstyle \mu}}y_{{\scriptscriptstyle \mu}}= & \sigma_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}=\sigma\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\sigma W\boldsymbol{x},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+=\boldsymbol{z}=z_{{\scriptscriptstyle \mu}}=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle \mu}}
+\end{pmatrix}=\sigma_{{\scriptscriptstyle \mu}}y_{{\scriptscriptstyle \mu}}= & \sigma_{{\scriptscriptstyle \mu}}\left(w_{{\scriptscriptstyle \mu j}}x_{{\scriptscriptstyle j}}+b_{{\scriptscriptstyle \mu}}\right)=\sigma_{{\scriptscriptstyle \mu}}\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}=\sigma\begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}=\sigma W\boldsymbol{x},\begin{cases}
+1=x_{{\scriptscriptstyle 0}}\\
+b_{{\scriptscriptstyle \mu}}=w_{{\scriptscriptstyle \mu0}}
+\end{cases}\\
+\boldsymbol{x}^{\intercal}W^{\intercal}\varsigma=\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}\varsigma=\begin{pmatrix}w_{{\scriptscriptstyle 0\nu}}x_{{\scriptscriptstyle \nu}}\\
+w_{{\scriptscriptstyle 1\nu}}x_{{\scriptscriptstyle \nu}}\\
+\vdots\\
+w_{{\scriptscriptstyle m\nu}}x_{{\scriptscriptstyle \nu}}
+\end{pmatrix}^{\intercal}\varsigma=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \nu\mu}}\varsigma_{{\scriptscriptstyle \mu}}=y_{{\scriptscriptstyle \mu}}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=\boldsymbol{y}^{\intercal}\varsigma=\boldsymbol{z}^{\intercal}\\
+=\boldsymbol{x}^{\intercal}W^{\intercal}\varsigma=\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal} & \begin{pmatrix}b_{{\scriptscriptstyle 0}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+b_{{\scriptscriptstyle 1}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+b_{{\scriptscriptstyle m}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}^{\intercal}\varsigma=\begin{pmatrix}b_{{\scriptscriptstyle 0}}+w_{{\scriptscriptstyle 0j}}x_{{\scriptscriptstyle j}}\\
+b_{{\scriptscriptstyle 1}}+w_{{\scriptscriptstyle 1j}}x_{{\scriptscriptstyle j}}\\
+\vdots\\
+b_{{\scriptscriptstyle m}}+w_{{\scriptscriptstyle mj}}x_{{\scriptscriptstyle j}}
+\end{pmatrix}^{\intercal}\varsigma=\left(b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle j\mu}}\right)\varsigma_{{\scriptscriptstyle \mu}}=y_{{\scriptscriptstyle \mu}}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=\begin{pmatrix}y_{{\scriptscriptstyle 0}}\\
+y_{{\scriptscriptstyle 1}}\\
+\vdots\\
+y_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=z_{{\scriptscriptstyle \mu}}^{\intercal}=\boldsymbol{z}^{\intercal}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+***
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{z}= & \sigma\boldsymbol{y}=\sigma_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu\nu}}x_{{\scriptscriptstyle \nu}}=\sigma W\boldsymbol{x},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle \mu0}}=b_{{\scriptscriptstyle \mu}}
+\end{cases}\\
+=z_{{\scriptscriptstyle \mu}}= & \sigma_{{\scriptscriptstyle \mu}}y_{{\scriptscriptstyle \mu}}=\sigma_{{\scriptscriptstyle \mu}}\left(w_{{\scriptscriptstyle \mu j}}x_{{\scriptscriptstyle j}}+b_{{\scriptscriptstyle \mu}}\right),\begin{cases}
+1=x_{{\scriptscriptstyle 0}}\\
+b_{{\scriptscriptstyle \mu}}=w_{{\scriptscriptstyle \mu0}}
+\end{cases}\\
+\boldsymbol{x}^{\intercal}W^{\intercal}\varsigma= & x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=x_{{\scriptscriptstyle \nu}}^{\intercal}w_{{\scriptscriptstyle \nu\mu}}\varsigma_{{\scriptscriptstyle \mu}}=\boldsymbol{y}^{\intercal}\varsigma=\boldsymbol{z}^{\intercal}\\
+= & \left(b_{{\scriptscriptstyle \mu}}^{\intercal}+x_{{\scriptscriptstyle j}}^{\intercal}w_{{\scriptscriptstyle j\mu}}\right)\varsigma_{{\scriptscriptstyle \mu}}=y_{{\scriptscriptstyle \mu}}^{\intercal}\varsigma_{{\scriptscriptstyle \mu}}=z_{{\scriptscriptstyle \mu}}^{\intercal}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+wrong or incompatible transpose
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{x}^{\intercal}W= & \begin{pmatrix}x_{{\scriptscriptstyle 0}} & x_{{\scriptscriptstyle 1}} & \cdots & x_{{\scriptscriptstyle m}}\end{pmatrix}\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\\
+= & \begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}=\begin{pmatrix}\sum\limits _{\mu=1}^{m}x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu0}}\\
+\sum\limits _{\mu=1}^{m}x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu1}}\\
+\vdots\\
+\sum\limits _{\mu=1}^{m}x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu n}}
+\end{pmatrix}^{\intercal}\\
+\overset{\text{Einstein summation convention}}{=} & \begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}=\begin{pmatrix}x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu0}}\\
+x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu1}}\\
+\vdots\\
+x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu n}}
+\end{pmatrix}^{\intercal}\\
+= & x_{{\scriptscriptstyle \mu}}^{\intercal}w_{{\scriptscriptstyle \mu\nu}}=\left(x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu\nu}}\right)^{\intercal}?
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+wrong or incompatible transpose
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{x}^{\intercal}W= & \begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}=\begin{pmatrix}x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu0}}\\
+x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu1}}\\
+\vdots\\
+x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu n}}
+\end{pmatrix}^{\intercal},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle 0\nu}}=b_{{\scriptscriptstyle \nu}}
+\end{cases}\\
+= & \begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\begin{pmatrix}b_{{\scriptscriptstyle 0}} & b_{{\scriptscriptstyle 1}} & \cdots & b_{{\scriptscriptstyle n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}=\begin{pmatrix}x_{{\scriptscriptstyle i}}w_{{\scriptscriptstyle i0}}+b_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle i}}w_{{\scriptscriptstyle i1}}+b_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{i}w_{{\scriptscriptstyle in}}+b_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal},\begin{cases}
+1=x_{{\scriptscriptstyle 0}}\\
+b_{{\scriptscriptstyle \nu}}=w_{{\scriptscriptstyle 0\nu}}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+wrong or incompatible transpose
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\sigma\left(\boldsymbol{x}^{\intercal}W\right)= & \sigma\left(\begin{pmatrix}x_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\begin{pmatrix}w_{{\scriptscriptstyle 00}} & w_{{\scriptscriptstyle 01}} & \cdots & w_{{\scriptscriptstyle 0n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\right)=\sigma\left(\begin{pmatrix}x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu0}}\\
+x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu1}}\\
+\vdots\\
+x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu n}}
+\end{pmatrix}^{\intercal}\right)=\begin{pmatrix}\sigma_{{\scriptscriptstyle 0}}\left(x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu0}}\right)\\
+\sigma_{{\scriptscriptstyle 1}}\left(x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu1}}\right)\\
+\vdots\\
+\sigma_{{\scriptscriptstyle n}}\left(x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu n}}\right)
+\end{pmatrix}^{\intercal},\begin{cases}
+x_{{\scriptscriptstyle 0}}=1\\
+w_{{\scriptscriptstyle 0\nu}}=b_{{\scriptscriptstyle \nu}}
+\end{cases}\\
+= & \sigma\left(\begin{pmatrix}1\\
+x_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{{\scriptscriptstyle m}}
+\end{pmatrix}^{\intercal}\begin{pmatrix}b_{{\scriptscriptstyle 0}} & b_{{\scriptscriptstyle 1}} & \cdots & b_{{\scriptscriptstyle n}}\\
+w_{{\scriptscriptstyle 10}} & w_{{\scriptscriptstyle 11}} & \cdots & w_{{\scriptscriptstyle 1n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+w_{{\scriptscriptstyle m0}} & w_{{\scriptscriptstyle m1}} & \cdots & w_{{\scriptscriptstyle mn}}
+\end{pmatrix}\right)=\sigma\left(\begin{pmatrix}x_{{\scriptscriptstyle i}}w_{{\scriptscriptstyle i0}}+b_{{\scriptscriptstyle 0}}\\
+x_{{\scriptscriptstyle i}}w_{{\scriptscriptstyle i1}}+b_{{\scriptscriptstyle 1}}\\
+\vdots\\
+x_{i}w_{{\scriptscriptstyle in}}+b_{{\scriptscriptstyle n}}
+\end{pmatrix}^{\intercal}\right)=\sigma_{{\scriptscriptstyle \nu}}\left(x_{{\scriptscriptstyle \mu}}w_{{\scriptscriptstyle \mu\nu}}\right),\begin{cases}
+1=x_{{\scriptscriptstyle 0}}\\
+b_{{\scriptscriptstyle \nu}}=w_{{\scriptscriptstyle 0\nu}}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+multivariable random variable = random vector
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
-f\left(x\right)=\dfrac{a}{b}x+c
+f_{{\scriptscriptstyle X}}\left(x\right)=\mathrm{P}\left(X=x\right)
 \]
 
 \end_inset
 
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle X}}\left(x\right)\mathrm{d}x=\mathrm{d}\mathrm{P}\left(X\le x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(X,Y\right)=\left(X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right)=\left\langle X,Y\right\rangle =\left\langle X_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\right\rangle \sim f_{{\scriptscriptstyle XY}}=f_{{\scriptscriptstyle XY}}\left(x,y\right)=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+discrete
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\sum\limits _{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\sum\limits _{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\right)\\
+= & \mathrm{P}\left(\left\{ X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\right\} \cap\left\{ X_{{\scriptscriptstyle 2}}\in\left(-\infty,\infty\right)\right\} \right)\\
+= & \mathrm{P}\left(\bigcup_{x_{{\scriptscriptstyle 2}}\in\left(-\infty,\infty\right)}\left\{ X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\wedge X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right\} \right)\\
+= & \bigcup_{x_{{\scriptscriptstyle 2}}\in\left(-\infty,\infty\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}}\wedge X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)=\bigcup_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)\\
+= & \bigcup_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}\mathrm{P}\left(X_{{\scriptscriptstyle 1}}=x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}=x_{{\scriptscriptstyle 2}}\right)=\sum_{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+continuous
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\le x_{{\scriptscriptstyle 2}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}=f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=\dfrac{\partial^{2}}{\partial x_{{\scriptscriptstyle 1}}\partial x_{{\scriptscriptstyle 2}}}F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}}\right)\\
+= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}}\wedge X_{{\scriptscriptstyle 2}}\le\infty\right)\\
+= & \mathrm{P}\left(X_{{\scriptscriptstyle 1}}\le x_{{\scriptscriptstyle 1}},X_{{\scriptscriptstyle 2}}\le\infty\right)\\
+= & F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)=\int_{-\infty}^{\infty}\int_{-\infty}^{x_{{\scriptscriptstyle 1}}}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(u_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 1}}\mathrm{d}u_{{\scriptscriptstyle 2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\int_{-\infty}^{\infty}\int_{-\infty}^{x_{{\scriptscriptstyle 1}}}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(u_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 1}}\mathrm{d}u_{{\scriptscriptstyle 2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\dfrac{\mathrm{d}}{\mathrm{d}x_{{\scriptscriptstyle 1}}}F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\dfrac{\mathrm{d}}{\mathrm{d}x_{{\scriptscriptstyle 1}}}F_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},\infty\right)=\dfrac{\mathrm{d}}{\mathrm{d}x_{{\scriptscriptstyle 1}}}\int_{-\infty}^{\infty}\int_{-\infty}^{x}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(u_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 1}}\mathrm{d}u_{{\scriptscriptstyle 2}}=\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},u_{{\scriptscriptstyle 2}}\right)\mathrm{d}u_{{\scriptscriptstyle 2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)\mathrm{d}x_{{\scriptscriptstyle 2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}}}\left(x_{{\scriptscriptstyle 1}}\right)=\begin{cases}
+\int_{-\infty}^{\infty}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)\mathrm{d}x_{{\scriptscriptstyle 2}} & \text{continuous}\\
+\sum\limits _{x_{{\scriptscriptstyle 2}}\in X_{{\scriptscriptstyle 2}}\left(\Omega\right)}f_{{\scriptscriptstyle X_{{\scriptscriptstyle 1}}X_{{\scriptscriptstyle 2}}}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right) & \text{discrete}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+f\left(x,y\right)\ge0 & \left(ne\right)\text{non-negative}\\
+\begin{cases}
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f\left(x,y\right)\mathrm{d}x\mathrm{d}y=1 & \text{continuous}\\
+\sum\limits _{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}\sum\limits _{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}f\left(x,y\right)=1 & \text{discrete}
+\end{cases} & \left(1\right)\text{total event}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{E}_{{\scriptscriptstyle X,Y}}\left[g\left(X,Y\right)\right]=\mathrm{E}\left[g\left(X,Y\right)\right]=\begin{cases}
+\intop\limits _{-\infty}^{+\infty}\intop\limits _{-\infty}^{+\infty}g\left(x,y\right)f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y & \text{continuous}\\
+\sum\limits _{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}\sum\limits _{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}g\left(x,y\right)f_{{\scriptscriptstyle XY}}\left(x,y\right) & \text{discrete}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathrm{P}\left(\left(X,Y\right)\in E\right)=\mathrm{E}\left[1\left(\left(X,Y\right)\in E\right)\right]= & \begin{cases}
+\int_{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}\int_{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}1\left(\left(X,Y\right)\in E\right)f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y & \text{continuous}\\
+\sum\limits _{x\in X\left(\Omega_{{\scriptscriptstyle X}}\right)}\sum\limits _{y\in Y\left(\Omega_{{\scriptscriptstyle Y}}\right)}1\left(\left(X,Y\right)\in E\right)g\left(x,y\right)f_{{\scriptscriptstyle XY}}\left(x,y\right) & \text{discrete}
+\end{cases}\\
+= & \begin{cases}
+\iint_{\left(X,Y\right)\in E}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y & \text{continuous}\\
+\sum\sum\limits _{\left(X,Y\right)\in E}f_{{\scriptscriptstyle XY}}\left(x,y\right) & \text{discrete}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\Rightarrow\mathrm{P}\left(X+Y\le1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\overset{\begin{cases}
+\mathrm{e}^{-y}>0\\
+1\left(0<x<y<\infty\right)=\begin{cases}
+0\\
+1
+\end{cases}
+\end{cases}}{\ge}0 & \left(ne\right)\text{non-negative}\\
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y=? & \left(1\right)\text{total event}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y,x\in\left(0,\infty\right)\\
+= & \int_{-\infty}^{\infty}\int_{0}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y,y>x\in\left(0,\infty\right)\\
+= & \int_{0}^{\infty}\int_{0}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y\overset{\text{Fubini}}{=}\int_{0}^{\infty}\int_{0}^{\infty}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}y\mathrm{d}x,y>x\\
+= & \int_{0}^{\infty}\int_{x}^{\infty}\mathrm{e}^{-y}1\mathrm{d}y\mathrm{d}x=\int_{0}^{\infty}\int_{x}^{\infty}\mathrm{e}^{-y}\mathrm{d}y\mathrm{d}x=\int_{0}^{\infty}\left[-\mathrm{e}^{-y}\right]_{{\scriptscriptstyle y=x}}^{\infty}\mathrm{d}x=\int_{0}^{\infty}\left[-\mathrm{e}^{-\infty}-\left(-\mathrm{e}^{-x}\right)\right]\mathrm{d}x\\
+= & \int_{0}^{\infty}\left[-0-\left(-\mathrm{e}^{-x}\right)\right]\mathrm{d}x=\int_{0}^{\infty}\mathrm{e}^{-x}\mathrm{d}x=\left[-\mathrm{e}^{-x}\right]_{{\scriptscriptstyle x=0}}^{\infty}=\left[-\mathrm{e}^{-\infty}-\left(-\mathrm{e}^{-0}\right)\right]=\left[-0-\left(-1\right)\right]=1
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+f_{{\scriptscriptstyle XY}}\left(x,y\right)=\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\ge0 & \left(ne\right)\text{non-negative}\\
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y=1 & \left(1\right)\text{total event}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{P}\left(X+Y\le1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\mathrm{P}\left(X+Y\le1\right)= & \iint_{\left(X,Y\right)\in E}f_{{\scriptscriptstyle XY}}\left(x,y\right)\mathrm{d}x\mathrm{d}y,E=\left\{ X+Y\le1\right\} \\
+= & \iint_{E}\mathrm{e}^{-y}1\left(0<x<y<\infty\right)\mathrm{d}x\mathrm{d}y,E=\left\{ X+Y\le1\right\} \\
+= & \int_{0}^{0.5}\int_{x}^{1-x}\mathrm{e}^{-y}\mathrm{d}y\mathrm{d}x=\int_{0}^{0.5}\left[-\mathrm{e}^{-y}\right]_{{\scriptscriptstyle y=x}}^{{\scriptscriptstyle 1-x}}\mathrm{d}x=\int_{0}^{0.5}\left[-\mathrm{e}^{-\left(1-x\right)}-\left(-\mathrm{e}^{-x}\right)\right]\mathrm{d}x\\
+= & \int_{0}^{0.5}\left[\mathrm{e}^{-x}-\mathrm{e}^{x-1}\right]\mathrm{d}x=\left[-\mathrm{e}^{-x}-\mathrm{e}^{x-1}\right]_{{\scriptscriptstyle x=0}}^{{\scriptscriptstyle 0.5}}=\left[-\mathrm{e}^{-0.5}-\mathrm{e}^{0.5-1}\right]-\left[-\mathrm{e}^{-0}-\mathrm{e}^{0-1}\right]\\
+= & 1+\mathrm{e}^{-1}-2\mathrm{e}^{-0.5}\fallingdotseq0.154818\cdots
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Feynman method of differentiation / derivative
 \begin_inset Formula 
 \[
@@ -503,7 +1944,7 @@ B\left(a+1,b+1\right)= & \dfrac{\Gamma\left(a+1\right)\Gamma\left(b+1\right)}{\G
 \end_layout
 
 \begin_layout Standard
-Dirac bracket
+bracket
 \begin_inset Formula 
 \[
 \begin{array}{cccccccccc}
@@ -674,7 +2115,7 @@ f=\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\hat{f}_{{\scri
 f^{*}=\left(f,\cdot\right)= & \left(\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\hat{f}_{{\scriptscriptstyle i}},\cdot\right)=\left(\sum\limits _{i}\hat{f}_{{\scriptscriptstyle i}}\left(\hat{f}_{{\scriptscriptstyle i}},f\right),\cdot\right)\\
 \overset{\text{antilinearity}}{=} & \overline{\sum\limits _{i}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)}\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)=\sum\limits _{i}\overline{\left(\hat{f}_{{\scriptscriptstyle i}},f\right)}\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)\\
 = & \sum\limits _{i}\left(f,\hat{f}_{{\scriptscriptstyle i}}\right)\left(\hat{f}_{{\scriptscriptstyle i}},\cdot\right)\\
-\overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|=\left\langle f\right|\\
+\overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left\langle f\middle|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\right|=\left\langle f\right|\\
 \Updownarrow\\
 f= & \sum\limits _{i}\hat{f}_{{\scriptscriptstyle i}}\left(\hat{f}_{{\scriptscriptstyle i}},f\right)\\
 \overset{\text{Dirac bracket}}{\rightarrow} & \sum\limits _{i}\left|\hat{f}_{{\scriptscriptstyle i}}\right\rangle \left\langle \hat{f}_{{\scriptscriptstyle i}}\middle|f\right\rangle =\left|f\right\rangle 
