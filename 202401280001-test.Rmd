@@ -1170,6 +1170,8 @@ suggest_embed("https://www.youtube.com/watch?v=0LFg5dvPOoc")
 
 ## equation term coloring
 
+[LaTeX annotation by TikZ]^[\@ref(latex-annotation-by-tikz)]^
+
 ### font color
 
 RegEx replacement in RStudio for `{\\color{(\w+)}` in LyX to be replaced with `\\color{$1}{` in HTML document, and remain the same for PDF document

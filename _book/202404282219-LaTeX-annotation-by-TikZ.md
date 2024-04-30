@@ -5,10 +5,11 @@
 knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
 ```
 
-<div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-2-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-2)test</p>
-</div>
+
+
+\begin{figure}[H]
+\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-3-1} \caption{test}(\#fig:unnamed-chunk-3)
+\end{figure}
 
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
@@ -54,19 +55,17 @@ knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-<div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-4-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-4)test</p>
-</div>
+\begin{figure}[H]
+\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-5-1} \caption{test}(\#fig:unnamed-chunk-5)
+\end{figure}
 :::
 ::::::
 
 https://tex.stackexchange.com/questions/670153/how-to-annotate-calculations
 
-<div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-5-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-5)test</p>
-</div>
+\begin{figure}[H]
+\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-6-1} \caption{test}(\#fig:unnamed-chunk-6)
+\end{figure}
 
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
@@ -114,19 +113,17 @@ https://tex.stackexchange.com/questions/670153/how-to-annotate-calculations
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-<div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-7-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-7)test</p>
-</div>
+\begin{figure}[H]
+\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-8-1} \caption{test}(\#fig:unnamed-chunk-8)
+\end{figure}
 :::
 ::::::
 
 https://tex.stackexchange.com/questions/494884/anchor-alignment-in-tikzmarknode
 
-<div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-8-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-8)test</p>
-</div>
+\begin{figure}[H]
+\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-9-1} \caption{test}(\#fig:unnamed-chunk-9)
+\end{figure}
 
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
@@ -180,10 +177,9 @@ corners}}
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-<div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-10-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-10)test</p>
-</div>
+\begin{figure}[H]
+\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-11-1} \caption{test}(\#fig:unnamed-chunk-11)
+\end{figure}
 :::
 ::::::
 
@@ -191,7 +187,6 @@ https://github.com/synercys/annotated_latex_equations
 
 https://github.com/synercys/annotated_latex_equations/blob/main/example_prob.tex
 
-<div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-11-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-11)test</p>
-</div>
+\begin{figure}[H]
+\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-12-1} \caption{test}(\#fig:unnamed-chunk-12)
+\end{figure}

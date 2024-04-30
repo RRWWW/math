@@ -4,6 +4,26 @@
 knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
 ```
 
+```{css, echo=FALSE}
+pre {
+  max-width: 400px;
+  overflow-x: auto;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/*
+pre {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+pre[class] {
+  max-height: 100px;
+}
+*/
+```
+
 ```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='test', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}","\\usetikzlibrary{tikzmark, shapes.geometric, shapes.arrows, fit, bending}"))}
 \begin{tikzpicture}
   \begin{axis}[
