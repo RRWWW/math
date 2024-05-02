@@ -43,526 +43,538 @@
 \contentsline {subsubsection}{\numberline {7.1.1.2}ensuring the same markdown between source / visual mode}{39}{subsubsection.7.1.1.2}%
 \contentsline {subsection}{\numberline {7.1.2}Rtools}{39}{subsection.7.1.2}%
 \contentsline {subsection}{\numberline {7.1.3}addins}{39}{subsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.1.4}Git}{40}{subsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.1.4}Git}{39}{subsection.7.1.4}%
 \contentsline {section}{\numberline {7.2}RMarkdown}{40}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Pandoc link}{40}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}URL}{40}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}arrow}{40}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}superscript and subscript}{40}{subsection.7.2.4}%
-\contentsline {subsubsection}{\numberline {7.2.4.1}LaTeX}{41}{subsubsection.7.2.4.1}%
-\contentsline {subsection}{\numberline {7.2.5}equation}{41}{subsection.7.2.5}%
-\contentsline {subsubsection}{\numberline {7.2.5.1}proof QED}{41}{subsubsection.7.2.5.1}%
-\contentsline {subsection}{\numberline {7.2.6}image}{41}{subsection.7.2.6}%
-\contentsline {subsubsection}{\numberline {7.2.6.1}DiagrammeR / mermaid flowchart}{41}{subsubsection.7.2.6.1}%
-\contentsline {subsubsection}{\numberline {7.2.6.2}multiple images / figures in the same line}{41}{subsubsection.7.2.6.2}%
-\contentsline {subsubsection}{\numberline {7.2.6.3}figure size}{43}{subsubsection.7.2.6.3}%
-\contentsline {paragraph}{\numberline {7.2.6.3.1}\texttt {knitr}}{45}{paragraph.7.2.6.3.1}%
-\contentsline {paragraph}{\numberline {7.2.6.3.2}\texttt {out.width} vs.\nobreakspace {}\texttt {fig.width}}{45}{paragraph.7.2.6.3.2}%
-\contentsline {subsubsection}{\numberline {7.2.6.4}dynamic knitr plot width and height}{47}{subsubsection.7.2.6.4}%
-\contentsline {subsubsection}{\numberline {7.2.6.5}web image in PDF}{47}{subsubsection.7.2.6.5}%
-\contentsline {subsubsection}{\numberline {7.2.6.6}SVG}{47}{subsubsection.7.2.6.6}%
-\contentsline {subsection}{\numberline {7.2.7}horizontal rule}{49}{subsection.7.2.7}%
-\contentsline {subsection}{\numberline {7.2.8}footnote}{49}{subsection.7.2.8}%
-\contentsline {subsection}{\numberline {7.2.9}hyperlink}{49}{subsection.7.2.9}%
-\contentsline {subsection}{\numberline {7.2.10}code chunk}{50}{subsection.7.2.10}%
-\contentsline {subsubsection}{\numberline {7.2.10.1}code folding}{50}{subsubsection.7.2.10.1}%
-\contentsline {subsection}{\numberline {7.2.11}xaringan}{50}{subsection.7.2.11}%
-\contentsline {section}{\numberline {7.3}Bookdown}{50}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}system locale}{50}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}\texttt {render\_book()}}{50}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}\texttt {serve\_book()}}{50}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}LaTeX}{50}{subsection.7.3.4}%
-\contentsline {subsubsection}{\numberline {7.3.4.1}hyperlink, URL, href}{50}{subsubsection.7.3.4.1}%
-\contentsline {subsubsection}{\numberline {7.3.4.2}ugly mathptmx \(\DOTSB \sum@ \slimits@ \)}{50}{subsubsection.7.3.4.2}%
-\contentsline {subsubsection}{\numberline {7.3.4.3}LaTeX package in HTML document}{51}{subsubsection.7.3.4.3}%
-\contentsline {subsection}{\numberline {7.3.5}depth of table of contents \texttt {toc\_depth}}{51}{subsection.7.3.5}%
-\contentsline {subsection}{\numberline {7.3.6}multi-column layout / two columns}{51}{subsection.7.3.6}%
-\contentsline {subsubsection}{\numberline {7.3.6.1}for both HTML and PDF}{51}{subsubsection.7.3.6.1}%
-\contentsline {subsubsection}{\numberline {7.3.6.2}multi-column \texttt {fig.cap} must use \texttt {fig.pos="H"}}{53}{subsubsection.7.3.6.2}%
-\contentsline {subsubsection}{\numberline {7.3.6.3}caption above figure}{53}{subsubsection.7.3.6.3}%
-\contentsline {subsubsection}{\numberline {7.3.6.4}for only HTML}{54}{subsubsection.7.3.6.4}%
-\contentsline {paragraph}{\numberline {7.3.6.4.1}CSS flex}{54}{paragraph.7.3.6.4.1}%
-\contentsline {paragraph}{\numberline {7.3.6.4.2}CSS grid}{54}{paragraph.7.3.6.4.2}%
-\contentsline {section}{\numberline {7.4}conditional block/chunk for either HTML or PDF, and Chinese issue}{55}{section.7.4}%
-\contentsline {section}{\numberline {7.5}video embedding}{55}{section.7.5}%
-\contentsline {subsection}{\numberline {7.5.1}timestamp}{56}{subsection.7.5.1}%
-\contentsline {section}{\numberline {7.6}equation term coloring}{56}{section.7.6}%
-\contentsline {subsection}{\numberline {7.6.1}font color}{56}{subsection.7.6.1}%
-\contentsline {subsection}{\numberline {7.6.2}background color}{56}{subsection.7.6.2}%
-\contentsline {section}{\numberline {7.7}link and reference}{57}{section.7.7}%
-\contentsline {section}{\numberline {7.8}number and reference equations}{58}{section.7.8}%
-\contentsline {section}{\numberline {7.9}footnote}{58}{section.7.9}%
-\contentsline {section}{\numberline {7.10}citation}{58}{section.7.10}%
-\contentsline {subsection}{\numberline {7.10.1}citation in \texttt {fig.cap}}{59}{subsection.7.10.1}%
-\contentsline {subsection}{\numberline {7.10.2}backreference}{59}{subsection.7.10.2}%
-\contentsline {section}{\numberline {7.11}environment for definition, theorem, proof}{59}{section.7.11}%
-\contentsline {section}{\numberline {7.12}slide or presentation}{60}{section.7.12}%
-\contentsline {subsection}{\numberline {7.12.1}Xaringan and Infinite Moon Reader}{60}{subsection.7.12.1}%
-\contentsline {subsection}{\numberline {7.12.2}ioslides}{60}{subsection.7.12.2}%
-\contentsline {subsection}{\numberline {7.12.3}PowerPoint}{61}{subsection.7.12.3}%
-\contentsline {chapter}{\numberline {8}test2}{63}{chapter.8}%
-\contentsline {section}{\numberline {8.1}verbatim}{63}{section.8.1}%
-\contentsline {chapter}{\numberline {9}partition}{65}{chapter.9}%
-\contentsline {chapter}{\numberline {10}equivalence class}{67}{chapter.10}%
-\contentsline {chapter}{\numberline {11}equivalence relation}{69}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Python}{71}{chapter.12}%
-\contentsline {section}{\numberline {12.1}using Python in R / RMarkdown}{71}{section.12.1}%
-\contentsline {section}{\numberline {12.2}SoloLearn}{72}{section.12.2}%
-\contentsline {section}{\numberline {12.3}list comprehension}{72}{section.12.3}%
-\contentsline {section}{\numberline {12.4}functional programming}{73}{section.12.4}%
-\contentsline {section}{\numberline {12.5}object-oriented programming = OOP}{73}{section.12.5}%
-\contentsline {chapter}{\numberline {13}TikZ}{75}{chapter.13}%
-\contentsline {section}{\numberline {13.1}2D}{76}{section.13.1}%
-\contentsline {section}{\numberline {13.2}3D}{83}{section.13.2}%
-\contentsline {section}{\numberline {13.3}plots of functions}{85}{section.13.3}%
-\contentsline {section}{\numberline {13.4}PGFplots}{86}{section.13.4}%
-\contentsline {subsection}{\numberline {13.4.1}the axis environments}{86}{subsection.13.4.1}%
-\contentsline {subsection}{\numberline {13.4.2}axis descriptions}{87}{subsection.13.4.2}%
-\contentsline {subsubsection}{\numberline {13.4.2.1}placement of axis descriptions}{87}{subsubsection.13.4.2.1}%
-\contentsline {paragraph}{\numberline {13.4.2.1.1}coordinate system \texttt {axis\ description\ cs}}{87}{paragraph.13.4.2.1.1}%
-\contentsline {paragraph}{\numberline {13.4.2.1.2}legend}{89}{paragraph.13.4.2.1.2}%
-\contentsline {paragraph}{\numberline {13.4.2.1.3}tick option}{89}{paragraph.13.4.2.1.3}%
-\contentsline {subsection}{\numberline {13.4.3}\texttt {declare\ function}}{89}{subsection.13.4.3}%
-\contentsline {subsubsection}{\numberline {13.4.3.1}\texttt {pgfmathparse}}{89}{subsubsection.13.4.3.1}%
-\contentsline {subsubsection}{\numberline {13.4.3.2}\texttt {pgfmathdeclarefunction}}{90}{subsubsection.13.4.3.2}%
-\contentsline {subsection}{\numberline {13.4.4}\texttt {\textbar {}-} and \texttt {-\textbar {}} in TikZ}{91}{subsection.13.4.4}%
-\contentsline {subsection}{\numberline {13.4.5}\texttt {pgfplotsinvokeforeach}}{91}{subsection.13.4.5}%
-\contentsline {subsection}{\numberline {13.4.6}interpolation dashed lines}{92}{subsection.13.4.6}%
-\contentsline {subsection}{\numberline {13.4.7}Zewbie}{92}{subsection.13.4.7}%
-\contentsline {subsubsection}{\numberline {13.4.7.1}coordinate axis/axes fine-tuing}{93}{subsubsection.13.4.7.1}%
-\contentsline {paragraph}{\numberline {13.4.7.1.1}range}{93}{paragraph.13.4.7.1.1}%
-\contentsline {paragraph}{\numberline {13.4.7.1.2}scaling}{93}{paragraph.13.4.7.1.2}%
-\contentsline {paragraph}{\numberline {13.4.7.1.3}direction vector}{94}{paragraph.13.4.7.1.3}%
-\contentsline {paragraph}{\numberline {13.4.7.1.4}axis style}{95}{paragraph.13.4.7.1.4}%
-\contentsline {paragraph}{\numberline {13.4.7.1.5}axis discontinuity}{96}{paragraph.13.4.7.1.5}%
-\contentsline {paragraph}{\numberline {13.4.7.1.6}tick}{96}{paragraph.13.4.7.1.6}%
-\contentsline {subsubsection}{\numberline {13.4.7.2}\texttt {addplot+}}{98}{subsubsection.13.4.7.2}%
-\contentsline {subsubsection}{\numberline {13.4.7.3}point}{99}{subsubsection.13.4.7.3}%
-\contentsline {subsubsection}{\numberline {13.4.7.4}line}{101}{subsubsection.13.4.7.4}%
-\contentsline {subsubsection}{\numberline {13.4.7.5}plane}{103}{subsubsection.13.4.7.5}%
-\contentsline {subsubsection}{\numberline {13.4.7.6}polar coordinate}{104}{subsubsection.13.4.7.6}%
-\contentsline {subsection}{\numberline {13.4.8}Arnav Bandekar: Using pgfplots to make economic graphs in LaTeX}{104}{subsection.13.4.8}%
-\contentsline {subsection}{\numberline {13.4.9}PGFplots gallery}{104}{subsection.13.4.9}%
-\contentsline {section}{\numberline {13.5}TikZplotLib / tikzplotlib}{105}{section.13.5}%
-\contentsline {section}{\numberline {13.6}animation}{107}{section.13.6}%
-\contentsline {chapter}{\numberline {14}xy-pic}{109}{chapter.14}%
-\contentsline {chapter}{\numberline {15}statistics}{111}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Hung Hung}{111}{section.15.1}%
-\contentsline {subsection}{\numberline {15.1.1}probability theory}{113}{subsection.15.1.1}%
-\contentsline {subsubsection}{\numberline {15.1.1.1}probability function}{113}{subsubsection.15.1.1.1}%
-\contentsline {subsubsection}{\numberline {15.1.1.2}conditional probability}{115}{subsubsection.15.1.1.2}%
-\contentsline {subsection}{\numberline {15.1.2}univariable distribution}{115}{subsection.15.1.2}%
-\contentsline {subsubsection}{\numberline {15.1.2.1}cumulative distribution function}{116}{subsubsection.15.1.2.1}%
-\contentsline {subsubsection}{\numberline {15.1.2.2}probability density function}{116}{subsubsection.15.1.2.2}%
-\contentsline {subsubsection}{\numberline {15.1.2.3}range vs.\nobreakspace {}support}{117}{subsubsection.15.1.2.3}%
-\contentsline {subsubsection}{\numberline {15.1.2.4}continuous monotone transformation}{118}{subsubsection.15.1.2.4}%
-\contentsline {subsubsection}{\numberline {15.1.2.5}discrete monotone transformation}{121}{subsubsection.15.1.2.5}%
-\contentsline {subsubsection}{\numberline {15.1.2.6}expected value}{122}{subsubsection.15.1.2.6}%
-\contentsline {subsubsection}{\numberline {15.1.2.7}moment}{129}{subsubsection.15.1.2.7}%
-\contentsline {paragraph}{\numberline {15.1.2.7.1}moment generating function}{132}{paragraph.15.1.2.7.1}%
-\contentsline {paragraph}{\numberline {15.1.2.7.2}characteristic function}{133}{paragraph.15.1.2.7.2}%
-\contentsline {subsubsection}{\numberline {15.1.2.8}common families of distributions}{134}{subsubsection.15.1.2.8}%
-\contentsline {paragraph}{\numberline {15.1.2.8.1}discrete distribution}{134}{paragraph.15.1.2.8.1}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.1.1}discrete uniform distribution}{134}{subparagraph.15.1.2.8.1.1}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.1.2}hypergeometric distribution}{135}{subparagraph.15.1.2.8.1.2}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.1.3}Bernoulli distribution}{135}{subparagraph.15.1.2.8.1.3}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.1.4}binomial distribution}{135}{subparagraph.15.1.2.8.1.4}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.1.5}Poisson distribution}{136}{subparagraph.15.1.2.8.1.5}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.1.6}negative binomial distribution}{137}{subparagraph.15.1.2.8.1.6}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.1.7}geometric distribution}{138}{subparagraph.15.1.2.8.1.7}%
-\contentsline {paragraph}{\numberline {15.1.2.8.2}continuous distribution}{139}{paragraph.15.1.2.8.2}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.2.1}uniform distribution = continuous uniform distribution}{139}{subparagraph.15.1.2.8.2.1}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.2.2}gamma distribution}{139}{subparagraph.15.1.2.8.2.2}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.2.3}exponential distribution}{139}{subparagraph.15.1.2.8.2.3}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.2.4}Chi-square distribution}{139}{subparagraph.15.1.2.8.2.4}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.2.5}Weibull distribution}{139}{subparagraph.15.1.2.8.2.5}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.2.6}normal distribution}{139}{subparagraph.15.1.2.8.2.6}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.2.7}beta distribution}{139}{subparagraph.15.1.2.8.2.7}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.2.8}Cauchy distribution}{139}{subparagraph.15.1.2.8.2.8}%
-\contentsline {subparagraph}{\numberline {15.1.2.8.2.9}log-normal distribution}{140}{subparagraph.15.1.2.8.2.9}%
-\contentsline {subsubsection}{\numberline {15.1.2.9}exponential family}{140}{subsubsection.15.1.2.9}%
-\contentsline {paragraph}{\numberline {15.1.2.9.1}binomial distribution with known \(n\)}{141}{paragraph.15.1.2.9.1}%
-\contentsline {paragraph}{\numberline {15.1.2.9.2}continuous uniform distribution not in exponential family}{141}{paragraph.15.1.2.9.2}%
-\contentsline {paragraph}{\numberline {15.1.2.9.3}normal distribution is in exponential family}{142}{paragraph.15.1.2.9.3}%
-\contentsline {paragraph}{\numberline {15.1.2.9.4}normal distribution with unknown equal mean and standard deviation in curved exponential family}{142}{paragraph.15.1.2.9.4}%
-\contentsline {paragraph}{\numberline {15.1.2.9.5}properties of exponential family}{143}{paragraph.15.1.2.9.5}%
-\contentsline {subparagraph}{\numberline {15.1.2.9.5.1}fundamentals of statistical inference}{144}{subparagraph.15.1.2.9.5.1}%
-\contentsline {subsection}{\numberline {15.1.3}multivariable distribution}{149}{subsection.15.1.3}%
-\contentsline {section}{\numberline {15.2}Chen, Lin-An}{153}{section.15.2}%
-\contentsline {chapter}{\numberline {16}covariance matrix}{155}{chapter.16}%
-\contentsline {section}{\numberline {16.1}vector direct product}{155}{section.16.1}%
-\contentsline {subsection}{\numberline {16.1.1}vector direct product: increasing rank}{155}{subsection.16.1.1}%
-\contentsline {subsection}{\numberline {16.1.2}vector inner product: decreasing rank}{155}{subsection.16.1.2}%
-\contentsline {subsection}{\numberline {16.1.3}tensor direct product: increasing rank}{156}{subsection.16.1.3}%
-\contentsline {section}{\numberline {16.2}covariance matrix and its properties}{156}{section.16.2}%
-\contentsline {subsection}{\numberline {16.2.1}\(\mathrm {V}\left [\boldsymbol {X}+\boldsymbol {b}\right ]=\mathrm {V}\left [\boldsymbol {X}\right ]\)}{156}{subsection.16.2.1}%
-\contentsline {subsection}{\numberline {16.2.2}\(\mathrm {V}\left [A\boldsymbol {X}\right ]=A\mathrm {V}\left [\boldsymbol {X}\right ]A^{\intercal }\)}{156}{subsection.16.2.2}%
-\contentsline {subsection}{\numberline {16.2.3}\(\mathrm {V}\left [A\boldsymbol {X}+\boldsymbol {b}\right ]=A\mathrm {V}\left [\boldsymbol {X}\right ]A^{\intercal }\)}{156}{subsection.16.2.3}%
-\contentsline {chapter}{\numberline {17}Gosper algorithm}{157}{chapter.17}%
-\contentsline {chapter}{\numberline {18}Lorentz transformation}{159}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Einstein}{159}{section.18.1}%
-\contentsline {section}{\numberline {18.2}Bondi \(k\)-calculus}{159}{section.18.2}%
-\contentsline {section}{\numberline {18.3}wordline in Minkowski space}{159}{section.18.3}%
-\contentsline {subsection}{\numberline {18.3.1}Wick rotation}{159}{subsection.18.3.1}%
-\contentsline {subsubsection}{\numberline {18.3.1.1}Osterwalder-Schrader reconstruction theorem}{159}{subsubsection.18.3.1.1}%
-\contentsline {chapter}{\numberline {19}R}{161}{chapter.19}%
-\contentsline {section}{\numberline {19.1}TonyKuoYJ}{161}{section.19.1}%
-\contentsline {subsection}{\numberline {19.1.1}quick intro}{161}{subsection.19.1.1}%
-\contentsline {subsubsection}{\numberline {19.1.1.1}function}{162}{subsubsection.19.1.1.1}%
-\contentsline {subsection}{\numberline {19.1.2}R style}{162}{subsection.19.1.2}%
-\contentsline {subsection}{\numberline {19.1.3}data workflow or forward pipe}{162}{subsection.19.1.3}%
-\contentsline {subsubsection}{\numberline {19.1.3.1}\texttt {\%\textgreater {}\%} operator}{162}{subsubsection.19.1.3.1}%
-\contentsline {subsection}{\numberline {19.1.4}data processing with \texttt {dplyr}}{163}{subsection.19.1.4}%
-\contentsline {subsection}{\numberline {19.1.5}visualization statically with \texttt {ggplot2}}{165}{subsection.19.1.5}%
-\contentsline {subsection}{\numberline {19.1.6}loop}{170}{subsection.19.1.6}%
-\contentsline {subsection}{\numberline {19.1.7}variable type}{170}{subsection.19.1.7}%
-\contentsline {subsubsection}{\numberline {19.1.7.1}date}{171}{subsubsection.19.1.7.1}%
-\contentsline {subsubsection}{\numberline {19.1.7.2}time}{171}{subsubsection.19.1.7.2}%
-\contentsline {subsubsection}{\numberline {19.1.7.3}quotient \texttt {\%/\%} operator}{171}{subsubsection.19.1.7.3}%
-\contentsline {subsection}{\numberline {19.1.8}data type}{172}{subsection.19.1.8}%
-\contentsline {subsubsection}{\numberline {19.1.8.1}vector}{172}{subsubsection.19.1.8.1}%
-\contentsline {paragraph}{\numberline {19.1.8.1.1}logic}{173}{paragraph.19.1.8.1.1}%
-\contentsline {paragraph}{\numberline {19.1.8.1.2}\texttt {rep} repeat}{173}{paragraph.19.1.8.1.2}%
-\contentsline {paragraph}{\numberline {19.1.8.1.3}\texttt {seq} sequence}{173}{paragraph.19.1.8.1.3}%
-\contentsline {subsubsection}{\numberline {19.1.8.2}factor}{173}{subsubsection.19.1.8.2}%
-\contentsline {subsubsection}{\numberline {19.1.8.3}matrix}{173}{subsubsection.19.1.8.3}%
-\contentsline {subsubsection}{\numberline {19.1.8.4}data frame}{174}{subsubsection.19.1.8.4}%
-\contentsline {paragraph}{\numberline {19.1.8.4.1}selecting variable or column}{175}{paragraph.19.1.8.4.1}%
-\contentsline {paragraph}{\numberline {19.1.8.4.2}filtering observation or row}{175}{paragraph.19.1.8.4.2}%
-\contentsline {paragraph}{\numberline {19.1.8.4.3}check mixed data type}{175}{paragraph.19.1.8.4.3}%
-\contentsline {section}{\numberline {19.2}W3School}{176}{section.19.2}%
-\contentsline {subsection}{\numberline {19.2.1}same multiple variable}{176}{subsection.19.2.1}%
-\contentsline {subsection}{\numberline {19.2.2}legal variable name}{176}{subsection.19.2.2}%
-\contentsline {subsection}{\numberline {19.2.3}complex number}{176}{subsection.19.2.3}%
-\contentsline {subsection}{\numberline {19.2.4}escape character}{176}{subsection.19.2.4}%
-\contentsline {subsection}{\numberline {19.2.5}global assignment \texttt {\textless {}\textless {}-}}{176}{subsection.19.2.5}%
-\contentsline {subsection}{\numberline {19.2.6}data type}{177}{subsection.19.2.6}%
-\contentsline {subsubsection}{\numberline {19.2.6.1}array}{177}{subsubsection.19.2.6.1}%
-\contentsline {subsubsection}{\numberline {19.2.6.2}list}{177}{subsubsection.19.2.6.2}%
-\contentsline {section}{\numberline {19.3}Apan Liao}{177}{section.19.3}%
-\contentsline {subsection}{\numberline {19.3.1}data input}{178}{subsection.19.3.1}%
-\contentsline {subsection}{\numberline {19.3.2}descriptive statistics}{178}{subsection.19.3.2}%
-\contentsline {chapter}{\numberline {20}Laplace transform}{179}{chapter.20}%
-\contentsline {chapter}{\numberline {21}conic section}{181}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Cartesian coordinate: focus, directrix, eccentricity}{181}{section.21.1}%
-\contentsline {section}{\numberline {21.2}two-definition equivalence for ellipse and hyperbola}{183}{section.21.2}%
-\contentsline {subsection}{\numberline {21.2.1}first definition for conic sections including ellipses and hyperbolas}{183}{subsection.21.2.1}%
-\contentsline {subsection}{\numberline {21.2.2}second definition for ellipses and hyperbolas}{184}{subsection.21.2.2}%
-\contentsline {subsection}{\numberline {21.2.3}eccentricity and its equivalent representation}{187}{subsection.21.2.3}%
-\contentsline {section}{\numberline {21.3}Cartesian coordinate: standard form / standard equation}{187}{section.21.3}%
-\contentsline {section}{\numberline {21.4}parametric equation}{189}{section.21.4}%
-\contentsline {section}{\numberline {21.5}polar coordinate}{189}{section.21.5}%
-\contentsline {section}{\numberline {21.6}Cartesian coordinate: general form / quadratic equation}{189}{section.21.6}%
-\contentsline {section}{\numberline {21.7}homogeneous coordinate}{193}{section.21.7}%
-\contentsline {chapter}{\numberline {22}distance from a point to a line}{195}{chapter.22}%
-\contentsline {section}{\numberline {22.1}by shortest \(\overline {PP^{\prime }}\)}{195}{section.22.1}%
-\contentsline {section}{\numberline {22.2}by perpendicular foot}{196}{section.22.2}%
-\contentsline {section}{\numberline {22.3}by normal vector}{197}{section.22.3}%
-\contentsline {section}{\numberline {22.4}by Cauchy inequality}{197}{section.22.4}%
-\contentsline {chapter}{\numberline {23}real symmetric matrix diagonalizable}{199}{chapter.23}%
-\contentsline {chapter}{\numberline {24}tangent half-angle formula}{203}{chapter.24}%
-\contentsline {chapter}{\numberline {25}homogeneous coordinate}{205}{chapter.25}%
-\contentsline {chapter}{\numberline {26}Archimedean property}{207}{chapter.26}%
-\contentsline {section}{\numberline {26.1}integer Archimedean property}{207}{section.26.1}%
-\contentsline {section}{\numberline {26.2}rational Archimedean property}{207}{section.26.2}%
-\contentsline {section}{\numberline {26.3}real Archimedean property}{207}{section.26.3}%
-\contentsline {chapter}{\numberline {27}MatPlotLib / matplotlib}{209}{chapter.27}%
-\contentsline {section}{\numberline {27.1}Timothy H. Wu}{209}{section.27.1}%
-\contentsline {subsection}{\numberline {27.1.1}funcitonal API}{209}{subsection.27.1.1}%
-\contentsline {subsection}{\numberline {27.1.2}object-oriented API}{213}{subsection.27.1.2}%
-\contentsline {subsubsection}{\numberline {27.1.2.1}Configure the figure size and DPI}{214}{subsubsection.27.1.2.1}%
-\contentsline {subsubsection}{\numberline {27.1.2.2}subplot}{215}{subsubsection.27.1.2.2}%
-\contentsline {subsubsection}{\numberline {27.1.2.3}color and linestyle}{216}{subsubsection.27.1.2.3}%
-\contentsline {subsubsection}{\numberline {27.1.2.4}other inputs}{216}{subsubsection.27.1.2.4}%
-\contentsline {subsubsection}{\numberline {27.1.2.5}legend}{216}{subsubsection.27.1.2.5}%
-\contentsline {subsubsection}{\numberline {27.1.2.6}customize style}{217}{subsubsection.27.1.2.6}%
-\contentsline {subsubsection}{\numberline {27.1.2.7}save to file}{217}{subsubsection.27.1.2.7}%
-\contentsline {subsection}{\numberline {27.1.3}Seaborn}{217}{subsection.27.1.3}%
-\contentsline {subsubsection}{\numberline {27.1.3.1}basic}{219}{subsubsection.27.1.3.1}%
-\contentsline {subsubsection}{\numberline {27.1.3.2}data frame}{219}{subsubsection.27.1.3.2}%
-\contentsline {subsubsection}{\numberline {27.1.3.3}axis-level plot and figure-level plot}{221}{subsubsection.27.1.3.3}%
-\contentsline {subsubsection}{\numberline {27.1.3.4}accessing fgure and axes objects}{224}{subsubsection.27.1.3.4}%
-\contentsline {subsubsection}{\numberline {27.1.3.5}distribution plot}{224}{subsubsection.27.1.3.5}%
-\contentsline {paragraph}{\numberline {27.1.3.5.1}histogram}{224}{paragraph.27.1.3.5.1}%
-\contentsline {paragraph}{\numberline {27.1.3.5.2}ECDF = empirical cumulative distrutive function}{225}{paragraph.27.1.3.5.2}%
-\contentsline {paragraph}{\numberline {27.1.3.5.3}KDE = kernel density estimation}{226}{paragraph.27.1.3.5.3}%
-\contentsline {subsubsection}{\numberline {27.1.3.6}categorical plot}{228}{subsubsection.27.1.3.6}%
-\contentsline {subsubsection}{\numberline {27.1.3.7}joint plot}{228}{subsubsection.27.1.3.7}%
-\contentsline {subsubsection}{\numberline {27.1.3.8}pair plot}{229}{subsubsection.27.1.3.8}%
-\contentsline {subsubsection}{\numberline {27.1.3.9}palette}{229}{subsubsection.27.1.3.9}%
-\contentsline {subsubsection}{\numberline {27.1.3.10}volcano plot}{230}{subsubsection.27.1.3.10}%
-\contentsline {subsubsection}{\numberline {27.1.3.11}heatmap}{230}{subsubsection.27.1.3.11}%
-\contentsline {section}{\numberline {27.2}export}{230}{section.27.2}%
-\contentsline {subsection}{\numberline {27.2.1}.svg}{230}{subsection.27.2.1}%
-\contentsline {subsection}{\numberline {27.2.2}.eps}{230}{subsection.27.2.2}%
-\contentsline {chapter}{\numberline {28}survial analysis}{231}{chapter.28}%
-\contentsline {section}{\numberline {28.1}Python package \texttt {tableone}}{231}{section.28.1}%
-\contentsline {section}{\numberline {28.2}Python package \texttt {lifelines}}{231}{section.28.2}%
-\contentsline {chapter}{\numberline {29}Manim}{233}{chapter.29}%
-\contentsline {section}{\numberline {29.1}VSCode extension: Manim Sideview}{233}{section.29.1}%
-\contentsline {section}{\numberline {29.2}installation}{233}{section.29.2}%
-\contentsline {subsection}{\numberline {29.2.1}Conda}{233}{subsection.29.2.1}%
-\contentsline {section}{\numberline {29.3}quickstart}{233}{section.29.3}%
-\contentsline {chapter}{\numberline {30}ggplot2}{235}{chapter.30}%
-\contentsline {section}{\numberline {30.1}geom}{235}{section.30.1}%
-\contentsline {subsection}{\numberline {30.1.1}basic plot system decomposition}{239}{subsection.30.1.1}%
-\contentsline {section}{\numberline {30.2}statistic}{241}{section.30.2}%
-\contentsline {section}{\numberline {30.3}scale}{241}{section.30.3}%
-\contentsline {section}{\numberline {30.4}coordinate system}{242}{section.30.4}%
-\contentsline {section}{\numberline {30.5}facet}{243}{section.30.5}%
-\contentsline {section}{\numberline {30.6}jitter}{244}{section.30.6}%
-\contentsline {section}{\numberline {30.7}font}{244}{section.30.7}%
-\contentsline {chapter}{\numberline {31}notational system for design}{245}{chapter.31}%
-\contentsline {section}{\numberline {31.1}graphic notation}{245}{section.31.1}%
-\contentsline {section}{\numberline {31.2}pre-experimental design}{245}{section.31.2}%
-\contentsline {subsection}{\numberline {31.2.1}one-shot case study}{245}{subsection.31.2.1}%
-\contentsline {subsection}{\numberline {31.2.2}one-group pretest-posttest design}{245}{subsection.31.2.2}%
-\contentsline {subsection}{\numberline {31.2.3}static-group comparison}{246}{subsection.31.2.3}%
-\contentsline {section}{\numberline {31.3}true experimental design}{246}{section.31.3}%
-\contentsline {subsection}{\numberline {31.3.1}posttest-only control group design}{246}{subsection.31.3.1}%
-\contentsline {subsection}{\numberline {31.3.2}pretest-posttest control group design}{249}{subsection.31.3.2}%
-\contentsline {subsection}{\numberline {31.3.3}Solomon four-group design}{249}{subsection.31.3.3}%
-\contentsline {section}{\numberline {31.4}quasi-experimental design}{250}{section.31.4}%
-\contentsline {section}{\numberline {31.5}correlational and ex post facto designs}{250}{section.31.5}%
-\contentsline {section}{\numberline {31.6}graphic notation, advanced}{250}{section.31.6}%
-\contentsline {chapter}{\numberline {32}design of experiment}{251}{chapter.32}%
-\contentsline {section}{\numberline {32.1}\hyperref [notational-system-for-design]{notational system for design}\textsuperscript {{[}\ref {notational-system-for-design}{]}}}{251}{section.32.1}%
-\contentsline {section}{\numberline {32.2}terminology}{251}{section.32.2}%
-\contentsline {subsection}{\numberline {32.2.1}replication vs.\nobreakspace {}subsample}{252}{subsection.32.2.1}%
-\contentsline {subsection}{\numberline {32.2.2}replication vs.\nobreakspace {}repeated measurements}{252}{subsection.32.2.2}%
-\contentsline {subsection}{\numberline {32.2.3}replication, replicate}{252}{subsection.32.2.3}%
-\contentsline {subsubsection}{\numberline {32.2.3.1}technical replicate, biological replicate}{252}{subsubsection.32.2.3.1}%
-\contentsline {subsection}{\numberline {32.2.4}Latin square design}{253}{subsection.32.2.4}%
-\contentsline {subsection}{\numberline {32.2.5}model assumption and experimental unit, measurement/observational unit}{253}{subsection.32.2.5}%
-\contentsline {section}{\numberline {32.3}experiment structure}{253}{section.32.3}%
-\contentsline {subsection}{\numberline {32.3.1}treatment structure}{253}{subsection.32.3.1}%
-\contentsline {subsection}{\numberline {32.3.2}design structure}{255}{subsection.32.3.2}%
-\contentsline {subsection}{\numberline {32.3.3}size of experimental unit}{255}{subsection.32.3.3}%
-\contentsline {section}{\numberline {32.4}approach to experimentation}{255}{section.32.4}%
-\contentsline {section}{\numberline {32.5}sample size estimation}{255}{section.32.5}%
-\contentsline {section}{\numberline {32.6}statistical analysis plan}{255}{section.32.6}%
-\contentsline {section}{\numberline {32.7}protocol}{255}{section.32.7}%
-\contentsline {section}{\numberline {32.8}DoE course with six sigma and Mintab}{256}{section.32.8}%
-\contentsline {subsection}{\numberline {32.8.1}evolution}{256}{subsection.32.8.1}%
-\contentsline {chapter}{\numberline {33}quine}{257}{chapter.33}%
-\contentsline {section}{\numberline {33.1}\texttt {\%r}}{257}{section.33.1}%
-\contentsline {chapter}{\numberline {34}quaternion}{259}{chapter.34}%
-\contentsline {section}{\numberline {34.1}TaylorCatAlice}{259}{section.34.1}%
-\contentsline {subsection}{\numberline {34.1.1}complex / dionion / bionion}{259}{subsection.34.1.1}%
-\contentsline {subsection}{\numberline {34.1.2}trionion / triernion / triplex / ternion}{259}{subsection.34.1.2}%
-\contentsline {subsection}{\numberline {34.1.3}quaternion}{260}{subsection.34.1.3}%
-\contentsline {subsubsection}{\numberline {34.1.3.1}true origin of ( dot product \& cross product ) / ( inner product \& outer product )}{262}{subsubsection.34.1.3.1}%
-\contentsline {subsubsection}{\numberline {34.1.3.2}commutativity vs.\nobreakspace {}anticommutativity}{263}{subsubsection.34.1.3.2}%
-\contentsline {paragraph}{\numberline {34.1.3.2.1}commutativity}{263}{paragraph.34.1.3.2.1}%
-\contentsline {paragraph}{\numberline {34.1.3.2.2}anticommutativity}{263}{paragraph.34.1.3.2.2}%
-\contentsline {subsubsection}{\numberline {34.1.3.3}bracket}{263}{subsubsection.34.1.3.3}%
-\contentsline {paragraph}{\numberline {34.1.3.3.1}self-invented bracket}{263}{paragraph.34.1.3.3.1}%
-\contentsline {subparagraph}{\numberline {34.1.3.3.1.1}commutative bracket}{264}{subparagraph.34.1.3.3.1.1}%
-\contentsline {subparagraph}{\numberline {34.1.3.3.1.2}anticommutative bracket}{264}{subparagraph.34.1.3.3.1.2}%
-\contentsline {paragraph}{\numberline {34.1.3.3.2}Poisson bracket}{264}{paragraph.34.1.3.3.2}%
-\contentsline {paragraph}{\numberline {34.1.3.3.3}Lagrange bracket}{264}{paragraph.34.1.3.3.3}%
-\contentsline {paragraph}{\numberline {34.1.3.3.4}Lie bracket}{264}{paragraph.34.1.3.3.4}%
-\contentsline {subsubsection}{\numberline {34.1.3.4}triple product}{264}{subsubsection.34.1.3.4}%
-\contentsline {subsubsection}{\numberline {34.1.3.5}differential operator}{266}{subsubsection.34.1.3.5}%
-\contentsline {paragraph}{\numberline {34.1.3.5.1}4-differential operator}{266}{paragraph.34.1.3.5.1}%
-\contentsline {paragraph}{\numberline {34.1.3.5.2}nabla}{266}{paragraph.34.1.3.5.2}%
-\contentsline {paragraph}{\numberline {34.1.3.5.3}Laplace operator}{267}{paragraph.34.1.3.5.3}%
-\contentsline {paragraph}{\numberline {34.1.3.5.4}d'Alembert operator}{267}{paragraph.34.1.3.5.4}%
-\contentsline {subsubsection}{\numberline {34.1.3.6}electromagnetism}{267}{subsubsection.34.1.3.6}%
-\contentsline {paragraph}{\numberline {34.1.3.6.1}4-potential}{267}{paragraph.34.1.3.6.1}%
-\contentsline {paragraph}{\numberline {34.1.3.6.2}Maxwell compromise for both quaternion and 3-vector}{268}{paragraph.34.1.3.6.2}%
-\contentsline {subsubsection}{\numberline {34.1.3.7}Joule heat vs.\nobreakspace {}Thomson heat (Kelvin heat?)}{269}{subsubsection.34.1.3.7}%
-\contentsline {paragraph}{\numberline {34.1.3.7.1}thermoelectric effect}{269}{paragraph.34.1.3.7.1}%
-\contentsline {subsubsection}{\numberline {34.1.3.8}source term}{269}{subsubsection.34.1.3.8}%
-\contentsline {subsection}{\numberline {34.1.4}quaternion group}{270}{subsection.34.1.4}%
-\contentsline {subsubsection}{\numberline {34.1.4.1}2D rotation}{270}{subsubsection.34.1.4.1}%
-\contentsline {paragraph}{\numberline {34.1.4.1.1}matrix}{270}{paragraph.34.1.4.1.1}%
-\contentsline {paragraph}{\numberline {34.1.4.1.2}complex}{271}{paragraph.34.1.4.1.2}%
-\contentsline {paragraph}{\numberline {34.1.4.1.3}\(SO\left (2\right )\cong U\left (1\right )\)}{272}{paragraph.34.1.4.1.3}%
-\contentsline {subsubsection}{\numberline {34.1.4.2}3D rotation}{272}{subsubsection.34.1.4.2}%
-\contentsline {paragraph}{\numberline {34.1.4.2.1}matrix}{272}{paragraph.34.1.4.2.1}%
-\contentsline {subparagraph}{\numberline {34.1.4.2.1.1}construction with 2D rotation matrix}{272}{subparagraph.34.1.4.2.1.1}%
-\contentsline {subparagraph}{\numberline {34.1.4.2.1.2}Euler angle}{273}{subparagraph.34.1.4.2.1.2}%
-\contentsline {subparagraph}{\numberline {34.1.4.2.1.3}3D rotation about an arbitrary axis}{273}{subparagraph.34.1.4.2.1.3}%
-\contentsline {paragraph}{\numberline {34.1.4.2.2}quaternion}{275}{paragraph.34.1.4.2.2}%
-\contentsline {subsection}{\numberline {34.1.5}octonion}{277}{subsection.34.1.5}%
-\contentsline {section}{\numberline {34.2}Krasjet}{277}{section.34.2}%
-\contentsline {subsection}{\numberline {34.2.1}Rodrigues rotation}{277}{subsection.34.2.1}%
-\contentsline {subsection}{\numberline {34.2.2}quaternion operation}{278}{subsection.34.2.2}%
-\contentsline {subsection}{\numberline {34.2.3}matrix form}{285}{subsection.34.2.3}%
-\contentsline {subsection}{\numberline {34.2.4}exponential form}{286}{subsection.34.2.4}%
-\contentsline {subsection}{\numberline {34.2.5}double cover}{287}{subsection.34.2.5}%
-\contentsline {subsection}{\numberline {34.2.6}right-hand vs.\nobreakspace {}left-hand coordinates}{288}{subsection.34.2.6}%
-\contentsline {subsubsection}{\numberline {34.2.6.1}clock}{288}{subsubsection.34.2.6.1}%
-\contentsline {subsubsection}{\numberline {34.2.6.2}Rodrigues rotation in right-hand vs.\nobreakspace {}left-hand coordinates}{288}{subsubsection.34.2.6.2}%
-\contentsline {subsection}{\numberline {34.2.7}gimbal lock}{288}{subsection.34.2.7}%
-\contentsline {subsection}{\numberline {34.2.8}Lie group}{289}{subsection.34.2.8}%
-\contentsline {subsubsection}{\numberline {34.2.8.1}special unitary group}{289}{subsubsection.34.2.8.1}%
-\contentsline {subsection}{\numberline {34.2.9}geometric algebra and Clifford algebra}{289}{subsection.34.2.9}%
-\contentsline {subsection}{\numberline {34.2.10}dual quaternion}{289}{subsection.34.2.10}%
-\contentsline {subsection}{\numberline {34.2.11}interpolation}{289}{subsection.34.2.11}%
-\contentsline {subsubsection}{\numberline {34.2.11.1}Lerp}{289}{subsubsection.34.2.11.1}%
-\contentsline {subsubsection}{\numberline {34.2.11.2}Nlerp}{289}{subsubsection.34.2.11.2}%
-\contentsline {subsubsection}{\numberline {34.2.11.3}Slerp}{289}{subsubsection.34.2.11.3}%
-\contentsline {section}{\numberline {34.3}3Blue1Brown}{289}{section.34.3}%
-\contentsline {subsection}{\numberline {34.3.1}Ben Eater}{289}{subsection.34.3.1}%
-\contentsline {subsection}{\numberline {34.3.2}3B1B}{289}{subsection.34.3.2}%
-\contentsline {subsection}{\numberline {34.3.3}Sutrabla}{289}{subsection.34.3.3}%
-\contentsline {section}{\numberline {34.4}CCJou: LA Revelation}{289}{section.34.4}%
-\contentsline {chapter}{\numberline {35}DICOM}{291}{chapter.35}%
-\contentsline {section}{\numberline {35.1}Innolitics: DICOM Standard Browser}{291}{section.35.1}%
-\contentsline {section}{\numberline {35.2}David Clunie: Medical Image Format Site}{291}{section.35.2}%
-\contentsline {section}{\numberline {35.3}Hsiao, Chia-Hung}{291}{section.35.3}%
-\contentsline {chapter}{\numberline {36}tendon pathophysiology}{293}{chapter.36}%
-\contentsline {section}{\numberline {36.1}histology}{293}{section.36.1}%
-\contentsline {chapter}{\numberline {37}group theory}{295}{chapter.37}%
-\contentsline {section}{\numberline {37.1}matrix group}{295}{section.37.1}%
-\contentsline {section}{\numberline {37.2}group definition and basic theorem}{295}{section.37.2}%
-\contentsline {section}{\numberline {37.3}Polya enumeration theorem}{296}{section.37.3}%
-\contentsline {section}{\numberline {37.4}complex group representation}{296}{section.37.4}%
-\contentsline {subsection}{\numberline {37.4.1}complex basis group}{296}{subsection.37.4.1}%
-\contentsline {subsection}{\numberline {37.4.2}\(\mathbb {C}\rightarrow \mathcal {M}_{2\times 2}\left (\mathbb {R}\right )\)}{296}{subsection.37.4.2}%
-\contentsline {subsection}{\numberline {37.4.3}( determinant of complex group representation ) equivalent to ( squared modulus of complex number )}{297}{subsection.37.4.3}%
-\contentsline {subsubsection}{\numberline {37.4.3.1}Lagrange identity}{298}{subsubsection.37.4.3.1}%
-\contentsline {subsection}{\numberline {37.4.4}Euler formula proved by complex group representation}{298}{subsection.37.4.4}%
-\contentsline {section}{\numberline {37.5}quaternion group representation}{299}{section.37.5}%
-\contentsline {subsection}{\numberline {37.5.1}\(\mathbb {H}\rightarrow \mathcal {M}_{2\times 2}\left (\mathbb {C}\right )\)}{299}{subsection.37.5.1}%
-\contentsline {subsubsection}{\numberline {37.5.1.1}Euler identity}{301}{subsubsection.37.5.1.1}%
-\contentsline {subsection}{\numberline {37.5.2}\(\mathbb {H}\rightarrow \mathcal {M}_{4\times 4}\left (\mathbb {R}\right )\)}{303}{subsection.37.5.2}%
-\contentsline {chapter}{\numberline {38}tensor}{307}{chapter.38}%
-\contentsline {section}{\numberline {38.1}Einstein summation convention}{307}{section.38.1}%
-\contentsline {subsection}{\numberline {38.1.1}dummy index}{307}{subsection.38.1.1}%
-\contentsline {subsection}{\numberline {38.1.2}free index}{307}{subsection.38.1.2}%
-\contentsline {section}{\numberline {38.2}Elliot Schneider}{307}{section.38.2}%
-\contentsline {subsection}{\numberline {38.2.1}Fundamentals of Cartesian Tensors}{307}{subsection.38.2.1}%
-\contentsline {subsection}{\numberline {38.2.2}Fundamentals of Curvilinear Tensors}{307}{subsection.38.2.2}%
-\contentsline {subsection}{\numberline {38.2.3}Fundamentals of Spacetime Tensors}{307}{subsection.38.2.3}%
-\contentsline {chapter}{\numberline {39}dual space}{309}{chapter.39}%
-\contentsline {section}{\numberline {39.1}linear equations}{309}{section.39.1}%
-\contentsline {section}{\numberline {39.2}matrix multiplication}{310}{section.39.2}%
-\contentsline {section}{\numberline {39.3}functional}{311}{section.39.3}%
-\contentsline {section}{\numberline {39.4}definition of linear functional}{313}{section.39.4}%
-\contentsline {section}{\numberline {39.5}set of all linear transformations is a vector space}{314}{section.39.5}%
-\contentsline {section}{\numberline {39.6}definition of dual space}{316}{section.39.6}%
-\contentsline {section}{\numberline {39.7}double dual}{316}{section.39.7}%
-\contentsline {chapter}{\numberline {40}vector space}{317}{chapter.40}%
-\contentsline {section}{\numberline {40.1}What is a vector?}{317}{section.40.1}%
-\contentsline {section}{\numberline {40.2}vector space definition}{317}{section.40.2}%
-\contentsline {subsection}{\numberline {40.2.1}commutative group structure of vector space}{317}{subsection.40.2.1}%
-\contentsline {subsection}{\numberline {40.2.2}scalar distributivity}{318}{subsection.40.2.2}%
-\contentsline {section}{\numberline {40.3}linearity}{319}{section.40.3}%
-\contentsline {subsection}{\numberline {40.3.1}linear structure of vector space}{319}{subsection.40.3.1}%
-\contentsline {subsection}{\numberline {40.3.2}linear transformation or linear map}{319}{subsection.40.3.2}%
-\contentsline {section}{\numberline {40.4}vector space example}{319}{section.40.4}%
-\contentsline {subsection}{\numberline {40.4.1}reciprocal space}{320}{subsection.40.4.1}%
-\contentsline {subsubsection}{\numberline {40.4.1.1}Kronecker delta}{320}{subsubsection.40.4.1.1}%
-\contentsline {subsubsection}{\numberline {40.4.1.2}double dual concept}{322}{subsubsection.40.4.1.2}%
-\contentsline {section}{\numberline {40.5}field}{323}{section.40.5}%
-\contentsline {section}{\numberline {40.6}module}{323}{section.40.6}%
-\contentsline {section}{\numberline {40.7}subspace}{323}{section.40.7}%
-\contentsline {chapter}{\numberline {41}\(\mathrm {d}f\)}{325}{chapter.41}%
-\contentsline {section}{\numberline {41.1}\(\mathrm {d}f\) decomposed with partials as a set of basis in vector space}{325}{section.41.1}%
-\contentsline {section}{\numberline {41.2}dual space of span of partials}{326}{section.41.2}%
-\contentsline {section}{\numberline {41.3}directional derivative}{326}{section.41.3}%
-\contentsline {section}{\numberline {41.4}coefficient of linear combination for vector space and dual space}{327}{section.41.4}%
-\contentsline {section}{\numberline {41.5}change of basis / change of coordinate}{327}{section.41.5}%
-\contentsline {chapter}{\numberline {42}determinant}{329}{chapter.42}%
-\contentsline {section}{\numberline {42.1}induction of determinant axioms}{329}{section.42.1}%
-\contentsline {section}{\numberline {42.2}determinant axioms}{329}{section.42.2}%
-\contentsline {section}{\numberline {42.3}determinant theorems or properties}{329}{section.42.3}%
-\contentsline {section}{\numberline {42.4}ellipse area}{329}{section.42.4}%
-\contentsline {section}{\numberline {42.5}Cramer rule geometry perspective}{329}{section.42.5}%
-\contentsline {chapter}{\numberline {43}hypergeometric function}{331}{chapter.43}%
-\contentsline {section}{\numberline {43.1}linear space of function}{331}{section.43.1}%
-\contentsline {section}{\numberline {43.2}beta function}{332}{section.43.2}%
-\contentsline {subsection}{\numberline {43.2.1}Wallis product formula}{334}{subsection.43.2.1}%
-\contentsline {section}{\numberline {43.3}gamma function}{334}{section.43.3}%
-\contentsline {section}{\numberline {43.4}recursion}{334}{section.43.4}%
-\contentsline {section}{\numberline {43.5}mean and variance of discrete probability distributions}{334}{section.43.5}%
-\contentsline {chapter}{\numberline {44}Feynman method}{335}{chapter.44}%
-\contentsline {section}{\numberline {44.1}Feynman method of differentiation / derivative}{335}{section.44.1}%
-\contentsline {subsection}{\numberline {44.1.1}principle}{335}{subsection.44.1.1}%
-\contentsline {subsection}{\numberline {44.1.2}examples}{336}{subsection.44.1.2}%
-\contentsline {section}{\numberline {44.2}Feynman method of integration / integral}{338}{section.44.2}%
-\contentsline {section}{\numberline {44.3}path integral}{338}{section.44.3}%
-\contentsline {chapter}{\numberline {45}Hilbert space}{339}{chapter.45}%
-\contentsline {section}{\numberline {45.1}Taylor expansion or Taylor series}{339}{section.45.1}%
-\contentsline {subsection}{\numberline {45.1.1}Elliot Schneider}{349}{subsection.45.1.1}%
-\contentsline {subsubsection}{\numberline {45.1.1.1}making complicated equastion simple}{350}{subsubsection.45.1.1.1}%
-\contentsline {subsubsection}{\numberline {45.1.1.2}non-relativistic limit}{351}{subsubsection.45.1.1.2}%
-\contentsline {subsubsection}{\numberline {45.1.1.3}quantum momentum operator}{351}{subsubsection.45.1.1.3}%
-\contentsline {section}{\numberline {45.2}Dirac delta function}{351}{section.45.2}%
-\contentsline {subsection}{\numberline {45.2.1}complex delta function}{355}{subsection.45.2.1}%
-\contentsline {subsection}{\numberline {45.2.2}3D delta function}{358}{subsection.45.2.2}%
-\contentsline {subsection}{\numberline {45.2.3}quantum state}{362}{subsection.45.2.3}%
-\contentsline {subsection}{\numberline {45.2.4}rigorous definition of delta function}{362}{subsection.45.2.4}%
-\contentsline {section}{\numberline {45.3}Fourier expansion or Fourier series}{363}{section.45.3}%
-\contentsline {subsection}{\numberline {45.3.1}Taylor vs.\nobreakspace {}Fourier}{363}{subsection.45.3.1}%
-\contentsline {section}{\numberline {45.4}Hilbert space}{364}{section.45.4}%
-\contentsline {subsection}{\numberline {45.4.1}inner product space}{365}{subsection.45.4.1}%
-\contentsline {section}{\numberline {45.5}Dirac bracket}{366}{section.45.5}%
-\contentsline {subsection}{\numberline {45.5.1}Dirac bracket symmetry}{368}{subsection.45.5.1}%
-\contentsline {section}{\numberline {45.6}quantum operator}{370}{section.45.6}%
-\contentsline {section}{\numberline {45.7}Gram-Schmidt algorithm to find orthonormal basis}{370}{section.45.7}%
-\contentsline {section}{\numberline {45.8}Hermite polynomials and Legendre polynomials}{370}{section.45.8}%
-\contentsline {chapter}{\numberline {46}Lagrange inversion}{371}{chapter.46}%
-\contentsline {chapter}{\numberline {47}quantum color dynamics}{373}{chapter.47}%
-\contentsline {chapter}{\numberline {48}Lagrangian}{375}{chapter.48}%
-\contentsline {chapter}{\numberline {49}Hamiltonian}{377}{chapter.49}%
-\contentsline {chapter}{\numberline {50}Fourier analysis}{379}{chapter.50}%
-\contentsline {section}{\numberline {50.1}basic calculation}{379}{section.50.1}%
-\contentsline {section}{\numberline {50.2}Simon Xu}{380}{section.50.2}%
-\contentsline {subsection}{\numberline {50.2.1}DFT = discrete Fourier transform}{380}{subsection.50.2.1}%
-\contentsline {subsection}{\numberline {50.2.2}FFT = fast Fourier transform}{380}{subsection.50.2.2}%
-\contentsline {subsection}{\numberline {50.2.3}wavelet}{380}{subsection.50.2.3}%
-\contentsline {chapter}{\numberline {51}axiom of choice}{381}{chapter.51}%
-\contentsline {section}{\numberline {51.1}Zorn lemma}{381}{section.51.1}%
-\contentsline {chapter}{\numberline {52}linear algebra}{383}{chapter.52}%
-\contentsline {section}{\numberline {52.1}CCJou}{383}{section.52.1}%
-\contentsline {section}{\numberline {52.2}Chi, Chen-Yu}{383}{section.52.2}%
-\contentsline {chapter}{\numberline {53}analysis}{385}{chapter.53}%
-\contentsline {section}{\numberline {53.1}Chi, Chen-Yu}{385}{section.53.1}%
-\contentsline {section}{\numberline {53.2}Chen, Jin-Tzu}{385}{section.53.2}%
-\contentsline {chapter}{\numberline {54}matrix calculus}{387}{chapter.54}%
-\contentsline {section}{\numberline {54.1}vector-by-scalar}{387}{section.54.1}%
-\contentsline {section}{\numberline {54.2}scalar-by-vector}{387}{section.54.2}%
-\contentsline {section}{\numberline {54.3}vector-by-vector}{388}{section.54.3}%
-\contentsline {subsection}{\numberline {54.3.1}numerator-layout notation}{388}{subsection.54.3.1}%
-\contentsline {subsection}{\numberline {54.3.2}denominator-layout notation}{388}{subsection.54.3.2}%
-\contentsline {chapter}{\numberline {55}genetics}{389}{chapter.55}%
-\contentsline {section}{\numberline {55.1}term}{389}{section.55.1}%
-\contentsline {section}{\numberline {55.2}marker}{389}{section.55.2}%
-\contentsline {section}{\numberline {55.3}genome project}{389}{section.55.3}%
-\contentsline {section}{\numberline {55.4}linkage analysis}{390}{section.55.4}%
-\contentsline {subsection}{\numberline {55.4.1}PLA = parametric linkage analysis}{391}{subsection.55.4.1}%
-\contentsline {subsection}{\numberline {55.4.2}VCLA = variance component linkage analysis}{391}{subsection.55.4.2}%
-\contentsline {section}{\numberline {55.5}association analysis}{391}{section.55.5}%
-\contentsline {chapter}{\numberline {56}multivariate normal distribution}{393}{chapter.56}%
-\contentsline {section}{\numberline {56.1}bivariate normal distribution}{399}{section.56.1}%
-\contentsline {chapter}{\numberline {57}logic}{401}{chapter.57}%
-\contentsline {section}{\numberline {57.1}Shai Ben-David}{401}{section.57.1}%
-\contentsline {chapter}{\numberline {58}algorithm}{403}{chapter.58}%
-\contentsline {section}{\numberline {58.1}Chen, Vivian}{403}{section.58.1}%
-\contentsline {section}{\numberline {58.2}The Bubble Sort Curve}{403}{section.58.2}%
-\contentsline {chapter}{\numberline {59}computer graphics}{405}{chapter.59}%
-\contentsline {section}{\numberline {59.1}Cem Yuksel}{405}{section.59.1}%
-\contentsline {chapter}{\numberline {60}autoregression in time series}{407}{chapter.60}%
-\contentsline {section}{\numberline {60.1}AR(1) = \(1^\text {st}\)-order autoregressive model = first-order autoregressive model}{409}{section.60.1}%
-\contentsline {section}{\numberline {60.2}AR(2) = \(2^\text {nd}\)-order autoregressive model = second-order autoregressive model}{410}{section.60.2}%
-\contentsline {section}{\numberline {60.3}AR(\(p\)) = \(p^\text {th}\)-order autoregressive model}{410}{section.60.3}%
-\contentsline {section}{\numberline {60.4}MA(\(q\)) = \(q^\text {th}\)-order moving-average model}{410}{section.60.4}%
-\contentsline {section}{\numberline {60.5}ARMA(\(p\),\(q\)) = \(p^\text {th},q^\text {th}\)-order autoregressive-moving-average model}{411}{section.60.5}%
-\contentsline {chapter}{\numberline {61}conductivity}{413}{chapter.61}%
-\contentsline {section}{\numberline {61.1}resistance}{413}{section.61.1}%
-\contentsline {section}{\numberline {61.2}semiconductor}{413}{section.61.2}%
-\contentsline {chapter}{\numberline {62}LaTeX annotation by TikZ}{415}{chapter.62}%
-\contentsline {chapter}{\numberline {63}Shannon sampling}{421}{chapter.63}%
-\contentsline {chapter}{\numberline {64}brachistochrone}{423}{chapter.64}%
-\contentsline {chapter}{\numberline {65}magnetic resonance}{425}{chapter.65}%
-\contentsline {section}{\numberline {65.1}NMR}{425}{section.65.1}%
-\contentsline {section}{\numberline {65.2}MRI}{425}{section.65.2}%
-\contentsline {subsection}{\numberline {65.2.1}Lin, Hsiu-Hau}{425}{subsection.65.2.1}%
-\contentsline {chapter}{\numberline {66}OpenMMLab}{427}{chapter.66}%
-\contentsline {section}{\numberline {66.1}Tongji TommyZihao}{427}{section.66.1}%
-\contentsline {section}{\numberline {66.2}official}{427}{section.66.2}%
-\contentsline {chapter}{references}{429}{chapter*.46}%
+\contentsline {subsection}{\numberline {7.2.1}verbatim}{40}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Pandoc link}{40}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}URL}{40}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}arrow}{40}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}superscript and subscript}{40}{subsection.7.2.5}%
+\contentsline {subsubsection}{\numberline {7.2.5.1}LaTeX}{41}{subsubsection.7.2.5.1}%
+\contentsline {subsection}{\numberline {7.2.6}equation}{41}{subsection.7.2.6}%
+\contentsline {subsubsection}{\numberline {7.2.6.1}proof QED}{41}{subsubsection.7.2.6.1}%
+\contentsline {subsection}{\numberline {7.2.7}image}{41}{subsection.7.2.7}%
+\contentsline {subsubsection}{\numberline {7.2.7.1}DiagrammeR / mermaid flowchart}{41}{subsubsection.7.2.7.1}%
+\contentsline {subsubsection}{\numberline {7.2.7.2}multiple images / figures in the same line}{41}{subsubsection.7.2.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.7.3}figure size}{43}{subsubsection.7.2.7.3}%
+\contentsline {paragraph}{\numberline {7.2.7.3.1}\texttt {knitr}}{45}{paragraph.7.2.7.3.1}%
+\contentsline {paragraph}{\numberline {7.2.7.3.2}\texttt {out.width} vs.\nobreakspace {}\texttt {fig.width}}{45}{paragraph.7.2.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.2.7.4}dynamic knitr plot width and height}{47}{subsubsection.7.2.7.4}%
+\contentsline {subsubsection}{\numberline {7.2.7.5}web image in PDF}{47}{subsubsection.7.2.7.5}%
+\contentsline {subsubsection}{\numberline {7.2.7.6}SVG}{47}{subsubsection.7.2.7.6}%
+\contentsline {subsection}{\numberline {7.2.8}horizontal rule}{49}{subsection.7.2.8}%
+\contentsline {subsection}{\numberline {7.2.9}footnote}{49}{subsection.7.2.9}%
+\contentsline {subsection}{\numberline {7.2.10}hyperlink}{49}{subsection.7.2.10}%
+\contentsline {subsection}{\numberline {7.2.11}code chunk}{50}{subsection.7.2.11}%
+\contentsline {subsubsection}{\numberline {7.2.11.1}code folding}{50}{subsubsection.7.2.11.1}%
+\contentsline {subsection}{\numberline {7.2.12}xaringan}{50}{subsection.7.2.12}%
+\contentsline {subsection}{\numberline {7.2.13}embed a web page}{50}{subsection.7.2.13}%
+\contentsline {subsubsection}{\numberline {7.2.13.1}iframe}{50}{subsubsection.7.2.13.1}%
+\contentsline {subsubsection}{\numberline {7.2.13.2}include URL}{50}{subsubsection.7.2.13.2}%
+\contentsline {subsubsection}{\numberline {7.2.13.3}htmltools}{52}{subsubsection.7.2.13.3}%
+\contentsline {section}{\numberline {7.3}Bookdown}{52}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}system locale}{52}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}\texttt {render\_book()}}{52}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}\texttt {serve\_book()}}{52}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}LaTeX}{52}{subsection.7.3.4}%
+\contentsline {subsubsection}{\numberline {7.3.4.1}hyperlink, URL, href}{52}{subsubsection.7.3.4.1}%
+\contentsline {subsubsection}{\numberline {7.3.4.2}ugly mathptmx \(\DOTSB \sum@ \slimits@ \)}{52}{subsubsection.7.3.4.2}%
+\contentsline {subsubsection}{\numberline {7.3.4.3}LaTeX package in HTML document}{53}{subsubsection.7.3.4.3}%
+\contentsline {subsection}{\numberline {7.3.5}depth of table of contents \texttt {toc\_depth}}{53}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}multi-column layout / two columns}{53}{subsection.7.3.6}%
+\contentsline {subsubsection}{\numberline {7.3.6.1}for both HTML and PDF}{53}{subsubsection.7.3.6.1}%
+\contentsline {subsubsection}{\numberline {7.3.6.2}multi-column \texttt {fig.cap} must use \texttt {fig.pos="H"}}{55}{subsubsection.7.3.6.2}%
+\contentsline {subsubsection}{\numberline {7.3.6.3}caption above figure}{55}{subsubsection.7.3.6.3}%
+\contentsline {subsubsection}{\numberline {7.3.6.4}for only HTML}{55}{subsubsection.7.3.6.4}%
+\contentsline {paragraph}{\numberline {7.3.6.4.1}CSS flex}{55}{paragraph.7.3.6.4.1}%
+\contentsline {paragraph}{\numberline {7.3.6.4.2}CSS grid}{56}{paragraph.7.3.6.4.2}%
+\contentsline {section}{\numberline {7.4}conditional block/chunk for either HTML or PDF, and Chinese issue}{57}{section.7.4}%
+\contentsline {section}{\numberline {7.5}video embedding}{57}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}timestamp}{57}{subsection.7.5.1}%
+\contentsline {section}{\numberline {7.6}equation term coloring}{58}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}font color}{58}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}background color}{58}{subsection.7.6.2}%
+\contentsline {section}{\numberline {7.7}link and reference}{59}{section.7.7}%
+\contentsline {section}{\numberline {7.8}number and reference equations}{60}{section.7.8}%
+\contentsline {section}{\numberline {7.9}footnote}{60}{section.7.9}%
+\contentsline {section}{\numberline {7.10}citation}{60}{section.7.10}%
+\contentsline {subsection}{\numberline {7.10.1}citation in \texttt {fig.cap}}{61}{subsection.7.10.1}%
+\contentsline {subsection}{\numberline {7.10.2}backreference}{61}{subsection.7.10.2}%
+\contentsline {section}{\numberline {7.11}environment for definition, theorem, proof}{61}{section.7.11}%
+\contentsline {section}{\numberline {7.12}slide or presentation}{62}{section.7.12}%
+\contentsline {subsection}{\numberline {7.12.1}Xaringan and Infinite Moon Reader}{62}{subsection.7.12.1}%
+\contentsline {subsection}{\numberline {7.12.2}ioslides}{62}{subsection.7.12.2}%
+\contentsline {subsection}{\numberline {7.12.3}PowerPoint}{63}{subsection.7.12.3}%
+\contentsline {chapter}{\numberline {8}test2}{65}{chapter.8}%
+\contentsline {chapter}{\numberline {9}partition}{67}{chapter.9}%
+\contentsline {chapter}{\numberline {10}equivalence class}{69}{chapter.10}%
+\contentsline {chapter}{\numberline {11}equivalence relation}{71}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Python}{73}{chapter.12}%
+\contentsline {section}{\numberline {12.1}using Python in R / RMarkdown}{73}{section.12.1}%
+\contentsline {section}{\numberline {12.2}SoloLearn}{74}{section.12.2}%
+\contentsline {section}{\numberline {12.3}list comprehension}{74}{section.12.3}%
+\contentsline {section}{\numberline {12.4}functional programming}{75}{section.12.4}%
+\contentsline {section}{\numberline {12.5}object-oriented programming = OOP}{75}{section.12.5}%
+\contentsline {chapter}{\numberline {13}TikZ}{77}{chapter.13}%
+\contentsline {section}{\numberline {13.1}2D}{78}{section.13.1}%
+\contentsline {section}{\numberline {13.2}3D}{85}{section.13.2}%
+\contentsline {section}{\numberline {13.3}plots of functions}{87}{section.13.3}%
+\contentsline {section}{\numberline {13.4}PGFplots}{88}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}the axis environments}{88}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}axis descriptions}{89}{subsection.13.4.2}%
+\contentsline {subsubsection}{\numberline {13.4.2.1}placement of axis descriptions}{89}{subsubsection.13.4.2.1}%
+\contentsline {paragraph}{\numberline {13.4.2.1.1}coordinate system \texttt {axis\ description\ cs}}{89}{paragraph.13.4.2.1.1}%
+\contentsline {paragraph}{\numberline {13.4.2.1.2}legend}{91}{paragraph.13.4.2.1.2}%
+\contentsline {paragraph}{\numberline {13.4.2.1.3}tick option}{91}{paragraph.13.4.2.1.3}%
+\contentsline {subsection}{\numberline {13.4.3}\texttt {declare\ function}}{91}{subsection.13.4.3}%
+\contentsline {subsubsection}{\numberline {13.4.3.1}\texttt {pgfmathparse}}{91}{subsubsection.13.4.3.1}%
+\contentsline {subsubsection}{\numberline {13.4.3.2}\texttt {pgfmathdeclarefunction}}{92}{subsubsection.13.4.3.2}%
+\contentsline {subsection}{\numberline {13.4.4}\texttt {\textbar {}-} and \texttt {-\textbar {}} in TikZ}{93}{subsection.13.4.4}%
+\contentsline {subsection}{\numberline {13.4.5}\texttt {pgfplotsinvokeforeach}}{93}{subsection.13.4.5}%
+\contentsline {subsection}{\numberline {13.4.6}interpolation dashed lines}{94}{subsection.13.4.6}%
+\contentsline {subsection}{\numberline {13.4.7}Zewbie}{94}{subsection.13.4.7}%
+\contentsline {subsubsection}{\numberline {13.4.7.1}coordinate axis/axes fine-tuing}{95}{subsubsection.13.4.7.1}%
+\contentsline {paragraph}{\numberline {13.4.7.1.1}range}{95}{paragraph.13.4.7.1.1}%
+\contentsline {paragraph}{\numberline {13.4.7.1.2}scaling}{95}{paragraph.13.4.7.1.2}%
+\contentsline {paragraph}{\numberline {13.4.7.1.3}direction vector}{96}{paragraph.13.4.7.1.3}%
+\contentsline {paragraph}{\numberline {13.4.7.1.4}axis style}{97}{paragraph.13.4.7.1.4}%
+\contentsline {paragraph}{\numberline {13.4.7.1.5}axis discontinuity}{98}{paragraph.13.4.7.1.5}%
+\contentsline {paragraph}{\numberline {13.4.7.1.6}tick}{98}{paragraph.13.4.7.1.6}%
+\contentsline {subsubsection}{\numberline {13.4.7.2}\texttt {addplot+}}{100}{subsubsection.13.4.7.2}%
+\contentsline {subsubsection}{\numberline {13.4.7.3}point}{101}{subsubsection.13.4.7.3}%
+\contentsline {subsubsection}{\numberline {13.4.7.4}line}{103}{subsubsection.13.4.7.4}%
+\contentsline {subsubsection}{\numberline {13.4.7.5}plane}{105}{subsubsection.13.4.7.5}%
+\contentsline {subsubsection}{\numberline {13.4.7.6}polar coordinate}{106}{subsubsection.13.4.7.6}%
+\contentsline {subsection}{\numberline {13.4.8}Arnav Bandekar: Using pgfplots to make economic graphs in LaTeX}{106}{subsection.13.4.8}%
+\contentsline {subsection}{\numberline {13.4.9}PGFplots gallery}{106}{subsection.13.4.9}%
+\contentsline {section}{\numberline {13.5}TikZplotLib / tikzplotlib}{107}{section.13.5}%
+\contentsline {section}{\numberline {13.6}animation}{109}{section.13.6}%
+\contentsline {chapter}{\numberline {14}xy-pic}{111}{chapter.14}%
+\contentsline {chapter}{\numberline {15}statistics}{113}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Hung Hung}{113}{section.15.1}%
+\contentsline {subsection}{\numberline {15.1.1}probability theory}{115}{subsection.15.1.1}%
+\contentsline {subsubsection}{\numberline {15.1.1.1}probability function}{115}{subsubsection.15.1.1.1}%
+\contentsline {subsubsection}{\numberline {15.1.1.2}conditional probability}{117}{subsubsection.15.1.1.2}%
+\contentsline {subsection}{\numberline {15.1.2}univariable distribution}{117}{subsection.15.1.2}%
+\contentsline {subsubsection}{\numberline {15.1.2.1}cumulative distribution function}{118}{subsubsection.15.1.2.1}%
+\contentsline {subsubsection}{\numberline {15.1.2.2}probability density function}{118}{subsubsection.15.1.2.2}%
+\contentsline {subsubsection}{\numberline {15.1.2.3}range vs.\nobreakspace {}support}{119}{subsubsection.15.1.2.3}%
+\contentsline {subsubsection}{\numberline {15.1.2.4}continuous monotone transformation}{120}{subsubsection.15.1.2.4}%
+\contentsline {subsubsection}{\numberline {15.1.2.5}discrete monotone transformation}{123}{subsubsection.15.1.2.5}%
+\contentsline {subsubsection}{\numberline {15.1.2.6}expected value}{124}{subsubsection.15.1.2.6}%
+\contentsline {subsubsection}{\numberline {15.1.2.7}moment}{131}{subsubsection.15.1.2.7}%
+\contentsline {paragraph}{\numberline {15.1.2.7.1}moment generating function}{134}{paragraph.15.1.2.7.1}%
+\contentsline {paragraph}{\numberline {15.1.2.7.2}characteristic function}{135}{paragraph.15.1.2.7.2}%
+\contentsline {subsubsection}{\numberline {15.1.2.8}common families of distributions}{136}{subsubsection.15.1.2.8}%
+\contentsline {paragraph}{\numberline {15.1.2.8.1}discrete distribution}{136}{paragraph.15.1.2.8.1}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.1.1}discrete uniform distribution}{136}{subparagraph.15.1.2.8.1.1}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.1.2}hypergeometric distribution}{137}{subparagraph.15.1.2.8.1.2}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.1.3}Bernoulli distribution}{137}{subparagraph.15.1.2.8.1.3}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.1.4}binomial distribution}{137}{subparagraph.15.1.2.8.1.4}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.1.5}Poisson distribution}{138}{subparagraph.15.1.2.8.1.5}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.1.6}negative binomial distribution}{139}{subparagraph.15.1.2.8.1.6}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.1.7}geometric distribution}{140}{subparagraph.15.1.2.8.1.7}%
+\contentsline {paragraph}{\numberline {15.1.2.8.2}continuous distribution}{141}{paragraph.15.1.2.8.2}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.2.1}uniform distribution = continuous uniform distribution}{141}{subparagraph.15.1.2.8.2.1}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.2.2}gamma distribution}{141}{subparagraph.15.1.2.8.2.2}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.2.3}exponential distribution}{141}{subparagraph.15.1.2.8.2.3}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.2.4}Chi-square distribution}{141}{subparagraph.15.1.2.8.2.4}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.2.5}Weibull distribution}{141}{subparagraph.15.1.2.8.2.5}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.2.6}normal distribution}{141}{subparagraph.15.1.2.8.2.6}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.2.7}beta distribution}{141}{subparagraph.15.1.2.8.2.7}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.2.8}Cauchy distribution}{141}{subparagraph.15.1.2.8.2.8}%
+\contentsline {subparagraph}{\numberline {15.1.2.8.2.9}log-normal distribution}{142}{subparagraph.15.1.2.8.2.9}%
+\contentsline {subsubsection}{\numberline {15.1.2.9}exponential family}{142}{subsubsection.15.1.2.9}%
+\contentsline {paragraph}{\numberline {15.1.2.9.1}binomial distribution with known \(n\)}{143}{paragraph.15.1.2.9.1}%
+\contentsline {paragraph}{\numberline {15.1.2.9.2}continuous uniform distribution not in exponential family}{143}{paragraph.15.1.2.9.2}%
+\contentsline {paragraph}{\numberline {15.1.2.9.3}normal distribution is in exponential family}{144}{paragraph.15.1.2.9.3}%
+\contentsline {paragraph}{\numberline {15.1.2.9.4}normal distribution with unknown equal mean and standard deviation in curved exponential family}{144}{paragraph.15.1.2.9.4}%
+\contentsline {paragraph}{\numberline {15.1.2.9.5}properties of exponential family}{145}{paragraph.15.1.2.9.5}%
+\contentsline {subparagraph}{\numberline {15.1.2.9.5.1}fundamentals of statistical inference}{146}{subparagraph.15.1.2.9.5.1}%
+\contentsline {subsection}{\numberline {15.1.3}multivariable distribution}{151}{subsection.15.1.3}%
+\contentsline {section}{\numberline {15.2}Chen, Lin-An}{155}{section.15.2}%
+\contentsline {chapter}{\numberline {16}covariance matrix}{157}{chapter.16}%
+\contentsline {section}{\numberline {16.1}vector direct product}{157}{section.16.1}%
+\contentsline {subsection}{\numberline {16.1.1}vector direct product: increasing rank}{157}{subsection.16.1.1}%
+\contentsline {subsection}{\numberline {16.1.2}vector inner product: decreasing rank}{157}{subsection.16.1.2}%
+\contentsline {subsection}{\numberline {16.1.3}tensor direct product: increasing rank}{158}{subsection.16.1.3}%
+\contentsline {section}{\numberline {16.2}covariance matrix and its properties}{158}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}\(\mathrm {V}\left [\boldsymbol {X}+\boldsymbol {b}\right ]=\mathrm {V}\left [\boldsymbol {X}\right ]\)}{158}{subsection.16.2.1}%
+\contentsline {subsection}{\numberline {16.2.2}\(\mathrm {V}\left [A\boldsymbol {X}\right ]=A\mathrm {V}\left [\boldsymbol {X}\right ]A^{\intercal }\)}{158}{subsection.16.2.2}%
+\contentsline {subsection}{\numberline {16.2.3}\(\mathrm {V}\left [A\boldsymbol {X}+\boldsymbol {b}\right ]=A\mathrm {V}\left [\boldsymbol {X}\right ]A^{\intercal }\)}{158}{subsection.16.2.3}%
+\contentsline {chapter}{\numberline {17}Gosper algorithm}{159}{chapter.17}%
+\contentsline {chapter}{\numberline {18}Lorentz transformation}{161}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Einstein}{161}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Bondi \(k\)-calculus}{161}{section.18.2}%
+\contentsline {section}{\numberline {18.3}wordline in Minkowski space}{161}{section.18.3}%
+\contentsline {subsection}{\numberline {18.3.1}Wick rotation}{161}{subsection.18.3.1}%
+\contentsline {subsubsection}{\numberline {18.3.1.1}Osterwalder-Schrader reconstruction theorem}{161}{subsubsection.18.3.1.1}%
+\contentsline {chapter}{\numberline {19}R}{163}{chapter.19}%
+\contentsline {section}{\numberline {19.1}TonyKuoYJ}{163}{section.19.1}%
+\contentsline {subsection}{\numberline {19.1.1}quick intro}{163}{subsection.19.1.1}%
+\contentsline {subsubsection}{\numberline {19.1.1.1}function}{164}{subsubsection.19.1.1.1}%
+\contentsline {subsection}{\numberline {19.1.2}R style}{164}{subsection.19.1.2}%
+\contentsline {subsection}{\numberline {19.1.3}data workflow or forward pipe}{164}{subsection.19.1.3}%
+\contentsline {subsubsection}{\numberline {19.1.3.1}\texttt {\%\textgreater {}\%} operator}{164}{subsubsection.19.1.3.1}%
+\contentsline {subsection}{\numberline {19.1.4}data processing with \texttt {dplyr}}{165}{subsection.19.1.4}%
+\contentsline {subsection}{\numberline {19.1.5}visualization statically with \texttt {ggplot2}}{167}{subsection.19.1.5}%
+\contentsline {subsection}{\numberline {19.1.6}loop}{172}{subsection.19.1.6}%
+\contentsline {subsection}{\numberline {19.1.7}variable type}{172}{subsection.19.1.7}%
+\contentsline {subsubsection}{\numberline {19.1.7.1}date}{173}{subsubsection.19.1.7.1}%
+\contentsline {subsubsection}{\numberline {19.1.7.2}time}{173}{subsubsection.19.1.7.2}%
+\contentsline {subsubsection}{\numberline {19.1.7.3}quotient \texttt {\%/\%} operator}{173}{subsubsection.19.1.7.3}%
+\contentsline {subsection}{\numberline {19.1.8}data type}{174}{subsection.19.1.8}%
+\contentsline {subsubsection}{\numberline {19.1.8.1}vector}{174}{subsubsection.19.1.8.1}%
+\contentsline {paragraph}{\numberline {19.1.8.1.1}logic}{175}{paragraph.19.1.8.1.1}%
+\contentsline {paragraph}{\numberline {19.1.8.1.2}\texttt {rep} repeat}{175}{paragraph.19.1.8.1.2}%
+\contentsline {paragraph}{\numberline {19.1.8.1.3}\texttt {seq} sequence}{175}{paragraph.19.1.8.1.3}%
+\contentsline {subsubsection}{\numberline {19.1.8.2}factor}{175}{subsubsection.19.1.8.2}%
+\contentsline {subsubsection}{\numberline {19.1.8.3}matrix}{175}{subsubsection.19.1.8.3}%
+\contentsline {subsubsection}{\numberline {19.1.8.4}data frame}{176}{subsubsection.19.1.8.4}%
+\contentsline {paragraph}{\numberline {19.1.8.4.1}selecting variable or column}{177}{paragraph.19.1.8.4.1}%
+\contentsline {paragraph}{\numberline {19.1.8.4.2}filtering observation or row}{177}{paragraph.19.1.8.4.2}%
+\contentsline {paragraph}{\numberline {19.1.8.4.3}check mixed data type}{177}{paragraph.19.1.8.4.3}%
+\contentsline {section}{\numberline {19.2}W3School}{178}{section.19.2}%
+\contentsline {subsection}{\numberline {19.2.1}same multiple variable}{178}{subsection.19.2.1}%
+\contentsline {subsection}{\numberline {19.2.2}legal variable name}{178}{subsection.19.2.2}%
+\contentsline {subsection}{\numberline {19.2.3}complex number}{178}{subsection.19.2.3}%
+\contentsline {subsection}{\numberline {19.2.4}escape character}{178}{subsection.19.2.4}%
+\contentsline {subsection}{\numberline {19.2.5}global assignment \texttt {\textless {}\textless {}-}}{178}{subsection.19.2.5}%
+\contentsline {subsection}{\numberline {19.2.6}data type}{179}{subsection.19.2.6}%
+\contentsline {subsubsection}{\numberline {19.2.6.1}array}{179}{subsubsection.19.2.6.1}%
+\contentsline {subsubsection}{\numberline {19.2.6.2}list}{179}{subsubsection.19.2.6.2}%
+\contentsline {section}{\numberline {19.3}Apan Liao}{179}{section.19.3}%
+\contentsline {subsection}{\numberline {19.3.1}data input}{180}{subsection.19.3.1}%
+\contentsline {subsection}{\numberline {19.3.2}descriptive statistics}{180}{subsection.19.3.2}%
+\contentsline {chapter}{\numberline {20}Laplace transform}{181}{chapter.20}%
+\contentsline {chapter}{\numberline {21}conic section}{183}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Cartesian coordinate: focus, directrix, eccentricity}{183}{section.21.1}%
+\contentsline {section}{\numberline {21.2}two-definition equivalence for ellipse and hyperbola}{185}{section.21.2}%
+\contentsline {subsection}{\numberline {21.2.1}first definition for conic sections including ellipses and hyperbolas}{185}{subsection.21.2.1}%
+\contentsline {subsection}{\numberline {21.2.2}second definition for ellipses and hyperbolas}{186}{subsection.21.2.2}%
+\contentsline {subsection}{\numberline {21.2.3}eccentricity and its equivalent representation}{189}{subsection.21.2.3}%
+\contentsline {section}{\numberline {21.3}Cartesian coordinate: standard form / standard equation}{189}{section.21.3}%
+\contentsline {section}{\numberline {21.4}parametric equation}{191}{section.21.4}%
+\contentsline {section}{\numberline {21.5}polar coordinate}{191}{section.21.5}%
+\contentsline {section}{\numberline {21.6}Cartesian coordinate: general form / quadratic equation}{191}{section.21.6}%
+\contentsline {section}{\numberline {21.7}homogeneous coordinate}{195}{section.21.7}%
+\contentsline {chapter}{\numberline {22}distance from a point to a line}{197}{chapter.22}%
+\contentsline {section}{\numberline {22.1}by shortest \(\overline {PP^{\prime }}\)}{197}{section.22.1}%
+\contentsline {section}{\numberline {22.2}by perpendicular foot}{198}{section.22.2}%
+\contentsline {section}{\numberline {22.3}by normal vector}{199}{section.22.3}%
+\contentsline {section}{\numberline {22.4}by Cauchy inequality}{199}{section.22.4}%
+\contentsline {chapter}{\numberline {23}real symmetric matrix diagonalizable}{201}{chapter.23}%
+\contentsline {chapter}{\numberline {24}tangent half-angle formula}{205}{chapter.24}%
+\contentsline {chapter}{\numberline {25}homogeneous coordinate}{207}{chapter.25}%
+\contentsline {chapter}{\numberline {26}Archimedean property}{209}{chapter.26}%
+\contentsline {section}{\numberline {26.1}integer Archimedean property}{209}{section.26.1}%
+\contentsline {section}{\numberline {26.2}rational Archimedean property}{209}{section.26.2}%
+\contentsline {section}{\numberline {26.3}real Archimedean property}{209}{section.26.3}%
+\contentsline {chapter}{\numberline {27}MatPlotLib / matplotlib}{211}{chapter.27}%
+\contentsline {section}{\numberline {27.1}Timothy H. Wu}{211}{section.27.1}%
+\contentsline {subsection}{\numberline {27.1.1}funcitonal API}{211}{subsection.27.1.1}%
+\contentsline {subsection}{\numberline {27.1.2}object-oriented API}{215}{subsection.27.1.2}%
+\contentsline {subsubsection}{\numberline {27.1.2.1}Configure the figure size and DPI}{216}{subsubsection.27.1.2.1}%
+\contentsline {subsubsection}{\numberline {27.1.2.2}subplot}{217}{subsubsection.27.1.2.2}%
+\contentsline {subsubsection}{\numberline {27.1.2.3}color and linestyle}{218}{subsubsection.27.1.2.3}%
+\contentsline {subsubsection}{\numberline {27.1.2.4}other inputs}{218}{subsubsection.27.1.2.4}%
+\contentsline {subsubsection}{\numberline {27.1.2.5}legend}{218}{subsubsection.27.1.2.5}%
+\contentsline {subsubsection}{\numberline {27.1.2.6}customize style}{219}{subsubsection.27.1.2.6}%
+\contentsline {subsubsection}{\numberline {27.1.2.7}save to file}{219}{subsubsection.27.1.2.7}%
+\contentsline {subsection}{\numberline {27.1.3}Seaborn}{219}{subsection.27.1.3}%
+\contentsline {subsubsection}{\numberline {27.1.3.1}basic}{221}{subsubsection.27.1.3.1}%
+\contentsline {subsubsection}{\numberline {27.1.3.2}data frame}{221}{subsubsection.27.1.3.2}%
+\contentsline {subsubsection}{\numberline {27.1.3.3}axis-level plot and figure-level plot}{223}{subsubsection.27.1.3.3}%
+\contentsline {subsubsection}{\numberline {27.1.3.4}accessing fgure and axes objects}{226}{subsubsection.27.1.3.4}%
+\contentsline {subsubsection}{\numberline {27.1.3.5}distribution plot}{226}{subsubsection.27.1.3.5}%
+\contentsline {paragraph}{\numberline {27.1.3.5.1}histogram}{226}{paragraph.27.1.3.5.1}%
+\contentsline {paragraph}{\numberline {27.1.3.5.2}ECDF = empirical cumulative distrutive function}{227}{paragraph.27.1.3.5.2}%
+\contentsline {paragraph}{\numberline {27.1.3.5.3}KDE = kernel density estimation}{228}{paragraph.27.1.3.5.3}%
+\contentsline {subsubsection}{\numberline {27.1.3.6}categorical plot}{230}{subsubsection.27.1.3.6}%
+\contentsline {subsubsection}{\numberline {27.1.3.7}joint plot}{230}{subsubsection.27.1.3.7}%
+\contentsline {subsubsection}{\numberline {27.1.3.8}pair plot}{231}{subsubsection.27.1.3.8}%
+\contentsline {subsubsection}{\numberline {27.1.3.9}palette}{231}{subsubsection.27.1.3.9}%
+\contentsline {subsubsection}{\numberline {27.1.3.10}volcano plot}{232}{subsubsection.27.1.3.10}%
+\contentsline {subsubsection}{\numberline {27.1.3.11}heatmap}{232}{subsubsection.27.1.3.11}%
+\contentsline {section}{\numberline {27.2}export}{232}{section.27.2}%
+\contentsline {subsection}{\numberline {27.2.1}.svg}{232}{subsection.27.2.1}%
+\contentsline {subsection}{\numberline {27.2.2}.eps}{232}{subsection.27.2.2}%
+\contentsline {chapter}{\numberline {28}survial analysis}{233}{chapter.28}%
+\contentsline {section}{\numberline {28.1}Python package \texttt {tableone}}{233}{section.28.1}%
+\contentsline {section}{\numberline {28.2}Python package \texttt {lifelines}}{233}{section.28.2}%
+\contentsline {chapter}{\numberline {29}Manim}{235}{chapter.29}%
+\contentsline {section}{\numberline {29.1}VSCode extension: Manim Sideview}{235}{section.29.1}%
+\contentsline {section}{\numberline {29.2}installation}{235}{section.29.2}%
+\contentsline {subsection}{\numberline {29.2.1}Conda}{235}{subsection.29.2.1}%
+\contentsline {section}{\numberline {29.3}quickstart}{235}{section.29.3}%
+\contentsline {chapter}{\numberline {30}ggplot2}{237}{chapter.30}%
+\contentsline {section}{\numberline {30.1}geom}{237}{section.30.1}%
+\contentsline {subsection}{\numberline {30.1.1}basic plot system decomposition}{241}{subsection.30.1.1}%
+\contentsline {section}{\numberline {30.2}statistic}{243}{section.30.2}%
+\contentsline {section}{\numberline {30.3}scale}{243}{section.30.3}%
+\contentsline {section}{\numberline {30.4}coordinate system}{244}{section.30.4}%
+\contentsline {section}{\numberline {30.5}facet}{245}{section.30.5}%
+\contentsline {section}{\numberline {30.6}jitter}{246}{section.30.6}%
+\contentsline {section}{\numberline {30.7}font}{246}{section.30.7}%
+\contentsline {chapter}{\numberline {31}notational system for design}{247}{chapter.31}%
+\contentsline {section}{\numberline {31.1}graphic notation}{247}{section.31.1}%
+\contentsline {section}{\numberline {31.2}pre-experimental design}{247}{section.31.2}%
+\contentsline {subsection}{\numberline {31.2.1}one-shot case study}{247}{subsection.31.2.1}%
+\contentsline {subsection}{\numberline {31.2.2}one-group pretest-posttest design}{247}{subsection.31.2.2}%
+\contentsline {subsection}{\numberline {31.2.3}static-group comparison}{248}{subsection.31.2.3}%
+\contentsline {section}{\numberline {31.3}true experimental design}{248}{section.31.3}%
+\contentsline {subsection}{\numberline {31.3.1}posttest-only control group design}{248}{subsection.31.3.1}%
+\contentsline {subsection}{\numberline {31.3.2}pretest-posttest control group design}{251}{subsection.31.3.2}%
+\contentsline {subsection}{\numberline {31.3.3}Solomon four-group design}{251}{subsection.31.3.3}%
+\contentsline {section}{\numberline {31.4}quasi-experimental design}{252}{section.31.4}%
+\contentsline {section}{\numberline {31.5}correlational and ex post facto designs}{252}{section.31.5}%
+\contentsline {section}{\numberline {31.6}graphic notation, advanced}{252}{section.31.6}%
+\contentsline {chapter}{\numberline {32}design of experiment}{253}{chapter.32}%
+\contentsline {section}{\numberline {32.1}\hyperref [notational-system-for-design]{notational system for design}\textsuperscript {{[}\ref {notational-system-for-design}{]}}}{253}{section.32.1}%
+\contentsline {section}{\numberline {32.2}terminology}{253}{section.32.2}%
+\contentsline {subsection}{\numberline {32.2.1}replication vs.\nobreakspace {}subsample}{254}{subsection.32.2.1}%
+\contentsline {subsection}{\numberline {32.2.2}replication vs.\nobreakspace {}repeated measurements}{254}{subsection.32.2.2}%
+\contentsline {subsection}{\numberline {32.2.3}replication, replicate}{254}{subsection.32.2.3}%
+\contentsline {subsubsection}{\numberline {32.2.3.1}technical replicate, biological replicate}{254}{subsubsection.32.2.3.1}%
+\contentsline {subsection}{\numberline {32.2.4}Latin square design}{255}{subsection.32.2.4}%
+\contentsline {subsection}{\numberline {32.2.5}model assumption and experimental unit, measurement/observational unit}{255}{subsection.32.2.5}%
+\contentsline {section}{\numberline {32.3}experiment structure}{255}{section.32.3}%
+\contentsline {subsection}{\numberline {32.3.1}treatment structure}{255}{subsection.32.3.1}%
+\contentsline {subsection}{\numberline {32.3.2}design structure}{257}{subsection.32.3.2}%
+\contentsline {subsection}{\numberline {32.3.3}size of experimental unit}{257}{subsection.32.3.3}%
+\contentsline {section}{\numberline {32.4}approach to experimentation}{257}{section.32.4}%
+\contentsline {section}{\numberline {32.5}sample size estimation}{257}{section.32.5}%
+\contentsline {section}{\numberline {32.6}statistical analysis plan}{257}{section.32.6}%
+\contentsline {section}{\numberline {32.7}protocol}{257}{section.32.7}%
+\contentsline {section}{\numberline {32.8}DoE course with six sigma and Mintab}{258}{section.32.8}%
+\contentsline {subsection}{\numberline {32.8.1}evolution}{258}{subsection.32.8.1}%
+\contentsline {chapter}{\numberline {33}quine}{259}{chapter.33}%
+\contentsline {section}{\numberline {33.1}\texttt {\%r}}{259}{section.33.1}%
+\contentsline {chapter}{\numberline {34}quaternion}{261}{chapter.34}%
+\contentsline {section}{\numberline {34.1}TaylorCatAlice}{261}{section.34.1}%
+\contentsline {subsection}{\numberline {34.1.1}complex / dionion / bionion}{261}{subsection.34.1.1}%
+\contentsline {subsection}{\numberline {34.1.2}trionion / triernion / triplex / ternion}{261}{subsection.34.1.2}%
+\contentsline {subsection}{\numberline {34.1.3}quaternion}{262}{subsection.34.1.3}%
+\contentsline {subsubsection}{\numberline {34.1.3.1}true origin of ( dot product \& cross product ) / ( inner product \& outer product )}{264}{subsubsection.34.1.3.1}%
+\contentsline {subsubsection}{\numberline {34.1.3.2}commutativity vs.\nobreakspace {}anticommutativity}{265}{subsubsection.34.1.3.2}%
+\contentsline {paragraph}{\numberline {34.1.3.2.1}commutativity}{265}{paragraph.34.1.3.2.1}%
+\contentsline {paragraph}{\numberline {34.1.3.2.2}anticommutativity}{265}{paragraph.34.1.3.2.2}%
+\contentsline {subsubsection}{\numberline {34.1.3.3}bracket}{265}{subsubsection.34.1.3.3}%
+\contentsline {paragraph}{\numberline {34.1.3.3.1}self-invented bracket}{265}{paragraph.34.1.3.3.1}%
+\contentsline {subparagraph}{\numberline {34.1.3.3.1.1}commutative bracket}{266}{subparagraph.34.1.3.3.1.1}%
+\contentsline {subparagraph}{\numberline {34.1.3.3.1.2}anticommutative bracket}{266}{subparagraph.34.1.3.3.1.2}%
+\contentsline {paragraph}{\numberline {34.1.3.3.2}Poisson bracket}{266}{paragraph.34.1.3.3.2}%
+\contentsline {paragraph}{\numberline {34.1.3.3.3}Lagrange bracket}{266}{paragraph.34.1.3.3.3}%
+\contentsline {paragraph}{\numberline {34.1.3.3.4}Lie bracket}{266}{paragraph.34.1.3.3.4}%
+\contentsline {subsubsection}{\numberline {34.1.3.4}triple product}{266}{subsubsection.34.1.3.4}%
+\contentsline {subsubsection}{\numberline {34.1.3.5}differential operator}{268}{subsubsection.34.1.3.5}%
+\contentsline {paragraph}{\numberline {34.1.3.5.1}4-differential operator}{268}{paragraph.34.1.3.5.1}%
+\contentsline {paragraph}{\numberline {34.1.3.5.2}nabla}{268}{paragraph.34.1.3.5.2}%
+\contentsline {paragraph}{\numberline {34.1.3.5.3}Laplace operator}{269}{paragraph.34.1.3.5.3}%
+\contentsline {paragraph}{\numberline {34.1.3.5.4}d'Alembert operator}{269}{paragraph.34.1.3.5.4}%
+\contentsline {subsubsection}{\numberline {34.1.3.6}electromagnetism}{269}{subsubsection.34.1.3.6}%
+\contentsline {paragraph}{\numberline {34.1.3.6.1}4-potential}{269}{paragraph.34.1.3.6.1}%
+\contentsline {paragraph}{\numberline {34.1.3.6.2}Maxwell compromise for both quaternion and 3-vector}{270}{paragraph.34.1.3.6.2}%
+\contentsline {subsubsection}{\numberline {34.1.3.7}Joule heat vs.\nobreakspace {}Thomson heat (Kelvin heat?)}{271}{subsubsection.34.1.3.7}%
+\contentsline {paragraph}{\numberline {34.1.3.7.1}thermoelectric effect}{271}{paragraph.34.1.3.7.1}%
+\contentsline {subsubsection}{\numberline {34.1.3.8}source term}{271}{subsubsection.34.1.3.8}%
+\contentsline {subsection}{\numberline {34.1.4}quaternion group}{272}{subsection.34.1.4}%
+\contentsline {subsubsection}{\numberline {34.1.4.1}2D rotation}{272}{subsubsection.34.1.4.1}%
+\contentsline {paragraph}{\numberline {34.1.4.1.1}matrix}{272}{paragraph.34.1.4.1.1}%
+\contentsline {paragraph}{\numberline {34.1.4.1.2}complex}{273}{paragraph.34.1.4.1.2}%
+\contentsline {paragraph}{\numberline {34.1.4.1.3}\(SO\left (2\right )\cong U\left (1\right )\)}{274}{paragraph.34.1.4.1.3}%
+\contentsline {subsubsection}{\numberline {34.1.4.2}3D rotation}{274}{subsubsection.34.1.4.2}%
+\contentsline {paragraph}{\numberline {34.1.4.2.1}matrix}{274}{paragraph.34.1.4.2.1}%
+\contentsline {subparagraph}{\numberline {34.1.4.2.1.1}construction with 2D rotation matrix}{274}{subparagraph.34.1.4.2.1.1}%
+\contentsline {subparagraph}{\numberline {34.1.4.2.1.2}Euler angle}{275}{subparagraph.34.1.4.2.1.2}%
+\contentsline {subparagraph}{\numberline {34.1.4.2.1.3}3D rotation about an arbitrary axis}{275}{subparagraph.34.1.4.2.1.3}%
+\contentsline {paragraph}{\numberline {34.1.4.2.2}quaternion}{277}{paragraph.34.1.4.2.2}%
+\contentsline {subsection}{\numberline {34.1.5}octonion}{279}{subsection.34.1.5}%
+\contentsline {section}{\numberline {34.2}Krasjet}{279}{section.34.2}%
+\contentsline {subsection}{\numberline {34.2.1}Rodrigues rotation}{279}{subsection.34.2.1}%
+\contentsline {subsection}{\numberline {34.2.2}quaternion operation}{280}{subsection.34.2.2}%
+\contentsline {subsection}{\numberline {34.2.3}matrix form}{287}{subsection.34.2.3}%
+\contentsline {subsection}{\numberline {34.2.4}exponential form}{288}{subsection.34.2.4}%
+\contentsline {subsection}{\numberline {34.2.5}double cover}{289}{subsection.34.2.5}%
+\contentsline {subsection}{\numberline {34.2.6}right-hand vs.\nobreakspace {}left-hand coordinates}{290}{subsection.34.2.6}%
+\contentsline {subsubsection}{\numberline {34.2.6.1}clock}{290}{subsubsection.34.2.6.1}%
+\contentsline {subsubsection}{\numberline {34.2.6.2}Rodrigues rotation in right-hand vs.\nobreakspace {}left-hand coordinates}{290}{subsubsection.34.2.6.2}%
+\contentsline {subsection}{\numberline {34.2.7}gimbal lock}{290}{subsection.34.2.7}%
+\contentsline {subsection}{\numberline {34.2.8}Lie group}{291}{subsection.34.2.8}%
+\contentsline {subsubsection}{\numberline {34.2.8.1}special unitary group}{291}{subsubsection.34.2.8.1}%
+\contentsline {subsection}{\numberline {34.2.9}geometric algebra and Clifford algebra}{291}{subsection.34.2.9}%
+\contentsline {subsection}{\numberline {34.2.10}dual quaternion}{291}{subsection.34.2.10}%
+\contentsline {subsection}{\numberline {34.2.11}interpolation}{291}{subsection.34.2.11}%
+\contentsline {subsubsection}{\numberline {34.2.11.1}Lerp}{291}{subsubsection.34.2.11.1}%
+\contentsline {subsubsection}{\numberline {34.2.11.2}Nlerp}{291}{subsubsection.34.2.11.2}%
+\contentsline {subsubsection}{\numberline {34.2.11.3}Slerp}{291}{subsubsection.34.2.11.3}%
+\contentsline {section}{\numberline {34.3}3Blue1Brown}{291}{section.34.3}%
+\contentsline {subsection}{\numberline {34.3.1}Ben Eater}{291}{subsection.34.3.1}%
+\contentsline {subsection}{\numberline {34.3.2}3B1B}{291}{subsection.34.3.2}%
+\contentsline {subsection}{\numberline {34.3.3}Sutrabla}{291}{subsection.34.3.3}%
+\contentsline {section}{\numberline {34.4}CCJou: LA Revelation}{291}{section.34.4}%
+\contentsline {chapter}{\numberline {35}DICOM}{293}{chapter.35}%
+\contentsline {section}{\numberline {35.1}Innolitics: DICOM Standard Browser}{293}{section.35.1}%
+\contentsline {section}{\numberline {35.2}David Clunie: Medical Image Format Site}{293}{section.35.2}%
+\contentsline {section}{\numberline {35.3}Hsiao, Chia-Hung}{293}{section.35.3}%
+\contentsline {chapter}{\numberline {36}tendon pathophysiology}{295}{chapter.36}%
+\contentsline {section}{\numberline {36.1}histology}{295}{section.36.1}%
+\contentsline {chapter}{\numberline {37}group theory}{297}{chapter.37}%
+\contentsline {section}{\numberline {37.1}matrix group}{297}{section.37.1}%
+\contentsline {section}{\numberline {37.2}group definition and basic theorem}{297}{section.37.2}%
+\contentsline {section}{\numberline {37.3}Polya enumeration theorem}{298}{section.37.3}%
+\contentsline {section}{\numberline {37.4}complex group representation}{298}{section.37.4}%
+\contentsline {subsection}{\numberline {37.4.1}complex basis group}{298}{subsection.37.4.1}%
+\contentsline {subsection}{\numberline {37.4.2}\(\mathbb {C}\rightarrow \mathcal {M}_{2\times 2}\left (\mathbb {R}\right )\)}{298}{subsection.37.4.2}%
+\contentsline {subsection}{\numberline {37.4.3}( determinant of complex group representation ) equivalent to ( squared modulus of complex number )}{299}{subsection.37.4.3}%
+\contentsline {subsubsection}{\numberline {37.4.3.1}Lagrange identity}{300}{subsubsection.37.4.3.1}%
+\contentsline {subsection}{\numberline {37.4.4}Euler formula proved by complex group representation}{300}{subsection.37.4.4}%
+\contentsline {section}{\numberline {37.5}quaternion group representation}{301}{section.37.5}%
+\contentsline {subsection}{\numberline {37.5.1}\(\mathbb {H}\rightarrow \mathcal {M}_{2\times 2}\left (\mathbb {C}\right )\)}{301}{subsection.37.5.1}%
+\contentsline {subsubsection}{\numberline {37.5.1.1}Euler identity}{303}{subsubsection.37.5.1.1}%
+\contentsline {subsection}{\numberline {37.5.2}\(\mathbb {H}\rightarrow \mathcal {M}_{4\times 4}\left (\mathbb {R}\right )\)}{305}{subsection.37.5.2}%
+\contentsline {chapter}{\numberline {38}tensor}{309}{chapter.38}%
+\contentsline {section}{\numberline {38.1}Einstein summation convention}{309}{section.38.1}%
+\contentsline {subsection}{\numberline {38.1.1}dummy index}{309}{subsection.38.1.1}%
+\contentsline {subsection}{\numberline {38.1.2}free index}{309}{subsection.38.1.2}%
+\contentsline {section}{\numberline {38.2}Elliot Schneider}{309}{section.38.2}%
+\contentsline {subsection}{\numberline {38.2.1}Fundamentals of Cartesian Tensors}{309}{subsection.38.2.1}%
+\contentsline {subsection}{\numberline {38.2.2}Fundamentals of Curvilinear Tensors}{309}{subsection.38.2.2}%
+\contentsline {subsection}{\numberline {38.2.3}Fundamentals of Spacetime Tensors}{309}{subsection.38.2.3}%
+\contentsline {chapter}{\numberline {39}dual space}{311}{chapter.39}%
+\contentsline {section}{\numberline {39.1}linear equations}{311}{section.39.1}%
+\contentsline {section}{\numberline {39.2}matrix multiplication}{312}{section.39.2}%
+\contentsline {section}{\numberline {39.3}functional}{313}{section.39.3}%
+\contentsline {section}{\numberline {39.4}definition of linear functional}{315}{section.39.4}%
+\contentsline {section}{\numberline {39.5}set of all linear transformations is a vector space}{316}{section.39.5}%
+\contentsline {section}{\numberline {39.6}definition of dual space}{318}{section.39.6}%
+\contentsline {section}{\numberline {39.7}double dual}{318}{section.39.7}%
+\contentsline {chapter}{\numberline {40}vector space}{319}{chapter.40}%
+\contentsline {section}{\numberline {40.1}What is a vector?}{319}{section.40.1}%
+\contentsline {section}{\numberline {40.2}vector space definition}{319}{section.40.2}%
+\contentsline {subsection}{\numberline {40.2.1}commutative group structure of vector space}{319}{subsection.40.2.1}%
+\contentsline {subsection}{\numberline {40.2.2}scalar distributivity}{320}{subsection.40.2.2}%
+\contentsline {section}{\numberline {40.3}linearity}{321}{section.40.3}%
+\contentsline {subsection}{\numberline {40.3.1}linear structure of vector space}{321}{subsection.40.3.1}%
+\contentsline {subsection}{\numberline {40.3.2}linear transformation or linear map}{321}{subsection.40.3.2}%
+\contentsline {section}{\numberline {40.4}vector space example}{321}{section.40.4}%
+\contentsline {subsection}{\numberline {40.4.1}reciprocal space}{322}{subsection.40.4.1}%
+\contentsline {subsubsection}{\numberline {40.4.1.1}Kronecker delta}{322}{subsubsection.40.4.1.1}%
+\contentsline {subsubsection}{\numberline {40.4.1.2}double dual concept}{324}{subsubsection.40.4.1.2}%
+\contentsline {section}{\numberline {40.5}field}{325}{section.40.5}%
+\contentsline {section}{\numberline {40.6}module}{325}{section.40.6}%
+\contentsline {section}{\numberline {40.7}subspace}{325}{section.40.7}%
+\contentsline {chapter}{\numberline {41}\(\mathrm {d}f\)}{327}{chapter.41}%
+\contentsline {section}{\numberline {41.1}\(\mathrm {d}f\) decomposed with partials as a set of basis in vector space}{327}{section.41.1}%
+\contentsline {section}{\numberline {41.2}dual space of span of partials}{328}{section.41.2}%
+\contentsline {section}{\numberline {41.3}directional derivative}{328}{section.41.3}%
+\contentsline {section}{\numberline {41.4}coefficient of linear combination for vector space and dual space}{329}{section.41.4}%
+\contentsline {section}{\numberline {41.5}change of basis / change of coordinate}{329}{section.41.5}%
+\contentsline {chapter}{\numberline {42}determinant}{331}{chapter.42}%
+\contentsline {section}{\numberline {42.1}induction of determinant axioms}{331}{section.42.1}%
+\contentsline {section}{\numberline {42.2}determinant axioms}{331}{section.42.2}%
+\contentsline {section}{\numberline {42.3}determinant theorems or properties}{331}{section.42.3}%
+\contentsline {section}{\numberline {42.4}ellipse area}{331}{section.42.4}%
+\contentsline {section}{\numberline {42.5}Cramer rule geometry perspective}{331}{section.42.5}%
+\contentsline {chapter}{\numberline {43}hypergeometric function}{333}{chapter.43}%
+\contentsline {section}{\numberline {43.1}linear space of function}{333}{section.43.1}%
+\contentsline {section}{\numberline {43.2}beta function}{334}{section.43.2}%
+\contentsline {subsection}{\numberline {43.2.1}Wallis product formula}{336}{subsection.43.2.1}%
+\contentsline {section}{\numberline {43.3}gamma function}{336}{section.43.3}%
+\contentsline {section}{\numberline {43.4}recursion}{336}{section.43.4}%
+\contentsline {section}{\numberline {43.5}mean and variance of discrete probability distributions}{336}{section.43.5}%
+\contentsline {chapter}{\numberline {44}Feynman method}{337}{chapter.44}%
+\contentsline {section}{\numberline {44.1}Feynman method of differentiation / derivative technique}{337}{section.44.1}%
+\contentsline {subsection}{\numberline {44.1.1}principle}{337}{subsection.44.1.1}%
+\contentsline {subsection}{\numberline {44.1.2}examples}{338}{subsection.44.1.2}%
+\contentsline {section}{\numberline {44.2}Feynman method of integration / integral technique}{340}{section.44.2}%
+\contentsline {subsection}{\numberline {44.2.1}principle}{340}{subsection.44.2.1}%
+\contentsline {subsection}{\numberline {44.2.2}Dirichlet integral}{340}{subsection.44.2.2}%
+\contentsline {subsubsection}{\numberline {44.2.2.1}residue method}{343}{subsubsection.44.2.2.1}%
+\contentsline {subsubsection}{\numberline {44.2.2.2}sinc function}{343}{subsubsection.44.2.2.2}%
+\contentsline {subsection}{\numberline {44.2.3}Gaussian integral}{343}{subsection.44.2.3}%
+\contentsline {subsection}{\numberline {44.2.4}other examples}{346}{subsection.44.2.4}%
+\contentsline {section}{\numberline {44.3}path integral}{346}{section.44.3}%
+\contentsline {chapter}{\numberline {45}Hilbert space}{347}{chapter.45}%
+\contentsline {section}{\numberline {45.1}Taylor expansion or Taylor series}{347}{section.45.1}%
+\contentsline {subsection}{\numberline {45.1.1}Elliot Schneider}{357}{subsection.45.1.1}%
+\contentsline {subsubsection}{\numberline {45.1.1.1}making complicated equastion simple}{358}{subsubsection.45.1.1.1}%
+\contentsline {subsubsection}{\numberline {45.1.1.2}non-relativistic limit}{359}{subsubsection.45.1.1.2}%
+\contentsline {subsubsection}{\numberline {45.1.1.3}quantum momentum operator}{359}{subsubsection.45.1.1.3}%
+\contentsline {section}{\numberline {45.2}Dirac delta function}{359}{section.45.2}%
+\contentsline {subsection}{\numberline {45.2.1}complex delta function}{363}{subsection.45.2.1}%
+\contentsline {subsection}{\numberline {45.2.2}3D delta function}{366}{subsection.45.2.2}%
+\contentsline {subsection}{\numberline {45.2.3}quantum state}{370}{subsection.45.2.3}%
+\contentsline {subsection}{\numberline {45.2.4}rigorous definition of delta function}{370}{subsection.45.2.4}%
+\contentsline {section}{\numberline {45.3}Fourier expansion or Fourier series}{371}{section.45.3}%
+\contentsline {subsection}{\numberline {45.3.1}Taylor vs.\nobreakspace {}Fourier}{371}{subsection.45.3.1}%
+\contentsline {section}{\numberline {45.4}Hilbert space}{372}{section.45.4}%
+\contentsline {subsection}{\numberline {45.4.1}inner product space}{373}{subsection.45.4.1}%
+\contentsline {section}{\numberline {45.5}Dirac bracket}{374}{section.45.5}%
+\contentsline {subsection}{\numberline {45.5.1}Dirac bracket symmetry}{376}{subsection.45.5.1}%
+\contentsline {section}{\numberline {45.6}quantum operator}{378}{section.45.6}%
+\contentsline {section}{\numberline {45.7}Gram-Schmidt algorithm to find orthonormal basis}{378}{section.45.7}%
+\contentsline {section}{\numberline {45.8}Hermite polynomials and Legendre polynomials}{378}{section.45.8}%
+\contentsline {chapter}{\numberline {46}Lagrange inversion}{379}{chapter.46}%
+\contentsline {section}{\numberline {46.1}Newton}{379}{section.46.1}%
+\contentsline {section}{\numberline {46.2}Lagrange}{379}{section.46.2}%
+\contentsline {chapter}{\numberline {47}quantum color dynamics}{381}{chapter.47}%
+\contentsline {chapter}{\numberline {48}Lagrangian}{383}{chapter.48}%
+\contentsline {chapter}{\numberline {49}Hamiltonian}{385}{chapter.49}%
+\contentsline {chapter}{\numberline {50}Fourier analysis}{387}{chapter.50}%
+\contentsline {section}{\numberline {50.1}basic calculation}{387}{section.50.1}%
+\contentsline {section}{\numberline {50.2}Simon Xu}{388}{section.50.2}%
+\contentsline {subsection}{\numberline {50.2.1}DFT = discrete Fourier transform}{388}{subsection.50.2.1}%
+\contentsline {subsection}{\numberline {50.2.2}FFT = fast Fourier transform}{388}{subsection.50.2.2}%
+\contentsline {subsection}{\numberline {50.2.3}wavelet}{388}{subsection.50.2.3}%
+\contentsline {chapter}{\numberline {51}axiom of choice}{389}{chapter.51}%
+\contentsline {section}{\numberline {51.1}Zorn lemma}{389}{section.51.1}%
+\contentsline {chapter}{\numberline {52}linear algebra}{391}{chapter.52}%
+\contentsline {section}{\numberline {52.1}CCJou}{391}{section.52.1}%
+\contentsline {section}{\numberline {52.2}Chi, Chen-Yu}{391}{section.52.2}%
+\contentsline {chapter}{\numberline {53}analysis}{393}{chapter.53}%
+\contentsline {section}{\numberline {53.1}Chi, Chen-Yu}{393}{section.53.1}%
+\contentsline {section}{\numberline {53.2}Chen, Jin-Tzu}{393}{section.53.2}%
+\contentsline {chapter}{\numberline {54}matrix calculus}{395}{chapter.54}%
+\contentsline {section}{\numberline {54.1}vector-by-scalar}{395}{section.54.1}%
+\contentsline {section}{\numberline {54.2}scalar-by-vector}{395}{section.54.2}%
+\contentsline {section}{\numberline {54.3}vector-by-vector}{396}{section.54.3}%
+\contentsline {subsection}{\numberline {54.3.1}numerator-layout notation}{396}{subsection.54.3.1}%
+\contentsline {subsection}{\numberline {54.3.2}denominator-layout notation}{396}{subsection.54.3.2}%
+\contentsline {chapter}{\numberline {55}genetics}{397}{chapter.55}%
+\contentsline {section}{\numberline {55.1}term}{397}{section.55.1}%
+\contentsline {section}{\numberline {55.2}marker}{397}{section.55.2}%
+\contentsline {section}{\numberline {55.3}genome project}{397}{section.55.3}%
+\contentsline {section}{\numberline {55.4}linkage analysis}{398}{section.55.4}%
+\contentsline {subsection}{\numberline {55.4.1}PLA = parametric linkage analysis}{399}{subsection.55.4.1}%
+\contentsline {subsection}{\numberline {55.4.2}VCLA = variance component linkage analysis}{399}{subsection.55.4.2}%
+\contentsline {section}{\numberline {55.5}association analysis}{399}{section.55.5}%
+\contentsline {chapter}{\numberline {56}multivariate normal distribution}{401}{chapter.56}%
+\contentsline {section}{\numberline {56.1}bivariate normal distribution}{407}{section.56.1}%
+\contentsline {chapter}{\numberline {57}logic}{409}{chapter.57}%
+\contentsline {section}{\numberline {57.1}Shai Ben-David}{409}{section.57.1}%
+\contentsline {chapter}{\numberline {58}algorithm}{411}{chapter.58}%
+\contentsline {section}{\numberline {58.1}Chen, Vivian}{411}{section.58.1}%
+\contentsline {section}{\numberline {58.2}The Bubble Sort Curve}{411}{section.58.2}%
+\contentsline {chapter}{\numberline {59}computer graphics}{413}{chapter.59}%
+\contentsline {section}{\numberline {59.1}Cem Yuksel}{413}{section.59.1}%
+\contentsline {chapter}{\numberline {60}autoregression in time series}{415}{chapter.60}%
+\contentsline {section}{\numberline {60.1}AR(1) = \(1^\text {st}\)-order autoregressive model = first-order autoregressive model}{417}{section.60.1}%
+\contentsline {section}{\numberline {60.2}AR(2) = \(2^\text {nd}\)-order autoregressive model = second-order autoregressive model}{418}{section.60.2}%
+\contentsline {section}{\numberline {60.3}AR(\(p\)) = \(p^\text {th}\)-order autoregressive model}{418}{section.60.3}%
+\contentsline {section}{\numberline {60.4}MA(\(q\)) = \(q^\text {th}\)-order moving-average model}{418}{section.60.4}%
+\contentsline {section}{\numberline {60.5}ARMA(\(p\),\(q\)) = \(p^\text {th},q^\text {th}\)-order autoregressive-moving-average model}{419}{section.60.5}%
+\contentsline {chapter}{\numberline {61}conductivity}{421}{chapter.61}%
+\contentsline {section}{\numberline {61.1}resistance}{421}{section.61.1}%
+\contentsline {section}{\numberline {61.2}semiconductor}{421}{section.61.2}%
+\contentsline {chapter}{\numberline {62}LaTeX annotation by TikZ}{423}{chapter.62}%
+\contentsline {chapter}{\numberline {63}Shannon sampling}{429}{chapter.63}%
+\contentsline {chapter}{\numberline {64}brachistochrone}{431}{chapter.64}%
+\contentsline {chapter}{\numberline {65}magnetic resonance}{433}{chapter.65}%
+\contentsline {section}{\numberline {65.1}NMR}{433}{section.65.1}%
+\contentsline {section}{\numberline {65.2}MRI}{433}{section.65.2}%
+\contentsline {subsection}{\numberline {65.2.1}Lin, Hsiu-Hau}{433}{subsection.65.2.1}%
+\contentsline {chapter}{\numberline {66}OpenMMLab}{435}{chapter.66}%
+\contentsline {section}{\numberline {66.1}Tongji TommyZihao}{435}{section.66.1}%
+\contentsline {section}{\numberline {66.2}official}{435}{section.66.2}%
+\contentsline {chapter}{references}{437}{chapter*.48}%

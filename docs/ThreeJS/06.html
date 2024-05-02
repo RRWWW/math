@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Three.js</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000000;
+        }
+
+        #button-container {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            height: 10vh;
+            background-color: #000000;
+        }
+        #reset-camera-button {
+            padding: 10px 20px;
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="button-container">
+        <button id="reset-camera-button">Reset Camera Position</button>
+    </div>
+
+    <script type="module">
+        import * as THREE from 'https://cdn.skypack.dev/three@0.130.0';
+        import { OrbitControls } from 'https://cdn.skypack.dev/three@0.130.0/examples/jsm/controls/OrbitControls.js';
+        
+        // Create a scene
+        const scene = new THREE.Scene();
+
+        // https://stackoverflow.com/questions/44630265/how-can-i-set-z-up-coordinate-system-in-three-js/58554774#58554774
+        // In three.js Y axis represent up and down and Z axis represent forward and backward. But I want Z axis to represent up and down and Y axis to forward and backward.
+        THREE.Object3D.DefaultUp = new THREE.Vector3(0,0,1);
+        
+        // Create a camera
+        const camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 100);
+        // camera.up.set(0,0,1); // effect like THREE.Object3D.DefaultUp = new THREE.Vector3(0,0,1);
+        camera.position.x = 2.5;
+        camera.position.y = 2.5;
+        camera.position.z = 2.5;
+
+        // Create a WebGLRenderer
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.shadowMap.enabled = true;
+        // renderer.shadowMap.type = THREE.BasicShadowMap;
+        // renderer.shadowMap.type = THREE.PCFShadowMap; // default
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap; 
+        // renderer.shadowMap.type = THREE.VSMShadowMap;
+        
+        // Add Orbital Controls
+        const controls = new OrbitControls(camera, renderer.domElement);
+        
+        // Append the renderer to the container
+        document.body.appendChild(renderer.domElement);
+        
+        // Create X, Y, and Z axes
+        const axesHelper = new THREE.AxesHelper(2);
+        scene.add(axesHelper);
+        
+        // origin vector (0,0,0)
+        const origin = new THREE.Vector3(0, 0, 0);
+
+        // Create light sources
+        var light1 = new THREE.AmbientLight(0xffffff, 0.55);
+        var light2 = new THREE.DirectionalLight(0xffffff, 1);
+        // var light = new THREE.HemisphereLight(0xffffff, 1);
+        // var light = new THREE.PointLight(0xffffff, 1);
+        // var light = new THREE.RectAreaLight(0xffffff, 1);
+        // var light = new THREE.SpotLight(0xffffff, 1);
+        // light.position.set(0, 10, 10);
+        // light.castShadow = true;
+        light1.position.set(0, -5, 10);
+        light1.castShadow = true;
+        light2.position.set(0, 5, 10);
+        light2.castShadow = true;
+        // light1.intensity = 1.1;
+        // scene.add(light);
+        scene.add(light1);
+        scene.add(light2);
+
+        //Set up shadow properties for the light
+        light2.shadow.mapSize.width = 512; // default
+        light2.shadow.mapSize.height = 512; // default
+        light2.shadow.camera.near = 0.1; // default
+        light2.shadow.camera.far = 64; // default
+                
+        const geometry = new THREE.SphereGeometry( 1, 32, 16 ); 
+        // const material = new THREE.MeshBasicMaterial( { color: 0xffffff, transparent: true, opacity: 0.25 } ); 
+        // const material = new THREE.MeshDepthMaterial( { color: 0xffffff, transparent: true, opacity: 0.25 } ); 
+        // const material = new THREE.MeshDistanceMaterial( { color: 0xffffff, transparent: true, opacity: 0.25 } ); 
+        // const material = new THREE.MeshLambertMaterial( { color: 0xffffff, transparent: true, opacity: 0.25 } ); 
+        // const material = new THREE.MeshMatcapMaterial( { color: 0xffffff, transparent: true, opacity: 0.25 } ); 
+        // const material = new THREE.MeshNormalMaterial( { color: 0xffffff, transparent: true, opacity: 0.25 } ); 
+        const material = new THREE.MeshPhongMaterial( { color: 0x999999, transparent: true, opacity: 0.2 } ); 
+        // const material = new THREE.MeshPhysicalMaterial( { color: 0xffffff, transparent: true, opacity: 0.25 } ); 
+        // const material = new THREE.MeshStandardMaterial( { color: 0xffffff, transparent: true, opacity: 0.25 } ); 
+        // const material = new THREE.MeshToonMaterial( { color: 0xffffff, transparent: true, opacity: 0.25 } ); 
+        const sphere_unit = new THREE.Mesh( geometry, material );
+        // sphere_unit.castShadow = true;
+        sphere_unit.receiveShadow = false; //default
+        scene.add(sphere_unit);
+
+        //Create a plane that receives shadows (but does not cast them)
+        const planeGeometry = new THREE.PlaneGeometry( 20, 20, 32, 32 );
+        const planeMaterial = new THREE.MeshStandardMaterial( { color: 0x111111 } )
+        const plane = new THREE.Mesh( planeGeometry, planeMaterial );
+        plane.receiveShadow = true;
+        plane.position.z = -1;
+        scene.add( plane );
+
+        // set normal vector
+        // var vector_normal = new THREE.Vector3(1, 1, 1).normalize();
+        var vector_normal = new THREE.Vector3(1, 1, 10).normalize();
+        // var vector_normal = new THREE.Vector3(1, 1, -10).normalize();
+        // var vector_normal = new THREE.Vector3(0, 1, 1).normalize();
+        // var vector_normal = new THREE.Vector3(0, 1, -1).normalize();
+        // var vector_normal = new THREE.Vector3(1-2 * Math.random(), 1-2 * Math.random(), 1-2 * Math.random()).normalize();
+        var arrow_normal = new THREE.ArrowHelper(vector_normal, origin, vector_normal.length(), 0xff00ff);
+        scene.add(arrow_normal);
+
+        // Define positron charge orbit position vector perpendicular to the normal vector
+        var z = vector_normal.x / vector_normal.z;
+        var vector = new THREE.Vector3(-1, 0, z).normalize();
+
+        // Create an arrow helper to visualize the vector
+        var arrow = new THREE.ArrowHelper(vector.clone().normalize(), origin, vector.length(), 0xffff00);
+        arrow.castShadow = true;
+        scene.add(arrow);
+
+        // for aligning cylinder to the normal vector
+        var quaternion = new THREE.Quaternion();
+        quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), vector_normal);
+
+        // create a cylinder
+        var geometry2 = new THREE.CylinderGeometry( 0.001, 0.05, 1, 32 );
+        geometry2.applyQuaternion(quaternion);
+        const material2 = new THREE.MeshPhysicalMaterial( {color: 0x00ffff} ); 
+        var cylinder = new THREE.Mesh( geometry2, material2 ); 
+        cylinder.castShadow = true;
+        cylinder.receiveShadow = false; //default
+        scene.add(cylinder);
+
+        // Rotation angle in radians
+        const dt = 0.00001;
+        const angularVelocity_precession = 200;
+        const angularVelocity_orbit = 5000;
+        // const rotationZ  = new THREE.Matrix4();
+        const rotationZ = new THREE.Matrix4().makeRotationZ(2 * Math.PI * angularVelocity_precession * dt);
+        // var rotation = new THREE.Matrix4().makeRotationAxis(vector_normal, 2 * Math.PI * angularVelocity_orbit * dt);
+
+        var n = 1;
+
+        // Animation loop
+        const animate = () => {
+            requestAnimationFrame(animate);
+
+            // Update the controls
+            controls.update();     
+
+            // Update the positron charge position vector
+            // simulate random normal vector
+            n++; // switch of this simulation
+            if (n%120 == 0) {
+                var _vector_normal = vector_normal; // memory of the last normal vector
+                vector_normal = new THREE.Vector3(1-2 * Math.random(), 1-2 * Math.random(), 1-2 * Math.random()).normalize();
+                quaternion.setFromUnitVectors(_vector_normal, vector_normal); // from the last normal vector to the current normal vector
+                cylinder.applyQuaternion(quaternion);
+                z = vector_normal.x / vector_normal.z;
+                vector = new THREE.Vector3(-1, 0, z).normalize();
+            }
+
+            // simulate precession about z axis
+            vector_normal.applyMatrix4(rotationZ);
+            cylinder.applyMatrix4(rotationZ);
+            const rotation = new THREE.Matrix4().makeRotationAxis(vector_normal, 2 * Math.PI * angularVelocity_orbit * dt);
+            vector.applyMatrix4(rotation);
+
+            // Update the arrow helper
+            // arrow.position.copy();
+            arrow_normal.setDirection(vector_normal.clone().normalize());
+            arrow.setDirection(vector.clone().normalize());
+
+            // arrow = new THREE.ArrowHelper(vector.clone().normalize(), origin, vector.length(), 0xffffff);
+            // scene.add(arrow);
+
+            // Render the scene
+            renderer.render(scene, camera);
+        };
+
+        animate();
+
+        // Button click event handler to set the camera position
+        const setCameraButton = document.getElementById('reset-camera-button');
+        setCameraButton.addEventListener('click', () => {
+        // Set the camera position (example: move the camera closer to the scene)
+        camera.position.set(2.5, 2.5, 2.5);
+        camera.lookAt(0, 0, 0); // Look at the origin (0, 0, 0)
+        });
+    </script>
+</body>
+</html>

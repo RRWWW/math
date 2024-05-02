@@ -1,7 +1,16 @@
 # Lagrange inversion
 
-Lagrange inversion theorem
+## Newton
 
+https://www.bilibili.com/video/BV1ge411e7K7
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1ge411e7K7&autoplay=0"></iframe>
+:::
+
+## Lagrange
+
+Lagrange inversion theorem
 
 ::: {show-in="html"}
 Lagrange–Bürmann formula

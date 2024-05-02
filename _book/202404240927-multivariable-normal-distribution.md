@@ -81,6 +81,8 @@ f_{Z_{i}}\left(z_{i}\right)= & \int_{-\infty}^{\infty}\cdots\int_{-\infty}^{\inf
 \end{aligned}
 $$
 
+[covariance matrix]^[\@ref(covariance-matrix)]^
+
 ::: {.definition #unnamed-chunk-2}
 covariance matrix of a random vector[@ccjou2014a]
 :::

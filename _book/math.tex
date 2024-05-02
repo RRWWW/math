@@ -265,7 +265,7 @@
 
 \title{math}
 \author{Joey Yu Hsu}
-\date{2024-04-30}
+\date{2024-05-02}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
@@ -1998,8 +1998,6 @@ Or use:
 
 \chapter{test}\label{test}
 
-\url{https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html}
-
 \section{RStudio}\label{rstudio}
 
 \subsection{writer options}\label{writer-options}
@@ -2067,6 +2065,12 @@ R Markdown 指南 https://cosname.github.io/rmarkdown-guide/index.html
 \url{https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf}
 
 \url{https://slides.yihui.org/2020-taipei-satrday-rmarkdown.html\#1}
+
+\subsection{verbatim}\label{verbatim}
+
+\url{https://community.rstudio.com/t/continued-issues-with-new-verbatim-in-rstudio/139737}
+
+\url{https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html}
 
 \subsection{Pandoc link}\label{pandoc-link}
 
@@ -2575,6 +2579,26 @@ slide realtime preview with RStudio addin Infinite Moon Reader in RStudio viewer
 
 \url{https://www.youtube.com/watch?v=3n9nASHg9gc}
 
+\subsection{embed a web page}\label{embed-a-web-page}
+
+\subsubsection{iframe}\label{iframe}
+
+\subsubsection{include URL}\label{include-url}
+
+\url{https://bookdown.org/yihui/rmarkdown-cookbook/include-url.html}
+
+\begin{verbatim}
+knitr::include_url("https://yihui.org")
+\end{verbatim}
+
+\href{https://yihui.org}{\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-30-1.pdf}}
+
+\subsubsection{htmltools}\label{htmltools}
+
+\url{https://stackoverflow.com/questions/36524238/include-html-files-in-r-markdown-file}
+
+however \texttt{out.height} etc. not works
+
 \section{Bookdown}\label{bookdown}
 
 \subsection{system locale}\label{system-locale}
@@ -2726,7 +2750,7 @@ Below is a Div containing three child Divs side by side. The Div in the middle i
 :::::: {.cols data-latex=""}
 
 ::: {.col data-latex="{0.55\textwidth}"}
-![](202401280001-test_files/figure-latex/unnamed-chunk-32-1.pdf)<!-- --> 
+![](202401280001-test_files/figure-latex/unnamed-chunk-35-1.pdf)<!-- --> 
 :::
 
 ::: {.col data-latex="{0.05\textwidth}"}
@@ -2753,7 +2777,7 @@ nulla pariatur.
 \begin{cols}
 
 \begin{col}{0.55\textwidth}
-\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-33-1.pdf}
+\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-36-1.pdf}
 
 \end{col}
 
@@ -2782,7 +2806,7 @@ nulla pariatur.
 \begin{cols}
 
 \begin{col}{0.55\textwidth}
-\includegraphics[width=1\linewidth]{202401280001-test_files/figure-latex/unnamed-chunk-34-1}
+\includegraphics[width=1\linewidth]{202401280001-test_files/figure-latex/unnamed-chunk-37-1}
 
 \end{col}
 
@@ -2811,7 +2835,7 @@ nulla pariatur.
 \begin{cols}
 
 \begin{col}{0.55\textwidth}
-\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-35-1.pdf}
+\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-38-1.pdf}
 
 \end{col}
 
@@ -2871,7 +2895,7 @@ thus complete chunk beginning with \texttt{\{r,\ echo=FALSE,\ cache=TRUE,\ engin
 \end{col}
 
 \begin{col}{0.45\textwidth}
-\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-37-1.pdf}
+\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-40-1.pdf}
 
 \end{col}
 
@@ -2928,7 +2952,7 @@ And this block will be put on the right:
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-39-1.pdf}
+\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-42-1.pdf}
 
 \paragraph{CSS grid}\label{css-grid}
 
@@ -2960,7 +2984,7 @@ https://medium.com/enjoy-life-enjoy-coding/css-所以我說那個版能不能好
 \end{Highlighting}
 \end{Shaded}
 
-\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-41-1.pdf}
+\includegraphics{202401280001-test_files/figure-latex/unnamed-chunk-44-1.pdf}
 
 \section{conditional block/chunk for either HTML or PDF, and Chinese issue}\label{conditional-blockchunk-for-either-html-or-pdf-and-chinese-issue}
 
@@ -3246,7 +3270,7 @@ citation 3\textsuperscript{\citeproc{ref-ccjou2009}{4}} citation 4\textsuperscri
 
 
 \begin{figure}
-\includegraphics[width=0.65\linewidth]{img/pre-and-true-experimental-designs} \caption{pre- and true experimental designs (~\textsuperscript{\citeproc{ref-campbell1963}{5}} p.8)}\label{fig:unnamed-chunk-52}
+\includegraphics[width=0.65\linewidth]{img/pre-and-true-experimental-designs} \caption{pre- and true experimental designs (~\textsuperscript{\citeproc{ref-campbell1963}{5}} p.8)}\label{fig:unnamed-chunk-55}
 \end{figure}
 
 \subsection{backreference}\label{backreference}
@@ -3283,7 +3307,7 @@ and \(a\) and \(b\) denote the lengths of the other two sides, we have
 \end{theorem}
 
 \begin{definition}[Definition Name]
-\protect\hypertarget{def:unnamed-chunk-54}{}\label{def:unnamed-chunk-54}Here is my definition.
+\protect\hypertarget{def:unnamed-chunk-57}{}\label{def:unnamed-chunk-57}Here is my definition.
 \end{definition}
 
 \hyperref[nice-label]{number and reference equations}
@@ -3393,44 +3417,6 @@ and \(a\) and \(b\) denote the lengths of the other two sides, we have
 \url{https://bookdown.org/yihui/rmarkdown/powerpoint-presentation.html}
 
 \chapter{test2}\label{test2}
-
-\section{verbatim}\label{verbatim}
-
-\url{https://community.rstudio.com/t/continued-issues-with-new-verbatim-in-rstudio/139737}
-
-\url{https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-
-
-\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}r}
-\NormalTok{1 + 1}
-\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
-
-\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
-\NormalTok{\#\# [1] 2}
-\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{We can output arbitrary content **verbatim**.}
-
-
-\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}r}
-\DecValTok{1} \SpecialCharTok{+} \DecValTok{1}
-\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
-
-\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
-\InformationTok{\#\# [1] 2}
-\InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
-
-\NormalTok{The content can contain inline code like}
-\NormalTok{78.5398163, too.}
-\end{Highlighting}
-\end{Shaded}
 
 \chapter{partition}\label{partition}
 
@@ -22944,6 +22930,8 @@ determinant axioms
 
 \section{linear space of function}\label{linear-space-of-function}
 
+\hyperref[quantum-state]{quantum state}\textsuperscript{{[}\ref{quantum-state}{]}}
+
 \hyperref[taylor-vs.-fourier]{Taylor vs.~Fourier}\textsuperscript{{[}@ref(taylor-vs.-fourier){]}}
 
 \[
@@ -23145,7 +23133,7 @@ B\left(a+1,b+1\right)= & \dfrac{\Gamma\left(a+1\right)\Gamma\left(b+1\right)}{\G
 
 \chapter{Feynman method}\label{feynman-method}
 
-\section{Feynman method of differentiation / derivative}\label{feynman-method-of-differentiation-derivative}
+\section{Feynman method of differentiation / derivative technique}\label{feynman-method-of-differentiation-derivative-technique}
 
 \begin{CJK}{UTF8}{bsmi}
 分式微分不是難而是煩
@@ -23337,7 +23325,286 @@ f^{\prime}\left(x\right)= & f\left(x\right)\left[x\ln x\right]^{\prime}=x^{x}\le
 \tag*{$\Box$}
 \]
 
-\section{Feynman method of integration / integral}\label{feynman-method-of-integration-integral}
+\section{Feynman method of integration / integral technique}\label{feynman-method-of-integration-integral-technique}
+
+\subsection{principle}\label{principle-1}
+
+\url{https://www.bilibili.com/video/BV1Lj411L79X/?t=2m38s}
+
+\url{https://www.youtube.com/watch?v=GW86SShcYbM}
+
+\[
+I=\int f\left(x\right)\mathrm{d}x
+\]
+
+\[
+I\left(t\right)=\int f\left(x,t\right)\mathrm{d}x
+\]
+
+\[
+\begin{aligned}
+I= & \int f\left(x\right)\mathrm{d}x\\
+I\left(t\right)= & \int f\left(x,t\right)\mathrm{d}x\\
+\dfrac{\mathrm{d}}{\mathrm{d}t}I\left(t\right)=I^{\prime}\left(t\right)= & \dfrac{\mathrm{d}}{\mathrm{d}t}\int f\left(x,t\right)\mathrm{d}x\\
+\overset{\text{Lebniz integral rule}}{=} & f\left(x,b\left(x\right),t\right)\dfrac{\mathrm{d}b\left(x\right)}{\mathrm{d}x}-f\left(x,a\left(x\right),t\right)\dfrac{\mathrm{d}a\left(x\right)}{\mathrm{d}x}+\int_{a\left(x\right)}^{b\left(x\right)}\dfrac{\partial}{\partial t}f\left(x,t\right)\mathrm{d}x\\
+\overset{\cdots}{=} & \int\dfrac{\partial}{\partial t}f\left(x,t\right)\mathrm{d}x=\int\dfrac{\partial f\left(x,t\right)}{\partial t}\mathrm{d}x=\int f_{{\scriptscriptstyle t}}\left(x,t\right)\mathrm{d}x\\
+I\left(t\right)= & \int I^{\prime}\left(t\right)\mathrm{d}t=\int I^{\prime}\left(t\right)\mathrm{d}t+C=\left[\int I^{\prime}\left(t\right)\mathrm{d}t\right]\left(t\right)\\
+\Downarrow & \text{ if }f\left(x,t=0\right)=f\left(x,0\right)=f\left(x\right)\\
+I\overset{f\left(x,0\right)=f\left(x\right)}{=}I\left(0\right)= & \left[\int I^{\prime}\left(t\right)\mathrm{d}t\right]\left(0\right)
+\end{aligned}
+\]
+
+\subsection{Dirichlet integral}\label{dirichlet-integral}
+
+as a example by Feynman method of integration / integral technique
+
+\url{https://en.wikipedia.org/wiki/Dirichlet_integral}
+
+\url{https://www.bilibili.com/video/BV1Lj411L79X/?t=4m38s}
+
+\(\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\)
+
+\url{https://www.youtube.com/watch?v=ZZccxuOpb4k}
+
+\url{https://blog.csdn.net/zhuoqingjoking97298/article/details/127950915}
+
+\(\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\)
+
+\[
+\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x
+\]
+
+\[
+f\left(x\right)=\dfrac{\sin x}{x}\text{ is an even function}\Leftrightarrow f\left(-x\right)=\dfrac{\sin\left(-x\right)}{\left(-x\right)}=\dfrac{-\sin\left(x\right)}{-x}=\dfrac{\sin x}{x}=f\left(x\right)
+\]
+
+\[
+\begin{aligned}
+\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x= & \int_{-\infty}^{0}\dfrac{\sin x}{x}\mathrm{d}x+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{x=-\infty}^{x=0}\dfrac{\sin x}{x}\mathrm{d}x+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{x=-\infty}^{x=0}\dfrac{\sin x}{x}\mathrm{d}x\left(,x^{\prime}=-x\Leftrightarrow x=-x^{\prime}\right)+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{\left(-x^{\prime}\right)=-\infty}^{\left(-x^{\prime}\right)=0}\dfrac{\sin\left(-x^{\prime}\right)}{\left(-x^{\prime}\right)}\mathrm{d}\left(-x^{\prime}\right)+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{x^{\prime}=-\left(-\infty\right)}^{x^{\prime}=-0}\dfrac{-\sin x^{\prime}}{-x^{\prime}}\left(-\mathrm{d}x^{\prime}\right)+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{x^{\prime}=\infty}^{x^{\prime}=0}\dfrac{\sin x^{\prime}}{x^{\prime}}\left(-\mathrm{d}x^{\prime}\right)+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & -\int_{x^{\prime}=\infty}^{x^{\prime}=0}\dfrac{\sin x^{\prime}}{x^{\prime}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{x^{\prime}=0}^{x^{\prime}=\infty}\dfrac{\sin x^{\prime}}{x^{\prime}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=2\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=2\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\(\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\)
+
+\[
+\begin{aligned}
+I=\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x= & \int_{0}^{\infty}f\left(x\right)\mathrm{d}x,f\left(x\right)=\dfrac{\sin x}{x}\\
+\int_{0}^{\infty}\mathrm{e}^{-tx}\dfrac{\sin x}{x}\mathrm{d}x= & \int_{0}^{\infty}\mathrm{e}^{-tx}f\left(x\right)\mathrm{d}x,\text{ Laplacian transform of }f\left(x\right)\\
+= & \int_{0}^{\infty}f\left(x,t\right)\mathrm{d}x,\begin{cases}
+f\left(x,t\right)=\mathrm{e}^{-tx}f\left(x\right)\\
+f\left(x,0\right)=\mathrm{e}^{-0x}f\left(x\right)=1\cdot f\left(x\right)=f\left(x\right) & \Downarrow
+\end{cases}\\
+I\left(t\right)= & \int_{0}^{\infty}f\left(x,t\right)\mathrm{d}x=\int_{0}^{\infty}\mathrm{e}^{-tx}f\left(x\right)\mathrm{d}x=\int_{0}^{\infty}\mathrm{e}^{-tx}\dfrac{\sin x}{x}\mathrm{d}x\Rightarrow I\left(0\right)=I\\
+\dfrac{\mathrm{d}}{\mathrm{d}t}I\left(t\right)=I^{\prime}\left(t\right)= & \dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{\infty}f\left(x,t\right)\mathrm{d}x=\int_{0}^{\infty}\dfrac{\partial f\left(x,t\right)}{\partial t}\mathrm{d}x=\int_{0}^{\infty}\dfrac{\partial\mathrm{e}^{-tx}\dfrac{\sin x}{x}}{\partial t}\mathrm{d}x\\
+= & \int_{0}^{\infty}\dfrac{\sin x}{x}\left[\dfrac{\partial\mathrm{e}^{-tx}}{\partial t}\right]\mathrm{d}x=\int_{0}^{\infty}\dfrac{\sin x}{x}\left[-x\mathrm{e}^{-tx}\right]\mathrm{d}x=\int_{0}^{\infty}\sin x\left[-\mathrm{e}^{-tx}\right]\mathrm{d}x\\
+= & -\int_{0}^{\infty}\mathrm{e}^{-tx}\sin x\mathrm{d}x,\text{ Laplacian transform of }-\sin x\\
+= & \int_{0}^{\infty}\mathrm{e}^{-tx}\left(-\sin x\right)\mathrm{d}x=\int_{x=0}^{x=\infty}\mathrm{e}^{-tx}\mathrm{d}\cos x,I^{\prime}\left(t\right)=\int_{0}^{\infty}\mathrm{e}^{-tx}\left(-\sin x\right)\mathrm{d}x\\
+= & \left[\mathrm{e}^{-tx}\cos x\right]_{x=0}^{x=\infty}-\int_{x=0}^{x=\infty}\cos x\mathrm{d}\mathrm{e}^{-tx}\\
+= & \left[\mathrm{e}^{-t\infty}\cos\infty\right]-\left[\mathrm{e}^{-t0}\cos0\right]-\int_{x=0}^{x=\infty}\cos x\left(-t\mathrm{e}^{-tx}\mathrm{d}x\right)\\
+= & \left[0\cos\infty\right]-\left[1\cdot1\right]+\int_{0}^{\infty}t\mathrm{e}^{-tx}\cos x\mathrm{d}x\\
+= & 0-1+\int_{0}^{\infty}t\mathrm{e}^{-tx}\cos x\mathrm{d}x=-1+\int_{x=0}^{x=\infty}t\mathrm{e}^{-tx}\mathrm{d}\sin x\\
+= & -1+\left[t\mathrm{e}^{-tx}\sin x\right]_{x=0}^{x=\infty}-\int_{x=0}^{x=\infty}\sin x\mathrm{d}\left(t\mathrm{e}^{-tx}\right)\\
+= & -1+\left[0-0\right]-\int_{0}^{\infty}\sin x\left(t\mathrm{e}^{-tx}\left(-t\right)\mathrm{d}x\right)=-1-\int_{0}^{\infty}t^{2}\mathrm{e}^{-tx}\left(-\sin x\right)\mathrm{d}x\\
+= & -1-t^{2}\int_{0}^{\infty}\mathrm{e}^{-tx}\left(-\sin x\right)\mathrm{d}x=-1-t^{2}I^{\prime}\left(t\right)\\
+I^{\prime}\left(t\right)= & -1-t^{2}I^{\prime}\left(t\right)\\
+I^{\prime}\left(t\right)= & \dfrac{-1}{1+t^{2}}\\
+I\left(t\right)= & \int\dfrac{-1}{1+t^{2}}\mathrm{d}t\overset{t=\tan\theta}{=}\int\dfrac{-1}{1+\tan^{2}\theta}\mathrm{d}\tan\theta=-\int\dfrac{1}{\sec^{2}\theta}\sec^{2}\theta\mathrm{d}\theta=-\int\mathrm{d}\theta=-\theta+C\\
+= & -\arctan t+C=-\tan^{-1}t+C\\
+ & \int_{0}^{\infty}\mathrm{e}^{-tx}\dfrac{\sin x}{x}\mathrm{d}x=I\left(t\right)=-\arctan t+C\\
+\Downarrow & \Rightarrow I=\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=\int_{0}^{\infty}\mathrm{e}^{-0x}\dfrac{\sin x}{x}\mathrm{d}x=I\left(0\right)=-\arctan0+C=-0+C\Rightarrow C=I\\
+\Rightarrow & 0=\int_{0}^{\infty}0\dfrac{\sin x}{x}\mathrm{d}x=\int_{0}^{\infty}\mathrm{e}^{-\infty x}\dfrac{\sin x}{x}\mathrm{d}x=I\left(\infty\right)=-\arctan\infty+C=\dfrac{-\pi}{2}+C\\
+ & 0=\dfrac{-\pi}{2}+C\Rightarrow C=\dfrac{\pi}{2}\\
+I= & I\left(0\right)=C=\dfrac{\pi}{2},I=\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x= & \dfrac{\pi}{2}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=\dfrac{\pi}{2}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=2\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=2\cdot\dfrac{\pi}{2}=\pi
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=\pi
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\subsubsection{residue method}\label{residue-method}
+
+\url{https://www.bilibili.com/video/BV1Lj411L79X/?t=7m26s}
+
+\subsubsection{sinc function}\label{sinc-function}
+
+\url{https://en.wikipedia.org/wiki/Sinc_function}
+
+\url{https://en.wikipedia.org/wiki/Anti-aliasing_filter}
+
+\url{https://en.wikipedia.org/wiki/Borwein_integral}
+
+\url{https://blog.udn.com/paraquat/22455342}
+
+\begin{figure}
+\centering
+\includegraphics{202404150929-Feynman-method_files/figure-latex/unnamed-chunk-2-1.pdf}
+\caption{\label{fig:unnamed-chunk-2}\(\mathrm{sin}(x)\)}
+\end{figure}
+
+\url{https://tex.stackexchange.com/questions/235006/declaring-sinc-in-tikz}
+
+\begin{figure}
+\centering
+\includegraphics{202404150929-Feynman-method_files/figure-latex/unnamed-chunk-3-1.pdf}
+\caption{\label{fig:unnamed-chunk-3}\(\mathrm{sinc}(x)\)}
+\end{figure}
+
+\subsection{Gaussian integral}\label{gaussian-integral}
+
+\url{https://www.youtube.com/watch?v=jP-6j6mEpRg}
+
+\(\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\)
+
+\[
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x
+\]
+
+\[
+f\left(x\right)=\mathrm{e}^{-x^{2}}\text{ is an even function}\Leftrightarrow f\left(-x\right)=\mathrm{e}^{-\left(-x\right)^{2}}=\mathrm{e}^{-x^{2}}=f\left(x\right)
+\]
+
+\[
+\begin{aligned}
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x= & \int_{-\infty}^{0}\mathrm{e}^{-x^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x=-\infty}^{x=0}\mathrm{e}^{-x^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x=-\infty}^{x=0}\mathrm{e}^{-x^{2}}\mathrm{d}x\left(,x^{\prime}=-x\Leftrightarrow x=-x^{\prime}\right)+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{\left(-x^{\prime}\right)=-\infty}^{\left(-x^{\prime}\right)=0}\mathrm{e}^{-\left(-x^{\prime}\right)^{2}}\mathrm{d}\left(-x^{\prime}\right)+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x^{\prime}=-\left(-\infty\right)}^{x^{\prime}=-0}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\left(-\mathrm{d}x^{\prime}\right)+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x^{\prime}=\infty}^{x^{\prime}=0}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & -\int_{x^{\prime}=\infty}^{x^{\prime}=0}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x^{\prime}=0}^{x^{\prime}=\infty}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\(\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\)
+
+\[
+I\left(t\right)=\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}
+\]
+
+\[
+\begin{aligned}
+I^{\prime}\left(t\right)=\dfrac{\mathrm{d}I\left(t\right)}{\mathrm{d}t}= & \dfrac{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}}{\mathrm{d}t}=\dfrac{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}}{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]}\dfrac{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]}{\mathrm{d}t}=2\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\left[\dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\\
+= & 2\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\left[\dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\overset{\text{FToC}}{=}2\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\left[\mathrm{e}^{-t^{2}}\right]\\
+= & 2\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{e}^{-t^{2}}\mathrm{d}x=2\int_{0}^{t}\mathrm{e}^{-\left(x^{2}+t^{2}\right)}\mathrm{d}x=2\int_{x=0}^{x=t}\mathrm{e}^{-\left(x^{2}+t^{2}\right)}\mathrm{d}x,x^{\prime}=\dfrac{x}{t}\Leftrightarrow x=tx^{\prime}\\
+= & 2\int_{tx^{\prime}=0}^{tx^{\prime}=t}\mathrm{e}^{-\left(\left(tx^{\prime}\right)^{2}+t^{2}\right)}\mathrm{d}tx^{\prime}=2\int_{x^{\prime}=0}^{x^{\prime}=1}\mathrm{e}^{-t^{2}\left(\left(x^{\prime}\right)^{2}+1\right)}t\mathrm{d}x^{\prime}=2\int_{0}^{1}t\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}\mathrm{d}x\\
+= & -\int_{0}^{1}\left(-2t\right)\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}\mathrm{d}x=-\int_{0}^{1}\dfrac{\partial}{\partial t}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x=-\dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x\\
+\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & I\left(t\right)=-\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+C\\
+0=\left[\int_{0}^{0}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & I\left(0\right)=\int_{0}^{1}\dfrac{1}{x^{2}+1}\mathrm{d}x+C\overset{x=\tan\theta}{=}\left[-\arctan x\right]_{0}^{1}+C=\dfrac{-\pi}{4}+C\Rightarrow C=\dfrac{\pi}{4}\\
+\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & I\left(t\right)=-\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+C=-\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+\dfrac{\pi}{4}\\
+\left[\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & \lim_{t\rightarrow\infty}I\left(t\right)=I\left(\infty\right)=-\int_{0}^{1}\dfrac{\mathrm{e}^{-\infty^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+\dfrac{\pi}{4}=-\int_{0}^{1}\dfrac{0}{x^{2}+1}\mathrm{d}x+\dfrac{\pi}{4}=\dfrac{\pi}{4}\\
+\left[\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & \dfrac{\pi}{4}\\
+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x= & \dfrac{\sqrt{\pi}}{2}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=\dfrac{\sqrt{\pi}}{2}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\cdot\dfrac{\sqrt{\pi}}{2}=\sqrt{\pi}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=\sqrt{\pi}
+\]
+
+\[
+\tag*{$\Box$}
+\]
+
+\subsection{other examples}\label{other-examples}
+
+\url{https://www.youtube.com/watch?v=GW86SShcYbM}
+
+\(\int_{0}^{1}\ln x\mathrm{d}x\)
+
+\[
+I=\int_{0}^{1}\ln x\mathrm{d}x=\int_{0}^{1}\ln\left(x\right)\mathrm{d}x,f\left(x\right)=\ln x
+\]
+
+\[
+I\left(t\right)=\int_{0}^{1}\ln tx\mathrm{d}x=\int_{0}^{1}f\left(tx\right)\mathrm{d}x=\int_{0}^{1}f\left(x,t\right)\mathrm{d}x,\begin{cases}
+f\left(x,t\right)=f\left(tx\right)=\ln tx\\
+f\left(x,1\right)=f\left(x\right)=\ln x
+\end{cases}
+\]
+
+\[
+\begin{aligned}
+I\left(t\right)= & \int_{0}^{1}f\left(x,t\right)\mathrm{d}x=\int_{0}^{1}f\left(tx\right)\mathrm{d}x=\int_{0}^{1}\ln tx\mathrm{d}x\Rightarrow I\left(1\right)=I\\
+\dfrac{\mathrm{d}}{\mathrm{d}t}I\left(t\right)=I^{\prime}\left(t\right)= & \dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{1}f\left(x,t\right)\mathrm{d}x=\int_{0}^{1}\dfrac{\partial f\left(x,t\right)}{\partial t}\mathrm{d}x=\int_{0}^{1}\dfrac{\partial\ln tx}{\partial t}\mathrm{d}x\\
+= & \int_{0}^{1}\dfrac{1}{tx}x\mathrm{d}x=\int_{0}^{1}\dfrac{1}{t}\mathrm{d}x=\dfrac{1}{t}\int_{0}^{1}\mathrm{d}x=\dfrac{1}{t}\left[x\right]_{0}^{1}=\dfrac{1}{t}\\
+I\left(t\right)= & \int I^{\prime}\left(t\right)\mathrm{d}t=\int\dfrac{1}{t}\mathrm{d}t=\ln\left|t\right|+C\\
+\Downarrow & \Rightarrow I=\int_{0}^{1}\ln x\mathrm{d}x=\int_{0}^{1}\ln1x\mathrm{d}x=I\left(1\right)=\ln\left|1\right|+C=0+C\Rightarrow C=I\\
+\text{no more known } & \text{boundary condition}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+\Im\left(t\right)= & \int_{0}^{1}x^{t}\mathrm{d}x=\left[\dfrac{x^{t+1}}{t+1}\right]_{x=0}^{1}=\dfrac{1}{t+1}\\
+\dfrac{-1}{\left(t+1\right)^{2}}=\dfrac{\mathrm{d}}{\mathrm{d}t}\dfrac{1}{t+1}=\dfrac{\mathrm{d}}{\mathrm{d}t}\Im\left(t\right)=\Im^{\prime}\left(t\right)= & \dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{1}x^{t}\mathrm{d}x=\int_{0}^{1}\dfrac{\partial x^{t}}{\partial t}\mathrm{d}x=\int_{0}^{1}x^{t}\ln x\mathrm{d}x\\
+-1=\left[\dfrac{-1}{\left(t+1\right)^{2}}\right]_{t=0}=\Im^{\prime}\left(0\right)= & \int_{0}^{1}x^{0}\ln x\mathrm{d}x=\int_{0}^{1}1\ln x\mathrm{d}x=\int_{0}^{1}\ln x\mathrm{d}x\\
+\int_{0}^{1}\ln x\mathrm{d}x= & -1
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\url{https://www.bilibili.com/video/BV1Lj411L79X}
 
 \section{path integral}\label{path-integral}
 
@@ -24343,6 +24610,10 @@ f\left(0,x\right)= & \int_{-\infty}^{\infty}\left(\frac{1}{2\pi}\int_{-\infty}^{
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
+\textsuperscript{\citeproc{ref-bernstein2004a}{13}} p.18\textasciitilde20
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 According to Fourier transform and inverse transform, \hyperref[fourier-analysis]{Fourier analysis}\textsuperscript{{[}\ref{fourier-analysis}{]}}
 
 \[
@@ -24527,7 +24798,7 @@ convolution
 
 Poisson equation
 
-\hyperref[feynman-method-of-differentiation-derivative]{Feynman method of differentiation / derivative}\textsuperscript{{[}\ref{feynman-method-of-differentiation-derivative}{]}}
+{[}Feynman method of differentiation / derivative{]}\textsuperscript{{[}\ref{feynman-method-of-differentiation-derivative}{]}}
 
 \[
 \begin{aligned}
@@ -24770,6 +25041,8 @@ Helmholtz equation
 \subsection{quantum state}\label{quantum-state}
 
 \url{https://www.bilibili.com/video/BV1qu411578c/?t=7m45s}
+
+\url{https://www.bilibili.com/video/BV1xu4y1S7W2}
 
 \subsection{rigorous definition of delta function}\label{rigorous-definition-of-delta-function}
 
@@ -25117,6 +25390,27 @@ V^{*}=\{ & \boldsymbol{e}^{{\scriptscriptstyle 2}} & \} & F & \supseteq\{ & 1 & 
 \end{array}
 \]
 
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{array}{cccccccccc}
+ &  &  & V^{*} & =\{ & \boldsymbol{e}^{{\scriptscriptstyle 1}} & \boldsymbol{e}^{{\scriptscriptstyle 2}} & \boldsymbol{e}^{{\scriptscriptstyle 3}} & \boldsymbol{\omega} & \cdots\}\\
+ & \boldsymbol{e}^{{\scriptscriptstyle 1}*} & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+V^{**}=\{ & \boldsymbol{e}^{{\scriptscriptstyle 2}*} & \} & F & \supseteq\{ & 1 & 0 & 0 & \omega^{{\scriptscriptstyle 1}} & \cdots\}\\
+ & \boldsymbol{e}^{{\scriptscriptstyle 3}*} &  & V^{*} & =\{ & \boldsymbol{e}^{{\scriptscriptstyle 1}} & \boldsymbol{e}^{{\scriptscriptstyle 2}} & \boldsymbol{e}^{{\scriptscriptstyle 3}} & \boldsymbol{\omega} & \cdots\}\\
+ & \boldsymbol{\omega}^{*} & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+ & \vdots &  & F & \supseteq\{ & \omega^{{\scriptscriptstyle 1}*} & \omega^{{\scriptscriptstyle 2}*} & \omega^{{\scriptscriptstyle 3}*} & \omega^{{\scriptscriptstyle \mu}*}\omega^{{\scriptscriptstyle \mu}} & \cdots\}\\
+ &  &  & V^{*} & =\{ & \boldsymbol{e}^{{\scriptscriptstyle 1}} & \boldsymbol{e}^{{\scriptscriptstyle 2}} & \boldsymbol{e}^{{\scriptscriptstyle 3}} & \boldsymbol{v}^{*} & \cdots\}\\
+ & \boldsymbol{e}_{{\scriptscriptstyle 1}} & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+\cong V=\{ & \boldsymbol{e}_{{\scriptscriptstyle 2}} & \} & F & \supseteq\{ & 1 & 0 & 0 & v^{*{\scriptscriptstyle 1}} & \cdots\}\\
+ & \boldsymbol{e}_{{\scriptscriptstyle 3}} &  & V^{*} & =\{ & \boldsymbol{e}^{{\scriptscriptstyle 1}} & \boldsymbol{e}^{{\scriptscriptstyle 2}} & \boldsymbol{e}^{{\scriptscriptstyle 3}} & \boldsymbol{v}^{*} & \cdots\}\\
+ & \boldsymbol{v} & : & \downarrow &  & \downarrow & \downarrow & \downarrow & \downarrow\\
+ & \vdots &  & F & \supseteq\{ & v_{{\scriptscriptstyle 1}} & v_{{\scriptscriptstyle 2}} & v_{{\scriptscriptstyle 3}} & v_{{\scriptscriptstyle \mu}}v^{*{\scriptscriptstyle \mu}} & \cdots\}
+\end{array}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 \hyperref[dual-space-of-span-of-partials]{dual space of span of partials}\textsuperscript{{[}\ref{dual-space-of-span-of-partials}{]}}
 
 \hyperref[coefficient-of-linear-combination-for-vector-space-and-dual-space]{coefficient of linear combination for vector space and dual space}\textsuperscript{{[}\ref{coefficient-of-linear-combination-for-vector-space-and-dual-space}{]}}
@@ -25379,6 +25673,12 @@ Michelangelo
 
 \chapter{Lagrange inversion}\label{lagrange-inversion}
 
+\section{Newton}\label{newton}
+
+\url{https://www.bilibili.com/video/BV1ge411e7K7}
+
+\section{Lagrange}\label{lagrange}
+
 Lagrange inversion theorem
 
 \begin{CJK}{UTF8}{bsmi}
@@ -25635,7 +25935,7 @@ t\cos\phi_{0} & m=n=0\\
 
 \chapter{matrix calculus}\label{matrix-calculus}
 
-\textsuperscript{\citeproc{ref-ccjou2013}{13}}
+\textsuperscript{\citeproc{ref-ccjou2013}{14}}
 
 \[
 \boldsymbol{x}=\left\langle x_{1},x_{2},\cdots,x_{n}\right\rangle =\begin{bmatrix}x_{1} & x_{2} & \cdots & x_{n}\end{bmatrix}^{\intercal}=\begin{bmatrix}x_{1}\\
@@ -25729,7 +26029,9 @@ f_{m}
 
 \chapter{genetics}\label{genetics}
 
-\href{https://www.youtube.com/playlist?list=PLTp0eSi9MdkPp0swo8-VVplaG8bateq7q}{genetics}
+\begin{CJK}{UTF8}{bsmi}
+[楊欣洲: genetics](https://www.youtube.com/playlist?list=PLTp0eSi9MdkPp0swo8-VVplaG8bateq7q)
+\end{CJK}
 
 \section{term}\label{term}
 
@@ -26237,7 +26539,7 @@ Z & \sim \mathrm{n}\left(0,1^2\right)=\mathcal{N}\left(0,1^2\right) \\
 \end{aligned}
 \]
 
-To generalize from univariate random variables to multivariate random vectors, a random vector\textsuperscript{\citeproc{ref-ccjou2014}{14}}
+To generalize from univariate random variables to multivariate random vectors, a random vector\textsuperscript{\citeproc{ref-ccjou2014}{15}}
 
 \[
 \boldsymbol{Z}=\left\langle Z_{1},Z_{2},\cdots,Z_{p}\right\rangle =\begin{bmatrix}Z_{1} & Z_{2} & \cdots & Z_{p}\end{bmatrix}^{\intercal}=\begin{bmatrix}Z_{1}\\
@@ -26279,6 +26581,8 @@ f_{Z_{i}}\left(z_{i}\right)= & \int_{-\infty}^{\infty}\cdots\int_{-\infty}^{\inf
 = & f\left(z_{i}\right) \overset{\eqref{eq:iidsnd}}{=}\frac{1}{\sqrt{2\pi}}\exp\left\{ -\frac{z_{i}^{2}}{2}\right\}
 \end{aligned}
 \]
+
+\hyperref[covariance-matrix]{covariance matrix}\textsuperscript{{[}\ref{covariance-matrix}{]}}
 
 \begin{definition}
 \protect\hypertarget{def:unnamed-chunk-2}{}\label{def:unnamed-chunk-2}covariance matrix of a random vector\textsuperscript{\citeproc{ref-ccjou2014a}{8}}
@@ -26488,7 +26792,7 @@ by \hyperref[mathrmvleftaboldsymbolxboldsymbolbrightamathrmvleftboldsymbolxright
 \mathit{\Sigma}=\mathit{\Sigma}_{\boldsymbol{X}}=\mathrm{V}\left[\boldsymbol{X}\right]=\mathrm{V}\left[B\boldsymbol{Z}+\boldsymbol{\mu}\right]=B\mathrm{V}\left[\boldsymbol{Z}\right]B^{\intercal}=BIB^{\intercal}=BB^{\intercal}
 \end{equation}
 
-Consider two infinitesimal volumes of \(p\)-dimensional parallelepipeds in the different \(\mathbb{R}^p\) spaces\textsuperscript{\citeproc{ref-ccjou2012}{15}}
+Consider two infinitesimal volumes of \(p\)-dimensional parallelepipeds in the different \(\mathbb{R}^p\) spaces\textsuperscript{\citeproc{ref-ccjou2012}{16}}
 
 \[
 V_{\boldsymbol{x}}=\left[x_{1},x_{1}+\mathrm{d}x_{1}\right]\times\left[x_{2},x_{2}+\mathrm{d}x_{2}\right]\times\cdots\times\left[x_{p},x_{p}+\mathrm{d}x_{p}\right]
@@ -27418,18 +27722,23 @@ MMLab
 \CSLLeftMargin{12. }%
 \CSLRightInline{Casler, M. D., Vermerris, W. \& Dixon, R. A. \href{https://doi.org/10.1007/s12155-015-9580-7}{Replication Concepts for Bioenergy Research Experiments}. \emph{BioEnergy Research} \textbf{8}, 1--16 (2015).}
 
-\bibitem[\citeproctext]{ref-ccjou2013}
+\bibitem[\citeproctext]{ref-bernstein2004a}
 \CSLLeftMargin{13. }%
+\CSLRightInline{Bernstein, M. A., King, K. F. \& Zhou, X. J. \emph{Handbook of MRI Pulse Sequences}. (Academic Press, Amsterdam ; Boston, 2004).}
+
+\bibitem[\citeproctext]{ref-ccjou2013}
+\CSLLeftMargin{14. }%
 \CSLRightInline{ccjou. \href{https://ccjou.wordpress.com/2013/05/31/\%e7\%9f\%a9\%e9\%99\%a3\%e5\%b0\%8e\%e6\%95\%b8/}{矩陣導數}. (2013).}
 
 \bibitem[\citeproctext]{ref-ccjou2014}
-\CSLLeftMargin{14. }%
+\CSLLeftMargin{15. }%
 \CSLRightInline{ccjou. \href{https://ccjou.wordpress.com/2014/06/05/\%e5\%a4\%9a\%e8\%ae\%8a\%e9\%87\%8f\%e5\%b8\%b8\%e6\%85\%8b\%e5\%88\%86\%e5\%b8\%83/}{多變量常態分布}. (2014).}
 
 \bibitem[\citeproctext]{ref-ccjou2012}
-\CSLLeftMargin{15. }%
+\CSLLeftMargin{16. }%
 \CSLRightInline{ccjou. \href{https://ccjou.wordpress.com/2012/11/26/jacobian-\%e7\%9f\%a9\%e9\%99\%a3\%e8\%88\%87\%e8\%a1\%8c\%e5\%88\%97\%e5\%bc\%8f/}{Jacobian 矩陣與行列式}. (2012).}
 
 \end{CSLReferences}
 \end{CJK}
+
 \end{document}

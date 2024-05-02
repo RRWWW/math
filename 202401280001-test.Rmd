@@ -1,7 +1,5 @@
 # test
 
-https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html
-
 ## RStudio
 
 ### writer options
@@ -77,6 +75,12 @@ R Markdown 指南 https://cosname.github.io/rmarkdown-guide/index.html
 https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
 
 https://slides.yihui.org/2020-taipei-satrday-rmarkdown.html#1
+
+### verbatim
+
+<https://community.rstudio.com/t/continued-issues-with-new-verbatim-in-rstudio/139737>
+
+<https://bookdown.org/yihui/rmarkdown-cookbook/verbatim-code-chunks.html>
 
 ### Pandoc link
 
@@ -339,7 +343,6 @@ problem: `out.width='100%'` causing `LaTeX Error: Not in outer par mode.`
 solution: `out.width=if (knitr:::is_html_output()) '100%'`
 
 :::::: {.cols data-latex=""}
-
 ::: {.col data-latex="{0.4\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
@@ -350,8 +353,7 @@ solution: `out.width=if (knitr:::is_html_output()) '100%'`
 
 ::: {.col data-latex="{0.05\textwidth}"}
 \ 
-<!-- an empty Div (with a white space), serving as
-a column separator -->
+<!-- an empty Div (with a white space), serving as a column separator -->
 :::
 
 ::: {.col data-latex="{0.55\textwidth}"}
@@ -366,7 +368,6 @@ a column separator -->
 `fig.width=10, fig.height=2`
 
 :::::: {.cols data-latex=""}
-
 ::: {.col data-latex="{0.4\textwidth}"}
 ```{tex}
 \begin{tikzpicture}
@@ -377,8 +378,7 @@ a column separator -->
 
 ::: {.col data-latex="{0.05\textwidth}"}
 \ 
-<!-- an empty Div (with a white space), serving as
-a column separator -->
+<!-- an empty Div (with a white space), serving as a column separator -->
 :::
 
 ::: {.col data-latex="{0.55\textwidth}"}
@@ -404,8 +404,7 @@ a column separator -->
 
 ::: {.col data-latex="{0.05\textwidth}"}
 \ 
-<!-- an empty Div (with a white space), serving as
-a column separator -->
+<!-- an empty Div (with a white space), serving as a column separator -->
 :::
 
 ::: {.col data-latex="{0.55\textwidth}"}
@@ -601,6 +600,60 @@ slide realtime preview with RStudio addin Infinite Moon Reader in RStudio viewer
 https://github.com/yihui/xaringan
 
 https://www.youtube.com/watch?v=3n9nASHg9gc
+
+### embed a web page
+
+#### iframe
+
+::: {show-in="html"}
+<iframe width=250 height=250 frameborder="0" allowfullscreen src="ThreeJS/06.html"></iframe>
+:::
+
+::: {show-in="html"}
+<iframe width=400 height=400 frameborder="0" allowfullscreen src="ThreeJS/06.html"></iframe>
+:::
+
+::: {show-in="html"}
+<iframe width=500 height=500 frameborder="0" allowfullscreen src="ThreeJS/06.html"></iframe>
+:::
+
+::: {show-in="html"}
+<iframe width=750 height=750 frameborder="0" allowfullscreen src="ThreeJS/06.html"></iframe>
+:::
+
+::: {show-in="html"}
+<iframe width=800 height=800 frameborder="0" allowfullscreen src="ThreeJS/06.html"></iframe>
+:::
+
+::: {show-in="html"}
+<iframe width=1000 height=1000 frameborder="0" allowfullscreen src="ThreeJS/06.html"></iframe>
+:::
+
+#### include URL
+
+https://bookdown.org/yihui/rmarkdown-cookbook/include-url.html
+
+```
+knitr::include_url("https://yihui.org")
+```
+
+```{r, echo=FALSE}
+knitr::include_url("https://yihui.org")
+```
+
+#### htmltools
+
+https://stackoverflow.com/questions/36524238/include-html-files-in-r-markdown-file
+
+```{r, echo=FALSE}
+htmltools::includeHTML("ThreeJS/06.html")
+```
+
+however `out.height` etc. not works
+
+```{r, echo=FALSE, out.height="1000%", out.width="1000%"}
+htmltools::includeHTML("ThreeJS/06.html")
+```
 
 ## Bookdown
 

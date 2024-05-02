@@ -1,11 +1,10 @@
 # Feynman method
 
-## Feynman method of differentiation / derivative
+## Feynman method of differentiation / derivative technique
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1hG411Z7Cb&autoplay=0"></iframe>
 :::
-
 
 ::: {show-in="html"}
 分式微分不是難而是煩
@@ -16,8 +15,6 @@
 分式微分不是難而是煩
 \end{CJK}
 :::
-
-
 
 ### principle
 
@@ -205,7 +202,290 @@ $$
 \tag*{$\Box$}
 $$
 
-## Feynman method of integration / integral
+## Feynman method of integration / integral technique
+
+### principle
+
+https://www.bilibili.com/video/BV1Lj411L79X/?t=2m38s
+
+https://www.youtube.com/watch?v=GW86SShcYbM
+
+$$
+I=\int f\left(x\right)\mathrm{d}x
+$$
+
+$$
+I\left(t\right)=\int f\left(x,t\right)\mathrm{d}x
+$$
+
+$$
+\begin{aligned}
+I= & \int f\left(x\right)\mathrm{d}x\\
+I\left(t\right)= & \int f\left(x,t\right)\mathrm{d}x\\
+\dfrac{\mathrm{d}}{\mathrm{d}t}I\left(t\right)=I^{\prime}\left(t\right)= & \dfrac{\mathrm{d}}{\mathrm{d}t}\int f\left(x,t\right)\mathrm{d}x\\
+\overset{\text{Lebniz integral rule}}{=} & f\left(x,b\left(x\right),t\right)\dfrac{\mathrm{d}b\left(x\right)}{\mathrm{d}x}-f\left(x,a\left(x\right),t\right)\dfrac{\mathrm{d}a\left(x\right)}{\mathrm{d}x}+\int_{a\left(x\right)}^{b\left(x\right)}\dfrac{\partial}{\partial t}f\left(x,t\right)\mathrm{d}x\\
+\overset{\cdots}{=} & \int\dfrac{\partial}{\partial t}f\left(x,t\right)\mathrm{d}x=\int\dfrac{\partial f\left(x,t\right)}{\partial t}\mathrm{d}x=\int f_{{\scriptscriptstyle t}}\left(x,t\right)\mathrm{d}x\\
+I\left(t\right)= & \int I^{\prime}\left(t\right)\mathrm{d}t=\int I^{\prime}\left(t\right)\mathrm{d}t+C=\left[\int I^{\prime}\left(t\right)\mathrm{d}t\right]\left(t\right)\\
+\Downarrow & \text{ if }f\left(x,t=0\right)=f\left(x,0\right)=f\left(x\right)\\
+I\overset{f\left(x,0\right)=f\left(x\right)}{=}I\left(0\right)= & \left[\int I^{\prime}\left(t\right)\mathrm{d}t\right]\left(0\right)
+\end{aligned}
+$$
+
+### Dirichlet integral
+
+as a example by Feynman method of integration / integral technique
+
+https://en.wikipedia.org/wiki/Dirichlet_integral
+
+https://www.bilibili.com/video/BV1Lj411L79X/?t=4m38s
+
+$\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x$
+
+https://www.youtube.com/watch?v=ZZccxuOpb4k
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/ZZccxuOpb4k"></iframe>
+:::
+
+https://blog.csdn.net/zhuoqingjoking97298/article/details/127950915
+
+$\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x$
+
+$$
+\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x
+$$
+
+$$
+f\left(x\right)=\dfrac{\sin x}{x}\text{ is an even function}\Leftrightarrow f\left(-x\right)=\dfrac{\sin\left(-x\right)}{\left(-x\right)}=\dfrac{-\sin\left(x\right)}{-x}=\dfrac{\sin x}{x}=f\left(x\right)
+$$
+
+$$
+\begin{aligned}
+\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x= & \int_{-\infty}^{0}\dfrac{\sin x}{x}\mathrm{d}x+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{x=-\infty}^{x=0}\dfrac{\sin x}{x}\mathrm{d}x+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{x=-\infty}^{x=0}\dfrac{\sin x}{x}\mathrm{d}x\left(,x^{\prime}=-x\Leftrightarrow x=-x^{\prime}\right)+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{\left(-x^{\prime}\right)=-\infty}^{\left(-x^{\prime}\right)=0}\dfrac{\sin\left(-x^{\prime}\right)}{\left(-x^{\prime}\right)}\mathrm{d}\left(-x^{\prime}\right)+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{x^{\prime}=-\left(-\infty\right)}^{x^{\prime}=-0}\dfrac{-\sin x^{\prime}}{-x^{\prime}}\left(-\mathrm{d}x^{\prime}\right)+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{x^{\prime}=\infty}^{x^{\prime}=0}\dfrac{\sin x^{\prime}}{x^{\prime}}\left(-\mathrm{d}x^{\prime}\right)+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & -\int_{x^{\prime}=\infty}^{x^{\prime}=0}\dfrac{\sin x^{\prime}}{x^{\prime}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{x^{\prime}=0}^{x^{\prime}=\infty}\dfrac{\sin x^{\prime}}{x^{\prime}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=2\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x
+\end{aligned}
+$$
+
+***
+
+$$
+\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=2\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x
+$$
+
+***
+
+$\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x$
+
+$$
+\begin{aligned}
+I=\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x= & \int_{0}^{\infty}f\left(x\right)\mathrm{d}x,f\left(x\right)=\dfrac{\sin x}{x}\\
+\int_{0}^{\infty}\mathrm{e}^{-tx}\dfrac{\sin x}{x}\mathrm{d}x= & \int_{0}^{\infty}\mathrm{e}^{-tx}f\left(x\right)\mathrm{d}x,\text{ Laplacian transform of }f\left(x\right)\\
+= & \int_{0}^{\infty}f\left(x,t\right)\mathrm{d}x,\begin{cases}
+f\left(x,t\right)=\mathrm{e}^{-tx}f\left(x\right)\\
+f\left(x,0\right)=\mathrm{e}^{-0x}f\left(x\right)=1\cdot f\left(x\right)=f\left(x\right) & \Downarrow
+\end{cases}\\
+I\left(t\right)= & \int_{0}^{\infty}f\left(x,t\right)\mathrm{d}x=\int_{0}^{\infty}\mathrm{e}^{-tx}f\left(x\right)\mathrm{d}x=\int_{0}^{\infty}\mathrm{e}^{-tx}\dfrac{\sin x}{x}\mathrm{d}x\Rightarrow I\left(0\right)=I\\
+\dfrac{\mathrm{d}}{\mathrm{d}t}I\left(t\right)=I^{\prime}\left(t\right)= & \dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{\infty}f\left(x,t\right)\mathrm{d}x=\int_{0}^{\infty}\dfrac{\partial f\left(x,t\right)}{\partial t}\mathrm{d}x=\int_{0}^{\infty}\dfrac{\partial\mathrm{e}^{-tx}\dfrac{\sin x}{x}}{\partial t}\mathrm{d}x\\
+= & \int_{0}^{\infty}\dfrac{\sin x}{x}\left[\dfrac{\partial\mathrm{e}^{-tx}}{\partial t}\right]\mathrm{d}x=\int_{0}^{\infty}\dfrac{\sin x}{x}\left[-x\mathrm{e}^{-tx}\right]\mathrm{d}x=\int_{0}^{\infty}\sin x\left[-\mathrm{e}^{-tx}\right]\mathrm{d}x\\
+= & -\int_{0}^{\infty}\mathrm{e}^{-tx}\sin x\mathrm{d}x,\text{ Laplacian transform of }-\sin x\\
+= & \int_{0}^{\infty}\mathrm{e}^{-tx}\left(-\sin x\right)\mathrm{d}x=\int_{x=0}^{x=\infty}\mathrm{e}^{-tx}\mathrm{d}\cos x,I^{\prime}\left(t\right)=\int_{0}^{\infty}\mathrm{e}^{-tx}\left(-\sin x\right)\mathrm{d}x\\
+= & \left[\mathrm{e}^{-tx}\cos x\right]_{x=0}^{x=\infty}-\int_{x=0}^{x=\infty}\cos x\mathrm{d}\mathrm{e}^{-tx}\\
+= & \left[\mathrm{e}^{-t\infty}\cos\infty\right]-\left[\mathrm{e}^{-t0}\cos0\right]-\int_{x=0}^{x=\infty}\cos x\left(-t\mathrm{e}^{-tx}\mathrm{d}x\right)\\
+= & \left[0\cos\infty\right]-\left[1\cdot1\right]+\int_{0}^{\infty}t\mathrm{e}^{-tx}\cos x\mathrm{d}x\\
+= & 0-1+\int_{0}^{\infty}t\mathrm{e}^{-tx}\cos x\mathrm{d}x=-1+\int_{x=0}^{x=\infty}t\mathrm{e}^{-tx}\mathrm{d}\sin x\\
+= & -1+\left[t\mathrm{e}^{-tx}\sin x\right]_{x=0}^{x=\infty}-\int_{x=0}^{x=\infty}\sin x\mathrm{d}\left(t\mathrm{e}^{-tx}\right)\\
+= & -1+\left[0-0\right]-\int_{0}^{\infty}\sin x\left(t\mathrm{e}^{-tx}\left(-t\right)\mathrm{d}x\right)=-1-\int_{0}^{\infty}t^{2}\mathrm{e}^{-tx}\left(-\sin x\right)\mathrm{d}x\\
+= & -1-t^{2}\int_{0}^{\infty}\mathrm{e}^{-tx}\left(-\sin x\right)\mathrm{d}x=-1-t^{2}I^{\prime}\left(t\right)\\
+I^{\prime}\left(t\right)= & -1-t^{2}I^{\prime}\left(t\right)\\
+I^{\prime}\left(t\right)= & \dfrac{-1}{1+t^{2}}\\
+I\left(t\right)= & \int\dfrac{-1}{1+t^{2}}\mathrm{d}t\overset{t=\tan\theta}{=}\int\dfrac{-1}{1+\tan^{2}\theta}\mathrm{d}\tan\theta=-\int\dfrac{1}{\sec^{2}\theta}\sec^{2}\theta\mathrm{d}\theta=-\int\mathrm{d}\theta=-\theta+C\\
+= & -\arctan t+C=-\tan^{-1}t+C\\
+ & \int_{0}^{\infty}\mathrm{e}^{-tx}\dfrac{\sin x}{x}\mathrm{d}x=I\left(t\right)=-\arctan t+C\\
+\Downarrow & \Rightarrow I=\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=\int_{0}^{\infty}\mathrm{e}^{-0x}\dfrac{\sin x}{x}\mathrm{d}x=I\left(0\right)=-\arctan0+C=-0+C\Rightarrow C=I\\
+\Rightarrow & 0=\int_{0}^{\infty}0\dfrac{\sin x}{x}\mathrm{d}x=\int_{0}^{\infty}\mathrm{e}^{-\infty x}\dfrac{\sin x}{x}\mathrm{d}x=I\left(\infty\right)=-\arctan\infty+C=\dfrac{-\pi}{2}+C\\
+ & 0=\dfrac{-\pi}{2}+C\Rightarrow C=\dfrac{\pi}{2}\\
+I= & I\left(0\right)=C=\dfrac{\pi}{2},I=\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x= & \dfrac{\pi}{2}
+\end{aligned}
+$$
+
+***
+
+$$
+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=\dfrac{\pi}{2}
+$$
+
+***
+
+$$
+\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=2\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=2\cdot\dfrac{\pi}{2}=\pi
+$$
+
+***
+
+$$
+\int_{-\infty}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=\pi
+$$
+
+$$
+\tag*{$\Box$}
+$$
+
+#### residue method
+
+https://www.bilibili.com/video/BV1Lj411L79X/?t=7m26s
+
+#### sinc function
+
+https://en.wikipedia.org/wiki/Sinc_function
+
+https://en.wikipedia.org/wiki/Anti-aliasing_filter
+
+https://en.wikipedia.org/wiki/Borwein_integral
+
+https://blog.udn.com/paraquat/22455342
+
+![(\#fig:unnamed-chunk-2)$\mathrm{sin}(x)$](202404150929-Feynman-method_files/figure-latex/unnamed-chunk-2-1.pdf) 
+
+https://tex.stackexchange.com/questions/235006/declaring-sinc-in-tikz
+
+![(\#fig:unnamed-chunk-3)$\mathrm{sinc}(x)$](202404150929-Feynman-method_files/figure-latex/unnamed-chunk-3-1.pdf) 
+
+### Gaussian integral
+
+https://www.youtube.com/watch?v=jP-6j6mEpRg
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/jP-6j6mEpRg"></iframe>
+:::
+
+$\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x$
+
+$$
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x
+$$
+
+$$
+f\left(x\right)=\mathrm{e}^{-x^{2}}\text{ is an even function}\Leftrightarrow f\left(-x\right)=\mathrm{e}^{-\left(-x\right)^{2}}=\mathrm{e}^{-x^{2}}=f\left(x\right)
+$$
+
+$$
+\begin{aligned}
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x= & \int_{-\infty}^{0}\mathrm{e}^{-x^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x=-\infty}^{x=0}\mathrm{e}^{-x^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x=-\infty}^{x=0}\mathrm{e}^{-x^{2}}\mathrm{d}x\left(,x^{\prime}=-x\Leftrightarrow x=-x^{\prime}\right)+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{\left(-x^{\prime}\right)=-\infty}^{\left(-x^{\prime}\right)=0}\mathrm{e}^{-\left(-x^{\prime}\right)^{2}}\mathrm{d}\left(-x^{\prime}\right)+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x^{\prime}=-\left(-\infty\right)}^{x^{\prime}=-0}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\left(-\mathrm{d}x^{\prime}\right)+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x^{\prime}=\infty}^{x^{\prime}=0}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & -\int_{x^{\prime}=\infty}^{x^{\prime}=0}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x^{\prime}=0}^{x^{\prime}=\infty}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x
+\end{aligned}
+$$
+
+***
+
+$$
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x
+$$
+
+***
+
+$\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x$
+
+$$
+I\left(t\right)=\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}
+$$
+
+$$
+\begin{aligned}
+I^{\prime}\left(t\right)=\dfrac{\mathrm{d}I\left(t\right)}{\mathrm{d}t}= & \dfrac{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}}{\mathrm{d}t}=\dfrac{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}}{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]}\dfrac{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]}{\mathrm{d}t}=2\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\left[\dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\\
+= & 2\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\left[\dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\overset{\text{FToC}}{=}2\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\left[\mathrm{e}^{-t^{2}}\right]\\
+= & 2\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{e}^{-t^{2}}\mathrm{d}x=2\int_{0}^{t}\mathrm{e}^{-\left(x^{2}+t^{2}\right)}\mathrm{d}x=2\int_{x=0}^{x=t}\mathrm{e}^{-\left(x^{2}+t^{2}\right)}\mathrm{d}x,x^{\prime}=\dfrac{x}{t}\Leftrightarrow x=tx^{\prime}\\
+= & 2\int_{tx^{\prime}=0}^{tx^{\prime}=t}\mathrm{e}^{-\left(\left(tx^{\prime}\right)^{2}+t^{2}\right)}\mathrm{d}tx^{\prime}=2\int_{x^{\prime}=0}^{x^{\prime}=1}\mathrm{e}^{-t^{2}\left(\left(x^{\prime}\right)^{2}+1\right)}t\mathrm{d}x^{\prime}=2\int_{0}^{1}t\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}\mathrm{d}x\\
+= & -\int_{0}^{1}\left(-2t\right)\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}\mathrm{d}x=-\int_{0}^{1}\dfrac{\partial}{\partial t}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x=-\dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x\\
+\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & I\left(t\right)=-\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+C\\
+0=\left[\int_{0}^{0}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & I\left(0\right)=\int_{0}^{1}\dfrac{1}{x^{2}+1}\mathrm{d}x+C\overset{x=\tan\theta}{=}\left[-\arctan x\right]_{0}^{1}+C=\dfrac{-\pi}{4}+C\Rightarrow C=\dfrac{\pi}{4}\\
+\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & I\left(t\right)=-\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+C=-\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+\dfrac{\pi}{4}\\
+\left[\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & \lim_{t\rightarrow\infty}I\left(t\right)=I\left(\infty\right)=-\int_{0}^{1}\dfrac{\mathrm{e}^{-\infty^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+\dfrac{\pi}{4}=-\int_{0}^{1}\dfrac{0}{x^{2}+1}\mathrm{d}x+\dfrac{\pi}{4}=\dfrac{\pi}{4}\\
+\left[\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & \dfrac{\pi}{4}\\
+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x= & \dfrac{\sqrt{\pi}}{2}
+\end{aligned}
+$$
+
+***
+
+$$
+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=\dfrac{\sqrt{\pi}}{2}
+$$
+
+***
+
+$$
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\cdot\dfrac{\sqrt{\pi}}{2}=\sqrt{\pi}
+$$
+
+***
+
+$$
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=\sqrt{\pi}
+$$
+
+$$
+\tag*{$\Box$}
+$$
+
+### other examples
+
+https://www.youtube.com/watch?v=GW86SShcYbM
+
+$\int_{0}^{1}\ln x\mathrm{d}x$
+
+$$
+I=\int_{0}^{1}\ln x\mathrm{d}x=\int_{0}^{1}\ln\left(x\right)\mathrm{d}x,f\left(x\right)=\ln x
+$$
+
+$$
+I\left(t\right)=\int_{0}^{1}\ln tx\mathrm{d}x=\int_{0}^{1}f\left(tx\right)\mathrm{d}x=\int_{0}^{1}f\left(x,t\right)\mathrm{d}x,\begin{cases}
+f\left(x,t\right)=f\left(tx\right)=\ln tx\\
+f\left(x,1\right)=f\left(x\right)=\ln x
+\end{cases}
+$$
+
+$$
+\begin{aligned}
+I\left(t\right)= & \int_{0}^{1}f\left(x,t\right)\mathrm{d}x=\int_{0}^{1}f\left(tx\right)\mathrm{d}x=\int_{0}^{1}\ln tx\mathrm{d}x\Rightarrow I\left(1\right)=I\\
+\dfrac{\mathrm{d}}{\mathrm{d}t}I\left(t\right)=I^{\prime}\left(t\right)= & \dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{1}f\left(x,t\right)\mathrm{d}x=\int_{0}^{1}\dfrac{\partial f\left(x,t\right)}{\partial t}\mathrm{d}x=\int_{0}^{1}\dfrac{\partial\ln tx}{\partial t}\mathrm{d}x\\
+= & \int_{0}^{1}\dfrac{1}{tx}x\mathrm{d}x=\int_{0}^{1}\dfrac{1}{t}\mathrm{d}x=\dfrac{1}{t}\int_{0}^{1}\mathrm{d}x=\dfrac{1}{t}\left[x\right]_{0}^{1}=\dfrac{1}{t}\\
+I\left(t\right)= & \int I^{\prime}\left(t\right)\mathrm{d}t=\int\dfrac{1}{t}\mathrm{d}t=\ln\left|t\right|+C\\
+\Downarrow & \Rightarrow I=\int_{0}^{1}\ln x\mathrm{d}x=\int_{0}^{1}\ln1x\mathrm{d}x=I\left(1\right)=\ln\left|1\right|+C=0+C\Rightarrow C=I\\
+\text{no more known } & \text{boundary condition}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\Im\left(t\right)= & \int_{0}^{1}x^{t}\mathrm{d}x=\left[\dfrac{x^{t+1}}{t+1}\right]_{x=0}^{1}=\dfrac{1}{t+1}\\
+\dfrac{-1}{\left(t+1\right)^{2}}=\dfrac{\mathrm{d}}{\mathrm{d}t}\dfrac{1}{t+1}=\dfrac{\mathrm{d}}{\mathrm{d}t}\Im\left(t\right)=\Im^{\prime}\left(t\right)= & \dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{1}x^{t}\mathrm{d}x=\int_{0}^{1}\dfrac{\partial x^{t}}{\partial t}\mathrm{d}x=\int_{0}^{1}x^{t}\ln x\mathrm{d}x\\
+-1=\left[\dfrac{-1}{\left(t+1\right)^{2}}\right]_{t=0}=\Im^{\prime}\left(0\right)= & \int_{0}^{1}x^{0}\ln x\mathrm{d}x=\int_{0}^{1}1\ln x\mathrm{d}x=\int_{0}^{1}\ln x\mathrm{d}x\\
+\int_{0}^{1}\ln x\mathrm{d}x= & -1
+\end{aligned}
+$$
+
+***
+
+https://www.bilibili.com/video/BV1Lj411L79X
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1Lj411L79X&autoplay=0"></iframe>
+:::
 
 ## path integral
 

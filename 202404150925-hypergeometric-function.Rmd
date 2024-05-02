@@ -6,6 +6,8 @@
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1PX4y167RS&autoplay=0"></iframe>
 :::
 
+[quantum state]^[\@ref(quantum-state)]^
+
 [Taylor vs. Fourier]^[\@ref(taylor-vs.-fourier)]^
 
 $$

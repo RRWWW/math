@@ -43,7 +43,7 @@
 - pure mathematics
   - [logic]^[\@ref(logic-1)]^
     - [Shai Ben-David](https://www.youtube.com/playlist?list=PLPW2keNyw-utXOOzLR-Wp1p0eE5LEtv3N)
-  - 林秀豪 Porcupine Lin / Hedgehog Note
+  - 林秀豪 Lin, Hsiu-Hau / Porcupine Lin / Hedgehog Note
     - [應數: 2019](https://www.youtube.com/playlist?list=PLS0SUwlYe8cyfYWKPb8v55pCqfw0MnL0T)
       - [1](https://www.youtube.com/playlist?list=PLS0SUwlYe8cy7eNFtSWru7EtJ_yXM94YH)
       - [2](https://www.youtube.com/playlist?list=PLS0SUwlYe8cxiepObAy7dGDs29AdViZdj)
