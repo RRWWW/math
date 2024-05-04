@@ -1229,6 +1229,14 @@ O^{\intercal}O=1 & O\\
 \end{aligned}
 $$
 
+https://www.youtube.com/playlist?list=PLDcSwjT2BF_WDki-WvmJ__Q0nLIHuNPbP
+
+https://www.youtube.com/watch?v=erA0jb9dSm0&list=PLDcSwjT2BF_WDki-WvmJ__Q0nLIHuNPbP&index=2
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/erA0jb9dSm0"></iframe>
+:::
+
 ##### complex
 
 $$
@@ -2838,17 +2846,16 @@ $$
 \sin\dfrac{\theta}{2}n=\sin\dfrac{2\arccos a}{2}n=\sin\left(\cos^{-1}a\right)n
 $$
 
-
 $$
 n=\begin{pmatrix}0\\
 \boldsymbol{n}
 \end{pmatrix}=\begin{pmatrix}0\\
 \hat{\boldsymbol{n}}
-\end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1,\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\alpha\\
-\sin\gamma\sin\alpha\\
+\end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1,\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\varphi\\
+\sin\gamma\sin\varphi\\
 \cos\gamma
 \end{pmatrix},\begin{cases}
-\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
+\varphi=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
 \gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
 \end{cases}
 $$
@@ -2863,25 +2870,25 @@ q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\\
 \end{pmatrix}=\begin{pmatrix}0\\
 \hat{\boldsymbol{n}}
 \end{pmatrix}=\begin{pmatrix}0\\
-\sin\gamma\cos\alpha\\
-\sin\gamma\sin\alpha\\
+\sin\gamma\cos\varphi\\
+\sin\gamma\sin\varphi\\
 \cos\gamma
 \end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1,\begin{cases}
-\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
+\varphi=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
 \gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
 \end{cases}\\
-= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\boldsymbol{n},\boldsymbol{n}=\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\\
-= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\boldsymbol{n},\boldsymbol{n}=\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\\
+= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
 = & \cos\dfrac{\theta}{2}+\boldsymbol{n}\sin\dfrac{\theta}{2}\\
 q^{-1}=q^{*}= & \cos\dfrac{\theta}{2}-\boldsymbol{n}\sin\dfrac{\theta}{2}\\
-= & \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+= & \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
 \boldsymbol{v}^{\prime}=v^{\prime}= & qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
 v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
 v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}
 \end{cases}\\
-= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
- & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
-= & q\left(\theta,\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\alpha\right)\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
+= & q\left(\theta,\gamma,\varphi\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\varphi\right)\\
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
  & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
@@ -2895,8 +2902,8 @@ $$
 \boldsymbol{v}^{\prime}=v^{\prime}=qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
 v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
 v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}\\
-q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
-q^{-1}=\cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]
+q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+q^{-1}=\cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]
 \end{cases}
 $$
 
@@ -2905,8 +2912,8 @@ $$
 $$
 q\overset{\left|q\right|=1}{=}a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k},\begin{cases}
 a=\cos\dfrac{\theta}{2}\\
-b=\sin\dfrac{\theta}{2}\sin\gamma\cos\alpha\\
-c=\sin\dfrac{\theta}{2}\sin\gamma\sin\alpha\\
+b=\sin\dfrac{\theta}{2}\sin\gamma\cos\varphi\\
+c=\sin\dfrac{\theta}{2}\sin\gamma\sin\varphi\\
 d=\sin\dfrac{\theta}{2}\cos\gamma
 \end{cases}
 $$
@@ -2984,8 +2991,8 @@ $$
 $$
 q\overset{\left|q\right|=1}{=}a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k},\begin{cases}
 a=\cos\dfrac{\theta}{2}\\
-b=\sin\dfrac{\theta}{2}\sin\gamma\cos\alpha\\
-c=\sin\dfrac{\theta}{2}\sin\gamma\sin\alpha\\
+b=\sin\dfrac{\theta}{2}\sin\gamma\cos\varphi\\
+c=\sin\dfrac{\theta}{2}\sin\gamma\sin\varphi\\
 d=\sin\dfrac{\theta}{2}\cos\gamma
 \end{cases}
 $$
@@ -3040,16 +3047,16 @@ $$
 \boldsymbol{v}^{\prime}=v^{\prime}= & qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
 v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
 v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}
-\end{cases},\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\alpha\\
-\sin\gamma\sin\alpha\\
+\end{cases},\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\varphi\\
+\sin\gamma\sin\varphi\\
 \cos\gamma
 \end{pmatrix},\begin{cases}
-\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
+\varphi=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
 \gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
 \end{cases}\\
-= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
- & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
-= & q\left(\theta,\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\alpha\right)=q\left(\dfrac{\theta}{2},\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\dfrac{\theta}{2},\gamma,\alpha\right)\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
+= & q\left(\theta,\gamma,\varphi\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\varphi\right)=q\left(\dfrac{\theta}{2},\gamma,\varphi\right)\boldsymbol{v}q^{-1}\left(\dfrac{\theta}{2},\gamma,\varphi\right)\\
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
  & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
@@ -3232,6 +3239,24 @@ $\det O=-1$ will change handedness of the coordinate.
 https://krasjet.github.io/quaternion/bonus_gimbal_lock.pdf
 
 ### Lie group
+
+Liang, Can-Bin
+
+https://www.bilibili.com/video/BV1pV4y1a7y5
+
+https://www.youtube.com/playlist?list=PLstdOGDXMaWLhtcJwsGiw6V9YLGmCmmhO
+
+::: {show-in="html"}
+周彬
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+周彬
+\end{CJK}
+:::
+
+https://www.youtube.com/playlist?list=PLstdOGDXMaWK4JpSoKjH8mnfxXwh9dtb6
 
 #### special unitary group
 

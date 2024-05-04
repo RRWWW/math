@@ -1,0 +1,69 @@
+# fundamental theorem of algebra
+
+## Gauss
+
+### FToA
+
+FToA = fundamental theorem of algebra
+
+cf. FToLA = fundamental theorem of linear algebra
+
+::: {show-in="html"}
+https://ccjou.wordpress.com/2009/03/23/線性代數基本定理-一
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+https://ccjou.wordpress.com/2009/03/23/線性代數基本定理-一
+\end{CJK}
+:::
+
+cf. FToPF = fundamental theorem of prime factorization = fundamental theorem of arithmetic = prime factorization theorem = unique factorization theorem
+
+https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic
+
+***
+
+https://www.bilibili.com/video/BV1pW4y1c7Zi
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1pW4y1c7Zi&autoplay=0"></iframe>
+:::
+
+https://www.bilibili.com/video/BV1U7421K7gX
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1U7421K7gX&autoplay=0"></iframe>
+:::
+
+### trial and error
+
+https://www.bilibili.com/video/BV1g94y1w7sy
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1g94y1w7sy&autoplay=0"></iframe>
+:::
+
+### heptadecagon
+
+https://www.bilibili.com/video/BV18V411Q7nD
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV18V411Q7nD&autoplay=0"></iframe>
+:::
+
+## equation
+
+### cubic equation
+
+https://en.wikipedia.org/wiki/Cubic_equation
+
+https://www.bilibili.com/video/BV1nd4y1f7t8
+
+https://www.bilibili.com/video/BV1Wh411c7jf
+
+### qunitic equation
+
+https://en.wikipedia.org/wiki/Quintic_function
+
+https://www.bilibili.com/video/BV1ya4y1G79P

@@ -158,7 +158,7 @@ f\left(x\right)=\dfrac{\sin x}{x}\text{ is an even function}\Leftrightarrow f\le
 = & \int_{x^{\prime}=-\left(-\infty\right)}^{x^{\prime}=-0}\dfrac{-\sin x^{\prime}}{-x^{\prime}}\left(-\mathrm{d}x^{\prime}\right)+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
 = & \int_{x^{\prime}=\infty}^{x^{\prime}=0}\dfrac{\sin x^{\prime}}{x^{\prime}}\left(-\mathrm{d}x^{\prime}\right)+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
 = & -\int_{x^{\prime}=\infty}^{x^{\prime}=0}\dfrac{\sin x^{\prime}}{x^{\prime}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
-= & \int_{x=0}^{x=\infty}\dfrac{\sin x}{x}\mathrm{d}x+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
+= & \int_{x^{\prime}=0}^{x^{\prime}=\infty}\dfrac{\sin x^{\prime}}{x^{\prime}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x\\
 = & \int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x+\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x=2\int_{0}^{\infty}\dfrac{\sin x}{x}\mathrm{d}x
 \end{align*}
 
@@ -243,6 +243,23 @@ I= & I\left(0\right)=C=\dfrac{\pi}{2},I=\int_{0}^{\infty}\dfrac{\sin x}{x}\mathr
 \end_inset
 
 
+\begin_inset Formula 
+\[
+\dfrac{\sin x}{x}=\dfrac{\dfrac{\mathrm{e}^{\mathrm{i}x}-\mathrm{e}^{-\mathrm{i}x}}{2\mathrm{i}}}{x}=\dfrac{\mathrm{e}^{\mathrm{i}x}-\mathrm{e}^{-\mathrm{i}x}}{2\mathrm{i}x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int\dfrac{\sin x}{x}\mathrm{d}x= & \int\dfrac{\mathrm{e}^{\mathrm{i}x}-\mathrm{e}^{-\mathrm{i}x}}{2\mathrm{i}x}\mathrm{d}x=\dfrac{1}{2\mathrm{i}}\int\dfrac{\mathrm{e}^{\mathrm{i}x}-\mathrm{e}^{-\mathrm{i}x}}{x}\mathrm{d}x\\
+= & \dfrac{1}{2\mathrm{i}}\int\dfrac{\mathrm{e}^{\mathrm{i}x}}{x}-\dfrac{\mathrm{e}^{-\mathrm{i}x}}{x}\mathrm{d}x=\dfrac{1}{2\mathrm{i}}\int\dfrac{\mathrm{e}^{\mathrm{i}x}}{x}\mathrm{d}x-\int\dfrac{\mathrm{e}^{-\mathrm{i}x}}{x}\mathrm{d}x
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -289,6 +306,103 @@ I\left(t\right)= & \int I^{\prime}\left(t\right)\mathrm{d}t=\int\dfrac{1}{t}\mat
 -1=\left[\dfrac{-1}{\left(t+1\right)^{2}}\right]_{t=0}=\Im^{\prime}\left(0\right)= & \int_{0}^{1}x^{0}\ln x\mathrm{d}x=\int_{0}^{1}1\ln x\mathrm{d}x=\int_{0}^{1}\ln x\mathrm{d}x\\
 \int_{0}^{1}\ln x\mathrm{d}x= & -1
 \end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gaussian integral
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=\mathrm{e}^{-x^{2}}\text{ is an even function}\Leftrightarrow f\left(-x\right)=\mathrm{e}^{-\left(-x\right)^{2}}=\mathrm{e}^{-x^{2}}=f\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x= & \int_{-\infty}^{0}\mathrm{e}^{-x^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x=-\infty}^{x=0}\mathrm{e}^{-x^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x=-\infty}^{x=0}\mathrm{e}^{-x^{2}}\mathrm{d}x\left(,x^{\prime}=-x\Leftrightarrow x=-x^{\prime}\right)+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{\left(-x^{\prime}\right)=-\infty}^{\left(-x^{\prime}\right)=0}\mathrm{e}^{-\left(-x^{\prime}\right)^{2}}\mathrm{d}\left(-x^{\prime}\right)+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x^{\prime}=-\left(-\infty\right)}^{x^{\prime}=-0}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\left(-\mathrm{d}x^{\prime}\right)+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x^{\prime}=\infty}^{x^{\prime}=0}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & -\int_{x^{\prime}=\infty}^{x^{\prime}=0}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\mathrm{d}x^{\prime}+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{x^{\prime}=0}^{x^{\prime}=\infty}\mathrm{e}^{-\left(x^{\prime}\right)^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\\
+= & \int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I\left(t\right)=\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+I^{\prime}\left(t\right)=\dfrac{\mathrm{d}I\left(t\right)}{\mathrm{d}t}= & \dfrac{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}}{\mathrm{d}t}=\dfrac{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}}{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]}\dfrac{\mathrm{d}\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]}{\mathrm{d}t}=2\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\left[\dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\\
+= & 2\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\left[\dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\overset{\text{FToC}}{=}2\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]\left[\mathrm{e}^{-t^{2}}\right]\\
+= & 2\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{e}^{-t^{2}}\mathrm{d}x=2\int_{0}^{t}\mathrm{e}^{-\left(x^{2}+t^{2}\right)}\mathrm{d}x=2\int_{x=0}^{x=t}\mathrm{e}^{-\left(x^{2}+t^{2}\right)}\mathrm{d}x,x^{\prime}=\dfrac{x}{t}\Leftrightarrow x=tx^{\prime}\\
+= & 2\int_{tx^{\prime}=0}^{tx^{\prime}=t}\mathrm{e}^{-\left(\left(tx^{\prime}\right)^{2}+t^{2}\right)}\mathrm{d}tx^{\prime}=2\int_{x^{\prime}=0}^{x^{\prime}=1}\mathrm{e}^{-t^{2}\left(\left(x^{\prime}\right)^{2}+1\right)}t\mathrm{d}x^{\prime}=2\int_{0}^{1}t\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}\mathrm{d}x\\
+= & -\int_{0}^{1}\left(-2t\right)\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}\mathrm{d}x=-\int_{0}^{1}\dfrac{\partial}{\partial t}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x=-\dfrac{\mathrm{d}}{\mathrm{d}t}\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x\\
+\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & I\left(t\right)=-\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+C\\
+0=\left[\int_{0}^{0}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & I\left(0\right)=\int_{0}^{1}\dfrac{1}{x^{2}+1}\mathrm{d}x+C\overset{x=\tan\theta}{=}\left[-\arctan x\right]_{0}^{1}+C=\dfrac{-\pi}{4}+C\Rightarrow C=\dfrac{\pi}{4}\\
+\left[\int_{0}^{t}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & I\left(t\right)=-\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+C=-\int_{0}^{1}\dfrac{\mathrm{e}^{-t^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+\dfrac{\pi}{4}\\
+\left[\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & \lim_{t\rightarrow\infty}I\left(t\right)=I\left(\infty\right)=-\int_{0}^{1}\dfrac{\mathrm{e}^{-\infty^{2}\left(x^{2}+1\right)}}{x^{2}+1}\mathrm{d}x+\dfrac{\pi}{4}=-\int_{0}^{1}\dfrac{0}{x^{2}+1}\mathrm{d}x+\dfrac{\pi}{4}=\dfrac{\pi}{4}\\
+\left[\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x\right]^{2}= & \dfrac{\pi}{4}\\
+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x= & \dfrac{\sqrt{\pi}}{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=\dfrac{\sqrt{\pi}}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\int_{0}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=2\cdot\dfrac{\sqrt{\pi}}{2}=\sqrt{\pi}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\mathrm{e}^{-x^{2}}\mathrm{d}x=\sqrt{\pi}
+\]
 
 \end_inset
 
@@ -3147,6 +3261,204 @@ f\left(0,x\right)= & \int_{-\infty}^{\infty}\left(\frac{1}{2\pi}\int_{-\infty}^{
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+[@bernstein2004a] p.18~20
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta\left(x\right)=\begin{cases}
+0 & x\ne0\\
+\int_{-\infty}^{\infty}\delta\left(x\right)\mathrm{d}x=1
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+https://math.stackexchange.com/questions/73010/proof-of-dirac-deltas-sifting-prope
+rty
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{-\infty}^{\infty}\delta\left(x-x_{{\scriptscriptstyle 0}}\right)f\left(x\right)\mathrm{d}x= & \lim\limits _{n\rightarrow\infty}\int_{-\infty}^{\infty}\delta_{{\scriptscriptstyle n}}\left(x-x_{{\scriptscriptstyle 0}}\right)f\left(x\right)\mathrm{d}x\\
+=\lim\limits _{n\rightarrow\infty}\Biggl[\int_{-\infty}^{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}\delta_{{\scriptscriptstyle n}}\left(x-x_{{\scriptscriptstyle 0}}\right)f\left(x\right)\mathrm{d}x+ & \int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}\delta_{{\scriptscriptstyle n}}\left(x-x_{{\scriptscriptstyle 0}}\right)f\left(x\right)\mathrm{d}x+\lim\limits _{n\rightarrow\infty}\int_{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}^{\infty}\delta_{{\scriptscriptstyle n}}\left(x-x_{{\scriptscriptstyle 0}}\right)f\left(x\right)\mathrm{d}x\Biggr]\\
+=\lim\limits _{n\rightarrow\infty}\Biggl[\int_{-\infty}^{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}0f\left(x\right)\mathrm{d}x+ & \int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}nf\left(x\right)\mathrm{d}x+\lim\limits _{n\rightarrow\infty}\int_{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}^{\infty}0f\left(x\right)\mathrm{d}x\Biggr]\\
+= & \lim\limits _{n\rightarrow\infty}\int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}nf\left(x\right)\mathrm{d}x,\begin{cases}
+f\left(x\right)\in\left[m,M\right]\subseteq f\left(\left[x_{{\scriptscriptstyle 0}}-\frac{1}{2n},x_{{\scriptscriptstyle 0}}+\frac{1}{2n}\right]\right)\\
+\Downarrow\\
+m\le f\left(x\right)\le M
+\end{cases}\\
+\int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}nm\mathrm{d}x\le & \int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}nf\left(x\right)\mathrm{d}x\le\int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}nM\mathrm{d}x\\
+m=m\cdot1=m\int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}n\mathrm{d}x\le & \int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}nf\left(x\right)\mathrm{d}x\le M\int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}n\mathrm{d}x=M\cdot1=M\\
+\Downarrow & \ref{thm:IVT}\\
+\int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}nf\left(x\right)\mathrm{d}x\overset{\exists\xi_{{\scriptscriptstyle n}}\in\left(x_{{\scriptscriptstyle 0}}-\frac{1}{2n},x_{{\scriptscriptstyle 0}}+\frac{1}{2n}\right)}{=} & f\left(\xi_{{\scriptscriptstyle n}}\right)\int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}n\mathrm{d}x=f\left(\xi_{{\scriptscriptstyle n}}\right)\cdot1=f\left(\xi_{{\scriptscriptstyle n}}\right)\\
+\int_{-\infty}^{\infty}\delta\left(x\right)f\left(x\right)\mathrm{d}x=\lim\limits _{n\rightarrow\infty}\int_{x_{{\scriptscriptstyle 0}}-\frac{1}{2n}}^{x_{{\scriptscriptstyle 0}}+\frac{1}{2n}}nf\left(x\right)\mathrm{d}x= & \lim\limits _{n\rightarrow\infty}f\left(\xi_{{\scriptscriptstyle n}}\right),\xi_{{\scriptscriptstyle n}}\in\left(x_{{\scriptscriptstyle 0}}-\frac{1}{2n},x_{{\scriptscriptstyle 0}}+\frac{1}{2n}\right)\\
+= & f\left(x_{{\scriptscriptstyle 0}}\right)\\
+\int_{-\infty}^{\infty}\delta\left(x-x_{{\scriptscriptstyle 0}}\right)f\left(x\right)\mathrm{d}x= & f\left(x_{{\scriptscriptstyle 0}}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\delta\left(x-x_{{\scriptscriptstyle 0}}\right)f\left(x\right)\mathrm{d}x=f\left(x_{{\scriptscriptstyle 0}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\delta\left(x-x^{\prime}\right)f\left(x\right)\mathrm{d}x=f\left(x^{\prime}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And according to Fourier transform and inverse transform, [Fourier analysis]^[
+\backslash
+@ref(fourier-analysis)]^ with $2
+\backslash
+pi$ in the powers,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(x\right)=\int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}xk}\left(\int_{-\infty}^{\infty}\mathrm{e}^{-2\pi\mathrm{i}kx^{\prime}}f\left(x^{\prime}\right)\mathrm{d}x^{\prime}\right)\mathrm{d}k
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right)= & \int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}xk}\left(\int_{-\infty}^{\infty}\mathrm{e}^{-2\pi\mathrm{i}kx^{\prime}}f\left(x^{\prime}\right)\mathrm{d}x^{\prime}\right)\mathrm{d}k\\
+= & \int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}xk}f\left(x^{\prime}\right)\mathrm{d}x^{\prime}\left(\int_{-\infty}^{\infty}\mathrm{e}^{-2\pi\mathrm{i}kx^{\prime}}\right)\mathrm{d}k\\
+= & \int_{-\infty}^{\infty}f\left(x^{\prime}\right)\mathrm{d}x^{\prime}\left(\int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}xk}\mathrm{e}^{-2\pi\mathrm{i}kx^{\prime}}\right)\mathrm{d}k\\
+= & \int_{-\infty}^{\infty}f\left(x^{\prime}\right)\mathrm{d}x^{\prime}\left(\int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}k\left(x-x^{\prime}\right)}\right)\mathrm{d}k\\
+= & \int_{-\infty}^{\infty}\left(\int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}k\left(x-x^{\prime}\right)}\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}\mathrm{d}k\\
+\overset{\text{Fubini}}{=} & \int_{-\infty}^{\infty}\left(\int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}k\left(x-x^{\prime}\right)}\right)f\left(x^{\prime}\right)\mathrm{d}k\mathrm{d}x^{\prime}\\
+= & \int_{-\infty}^{\infty}\left(\int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}k\left(x-x^{\prime}\right)}\mathrm{d}k\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}\\
+f\left(x\right)= & \int_{-\infty}^{\infty}\left(\int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}k\left(x-x^{\prime}\right)}\mathrm{d}k\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(x\right)=\int_{-\infty}^{\infty}\left(\int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}k\left(x-x^{\prime}\right)}\mathrm{d}k\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+comparing with
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\delta\left(x-x^{\prime}\right)f\left(x\right)\mathrm{d}x=f\left(x^{\prime}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus
+\begin_inset Formula 
+\[
+\int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}k\left(x-x^{\prime}\right)}\mathrm{d}k=\delta\left(x-x^{\prime}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i.e.
+\begin_inset Formula 
+\[
+\delta\left(x-x^{\prime}\right)=\int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}k\left(x-x^{\prime}\right)}\mathrm{d}k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\delta\left(x-x^{\prime}\right)= & \int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}k\left(x-x^{\prime}\right)}\mathrm{d}k=\int_{-\infty}^{\infty}\mathrm{e}^{\mathrm{i}\left(x-x^{\prime}\right)\left(2\pi k\right)}\mathrm{d}k\\
+= & \int_{k=-\infty}^{k=\infty}\mathrm{e}^{\mathrm{i}\left(x-x^{\prime}\right)\left(2\pi k\right)}\mathrm{d}k\\
+= & \int_{k=-\infty}^{k=\infty}\mathrm{e}^{\mathrm{i}\left(x-x^{\prime}\right)\left(2\pi k\right)}\mathrm{d}k,\begin{cases}
+k^{\prime}=2\pi k & \Leftrightarrow k=\dfrac{k^{\prime}}{2\pi}\\
+x-x^{\prime}=\varepsilon & \Leftrightarrow x^{\prime}=x-\varepsilon
+\end{cases}\\
+= & \int_{\dfrac{k^{\prime}}{2\pi}=-\infty}^{\dfrac{k^{\prime}}{2\pi}=\infty}\mathrm{e}^{\mathrm{i}\varepsilon k^{\prime}}\mathrm{d}\dfrac{k^{\prime}}{2\pi}=\int_{k^{\prime}=-\infty}^{k^{\prime}=\infty}\mathrm{e}^{\mathrm{i}\varepsilon k^{\prime}}\dfrac{1}{2\pi}\mathrm{d}k^{\prime}\\
+= & \int_{-\infty}^{\infty}\mathrm{e}^{\mathrm{i}\varepsilon k^{\prime}}\dfrac{1}{2\pi}\mathrm{d}k^{\prime}=\dfrac{1}{2\pi}\int_{-\infty}^{\infty}\mathrm{e}^{\mathrm{i}\varepsilon k^{\prime}}\mathrm{d}k^{\prime}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f\left(x\right)= & \int_{-\infty}^{\infty}\left(\int_{-\infty}^{\infty}\mathrm{e}^{2\pi\mathrm{i}k\left(x-x^{\prime}\right)}\mathrm{d}k\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}\\
+= & \int_{-\infty}^{\infty}\delta\left(x-x^{\prime}\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime},\begin{cases}
+k^{\prime}=2\pi k & \Leftrightarrow k=\dfrac{k^{\prime}}{2\pi}\\
+x-x^{\prime}=\varepsilon & \Leftrightarrow x^{\prime}=x-\varepsilon
+\end{cases}\\
+= & \int_{-\infty}^{\infty}\left(\dfrac{1}{2\pi}\int_{-\infty}^{\infty}\mathrm{e}^{\mathrm{i}\varepsilon k^{\prime}}\mathrm{d}k^{\prime}\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}=\int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{2\pi}\int_{-K}^{K}\mathrm{e}^{\mathrm{i}\varepsilon k^{\prime}}\mathrm{d}k^{\prime}\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime},K>0\\
+= & \int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{2\pi}\left[\dfrac{\mathrm{e}^{\mathrm{i}\varepsilon k^{\prime}}}{\mathrm{i}\varepsilon}\right]_{{\scriptscriptstyle k^{\prime}=-K}}^{{\scriptscriptstyle K}}\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}=\int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{2\pi}\left[\dfrac{\mathrm{e}^{\mathrm{i}\varepsilon K}-\mathrm{e}^{\mathrm{i}\varepsilon\left(-K\right)}}{\mathrm{i}\varepsilon}\right]\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}\\
+= & \int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{\pi\varepsilon}\left[\dfrac{\mathrm{e}^{\mathrm{i}\varepsilon K}-\mathrm{e}^{-\mathrm{i}\varepsilon K}}{2\mathrm{i}}\right]\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}=\int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{\pi\varepsilon}\left[\sin\left(\varepsilon K\right)\right]\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}\\
+= & \int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{\pi}\dfrac{\sin\left(\varepsilon K\right)}{\varepsilon}\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}=\int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{\pi}\dfrac{\sin\left(K\varepsilon\right)}{\varepsilon}\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime},\begin{cases}
+x^{\prime}-x=-\varepsilon & \Leftrightarrow\varepsilon=x-x^{\prime}\\
+ & \Downarrow x=0\\
+x^{\prime}=-\varepsilon & \Leftrightarrow\varepsilon=-x^{\prime}\\
+Kx^{\prime}=u & \Leftrightarrow x^{\prime}=\dfrac{u}{K}
+\end{cases}\\
+\overset{x=0}{=} & \int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{\pi}\dfrac{\sin\left(K\left[-x^{\prime}\right]\right)}{-x^{\prime}}\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}=\int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{\pi}\dfrac{-\sin\left(Kx^{\prime}\right)}{-x^{\prime}}\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime}\\
+= & \int_{x^{\prime}=-\infty}^{x^{\prime}=\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{\pi}\dfrac{\sin\left(Kx^{\prime}\right)}{x^{\prime}}\right)f\left(x^{\prime}\right)\mathrm{d}x^{\prime},\begin{cases}
+x^{\prime}=-\varepsilon & \Leftrightarrow\varepsilon=-x^{\prime}\\
+Kx^{\prime}=u & \Leftrightarrow x^{\prime}=\dfrac{u}{K},\wedge K>0
+\end{cases}\\
+= & \int_{\dfrac{u}{K}=-\infty}^{\dfrac{u}{K}=\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{\pi}\dfrac{\sin\left(u\right)}{\dfrac{u}{K}}\right)f\left(\dfrac{u}{K}\right)\mathrm{d}\dfrac{u}{K}=\int_{u=-\infty}^{u=\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{K}{\pi}\dfrac{\sin\left(u\right)}{u}\right)f\left(\dfrac{u}{K}\right)\dfrac{1}{K}\mathrm{d}u\\
+= & \int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{K}{\pi}\dfrac{\sin\left(u\right)}{u}\right)f\left(\dfrac{u}{K}\right)\dfrac{1}{K}\mathrm{d}u=\int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{\pi}\dfrac{\sin\left(u\right)}{u}\right)f\left(\dfrac{u}{K}\right)\mathrm{d}u\\
+= & \dfrac{1}{\pi}\lim\limits _{K\rightarrow\infty}\int_{-\infty}^{\infty}\dfrac{\sin\left(u\right)}{u}f\left(\dfrac{u}{K}\right)\mathrm{d}u\overset{\text{MVT}}{=}\dfrac{1}{\pi}\lim\limits _{K\rightarrow\infty}f\left(\dfrac{\xi}{K}\right)\int_{-\infty}^{\infty}\dfrac{\sin\left(u\right)}{u}\mathrm{d}u,\exists\xi\in\left(-\epsilon,+\epsilon\right)\\
+= & \dfrac{1}{\pi}f\left(0\right)\int_{-\infty}^{\infty}\dfrac{\sin\left(u\right)}{u}\mathrm{d}u\overset{\text{Feynman method or Residue method}}{=}\dfrac{1}{\pi}f\left(0\right)\pi=f\left(0\right)=\left[f\left(x\right)\right]_{{\scriptscriptstyle x=0}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+According to Fourier transform and inverse transform, [Fourier analysis]^[
+\backslash
+@ref(fourier-analysis)]^ without $2
+\backslash
+pi$ in the powers,
 \begin_inset Formula 
 \[
 f\left(t\right)=\frac{1}{2\pi}\int_{-\infty}^{\infty}\mathrm{e}^{\mathrm{i}t\cdot\omega}\left(\int_{-\infty}^{\infty}\mathrm{e}^{-\mathrm{i}\omega\cdot s}f\left(s\right)\mathrm{d}s\right)\mathrm{d}\omega
@@ -8535,11 +8847,11 @@ n=\begin{pmatrix}0\\
 \boldsymbol{n}
 \end{pmatrix}=\begin{pmatrix}0\\
 \hat{\boldsymbol{n}}
-\end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1,\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\alpha\\
-\sin\gamma\sin\alpha\\
+\end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1,\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\varphi\\
+\sin\gamma\sin\varphi\\
 \cos\gamma
 \end{pmatrix},\begin{cases}
-\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
+\varphi=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
 \gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
 \end{cases}
 \]
@@ -8555,25 +8867,25 @@ q= & a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k}\\
 \end{pmatrix}=\begin{pmatrix}0\\
 \hat{\boldsymbol{n}}
 \end{pmatrix}=\begin{pmatrix}0\\
-\sin\gamma\cos\alpha\\
-\sin\gamma\sin\alpha\\
+\sin\gamma\cos\varphi\\
+\sin\gamma\sin\varphi\\
 \cos\gamma
 \end{pmatrix},\left\Vert \boldsymbol{n}\right\Vert =1,\begin{cases}
-\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
+\varphi=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
 \gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
 \end{cases}\\
-= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\boldsymbol{n},\boldsymbol{n}=\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\\
-= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\boldsymbol{n},\boldsymbol{n}=\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\\
+= & \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
 = & \cos\dfrac{\theta}{2}+\boldsymbol{n}\sin\dfrac{\theta}{2}\\
 q^{-1}=q^{*}= & \cos\dfrac{\theta}{2}-\boldsymbol{n}\sin\dfrac{\theta}{2}\\
-= & \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+= & \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
 \boldsymbol{v}^{\prime}=v^{\prime}= & qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
 v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
 v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}
 \end{cases}\\
-= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
- & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
-= & q\left(\theta,\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\alpha\right)\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
+= & q\left(\theta,\gamma,\varphi\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\varphi\right)\\
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
  & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
@@ -8588,8 +8900,8 @@ v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}
 \boldsymbol{v}^{\prime}=v^{\prime}=qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
 v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
 v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}\\
-q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
-q^{-1}=\cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]
+q=\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\\
+q^{-1}=\cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]
 \end{cases}
 \]
 
@@ -8600,8 +8912,8 @@ q^{-1}=\cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alp
 \[
 q\overset{\left|q\right|=1}{=}a+b\mathrm{i}+c\mathrm{j}+d\mathrm{k},\begin{cases}
 a=\cos\dfrac{\theta}{2}\\
-b=\sin\dfrac{\theta}{2}\sin\gamma\cos\alpha\\
-c=\sin\dfrac{\theta}{2}\sin\gamma\sin\alpha\\
+b=\sin\dfrac{\theta}{2}\sin\gamma\cos\varphi\\
+c=\sin\dfrac{\theta}{2}\sin\gamma\sin\varphi\\
 d=\sin\dfrac{\theta}{2}\cos\gamma
 \end{cases}
 \]
@@ -8744,16 +9056,16 @@ q=a+\mathrm{i}b+\mathrm{j}c+\mathrm{k}d\\
 \boldsymbol{v}^{\prime}=v^{\prime}= & qvq^{-1}=q\boldsymbol{v}q^{-1},\begin{cases}
 v=\boldsymbol{v}=v_{{\scriptscriptstyle 1}}\mathrm{i}+v_{{\scriptscriptstyle 2}}\mathrm{j}+v_{{\scriptscriptstyle 3}}\mathrm{k}\\
 v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}+v_{{\scriptscriptstyle 2}}^{\prime}\mathrm{j}+v_{{\scriptscriptstyle 3}}^{\prime}\mathrm{k}
-\end{cases},\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\alpha\\
-\sin\gamma\sin\alpha\\
+\end{cases},\boldsymbol{n}=\begin{pmatrix}\sin\gamma\cos\varphi\\
+\sin\gamma\sin\varphi\\
 \cos\gamma
 \end{pmatrix},\begin{cases}
-\alpha=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
+\varphi=\angle\hat{\boldsymbol{n}}_{{\scriptscriptstyle xy}}\hat{\boldsymbol{x}}\\
 \gamma=\angle\hat{\boldsymbol{n}}\hat{\boldsymbol{z}}
 \end{cases}\\
-= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
- & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\alpha\right)\mathrm{i}+\left(\sin\gamma\sin\alpha\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
-= & q\left(\theta,\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\alpha\right)=q\left(\dfrac{\theta}{2},\gamma,\alpha\right)\boldsymbol{v}q^{-1}\left(\dfrac{\theta}{2},\gamma,\alpha\right)\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[\left(\sin\gamma\cos\varphi\right)\mathrm{i}+\left(\sin\gamma\sin\varphi\right)\mathrm{j}+\left(\cos\gamma\right)\mathrm{k}\right]\right\} \\
+= & q\left(\theta,\gamma,\varphi\right)\boldsymbol{v}q^{-1}\left(\theta,\gamma,\varphi\right)=q\left(\dfrac{\theta}{2},\gamma,\varphi\right)\boldsymbol{v}q^{-1}\left(\dfrac{\theta}{2},\gamma,\varphi\right)\\
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
  & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\

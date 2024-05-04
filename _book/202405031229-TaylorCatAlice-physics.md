@@ -1,0 +1,147 @@
+# TaylorCatAlice physics
+
+## dimensional analysis
+
+::: {show-in="html"}
+dimensional analysis = 量綱分析 = 因次分析
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+dimensional analysis = 量綱分析 = 因次分析
+\end{CJK}
+:::
+
+https://www.bilibili.com/video/BV1314y1B7Hx [@sunbóhuá2016] https://www.books.com.tw/products/CN11371614
+
+## classic mechanics
+
+### Galileo
+
+https://www.bilibili.com/video/BV1C14y1B7Bv
+
+### Newton
+
+https://www.bilibili.com/video/BV1mh4y1c7QD
+
+### Lagrange
+
+### Hamilton
+
+## electromagnetism
+
+https://www.bilibili.com/video/BV1PV411P7w4
+
+[quaternion]^[\@ref(quaternion)]^
+
+https://space.bilibili.com/11008987/channel/collectiondetail?sid=1643029
+
+https://www.bilibili.com/video/BV1SN411b7cn
+
+https://www.bilibili.com/video/BV1pp4y137e4
+
+https://www.bilibili.com/video/BV19P411x7Nv
+
+https://www.bilibili.com/video/BV1Nu4y1E78j
+
+## relativity
+
+https://space.bilibili.com/11008987/channel/collectiondetail?sid=1643042
+
+https://www.bilibili.com/video/BV1sV4y1Y7fX
+
+https://www.bilibili.com/video/BV1gP411s7PY
+
+## quantum theory
+
+### old quantum theory
+
+https://space.bilibili.com/11008987/channel/collectiondetail?sid=1643062
+
+https://www.bilibili.com/video/BV1U84y1o7zk
+
+https://www.bilibili.com/video/BV1Zh4y1S7AW
+
+### black-body radiation
+
+https://space.bilibili.com/11008987/channel/collectiondetail?sid=1643054
+
+https://www.bilibili.com/video/BV1G14y1X7o4
+
+https://www.bilibili.com/video/BV17u411G76U
+
+https://www.bilibili.com/video/BV16h4y1k7qj
+
+https://www.bilibili.com/video/BV1YM4y1W7XY
+
+### quantum mechanics
+
+https://space.bilibili.com/11008987/channel/collectiondetail?sid=1643065
+
+#### Heisenberg: matrix mechanics
+
+https://www.bilibili.com/video/BV1Rm4y1M7oL
+
+https://www.bilibili.com/video/BV1mN4y197pY
+
+#### Schrodinger: wave mechanics
+
+https://www.bilibili.com/video/BV1nV411F7es
+
+https://www.bilibili.com/video/BV1gj411B7wz
+
+https://www.bilibili.com/video/BV1kF41117cp
+
+https://www.bilibili.com/video/BV1KK4y1c7S8
+
+https://www.bilibili.com/video/BV18H4y1U7VN
+
+https://www.bilibili.com/video/BV1uF4112785
+
+https://www.bilibili.com/video/BV1zN411t7x1
+
+https://www.bilibili.com/video/BV1Yc411r7sr
+
+https://www.bilibili.com/video/BV1q5411v7p3
+
+https://www.bilibili.com/video/BV1Xr421g7ki
+
+###### matrix mechanics = wave mechanics
+
+https://www.bilibili.com/video/BV1vy4y1c7cs
+
+https://www.bilibili.com/video/BV1c5411z7Nc
+
+#### Dirac: relativistic quantum mechanics
+
+https://www.bilibili.com/video/BV1oB4y1d7JV
+
+https://www.bilibili.com/video/BV1GC4y137Nh
+
+https://www.bilibili.com/video/BV1y84y1U7Ps
+
+##### spin
+
+https://www.bilibili.com/video/BV1mv421i7v7
+
+#### other
+
+https://www.bilibili.com/video/BV1qm4y1g7Km
+
+https://www.bilibili.com/video/BV1ac411o7NJ
+
+### resistance and conductivity
+
+https://space.bilibili.com/11008987/channel/collectiondetail?sid=1786884
+
+https://www.bilibili.com/video/BV1tN41147SK
+
+https://www.bilibili.com/video/BV1Cw411A75x
+
+https://www.bilibili.com/video/BV1Hj411x7rg
+
+https://www.bilibili.com/video/BV1BM411S7pM
+
+https://www.bilibili.com/video/BV1mN4y1U7b2
+
+https://www.bilibili.com/video/BV1Mw411P7Vt

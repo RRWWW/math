@@ -1,7 +1,7 @@
 ---
 title: "math"
 author: "Joey Yu Hsu"
-date: "2024-05-02"
+date: "2024-05-04"
 site: bookdown::bookdown_site
 documentclass: book
 # output:
@@ -43,3 +43,5 @@ geometry: [a4paper, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.0cm, rmargin=1.0cm]
 # index {.unnumbered}
 
 math on bookdown started on 2024/01/28
+
+Joey Yu Hsu, MD

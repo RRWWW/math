@@ -1,0 +1,9 @@
+# number theory
+
+## 4 important theorems
+
+https://www.bilibili.com/video/BV1Nw4117757
+
+## congruence modulo
+
+https://www.bilibili.com/video/BV18W4y1F7FU

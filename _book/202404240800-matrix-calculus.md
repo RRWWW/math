@@ -2,6 +2,8 @@
 
 [@ccjou2013]
 
+https://www.youtube.com/playlist?list=PLhcN-s3_Z7-YS6ltpJhjwqvHO1TYDbiZv
+
 $$
 \boldsymbol{x}=\left\langle x_{1},x_{2},\cdots,x_{n}\right\rangle =\begin{bmatrix}x_{1} & x_{2} & \cdots & x_{n}\end{bmatrix}^{\intercal}=\begin{bmatrix}x_{1}\\
 x_{2}\\
@@ -58,7 +60,6 @@ $$
 
 ### numerator-layout notation
 
-
 ::: {show-in="html"}
 分子布局
 :::
@@ -104,3 +105,4 @@ $$
 \dfrac{\partial y_{1}}{\partial x_{n}} & \dfrac{\partial y_{2}}{\partial x_{n}} & \cdots & \dfrac{\partial y_{m}}{\partial x_{n}}
 \end{bmatrix}=\left[\dfrac{\partial y_{j}}{\partial x_{i}}\right]_{n\times m}
 $$
+

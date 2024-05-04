@@ -250,3 +250,11 @@ $$
 \mathrm{d}x^{\prime{\scriptscriptstyle j}}=\dfrac{\partial x^{\prime{\scriptscriptstyle j}}}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}=\sum\limits_{i}\dfrac{\partial x^{\prime{\scriptscriptstyle j}}}{\partial x^{{\scriptscriptstyle i}}}\mathrm{d}x^{{\scriptscriptstyle i}}
 \end{cases}
 $$
+
+## Liang, Can-bin: differential geometry and general relativity
+
+https://www.bilibili.com/video/BV1o4411L72E
+
+https://www.youtube.com/playlist?list=PLstdOGDXMaWIKCWheiNIRumejII0gItYM
+
+https://www.youtube.com/playlist?list=PLstdOGDXMaWICAkLFdCX24pwcWww5YzyQ

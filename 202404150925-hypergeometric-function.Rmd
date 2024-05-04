@@ -226,3 +226,13 @@ https://www.math.sinica.edu.tw/mathmedia/journals/4739?keywords%5B%5D=Paul+Dirac
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1Tk4y1n7NX&autoplay=0"></iframe>
 :::
+
+## CORDIC = coordinate rotation digital computer
+
+https://www.bilibili.com/video/BV1ge411e7K7
+
+https://space.bilibili.com/11008987/channel/collectiondetail?sid=2053177
+
+https://www.bilibili.com/video/BV1AW4y1A7HN
+
+https://www.bilibili.com/video/BV115411i7VS

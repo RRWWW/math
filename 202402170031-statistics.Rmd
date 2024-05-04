@@ -5,6 +5,10 @@
 
 ## Hung Hung
 
+https://www.youtube.com/playlist?list=PLTpF-A8hKVUOqfNyA6mOD6lo2cc6clZZP
+
+https://www.youtube.com/watch?v=3S2r4XBzKts
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/3S2r4XBzKts"></iframe>
 :::
@@ -200,6 +204,8 @@ topics
       $$
 
 ### probability theory
+
+https://www.youtube.com/watch?v=HBmTDtMBr3c
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/HBmTDtMBr3c"></iframe>
@@ -468,6 +474,7 @@ $$
 $$
 
 ```{definition}
+
 PDF = probability density function
 
 PMF = probability mass function
@@ -528,6 +535,8 @@ $$
 $$
 
 ***
+
+https://www.youtube.com/watch?v=KIXBlj-3M2k
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/KIXBlj-3M2k"></iframe>
@@ -1953,6 +1962,8 @@ $$
 
 ***
 
+https://www.youtube.com/watch?v=fSbs6im6wqY
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/fSbs6im6wqY"></iframe>
 :::
@@ -2318,6 +2329,8 @@ $$
 ###### Chi-square distribution
 
 ###### Weibull distribution
+
+https://www.youtube.com/watch?v=ojZb6nZWdvI
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/ojZb6nZWdvI"></iframe>
@@ -2947,6 +2960,8 @@ $$
 
 ### multivariable distribution
 
+https://www.youtube.com/watch?v=y-Oi5voWQKo
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/y-Oi5voWQKo"></iframe>
 :::
@@ -3234,36 +3249,216 @@ $$
 \tag*{$\Box$}
 $$
 
+https://www.youtube.com/watch?v=r-bsPw2-sRg
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/r-bsPw2-sRg"></iframe>
 :::
+
+https://www.youtube.com/watch?v=EwMFsvERFVw
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/EwMFsvERFVw"></iframe>
 :::
 
+https://www.youtube.com/watch?v=Os6HJLDtYgM
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Os6HJLDtYgM"></iframe>
 :::
+
+https://www.youtube.com/watch?v=8GefzYp6iBE
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/8GefzYp6iBE"></iframe>
 :::
 
+https://www.youtube.com/watch?v=nOSXlzxXrPY
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/nOSXlzxXrPY"></iframe>
 :::
+
+https://www.youtube.com/watch?v=hwU7JLCRCgo
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/hwU7JLCRCgo"></iframe>
 :::
 
+https://www.youtube.com/watch?v=duKMBB1bdCU
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/duKMBB1bdCU"></iframe>
 :::
 
+https://www.youtube.com/watch?v=H7wBXhvjZfg
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/H7wBXhvjZfg"></iframe>
+:::
+
+https://www.youtube.com/playlist?list=PLTp0eSi9MdkNZB4kyLSzIXIUy9JQOJ5AM
+
+https://www.youtube.com/watch?v=qgef6G9rzts
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/qgef6G9rzts"></iframe>
+:::
+
+https://www.youtube.com/watch?v=telisdm9Aus
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/telisdm9Aus"></iframe>
+:::
+
+https://www.youtube.com/watch?v=qeRsAId5f5U
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/qeRsAId5f5U"></iframe>
+:::
+
+https://www.youtube.com/watch?v=cuR-HsEq_fs
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/cuR-HsEq_fs"></iframe>
+:::
+
+https://www.youtube.com/watch?v=Ue1mgEVDwq0
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Ue1mgEVDwq0"></iframe>
+:::
+
+https://www.youtube.com/watch?v=1meJoxJ5_UA
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/1meJoxJ5_UA"></iframe>
+:::
+
+https://www.youtube.com/watch?v=UB0kwppDucI
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/UB0kwppDucI"></iframe>
+:::
+
+https://www.youtube.com/watch?v=YrqcdCPM1nw
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/YrqcdCPM1nw"></iframe>
+:::
+
+https://www.youtube.com/watch?v=GCw1T_lUunw
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/GCw1T_lUunw"></iframe>
+:::
+
+https://www.youtube.com/watch?v=MF0mZ5MpcSw
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/MF0mZ5MpcSw"></iframe>
+:::
+
+https://www.youtube.com/watch?v=zX8L8yGlYaU
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/zX8L8yGlYaU"></iframe>
+:::
+
+https://www.youtube.com/watch?v=XJgvphHKXwY
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/XJgvphHKXwY"></iframe>
+:::
+
+https://www.youtube.com/watch?v=8Qzqf51O6ZE
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/8Qzqf51O6ZE"></iframe>
+:::
+
+https://www.youtube.com/watch?v=7x8QN1pYT7c
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/7x8QN1pYT7c"></iframe>
+:::
+
+https://www.youtube.com/watch?v=oTf3n-OD7EI
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/oTf3n-OD7EI"></iframe>
+:::
+
+https://www.youtube.com/watch?v=Igo2EJPz3sU
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Igo2EJPz3sU"></iframe>
+:::
+
+https://www.youtube.com/watch?v=NVemOifoMqw
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/NVemOifoMqw"></iframe>
+:::
+
+https://www.youtube.com/watch?v=HrrBA3v-xTQ
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/HrrBA3v-xTQ"></iframe>
+:::
+
+https://www.youtube.com/watch?v=9HbtJ3ZIPxQ
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/9HbtJ3ZIPxQ"></iframe>
+:::
+
+https://www.youtube.com/watch?v=elPnSU4AF1o
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/elPnSU4AF1o"></iframe>
+:::
+
+https://www.youtube.com/watch?v=_OVHGnQ7Rug
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/_OVHGnQ7Rug"></iframe>
+:::
+
+https://www.youtube.com/watch?v=pqHEXAAW_vk
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/pqHEXAAW_vk"></iframe>
+:::
+
+https://www.youtube.com/watch?v=BTK_1Lz5ox8
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/BTK_1Lz5ox8"></iframe>
+:::
+
+https://www.youtube.com/watch?v=iATKGYnlomU
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/iATKGYnlomU"></iframe>
+:::
+
+https://www.youtube.com/watch?v=5LlTeUeAqDc
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/5LlTeUeAqDc"></iframe>
+:::
+
+https://www.youtube.com/watch?v=usCaJRQ2i6E
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/usCaJRQ2i6E"></iframe>
+:::
+
+https://www.youtube.com/watch?v=p8NXibyDKDo
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/p8NXibyDKDo"></iframe>
 :::
 
 ## Chen, Lin-An
