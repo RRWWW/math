@@ -142,17 +142,23 @@ https://www.bilibili.com/video/BV1nV411F7es
 
 ### DFT = discrete Fourier transform
 
+https://www.youtube.com/watch?v=mkGsMWi_j4Q
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/mkGsMWi_j4Q"></iframe>
 :::
 
 ### FFT = fast Fourier transform
 
+https://www.youtube.com/watch?v=htCj9exbGo0
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/htCj9exbGo0"></iframe>
 :::
 
 ### wavelet
+
+https://www.youtube.com/watch?v=ZnmvUCtUAEE
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/ZnmvUCtUAEE"></iframe>

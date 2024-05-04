@@ -690,10 +690,6 @@ https://www.youtube.com/playlist?list=PL5AC0ADBF65924EAD
 
 https://www.youtube.com/watch?v=STcIxf_vUWY&list=PL5AC0ADBF65924EAD&index=1
 
-::: {show-in="html"}
-<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/STcIxf_vUWY"></iframe>
-:::
-
 - `scan()`
 - read
   - `read.table()`
@@ -702,8 +698,3 @@ https://www.youtube.com/watch?v=STcIxf_vUWY&list=PL5AC0ADBF65924EAD&index=1
 ### descriptive statistics
 
 https://www.youtube.com/watch?v=GL3Wv_45LaU&list=PL5AC0ADBF65924EAD&index=2
-
-::: {show-in="html"}
-<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/GL3Wv_45LaU"></iframe>
-:::
-

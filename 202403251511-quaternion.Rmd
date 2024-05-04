@@ -2,10 +2,14 @@
 
 ## TaylorCatAlice
 
+https://www.bilibili.com/video/BV1PV411P7w4
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1PV411P7w4&autoplay=0"></iframe>
 
 曹則賢 2022 跨年演說
+
+https://www.bilibili.com/video/BV1qa411B792
 
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1qa411B792&autoplay=0"></iframe>
 :::
@@ -1037,6 +1041,8 @@ https://en.wikipedia.org/wiki/Quaternion_group
 [group theory]^[\@ref(group-theory)]^
 
 or please first see [quaternion group representation]^[\@ref(quaternion-group-representation)]^.
+
+https://www.bilibili.com/video/BV1rj41117VW
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1rj41117VW&autoplay=0"></iframe>
@@ -3290,19 +3296,27 @@ https://eater.net/quaternions
 
 ### 3B1B
 
+https://www.youtube.com/watch?v=zjMuIxRvygQ
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/zjMuIxRvygQ"></iframe>
 
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/d4EgbgTm0Bg"></iframe>
 :::
 
+https://www.youtube.com/watch?v=d4EgbgTm0Bg
+
 ### Sutrabla
+
+https://www.youtube.com/watch?v=syQnn_xuB8U
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/syQnn_xuB8U"></iframe>
 
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/4mXL751ko0w"></iframe>
 :::
+
+https://www.youtube.com/watch?v=4mXL751ko0w
 
 https://www.newscientist.com/article/mg20427391-600-alices-adventures-in-algebra-wonderland-solved/
 

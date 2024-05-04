@@ -1,5 +1,7 @@
 # group theory
 
+https://www.bilibili.com/video/BV1hm4y1v75R
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1hm4y1v75R&autoplay=0"></iframe>
 :::
@@ -83,6 +85,8 @@ $$
 $$
 
 ## Polya enumeration theorem
+
+https://www.bilibili.com/video/BV17s4y1R7fW
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV17s4y1R7fW&autoplay=0"></iframe>
@@ -385,6 +389,8 @@ $$
 $$
 
 ### Euler formula proved by complex group representation
+
+https://www.bilibili.com/video/BV1mM4y1J79a
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1mM4y1J79a&autoplay=0"></iframe>

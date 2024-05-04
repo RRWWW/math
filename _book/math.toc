@@ -203,6 +203,8 @@
 \contentsline {subsection}{\numberline {16.2.2}\(\mathrm {V}\left [A\boldsymbol {X}\right ]=A\mathrm {V}\left [\boldsymbol {X}\right ]A^{\intercal }\)}{160}{subsection.16.2.2}%
 \contentsline {subsection}{\numberline {16.2.3}\(\mathrm {V}\left [A\boldsymbol {X}+\boldsymbol {b}\right ]=A\mathrm {V}\left [\boldsymbol {X}\right ]A^{\intercal }\)}{160}{subsection.16.2.3}%
 \contentsline {chapter}{\numberline {17}Gosper algorithm}{161}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Zhuli}{161}{section.17.1}%
+\contentsline {section}{\numberline {17.2}TaylorCatAlice}{161}{section.17.2}%
 \contentsline {chapter}{\numberline {18}Lorentz transformation}{163}{chapter.18}%
 \contentsline {section}{\numberline {18.1}Einstein}{163}{section.18.1}%
 \contentsline {section}{\numberline {18.2}Bondi \(k\)-calculus}{163}{section.18.2}%
@@ -267,6 +269,7 @@
 \contentsline {chapter}{\numberline {23}real symmetric matrix diagonalizable}{203}{chapter.23}%
 \contentsline {chapter}{\numberline {24}tangent half-angle formula}{207}{chapter.24}%
 \contentsline {chapter}{\numberline {25}homogeneous coordinate}{209}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Cem Yuksel}{209}{section.25.1}%
 \contentsline {chapter}{\numberline {26}Archimedean property}{211}{chapter.26}%
 \contentsline {section}{\numberline {26.1}integer Archimedean property}{211}{section.26.1}%
 \contentsline {section}{\numberline {26.2}rational Archimedean property}{211}{section.26.2}%
@@ -427,7 +430,7 @@
 \contentsline {section}{\numberline {37.4}complex group representation}{310}{section.37.4}%
 \contentsline {subsection}{\numberline {37.4.1}complex basis group}{310}{subsection.37.4.1}%
 \contentsline {subsection}{\numberline {37.4.2}\(\mathbb {C}\rightarrow \mathcal {M}_{2\times 2}\left (\mathbb {R}\right )\)}{310}{subsection.37.4.2}%
-\contentsline {subsection}{\numberline {37.4.3}( determinant of complex group representation ) equivalent to ( squared modulus of complex number )}{311}{subsection.37.4.3}%
+\contentsline {subsection}{\numberline {37.4.3}( determinant of complex group representation ) equivalent to ( squared modulus of complex number )}{312}{subsection.37.4.3}%
 \contentsline {subsubsection}{\numberline {37.4.3.1}Lagrange identity}{312}{subsubsection.37.4.3.1}%
 \contentsline {subsection}{\numberline {37.4.4}Euler formula proved by complex group representation}{312}{subsection.37.4.4}%
 \contentsline {section}{\numberline {37.5}quaternion group representation}{313}{section.37.5}%
@@ -512,11 +515,11 @@
 \contentsline {subsection}{\numberline {45.2.4}rigorous definition of delta function}{386}{subsection.45.2.4}%
 \contentsline {section}{\numberline {45.3}Fourier expansion or Fourier series}{386}{section.45.3}%
 \contentsline {subsection}{\numberline {45.3.1}Taylor vs.~Fourier}{387}{subsection.45.3.1}%
-\contentsline {section}{\numberline {45.4}Hilbert space}{388}{section.45.4}%
+\contentsline {section}{\numberline {45.4}Hilbert space construction}{387}{section.45.4}%
 \contentsline {subsection}{\numberline {45.4.1}inner product space}{388}{subsection.45.4.1}%
 \contentsline {section}{\numberline {45.5}Dirac bracket}{390}{section.45.5}%
 \contentsline {subsection}{\numberline {45.5.1}Dirac bracket symmetry}{392}{subsection.45.5.1}%
-\contentsline {section}{\numberline {45.6}quantum operator}{394}{section.45.6}%
+\contentsline {section}{\numberline {45.6}quantum operator}{393}{section.45.6}%
 \contentsline {section}{\numberline {45.7}Gram-Schmidt algorithm to find orthonormal basis}{394}{section.45.7}%
 \contentsline {section}{\numberline {45.8}Hermite polynomials and Legendre polynomials}{394}{section.45.8}%
 \contentsline {chapter}{\numberline {46}Lagrange inversion}{395}{chapter.46}%
@@ -531,96 +534,96 @@
 \contentsline {subsection}{\numberline {50.2.1}DFT = discrete Fourier transform}{404}{subsection.50.2.1}%
 \contentsline {subsection}{\numberline {50.2.2}FFT = fast Fourier transform}{404}{subsection.50.2.2}%
 \contentsline {subsection}{\numberline {50.2.3}wavelet}{404}{subsection.50.2.3}%
-\contentsline {section}{\numberline {50.3}signal and system}{404}{section.50.3}%
-\contentsline {chapter}{\numberline {51}axiom of choice}{405}{chapter.51}%
-\contentsline {section}{\numberline {51.1}Zorn lemma}{405}{section.51.1}%
-\contentsline {chapter}{\numberline {52}linear algebra}{407}{chapter.52}%
-\contentsline {section}{\numberline {52.1}CCJou}{407}{section.52.1}%
-\contentsline {section}{\numberline {52.2}Chi, Chen-Yu}{407}{section.52.2}%
-\contentsline {chapter}{\numberline {53}analysis}{409}{chapter.53}%
-\contentsline {section}{\numberline {53.1}Chi, Chen-Yu}{409}{section.53.1}%
-\contentsline {section}{\numberline {53.2}Chen, Jin-Tzu}{409}{section.53.2}%
-\contentsline {chapter}{\numberline {54}matrix calculus}{411}{chapter.54}%
-\contentsline {section}{\numberline {54.1}vector-by-scalar}{411}{section.54.1}%
-\contentsline {section}{\numberline {54.2}scalar-by-vector}{411}{section.54.2}%
-\contentsline {section}{\numberline {54.3}vector-by-vector}{412}{section.54.3}%
-\contentsline {subsection}{\numberline {54.3.1}numerator-layout notation}{412}{subsection.54.3.1}%
-\contentsline {subsection}{\numberline {54.3.2}denominator-layout notation}{412}{subsection.54.3.2}%
-\contentsline {chapter}{\numberline {55}genetics}{413}{chapter.55}%
-\contentsline {section}{\numberline {55.1}term}{413}{section.55.1}%
-\contentsline {section}{\numberline {55.2}marker}{413}{section.55.2}%
-\contentsline {section}{\numberline {55.3}genome project}{413}{section.55.3}%
-\contentsline {section}{\numberline {55.4}linkage analysis}{414}{section.55.4}%
-\contentsline {subsection}{\numberline {55.4.1}PLA = parametric linkage analysis}{415}{subsection.55.4.1}%
-\contentsline {subsection}{\numberline {55.4.2}VCLA = variance component linkage analysis}{415}{subsection.55.4.2}%
-\contentsline {section}{\numberline {55.5}association analysis}{415}{section.55.5}%
-\contentsline {chapter}{\numberline {56}multivariate normal distribution}{417}{chapter.56}%
-\contentsline {section}{\numberline {56.1}bivariate normal distribution}{423}{section.56.1}%
-\contentsline {chapter}{\numberline {57}logic}{425}{chapter.57}%
-\contentsline {section}{\numberline {57.1}Shai Ben-David}{425}{section.57.1}%
-\contentsline {chapter}{\numberline {58}algorithm}{427}{chapter.58}%
-\contentsline {section}{\numberline {58.1}Chen, Vivian}{427}{section.58.1}%
-\contentsline {section}{\numberline {58.2}The Bubble Sort Curve}{427}{section.58.2}%
-\contentsline {chapter}{\numberline {59}computer graphics}{429}{chapter.59}%
-\contentsline {section}{\numberline {59.1}Cem Yuksel}{429}{section.59.1}%
-\contentsline {chapter}{\numberline {60}autoregression in time series}{431}{chapter.60}%
-\contentsline {section}{\numberline {60.1}AR(1) = \(1^\text {st}\)-order autoregressive model = first-order autoregressive model}{433}{section.60.1}%
-\contentsline {section}{\numberline {60.2}AR(2) = \(2^\text {nd}\)-order autoregressive model = second-order autoregressive model}{434}{section.60.2}%
-\contentsline {section}{\numberline {60.3}AR(\(p\)) = \(p^\text {th}\)-order autoregressive model}{434}{section.60.3}%
-\contentsline {section}{\numberline {60.4}MA(\(q\)) = \(q^\text {th}\)-order moving-average model}{434}{section.60.4}%
-\contentsline {section}{\numberline {60.5}ARMA(\(p\),\(q\)) = \(p^\text {th},q^\text {th}\)-order autoregressive-moving-average model}{435}{section.60.5}%
-\contentsline {chapter}{\numberline {61}conductivity}{437}{chapter.61}%
-\contentsline {section}{\numberline {61.1}resistance}{437}{section.61.1}%
-\contentsline {section}{\numberline {61.2}semiconductor}{437}{section.61.2}%
-\contentsline {chapter}{\numberline {62}LaTeX annotation by TikZ}{439}{chapter.62}%
-\contentsline {chapter}{\numberline {63}Shannon sampling}{445}{chapter.63}%
-\contentsline {chapter}{\numberline {64}brachistochrone}{447}{chapter.64}%
-\contentsline {chapter}{\numberline {65}magnetic resonance}{449}{chapter.65}%
-\contentsline {section}{\numberline {65.1}NMR}{449}{section.65.1}%
-\contentsline {section}{\numberline {65.2}MRI}{449}{section.65.2}%
-\contentsline {subsection}{\numberline {65.2.1}Lin, Hsiu-Hau}{449}{subsection.65.2.1}%
-\contentsline {subsection}{\numberline {65.2.2}MRI: Physics and Image Creation}{449}{subsection.65.2.2}%
-\contentsline {subsection}{\numberline {65.2.3}Tseng, Wen-Yih Isaac}{449}{subsection.65.2.3}%
-\contentsline {chapter}{\numberline {66}OpenMMLab}{451}{chapter.66}%
-\contentsline {section}{\numberline {66.1}Tongji TommyZihao}{451}{section.66.1}%
-\contentsline {section}{\numberline {66.2}official}{451}{section.66.2}%
-\contentsline {chapter}{\numberline {67}linear programming}{453}{chapter.67}%
-\contentsline {section}{\numberline {67.1}simplex method}{453}{section.67.1}%
-\contentsline {section}{\numberline {67.2}duality method}{453}{section.67.2}%
-\contentsline {section}{\numberline {67.3}integer linear programming}{453}{section.67.3}%
-\contentsline {chapter}{\numberline {68}TaylorCatAlice physics}{455}{chapter.68}%
-\contentsline {section}{\numberline {68.1}dimensional analysis}{455}{section.68.1}%
-\contentsline {section}{\numberline {68.2}classic mechanics}{455}{section.68.2}%
-\contentsline {subsection}{\numberline {68.2.1}Galileo}{455}{subsection.68.2.1}%
-\contentsline {subsection}{\numberline {68.2.2}Newton}{455}{subsection.68.2.2}%
-\contentsline {subsection}{\numberline {68.2.3}Lagrange}{455}{subsection.68.2.3}%
-\contentsline {subsection}{\numberline {68.2.4}Hamilton}{455}{subsection.68.2.4}%
-\contentsline {section}{\numberline {68.3}electromagnetism}{455}{section.68.3}%
-\contentsline {section}{\numberline {68.4}relativity}{455}{section.68.4}%
-\contentsline {section}{\numberline {68.5}quantum theory}{455}{section.68.5}%
-\contentsline {subsection}{\numberline {68.5.1}old quantum theory}{455}{subsection.68.5.1}%
-\contentsline {subsection}{\numberline {68.5.2}black-body radiation}{456}{subsection.68.5.2}%
-\contentsline {subsection}{\numberline {68.5.3}quantum mechanics}{456}{subsection.68.5.3}%
-\contentsline {subsubsection}{\numberline {68.5.3.1}Heisenberg: matrix mechanics}{456}{subsubsection.68.5.3.1}%
-\contentsline {subsubsection}{\numberline {68.5.3.2}Schrodinger: wave mechanics}{456}{subsubsection.68.5.3.2}%
-\contentsline {subparagraph}{\numberline {68.5.3.2.0.1}matrix mechanics = wave mechanics}{456}{subparagraph.68.5.3.2.0.1}%
-\contentsline {subsubsection}{\numberline {68.5.3.3}Dirac: relativistic quantum mechanics}{456}{subsubsection.68.5.3.3}%
-\contentsline {paragraph}{\numberline {68.5.3.3.1}spin}{456}{paragraph.68.5.3.3.1}%
-\contentsline {subsubsection}{\numberline {68.5.3.4}other}{456}{subsubsection.68.5.3.4}%
-\contentsline {subsection}{\numberline {68.5.4}resistance and conductivity}{457}{subsection.68.5.4}%
-\contentsline {chapter}{\numberline {69}fundamental theorem of algebra}{459}{chapter.69}%
-\contentsline {section}{\numberline {69.1}Gauss}{459}{section.69.1}%
-\contentsline {subsection}{\numberline {69.1.1}FToA}{459}{subsection.69.1.1}%
-\contentsline {subsection}{\numberline {69.1.2}trial and error}{459}{subsection.69.1.2}%
-\contentsline {subsection}{\numberline {69.1.3}heptadecagon}{459}{subsection.69.1.3}%
-\contentsline {section}{\numberline {69.2}equation}{459}{section.69.2}%
-\contentsline {subsection}{\numberline {69.2.1}cubic equation}{459}{subsection.69.2.1}%
-\contentsline {subsection}{\numberline {69.2.2}qunitic equation}{459}{subsection.69.2.2}%
-\contentsline {chapter}{\numberline {70}Basel problem}{461}{chapter.70}%
-\contentsline {section}{\numberline {70.1}TaylorCatAlice}{461}{section.70.1}%
-\contentsline {section}{\numberline {70.2}3B1B}{461}{section.70.2}%
-\contentsline {section}{\numberline {70.3}Riemann hypothesis}{461}{section.70.3}%
-\contentsline {chapter}{\numberline {71}number theory}{463}{chapter.71}%
-\contentsline {section}{\numberline {71.1}4 important theorems}{463}{section.71.1}%
-\contentsline {section}{\numberline {71.2}congruence modulo}{463}{section.71.2}%
-\contentsline {chapter}{references}{465}{chapter*.49}%
+\contentsline {section}{\numberline {50.3}signal and system}{405}{section.50.3}%
+\contentsline {chapter}{\numberline {51}axiom of choice}{407}{chapter.51}%
+\contentsline {section}{\numberline {51.1}Zorn lemma}{407}{section.51.1}%
+\contentsline {chapter}{\numberline {52}linear algebra}{409}{chapter.52}%
+\contentsline {section}{\numberline {52.1}CCJou}{409}{section.52.1}%
+\contentsline {section}{\numberline {52.2}Chi, Chen-Yu}{409}{section.52.2}%
+\contentsline {chapter}{\numberline {53}analysis}{411}{chapter.53}%
+\contentsline {section}{\numberline {53.1}Chi, Chen-Yu}{411}{section.53.1}%
+\contentsline {section}{\numberline {53.2}Chen, Jin-Tzu}{411}{section.53.2}%
+\contentsline {chapter}{\numberline {54}matrix calculus}{413}{chapter.54}%
+\contentsline {section}{\numberline {54.1}vector-by-scalar}{413}{section.54.1}%
+\contentsline {section}{\numberline {54.2}scalar-by-vector}{413}{section.54.2}%
+\contentsline {section}{\numberline {54.3}vector-by-vector}{414}{section.54.3}%
+\contentsline {subsection}{\numberline {54.3.1}numerator-layout notation}{414}{subsection.54.3.1}%
+\contentsline {subsection}{\numberline {54.3.2}denominator-layout notation}{414}{subsection.54.3.2}%
+\contentsline {chapter}{\numberline {55}genetics}{415}{chapter.55}%
+\contentsline {section}{\numberline {55.1}term}{415}{section.55.1}%
+\contentsline {section}{\numberline {55.2}marker}{415}{section.55.2}%
+\contentsline {section}{\numberline {55.3}genome project}{415}{section.55.3}%
+\contentsline {section}{\numberline {55.4}linkage analysis}{416}{section.55.4}%
+\contentsline {subsection}{\numberline {55.4.1}PLA = parametric linkage analysis}{417}{subsection.55.4.1}%
+\contentsline {subsection}{\numberline {55.4.2}VCLA = variance component linkage analysis}{417}{subsection.55.4.2}%
+\contentsline {section}{\numberline {55.5}association analysis}{417}{section.55.5}%
+\contentsline {chapter}{\numberline {56}multivariate normal distribution}{419}{chapter.56}%
+\contentsline {section}{\numberline {56.1}bivariate normal distribution}{425}{section.56.1}%
+\contentsline {chapter}{\numberline {57}logic}{427}{chapter.57}%
+\contentsline {section}{\numberline {57.1}Shai Ben-David}{427}{section.57.1}%
+\contentsline {chapter}{\numberline {58}algorithm}{429}{chapter.58}%
+\contentsline {section}{\numberline {58.1}Chen, Vivian}{429}{section.58.1}%
+\contentsline {section}{\numberline {58.2}The Bubble Sort Curve}{429}{section.58.2}%
+\contentsline {chapter}{\numberline {59}computer graphics}{431}{chapter.59}%
+\contentsline {section}{\numberline {59.1}Cem Yuksel}{431}{section.59.1}%
+\contentsline {chapter}{\numberline {60}autoregression in time series}{433}{chapter.60}%
+\contentsline {section}{\numberline {60.1}AR(1) = \(1^\text {st}\)-order autoregressive model = first-order autoregressive model}{435}{section.60.1}%
+\contentsline {section}{\numberline {60.2}AR(2) = \(2^\text {nd}\)-order autoregressive model = second-order autoregressive model}{436}{section.60.2}%
+\contentsline {section}{\numberline {60.3}AR(\(p\)) = \(p^\text {th}\)-order autoregressive model}{436}{section.60.3}%
+\contentsline {section}{\numberline {60.4}MA(\(q\)) = \(q^\text {th}\)-order moving-average model}{436}{section.60.4}%
+\contentsline {section}{\numberline {60.5}ARMA(\(p\),\(q\)) = \(p^\text {th},q^\text {th}\)-order autoregressive-moving-average model}{437}{section.60.5}%
+\contentsline {chapter}{\numberline {61}conductivity}{439}{chapter.61}%
+\contentsline {section}{\numberline {61.1}resistance}{439}{section.61.1}%
+\contentsline {section}{\numberline {61.2}semiconductor}{439}{section.61.2}%
+\contentsline {chapter}{\numberline {62}LaTeX annotation by TikZ}{441}{chapter.62}%
+\contentsline {chapter}{\numberline {63}Shannon sampling}{447}{chapter.63}%
+\contentsline {chapter}{\numberline {64}brachistochrone}{449}{chapter.64}%
+\contentsline {chapter}{\numberline {65}magnetic resonance}{451}{chapter.65}%
+\contentsline {section}{\numberline {65.1}NMR}{451}{section.65.1}%
+\contentsline {section}{\numberline {65.2}MRI}{451}{section.65.2}%
+\contentsline {subsection}{\numberline {65.2.1}Lin, Hsiu-Hau}{451}{subsection.65.2.1}%
+\contentsline {subsection}{\numberline {65.2.2}MRI: Physics and Image Creation}{451}{subsection.65.2.2}%
+\contentsline {subsection}{\numberline {65.2.3}Tseng, Wen-Yih Isaac}{451}{subsection.65.2.3}%
+\contentsline {chapter}{\numberline {66}OpenMMLab}{453}{chapter.66}%
+\contentsline {section}{\numberline {66.1}Tongji TommyZihao}{453}{section.66.1}%
+\contentsline {section}{\numberline {66.2}official}{453}{section.66.2}%
+\contentsline {chapter}{\numberline {67}linear programming}{455}{chapter.67}%
+\contentsline {section}{\numberline {67.1}simplex method}{455}{section.67.1}%
+\contentsline {section}{\numberline {67.2}duality method}{455}{section.67.2}%
+\contentsline {section}{\numberline {67.3}integer linear programming}{455}{section.67.3}%
+\contentsline {chapter}{\numberline {68}TaylorCatAlice physics}{457}{chapter.68}%
+\contentsline {section}{\numberline {68.1}dimensional analysis}{457}{section.68.1}%
+\contentsline {section}{\numberline {68.2}classic mechanics}{457}{section.68.2}%
+\contentsline {subsection}{\numberline {68.2.1}Galileo}{457}{subsection.68.2.1}%
+\contentsline {subsection}{\numberline {68.2.2}Newton}{457}{subsection.68.2.2}%
+\contentsline {subsection}{\numberline {68.2.3}Lagrange}{457}{subsection.68.2.3}%
+\contentsline {subsection}{\numberline {68.2.4}Hamilton}{457}{subsection.68.2.4}%
+\contentsline {section}{\numberline {68.3}electromagnetism}{457}{section.68.3}%
+\contentsline {section}{\numberline {68.4}relativity}{457}{section.68.4}%
+\contentsline {section}{\numberline {68.5}quantum theory}{457}{section.68.5}%
+\contentsline {subsection}{\numberline {68.5.1}old quantum theory}{457}{subsection.68.5.1}%
+\contentsline {subsection}{\numberline {68.5.2}black-body radiation}{458}{subsection.68.5.2}%
+\contentsline {subsection}{\numberline {68.5.3}quantum mechanics}{458}{subsection.68.5.3}%
+\contentsline {subsubsection}{\numberline {68.5.3.1}Heisenberg: matrix mechanics}{458}{subsubsection.68.5.3.1}%
+\contentsline {subsubsection}{\numberline {68.5.3.2}Schrodinger: wave mechanics}{458}{subsubsection.68.5.3.2}%
+\contentsline {subparagraph}{\numberline {68.5.3.2.0.1}matrix mechanics = wave mechanics}{458}{subparagraph.68.5.3.2.0.1}%
+\contentsline {subsubsection}{\numberline {68.5.3.3}Dirac: relativistic quantum mechanics}{458}{subsubsection.68.5.3.3}%
+\contentsline {paragraph}{\numberline {68.5.3.3.1}spin}{458}{paragraph.68.5.3.3.1}%
+\contentsline {subsubsection}{\numberline {68.5.3.4}other}{458}{subsubsection.68.5.3.4}%
+\contentsline {subsection}{\numberline {68.5.4}resistance and conductivity}{459}{subsection.68.5.4}%
+\contentsline {chapter}{\numberline {69}fundamental theorem of algebra}{461}{chapter.69}%
+\contentsline {section}{\numberline {69.1}Gauss}{461}{section.69.1}%
+\contentsline {subsection}{\numberline {69.1.1}FToA}{461}{subsection.69.1.1}%
+\contentsline {subsection}{\numberline {69.1.2}trial and error}{461}{subsection.69.1.2}%
+\contentsline {subsection}{\numberline {69.1.3}heptadecagon}{461}{subsection.69.1.3}%
+\contentsline {section}{\numberline {69.2}equation}{461}{section.69.2}%
+\contentsline {subsection}{\numberline {69.2.1}cubic equation}{461}{subsection.69.2.1}%
+\contentsline {subsection}{\numberline {69.2.2}qunitic equation}{461}{subsection.69.2.2}%
+\contentsline {chapter}{\numberline {70}Basel problem}{463}{chapter.70}%
+\contentsline {section}{\numberline {70.1}TaylorCatAlice}{463}{section.70.1}%
+\contentsline {section}{\numberline {70.2}3B1B}{463}{section.70.2}%
+\contentsline {section}{\numberline {70.3}Riemann hypothesis}{463}{section.70.3}%
+\contentsline {chapter}{\numberline {71}number theory}{465}{chapter.71}%
+\contentsline {section}{\numberline {71.1}4 important theorems}{465}{section.71.1}%
+\contentsline {section}{\numberline {71.2}congruence modulo}{465}{section.71.2}%
+\contentsline {chapter}{references}{467}{chapter*.49}%

@@ -1,5 +1,7 @@
 # vector space
 
+https://www.bilibili.com/video/BV1ez4y1n7h8
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1ez4y1n7h8&autoplay=0"></iframe>
 :::
@@ -258,6 +260,8 @@ $$
   - real matrix
   - complex matrix
 - reciprocal space
+
+https://www.bilibili.com/video/BV1NC4y1J7UL
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1NC4y1J7UL&autoplay=0&t=845"></iframe>

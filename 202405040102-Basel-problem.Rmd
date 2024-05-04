@@ -6,9 +6,17 @@ https://en.wikipedia.org/wiki/Basel_problem
 
 https://www.bilibili.com/video/BV1wW421A75k
 
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1wW421A75k&autoplay=0"></iframe>
+:::
+
 ## 3B1B
 
 https://www.youtube.com/watch?v=d-o3eB9sfls
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/d-o3eB9sfls"></iframe>
+:::
 
 ## Riemann hypothesis
 

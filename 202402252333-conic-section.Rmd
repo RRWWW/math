@@ -834,10 +834,30 @@ $$
 
 https://www.bilibili.com/video/BV1pK42117UZ
 
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1pK42117UZ&autoplay=0"></iframe>
+:::
+
 https://www.bilibili.com/video/BV1cx4y1f7w6
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1cx4y1f7w6&autoplay=0"></iframe>
+:::
 
 https://www.bilibili.com/video/BV1sy421h7aF
 
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1sy421h7aF&autoplay=0"></iframe>
+:::
+
 https://www.bilibili.com/video/BV1zv421y7iH
 
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1zv421y7iH&autoplay=0"></iframe>
+:::
+
 https://www.bilibili.com/video/BV1ZH4y1h7vC
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1ZH4y1h7vC&autoplay=0"></iframe>
+:::

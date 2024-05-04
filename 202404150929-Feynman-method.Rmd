@@ -2,6 +2,8 @@
 
 ## Feynman method of differentiation / derivative technique
 
+https://www.bilibili.com/video/BV1hG411Z7Cb
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1hG411Z7Cb&autoplay=0"></iframe>
 :::

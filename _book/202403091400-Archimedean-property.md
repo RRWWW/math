@@ -10,6 +10,8 @@ https://math.stackexchange.com/questions/1919829/proving-the-archimedean-propert
 
 ## real Archimedean property
 
+https://www.youtube.com/watch?v=6wBVk1fBKXQ&t=2326
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/6wBVk1fBKXQ?start=2326"></iframe>
 :::

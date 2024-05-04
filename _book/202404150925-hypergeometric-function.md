@@ -2,6 +2,8 @@
 
 ## linear space of function
 
+https://www.bilibili.com/video/BV1PX4y167RS
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1PX4y167RS&autoplay=0"></iframe>
 :::
@@ -63,6 +65,8 @@ f\left(x\right)= & \sum\limits _{n}\dfrac{f^{\left(n\right)}\left(0\right)}{n!}x
 $$
 
 ## beta function
+
+https://www.bilibili.com/video/BV1pa4y1P7Da
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1pa4y1P7Da&autoplay=0"></iframe>
@@ -207,21 +211,29 @@ https://www.math.sinica.edu.tw/mathmedia/journals/4739?keywords%5B%5D=Paul+Dirac
 
 ## gamma function
 
+https://www.bilibili.com/video/BV1cT411H7Hp
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1cT411H7Hp&autoplay=0"></iframe>
 :::
 
 ## recursion
 
+https://www.bilibili.com/video/BV1FV4y1Z7jm
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1FV4y1Z7jm&autoplay=0"></iframe>
 :::
+
+https://www.bilibili.com/video/BV1Sg4y1L7DF
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1Sg4y1L7DF&autoplay=0"></iframe>
 :::
 
 ## mean and variance of discrete probability distributions
+
+https://www.bilibili.com/video/BV1Tk4y1n7NX
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1Tk4y1n7NX&autoplay=0"></iframe>
