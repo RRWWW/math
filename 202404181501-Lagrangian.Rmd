@@ -44,29 +44,43 @@ https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechan
 
 https://courses.physicswithelliot.com/products/fundamentals-of-lagrangian-mechanics/categories/2150492681/posts/2161912464
 
+https://www.youtube.com/watch?v=0DHNGtsmmH8
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/0DHNGtsmmH8"></iframe>
 :::
+
+https://www.youtube.com/watch?v=sUk9y23FPHk
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/sUk9y23FPHk"></iframe>
 :::
 
+https://www.youtube.com/watch?v=O0NYaO_OnH4
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/O0NYaO_OnH4"></iframe>
 :::
+
+https://www.youtube.com/watch?v=KVk1QNTWBx
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/KVk1QNTWBxQ"></iframe>
 :::
 
+https://www.youtube.com/watch?v=h2SEK6Jjv3Y
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/h2SEK6Jjv3Y"></iframe>
 :::
 
+https://www.youtube.com/watch?v=KpIaWiWvuRs
+
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/KpIaWiWvuRs"></iframe>
 :::
+
+https://www.youtube.com/watch?v=13hCkUiu_mI
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/13hCkUiu_mI"></iframe>

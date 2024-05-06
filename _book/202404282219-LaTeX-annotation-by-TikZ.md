@@ -183,10 +183,16 @@ corners}}
 :::
 ::::::
 
+***
+
+https://zhuanlan.zhihu.com/p/694787336
+
+LaTeX macro: annotate-equations
+
+`\usepackage{annotate-equations}`
+
+***
+
 https://github.com/synercys/annotated_latex_equations
 
 https://github.com/synercys/annotated_latex_equations/blob/main/example_prob.tex
-
-\begin{figure}[H]
-\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-12-1} \caption{test}(\#fig:unnamed-chunk-12)
-\end{figure}

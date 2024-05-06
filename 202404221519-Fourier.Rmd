@@ -1,5 +1,13 @@
 # Fourier analysis
 
+```{r, echo=FALSE, cache=TRUE, fig.cap="transform relationhsip: Fourier vs Laplace vs Z", out.width = '75%'}
+knitr::include_graphics("img/Fourier-vs-Laplace-vs-Z.png")
+```
+
+https://zhuanlan.zhihu.com/p/342952028
+
+https://zhuanlan.zhihu.com/p/19763358
+
 ## basic calculation
 
 $$
@@ -134,9 +142,31 @@ $$
 \end{aligned}
 $$
 
+## TaylorCatAlice: phase velocity vs. group velocity
+
 https://www.bilibili.com/video/BV1nV411F7es
 
-***
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1nV411F7es&autoplay=0"></iframe>
+:::
+
+## quantum mechanics or wave mechanics
+
+Elliot Schneider: [Physics with Elliot](https://www.youtube.com/@PhysicswithElliot/playlists)
+
+https://www.youtube.com/watch?v=W8QZ-yxebFA
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/W8QZ-yxebFA"></iframe>
+:::
+
+### uncertainty principle
+
+https://www.youtube.com/watch?v=p7bzE1E5PMY
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/p7bzE1E5PMY"></iframe>
+:::
 
 ## Simon Xu
 
@@ -148,12 +178,36 @@ https://www.youtube.com/watch?v=mkGsMWi_j4Q
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/mkGsMWi_j4Q"></iframe>
 :::
 
+[Reducible](https://www.youtube.com/@Reducible/playlists)
+
+https://www.youtube.com/watch?v=yYEMxqreA10
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/yYEMxqreA10"></iframe>
+:::
+
 ### FFT = fast Fourier transform
 
 https://www.youtube.com/watch?v=htCj9exbGo0
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/htCj9exbGo0"></iframe>
+:::
+
+[Reducible](https://www.youtube.com/@Reducible/playlists)
+
+https://www.youtube.com/playlist?list=PLpXOY-RxVRTNBfxhIuqoZcWtg-JZKCktX
+
+https://www.youtube.com/watch?v=h7apO7q16V0
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/h7apO7q16V0"></iframe>
+:::
+
+https://www.youtube.com/watch?v=Ty0JcR6Dvis
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Ty0JcR6Dvis"></iframe>
 :::
 
 ### wavelet
@@ -164,6 +218,62 @@ https://www.youtube.com/watch?v=ZnmvUCtUAEE
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/ZnmvUCtUAEE"></iframe>
 :::
 
+[Artem Kirsanov](https://www.youtube.com/@ArtemKirsanov/playlists)
+
+https://www.youtube.com/watch?v=jnxqHcObNK4
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/jnxqHcObNK4"></iframe>
+:::
+
+#### compressed sensing MRI
+
+Michael (Miki) Lustig
+
+https://www.youtube.com/watch?v=AP6JczMW8C8
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/AP6JczMW8C8"></iframe>
+:::
+
+Tseng, Wen-Yih
+
+https://www.youtube.com/watch?v=P6tzQ9KQ9JQ&list=PLTpF-A8hKVUMRaGE0Zj4WCGJX9BZraFaU&index=14
+
+https://www.youtube.com/watch?v=hxdZdUQ6y2k&list=PLTpF-A8hKVUMRaGE0Zj4WCGJX9BZraFaU&index=16 (Michael Lustig)
+
+## sampling and reconstruction
+
+https://www.youtube.com/playlist?list=PLTp0eSi9MdkPtCLf1VxMWvUSI5JI8kAtz
+
+https://www.youtube.com/watch?v=8CPPyE1rvMU
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/8CPPyE1rvMU"></iframe>
+:::
+
+https://www.youtube.com/watch?v=Qd8fLSDwbQo
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Qd8fLSDwbQo"></iframe>
+:::
+
+https://www.youtube.com/watch?v=0255KLvu75g
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/0255KLvu75g"></iframe>
+:::
+
 ## signal and system
 
 https://www.youtube.com/playlist?list=PLX6FA3vfNTfChkbNQGxVPrIsvkC_DwNV6
+
+## image compression / data compression
+
+[Reducible](https://www.youtube.com/@Reducible/playlists)
+
+https://www.youtube.com/playlist?list=PLpXOY-RxVRTOR1PAtQUwoZN2tSs1ICSk7
+
+## Lin, Chi–Kun
+
+https://www.youtube.com/playlist?list=PLj6E8qlqmkFuX5N1O3FKoDfoySC6Hku-2

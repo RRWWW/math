@@ -97,6 +97,89 @@
 \begin_body
 
 \begin_layout Standard
+Lie algebra
+\begin_inset Formula 
+\[
+f\left(t\right)\left[x\right]=\mathrm{e}^{tx}=\exp\left(tx\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(1\right)\left[x\right]=\left\{ f\left(t\right)\left[x\right]\right\} _{t=1}=\left\{ \mathrm{e}^{tx}\right\} _{t=1}=\left\{ \exp\left(tx\right)\right\} _{t=1}=\mathrm{e}^{1x}=\mathrm{e}^{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f\left(0\right)\left[x\right]=\left\{ f\left(t\right)\left[x\right]\right\} _{t=0}=\left\{ \mathrm{e}^{tx}\right\} _{t=0}=\mathrm{e}^{0x}=\mathrm{e}^{0}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{\prime}\left(t\right)\left[x\right]=\begin{cases}
+\dfrac{\mathrm{d}}{\mathrm{d}t}f\left(t\right)\left[x\right]\\
+\dfrac{\mathrm{\partial}}{\partial t}f\left(t\right)\left[x\right]
+\end{cases}?=\begin{cases}
+\dfrac{\mathrm{d}}{\mathrm{d}t}\mathrm{e}^{tx}\\
+\dfrac{\mathrm{\partial}}{\partial t}\mathrm{e}^{tx}
+\end{cases}?=\mathrm{e}^{tx}\begin{cases}
+\dfrac{\mathrm{d}}{\mathrm{d}t}tx\\
+\dfrac{\mathrm{\partial}}{\partial t}tx
+\end{cases}?=x\mathrm{e}^{tx}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{\prime}\left(0\right)\left[x\right]=\left\{ x\mathrm{e}^{tx}\right\} _{t=0}=x\mathrm{e}^{0x}=x
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{\prime}\left(1\right)\left[x\right]=\left\{ x\mathrm{e}^{tx}\right\} _{t=1}=x\mathrm{e}^{1x}=x\mathrm{e}^{x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+f\left(0\right)\left[x\right]=1 & f^{\prime}\left(0\right)\left[x\right]=x\\
+\vdots & \vdots\\
+f\left(t\right)\left[x\right]=\mathrm{e}^{tx} & f^{\prime}\left(t\right)\left[x\right]=x\mathrm{e}^{tx}\\
+\vdots & \vdots\\
+f\left(1\right)\left[x\right]=\mathrm{e}^{x} & f^{\prime}\left(1\right)\left[x\right]=x\mathrm{e}^{x}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f^{\prime}\left(t\right)\left[x\right]=x\mathrm{e}^{tx}=xf\left(t\right)\left[x\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Feynman method of integration
 \begin_inset Formula 
 \[
@@ -3444,7 +3527,7 @@ Kx^{\prime}=u & \Leftrightarrow x^{\prime}=\dfrac{u}{K},\wedge K>0
 \end{cases}\\
 = & \int_{\dfrac{u}{K}=-\infty}^{\dfrac{u}{K}=\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{\pi}\dfrac{\sin\left(u\right)}{\dfrac{u}{K}}\right)f\left(\dfrac{u}{K}\right)\mathrm{d}\dfrac{u}{K}=\int_{u=-\infty}^{u=\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{K}{\pi}\dfrac{\sin\left(u\right)}{u}\right)f\left(\dfrac{u}{K}\right)\dfrac{1}{K}\mathrm{d}u\\
 = & \int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{K}{\pi}\dfrac{\sin\left(u\right)}{u}\right)f\left(\dfrac{u}{K}\right)\dfrac{1}{K}\mathrm{d}u=\int_{-\infty}^{\infty}\lim\limits _{K\rightarrow\infty}\left(\dfrac{1}{\pi}\dfrac{\sin\left(u\right)}{u}\right)f\left(\dfrac{u}{K}\right)\mathrm{d}u\\
-= & \dfrac{1}{\pi}\lim\limits _{K\rightarrow\infty}\int_{-\infty}^{\infty}\dfrac{\sin\left(u\right)}{u}f\left(\dfrac{u}{K}\right)\mathrm{d}u\overset{\text{MVT}}{=}\dfrac{1}{\pi}\lim\limits _{K\rightarrow\infty}f\left(\dfrac{\xi}{K}\right)\int_{-\infty}^{\infty}\dfrac{\sin\left(u\right)}{u}\mathrm{d}u,\exists\xi\in\left(-\epsilon,+\epsilon\right)\\
+= & \dfrac{1}{\pi}\lim\limits _{K\rightarrow\infty}\int_{-\infty}^{\infty}\dfrac{\sin\left(u\right)}{u}f\left(\dfrac{u}{K}\right)\mathrm{d}u\overset{\text{MVT}}{=}\dfrac{1}{\pi}\lim\limits _{K\rightarrow\infty}f\left(\dfrac{\xi}{K}\right)\int_{-\infty}^{\infty}\dfrac{\sin\left(u\right)}{u}\mathrm{d}u,\exists\xi\in\left(-\epsilon,+\epsilon\right),\epsilon\in\mathbb{R}_{{\scriptscriptstyle >0}}\\
 = & \dfrac{1}{\pi}f\left(0\right)\int_{-\infty}^{\infty}\dfrac{\sin\left(u\right)}{u}\mathrm{d}u\overset{\text{Feynman method or Residue method}}{=}\dfrac{1}{\pi}f\left(0\right)\pi=f\left(0\right)=\left[f\left(x\right)\right]_{{\scriptscriptstyle x=0}}
 \end{align*}
 
@@ -9069,9 +9152,52 @@ v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
  & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
-= & q\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\boldsymbol{v}q^{-1}\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)=q\left(\dfrac{\theta}{2},n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\boldsymbol{v}q^{-1}\left(\dfrac{\theta}{2},n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}\mathrm{k}\right]\right\} \\
+= & q\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\theta\right)\boldsymbol{v}q^{-1}\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\theta\right)=q\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\dfrac{\theta}{2}\right)\boldsymbol{v}q^{-1}\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\dfrac{\theta}{2}\right)\\
 = & \mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\boldsymbol{v}\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}^{\prime}= & q\boldsymbol{v}q^{-1},\\
+ & \begin{cases}
+q=q\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\theta\right) & =\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}\mathrm{k}\right]\\
+q^{-1}=q^{*}=\overline{q} & =\cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}\mathrm{k}\right]
+\end{cases},\\
+ & \begin{cases}
+n_{{\scriptscriptstyle x}} & =\sin\gamma\cos\varphi\\
+n_{{\scriptscriptstyle y}} & =\sin\gamma\sin\varphi
+\end{cases}\Rightarrow\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}=n_{{\scriptscriptstyle z}}=\cos\gamma
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+q=q\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\theta\right)=q\left(\begin{pmatrix}n_{{\scriptscriptstyle x}}\\
+n_{{\scriptscriptstyle y}}\\
+\theta
+\end{pmatrix}\right)=q\left(\left\langle \begin{array}{c}
+n_{{\scriptscriptstyle x}}\\
+n_{{\scriptscriptstyle y}}\\
+\theta
+\end{array}\right\rangle \right)=q\begin{pmatrix}n_{{\scriptscriptstyle x}}\\
+n_{{\scriptscriptstyle y}}\\
+\theta
+\end{pmatrix}=q\begin{pmatrix}\sin\gamma\cos\varphi\\
+\sin\gamma\sin\varphi\\
+\theta
+\end{pmatrix},\begin{cases}
+\gamma\in\left[0,\dfrac{\pi}{2}\right]\\
+\varphi\in\left[0,2\pi\right]\\
+\theta\in\left[-\pi,\pi\right]
+\end{cases}
+\]
 
 \end_inset
 

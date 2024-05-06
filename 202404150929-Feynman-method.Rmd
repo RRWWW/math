@@ -533,6 +533,12 @@ $$
 
 ***
 
+https://zhuanlan.zhihu.com/p/687355703
+
+https://www.zhihu.com/question/646881575/answer/3417318090
+
+***
+
 https://www.bilibili.com/video/BV1Lj411L79X
 
 ::: {show-in="html"}
@@ -541,7 +547,27 @@ https://www.bilibili.com/video/BV1Lj411L79X
 
 ## path integral
 
+Elliot Schneider: [Physics with Elliot](https://www.youtube.com/@PhysicswithElliot/playlists)
+
+https://www.youtube.com/watch?v=W8QZ-yxebFA
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/W8QZ-yxebFA"></iframe>
+:::
+
+https://www.youtube.com/watch?v=Se-CpexiJLQ
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Se-CpexiJLQ"></iframe>
+:::
+
+Feynman path integral
+
 https://www.youtube.com/watch?v=Sp5SvdDh2u8
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Sp5SvdDh2u8"></iframe>
+:::
 
 https://en.wikipedia.org/wiki/Path_integral_formulation
 

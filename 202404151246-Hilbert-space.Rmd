@@ -4,6 +4,10 @@
 knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
 ```
 
+```{r, echo=FALSE, cache=TRUE, fig.cap="Euclid space construction", out.width = '75%'}
+knitr::include_graphics("img/Euclid-space-construction.png")
+```
+
 ## Taylor expansion or Taylor series
 
 https://www.bilibili.com/video/BV15s4y1g7HQ
@@ -569,7 +573,7 @@ https://www.bilibili.com/video/BV1du411a7qB
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1du411a7qB&autoplay=0"></iframe>
 :::
 
-### Elliot Schneider
+### Elliot Schneider: Taylor series
 
 https://www.youtube.com/watch?v=HQsZG8Yxb7w
 
@@ -1622,6 +1626,16 @@ $$
 
 ***
 
+Poisson equation rigorous proof by general function and Green theorem
+
+https://zhuanlan.zhihu.com/p/154094937
+
+```{r, echo=FALSE, cache=TRUE, fig.cap="Poisson equation rigorous proof by general function and Green theorem", out.width = '75%'}
+knitr::include_graphics("img/Poisson-equation-rigorous-proof.png")
+```
+
+***
+
 https://math.stackexchange.com/questions/368155/where-does-the-relation-nabla21-r-4-pi-delta3-bf-r-between-laplacian
 
 ***
@@ -1724,6 +1738,12 @@ $$
 $$
 \boldsymbol{\nabla}\cdot\boldsymbol{E}\left(\boldsymbol{r}\right)=4\pi k_{\text{e}}\rho\left(\boldsymbol{r}\right)
 $$
+
+***
+
+gravity
+
+https://zhuanlan.zhihu.com/p/695160620
 
 ***
 
@@ -1877,6 +1897,8 @@ $$
 https://www.bilibili.com/video/BV1nV411F7es
 
 ## Hilbert space construction
+
+https://www.zhihu.com/question/19967778/answer/2572975608
 
 https://www.bilibili.com/video/BV1cV411T7hb
 
@@ -2188,6 +2210,22 @@ $$
   \draw[->] (8)--(10);
 \end{tikzpicture}
 ```
+
+https://www.zhihu.com/question/19967778/answer/2572975608
+
+```{r, echo=FALSE, cache=TRUE, fig.cap="metric vs. inner product", out.width = '75%'}
+knitr::include_graphics("img/metric-vs-inner.png")
+```
+
+```{r, echo=FALSE, cache=TRUE, fig.cap="Euclid space construction", out.width = '75%'}
+knitr::include_graphics("img/Euclid-space-construction.png")
+```
+
+https://zhuanlan.zhihu.com/p/85867887
+
+### Riesz representation theorem
+
+https://zhuanlan.zhihu.com/p/308879557
 
 ## Dirac bracket
 

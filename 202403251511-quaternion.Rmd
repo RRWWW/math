@@ -1235,7 +1235,9 @@ O^{\intercal}O=1 & O\\
 \end{aligned}
 $$
 
-https://www.youtube.com/playlist?list=PLDcSwjT2BF_WDki-WvmJ__Q0nLIHuNPbP
+See also [Lie group]^[\@ref(lie-group)]^
+
+Mathemaniac: Lie group https://www.youtube.com/playlist?list=PLDcSwjT2BF_WDki-WvmJ__Q0nLIHuNPbP
 
 https://www.youtube.com/watch?v=erA0jb9dSm0&list=PLDcSwjT2BF_WDki-WvmJ__Q0nLIHuNPbP&index=2
 
@@ -3066,8 +3068,26 @@ v^{\prime}=\boldsymbol{v}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}\mathrm{i}
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
 = & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
  & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle z}}^{2}}\mathrm{j}+n_{{\scriptscriptstyle z}}\mathrm{k}\right]\right\} \\
-= & q\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\boldsymbol{v}q^{-1}\left(\theta,n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)=q\left(\dfrac{\theta}{2},n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\boldsymbol{v}q^{-1}\left(\dfrac{\theta}{2},n_{{\scriptscriptstyle z}},n_{{\scriptscriptstyle x}}\right)\\
+= & \left\{ \cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}\mathrm{k}\right]\right\} \boldsymbol{v}\\
+ & \left\{ \cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}\mathrm{k}\right]\right\} \\
+= & q\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\theta\right)\boldsymbol{v}q^{-1}\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\theta\right)=q\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\dfrac{\theta}{2}\right)\boldsymbol{v}q^{-1}\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\dfrac{\theta}{2}\right)\\
 = & \mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\boldsymbol{v}\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}
+\end{aligned}
+$$
+
+***
+
+$$
+\begin{aligned}
+\boldsymbol{v}^{\prime}= & q\boldsymbol{v}q^{-1},\\
+ & \begin{cases}
+q=q\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\theta\right) & =\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}\mathrm{k}\right]\\
+q^{-1}=q^{*}=\overline{q} & =\cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}\mathrm{k}\right]
+\end{cases},\\
+ & \begin{cases}
+n_{{\scriptscriptstyle x}} & =\sin\gamma\cos\varphi\\
+n_{{\scriptscriptstyle y}} & =\sin\gamma\sin\varphi
+\end{cases}\Rightarrow\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}=n_{{\scriptscriptstyle z}}=\cos\gamma
 \end{aligned}
 $$
 
@@ -3148,6 +3168,10 @@ https://en.wikipedia.org/wiki/Unitary_group
 「粒子是群表示，自旋是四維向量開根號。」？
 \end{CJK}
 :::
+
+See also [spinor]^[\@ref(spinor)]^ and [Lie group]^[\@ref(lie-group)]^
+
+https://zhuanlan.zhihu.com/p/143972449
 
 ### right-hand vs. left-hand coordinates
 
@@ -3244,9 +3268,112 @@ $\det O=-1$ will change handedness of the coordinate.
 
 https://krasjet.github.io/quaternion/bonus_gimbal_lock.pdf
 
+https://www.zhihu.com/question/47736315/answer/3146533323
+
 ### Lie group
 
-Liang, Can-Bin
+https://zhuanlan.zhihu.com/p/684801875
+
+https://www.zhihu.com/question/541029773/answer/3327615524
+
+#### Mathemaniac
+
+https://www.youtube.com/playlist?list=PLDcSwjT2BF_WDki-WvmJ__Q0nLIHuNPbP
+
+https://www.youtube.com/watch?v=ZRca3Ggpy_g&list=PLDcSwjT2BF_WDki-WvmJ__Q0nLIHuNPbP&index=3
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/ZRca3Ggpy_g"></iframe>
+:::
+
+https://www.youtube.com/watch?v=ZRca3Ggpy_g&list=PLDcSwjT2BF_WDki-WvmJ__Q0nLIHuNPbP&index=3&t=7m23s
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/ZRca3Ggpy_g?start=7m23s"></iframe>
+:::
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/ZRca3Ggpy_g?start=443"></iframe>
+:::
+
+$$
+\begin{aligned}
+\boldsymbol{v}^{\prime}= & q\boldsymbol{v}q^{-1},\\
+ & \begin{cases}
+q=q\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\theta\right) & =\cos\dfrac{\theta}{2}+\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}\mathrm{k}\right]\\
+q^{-1}=q^{*}=\overline{q} & =\cos\dfrac{\theta}{2}-\sin\dfrac{\theta}{2}\left[n_{{\scriptscriptstyle x}}\mathrm{i}+n_{{\scriptscriptstyle y}}\mathrm{j}\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}\mathrm{k}\right]
+\end{cases},\\
+ & \begin{cases}
+n_{{\scriptscriptstyle x}} & =\sin\gamma\cos\varphi\\
+n_{{\scriptscriptstyle y}} & =\sin\gamma\sin\varphi
+\end{cases}\Rightarrow\pm\sqrt{1-n_{{\scriptscriptstyle x}}^{2}-n_{{\scriptscriptstyle y}}^{2}}=n_{{\scriptscriptstyle z}}=\cos\gamma
+\end{aligned}
+$$
+
+$q$ or $q\left(\cdot\right)q^{-1}=\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\left(\cdot\right)\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}$ corresponding 3D manifold is a solid ball by coordinate $\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\theta\right)$
+
+$$
+q=q\left(n_{{\scriptscriptstyle x}},n_{{\scriptscriptstyle y}},\theta\right)=q\left(\begin{pmatrix}n_{{\scriptscriptstyle x}}\\
+n_{{\scriptscriptstyle y}}\\
+\theta
+\end{pmatrix}\right)=q\left(\left\langle \begin{array}{c}
+n_{{\scriptscriptstyle x}}\\
+n_{{\scriptscriptstyle y}}\\
+\theta
+\end{array}\right\rangle \right)=q\begin{pmatrix}n_{{\scriptscriptstyle x}}\\
+n_{{\scriptscriptstyle y}}\\
+\theta
+\end{pmatrix}=q\begin{pmatrix}\sin\gamma\cos\varphi\\
+\sin\gamma\sin\varphi\\
+\theta
+\end{pmatrix},\begin{cases}
+\gamma\in\left[0,\pi\right]\\
+\varphi\in\left[-\pi,\pi\right]\\
+\theta\in\left[-\pi,\pi\right]
+\end{cases}
+$$
+
+https://www.youtube.com/watch?v=9CBS5CAynBE&list=PLDcSwjT2BF_WDki-WvmJ__Q0nLIHuNPbP&index=4
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/9CBS5CAynBE"></iframe>
+:::
+
+See also (by Elliot Schneider) [Taylor expansion or Taylor series]^[\@ref(taylor-expansion-or-taylor-series)]^ Elliot Schneider section or
+
+https://www.youtube.com/watch?v=HQsZG8Yxb7w
+
+https://www.youtube.com/watch?v=HQsZG8Yxb7w&t=12m25s
+
+https://www.youtube.com/watch?v=B2PJh2K-jdU&list=PLDcSwjT2BF_WDki-WvmJ__Q0nLIHuNPbP&index=5
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/B2PJh2K-jdU"></iframe>
+:::
+
+See also (by Elliot Schneider) https://www.youtube.com/watch?v=0kY3Wpvutfs Hamiltonian flow and its relation to matrix exponential
+
+https://www.youtube.com/watch?v=0kY3Wpvutfs&t=22m45s
+
+https://www.youtube.com/watch?v=gj4kvpy1eCE&list=PLDcSwjT2BF_WDki-WvmJ__Q0nLIHuNPbP&index=6
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/gj4kvpy1eCE"></iframe>
+:::
+
+See also [Shinonome Masaki]^[\@ref(shinonome-masaki)]^ especially
+
+::: {show-in="html"}
+[東雲正樹：群論 (Group Theory) 終極速成 / SU(2) 與 SO(3) 的夢幻聯動](https://zhuanlan.zhihu.com/p/341625428)
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+東雲正樹：群論 (Group Theory) 終極速成 / SU(2) 與 SO(3) 的夢幻聯動 https://zhuanlan.zhihu.com/p/341625428
+\end{CJK}
+:::
+
+#### Liang, Can-Bin
 
 https://www.bilibili.com/video/BV1pV4y1a7y5
 
@@ -3286,6 +3413,12 @@ https://www.amazon.com/Geometric-Algebra-Algebraic-Computer-Animation/dp/1848823
 
 #### Slerp
 
+## visualization
+
+https://zhuanlan.zhihu.com/p/684379741
+
+https://space.bilibili.com/3546564685466124/video
+
 ## 3Blue1Brown
 
 ### Ben Eater
@@ -3323,7 +3456,6 @@ https://www.newscientist.com/article/mg20427391-600-alices-adventures-in-algebra
 https://threejs.org/
 
 ## CCJou: LA Revelation
-
 
 ::: {show-in="html"}
 https://ccjou.wordpress.com/2014/04/21/四元數/

@@ -403,42 +403,16 @@ corners}}
 :::
 ::::::
 
+***
+
+https://zhuanlan.zhihu.com/p/694787336
+
+LaTeX macro: annotate-equations
+
+`\usepackage{annotate-equations}`
+
+***
+
 https://github.com/synercys/annotated_latex_equations
 
 https://github.com/synercys/annotated_latex_equations/blob/main/example_prob.tex
-
-```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '100%', fig.cap='test', engine.opts=list(extra.preamble=c("\\usepackage{pgfplots}","\\usetikzlibrary{tikzmark, shapes.geometric, shapes.arrows, fit, bending}"))}
-\begin{tikzpicture}
-  \begin{axis}[
-		%axis x line = center,
-		%axis y line = center,
-		%xlabel = {$ x $}, xlabel style = {right},
-		%ylabel = {$ y=f\left(x\right) $}, ylabel style = {above},
-		xmin = -1, xmax = 1,
-		ymin = -0.5, ymax = 0.5,
-		%hide obscured x ticks=false, % for origin x tick label i.e. xtick = {0}
-		xtick= \empty,
-		xticklabels= \empty,
-		%extra x ticks={0},
-		ytick = \empty,
-		yticklabels= \empty,
-		x = 5cm, y = 5cm, % x y scaling
-		%grid = major,
-		domain = -1:1,
-		%samples = 1000		
-	]
-    \node at (axis cs: 0,0) {
-      $\begin{aligned}
-      f\left(x\right)= & x^{x}\\
-      \ln f\left(x\right)= & x\ln x\\
-      \dfrac{\mathrm{d}}{\mathrm{d}x}\ln f\left(x\right)= & \dfrac{\mathrm{d}}{\mathrm{d}x}\left[x\ln x\right]\\
-      \dfrac{f^{\prime}\left(x\right)}{f\left(x\right)}= & \left[x\ln x\right]^{\prime}\\
-      f^{\prime}\left(x\right)= & f\left(x\right)\left[x\ln x\right]^{\prime}=x^{x}\left[\left(x\right)^{\prime}\ln x+x\left(\ln x\right)^{\prime}\right]\\
-      = & x^{x}\left[1\ln x+x\dfrac{1}{x}\right]=x^{x}\left[\ln x+1\right]=x^{x}\left[1+\ln x\right]\\
-      = & x^{x}+x^{x}\ln x
-      \end{aligned}$
-      };
-
-  \end{axis}
-\end{tikzpicture}
-```
