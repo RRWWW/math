@@ -6,7 +6,7 @@
 
 ::: {show-in="pdf"}
 \begin{CJK}{UTF8}{bsmi}
-[楊欣洲: genetics](https://www.youtube.com/playlist?list=PLTp0eSi9MdkPp0swo8-VVplaG8bateq7q)
+楊欣洲: genetics https://www.youtube.com/playlist?list=PLTp0eSi9MdkPp0swo8-VVplaG8bateq7q
 \end{CJK}
 :::
 

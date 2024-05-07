@@ -545,7 +545,7 @@ https://www.bilibili.com/video/BV1Lj411L79X
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1Lj411L79X&autoplay=0"></iframe>
 :::
 
-## path integral
+## Feynman method of path integral
 
 Elliot Schneider: [Physics with Elliot](https://www.youtube.com/@PhysicswithElliot/playlists)
 
@@ -561,13 +561,15 @@ https://www.youtube.com/watch?v=Se-CpexiJLQ
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Se-CpexiJLQ"></iframe>
 :::
 
-Feynman path integral
+Feynman method of path integral in quantum dynamics
 
 https://www.youtube.com/watch?v=Sp5SvdDh2u8
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Sp5SvdDh2u8"></iframe>
 :::
+
+history of path integral
 
 https://en.wikipedia.org/wiki/Path_integral_formulation
 

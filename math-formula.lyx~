@@ -162,7 +162,8 @@ f\left(0\right)\left[x\right]=1 & f^{\prime}\left(0\right)\left[x\right]=x\\
 \vdots & \vdots\\
 f\left(t\right)\left[x\right]=\mathrm{e}^{tx} & f^{\prime}\left(t\right)\left[x\right]=x\mathrm{e}^{tx}\\
 \vdots & \vdots\\
-f\left(1\right)\left[x\right]=\mathrm{e}^{x} & f^{\prime}\left(1\right)\left[x\right]=x\mathrm{e}^{x}
+f\left(1\right)\left[x\right]=\mathrm{e}^{x} & f^{\prime}\left(1\right)\left[x\right]=x\mathrm{e}^{x}\\
+\vdots & \vdots
 \end{cases}
 \]
 

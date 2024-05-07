@@ -2,6 +2,10 @@
 
 ## RStudio
 
+### RMarkdown preview LaTeX equation options
+
+https://tex.stackexchange.com/questions/474458/r-markdown-preview-latex-by-scrolling-over
+
 ### writer options
 
 https://rstudio.github.io/visual-markdown-editing/markdown.html#writer-options
@@ -1509,6 +1513,69 @@ Here is my definition.
     ( 2,4) circle (.05);
 \end{tikzpicture}
 ```
+
+### collapsible panel or HTML component
+
+https://stackoverflow.com/questions/52576626/rmarkdown-collapsible-panel
+
+```{theorem}
+This is the description of a theorem
+```
+
+$$
+c^2=a^2+b^2
+$$
+
+::: {show-in="html"}
+<details>
+<summary>Proof:</summary>
+$$
+c^2=a^2+b^2
+$$
+
+$$
+\tag*{$\Box$}
+$$
+</details> 
+:::
+
+::: {show-in="pdf"}
+Proof:
+
+$$
+c^2=a^2+b^2
+$$
+
+$$
+\tag*{$\Box$}
+$$
+:::
+
+#### nested collapsible panel or HTML component
+
+::: {show-in="html"}
+<details>
+<summary>Hidden theorem</summary>
+```{theorem}
+This is the description of a theorem
+```
+
+$$
+c^2=a^2+b^2
+$$
+
+  <details>
+  <summary>Proof:</summary>
+  $$
+  c^2=a^2+b^2
+  $$
+  
+  $$
+  \tag*{$\Box$}
+  $$
+  </details>
+</details>
+:::
 
 ## slide or presentation
 

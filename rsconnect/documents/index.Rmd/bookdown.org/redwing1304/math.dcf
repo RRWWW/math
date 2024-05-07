@@ -5,7 +5,5 @@ account: redwing1304
 server: bookdown.org
 hostUrl: https://bookdown.org/__api__
 appId: 13685
-bundleId: 97075
+bundleId:
 url: https://bookdown.org/redwing1304/math/
-when: 1714960576.41764
-lastSyncTime: 1714960576.41765

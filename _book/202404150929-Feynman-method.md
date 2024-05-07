@@ -354,11 +354,17 @@ https://en.wikipedia.org/wiki/Borwein_integral
 
 https://blog.udn.com/paraquat/22455342
 
-![(\#fig:unnamed-chunk-2)$\mathrm{sin}(x)$](202404150929-Feynman-method_files/figure-latex/unnamed-chunk-2-1.pdf) 
+<div class="figure">
+<img src="202404150929-Feynman-method_files/figure-html/unnamed-chunk-2-1.png" alt="$\mathrm{sin}(x)$" width="95%" />
+<p class="caption">(\#fig:unnamed-chunk-2)$\mathrm{sin}(x)$</p>
+</div>
 
 https://tex.stackexchange.com/questions/235006/declaring-sinc-in-tikz
 
-![(\#fig:unnamed-chunk-3)$\mathrm{sinc}(x)$](202404150929-Feynman-method_files/figure-latex/unnamed-chunk-3-1.pdf) 
+<div class="figure">
+<img src="202404150929-Feynman-method_files/figure-html/unnamed-chunk-3-1.png" alt="$\mathrm{sinc}(x)$" width="95%" />
+<p class="caption">(\#fig:unnamed-chunk-3)$\mathrm{sinc}(x)$</p>
+</div>
 
 ### Gaussian integral
 
@@ -495,7 +501,7 @@ https://www.bilibili.com/video/BV1Lj411L79X
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1Lj411L79X&autoplay=0"></iframe>
 :::
 
-## path integral
+## Feynman method of path integral
 
 Elliot Schneider: [Physics with Elliot](https://www.youtube.com/@PhysicswithElliot/playlists)
 
@@ -511,13 +517,15 @@ https://www.youtube.com/watch?v=Se-CpexiJLQ
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Se-CpexiJLQ"></iframe>
 :::
 
-Feynman path integral
+Feynman method of path integral in quantum dynamics
 
 https://www.youtube.com/watch?v=Sp5SvdDh2u8
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Sp5SvdDh2u8"></iframe>
 :::
+
+history of path integral
 
 https://en.wikipedia.org/wiki/Path_integral_formulation
 

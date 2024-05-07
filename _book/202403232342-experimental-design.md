@@ -99,9 +99,10 @@ https://www.youtube.com/watch?v=c_cpl5YsBV8
 
 (ref:buchanan2005) \ [@buchanan2005]
 
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{img/buchanan2005-replicates} \caption{experimental, biological, technical replicates ((ref:buchanan2005))}(\#fig:unnamed-chunk-1)
-\end{figure}
+<div class="figure">
+<img src="img/buchanan2005-replicates.png" alt="experimental, biological, technical replicates ((ref:buchanan2005))" width="65%" />
+<p class="caption">(\#fig:unnamed-chunk-1)experimental, biological, technical replicates ((ref:buchanan2005))</p>
+</div>
 
 ### Latin square design
 
@@ -115,7 +116,10 @@ https://tex.stackexchange.com/questions/501671/how-to-get-math-mode-curly-braces
 
 `\usetikzlibrary{decorations}`
 
-![(\#fig:unnamed-chunk-2)Latin square example](202403232342-experimental-design_files/figure-latex/unnamed-chunk-2-1.pdf) 
+<div class="figure">
+<img src="202403232342-experimental-design_files/figure-html/unnamed-chunk-2-1.png" alt="Latin square example" width="40%" />
+<p class="caption">(\#fig:unnamed-chunk-2)Latin square example</p>
+</div>
 
 $$
 Y_{{\scriptscriptstyle ijk}}=\mu+\alpha_{{\scriptscriptstyle i}}+\beta_{{\scriptscriptstyle j}}+\gamma_{{\scriptscriptstyle k}}+\mathcal{E}_{{\scriptscriptstyle ijk}},\begin{cases}
@@ -156,21 +160,25 @@ $$
 
 (ref:casler2015) \ [@casler2015]
 
-\begin{figure}
-\includegraphics[width=0.5\linewidth]{img/casler2015-fig1} \caption{model assumption and experimental unit 1 ((ref:casler2015) fig.1)}(\#fig:unnamed-chunk-3)
-\end{figure}
+<div class="figure">
+<img src="img/casler2015-fig1.png" alt="model assumption and experimental unit 1 ((ref:casler2015) fig.1)" width="50%" />
+<p class="caption">(\#fig:unnamed-chunk-3)model assumption and experimental unit 1 ((ref:casler2015) fig.1)</p>
+</div>
 
-\begin{figure}
-\includegraphics[width=0.5\linewidth]{img/casler2015-fig2} \caption{model assumption and experimental unit 2 ((ref:casler2015) fig.2)}(\#fig:unnamed-chunk-4)
-\end{figure}
+<div class="figure">
+<img src="img/casler2015-fig2.png" alt="model assumption and experimental unit 2 ((ref:casler2015) fig.2)" width="50%" />
+<p class="caption">(\#fig:unnamed-chunk-4)model assumption and experimental unit 2 ((ref:casler2015) fig.2)</p>
+</div>
 
-\begin{figure}
-\includegraphics[width=0.5\linewidth]{img/casler2015-fig3} \caption{model assumption and experimental unit 3 ((ref:casler2015) fig.3)}(\#fig:unnamed-chunk-5)
-\end{figure}
+<div class="figure">
+<img src="img/casler2015-fig3.png" alt="model assumption and experimental unit 3 ((ref:casler2015) fig.3)" width="50%" />
+<p class="caption">(\#fig:unnamed-chunk-5)model assumption and experimental unit 3 ((ref:casler2015) fig.3)</p>
+</div>
 
-\begin{figure}
-\includegraphics[width=0.5\linewidth]{img/casler2015-fig4} \caption{model assumption and experimental unit 4 ((ref:casler2015) fig.4)}(\#fig:unnamed-chunk-6)
-\end{figure}
+<div class="figure">
+<img src="img/casler2015-fig4.png" alt="model assumption and experimental unit 4 ((ref:casler2015) fig.4)" width="50%" />
+<p class="caption">(\#fig:unnamed-chunk-6)model assumption and experimental unit 4 ((ref:casler2015) fig.4)</p>
+</div>
 
 ***
 
