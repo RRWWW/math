@@ -25,9 +25,26 @@ pre[class] {
 */
 </style>
 
+::: {show-in="html"}
+<details>
+<summary>annotated LaTeX formula by TikZ figure</summary>
 <div class="figure">
 <img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-3-1.png" alt="test" width="100%"  />
 <p class="caption">(\#fig:unnamed-chunk-3)test</p>
+</div>
+  <details>
+  <summary>annotated LaTeX formula by TikZ figure 2</summary>
+  <div class="figure">
+  <img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-4-1.png" alt="test" width="100%"  />
+  <p class="caption">(\#fig:unnamed-chunk-4)test</p>
+  </div>
+  </details>
+</details>
+:::
+
+<div class="figure">
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-5-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-5)test</p>
 </div>
 
 :::::: {.cols data-latex=""}
@@ -75,8 +92,8 @@ pre[class] {
 
 ::: {.col data-latex="{0.45\textwidth}"}
 <div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-5-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-5)test</p>
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-7-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-7)test</p>
 </div>
 :::
 ::::::
@@ -84,8 +101,8 @@ pre[class] {
 https://tex.stackexchange.com/questions/670153/how-to-annotate-calculations
 
 <div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-6-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-6)test</p>
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-8-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-8)test</p>
 </div>
 
 :::::: {.cols data-latex=""}
@@ -135,8 +152,8 @@ https://tex.stackexchange.com/questions/670153/how-to-annotate-calculations
 
 ::: {.col data-latex="{0.45\textwidth}"}
 <div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-8-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-8)test</p>
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-10-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-10)test</p>
 </div>
 :::
 ::::::
@@ -144,8 +161,8 @@ https://tex.stackexchange.com/questions/670153/how-to-annotate-calculations
 https://tex.stackexchange.com/questions/494884/anchor-alignment-in-tikzmarknode
 
 <div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-9-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-9)test</p>
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-11-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-11)test</p>
 </div>
 
 :::::: {.cols data-latex=""}
@@ -201,8 +218,8 @@ corners}}
 
 ::: {.col data-latex="{0.45\textwidth}"}
 <div class="figure">
-<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-11-1.png" alt="test" width="100%"  />
-<p class="caption">(\#fig:unnamed-chunk-11)test</p>
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-13-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-13)test</p>
 </div>
 :::
 ::::::

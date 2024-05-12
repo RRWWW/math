@@ -1297,6 +1297,28 @@ https://tikz.dev/tikz-plots#sec-22.5
 :::
 ::::::
 
+## commutative diagram
+
+cd = CD = commutative diagram
+
+tikz-cd
+
+`\usetikzlibrary{cd}` vs. `usepackage{tikz-cd}`
+
+https://tex.stackexchange.com/questions/546392/usepackagetikz-cd-vs-usetikzlibrarycd
+
+Nevere put ``
+
+https://tex.stackexchange.com/questions/425296/half-of-tikzcd-diagram-is-missing
+
+```{r, echo=FALSE, cache=TRUE, engine='tikz', fig.ext=if (knitr:::is_latex_output()) 'pdf' else 'png', out.width=if (knitr:::is_html_output()) '75%', fig.cap='change of basis'}
+\usetikzlibrary{cd}
+\begin{tikzcd}
+A \arrow[r] & B
+B \arrow[r] & C
+\end{tikzcd}
+```
+
 ## PGFplots
 
 axis similar to matplotlib figure anatomy, see Fig: \@ref(fig:matplotlib-figure-anatomy)

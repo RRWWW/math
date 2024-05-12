@@ -251,6 +251,18 @@ $$
 \end{cases}
 $$
 
+## ambiguity with partial notation
+
+https://www.youtube.com/watch?v=mICbKwwHziI
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/mICbKwwHziI"></iframe>
+:::
+
+## 1-form
+
+1-form = one-form
+
 ## Liang, Can-bin: differential geometry and general relativity
 
 https://www.bilibili.com/video/BV1o4411L72E

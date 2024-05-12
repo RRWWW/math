@@ -974,7 +974,6 @@ thus complete chunk beginning with `{r, echo=FALSE, cache=TRUE, engine='tikz', f
 :::
 ::::::
 
-
 LaTeX package `caption`
 
 https://tex.stackexchange.com/questions/128485/how-to-make-a-caption-via-captionof-and-extra-margins-adhere-to-minipage-marg
@@ -1247,6 +1246,7 @@ $$\color{orange}{x=y}$$
 `\color{cyan}{x=y}`
 
 $$\color{cyan}{x=y}$$
+
 ```{markdown}
 ::: {show-in="html"}
 
@@ -1308,7 +1308,6 @@ Bookdown - conditional display of text and code blocks (LaTeX/PDF vs. HTML)
 https://stackoverflow.com/questions/76240244/bookdown-conditional-display-of-text-and-code-blocks-latex-pdf-vs-html
 
 ::: {show-in="pdf"}
-
 \begin{align*}
 \colorbox{yellow!50}{$F$}= & \colorbox{yellow!50}{$ma$}\\
 \end{align*}
@@ -1338,12 +1337,10 @@ $$
 :::
 
 ::: {show-in="html"}
-
 $$
 \require{color}
 \colorbox{#FFD1DC}{$F$}=\colorbox{#FFD1DC}{$ma$}
 $$
-
 :::
 
 ## link and reference
