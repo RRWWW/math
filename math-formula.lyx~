@@ -97,50 +97,6 @@
 \begin_body
 
 \begin_layout Standard
-Bloch equation
-\begin_inset Formula 
-\[
-\dot{\boldsymbol{M}}=\boldsymbol{M}\times\gamma\boldsymbol{B}-\dfrac{\boldsymbol{M}_{{\scriptscriptstyle xy}}}{T_{{\scriptscriptstyle 2}}}-\dfrac{\boldsymbol{M}_{{\scriptscriptstyle z}}-\boldsymbol{M}_{{\scriptscriptstyle z0}}}{T_{{\scriptscriptstyle 1}}}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\dot{M}_{{\scriptscriptstyle x}}= & \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle x}}-\dfrac{M_{{\scriptscriptstyle x}}}{T_{{\scriptscriptstyle 2}}}\\
-\dot{M}_{{\scriptscriptstyle y}}= & \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle y}}-\dfrac{M_{{\scriptscriptstyle y}}}{T_{{\scriptscriptstyle 2}}}\\
-\dot{M}_{{\scriptscriptstyle z}}= & \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle z}}-\dfrac{M_{{\scriptscriptstyle z}}-M_{{\scriptscriptstyle z0}}}{T_{{\scriptscriptstyle 1}}}
-\end{align*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\dot{\boldsymbol{M}}=\boldsymbol{M}\times\gamma\boldsymbol{B}-\dfrac{\boldsymbol{M}_{{\scriptscriptstyle xy}}}{T_{{\scriptscriptstyle 2}}}-\dfrac{\boldsymbol{M}_{{\scriptscriptstyle z}}-\boldsymbol{M}_{{\scriptscriptstyle z0}}}{T_{{\scriptscriptstyle 1}}}+\boldsymbol{\nabla}\cdot D\boldsymbol{\nabla}\boldsymbol{M}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\dot{M}_{{\scriptscriptstyle x}}= & \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle x}}-\dfrac{M_{{\scriptscriptstyle x}}}{T_{{\scriptscriptstyle 2}}}+\boldsymbol{\nabla}\cdot D\boldsymbol{\nabla}\left(M_{{\scriptscriptstyle x}}-M_{{\scriptscriptstyle x0}}\right)\\
-\dot{M}_{{\scriptscriptstyle y}}= & \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle y}}-\dfrac{M_{{\scriptscriptstyle y}}}{T_{{\scriptscriptstyle 2}}}+\boldsymbol{\nabla}\cdot D\boldsymbol{\nabla}\left(M_{{\scriptscriptstyle y}}-M_{{\scriptscriptstyle y0}}\right)\\
-\dot{M}_{{\scriptscriptstyle z}}= & \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle z}}-\dfrac{M_{{\scriptscriptstyle z}}-M_{{\scriptscriptstyle z0}}}{T_{{\scriptscriptstyle 1}}}+\boldsymbol{\nabla}\cdot D\boldsymbol{\nabla}\left(M_{{\scriptscriptstyle z}}-M_{{\scriptscriptstyle z0}}\right)
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Bloch-Torrey equation
-\end_layout
-
-\begin_layout Standard
 Lie algebra
 \begin_inset Formula 
 \[
@@ -9237,18 +9193,10 @@ n_{{\scriptscriptstyle y}}\\
 \sin\gamma\sin\varphi\\
 \theta
 \end{pmatrix},\begin{cases}
-\gamma\in\left[0,\pi\right]\\
-\varphi\in\left[-\pi,\pi\right]\\
+\gamma\in\left[0,\dfrac{\pi}{2}\right]\\
+\varphi\in\left[0,2\pi\right]\\
 \theta\in\left[-\pi,\pi\right]
 \end{cases}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-q\left(\cdot\right)q^{-1}=\mathrm{e}^{\boldsymbol{n}\frac{\theta}{2}}\left(\cdot\right)\mathrm{e}^{-\boldsymbol{n}\frac{\theta}{2}}
 \]
 
 \end_inset

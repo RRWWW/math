@@ -11,3 +11,16 @@ https://www.youtube.com/watch?v=vSczTbgc8Rc
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/vSczTbgc8Rc"></iframe>
 :::
+
+## CCJou: LA Revelation
+
+::: {show-in="html"}
+https://ccjou.wordpress.com/專題探究/奇異值分解專題/
+:::
+
+::: {show-in="pdf"}
+\begin{CJK}{UTF8}{bsmi}
+https://ccjou.wordpress.com/專題探究/奇異值分解專題/
+\end{CJK}
+:::
+

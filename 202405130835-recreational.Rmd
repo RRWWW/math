@@ -1,0 +1,13 @@
+# recreational math
+
+## solved
+
+### goat grazing problem
+
+https://en.wikipedia.org/wiki/Goat_grazing_problem
+
+## not yet solved
+
+### moving sofa problem
+
+https://en.wikipedia.org/wiki/Moving_sofa_problem

@@ -4,9 +4,10 @@
 knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
 ```
 
-```{r, echo=FALSE, cache=TRUE, fig.cap="Euclid space construction ^[https://zhuanlan.zhihu.com/p/85867887]", out.width = '75%'}
+```{r, echo=FALSE, cache=TRUE, fig.cap="Euclid space construction", out.width = '75%'}
 knitr::include_graphics("img/Euclid-space-construction.png")
 ```
+^[https://zhuanlan.zhihu.com/p/85867887]
 
 ## Taylor expansion or Taylor series
 

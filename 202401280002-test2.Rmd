@@ -725,6 +725,10 @@ in
 :::
 ::::::
 
+https://tex.stackexchange.com/questions/484743/format-single-node-in-tikzcd
+
+https://tex.stackexchange.com/questions/586160/drawing-commutative-diagram-with-encircled-nodes-in-tikz-cd-package
+
 [box in TikZ-CD]^[\@ref(box-in-tikz-cd)]^
 
 ***
