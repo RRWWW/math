@@ -2,6 +2,12 @@
 
 ## solved
 
+### Monty Hall problem
+
+https://en.wikipedia.org/wiki/Monty_Hall_problem
+
+https://www.youtube.com/watch?v=uNYVuk3JgQc
+
 ### goat grazing problem
 
 https://en.wikipedia.org/wiki/Goat_grazing_problem

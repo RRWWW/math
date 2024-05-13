@@ -5,26 +5,47 @@
 knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
 ```
 
+<style type="text/css">
+pre {
+  max-width: 400px;
+  overflow-x: auto;
+  max-height: 600px;
+  overflow-y: auto;
+}
 
+/*
+pre {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+pre[class] {
+  max-height: 100px;
+}
+*/
+</style>
 
 ::: {show-in="html"}
 <details>
 <summary>annotated LaTeX formula by TikZ figure</summary>
-\begin{figure}[H]
-\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-3-1} \caption{test}(\#fig:unnamed-chunk-3)
-\end{figure}
+<div class="figure">
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-3-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-3)test</p>
+</div>
   <details>
   <summary>annotated LaTeX formula by TikZ figure 2</summary>
-  \begin{figure}[H]
-  \includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-4-1} \caption{test}(\#fig:unnamed-chunk-4)
-  \end{figure}
+  <div class="figure">
+  <img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-4-1.png" alt="test" width="100%"  />
+  <p class="caption">(\#fig:unnamed-chunk-4)test</p>
+  </div>
   </details>
 </details>
 :::
 
-\begin{figure}[H]
-\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-5-1} \caption{test}(\#fig:unnamed-chunk-5)
-\end{figure}
+<div class="figure">
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-5-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-5)test</p>
+</div>
 
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
@@ -70,17 +91,19 @@ knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-\begin{figure}[H]
-\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-7-1} \caption{test}(\#fig:unnamed-chunk-7)
-\end{figure}
+<div class="figure">
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-7-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-7)test</p>
+</div>
 :::
 ::::::
 
 https://tex.stackexchange.com/questions/670153/how-to-annotate-calculations
 
-\begin{figure}[H]
-\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-8-1} \caption{test}(\#fig:unnamed-chunk-8)
-\end{figure}
+<div class="figure">
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-8-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-8)test</p>
+</div>
 
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
@@ -128,17 +151,19 @@ https://tex.stackexchange.com/questions/670153/how-to-annotate-calculations
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-\begin{figure}[H]
-\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-10-1} \caption{test}(\#fig:unnamed-chunk-10)
-\end{figure}
+<div class="figure">
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-10-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-10)test</p>
+</div>
 :::
 ::::::
 
 https://tex.stackexchange.com/questions/494884/anchor-alignment-in-tikzmarknode
 
-\begin{figure}[H]
-\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-11-1} \caption{test}(\#fig:unnamed-chunk-11)
-\end{figure}
+<div class="figure">
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-11-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-11)test</p>
+</div>
 
 :::::: {.cols data-latex=""}
 ::: {.col data-latex="{0.45\textwidth}"}
@@ -192,9 +217,10 @@ corners}}
 :::
 
 ::: {.col data-latex="{0.45\textwidth}"}
-\begin{figure}[H]
-\includegraphics{202404282219-LaTeX-annotation-by-TikZ_files/figure-latex/unnamed-chunk-13-1} \caption{test}(\#fig:unnamed-chunk-13)
-\end{figure}
+<div class="figure">
+<img src="202404282219-LaTeX-annotation-by-TikZ_files/figure-html/unnamed-chunk-13-1.png" alt="test" width="100%"  />
+<p class="caption">(\#fig:unnamed-chunk-13)test</p>
+</div>
 :::
 ::::::
 

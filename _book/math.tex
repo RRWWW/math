@@ -23330,6 +23330,151 @@ some examinations
 
 \url{https://courses.physicswithelliot.com/products/part-i-fundamentals-of-cartesian-tensors/categories/2154478208/posts/2174076344}
 
+\url{https://courses.physicswithelliot.com/products/part-i-fundamentals-of-cartesian-tensors/categories/2155140686/posts/2176745848}
+
+\url{https://courses.physicswithelliot.com/products/part-i-fundamentals-of-cartesian-tensors/categories/2155140686/posts/2176745896}
+
+\url{https://courses.physicswithelliot.com/products/part-i-fundamentals-of-cartesian-tensors/categories/2155140686/posts/2176745882}
+
+vector notation
+
+\[
+\vec{V}=\overrightarrow{V}=\overset{\backslash\text{harpoon}}{V}=\mathbf{V}=\boldsymbol{V}
+\]
+
+\texttt{\textbackslash{}boldsymbol\{\}} is relatively more elegant.
+
+\texttt{\textbackslash{}del} or \texttt{\textbackslash{}nabla} is usually a vector
+
+\[
+\vec{\nabla}=\overrightarrow{\nabla}=\overset{\backslash\text{harpoon}}{\nabla}=\mathbf{\nabla}=\boldsymbol{\nabla}
+\]
+
+vector field
+
+e.g.~{[}magnetic{]} vector potential
+
+\[
+\begin{aligned}
+\boldsymbol{A}\left(\boldsymbol{r}\right)=\overrightarrow{A}\left(\overrightarrow{r}\right)= & \boldsymbol{A}\left(\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\right)=\boldsymbol{A}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)=\begin{pmatrix}A_{{\scriptscriptstyle 1}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\\
+A_{{\scriptscriptstyle 2}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\\
+A_{{\scriptscriptstyle 3}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)
+\end{pmatrix}\\
+= & \boldsymbol{A}\left(\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\right)=\boldsymbol{A}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}=\begin{pmatrix}A_{{\scriptscriptstyle 1}}\left(\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\right)\\
+A_{{\scriptscriptstyle 2}}\left(\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\right)\\
+A_{{\scriptscriptstyle 3}}\left(\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\right)
+\end{pmatrix}=\begin{pmatrix}A_{{\scriptscriptstyle 1}}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\\
+A_{{\scriptscriptstyle 2}}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\\
+A_{{\scriptscriptstyle 3}}\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}
+\end{pmatrix}
+\end{aligned}
+\]
+
+scalar field
+
+e.g.~temperature
+
+\[
+\begin{aligned}
+T\left(\boldsymbol{r}\right)=T\left(\overrightarrow{r}\right)= & T\left(\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\right)=T\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\\
+= & T\left(\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}\right)=T\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
+x_{{\scriptscriptstyle 2}}\\
+x_{{\scriptscriptstyle 3}}
+\end{pmatrix}
+\end{aligned}
+\]
+
+or generally
+
+\[
+f\left(\boldsymbol{r}\right)=f\left(\overrightarrow{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)=f\left(\cdots,x_{{\scriptscriptstyle i}},\cdots\right)
+\]
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-1}{}\label{def:unnamed-chunk-1}directional derivative
+\end{definition}
+
+\[
+\begin{aligned}
+\boldsymbol{\nabla}_{{\scriptscriptstyle \boldsymbol{V}}}f\left(\boldsymbol{r}\right)= & \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\boldsymbol{r}+\epsilon\boldsymbol{V}\right)-f\left(\boldsymbol{r}\right)}{\epsilon}\\
+=\overrightarrow{\nabla}_{{\scriptscriptstyle \overrightarrow{V}}}f\left(\overrightarrow{r}\right)= & \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\overrightarrow{r}+\epsilon\overrightarrow{V}\right)-f\left(\overrightarrow{r}\right)}{\epsilon}
+\end{aligned}
+\]
+
+1D directional derivative
+
+\[
+\begin{aligned}
+f_{{\scriptscriptstyle x}}\left(\boldsymbol{r}\right)=f^{\prime}\left(x\right)= & \begin{cases}
+\dfrac{\partial f}{\partial x} & f=f\left(\cdots,x,\cdots\right)\\
+\dfrac{\mathrm{d}f}{\mathrm{d}x} & f=f\left(x\right)
+\end{cases}\\
+= & \overrightarrow{\nabla}_{{\scriptscriptstyle \frac{\overrightarrow{x}}{\left\Vert \overrightarrow{x}\right\Vert }}}f\left(\overrightarrow{r}\right)=\boldsymbol{\nabla}_{{\scriptscriptstyle \frac{\boldsymbol{x}}{\left\Vert \boldsymbol{x}\right\Vert }}}f\left(\boldsymbol{r}\right)=\overrightarrow{\nabla}_{{\scriptscriptstyle \frac{\overrightarrow{x}}{\left|\overrightarrow{x}\right|}}}f\left(\overrightarrow{r}\right)=\boldsymbol{\nabla}_{{\scriptscriptstyle \frac{\boldsymbol{x}}{\left|\boldsymbol{x}\right|}}}f\left(\boldsymbol{r}\right)\\
+= & \overrightarrow{\nabla}_{{\scriptscriptstyle \hat{x}}}f\left(\overrightarrow{r}\right)=\boldsymbol{\nabla}_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}f\left(\boldsymbol{r}\right)=\begin{cases}
+\lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\boldsymbol{r}+\epsilon\hat{\boldsymbol{x}}\right)-f\left(\boldsymbol{r}\right)}{\epsilon} & f=f\left(\cdots,x,\cdots\right)\\
+\lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(x+\epsilon\right)-f\left(x\right)}{\epsilon} & f=f\left(x\right)
+\end{cases}
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+According to \hyperref[mathrmdf]{\(\mathrm{d}f\)}\textsuperscript{{[}\ref{mathrmdf}{]}}
+
+\[
+\mathrm{d}f=f^{\prime}\left(x\right)\mathrm{d}x=\left(\dfrac{\mathrm{d}f}{\mathrm{d}x}\right)\mathrm{d}x=\dfrac{\mathrm{d}f}{\mathrm{d}x}\mathrm{d}x
+\]
+
+is the differential of \(f\), read as ``d \(f\)''.
+
+\[
+\begin{aligned}
+\mathrm{d}f=\left(\dfrac{\mathrm{d}f}{\mathrm{d}x}\right)\mathrm{d}x=\dfrac{\mathrm{d}f}{\mathrm{d}x}\mathrm{d}x= & \left(\dfrac{\mathrm{d}f}{\mathrm{d}x}\hat{\boldsymbol{x}}\right)\cdot\left(\mathrm{d}x\hat{\boldsymbol{x}}\right)\\
+= & \boldsymbol{\nabla}_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}f\left(\boldsymbol{r}\right)\cdot\mathrm{d}\hat{\boldsymbol{x}}\\
+= & \boldsymbol{\nabla}f\cdot\mathrm{d}\boldsymbol{r}=\overrightarrow{\nabla}f\cdot\mathrm{d}\overrightarrow{r}\\
+\overset{\text{commutative}}{=} & \mathrm{d}\boldsymbol{r}\cdot\boldsymbol{\nabla}f=\mathrm{d}\overrightarrow{r}\cdot\overrightarrow{\nabla}f
+\end{aligned}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\[
+\begin{aligned}
+\mathrm{d}f=\mathrm{d}\boldsymbol{r}\cdot\boldsymbol{\nabla}f=\mathrm{d}\overrightarrow{r}\cdot\overrightarrow{\nabla}f
+\end{aligned}
+\]
+
+\(\boldsymbol{\nabla}f\) is the gradient of \(f\), read as ``del \(f\)''.
+
+\url{https://courses.physicswithelliot.com/products/part-i-fundamentals-of-cartesian-tensors/categories/2155140686/posts/2176745916}
+
 \subsection{Fundamentals of Curvilinear Tensors}\label{fundamentals-of-curvilinear-tensors}
 
 \subsection{Fundamentals of Spacetime Tensors}\label{fundamentals-of-spacetime-tensors}
@@ -30727,6 +30872,22 @@ library of LEAN theorems
 \subsection{moving sofa problem}\label{moving-sofa-problem}
 
 \url{https://en.wikipedia.org/wiki/Moving_sofa_problem}
+
+\chapter{causal inference}\label{causal-inference}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.bradyneal.com/causal-inference-course}{Brady Neal: causal inference}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://www.youtube.com/playlist?list=PLoazKTcS0RzZ1SUgeOgc6SWt51gfT80N0}{full lecture}
+  \item
+    \href{https://www.youtube.com/playlist?list=PLoazKTcS0Rzb6bb9L508cyJ1z-U9iWkA0}{short lecture}
+  \end{itemize}
+\end{itemize}
 
 \chapter*{references}\label{references}
 \addcontentsline{toc}{chapter}{references}
