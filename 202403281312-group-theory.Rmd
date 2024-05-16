@@ -84,6 +84,14 @@ $$
 \tag*{$\Box$}
 $$
 
+## PKU-CFCS
+
+https://www.bilibili.com/video/BV11r421E7kD
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV11r421E7kD&autoplay=0"></iframe>
+:::
+
 ## Mathemaniac
 
 https://www.youtube.com/playlist?list=PLDcSwjT2BF_VuNbn8HiHZKKy59SgnIAeO

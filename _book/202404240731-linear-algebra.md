@@ -1070,6 +1070,12 @@ $$
 T^{\prime}=W^{\prime{\scriptscriptstyle -1}}WTV^{{\scriptscriptstyle -1}}V^{\prime}
 $$
 
+#### differential polynomial
+
+##### Chebyshev polynomial
+
+##### Hermite polynomial
+
 ### singular value decomposition
 
 https://www.youtube.com/watch?v=oPHM-ZWWvlg&list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju&index=42

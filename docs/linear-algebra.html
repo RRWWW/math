@@ -23,7 +23,7 @@
 <meta name="author" content="Joey Yu Hsu" />
 
 
-<meta name="date" content="2024-05-14" />
+<meta name="date" content="2024-05-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -1046,8 +1046,16 @@ div.csl-indent {
 <li class="chapter" data-level="55.2" data-path="linear-algebra.html"><a href="linear-algebra.html#ccjou"><i class="fa fa-check"></i><b>55.2</b> CCJou</a>
 <ul>
 <li class="chapter" data-level="55.2.1" data-path="linear-algebra.html"><a href="linear-algebra.html#coordinate"><i class="fa fa-check"></i><b>55.2.1</b> coordinate</a></li>
-<li class="chapter" data-level="55.2.2" data-path="linear-algebra.html"><a href="linear-algebra.html#change-of-basis"><i class="fa fa-check"></i><b>55.2.2</b> change of basis</a></li>
-<li class="chapter" data-level="55.2.3" data-path="linear-algebra.html"><a href="linear-algebra.html#singular-value-decomposition"><i class="fa fa-check"></i><b>55.2.3</b> singular value decomposition</a></li>
+<li class="chapter" data-level="55.2.2" data-path="linear-algebra.html"><a href="linear-algebra.html#linear-transformation"><i class="fa fa-check"></i><b>55.2.2</b> linear transformation</a></li>
+<li class="chapter" data-level="55.2.3" data-path="linear-algebra.html"><a href="linear-algebra.html#change-of-basis"><i class="fa fa-check"></i><b>55.2.3</b> change of basis</a>
+<ul>
+<li class="chapter" data-level="55.2.3.1" data-path="linear-algebra.html"><a href="linear-algebra.html#differential-polynomial"><i class="fa fa-check"></i><b>55.2.3.1</b> differential polynomial</a>
+<ul>
+<li class="chapter" data-level="55.2.3.1.1" data-path="linear-algebra.html"><a href="linear-algebra.html#chebyshev-polynomial"><i class="fa fa-check"></i><b>55.2.3.1.1</b> Chebyshev polynomial</a></li>
+<li class="chapter" data-level="55.2.3.1.2" data-path="linear-algebra.html"><a href="linear-algebra.html#hermite-polynomial"><i class="fa fa-check"></i><b>55.2.3.1.2</b> Hermite polynomial</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="55.2.4" data-path="linear-algebra.html"><a href="linear-algebra.html#singular-value-decomposition"><i class="fa fa-check"></i><b>55.2.4</b> singular value decomposition</a></li>
 </ul></li>
 <li class="chapter" data-level="55.3" data-path="linear-algebra.html"><a href="linear-algebra.html#chi-chen-yu"><i class="fa fa-check"></i><b>55.3</b> Chi, Chen-Yu</a></li>
 </ul></li>
@@ -1255,6 +1263,7 @@ div.csl-indent {
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="84" data-path="causal-inference.html"><a href="causal-inference.html"><i class="fa fa-check"></i><b>84</b> causal inference</a></li>
+<li class="chapter" data-level="85" data-path="einstein-de-hass-effect.html"><a href="einstein-de-hass-effect.html"><i class="fa fa-check"></i><b>85</b> Einstein-de Hass effect</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>references</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -1299,13 +1308,974 @@ div.csl-indent {
 <div id="coordinate" class="section level3 hasAnchor" number="55.2.1">
 <h3><span class="header-section-number">55.2.1</span> coordinate<a href="linear-algebra.html#coordinate" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><a href="https://www.youtube.com/watch?v=eMUFexQsKXA&amp;list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju&amp;index=20" class="uri">https://www.youtube.com/watch?v=eMUFexQsKXA&amp;list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju&amp;index=20</a></p>
+<p><span class="math display">\[
+\begin{aligned}
+\boldsymbol{v}= &amp; v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+v^{{\scriptscriptstyle 2}}\boldsymbol{v}_{{\scriptscriptstyle 2}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+= &amp; v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+= &amp; c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=c_{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+\cdots+c_{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=B\boldsymbol{c}=B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+= &amp; e^{{\scriptscriptstyle 1}}\hat{\boldsymbol{\beta}}_{{\scriptscriptstyle 1}}+\cdots+e^{{\scriptscriptstyle n}}\hat{\boldsymbol{\beta}}_{{\scriptscriptstyle n}}=e_{{\scriptscriptstyle 1}}\hat{\boldsymbol{\beta}}_{{\scriptscriptstyle 1}}+\cdots+e_{{\scriptscriptstyle n}}\hat{\boldsymbol{\beta}}_{{\scriptscriptstyle n}}\\
+= &amp; e^{{\scriptscriptstyle 1}}\hat{\boldsymbol{e}}_{{\scriptscriptstyle 1}}+\cdots+e^{{\scriptscriptstyle n}}\hat{\boldsymbol{e}}_{{\scriptscriptstyle n}}=e_{{\scriptscriptstyle 1}}\hat{\boldsymbol{e}}_{{\scriptscriptstyle 1}}+\cdots+e_{{\scriptscriptstyle n}}\hat{\boldsymbol{e}}_{{\scriptscriptstyle n}}\\
+\overset{\text{e.g.}}{=} &amp; e^{{\scriptscriptstyle 1}}\begin{pmatrix}1\\
+\vdots\\
+0\\
+\vdots\\
+0
+\end{pmatrix}_{{\scriptscriptstyle n\times1}}+\cdots+e^{{\scriptscriptstyle n}}\begin{pmatrix}0\\
+\vdots\\
+0\\
+\vdots\\
+1
+\end{pmatrix}_{{\scriptscriptstyle n\times1}}=e_{{\scriptscriptstyle 1}}\begin{pmatrix}1\\
+\vdots\\
+0\\
+\vdots\\
+0
+\end{pmatrix}+\cdots+e_{{\scriptscriptstyle n}}\begin{pmatrix}0\\
+\vdots\\
+0\\
+\vdots\\
+1
+\end{pmatrix}\\
+= &amp; \begin{pmatrix}1 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0\\
+\vdots &amp; \ddots &amp; \vdots &amp; \ddots &amp; \vdots\\
+0 &amp; \cdots &amp; 1 &amp; \cdots &amp; 0\\
+\vdots &amp; \ddots &amp; \vdots &amp; \ddots &amp; \vdots\\
+0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 1
+\end{pmatrix}_{{\scriptscriptstyle n\times n}}\begin{pmatrix}e^{{\scriptscriptstyle 1}}\\
+\vdots\\
+e^{{\scriptscriptstyle j}}\\
+\vdots\\
+e^{{\scriptscriptstyle n}}
+\end{pmatrix}_{{\scriptscriptstyle n\times1}}=I_{{\scriptscriptstyle n\times n}}\boldsymbol{e}=I\boldsymbol{e}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+B\boldsymbol{c}= &amp; c^{{\scriptscriptstyle 1}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{pmatrix}+\cdots+c^{{\scriptscriptstyle j}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle j}}\\
+|
+\end{pmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{pmatrix}=\begin{pmatrix}| &amp;  &amp; | &amp;  &amp; |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle j}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; | &amp;  &amp; |
+\end{pmatrix}\begin{pmatrix}c^{{\scriptscriptstyle 1}}\\
+\vdots\\
+c^{{\scriptscriptstyle j}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{pmatrix}\\
+= &amp; c^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+c^{{\scriptscriptstyle j}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle j}}\\
+|
+\end{bmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; | &amp;  &amp; |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle j}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; | &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}c^{{\scriptscriptstyle 1}}\\
+\vdots\\
+c^{{\scriptscriptstyle j}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+= &amp; c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+c^{{\scriptscriptstyle 2}}\boldsymbol{\beta}_{{\scriptscriptstyle 2}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=c^{{\scriptscriptstyle 1}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{pmatrix}+c^{{\scriptscriptstyle 2}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 2}}\\
+|
+\end{pmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{pmatrix}=\begin{pmatrix}| &amp; | &amp;  &amp; |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} &amp; \boldsymbol{\beta}_{{\scriptscriptstyle 2}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &amp; | &amp;  &amp; |
+\end{pmatrix}\begin{pmatrix}c^{{\scriptscriptstyle 1}}\\
+c^{{\scriptscriptstyle 2}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{pmatrix}\\
+= &amp; c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+c^{{\scriptscriptstyle 2}}\boldsymbol{\beta}_{{\scriptscriptstyle 2}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=c^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+c^{{\scriptscriptstyle 2}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 2}}\\
+|
+\end{bmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp; | &amp;  &amp; |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} &amp; \boldsymbol{\beta}_{{\scriptscriptstyle 2}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &amp; | &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}c^{{\scriptscriptstyle 1}}\\
+c^{{\scriptscriptstyle 2}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+= &amp; c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=c^{{\scriptscriptstyle 1}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{pmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{pmatrix}=\begin{pmatrix}| &amp;  &amp; |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{pmatrix}\begin{pmatrix}c^{{\scriptscriptstyle 1}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{pmatrix}=B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+= &amp; c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=c^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}c^{{\scriptscriptstyle 1}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+B= &amp; \begin{pmatrix}| &amp;  &amp; | &amp;  &amp; |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle j}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; | &amp;  &amp; |
+\end{pmatrix}=\begin{bmatrix}| &amp;  &amp; | &amp;  &amp; |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle j}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; | &amp;  &amp; |
+\end{bmatrix}=\begin{bmatrix}| &amp; | &amp;  &amp; |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} &amp; \boldsymbol{\beta}_{{\scriptscriptstyle 2}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &amp; | &amp;  &amp; |
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= &amp; \boldsymbol{c}=\begin{bmatrix}c^{{\scriptscriptstyle 1}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{bmatrix}=\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}\in F^{n} = \mathbb{F}^n \in\left\{ \mathbb{R}^{n},\mathbb{C}^{n},\cdots\right\}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\boldsymbol{v}=B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+\boldsymbol{v}= &amp; B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+B^{-1}\boldsymbol{v}= &amp; B^{-1}B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=I\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= &amp; B^{-1}\boldsymbol{v}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=B^{-1}\boldsymbol{v}
+\]</span></p>
+<p><span class="math display">\[
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=B^{-1}\boldsymbol{v}\in\in F^{n}\in\left\{ \mathbb{R}^{n},\mathbb{C}^{n},\cdots\right\}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\boldsymbol{v}=B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= &amp; B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=I\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=B^{-1}B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= &amp; B^{-1}B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= &amp; B^{-1}B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}\\
+B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}= &amp; B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}=I\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}=B^{\prime-1}B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}= &amp; B^{\prime-1}B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}= &amp; B^{\prime-1}B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}
+\end{aligned}
+\]</span></p>
 </div>
-<div id="change-of-basis" class="section level3 hasAnchor" number="55.2.2">
-<h3><span class="header-section-number">55.2.2</span> change of basis<a href="linear-algebra.html#change-of-basis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="linear-transformation" class="section level3 hasAnchor" number="55.2.2">
+<h3><span class="header-section-number">55.2.2</span> linear transformation<a href="linear-algebra.html#linear-transformation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="math display">\[
+\begin{aligned}
+\boldsymbol{v}= &amp; v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}=v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}=\sum_{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\\
+= &amp; v^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+v^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}=V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+, &amp; \begin{cases}
+V=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix},\mathfrak{V}=\left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j}=1}^{{\scriptscriptstyle n}}=\left\{ \boldsymbol{v}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{v}_{{\scriptscriptstyle n}}\right\} \\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}\in F^{n}\in\left\{ \mathbb{R}^{n},\mathbb{C}^{n},\cdots\right\}
+\end{cases}\overset{\text{if }V\text{ invertible}}{\implies}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=V^{-1}\boldsymbol{v}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\backslash\text{mathfrak}V=\mathfrak{V}\text{ vs.}\backslash\text{mathfrak}B=\mathfrak{B}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; \boldsymbol{v}\in\mathcal{V}\overset{T}{\rightarrow}\mathcal{W}\ni\boldsymbol{w}=T\left(\boldsymbol{v}\right)\\
+&amp; ,T:\mathcal{V}\rightarrow\mathcal{W}\begin{cases}
+T\left(\boldsymbol{u}+\boldsymbol{v}\right)=T\left(\boldsymbol{u}\right)+T\left(\boldsymbol{v}\right) &amp; \left(a\right)\text{additivity}\\
+T\left(\lambda\boldsymbol{v}\right)=\lambda T\left(\boldsymbol{v}\right) &amp; \left(h\right)\text{homogeneity}
+\end{cases}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\boldsymbol{w}=T\left(\boldsymbol{v}\right)= &amp; T\left(v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\overset{\left(a\right)}{=}T\left(v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)+\cdots+T\left(v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\overset{\left(h\right)}{=}v^{{\scriptscriptstyle 1}}T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)+\cdots+v^{{\scriptscriptstyle n}}T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+= &amp; v^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\\
+|
+\end{bmatrix}+\cdots+v^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &amp; \cdots &amp; T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &amp; \cdots &amp; T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &amp;  &amp; |
+\end{bmatrix}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\boldsymbol{w}=T\left(\boldsymbol{v}\right)=\begin{bmatrix}| &amp;  &amp; |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &amp; \cdots &amp; T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &amp;  &amp; |
+\end{bmatrix}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=T\left(V\right)\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}},T\left(V\right)=\begin{bmatrix}| &amp;  &amp; |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &amp; \cdots &amp; T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &amp;  &amp; |
+\end{bmatrix}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\boldsymbol{w}=T\left(\boldsymbol{v}\right)\overset{\boldsymbol{v}=V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}}{=}T\left(V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\right)\overset{T\text{ linear}}{=}T\left(V\right)\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+T\left(\boldsymbol{v}\right)=\boldsymbol{w}= &amp; w^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+w^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=w^{{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}=\sum_{j=1}^{n}w^{{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}\\
+= &amp; w^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+w^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}w^{{\scriptscriptstyle 1}}\\
+\vdots\\
+w^{{\scriptscriptstyle m}}
+\end{bmatrix}=W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}\overset{\boldsymbol{w}=T\left(\boldsymbol{v}\right)}{=}W\left[T\left(\boldsymbol{v}\right)\right]_{{\scriptscriptstyle W}}\\
+, &amp; \begin{cases}
+W=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix},\mathfrak{W}=\left\{ \boldsymbol{w}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j}=1}^{{\scriptscriptstyle m}}=\left\{ \boldsymbol{w}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{w}_{{\scriptscriptstyle m}}\right\} \\
+\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=\begin{bmatrix}w^{{\scriptscriptstyle 1}}\\
+\vdots\\
+w^{{\scriptscriptstyle m}}
+\end{bmatrix}\in F^{m}\in\left\{ \mathbb{R}^{m},\mathbb{C}^{m},\cdots\right\}
+\end{cases}\overset{\text{if }W\text{ invertible}}{\implies}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=W^{-1}\boldsymbol{w}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\backslash\text{mathfrak}W=\mathfrak{W}\text{ vs.}\backslash\text{mathfrak}V=\mathfrak{V}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)= &amp; t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}\\
+= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}|\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}}\\
+|
+\end{bmatrix}=W\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}}\\
+\vdots\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)= &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}\\
+= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}|\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+|
+\end{bmatrix}=W\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+T\left(V\right)=\begin{bmatrix}| &amp;  &amp; |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &amp; \cdots &amp; T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &amp;  &amp; |
+\end{bmatrix}= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}}
+\end{bmatrix} &amp; \cdots &amp; \begin{bmatrix}t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}\end{bmatrix}\\
+= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}\\
+= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}| &amp;  &amp; |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} &amp; \cdots &amp; \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &amp;  &amp; |
+\end{bmatrix}=WT\\
+, &amp; \begin{cases}
+W=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\\
+T=\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} &amp; \cdots &amp; \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &amp;  &amp; |
+\end{bmatrix}
+\end{cases}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+T\left(V\right)=\begin{bmatrix}| &amp;  &amp; |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &amp; \cdots &amp; T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &amp;  &amp; |
+\end{bmatrix}=WT,\begin{cases}
+W=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\\
+T=\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} &amp; \cdots &amp; \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &amp;  &amp; |
+\end{bmatrix}
+\end{cases}
+\]</span></p>
+<p><span class="math display">\[
+T=\begin{bmatrix}| &amp;  &amp; |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} &amp; \cdots &amp; \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &amp;  &amp; |
+\end{bmatrix}\overset{V=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}}{=}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+T=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}= &amp; W^{{\scriptscriptstyle -1}}T\left(V\right)=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}^{{\scriptscriptstyle -1}}T\left(V\right),\text{if }W\text{ invertible}\\
+= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}^{{\scriptscriptstyle -1}}T\left(\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}\right)\\
+= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}^{{\scriptscriptstyle -1}}\begin{bmatrix}| &amp;  &amp; |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &amp; \cdots &amp; T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &amp;  &amp; |
+\end{bmatrix}\\
+= &amp; W^{{\scriptscriptstyle -1}}\begin{bmatrix}| &amp;  &amp; |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &amp; \cdots &amp; T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &amp;  &amp; |
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+W^{{\scriptscriptstyle -1}}T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &amp; \cdots &amp; W^{{\scriptscriptstyle -1}}T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &amp;  &amp; |
+\end{bmatrix}\\
+= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} &amp; \cdots &amp; \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &amp;  &amp; |
+\end{bmatrix}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+T=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}^{{\scriptscriptstyle -1}}\begin{bmatrix}| &amp;  &amp; |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &amp; \cdots &amp; T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &amp;  &amp; |
+\end{bmatrix}=W^{{\scriptscriptstyle -1}}T\left(V\right)
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+T= &amp; \begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} &amp; \cdots &amp; \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &amp;  &amp; |
+\end{bmatrix}=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\\
+= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{t}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{t}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} &amp; \cdots &amp; \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &amp;  &amp; |
+\end{bmatrix},\boldsymbol{t}_{{\scriptscriptstyle j}}=\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\right]_{{\scriptscriptstyle W}}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=\boldsymbol{w}=T\left(\boldsymbol{v}\right)= &amp; T\left(V\right)\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{T\left(V\right)=WT}{=}WT\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=W\left(T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\right)\\
+W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}= &amp; W\left(T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\right)\\
+\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=I\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=W^{{\scriptscriptstyle -1}}W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}= &amp; W^{{\scriptscriptstyle -1}}W\left(T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\right)=IT\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}},\text{if }W\text{ invertible}\\
+\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}= &amp; T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\left[T\left(\boldsymbol{v}\right)\right]_{{\scriptscriptstyle W}}\overset{\boldsymbol{w}=T\left(\boldsymbol{v}\right)}{=}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}= &amp; T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\left[T\left(\boldsymbol{v}\right)\right]_{{\scriptscriptstyle W}}= &amp; T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{T=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}}{=}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}= &amp; T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+=\left[T\left(\boldsymbol{v}\right)\right]_{{\scriptscriptstyle W}}= &amp; \left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+T=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{t}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{t}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}= &amp; \begin{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}}
+\end{bmatrix} &amp; \cdots &amp; \begin{bmatrix}t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}\end{bmatrix}=\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix},\begin{array}{c}
+\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\Updownarrow\\
+w^{{\scriptscriptstyle i}}=t_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}
+\end{array}\\
+= &amp; \begin{bmatrix}\begin{bmatrix}t^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+t^{{\scriptscriptstyle m}}{}_{{\scriptscriptstyle 1}}
+\end{bmatrix} &amp; \cdots &amp; \begin{bmatrix}t^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle n}}\\
+\vdots\\
+t^{{\scriptscriptstyle m}}{}_{{\scriptscriptstyle n}}
+\end{bmatrix}\end{bmatrix}=\begin{bmatrix}t^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; t^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle n}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+t^{{\scriptscriptstyle m}}{}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; t^{{\scriptscriptstyle m}}{}_{{\scriptscriptstyle n}}
+\end{bmatrix}=\left[t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\right]_{{\scriptscriptstyle m\times n}}=\left[t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\right]=t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+= &amp; \begin{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 11}}\\
+\vdots\\
+t_{{\scriptscriptstyle m1}}
+\end{bmatrix} &amp; \cdots &amp; \begin{bmatrix}t_{{\scriptscriptstyle 1n}}\\
+\vdots\\
+t_{{\scriptscriptstyle mn}}
+\end{bmatrix}\end{bmatrix}=\begin{bmatrix}t_{{\scriptscriptstyle 11}} &amp; \cdots &amp; t_{{\scriptscriptstyle 1n}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+t_{{\scriptscriptstyle m1}} &amp; \cdots &amp; t_{{\scriptscriptstyle mn}}
+\end{bmatrix}=\left[t_{{\scriptscriptstyle ij}}\right]_{{\scriptscriptstyle m\times n}}=\left[t_{{\scriptscriptstyle ij}}\right]=t_{{\scriptscriptstyle ij}}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+T=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{t}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{t}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}=\begin{bmatrix}t^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; t^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle n}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+t^{{\scriptscriptstyle m}}{}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; t^{{\scriptscriptstyle m}}{}_{{\scriptscriptstyle n}}
+\end{bmatrix}=\left[t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\right]_{{\scriptscriptstyle m\times n}}=t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)= &amp; t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}}
+\end{bmatrix}\\
+= &amp; W\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}}\\
+\vdots\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)= &amp; t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}
+\end{bmatrix}\\
+= &amp; W\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+\Downarrow\\
+\begin{bmatrix}| &amp;  &amp; |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &amp; \cdots &amp; T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &amp;  &amp; |
+\end{bmatrix}= &amp; \begin{array}{c}
+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}
+\end{array}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}\begin{array}{c}
++\\
+\\
++
+\end{array}\begin{array}{c}
+\cdots\\
+\curvearrowright\\
+\cdots
+\end{array}\begin{array}{c}
++\\
+\\
++
+\end{array}\begin{array}{c}
+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}
+\end{array}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}\\
+= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{t}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{t}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}=WT\\
+= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}| &amp;  &amp; |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} &amp; \cdots &amp; \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &amp;  &amp; |
+\end{bmatrix}=W\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\\
+T\left(V\right)= &amp; WT=W\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+WT= &amp; T\left(V\right)\\
+\Downarrow\\
+T= &amp; W^{{\scriptscriptstyle -1}}T\left(V\right)
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+T=\begin{bmatrix}t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} &amp; \cdots &amp; t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{t}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{t}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}=\left[t_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}\right]_{{\scriptscriptstyle m\times n}}=\left[t_{{\scriptscriptstyle j}}{}^{{\scriptscriptstyle i}}\right]_{{\scriptscriptstyle m\times n}}=t_{{\scriptscriptstyle j}}{}^{{\scriptscriptstyle i}}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\left[t_{{\scriptscriptstyle j}}{}^{{\scriptscriptstyle i}}\right]_{{\scriptscriptstyle m\times n}}=\left[t_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}\right]_{{\scriptscriptstyle m\times n}}=\left[t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\right]_{{\scriptscriptstyle m\times n}},\begin{cases}
+w^{{\scriptscriptstyle i}}=t_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=t_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}\boldsymbol{w}_{{\scriptscriptstyle i}}=t_{{\scriptscriptstyle j}}{}^{{\scriptscriptstyle i}}\boldsymbol{w}_{{\scriptscriptstyle i}}
+\end{cases}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+T=\left[t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\right]_{{\scriptscriptstyle m\times n}}=t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\text{ is the matrix representation of the linear transformation }T\left(\cdot\right):\mathcal{V}\rightarrow\mathcal{W}
+\]</span></p>
+<hr />
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<img src="202404240731-linear-algebra_files/figure-html/unnamed-chunk-1-1.png" alt="coordinate under linear transformation" width="100%" />
+<p class="caption">
+Fig. 24.1: coordinate under linear transformation
+</p>
+</div>
+</div>
+<div id="change-of-basis" class="section level3 hasAnchor" number="55.2.3">
+<h3><span class="header-section-number">55.2.3</span> change of basis<a href="linear-algebra.html#change-of-basis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><a href="https://www.youtube.com/watch?v=WAtLPk55ljM&amp;list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju&amp;index=22" class="uri">https://www.youtube.com/watch?v=WAtLPk55ljM&amp;list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju&amp;index=22</a></p>
+<p><span class="math display">\[
+\boldsymbol{v}=B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= &amp; B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=I\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=B^{-1}B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= &amp; B^{-1}B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= &amp; B^{-1}B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}\\
+B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}= &amp; B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}=I\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}=B^{\prime-1}B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}= &amp; B^{\prime-1}B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}= &amp; B^{\prime-1}B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+\boldsymbol{v}= &amp; v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}=v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}=\sum_{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}=v^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+v^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}=V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+= &amp; v^{\prime{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}+\cdots+v^{\prime{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}=v^{\prime{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}^{\prime}=\sum_{j=1}^{n}v^{\prime{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}^{\prime}=v^{\prime{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}\\
+|
+\end{bmatrix}+\cdots+v^{\prime{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime} &amp; \cdots &amp; \boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}v^{\prime{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{\prime{\scriptscriptstyle n}}
+\end{bmatrix}=V^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+\boldsymbol{v}= &amp; V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=V^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\boldsymbol{w}= &amp; w^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+w^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=w^{{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}=\sum_{j=1}^{m}w^{{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}=w^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+w^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}w^{{\scriptscriptstyle 1}}\\
+\vdots\\
+w^{{\scriptscriptstyle m}}
+\end{bmatrix}=W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}\\
+= &amp; w^{\prime{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}^{\prime}+\cdots+w^{\prime{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}^{\prime}=w^{\prime{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}^{\prime}=\sum_{j=1}^{m}w^{\prime{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}^{\prime}=w^{\prime{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}^{\prime}\\
+|
+\end{bmatrix}+\cdots+w^{\prime{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}^{\prime}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}^{\prime} &amp; \cdots &amp; \boldsymbol{w}_{{\scriptscriptstyle m}}^{\prime}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}w^{\prime{\scriptscriptstyle 1}}\\
+\vdots\\
+w^{\prime{\scriptscriptstyle m}}
+\end{bmatrix}=W^{\prime}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W^{\prime}}}\\
+\boldsymbol{w}= &amp; W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=W^{\prime}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W^{\prime}}}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\boldsymbol{v}_{{\scriptscriptstyle 1}}= &amp; v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}+\cdots+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}\\
+|
+\end{bmatrix}+\cdots+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime} &amp; \cdots &amp; \boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}}
+\end{bmatrix}=V^{\prime}\left[\boldsymbol{v}_{{\scriptscriptstyle 1}}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}= &amp; v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}+\cdots+v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}=v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}\\
+|
+\end{bmatrix}+\cdots+v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime} &amp; \cdots &amp; \boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}}\\
+\vdots\\
+v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle n}}
+\end{bmatrix}=V^{\prime}\left[\boldsymbol{v}_{{\scriptscriptstyle n}}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+\Downarrow\\
+\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} &amp; \cdots &amp; \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &amp;  &amp; |
+\end{bmatrix}= &amp; \begin{array}{c}
+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle 1}}
+\end{array}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}\\
+|
+\end{bmatrix}\begin{array}{c}
++\\
+\\
++
+\end{array}\begin{array}{c}
+\cdots\\
+\curvearrowright\\
+\cdots
+\end{array}\begin{array}{c}
++\\
+\\
++
+\end{array}\begin{array}{c}
+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}}\\
+\vdots\\
+v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle n}}
+\end{array}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+|
+\end{bmatrix}\\
+= &amp; \begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime} &amp; \cdots &amp; \boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle 1}} &amp; \cdots &amp; v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle 1}}\\
+\vdots &amp; \ddots &amp; \vdots\\
+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}} &amp; \cdots &amp; v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle n}}
+\end{bmatrix}=\begin{bmatrix}| &amp;  &amp; |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime} &amp; \cdots &amp; \boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+| &amp;  &amp; |
+\end{bmatrix}\begin{bmatrix}| &amp;  &amp; |\\
+\left[\boldsymbol{v}_{{\scriptscriptstyle 1}}\right]_{{\scriptscriptstyle V^{\prime}}} &amp; \cdots &amp; \left[\boldsymbol{v}_{{\scriptscriptstyle n}}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+| &amp;  &amp; |
+\end{bmatrix}=V^{\prime}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\\
+V= &amp; V^{\prime}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\overset{\text{if }V^{\prime}\text{ invertible}}{\Longleftrightarrow}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}=V^{\prime{\scriptscriptstyle -1}}V
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\left[V\right]_{{\scriptscriptstyle V^{\prime}}}=V^{\prime{\scriptscriptstyle -1}}V:\left[V^{\prime}\middle|V\right]\overset{\text{Gauss-Jordan delimination}}{\longrightarrow}\left[I\middle|V^{\prime{\scriptscriptstyle -1}}V\right]=\left[I\middle|\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\right]
+\]</span></p>
+<p><span class="math display">\[
+\left[V^{\prime}\right]_{{\scriptscriptstyle V}}=V^{{\scriptscriptstyle -1}}V^{\prime}:\left[V\middle|V^{\prime}\right]\overset{\text{Gauss-Jordan delimination}}{\longrightarrow}\left[I\middle|V^{{\scriptscriptstyle -1}}V^{\prime}\right]=\left[I\middle|\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\right]
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{cases}
+\left[V\right]_{{\scriptscriptstyle V^{\prime}}}=V^{\prime{\scriptscriptstyle -1}}V: &amp; \left[V^{\prime}\middle|V\right]\overset{\text{Gauss-Jordan delimination}}{\longrightarrow}\left[I\middle|V^{\prime{\scriptscriptstyle -1}}V\right]=\left[I\middle|\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\right]\\
+\left[V^{\prime}\right]_{{\scriptscriptstyle V}}=V^{{\scriptscriptstyle -1}}V^{\prime}: &amp; \left[V\middle|V^{\prime}\right]\overset{\text{Gauss-Jordan delimination}}{\longrightarrow}\left[I\middle|V^{{\scriptscriptstyle -1}}V^{\prime}\right]=\left[I\middle|\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\right]
+\end{cases}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+\boldsymbol{v}= &amp; V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=V^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+= &amp; V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}},\wedge V=V^{\prime}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\\
+= &amp; V^{\prime}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+V^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= &amp; V^{\prime}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= &amp; \left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}=\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\]</span></p>
+<hr />
+<p>symmetrically,</p>
+<p><span class="math display">\[
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}
+\]</span></p>
+<hr />
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
+<img src="202404240731-linear-algebra_files/figure-html/unnamed-chunk-2-1.png" alt="change of coordinate basis under linear transformation" width="100%" />
+<p class="caption">
+Fig. 34.1: change of coordinate basis under linear transformation
+</p>
 </div>
-<div id="singular-value-decomposition" class="section level3 hasAnchor" number="55.2.3">
-<h3><span class="header-section-number">55.2.3</span> singular value decomposition<a href="linear-algebra.html#singular-value-decomposition" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="math inline">\(\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\rightleftharpoons\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{\left[V\right]_{{\scriptscriptstyle V^{\prime}}}}{\rightarrow}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= &amp; \left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{\left[V^{\prime}\right]_{{\scriptscriptstyle V}}}{\leftarrow}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= &amp; \left[V^{\prime}\right]_{{\scriptscriptstyle V}}^{{\scriptscriptstyle -1}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\Downarrow\\
+\left[V\right]_{{\scriptscriptstyle V^{\prime}}}= &amp; \left[V^{\prime}\right]_{{\scriptscriptstyle V}}^{{\scriptscriptstyle -1}}\Leftrightarrow\left[V^{\prime}\right]_{{\scriptscriptstyle V}}=\left[V\right]_{{\scriptscriptstyle V^{\prime}}}^{{\scriptscriptstyle -1}}
+\end{aligned}
+\]</span></p>
+<p><span class="math inline">\(\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\rightarrow\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{\left[V\right]_{{\scriptscriptstyle V^{\prime}}}}{\rightarrow}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= &amp; \left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{V}{\rightarrow}\boldsymbol{v}\overset{V^{\prime{\scriptscriptstyle -1}}}{\rightarrow}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= &amp; V^{\prime{\scriptscriptstyle -1}}V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\Downarrow\\
+\left[V\right]_{{\scriptscriptstyle V^{\prime}}}= &amp; V^{\prime{\scriptscriptstyle -1}}V\overset{\left[V^{\prime}\right]_{{\scriptscriptstyle V}}=\left[V\right]_{{\scriptscriptstyle V^{\prime}}}^{{\scriptscriptstyle -1}}}{\Longleftrightarrow}\left[V^{\prime}\right]_{{\scriptscriptstyle V}}=\left(V^{\prime{\scriptscriptstyle -1}}V\right)^{{\scriptscriptstyle -1}}=V^{{\scriptscriptstyle -1}}V^{\prime}
+\end{aligned}
+\]</span></p>
+<p><span class="math inline">\(\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\rightarrow\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W^{\prime}}}\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\overset{T^{\prime}=\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}}{\rightarrow}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W^{\prime}}}= &amp; \left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\overset{\left[V^{\prime}\right]_{{\scriptscriptstyle V}}}{\rightarrow}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{T=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}}{\rightarrow}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}\overset{\left[W\right]_{{\scriptscriptstyle W^{\prime}}}}{\rightarrow}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W^{\prime}}}= &amp; \left[W\right]_{{\scriptscriptstyle W^{\prime}}}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+\Downarrow\\
+\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}= &amp; \left[W\right]_{{\scriptscriptstyle W^{\prime}}}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\\
+= &amp; W^{\prime{\scriptscriptstyle -1}}W\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}V^{{\scriptscriptstyle -1}}V^{\prime}\\
+= &amp; W^{\prime{\scriptscriptstyle -1}}WW^{{\scriptscriptstyle -1}}T\left(V\right)V^{{\scriptscriptstyle -1}}V^{\prime}\\
+= &amp; W^{\prime{\scriptscriptstyle -1}}IT\left(V\right)V^{{\scriptscriptstyle -1}}V^{\prime}\\
+= &amp; W^{\prime{\scriptscriptstyle -1}}T\left(V\right)V^{{\scriptscriptstyle -1}}V^{\prime}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math inline">\(\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}\rightleftharpoons\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\)</span></p>
+<p><span class="math display">\[
+\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}=\left[W\right]_{{\scriptscriptstyle W^{\prime}}}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[V^{\prime}\right]_{{\scriptscriptstyle V}}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}=W^{\prime{\scriptscriptstyle -1}}T\left(V\right)V^{{\scriptscriptstyle -1}}V^{\prime}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+W^{\prime}\left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}= &amp; T\left(V\right)\\
+\Downarrow\\
+\left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}= &amp; W^{\prime{\scriptscriptstyle -1}}T\left(V\right)
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+\begin{aligned}
+\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}= &amp; W^{\prime{\scriptscriptstyle -1}}T\left(V\right)V^{{\scriptscriptstyle -1}}V^{\prime}\\
+= &amp; \left\{ W^{\prime{\scriptscriptstyle -1}}T\left(V\right)\right\} \left\{ V^{{\scriptscriptstyle -1}}V^{\prime}\right\} \\
+= &amp; \left\{ \left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}\right\} \left\{ V^{{\scriptscriptstyle -1}}V^{\prime}\right\} \\
+= &amp; \left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}V^{{\scriptscriptstyle -1}}V^{\prime}\\
+, &amp; \begin{cases}
+\left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}=W^{\prime{\scriptscriptstyle -1}}T\left(V\right) &amp; :W^{\prime}\left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}=T\left(V\right)\\
+V^{{\scriptscriptstyle -1}}V^{\prime} &amp; :\left[V\middle|V^{\prime}\right]\overset{\text{Gauss-Jordan delimination}}{\longrightarrow}\left[I\middle|V^{{\scriptscriptstyle -1}}V^{\prime}\right]
+\end{cases}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math inline">\(T^{\prime}\rightleftharpoons T\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}= &amp; \left[W\right]_{{\scriptscriptstyle W^{\prime}}}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\\
+T^{\prime}=\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}\Updownarrow &amp; T=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\\
+T^{\prime}= &amp; \left[W\right]_{{\scriptscriptstyle W^{\prime}}}T\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\\
+= &amp; \left[W^{\prime{\scriptscriptstyle -1}}W\right]T\left[V^{{\scriptscriptstyle -1}}V^{\prime}\right]\\
+T^{\prime}= &amp; W^{\prime{\scriptscriptstyle -1}}WTV^{{\scriptscriptstyle -1}}V^{\prime}
+\end{aligned}
+\]</span></p>
+<hr />
+<p><span class="math display">\[
+T^{\prime}=W^{\prime{\scriptscriptstyle -1}}WTV^{{\scriptscriptstyle -1}}V^{\prime}
+\]</span></p>
+<div id="differential-polynomial" class="section level4 hasAnchor" number="55.2.3.1">
+<h4><span class="header-section-number">55.2.3.1</span> differential polynomial<a href="linear-algebra.html#differential-polynomial" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="chebyshev-polynomial" class="section level5 hasAnchor" number="55.2.3.1.1">
+<h5><span class="header-section-number">55.2.3.1.1</span> Chebyshev polynomial<a href="linear-algebra.html#chebyshev-polynomial" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+</div>
+<div id="hermite-polynomial" class="section level5 hasAnchor" number="55.2.3.1.2">
+<h5><span class="header-section-number">55.2.3.1.2</span> Hermite polynomial<a href="linear-algebra.html#hermite-polynomial" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+</div>
+</div>
+</div>
+<div id="singular-value-decomposition" class="section level3 hasAnchor" number="55.2.4">
+<h3><span class="header-section-number">55.2.4</span> singular value decomposition<a href="linear-algebra.html#singular-value-decomposition" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><a href="https://www.youtube.com/watch?v=oPHM-ZWWvlg&amp;list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju&amp;index=42" class="uri">https://www.youtube.com/watch?v=oPHM-ZWWvlg&amp;list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju&amp;index=42</a></p>
 <p><a href="https://www.youtube.com/watch?v=zagHmMPZyoo&amp;list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju&amp;index=43" class="uri">https://www.youtube.com/watch?v=zagHmMPZyoo&amp;list=PLP-JUp2VR1LsFtHT-i_vZ3oNFIAc3t_Ju&amp;index=43</a></p>
 </div>

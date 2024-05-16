@@ -962,6 +962,17 @@ T=\left[t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\right]_{{\scriptsc
 
 \begin_layout Standard
 change of basis
+\begin_inset Formula 
+\[
+\begin{cases}
+\mathfrak{V}=\left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} \\
+\mathfrak{V}^{\prime}=\left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}^{\prime}\right\} 
+\end{cases}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -995,6 +1006,17 @@ v^{\prime{\scriptscriptstyle n}}
 \end{bmatrix}=V^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\\
 \boldsymbol{v}= & V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=V^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\mathfrak{W}=\left\{ \boldsymbol{w}_{{\scriptscriptstyle j}}\right\} \\
+\mathfrak{W}^{\prime}=\left\{ \boldsymbol{w}_{{\scriptscriptstyle j}}^{\prime}\right\} 
+\end{cases}
+\]
 
 \end_inset
 
@@ -1277,9 +1299,52 @@ T^{\prime}= & W^{\prime{\scriptscriptstyle -1}}WTV^{{\scriptscriptstyle -1}}V^{\
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
 T^{\prime}=W^{\prime{\scriptscriptstyle -1}}WTV^{{\scriptscriptstyle -1}}V^{\prime}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Chebyshev polynomial
+\begin_inset Formula 
+\[
+\mathfrak{C}^{3}=\mathfrak{C}^{4-1}=\left\{ 1,x,2x^{2}-1,4x^{3}-3x\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathfrak{C}^{2}=\mathfrak{C}^{3-1}=\left\{ 1,x,2x^{2}-1\right\} 
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Hermite polynomial
+\begin_inset Formula 
+\[
+\mathfrak{H}^{3}=\mathfrak{H}^{4-1}=\left\{ 1,x,x^{2}-1,x^{3}-3x\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathfrak{H}^{2}=\mathfrak{H}^{3-1}=\left\{ 1,x,x^{2}-1\right\} 
 \]
 
 \end_inset
