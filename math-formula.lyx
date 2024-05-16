@@ -97,6 +97,1197 @@
 \begin_body
 
 \begin_layout Standard
+coordinate
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}= & v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+v^{{\scriptscriptstyle 2}}\boldsymbol{v}_{{\scriptscriptstyle 2}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+= & v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+= & c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=c_{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+\cdots+c_{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=B\boldsymbol{c}=B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+= & e^{{\scriptscriptstyle 1}}\hat{\boldsymbol{\beta}}_{{\scriptscriptstyle 1}}+\cdots+e^{{\scriptscriptstyle n}}\hat{\boldsymbol{\beta}}_{{\scriptscriptstyle n}}=e_{{\scriptscriptstyle 1}}\hat{\boldsymbol{\beta}}_{{\scriptscriptstyle 1}}+\cdots+e_{{\scriptscriptstyle n}}\hat{\boldsymbol{\beta}}_{{\scriptscriptstyle n}}\\
+= & e^{{\scriptscriptstyle 1}}\hat{\boldsymbol{e}}_{{\scriptscriptstyle 1}}+\cdots+e^{{\scriptscriptstyle n}}\hat{\boldsymbol{e}}_{{\scriptscriptstyle n}}=e_{{\scriptscriptstyle 1}}\hat{\boldsymbol{e}}_{{\scriptscriptstyle 1}}+\cdots+e_{{\scriptscriptstyle n}}\hat{\boldsymbol{e}}_{{\scriptscriptstyle n}}\\
+\overset{\text{e.g.}}{=} & e^{{\scriptscriptstyle 1}}\begin{pmatrix}1\\
+\vdots\\
+0\\
+\vdots\\
+0
+\end{pmatrix}_{{\scriptscriptstyle n\times1}}+\cdots+e^{{\scriptscriptstyle n}}\begin{pmatrix}0\\
+\vdots\\
+0\\
+\vdots\\
+1
+\end{pmatrix}_{{\scriptscriptstyle n\times1}}=e_{{\scriptscriptstyle 1}}\begin{pmatrix}1\\
+\vdots\\
+0\\
+\vdots\\
+0
+\end{pmatrix}+\cdots+e_{{\scriptscriptstyle n}}\begin{pmatrix}0\\
+\vdots\\
+0\\
+\vdots\\
+1
+\end{pmatrix}\\
+= & \begin{pmatrix}1 & \cdots & 0 & \cdots & 0\\
+\vdots & \ddots & \vdots & \ddots & \vdots\\
+0 & \cdots & 1 & \cdots & 0\\
+\vdots & \ddots & \vdots & \ddots & \vdots\\
+0 & \cdots & 0 & \cdots & 1
+\end{pmatrix}_{{\scriptscriptstyle n\times n}}\begin{pmatrix}e^{{\scriptscriptstyle 1}}\\
+\vdots\\
+e^{{\scriptscriptstyle j}}\\
+\vdots\\
+e^{{\scriptscriptstyle n}}
+\end{pmatrix}_{{\scriptscriptstyle n\times1}}=I_{{\scriptscriptstyle n\times n}}\boldsymbol{e}=I\boldsymbol{e}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+B\boldsymbol{c}= & c^{{\scriptscriptstyle 1}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{pmatrix}+\cdots+c^{{\scriptscriptstyle j}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle j}}\\
+|
+\end{pmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{pmatrix}=\begin{pmatrix}| &  & | &  & |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle j}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &  & | &  & |
+\end{pmatrix}\begin{pmatrix}c^{{\scriptscriptstyle 1}}\\
+\vdots\\
+c^{{\scriptscriptstyle j}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{pmatrix}\\
+= & c^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+c^{{\scriptscriptstyle j}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle j}}\\
+|
+\end{bmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & | &  & |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle j}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &  & | &  & |
+\end{bmatrix}\begin{bmatrix}c^{{\scriptscriptstyle 1}}\\
+\vdots\\
+c^{{\scriptscriptstyle j}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+= & c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+c^{{\scriptscriptstyle 2}}\boldsymbol{\beta}_{{\scriptscriptstyle 2}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=c^{{\scriptscriptstyle 1}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{pmatrix}+c^{{\scriptscriptstyle 2}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 2}}\\
+|
+\end{pmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{pmatrix}=\begin{pmatrix}| & | &  & |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} & \boldsymbol{\beta}_{{\scriptscriptstyle 2}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| & | &  & |
+\end{pmatrix}\begin{pmatrix}c^{{\scriptscriptstyle 1}}\\
+c^{{\scriptscriptstyle 2}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{pmatrix}\\
+= & c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+c^{{\scriptscriptstyle 2}}\boldsymbol{\beta}_{{\scriptscriptstyle 2}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=c^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+c^{{\scriptscriptstyle 2}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 2}}\\
+|
+\end{bmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| & | &  & |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} & \boldsymbol{\beta}_{{\scriptscriptstyle 2}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| & | &  & |
+\end{bmatrix}\begin{bmatrix}c^{{\scriptscriptstyle 1}}\\
+c^{{\scriptscriptstyle 2}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+= & c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=c^{{\scriptscriptstyle 1}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{pmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{pmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{pmatrix}=\begin{pmatrix}| &  & |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{pmatrix}\begin{pmatrix}c^{{\scriptscriptstyle 1}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{pmatrix}=B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+= & c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}=c^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+c^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}c^{{\scriptscriptstyle 1}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+B= & \begin{pmatrix}| &  & | &  & |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle j}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &  & | &  & |
+\end{pmatrix}=\begin{bmatrix}| &  & | &  & |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle j}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &  & | &  & |
+\end{bmatrix}=\begin{bmatrix}| & | &  & |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} & \boldsymbol{\beta}_{{\scriptscriptstyle 2}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| & | &  & |
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{\beta}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{\beta}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= & \boldsymbol{c}=\begin{bmatrix}c^{{\scriptscriptstyle 1}}\\
+\vdots\\
+c^{{\scriptscriptstyle n}}
+\end{bmatrix}=\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}\in F^{n}\in\left\{ \mathbb{R}^{n},\mathbb{C}^{n},\cdots\right\} 
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}=B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}= & B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+B^{-1}\boldsymbol{v}= & B^{-1}B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=I\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= & B^{-1}\boldsymbol{v}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=B^{-1}\boldsymbol{v}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=B^{-1}\boldsymbol{v}\in\in F^{n}\in\left\{ \mathbb{R}^{n},\mathbb{C}^{n},\cdots\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}=B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= & B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=I\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=B^{-1}B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= & B^{-1}B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}= & B^{-1}B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}\\
+B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}= & B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}=I\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}=B^{\prime-1}B^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}= & B^{\prime-1}B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B^{\prime}}}= & B^{\prime-1}B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+linear transformation
+\begin_inset Formula 
+\[
+\mathcal{B}=\left\{ \boldsymbol{\beta}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{\beta}_{{\scriptscriptstyle n}}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boldsymbol{v}=B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle B}}=c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T:V\rightarrow W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V\overset{T}{\rightarrow}W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}\in V\overset{T}{\rightarrow}W\ni\boldsymbol{w}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}\in V\overset{T}{\rightarrow}W\ni\boldsymbol{w}=T\left(\boldsymbol{v}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{cases}
+T\left(\boldsymbol{u}+\lambda\boldsymbol{v}\right)=T\left(\boldsymbol{u}\right)+\lambda T\left(\boldsymbol{v}\right) & \left(l\right)\text{linear transformation}\end{cases}\\
+\Leftrightarrow & \begin{cases}
+T\left(\boldsymbol{u}+\boldsymbol{v}\right)=T\left(\boldsymbol{u}\right)+T\left(\boldsymbol{v}\right) & \left(a\right)\text{additivity}\\
+T\left(\lambda\boldsymbol{v}\right)=\lambda T\left(\boldsymbol{v}\right) & \left(h\right)\text{homogeneity}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{w}=T\left(\boldsymbol{v}\right)= & T\left(c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}+\cdots+c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}\right)\\
+\overset{\left(a\right)}{=} & T\left(c^{{\scriptscriptstyle 1}}\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\right)+\cdots+T\left(c^{{\scriptscriptstyle n}}\boldsymbol{\beta}_{{\scriptscriptstyle n}}\right)\\
+\overset{\left(h\right)}{=} & c^{{\scriptscriptstyle 1}}T\left(\boldsymbol{\beta}_{{\scriptscriptstyle 1}}\right)+\cdots+c^{{\scriptscriptstyle n}}T\left(\boldsymbol{\beta}_{{\scriptscriptstyle n}}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathcal{G}=\left\{ \boldsymbol{\gamma}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{\gamma}_{{\scriptscriptstyle m}}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T\left(\boldsymbol{v}\right)=\boldsymbol{w}= & d^{{\scriptscriptstyle 1}}\boldsymbol{\gamma}_{{\scriptscriptstyle 1}}+\cdots+d^{{\scriptscriptstyle m}}\boldsymbol{\gamma}_{{\scriptscriptstyle m}}\\
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}= & v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}=v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}=\sum_{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\\
+= & v^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+v^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}=V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+, & \begin{cases}
+V=\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix},\mathfrak{V}=\left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j}=1}^{{\scriptscriptstyle n}}=\left\{ \boldsymbol{v}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{v}_{{\scriptscriptstyle n}}\right\} \\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}\in F^{n}\in\left\{ \mathbb{R}^{n},\mathbb{C}^{n},\cdots\right\} 
+\end{cases}\overset{\text{if }V\text{ invertible}}{\implies}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=V^{-1}\boldsymbol{v}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\backslash\text{mathfrak}V=\mathfrak{V}\text{ vs.}\backslash\text{mathfrak}B=\mathfrak{B}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \boldsymbol{v}\in\mathcal{V}\overset{T}{\rightarrow}\mathcal{W}\ni\boldsymbol{w}=T\left(\boldsymbol{v}\right)\\
+ & ,T:\mathcal{V}\rightarrow\mathcal{W}\begin{cases}
+T\left(\boldsymbol{u}+\boldsymbol{v}\right)=T\left(\boldsymbol{u}\right)+T\left(\boldsymbol{v}\right) & \left(a\right)\text{additivity}\\
+T\left(\lambda\boldsymbol{v}\right)=\lambda T\left(\boldsymbol{v}\right) & \left(h\right)\text{homogeneity}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{w}=T\left(\boldsymbol{v}\right)= & T\left(v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\overset{\left(a\right)}{=}T\left(v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)+\cdots+T\left(v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\overset{\left(h\right)}{=}v^{{\scriptscriptstyle 1}}T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)+\cdots+v^{{\scriptscriptstyle n}}T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+= & v^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\\
+|
+\end{bmatrix}+\cdots+v^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{w}=T\left(\boldsymbol{v}\right)=\begin{bmatrix}| &  & |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=T\left(V\right)\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}},T\left(V\right)=\begin{bmatrix}| &  & |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{w}=T\left(\boldsymbol{v}\right)\overset{\boldsymbol{v}=V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}}{=}T\left(V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\right)\overset{T\text{ linear}}{=}T\left(V\right)\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T\left(\boldsymbol{v}\right)=\boldsymbol{w}= & w^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+w^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=w^{{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}=\sum_{j=1}^{m}w^{{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}\\
+= & w^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+w^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}w^{{\scriptscriptstyle 1}}\\
+\vdots\\
+w^{{\scriptscriptstyle m}}
+\end{bmatrix}=W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}\overset{\boldsymbol{w}=T\left(\boldsymbol{v}\right)}{=}W\left[T\left(\boldsymbol{v}\right)\right]_{{\scriptscriptstyle W}}\\
+, & \begin{cases}
+W=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix},\mathfrak{W}=\left\{ \boldsymbol{w}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j}=1}^{{\scriptscriptstyle m}}=\left\{ \boldsymbol{w}_{{\scriptscriptstyle 1}},\cdots,\boldsymbol{w}_{{\scriptscriptstyle m}}\right\} \\
+\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=\begin{bmatrix}w^{{\scriptscriptstyle 1}}\\
+\vdots\\
+w^{{\scriptscriptstyle m}}
+\end{bmatrix}\in F^{m}\in\left\{ \mathbb{R}^{m},\mathbb{C}^{m},\cdots\right\} 
+\end{cases}\overset{\text{if }W\text{ invertible}}{\implies}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=W^{-1}\boldsymbol{w}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\backslash\text{mathfrak}W=\mathfrak{W}\text{ vs.}\backslash\text{mathfrak}V=\mathfrak{V}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)= & t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}\\
+= & \begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}|\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}}\\
+|
+\end{bmatrix}=W\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}}\\
+\vdots\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)= & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}\\
+= & \begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}|\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+|
+\end{bmatrix}=W\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T\left(V\right)=\begin{bmatrix}| &  & |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}= & \begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}}
+\end{bmatrix} & \cdots & \begin{bmatrix}t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots & \ddots & \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}\\
+= & \begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}| &  & |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} & \cdots & \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &  & |
+\end{bmatrix}=WT\\
+, & \begin{cases}
+W=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\\
+T=\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots & \ddots & \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} & \cdots & \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &  & |
+\end{bmatrix}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T\left(V\right)=\begin{bmatrix}| &  & |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}=WT,\begin{cases}
+W=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\\
+T=\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots & \ddots & \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} & \cdots & \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &  & |
+\end{bmatrix}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T=\begin{bmatrix}| &  & |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} & \cdots & \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &  & |
+\end{bmatrix}\overset{V=\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}}{=}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}= & W^{{\scriptscriptstyle -1}}T\left(V\right)=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}^{{\scriptscriptstyle -1}}T\left(V\right),\text{if }W\text{ invertible}\\
+= & \begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}^{{\scriptscriptstyle -1}}T\left(\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\right)\\
+= & \begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}^{{\scriptscriptstyle -1}}\begin{bmatrix}| &  & |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}\\
+= & W^{{\scriptscriptstyle -1}}\begin{bmatrix}| &  & |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+W^{{\scriptscriptstyle -1}}T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & W^{{\scriptscriptstyle -1}}T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}\\
+= & \begin{bmatrix}| &  & |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} & \cdots & \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &  & |
+\end{bmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}^{{\scriptscriptstyle -1}}\begin{bmatrix}| &  & |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}=W^{{\scriptscriptstyle -1}}T\left(V\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T= & \begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots & \ddots & \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} & \cdots & \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &  & |
+\end{bmatrix}=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\\
+= & \begin{bmatrix}| &  & |\\
+\boldsymbol{t}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{t}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} & \cdots & \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &  & |
+\end{bmatrix},\boldsymbol{t}_{{\scriptscriptstyle j}}=\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\right]_{{\scriptscriptstyle W}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=\boldsymbol{w}=T\left(\boldsymbol{v}\right)= & T\left(V\right)\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{T\left(V\right)=WT}{=}WT\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=W\left(T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\right)\\
+W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}= & W\left(T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\right)\\
+\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=I\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=W^{{\scriptscriptstyle -1}}W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}= & W^{{\scriptscriptstyle -1}}W\left(T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\right)=IT\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}},\text{if }W\text{ invertible}\\
+\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}= & T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\left[T\left(\boldsymbol{v}\right)\right]_{{\scriptscriptstyle W}}\overset{\boldsymbol{w}=T\left(\boldsymbol{v}\right)}{=}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}= & T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\left[T\left(\boldsymbol{v}\right)\right]_{{\scriptscriptstyle W}}= & T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{T=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}}{=}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}= & T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+=\left[T\left(\boldsymbol{v}\right)\right]_{{\scriptscriptstyle W}}= & \left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T=\begin{bmatrix}| &  & |\\
+\boldsymbol{t}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{t}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}= & \begin{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}}
+\end{bmatrix} & \cdots & \begin{bmatrix}t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}\end{bmatrix}=\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots & \ddots & \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix},\begin{array}{c}
+\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=T\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\Updownarrow\\
+w^{{\scriptscriptstyle i}}=t_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}
+\end{array}\\
+= & \begin{bmatrix}\begin{bmatrix}t^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+t^{{\scriptscriptstyle m}}{}_{{\scriptscriptstyle 1}}
+\end{bmatrix} & \cdots & \begin{bmatrix}t^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle n}}\\
+\vdots\\
+t^{{\scriptscriptstyle m}}{}_{{\scriptscriptstyle n}}
+\end{bmatrix}\end{bmatrix}=\begin{bmatrix}t^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle 1}} & \cdots & t^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle n}}\\
+\vdots & \ddots & \vdots\\
+t^{{\scriptscriptstyle m}}{}_{{\scriptscriptstyle 1}} & \cdots & t^{{\scriptscriptstyle m}}{}_{{\scriptscriptstyle n}}
+\end{bmatrix}=\left[t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\right]_{{\scriptscriptstyle m\times n}}=\left[t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\right]=t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+= & \begin{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 11}}\\
+\vdots\\
+t_{{\scriptscriptstyle m1}}
+\end{bmatrix} & \cdots & \begin{bmatrix}t_{{\scriptscriptstyle 1n}}\\
+\vdots\\
+t_{{\scriptscriptstyle mn}}
+\end{bmatrix}\end{bmatrix}=\begin{bmatrix}t_{{\scriptscriptstyle 11}} & \cdots & t_{{\scriptscriptstyle 1n}}\\
+\vdots & \ddots & \vdots\\
+t_{{\scriptscriptstyle m1}} & \cdots & t_{{\scriptscriptstyle mn}}
+\end{bmatrix}=\left[t_{{\scriptscriptstyle ij}}\right]_{{\scriptscriptstyle m\times n}}=\left[t_{{\scriptscriptstyle ij}}\right]=t_{{\scriptscriptstyle ij}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)= & t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}}
+\end{bmatrix}\\
+= & W\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}}\\
+\vdots\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)= & t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}
+\end{bmatrix}\\
+= & W\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+\Downarrow\\
+\begin{bmatrix}| &  & |\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}= & \begin{array}{c}
+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}
+\end{array}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}\begin{array}{c}
++\\
+\\
++
+\end{array}\begin{array}{c}
+\cdots\\
+\curvearrowright\\
+\cdots
+\end{array}\begin{array}{c}
++\\
+\\
++
+\end{array}\begin{array}{c}
+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}}\\
+\vdots\\
+t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}
+\end{array}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}\\
+= & \begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}} & \cdots & t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}\\
+\vdots & \ddots & \vdots\\
+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}} & \cdots & t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}| &  & |\\
+\boldsymbol{t}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{t}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}=WT\\
+= & \begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}| &  & |\\
+\left[T\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)\right]_{{\scriptscriptstyle W}} & \cdots & \left[T\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\right]_{{\scriptscriptstyle W}}\\
+| &  & |
+\end{bmatrix}=W\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\\
+T\left(V\right)= & WT=W\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+WT= & T\left(V\right)\\
+\Downarrow\\
+T= & W^{{\scriptscriptstyle -1}}T\left(V\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T=\begin{bmatrix}t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle 1}} & \cdots & t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle 1}}\\
+\vdots & \ddots & \vdots\\
+t_{{\scriptscriptstyle 1}}{}^{{\scriptscriptstyle m}} & \cdots & t_{{\scriptscriptstyle n}}{}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle 1}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle 1}}\\
+\vdots & \ddots & \vdots\\
+t_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle m}} & \cdots & t_{{\scriptscriptstyle n}}^{{\scriptscriptstyle m}}
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{t}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{t}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}=\left[t_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}\right]_{{\scriptscriptstyle m\times n}}=\left[t_{{\scriptscriptstyle j}}{}^{{\scriptscriptstyle i}}\right]_{{\scriptscriptstyle m\times n}}=t_{{\scriptscriptstyle j}}{}^{{\scriptscriptstyle i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[t_{{\scriptscriptstyle j}}{}^{{\scriptscriptstyle i}}\right]_{{\scriptscriptstyle m\times n}}=\left[t_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}\right]_{{\scriptscriptstyle m\times n}}=\left[t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\right]_{{\scriptscriptstyle m\times n}},\begin{cases}
+w^{{\scriptscriptstyle i}}=t_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\\
+T\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=t_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}\boldsymbol{w}_{{\scriptscriptstyle i}}=t_{{\scriptscriptstyle j}}{}^{{\scriptscriptstyle i}}\boldsymbol{w}_{{\scriptscriptstyle i}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T=\left[t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\right]_{{\scriptscriptstyle m\times n}}=t^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\text{ is the matrix representation of the linear transformation }T\left(\cdot\right):\mathcal{V}\rightarrow\mathcal{W}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+change of basis
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}= & v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}=v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}=\sum_{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}=v^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+v^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}=V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+= & v^{\prime{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}+\cdots+v^{\prime{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}=v^{\prime{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}^{\prime}=\sum_{j=1}^{n}v^{\prime{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}^{\prime}=v^{\prime{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}\\
+|
+\end{bmatrix}+\cdots+v^{\prime{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}v^{\prime{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{\prime{\scriptscriptstyle n}}
+\end{bmatrix}=V^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+\boldsymbol{v}= & V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=V^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{w}= & w^{{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}+\cdots+w^{{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}=w^{{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}=\sum_{j=1}^{m}w^{{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}=w^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+w^{{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}w^{{\scriptscriptstyle 1}}\\
+\vdots\\
+w^{{\scriptscriptstyle m}}
+\end{bmatrix}=W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}\\
+= & w^{\prime{\scriptscriptstyle 1}}\boldsymbol{w}_{{\scriptscriptstyle 1}}^{\prime}+\cdots+w^{\prime{\scriptscriptstyle m}}\boldsymbol{w}_{{\scriptscriptstyle m}}^{\prime}=w^{\prime{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}^{\prime}=\sum_{j=1}^{m}w^{\prime{\scriptscriptstyle j}}\boldsymbol{w}_{{\scriptscriptstyle j}}^{\prime}=w^{\prime{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}^{\prime}\\
+|
+\end{bmatrix}+\cdots+w^{\prime{\scriptscriptstyle m}}\begin{bmatrix}|\\
+\boldsymbol{w}_{{\scriptscriptstyle m}}^{\prime}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{w}_{{\scriptscriptstyle 1}}^{\prime} & \cdots & \boldsymbol{w}_{{\scriptscriptstyle m}}^{\prime}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}w^{\prime{\scriptscriptstyle 1}}\\
+\vdots\\
+w^{\prime{\scriptscriptstyle m}}
+\end{bmatrix}=W^{\prime}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W^{\prime}}}\\
+\boldsymbol{w}= & W\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}=W^{\prime}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W^{\prime}}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}_{{\scriptscriptstyle 1}}= & v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}+\cdots+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}=v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}\\
+|
+\end{bmatrix}+\cdots+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}}
+\end{bmatrix}=V^{\prime}\left[\boldsymbol{v}_{{\scriptscriptstyle 1}}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}= & v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}+\cdots+v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}=v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}\\
+|
+\end{bmatrix}+\cdots+v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+|
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}}\\
+\vdots\\
+v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle n}}
+\end{bmatrix}=V^{\prime}\left[\boldsymbol{v}_{{\scriptscriptstyle n}}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+\Downarrow\\
+\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}= & \begin{array}{c}
+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle 1}}
+\end{array}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime}\\
+|
+\end{bmatrix}\begin{array}{c}
++\\
+\\
++
+\end{array}\begin{array}{c}
+\cdots\\
+\curvearrowright\\
+\cdots
+\end{array}\begin{array}{c}
++\\
+\\
++
+\end{array}\begin{array}{c}
+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}}\\
+\vdots\\
+v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle n}}
+\end{array}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+|
+\end{bmatrix}\\
+= & \begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle 1}} & \cdots & v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle 1}}\\
+\vdots & \ddots & \vdots\\
+v_{{\scriptscriptstyle 1}}^{\prime}{}^{{\scriptscriptstyle n}} & \cdots & v_{{\scriptscriptstyle n}}^{\prime}{}^{{\scriptscriptstyle n}}
+\end{bmatrix}=\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}^{\prime} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}^{\prime}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}| &  & |\\
+\left[\boldsymbol{v}_{{\scriptscriptstyle 1}}\right]_{{\scriptscriptstyle V^{\prime}}} & \cdots & \left[\boldsymbol{v}_{{\scriptscriptstyle n}}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+| &  & |
+\end{bmatrix}=V^{\prime}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\\
+V= & V^{\prime}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\overset{\text{if }V^{\prime}\text{ invertible}}{\Longleftrightarrow}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}=V^{\prime{\scriptscriptstyle -1}}V
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[V\right]_{{\scriptscriptstyle V^{\prime}}}=V^{\prime{\scriptscriptstyle -1}}V:\left[V^{\prime}\middle|V\right]\overset{\text{Gauss-Jordan delimination}}{\longrightarrow}\left[I\middle|V^{\prime{\scriptscriptstyle -1}}V\right]=\left[I\middle|\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[V^{\prime}\right]_{{\scriptscriptstyle V}}=V^{{\scriptscriptstyle -1}}V^{\prime}:\left[V\middle|V^{\prime}\right]\overset{\text{Gauss-Jordan delimination}}{\longrightarrow}\left[I\middle|V^{{\scriptscriptstyle -1}}V^{\prime}\right]=\left[I\middle|\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\left[V\right]_{{\scriptscriptstyle V^{\prime}}}=V^{\prime{\scriptscriptstyle -1}}V: & \left[V^{\prime}\middle|V\right]\overset{\text{Gauss-Jordan delimination}}{\longrightarrow}\left[I\middle|V^{\prime{\scriptscriptstyle -1}}V\right]=\left[I\middle|\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\right]\\
+\left[V^{\prime}\right]_{{\scriptscriptstyle V}}=V^{{\scriptscriptstyle -1}}V^{\prime}: & \left[V\middle|V^{\prime}\right]\overset{\text{Gauss-Jordan delimination}}{\longrightarrow}\left[I\middle|V^{{\scriptscriptstyle -1}}V^{\prime}\right]=\left[I\middle|\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\right]
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{v}= & V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=V^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+= & V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}},\wedge V=V^{\prime}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\\
+= & V^{\prime}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+V^{\prime}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= & V^{\prime}\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= & \left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}=\left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\rightleftharpoons\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{\left[V\right]_{{\scriptscriptstyle V^{\prime}}}}{\rightarrow}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= & \left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{\left[V^{\prime}\right]_{{\scriptscriptstyle V}}}{\leftarrow}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= & \left[V^{\prime}\right]_{{\scriptscriptstyle V}}^{{\scriptscriptstyle -1}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\Downarrow\\
+\left[V\right]_{{\scriptscriptstyle V^{\prime}}}= & \left[V^{\prime}\right]_{{\scriptscriptstyle V}}^{{\scriptscriptstyle -1}}\Leftrightarrow\left[V^{\prime}\right]_{{\scriptscriptstyle V}}=\left[V\right]_{{\scriptscriptstyle V^{\prime}}}^{{\scriptscriptstyle -1}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\rightarrow\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{\left[V\right]_{{\scriptscriptstyle V^{\prime}}}}{\rightarrow}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= & \left[V\right]_{{\scriptscriptstyle V^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{V}{\rightarrow}\boldsymbol{v}\overset{V^{\prime{\scriptscriptstyle -1}}}{\rightarrow}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}= & V^{\prime{\scriptscriptstyle -1}}V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+\Downarrow\\
+\left[V\right]_{{\scriptscriptstyle V^{\prime}}}= & V^{\prime{\scriptscriptstyle -1}}V\overset{\left[V^{\prime}\right]_{{\scriptscriptstyle V}}=\left[V\right]_{{\scriptscriptstyle V^{\prime}}}^{{\scriptscriptstyle -1}}}{\Longleftrightarrow}\left[V^{\prime}\right]_{{\scriptscriptstyle V}}=\left(V^{\prime{\scriptscriptstyle -1}}V\right)^{{\scriptscriptstyle -1}}=V^{{\scriptscriptstyle -1}}V^{\prime}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\rightarrow\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W^{\prime}}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\overset{T^{\prime}=\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}}{\rightarrow}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W^{\prime}}}= & \left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\overset{\left[V^{\prime}\right]_{{\scriptscriptstyle V}}}{\rightarrow}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\overset{T=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}}{\rightarrow}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W}}\overset{\left[W\right]_{{\scriptscriptstyle W^{\prime}}}}{\rightarrow}\left[\boldsymbol{w}\right]_{{\scriptscriptstyle W^{\prime}}}= & \left[W\right]_{{\scriptscriptstyle W^{\prime}}}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}\\
+\Downarrow\\
+\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}= & \left[W\right]_{{\scriptscriptstyle W^{\prime}}}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\\
+= & W^{\prime{\scriptscriptstyle -1}}W\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}V^{{\scriptscriptstyle -1}}V^{\prime}\\
+= & W^{\prime{\scriptscriptstyle -1}}WW^{{\scriptscriptstyle -1}}T\left(V\right)V^{{\scriptscriptstyle -1}}V^{\prime}\\
+= & W^{\prime{\scriptscriptstyle -1}}IT\left(V\right)V^{{\scriptscriptstyle -1}}V^{\prime}\\
+= & W^{\prime{\scriptscriptstyle -1}}T\left(V\right)V^{{\scriptscriptstyle -1}}V^{\prime}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}\rightleftharpoons\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}=\left[W\right]_{{\scriptscriptstyle W^{\prime}}}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[V^{\prime}\right]_{{\scriptscriptstyle V}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}=W^{\prime{\scriptscriptstyle -1}}T\left(V\right)V^{{\scriptscriptstyle -1}}V^{\prime}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+W^{\prime}\left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}= & T\left(V\right)\\
+\Downarrow\\
+\left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}= & W^{\prime{\scriptscriptstyle -1}}T\left(V\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}= & W^{\prime{\scriptscriptstyle -1}}T\left(V\right)V^{{\scriptscriptstyle -1}}V^{\prime}\\
+= & \left\{ W^{\prime{\scriptscriptstyle -1}}T\left(V\right)\right\} \left\{ V^{{\scriptscriptstyle -1}}V^{\prime}\right\} \\
+= & \left\{ \left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}\right\} \left\{ V^{{\scriptscriptstyle -1}}V^{\prime}\right\} \\
+= & \left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}V^{{\scriptscriptstyle -1}}V^{\prime}\\
+, & \begin{cases}
+\left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}=W^{\prime{\scriptscriptstyle -1}}T\left(V\right) & :W^{\prime}\left[T\left(V\right)\right]_{{\scriptscriptstyle W^{\prime}}}=T\left(V\right)\\
+V^{{\scriptscriptstyle -1}}V^{\prime} & :\left[V\middle|V^{\prime}\right]\overset{\text{Gauss-Jordan delimination}}{\longrightarrow}\left[I\middle|V^{{\scriptscriptstyle -1}}V^{\prime}\right]
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $T^{\prime}\rightleftharpoons T$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}= & \left[W\right]_{{\scriptscriptstyle W^{\prime}}}\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\\
+T^{\prime}=\left[T\left(V^{\prime}\right)\right]_{{\scriptscriptstyle W^{\prime}}}\Updownarrow & T=\left[T\left(V\right)\right]_{{\scriptscriptstyle W}}\\
+T^{\prime}= & \left[W\right]_{{\scriptscriptstyle W^{\prime}}}T\left[V^{\prime}\right]_{{\scriptscriptstyle V}}\\
+= & \left[W^{\prime{\scriptscriptstyle -1}}W\right]T\left[V^{{\scriptscriptstyle -1}}V^{\prime}\right]\\
+T^{\prime}= & W^{\prime{\scriptscriptstyle -1}}WTV^{{\scriptscriptstyle -1}}V^{\prime}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T^{\prime}=W^{\prime{\scriptscriptstyle -1}}WTV^{{\scriptscriptstyle -1}}V^{\prime}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 tensor analysis
 \end_layout
 
@@ -165,7 +1356,7 @@ e.g.
  [magnetic] vector potential
 \begin_inset Formula 
 \begin{align*}
-\boldsymbol{A}\left(\boldsymbol{r}\right)=\overrightarrow{A}\left(\overrightarrow{r}\right)= & \boldsymbol{A}\left(\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\right)=\boldsymbol{A}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)=\begin{pmatrix}A_{{\scriptscriptstyle 1}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\\
+\boldsymbol{A}\left(\boldsymbol{r}\right)=\vec{A}\left(\vec{r}\right)= & \boldsymbol{A}\left(\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\right)=\boldsymbol{A}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)=\begin{pmatrix}A_{{\scriptscriptstyle 1}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\\
 A_{{\scriptscriptstyle 2}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\\
 A_{{\scriptscriptstyle 3}}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)
 \end{pmatrix}\\
@@ -216,7 +1407,7 @@ e.g.
  temperature
 \begin_inset Formula 
 \begin{align*}
-T\left(\boldsymbol{r}\right)=T\left(\overrightarrow{r}\right)= & T\left(\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\right)=T\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\\
+T\left(\boldsymbol{r}\right)=T\left(\vec{r}\right)= & T\left(\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\right)=T\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)\\
 = & T\left(\begin{pmatrix}x_{{\scriptscriptstyle 1}}\\
 x_{{\scriptscriptstyle 2}}\\
 x_{{\scriptscriptstyle 3}}
@@ -238,7 +1429,7 @@ or generally
 \begin_layout Standard
 \begin_inset Formula 
 \[
-f\left(\boldsymbol{r}\right)=f\left(\overrightarrow{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)=f\left(\cdots,x_{{\scriptscriptstyle i}},\cdots\right)
+f\left(\boldsymbol{r}\right)=f\left(\vec{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)=f\left(\cdots,x_{{\scriptscriptstyle i}},\cdots\right)
 \]
 
 \end_inset
@@ -251,7 +1442,7 @@ directional derivative
 \begin_inset Formula 
 \begin{align*}
 \nabla_{{\scriptscriptstyle \boldsymbol{V}}}f\left(\boldsymbol{r}\right)= & \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\boldsymbol{r}+\epsilon\boldsymbol{V}\right)-f\left(\boldsymbol{r}\right)}{\epsilon}\\
-=\nabla_{{\scriptscriptstyle \overrightarrow{V}}}f\left(\overrightarrow{r}\right)= & \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\overrightarrow{r}+\epsilon\overrightarrow{V}\right)-f\left(\overrightarrow{r}\right)}{\epsilon}
+=\nabla_{{\scriptscriptstyle \vec{V}}}f\left(\vec{r}\right)= & \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\vec{r}+\epsilon\vec{V}\right)-f\left(\vec{r}\right)}{\epsilon}
 \end{align*}
 
 \end_inset
@@ -267,8 +1458,8 @@ f_{{\scriptscriptstyle x}}\left(\boldsymbol{r}\right)=f^{\prime}\left(x\right)= 
 \dfrac{\partial f}{\partial x} & f=f\left(\cdots,x,\cdots\right)\\
 \dfrac{\mathrm{d}f}{\mathrm{d}x} & f=f\left(x\right)
 \end{cases}\\
-= & \nabla_{{\scriptscriptstyle \frac{\overrightarrow{x}}{\left\Vert \overrightarrow{x}\right\Vert }}}f\left(\overrightarrow{r}\right)=\nabla_{{\scriptscriptstyle \frac{\boldsymbol{x}}{\left\Vert \boldsymbol{x}\right\Vert }}}f\left(\boldsymbol{r}\right)=\nabla_{{\scriptscriptstyle \frac{\overrightarrow{x}}{\left|\overrightarrow{x}\right|}}}f\left(\overrightarrow{r}\right)=\nabla_{{\scriptscriptstyle \frac{\boldsymbol{x}}{\left|\boldsymbol{x}\right|}}}f\left(\boldsymbol{r}\right)\\
-= & \nabla_{{\scriptscriptstyle \hat{x}}}f\left(\overrightarrow{r}\right)=\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}f\left(\boldsymbol{r}\right)=\begin{cases}
+= & \nabla_{{\scriptscriptstyle \frac{\vec{x}}{\left\Vert \vec{x}\right\Vert }}}f\left(\vec{r}\right)=\nabla_{{\scriptscriptstyle \frac{\boldsymbol{x}}{\left\Vert \boldsymbol{x}\right\Vert }}}f\left(\boldsymbol{r}\right)=\nabla_{{\scriptscriptstyle \frac{\vec{x}}{\left|\vec{x}\right|}}}f\left(\vec{r}\right)=\nabla_{{\scriptscriptstyle \frac{\boldsymbol{x}}{\left|\boldsymbol{x}\right|}}}f\left(\boldsymbol{r}\right)\\
+= & \nabla_{{\scriptscriptstyle \hat{x}}}f\left(\vec{r}\right)=\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}f\left(\boldsymbol{r}\right)=\begin{cases}
 \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\boldsymbol{r}+\epsilon\hat{\boldsymbol{x}}\right)-f\left(\boldsymbol{r}\right)}{\epsilon} & f=f\left(\cdots,x,\cdots\right)\\
 \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(x+\epsilon\right)-f\left(x\right)}{\epsilon} & f=f\left(x\right)
 \end{cases}
@@ -289,8 +1480,8 @@ f_{{\scriptscriptstyle x}}\left(\boldsymbol{r}\right)=f^{\prime}\left(x\right)= 
 \begin{align*}
 \mathrm{d}f=\left(\dfrac{\mathrm{d}f}{\mathrm{d}x}\right)\mathrm{d}x=\dfrac{\mathrm{d}f}{\mathrm{d}x}\mathrm{d}x= & \left(\dfrac{\mathrm{d}f}{\mathrm{d}x}\hat{\boldsymbol{x}}\right)\cdot\left(\mathrm{d}x\hat{\boldsymbol{x}}\right)\\
 = & \boldsymbol{\nabla}_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}f\left(\boldsymbol{r}\right)\cdot\mathrm{d}\hat{\boldsymbol{x}}\\
-= & \boldsymbol{\nabla}f\cdot\mathrm{d}\boldsymbol{r}=\overrightarrow{\nabla}f\cdot\mathrm{d}\overrightarrow{r}\\
-\overset{\text{commutative}}{=} & \mathrm{d}\boldsymbol{r}\cdot\boldsymbol{\nabla}f=\mathrm{d}\overrightarrow{r}\cdot\overrightarrow{\nabla}f
+= & \boldsymbol{\nabla}f\cdot\mathrm{d}\boldsymbol{r}=\overrightarrow{\nabla}f\cdot\mathrm{d}\vec{r}\\
+\overset{\text{commutative}}{=} & \mathrm{d}\boldsymbol{r}\cdot\boldsymbol{\nabla}f=\mathrm{d}\vec{r}\cdot\overrightarrow{\nabla}f
 \end{align*}
 
 \end_inset
@@ -298,7 +1489,7 @@ f_{{\scriptscriptstyle x}}\left(\boldsymbol{r}\right)=f^{\prime}\left(x\right)= 
 
 \begin_inset Formula 
 \[
-\mathrm{d}f=\mathrm{d}\boldsymbol{r}\cdot\boldsymbol{\nabla}f=\mathrm{d}\overrightarrow{r}\cdot\overrightarrow{\nabla}f
+\mathrm{d}f=\mathrm{d}\boldsymbol{r}\cdot\boldsymbol{\nabla}f=\mathrm{d}\vec{r}\cdot\overrightarrow{\nabla}f
 \]
 
 \end_inset
@@ -342,7 +1533,7 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 \boldsymbol{\nabla}f=\dfrac{\partial f}{\partial x}\hat{\boldsymbol{x}}+\dfrac{\partial f}{\partial y}\hat{\boldsymbol{y}}= & \dfrac{\partial\sqrt{x^{2}+y^{2}}}{\partial x}\hat{\boldsymbol{x}}+\dfrac{\partial\sqrt{x^{2}+y^{2}}}{\partial y}\hat{\boldsymbol{y}}\\
 \overset{\text{Feynman}}{=} & \dfrac{\frac{1}{2}\cdot2x}{\sqrt{x^{2}+y^{2}}}\hat{\boldsymbol{x}}+\dfrac{\frac{1}{2}\cdot2y}{\sqrt{x^{2}+y^{2}}}\hat{\boldsymbol{y}}\\
 = & \dfrac{x}{\sqrt{x^{2}+y^{2}}}\hat{\boldsymbol{x}}+\dfrac{y}{\sqrt{x^{2}+y^{2}}}\hat{\boldsymbol{y}}\\
-= & \dfrac{x\hat{\boldsymbol{x}}+y\hat{\boldsymbol{y}}}{\sqrt{x^{2}+y^{2}}}=\dfrac{\boldsymbol{r}}{\left|\boldsymbol{r}\right|}=\frac{\boldsymbol{r}}{\left\Vert \boldsymbol{r}\right\Vert }=\frac{\overrightarrow{r}}{\left\Vert \overrightarrow{r}\right\Vert }
+= & \dfrac{x\hat{\boldsymbol{x}}+y\hat{\boldsymbol{y}}}{\sqrt{x^{2}+y^{2}}}=\dfrac{\boldsymbol{r}}{\left|\boldsymbol{r}\right|}=\frac{\boldsymbol{r}}{\left\Vert \boldsymbol{r}\right\Vert }=\frac{\vec{r}}{\left\Vert \vec{r}\right\Vert }
 \end{align*}
 
 \end_inset
@@ -351,7 +1542,7 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 \begin_inset Formula 
 \begin{align*}
 \nabla_{{\scriptscriptstyle \boldsymbol{V}}}f\left(\boldsymbol{r}\right)= & \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\boldsymbol{r}+\epsilon\boldsymbol{V}\right)-f\left(\boldsymbol{r}\right)}{\epsilon}\\
-=\nabla_{{\scriptscriptstyle \overrightarrow{V}}}f\left(\overrightarrow{r}\right)= & \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\overrightarrow{r}+\epsilon\overrightarrow{V}\right)-f\left(\overrightarrow{r}\right)}{\epsilon}
+=\nabla_{{\scriptscriptstyle \vec{V}}}f\left(\vec{r}\right)= & \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\vec{r}+\epsilon\vec{V}\right)-f\left(\vec{r}\right)}{\epsilon}
 \end{align*}
 
 \end_inset
@@ -359,8 +1550,8 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 
 \begin_inset Formula 
 \begin{align*}
-\mathrm{d}f= & \mathrm{d}\boldsymbol{r}\cdot\boldsymbol{\nabla}f=\mathrm{d}\overrightarrow{r}\cdot\overrightarrow{\nabla}f\\
-= & \epsilon\boldsymbol{V}\cdot\boldsymbol{\nabla}f=\epsilon\overrightarrow{V}\cdot\overrightarrow{\nabla}f
+\mathrm{d}f= & \mathrm{d}\boldsymbol{r}\cdot\boldsymbol{\nabla}f=\mathrm{d}\vec{r}\cdot\overrightarrow{\nabla}f\\
+= & \epsilon\boldsymbol{V}\cdot\boldsymbol{\nabla}f=\epsilon\vec{V}\cdot\overrightarrow{\nabla}f
 \end{align*}
 
 \end_inset
@@ -368,7 +1559,7 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 
 \begin_inset Formula 
 \[
-\mathrm{d}f=f\left(\boldsymbol{r}+\epsilon\boldsymbol{V}\right)-f\left(\boldsymbol{r}\right)=f\left(\overrightarrow{r}+\epsilon\overrightarrow{V}\right)-f\left(\overrightarrow{r}\right)
+\mathrm{d}f=f\left(\boldsymbol{r}+\epsilon\boldsymbol{V}\right)-f\left(\boldsymbol{r}\right)=f\left(\vec{r}+\epsilon\vec{V}\right)-f\left(\vec{r}\right)
 \]
 
 \end_inset
@@ -376,13 +1567,13 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 
 \begin_inset Formula 
 \begin{align*}
- & \nabla_{{\scriptscriptstyle \boldsymbol{V}}}f\left(\boldsymbol{r}\right)=\nabla_{{\scriptscriptstyle \overrightarrow{V}}}f\left(\overrightarrow{r}\right)\\
-= & \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\boldsymbol{r}+\epsilon\boldsymbol{V}\right)-f\left(\boldsymbol{r}\right)}{\epsilon}=\lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\overrightarrow{r}+\epsilon\overrightarrow{V}\right)-f\left(\overrightarrow{r}\right)}{\epsilon}\\
+ & \nabla_{{\scriptscriptstyle \boldsymbol{V}}}f\left(\boldsymbol{r}\right)=\nabla_{{\scriptscriptstyle \vec{V}}}f\left(\vec{r}\right)\\
+= & \lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\boldsymbol{r}+\epsilon\boldsymbol{V}\right)-f\left(\boldsymbol{r}\right)}{\epsilon}=\lim\limits _{\epsilon\rightarrow0}\dfrac{f\left(\vec{r}+\epsilon\vec{V}\right)-f\left(\vec{r}\right)}{\epsilon}\\
 = & \lim\limits _{\epsilon\rightarrow0}\dfrac{\mathrm{d}f}{\epsilon}=\lim\limits _{\epsilon\rightarrow0}\dfrac{\mathrm{d}f}{\epsilon}\\
-= & \lim\limits _{\epsilon\rightarrow0}\dfrac{\mathrm{d}\boldsymbol{r}\cdot\boldsymbol{\nabla}f}{\epsilon}=\lim\limits _{\epsilon\rightarrow0}\dfrac{\mathrm{d}\overrightarrow{r}\cdot\overrightarrow{\nabla}f}{\epsilon}\\
-= & \lim\limits _{\epsilon\rightarrow0}\dfrac{\epsilon\boldsymbol{V}\cdot\boldsymbol{\nabla}f}{\epsilon}=\lim\limits _{\epsilon\rightarrow0}\dfrac{\epsilon\overrightarrow{V}\cdot\overrightarrow{\nabla}f}{\epsilon}\\
-= & \lim\limits _{\epsilon\rightarrow0}\dfrac{\boldsymbol{V}\cdot\boldsymbol{\nabla}f}{1}=\lim\limits _{\epsilon\rightarrow0}\dfrac{\overrightarrow{V}\cdot\overrightarrow{\nabla}f}{1}\\
-= & \boldsymbol{V}\cdot\boldsymbol{\nabla}f=\overrightarrow{V}\cdot\overrightarrow{\nabla}f
+= & \lim\limits _{\epsilon\rightarrow0}\dfrac{\mathrm{d}\boldsymbol{r}\cdot\boldsymbol{\nabla}f}{\epsilon}=\lim\limits _{\epsilon\rightarrow0}\dfrac{\mathrm{d}\vec{r}\cdot\overrightarrow{\nabla}f}{\epsilon}\\
+= & \lim\limits _{\epsilon\rightarrow0}\dfrac{\epsilon\boldsymbol{V}\cdot\boldsymbol{\nabla}f}{\epsilon}=\lim\limits _{\epsilon\rightarrow0}\dfrac{\epsilon\vec{V}\cdot\overrightarrow{\nabla}f}{\epsilon}\\
+= & \lim\limits _{\epsilon\rightarrow0}\dfrac{\boldsymbol{V}\cdot\boldsymbol{\nabla}f}{1}=\lim\limits _{\epsilon\rightarrow0}\dfrac{\vec{V}\cdot\overrightarrow{\nabla}f}{1}\\
+= & \boldsymbol{V}\cdot\boldsymbol{\nabla}f=\vec{V}\cdot\overrightarrow{\nabla}f
 \end{align*}
 
 \end_inset
@@ -390,7 +1581,7 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 
 \begin_inset Formula 
 \[
-\nabla_{{\scriptscriptstyle \boldsymbol{V}}}f=\nabla_{{\scriptscriptstyle \boldsymbol{V}}}f\left(\boldsymbol{r}\right)=\boldsymbol{V}\cdot\boldsymbol{\nabla}f=\nabla_{{\scriptscriptstyle \overrightarrow{V}}}f=\nabla_{{\scriptscriptstyle \overrightarrow{V}}}f\left(\overrightarrow{r}\right)=\overrightarrow{V}\cdot\overrightarrow{\nabla}f
+\nabla_{{\scriptscriptstyle \boldsymbol{V}}}f=\nabla_{{\scriptscriptstyle \boldsymbol{V}}}f\left(\boldsymbol{r}\right)=\boldsymbol{V}\cdot\boldsymbol{\nabla}f=\nabla_{{\scriptscriptstyle \vec{V}}}f=\nabla_{{\scriptscriptstyle \vec{V}}}f\left(\vec{r}\right)=\vec{V}\cdot\vec{\nabla}f
 \]
 
 \end_inset
@@ -399,7 +1590,7 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 \begin_inset Formula 
 \begin{align*}
 \nabla_{{\scriptscriptstyle \boldsymbol{V}}}f= & \boldsymbol{V}\cdot\boldsymbol{\nabla}f\\
-=\nabla_{{\scriptscriptstyle \overrightarrow{V}}}f= & \overrightarrow{V}\cdot\overrightarrow{\nabla}f
+=\nabla_{{\scriptscriptstyle \vec{V}}}f= & \vec{V}\cdot\overrightarrow{\nabla}f
 \end{align*}
 
 \end_inset
@@ -415,11 +1606,11 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 
 \begin_inset Formula 
 \begin{align*}
-\boldsymbol{\nabla}f=\overrightarrow{\nabla}f= & \dfrac{\partial f}{\partial x}\hat{\boldsymbol{x}}+\dfrac{\partial f}{\partial y}\hat{\boldsymbol{y}}=\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}f\hat{\boldsymbol{x}}+\nabla_{{\scriptscriptstyle \hat{\boldsymbol{y}}}}f\hat{\boldsymbol{y}}\\
+\boldsymbol{\nabla}f=\vec{\nabla}f= & \dfrac{\partial f}{\partial x}\hat{\boldsymbol{x}}+\dfrac{\partial f}{\partial y}\hat{\boldsymbol{y}}=\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}f\hat{\boldsymbol{x}}+\nabla_{{\scriptscriptstyle \hat{\boldsymbol{y}}}}f\hat{\boldsymbol{y}}\\
 = & \hat{\boldsymbol{x}}\dfrac{\partial f}{\partial x}+\hat{\boldsymbol{y}}\dfrac{\partial f}{\partial y}=\hat{\boldsymbol{x}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}f+\hat{\boldsymbol{y}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{y}}}}f\\
 = & \left(\hat{\boldsymbol{x}}\dfrac{\partial}{\partial x}+\hat{\boldsymbol{y}}\dfrac{\partial}{\partial y}\right)f=\left(\hat{\boldsymbol{x}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}+\hat{\boldsymbol{y}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{y}}}}\right)f\\
 \Downarrow\\
-\boldsymbol{\nabla}=\overrightarrow{\nabla}= & \hat{\boldsymbol{x}}\dfrac{\partial}{\partial x}+\hat{\boldsymbol{y}}\dfrac{\partial}{\partial y}=\hat{\boldsymbol{x}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}+\hat{\boldsymbol{y}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{y}}}}
+\boldsymbol{\nabla}=\vec{\nabla}= & \hat{\boldsymbol{x}}\dfrac{\partial}{\partial x}+\hat{\boldsymbol{y}}\dfrac{\partial}{\partial y}=\hat{\boldsymbol{x}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}+\hat{\boldsymbol{y}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{y}}}}
 \end{align*}
 
 \end_inset
@@ -427,12 +1618,12 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 
 \begin_inset Formula 
 \begin{align*}
-\nabla_{{\scriptscriptstyle \boldsymbol{V}}}f=\nabla_{{\scriptscriptstyle \overrightarrow{V}}}f= & \boldsymbol{V}\cdot\boldsymbol{\nabla}f=\overrightarrow{V}\cdot\overrightarrow{\nabla}f\\
+\nabla_{{\scriptscriptstyle \boldsymbol{V}}}f=\nabla_{{\scriptscriptstyle \vec{V}}}f= & \boldsymbol{V}\cdot\boldsymbol{\nabla}f=\vec{V}\cdot\vec{\nabla}f\\
 = & \left(V_{{\scriptscriptstyle x}}\hat{\boldsymbol{x}}+V_{{\scriptscriptstyle y}}\hat{\boldsymbol{y}}\right)\cdot\left(\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}f\hat{\boldsymbol{x}}+\nabla_{{\scriptscriptstyle \hat{\boldsymbol{y}}}}f\hat{\boldsymbol{y}}\right)\\
 = & V_{{\scriptscriptstyle x}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}f+V_{{\scriptscriptstyle y}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{y}}}}f=\left(V_{{\scriptscriptstyle x}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}+V_{{\scriptscriptstyle y}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{y}}}}\right)f\\
 = & V_{{\scriptscriptstyle x}}\dfrac{\partial f}{\partial x}+V_{{\scriptscriptstyle y}}\dfrac{\partial f}{\partial y}=\left(V_{{\scriptscriptstyle x}}\dfrac{\partial}{\partial x}+V_{{\scriptscriptstyle y}}\dfrac{\partial}{\partial y}\right)f\\
 \Downarrow\\
-\nabla_{{\scriptscriptstyle \boldsymbol{V}}}=\nabla_{{\scriptscriptstyle \overrightarrow{V}}}= & V_{{\scriptscriptstyle x}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}+V_{{\scriptscriptstyle y}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{y}}}}=V_{{\scriptscriptstyle x}}\dfrac{\partial}{\partial x}+V_{{\scriptscriptstyle y}}\dfrac{\partial}{\partial y}
+\nabla_{{\scriptscriptstyle \boldsymbol{V}}}=\nabla_{{\scriptscriptstyle \vec{V}}}= & V_{{\scriptscriptstyle x}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{x}}}}+V_{{\scriptscriptstyle y}}\nabla_{{\scriptscriptstyle \hat{\boldsymbol{y}}}}=V_{{\scriptscriptstyle x}}\dfrac{\partial}{\partial x}+V_{{\scriptscriptstyle y}}\dfrac{\partial}{\partial y}
 \end{align*}
 
 \end_inset
@@ -440,7 +1631,7 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 
 \begin_inset Formula 
 \begin{align*}
-\nabla_{{\scriptscriptstyle \boldsymbol{V}}}\left(fg\right)= & \nabla_{{\scriptscriptstyle \overrightarrow{V}}}\left(fg\right)=\boldsymbol{V}\cdot\boldsymbol{\nabla}\left(fg\right)=\overrightarrow{V}\cdot\overrightarrow{\nabla}\left(fg\right)\\
+\nabla_{{\scriptscriptstyle \boldsymbol{V}}}\left(fg\right)= & \nabla_{{\scriptscriptstyle \vec{V}}}\left(fg\right)=\boldsymbol{V}\cdot\boldsymbol{\nabla}\left(fg\right)=\vec{V}\cdot\overrightarrow{\nabla}\left(fg\right)\\
 = & \boldsymbol{V}\cdot\left[\left(\boldsymbol{\nabla}f\right)g+f\boldsymbol{\nabla}g\right]=\boldsymbol{V}\cdot\left[g\boldsymbol{\nabla}f+f\boldsymbol{\nabla}g\right]=\boldsymbol{V}\cdot\left[f\boldsymbol{\nabla}g+g\boldsymbol{\nabla}f\right]\\
 = & f\left(\boldsymbol{V}\cdot\boldsymbol{\nabla}g\right)+g\left(\boldsymbol{V}\cdot\boldsymbol{\nabla}f\right)=g\left(\boldsymbol{V}\cdot\boldsymbol{\nabla}f\right)+f\left(\boldsymbol{V}\cdot\boldsymbol{\nabla}g\right)\\
  & =f\left(\nabla_{{\scriptscriptstyle \boldsymbol{V}}}g\right)+g\left(\nabla_{{\scriptscriptstyle \boldsymbol{V}}}f\right)=g\left(\nabla_{{\scriptscriptstyle \boldsymbol{V}}}f\right)+f\left(\nabla_{{\scriptscriptstyle \boldsymbol{V}}}g\right)\\
@@ -454,7 +1645,7 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 
 \begin_inset Formula 
 \begin{align*}
-\nabla_{{\scriptscriptstyle \boldsymbol{V}}}\left(f+\lambda g\right)= & \nabla_{{\scriptscriptstyle \overrightarrow{V}}}\left(f+\lambda g\right)=\boldsymbol{V}\cdot\boldsymbol{\nabla}\left(f+\lambda g\right)=\overrightarrow{V}\cdot\overrightarrow{\nabla}\left(f+\lambda g\right)\\
+\nabla_{{\scriptscriptstyle \boldsymbol{V}}}\left(f+\lambda g\right)= & \nabla_{{\scriptscriptstyle \vec{V}}}\left(f+\lambda g\right)=\boldsymbol{V}\cdot\boldsymbol{\nabla}\left(f+\lambda g\right)=\vec{V}\cdot\overrightarrow{\nabla}\left(f+\lambda g\right)\\
 = & \boldsymbol{V}\cdot\left[\boldsymbol{\nabla}f+\boldsymbol{\nabla}\left(\lambda g\right)\right]=\boldsymbol{V}\cdot\left[\boldsymbol{\nabla}f+\lambda\boldsymbol{\nabla}g\right]\\
 = & \boldsymbol{V}\cdot\boldsymbol{\nabla}f+\lambda\left(\boldsymbol{V}\cdot\boldsymbol{\nabla}g\right)\\
 = & \nabla_{{\scriptscriptstyle \boldsymbol{V}}}f+\lambda\nabla_{{\scriptscriptstyle \boldsymbol{V}}}g\\
@@ -466,9 +1657,9 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 
 \begin_inset Formula 
 \begin{align*}
-\nabla_{{\scriptscriptstyle \boldsymbol{V}+\lambda\boldsymbol{W}}}f= & \nabla_{{\scriptscriptstyle \overrightarrow{V}+\lambda\overrightarrow{W}}}f=\left(\boldsymbol{V}+\lambda\boldsymbol{W}\right)\cdot\boldsymbol{\nabla}f=\left(\overrightarrow{V}+\lambda\overrightarrow{W}\right)\cdot\overrightarrow{\nabla}f\\
-= & \boldsymbol{V}\cdot\boldsymbol{\nabla}f+\lambda\boldsymbol{W}\cdot\boldsymbol{\nabla}f=\overrightarrow{V}\cdot\overrightarrow{\nabla}f+\lambda\overrightarrow{W}\cdot\overrightarrow{\nabla}f\\
-= & \nabla_{{\scriptscriptstyle \boldsymbol{V}}}f+\lambda\nabla_{{\scriptscriptstyle \boldsymbol{W}}}f=\nabla_{{\scriptscriptstyle \overrightarrow{V}}}f+\lambda\nabla_{{\scriptscriptstyle \overrightarrow{W}}}f\\
+\nabla_{{\scriptscriptstyle \boldsymbol{V}+\lambda\boldsymbol{W}}}f= & \nabla_{{\scriptscriptstyle \vec{V}+\lambda\overrightarrow{W}}}f=\left(\boldsymbol{V}+\lambda\boldsymbol{W}\right)\cdot\boldsymbol{\nabla}f=\left(\vec{V}+\lambda\overrightarrow{W}\right)\cdot\overrightarrow{\nabla}f\\
+= & \boldsymbol{V}\cdot\boldsymbol{\nabla}f+\lambda\boldsymbol{W}\cdot\boldsymbol{\nabla}f=\vec{V}\cdot\overrightarrow{\nabla}f+\lambda\overrightarrow{W}\cdot\overrightarrow{\nabla}f\\
+= & \nabla_{{\scriptscriptstyle \boldsymbol{V}}}f+\lambda\nabla_{{\scriptscriptstyle \boldsymbol{W}}}f=\nabla_{{\scriptscriptstyle \vec{V}}}f+\lambda\nabla_{{\scriptscriptstyle \overrightarrow{W}}}f\\
 \nabla_{{\scriptscriptstyle \boldsymbol{V}+\lambda\boldsymbol{W}}}f= & \nabla_{{\scriptscriptstyle \boldsymbol{V}}}f+\lambda\nabla_{{\scriptscriptstyle \boldsymbol{W}}}f
 \end{align*}
 
@@ -514,7 +1705,7 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 
 \begin_inset Formula 
 \[
-\nabla_{{\scriptscriptstyle \boldsymbol{V}}}\boldsymbol{A}=\nabla_{{\scriptscriptstyle \overrightarrow{V}}}\overrightarrow{A}=\boldsymbol{V}\cdot\boldsymbol{\nabla}\boldsymbol{A}=\overrightarrow{V}\cdot\overrightarrow{\nabla}\overrightarrow{A}
+\nabla_{{\scriptscriptstyle \boldsymbol{V}}}\boldsymbol{A}=\nabla_{{\scriptscriptstyle \vec{V}}}\vec{A}=\boldsymbol{V}\cdot\boldsymbol{\nabla}\boldsymbol{A}=\vec{V}\cdot\overrightarrow{\nabla}\vec{A}
 \]
 
 \end_inset
@@ -522,10 +1713,10 @@ f\left(\boldsymbol{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscript
 
 \begin_inset Formula 
 \begin{align*}
-\nabla_{{\scriptscriptstyle \boldsymbol{V}}}\boldsymbol{A}=\nabla_{{\scriptscriptstyle \overrightarrow{V}}}\overrightarrow{A}= & \boldsymbol{V}\cdot\boldsymbol{\nabla}\boldsymbol{A}=\overrightarrow{V}\cdot\overrightarrow{\nabla}\overrightarrow{A}\\
+\nabla_{{\scriptscriptstyle \boldsymbol{V}}}\boldsymbol{A}=\nabla_{{\scriptscriptstyle \vec{V}}}\vec{A}= & \boldsymbol{V}\cdot\boldsymbol{\nabla}\boldsymbol{A}=\vec{V}\cdot\overrightarrow{\nabla}\vec{A}\\
 = & \left(\hat{\boldsymbol{x}}V_{{\scriptscriptstyle x}}+\hat{\boldsymbol{y}}V_{{\scriptscriptstyle y}}+\hat{\boldsymbol{z}}V_{{\scriptscriptstyle z}}\right)\cdot\left(\hat{\boldsymbol{x}}\dfrac{\partial\boldsymbol{A}}{\partial x}+\hat{\boldsymbol{y}}\dfrac{\partial\boldsymbol{A}}{\partial x}+\hat{\boldsymbol{z}}\dfrac{\partial\boldsymbol{A}}{\partial x}\right)\\
- & =\left(\hat{\boldsymbol{x}}V_{{\scriptscriptstyle x}}+\hat{\boldsymbol{y}}V_{{\scriptscriptstyle y}}+\hat{\boldsymbol{z}}V_{{\scriptscriptstyle z}}\right)\cdot\left(\hat{\boldsymbol{x}}\dfrac{\partial\overrightarrow{A}}{\partial x}+\hat{\boldsymbol{y}}\dfrac{\partial\overrightarrow{A}}{\partial x}+\hat{\boldsymbol{z}}\dfrac{\partial\overrightarrow{A}}{\partial x}\right)\\
-\boldsymbol{\nabla}\boldsymbol{A}=\overrightarrow{\nabla}\overrightarrow{A}= & \hat{\boldsymbol{x}}\dfrac{\partial\boldsymbol{A}}{\partial x}+\hat{\boldsymbol{y}}\dfrac{\partial\boldsymbol{A}}{\partial x}+\hat{\boldsymbol{z}}\dfrac{\partial\boldsymbol{A}}{\partial x}=\hat{\boldsymbol{x}}\dfrac{\partial\overrightarrow{A}}{\partial x}+\hat{\boldsymbol{y}}\dfrac{\partial\overrightarrow{A}}{\partial x}+\hat{\boldsymbol{z}}\dfrac{\partial\overrightarrow{A}}{\partial x}\\
+ & =\left(\hat{\boldsymbol{x}}V_{{\scriptscriptstyle x}}+\hat{\boldsymbol{y}}V_{{\scriptscriptstyle y}}+\hat{\boldsymbol{z}}V_{{\scriptscriptstyle z}}\right)\cdot\left(\hat{\boldsymbol{x}}\dfrac{\partial\vec{A}}{\partial x}+\hat{\boldsymbol{y}}\dfrac{\partial\vec{A}}{\partial x}+\hat{\boldsymbol{z}}\dfrac{\partial\vec{A}}{\partial x}\right)\\
+\boldsymbol{\nabla}\boldsymbol{A}=\vec{\nabla}\vec{A}= & \hat{\boldsymbol{x}}\dfrac{\partial\boldsymbol{A}}{\partial x}+\hat{\boldsymbol{y}}\dfrac{\partial\boldsymbol{A}}{\partial x}+\hat{\boldsymbol{z}}\dfrac{\partial\boldsymbol{A}}{\partial x}=\hat{\boldsymbol{x}}\dfrac{\partial\vec{A}}{\partial x}+\hat{\boldsymbol{y}}\dfrac{\partial\vec{A}}{\partial x}+\hat{\boldsymbol{z}}\dfrac{\partial\vec{A}}{\partial x}\\
 = & \hat{\boldsymbol{x}}\dfrac{\partial\left(\hat{\boldsymbol{x}}A_{{\scriptscriptstyle x}}+\hat{\boldsymbol{y}}A_{{\scriptscriptstyle y}}+\hat{\boldsymbol{z}}A_{{\scriptscriptstyle z}}\right)}{\partial x}\\
 + & \hat{\boldsymbol{y}}\dfrac{\partial\left(\hat{\boldsymbol{x}}A_{{\scriptscriptstyle x}}+\hat{\boldsymbol{y}}A_{{\scriptscriptstyle y}}+\hat{\boldsymbol{z}}A_{{\scriptscriptstyle z}}\right)}{\partial x}\\
 + & \hat{\boldsymbol{z}}\dfrac{\partial\left(\hat{\boldsymbol{x}}A_{{\scriptscriptstyle x}}+\hat{\boldsymbol{y}}A_{{\scriptscriptstyle y}}+\hat{\boldsymbol{z}}A_{{\scriptscriptstyle z}}\right)}{\partial x}\\

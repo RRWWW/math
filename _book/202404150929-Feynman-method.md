@@ -495,10 +495,22 @@ https://www.zhihu.com/question/646881575/answer/3417318090
 
 ***
 
+TaylorCatAlice: Feynman method of integration and residue theorem
+
 https://www.bilibili.com/video/BV1Lj411L79X
 
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1Lj411L79X&autoplay=0"></iframe>
+:::
+
+MatheManiac: complex integral
+
+https://www.youtube.com/watch?v=EyBDtUtyshk&list=PLDcSwjT2BF_UDdkQ3KQjX5SRQ2DLLwv0R&index=11
+
+https://www.youtube.com/watch?v=EyBDtUtyshk
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/EyBDtUtyshk"></iframe>
 :::
 
 ## Feynman method of path integral
