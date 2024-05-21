@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 68: magnetic resonance | math</title>
-  <meta name="description" content="Chapter 68: magnetic resonance | math" />
+  <title>Chapter 87: general relativity | math</title>
+  <meta name="description" content="Chapter 87: general relativity | math" />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 68: magnetic resonance | math" />
+  <meta property="og:title" content="Chapter 87: general relativity | math" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="https://github.com/RRWWW/math/" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 68: magnetic resonance | math" />
+  <meta name="twitter:title" content="Chapter 87: general relativity | math" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="brachistochrone.html"/>
-<link rel="next" href="openmmlab.html"/>
+<link rel="prev" href="pythagorean-theorem.html"/>
+<link rel="next" href="references.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -1321,63 +1321,50 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="magnetic-resonance" class="section level1 hasAnchor" number="68">
-<h1><span class="header-section-number">Chapter 68: </span> magnetic resonance<a href="magnetic-resonance.html#magnetic-resonance" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="nmr" class="section level2 hasAnchor" number="68.1">
-<h2><span class="header-section-number">68.1</span> NMR<a href="magnetic-resonance.html#nmr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="bloch-equation" class="section level3 hasAnchor" number="68.1.1">
-<h3><span class="header-section-number">68.1.1</span> Bloch equation<a href="magnetic-resonance.html#bloch-equation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><a href="https://en.wikipedia.org/wiki/Bloch_equations" class="uri">https://en.wikipedia.org/wiki/Bloch_equations</a></p>
-<p><span class="math display">\[
-\dot{\boldsymbol{M}}=\boldsymbol{M}\times\gamma\boldsymbol{B}-\dfrac{\boldsymbol{M}_{{\scriptscriptstyle xy}}}{T_{{\scriptscriptstyle 2}}}-\dfrac{\boldsymbol{M}_{{\scriptscriptstyle z}}-\boldsymbol{M}_{{\scriptscriptstyle z0}}}{T_{{\scriptscriptstyle 1}}}
-\]</span></p>
-<p><span class="math display">\[
-\begin{aligned}
-\dot{M}_{{\scriptscriptstyle x}}= &amp; \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle x}}-\dfrac{M_{{\scriptscriptstyle x}}}{T_{{\scriptscriptstyle 2}}}\\
-\dot{M}_{{\scriptscriptstyle y}}= &amp; \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle y}}-\dfrac{M_{{\scriptscriptstyle y}}}{T_{{\scriptscriptstyle 2}}}\\
-\dot{M}_{{\scriptscriptstyle z}}= &amp; \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle z}}-\dfrac{M_{{\scriptscriptstyle z}}-M_{{\scriptscriptstyle z0}}}{T_{{\scriptscriptstyle 1}}}
-\end{aligned}
-\]</span></p>
-</div>
-<div id="bloch-torrey-equation" class="section level3 hasAnchor" number="68.1.2">
-<h3><span class="header-section-number">68.1.2</span> Bloch-Torrey equation<a href="magnetic-resonance.html#bloch-torrey-equation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Bloch-Torrey equation = Bloch equation + diffusion term</p>
-<p><a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.104.563" class="uri">https://journals.aps.org/pr/abstract/10.1103/PhysRev.104.563</a> <a href="https://journals.aps.org/pr/pdf/10.1103/PhysRev.104.563" class="uri">https://journals.aps.org/pr/pdf/10.1103/PhysRev.104.563</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Diffusion_MRI#Magnetization_dynamics" class="uri">https://en.wikipedia.org/wiki/Diffusion_MRI#Magnetization_dynamics</a></p>
-<p><a href="https://arxiv.org/abs/1608.02859" class="uri">https://arxiv.org/abs/1608.02859</a> <a href="https://arxiv.org/pdf/1608.02859" class="uri">https://arxiv.org/pdf/1608.02859</a></p>
-<p><span class="math display">\[
-\dot{\boldsymbol{M}}=\boldsymbol{M}\times\gamma\boldsymbol{B}-\dfrac{\boldsymbol{M}_{{\scriptscriptstyle xy}}}{T_{{\scriptscriptstyle 2}}}-\dfrac{\boldsymbol{M}_{{\scriptscriptstyle z}}-\boldsymbol{M}_{{\scriptscriptstyle z0}}}{T_{{\scriptscriptstyle 1}}}+\boldsymbol{\nabla}\cdot D\boldsymbol{\nabla}\boldsymbol{M}
-\]</span></p>
-<p><span class="math display">\[
-\begin{aligned}
-\dot{M}_{{\scriptscriptstyle x}}= &amp; \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle x}}-\dfrac{M_{{\scriptscriptstyle x}}}{T_{{\scriptscriptstyle 2}}}+\boldsymbol{\nabla}\cdot D\boldsymbol{\nabla}\left(M_{{\scriptscriptstyle x}}-M_{{\scriptscriptstyle x0}}\right)\\
-\dot{M}_{{\scriptscriptstyle y}}= &amp; \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle y}}-\dfrac{M_{{\scriptscriptstyle y}}}{T_{{\scriptscriptstyle 2}}}+\boldsymbol{\nabla}\cdot D\boldsymbol{\nabla}\left(M_{{\scriptscriptstyle y}}-M_{{\scriptscriptstyle y0}}\right)\\
-\dot{M}_{{\scriptscriptstyle z}}= &amp; \left(\boldsymbol{M}\times\gamma\boldsymbol{B}\right)_{{\scriptscriptstyle z}}-\dfrac{M_{{\scriptscriptstyle z}}-M_{{\scriptscriptstyle z0}}}{T_{{\scriptscriptstyle 1}}}+\boldsymbol{\nabla}\cdot D\boldsymbol{\nabla}\left(M_{{\scriptscriptstyle z}}-M_{{\scriptscriptstyle z0}}\right)
-\end{aligned}
-\]</span></p>
-</div>
-</div>
-<div id="mri" class="section level2 hasAnchor" number="68.2">
-<h2><span class="header-section-number">68.2</span> MRI<a href="magnetic-resonance.html#mri" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="lin-hsiu-hau" class="section level3 hasAnchor" number="68.2.1">
-<h3><span class="header-section-number">68.2.1</span> Lin, Hsiu-Hau<a href="magnetic-resonance.html#lin-hsiu-hau" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Lin, Hsiu-Hau / Porcupine Lin / Hedgehog Note</p>
-<p><a href="https://www.youtube.com/watch?v=Y-z-1XCu7fE&amp;list=PLS0SUwlYe8czNqxfQq2XWeAHDqT8vYjmC&amp;index=60" class="uri">https://www.youtube.com/watch?v=Y-z-1XCu7fE&amp;list=PLS0SUwlYe8czNqxfQq2XWeAHDqT8vYjmC&amp;index=60</a></p>
+<div id="general-relativity" class="section level1 hasAnchor" number="87">
+<h1><span class="header-section-number">Chapter 87: </span> general relativity<a href="general-relativity.html#general-relativity" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="epicorganism-airoswell-pan-yi-wen-3" class="section level2 hasAnchor" number="87.1">
+<h2><span class="header-section-number">87.1</span> EpicOrganism = AIRoswell = Pan, Yi-Wen<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a><a href="general-relativity.html#epicorganism-airoswell-pan-yi-wen-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="https://space.bilibili.com/14316464/video" class="uri">https://space.bilibili.com/14316464/video</a></p>
+<p><a href="https://www.bilibili.com/video/BV1T5411D7mS" class="uri">https://www.bilibili.com/video/BV1T5411D7mS</a></p>
 <div show-in="html">
-<iframe width="500" height="300" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Y-z-1XCu7fE">
+<iframe width="500" height="300" frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1T5411D7mS&amp;autoplay=0&amp;t=845">
+</iframe>
+</div>
+<p><a href="https://www.bilibili.com/video/BV1QA4y1X7Xk" class="uri">https://www.bilibili.com/video/BV1QA4y1X7Xk</a></p>
+<div show-in="html">
+<iframe width="500" height="300" frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1QA4y1X7Xk&amp;autoplay=0&amp;t=845">
+</iframe>
+</div>
+<p><a href="https://www.bilibili.com/video/BV1K34y1i75w" class="uri">https://www.bilibili.com/video/BV1K34y1i75w</a></p>
+<div show-in="html">
+<iframe width="500" height="300" frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1K34y1i75w&amp;autoplay=0&amp;t=845">
+</iframe>
+</div>
+<p><a href="https://www.bilibili.com/video/BV1ZU411o7xL" class="uri">https://www.bilibili.com/video/BV1ZU411o7xL</a></p>
+<div show-in="html">
+<iframe width="500" height="300" frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1ZU411o7xL&amp;autoplay=0&amp;t=845">
 </iframe>
 </div>
 </div>
-<div id="mri-physics-and-image-creation" class="section level3 hasAnchor" number="68.2.2">
-<h3><span class="header-section-number">68.2.2</span> MRI: Physics and Image Creation<a href="magnetic-resonance.html#mri-physics-and-image-creation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><a href="https://www.youtube.com/playlist?list=PLRaiBmx1XQs5mrhyhzCmZWGHAG4bMlLXj" class="uri">https://www.youtube.com/playlist?list=PLRaiBmx1XQs5mrhyhzCmZWGHAG4bMlLXj</a></p>
-</div>
-<div id="tseng-wen-yih-isaac" class="section level3 hasAnchor" number="68.2.3">
-<h3><span class="header-section-number">68.2.3</span> Tseng, Wen-Yih Isaac<a href="magnetic-resonance.html#tseng-wen-yih-isaac" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><a href="https://www.youtube.com/playlist?list=PLTpF-A8hKVUMRaGE0Zj4WCGJX9BZraFaU" class="uri">https://www.youtube.com/playlist?list=PLTpF-A8hKVUMRaGE0Zj4WCGJX9BZraFaU</a></p>
+<div id="elliot-schneider-1" class="section level2 hasAnchor" number="87.2">
+<h2><span class="header-section-number">87.2</span> Elliot Schneider<a href="general-relativity.html#elliot-schneider-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Elliot Schneider: <a href="https://www.youtube.com/@PhysicswithElliot/playlists">Physics with Elliot</a></li>
+</ul>
 
+<!--
+
+# references {-}
+
+-->
 </div>
 </div>
+<div class="footnotes">
+<hr />
+<ol start="13">
+<li id="fn13"><p><a href="https://www.linkedin.com/in/yiwen-pan-16a90076" class="uri">https://www.linkedin.com/in/yiwen-pan-16a90076</a><a href="general-relativity.html#fnref13" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 <div id="disqus_thread"></div>
 <script>
@@ -1403,8 +1390,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-<a href="brachistochrone.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="openmmlab.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="pythagorean-theorem.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -1435,15 +1422,15 @@ gitbook.start({
 "size": 1
 },
 "edit": {
-"link": "https://github.com/RRWWW/math/edit/main/202404300610-MR.Rmd",
+"link": "https://github.com/RRWWW/math/edit/main/202405211510-general-relativity.Rmd",
 "text": "Edit on GitHub"
 },
 "history": {
-"link": "https://github.com/RRWWW/math/commits/main/202404300610-MR.Rmd",
+"link": "https://github.com/RRWWW/math/commits/main/202405211510-general-relativity.Rmd",
 "text": null
 },
 "view": {
-"link": "https://github.com/RRWWW/math/blob/main/202404300610-MR.Rmd",
+"link": "https://github.com/RRWWW/math/blob/main/202405211510-general-relativity.Rmd",
 "text": null
 },
 "download": [["math.pdf", "PDF"], ["math.docx", "Word DOCX"]],
