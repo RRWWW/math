@@ -74,6 +74,26 @@ https://www.youtube.com/watch?v=9mmUpWw6x-w
 
 ## electromagnetism
 
+[UdiProd](https://www.youtube.com/@udiprod/playlists): [tensor](https://www.youtube.com/playlist?list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j)
+
+https://www.youtube.com/watch?v=YxXyN2ifK8A&list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j&index=1
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/YxXyN2ifK8A"></iframe>
+:::
+
+https://www.youtube.com/watch?v=A95jdIuUUW0&list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j&index=2
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/A95jdIuUUW0"></iframe>
+:::
+
+https://www.youtube.com/watch?v=51ARho2bvQY&list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j&index=3
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/51ARho2bvQY"></iframe>
+:::
+
 https://zhuanlan.zhihu.com/p/680649946
 
 https://www.bilibili.com/video/BV1PV411P7w4

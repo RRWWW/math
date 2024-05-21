@@ -97,6 +97,430 @@
 \begin_body
 
 \begin_layout Standard
+2D transformation
+\end_layout
+
+\begin_layout Standard
+translation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=\boldsymbol{p}+\boldsymbol{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}
+\end{bmatrix}=\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}+\begin{bmatrix}t_{{\scriptscriptstyle x}}\\
+t_{{\scriptscriptstyle y}}
+\end{bmatrix}=\begin{bmatrix}p_{{\scriptscriptstyle x}}+t_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}+t_{{\scriptscriptstyle y}}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+scale
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=s\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}
+\end{bmatrix}=s\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=\begin{bmatrix}sp_{{\scriptscriptstyle x}}\\
+sp_{{\scriptscriptstyle y}}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+non-uniform scale
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}
+\end{bmatrix}=\begin{bmatrix}s_{{\scriptscriptstyle x}}p_{{\scriptscriptstyle x}}\\
+s_{{\scriptscriptstyle y}}p_{{\scriptscriptstyle y}}
+\end{bmatrix}=\begin{bmatrix}s_{{\scriptscriptstyle x}} & 0\\
+0 & s_{{\scriptscriptstyle y}}
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=S\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+rotation
+\begin_inset Formula 
+\[
+\boldsymbol{p}=p_{{\scriptscriptstyle x}}\hat{\boldsymbol{x}}+p_{{\scriptscriptstyle y}}\hat{\boldsymbol{y}}=p_{{\scriptscriptstyle x}}\begin{bmatrix}1\\
+0
+\end{bmatrix}+p_{{\scriptscriptstyle y}}\begin{bmatrix}0\\
+1
+\end{bmatrix}=\begin{bmatrix}1 & 0\\
+0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=I\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=p_{{\scriptscriptstyle x}}\begin{bmatrix}\cos\theta\\
+\sin\theta
+\end{bmatrix}+p_{{\scriptscriptstyle y}}\begin{bmatrix}-\sin\theta\\
+\cos\theta
+\end{bmatrix}=\begin{bmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=R_{{\scriptscriptstyle \theta}}\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=p_{{\scriptscriptstyle x}}\begin{bmatrix}\cos\theta\\
+-\sin\theta
+\end{bmatrix}+p_{{\scriptscriptstyle y}}\begin{bmatrix}\sin\theta\\
+\cos\theta
+\end{bmatrix}=\begin{bmatrix}\cos\theta & \sin\theta\\
+-\sin\theta & \cos\theta
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=R_{{\scriptscriptstyle -\theta}}\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+skew = rotation + non-uniform scale + rotation back
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}
+\end{bmatrix}=\begin{bmatrix}\cos\theta & \sin\theta\\
+-\sin\theta & \cos\theta
+\end{bmatrix}\begin{bmatrix}s_{{\scriptscriptstyle x}} & 0\\
+0 & s_{{\scriptscriptstyle y}}
+\end{bmatrix}\begin{bmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=R_{{\scriptscriptstyle -\theta}}SR_{{\scriptscriptstyle \theta}}\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+any 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=M\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+SVD = singular value decomposition
+\begin_inset Formula 
+\[
+M=U\varSigma V^{\intercal}\overset{\text{e.g.}}{=}RSR^{\intercal}=R_{{\scriptscriptstyle -\theta}}SR_{{\scriptscriptstyle \theta}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+any 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix + translation
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=M\boldsymbol{p}+\boldsymbol{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=M_{{\scriptscriptstyle 2}}\left(M_{{\scriptscriptstyle 1}}\boldsymbol{p}+\boldsymbol{t}_{{\scriptscriptstyle 1}}\right)+\boldsymbol{t}_{{\scriptscriptstyle 2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+homogeneous coordinate
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=\boldsymbol{p}+\boldsymbol{t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=T\boldsymbol{p}=\boldsymbol{p}+\boldsymbol{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}
+\end{bmatrix}=\begin{bmatrix}p_{{\scriptscriptstyle x}}+t_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}+t_{{\scriptscriptstyle y}}
+\end{bmatrix}=\begin{bmatrix}1 & 0 & t_{{\scriptscriptstyle x}}\\
+0 & 1 & t_{{\scriptscriptstyle y}}
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}p_{{\scriptscriptstyle x}}+t_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}+t_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}=\begin{bmatrix}1 & 0 & t_{{\scriptscriptstyle x}}\\
+0 & 1 & t_{{\scriptscriptstyle y}}\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}=T\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=M\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}a & c & e\\
+b & d & f\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}=M\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+position vs.
+ direction
+\end_layout
+
+\begin_layout Standard
+position vector
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}a & c & e\\
+b & d & f\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}=M\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+direction vector
+\begin_inset Formula 
+\[
+\boldsymbol{d}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+0
+\end{bmatrix}=\begin{bmatrix}a & c & e\\
+b & d & f\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+0
+\end{bmatrix}=M\boldsymbol{d}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3D transformation
+\end_layout
+
+\begin_layout Standard
+homogeneous coordinate
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}a & c & e\\
+b & d & f\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}=M\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+p_{{\scriptscriptstyle z}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}a & d & g & j\\
+b & e & h & k\\
+c & f & i & l\\
+0 & 0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+p_{{\scriptscriptstyle z}}\\
+1
+\end{bmatrix}=M\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+p_{{\scriptscriptstyle z}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}s_{{\scriptscriptstyle x}} & 0 & 0 & 0\\
+0 & s_{{\scriptscriptstyle y}} & 0 & 0\\
+0 & 0 & s_{{\scriptscriptstyle z}} & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+p_{{\scriptscriptstyle z}}\\
+1
+\end{bmatrix}=S\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+p_{{\scriptscriptstyle z}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}1 & 0 & 0 & t_{{\scriptscriptstyle x}}\\
+0 & 1 & 0 & t_{{\scriptscriptstyle y}}\\
+0 & 0 & 1 & t_{{\scriptscriptstyle z}}\\
+0 & 0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+p_{{\scriptscriptstyle z}}\\
+1
+\end{bmatrix}=T\boldsymbol{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 coordinate
 \begin_inset Formula 
 \begin{align*}
@@ -12218,7 +12642,7 @@ V^{*}= & \left\{ \mathrm{d}f\middle|\mathrm{d}f:V\rightarrow F\right\} =\left\{ 
 \begin{align*}
 \mathrm{d}f\left(\boldsymbol{v}\right)= & \mathrm{d}f\left(v_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=v_{{\scriptscriptstyle j}}\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)\\
 = & v_{{\scriptscriptstyle j}}\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\\
-= & v_{{\scriptscriptstyle 1}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}++v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+v_{{\scriptscriptstyle n}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\\
+= & v_{{\scriptscriptstyle 1}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}+\cdots+v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+v_{{\scriptscriptstyle n}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\\
 = & \begin{pmatrix}v_{{\scriptscriptstyle 1}} & \cdots & v_{{\scriptscriptstyle j}} & \cdots & v_{{\scriptscriptstyle n}}\end{pmatrix}\boldsymbol{\nabla}f
 \end{align*}
 

@@ -690,6 +690,8 @@ histology
 group-theory
 matrix-group
 group-definition-and-basic-theorem
+epicorganism-airoswell-pan-yi-wen
+pku-cfcs
 mathemaniac-1
 polya-enumeration-theorem
 complex-group-representation
@@ -706,6 +708,7 @@ tensor
 einstein-summation-convention
 dummy-index
 free-index
+epicorganism-airoswell-pan-yi-wen-1
 eigenchris
 tensor-for-beginner
 tensor-calculus
@@ -734,6 +737,7 @@ vector-space-example
 reciprocal-space
 kronecker-delta
 double-dual-concept
+epicorganism-airoswell-pan-yi-wen-2
 field
 module
 subspace
@@ -857,6 +861,21 @@ chen-vivian
 the-bubble-sort-curve
 computer-graphics
 cem-yuksel-1
+introduction
+d-transformation
+translation
+scale-1
+non-uniform-scale
+rotation
+skew-rotation-non-uniform-scale-rotation
+any-2times2-matrix
+homogeneous-coordinate-2
+position-vs.-direction
+d-transformation-1
+homogeneous-coordinate-3
+scale-2
+translation-1
+interactive
 autoregression-in-time-series
 ar1-1textst-order-autoregressive-model-first-order-autoregressive-model
 ar2-2textnd-order-autoregressive-model-second-order-autoregressive-model
@@ -953,3 +972,8 @@ not-yet-solved
 moving-sofa-problem
 causal-inference
 einstein-de-hass-effect
+pythagorean-theorem
+new-proof-with-trigonometry
+general-relativity
+epicorganism-airoswell-pan-yi-wen-3
+elliot-schneider-1

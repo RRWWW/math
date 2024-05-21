@@ -590,6 +590,27 @@ $$
 
 i.e. **vector space is a set of functionals or mappings from its dual space to the field**, answering [What is a vector?]^[\@ref(what-is-a-vector)]^, and satifying Fig: \@ref(fig:vector-construction).
 
+## EpicOrganism = AIRoswell = Pan, Yi-Wen^[https://www.linkedin.com/in/yiwen-pan-16a90076]
+
+https://space.bilibili.com/14316464/video
+
+https://www.bilibili.com/video/BV1dC4y1171H
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1dC4y1171H&autoplay=0&t=845"></iframe>
+:::
+
+https://www.bilibili.com/video/BV14H4y1C7A9
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV14H4y1C7A9&autoplay=0&t=845"></iframe>
+:::
+
+https://www.bilibili.com/video/BV1MW421N7HS
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1MW421N7HS&autoplay=0&t=845"></iframe>
+:::
 
 ## field
 

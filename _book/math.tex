@@ -265,7 +265,7 @@
 
 \title{math}
 \author{Joey Yu Hsu}
-\date{2024-05-16}
+\date{2024-05-21}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
@@ -3040,6 +3040,10 @@ however webshot not work
 Error: cannot find bilibili.com
 
 \url{https://cran.r-project.org/web/packages/vembedr/vignettes/embed.html}
+
+\begin{verbatim}
+## Warning: package 'vembedr' was built under R version 4.2.3
+\end{verbatim}
 
 \begin{verbatim}
 ## embed_youtube("0LFg5dvPOoc")
@@ -22072,6 +22076,10 @@ Proof:
 \tag*{$\Box$}
 \]
 
+\section{PKU-CFCS}\label{pku-cfcs}
+
+\url{https://www.bilibili.com/video/BV11r421E7kD}
+
 \section{Mathemaniac}\label{mathemaniac-1}
 
 \url{https://www.youtube.com/playlist?list=PLDcSwjT2BF_VuNbn8HiHZKKy59SgnIAeO}
@@ -23788,6 +23796,170 @@ Dan Fleisch: What's a Tensor?
 
 \url{https://www.youtube.com/watch?v=f5liqUk0ZTw}
 
+\href{https://www.youtube.com/@udiprod/playlists}{UdiProd}: \href{https://www.youtube.com/playlist?list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j}{tensor}
+
+\url{https://www.youtube.com/watch?v=YxXyN2ifK8A&list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j&index=1}
+
+\url{https://www.youtube.com/watch?v=A95jdIuUUW0&list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j&index=2}
+
+\url{https://www.youtube.com/watch?v=51ARho2bvQY&list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j&index=3}
+
+\begin{verbatim}
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+\end{verbatim}
+
+\includegraphics{202403291050-tensor_files/figure-latex/unnamed-chunk-3-1.pdf}
+
+\begin{cols}
+
+\begin{col}{0.45\textwidth}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+\ImportTok{import}\NormalTok{ matplotlib.pyplot }\ImportTok{as}\NormalTok{ plt}
+
+\NormalTok{A }\OperatorTok{=}\NormalTok{ np.array([[ }\DecValTok{0}\NormalTok{,}\OperatorTok{{-}}\DecValTok{1}\NormalTok{],}
+\NormalTok{              [ }\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{]])}
+
+\NormalTok{B }\OperatorTok{=}\NormalTok{ np.array([[ }\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{],}
+\NormalTok{              [ }\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{]])}
+
+\NormalTok{C }\OperatorTok{=}\NormalTok{ np.array([[ }\DecValTok{1}\NormalTok{,}\OperatorTok{{-}}\DecValTok{1}\NormalTok{],}
+\NormalTok{              [ }\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{]])}
+
+\NormalTok{D }\OperatorTok{=}\NormalTok{ np.array([[ }\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{],}
+\NormalTok{              [ }\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{]])}
+
+\NormalTok{E }\OperatorTok{=}\NormalTok{ np.array([[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{],}
+\NormalTok{              [ }\DecValTok{0}\NormalTok{,}\OperatorTok{{-}}\DecValTok{1}\NormalTok{]])}
+
+\NormalTok{F }\OperatorTok{=}\NormalTok{ np.array([[ }\DecValTok{3}\NormalTok{, }\DecValTok{1}\NormalTok{],}
+\NormalTok{              [}\OperatorTok{{-}}\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{]])}
+
+\NormalTok{t }\OperatorTok{=}\NormalTok{ np.arange(}\DecValTok{0}\NormalTok{, }\DecValTok{2} \OperatorTok{*}\NormalTok{ np.pi, np.pi}\OperatorTok{/}\DecValTok{5}\NormalTok{)}
+
+\CommentTok{\# Creating arrow }
+\NormalTok{X }\OperatorTok{=}\NormalTok{ np.cos(t)}
+\NormalTok{Y }\OperatorTok{=}\NormalTok{ np.sin(t)}
+ 
+\CommentTok{\# X, Y = np.meshgrid(x, y)}
+
+\CommentTok{\# V = np.array([X, Y])}
+
+\CommentTok{\# u = x}
+\CommentTok{\# v = y}
+
+\CommentTok{\# u, v = np.matmul(A, V)}
+\NormalTok{u, v }\OperatorTok{=}\NormalTok{ np.matmul(A, np.array([X, Y]))}
+\NormalTok{dx, dy }\OperatorTok{=}\NormalTok{ np.matmul(B, np.array([X, Y]))}
+\NormalTok{dx2, dy2 }\OperatorTok{=}\NormalTok{ np.matmul(C, np.array([X, Y]))}
+\NormalTok{dx3, dy3 }\OperatorTok{=}\NormalTok{ np.matmul(D, np.array([X, Y]))}
+\NormalTok{dx4, dy4 }\OperatorTok{=}\NormalTok{ np.matmul(E, np.array([X, Y]))}
+\NormalTok{dx5, dy5 }\OperatorTok{=}\NormalTok{ np.matmul(F, np.array([X, Y]))}
+
+\CommentTok{\# n = {-}2}
+ 
+\CommentTok{\# Defining color}
+\CommentTok{\# color = np.sqrt(((v{-}n)/2)*2 + ((u{-}n)/2)*2)}
+\CommentTok{\# color = (u**2+v**2)**(1/2)}
+\NormalTok{color }\OperatorTok{=}\NormalTok{ u}\OperatorTok{*}\NormalTok{v}
+ 
+\CommentTok{\# Creating plot}
+\NormalTok{fig, ax }\OperatorTok{=}\NormalTok{ plt.subplots(}\DecValTok{3}\NormalTok{,}\DecValTok{3}\NormalTok{,figsize }\OperatorTok{=}\NormalTok{(}\DecValTok{15}\NormalTok{,}\DecValTok{15}\NormalTok{), gridspec\_kw }\OperatorTok{=}\NormalTok{ \{}\StringTok{\textquotesingle{}wspace\textquotesingle{}}\NormalTok{:}\FloatTok{0.1}\NormalTok{, }\StringTok{\textquotesingle{}hspace\textquotesingle{}}\NormalTok{:}\FloatTok{0.1}\NormalTok{\})}
+
+\CommentTok{\# ax.quiver(X, Y, u, v, color, alpha = 1)}
+\ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\OperatorTok{{-}}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{):}
+    \ControlFlowTok{for}\NormalTok{ j }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\OperatorTok{{-}}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{):}
+        \CommentTok{\# ax.quiver(1.0*X+4*i, 1.0*Y+4*j, u, v)\#, color, alpha = 1)}
+        \CommentTok{\# ax.quiver(1.5*X+4*i, 1.5*Y+4*j, u, v)\#, color, alpha = 1)}
+        \CommentTok{\# ax.quiver(2.0*X+4*i, 2.0*Y+4*j, u, v)\#, color, alpha = 1)}
+
+\NormalTok{        ax[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{].quiver(}\FloatTok{0.5}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{0.5}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, u, v, u}\OperatorTok{*}\NormalTok{v, alpha }\OperatorTok{=} \FloatTok{0.50}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}spring\textquotesingle{}}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{].quiver(}\FloatTok{1.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, u, v, u}\OperatorTok{*}\NormalTok{v, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}spring\textquotesingle{}}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{].quiver(}\FloatTok{1.5}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.5}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, u, v, u}\OperatorTok{*}\NormalTok{v, alpha }\OperatorTok{=} \FloatTok{0.25}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}spring\textquotesingle{}}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{].quiver(}\FloatTok{2.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{2.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, u, v, u}\OperatorTok{*}\NormalTok{v, alpha }\OperatorTok{=} \FloatTok{0.10}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}spring\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{        ax[}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{].quiver(}\FloatTok{0.5}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{0.5}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx, dy, dx}\OperatorTok{*}\NormalTok{dy, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}summer\textquotesingle{}}\NormalTok{)}
+        \CommentTok{\# ax[0,1].quiver(1.0*X+4*i, 1.0*Y+4*j, dx, dy, dx*dy, alpha = 0.50, cmap=\textquotesingle{}summer\textquotesingle{})}
+\NormalTok{        ax[}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{].quiver(}\FloatTok{1.5}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.5}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx, dy, dx}\OperatorTok{*}\NormalTok{dy, alpha }\OperatorTok{=} \FloatTok{0.25}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}summer\textquotesingle{}}\NormalTok{)}
+        \CommentTok{\# ax[0,1].quiver(2.0*X+4*i, 2.0*Y+4*j, dx, dy, dx*dy, alpha = 0.10, cmap=\textquotesingle{}summer\textquotesingle{})}
+
+\NormalTok{        ax[}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{].quiver(}\FloatTok{0.5}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{0.5}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx2, dy2, dx2}\OperatorTok{*}\NormalTok{dy2, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}winter\textquotesingle{}}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{].quiver(}\FloatTok{1.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx2, dy2, dx2}\OperatorTok{*}\NormalTok{dy2, alpha }\OperatorTok{=} \FloatTok{0.50}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}winter\textquotesingle{}}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{].quiver(}\FloatTok{1.5}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.5}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx2, dy2, dx2}\OperatorTok{*}\NormalTok{dy2, alpha }\OperatorTok{=} \FloatTok{0.25}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}winter\textquotesingle{}}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{].quiver(}\FloatTok{2.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{2.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx2, dy2, dx2}\OperatorTok{*}\NormalTok{dy2, alpha }\OperatorTok{=} \FloatTok{0.10}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}winter\textquotesingle{}}\NormalTok{)}
+
+        \CommentTok{\# ax[2,0].quiver(0.5*X+4*i, 0.5*Y+4*j, dx3, dy3, dx3*dy3, alpha = 0.50, cmap=\textquotesingle{}cool\textquotesingle{})}
+\NormalTok{        ax[}\DecValTok{2}\NormalTok{,}\DecValTok{0}\NormalTok{].quiver(}\FloatTok{1.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx3, dy3, dx3}\OperatorTok{*}\NormalTok{dy3, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}cool\textquotesingle{}}\NormalTok{)}
+        \CommentTok{\# ax[2,0].quiver(1.5*X+4*i, 1.5*Y+4*j, dx3, dy3, dx3*dy3, alpha = 0.25, cmap=\textquotesingle{}cool\textquotesingle{})}
+\NormalTok{        ax[}\DecValTok{2}\NormalTok{,}\DecValTok{0}\NormalTok{].quiver(}\FloatTok{2.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{2.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx3, dy3, dx3}\OperatorTok{*}\NormalTok{dy3, alpha }\OperatorTok{=} \FloatTok{0.10}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}cool\textquotesingle{}}\NormalTok{)}
+
+        \CommentTok{\# ax[0,2].quiver(0.5*X+4*i, 0.5*Y+4*j, dx4, dy4, dx4*dy4, alpha = 0.50)}
+        \CommentTok{\# ax[0,2].quiver(1.0*X+4*i, 1.0*Y+4*j, dx4, dy4, dx4*dy4, alpha = 0.25)}
+\NormalTok{        ax[}\DecValTok{0}\NormalTok{,}\DecValTok{2}\NormalTok{].quiver(}\FloatTok{1.5}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.5}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx4, dy4, dx4}\OperatorTok{*}\NormalTok{dy4, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{0}\NormalTok{,}\DecValTok{2}\NormalTok{].quiver(}\FloatTok{2.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{2.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx4, dy4, dx4}\OperatorTok{*}\NormalTok{dy4, alpha }\OperatorTok{=} \FloatTok{0.10}\NormalTok{)}
+
+\NormalTok{        ax[}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{].quiver(}\FloatTok{0.5}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{0.5}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx5, dy5, dx5}\OperatorTok{*}\NormalTok{dy5, alpha }\OperatorTok{=} \FloatTok{0.50}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{].quiver(}\FloatTok{1.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx5, dy5, dx5}\OperatorTok{*}\NormalTok{dy5, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{].quiver(}\FloatTok{1.5}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.5}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx5, dy5, dx5}\OperatorTok{*}\NormalTok{dy5, alpha }\OperatorTok{=} \FloatTok{0.25}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{].quiver(}\FloatTok{2.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{2.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx5, dy5, dx5}\OperatorTok{*}\NormalTok{dy5, alpha }\OperatorTok{=} \FloatTok{0.10}\NormalTok{)}
+
+\NormalTok{        ax[}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{].quiver(}\FloatTok{0.5}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{0.5}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, u, v, u}\OperatorTok{*}\NormalTok{v, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}spring\textquotesingle{}}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{].quiver(}\FloatTok{1.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx, dy, dx}\OperatorTok{*}\NormalTok{dy, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}summer\textquotesingle{}}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{].quiver(}\FloatTok{1.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx2, dy2, dx2}\OperatorTok{*}\NormalTok{dy2, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}winter\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{        ax[}\DecValTok{2}\NormalTok{,}\DecValTok{1}\NormalTok{].quiver(}\FloatTok{0.5}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{0.5}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, u, v, u}\OperatorTok{*}\NormalTok{v, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}spring\textquotesingle{}}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{2}\NormalTok{,}\DecValTok{1}\NormalTok{].quiver(}\FloatTok{1.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx, dy, dx}\OperatorTok{*}\NormalTok{dy, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}summer\textquotesingle{}}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{2}\NormalTok{,}\DecValTok{1}\NormalTok{].quiver(}\FloatTok{1.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx2, dy2, dx2}\OperatorTok{*}\NormalTok{dy2, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}winter\textquotesingle{}}\NormalTok{)}
+\NormalTok{        ax[}\DecValTok{2}\NormalTok{,}\DecValTok{1}\NormalTok{].quiver(}\FloatTok{1.0}\OperatorTok{*}\NormalTok{X}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{i, }\FloatTok{1.0}\OperatorTok{*}\NormalTok{Y}\OperatorTok{+}\DecValTok{4}\OperatorTok{*}\NormalTok{j, dx3, dy3, dx3}\OperatorTok{*}\NormalTok{dy3, alpha }\OperatorTok{=} \FloatTok{1.00}\NormalTok{, cmap}\OperatorTok{=}\StringTok{\textquotesingle{}cool\textquotesingle{}}\NormalTok{)}
+
+\ControlFlowTok{for}\NormalTok{ ax }\KeywordTok{in}\NormalTok{ fig.get\_axes():}
+    \CommentTok{\# ax.xaxis.set\_ticks([])}
+    \CommentTok{\# ax.yaxis.set\_ticks([])}
+\NormalTok{    ax.axis([}\OperatorTok{{-}}\DecValTok{8}\NormalTok{, }\DecValTok{8}\NormalTok{, }\OperatorTok{{-}}\DecValTok{8}\NormalTok{, }\DecValTok{8}\NormalTok{])}
+\NormalTok{    ax.set\_aspect(}\StringTok{\textquotesingle{}equal\textquotesingle{}}\NormalTok{)}
+ 
+\CommentTok{\# show plot}
+\NormalTok{plt.show()}
+\end{Highlighting}
+\end{Shaded}
+
+\end{col}
+
+\begin{col}{0.10\textwidth}
+~
+
+\end{col}
+
+\begin{col}{0.45\textwidth}
+
+\begin{verbatim}
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+## (-8.0, 8.0, -8.0, 8.0)
+\end{verbatim}
+
+\includegraphics{202403291050-tensor_files/figure-latex/unnamed-chunk-5-3.pdf}
+
+\end{col}
+
+\end{cols}
+
 \url{https://courses.physicswithelliot.com/products/part-i-fundamentals-of-cartesian-tensors/categories/2155140686/posts/2176745916}
 
 \subsection{Fundamentals of Curvilinear Tensors}\label{fundamentals-of-curvilinear-tensors}
@@ -25361,7 +25533,7 @@ V^{*}= & \left\{ \mathrm{d}f\middle|\mathrm{d}f:V\rightarrow F\right\} =\left\{ 
 \begin{aligned}
 \mathrm{d}f\left(\boldsymbol{v}\right)= & \mathrm{d}f\left(v_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=v_{{\scriptscriptstyle j}}\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)\\
 = & v_{{\scriptscriptstyle j}}\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\\
-= & v_{{\scriptscriptstyle 1}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}++v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+v_{{\scriptscriptstyle n}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\\
+= & v_{{\scriptscriptstyle 1}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}+\cdots+v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+v_{{\scriptscriptstyle n}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\\
 = & \begin{pmatrix}v_{{\scriptscriptstyle 1}} & \cdots & v_{{\scriptscriptstyle j}} & \cdots & v_{{\scriptscriptstyle n}}\end{pmatrix}\boldsymbol{\nabla}f
 \end{aligned}
 \]
@@ -31172,7 +31344,288 @@ x_{2}
 
 \section{Cem Yuksel}\label{cem-yuksel-1}
 
+\subsection{introduction}\label{introduction}
+
 \url{https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh}
+
+\subsubsection{2D transformation}\label{d-transformation}
+
+\url{https://www.youtube.com/watch?v=EKN7dTJ4ep8&list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh&index=6}
+
+\paragraph{translation}\label{translation}
+
+\[
+\boldsymbol{p}^{\prime}=\boldsymbol{p}+\boldsymbol{t}\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}
+\end{bmatrix}=\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}+\begin{bmatrix}t_{{\scriptscriptstyle x}}\\
+t_{{\scriptscriptstyle y}}
+\end{bmatrix}=\begin{bmatrix}p_{{\scriptscriptstyle x}}+t_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}+t_{{\scriptscriptstyle y}}
+\end{bmatrix}
+\]
+
+\paragraph{scale}\label{scale-1}
+
+\[
+\boldsymbol{p}^{\prime}=s\boldsymbol{p}\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}
+\end{bmatrix}=s\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=\begin{bmatrix}sp_{{\scriptscriptstyle x}}\\
+sp_{{\scriptscriptstyle y}}
+\end{bmatrix}
+\]
+
+\paragraph{non-uniform scale}\label{non-uniform-scale}
+
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}
+\end{bmatrix}=\begin{bmatrix}s_{{\scriptscriptstyle x}}p_{{\scriptscriptstyle x}}\\
+s_{{\scriptscriptstyle y}}p_{{\scriptscriptstyle y}}
+\end{bmatrix}=\begin{bmatrix}s_{{\scriptscriptstyle x}} & 0\\
+0 & s_{{\scriptscriptstyle y}}
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=S\boldsymbol{p}
+\]
+
+\paragraph{rotation}\label{rotation}
+
+\[
+\boldsymbol{p}=p_{{\scriptscriptstyle x}}\hat{\boldsymbol{x}}+p_{{\scriptscriptstyle y}}\hat{\boldsymbol{y}}=p_{{\scriptscriptstyle x}}\begin{bmatrix}1\\
+0
+\end{bmatrix}+p_{{\scriptscriptstyle y}}\begin{bmatrix}0\\
+1
+\end{bmatrix}=\begin{bmatrix}1 & 0\\
+0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=I\boldsymbol{p}
+\]
+
+\[
+\boldsymbol{p}^{\prime}=p_{{\scriptscriptstyle x}}\begin{bmatrix}\cos\theta\\
+\sin\theta
+\end{bmatrix}+p_{{\scriptscriptstyle y}}\begin{bmatrix}-\sin\theta\\
+\cos\theta
+\end{bmatrix}=\begin{bmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=R_{{\scriptscriptstyle \theta}}\boldsymbol{p}
+\]
+
+\[
+\boldsymbol{p}^{\prime}=p_{{\scriptscriptstyle x}}\begin{bmatrix}\cos\theta\\
+-\sin\theta
+\end{bmatrix}+p_{{\scriptscriptstyle y}}\begin{bmatrix}\sin\theta\\
+\cos\theta
+\end{bmatrix}=\begin{bmatrix}\cos\theta & \sin\theta\\
+-\sin\theta & \cos\theta
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=R_{{\scriptscriptstyle -\theta}}\boldsymbol{p}
+\]
+
+\paragraph{skew = rotation + non-uniform scale + rotation}\label{skew-rotation-non-uniform-scale-rotation}
+
+\[
+back\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}
+\end{bmatrix}=\begin{bmatrix}\cos\theta & \sin\theta\\
+-\sin\theta & \cos\theta
+\end{bmatrix}\begin{bmatrix}s_{{\scriptscriptstyle x}} & 0\\
+0 & s_{{\scriptscriptstyle y}}
+\end{bmatrix}\begin{bmatrix}\cos\theta & -\sin\theta\\
+\sin\theta & \cos\theta
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}
+\end{bmatrix}=R_{{\scriptscriptstyle -\theta}}SR_{{\scriptscriptstyle \theta}}\boldsymbol{p}
+\]
+
+\paragraph{\texorpdfstring{any \(2\times2\) matrix}{any 2\textbackslash times2 matrix}}\label{any-2times2-matrix}
+
+\[
+\boldsymbol{p}^{\prime}=M\boldsymbol{p}
+\]
+
+SVD = singular value decomposition
+
+\[
+M=U\varSigma V^{\intercal}\overset{\text{e.g.}}{=}RSR^{\intercal}=R_{{\scriptscriptstyle -\theta}}SR_{{\scriptscriptstyle \theta}}
+\]
+
+any \(2\times2\) matrix + translation
+
+\[
+\boldsymbol{p}^{\prime}=M\boldsymbol{p}+\boldsymbol{t}
+\]
+
+\[
+\boldsymbol{p}^{\prime}=M_{{\scriptscriptstyle 2}}\left(M_{{\scriptscriptstyle 1}}\boldsymbol{p}+\boldsymbol{t}_{{\scriptscriptstyle 1}}\right)+\boldsymbol{t}_{{\scriptscriptstyle 2}}
+\]
+
+\paragraph{homogeneous coordinate}\label{homogeneous-coordinate-2}
+
+\[
+\boldsymbol{p}^{\prime}=\boldsymbol{p}+\boldsymbol{t}
+\]
+
+\[
+\boldsymbol{p}^{\prime}=T\boldsymbol{p}=\boldsymbol{p}+\boldsymbol{t}
+\]
+
+\[
+\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}
+\end{bmatrix}=\begin{bmatrix}p_{{\scriptscriptstyle x}}+t_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}+t_{{\scriptscriptstyle y}}
+\end{bmatrix}=\begin{bmatrix}1 & 0 & t_{{\scriptscriptstyle x}}\\
+0 & 1 & t_{{\scriptscriptstyle y}}
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}
+\]
+
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}p_{{\scriptscriptstyle x}}+t_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}+t_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}=\begin{bmatrix}1 & 0 & t_{{\scriptscriptstyle x}}\\
+0 & 1 & t_{{\scriptscriptstyle y}}\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}=T\boldsymbol{p}
+\]
+
+\[
+\boldsymbol{p}^{\prime}=M\boldsymbol{p}\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}a & c & e\\
+b & d & f\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}=M\boldsymbol{p}
+\]
+
+\paragraph{position vs.~direction}\label{position-vs.-direction}
+
+position vector: transformation affected by rotation and translation
+
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}a & c & e\\
+b & d & f\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}=M\boldsymbol{p}
+\]
+
+direction vector: transformation affected by only rotation but not translation
+
+\[
+\boldsymbol{d}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+0
+\end{bmatrix}=\begin{bmatrix}a & c & e\\
+b & d & f\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+0
+\end{bmatrix}=M\boldsymbol{d}
+\]
+
+\subsubsection{3D transformation}\label{d-transformation-1}
+
+\url{https://www.youtube.com/watch?v=1z1S2kQKXDs&list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh&index=7}
+
+\paragraph{homogeneous coordinate}\label{homogeneous-coordinate-3}
+
+affine transformation
+
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}a & c & e\\
+b & d & f\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+1
+\end{bmatrix}=M\boldsymbol{p}
+\]
+
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+p_{{\scriptscriptstyle z}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}a & d & g & j\\
+b & e & h & k\\
+c & f & i & l\\
+0 & 0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+p_{{\scriptscriptstyle z}}\\
+1
+\end{bmatrix}=M\boldsymbol{p}
+\]
+
+\paragraph{scale}\label{scale-2}
+
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+p_{{\scriptscriptstyle z}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}s_{{\scriptscriptstyle x}} & 0 & 0 & 0\\
+0 & s_{{\scriptscriptstyle y}} & 0 & 0\\
+0 & 0 & s_{{\scriptscriptstyle z}} & 0\\
+0 & 0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+p_{{\scriptscriptstyle z}}\\
+1
+\end{bmatrix}=S\boldsymbol{p}
+\]
+
+\paragraph{translation}\label{translation-1}
+
+\[
+\boldsymbol{p}^{\prime}=\begin{bmatrix}p_{{\scriptscriptstyle x}}^{\prime}\\
+p_{{\scriptscriptstyle y}}^{\prime}\\
+p_{{\scriptscriptstyle z}}^{\prime}\\
+1
+\end{bmatrix}=\begin{bmatrix}1 & 0 & 0 & t_{{\scriptscriptstyle x}}\\
+0 & 1 & 0 & t_{{\scriptscriptstyle y}}\\
+0 & 0 & 1 & t_{{\scriptscriptstyle z}}\\
+0 & 0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}p_{{\scriptscriptstyle x}}\\
+p_{{\scriptscriptstyle y}}\\
+p_{{\scriptscriptstyle z}}\\
+1
+\end{bmatrix}=T\boldsymbol{p}
+\]
+
+\subsection{interactive}\label{interactive}
 
 \url{https://www.youtube.com/playlist?list=PLplnkTzzqsZS3R5DjmCQsqupu43oS9CFN}
 
@@ -31856,6 +32309,14 @@ dimensional analysis = 量綱分析 = 因次分析
 
 \section{electromagnetism}\label{electromagnetism-1}
 
+\href{https://www.youtube.com/@udiprod/playlists}{UdiProd}: \href{https://www.youtube.com/playlist?list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j}{tensor}
+
+\url{https://www.youtube.com/watch?v=YxXyN2ifK8A&list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j&index=1}
+
+\url{https://www.youtube.com/watch?v=A95jdIuUUW0&list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j&index=2}
+
+\url{https://www.youtube.com/watch?v=51ARho2bvQY&list=PL2aHrV9pFqNTEMuDFre16Wx2SwBCNiR7j&index=3}
+
 \url{https://zhuanlan.zhihu.com/p/680649946}
 
 \url{https://www.bilibili.com/video/BV1PV411P7w4}
@@ -32269,6 +32730,22 @@ library of LEAN theorems
     \href{https://www.youtube.com/playlist?list=PLoazKTcS0Rzb6bb9L508cyJ1z-U9iWkA0}{short lecture}
   \end{itemize}
 \end{itemize}
+
+\chapter{Einstein-de Hass effect}\label{einstein-de-hass-effect}
+
+\begin{CJK}{UTF8}{bsmi}
+https://zh.wikipedia.org/wiki/愛因斯坦-德哈斯效應
+
+https://en.wikipedia.org/wiki/Einstein%E2%80%93de_Haas_effect
+\end{CJK}
+
+\url{https://www.youtube.com/watch?v=BbEHApXFTQc}
+
+\chapter{pythagorean theorem}\label{pythagorean-theorem}
+
+\section{2023 new proof with trigonometry}\label{new-proof-with-trigonometry}
+
+\url{https://www.youtube.com/watch?v=eFSvQHfrHQc}
 
 \chapter*{references}\label{references}
 \addcontentsline{toc}{chapter}{references}
