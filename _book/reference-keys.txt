@@ -192,9 +192,9 @@ thm:real-sym-real-eigen
 thm:unnamed-chunk-4
 thm:unnamed-chunk-7
 fig:matplotlib-figure-anatomy
-fig:seaborn-plot-type
-fig:unnamed-chunk-57
 fig:unnamed-chunk-2
+fig:seaborn-plot-type
+fig:unnamed-chunk-79
 def:unnamed-chunk-1
 thm:unnamed-chunk-2
 fig:vector-construction
@@ -277,6 +277,7 @@ arrow
 superscript-and-subscript
 latex
 equation
+aligned
 proof-qed
 image
 diagrammer-mermaid-flowchart
@@ -977,3 +978,5 @@ new-proof-with-trigonometry
 general-relativity
 epicorganism-airoswell-pan-yi-wen-3
 elliot-schneider-1
+latex-regex
+output

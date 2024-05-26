@@ -1,7 +1,7 @@
 ---
 title: "math"
 author: "Joey Yu Hsu"
-date: "2024-05-21"
+date: "2024-05-26"
 site: bookdown::bookdown_site
 documentclass: book
 # output:
@@ -45,3 +45,5 @@ geometry: [a4paper, tmargin=1.5cm, bmargin=1.5cm, lmargin=1.0cm, rmargin=1.0cm]
 math on bookdown started on 2024/01/28
 
 Joey Yu Hsu, MD
+
+"If you are doing research, you may not get a bunch of money but \$\$." by Joey Yu Hsu, MD

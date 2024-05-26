@@ -57,6 +57,8 @@
       - [3B1B](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
       - 齊震宇 [線性代數](https://www.youtube.com/playlist?list=PLJWAeYEa8SXBej3kuQMz8vV41VabZUILb)
     - abstract algebra
+      - group theory
+        - EpicOrganism = AIRoswell = Pan, Yi-Wen^[https://www.linkedin.com/in/yiwen-pan-16a90076]: [群論](https://space.bilibili.com/14316464/channel/collectiondetail?sid=1768137)
   - [analysis]^[\@ref(analysis)]^
     - real analysis
       - [陳金次](https://www.youtube.com/playlist?list=PLil-R4o6jmGjoxAWZurHXAY0q9yxwXv5F)

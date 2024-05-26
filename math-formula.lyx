@@ -20875,6 +20875,54 @@ b\\
 \end_layout
 
 \begin_layout Standard
+color by macro
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}0\le\epsilon=\dfrac{\overline{PF}}{d\left(P,L\right)}=\dfrac{\overline{PF}}{\overline{PP^{\prime}}}= & \dfrac{\left\Vert \left(x,y\right)-\left(0,y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(x,y\right)-\left(x,y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\left\Vert \left(x,y-y_{{\scriptscriptstyle F}}\right)\right\Vert }{\left\Vert \left(0,y-y_{{\scriptscriptstyle L}}\right)\right\Vert }=\dfrac{\sqrt{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}}{\sqrt{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}}\\
+\epsilon^{2}= & \dfrac{x^{2}+\left(y-y_{{\scriptscriptstyle F}}\right)^{2}}{\left(y-y_{{\scriptscriptstyle L}}\right)^{2}}=\dfrac{x^{2}+y^{2}-2y_{{\scriptscriptstyle F}}y+y_{{\scriptscriptstyle F}}^{2}}{y^{2}-2y_{{\scriptscriptstyle L}}y+y_{{\scriptscriptstyle L}}^{2}}\\
+0= & x^{2}+\left(1-\epsilon^{2}\right)y^{2}-2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)y+\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\\
+\overset{\epsilon\ne1}{=} & x^{2}+\left(1-\epsilon^{2}\right)\left[y^{2}-\dfrac{2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}y+\dfrac{y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}}{1-\epsilon^{2}}\right]\\
+= & x^{2}+\left(1-\epsilon^{2}\right)\\
+ & \left[y^{2}-\dfrac{2\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)}{1-\epsilon^{2}}y+\left(\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}-\left(\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}}{1-\epsilon^{2}}\right]\\
+= & x^{2}+\left(1-\epsilon^{2}\right)\left[\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}}{\left(1-\epsilon^{2}\right)^{2}}\right]\\
+= & x^{2}+\left(1-\epsilon^{2}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}+\dfrac{\left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}}{1-\epsilon^{2}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned} & \left(y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}\right)\left(1-\epsilon^{2}\right)-\left(y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}\right)^{2}\\
+= & \left(1-\epsilon^{2}\right)y_{{\scriptscriptstyle F}}^{2}-\left(\epsilon^{2}-\epsilon^{4}\right)y_{{\scriptscriptstyle L}}^{2}-y_{{\scriptscriptstyle F}}^{2}+2\epsilon^{2}y_{{\scriptscriptstyle F}}y_{{\scriptscriptstyle L}}-\epsilon^{4}y_{{\scriptscriptstyle L}}^{2}\\
+= & -\epsilon^{2}y_{{\scriptscriptstyle F}}^{2}-\epsilon^{2}y_{{\scriptscriptstyle L}}^{2}+2\epsilon^{2}y_{{\scriptscriptstyle F}}y_{{\scriptscriptstyle L}}=-\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \family roman
 \series medium
@@ -20952,6 +21000,9 @@ P=\left(x,y\right)\\
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
 \dfrac{\colorbox{red!50}{\text{\epsilon^{2}\left(y_{{\scriptscriptstyle F}}-y_{{\scriptscriptstyle L}}\right)^{2}}}}{1-\epsilon^{2}}\overset{\epsilon\ne1}{=} & x^{2}+\left(1-\epsilon^{2}\right)\left(y-\dfrac{y_{{\scriptscriptstyle F}}-\epsilon^{2}y_{{\scriptscriptstyle L}}}{1-\epsilon^{2}}\right)^{2}\\

@@ -152,9 +152,38 @@ https://tex.stackexchange.com/questions/580824/subscript-not-distinguished-enoug
 
 https://tex.stackexchange.com/questions/262295/make-subscript-size-smaller-always
 
-### equation
+#### equation
 
 https://stackoverflow.com/questions/26049762/erroneous-nesting-of-equation-structures-in-using-beginalign-in-a-multi-l
+
+#### aligned
+
+$$
+\begin{aligned}
+c^{2} = & a^{2}+b^{2}                           \\
+      = & b^{2}+a^{2} \quad  +\text{commutavie} \\
+      = & b^{2}+a^{2} \qquad +\text{commutavie} \\
+      = & b^{2}+a^{2} \qquad \Box
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+c^{2} = & a^{2}+b^{2}                      \\
+      = & b^{2}+a^{2} & +\text{commutavie} \\
+      = & a^{2}+b^{2} & +\text{commutavie} \\
+      = & b^{2}+a^{2} & \Box
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+c^{2} = & a^{2}+b^{2} &                    &                    & c^{2} = & a^{2}+b^{2}                      \\
+      = & b^{2}+a^{2} & +\text{commutavie} & +\text{commutavie} &       = & b^{2}+a^{2} & +\text{commutavie} \\
+      = & a^{2}+b^{2} & +\text{commutavie} & +\text{commutavie} &       = & a^{2}+b^{2} & +\text{commutavie} \\
+      = & b^{2}+a^{2} & \Box               & +\text{commutavie} &       = & b^{2}+a^{2} & \Box
+\end{aligned}
+$$
 
 #### proof QED
 

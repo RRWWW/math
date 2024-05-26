@@ -1,0 +1,81 @@
+# LaTeX RegEx
+
+https://tex.stackexchange.com/questions/534581/tex-compilation-after-regex-replace
+
+https://www.overleaf.com/project/66512b6948077364474110de
+
+```
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{expl3,xparse}
+\usepackage{textcomp}
+
+\ExplSyntaxOn
+\NewDocumentCommand{\midarrow}{m}
+{
+    \tl_set:Nn \l_tmpa_tl { (#1) }
+    \regex_replace_all:nnN { \, } { \c{textrightarrow} } \l_tmpa_tl
+    \regex_replace_all:nnN { \; } { \)\; \c{hspace}\cB\{ 1cm \cE\} \( } \l_tmpa_tl
+    \tl_use:N \l_tmpa_tl
+}
+\ExplSyntaxOff
+
+\begin{document}
+    \midarrow{a,A;b,B;c,C}
+\end{document}
+```
+::: {show-in="html"}
+$$
+\require{expl3,xparse}
+$$
+
+\ExplSyntaxOff
+\NewDocumentCommand{\midarrow}{m}
+{
+  \tl_set:Nn \l_tmpa_tl { (#1) }
+  \regex_replace_all:nnN { \, } { \c{rightarrow} } \l_tmpa_tl
+  \tl_use:N \l_tmpa_tl
+}
+\ExplSyntaxOff
+
+$$
+\midarrow{a,A;b,B;c,C}
+$$
+
+\ExplSyntaxOn
+\RenewDocumentCommand{\recolor}{m}
+{
+    \tl_set:Nn \l_tmpa_tl { #1 }
+    \regex_replace_all:nnN { \c{omega} } { {\c{color}{red}{\0}} } \l_tmpa_tl
+    \tl_use:N \l_tmpa_tl
+}
+\ExplSyntaxOff
+
+$$
+\recolor{\begin{aligned}\boldsymbol{\omega}= & \left[\boldsymbol{\omega}\right]^{{\scriptscriptstyle V}}V^{*}=\left[\boldsymbol{\omega}\right]^{{\scriptscriptstyle \tilde{V}}}\tilde{V}^{*}\\
+= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}V^{*}{}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}=\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{V}^{*}{}^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{V}^{*}{}^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}V^{*}{}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}V^{*}{}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\left(\tilde{V}^{*}{}^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}\right)^{{\scriptscriptstyle -1}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}V^{*}{}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\left(\tilde{V}^{*}{}^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\boldsymbol{\omega}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right)=\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle i}}\right)Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\boldsymbol{\omega}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle k}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\right)Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\boldsymbol{\omega}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle k}}\right)B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\boldsymbol{\omega}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right)= & \boldsymbol{\omega}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle k}}\right)B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}= & \delta^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\Rightarrow Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\Rightarrow\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}F\\
+\omega_{{\scriptscriptstyle k}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\delta^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}= & \omega_{{\scriptscriptstyle k}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\Rightarrow\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}B
+\end{aligned}
+}
+$$
+:::

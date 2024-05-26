@@ -12642,7 +12642,7 @@ V^{*}= & \left\{ \mathrm{d}f\middle|\mathrm{d}f:V\rightarrow F\right\} =\left\{ 
 \begin{align*}
 \mathrm{d}f\left(\boldsymbol{v}\right)= & \mathrm{d}f\left(v_{{\scriptscriptstyle j}}\boldsymbol{e}_{{\scriptscriptstyle j}}\right)=v_{{\scriptscriptstyle j}}\mathrm{d}f\left(\boldsymbol{e}_{{\scriptscriptstyle j}}\right)\\
 = & v_{{\scriptscriptstyle j}}\mathrm{d}f\left(\boldsymbol{\partial}_{{\scriptscriptstyle j}}\right)=v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}\\
-= & v_{{\scriptscriptstyle 1}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}++v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+v_{{\scriptscriptstyle n}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\\
+= & v_{{\scriptscriptstyle 1}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle 1}}}|_{{\scriptscriptstyle P}}+\cdots+v_{{\scriptscriptstyle j}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle j}}}|_{{\scriptscriptstyle P}}+\cdots+v_{{\scriptscriptstyle n}}\dfrac{\partial f}{\partial x^{{\scriptscriptstyle n}}}|_{{\scriptscriptstyle P}}\\
 = & \begin{pmatrix}v_{{\scriptscriptstyle 1}} & \cdots & v_{{\scriptscriptstyle j}} & \cdots & v_{{\scriptscriptstyle n}}\end{pmatrix}\boldsymbol{\nabla}f
 \end{align*}
 

@@ -1,0 +1,1013 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage[square,numbers]{natbib}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+theorems-sec
+eqs-within-sections
+tabs-within-sections
+figs-within-sections
+hanging
+\end_modules
+\maintain_unincluded_children false
+\language chinese-traditional
+\language_package default
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk bsmi
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 5
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref page
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style gbt7714-numerical
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 1.5cm
+\rightmargin 2cm
+\bottommargin 1.5cm
+\secnumdepth 5
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style cjk
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+tensor
+\end_layout
+
+\begin_layout Section
+tensor algebra
+\end_layout
+
+\begin_layout Subsection
+vector space
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\mathbb{F}^{n}\in & \left\{ \mathbb{R}^{n},\mathbb{C}^{n},\mathbb{R}^{\infty},\cdots\right\}  & \tilde{\mathfrak{V}},\mathfrak{V}\subseteq & \mathcal{V}\subseteq\mathbb{F}^{n}\in\left\{ \mathbb{R}^{n},\mathbb{C}^{n},\cdots\right\} \\
+\mathcal{V}\ni\boldsymbol{v}= & v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}=\sum\limits _{j}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}} & \boldsymbol{v}_{{\scriptscriptstyle j}}\in\mathfrak{V}= & \left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} =\left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j}}\\
+= & \begin{cases}
+v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}} & =\sum\limits _{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\\
+\cdots+v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}+\cdots & =\sum\limits _{j\in J}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}
+\end{cases} & = & \begin{cases}
+\left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j=1}}^{{\scriptscriptstyle n}}\\
+\left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j\in J}} & J\in\left\{ \mathbb{N},\mathbb{Z},\mathbb{R},\cdots\right\} 
+\end{cases}\\
+= & \begin{cases}
+v^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+v^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix} & =\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+\cdots+v^{{\scriptscriptstyle j}}\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle j}}\\
+|
+\end{bmatrix}+\cdots & =\begin{bmatrix} & |\\
+\cdots & \boldsymbol{v}_{{\scriptscriptstyle j}} & \cdots\\
+ & |
+\end{bmatrix}\begin{bmatrix}\vdots\\
+v^{{\scriptscriptstyle j}}\\
+\vdots
+\end{bmatrix}
+\end{cases}=\begin{bmatrix}\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle j}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\begin{bmatrix}\vdots\\
+v^{{\scriptscriptstyle j}}\\
+\vdots
+\end{bmatrix} & =V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}} & \qquad\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\in\begin{cases}
+\mathbb{F}^{n}\\
+\mathbb{F}^{\left|J\right|}
+\end{cases}\\
+= & \tilde{v}^{{\scriptscriptstyle j}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=\sum\limits _{j}\tilde{v}^{{\scriptscriptstyle j}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}} & \tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\in\tilde{\mathfrak{V}}= & \left\{ \tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right\} =\left\{ \tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j}}\\
+= & \begin{cases}
+\tilde{v}^{{\scriptscriptstyle 1}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}+\cdots+\tilde{v}^{{\scriptscriptstyle n}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}} & =\sum\limits _{j=1}^{n}\tilde{v}^{{\scriptscriptstyle j}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\\
+\cdots+\tilde{v}^{{\scriptscriptstyle j}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}+\cdots & =\sum\limits _{j\in J}\tilde{v}^{{\scriptscriptstyle j}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}
+\end{cases} & = & \begin{cases}
+\left\{ \tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j=1}}^{{\scriptscriptstyle n}}\\
+\left\{ \tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j\in J}} & J\in\left\{ \mathbb{N},\mathbb{Z},\mathbb{R},\cdots\right\} 
+\end{cases}\\
+= & \begin{cases}
+\tilde{v}^{{\scriptscriptstyle 1}}\begin{bmatrix}|\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}+\cdots+\tilde{v}^{{\scriptscriptstyle n}}\begin{bmatrix}|\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix} & =\begin{bmatrix}| &  & |\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}} & \cdots & \tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}\tilde{v}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{v}^{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+\cdots+\tilde{v}^{{\scriptscriptstyle j}}\begin{bmatrix}|\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\\
+|
+\end{bmatrix}+\cdots & =\begin{bmatrix} & |\\
+\cdots & \tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}} & \cdots\\
+ & |
+\end{bmatrix}\begin{bmatrix}\vdots\\
+\tilde{v}^{{\scriptscriptstyle j}}\\
+\vdots
+\end{bmatrix}
+\end{cases}=\begin{bmatrix}\vdots\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\begin{bmatrix}\vdots\\
+\tilde{v}^{{\scriptscriptstyle j}}\\
+\vdots
+\end{bmatrix} & =\tilde{V}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle \tilde{V}}} & \qquad\left[\boldsymbol{v}\right]_{{\scriptscriptstyle \tilde{V}}}\in\begin{cases}
+\mathbb{F}^{n}\\
+\mathbb{F}^{\left|J\right|}
+\end{cases}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\boldsymbol{v}= &  & V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}= & \tilde{V}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle \tilde{V}}}\\
+v^{{\scriptscriptstyle i}}= &  & V^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}= & \tilde{V}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\\
+v^{{\scriptscriptstyle k}}= &  & V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}= & \tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\\
+ &  & \left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}= & V^{{\scriptscriptstyle -1}}\tilde{V}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle \tilde{V}}} & = & F\left[\boldsymbol{v}\right]_{{\scriptscriptstyle \tilde{V}}}\\
+ &  & v^{{\scriptscriptstyle i}}= & \left(V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\right)^{{\scriptscriptstyle -1}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}} & = & F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\\
+ &  & = & \left(V^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}} & = & F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\\
+ &  &  & \left(V^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}} & = & F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}= &  & \left(V^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}} & \tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\\
+ &  & \left(V^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}} & =\left(V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\right)^{{\scriptscriptstyle -1}}\\
+ &  & \left[\boldsymbol{v}\right]_{{\scriptscriptstyle \tilde{V}}}= & \tilde{V}^{{\scriptscriptstyle -1}}V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}} & = & B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\\
+ &  & \tilde{v}^{{\scriptscriptstyle j}}= & \left(\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\right)^{{\scriptscriptstyle -1}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}} & = & B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}\\
+ &  & = & \left(\tilde{V}^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}} & = & B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}\\
+ &  &  & \left(\tilde{V}^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}} & = & B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\\
+B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}= &  & \left(\tilde{V}^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}} & V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\\
+ &  & \left(\tilde{V}^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}} & =\left(\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\right)^{{\scriptscriptstyle -1}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}v^{{\scriptscriptstyle i}}\boldsymbol{v}_{{\scriptscriptstyle i}}= & \tilde{v}^{{\scriptscriptstyle j}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=\left(\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\right)^{{\scriptscriptstyle -1}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}} & \tilde{v}^{{\scriptscriptstyle j}}=\left(\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\right)^{{\scriptscriptstyle -1}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}=B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}\\
+v^{{\scriptscriptstyle i}}\boldsymbol{v}_{{\scriptscriptstyle i}}= & \left(\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\right)^{{\scriptscriptstyle -1}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}} & \not v^{{\scriptscriptstyle i}}\\
+\boldsymbol{v}_{{\scriptscriptstyle i}}= & \left(\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\right)^{{\scriptscriptstyle -1}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\\
+\tilde{v}^{{\scriptscriptstyle j}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}= & v^{{\scriptscriptstyle i}}\boldsymbol{v}_{{\scriptscriptstyle i}}=\left(V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\right)^{{\scriptscriptstyle -1}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle i}} & v^{{\scriptscriptstyle i}}=\left(V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\right)^{{\scriptscriptstyle -1}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\\
+\tilde{v}^{{\scriptscriptstyle j}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}= & \left(V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\right)^{{\scriptscriptstyle -1}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle i}} & \not\tilde{v}^{{\scriptscriptstyle j}}\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}= & \left(V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\right)^{{\scriptscriptstyle -1}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle i}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\begin{cases}
+v^{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}=\left(V^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}} & \left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=F\left[\boldsymbol{v}\right]_{{\scriptscriptstyle \tilde{V}}}=V^{{\scriptscriptstyle -1}}\tilde{V}\left[\boldsymbol{v}\right]_{{\scriptscriptstyle \tilde{V}}}\\
+\tilde{v}^{{\scriptscriptstyle j}}=B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}=\left(\tilde{V}^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}} & \left[\boldsymbol{v}\right]_{{\scriptscriptstyle \tilde{V}}}=B\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=\tilde{V}^{{\scriptscriptstyle -1}}V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}
+\end{cases} & \text{contravariant}\\
+\begin{cases}
+\boldsymbol{v}_{{\scriptscriptstyle i}}=B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=\left(\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\right)^{{\scriptscriptstyle -1}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}} & \begin{bmatrix}\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}B=\begin{bmatrix}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\tilde{V}^{{\scriptscriptstyle -1}}V\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle i}}=\left(V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\right)^{{\scriptscriptstyle -1}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle i}} & \begin{bmatrix}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}F=\begin{bmatrix}\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}V^{{\scriptscriptstyle -1}}\tilde{V}
+\end{cases} & \text{covariant}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\begin{cases}
+v^{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}=\left(V^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}} & \begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}=F\begin{bmatrix}\tilde{v}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{v}^{{\scriptscriptstyle n}}
+\end{bmatrix}=V^{{\scriptscriptstyle -1}}\tilde{V}\begin{bmatrix}\tilde{v}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{v}^{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+\tilde{v}^{{\scriptscriptstyle j}}=B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}=\left(\tilde{V}^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}} & \begin{bmatrix}\tilde{v}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{v}^{{\scriptscriptstyle n}}
+\end{bmatrix}=B\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}=\tilde{V}^{{\scriptscriptstyle -1}}V\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}
+\end{cases} & \text{contravariant}\\
+\begin{cases}
+\boldsymbol{v}_{{\scriptscriptstyle i}}=\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}=\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\left(\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\right)^{{\scriptscriptstyle -1}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}} & \begin{bmatrix}\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}B=\begin{bmatrix}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\tilde{V}^{{\scriptscriptstyle -1}}V\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=\boldsymbol{v}_{{\scriptscriptstyle i}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\boldsymbol{v}_{{\scriptscriptstyle i}}\left(V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\right)^{{\scriptscriptstyle -1}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}} & \begin{bmatrix}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}F=\begin{bmatrix}\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}V^{{\scriptscriptstyle -1}}\tilde{V}
+\end{cases} & \text{covariant}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+BF=\left(\tilde{V}^{{\scriptscriptstyle -1}}V\right)\left(V^{{\scriptscriptstyle -1}}\tilde{V}\right)=\tilde{V}^{{\scriptscriptstyle -1}}\left(VV^{{\scriptscriptstyle -1}}\right)\tilde{V}=\tilde{V}^{{\scriptscriptstyle -1}}1\tilde{V}=\tilde{V}^{{\scriptscriptstyle -1}}\tilde{V}=1 & \Rightarrow B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\delta^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\\
+FB=\left(V^{{\scriptscriptstyle -1}}\tilde{V}\right)\left(\tilde{V}^{{\scriptscriptstyle -1}}V\right)=V^{{\scriptscriptstyle -1}}\left(\tilde{V}\tilde{V}^{{\scriptscriptstyle -1}}\right)V=V^{{\scriptscriptstyle -1}}1V=V^{{\scriptscriptstyle -1}}V=1 & \Rightarrow F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}=\delta^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\begin{cases}
+v^{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}=\left(V^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}} & \begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}=\begin{bmatrix} & \vdots\\
+\cdots & F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}} & \cdots\\
+ & \vdots
+\end{bmatrix}\begin{bmatrix}\tilde{v}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{v}^{{\scriptscriptstyle n}}
+\end{bmatrix}=V^{{\scriptscriptstyle -1}}\tilde{V}\begin{bmatrix}\tilde{v}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{v}^{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+\tilde{v}^{{\scriptscriptstyle j}}=B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}=\left(\tilde{V}^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}} & \begin{bmatrix}\tilde{v}^{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{v}^{{\scriptscriptstyle n}}
+\end{bmatrix}=\begin{bmatrix} & \vdots\\
+\cdots & B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}} & \cdots\\
+ & \vdots
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}=\tilde{V}^{{\scriptscriptstyle -1}}V\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}
+\end{cases} & \text{contravariant}\\
+\begin{cases}
+\boldsymbol{v}_{{\scriptscriptstyle i}}=\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}=\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\left(\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\right)^{{\scriptscriptstyle -1}}V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}} & \begin{bmatrix}\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\begin{bmatrix} & \vdots\\
+\cdots & B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}} & \cdots\\
+ & \vdots
+\end{bmatrix}=\begin{bmatrix}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\tilde{V}^{{\scriptscriptstyle -1}}V\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=\boldsymbol{v}_{{\scriptscriptstyle i}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\boldsymbol{v}_{{\scriptscriptstyle i}}\left(V^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\right)^{{\scriptscriptstyle -1}}\tilde{V}^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}} & \begin{bmatrix}\tilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\begin{bmatrix} & \vdots\\
+\cdots & F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}} & \cdots\\
+ & \vdots
+\end{bmatrix}=\begin{bmatrix}\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}V^{{\scriptscriptstyle -1}}\tilde{V}
+\end{cases} & \text{covariant}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We do not denote 
+\begin_inset Formula $V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle \mathfrak{V}}}$
+\end_inset
+
+, because 
+\begin_inset Formula $\mathfrak{V}$
+\end_inset
+
+ can have elements or bases in different orders whereas 
+\begin_inset Formula $V$
+\end_inset
+
+ cannot.
+\end_layout
+
+\begin_layout Subsection
+dual space
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\begin{cases}
+\boldsymbol{v}\in\mathcal{V}\subseteq\mathbb{F}^{n}\in\left\{ \mathbb{R}^{n},\mathbb{C}^{n},\cdots\right\} \\
+\exists!\omega\in\mathbb{F}\left[\boldsymbol{\omega}\left(\boldsymbol{v}\right)=\omega\right]
+\end{cases}\Leftrightarrow & \mathcal{V}\overset{\boldsymbol{\omega}}{\rightarrow}\mathbb{F}\Leftrightarrow\boldsymbol{\omega}:\mathcal{V}\rightarrow\mathbb{F}\\
+\Leftrightarrow & \mathbb{F}^{\mathcal{V}}=\left\{ \boldsymbol{\omega}\middle|\boldsymbol{\omega}:\mathcal{V}\rightarrow\mathbb{F}\right\} \\
+ & \Downarrow\\
+ & \left|\mathbb{F}^{\mathcal{V}}\right|=\left|\mathbb{F}\right|^{\left|\mathcal{V}\right|}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\boldsymbol{v}^{{\scriptscriptstyle 1}}\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & =1 & \cdots &  & \boldsymbol{v}^{{\scriptscriptstyle 1}}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right) &  & \cdots &  & \boldsymbol{v}^{{\scriptscriptstyle 1}}\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+\vdots &  &  &  & \vdots &  &  &  & \vdots\\
+\boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &  & \cdots &  & \boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right) & \overset{\text{def.}}{=}\begin{cases}
+1 & j=i\\
+0 & j\ne i
+\end{cases}=\delta_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}} & \cdots &  & \boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+\vdots &  &  &  & \vdots &  &  &  & \vdots\\
+\boldsymbol{v}^{{\scriptscriptstyle n}}\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) &  & \cdots &  & \boldsymbol{v}^{{\scriptscriptstyle n}}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right) &  & \cdots &  & \boldsymbol{v}^{{\scriptscriptstyle n}}\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right) & =1
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}\right)=\boldsymbol{v}^{{\scriptscriptstyle i}}\left(v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=v^{{\scriptscriptstyle j}}\boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\overset{\text{def.}}{=}v^{{\scriptscriptstyle j}}\delta_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}=v^{{\scriptscriptstyle i}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned} & \begin{cases}
+\boldsymbol{\omega}\in\mathcal{V}^{*}=\left(\mathcal{V}^{*},\mathbb{F},+,\cdot\right)=\left(\mathcal{V}^{*},\mathbb{F},+_{{\scriptscriptstyle \mathcal{V}^{*},\mathbb{F}}},\cdot_{{\scriptscriptstyle \mathbb{F}\times\mathcal{V}^{*},\mathbb{F}}}\right)\\
+\boldsymbol{v}\in\mathcal{V}=\left(\mathcal{V},\mathbb{F},+,\cdot\right)=\left(\mathcal{V},\mathbb{F},+_{{\scriptscriptstyle \mathcal{V},\mathbb{F}}},\cdot_{{\scriptscriptstyle \mathcal{\mathbb{F}\times V},\mathbb{F}}}\right)
+\end{cases}\\
+\boldsymbol{\omega}\left(\boldsymbol{v}\right)= & \boldsymbol{\omega}\left(v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
+= & \boldsymbol{\omega}\left(\sum\limits _{j}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=\sum\limits _{j}\boldsymbol{\omega}\left(v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=\sum\limits _{j}v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
+= & \begin{cases}
+\boldsymbol{\omega}\left(v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}\right) & =\boldsymbol{\omega}\left(\sum\limits _{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
+\boldsymbol{\omega}\left(\cdots+v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}+\cdots\right) & =\boldsymbol{\omega}\left(\sum\limits _{j\in J}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)
+\end{cases} & +=+_{{\scriptscriptstyle \mathcal{V},\mathbb{F}}}\\
+= & \begin{cases}
+v^{{\scriptscriptstyle 1}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right) & =\sum\limits _{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
+\cdots+v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)+\cdots & =\sum\limits _{j\in J}v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)
+\end{cases} & +=+_{{\scriptscriptstyle \mathcal{V}^{*},\mathbb{F}}}\\
+= & v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=\boldsymbol{v}^{{\scriptscriptstyle j}}\left(\boldsymbol{v}\right)\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right) & v^{{\scriptscriptstyle j}}=\boldsymbol{v}^{{\scriptscriptstyle j}}\left(\boldsymbol{v}\right)\Leftarrow\boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}\right)=v^{{\scriptscriptstyle i}}\Leftarrow\boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\overset{\text{def.}}{=}\delta_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}\\
+= & \boldsymbol{v}^{{\scriptscriptstyle j}}\left(\boldsymbol{v}\right)\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}=\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle j}}\left(\boldsymbol{v}\right)=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}\right) & \omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}\overset{\text{def.}}{=}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
+\boldsymbol{\omega}\left(\boldsymbol{v}\right)= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}\right)\\
+\boldsymbol{\omega}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\mathcal{V}^{*}\ni\boldsymbol{\omega}= & \omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}=\sum\limits _{i}\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}=\begin{cases}
+\omega_{{\scriptscriptstyle 1}}\boldsymbol{\omega}^{{\scriptscriptstyle 1}}+\cdots+\omega_{{\scriptscriptstyle n}}\boldsymbol{\omega}^{{\scriptscriptstyle n}} & =\sum\limits _{i=1}^{n}\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}\\
+\cdots+\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}+\cdots & =\sum\limits _{i\in I}\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}
+\end{cases}\\
+= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}=\sum\limits _{i}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}=\begin{cases}
+\omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle 1}}+\cdots+\omega_{{\scriptscriptstyle n}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle n}} & =\sum\limits _{i=1}^{n}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}\\
+\cdots+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}+\cdots & =\sum\limits _{i\in I}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}
+\end{cases}\\
+= & \begin{cases}
+\omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \boldsymbol{v}}}\begin{bmatrix}|\\
+\boldsymbol{v}^{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}+\cdots+\omega_{{\scriptscriptstyle n}}^{{\scriptscriptstyle \boldsymbol{v}}}\begin{bmatrix}|\\
+\boldsymbol{v}^{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}^{{\scriptscriptstyle \intercal}} & =\begin{bmatrix}\omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\vdots\\
+\omega_{{\scriptscriptstyle n}}^{{\scriptscriptstyle \boldsymbol{v}}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\begin{bmatrix}\text{---} & \boldsymbol{v}^{{\scriptscriptstyle 1}} & \text{---}\\
+ & \vdots\\
+\text{---} & \boldsymbol{v}^{{\scriptscriptstyle n}} & \text{---}
+\end{bmatrix}\\
+\cdots+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\begin{bmatrix}|\\
+\boldsymbol{v}^{{\scriptscriptstyle i}}\\
+|
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}+\cdots & =\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\begin{bmatrix} & \vdots\\
+\text{---} & \boldsymbol{v}^{{\scriptscriptstyle i}} & \text{---}\\
+ & \vdots
+\end{bmatrix}
+\end{cases}=\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\begin{bmatrix}\vdots\\
+\boldsymbol{v}^{{\scriptscriptstyle i}}\\
+\vdots
+\end{bmatrix} & =\left[\boldsymbol{\omega}\right]^{{\scriptscriptstyle V}}V^{*}\\
+= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}=\sum\limits _{i}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}=\begin{cases}
+\omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle 1}}+\cdots+\omega_{{\scriptscriptstyle n}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle n}} & =\sum\limits _{i=1}^{n}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}\\
+\cdots+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}+\cdots & =\sum\limits _{i\in I}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}
+\end{cases}\\
+= & \begin{cases}
+\omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\begin{bmatrix}|\\
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}+\cdots+\omega_{{\scriptscriptstyle n}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\begin{bmatrix}|\\
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}^{{\scriptscriptstyle \intercal}} & =\begin{bmatrix}\omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\\
+\vdots\\
+\omega_{{\scriptscriptstyle n}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\begin{bmatrix}\text{---} & \tilde{\boldsymbol{v}}^{{\scriptscriptstyle 1}} & \text{---}\\
+ & \vdots\\
+\text{---} & \tilde{\boldsymbol{v}}^{{\scriptscriptstyle n}} & \text{---}
+\end{bmatrix}\\
+\cdots+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\begin{bmatrix}|\\
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}\\
+|
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}+\cdots & =\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\begin{bmatrix} & \vdots\\
+\text{---} & \tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}} & \text{---}\\
+ & \vdots
+\end{bmatrix}
+\end{cases}=\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}\begin{bmatrix}\vdots\\
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}\\
+\vdots
+\end{bmatrix} & =\left[\boldsymbol{\omega}\right]^{{\scriptscriptstyle \tilde{V}}}\tilde{V}^{*}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\boldsymbol{\omega}= & \left[\boldsymbol{\omega}\right]^{{\scriptscriptstyle V}}V^{*}=\left[\boldsymbol{\omega}\right]^{{\scriptscriptstyle \tilde{V}}}\tilde{V}^{*}\\
+= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}V^{*}{}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}=\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{V}^{*}{}^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{V}^{*}{}^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}V^{*}{}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}V^{*}{}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\left(\tilde{V}^{*}{}^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}\right)^{{\scriptscriptstyle -1}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}V^{*}{}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\left(\tilde{V}^{*}{}^{{\scriptscriptstyle -1}}\right)^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\boldsymbol{\omega}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right)=\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle i}}\right)Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\boldsymbol{\omega}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle k}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\right)Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\boldsymbol{\omega}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle k}}\right)B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\boldsymbol{\omega}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right)= & \boldsymbol{\omega}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle k}}\right)B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}= & \delta^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\Rightarrow Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}Q^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\Rightarrow\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}F\\
+\omega_{{\scriptscriptstyle k}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\delta^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}=\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}= & \omega_{{\scriptscriptstyle k}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\Rightarrow\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}B
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\boldsymbol{v}^{{\scriptscriptstyle i}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}=\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\boldsymbol{v}^{{\scriptscriptstyle i}}= & \omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle j}}\Rightarrow B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\boldsymbol{v}^{{\scriptscriptstyle i}}=\tilde{\boldsymbol{v}}^{{\scriptscriptstyle j}}\Rightarrow\tilde{\boldsymbol{v}}^{{\scriptscriptstyle j}}=B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\boldsymbol{v}^{{\scriptscriptstyle i}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}= & \omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}\Rightarrow F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}=\boldsymbol{v}^{{\scriptscriptstyle j}}\Rightarrow\boldsymbol{v}^{{\scriptscriptstyle j}}=F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\begin{cases}
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}=\omega_{{\scriptscriptstyle k}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}} & \begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}B\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}} & \begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}F
+\end{cases} & \text{covariant}\\
+\begin{cases}
+\boldsymbol{v}^{{\scriptscriptstyle j}}=F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}} & \begin{bmatrix}\vdots\\
+\boldsymbol{v}^{{\scriptscriptstyle i}}\\
+\vdots
+\end{bmatrix}=F\begin{bmatrix}\vdots\\
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}\\
+\vdots
+\end{bmatrix}\\
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle j}}=B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\boldsymbol{v}^{{\scriptscriptstyle i}} & \begin{bmatrix}\vdots\\
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}\\
+\vdots
+\end{bmatrix}=B\begin{bmatrix}\vdots\\
+\boldsymbol{v}^{{\scriptscriptstyle i}}\\
+\vdots
+\end{bmatrix}
+\end{cases} & \text{contravariant}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\begin{cases}
+\boldsymbol{v}^{{\scriptscriptstyle j}}=F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle i}}\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}} & \begin{bmatrix}\vdots\\
+\boldsymbol{v}^{{\scriptscriptstyle i}}\\
+\vdots
+\end{bmatrix}=F\begin{bmatrix}\vdots\\
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}\\
+\vdots
+\end{bmatrix}\\
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle j}}=B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle i}}\boldsymbol{v}^{{\scriptscriptstyle i}} & \begin{bmatrix}\vdots\\
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}\\
+\vdots
+\end{bmatrix}=B\begin{bmatrix}\vdots\\
+\boldsymbol{v}^{{\scriptscriptstyle i}}\\
+\vdots
+\end{bmatrix}
+\end{cases} & \text{contravariant}\\
+\begin{cases}
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}=\omega_{{\scriptscriptstyle k}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}} & \begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}B\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}} & \begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}=\begin{bmatrix}\vdots\\
+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\\
+\vdots
+\end{bmatrix}^{{\scriptscriptstyle \intercal}}F
+\end{cases} & \text{covariant}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned} & \text{covariant} &  & \text{contravariant}\\
+\begin{array}{c}
+\tilde{\mathfrak{V}}\\
+\mathfrak{V}
+\end{array}\Biggr\}\ni & \begin{cases}
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=\boldsymbol{v}_{{\scriptscriptstyle i}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\boldsymbol{v}_{{\scriptscriptstyle j}}=\tilde{\boldsymbol{v}}_{{\scriptscriptstyle i}}B^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}
+\end{cases} & \mathbb{F}\ni & \begin{cases}
+\tilde{v}^{{\scriptscriptstyle i}}=B^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\\
+v^{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}
+\end{cases} & \text{vector space }\mathcal{V}\ni\boldsymbol{v}=\boldsymbol{v}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\\
+\mathbb{F}\ni & \begin{cases}
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}=\omega_{{\scriptscriptstyle k}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}
+\end{cases} & \begin{array}{c}
+\tilde{\mathfrak{V}}^{*}\\
+\mathfrak{V}^{*}
+\end{array}\Biggr\}\ni & \begin{cases}
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}=B^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\boldsymbol{v}^{{\scriptscriptstyle j}}\\
+\boldsymbol{v}^{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{\boldsymbol{v}}^{j}
+\end{cases} & \text{dual space }\mathcal{V}^{*}\ni\boldsymbol{\omega}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}=\boldsymbol{v}_{{\scriptscriptstyle i}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}v^{{\scriptscriptstyle k}}=\boldsymbol{v}_{{\scriptscriptstyle i}}\delta^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}v^{{\scriptscriptstyle k}}=\begin{cases}
+\boldsymbol{v}_{{\scriptscriptstyle k}}v^{{\scriptscriptstyle k}} & \boldsymbol{v}_{{\scriptscriptstyle k}}=\boldsymbol{v}_{{\scriptscriptstyle i}}\delta^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}\\
+\boldsymbol{v}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}} & \delta^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle k}}v^{{\scriptscriptstyle k}}=v^{{\scriptscriptstyle i}}
+\end{cases}=v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+linear map transformation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\begin{cases}
+\boldsymbol{v}\in\mathcal{V}\subseteq\mathbb{F}^{n}\in\left\{ \mathbb{R}^{n},\mathbb{C}^{n},\cdots\right\} \\
+\exists!\boldsymbol{w}\in\mathcal{W}\left[L\left(\boldsymbol{v}\right)=\boldsymbol{w}\right]
+\end{cases}\Leftrightarrow & \mathcal{V}\overset{L}{\rightarrow}\mathcal{W}\Leftrightarrow L:\mathcal{V}\rightarrow\mathcal{W}\\
+\Leftrightarrow & \mathbb{\mathcal{W}}^{\mathcal{V}}=\left\{ L\middle|L:\mathcal{V}\rightarrow\mathcal{W}\right\} \\
+ & \Downarrow\\
+ & \left|\mathbb{\mathcal{W}}^{\mathcal{V}}\right|=\left|\mathcal{W}\right|^{\left|\mathcal{V}\right|}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{w}=L\left(\boldsymbol{v}\right)=L\left(v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=v^{{\scriptscriptstyle j}}L\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}L\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)= & \boldsymbol{v}_{{\scriptscriptstyle 1}}L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle 1}}+\cdots+\boldsymbol{v}_{{\scriptscriptstyle n}}L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle 1}}=\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle 1}}+\cdots+\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle 1}}=\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle 1}}\\
+\vdots\\
+L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle 1}}
+\end{bmatrix}\\
+\vdots\\
+L\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)= & \boldsymbol{v}_{{\scriptscriptstyle 1}}L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle j}}+\cdots+\boldsymbol{v}_{{\scriptscriptstyle n}}L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle j}}=\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle j}}+\cdots+\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle j}}=\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle j}}\\
+\vdots\\
+L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle j}}
+\end{bmatrix}\\
+\vdots\\
+L\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)= & \boldsymbol{v}_{{\scriptscriptstyle 1}}L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle n}}+\cdots+\boldsymbol{v}_{{\scriptscriptstyle n}}L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle n}}=\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}}\\
+|
+\end{bmatrix}L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle n}}+\cdots+\begin{bmatrix}|\\
+\boldsymbol{v}_{{\scriptscriptstyle n}}\\
+|
+\end{bmatrix}L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle n}}=\begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle n}}\\
+\vdots\\
+L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle n}}
+\end{bmatrix}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\begin{bmatrix}| &  & |\\
+L\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & L\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}= & \begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle 1}} &  & L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle n}}\\
+\vdots & \cdots & \vdots\\
+L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle 1}} &  & L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+\boldsymbol{w}=L\left(\boldsymbol{v}\right)=v^{{\scriptscriptstyle j}}L\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=\begin{bmatrix}| &  & |\\
+L\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right) & \cdots & L\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right)\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}= & \begin{bmatrix}| &  & |\\
+\boldsymbol{v}_{{\scriptscriptstyle 1}} & \cdots & \boldsymbol{v}_{{\scriptscriptstyle n}}\\
+| &  & |
+\end{bmatrix}\begin{bmatrix}L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle 1}} &  & L^{{\scriptscriptstyle 1}}{}_{{\scriptscriptstyle n}}\\
+\vdots & \cdots & \vdots\\
+L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle 1}} &  & L^{{\scriptscriptstyle n}}{}_{{\scriptscriptstyle n}}
+\end{bmatrix}\begin{bmatrix}v^{{\scriptscriptstyle 1}}\\
+\vdots\\
+v^{{\scriptscriptstyle n}}
+\end{bmatrix}\\
+=\begin{bmatrix} & |\\
+\cdots & L\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right) & \cdots\\
+ & |
+\end{bmatrix}\begin{bmatrix}\vdots\\
+v^{{\scriptscriptstyle j}}\\
+\vdots
+\end{bmatrix}= & \begin{bmatrix} & |\\
+\cdots & \boldsymbol{v}_{{\scriptscriptstyle i}} & \cdots\\
+ & |
+\end{bmatrix}\begin{bmatrix} & \vdots\\
+\cdots & L^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}} & \cdots\\
+ & \vdots
+\end{bmatrix}\begin{bmatrix}\vdots\\
+v^{{\scriptscriptstyle j}}\\
+\vdots
+\end{bmatrix}\\
+=\boldsymbol{v}_{{\scriptscriptstyle i}}w_{{\scriptscriptstyle \boldsymbol{v}}}^{{\scriptscriptstyle i}}= & \boldsymbol{v}_{{\scriptscriptstyle i}}L^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}} & w_{{\scriptscriptstyle \boldsymbol{v}}}^{{\scriptscriptstyle i}}=L^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\\
+=\tilde{\boldsymbol{v}}_{{\scriptscriptstyle i}}w_{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}^{{\scriptscriptstyle i}}= & \tilde{\boldsymbol{v}}_{{\scriptscriptstyle i}}\tilde{L}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}} & w_{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}^{{\scriptscriptstyle i}}=\tilde{L}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle h}}B^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}L^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}\tilde{v}^{{\scriptscriptstyle k}}=\boldsymbol{v}_{{\scriptscriptstyle i}}L^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}= & \tilde{\boldsymbol{v}}_{{\scriptscriptstyle i}}\tilde{L}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}=\boldsymbol{v}_{{\scriptscriptstyle h}}F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}\tilde{L}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}v^{{\scriptscriptstyle k}}\\
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle h}}B^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}L^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}\tilde{v}^{{\scriptscriptstyle k}}= & \tilde{\boldsymbol{v}}_{{\scriptscriptstyle h}}\tilde{L}^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}\tilde{v}^{{\scriptscriptstyle k}} & \tilde{L}^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}=B^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}L^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}\\
+\boldsymbol{v}_{{\scriptscriptstyle h}}F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}\tilde{L}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}v^{{\scriptscriptstyle k}}= & \boldsymbol{v}_{{\scriptscriptstyle h}}L^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}v^{{\scriptscriptstyle k}} & L^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}=F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}\tilde{L}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\text{covariant } & \left(0,1\right)\text{-tensor} & \text{contravariant } & \left(1,0\right)\text{-tensor}\\
+\begin{array}{c}
+\tilde{\mathfrak{V}}\\
+\mathfrak{V}
+\end{array}\Biggr\}\ni & \begin{cases}
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=\boldsymbol{v}_{{\scriptscriptstyle i}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\boldsymbol{v}_{{\scriptscriptstyle j}}=\tilde{\boldsymbol{v}}_{{\scriptscriptstyle i}}B^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}
+\end{cases} & \mathbb{F}\ni & \begin{cases}
+\tilde{v}^{{\scriptscriptstyle i}}=B^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\\
+v^{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}
+\end{cases} & \text{vector space }\mathcal{V}\ni\boldsymbol{v}=\boldsymbol{v}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\\
+\mathbb{F}\ni & \begin{cases}
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}=\omega_{{\scriptscriptstyle k}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}
+\end{cases} & \begin{array}{c}
+\tilde{\mathfrak{V}}^{*}\\
+\mathfrak{V}^{*}
+\end{array}\Biggr\}\ni & \begin{cases}
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}=B^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\boldsymbol{v}^{{\scriptscriptstyle j}}\\
+\boldsymbol{v}^{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{\boldsymbol{v}}^{j}
+\end{cases} & \text{dual space }\mathcal{V}^{*}\ni\boldsymbol{\omega}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}\\
+ &  &  & \left(1,1\right)\text{-tensor} & \mathcal{V}\overset{L}{\rightarrow}\mathcal{W}\\
+ &  &  & \begin{cases}
+\tilde{L}^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}=B^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}L^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}\\
+L^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}=F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}\tilde{L}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}
+\end{cases} & \text{vector space }\mathcal{W}\ni\boldsymbol{v}=\boldsymbol{v}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+metric tensor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\left\Vert \boldsymbol{v}\right\Vert ^{2}=\boldsymbol{v}\cdot\boldsymbol{v}= & \begin{aligned}\left(\boldsymbol{v}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}\right)\cdot\left(\boldsymbol{v}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\right)\end{aligned}
+=\left(\boldsymbol{v}_{{\scriptscriptstyle i}}\cdot\boldsymbol{v}_{{\scriptscriptstyle j}}\right)v^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=g_{{\scriptscriptstyle ij}}v^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=v^{{\scriptscriptstyle i}}\left(\boldsymbol{v}_{{\scriptscriptstyle i}}\cdot\boldsymbol{v}_{{\scriptscriptstyle j}}\right)v^{{\scriptscriptstyle j}}=v^{{\scriptscriptstyle i}}g_{{\scriptscriptstyle ij}}v^{{\scriptscriptstyle j}}\\
+= & \begin{aligned}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle i}}\tilde{v}^{{\scriptscriptstyle i}}\right)\cdot\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\right)\end{aligned}
+=\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle i}}\cdot\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right)\tilde{v}^{{\scriptscriptstyle i}}\tilde{v}^{{\scriptscriptstyle j}}=\tilde{g}_{{\scriptscriptstyle ij}}\tilde{v}^{{\scriptscriptstyle i}}\tilde{v}^{{\scriptscriptstyle j}}=\tilde{v}^{{\scriptscriptstyle i}}\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle i}}\cdot\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right)\tilde{v}^{{\scriptscriptstyle j}}=\tilde{v}^{{\scriptscriptstyle i}}\tilde{g}_{{\scriptscriptstyle ij}}\tilde{v}^{{\scriptscriptstyle j}}\\
+= & g_{{\scriptscriptstyle ij}}v^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=\tilde{g}_{{\scriptscriptstyle ij}}\tilde{v}^{{\scriptscriptstyle i}}\tilde{v}^{{\scriptscriptstyle j}}=\tilde{g}_{{\scriptscriptstyle hk}}B^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}v^{{\scriptscriptstyle i}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}=\tilde{g}_{{\scriptscriptstyle hk}}B^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}} & g_{{\scriptscriptstyle ij}}=\tilde{g}_{{\scriptscriptstyle hk}}B^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\\
+= & \tilde{g}_{{\scriptscriptstyle ij}}\tilde{v}^{{\scriptscriptstyle i}}\tilde{v}^{{\scriptscriptstyle j}}=g_{{\scriptscriptstyle ij}}v^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=g_{{\scriptscriptstyle hk}}F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}\tilde{v}^{{\scriptscriptstyle i}}F^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}=g_{{\scriptscriptstyle hk}}F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}F^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle i}}\tilde{v}^{{\scriptscriptstyle j}} & \tilde{g}_{{\scriptscriptstyle ij}}=g_{{\scriptscriptstyle hk}}F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}F^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\text{covariant } & \left(0,1\right)\text{-tensor} & \text{contravariant } & \left(1,0\right)\text{-tensor}\\
+\begin{array}{c}
+\tilde{\mathfrak{V}}\\
+\mathfrak{V}
+\end{array}\Biggr\}\ni & \begin{cases}
+\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=\boldsymbol{v}_{{\scriptscriptstyle i}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\boldsymbol{v}_{{\scriptscriptstyle j}}=\tilde{\boldsymbol{v}}_{{\scriptscriptstyle i}}B^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}
+\end{cases} & \mathbb{F}\ni & \begin{cases}
+\tilde{v}^{{\scriptscriptstyle i}}=B^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\\
+v^{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}
+\end{cases} & \text{vector space }\mathcal{V}\ni\boldsymbol{v}=\boldsymbol{v}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\\
+\mathbb{F}\ni & \begin{cases}
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\\
+\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}=\omega_{{\scriptscriptstyle k}}^{{\scriptscriptstyle \tilde{\boldsymbol{v}}}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}
+\end{cases} & \begin{array}{c}
+\tilde{\mathfrak{V}}^{*}\\
+\mathfrak{V}^{*}
+\end{array}\Biggr\}\ni & \begin{cases}
+\tilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}=B^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\boldsymbol{v}^{{\scriptscriptstyle j}}\\
+\boldsymbol{v}^{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}\tilde{\boldsymbol{v}}^{j}
+\end{cases} & \text{dual space }\mathcal{V}^{*}\ni\boldsymbol{\omega}=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}\\
+ &  &  & \left(1,1\right)\text{-tensor} & \mathcal{V}\overset{L}{\rightarrow}\mathcal{W}\\
+ &  &  & \begin{cases}
+\tilde{L}^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}=B^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}L^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}\\
+L^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}=F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}\tilde{L}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}
+\end{cases} & \text{vector space }\mathcal{W}\ni\boldsymbol{v}=\boldsymbol{v}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\\
+ & \left(0,2\right)\text{-tensor} &  &  & \mathcal{V}^{2}\overset{g}{\rightarrow}\mathcal{\mathbb{R}}_{{\scriptscriptstyle \ge0}}\\
+\mathcal{\mathbb{R}}_{{\scriptscriptstyle \ge0}}^{\mathcal{V}^{2}}\ni & \begin{cases}
+\tilde{g}_{{\scriptscriptstyle ij}}=g_{{\scriptscriptstyle hk}}F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}F^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\\
+g_{{\scriptscriptstyle ij}}=\tilde{g}_{{\scriptscriptstyle hk}}B^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}B^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}
+\end{cases} &  &  & \text{metric space }\mathcal{V}\times\mathcal{V}\overset{g}{\rightarrow}\mathcal{\mathbb{F}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\boldsymbol{u}\cdot\boldsymbol{v}= & \begin{aligned}\left(\boldsymbol{u}_{{\scriptscriptstyle i}}u^{{\scriptscriptstyle i}}\right)\cdot\left(\boldsymbol{v}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\right)\end{aligned}
+=\left(\boldsymbol{u}_{{\scriptscriptstyle i}}\cdot\boldsymbol{v}_{{\scriptscriptstyle j}}\right)u^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=g_{{\scriptscriptstyle ij}}u^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=u^{{\scriptscriptstyle i}}\left(\boldsymbol{u}_{{\scriptscriptstyle i}}\cdot\boldsymbol{v}_{{\scriptscriptstyle j}}\right)v^{{\scriptscriptstyle j}}=u^{{\scriptscriptstyle i}}g_{{\scriptscriptstyle ij}}v^{{\scriptscriptstyle j}}\\
+= & \begin{aligned}\left(\tilde{\boldsymbol{u}}_{{\scriptscriptstyle i}}\tilde{u}^{{\scriptscriptstyle i}}\right)\cdot\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\right)\end{aligned}
+=\left(\tilde{\boldsymbol{u}}_{{\scriptscriptstyle i}}\cdot\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right)\tilde{u}^{{\scriptscriptstyle i}}\tilde{v}^{{\scriptscriptstyle j}}=\tilde{g}_{{\scriptscriptstyle ij}}\tilde{u}^{{\scriptscriptstyle i}}\tilde{v}^{{\scriptscriptstyle j}}=\tilde{u}^{{\scriptscriptstyle i}}\left(\tilde{\boldsymbol{u}}_{{\scriptscriptstyle i}}\cdot\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right)\tilde{v}^{{\scriptscriptstyle j}}=\tilde{u}^{{\scriptscriptstyle i}}\tilde{g}_{{\scriptscriptstyle ij}}\tilde{v}^{{\scriptscriptstyle j}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+bilinear form
+\end_layout
+
+\begin_layout Section
+tensor calculus
+\end_layout
+
+\begin_layout Part
+group theory
+\end_layout
+
+\end_body
+\end_document

@@ -1,5 +1,17 @@
 # MatPlotLib / matplotlib {#matplotlib}
 
+```{r}
+library(reticulate)
+# conda_list()
+use_condaenv(condaenv = 'sandbox-3.9')
+
+## install Seaborn
+# conda_install("r-reticulate", "seaborn")
+
+## import Seaborn (it will be automatically discovered in "r-reticulate")
+seaborn <- import("seaborn")
+```
+
 - tikzplotlib^[\@ref(tikzplotlib)]^: [Python]^[\@ref(python)]^ matplotlib^[\@ref(matplotlib)]^ export to [TikZ]^[\@ref(tikz)]^ .tex
 
 ## Timothy H. Wu
@@ -695,15 +707,15 @@ and directly using Anaconda `conda` environment for convenience, instead of `vir
 https://rstudio.github.io/reticulate/articles/python_packages.html
 
 ```{r}
-library(reticulate)
-conda_list()
-use_condaenv(condaenv = 'sandbox-3.9')
+# library(reticulate)
+# conda_list()
+# use_condaenv(condaenv = 'sandbox-3.9')
 
 ## install Seaborn
 # conda_install("r-reticulate", "seaborn")
 
 ## import Seaborn (it will be automatically discovered in "r-reticulate")
-seaborn <- import("seaborn")
+# seaborn <- import("seaborn")
 ```
 
 #### basic
