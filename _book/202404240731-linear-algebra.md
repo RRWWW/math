@@ -753,10 +753,7 @@ $$
 
 ***
 
-<div class="figure">
-<img src="202404240731-linear-algebra_files/figure-html/unnamed-chunk-1-1.png" alt="coordinate under linear transformation" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-1)coordinate under linear transformation</p>
-</div>
+![(\#fig:unnamed-chunk-1)coordinate under linear transformation](202404240731-linear-algebra_files/figure-latex/unnamed-chunk-1-1.pdf) 
 
 ### change of basis
 
@@ -969,10 +966,7 @@ $$
 
 ***
 
-<div class="figure">
-<img src="202404240731-linear-algebra_files/figure-html/unnamed-chunk-2-1.png" alt="change of coordinate basis under linear transformation" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-2)change of coordinate basis under linear transformation</p>
-</div>
+![(\#fig:unnamed-chunk-2)change of coordinate basis under linear transformation](202404240731-linear-algebra_files/figure-latex/unnamed-chunk-2-1.pdf) 
 
 $\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}\rightleftharpoons\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V^{\prime}}}$
 

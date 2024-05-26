@@ -986,6 +986,18 @@ g_{{\scriptscriptstyle ij}}=\tilde{g}_{{\scriptscriptstyle hk}}B^{{\scriptscript
 \end_inset
 
 
+\begin_inset Formula 
+\[
+\begin{aligned}\boldsymbol{u}\cdot\boldsymbol{v}= & \begin{aligned}\left(\boldsymbol{u}_{{\scriptscriptstyle i}}u^{{\scriptscriptstyle i}}\right)\cdot\left(\boldsymbol{v}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\right)\end{aligned}
+=\left(\boldsymbol{u}_{{\scriptscriptstyle i}}\cdot\boldsymbol{v}_{{\scriptscriptstyle j}}\right)u^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=g_{{\scriptscriptstyle ij}}u^{{\scriptscriptstyle i}}v^{{\scriptscriptstyle j}}=u^{{\scriptscriptstyle i}}\left(\boldsymbol{u}_{{\scriptscriptstyle i}}\cdot\boldsymbol{v}_{{\scriptscriptstyle j}}\right)v^{{\scriptscriptstyle j}}=u^{{\scriptscriptstyle i}}g_{{\scriptscriptstyle ij}}v^{{\scriptscriptstyle j}}\\
+= & \begin{aligned}\left(\tilde{\boldsymbol{u}}_{{\scriptscriptstyle i}}\tilde{u}^{{\scriptscriptstyle i}}\right)\cdot\left(\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\tilde{v}^{{\scriptscriptstyle j}}\right)\end{aligned}
+=\left(\tilde{\boldsymbol{u}}_{{\scriptscriptstyle i}}\cdot\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right)\tilde{u}^{{\scriptscriptstyle i}}\tilde{v}^{{\scriptscriptstyle j}}=\tilde{g}_{{\scriptscriptstyle ij}}\tilde{u}^{{\scriptscriptstyle i}}\tilde{v}^{{\scriptscriptstyle j}}=\tilde{u}^{{\scriptscriptstyle i}}\left(\tilde{\boldsymbol{u}}_{{\scriptscriptstyle i}}\cdot\tilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right)\tilde{v}^{{\scriptscriptstyle j}}=\tilde{u}^{{\scriptscriptstyle i}}\tilde{g}_{{\scriptscriptstyle ij}}\tilde{v}^{{\scriptscriptstyle j}}
+\end{aligned}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

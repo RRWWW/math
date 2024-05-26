@@ -24,18 +24,8 @@ https://tex.stackexchange.com/questions/53260/lyx-is-ignoring-typewriter-font-se
 ![ExpL3](ExpL3.pdf){width=100% height=1000}
 :::
 
-::: {show-in="pdf"}
-\begin{center} <br>
-\includegraphics[width=8in]{ExpL3.pdf} <br>
-\end{center}
-:::
-
 ::: {show-in="html"}
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="ExpL3.mp4"></iframe>
-:::
-
-::: {show-in="html"}
-<iframe width=500 height=300 frameborder="0" allowfullscreen src="TensorCalc_04_Derivatives_are_Vectors.mp4"></iframe>
 :::
 
 ::: {show-in="html"}
