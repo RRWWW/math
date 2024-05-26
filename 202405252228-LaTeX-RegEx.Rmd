@@ -1,5 +1,60 @@
 # LaTeX RegEx
 
+```
+\usepackage{xcolor}
+\usepackage{expl3,xparse}
+
+\ExplSyntaxOn
+\NewDocumentCommand{\recolor}{m}
+{
+    \tl_set:Nn \l_tmpa_tl { #1 }
+    \regex_replace_all:nnN { 2 } { \c{ensuremath}{\c{color}{red}{2}} } \l_tmpa_tl
+    \tl_use:N \l_tmpa_tl
+}
+\ExplSyntaxOff
+
+\recolor{c^{2}=a^{2}+b^{2}}
+```
+
+https://stackoverflow.com/questions/2116944/insert-programming-code-in-a-lyx-document
+
+https://tex.stackexchange.com/questions/53260/lyx-is-ignoring-typewriter-font-setting-for-program-listings
+
+::: {show-in="html"}
+![ExpL3](ExpL3.pdf){width=100% height=1000}
+:::
+
+::: {show-in="pdf"}
+\begin{center} <br>
+\includegraphics[width=8in]{ExpL3.pdf} <br>
+\end{center}
+:::
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="ExpL3.mp4"></iframe>
+:::
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="TensorCalc_04_Derivatives_are_Vectors.mp4"></iframe>
+:::
+
+::: {show-in="html"}
+![EigenChris_TensorCalculus_09](TensorCalc_09_Integration_With_Differential_Forms.pdf){width=100% height=450}
+:::
+
+The LATEX3 Interfaces-20240220-including ExpL3,RegEx
+
+::: {show-in="html"}
+![LATEX3 Interfaces](The LATEX3 Interfaces-20240220-including ExpL3,RegEx.pdf){width=100% height=1000}
+:::
+
+::: {show-in="pdf"}
+\begin{center} <br>
+\includegraphics[width=8in]{The LATEX3 Interfaces-20240220-including ExpL3,RegEx.pdf} <br>
+\end{center}
+:::
+
+
 https://tex.stackexchange.com/questions/534581/tex-compilation-after-regex-replace
 
 https://www.overleaf.com/project/66512b6948077364474110de

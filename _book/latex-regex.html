@@ -1236,6 +1236,54 @@
             <section class="normal" id="section-">
 <div id="latex-regex" class="section level1 hasAnchor" number="86">
 <h1><span class="header-section-number">Chapter 86: </span> LaTeX RegEx<a href="latex-regex.html#latex-regex" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<pre><code>\usepackage{xcolor}
+\usepackage{expl3,xparse}
+
+\ExplSyntaxOn
+\NewDocumentCommand{\recolor}{m}
+{
+    \tl_set:Nn \l_tmpa_tl { #1 }
+    \regex_replace_all:nnN { 2 } { \c{ensuremath}{\c{color}{red}{2}} } \l_tmpa_tl
+    \tl_use:N \l_tmpa_tl
+}
+\ExplSyntaxOff
+
+\recolor{c^{2}=a^{2}+b^{2}}</code></pre>
+<p><a href="https://stackoverflow.com/questions/2116944/insert-programming-code-in-a-lyx-document" class="uri">https://stackoverflow.com/questions/2116944/insert-programming-code-in-a-lyx-document</a></p>
+<p><a href="https://tex.stackexchange.com/questions/53260/lyx-is-ignoring-typewriter-font-setting-for-program-listings" class="uri">https://tex.stackexchange.com/questions/53260/lyx-is-ignoring-typewriter-font-setting-for-program-listings</a></p>
+<div show-in="html">
+<div class="float">
+<embed src="ExpL3.pdf" style="width:100.0%" height="1000" />
+<div class="figcaption">ExpL3</div>
+</div>
+</div>
+<div show-in="pdf">
+
+</div>
+<div show-in="html">
+<iframe width="500" height="300" frameborder="0" allowfullscreen src="ExpL3.mp4">
+</iframe>
+</div>
+<div show-in="html">
+<iframe width="500" height="300" frameborder="0" allowfullscreen src="TensorCalc_04_Derivatives_are_Vectors.mp4">
+</iframe>
+</div>
+<div show-in="html">
+<div class="float">
+<embed src="TensorCalc_09_Integration_With_Differential_Forms.pdf" style="width:100.0%" height="450" />
+<div class="figcaption">EigenChris_TensorCalculus_09</div>
+</div>
+</div>
+<p>The LATEX3 Interfaces-20240220-including ExpL3,RegEx</p>
+<div show-in="html">
+<div class="float">
+<embed src="The%20LATEX3%20Interfaces-20240220-including%20ExpL3,RegEx.pdf" style="width:100.0%" height="1000" />
+<div class="figcaption">LATEX3 Interfaces</div>
+</div>
+</div>
+<div show-in="pdf">
+
+</div>
 <p><a href="https://tex.stackexchange.com/questions/534581/tex-compilation-after-regex-replace" class="uri">https://tex.stackexchange.com/questions/534581/tex-compilation-after-regex-replace</a></p>
 <p><a href="https://www.overleaf.com/project/66512b6948077364474110de" class="uri">https://www.overleaf.com/project/66512b6948077364474110de</a></p>
 <pre><code>\documentclass[a4paper,11pt]{article}
