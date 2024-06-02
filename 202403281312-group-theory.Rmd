@@ -1,5 +1,11 @@
 # group theory
 
+::: {show-in="html"}
+![algebra,group,tensor,spinor](tensor-and-group.pdf){width=100% height=1000}
+
+<object data="tensor-and-group.pdf" type="application/pdf" width="100%" height=1000></object>
+:::
+
 https://www.bilibili.com/video/BV1hm4y1v75R
 
 ::: {show-in="html"}

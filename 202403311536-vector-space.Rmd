@@ -16,6 +16,12 @@ https://ccjou.wordpress.com/2010/04/15/同構的向量空間/
 \end{CJK}
 :::
 
+::: {show-in="html"}
+[東雲正樹: 從對應到張量](https://zhuanlan.zhihu.com/p/356975719)
+
+[東雲正樹: 《線性代數》課程，你會如何設計](https://www.zhihu.com/question/450323486/answer/1790888257)
+:::
+
 ## What is a vector?
 
 **What is a vector?** or **What is an element in a vector space?**

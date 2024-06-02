@@ -40,6 +40,12 @@ https://www.bilibili.com/video/BV1ZU411o7xL
 
 https://www.youtube.com/playlist?list=PLJHszsWbB6hrkmmq57lX8BV-o-YIOFsiG
 
+::: {show-in="html"}
+[東雲正樹: 張量運算](https://zhuanlan.zhihu.com/p/311558501)
+
+[東雲正樹: 張量指標運算](https://zhuanlan.zhihu.com/p/359082678)
+:::
+
 ### tensor calculus
 
 https://www.youtube.com/playlist?list=PLJHszsWbB6hpk5h8lSfBkVrpjsqvUGTCx

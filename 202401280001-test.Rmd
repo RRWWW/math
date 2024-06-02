@@ -634,7 +634,7 @@ https://github.com/yihui/xaringan
 
 https://www.youtube.com/watch?v=3n9nASHg9gc
 
-### embed a web page
+### embed HTML or web page
 
 #### iframe
 
@@ -687,6 +687,10 @@ however `out.height` etc. not works
 ```{r, echo=FALSE, out.height="1000%", out.width="1000%"}
 htmltools::includeHTML("ThreeJS/06.html")
 ```
+
+### embed PDF
+
+https://stackoverflow.com/questions/39173714/r-markdown-can-i-insert-a-pdf-to-the-r-markdown-file-as-an-image
 
 ## Bookdown
 

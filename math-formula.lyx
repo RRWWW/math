@@ -96,6 +96,189 @@
 
 \begin_body
 
+\begin_layout Chapter
+recolor
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{expl3,xparse}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{xcolor}
+\end_layout
+
+\end_inset
+
+
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+NewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 2 } { 
+\backslash
+c{ensuremath}{
+\backslash
+c{color}{red}{2}} } 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+NewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 2 } { 
+\backslash
+c{color}{red}{2} } 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\recolor{c^{2}=a^{2}+b^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 2D transformation
 \end_layout

@@ -123,29 +123,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -163,7 +140,7 @@ div.csl-indent {
 <li><a href="./">math</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>index</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> output:</a></li>
 <li class="part"><span><b>I by descipline</b></span></li>
 <li class="chapter" data-level="3" data-path="mathematics.html"><a href="mathematics.html"><i class="fa fa-check"></i><b>3</b> mathematics</a>
 <ul>
@@ -1333,7 +1310,7 @@ div.csl-indent {
 </div>
 </div>
 <div id="epicorganism-airoswell-pan-yi-wen-1" class="section level2 hasAnchor" number="41.2">
-<h2><span class="header-section-number">41.2</span> EpicOrganism = AIRoswell = Pan, Yi-Wen<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a><a href="tensor.html#epicorganism-airoswell-pan-yi-wen-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">41.2</span> EpicOrganism = AIRoswell = Pan, Yi-Wen<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a><a href="tensor.html#epicorganism-airoswell-pan-yi-wen-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><a href="https://space.bilibili.com/14316464/video" class="uri">https://space.bilibili.com/14316464/video</a></p>
 <p><a href="https://www.bilibili.com/video/BV1T5411D7mS" class="uri">https://www.bilibili.com/video/BV1T5411D7mS</a></p>
 <div show-in="html">
@@ -1361,6 +1338,10 @@ div.csl-indent {
 <div id="tensor-for-beginner" class="section level3 hasAnchor" number="41.3.1">
 <h3><span class="header-section-number">41.3.1</span> tensor for beginner<a href="tensor.html#tensor-for-beginner" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><a href="https://www.youtube.com/playlist?list=PLJHszsWbB6hrkmmq57lX8BV-o-YIOFsiG" class="uri">https://www.youtube.com/playlist?list=PLJHszsWbB6hrkmmq57lX8BV-o-YIOFsiG</a></p>
+<div show-in="html">
+<p><a href="https://zhuanlan.zhihu.com/p/311558501">東雲正樹: 張量運算</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/359082678">東雲正樹: 張量指標運算</a></p>
+</div>
 </div>
 <div id="tensor-calculus" class="section level3 hasAnchor" number="41.3.2">
 <h3><span class="header-section-number">41.3.2</span> tensor calculus<a href="tensor.html#tensor-calculus" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -1454,7 +1435,7 @@ x_{{\scriptscriptstyle 3}}
 f\left(\boldsymbol{r}\right)=f\left(\vec{r}\right)=f\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)=f\left(\cdots,x_{{\scriptscriptstyle i}},\cdots\right)
 \]</span></p>
 <div class="definition">
-<p><span id="def:unnamed-chunk-1" class="definition"><strong>Definition 40.1  </strong></span>directional derivative</p>
+<p><span id="def:unnamed-chunk-1" class="definition"><strong>Definition 41.1  </strong></span>directional derivative</p>
 </div>
 <p><span class="math display">\[
 \begin{aligned}
@@ -1719,112 +1700,112 @@ pre[class] {
 <p><img src="202403291050-tensor_files/figure-html/unnamed-chunk-3-1.png" width="1440" /></p>
 <div class="cols">
 <div class="col">
-<div class="sourceCode" id="cb508"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb508-1"><a href="tensor.html#cb508-1" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb508-2"><a href="tensor.html#cb508-2" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb508-3"><a href="tensor.html#cb508-3" tabindex="-1"></a></span>
-<span id="cb508-4"><a href="tensor.html#cb508-4" tabindex="-1"></a>A <span class="op">=</span> np.array([[ <span class="dv">0</span>,<span class="op">-</span><span class="dv">1</span>],</span>
-<span id="cb508-5"><a href="tensor.html#cb508-5" tabindex="-1"></a>              [ <span class="dv">1</span>, <span class="dv">0</span>]])</span>
-<span id="cb508-6"><a href="tensor.html#cb508-6" tabindex="-1"></a></span>
-<span id="cb508-7"><a href="tensor.html#cb508-7" tabindex="-1"></a>B <span class="op">=</span> np.array([[ <span class="dv">1</span>, <span class="dv">0</span>],</span>
-<span id="cb508-8"><a href="tensor.html#cb508-8" tabindex="-1"></a>              [ <span class="dv">0</span>, <span class="dv">1</span>]])</span>
-<span id="cb508-9"><a href="tensor.html#cb508-9" tabindex="-1"></a></span>
-<span id="cb508-10"><a href="tensor.html#cb508-10" tabindex="-1"></a>C <span class="op">=</span> np.array([[ <span class="dv">1</span>,<span class="op">-</span><span class="dv">1</span>],</span>
-<span id="cb508-11"><a href="tensor.html#cb508-11" tabindex="-1"></a>              [ <span class="dv">1</span>, <span class="dv">1</span>]])</span>
-<span id="cb508-12"><a href="tensor.html#cb508-12" tabindex="-1"></a></span>
-<span id="cb508-13"><a href="tensor.html#cb508-13" tabindex="-1"></a>D <span class="op">=</span> np.array([[ <span class="dv">1</span>, <span class="dv">1</span>],</span>
-<span id="cb508-14"><a href="tensor.html#cb508-14" tabindex="-1"></a>              [ <span class="dv">1</span>, <span class="dv">1</span>]])</span>
-<span id="cb508-15"><a href="tensor.html#cb508-15" tabindex="-1"></a></span>
-<span id="cb508-16"><a href="tensor.html#cb508-16" tabindex="-1"></a>E <span class="op">=</span> np.array([[<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>],</span>
-<span id="cb508-17"><a href="tensor.html#cb508-17" tabindex="-1"></a>              [ <span class="dv">0</span>,<span class="op">-</span><span class="dv">1</span>]])</span>
-<span id="cb508-18"><a href="tensor.html#cb508-18" tabindex="-1"></a></span>
-<span id="cb508-19"><a href="tensor.html#cb508-19" tabindex="-1"></a>F <span class="op">=</span> np.array([[ <span class="dv">3</span>, <span class="dv">1</span>],</span>
-<span id="cb508-20"><a href="tensor.html#cb508-20" tabindex="-1"></a>              [<span class="op">-</span><span class="dv">2</span>, <span class="dv">2</span>]])</span>
-<span id="cb508-21"><a href="tensor.html#cb508-21" tabindex="-1"></a></span>
-<span id="cb508-22"><a href="tensor.html#cb508-22" tabindex="-1"></a>t <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span> <span class="op">*</span> np.pi, np.pi<span class="op">/</span><span class="dv">5</span>)</span>
-<span id="cb508-23"><a href="tensor.html#cb508-23" tabindex="-1"></a></span>
-<span id="cb508-24"><a href="tensor.html#cb508-24" tabindex="-1"></a><span class="co"># Creating arrow </span></span>
-<span id="cb508-25"><a href="tensor.html#cb508-25" tabindex="-1"></a>X <span class="op">=</span> np.cos(t)</span>
-<span id="cb508-26"><a href="tensor.html#cb508-26" tabindex="-1"></a>Y <span class="op">=</span> np.sin(t)</span>
-<span id="cb508-27"><a href="tensor.html#cb508-27" tabindex="-1"></a> </span>
-<span id="cb508-28"><a href="tensor.html#cb508-28" tabindex="-1"></a><span class="co"># X, Y = np.meshgrid(x, y)</span></span>
-<span id="cb508-29"><a href="tensor.html#cb508-29" tabindex="-1"></a></span>
-<span id="cb508-30"><a href="tensor.html#cb508-30" tabindex="-1"></a><span class="co"># V = np.array([X, Y])</span></span>
-<span id="cb508-31"><a href="tensor.html#cb508-31" tabindex="-1"></a></span>
-<span id="cb508-32"><a href="tensor.html#cb508-32" tabindex="-1"></a><span class="co"># u = x</span></span>
-<span id="cb508-33"><a href="tensor.html#cb508-33" tabindex="-1"></a><span class="co"># v = y</span></span>
-<span id="cb508-34"><a href="tensor.html#cb508-34" tabindex="-1"></a></span>
-<span id="cb508-35"><a href="tensor.html#cb508-35" tabindex="-1"></a><span class="co"># u, v = np.matmul(A, V)</span></span>
-<span id="cb508-36"><a href="tensor.html#cb508-36" tabindex="-1"></a>u, v <span class="op">=</span> np.matmul(A, np.array([X, Y]))</span>
-<span id="cb508-37"><a href="tensor.html#cb508-37" tabindex="-1"></a>dx, dy <span class="op">=</span> np.matmul(B, np.array([X, Y]))</span>
-<span id="cb508-38"><a href="tensor.html#cb508-38" tabindex="-1"></a>dx2, dy2 <span class="op">=</span> np.matmul(C, np.array([X, Y]))</span>
-<span id="cb508-39"><a href="tensor.html#cb508-39" tabindex="-1"></a>dx3, dy3 <span class="op">=</span> np.matmul(D, np.array([X, Y]))</span>
-<span id="cb508-40"><a href="tensor.html#cb508-40" tabindex="-1"></a>dx4, dy4 <span class="op">=</span> np.matmul(E, np.array([X, Y]))</span>
-<span id="cb508-41"><a href="tensor.html#cb508-41" tabindex="-1"></a>dx5, dy5 <span class="op">=</span> np.matmul(F, np.array([X, Y]))</span>
-<span id="cb508-42"><a href="tensor.html#cb508-42" tabindex="-1"></a></span>
-<span id="cb508-43"><a href="tensor.html#cb508-43" tabindex="-1"></a><span class="co"># n = -2</span></span>
-<span id="cb508-44"><a href="tensor.html#cb508-44" tabindex="-1"></a> </span>
-<span id="cb508-45"><a href="tensor.html#cb508-45" tabindex="-1"></a><span class="co"># Defining color</span></span>
-<span id="cb508-46"><a href="tensor.html#cb508-46" tabindex="-1"></a><span class="co"># color = np.sqrt(((v-n)/2)*2 + ((u-n)/2)*2)</span></span>
-<span id="cb508-47"><a href="tensor.html#cb508-47" tabindex="-1"></a><span class="co"># color = (u**2+v**2)**(1/2)</span></span>
-<span id="cb508-48"><a href="tensor.html#cb508-48" tabindex="-1"></a>color <span class="op">=</span> u<span class="op">*</span>v</span>
-<span id="cb508-49"><a href="tensor.html#cb508-49" tabindex="-1"></a> </span>
-<span id="cb508-50"><a href="tensor.html#cb508-50" tabindex="-1"></a><span class="co"># Creating plot</span></span>
-<span id="cb508-51"><a href="tensor.html#cb508-51" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">3</span>,<span class="dv">3</span>,figsize <span class="op">=</span>(<span class="dv">15</span>,<span class="dv">15</span>), gridspec_kw <span class="op">=</span> {<span class="st">&#39;wspace&#39;</span>:<span class="fl">0.1</span>, <span class="st">&#39;hspace&#39;</span>:<span class="fl">0.1</span>})</span>
-<span id="cb508-52"><a href="tensor.html#cb508-52" tabindex="-1"></a></span>
-<span id="cb508-53"><a href="tensor.html#cb508-53" tabindex="-1"></a><span class="co"># ax.quiver(X, Y, u, v, color, alpha = 1)</span></span>
-<span id="cb508-54"><a href="tensor.html#cb508-54" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="op">-</span><span class="dv">2</span>,<span class="dv">3</span>):</span>
-<span id="cb508-55"><a href="tensor.html#cb508-55" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="op">-</span><span class="dv">2</span>,<span class="dv">3</span>):</span>
-<span id="cb508-56"><a href="tensor.html#cb508-56" tabindex="-1"></a>        <span class="co"># ax.quiver(1.0*X+4*i, 1.0*Y+4*j, u, v)#, color, alpha = 1)</span></span>
-<span id="cb508-57"><a href="tensor.html#cb508-57" tabindex="-1"></a>        <span class="co"># ax.quiver(1.5*X+4*i, 1.5*Y+4*j, u, v)#, color, alpha = 1)</span></span>
-<span id="cb508-58"><a href="tensor.html#cb508-58" tabindex="-1"></a>        <span class="co"># ax.quiver(2.0*X+4*i, 2.0*Y+4*j, u, v)#, color, alpha = 1)</span></span>
-<span id="cb508-59"><a href="tensor.html#cb508-59" tabindex="-1"></a></span>
-<span id="cb508-60"><a href="tensor.html#cb508-60" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">0</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">0.50</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
-<span id="cb508-61"><a href="tensor.html#cb508-61" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">0</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
-<span id="cb508-62"><a href="tensor.html#cb508-62" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">0</span>].quiver(<span class="fl">1.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">0.25</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
-<span id="cb508-63"><a href="tensor.html#cb508-63" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">0</span>].quiver(<span class="fl">2.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">2.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">0.10</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
-<span id="cb508-64"><a href="tensor.html#cb508-64" tabindex="-1"></a></span>
-<span id="cb508-65"><a href="tensor.html#cb508-65" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">1</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx, dy, dx<span class="op">*</span>dy, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;summer&#39;</span>)</span>
-<span id="cb508-66"><a href="tensor.html#cb508-66" tabindex="-1"></a>        <span class="co"># ax[0,1].quiver(1.0*X+4*i, 1.0*Y+4*j, dx, dy, dx*dy, alpha = 0.50, cmap=&#39;summer&#39;)</span></span>
-<span id="cb508-67"><a href="tensor.html#cb508-67" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">1</span>].quiver(<span class="fl">1.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx, dy, dx<span class="op">*</span>dy, alpha <span class="op">=</span> <span class="fl">0.25</span>, cmap<span class="op">=</span><span class="st">&#39;summer&#39;</span>)</span>
-<span id="cb508-68"><a href="tensor.html#cb508-68" tabindex="-1"></a>        <span class="co"># ax[0,1].quiver(2.0*X+4*i, 2.0*Y+4*j, dx, dy, dx*dy, alpha = 0.10, cmap=&#39;summer&#39;)</span></span>
-<span id="cb508-69"><a href="tensor.html#cb508-69" tabindex="-1"></a></span>
-<span id="cb508-70"><a href="tensor.html#cb508-70" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">0</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
-<span id="cb508-71"><a href="tensor.html#cb508-71" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">0</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">0.50</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
-<span id="cb508-72"><a href="tensor.html#cb508-72" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">0</span>].quiver(<span class="fl">1.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">0.25</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
-<span id="cb508-73"><a href="tensor.html#cb508-73" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">0</span>].quiver(<span class="fl">2.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">2.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">0.10</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
-<span id="cb508-74"><a href="tensor.html#cb508-74" tabindex="-1"></a></span>
-<span id="cb508-75"><a href="tensor.html#cb508-75" tabindex="-1"></a>        <span class="co"># ax[2,0].quiver(0.5*X+4*i, 0.5*Y+4*j, dx3, dy3, dx3*dy3, alpha = 0.50, cmap=&#39;cool&#39;)</span></span>
-<span id="cb508-76"><a href="tensor.html#cb508-76" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">0</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx3, dy3, dx3<span class="op">*</span>dy3, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;cool&#39;</span>)</span>
-<span id="cb508-77"><a href="tensor.html#cb508-77" tabindex="-1"></a>        <span class="co"># ax[2,0].quiver(1.5*X+4*i, 1.5*Y+4*j, dx3, dy3, dx3*dy3, alpha = 0.25, cmap=&#39;cool&#39;)</span></span>
-<span id="cb508-78"><a href="tensor.html#cb508-78" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">0</span>].quiver(<span class="fl">2.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">2.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx3, dy3, dx3<span class="op">*</span>dy3, alpha <span class="op">=</span> <span class="fl">0.10</span>, cmap<span class="op">=</span><span class="st">&#39;cool&#39;</span>)</span>
-<span id="cb508-79"><a href="tensor.html#cb508-79" tabindex="-1"></a></span>
-<span id="cb508-80"><a href="tensor.html#cb508-80" tabindex="-1"></a>        <span class="co"># ax[0,2].quiver(0.5*X+4*i, 0.5*Y+4*j, dx4, dy4, dx4*dy4, alpha = 0.50)</span></span>
-<span id="cb508-81"><a href="tensor.html#cb508-81" tabindex="-1"></a>        <span class="co"># ax[0,2].quiver(1.0*X+4*i, 1.0*Y+4*j, dx4, dy4, dx4*dy4, alpha = 0.25)</span></span>
-<span id="cb508-82"><a href="tensor.html#cb508-82" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">2</span>].quiver(<span class="fl">1.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx4, dy4, dx4<span class="op">*</span>dy4, alpha <span class="op">=</span> <span class="fl">1.00</span>)</span>
-<span id="cb508-83"><a href="tensor.html#cb508-83" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">2</span>].quiver(<span class="fl">2.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">2.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx4, dy4, dx4<span class="op">*</span>dy4, alpha <span class="op">=</span> <span class="fl">0.10</span>)</span>
-<span id="cb508-84"><a href="tensor.html#cb508-84" tabindex="-1"></a></span>
-<span id="cb508-85"><a href="tensor.html#cb508-85" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">2</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx5, dy5, dx5<span class="op">*</span>dy5, alpha <span class="op">=</span> <span class="fl">0.50</span>)</span>
-<span id="cb508-86"><a href="tensor.html#cb508-86" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">2</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx5, dy5, dx5<span class="op">*</span>dy5, alpha <span class="op">=</span> <span class="fl">1.00</span>)</span>
-<span id="cb508-87"><a href="tensor.html#cb508-87" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">2</span>].quiver(<span class="fl">1.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx5, dy5, dx5<span class="op">*</span>dy5, alpha <span class="op">=</span> <span class="fl">0.25</span>)</span>
-<span id="cb508-88"><a href="tensor.html#cb508-88" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">2</span>].quiver(<span class="fl">2.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">2.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx5, dy5, dx5<span class="op">*</span>dy5, alpha <span class="op">=</span> <span class="fl">0.10</span>)</span>
-<span id="cb508-89"><a href="tensor.html#cb508-89" tabindex="-1"></a></span>
-<span id="cb508-90"><a href="tensor.html#cb508-90" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">1</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
-<span id="cb508-91"><a href="tensor.html#cb508-91" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">1</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx, dy, dx<span class="op">*</span>dy, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;summer&#39;</span>)</span>
-<span id="cb508-92"><a href="tensor.html#cb508-92" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">1</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
-<span id="cb508-93"><a href="tensor.html#cb508-93" tabindex="-1"></a></span>
-<span id="cb508-94"><a href="tensor.html#cb508-94" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">1</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
-<span id="cb508-95"><a href="tensor.html#cb508-95" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">1</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx, dy, dx<span class="op">*</span>dy, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;summer&#39;</span>)</span>
-<span id="cb508-96"><a href="tensor.html#cb508-96" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">1</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
-<span id="cb508-97"><a href="tensor.html#cb508-97" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">1</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx3, dy3, dx3<span class="op">*</span>dy3, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;cool&#39;</span>)</span>
-<span id="cb508-98"><a href="tensor.html#cb508-98" tabindex="-1"></a></span>
-<span id="cb508-99"><a href="tensor.html#cb508-99" tabindex="-1"></a><span class="cf">for</span> ax <span class="kw">in</span> fig.get_axes():</span>
-<span id="cb508-100"><a href="tensor.html#cb508-100" tabindex="-1"></a>    <span class="co"># ax.xaxis.set_ticks([])</span></span>
-<span id="cb508-101"><a href="tensor.html#cb508-101" tabindex="-1"></a>    <span class="co"># ax.yaxis.set_ticks([])</span></span>
-<span id="cb508-102"><a href="tensor.html#cb508-102" tabindex="-1"></a>    ax.axis([<span class="op">-</span><span class="dv">8</span>, <span class="dv">8</span>, <span class="op">-</span><span class="dv">8</span>, <span class="dv">8</span>])</span>
-<span id="cb508-103"><a href="tensor.html#cb508-103" tabindex="-1"></a>    ax.set_aspect(<span class="st">&#39;equal&#39;</span>)</span>
-<span id="cb508-104"><a href="tensor.html#cb508-104" tabindex="-1"></a> </span>
-<span id="cb508-105"><a href="tensor.html#cb508-105" tabindex="-1"></a><span class="co"># show plot</span></span>
-<span id="cb508-106"><a href="tensor.html#cb508-106" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="tensor.html#cb2-1" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="tensor.html#cb2-2" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-3"><a href="tensor.html#cb2-3" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="tensor.html#cb2-4" tabindex="-1"></a>A <span class="op">=</span> np.array([[ <span class="dv">0</span>,<span class="op">-</span><span class="dv">1</span>],</span>
+<span id="cb2-5"><a href="tensor.html#cb2-5" tabindex="-1"></a>              [ <span class="dv">1</span>, <span class="dv">0</span>]])</span>
+<span id="cb2-6"><a href="tensor.html#cb2-6" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="tensor.html#cb2-7" tabindex="-1"></a>B <span class="op">=</span> np.array([[ <span class="dv">1</span>, <span class="dv">0</span>],</span>
+<span id="cb2-8"><a href="tensor.html#cb2-8" tabindex="-1"></a>              [ <span class="dv">0</span>, <span class="dv">1</span>]])</span>
+<span id="cb2-9"><a href="tensor.html#cb2-9" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="tensor.html#cb2-10" tabindex="-1"></a>C <span class="op">=</span> np.array([[ <span class="dv">1</span>,<span class="op">-</span><span class="dv">1</span>],</span>
+<span id="cb2-11"><a href="tensor.html#cb2-11" tabindex="-1"></a>              [ <span class="dv">1</span>, <span class="dv">1</span>]])</span>
+<span id="cb2-12"><a href="tensor.html#cb2-12" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="tensor.html#cb2-13" tabindex="-1"></a>D <span class="op">=</span> np.array([[ <span class="dv">1</span>, <span class="dv">1</span>],</span>
+<span id="cb2-14"><a href="tensor.html#cb2-14" tabindex="-1"></a>              [ <span class="dv">1</span>, <span class="dv">1</span>]])</span>
+<span id="cb2-15"><a href="tensor.html#cb2-15" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="tensor.html#cb2-16" tabindex="-1"></a>E <span class="op">=</span> np.array([[<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>],</span>
+<span id="cb2-17"><a href="tensor.html#cb2-17" tabindex="-1"></a>              [ <span class="dv">0</span>,<span class="op">-</span><span class="dv">1</span>]])</span>
+<span id="cb2-18"><a href="tensor.html#cb2-18" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="tensor.html#cb2-19" tabindex="-1"></a>F <span class="op">=</span> np.array([[ <span class="dv">3</span>, <span class="dv">1</span>],</span>
+<span id="cb2-20"><a href="tensor.html#cb2-20" tabindex="-1"></a>              [<span class="op">-</span><span class="dv">2</span>, <span class="dv">2</span>]])</span>
+<span id="cb2-21"><a href="tensor.html#cb2-21" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="tensor.html#cb2-22" tabindex="-1"></a>t <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span> <span class="op">*</span> np.pi, np.pi<span class="op">/</span><span class="dv">5</span>)</span>
+<span id="cb2-23"><a href="tensor.html#cb2-23" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="tensor.html#cb2-24" tabindex="-1"></a><span class="co"># Creating arrow </span></span>
+<span id="cb2-25"><a href="tensor.html#cb2-25" tabindex="-1"></a>X <span class="op">=</span> np.cos(t)</span>
+<span id="cb2-26"><a href="tensor.html#cb2-26" tabindex="-1"></a>Y <span class="op">=</span> np.sin(t)</span>
+<span id="cb2-27"><a href="tensor.html#cb2-27" tabindex="-1"></a> </span>
+<span id="cb2-28"><a href="tensor.html#cb2-28" tabindex="-1"></a><span class="co"># X, Y = np.meshgrid(x, y)</span></span>
+<span id="cb2-29"><a href="tensor.html#cb2-29" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="tensor.html#cb2-30" tabindex="-1"></a><span class="co"># V = np.array([X, Y])</span></span>
+<span id="cb2-31"><a href="tensor.html#cb2-31" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="tensor.html#cb2-32" tabindex="-1"></a><span class="co"># u = x</span></span>
+<span id="cb2-33"><a href="tensor.html#cb2-33" tabindex="-1"></a><span class="co"># v = y</span></span>
+<span id="cb2-34"><a href="tensor.html#cb2-34" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="tensor.html#cb2-35" tabindex="-1"></a><span class="co"># u, v = np.matmul(A, V)</span></span>
+<span id="cb2-36"><a href="tensor.html#cb2-36" tabindex="-1"></a>u, v <span class="op">=</span> np.matmul(A, np.array([X, Y]))</span>
+<span id="cb2-37"><a href="tensor.html#cb2-37" tabindex="-1"></a>dx, dy <span class="op">=</span> np.matmul(B, np.array([X, Y]))</span>
+<span id="cb2-38"><a href="tensor.html#cb2-38" tabindex="-1"></a>dx2, dy2 <span class="op">=</span> np.matmul(C, np.array([X, Y]))</span>
+<span id="cb2-39"><a href="tensor.html#cb2-39" tabindex="-1"></a>dx3, dy3 <span class="op">=</span> np.matmul(D, np.array([X, Y]))</span>
+<span id="cb2-40"><a href="tensor.html#cb2-40" tabindex="-1"></a>dx4, dy4 <span class="op">=</span> np.matmul(E, np.array([X, Y]))</span>
+<span id="cb2-41"><a href="tensor.html#cb2-41" tabindex="-1"></a>dx5, dy5 <span class="op">=</span> np.matmul(F, np.array([X, Y]))</span>
+<span id="cb2-42"><a href="tensor.html#cb2-42" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="tensor.html#cb2-43" tabindex="-1"></a><span class="co"># n = -2</span></span>
+<span id="cb2-44"><a href="tensor.html#cb2-44" tabindex="-1"></a> </span>
+<span id="cb2-45"><a href="tensor.html#cb2-45" tabindex="-1"></a><span class="co"># Defining color</span></span>
+<span id="cb2-46"><a href="tensor.html#cb2-46" tabindex="-1"></a><span class="co"># color = np.sqrt(((v-n)/2)*2 + ((u-n)/2)*2)</span></span>
+<span id="cb2-47"><a href="tensor.html#cb2-47" tabindex="-1"></a><span class="co"># color = (u**2+v**2)**(1/2)</span></span>
+<span id="cb2-48"><a href="tensor.html#cb2-48" tabindex="-1"></a>color <span class="op">=</span> u<span class="op">*</span>v</span>
+<span id="cb2-49"><a href="tensor.html#cb2-49" tabindex="-1"></a> </span>
+<span id="cb2-50"><a href="tensor.html#cb2-50" tabindex="-1"></a><span class="co"># Creating plot</span></span>
+<span id="cb2-51"><a href="tensor.html#cb2-51" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">3</span>,<span class="dv">3</span>,figsize <span class="op">=</span>(<span class="dv">15</span>,<span class="dv">15</span>), gridspec_kw <span class="op">=</span> {<span class="st">&#39;wspace&#39;</span>:<span class="fl">0.1</span>, <span class="st">&#39;hspace&#39;</span>:<span class="fl">0.1</span>})</span>
+<span id="cb2-52"><a href="tensor.html#cb2-52" tabindex="-1"></a></span>
+<span id="cb2-53"><a href="tensor.html#cb2-53" tabindex="-1"></a><span class="co"># ax.quiver(X, Y, u, v, color, alpha = 1)</span></span>
+<span id="cb2-54"><a href="tensor.html#cb2-54" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="op">-</span><span class="dv">2</span>,<span class="dv">3</span>):</span>
+<span id="cb2-55"><a href="tensor.html#cb2-55" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="op">-</span><span class="dv">2</span>,<span class="dv">3</span>):</span>
+<span id="cb2-56"><a href="tensor.html#cb2-56" tabindex="-1"></a>        <span class="co"># ax.quiver(1.0*X+4*i, 1.0*Y+4*j, u, v)#, color, alpha = 1)</span></span>
+<span id="cb2-57"><a href="tensor.html#cb2-57" tabindex="-1"></a>        <span class="co"># ax.quiver(1.5*X+4*i, 1.5*Y+4*j, u, v)#, color, alpha = 1)</span></span>
+<span id="cb2-58"><a href="tensor.html#cb2-58" tabindex="-1"></a>        <span class="co"># ax.quiver(2.0*X+4*i, 2.0*Y+4*j, u, v)#, color, alpha = 1)</span></span>
+<span id="cb2-59"><a href="tensor.html#cb2-59" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="tensor.html#cb2-60" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">0</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">0.50</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
+<span id="cb2-61"><a href="tensor.html#cb2-61" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">0</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
+<span id="cb2-62"><a href="tensor.html#cb2-62" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">0</span>].quiver(<span class="fl">1.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">0.25</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
+<span id="cb2-63"><a href="tensor.html#cb2-63" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">0</span>].quiver(<span class="fl">2.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">2.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">0.10</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
+<span id="cb2-64"><a href="tensor.html#cb2-64" tabindex="-1"></a></span>
+<span id="cb2-65"><a href="tensor.html#cb2-65" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">1</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx, dy, dx<span class="op">*</span>dy, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;summer&#39;</span>)</span>
+<span id="cb2-66"><a href="tensor.html#cb2-66" tabindex="-1"></a>        <span class="co"># ax[0,1].quiver(1.0*X+4*i, 1.0*Y+4*j, dx, dy, dx*dy, alpha = 0.50, cmap=&#39;summer&#39;)</span></span>
+<span id="cb2-67"><a href="tensor.html#cb2-67" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">1</span>].quiver(<span class="fl">1.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx, dy, dx<span class="op">*</span>dy, alpha <span class="op">=</span> <span class="fl">0.25</span>, cmap<span class="op">=</span><span class="st">&#39;summer&#39;</span>)</span>
+<span id="cb2-68"><a href="tensor.html#cb2-68" tabindex="-1"></a>        <span class="co"># ax[0,1].quiver(2.0*X+4*i, 2.0*Y+4*j, dx, dy, dx*dy, alpha = 0.10, cmap=&#39;summer&#39;)</span></span>
+<span id="cb2-69"><a href="tensor.html#cb2-69" tabindex="-1"></a></span>
+<span id="cb2-70"><a href="tensor.html#cb2-70" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">0</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
+<span id="cb2-71"><a href="tensor.html#cb2-71" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">0</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">0.50</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
+<span id="cb2-72"><a href="tensor.html#cb2-72" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">0</span>].quiver(<span class="fl">1.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">0.25</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
+<span id="cb2-73"><a href="tensor.html#cb2-73" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">0</span>].quiver(<span class="fl">2.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">2.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">0.10</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
+<span id="cb2-74"><a href="tensor.html#cb2-74" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="tensor.html#cb2-75" tabindex="-1"></a>        <span class="co"># ax[2,0].quiver(0.5*X+4*i, 0.5*Y+4*j, dx3, dy3, dx3*dy3, alpha = 0.50, cmap=&#39;cool&#39;)</span></span>
+<span id="cb2-76"><a href="tensor.html#cb2-76" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">0</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx3, dy3, dx3<span class="op">*</span>dy3, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;cool&#39;</span>)</span>
+<span id="cb2-77"><a href="tensor.html#cb2-77" tabindex="-1"></a>        <span class="co"># ax[2,0].quiver(1.5*X+4*i, 1.5*Y+4*j, dx3, dy3, dx3*dy3, alpha = 0.25, cmap=&#39;cool&#39;)</span></span>
+<span id="cb2-78"><a href="tensor.html#cb2-78" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">0</span>].quiver(<span class="fl">2.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">2.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx3, dy3, dx3<span class="op">*</span>dy3, alpha <span class="op">=</span> <span class="fl">0.10</span>, cmap<span class="op">=</span><span class="st">&#39;cool&#39;</span>)</span>
+<span id="cb2-79"><a href="tensor.html#cb2-79" tabindex="-1"></a></span>
+<span id="cb2-80"><a href="tensor.html#cb2-80" tabindex="-1"></a>        <span class="co"># ax[0,2].quiver(0.5*X+4*i, 0.5*Y+4*j, dx4, dy4, dx4*dy4, alpha = 0.50)</span></span>
+<span id="cb2-81"><a href="tensor.html#cb2-81" tabindex="-1"></a>        <span class="co"># ax[0,2].quiver(1.0*X+4*i, 1.0*Y+4*j, dx4, dy4, dx4*dy4, alpha = 0.25)</span></span>
+<span id="cb2-82"><a href="tensor.html#cb2-82" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">2</span>].quiver(<span class="fl">1.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx4, dy4, dx4<span class="op">*</span>dy4, alpha <span class="op">=</span> <span class="fl">1.00</span>)</span>
+<span id="cb2-83"><a href="tensor.html#cb2-83" tabindex="-1"></a>        ax[<span class="dv">0</span>,<span class="dv">2</span>].quiver(<span class="fl">2.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">2.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx4, dy4, dx4<span class="op">*</span>dy4, alpha <span class="op">=</span> <span class="fl">0.10</span>)</span>
+<span id="cb2-84"><a href="tensor.html#cb2-84" tabindex="-1"></a></span>
+<span id="cb2-85"><a href="tensor.html#cb2-85" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">2</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx5, dy5, dx5<span class="op">*</span>dy5, alpha <span class="op">=</span> <span class="fl">0.50</span>)</span>
+<span id="cb2-86"><a href="tensor.html#cb2-86" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">2</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx5, dy5, dx5<span class="op">*</span>dy5, alpha <span class="op">=</span> <span class="fl">1.00</span>)</span>
+<span id="cb2-87"><a href="tensor.html#cb2-87" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">2</span>].quiver(<span class="fl">1.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx5, dy5, dx5<span class="op">*</span>dy5, alpha <span class="op">=</span> <span class="fl">0.25</span>)</span>
+<span id="cb2-88"><a href="tensor.html#cb2-88" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">2</span>].quiver(<span class="fl">2.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">2.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx5, dy5, dx5<span class="op">*</span>dy5, alpha <span class="op">=</span> <span class="fl">0.10</span>)</span>
+<span id="cb2-89"><a href="tensor.html#cb2-89" tabindex="-1"></a></span>
+<span id="cb2-90"><a href="tensor.html#cb2-90" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">1</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
+<span id="cb2-91"><a href="tensor.html#cb2-91" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">1</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx, dy, dx<span class="op">*</span>dy, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;summer&#39;</span>)</span>
+<span id="cb2-92"><a href="tensor.html#cb2-92" tabindex="-1"></a>        ax[<span class="dv">1</span>,<span class="dv">1</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
+<span id="cb2-93"><a href="tensor.html#cb2-93" tabindex="-1"></a></span>
+<span id="cb2-94"><a href="tensor.html#cb2-94" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">1</span>].quiver(<span class="fl">0.5</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">0.5</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, u, v, u<span class="op">*</span>v, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;spring&#39;</span>)</span>
+<span id="cb2-95"><a href="tensor.html#cb2-95" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">1</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx, dy, dx<span class="op">*</span>dy, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;summer&#39;</span>)</span>
+<span id="cb2-96"><a href="tensor.html#cb2-96" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">1</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx2, dy2, dx2<span class="op">*</span>dy2, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;winter&#39;</span>)</span>
+<span id="cb2-97"><a href="tensor.html#cb2-97" tabindex="-1"></a>        ax[<span class="dv">2</span>,<span class="dv">1</span>].quiver(<span class="fl">1.0</span><span class="op">*</span>X<span class="op">+</span><span class="dv">4</span><span class="op">*</span>i, <span class="fl">1.0</span><span class="op">*</span>Y<span class="op">+</span><span class="dv">4</span><span class="op">*</span>j, dx3, dy3, dx3<span class="op">*</span>dy3, alpha <span class="op">=</span> <span class="fl">1.00</span>, cmap<span class="op">=</span><span class="st">&#39;cool&#39;</span>)</span>
+<span id="cb2-98"><a href="tensor.html#cb2-98" tabindex="-1"></a></span>
+<span id="cb2-99"><a href="tensor.html#cb2-99" tabindex="-1"></a><span class="cf">for</span> ax <span class="kw">in</span> fig.get_axes():</span>
+<span id="cb2-100"><a href="tensor.html#cb2-100" tabindex="-1"></a>    <span class="co"># ax.xaxis.set_ticks([])</span></span>
+<span id="cb2-101"><a href="tensor.html#cb2-101" tabindex="-1"></a>    <span class="co"># ax.yaxis.set_ticks([])</span></span>
+<span id="cb2-102"><a href="tensor.html#cb2-102" tabindex="-1"></a>    ax.axis([<span class="op">-</span><span class="dv">8</span>, <span class="dv">8</span>, <span class="op">-</span><span class="dv">8</span>, <span class="dv">8</span>])</span>
+<span id="cb2-103"><a href="tensor.html#cb2-103" tabindex="-1"></a>    ax.set_aspect(<span class="st">&#39;equal&#39;</span>)</span>
+<span id="cb2-104"><a href="tensor.html#cb2-104" tabindex="-1"></a> </span>
+<span id="cb2-105"><a href="tensor.html#cb2-105" tabindex="-1"></a><span class="co"># show plot</span></span>
+<span id="cb2-106"><a href="tensor.html#cb2-106" tabindex="-1"></a>plt.show()</span></code></pre></div>
 </div>
 <div class="col">
 <p> </p>
@@ -1858,8 +1839,8 @@ pre[class] {
 </div>
 <div class="footnotes">
 <hr />
-<ol start="12">
-<li id="fn12"><p><a href="https://www.linkedin.com/in/yiwen-pan-16a90076" class="uri">https://www.linkedin.com/in/yiwen-pan-16a90076</a><a href="tensor.html#fnref12" class="footnote-back">↩︎</a></p></li>
+<ol start="2">
+<li id="fn2"><p><a href="https://www.linkedin.com/in/yiwen-pan-16a90076" class="uri">https://www.linkedin.com/in/yiwen-pan-16a90076</a><a href="tensor.html#fnref2" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 <div id="disqus_thread"></div>
