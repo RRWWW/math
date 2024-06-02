@@ -221,7 +221,7 @@ linear algebra
 \[
 \begin{aligned}\left(1-x\right)^{{\scriptscriptstyle -1}}a= & x^{0}a+x^{1}a+x^{2}a+x^{3}a+\cdots & \forall\left|x\right|<1\\
 x^{0}a+x^{1}a+x^{2}a+x^{3}a+\cdots= & \left(1-x\right)^{{\scriptscriptstyle -1}}a & \forall\left|x\right|<1\\
-A^{0}\boldsymbol{x}+A^{1}\boldsymbol{x}+A^{2}\boldsymbol{x}+A^{3}\boldsymbol{x}+\cdots= & \left(I-A\right)^{{\scriptscriptstyle -1}}\boldsymbol{x} & \forall\left|\det A\right|<1
+A^{0}\boldsymbol{x}+A^{1}\boldsymbol{x}+A^{2}\boldsymbol{x}+A^{3}\boldsymbol{x}+\cdots= & \left(I-A\right)^{{\scriptscriptstyle -1}}\boldsymbol{x} & \forall\left|\left|A\right|\right|=\left|\det A\right|<1
 \end{aligned}
 \]
 
@@ -362,9 +362,9 @@ calculus
 = & \left(\int^{0}+\int^{1}+\int^{2}+\int^{3}+\cdots\right)0 & =\left(\sum_{\nu=0}^{\infty}A^{\nu}\right)\boldsymbol{x}\Biggr]\\
 = & \int^{0}0+\int^{1}0+\int^{2}0+\int^{3}0+\cdots\\
 = & 0+\int\mathrm{d}x0+\iint\mathrm{d}x^{2}0+\iiint\mathrm{d}x^{3}0+\cdots\\
-= & \qquad+C+\int\mathrm{d}xC+\iint\mathrm{d}x^{2}C+\cdots\\
-= & \qquad+C+Cx+\int\mathrm{d}xCx+\cdots\\
-= & \qquad+C+\dfrac{Cx}{1}+\dfrac{Cx^{2}}{2\cdot1}+\cdots & =C\sum_{\nu=0}^{\infty}\dfrac{x^{\nu}}{\nu!}\\
+= & \qquad C+\int\mathrm{d}xC+\iint\mathrm{d}x^{2}C+\cdots\\
+= & \qquad C+Cx+\int\mathrm{d}xCx+\cdots\\
+= & \qquad C+\dfrac{Cx}{1}+\dfrac{Cx^{2}}{2\cdot1}+\cdots & =C\sum_{\nu=0}^{\infty}\dfrac{x^{\nu}}{\nu!}\\
 1=\mathrm{e}^{0}=\mathrm{e}^{x=0}= & C+\dfrac{C0}{1}+\dfrac{C0^{2}}{2\cdot1}+\cdots=C+0+0+\cdots=C & \Rightarrow C=1\\
 \mathrm{e}^{x}= & 1+\dfrac{1x}{1}+\dfrac{1x^{2}}{2\cdot1}+\cdots & =1\sum_{\nu=0}^{\infty}\dfrac{x^{\nu}}{\nu!}\\
 = & \dfrac{1}{0!}+\dfrac{x}{1!}+\dfrac{x^{2}}{2!}+\cdots & =\sum_{\nu=0}^{\infty}\dfrac{x^{\nu}}{\nu!}
@@ -374,9 +374,46 @@ calculus
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+complex analysis
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
-\mathrm{e}^{x}=\dfrac{1}{0!}+\dfrac{x}{1!}+\dfrac{x^{2}}{2!}+\cdots=\sum_{\nu=0}^{\infty}\dfrac{x^{\nu}}{\nu!}
+\begin{aligned}\mathrm{e}^{x}= & \dfrac{1}{0!}+\dfrac{x}{1!}+\dfrac{x^{2}}{2!}+\cdots=\sum_{\nu=0}^{\infty}\dfrac{x^{\nu}}{\nu!} & \forall x\in\mathbb{C},\left|x\right|<1\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+matrix calculus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\mathrm{e}^{Ax}= & \dfrac{1}{0!}+\dfrac{Ax}{1!}+\dfrac{A^{2}x^{2}}{2!}+\cdots=\sum_{\nu=0}^{\infty}\dfrac{A^{\nu}x^{\nu}}{\nu!} & \forall Ax\in\mathcal{M}_{{\scriptscriptstyle n\times n}},\left|\left|Ax\right|\right|=\left|\left(\det A\right)x\right|<1\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Lie algebra
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{Ad}_{{\scriptscriptstyle \exp}X}Y=\exp\left(\mathrm{Ad}X\right)Y=\dfrac{Y}{0!}+\dfrac{\left[X,Y\right]}{1!}+\dfrac{\left[X,\left[X,Y\right]\right]}{2!}+\dfrac{\left[X,\left[X,\left[X,Y\right]\right]\right]}{3!}+\cdots
 \]
 
 \end_inset
@@ -398,7 +435,7 @@ Mathematics is the art of giving the same name to different things.
 \begin_layout Quote
 \noindent
 \align right
-Henri Poincre
+Henri Poincré (1854~1912)
 \end_layout
 
 \begin_layout Quote
@@ -417,11 +454,11 @@ Algebra's like sheet music, the important thing isn't can you read music,
 \begin_layout Quote
 \noindent
 \align right
-Niels Bohr 
+Niels Bohr (1885~1962) 
 \begin_inset Formula $\sim$
 \end_inset
 
- Oppenheimer movie
+ Oppenheimer movie (2023)
 \end_layout
 
 \end_body
