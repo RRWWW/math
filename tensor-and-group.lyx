@@ -1,15 +1,15 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
 \origin unavailable
 \textclass article
 \begin_preamble
+\usepackage[dvipsnames]{xcolor}
 \usepackage{tikz}
 \usepackage{pgfplots}
 \usepackage[square,numbers]{natbib}
-\usepackage[dvipsnames]{xcolor}
 \usepackage{expl3,xparse}
 \end_preamble
 \use_default_options true
@@ -22,10 +22,10 @@ tabs-within-sections
 figs-within-sections
 hanging
 \end_modules
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language chinese-traditional
 \language_package default
-\inputencoding auto
+\inputencoding utf8
 \fontencoding default
 \font_roman "default" "default"
 \font_sans "default" "default"
@@ -34,7 +34,9 @@ hanging
 \font_default_family sfdefault
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \font_cjk bsmi
@@ -46,6 +48,7 @@ hanging
 \bibtex_command default
 \index_command default
 \float_placement H
+\float_alignment class
 \paperfontsize default
 \spacing single
 \use_hyperref true
@@ -59,7 +62,7 @@ hanging
 \pdf_backref page
 \pdf_pdfusetitle true
 \pdf_quoted_options "linkcolor=blue"
-\papersize a4paper
+\papersize a4
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
@@ -80,7 +83,9 @@ hanging
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Index
 \shortcut idx
 \color #008000
@@ -100,21 +105,29 @@ hanging
 \papercolumns 1
 \papersides 2
 \paperpagestyle headings
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
 
 \begin_layout Title
-group, tensor, spinor
+group,
+ tensor,
+ spinor
 \end_layout
 
 \begin_layout Author
-Joey Yu Hsu, MD
+Joey Yu Hsu,
+ MD
 \end_layout
 
 \begin_layout Date
@@ -217,7 +230,7 @@ usepackage{expl3,xparse}
 
 
 \backslash
-usepackage{xcolor}
+usepackage[dvipsnames]{xcolor}
 \end_layout
 
 \end_inset
@@ -264,9 +277,7 @@ l_tmpa_tl { #1 }
 \backslash
 regex_replace_all:nnN { 2 } { 
 \backslash
-c{ensuremath}{
-\backslash
-c{color}{red}{2}} } 
+c{color}{red}{2} } 
 \backslash
 l_tmpa_tl
 \end_layout
@@ -684,7 +695,7 @@ cyclic group
 \forall g_{{\scriptscriptstyle 1}},g_{{\scriptscriptstyle 2}}\in\mathbb{Z}_{{\scriptscriptstyle n}}\left[\begin{aligned}g_{{\scriptscriptstyle 1}}+g_{{\scriptscriptstyle 2}}=g_{{\scriptscriptstyle 1}}+_{{\scriptscriptstyle \mathbb{Z}_{{\scriptscriptstyle n}}}}g_{{\scriptscriptstyle 2}}\overset{\text{def.}}{=} & \left(g_{{\scriptscriptstyle 1}}+_{{\scriptscriptstyle \mathbb{Z}}}g_{{\scriptscriptstyle 2}}\right)\mod n & \left(g_{{\scriptscriptstyle 1}}+_{{\scriptscriptstyle \mathbb{Z}_{{\scriptscriptstyle n}}}}g_{{\scriptscriptstyle 2}}\right)-\left(g_{{\scriptscriptstyle 1}}+_{{\scriptscriptstyle \mathbb{Z}}}g_{{\scriptscriptstyle 2}}\right)=n\cdot_{{\scriptscriptstyle \mathbb{Z}}}k=nk\quad k\in\mathbb{Z}\\
 = & g_{{\scriptscriptstyle 1}}\%g_{{\scriptscriptstyle 2}} & \text{some programming language}\\
 \equiv & \left(g_{{\scriptscriptstyle 1}}+_{{\scriptscriptstyle \mathbb{Z}}}g_{{\scriptscriptstyle 2}}\right)\mod n & \left(g_{{\scriptscriptstyle 1}}+_{{\scriptscriptstyle \mathbb{Z}}}g_{{\scriptscriptstyle 2}}\right)\mod n<n\\
-= & r & \mod\text{ is integer modular arithmetic or modulus}\\
+= & r & \mod{\text{ is integer modular arithmetic or modulus}}\\
  &  & g_{{\scriptscriptstyle 1}}+_{{\scriptscriptstyle \mathbb{Z}}}g_{{\scriptscriptstyle 2}}=nk+r\quad\mathbb{Z}\ni r<n
 \end{aligned}
 \right]
@@ -710,10 +721,10 @@ cyclic group
 \begin_inset Formula 
 \begin{align*}
 \mathbb{Z}_{{\scriptscriptstyle 2}}=\left(\mathbb{Z}_{{\scriptscriptstyle 2}},+\right)=\left(\mathbb{Z}_{{\scriptscriptstyle 2}},+_{{\scriptscriptstyle \mathbb{Z}_{{\scriptscriptstyle n}}}}\right)= & \left\{ 0,1\right\}  & \mathbb{Z}_{{\scriptscriptstyle n}}=\left(\mathbb{Z}_{{\scriptscriptstyle n}},+\right)=\left(\mathbb{Z}_{{\scriptscriptstyle n}},+_{{\scriptscriptstyle \mathbb{Z}_{{\scriptscriptstyle n}}}}\right),2=n\in\mathbb{N}\\
-0+0= & \left(0\mod2\right)=0\\
-0+1= & \left(1\mod2\right)=1\\
-1+0= & \left(1\mod2\right)=1\\
-1+1= & \left(2\mod2\right)=0
+0+0= & \left(0\mod 2\right)=0\\
+0+1= & \left(1\mod 2\right)=1\\
+1+0= & \left(1\mod 2\right)=1\\
+1+1= & \left(2\mod 2\right)=0
 \end{align*}
 
 \end_inset
@@ -750,9 +761,9 @@ cyclic group
 \[
 \begin{array}{cccc}
 +_{{\scriptscriptstyle \mathbb{Z}_{{\scriptscriptstyle n}}}} & 0 & 1 & 2\\
-0 & \left(0\mod3\right) & \left(1\mod3\right) & \left(2\mod3\right)\\
-1 & \left(1\mod3\right) & \left(2\mod3\right) & \left(3\mod3\right)\\
-2 & \left(2\mod3\right) & \left(3\mod3\right) & \left(4\mod3\right)
+0 & \left(0\mod 3\right) & \left(1\mod 3\right) & \left(2\mod 3\right)\\
+1 & \left(1\mod 3\right) & \left(2\mod 3\right) & \left(3\mod 3\right)\\
+2 & \left(2\mod 3\right) & \left(3\mod 3\right) & \left(4\mod 3\right)
 \end{array}\rightarrow\begin{array}{cccc}
 +_{{\scriptscriptstyle \mathbb{Z}_{{\scriptscriptstyle 3}}}} & 0 & 1 & 2\\
 0 & 0 & 1 & 2\\
@@ -1221,7 +1232,8 @@ l_tmpa_tl { #1 }
 
 \begin_layout Plain Layout
 
-	% e, 
+	% e,
+ 
 \backslash
 rho^2
 \end_layout
@@ -2242,10 +2254,8 @@ cycle notation= cyclic notation
 1 & 2 & 3
 \end{pmatrix}=e & =e_{{\scriptscriptstyle S_{{\scriptscriptstyle 3}}}}\\
 \left(123\right)\left(321\right)= & e\\
-\\
-\left(321\right)^{{\scriptscriptstyle -1}}=\overline{\left(321\right)}= & \left(123\right) & \left(123\right)^{{\scriptscriptstyle -1}}=\overline{\left(123\right)}=\left(321\right)\\
-\\
-\left(321\right)\left(123\right)= & \begin{pmatrix}1 & 2 & 3\\
+\\\left(321\right)^{{\scriptscriptstyle -1}}=\overline{\left(321\right)}= & \left(123\right) & \left(123\right)^{{\scriptscriptstyle -1}}=\overline{\left(123\right)}=\left(321\right)\\
+\\\left(321\right)\left(123\right)= & \begin{pmatrix}1 & 2 & 3\\
 3 & 1 & 2
 \end{pmatrix}\begin{pmatrix}1 & 2 & 3\\
 2 & 3 & 1
@@ -2288,7 +2298,7 @@ cycle notation= cyclic notation
 
 \begin_inset Formula 
 \[
-\sum\limits _{i=1}^{n_{{\scriptscriptstyle \sigma}}}n_{{\scriptscriptstyle i}}=n\qquad\forall n\in\mathbb{N},\forall\sigma\in S_{{\scriptscriptstyle n}}
+\sum\limits_{i=1}^{n_{{\scriptscriptstyle \sigma}}}n_{{\scriptscriptstyle i}}=n\qquad\forall n\in\mathbb{N},\forall\sigma\in S_{{\scriptscriptstyle n}}
 \]
 
 \end_inset
@@ -3939,8 +3949,7 @@ D_{{\scriptscriptstyle 3}}\mathbb{Z}_{{\scriptscriptstyle 3}}= & \left\{ g\mathb
 -4k=\overline{4k}= & 4\left(-k\right)\in4\mathbb{Z}\\
 \Downarrow\\
 4\mathbb{Z}\le & \mathbb{Z}\\
-\\
-5+4\mathbb{Z}= & \left\{ \cdots,5+\left(-12\right),5+\left(-8\right),5+\left(-4\right),5+0,5+4,5+8,5+12,\cdots\right\} \\
+\\5+4\mathbb{Z}= & \left\{ \cdots,5+\left(-12\right),5+\left(-8\right),5+\left(-4\right),5+0,5+4,5+8,5+12,\cdots\right\} \\
 = & \left\{ \cdots,-7,-3,1,5,9,13,17,\cdots\right\}  & =1+4\mathbb{Z}\\
 4+4\mathbb{Z}= & \left\{ \cdots,4+\left(-12\right),4+\left(-8\right),4+\left(-4\right),4+0,4+4,4+8,4+12,\cdots\right\} \\
 = & \left\{ \cdots,-8,-4,0,4,8,12,16,\cdots\right\}  & =0+4\mathbb{Z}\\
@@ -4008,7 +4017,8 @@ D_{{\scriptscriptstyle 3}}\mathbb{Z}_{{\scriptscriptstyle 3}}= & \left\{ g\mathb
 \begin_inset Formula $L_{{\scriptscriptstyle g}}$
 \end_inset
 
-: left shift
+:
+ left shift
 \begin_inset Formula 
 \[
 H\overset{L_{{\scriptscriptstyle g}}}{\rightarrow}gH
@@ -4197,16 +4207,16 @@ coset partitioning group
 g_{{\scriptscriptstyle j}}\in & G\\
 \Downarrow\\
 G=\bigcup_{g\in G}gH= & \bigcup_{j}g_{{\scriptscriptstyle j}}H=\begin{cases}
-\bigcup\limits _{j=1}^{n}g_{{\scriptscriptstyle j}}H & \left|G\right|=n\in\mathbb{N}\\
-\bigcup\limits _{j\in J}g_{{\scriptscriptstyle j}}H & \left|G\right|=\left|J\right|,J\in\left\{ \mathbb{N},\mathbb{Z},\left[0,1\right],\mathbb{R},\cdots\right\} 
+\bigcup\limits_{j=1}^{n}g_{{\scriptscriptstyle j}}H & \left|G\right|=n\in\mathbb{N}\\
+\bigcup\limits_{j\in J}g_{{\scriptscriptstyle j}}H & \left|G\right|=\left|J\right|,J\in\left\{ \mathbb{N},\mathbb{Z},\left[0,1\right],\mathbb{R},\cdots\right\} 
 \end{cases}\\
 = & \begin{cases}
 g_{{\scriptscriptstyle 1}}H\cup g_{{\scriptscriptstyle 2}}H\cup\cdots\cup g_{{\scriptscriptstyle n}}H & \left|G\right|=n\in\mathbb{N}\\
-\bigcup\limits _{j\in J}g_{{\scriptscriptstyle j}}H & \left|G\right|=\left|J\right|,J\in\left\{ \mathbb{N},\mathbb{Z},\left[0,1\right],\mathbb{R},\cdots\right\} 
+\bigcup\limits_{j\in J}g_{{\scriptscriptstyle j}}H & \left|G\right|=\left|J\right|,J\in\left\{ \mathbb{N},\mathbb{Z},\left[0,1\right],\mathbb{R},\cdots\right\} 
 \end{cases} & \exists m\in\mathbb{N}_{{\scriptscriptstyle \le n}}\left[g_{{\scriptscriptstyle m}}=e=e_{{\scriptscriptstyle H}}=e_{{\scriptscriptstyle G}}\right]\\
 = & \begin{cases}
 g_{{\scriptscriptstyle 1}}H\cup g_{{\scriptscriptstyle 2}}H\cup\cdots & \left|G\right|=n\in\mathbb{N}\\
-\bigcup\limits _{j\in J}g_{{\scriptscriptstyle j}}H & J\in\left\{ \mathbb{N},\mathbb{Z},\left[0,1\right],\mathbb{R},\cdots\right\} 
+\bigcup\limits_{j\in J}g_{{\scriptscriptstyle j}}H & J\in\left\{ \mathbb{N},\mathbb{Z},\left[0,1\right],\mathbb{R},\cdots\right\} 
 \end{cases} & \wedge g_{{\scriptscriptstyle i}}H\ne g_{{\scriptscriptstyle j}}H\Rightarrow g_{{\scriptscriptstyle i}}H\cap g_{{\scriptscriptstyle j}}H=\emptyset
 \end{aligned}
 \]
@@ -4462,10 +4472,10 @@ indexed set
 \begin_inset Formula 
 \[
 \begin{aligned}\left\{ a_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i\in I}}= & \left\{ a_{{\scriptscriptstyle i}}\middle|i\in I\right\} =\left\{ \cdots,a_{{\scriptscriptstyle i}},\cdots\right\}  & i\in I\\
-= & \bigcup\limits _{i\in I}\left\{ a_{{\scriptscriptstyle i}}\right\}  & i\in I\\
+= & \bigcup\limits_{i\in I}\left\{ a_{{\scriptscriptstyle i}}\right\}  & i\in I\\
 = & \begin{cases}
-\bigcup\limits _{i=1}^{n}\left\{ a_{{\scriptscriptstyle i}}\right\}  & \left|\left\{ a_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i\in I}}\right|=n\in\mathbb{N}\\
-\bigcup\limits _{i\in I}\left\{ a_{{\scriptscriptstyle i}}\right\}  & I\in\left\{ \mathbb{N},\mathbb{Z},\left[0,1\right],\mathbb{R},\cdots\right\} 
+\bigcup\limits_{i=1}^{n}\left\{ a_{{\scriptscriptstyle i}}\right\}  & \left|\left\{ a_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i\in I}}\right|=n\in\mathbb{N}\\
+\bigcup\limits_{i\in I}\left\{ a_{{\scriptscriptstyle i}}\right\}  & I\in\left\{ \mathbb{N},\mathbb{Z},\left[0,1\right],\mathbb{R},\cdots\right\} 
 \end{cases}
 \end{aligned}
 \]
@@ -4477,11 +4487,11 @@ indexed set
 \[
 \begin{aligned}\left\{ a_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i\in\mathbb{N}}}= & \left\{ a_{{\scriptscriptstyle i}}\middle|i\in\mathbb{N}\right\} =\left\{ a_{{\scriptscriptstyle 1}},a_{{\scriptscriptstyle 2}},\cdots,a_{{\scriptscriptstyle i}},\cdots\right\} =\left\{ a_{{\scriptscriptstyle 1}},a_{{\scriptscriptstyle 2}},a_{{\scriptscriptstyle 3}},\cdots\right\}  & i\in\mathbb{N}\\
 =\left\{ a_{{\scriptscriptstyle n}}\right\} _{{\scriptscriptstyle n\in\mathbb{N}}}= & \left\{ a_{{\scriptscriptstyle n}}\middle|n\in\mathbb{N}\right\} =\left\{ a_{{\scriptscriptstyle 1}},a_{{\scriptscriptstyle 2}},\cdots,a_{{\scriptscriptstyle n}},\cdots\right\} =\left\{ a_{{\scriptscriptstyle 1}},a_{{\scriptscriptstyle 2}},a_{{\scriptscriptstyle 3}},\cdots\right\}  & n\in\mathbb{N}\\
-= & \bigcup\limits _{i\in\mathbb{N}}\left\{ a_{{\scriptscriptstyle i}}\right\} =\bigcup\limits _{n\in\mathbb{N}}\left\{ a_{{\scriptscriptstyle n}}\right\} =\begin{cases}
-\bigcup\limits _{i=1}^{n}\left\{ a_{{\scriptscriptstyle i}}\right\}  & \left|\left\{ a_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i\in\mathbb{N}}}\right|=n\in\mathbb{N}\\
-\bigcup\limits _{n\in\mathbb{N}}\left\{ a_{{\scriptscriptstyle n}}\right\}  & \left|\left\{ a_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i\in\mathbb{N}}}\right|=\left|\mathbb{N}\right|
+= & \bigcup\limits_{i\in\mathbb{N}}\left\{ a_{{\scriptscriptstyle i}}\right\} =\bigcup\limits_{n\in\mathbb{N}}\left\{ a_{{\scriptscriptstyle n}}\right\} =\begin{cases}
+\bigcup\limits_{i=1}^{n}\left\{ a_{{\scriptscriptstyle i}}\right\}  & \left|\left\{ a_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i\in\mathbb{N}}}\right|=n\in\mathbb{N}\\
+\bigcup\limits_{n\in\mathbb{N}}\left\{ a_{{\scriptscriptstyle n}}\right\}  & \left|\left\{ a_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i\in\mathbb{N}}}\right|=\left|\mathbb{N}\right|
 \end{cases}\\
-\left\{ a_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i=1}}^{{\scriptscriptstyle n}}= & \bigcup\limits _{i=1}^{n}\left\{ a_{{\scriptscriptstyle i}}\right\} =\left\{ a_{{\scriptscriptstyle 1}},a_{{\scriptscriptstyle 2}},\cdots,a_{{\scriptscriptstyle n}}\right\} =\left\{ a_{{\scriptscriptstyle 1}},\cdots,a_{{\scriptscriptstyle n}}\right\}  & \forall n\in\mathbb{N}
+\left\{ a_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i=1}}^{{\scriptscriptstyle n}}= & \bigcup\limits_{i=1}^{n}\left\{ a_{{\scriptscriptstyle i}}\right\} =\left\{ a_{{\scriptscriptstyle 1}},a_{{\scriptscriptstyle 2}},\cdots,a_{{\scriptscriptstyle n}}\right\} =\left\{ a_{{\scriptscriptstyle 1}},\cdots,a_{{\scriptscriptstyle n}}\right\}  & \forall n\in\mathbb{N}
 \end{aligned}
 \]
 
@@ -4501,12 +4511,11 @@ indexed set
 \begin{aligned}\left\{ a_{{\scriptscriptstyle i}}\right\} _{{\scriptscriptstyle i\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}}= & \left\{ a_{{\scriptscriptstyle i}}\middle|i\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}\right\} =\left\{ a_{{\scriptscriptstyle 0}},a_{{\scriptscriptstyle 1}},a_{{\scriptscriptstyle 2}},\cdots,a_{{\scriptscriptstyle i}},\cdots\right\} =\left\{ a_{{\scriptscriptstyle 0}},a_{{\scriptscriptstyle 1}},a_{{\scriptscriptstyle 2}},a_{{\scriptscriptstyle 3}},\cdots\right\}  & i\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}\\
 =\left\{ a_{{\scriptscriptstyle k}}\right\} _{{\scriptscriptstyle k\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}}= & \left\{ a_{{\scriptscriptstyle k}}\middle|k\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}\right\} =\left\{ a_{{\scriptscriptstyle 0}},a_{{\scriptscriptstyle 1}},\cdots,a_{{\scriptscriptstyle k}},\cdots\right\} =\left\{ a_{{\scriptscriptstyle 0}},a_{{\scriptscriptstyle 1}},a_{{\scriptscriptstyle 2}},\cdots\right\}  & k\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}\\
 =\left\{ a_{{\scriptscriptstyle \mu}}\right\} _{{\scriptscriptstyle \mu\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}}= & \left\{ a_{{\scriptscriptstyle \mu}}\middle|\mu\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}\right\} =\left\{ a_{{\scriptscriptstyle 0}},a_{{\scriptscriptstyle 1}},\cdots,a_{{\scriptscriptstyle \mu}},\cdots\right\} =\left\{ a_{{\scriptscriptstyle 0}},a_{{\scriptscriptstyle 1}},a_{{\scriptscriptstyle 2}},\cdots\right\}  & \mu\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}\\
-= & \bigcup\limits _{i\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}\left\{ a_{{\scriptscriptstyle i}}\right\} =\bigcup\limits _{\mu\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}\left\{ a_{{\scriptscriptstyle \mu}}\right\} =\begin{cases}
-\bigcup\limits _{\mu=0}^{n-1}\left\{ a_{{\scriptscriptstyle \mu}}\right\}  & \left|\left\{ a_{{\scriptscriptstyle \mu}}\right\} _{{\scriptscriptstyle \mu\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}}\right|=n\in\mathbb{N}\\
-\bigcup\limits _{\mu\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}\left\{ a_{{\scriptscriptstyle \mu}}\right\}  & \left|\left\{ a_{{\scriptscriptstyle \mu}}\right\} _{{\scriptscriptstyle \mu\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}}\right|=\left|\mathbb{Z}_{{\scriptscriptstyle \ge0}}\right|=\left|\mathbb{N}\right|
+= & \bigcup\limits_{i\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}\left\{ a_{{\scriptscriptstyle i}}\right\} =\bigcup\limits_{\mu\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}\left\{ a_{{\scriptscriptstyle \mu}}\right\} =\begin{cases}
+\bigcup\limits_{\mu=0}^{n-1}\left\{ a_{{\scriptscriptstyle \mu}}\right\}  & \left|\left\{ a_{{\scriptscriptstyle \mu}}\right\} _{{\scriptscriptstyle \mu\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}}\right|=n\in\mathbb{N}\\
+\bigcup\limits_{\mu\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}\left\{ a_{{\scriptscriptstyle \mu}}\right\}  & \left|\left\{ a_{{\scriptscriptstyle \mu}}\right\} _{{\scriptscriptstyle \mu\in\mathbb{Z}_{{\scriptscriptstyle \ge0}}}}\right|=\left|\mathbb{Z}_{{\scriptscriptstyle \ge0}}\right|=\left|\mathbb{N}\right|
 \end{cases}\\
-\\
-\end{aligned}
+\\\end{aligned}
 \]
 
 \end_inset
@@ -5570,8 +5579,7 @@ S_{{\scriptscriptstyle 4}}=\{ & \sigma_{{\scriptscriptstyle 1}}, & \sigma_{{\scr
  & 123, & 231, & 312, & 213, & 132, & 321,\\
  & 123, & 231, & 312, & 213, & 132, & 321,\\
  & 123, & 231, & 312, & 213, & 132, & 321 & \}\\
-\\
-\quad=\{ & \left(1\right)\left(2\right)\left(3\right), & \left(123\right), & \left(132\right), & \left(12\right)\left(3\right), & \left(1\right)\left(23\right), & \left(31\right)\left(2\right),\\
+\\\quad=\{ & \left(1\right)\left(2\right)\left(3\right), & \left(123\right), & \left(132\right), & \left(12\right)\left(3\right), & \left(1\right)\left(23\right), & \left(31\right)\left(2\right),\\
  & \left(1\right)\left(2\right)\left(3\right), & \left(123\right), & \left(132\right), & \left(12\right)\left(3\right), & \left(1\right)\left(23\right), & \left(31\right)\left(2\right),\\
  & \left(1\right)\left(2\right)\left(3\right), & \left(123\right), & \left(132\right), & \left(12\right)\left(3\right), & \left(1\right)\left(23\right), & \left(31\right)\left(2\right),\\
  & \left(1\right)\left(2\right)\left(3\right), & \left(123\right), & \left(132\right), & \left(12\right)\left(3\right), & \left(1\right)\left(23\right), & \left(31\right)\left(2\right) & \}\\
@@ -5579,8 +5587,7 @@ S_{{\scriptscriptstyle 4}}=\{ & \sigma_{{\scriptscriptstyle 1}}, & \sigma_{{\scr
  & \left(\right), & \left(123\right), & \left(132\right), & \left(12\right), & \left(23\right), & \left(31\right),\\
  & \left(\right), & \left(123\right), & \left(132\right), & \left(12\right), & \left(23\right), & \left(31\right),\\
  & \left(\right), & \left(123\right), & \left(132\right), & \left(12\right), & \left(23\right), & \left(31\right) & \}\\
-\\
-\end{array}}
+\\\end{array}}
 \]
 
 \end_inset
@@ -6073,7 +6080,7 @@ hg\overline{h}\overset{g=\pi_{{\scriptscriptstyle x}}}{=}h\rho_{{\scriptscriptst
 
 \begin_inset Formula 
 \[
-\pi_{{\scriptscriptstyle 2y+x}}\in\left[\pi_{{\scriptscriptstyle 2y+x}}\right]=\left[\pi_{{\scriptscriptstyle 2y+x\mod3}}\right]=\left[\pi_{{\scriptscriptstyle 2y-x\mod3}}\right]=\left\{ \pi_{{\scriptscriptstyle 0}},\pi_{{\scriptscriptstyle 1}},\pi_{{\scriptscriptstyle 2}}\right\} 
+\pi_{{\scriptscriptstyle 2y+x}}\in\left[\pi_{{\scriptscriptstyle 2y+x}}\right]=\left[\pi_{{\scriptscriptstyle 2y+x\mod 3}}\right]=\left[\pi_{{\scriptscriptstyle 2y-x\mod 3}}\right]=\left\{ \pi_{{\scriptscriptstyle 0}},\pi_{{\scriptscriptstyle 1}},\pi_{{\scriptscriptstyle 2}}\right\} 
 \]
 
 \end_inset
@@ -6208,7 +6215,7 @@ N= & \left\{ 1,\cdots,n\right\} \\
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\sum\limits _{i=1}^{n_{{\scriptscriptstyle \sigma}}}n_{{\scriptscriptstyle i}}=n\qquad\forall n\in\mathbb{N},\forall\sigma\in S_{{\scriptscriptstyle n}}
+\sum\limits_{i=1}^{n_{{\scriptscriptstyle \sigma}}}n_{{\scriptscriptstyle i}}=n\qquad\forall n\in\mathbb{N},\forall\sigma\in S_{{\scriptscriptstyle n}}
 \]
 
 \end_inset
@@ -6427,8 +6434,7 @@ G & \text{ has endomorphism} & \text{endomorphism map }\varphi
 \begin_inset Formula $\mathcal{V}\simeq\acute{\mathcal{V}}\because\exists L:\mathcal{V}\rightarrow\acute{\mathcal{V}}$
 \end_inset
 
- linear map over two vector spaces( = additive Abelian groups + scalar multiplic
-ation)
+ linear map over two vector spaces( = additive Abelian groups + scalar multiplication)
 \begin_inset Formula 
 \[
 \begin{aligned}\mathcal{V}\text{ is } & \text{an additive Abelian group} & \Leftarrow\mathcal{V}=\left(\mathcal{V},+_{{\scriptscriptstyle \mathcal{V}}}\right)=\left(\mathcal{V},+_{{\scriptscriptstyle \mathcal{V}}},\cdot_{{\scriptscriptstyle \mathbb{F}\times\mathcal{V},\mathbb{F}}}\right)\\
@@ -6776,10 +6782,10 @@ vector space
 \begin_inset Formula 
 \[
 \begin{aligned}\mathbb{F}^{n}\in & \left\{ \mathbb{R}^{n},\mathbb{C}^{n},\mathbb{R}^{\infty},\cdots\right\}  & \widetilde{\mathfrak{V}},\mathfrak{V}\subseteq & \mathcal{V}\subseteq\mathbb{F}^{n}\in\left\{ \mathbb{R}^{n},\mathbb{C}^{n},\cdots\right\} \\
-\mathcal{V}\ni\boldsymbol{v}= & v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}=\sum\limits _{j}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}} & \boldsymbol{v}_{{\scriptscriptstyle j}}\in\mathfrak{V}= & \left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} =\left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j}}\\
+\mathcal{V}\ni\boldsymbol{v}= & v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}=\sum\limits_{j}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}} & \boldsymbol{v}_{{\scriptscriptstyle j}}\in\mathfrak{V}= & \left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} =\left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j}}\\
 = & \begin{cases}
-v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}} & =\sum\limits _{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\\
-\cdots+v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}+\cdots & =\sum\limits _{j\in J}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}
+v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}} & =\sum\limits_{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\\
+\cdots+v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}+\cdots & =\sum\limits_{j\in J}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}
 \end{cases} & = & \begin{cases}
 \left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j=1}}^{{\scriptscriptstyle n}}\\
 \left\{ \boldsymbol{v}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j\in J}} & J\in\left\{ \mathbb{N},\mathbb{Z},\mathbb{R},\cdots\right\} 
@@ -6818,10 +6824,10 @@ v^{{\scriptscriptstyle j}}\\
 \mathbb{F}^{n}\\
 \mathbb{F}^{\left|J\right|}
 \end{cases}\\
-= & \widetilde{v}^{{\scriptscriptstyle j}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=\sum\limits _{j}\widetilde{v}^{{\scriptscriptstyle j}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}} & \widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\in\widetilde{\mathfrak{V}}= & \left\{ \widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right\} =\left\{ \widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j}}\\
+= & \widetilde{v}^{{\scriptscriptstyle j}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}=\sum\limits_{j}\widetilde{v}^{{\scriptscriptstyle j}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}} & \widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\in\widetilde{\mathfrak{V}}= & \left\{ \widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right\} =\left\{ \widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j}}\\
 = & \begin{cases}
-\widetilde{v}^{{\scriptscriptstyle 1}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}+\cdots+\widetilde{v}^{{\scriptscriptstyle n}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle n}} & =\sum\limits _{j=1}^{n}\widetilde{v}^{{\scriptscriptstyle j}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\\
-\cdots+\widetilde{v}^{{\scriptscriptstyle j}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}+\cdots & =\sum\limits _{j\in J}\widetilde{v}^{{\scriptscriptstyle j}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}
+\widetilde{v}^{{\scriptscriptstyle 1}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle 1}}+\cdots+\widetilde{v}^{{\scriptscriptstyle n}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle n}} & =\sum\limits_{j=1}^{n}\widetilde{v}^{{\scriptscriptstyle j}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\\
+\cdots+\widetilde{v}^{{\scriptscriptstyle j}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}+\cdots & =\sum\limits_{j\in J}\widetilde{v}^{{\scriptscriptstyle j}}\widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}
 \end{cases} & = & \begin{cases}
 \left\{ \widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j=1}}^{{\scriptscriptstyle n}}\\
 \left\{ \widetilde{\boldsymbol{v}}_{{\scriptscriptstyle j}}\right\} _{{\scriptscriptstyle j\in J}} & J\in\left\{ \mathbb{N},\mathbb{Z},\mathbb{R},\cdots\right\} 
@@ -7074,7 +7080,8 @@ We do not denote
 \begin_inset Formula $V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle V}}=V\left[\boldsymbol{v}\right]_{{\scriptscriptstyle \mathfrak{V}}}$
 \end_inset
 
-, because 
+,
+ because 
 \begin_inset Formula $\mathfrak{V}$
 \end_inset
 
@@ -7143,14 +7150,14 @@ dual space
 \boldsymbol{v}\in\mathcal{V}=\left(\mathcal{V},\mathbb{F},+,\cdot\right)=\left(\mathcal{V},\mathbb{F},+_{{\scriptscriptstyle \mathcal{V},\mathbb{F}}},\cdot_{{\scriptscriptstyle \mathcal{\mathbb{F}\times V},\mathbb{F}}}\right)
 \end{cases}\\
 \boldsymbol{\omega}\left(\boldsymbol{v}\right)= & \boldsymbol{\omega}\left(v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
-= & \boldsymbol{\omega}\left(\sum\limits _{j}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=\sum\limits _{j}\boldsymbol{\omega}\left(v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=\sum\limits _{j}v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
+= & \boldsymbol{\omega}\left(\sum\limits_{j}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=\sum\limits_{j}\boldsymbol{\omega}\left(v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=\sum\limits_{j}v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
 = & \begin{cases}
-\boldsymbol{\omega}\left(v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}\right) & =\boldsymbol{\omega}\left(\sum\limits _{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
-\boldsymbol{\omega}\left(\cdots+v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}+\cdots\right) & =\boldsymbol{\omega}\left(\sum\limits _{j\in J}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)
+\boldsymbol{\omega}\left(v^{{\scriptscriptstyle 1}}\boldsymbol{v}_{{\scriptscriptstyle 1}}+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{v}_{{\scriptscriptstyle n}}\right) & =\boldsymbol{\omega}\left(\sum\limits_{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
+\boldsymbol{\omega}\left(\cdots+v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}+\cdots\right) & =\boldsymbol{\omega}\left(\sum\limits_{j\in J}v^{{\scriptscriptstyle j}}\boldsymbol{v}_{{\scriptscriptstyle j}}\right)
 \end{cases} & +=+_{{\scriptscriptstyle \mathcal{V},\mathbb{F}}}\\
 = & \begin{cases}
-v^{{\scriptscriptstyle 1}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right) & =\sum\limits _{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
-\cdots+v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)+\cdots & =\sum\limits _{j\in J}v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)
+v^{{\scriptscriptstyle 1}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle 1}}\right)+\cdots+v^{{\scriptscriptstyle n}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle n}}\right) & =\sum\limits_{j=1}^{n}v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
+\cdots+v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)+\cdots & =\sum\limits_{j\in J}v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)
 \end{cases} & +=+_{{\scriptscriptstyle \mathcal{V}^{*},\mathbb{F}}}\\
 = & v^{{\scriptscriptstyle j}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)=\boldsymbol{v}^{{\scriptscriptstyle j}}\left(\boldsymbol{v}\right)\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right) & v^{{\scriptscriptstyle j}}=\boldsymbol{v}^{{\scriptscriptstyle j}}\left(\boldsymbol{v}\right)\Leftarrow\boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}\right)=v^{{\scriptscriptstyle i}}\Leftarrow\boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\overset{\text{def.}}{=}\delta_{{\scriptscriptstyle j}}^{{\scriptscriptstyle i}}\\
 = & \boldsymbol{v}^{{\scriptscriptstyle j}}\left(\boldsymbol{v}\right)\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}=\omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle j}}\left(\boldsymbol{v}\right)=\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}\left(\boldsymbol{v}\right) & \omega_{{\scriptscriptstyle j}}^{{\scriptscriptstyle \boldsymbol{v}}}\overset{\text{def.}}{=}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscriptstyle j}}\right)\\
@@ -7164,13 +7171,13 @@ v^{{\scriptscriptstyle 1}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscrip
 
 \begin_inset Formula 
 \[
-\begin{aligned}\mathcal{V}^{*}\ni\boldsymbol{\omega}= & \omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}=\sum\limits _{i}\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}=\begin{cases}
-\omega_{{\scriptscriptstyle 1}}\boldsymbol{\omega}^{{\scriptscriptstyle 1}}+\cdots+\omega_{{\scriptscriptstyle n}}\boldsymbol{\omega}^{{\scriptscriptstyle n}} & =\sum\limits _{i=1}^{n}\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}\\
-\cdots+\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}+\cdots & =\sum\limits _{i\in I}\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}
+\begin{aligned}\mathcal{V}^{*}\ni\boldsymbol{\omega}= & \omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}=\sum\limits_{i}\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}=\begin{cases}
+\omega_{{\scriptscriptstyle 1}}\boldsymbol{\omega}^{{\scriptscriptstyle 1}}+\cdots+\omega_{{\scriptscriptstyle n}}\boldsymbol{\omega}^{{\scriptscriptstyle n}} & =\sum\limits_{i=1}^{n}\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}\\
+\cdots+\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}+\cdots & =\sum\limits_{i\in I}\omega_{{\scriptscriptstyle i}}\boldsymbol{\omega}^{{\scriptscriptstyle i}}
 \end{cases}\\
-= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}=\sum\limits _{i}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}=\begin{cases}
-\omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle 1}}+\cdots+\omega_{{\scriptscriptstyle n}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle n}} & =\sum\limits _{i=1}^{n}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}\\
-\cdots+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}+\cdots & =\sum\limits _{i\in I}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}
+= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}=\sum\limits_{i}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}=\begin{cases}
+\omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle 1}}+\cdots+\omega_{{\scriptscriptstyle n}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle n}} & =\sum\limits_{i=1}^{n}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}\\
+\cdots+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}+\cdots & =\sum\limits_{i\in I}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \boldsymbol{v}}}\boldsymbol{v}^{{\scriptscriptstyle i}}
 \end{cases}\\
 = & \begin{cases}
 \omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \boldsymbol{v}}}\begin{bmatrix}|\\
@@ -7203,9 +7210,9 @@ v^{{\scriptscriptstyle 1}}\boldsymbol{\omega}\left(\boldsymbol{v}_{{\scriptscrip
 \boldsymbol{v}^{{\scriptscriptstyle i}}\\
 \vdots
 \end{bmatrix} & =\left[\boldsymbol{\omega}\right]^{{\scriptscriptstyle V}}V^{*}\\
-= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}=\sum\limits _{i}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}=\begin{cases}
-\omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle 1}}+\cdots+\omega_{{\scriptscriptstyle n}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle n}} & =\sum\limits _{i=1}^{n}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}\\
-\cdots+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}+\cdots & =\sum\limits _{i\in I}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}
+= & \omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}=\sum\limits_{i}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}=\begin{cases}
+\omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle 1}}+\cdots+\omega_{{\scriptscriptstyle n}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle n}} & =\sum\limits_{i=1}^{n}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}\\
+\cdots+\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}+\cdots & =\sum\limits_{i\in I}\omega_{{\scriptscriptstyle i}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\widetilde{\boldsymbol{v}}^{{\scriptscriptstyle i}}
 \end{cases}\\
 = & \begin{cases}
 \omega_{{\scriptscriptstyle 1}}^{{\scriptscriptstyle \widetilde{\boldsymbol{v}}}}\begin{bmatrix}|\\

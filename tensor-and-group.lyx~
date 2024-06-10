@@ -217,7 +217,7 @@ usepackage{expl3,xparse}
 
 
 \backslash
-usepackage{xcolor}
+usepackage[dvipsnames]{xcolor}
 \end_layout
 
 \end_inset
@@ -264,9 +264,7 @@ l_tmpa_tl { #1 }
 \backslash
 regex_replace_all:nnN { 2 } { 
 \backslash
-c{ensuremath}{
-\backslash
-c{color}{red}{2}} } 
+c{color}{red}{2} } 
 \backslash
 l_tmpa_tl
 \end_layout
@@ -5506,7 +5504,7 @@ S_{{\scriptscriptstyle 3}}\vartriangleright C_{{\scriptscriptstyle 3}}\vartriang
 \begin_inset Formula 
 \[
 \recolor{\begin{array}{cccccccc}
-S_{{\scriptscriptstyle 3}}=\{ & \sigma_{{\scriptscriptstyle 1}}, & \sigma_{{\scriptscriptstyle 2}}, & \sigma_{{\scriptscriptstyle 3}}, & \sigma_{{\scriptscriptstyle 4}}, & \sigma_{{\scriptscriptstyle 5}}, & \sigma_{{\scriptscriptstyle 6}},\\
+S_{{\scriptscriptstyle 4}}=\{ & \sigma_{{\scriptscriptstyle 1}}, & \sigma_{{\scriptscriptstyle 2}}, & \sigma_{{\scriptscriptstyle 3}}, & \sigma_{{\scriptscriptstyle 4}}, & \sigma_{{\scriptscriptstyle 5}}, & \sigma_{{\scriptscriptstyle 6}},\\
  & \sigma_{{\scriptscriptstyle 1}}, & \sigma_{{\scriptscriptstyle 2}}, & \sigma_{{\scriptscriptstyle 3}}, & \sigma_{{\scriptscriptstyle 4}}, & \sigma_{{\scriptscriptstyle 5}}, & \sigma_{{\scriptscriptstyle 6}},\\
  & \sigma_{{\scriptscriptstyle 1}}, & \sigma_{{\scriptscriptstyle 2}}, & \sigma_{{\scriptscriptstyle 3}}, & \sigma_{{\scriptscriptstyle 4}}, & \sigma_{{\scriptscriptstyle 5}}, & \sigma_{{\scriptscriptstyle 6}},\\
  & \sigma_{{\scriptscriptstyle 1}}, & \sigma_{{\scriptscriptstyle 2}}, & \sigma_{{\scriptscriptstyle 3}}, & \sigma_{{\scriptscriptstyle 4}}, & \sigma_{{\scriptscriptstyle 5}}, & \sigma_{{\scriptscriptstyle 6}} & \}\\

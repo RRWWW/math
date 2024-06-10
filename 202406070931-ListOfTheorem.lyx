@@ -1,0 +1,6534 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage[square,numbers]{natbib}
+\usepackage{expl3,xparse}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-thmtools
+\end_modules
+\maintain_unincluded_children no
+\language chinese-traditional
+\language_package none
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk bkai
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 5
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref page
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue"
+\papersize a4
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style gbt7714-numerical
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 1.5cm
+\rightmargin 2cm
+\bottommargin 1.5cm
+\secnumdepth 5
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style cjk
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+List of Theorem
+\end_layout
+
+\begin_layout Author
+Joey Yu Hsu,
+ MD
+\end_layout
+
+\begin_layout Standard
+\align center
+since 2024/06/07
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List of Theorems
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+ignoreall,show={defn},title=list of definition,swapnumber
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List of Theorems
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+ignoreall,show={thm,lem},title=list of theorem,swapnumber
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List of Theorems
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+ignoreall,show={example},title=list of example,swapnumber
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LyX
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thickspace{}
+\end_inset
+
+Chinese environment
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://latexlyx.blogspot.com/2012/06/lyx.html"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2014年09月21日 晚上10:58 
+\end_layout
+
+\begin_layout Standard
+匿名：
+Language 那邊改成 Chinese Traditional 之後,
+ Definition 就變成定義,
+ Example 就變成範例,
+ 有沒有辦法維持他們是英文的?
+\end_layout
+
+\begin_layout Standard
+2014年09月22日 上午11:23 
+\end_layout
+
+\begin_layout Standard
+Mingyi Wu：
+這個是 LyX 的特性之一。
+UI 的語言設定，
+與編輯區的語言是分開的。
+ 就算 UI 設定為 English,
+ 如果檔案語言設定為 Chinese,
+ 那麼編輯區出現的一些如 Chapter,
+ Section,
+ Definition 等名稱，
+會自動變成中文。
+也就是說檔案的語言設定值，
+會影響 LyX 文字編輯區內呈現的語言。
+ 若使用數學模組或一些數學論文 document class 的時候，
+甚至連輸出的檔案內容都會根據語言設定而變。
+(也就是 Definition 變成 定義)
+\end_layout
+
+\begin_layout Standard
+所以您說的狀況，
+可能有2種情況：
+ 
+\end_layout
+
+\begin_layout Standard
+1.
+ Definition 在 LyX 編輯區內變成中文，
+但輸出檔案時檔案還是出現 Definition 這個只是編輯區呈現的問題，
+沒辦法只改一部份。
+如果真的希望檔案設定成中文，
+但所有介面看起來都要是英文的環境，
+您可以直接刪掉中文翻譯檔，
+這樣所有介面都會變成英文的。
+ 以我的環境，
+繁體中文的翻譯檔路徑在(for Windows):
+ C:
+\backslash
+Program Files (x86)
+\backslash
+LyX 2.1
+\backslash
+Resources
+\backslash
+locale
+\backslash
+zh_TW
+\backslash
+LC_MESSAGES
+\backslash
+LyX2.1.mo 把這個檔名改掉，
+這樣 LyX 就找不到中文翻譯檔，
+都會以預設的英文呈現。
+
+\end_layout
+
+\begin_layout Standard
+2.
+ 如果您的問題是輸出的檔案會出現中文的「定義」問題，
+不管介面顯示。
+這個問題跟另外一個檔案有關,
+ C:
+\backslash
+Program Files (x86)
+\backslash
+LyX 2.1
+\backslash
+Resources
+\backslash
+layouttranslations 您可以用任何文字編輯器開啟此檔，
+找到 Translation zh_TW 這行以下的設定改成您喜歡的，
+或是直接把這個檔名改掉或刪掉檔案，
+這樣輸出檔案也不會自動翻譯了。
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://latexlyx.blogspot.com/2013/06/lyx-2.html"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+LyZ:
+ linking Zotero and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LyX
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://forums.zotero.org/discussion/78442/connecting-zotero-and-lyx"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/wshanks/lyz/releases"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+list of theorem module
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://tex.stackexchange.com/questions/672794/list-of-theorems-not-working-in-lyx"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/Udi-Fogiel/LyX-thmtools"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+coloring
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://stackoverflow.com/questions/2116944/insert-programming-code-in-a-lyx-document"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://tex.stackexchange.com/questions/53260/lyx-is-ignoring-typewriter-font-setting-for-program-listings"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://tex.stackexchange.com/questions/534581/tex-compilation-after-regex-replace"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+single coloring
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+zl{ {
+\backslash
+color{blue} z_{
+\backslash
+scriptscriptstyle l}} }
+\end_layout
+
+\end_inset
+
+also can be put into 
+\begin_inset Quotes eld
+\end_inset
+
+preamble
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+zl{ {
+\backslash
+color{blue} z_{
+\backslash
+scriptscriptstyle l}} }
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+0=\frac{\partial}{\partial\zl}\big(\|h(z_{l-1})\cdot w_{l}-\zl\|+\lambda\|h(\zl)\cdot w_{l+1}-z_{l+1}\|\big)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+recolor = coloring with regular expression (= RegEx = re)
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://tex.stackexchange.com/questions/83101/option-clash-for-package-xcolor"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now,
+ the problem was that another package (pgfplots,
+ in this case) had already loaded the xcolor package without options,
+ so loading it after pgfplots with the table option produces the clash.
+ One way to prevent the problem was already presented (using table as class option);
+ another solution is to load xcolor with the table option before pgfplots
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{expl3,xparse}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage[dvipsnames]{xcolor}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+NewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 2 } { 
+\backslash
+c{color}{red}{2} } 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+NewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 2 } { 
+\backslash
+c{color}{red}{2} } 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\recolor{c^{2}=a^{2}+b^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+RenewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	% e,
+ 
+\backslash
+rho^2
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+be
+\backslash
+b } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}
+\backslash
+^
+\backslash
+{2
+\backslash
+} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% rho
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+rho_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 0}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 1}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 2}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+d_
+\backslash
+rho
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 0_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 1_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 2_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% pi
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+pi_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 0}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 1}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 2}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+d_
+\backslash
+pi
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 0_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 1_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 2_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% 
+\backslash
+d{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+[
+\backslash
+d{3}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(123)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{red}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(231)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{blue}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(312)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{Green}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(213)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{magenta}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(132)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{cyan}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(321)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{orange}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+(
+\backslash
+d{3}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+(
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((123)
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{blue}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((132)
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{Green}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((12)
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{magenta}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((23)
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{cyan}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((31)
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{orange}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+RenewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	% e,
+ 
+\backslash
+rho^2
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+be
+\backslash
+b } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}
+\backslash
+^
+\backslash
+{2
+\backslash
+} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% rho
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+rho_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 0}} } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 1}} } { {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 2}} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+d_
+\backslash
+rho
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 0_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 1_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} } { {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 2_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% pi
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+pi_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 0}} } { {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 1}} } { {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 2}} } { {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+d_
+\backslash
+pi
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 0_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} } { {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 1_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} } { {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 2_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} } { {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% 
+\backslash
+d{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+[
+\backslash
+d{3}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(123)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{red}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(231)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{blue}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(312)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{Green}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(213)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{magenta}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(132)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{cyan}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(321)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{orange}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+(
+\backslash
+d{3}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+(
+\backslash
+c{right}
+\backslash
+) } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((123)
+\backslash
+c{right}
+\backslash
+) } { 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{blue}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((132)
+\backslash
+c{right}
+\backslash
+) } { 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{Green}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((12)
+\backslash
+c{right}
+\backslash
+) } { 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{magenta}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((23)
+\backslash
+c{right}
+\backslash
+) } { 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{cyan}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((31)
+\backslash
+c{right}
+\backslash
+) } { 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{orange}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\recolor{\begin{array}{cccccccccccccc}
+\cdot_{{\scriptscriptstyle D_{{\scriptscriptstyle 3}}}} & \rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 2}} & \cdot_{{\scriptscriptstyle S_{3}}} & \left[123\right] & \left[231\right] & \left[312\right] & \left[213\right] & \left[132\right] & \left[321\right]\\
+\rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 2}} & \left[123\right] & \left[123\right] & \left[231\right] & \left[312\right] & \left[213\right] & \left[132\right] & \left[321\right]\\
+\rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 0}} & \left[231\right] & \left[231\right] & \left[312\right] & \left[123\right] & \left[132\right] & \left[321\right] & \left[213\right]\\
+\rho_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 1}} & \left[312\right] & \left[312\right] & \left[123\right] & \left[231\right] & \left[321\right] & \left[213\right] & \left[132\right]\\
+\pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 1}} & \left[213\right] & \left[213\right] & \left[321\right] & \left[132\right] & \left[123\right] & \left[312\right] & \left[231\right]\\
+\pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 2}} & \left[132\right] & \left[132\right] & \left[213\right] & \left[321\right] & \left[231\right] & \left[123\right] & \left[312\right]\\
+\pi_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 0}} & \left[321\right] & \left[321\right] & \left[132\right] & \left[213\right] & \left[312\right] & \left[231\right] & \left[123\right]\\
+\cdot_{{\scriptscriptstyle S_{3}}} & e & \left(123\right) & \left(132\right) & \left(3\right)\left(12\right) & \left(1\right)\left(23\right) & \left(2\right)\left(31\right) & \cdot_{{\scriptscriptstyle S_{3}}} & \left(\right) & \left(123\right) & \left(132\right) & \left(12\right) & \left(23\right) & \left(31\right)\\
+e & e & \left(123\right) & \left(132\right) & \left(3\right)\left(12\right) & \left(1\right)\left(23\right) & \left(2\right)\left(31\right) & \left(\right) & \left(\right) & \left(123\right) & \left(132\right) & \left(12\right) & \left(23\right) & \left(31\right)\\
+\left(123\right) & \left(123\right) & \left(132\right) & e & \left(1\right)\left(23\right) & \left(2\right)\left(31\right) & \left(3\right)\left(12\right) & \left(123\right) & \left(123\right) & \left(132\right) & \left(\right) & \left(23\right) & \left(31\right) & \left(12\right)\\
+\left(132\right) & \left(132\right) & e & \left(123\right) & \left(2\right)\left(31\right) & \left(3\right)\left(12\right) & \left(1\right)\left(23\right) & \left(132\right) & \left(132\right) & \left(\right) & \left(123\right) & \left(31\right) & \left(12\right) & \left(23\right)\\
+\left(3\right)\left(12\right) & \left(3\right)\left(12\right) & \left(2\right)\left(31\right) & \left(1\right)\left(23\right) & e & \left(132\right) & \left(123\right) & \left(12\right) & \left(12\right) & \left(31\right) & \left(23\right) & \left(\right) & \left(132\right) & \left(123\right)\\
+\left(1\right)\left(23\right) & \left(1\right)\left(23\right) & \left(3\right)\left(12\right) & \left(2\right)\left(31\right) & \left(123\right) & e & \left(132\right) & \left(23\right) & \left(23\right) & \left(12\right) & \left(31\right) & \left(123\right) & \left(\right) & \left(132\right)\\
+\left(2\right)\left(31\right) & \left(2\right)\left(31\right) & \left(1\right)\left(23\right) & \left(3\right)\left(12\right) & \left(132\right) & \left(123\right) & e & \left(31\right) & \left(31\right) & \left(23\right) & \left(12\right) & \left(132\right) & \left(123\right) & \left(\right)
+\end{array}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $\text{Ti}k\text{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\text{Ti}k\text{Z-CD}$
+\end_inset
+
+ = tikz-cd:
+ commutative diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{tikz}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{pgfplots}
+\end_layout
+
+\end_inset
+
+
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usetikzlibrary{cd,arrows.meta}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzcd}[column sep=2.75cm,
+ %small,large,huge
+\end_layout
+
+\begin_layout Plain Layout
+
+                     cells={nodes={draw}}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    ]
+\end_layout
+
+\begin_layout Plain Layout
+
+00
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,"
+\backslash
+backslash 
+\backslash
+text{ar[r]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[d,"
+\backslash
+backslash 
+\backslash
+text{ar[d]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+01
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,"
+\backslash
+text{[,"swap"']}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+02
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,"
+\backslash
+backslash 
+\backslash
+text{ar[r]}","
+\backslash
+text{[,"swap"']}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+03
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+10
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[d,"
+\backslash
+text{[,"swap"']}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+11
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[u,"
+\backslash
+backslash 
+\backslash
+text{ar[u]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[l,"
+\backslash
+backslash 
+\backslash
+text{ar[l]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-stealth,"
+\backslash
+text{[,-}
+\backslash
+text{stealth}
+\backslash
+text{]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[d,-{Stealth[reversed]},"
+\backslash
+text{[,-}
+\backslash
+{
+\backslash
+text{Stealth[reversed]}
+\backslash
+}
+\backslash
+text{]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+12
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-{Stealth[open]},"
+\backslash
+text{[,-}
+\backslash
+{
+\backslash
+text{Stealth[open]}
+\backslash
+}
+\backslash
+text{]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+13
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+20
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,"
+\backslash
+text{[,"r" description]}" description]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[d,"
+\backslash
+backslash 
+\backslash
+text{ar[d]}","
+\backslash
+text{[,"swap"']}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+21
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-{Stealth[harpoon]},"
+\backslash
+text{[,-}
+\backslash
+{
+\backslash
+text{Stealth[harpoon]}
+\backslash
+}
+\backslash
+text{]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+22
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[u,shift right=1.75pt,"
+\backslash
+text{[,shift right=1.75pt]}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[lld,-Stealth,"
+\backslash
+backslash 
+\backslash
+text{ar[lld]}" description]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,latex-latex,"
+\backslash
+text{[,latex-latex]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[d,shift right=1.75pt,"
+\backslash
+text{[,shift right=1.75pt]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+23
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+30
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[ru,"
+\backslash
+backslash 
+\backslash
+text{ar[ru]}" description]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,bend right,-stealth,"
+\backslash
+text{bend right}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,bend right=42,-stealth,"
+\backslash
+text{bend right=42}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,bend right=100,-stealth,"
+\backslash
+text{bend right=100}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[dd,bend right,-stealth,"
+\backslash
+text{[,bend right]}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+31
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,bend left,stealth-stealth,"
+\backslash
+text{bend left}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[ddr]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+32
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[l,-{Stealth[harpoon]},"
+\backslash
+text{[,-}
+\backslash
+{
+\backslash
+text{Stealth[harpoon]}
+\backslash
+}
+\backslash
+text{]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-{Stealth[harpoon]},shift left=.75pt,"
+\backslash
+text{[,shift left=.75pt]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[ddl,crossing over,"
+\backslash
+text{[,crossing over];
+ rounded corneres,
+ to path}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[ddr,
+\end_layout
+
+\begin_layout Plain Layout
+
+    rounded corners,
+\end_layout
+
+\begin_layout Plain Layout
+
+    to path={--([yshift=-2ex]
+\backslash
+tikztostart.south)
+\end_layout
+
+\begin_layout Plain Layout
+
+              --([yshift=-2ex,xshift=+2ex]
+\backslash
+tikztostart.south)
+\end_layout
+
+\begin_layout Plain Layout
+
+              --([yshift=-2ex,xshift=+8ex]
+\backslash
+tikztostart.south)
+\end_layout
+
+\begin_layout Plain Layout
+
+              --([xshift=-12ex]
+\backslash
+tikztotarget.west)
+\end_layout
+
+\begin_layout Plain Layout
+
+              --(
+\backslash
+tikztotarget)
+\end_layout
+
+\begin_layout Plain Layout
+
+             },
+\end_layout
+
+\begin_layout Plain Layout
+
+    ]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+33
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[l,-{Stealth[harpoon]},shift left=.75pt,"
+\backslash
+text{[,shift left=.75pt]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+50
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-|,"
+\backslash
+text{[,}-|
+\backslash
+text{,swap]}",swap]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+51
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-stealth,red,text=black,"|
+\backslash
+text{[draw=none]}|" description]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+|[draw=none]|52
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+53
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzcd}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usetikzlibrary{cd,arrows.meta}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzcd}[column sep=2.75cm,
+ %small,large,huge
+\end_layout
+
+\begin_layout Plain Layout
+
+                     cells={nodes={draw}}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    ]
+\end_layout
+
+\begin_layout Plain Layout
+
+00
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,"
+\backslash
+backslash 
+\backslash
+text{ar[r]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[d,"
+\backslash
+backslash 
+\backslash
+text{ar[d]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+01
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,"
+\backslash
+text{[,"swap"']}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+02
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,"
+\backslash
+backslash 
+\backslash
+text{ar[r]}","
+\backslash
+text{[,"swap"']}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+03
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+10
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[d,"
+\backslash
+text{[,"swap"']}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+11
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[u,"
+\backslash
+backslash 
+\backslash
+text{ar[u]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[l,"
+\backslash
+backslash 
+\backslash
+text{ar[l]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-stealth,"
+\backslash
+text{[,-}
+\backslash
+text{stealth}
+\backslash
+text{]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[d,-{Stealth[reversed]},"
+\backslash
+text{[,-}
+\backslash
+{
+\backslash
+text{Stealth[reversed]}
+\backslash
+}
+\backslash
+text{]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+12
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-{Stealth[open]},"
+\backslash
+text{[,-}
+\backslash
+{
+\backslash
+text{Stealth[open]}
+\backslash
+}
+\backslash
+text{]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+13
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+20
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,"
+\backslash
+text{[,"r" description]}" description]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[d,"
+\backslash
+backslash 
+\backslash
+text{ar[d]}","
+\backslash
+text{[,"swap"']}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+21
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-{Stealth[harpoon]},"
+\backslash
+text{[,-}
+\backslash
+{
+\backslash
+text{Stealth[harpoon]}
+\backslash
+}
+\backslash
+text{]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+22
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[u,shift right=1.75pt,"
+\backslash
+text{[,shift right=1.75pt]}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[lld,-Stealth,"
+\backslash
+backslash 
+\backslash
+text{ar[lld]}" description]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,latex-latex,"
+\backslash
+text{[,latex-latex]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[d,shift right=1.75pt,"
+\backslash
+text{[,shift right=1.75pt]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+23
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+30
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[ru,"
+\backslash
+backslash 
+\backslash
+text{ar[ru]}" description]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,bend right,-stealth,"
+\backslash
+text{bend right}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,bend right=42,-stealth,"
+\backslash
+text{bend right=42}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,bend right=100,-stealth,"
+\backslash
+text{bend right=100}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[dd,bend right,-stealth,"
+\backslash
+text{[,bend right]}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+31
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,bend left,stealth-stealth,"
+\backslash
+text{bend left}"']
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[ddr]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+32
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[l,-{Stealth[harpoon]},"
+\backslash
+text{[,-}
+\backslash
+{
+\backslash
+text{Stealth[harpoon]}
+\backslash
+}
+\backslash
+text{]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-{Stealth[harpoon]},shift left=.75pt,"
+\backslash
+text{[,shift left=.75pt]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[ddl,crossing over,"
+\backslash
+text{[,crossing over];
+ rounded corneres,
+ to path}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[ddr,
+\end_layout
+
+\begin_layout Plain Layout
+
+    rounded corners,
+\end_layout
+
+\begin_layout Plain Layout
+
+    to path={--([yshift=-2ex]
+\backslash
+tikztostart.south)
+\end_layout
+
+\begin_layout Plain Layout
+
+              --([yshift=-2ex,xshift=+2ex]
+\backslash
+tikztostart.south)
+\end_layout
+
+\begin_layout Plain Layout
+
+              --([yshift=-2ex,xshift=+8ex]
+\backslash
+tikztostart.south)
+\end_layout
+
+\begin_layout Plain Layout
+
+              --([xshift=-12ex]
+\backslash
+tikztotarget.west)
+\end_layout
+
+\begin_layout Plain Layout
+
+              --(
+\backslash
+tikztotarget)
+\end_layout
+
+\begin_layout Plain Layout
+
+             },
+\end_layout
+
+\begin_layout Plain Layout
+
+    ]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+33
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[l,-{Stealth[harpoon]},shift left=.75pt,"
+\backslash
+text{[,shift left=.75pt]}"]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+50
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-|,"
+\backslash
+text{[,}-|
+\backslash
+text{,swap]}",swap]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+51
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ar[r,-stealth,red,text=black,"|
+\backslash
+text{[draw=none]}|" description]
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+|[draw=none]|52
+\end_layout
+
+\begin_layout Plain Layout
+
+&
+\end_layout
+
+\begin_layout Plain Layout
+
+53
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzcd}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+learn 
+\begin_inset Formula $\text{Ti}k\text{Z-CD}$
+\end_inset
+
+ = tikz-cd in one picture 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+group theory
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+group
+\end_layout
+
+\end_inset
+
+ 群
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}G & \text{ is a group}\\
+\Updownarrow & \text{def.}\\
+G=\left(G,\cdot\right)=\left(G,\cdot_{{\scriptscriptstyle G}}\right)= & \left\{ g\middle|\begin{aligned}g_{{\scriptscriptstyle 1}}\cdot g_{{\scriptscriptstyle 2}}= & g_{{\scriptscriptstyle 1}}g_{{\scriptscriptstyle 2}}\in G & \forall g_{{\scriptscriptstyle 1}},g_{{\scriptscriptstyle 2}}\in G & \quad\left(c\right)\cdot_{{\scriptscriptstyle G}}\text{closure}\\
+g_{{\scriptscriptstyle 1}}\left(g_{{\scriptscriptstyle 2}}g_{{\scriptscriptstyle 3}}\right)= & \left(g_{{\scriptscriptstyle 1}}g_{{\scriptscriptstyle 2}}\right)g_{{\scriptscriptstyle 3}}=g_{{\scriptscriptstyle 1}}g_{{\scriptscriptstyle 2}}g_{{\scriptscriptstyle 3}} & \forall g_{{\scriptscriptstyle 1}},g_{{\scriptscriptstyle 2}},g_{{\scriptscriptstyle 3}}\in G & \quad\left(a\right)\cdot_{{\scriptscriptstyle G}}\text{associativity}\\
+e\cdot g=eg= & g=ge=g\cdot e & \exists e=e_{{\scriptscriptstyle G}}\in G,\forall g\in G & \quad\left(id\right)\text{identity element}\\
+\overline{g}\cdot g=\bar{g}g= & e=g\bar{g}=g\cdot\overline{g} & \forall g\in G,\exists\overline{g}\in G & \quad\left(in\right)\text{inverse element}
+\end{aligned}
+\right\} 
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\begin{aligned}\forall g\in & G\\
+g\ne e\in & G
+\end{aligned}
+\Rightarrow\forall\widetilde{g}\in G\left[g\widetilde{g}\ne\widetilde{g}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\begin{aligned}\forall g_{{\scriptscriptstyle 1}},g_{{\scriptscriptstyle 2}}\in & G\\
+g_{{\scriptscriptstyle 1}}\ne g_{{\scriptscriptstyle 2}}
+\end{aligned}
+\Rightarrow\forall g\in G\left[g_{{\scriptscriptstyle 1}}g\ne g_{{\scriptscriptstyle 2}}g\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+rearrangement theorem
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall g\in G\left[\left\{ g\widetilde{g}\middle|\widetilde{g}\in G\right\} =G\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+proof idea:
+ 
+\begin_inset Formula $f=g\left(\overline{g}f\right)=gg^{{\scriptscriptstyle -1}}f=ef=f$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\forall g\in G,\exists\overline{g}\in G\Biggl[\overline{g}g=e=g\overline{g} & \Biggr]\\
+\Downarrow\\
+\forall f\in G\Biggl[f=ef\overset{e=g\overline{g}}{=} & \left(g\overline{g}\right)f\overset{\left(a\right)}{=}g\left(\overline{g}f\right)\Biggr]\Rightarrow & \forall f\in G\left[f=g\left(\overline{g}f\right)\right]\overset{\left(c\right)\overline{g}f\in G}{\Rightarrow} & f\in\left\{ g\widetilde{g}\middle|\widetilde{g}\in G\right\} \\
+ &  & \Downarrow\\
+ &  & \forall f\in G & \left[f\in\left\{ g\widetilde{g}\middle|\widetilde{g}\in G\right\} \right]\\
+ &  & \Downarrow\\
+ &  & G\subseteq & \left\{ g\widetilde{g}\middle|\widetilde{g}\in G\right\} \\
+ &  & \left\{ g\widetilde{g}\middle|\forall\widetilde{g}\in G\right\} \subseteq & G\because\left(c\right)\cdot_{{\scriptscriptstyle G}}\text{closure}\\
+ &  & \Downarrow\\
+ &  & G= & \left\{ g\widetilde{g}\middle|\widetilde{g}\in G\right\} 
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{{\scriptscriptstyle 3}}=\mathbb{Z}_{{\scriptscriptstyle 3}}\trianglelefteq S_{{\scriptscriptstyle 3}}=D_{{\scriptscriptstyle 3}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\rho_{{\scriptscriptstyle k+3}}= & \rho_{{\scriptscriptstyle k}}\\
+\pi_{{\scriptscriptstyle k+3}}= & \pi_{{\scriptscriptstyle k}}\\
+\rho_{{\scriptscriptstyle i}}\rho_{{\scriptscriptstyle j}}= & \rho_{{\scriptscriptstyle i+j}}\\
+\rho_{{\scriptscriptstyle i}}\pi_{{\scriptscriptstyle j}}= & \pi_{{\scriptscriptstyle i+j}}\\
+\pi_{{\scriptscriptstyle i}}\rho_{{\scriptscriptstyle j}}= & \pi_{{\scriptscriptstyle i-j}}\\
+\pi_{{\scriptscriptstyle i}}\pi_{{\scriptscriptstyle j}}= & \rho_{{\scriptscriptstyle i-j}}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}C_{{\scriptscriptstyle 3}}=\mathbb{Z}_{{\scriptscriptstyle 3}}= & \left\{ 0,1,2\right\} \\
+= & \left\{ 0_{{\scriptscriptstyle \rho}},1_{{\scriptscriptstyle \rho}},2_{{\scriptscriptstyle \rho}}\right\} =\left\{ \left[123\right],\left[231\right],\left[312\right]\right\} =\left\{ \left(\right),\left(123\right),\left(132\right)\right\}  & \le S_{{\scriptscriptstyle 3}}\\
+= & \left\{ \mathrm{e}^{{\scriptscriptstyle \mathrm{i}\frac{2\pi}{n}0}},\mathrm{e}^{{\scriptscriptstyle \mathrm{i}\frac{2\pi}{n}1}},\mathrm{e}^{{\scriptscriptstyle \mathrm{i}\frac{2\pi}{n}2}},\cdots,\mathrm{e}^{{\scriptscriptstyle \mathrm{i}\frac{2\pi}{n}\left(n-1\right)}}\right\} \overset{n=3}{=}\left\{ \mathrm{e}^{{\scriptscriptstyle \mathrm{i}\frac{2\pi}{3}0}},\mathrm{e}^{{\scriptscriptstyle \mathrm{i}\frac{2\pi}{3}1}},\mathrm{e}^{{\scriptscriptstyle \mathrm{i}\frac{2\pi}{3}2}}\right\} \\
+= & \left\{ e,g,g^{2},\cdots,g^{n-1}\right\} =\left\{ g^{0},g^{1},g^{2}\right\} =\left\{ e,g,g^{2}\right\} ,g^{n}=e\\
+= & \left\{ e,\rho,\rho^{2}\right\} =\left\{ \rho_{{\scriptscriptstyle 0}},\rho_{{\scriptscriptstyle 1}},\rho_{{\scriptscriptstyle 2}}\right\} =\left\{ \rho_{{\scriptscriptstyle j}}\middle|j\in\left\{ 0,1,2\right\} \right\}  & \le D_{{\scriptscriptstyle 3}}=\left\{ \rho_{{\scriptscriptstyle k}},\pi_{{\scriptscriptstyle k}}\right\} =\left\{ \rho_{{\scriptscriptstyle k,3}},\pi_{{\scriptscriptstyle k,3}}\right\} \\
+\rho_{{\scriptscriptstyle i}}\mathbb{Z}_{{\scriptscriptstyle 3}}= & \left\{ \rho_{{\scriptscriptstyle i}}\rho_{{\scriptscriptstyle j}}\middle|j\in\left\{ 0,1,2\right\} \right\} \\
+= & \left\{ \rho_{{\scriptscriptstyle i+j}}\middle|j\in\left\{ 0,1,2\right\} \right\} \overset{i+j=j+i}{=}\left\{ \rho_{{\scriptscriptstyle j+i}}\middle|j\in\left\{ 0,1,2\right\} \right\} \\
+= & \left\{ \rho_{{\scriptscriptstyle j}}\rho_{{\scriptscriptstyle i}}\middle|j\in\left\{ 0,1,2\right\} \right\} =\mathbb{Z}_{{\scriptscriptstyle 3}}\rho_{{\scriptscriptstyle i}} & \Rightarrow\rho_{{\scriptscriptstyle i}}\mathbb{Z}_{{\scriptscriptstyle 3}}=\mathbb{Z}_{{\scriptscriptstyle 3}}\rho_{{\scriptscriptstyle i}}\\
+\pi_{{\scriptscriptstyle i}}\mathbb{Z}_{{\scriptscriptstyle 3}}= & \left\{ \pi_{{\scriptscriptstyle i}}\rho_{{\scriptscriptstyle j}}\middle|j\in\left\{ 0,1,2\right\} \right\} \\
+= & \left\{ \pi_{{\scriptscriptstyle i-j}}\middle|j\in\left\{ 0,1,2\right\} \right\} \overset{\pi_{{\scriptscriptstyle k+3}}=\pi_{{\scriptscriptstyle k}}}{=}\left\{ \pi_{{\scriptscriptstyle 3+i-j}}\middle|j\in\left\{ 0,1,2\right\} \right\} \\
+= & \left\{ \pi_{{\scriptscriptstyle i+\left(3-j\right)}}\middle|3-j\in\left\{ 3,2,1\right\} \right\} =\left\{ \pi_{{\scriptscriptstyle \left(3-j\right)+i}}\middle|3-j\in\left\{ 3,2,1\right\} \right\}  & i+\left(3-j\right)=\left(3-j\right)+i\\
+= & \left\{ \rho_{{\scriptscriptstyle 3-j}}\pi_{{\scriptscriptstyle i}}\middle|3-j\in\left\{ 3,2,1\right\} \right\} =\left\{ \rho_{{\scriptscriptstyle 3-j}}\middle|3-j\in\left\{ 3,2,1\right\} \right\} \pi_{{\scriptscriptstyle i}} & \rho_{{\scriptscriptstyle i}}\pi_{{\scriptscriptstyle j}}=\pi_{{\scriptscriptstyle i+j}}\\
+= & \left\{ \rho_{{\scriptscriptstyle j}}\middle|j\in\left\{ 0,1,2\right\} \right\} \pi_{{\scriptscriptstyle i}}=\mathbb{Z}_{{\scriptscriptstyle 3}}\pi_{{\scriptscriptstyle i}} & \Rightarrow\pi_{{\scriptscriptstyle i}}\mathbb{Z}_{{\scriptscriptstyle 3}}=\mathbb{Z}_{{\scriptscriptstyle 3}}\pi_{{\scriptscriptstyle i}}\\
+\Downarrow\\
+\rho_{{\scriptscriptstyle i}}\mathbb{Z}_{{\scriptscriptstyle 3}}= & \mathbb{Z}_{{\scriptscriptstyle 3}}\rho_{{\scriptscriptstyle i}}\\
+\pi_{{\scriptscriptstyle i}}\mathbb{Z}_{{\scriptscriptstyle 3}}= & \mathbb{Z}_{{\scriptscriptstyle 3}}\pi_{{\scriptscriptstyle i}} & \Rightarrow g\mathbb{Z}_{{\scriptscriptstyle 3}}=\mathbb{Z}_{{\scriptscriptstyle 3}}g\quad\forall g\in D_{{\scriptscriptstyle 3}}\\
+\Downarrow\\
+\mathbb{Z}_{{\scriptscriptstyle 3}} & \le D_{{\scriptscriptstyle 3}}=S_{{\scriptscriptstyle 3}}\\
+g\mathbb{Z}_{{\scriptscriptstyle 3}}= & \mathbb{Z}_{{\scriptscriptstyle 3}}g\quad\forall g\in D_{{\scriptscriptstyle 3}} & \Rightarrow\mathbb{Z}_{{\scriptscriptstyle 3}}\trianglelefteq D_{{\scriptscriptstyle 3}}=S_{{\scriptscriptstyle 3}}\\
+ &  & \Updownarrow\\
+ &  & \mathbb{Z}_{{\scriptscriptstyle 3}}\trianglelefteq S_{{\scriptscriptstyle 3}}=D_{{\scriptscriptstyle 3}}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+homomorphism
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+kernel of homomorphism
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Galois theory
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x-\alpha=\left(x-\alpha\right)=0\Rightarrow x=\alpha\Leftrightarrow x\in\left\{ \alpha\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}-\left(\alpha+\beta\right)x+\alpha\beta=\left(x-\alpha\right)\left(x-\beta\right)=0\Rightarrow x=\alpha,\beta\Leftrightarrow x\in\left\{ \alpha,\beta\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{3}-\left(\alpha+\beta+\gamma\right)x^{2}+\left(\alpha\beta+\beta\gamma+\gamma\alpha\right)x-\alpha\beta\gamma=\left(x-\alpha\right)\left(x-\beta\right)\left(x-\gamma\right)=0\Rightarrow x=\alpha,\beta,\gamma\Leftrightarrow x\in\left\{ \alpha,\beta,\gamma\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+RenewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+greek
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{alpha} } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{beta} } { {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{gamma} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{delta} } { {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{varepsilon} } { {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { x } { {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}0= & \left(x-\alpha\right) & x=\alpha & \Leftrightarrow x\in\left\{ \alpha\right\} \\
+= & x-\alpha\\
+0= & \left(x-\alpha\right)\left(x-\beta\right) & x=\alpha,\beta & \Leftrightarrow x\in\left\{ \alpha,\beta\right\} \\
+= & x^{2}-\left(\alpha+\beta\right)x+\alpha\beta\\
+0= & \left(x-\alpha\right)\left(x-\beta\right)\left(x-\gamma\right) & x=\alpha,\beta,\gamma & \Leftrightarrow x\in\left\{ \alpha,\beta,\gamma\right\} \\
+= & x^{3}-\left(\alpha+\beta+\gamma\right)x^{2}+\left(\alpha\beta+\beta\gamma+\gamma\alpha\right)x-\alpha\beta\gamma\\
+0= & \left(x-\alpha\right)\left(x-\beta\right)\left(x-\gamma\right)\left(x-\delta\right) & x=\alpha,\beta,\gamma,\delta & \Leftrightarrow x\in\left\{ \alpha,\beta,\gamma,\delta\right\} \\
+= & x^{4}-\left(\alpha+\beta+\gamma+\delta\right)x^{3}+\cdots+\alpha\beta\gamma\delta\\
+0= & \left(x-\alpha\right)\left(x-\beta\right)\left(x-\gamma\right)\left(x-\delta\right)\left(x-\varepsilon\right) & x=\alpha,\beta,\gamma,\delta,\varepsilon & \Leftrightarrow x\in\left\{ \alpha,\beta,\gamma,\delta,\varepsilon\right\} \\
+= & x^{5}-\left(\alpha+\beta+\gamma+\delta+\varepsilon\right)x^{4}+\cdots-\alpha\beta\gamma\delta\varepsilon
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+RenewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% x_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { x_{{
+\backslash
+c{scriptscriptstyle} 1}} } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { x_{{
+\backslash
+c{scriptscriptstyle} 2}} } { {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { x_{{
+\backslash
+c{scriptscriptstyle} 3}} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { x_{{
+\backslash
+c{scriptscriptstyle} 4}} } { {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { x_{{
+\backslash
+c{scriptscriptstyle} 5}} } { {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { x_{{
+\backslash
+c{scriptscriptstyle} m}} } { {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { x_{{
+\backslash
+c{scriptscriptstyle} n}} } { {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+alpha_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{alpha}_{{
+\backslash
+c{scriptscriptstyle} 1}} } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{alpha}_{{
+\backslash
+c{scriptscriptstyle} 2}} } { {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{alpha}_{{
+\backslash
+c{scriptscriptstyle} 3}} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{alpha}_{{
+\backslash
+c{scriptscriptstyle} 4}} } { {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{alpha}_{{
+\backslash
+c{scriptscriptstyle} 5}} } { {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{alpha}_{{
+\backslash
+c{scriptscriptstyle} m}} } { {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% V_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { V_{{
+\backslash
+c{scriptscriptstyle} 1}} } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { V_{{
+\backslash
+c{scriptscriptstyle} 2}} } { {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { V_{{
+\backslash
+c{scriptscriptstyle} 3}} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { V_{{
+\backslash
+c{scriptscriptstyle} 4}} } { {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { V_{{
+\backslash
+c{scriptscriptstyle} 5}} } { {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { V_{{
+\backslash
+c{scriptscriptstyle} 6}} } { {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { V_{{
+\backslash
+c{scriptscriptstyle} n}} } { {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+varphi_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{varphi}_{{
+\backslash
+c{scriptscriptstyle} 1}} } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{varphi}_{{
+\backslash
+c{scriptscriptstyle} 2}} } { {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{varphi}_{{
+\backslash
+c{scriptscriptstyle} 3}} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{varphi}_{{
+\backslash
+c{scriptscriptstyle} 4}} } { {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{varphi}_{{
+\backslash
+c{scriptscriptstyle} 5}} } { {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{varphi}_{{
+\backslash
+c{scriptscriptstyle} m}} } { {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}0= & \left(x-\alpha_{{\scriptscriptstyle 1}}\right) & x=\alpha_{{\scriptscriptstyle 1}} & \Leftrightarrow x\in\left\{ \alpha_{{\scriptscriptstyle 1}}\right\} \\
+= & x-\alpha_{{\scriptscriptstyle 1}}\\
+0= & \left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right) & x=\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}} & \Leftrightarrow x\in\left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right\} \\
+= & x^{2}-\left(\alpha_{{\scriptscriptstyle 1}}+\alpha_{{\scriptscriptstyle 2}}\right)x+\alpha_{{\scriptscriptstyle 1}}\alpha_{{\scriptscriptstyle 2}}\\
+0= & \left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right)\left(x-\alpha_{{\scriptscriptstyle 3}}\right) & x=\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 3}} & \Leftrightarrow x\in\left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 3}}\right\} \\
+= & x^{3}-\left(\alpha_{{\scriptscriptstyle 1}}+\alpha_{{\scriptscriptstyle 2}}+\alpha_{{\scriptscriptstyle 3}}\right)x^{2}+\left(\alpha_{{\scriptscriptstyle 1}}\alpha_{{\scriptscriptstyle 2}}+\alpha_{{\scriptscriptstyle 2}}\alpha_{{\scriptscriptstyle 3}}+\alpha_{{\scriptscriptstyle 3}}\alpha_{{\scriptscriptstyle 1}}\right)x-\alpha_{{\scriptscriptstyle 1}}\alpha_{{\scriptscriptstyle 2}}\alpha_{{\scriptscriptstyle 3}}\\
+0= & \left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right)\left(x-\alpha_{{\scriptscriptstyle 3}}\right)\left(x-\alpha_{{\scriptscriptstyle 4}}\right) & x=\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 3}},\alpha_{{\scriptscriptstyle 4}} & \Leftrightarrow x\in\left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 3}},\alpha_{{\scriptscriptstyle 4}}\right\} \\
+= & x^{4}-\left(\alpha_{{\scriptscriptstyle 1}}+\alpha_{{\scriptscriptstyle 2}}+\alpha_{{\scriptscriptstyle 3}}+\alpha_{{\scriptscriptstyle 4}}\right)x^{3}+\cdots+\alpha_{{\scriptscriptstyle 1}}\alpha_{{\scriptscriptstyle 2}}\alpha_{{\scriptscriptstyle 3}}\alpha_{{\scriptscriptstyle 4}}\\
+0= & \left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right)\left(x-\alpha_{{\scriptscriptstyle 3}}\right)\left(x-\alpha_{{\scriptscriptstyle 4}}\right)\left(x-\alpha_{{\scriptscriptstyle 5}}\right) & x=\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 3}},\alpha_{{\scriptscriptstyle 4}},\alpha_{{\scriptscriptstyle 5}} & \Leftrightarrow x\in\left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 3}},\alpha_{{\scriptscriptstyle 4}},\alpha_{{\scriptscriptstyle 5}}\right\} \\
+= & x^{5}-\left(\alpha_{{\scriptscriptstyle 1}}+\alpha_{{\scriptscriptstyle 2}}+\alpha_{{\scriptscriptstyle 3}}+\alpha_{{\scriptscriptstyle 4}}+\alpha_{{\scriptscriptstyle 5}}\right)x^{4}+\cdots-\alpha_{{\scriptscriptstyle 1}}\alpha_{{\scriptscriptstyle 2}}\alpha_{{\scriptscriptstyle 3}}\alpha_{{\scriptscriptstyle 4}}\alpha_{{\scriptscriptstyle 5}}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Abel-Ruffini theorem
+\end_layout
+
+\end_inset
+
+There is no general formula for solving a polynomial of degree 
+\begin_inset Formula $5$
+\end_inset
+
+ or higher.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+reducible polynomial vs.
+ irreducible polynomial
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.357"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+körper 
+\begin_inset Formula $\mathbb{K}=\mathbb{F}$
+\end_inset
+
+ field
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}f\left(x\right)= & p_{{\scriptscriptstyle n}}x^{n}+p_{{\scriptscriptstyle n-1}}x^{n-1}+\cdots+p_{{\scriptscriptstyle 1}}x+p_{{\scriptscriptstyle 0}} & \Leftrightarrow f\left(x\right)\in\mathbb{K}\left[x\right]\\
+= & p_{{\scriptscriptstyle j}}x^{j}=\sum\limits_{j=1}^{n}p_{{\scriptscriptstyle j}}x^{j} & \begin{aligned}p_{{\scriptscriptstyle n}}\ne0\Rightarrow\deg f\left(x\right)=n\in\mathbb{N}\\
+j\in\mathbb{Z}_{{\scriptscriptstyle \left[0,n\right]}}\\
+p_{{\scriptscriptstyle j}}\in\mathbb{K}=\mathbb{F}
+\end{aligned}
+\\
+= & p_{{\scriptscriptstyle n}}\left(x-x_{{\scriptscriptstyle 1}}\right)\left(x-x_{{\scriptscriptstyle 2}}\right)\cdots\left(x-x_{{\scriptscriptstyle n}}\right) & \left\{ x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},\cdots,x_{{\scriptscriptstyle n}}\right\} \subseteq\mathbb{K}\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},\cdots,x_{{\scriptscriptstyle n}}\right)\\
+= & p_{{\scriptscriptstyle n}}\left(x-x_{{\scriptscriptstyle 1}}\right)\cdots\left(x-x_{{\scriptscriptstyle n}}\right) & \left\{ x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle n}}\right\} \subseteq\mathbb{K}\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle n}}\right)\\
+\Updownarrow\\
+f\left(x\right)\text{ is} & \text{ reducible over }\mathbb{K}\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle n}}\right)
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+irreducible polynomial factor lemma
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.362"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:factor-lemma"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+factor theorem 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://en.wikipedia.org/wiki/Factor_theorem"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}f\left(x\right)\in & \mathbb{K}\left[x\right] & \mathbb{K}\text{ is a field}\\
+p\left(x\right)\text{ is} & \text{ irreducible over }\mathbb{K}\\
+f\left(x_{{\scriptscriptstyle 0}}\right)= & 0=p\left(x_{{\scriptscriptstyle 0}}\right) & \exists x_{{\scriptscriptstyle 0}}\in\mathbb{K}\\
+\Downarrow\\
+p\left(x\right)| & f\left(x\right) & \Leftrightarrow p\left(x\right)\text{ is a factor of }f\left(x\right)
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+polynomial cf.
+ integer
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.363"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{ccc}
+\text{polynomial} & \leftrightarrow & \text{integer}\\
+P\left[x\right]\in\mathbb{K}\left[x\right] & \leftrightarrow & \text{natural number }\mathbb{N}\subset\mathbb{Z}\\
+\text{irreducible polynomial} & \leftrightarrow & \text{prime [number] }\mathbb{P}\\
+\text{reducible polynomial} & \leftrightarrow & \text{composite number}\\
+\begin{aligned}f\left(x_{{\scriptscriptstyle 0}}\right)=0 & =p\left(x_{{\scriptscriptstyle 0}}\right) & \exists x_{{\scriptscriptstyle 0}}\in\mathbb{K}\\
+\Downarrow\\
+p\left(x\right)| & f\left(x\right)
+\end{aligned}
+ & \leftrightarrow & \begin{aligned}\gcd\left(m,n\right)=m & =p_{{\scriptscriptstyle 1}}^{k_{{\scriptscriptstyle 1}}}\cdots p_{{\scriptscriptstyle \ell}}^{k_{{\scriptscriptstyle \ell}}} & p_{{\scriptscriptstyle i}}\in\mathbb{P}\\
+\Downarrow &  & k_{{\scriptscriptstyle i}}\in\mathbb{N}\\
+m| & n
+\end{aligned}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+variable represented by roots
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.366"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:variable-represented-by-roots"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}f\left(x\right)= & \left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right)\cdots\left(x-\alpha_{{\scriptscriptstyle m}}\right) & \in\mathbb{K}\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right)\left[x\right]\\
+ &  & \left(\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}\right)\left(\alpha_{{\scriptscriptstyle 2}}-\alpha_{{\scriptscriptstyle 3}}\right)\cdots\left(\alpha_{{\scriptscriptstyle m-1}}-\alpha_{{\scriptscriptstyle m}}\right)\left(\alpha_{{\scriptscriptstyle m}}-\alpha_{{\scriptscriptstyle 1}}\right)\ne0\\
+\Downarrow & \text{ variable represented by roots}\\
+\varphi\left(\boldsymbol{x}\right)= & \varphi\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle m}}\right) & \varphi\left(\boldsymbol{x}\right)=\dfrac{P\left(\boldsymbol{x}\right)}{Q\left(\boldsymbol{x}\right)},\begin{aligned}P\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]\\
+0\ne Q\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+V=\varphi\left(\boldsymbol{\alpha}\right)= & \varphi\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right) & \forall\sigma_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 2}}\in S_{{\scriptscriptstyle m}}\left[\sigma_{{\scriptscriptstyle 1}}\ne\sigma_{{\scriptscriptstyle 2}}\Leftrightarrow\sigma_{{\scriptscriptstyle 1}}\left(V\right)\ne\sigma_{{\scriptscriptstyle 2}}\left(V\right)\right]\\
+V_{{\scriptscriptstyle i}}=\varphi\left(\sigma_{{\scriptscriptstyle i}}\boldsymbol{\alpha}\right)= & \varphi\left(\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle 1}},\cdots,\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle m}}\right)\\
+\Updownarrow\\
+\exists\varphi\left(\boldsymbol{x}\right)=\varphi\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle m}}\right)= & \dfrac{P\left(\boldsymbol{x}\right)}{Q\left(\boldsymbol{x}\right)},\begin{aligned}P\left(\boldsymbol{x}\right)\in\mathbb{K}\left[x\right]\\
+0\ne Q\left(\boldsymbol{x}\right)\in\mathbb{K}\left[x\right]
+\end{aligned}
+ & \left[\begin{aligned}V=\varphi\left(\boldsymbol{\alpha}\right)= & \varphi\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right)\\
+\forall\sigma_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 2}}\in S_{{\scriptscriptstyle m}} & \left[\sigma_{{\scriptscriptstyle 1}}\ne\sigma_{{\scriptscriptstyle 2}}\Leftrightarrow\sigma_{{\scriptscriptstyle 1}}\left(V\right)\ne\sigma_{{\scriptscriptstyle 2}}\left(V\right)\right]
+\end{aligned}
+\right]
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+roots represented by variable 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.368"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:roots-represented-by-variable"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}f\left(x\right)= & \left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right)\cdots\left(x-\alpha_{{\scriptscriptstyle m}}\right) & \in\mathbb{K}\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right)\left[x\right]\\
+ &  & \left(\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}\right)\left(\alpha_{{\scriptscriptstyle 2}}-\alpha_{{\scriptscriptstyle 3}}\right)\cdots\left(\alpha_{{\scriptscriptstyle m-1}}-\alpha_{{\scriptscriptstyle m}}\right)\left(\alpha_{{\scriptscriptstyle m}}-\alpha_{{\scriptscriptstyle 1}}\right)\ne0\\
+\Downarrow & \formatted{lem:variable-represented-by-roots}\\
+\varphi\left(\boldsymbol{x}\right)= & \varphi\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle m}}\right) & \varphi\left(\boldsymbol{x}\right)=\dfrac{P\left(\boldsymbol{x}\right)}{Q\left(\boldsymbol{x}\right)},\begin{aligned}P\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]\\
+0\ne Q\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+V=\varphi\left(\boldsymbol{\alpha}\right)= & \varphi\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right) & \forall\sigma_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 2}}\in S_{{\scriptscriptstyle m}}\left[\sigma_{{\scriptscriptstyle 1}}\ne\sigma_{{\scriptscriptstyle 2}}\Leftrightarrow\sigma_{{\scriptscriptstyle 1}}\left(V\right)\ne\sigma_{{\scriptscriptstyle 2}}\left(V\right)\right]\\
+V_{{\scriptscriptstyle i}}=\varphi\left(\sigma_{{\scriptscriptstyle i}}\boldsymbol{\alpha}\right)= & \varphi\left(\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle 1}},\cdots,\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle m}}\right)\\
+\Updownarrow\\
+\exists\varphi\left(\boldsymbol{x}\right)=\varphi\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle m}}\right)= & \dfrac{P\left(\boldsymbol{x}\right)}{Q\left(\boldsymbol{x}\right)},\begin{aligned}P\left(\boldsymbol{x}\right)\in\mathbb{K}\left[x\right]\\
+0\ne Q\left(\boldsymbol{x}\right)\in\mathbb{K}\left[x\right]
+\end{aligned}
+ & \left[\begin{aligned}V=\varphi\left(\boldsymbol{\alpha}\right)= & \varphi\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right)\\
+\forall\sigma_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 2}}\in S_{{\scriptscriptstyle m}} & \left[\sigma_{{\scriptscriptstyle 1}}\ne\sigma_{{\scriptscriptstyle 2}}\Leftrightarrow\sigma_{{\scriptscriptstyle 1}}\left(V\right)\ne\sigma_{{\scriptscriptstyle 2}}\left(V\right)\right]
+\end{aligned}
+\right]\\
+\Downarrow & \text{ roots represented by variable}\\
+\alpha_{{\scriptscriptstyle 1}}= & \alpha_{{\scriptscriptstyle 1}}\left(V\right)=\varphi_{{\scriptscriptstyle 1}}\left(V\right) & i\in\mathbb{N}_{{\scriptscriptstyle \le m}}\\
+\vdots &  & \varphi_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)=\dfrac{P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)}{Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)},\begin{aligned}P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[x\right]\\
+0\ne Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[x\right]
+\end{aligned}
+\\
+\alpha_{{\scriptscriptstyle m}}= & \alpha_{{\scriptscriptstyle m}}\left(V\right)=\varphi_{{\scriptscriptstyle m}}\left(V\right)\\
+\Updownarrow\\
+\exists\varphi_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)= & \varphi_{{\scriptscriptstyle i}}\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle m}}\right)=\dfrac{P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)}{Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)} & ,\begin{aligned}P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[x\right]\\
+0\ne Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[x\right]
+\end{aligned}
+\left[\begin{aligned}\alpha_{{\scriptscriptstyle 1}}= & \alpha_{{\scriptscriptstyle 1}}\left(V\right)=\varphi_{{\scriptscriptstyle 1}}\left(V\right)\\
+\vdots\\
+\alpha_{{\scriptscriptstyle m}}= & \alpha_{{\scriptscriptstyle m}}\left(V\right)=\varphi_{{\scriptscriptstyle m}}\left(V\right)
+\end{aligned}
+\right]
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+root rearrangement by variable conjugate
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.370"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:variable-conjugate"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}f\left(x\right)= & \left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right)\cdots\left(x-\alpha_{{\scriptscriptstyle m}}\right) & \in\mathbb{K}\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right)\left[x\right]\\
+ &  & \left(\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}\right)\left(\alpha_{{\scriptscriptstyle 2}}-\alpha_{{\scriptscriptstyle 3}}\right)\cdots\left(\alpha_{{\scriptscriptstyle m-1}}-\alpha_{{\scriptscriptstyle m}}\right)\left(\alpha_{{\scriptscriptstyle m}}-\alpha_{{\scriptscriptstyle 1}}\right)\ne0\\
+\Downarrow & \formatted{lem:variable-represented-by-roots}\\
+\varphi\left(\boldsymbol{x}\right)= & \varphi\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle m}}\right) & \varphi\left(\boldsymbol{x}\right)=\dfrac{P\left(\boldsymbol{x}\right)}{Q\left(\boldsymbol{x}\right)},\begin{aligned}P\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]\\
+0\ne Q\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+V=\varphi\left(\boldsymbol{\alpha}\right)= & \varphi\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right) & \forall\sigma_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 2}}\in S_{{\scriptscriptstyle m}}\left[\sigma_{{\scriptscriptstyle 1}}\ne\sigma_{{\scriptscriptstyle 2}}\Leftrightarrow\sigma_{{\scriptscriptstyle 1}}\left(V\right)\ne\sigma_{{\scriptscriptstyle 2}}\left(V\right)\right]\\
+V_{{\scriptscriptstyle i}}=\varphi\left(\sigma_{{\scriptscriptstyle i}}\boldsymbol{\alpha}\right)= & \varphi\left(\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle 1}},\cdots,\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle m}}\right)\\
+\wedge\\
+f_{{\scriptscriptstyle V}}\left(x\right)= & \left(x-V_{{\scriptscriptstyle 1}}\right)\cdots\left(x-V_{{\scriptscriptstyle n}}\right) & \text{ is a minimal polynomial }\in\mathbb{K}\left[x\right]\\
+ &  & n=\deg f_{{\scriptscriptstyle V}}\left(x\right)\\
+\Downarrow & \formatted{lem:roots-represented-by-variable}\\
+\alpha_{{\scriptscriptstyle 1}}= & \alpha_{{\scriptscriptstyle 1}}\left(V\right)=\varphi_{{\scriptscriptstyle 1}}\left(V\right) & i\in\mathbb{N}_{{\scriptscriptstyle \le m}}\\
+\vdots &  & \varphi_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)=\dfrac{P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)}{Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)},\begin{aligned}P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]\\
+0\ne Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+\alpha_{{\scriptscriptstyle m}}= & \alpha_{{\scriptscriptstyle m}}\left(V\right)=\varphi_{{\scriptscriptstyle m}}\left(V\right)\\
+\Downarrow & \text{ root rearrangement by variable conjugate}\\
+\left\{ \alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right\} \in & \left\{ \varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V_{{\scriptscriptstyle 1}}\right)\right\}  & =\left\{ \varphi_{{\scriptscriptstyle 1}}\left(V\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V\right)\right\} ,\qquad V=V_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\left\{ \alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right\} \in & \left\{ \varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle n}}\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V_{{\scriptscriptstyle n}}\right)\right\}  & =\left\{ \varphi_{{\scriptscriptstyle 1}}\left(V\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V\right)\right\} ,\qquad V=V_{{\scriptscriptstyle n}}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Galois group of 
+\begin_inset Formula $x^{2}+1=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.367～372"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}f\left(x\right)= & x^{2}+1 & \in\mathbb{Q}\left[x\right]\\
+= & \left(x+\mathrm{i}\right)\left(x-\mathrm{i}\right) & \in\mathbb{Q}\left(\mathrm{i}\right)\left[x\right]\subset\mathbb{C}\left[x\right]\\
+= & \left(x-\mathrm{i}\right)\left(x+\mathrm{i}\right)\\
+= & \left(x-\mathrm{i}\right)\left(x-\left(-\mathrm{i}\right)\right)\\
+= & \left(x-\alpha\right)\left(x-\beta\right) & \left\{ \alpha,\beta\right\} =\left\{ +\mathrm{i},-\mathrm{i}\right\} \\
+= & \left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right) & \left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right\} =\left\{ \mathrm{i},-\mathrm{i}\right\} 
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right)=\left(\mathrm{i},-\mathrm{i}\right)\Rightarrow\begin{cases}
+\alpha_{{\scriptscriptstyle 1}}= & +\mathrm{i}\\
+\alpha_{{\scriptscriptstyle 2}}= & -\mathrm{i}
+\end{cases}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\varphi\left(\boldsymbol{x}\right)=\varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)\in\mathbb{Q}\left(\mathbb{K}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\varphi\left(\boldsymbol{x}\right)=\varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)\in\mathbb{Q}\left(\mathbb{Z}\right)\Rightarrow\varphi\left(\boldsymbol{x}\right)=\varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)\in\left\{ x_{{\scriptscriptstyle 1}}+x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 1}}-x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}},\cdots\right\} }
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\varphi\left(\boldsymbol{x}\right)=\varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=x_{{\scriptscriptstyle 1}}-x_{{\scriptscriptstyle 2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{V=\varphi\left(\boldsymbol{\alpha}\right)=\varphi\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right)=\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned} & \forall\sigma,\tau\in S_{{\scriptscriptstyle 2}}\left[\sigma\ne\tau\Leftrightarrow\sigma V\ne\tau V\right]\\
+\Leftrightarrow & \forall\sigma_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 2}}\in S_{{\scriptscriptstyle 2}}\left[\sigma_{{\scriptscriptstyle 1}}\ne\sigma_{{\scriptscriptstyle 2}}\Leftrightarrow\sigma_{{\scriptscriptstyle 1}}\left(V\right)\ne\sigma_{{\scriptscriptstyle 2}}\left(V\right)\right]
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}\sigma_{{\scriptscriptstyle 1}}\left(V\right)= & \left[12\right]\left(\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}\right)=\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}=\left(+\mathrm{i}\right)-\left(-\mathrm{i}\right)=+2\mathrm{i}=+V\\
+\sigma_{{\scriptscriptstyle 2}}\left(V\right)= & \left[21\right]\left(\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}\right)=\alpha_{{\scriptscriptstyle 2}}-\alpha_{{\scriptscriptstyle 1}}=\left(-\mathrm{i}\right)-\left(+\mathrm{i}\right)=-2\mathrm{i}=-V\\
+\sigma_{{\scriptscriptstyle 1}}\left(V\right)=+2\mathrm{i}\ne & -2\mathrm{i}=\sigma_{{\scriptscriptstyle 2}}\left(V\right)\\
+\sigma_{{\scriptscriptstyle 1}}\left(V\right)\ne & \sigma_{{\scriptscriptstyle 2}}\left(V\right)
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}\sigma_{{\scriptscriptstyle 1}}\left(V\right)= & \left[12\right]\left(\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}\right)=\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}=\left(+\mathrm{i}\right)-\left(-\mathrm{i}\right)=+2\mathrm{i}=+V & +\mathrm{i}=+\frac{V}{2}\\
+\sigma_{{\scriptscriptstyle 2}}\left(V\right)= & \left[21\right]\left(\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}\right)=\alpha_{{\scriptscriptstyle 2}}-\alpha_{{\scriptscriptstyle 1}}=\left(-\mathrm{i}\right)-\left(+\mathrm{i}\right)=-2\mathrm{i}=-V & -\mathrm{i}=-\frac{V}{2}\\
+ & \begin{cases}
+\alpha_{{\scriptscriptstyle 1}}= & +\mathrm{i}=+\frac{V}{2}=\varphi_{{\scriptscriptstyle 1}}\left(V\right)=\alpha_{{\scriptscriptstyle 1}}\left(V\right)\\
+\alpha_{{\scriptscriptstyle 2}}= & -\mathrm{i}=-\frac{V}{2}=\varphi_{{\scriptscriptstyle 2}}\left(V\right)=\alpha_{{\scriptscriptstyle 2}}\left(V\right)
+\end{cases} & \begin{cases}
+\varphi_{{\scriptscriptstyle 1}}\left(x\right)= & +\frac{x}{2}\\
+\varphi_{{\scriptscriptstyle 2}}\left(x\right)= & -\frac{x}{2}
+\end{cases}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\mathbb{K}\left(V\right)=\mathbb{K}\left(\alpha_{{\scriptscriptstyle 1}}\left(V\right),\alpha_{{\scriptscriptstyle 2}}\left(V\right)\right)=\mathbb{K}\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V=2\mathrm{i}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}\mathbb{K}\left(V\right)= & \mathbb{K}\left(\alpha_{{\scriptscriptstyle 1}}\left(V\right),\alpha_{{\scriptscriptstyle 2}}\left(V\right)\right)=\mathbb{K}\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right)\\
+=\mathbb{Q}\left(2\mathrm{i}\right)= & \mathbb{Q}\left(\alpha_{{\scriptscriptstyle 1}}\left(2\mathrm{i}\right),\alpha_{{\scriptscriptstyle 2}}\left(2\mathrm{i}\right)\right)=\mathbb{Q}\left(+\mathrm{i},-\mathrm{i}\right)=\mathbb{Q}\left(\mathrm{i}\right)
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned} & \left(x-V\right)\left(x-\overline{V}\right)\\
+= & \left(x-V\right)\left(x-V^{*}\right)\\
+= & \left(x-2\mathrm{i}\right)\left(x-\overline{2\mathrm{i}}\right)\\
+= & \left(x-2\mathrm{i}\right)\left(x-\left(-2\mathrm{i}\right)\right)\\
+= & \left(x-2\mathrm{i}\right)\left(x+2\mathrm{i}\right)\\
+= & x^{2}+4 & =f_{{\scriptscriptstyle V}}\left(x\right)\in\mathbb{Q}\left[x\right]\\
+= & \left(x-V_{{\scriptscriptstyle 1}}\right)\left(x-V_{{\scriptscriptstyle 2}}\right)
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}f\left(x\right)= & x^{2}+1=\left(x-\left(+\mathrm{i}\right)\right)\left(x-\left(-\mathrm{i}\right)\right)=\left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right) & f\left(x\right)=0\Rightarrow x\in\left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right\} =\left\{ +\mathrm{i},-\mathrm{i}\right\} \\
+\varphi\left(\boldsymbol{x}\right)= & \varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right)=x_{{\scriptscriptstyle 1}}-x_{{\scriptscriptstyle 2}}\\
+V=\varphi\left(\boldsymbol{\alpha}\right)= & \varphi\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right)=\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}=+2\mathrm{i}\\
+\varphi\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right)= & \alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}=\left(+\mathrm{i}\right)-\left(-\mathrm{i}\right)=+2\mathrm{i}=V_{{\scriptscriptstyle 1}}\\
+\varphi\left(\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 1}}\right)= & \alpha_{{\scriptscriptstyle 2}}-\alpha_{{\scriptscriptstyle 1}}=\left(-\mathrm{i}\right)-\left(+\mathrm{i}\right)=-2\mathrm{i}=V_{{\scriptscriptstyle 2}}\\
+\boldsymbol{\alpha}= & \left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right)=\left(\varphi_{{\scriptscriptstyle 1}}\left(V\right),\varphi_{{\scriptscriptstyle 2}}\left(V\right)\right)=\left(+\frac{V}{2},-\frac{V}{2}\right)\\
+f_{{\scriptscriptstyle V}}\left(x\right)= & \left(x-V\right)\left(x-\overline{V}\right)=\left(x-\left(+2\mathrm{i}\right)\right)\left(x-\left(-2\mathrm{i}\right)\right)=x^{2}+4 & f_{{\scriptscriptstyle V}}\left(x\right)=0\Rightarrow x\in\left\{ V_{{\scriptscriptstyle 1}},V_{{\scriptscriptstyle 2}}\right\} =\left\{ +2\mathrm{i},-2\mathrm{i}\right\} \\
+ &  & n=\deg f_{{\scriptscriptstyle V}}\left(x\right)=2\\
+\left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right\} = & \left\{ \varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right),\varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 1}}\right)\right\} =\left\{ +\frac{V_{{\scriptscriptstyle 1}}}{2},-\frac{V_{{\scriptscriptstyle 1}}}{2}\right\} =\left\{ +\mathrm{i},-\mathrm{i}\right\} \\
+\left\{ \alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 1}}\right\} = & \left\{ \varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 2}}\right),\varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 2}}\right)\right\} =\left\{ +\frac{V_{{\scriptscriptstyle 2}}}{2},-\frac{V_{{\scriptscriptstyle 2}}}{2}\right\} =\left\{ -\mathrm{i},+\mathrm{i}\right\} 
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\mathcal{G}=\mathcal{G}\left(f\right)=\mathrm{Gal}\left(f\right)=\left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right) & \varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 1}}\right)
+\end{pmatrix},\begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 2}}\right) & \varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 2}}\right)
+\end{pmatrix}\right\} =\left\{ \begin{pmatrix}1 & 2\\
+1 & 2
+\end{pmatrix},\begin{pmatrix}1 & 2\\
+2 & 1
+\end{pmatrix}\right\} =\left\{ \left[12\right],\left[21\right]\right\} }
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}\mathcal{G}=\mathcal{G}\left(f\right)=\mathrm{Gal}\left(f\right)= & \left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V\right) & \varphi_{{\scriptscriptstyle 2}}\left(V\right)
+\end{pmatrix}\middle|V\in\left\{ V_{{\scriptscriptstyle 1}},V_{{\scriptscriptstyle 2}}\right\} \right\} \\
+= & \left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right) & \varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 1}}\right)
+\end{pmatrix},\begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 2}}\right) & \varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 2}}\right)
+\end{pmatrix}\right\} \\
+= & \left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}
+\end{pmatrix},\begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\alpha_{{\scriptscriptstyle 2}} & \alpha_{{\scriptscriptstyle 1}}
+\end{pmatrix}\right\} =\left\{ \begin{pmatrix}+\mathrm{i} & -\mathrm{i}\\
++\mathrm{i} & -\mathrm{i}
+\end{pmatrix},\begin{pmatrix}+\mathrm{i} & -\mathrm{i}\\
+-\mathrm{i} & +\mathrm{i}
+\end{pmatrix}\right\} \\
+= & \left\{ \begin{pmatrix}1 & 2\\
+1 & 2
+\end{pmatrix},\begin{pmatrix}1 & 2\\
+2 & 1
+\end{pmatrix}\right\} =\left\{ \left[12\right],\left[21\right]\right\} 
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Galois group
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.374～375,382～385"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}f\left(x\right)= & \left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right)\cdots\left(x-\alpha_{{\scriptscriptstyle m}}\right) & \in\mathbb{K}\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right)\left[x\right]\\
+ &  & \left(\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}\right)\left(\alpha_{{\scriptscriptstyle 2}}-\alpha_{{\scriptscriptstyle 3}}\right)\cdots\left(\alpha_{{\scriptscriptstyle m-1}}-\alpha_{{\scriptscriptstyle m}}\right)\left(\alpha_{{\scriptscriptstyle m}}-\alpha_{{\scriptscriptstyle 1}}\right)\ne0\\
+\Downarrow & \formatted{lem:variable-represented-by-roots}\\
+\varphi\left(\boldsymbol{x}\right)= & \varphi\left(x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle m}}\right) & \varphi\left(\boldsymbol{x}\right)=\dfrac{P\left(\boldsymbol{x}\right)}{Q\left(\boldsymbol{x}\right)},\begin{aligned}P\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]\\
+0\ne Q\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+V=\varphi\left(\boldsymbol{\alpha}\right)= & \varphi\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right) & \forall\sigma_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 2}}\in S_{{\scriptscriptstyle m}}\left[\sigma_{{\scriptscriptstyle 1}}\ne\sigma_{{\scriptscriptstyle 2}}\Leftrightarrow\sigma_{{\scriptscriptstyle 1}}\left(V\right)\ne\sigma_{{\scriptscriptstyle 2}}\left(V\right)\right]\\
+V_{{\scriptscriptstyle i}}=\varphi\left(\sigma_{{\scriptscriptstyle i}}\boldsymbol{\alpha}\right)= & \varphi\left(\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle 1}},\cdots,\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle m}}\right)\\
+\wedge\\
+f_{{\scriptscriptstyle V}}\left(x\right)= & \left(x-V_{{\scriptscriptstyle 1}}\right)\cdots\left(x-V_{{\scriptscriptstyle n}}\right) & \text{ is a minimal polynomial }\in\mathbb{K}\left[x\right]\\
+ &  & n=\deg f_{{\scriptscriptstyle V}}\left(x\right)\\
+\Downarrow & \formatted{lem:roots-represented-by-variable}\\
+\alpha_{{\scriptscriptstyle 1}}= & \alpha_{{\scriptscriptstyle 1}}\left(V\right)=\varphi_{{\scriptscriptstyle 1}}\left(V\right) & i\in\mathbb{N}_{{\scriptscriptstyle \le m}}\\
+\vdots &  & \varphi_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)=\dfrac{P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)}{Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)},\begin{aligned}P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]\\
+0\ne Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+\alpha_{{\scriptscriptstyle m}}= & \alpha_{{\scriptscriptstyle m}}\left(V\right)=\varphi_{{\scriptscriptstyle m}}\left(V\right)\\
+\wedge & \formatted{lem:variable-conjugate}\\
+\left\{ \alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right\} \in & \left\{ \varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V_{{\scriptscriptstyle 1}}\right)\right\}  & =\left\{ \varphi_{{\scriptscriptstyle 1}}\left(V\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V\right)\right\} ,\qquad V=V_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\left\{ \alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right\} \in & \left\{ \varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle n}}\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V_{{\scriptscriptstyle n}}\right)\right\}  & =\left\{ \varphi_{{\scriptscriptstyle 1}}\left(V\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V\right)\right\} ,\qquad V=V_{{\scriptscriptstyle n}}\\
+\Downarrow\\
+\mathcal{G}=\mathcal{G}\left(f\right)=\mathrm{Gal}\left(f\right)= & \left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \cdots & \alpha_{{\scriptscriptstyle m}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V\right) & \cdots & \varphi_{{\scriptscriptstyle m}}\left(V\right)
+\end{pmatrix}\right\}  & \text{ is the Galois gorup of }f\left(x\right)\text{ over }\mathbb{K}\left[x\right]\quad V\in\left\{ V_{{\scriptscriptstyle 1}},\cdots,V_{{\scriptscriptstyle n}}\right\} 
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\mathcal{G}=\mathcal{G}\left(f\right)=\mathrm{Gal}\left(f\right)=\left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \cdots & \alpha_{{\scriptscriptstyle m}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V\right) & \cdots & \varphi_{{\scriptscriptstyle m}}\left(V\right)
+\end{pmatrix}\middle|V\in\left\{ V_{{\scriptscriptstyle 1}},\cdots,V_{{\scriptscriptstyle n}}\right\} \right\} }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+不變則已知：
+ 
+\begin_inset Formula $F\left(\boldsymbol{\alpha}\right)\text{ invariant}\Rightarrow F\left(\boldsymbol{\alpha}\right)\text{ known}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{if }\exists F\left(\boldsymbol{\alpha}\right)\in\mathbb{K}\left[x\right],\forall\sigma_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 2}}\in S_{{\scriptscriptstyle m}}\left[F\left(\sigma_{{\scriptscriptstyle 1}}\left(\boldsymbol{\alpha}\right)\right)=F\left(\sigma_{{\scriptscriptstyle 2}}\left(\boldsymbol{\alpha}\right)\right)\right]\Leftrightarrow F\left(\boldsymbol{\alpha}\right)\text{ invariant}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{F\left(\boldsymbol{\alpha}\right)=F\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right)=F\left(\varphi_{{\scriptscriptstyle 1}}\left(V\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V\right)\right)=\widehat{F}\left(V\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}F\left(\sigma_{{\scriptscriptstyle 1}}\left(\boldsymbol{\alpha}\right)\right)=F\left(\sigma_{{\scriptscriptstyle 2}}\left(\boldsymbol{\alpha}\right)\right)\Rightarrow\widehat{F}\left(V\right)= & \widehat{F}\left(V_{{\scriptscriptstyle 1}}\right)=\cdots=\widehat{F}\left(V_{{\scriptscriptstyle n}}\right)\\
+= & \dfrac{\widehat{F}\left(V_{{\scriptscriptstyle 1}}\right)+\cdots+\widehat{F}\left(V_{{\scriptscriptstyle n}}\right)}{n} & \text{is a symmetric polynomial}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}f_{{\scriptscriptstyle V}}\left(x\right)= & \left(x-V_{{\scriptscriptstyle 1}}\right)\cdots\left(x-V_{{\scriptscriptstyle n}}\right)\text{ is a minimal polynomial } & \in\mathbb{K}\left[x\right]\\
+= & x^{n}-\left(V_{{\scriptscriptstyle 1}}+\cdots+V_{{\scriptscriptstyle n}}\right)x^{n-1}+\cdots+\left(-1\right)^{n}\left(V_{{\scriptscriptstyle 1}}\cdots V_{{\scriptscriptstyle n}}\right) & n=\deg f_{{\scriptscriptstyle V}}\left(x\right)\\
+= & x^{n}+k_{{\scriptscriptstyle 1}}x^{n-1}+\cdots+k_{{\scriptscriptstyle n}} & k_{{\scriptscriptstyle 1}},\cdots,k_{{\scriptscriptstyle n}}\in\mathbb{K}\\
+ & k_{{\scriptscriptstyle i}}\left(V_{{\scriptscriptstyle 1}},\cdots,V_{{\scriptscriptstyle n}}\right)=k_{{\scriptscriptstyle i}}\left(\boldsymbol{V}\right)\text{ is an elementary symmetric polynomial of } & \boldsymbol{V}=\left(V_{{\scriptscriptstyle 1}},\cdots,V_{{\scriptscriptstyle n}}\right)\\
+ & k_{{\scriptscriptstyle i}}\text{ are known}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}F\left(\boldsymbol{\alpha}\right)= & F\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right)=F\left(\varphi_{{\scriptscriptstyle 1}}\left(V\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V\right)\right)\\
+= & \widehat{F}\left(V_{{\scriptscriptstyle 1}}\right)=\cdots=\widehat{F}\left(V_{{\scriptscriptstyle n}}\right)\\
+= & \widehat{F}\left(V\right)=\dfrac{\widehat{F}\left(V_{{\scriptscriptstyle 1}}\right)+\cdots+\widehat{F}\left(V_{{\scriptscriptstyle n}}\right)}{n} & \text{is a symmetric polynomial}\\
+= & \sum\limits_{i=1}^{m}c_{{\scriptscriptstyle i}}\left[k_{{\scriptscriptstyle 1}},\cdots,k_{{\scriptscriptstyle n}}\right]=\sum\limits_{i=1}^{m}c_{{\scriptscriptstyle i}}\left[k_{{\scriptscriptstyle 1}}\left(\boldsymbol{V}\right),\cdots,k_{{\scriptscriptstyle n}}\left(\boldsymbol{V}\right)\right] & c_{{\scriptscriptstyle i}}\in\dfrac{P\left(\boldsymbol{x}\right)}{Q\left(\boldsymbol{x}\right)},\begin{aligned}P\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]\\
+0\ne Q\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+= & \sum\limits_{i=1}^{m}c_{{\scriptscriptstyle i}}\left[k_{{\scriptscriptstyle i}}\left(V_{{\scriptscriptstyle 1}},\cdots,V_{{\scriptscriptstyle n}}\right)\right]\text{ is a rational polynomial of } & \text{ elementary symmetric polynomials}\\
+ &  & k_{{\scriptscriptstyle i}}\text{ are known}\\
+ &  & \Downarrow\\
+ &  & F\left(\boldsymbol{\alpha}\right)\text{ is known}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+已知則不變：
+ 
+\begin_inset Formula $F\left(\boldsymbol{\alpha}\right)\text{ known}\Rightarrow F\left(\boldsymbol{\alpha}\right)\text{ invariant}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}F\left(\boldsymbol{\alpha}\right)= & F\left(\alpha_{{\scriptscriptstyle 1}},\cdots,\alpha_{{\scriptscriptstyle m}}\right)=F\left(\varphi_{{\scriptscriptstyle 1}}\left(V\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V\right)\right)=k & \text{known }k\in\mathbb{K}\\
+\dot{F}\left(V\right)= & F\left(\varphi_{{\scriptscriptstyle 1}}\left(V\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V\right)\right)-k & F\in\dfrac{P\left(\boldsymbol{x}\right)}{Q\left(\boldsymbol{x}\right)},\begin{aligned}P\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]\\
+0\ne Q\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+\dot{F}\left(x\right)= & 0\\
+\Downarrow\\
+x= & V & \because F\left(\varphi_{{\scriptscriptstyle 1}}\left(V\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V\right)\right)=k\\
+\dot{F}\left(x\right)= & \left(x-x_{{\scriptscriptstyle 1}}\right)\cdots\left(x-x_{{\scriptscriptstyle m-n}}\right)\ddot{F}\left(x\right) & \left\{ x_{{\scriptscriptstyle 1}},\cdots,x_{{\scriptscriptstyle m-n}}\right\} \subseteq\mathbb{K}\\
+\ddot{F}\left(x\right)= & \dfrac{\dot{F}\left(x\right)}{\left(x-x_{{\scriptscriptstyle 1}}\right)\cdots\left(x-x_{{\scriptscriptstyle m-n}}\right)} & \in\dfrac{P\left(\boldsymbol{x}\right)}{Q\left(\boldsymbol{x}\right)},\begin{aligned}P\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]\\
+0\ne Q\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+\ddot{F}\left(V\right)= & \dfrac{\dot{F}\left(V\right)}{\left(V-x_{{\scriptscriptstyle 1}}\right)\cdots\left(V-x_{{\scriptscriptstyle m-n}}\right)}=\dfrac{0}{\left(V-x_{{\scriptscriptstyle 1}}\right)\cdots\left(V-x_{{\scriptscriptstyle m-n}}\right)} & \Rightarrow\ddot{F}\left(V\right)=0\\
+\Downarrow & \formatted{lem:factor-lemma} & f_{{\scriptscriptstyle V}}\left(x\right)\text{ is irreducible polynomial}\in\mathbb{K}\left[x\right]\\
+0=\ddot{F}\left(V\right)= & \ddot{F}\left(V_{{\scriptscriptstyle 1}}\right)=\cdots=\ddot{F}\left(V_{{\scriptscriptstyle n}}\right)\\
+\Downarrow\\
+0=\dot{F}\left(V\right)= & \dot{F}\left(V_{{\scriptscriptstyle 1}}\right)=\cdots=\dot{F}\left(V_{{\scriptscriptstyle n}}\right)\\
+\Downarrow\\
+0=\dot{F}\left(V\right)= & F\left(\varphi_{{\scriptscriptstyle 1}}\left(V\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V\right)\right)-k\\
+= & F\left(\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V_{{\scriptscriptstyle 1}}\right)\right)-k\\
+\vdots\\
+= & F\left(\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle n}}\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V_{{\scriptscriptstyle n}}\right)\right)-k\\
+\Downarrow\\
+k= & F\left(\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V_{{\scriptscriptstyle 1}}\right)\right)=\cdots=F\left(\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle n}}\right),\cdots,\varphi_{{\scriptscriptstyle m}}\left(V_{{\scriptscriptstyle n}}\right)\right) & \forall\sigma\in S_{{\scriptscriptstyle n}},F\left(\sigma\left(\boldsymbol{\alpha}\right)\right)=F\left(\boldsymbol{\alpha}\right)\text{ invariant}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Galois group of 
+\begin_inset Formula $ax^{2}+bx+c=0,a\ne0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.378～382"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}f\left(x\right)= & ax^{2}+bx+c & \in\mathbb{Q}\left[x\right]\\
+= & a\left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right)\\
+= & ax^{2}-a\left(\alpha_{{\scriptscriptstyle 1}}+\alpha_{{\scriptscriptstyle 2}}\right)x+a\alpha_{{\scriptscriptstyle 1}}\alpha_{{\scriptscriptstyle 2}} & \in\mathbb{Q}\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right)\left[x\right]\\
+ & a\ne0 & \left(\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}\right)\ne0\\
+\Downarrow\\
+\alpha_{{\scriptscriptstyle 1}}= & \dfrac{-b+\sqrt{b^{2}-4ac}}{2a}\\
+\alpha_{{\scriptscriptstyle 2}}= & \dfrac{-b-\sqrt{b^{2}-4ac}}{2a}\\
+\Downarrow & \formatted{lem:variable-represented-by-roots}\\
+\varphi\left(\boldsymbol{x}\right)= & \varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right) & \varphi\left(\boldsymbol{x}\right)=\dfrac{P\left(\boldsymbol{x}\right)}{Q\left(\boldsymbol{x}\right)},\begin{aligned}P\left(\boldsymbol{x}\right)\in\mathbb{Q}\left[\boldsymbol{x}\right]\\
+0\ne Q\left(\boldsymbol{x}\right)\in\mathbb{Q}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+V=\varphi\left(\boldsymbol{\alpha}\right)= & \varphi\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right) & \forall\sigma_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 2}}\in S_{{\scriptscriptstyle 2}}\left[\sigma_{{\scriptscriptstyle 1}}\ne\sigma_{{\scriptscriptstyle 2}}\Leftrightarrow\sigma_{{\scriptscriptstyle 1}}\left(V\right)\ne\sigma_{{\scriptscriptstyle 2}}\left(V\right)\right]\\
+V_{{\scriptscriptstyle i}}=\varphi\left(\sigma_{{\scriptscriptstyle i}}\boldsymbol{\alpha}\right)= & \varphi\left(\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle 2}}\right)\\
+\wedge\\
+f_{{\scriptscriptstyle V}}\left(x\right)= & \left(x-V_{{\scriptscriptstyle 1}}\right)\left(x-V_{{\scriptscriptstyle 2}}\right) & \text{ is a minimal polynomial }\in\mathbb{Q}\left[x\right]\\
+ &  & n=\deg f_{{\scriptscriptstyle V}}\left(x\right)\\
+\Downarrow & \formatted{lem:roots-represented-by-variable}\\
+\alpha_{{\scriptscriptstyle 1}}= & \alpha_{{\scriptscriptstyle 1}}\left(V\right)=\varphi_{{\scriptscriptstyle 1}}\left(V\right) & i\in\mathbb{N}_{{\scriptscriptstyle \le2}}\\
+ &  & \varphi_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)=\dfrac{P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)}{Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)},\begin{aligned}P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]\\
+0\ne Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+\alpha_{{\scriptscriptstyle 2}}= & \alpha_{{\scriptscriptstyle 2}}\left(V\right)=\varphi_{{\scriptscriptstyle 2}}\left(V\right)\\
+\wedge & \formatted{lem:variable-conjugate}\\
+\left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right\} \in & \left\{ \varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right),\varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 1}}\right)\right\}  & =\left\{ \varphi_{{\scriptscriptstyle 1}}\left(V\right),\varphi_{{\scriptscriptstyle 2}}\left(V\right)\right\} ,\qquad V=V_{{\scriptscriptstyle 1}}\\
+\vdots\\
+\left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right\} \in & \left\{ \varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle n}}\right),,\varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle n}}\right)\right\}  & =\left\{ \varphi_{{\scriptscriptstyle 1}}\left(V\right),\varphi_{{\scriptscriptstyle 2}}\left(V\right)\right\} ,\qquad V=V_{{\scriptscriptstyle 2}}\\
+\Downarrow\\
+\mathcal{G}=\mathcal{G}\left(f\right)=\mathrm{Gal}\left(f\right)= & \left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V\right) & \varphi_{{\scriptscriptstyle 2}}\left(V\right)
+\end{pmatrix}\middle|V\in\left\{ V_{{\scriptscriptstyle 1}},V_{{\scriptscriptstyle 2}}\right\} \right\}  & =\left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right) & \varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 1}}\right)
+\end{pmatrix},\begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 2}}\right) & \varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 2}}\right)
+\end{pmatrix}\right\} \\
+= & \left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}
+\end{pmatrix},\begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\alpha_{{\scriptscriptstyle 2}} & \alpha_{{\scriptscriptstyle 1}}
+\end{pmatrix}\right\}  & =\left\{ \begin{pmatrix}1 & 2\\
+1 & 2
+\end{pmatrix},\begin{pmatrix}1 & 2\\
+2 & 1
+\end{pmatrix}\right\} =\left\{ \left[12\right],\left[21\right]\right\} 
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.379"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+不變則已知：
+ 
+\begin_inset Formula $F\left(\boldsymbol{\alpha}\right)\text{ invariant}\Rightarrow F\left(\boldsymbol{\alpha}\right)\text{ known}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned} &  & \text{elementary symmetric polynomials}\\
+\alpha_{{\scriptscriptstyle 1}}+\alpha_{{\scriptscriptstyle 2}}= & \dfrac{-b}{a}=\dfrac{-b+\sqrt{b^{2}-4ac}}{2a}+\dfrac{-b-\sqrt{b^{2}-4ac}}{2a}\\
+\alpha_{{\scriptscriptstyle 1}}\alpha_{{\scriptscriptstyle 2}}= & \dfrac{c}{a}=\dfrac{-b+\sqrt{b^{2}-4ac}}{2a}\dfrac{-b-\sqrt{b^{2}-4ac}}{2a}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}\alpha_{{\scriptscriptstyle 1}}+\alpha_{{\scriptscriptstyle 2}}\rightarrow & \dfrac{-b}{a}\\
+\alpha_{{\scriptscriptstyle 1}}\alpha_{{\scriptscriptstyle 2}}\rightarrow & \dfrac{c}{a}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+已知則不變：
+ 
+\begin_inset Formula $F\left(\boldsymbol{\alpha}\right)\text{ known}\Rightarrow F\left(\boldsymbol{\alpha}\right)\text{ invariant}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}\dfrac{-b}{a}\rightarrow & \alpha_{{\scriptscriptstyle 1}}+\alpha_{{\scriptscriptstyle 2}}\\
+\dfrac{c}{a}\rightarrow & \alpha_{{\scriptscriptstyle 1}}\alpha_{{\scriptscriptstyle 2}}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.380～381"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Galois group of 
+\begin_inset Formula $x^{3}-2x=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.385～388"
+key "MG:Galois2014"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}f\left(x\right)= & x^{3}-2x\\
+= & x\left(x^{2}-2\right) & \in\mathbb{Q}\left[x\right]\\
+= & x\left(x-\sqrt{2}\right)\left(x-\left(-\sqrt{2}\right)\right) & \in\mathbb{Q}\left(\sqrt{2}\right)\left[x\right]\subset\mathbb{R}\left[x\right]\\
+= & \left(x-\alpha\right)\left(x-\beta\right)\left(x-\gamma\right) & \left\{ \alpha,\beta,\gamma\right\} =\left\{ 0,+\sqrt{2},-\sqrt{2}\right\} \\
+= & \left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right)\left(x-\alpha_{{\scriptscriptstyle 3}}\right) & \left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 3}}\right\} =\left\{ 0,\sqrt{2},-\sqrt{2}\right\} 
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\boldsymbol{\alpha}=\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 3}}\right)=\left(0,\sqrt{2},-\sqrt{2}\right)\Rightarrow\begin{cases}
+\alpha_{{\scriptscriptstyle 1}}= & 0\\
+\alpha_{{\scriptscriptstyle 2}}= & +\sqrt{2}\\
+\alpha_{{\scriptscriptstyle 3}}= & -\sqrt{2}
+\end{cases}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi\left(\boldsymbol{x}\right)=\varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)=x_{{\scriptscriptstyle 1}}+2x_{{\scriptscriptstyle 2}}+4x_{{\scriptscriptstyle 3}}=1x_{{\scriptscriptstyle 1}}+2x_{{\scriptscriptstyle 2}}+4x_{{\scriptscriptstyle 3}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}\varphi\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 3}}\right)= & 1\alpha_{{\scriptscriptstyle 1}}+2\alpha_{{\scriptscriptstyle 2}}+4\alpha_{{\scriptscriptstyle 3}}=1\left(0\right)+2\left(\sqrt{2}\right)+4\left(-\sqrt{2}\right)=-2\sqrt{2} & =V_{{\scriptscriptstyle 1}}\\
+\varphi\left(\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 3}},\alpha_{{\scriptscriptstyle 1}}\right)= & 1\alpha_{{\scriptscriptstyle 2}}+2\alpha_{{\scriptscriptstyle 3}}+4\alpha_{{\scriptscriptstyle 1}}=1\left(\sqrt{2}\right)+2\left(-\sqrt{2}\right)+4\left(0\right)=-1\sqrt{2} & =V_{{\scriptscriptstyle 2}}\\
+\varphi\left(\alpha_{{\scriptscriptstyle 3}},\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right)= & 1\alpha_{{\scriptscriptstyle 3}}+2\alpha_{{\scriptscriptstyle 1}}+4\alpha_{{\scriptscriptstyle 2}}=1\left(-\sqrt{2}\right)+2\left(0\right)+4\left(\sqrt{2}\right)=+3\sqrt{2} & =V_{{\scriptscriptstyle 3}}\\
+\varphi\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 3}},\alpha_{{\scriptscriptstyle 2}}\right)= & 1\alpha_{{\scriptscriptstyle 1}}+2\alpha_{{\scriptscriptstyle 3}}+4\alpha_{{\scriptscriptstyle 2}}=1\left(0\right)+2\left(-\sqrt{2}\right)+4\left(\sqrt{2}\right)=+2\sqrt{2} & =V_{{\scriptscriptstyle 4}}\\
+\varphi\left(\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 3}}\right)= & 1\alpha_{{\scriptscriptstyle 2}}+2\alpha_{{\scriptscriptstyle 1}}+4\alpha_{{\scriptscriptstyle 3}}=1\left(\sqrt{2}\right)+2\left(0\right)+4\left(-\sqrt{2}\right)=-3\sqrt{2} & =V_{{\scriptscriptstyle 5}}\\
+\varphi\left(\alpha_{{\scriptscriptstyle 3}},\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 1}}\right)= & 1\alpha_{{\scriptscriptstyle 3}}+2\alpha_{{\scriptscriptstyle 2}}+4\alpha_{{\scriptscriptstyle 1}}=1\left(-\sqrt{2}\right)+2\left(\sqrt{2}\right)+4\left(0\right)=+1\sqrt{2} & =V_{{\scriptscriptstyle 6}}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}\mathbb{K}\left(V\right)= & \mathbb{K}\left(\alpha_{{\scriptscriptstyle 1}}\left(V\right),\alpha_{{\scriptscriptstyle 2}}\left(V\right)\right)=\mathbb{K}\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right)\\
+=\mathbb{Q}\left(-2\sqrt{2}\right)= & \mathbb{Q}\left(\alpha_{{\scriptscriptstyle 1}}\left(-2\sqrt{2}\right),\alpha_{{\scriptscriptstyle 2}}\left(-2\sqrt{2}\right),\alpha_{{\scriptscriptstyle 3}}\left(-2\sqrt{2}\right)\right)\\
+= & \mathbb{Q}\left(0,+\sqrt{2},-\sqrt{2}\right)=\mathbb{Q}\left(\sqrt{2}\right)
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned} & \left(x-V_{{\scriptscriptstyle 1}}\right)\left(x-\left(-V_{{\scriptscriptstyle 1}}\right)\right)\\
+= & \left(x-\left(+V_{{\scriptscriptstyle 1}}\right)\right)\left(x-\left(-V_{{\scriptscriptstyle 1}}\right)\right)\\
+= & \left(x-\left(-2\sqrt{2}\right)\right)\left(x-\left(+2\sqrt{2}\right)\right)\\
+= & x^{2}-8 & =f_{{\scriptscriptstyle V}}\left(x\right)\in\mathbb{Q}\left[x\right]\\
+ &  & n=\deg f_{{\scriptscriptstyle V}}\left(x\right)=2
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{cases}
+\varphi_{{\scriptscriptstyle 1}}\left(x\right)= & 0\\
+\varphi_{{\scriptscriptstyle 2}}\left(x\right)= & -\frac{x}{2}\\
+\varphi_{{\scriptscriptstyle 3}}\left(x\right)= & +\frac{x}{2}
+\end{cases}\Rightarrow\begin{cases}
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right)=0 & =\alpha_{{\scriptscriptstyle 1}}\\
+\varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 1}}\right)=-\frac{V_{{\scriptscriptstyle 1}}}{2}=-\frac{-2\sqrt{2}}{2}=+\sqrt{2} & =\alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 3}}\left(V_{{\scriptscriptstyle 1}}\right)=+\frac{V_{{\scriptscriptstyle 1}}}{2}=+\frac{-2\sqrt{2}}{2}=-\sqrt{2} & =\alpha_{{\scriptscriptstyle 3}}
+\end{cases}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{cases}
+\varphi_{{\scriptscriptstyle 1}}\left(x\right)= & 0\\
+\varphi_{{\scriptscriptstyle 2}}\left(x\right)= & -\frac{x}{2}\\
+\varphi_{{\scriptscriptstyle 3}}\left(x\right)= & +\frac{x}{2}
+\end{cases}\Rightarrow\begin{cases}
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 4}}\right)=0 & =\alpha_{{\scriptscriptstyle 1}}\\
+\varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 4}}\right)=-\frac{V_{{\scriptscriptstyle 4}}}{2}=-\frac{+2\sqrt{2}}{2}=-\sqrt{2} & =\alpha_{{\scriptscriptstyle 3}}\\
+\varphi_{{\scriptscriptstyle 3}}\left(V_{{\scriptscriptstyle 4}}\right)=+\frac{V_{{\scriptscriptstyle 4}}}{2}=+\frac{+2\sqrt{2}}{2}=+\sqrt{2} & =\alpha_{{\scriptscriptstyle 2}}
+\end{cases}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}\mathcal{G}=\mathcal{G}\left(f\right)=\mathrm{Gal}\left(f\right)= & \left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}} & \alpha_{{\scriptscriptstyle 3}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right) & \varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 1}}\right) & \varphi_{{\scriptscriptstyle 3}}\left(V_{{\scriptscriptstyle 1}}\right)
+\end{pmatrix},\begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}} & \alpha_{{\scriptscriptstyle 3}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 4}}\right) & \varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 4}}\right) & \varphi_{{\scriptscriptstyle 3}}\left(V_{{\scriptscriptstyle 4}}\right)
+\end{pmatrix}\right\} \\
+= & \left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}} & \alpha_{{\scriptscriptstyle 3}}\\
+\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}} & \alpha_{{\scriptscriptstyle 3}}
+\end{pmatrix},\begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}} & \alpha_{{\scriptscriptstyle 3}}\\
+\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 3}} & \alpha_{{\scriptscriptstyle 2}}
+\end{pmatrix}\right\} =\left\{ \begin{pmatrix}1 & 2 & 3\\
+1 & 2 & 3
+\end{pmatrix},\begin{pmatrix}1 & 2 & 3\\
+1 & 3 & 2
+\end{pmatrix}\right\} =\left\{ \left[123\right],\left[132\right]\right\} 
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Galois group of 
+\begin_inset Formula $x^{4}-4x^{3}-4x^{2}+8x-2=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset href
+LatexCommand href
+name "MathKiwi: But why is there no quintic formula? | Galois Theory"
+target "https://youtu.be/1EWUsef0iFs?t=5m47s"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+\recolor{\begin{aligned}f\left(x\right)= & x^{4}-4x^{3}-4x^{2}+8x-2\\
+f\left(x\right)= & 0\\
+\Downarrow\\
+x\in & \left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}},\alpha_{{\scriptscriptstyle 3}},\alpha_{{\scriptscriptstyle 4}}\right\} \\
+\alpha_{{\scriptscriptstyle 1}}= & 1+\sqrt{2}+\sqrt{3+\sqrt{2}}\\
+\alpha_{{\scriptscriptstyle 2}}= & 1-\sqrt{2}+\sqrt{3+\sqrt{2}}\\
+\alpha_{{\scriptscriptstyle 3}}= & 1+\sqrt{2}-\sqrt{3+\sqrt{2}}\\
+\alpha_{{\scriptscriptstyle 4}}= & 1+\sqrt{2}-\sqrt{3+\sqrt{2}}
+\end{aligned}
+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\recolor{\varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}},x_{{\scriptscriptstyle 4}}\right)=x_{{\scriptscriptstyle 1}}+x_{{\scriptscriptstyle 2}}+x_{{\scriptscriptstyle 3}}+x_{{\scriptscriptstyle 4}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\recolor{\varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}},x_{{\scriptscriptstyle 4}}\right)=x_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 3}}x_{{\scriptscriptstyle 4}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\recolor{\varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}},x_{{\scriptscriptstyle 4}}\right)=x_{{\scriptscriptstyle 1}}x_{{\scriptscriptstyle 3}}+x_{{\scriptscriptstyle 2}}x_{{\scriptscriptstyle 4}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\recolor{\varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}},x_{{\scriptscriptstyle 4}}\right)=\left(x_{{\scriptscriptstyle 1}}+x_{{\scriptscriptstyle 2}}\right)-\left(x_{{\scriptscriptstyle 3}}+x_{{\scriptscriptstyle 4}}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+probability theory
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Bonferroni inequality
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p.77"
+key "Chang2021"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\cap E_{{\scriptscriptstyle 2}}\right)\ge1-\mathrm{P}\left(E_{{\scriptscriptstyle 1}}\right)-\mathrm{P}\left(E_{{\scriptscriptstyle 2}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+exponential family
+\end_layout
+
+\end_inset
+
+A family of PDF/PMF is called exponential family if
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula 
+\[
+f\left(x|\boldsymbol{\theta}\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits_{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits_{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+with 
+\begin_inset Formula $\boldsymbol{\theta}=\boldsymbol{\theta}\left(\theta_{{\scriptscriptstyle 1}},\cdots,\theta_{{\scriptscriptstyle k}}\right)=\left(\theta_{{\scriptscriptstyle 1}},\cdots,\theta_{{\scriptscriptstyle k}}\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $h\left(x\right),c\left(\boldsymbol{\theta}\right),w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right),t_{{\scriptscriptstyle j}}\left(x\right)$
+\end_inset
+
+,
+ where
+\begin_inset Formula 
+\[
+h\left(x\right)c\left(\boldsymbol{\theta}\right)\ge0\Rightarrow f\left(x|\theta\right)\ge0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+and parameters 
+\begin_inset Formula $\boldsymbol{\theta}$
+\end_inset
+
+ and statistic or real number 
+\begin_inset Formula $x$
+\end_inset
+
+ can be separated.
+\begin_inset Formula 
+\[
+\mathcal{E}^{f}=\left\{ f\middle|f=f\left(x|\boldsymbol{\theta}\right)=h\left(x\right)c\left(\boldsymbol{\theta}\right)\mathrm{e}^{{\scriptscriptstyle \sum\limits_{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)}}=h\left(x\right)c\left(\boldsymbol{\theta}\right)\exp\left(\sum\limits_{j=1}^{k}w_{{\scriptscriptstyle j}}\left(\boldsymbol{\theta}\right)t_{{\scriptscriptstyle j}}\left(x\right)\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "202406070931-ListOfTheorem"
+options "gbt7714-numerical"
+encoding "default"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -9,7 +9,7 @@ https://stackoverflow.com/questions/39173714/r-markdown-can-i-insert-a-pdf-to-th
 https://stackoverflow.com/a/39177166
 
 ::: {show-in="html"}
-![ArtLA](The-Art-of-Linear-Algebra-zh-TW.pdf){width=100% height=1000}
+<object data="The-Art-of-Linear-Algebra-zh-TW.pdf" type="application/pdf" width="100%" height=1050></object>
 :::
 
 ::: {show-in="pdf"}

@@ -981,3 +981,6 @@ epicorganism-airoswell-pan-yi-wen-3
 elliot-schneider-1
 latex-regex
 operator-theory
+physics-monsters
+list-of-theorem
+galois-theory

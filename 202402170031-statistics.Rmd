@@ -1,7 +1,7 @@
 # statistics
 
 ::: {show-in="html"}
-![2005_黃義雄_機率與統計_2022_洪弘_補充版](2005_黃義雄_機率與統計_2022_洪弘_補充版.pdf){width=100% height=1000}
+<object data="2005_黃義雄_機率與統計_2022_洪弘_補充版.pdf" type="application/pdf" width="100%" height=1050></object>
 :::
 
 ```{r, child='202402170033-covariance-matrix.Rmd', eval=FALSE}

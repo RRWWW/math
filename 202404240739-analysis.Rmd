@@ -1,5 +1,9 @@
 # analysis
 
+::: {show-in="html"}
+<object data="Joey Yu Hsu_2022_Knowledge of Everything I Need to Know.pdf" type="application/pdf" width="100%" height=1050></object>
+:::
+
 ## real analysis
 
 https://zhuanlan.zhihu.com/p/665222184

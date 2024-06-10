@@ -7,5 +7,5 @@ MathematicS:  https://www.bilibili.com/video/BV1Kf421X7X9
 :::
 
 ::: {show-in="html"}
-<object data="202406020800-operator-theory.pdf" type="application/pdf" width="100%" height=1200></object>
+<object data="202406020800-operator-theory.pdf" type="application/pdf" width="100%" height=1050></object>
 :::
