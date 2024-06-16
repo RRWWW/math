@@ -967,6 +967,9 @@ installation-1
 elan
 mathlib-mathlib
 yugu233-crispher-mathlibexplorer
+lean-game-server
+a-lean-intro-to-logic
+set-theory-game
 natural-number-game
 natural-number-game-in-lean-4
 lean-4-proof-tutorial

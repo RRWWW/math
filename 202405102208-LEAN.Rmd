@@ -42,11 +42,23 @@ https://www.bilibili.com/video/BV1Hw4m1q7qP
 <iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1Hw4m1q7qP&autoplay=0"></iframe>
 :::
 
-## Natural Number Game
+## LEAN game server
+
+https://adam.math.hhu.de/#/
+
+### A LEAN Intro to Logic
+
+https://adam.math.hhu.de/#/g/trequetrum/lean4game-logic
+
+### 1.2.1.2 Set Theory Game
+
+https://adam.math.hhu.de/#/g/djvelleman/stg4
+
+### Natural Number Game
 
 https://adam.math.hhu.de/#/g/leanprover-community/NNG4
 
-### Natural Number Game in LEAN 4
+#### Natural Number Game in LEAN 4
 
 https://www.youtube.com/playlist?list=PLCaPonEDDnrkDQVfxWiYdF0tYOYRyLI3N
 

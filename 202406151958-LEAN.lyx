@@ -225,6 +225,51 @@ tutorial
 \end_layout
 
 \begin_layout Subsection
+LEAN game server
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://adam.math.hhu.de/#/"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A LEAN Intro to Logic
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://adam.math.hhu.de/#/g/trequetrum/lean4game-logic"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Set Theory Game
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://adam.math.hhu.de/#/g/djvelleman/stg4"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
 Natural Number Game
 \end_layout
 

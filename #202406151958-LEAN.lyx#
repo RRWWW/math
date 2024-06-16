@@ -161,11 +161,63 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
-MathLib undergraduate missing
+MathLib undergraduate to-do
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://leanprover-community.github.io/undergrad_todo.html"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2024/06/16
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename 202406160915-LEAN-MathLib-undergraduate-to-do.pdf
+	extra LaTeX "pages=-"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 MathLib overview
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://leanprover-community.github.io/mathlib-overview.html"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2024/06/16
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename 202406160915-LEAN-MathLib-overview.pdf
+	extra LaTeX "pages=-"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -173,6 +225,51 @@ tutorial
 \end_layout
 
 \begin_layout Subsection
+LEAN game server
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://adam.math.hhu.de/#/"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A LEAN Intro to Logic
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://adam.math.hhu.de/#/g/trequetrum/lean4game-logic"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Set Theory Game
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://adam.math.hhu.de/#/g/djvelleman/stg4"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
 Natural Number Game
 \end_layout
 
