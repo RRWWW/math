@@ -966,6 +966,10 @@ type-theory
 installation-1
 elan
 mathlib-mathlib
+yugu233-crispher-mathlibexplorer
+natural-number-game
+natural-number-game-in-lean-4
+lean-4-proof-tutorial
 recreational-math
 solved
 monty-hall-problem

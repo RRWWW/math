@@ -1,0 +1,2344 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{upgreek}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{expl3,xparse}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-thmtools
+multicol
+\end_modules
+\maintain_unincluded_children no
+\language chinese-traditional
+\language_package none
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk bkai
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 5
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue"
+\papersize a4
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblio_options backref=true
+\biblatex_bibstyle numeric
+\biblatex_citestyle numeric
+\multibib child
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 1.5cm
+\rightmargin 2cm
+\bottommargin 1.5cm
+\secnumdepth 5
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style cjk
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+coloring
+\end_layout
+
+\begin_layout Subsection
+single coloring
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+zl{ {
+\backslash
+color{blue} z_{
+\backslash
+scriptscriptstyle l}} }
+\end_layout
+
+\end_inset
+
+also can be put into 
+\begin_inset Quotes eld
+\end_inset
+
+preamble
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+zl{ {
+\backslash
+color{blue} z_{
+\backslash
+scriptscriptstyle l}} }
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+0=\frac{\partial}{\partial\zl}\big(\|h(z_{l-1})\cdot w_{l}-\zl\|+\lambda\|h(\zl)\cdot w_{l+1}-z_{l+1}\|\big)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+recolor = coloring with regular expression (= RegEx = re)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://tex.stackexchange.com/questions/83101/option-clash-for-package-xcolor"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now,
+ the problem was that another package (pgfplots,
+ in this case) had already loaded the xcolor package without options,
+ so loading it after pgfplots with the table option produces the clash.
+ One way to prevent the problem was already presented (using table as class option);
+ another solution is to load xcolor with the table option before pgfplots
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{expl3,xparse}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage[dvipsnames]{xcolor}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+NewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 2 } { 
+\backslash
+c{color}{red}{2} } 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+NewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 2 } { 
+\backslash
+c{color}{red}{2} } 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\recolor{c^{2}=a^{2}+b^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+RenewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	% e,
+ 
+\backslash
+rho^2
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+be
+\backslash
+b } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}
+\backslash
+^
+\backslash
+{2
+\backslash
+} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% rho
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+rho_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 0}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 1}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 2}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+d_
+\backslash
+rho
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 0_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 1_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 2_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% pi
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+pi_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 0}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 1}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 2}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+d_
+\backslash
+pi
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 0_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 1_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 2_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% 
+\backslash
+d{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+[
+\backslash
+d{3}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(123)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{red}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(231)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{blue}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(312)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{Green}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(213)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{magenta}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(132)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{cyan}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(321)
+\backslash
+c{right}
+\backslash
+] }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{orange}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+(
+\backslash
+d{3}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+(
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((123)
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{blue}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((132)
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{Green}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((12)
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{magenta}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((23)
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{cyan}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((31)
+\backslash
+c{right}
+\backslash
+) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{orange}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+RenewDocumentCommand{
+\backslash
+recolor}{m}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_set:Nn 
+\backslash
+l_tmpa_tl { #1 }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	% e,
+ 
+\backslash
+rho^2
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+be
+\backslash
+b } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}
+\backslash
+^
+\backslash
+{2
+\backslash
+} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% rho
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+rho_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 0}} } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 1}} } { {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{rho}_{{
+\backslash
+c{scriptscriptstyle} 2}} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+d_
+\backslash
+rho
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 0_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 1_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} } { {
+\backslash
+c{color}{blue}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 2_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{rho}}} } { {
+\backslash
+c{color}{Green}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% pi
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+pi_
+\backslash
+d
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 0}} } { {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 1}} } { {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{pi}_{{
+\backslash
+c{scriptscriptstyle} 2}} } { {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+d_
+\backslash
+pi
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 0_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} } { {
+\backslash
+c{color}{magenta}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 1_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} } { {
+\backslash
+c{color}{cyan}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 2_{{
+\backslash
+c{scriptscriptstyle} 
+\backslash
+c{pi}}} } { {
+\backslash
+c{color}{orange}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	% 
+\backslash
+d{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+[
+\backslash
+d{3}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(123)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{red}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(231)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{blue}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(312)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{Green}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(213)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{magenta}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(132)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{cyan}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+[(321)
+\backslash
+c{right}
+\backslash
+] } { 
+\backslash
+c{left}
+\backslash
+[{
+\backslash
+c{color}{orange}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%% 
+\backslash
+(
+\backslash
+d{3}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+(
+\backslash
+c{right}
+\backslash
+) } { {
+\backslash
+c{color}{red}{
+\backslash
+0}}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((123)
+\backslash
+c{right}
+\backslash
+) } { 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{blue}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((132)
+\backslash
+c{right}
+\backslash
+) } { 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{Green}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((12)
+\backslash
+c{right}
+\backslash
+) } { 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{magenta}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((23)
+\backslash
+c{right}
+\backslash
+) } { 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{cyan}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+regex_replace_all:nnN { 
+\backslash
+c{left}
+\backslash
+((31)
+\backslash
+c{right}
+\backslash
+) } { 
+\backslash
+c{left}
+\backslash
+({
+\backslash
+c{color}{orange}{
+\backslash
+1}}
+\backslash
+c{right}
+\backslash
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tl_use:N 
+\backslash
+l_tmpa_tl
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ExplSyntaxOff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\recolor{\begin{array}{cccccccccccccc}
+\cdot_{{\scriptscriptstyle D_{{\scriptscriptstyle 3}}}} & \rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 2}} & \cdot_{{\scriptscriptstyle S_{3}}} & \left[123\right] & \left[231\right] & \left[312\right] & \left[213\right] & \left[132\right] & \left[321\right]\\
+\rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 2}} & \left[123\right] & \left[123\right] & \left[231\right] & \left[312\right] & \left[213\right] & \left[132\right] & \left[321\right]\\
+\rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 0}} & \left[231\right] & \left[231\right] & \left[312\right] & \left[123\right] & \left[132\right] & \left[321\right] & \left[213\right]\\
+\rho_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 1}} & \left[312\right] & \left[312\right] & \left[123\right] & \left[231\right] & \left[321\right] & \left[213\right] & \left[132\right]\\
+\pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 1}} & \left[213\right] & \left[213\right] & \left[321\right] & \left[132\right] & \left[123\right] & \left[312\right] & \left[231\right]\\
+\pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 0}} & \pi_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 2}} & \left[132\right] & \left[132\right] & \left[213\right] & \left[321\right] & \left[231\right] & \left[123\right] & \left[312\right]\\
+\pi_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 2}} & \pi_{{\scriptscriptstyle 1}} & \pi_{{\scriptscriptstyle 0}} & \rho_{{\scriptscriptstyle 2}} & \rho_{{\scriptscriptstyle 1}} & \rho_{{\scriptscriptstyle 0}} & \left[321\right] & \left[321\right] & \left[132\right] & \left[213\right] & \left[312\right] & \left[231\right] & \left[123\right]\\
+\cdot_{{\scriptscriptstyle S_{3}}} & e & \left(123\right) & \left(132\right) & \left(3\right)\left(12\right) & \left(1\right)\left(23\right) & \left(2\right)\left(31\right) & \cdot_{{\scriptscriptstyle S_{3}}} & \left(\right) & \left(123\right) & \left(132\right) & \left(12\right) & \left(23\right) & \left(31\right)\\
+e & e & \left(123\right) & \left(132\right) & \left(3\right)\left(12\right) & \left(1\right)\left(23\right) & \left(2\right)\left(31\right) & \left(\right) & \left(\right) & \left(123\right) & \left(132\right) & \left(12\right) & \left(23\right) & \left(31\right)\\
+\left(123\right) & \left(123\right) & \left(132\right) & e & \left(1\right)\left(23\right) & \left(2\right)\left(31\right) & \left(3\right)\left(12\right) & \left(123\right) & \left(123\right) & \left(132\right) & \left(\right) & \left(23\right) & \left(31\right) & \left(12\right)\\
+\left(132\right) & \left(132\right) & e & \left(123\right) & \left(2\right)\left(31\right) & \left(3\right)\left(12\right) & \left(1\right)\left(23\right) & \left(132\right) & \left(132\right) & \left(\right) & \left(123\right) & \left(31\right) & \left(12\right) & \left(23\right)\\
+\left(3\right)\left(12\right) & \left(3\right)\left(12\right) & \left(2\right)\left(31\right) & \left(1\right)\left(23\right) & e & \left(132\right) & \left(123\right) & \left(12\right) & \left(12\right) & \left(31\right) & \left(23\right) & \left(\right) & \left(132\right) & \left(123\right)\\
+\left(1\right)\left(23\right) & \left(1\right)\left(23\right) & \left(3\right)\left(12\right) & \left(2\right)\left(31\right) & \left(123\right) & e & \left(132\right) & \left(23\right) & \left(23\right) & \left(12\right) & \left(31\right) & \left(123\right) & \left(\right) & \left(132\right)\\
+\left(2\right)\left(31\right) & \left(2\right)\left(31\right) & \left(1\right)\left(23\right) & \left(3\right)\left(12\right) & \left(132\right) & \left(123\right) & e & \left(31\right) & \left(31\right) & \left(23\right) & \left(12\right) & \left(132\right) & \left(123\right) & \left(\right)
+\end{array}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

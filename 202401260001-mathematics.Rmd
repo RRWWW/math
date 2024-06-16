@@ -1,6 +1,10 @@
 # (PART) by descipline {-}
 # mathematics
 
+::: {show-in="html"}
+<object data="202406141538-math.pdf" type="application/pdf" width="100%" height=1050></object>
+:::
+
 ## tool
 
 - formula typesetting
@@ -22,6 +26,8 @@
   - MathML
   - MathJax: JavaScript
 - [plot]^[\@ref(plot)]^
+- proof: type theory
+  - [LEAN]^[\@ref(lean)]^
 - symbolic computing
   - Maple:          by MapleSoft
   - Mathematica:    by Wolfram

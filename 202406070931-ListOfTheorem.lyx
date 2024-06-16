@@ -7,10 +7,11 @@
 \textclass book
 \begin_preamble
 \providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\usepackage[square,numbers]{natbib}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{upgreek}
 \usepackage{tikz}
 \usepackage{pgfplots}
-\usepackage[square,numbers]{natbib}
 \usepackage{expl3,xparse}
 \end_preamble
 \use_default_options true
@@ -71,7 +72,7 @@ theorems-thmtools
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style gbt7714-numerical
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -4018,6 +4019,53 @@ learn
 
 \end_layout
 
+\begin_layout Section
+multiple bibliography
+\end_layout
+
+\begin_layout Standard
+error keeps occurring,
+ thus do it in the final step
+\end_layout
+
+\begin_layout Subsection
+bibtopic:
+ per chapter
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "bibtopic.sty"
+target "https://ctan.mirror.twds.com.tw/tex-archive/macros/latex/contrib/bibtopic/bibtopic.pdf"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "pass options to package in LyX before usepackage"
+target "https://tex.stackexchange.com/questions/694271/how-to-pass-options-to-nomencl-package-in-lyx"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Document >Settings\SpecialChar ldots
+ >Local layout.
+\end_layout
+
+\begin_layout Standard
+Add `PackageOptions <package> <option1,option2,...>`
+\end_layout
+
 \begin_layout Chapter
 group theory
 \end_layout
@@ -5208,6 +5256,30 @@ There is no general formula for solving a polynomial of degree
 status open
 
 \begin_layout Plain Layout
+field
+\end_layout
+
+\end_inset
+
+ körper 
+\begin_inset Formula $\mathbb{K}=\mathbb{F}$
+\end_inset
+
+ field
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
 reducible polynomial vs.
  irreducible polynomial
 \end_layout
@@ -5224,14 +5296,6 @@ literal "false"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Definition
-körper 
-\begin_inset Formula $\mathbb{K}=\mathbb{F}$
-\end_inset
-
- field
 \end_layout
 
 \begin_layout Standard
@@ -5346,8 +5410,8 @@ literal "false"
 \begin{array}{ccc}
 \text{polynomial} & \leftrightarrow & \text{integer}\\
 P\left[x\right]\in\mathbb{K}\left[x\right] & \leftrightarrow & \text{natural number }\mathbb{N}\subset\mathbb{Z}\\
-\text{irreducible polynomial} & \leftrightarrow & \text{prime [number] }\mathbb{P}\\
-\text{reducible polynomial} & \leftrightarrow & \text{composite number}\\
+\text{irreducible polynomial}\in\mathbb{K}\left[x\right] & \leftrightarrow & \text{prime [number] }\mathbb{P}\subset\mathbb{N}\\
+\text{reducible polynomial}\in\mathbb{K}\left(\sqrt{c_{{\scriptscriptstyle j}}}\right)\left[x\right] & \leftrightarrow & \text{composite number}\\
 \begin{aligned}f\left(x_{{\scriptscriptstyle 0}}\right)=0 & =p\left(x_{{\scriptscriptstyle 0}}\right) & \exists x_{{\scriptscriptstyle 0}}\in\mathbb{K}\\
 \Downarrow\\
 p\left(x\right)| & f\left(x\right)
@@ -5884,6 +5948,19 @@ f_{{\scriptscriptstyle V}}\left(x\right)= & \left(x-V_{{\scriptscriptstyle 1}}\r
 
 \end_layout
 
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Galois group
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 不變則已知：
  
@@ -6219,7 +6296,7 @@ literal "false"
 
 \begin_inset Formula 
 \[
-\varphi\left(\boldsymbol{x}\right)=\varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)=x_{{\scriptscriptstyle 1}}+2x_{{\scriptscriptstyle 2}}+4x_{{\scriptscriptstyle 3}}=1x_{{\scriptscriptstyle 1}}+2x_{{\scriptscriptstyle 2}}+4x_{{\scriptscriptstyle 3}}
+\recolor{\varphi\left(\boldsymbol{x}\right)=\varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}},x_{{\scriptscriptstyle 3}}\right)=x_{{\scriptscriptstyle 1}}+2x_{{\scriptscriptstyle 2}}+4x_{{\scriptscriptstyle 3}}=1x_{{\scriptscriptstyle 1}}+2x_{{\scriptscriptstyle 2}}+4x_{{\scriptscriptstyle 3}}}
 \]
 
 \end_inset
@@ -6405,7 +6482,94 @@ x\in & \left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}},\
 \end_layout
 
 \begin_layout Standard
-\begin_inset Separator plain
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+recolor{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+ & \left(x-V_{{\scriptscriptstyle 1}}\right)\left(x-\left(-V_{{\scriptscriptstyle 1}}\right)\right)\label{eq:}\\
+= & \left(x-\left(+V_{{\scriptscriptstyle 1}}\right)\right)\left(x-\left(-V_{{\scriptscriptstyle 1}}\right)\right)\label{eq:-1}\\
+= & \left(x-\left(-2\sqrt{2}\right)\right)\left(x-\left(+2\sqrt{2}\right)\right)\label{eq:-2}\\
+= & x^{2}-8 & =f_{{\scriptscriptstyle V}}\left(x\right)\in\mathbb{Q}\left[x\right]\\
+ &  & n=\deg f_{{\scriptscriptstyle V}}\left(x\right)=2
+\end{align}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align}
+f\left(x\right)= & ax^{2}+bx+c & \in\mathbb{Q}\left[x\right]\\
+= & a\left(x-\alpha_{{\scriptscriptstyle 1}}\right)\left(x-\alpha_{{\scriptscriptstyle 2}}\right)\\
+= & ax^{2}-a\left(\alpha_{{\scriptscriptstyle 1}}+\alpha_{{\scriptscriptstyle 2}}\right)x+a\alpha_{{\scriptscriptstyle 1}}\alpha_{{\scriptscriptstyle 2}} & \in\mathbb{Q}\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right)\left[x\right]\\
+ & a\ne0 & \left(\alpha_{{\scriptscriptstyle 1}}-\alpha_{{\scriptscriptstyle 2}}\right)\ne0\\
+\Downarrow\nonumber \\
+\alpha_{{\scriptscriptstyle 1}}= & \dfrac{-b+\sqrt{b^{2}-4ac}}{2a}\\
+\alpha_{{\scriptscriptstyle 2}}= & \dfrac{-b-\sqrt{b^{2}-4ac}}{2a}\\
+\Downarrow & \formatted{lem:variable-represented-by-roots}\nonumber \\
+\varphi\left(\boldsymbol{x}\right)= & \varphi\left(x_{{\scriptscriptstyle 1}},x_{{\scriptscriptstyle 2}}\right) & \varphi\left(\boldsymbol{x}\right)=\dfrac{P\left(\boldsymbol{x}\right)}{Q\left(\boldsymbol{x}\right)},\begin{aligned}P\left(\boldsymbol{x}\right)\in\mathbb{Q}\left[\boldsymbol{x}\right]\\
+0\ne Q\left(\boldsymbol{x}\right)\in\mathbb{Q}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+V=\varphi\left(\boldsymbol{\alpha}\right)= & \varphi\left(\alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right) & \forall\sigma_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle 2}}\in S_{{\scriptscriptstyle 2}}\left[\sigma_{{\scriptscriptstyle 1}}\ne\sigma_{{\scriptscriptstyle 2}}\Leftrightarrow\sigma_{{\scriptscriptstyle 1}}\left(V\right)\ne\sigma_{{\scriptscriptstyle 2}}\left(V\right)\right]\\
+V_{{\scriptscriptstyle i}}=\varphi\left(\sigma_{{\scriptscriptstyle i}}\boldsymbol{\alpha}\right)= & \varphi\left(\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle 1}},\sigma_{{\scriptscriptstyle i}}\alpha_{{\scriptscriptstyle 2}}\right)\\
+\wedge\\
+f_{{\scriptscriptstyle V}}\left(x\right)= & \left(x-V_{{\scriptscriptstyle 1}}\right)\left(x-V_{{\scriptscriptstyle 2}}\right) & \text{ is a minimal polynomial }\in\mathbb{Q}\left[x\right]\\
+ &  & n=\deg f_{{\scriptscriptstyle V}}\left(x\right)\\
+\Downarrow & \formatted{lem:roots-represented-by-variable}\nonumber \\
+\alpha_{{\scriptscriptstyle 1}}= & \alpha_{{\scriptscriptstyle 1}}\left(V\right)=\varphi_{{\scriptscriptstyle 1}}\left(V\right) & i\in\mathbb{N}_{{\scriptscriptstyle \le2}}\\
+ &  & \varphi_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)=\dfrac{P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)}{Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)},\begin{aligned}P_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]\\
+0\ne Q_{{\scriptscriptstyle i}}\left(\boldsymbol{x}\right)\in\mathbb{K}\left[\boldsymbol{x}\right]
+\end{aligned}
+\\
+\alpha_{{\scriptscriptstyle 2}}= & \alpha_{{\scriptscriptstyle 2}}\left(V\right)=\varphi_{{\scriptscriptstyle 2}}\left(V\right)\\
+\wedge & \formatted{lem:variable-conjugate}\nonumber \\
+\left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right\} \in & \left\{ \varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right),\varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 1}}\right)\right\}  & =\left\{ \varphi_{{\scriptscriptstyle 1}}\left(V\right),\varphi_{{\scriptscriptstyle 2}}\left(V\right)\right\} ,\qquad V=V_{{\scriptscriptstyle 1}}\\
+\vdots\nonumber \\
+\left\{ \alpha_{{\scriptscriptstyle 1}},\alpha_{{\scriptscriptstyle 2}}\right\} \in & \left\{ \varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle n}}\right),,\varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle n}}\right)\right\}  & =\left\{ \varphi_{{\scriptscriptstyle 1}}\left(V\right),\varphi_{{\scriptscriptstyle 2}}\left(V\right)\right\} ,\qquad V=V_{{\scriptscriptstyle 2}}\\
+\Downarrow\nonumber \\
+\mathcal{G}= & \mathcal{G}\left(f\right)=\mathrm{Gal}\left(f\right)\\
+= & \left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V\right) & \varphi_{{\scriptscriptstyle 2}}\left(V\right)
+\end{pmatrix}\middle|V\in\left\{ V_{{\scriptscriptstyle 1}},V_{{\scriptscriptstyle 2}}\right\} \right\} \\
+= & \left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 1}}\right) & \varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 1}}\right)
+\end{pmatrix},\begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\varphi_{{\scriptscriptstyle 1}}\left(V_{{\scriptscriptstyle 2}}\right) & \varphi_{{\scriptscriptstyle 2}}\left(V_{{\scriptscriptstyle 2}}\right)
+\end{pmatrix}\right\} \\
+= & \left\{ \begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}
+\end{pmatrix},\begin{pmatrix}\alpha_{{\scriptscriptstyle 1}} & \alpha_{{\scriptscriptstyle 2}}\\
+\alpha_{{\scriptscriptstyle 2}} & \alpha_{{\scriptscriptstyle 1}}
+\end{pmatrix}\right\} \\
+= & \left\{ \begin{pmatrix}1 & 2\\
+1 & 2
+\end{pmatrix},\begin{pmatrix}1 & 2\\
+2 & 1
+\end{pmatrix}\right\} =\left\{ \left[12\right],\left[21\right]\right\} 
+\end{align}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
 \end_inset
 
 

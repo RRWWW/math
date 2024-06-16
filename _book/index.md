@@ -1,7 +1,7 @@
 ---
 title: "math"
 author: "Joey Yu Hsu"
-date: "2024-06-10"
+date: "2024-06-16"
 site: bookdown::bookdown_site
 documentclass: book
 # output:
