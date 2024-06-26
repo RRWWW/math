@@ -1,0 +1,29 @@
+# Gosper algorithm
+
+## Zhuli
+
+https://www.youtube.com/watch?v=0LFg5dvPOoc
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://www.youtube.com/embed/0LFg5dvPOoc"></iframe>
+:::
+
+## TaylorCatAlice
+
+https://www.bilibili.com/video/BV1ZX4y1o7EB
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1ZX4y1o7EB&autoplay=0"></iframe>
+:::
+
+https://www.bilibili.com/video/BV1wv4y1H7m8
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1wv4y1H7m8&autoplay=0"></iframe>
+:::
+
+https://www.bilibili.com/video/BV1Ua4y1q7Q9
+
+::: {show-in="html"}
+<iframe width=500 height=300 frameborder="0" allowfullscreen src="https://player.bilibili.com/player.html?bvid=BV1Ua4y1q7Q9&autoplay=0"></iframe>
+:::

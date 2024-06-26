@@ -29,6 +29,8 @@
 - proof: type theory
   - [LEAN]^[\@ref(lean)]^
 - symbolic computing
+  - SageMath:       by University of Washington
+    - [Sage]^[\@ref(sage)]^
   - Maple:          by MapleSoft
   - Mathematica:    by Wolfram
 - numeric computing

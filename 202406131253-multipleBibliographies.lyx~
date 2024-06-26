@@ -122,17 +122,6 @@ mutliple bibliographies
 \begin_layout Standard
 \begin_inset CommandInset href
 LatexCommand href
-target "https://wiki.lyx.org/BibTeX/Biblatex"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
 target "https://wiki.lyx.org/BibTeX/Tips#secbib"
 literal "false"
 
@@ -150,75 +139,10 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-target "https://tex.stackexchange.com/questions/36307/formatting-back-references-in-bibliography"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-usepackage[backref=true]{biblatex}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-usepackage{hyperref}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-DefineBibliographyStrings{english}{%
-\end_layout
-
-\begin_layout Plain Layout
-
-  backrefpage = {page},% originally "cited on page"
-\end_layout
-
-\begin_layout Plain Layout
-
-  backrefpages = {pages},% originally "cited on pages"
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "202406141538-math"
+bibfiles "202406131249-childDocumentSection"
 encoding "default"
 
 \end_inset

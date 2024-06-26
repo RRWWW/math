@@ -95,7 +95,7 @@ multicol
 \rightmargin 2cm
 \bottommargin 1.5cm
 \secnumdepth 5
-\tocdepth 2
+\tocdepth 5
 \paragraph_separation indent
 \paragraph_indentation default
 \is_math_indent 0
@@ -143,6 +143,7 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout List of Theorems
+
 \begin_inset Argument 1
 status open
 
@@ -157,6 +158,7 @@ ignoreall,show={defn},title=list of definitions,swapnumber
 \end_layout
 
 \begin_layout List of Theorems
+
 \begin_inset Argument 1
 status open
 
@@ -171,6 +173,7 @@ ignoreall,show={thm,lem,cor},title=list of theorems,swapnumber
 \end_layout
 
 \begin_layout List of Theorems
+
 \begin_inset Argument 1
 status open
 
@@ -509,10 +512,28 @@ literal "false"
 plot
 \end_layout
 
+\begin_layout Section
+\begin_inset Formula $\text{Ti}k\text{Z}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "202406152009-TikZ.lyx"
+filename "202406152009-TikZ-CD.lyx"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "202406170009-TikZ-PGFplots.lyx"
 literal "false"
 
 \end_inset

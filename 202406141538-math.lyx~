@@ -16,7 +16,6 @@
 \use_default_options true
 \begin_modules
 theorems-thmtools
-multicol
 \end_modules
 \maintain_unincluded_children no
 \language chinese-traditional
@@ -70,8 +69,8 @@ multicol
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine biblatex
-\cite_engine_type authoryear
+\cite_engine biblatex-natbib
+\cite_engine_type numerical
 \biblio_style plain
 \biblio_options backref=true
 \biblatex_bibstyle numeric
@@ -120,7 +119,7 @@ multicol
 \begin_body
 
 \begin_layout Title
-math
+child document
 \end_layout
 
 \begin_layout Author
@@ -130,70 +129,12 @@ Joey Yu Hsu,
 
 \begin_layout Standard
 \align center
-since 2024/06/14
+since 2024/06/13
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout List of Theorems
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-ignoreall,show={defn},title=list of definitions,swapnumber
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout List of Theorems
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-ignoreall,show={thm,lem,cor},title=list of theorems,swapnumber
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout List of Theorems
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-ignoreall,show={example},title=list of examples,swapnumber
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FloatList figure
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset FloatList table
 
 \end_inset
 
@@ -236,132 +177,10 @@ LyX
 
 \end_layout
 
-\begin_layout Section
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LyX
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thickspace{}
-\end_inset
-
-Chinese environment
-\end_layout
-
 \begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-target "https://latexlyx.blogspot.com/2012/06/lyx.html"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-2014年09月21日 晚上10:58 
-\end_layout
-
-\begin_layout Standard
-匿名：
-Language 那邊改成 Chinese Traditional 之後,
- Definition 就變成定義,
- Example 就變成範例,
- 有沒有辦法維持他們是英文的?
-\end_layout
-
-\begin_layout Standard
-2014年09月22日 上午11:23 
-\end_layout
-
-\begin_layout Standard
-Mingyi Wu：
-這個是 LyX 的特性之一。
-UI 的語言設定，
-與編輯區的語言是分開的。
- 就算 UI 設定為 English,
- 如果檔案語言設定為 Chinese,
- 那麼編輯區出現的一些如 Chapter,
- Section,
- Definition 等名稱，
-會自動變成中文。
-也就是說檔案的語言設定值，
-會影響 LyX 文字編輯區內呈現的語言。
- 若使用數學模組或一些數學論文 document class 的時候，
-甚至連輸出的檔案內容都會根據語言設定而變。
-(也就是 Definition 變成 定義)
-\end_layout
-
-\begin_layout Standard
-所以您說的狀況，
-可能有2種情況：
- 
-\end_layout
-
-\begin_layout Standard
-1.
- Definition 在 LyX 編輯區內變成中文，
-但輸出檔案時檔案還是出現 Definition 這個只是編輯區呈現的問題，
-沒辦法只改一部份。
-如果真的希望檔案設定成中文，
-但所有介面看起來都要是英文的環境，
-您可以直接刪掉中文翻譯檔，
-這樣所有介面都會變成英文的。
- 以我的環境，
-繁體中文的翻譯檔路徑在(for Windows):
- C:
-\backslash
-Program Files (x86)
-\backslash
-LyX 2.1
-\backslash
-Resources
-\backslash
-locale
-\backslash
-zh_TW
-\backslash
-LC_MESSAGES
-\backslash
-LyX2.1.mo 把這個檔名改掉，
-這樣 LyX 就找不到中文翻譯檔，
-都會以預設的英文呈現。
-
-\end_layout
-
-\begin_layout Standard
-2.
- 如果您的問題是輸出的檔案會出現中文的「定義」問題，
-不管介面顯示。
-這個問題跟另外一個檔案有關,
- C:
-\backslash
-Program Files (x86)
-\backslash
-LyX 2.1
-\backslash
-Resources
-\backslash
-layouttranslations 您可以用任何文字編輯器開啟此檔，
-找到 Translation zh_TW 這行以下的設定改成您喜歡的，
-或是直接把這個檔名改掉或刪掉檔案，
-這樣輸出檔案也不會自動翻譯了。
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-target "https://latexlyx.blogspot.com/2013/06/lyx-2.html"
+\begin_inset CommandInset include
+LatexCommand include
+filename "202406131249-childDocumentSection.lyx"
 literal "false"
 
 \end_inset
@@ -372,147 +191,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "202406131249-LyX-childDocument.lyx"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "202406131253-LyX-multipleBibliographies.lyx"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-LyZ:
- linking Zotero and 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LyX
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-target "https://forums.zotero.org/discussion/78442/connecting-zotero-and-lyx"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-target "https://github.com/wshanks/lyz/releases"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-list of theorems module
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-target "https://tex.stackexchange.com/questions/672794/list-of-theorems-not-working-in-lyx"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-target "https://github.com/Udi-Fogiel/LyX-thmtools"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-list of equations
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-target "https://tex.stackexchange.com/questions/173102/table-of-equations-like-list-of-figures"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-target "https://stackoverflow.com/questions/61517319/vertical-spacing-adjustment-between-different-chapters-labels-in-the-list-of-eq"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "202406152117-LyX-multicolumn.lyx"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
-plot
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "202406152009-TikZ.lyx"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "202406151958-LEAN.lyx"
+filename "202406131253-multipleBibliographies.lyx"
 literal "false"
 
 \end_inset
