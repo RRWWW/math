@@ -70,10 +70,11 @@
 \contentsline {subsection}{\numberline {7.2.10}code chunk}{55}{subsection.7.2.10}%
 \contentsline {subsubsection}{\numberline {7.2.10.1}code folding}{55}{subsubsection.7.2.10.1}%
 \contentsline {subsection}{\numberline {7.2.11}xaringan}{55}{subsection.7.2.11}%
-\contentsline {subsection}{\numberline {7.2.12}embed a web page}{55}{subsection.7.2.12}%
+\contentsline {subsection}{\numberline {7.2.12}embed HTML or web page}{55}{subsection.7.2.12}%
 \contentsline {subsubsection}{\numberline {7.2.12.1}iframe}{55}{subsubsection.7.2.12.1}%
 \contentsline {subsubsection}{\numberline {7.2.12.2}include URL}{55}{subsubsection.7.2.12.2}%
 \contentsline {subsubsection}{\numberline {7.2.12.3}htmltools}{57}{subsubsection.7.2.12.3}%
+\contentsline {subsection}{\numberline {7.2.13}embed PDF}{57}{subsection.7.2.13}%
 \contentsline {section}{\numberline {7.3}Bookdown}{57}{section.7.3}%
 \contentsline {subsection}{\numberline {7.3.1}system locale}{57}{subsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.3.2}\texttt {render\_book()}}{57}{subsection.7.3.2}%
@@ -741,6 +742,13 @@
 \contentsline {subsection}{\numberline {79.1.2}installation}{517}{subsection.79.1.2}%
 \contentsline {section}{\numberline {79.2}ELAN}{517}{section.79.2}%
 \contentsline {section}{\numberline {79.3}MathLib = mathlib}{517}{section.79.3}%
+\contentsline {subsection}{\numberline {79.3.1}yugu233 / Crispher : MathLibExplorer}{517}{subsection.79.3.1}%
+\contentsline {section}{\numberline {79.4}LEAN game server}{517}{section.79.4}%
+\contentsline {subsection}{\numberline {79.4.1}A LEAN Intro to Logic}{517}{subsection.79.4.1}%
+\contentsline {subsection}{\numberline {79.4.2}1.2.1.2 Set Theory Game}{517}{subsection.79.4.2}%
+\contentsline {subsection}{\numberline {79.4.3}Natural Number Game}{518}{subsection.79.4.3}%
+\contentsline {subsubsection}{\numberline {79.4.3.1}Natural Number Game in LEAN 4}{518}{subsubsection.79.4.3.1}%
+\contentsline {section}{\numberline {79.5}LEAN 4 proof tutorial}{518}{section.79.5}%
 \contentsline {chapter}{\numberline {80}recreational math}{519}{chapter.80}%
 \contentsline {section}{\numberline {80.1}solved}{519}{section.80.1}%
 \contentsline {subsection}{\numberline {80.1.1}Monty Hall problem}{519}{subsection.80.1.1}%
@@ -755,4 +763,9 @@
 \contentsline {section}{\numberline {84.1}EpicOrganism = AIRoswell = Pan, Yi-Wen}{527}{section.84.1}%
 \contentsline {section}{\numberline {84.2}Elliot Schneider}{527}{section.84.2}%
 \contentsline {chapter}{\numberline {85}LaTeX RegEx}{529}{chapter.85}%
-\contentsline {chapter}{references}{533}{chapter*.50}%
+\contentsline {chapter}{\numberline {86}operator theory}{533}{chapter.86}%
+\contentsline {chapter}{\numberline {87}physics monsters}{535}{chapter.87}%
+\contentsline {chapter}{\numberline {88}List of Theorem}{537}{chapter.88}%
+\contentsline {chapter}{\numberline {89}Galois theory}{539}{chapter.89}%
+\contentsline {chapter}{\numberline {90}Sage}{541}{chapter.90}%
+\contentsline {chapter}{references}{543}{chapter*.50}%

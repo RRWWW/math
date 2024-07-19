@@ -7576,7 +7576,7 @@ v^{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}
  &  &  & \begin{cases}
 \widetilde{L}^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}=B^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}L^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}\\
 L^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}=F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}\widetilde{L}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}
-\end{cases} & \text{vector space }\mathcal{W}\ni\boldsymbol{v}=\boldsymbol{v}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}
+\end{cases} & \text{vector space }\mathcal{W}\ni\boldsymbol{w}=\boldsymbol{w}_{{\scriptscriptstyle j}}w^{{\scriptscriptstyle j}}
 \end{aligned}
 \]
 
@@ -7631,7 +7631,7 @@ v^{{\scriptscriptstyle i}}=F^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}
  &  &  & \begin{cases}
 \widetilde{L}^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}=B^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}L^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}F^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}\\
 L^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle k}}=F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}\widetilde{L}^{{\scriptscriptstyle i}}{}_{{\scriptscriptstyle j}}B^{{\scriptscriptstyle j}}{}_{{\scriptscriptstyle k}}
-\end{cases} & \text{vector space }\mathcal{W}\ni\boldsymbol{v}=\boldsymbol{v}_{{\scriptscriptstyle j}}v^{{\scriptscriptstyle j}}\\
+\end{cases} & \text{vector space }\mathcal{W}\ni\boldsymbol{w}=\boldsymbol{w}_{{\scriptscriptstyle j}}w^{{\scriptscriptstyle j}}\\
  & \left(0,2\right)\text{-tensor} &  &  & \mathcal{V}^{2}\overset{g}{\rightarrow}\mathcal{\mathbb{R}}_{{\scriptscriptstyle \ge0}}\\
 \mathcal{\mathbb{R}}_{{\scriptscriptstyle \ge0}}^{\mathcal{V}^{2}}\ni & \begin{cases}
 \widetilde{g}_{{\scriptscriptstyle ij}}=g_{{\scriptscriptstyle hk}}F^{{\scriptscriptstyle h}}{}_{{\scriptscriptstyle i}}F^{{\scriptscriptstyle k}}{}_{{\scriptscriptstyle j}}\\
